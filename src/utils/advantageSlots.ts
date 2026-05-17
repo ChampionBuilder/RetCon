@@ -1,16 +1,19 @@
 import type { Advantage } from "../types/advantages";
 import type { BuildSlot } from "../types/builds";
+import {
+  getDependentAdvantageIds,
+  getRequiredAdvantage,
+} from "./advantageDependencies";
 import { canAddAdvantage } from "./advantagerules";
 
-function getDependentAdvantageIds(
-  advantages: Advantage[],
-  advantageId: number,
-) {
-  return advantages
-    .filter(
-      (advantage) => advantage.dependency_advantage_id === advantageId,
-    )
-    .map((advantage) => advantage.advantage_id);
+function getSlotAdvantages(slot: BuildSlot, advantages: Advantage[]) {
+  if (!slot.power) {
+    return [];
+  }
+
+  return advantages.filter((advantage) =>
+    slot.power?.advantages.includes(advantage.advantage_id),
+  );
 }
 
 export function toggleAdvantageForSlots(
@@ -35,11 +38,12 @@ export function toggleAdvantageForSlots(
     }
 
     const alreadySelected = slot.selectedAdvantages.includes(advantageId);
+    const slotAdvantages = getSlotAdvantages(slot, advantages);
 
     if (alreadySelected) {
       const dependentAdvantageIds = getDependentAdvantageIds(
-        advantages,
-        advantageId,
+        advantage,
+        slotAdvantages,
       );
 
       return {
@@ -50,9 +54,11 @@ export function toggleAdvantageForSlots(
       };
     }
 
+    const requiredAdvantage = getRequiredAdvantage(advantage, slotAdvantages);
+
     if (
-      advantage.dependency_advantage_id !== null &&
-      !slot.selectedAdvantages.includes(advantage.dependency_advantage_id)
+      requiredAdvantage !== null &&
+      !slot.selectedAdvantages.includes(requiredAdvantage.advantage_id)
     ) {
       return slot;
     }

@@ -107,6 +107,8 @@ export function PowersPanel({
   const [closedSections, setClosedSections] = useState<string[]>([]);
   const [frameworkStripColumns, setFrameworkStripColumns] = useState(1);
   const frameworkStripRef = useRef<HTMLDivElement | null>(null);
+  const hasEnergyBuilder = buildSlots.some((slot) => slot.power?.tier === -1);
+  const hadEnergyBuilderRef = useRef(hasEnergyBuilder);
   const isTravelMode = selectedFramework === travelPowerFilterId;
   const isPowerVariantsMode = selectedFramework === powerVariantsFilterId;
   const isDevicesMode = selectedFramework === devicesFilterId;
@@ -283,6 +285,18 @@ export function PowersPanel({
 
     return () => resizeObserver.disconnect();
   }, []);
+
+  useEffect(() => {
+    if (hasEnergyBuilder && !hadEnergyBuilderRef.current) {
+      setClosedSections((currentClosedSections) =>
+        currentClosedSections.includes("-1")
+          ? currentClosedSections
+          : [...currentClosedSections, "-1"],
+      );
+    }
+
+    hadEnergyBuilderRef.current = hasEnergyBuilder;
+  }, [hasEnergyBuilder]);
 
   function toggleSection(key: string) {
     setClosedSections((currentClosedSections) => {

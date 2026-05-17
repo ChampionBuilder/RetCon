@@ -489,6 +489,10 @@ h3 {
   white-space: nowrap;
 }
 
+.build-check-entry__requirement--warning {
+  color: #f4c47f;
+}
+
 .data-dialog__toolbar {
   display: flex;
   align-items: center;

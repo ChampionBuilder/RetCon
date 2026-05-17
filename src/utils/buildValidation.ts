@@ -1,4 +1,5 @@
 import type { BuildSlot } from "../types/builds";
+import type { SuperStat } from "../types/character";
 import type { Power } from "../types/powers";
 import { isUltimatePowerVariantDevice } from "./powerFrameworks";
 
@@ -86,6 +87,39 @@ export const optionalBuildRequirements: BuildRequirement[] = [
 
 function getPowerType(power: Power | null | undefined) {
   return power?.Power_Type ?? power?.POWER_TYPE ?? null;
+}
+
+const superStatNameToCode: Record<string, string> = {
+  Strength: "STR",
+  Dexterity: "DEX",
+  Constitution: "CON",
+  Intelligence: "INT",
+  Ego: "EGO",
+  Presence: "PRE",
+  Recovery: "REC",
+  Endurance: "END",
+};
+
+export function getMissingScalingStats(
+  power: Power | null,
+  selectedSuperStats: (SuperStat | null)[],
+) {
+  const scalingStats = power?.scaling_stats ?? [];
+
+  if (scalingStats.length === 0) {
+    return [];
+  }
+
+  const selectedStatCodes = new Set(
+    selectedSuperStats
+      .map((stat) => (stat ? superStatNameToCode[stat.name] : null))
+      .filter((statCode): statCode is string => statCode !== null),
+  );
+  const normalizedScalingStats = scalingStats.map((stat) => stat.toUpperCase());
+
+  return normalizedScalingStats.some((stat) => selectedStatCodes.has(stat))
+    ? []
+    : normalizedScalingStats;
 }
 
 export function getMatchingRequirementPowerIds(

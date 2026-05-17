@@ -65,6 +65,9 @@ import { getMatchingRequirementPowerIds } from "./utils/buildValidation";
 function App() {
   const [buildName, setBuildName] = useState("My Awesome Build");
   const [buildCheckDialogOpen, setBuildCheckDialogOpen] = useState(false);
+  const [buildScrollTargetSlot, setBuildScrollTargetSlot] = useState<number | null>(
+    null,
+  );
   const [buildCheckPowerFilter, setBuildCheckPowerFilter] = useState<{
     ids: Set<number>;
     label: string;
@@ -408,6 +411,7 @@ function App() {
     }
 
     placePower(power, displayFrameworkId, targetSlot);
+    setBuildScrollTargetSlot(targetSlot.slot);
     setBuildCheckPowerFilter(null);
     clearPowerTarget();
   }
@@ -438,6 +442,7 @@ function App() {
     }
 
     placeTravelPower(power, targetSlot);
+    setBuildScrollTargetSlot(targetSlot.slot);
     clearTravelPowerTarget();
   }
 
@@ -454,6 +459,7 @@ function App() {
     }
 
     placePowerVariant(power, targetSlot);
+    setBuildScrollTargetSlot(targetSlot.slot);
     setBuildCheckPowerFilter(null);
     clearPowerVariantTarget();
   }
@@ -483,6 +489,7 @@ function App() {
     }
 
     placePowerVariant(power, targetSlot);
+    setBuildScrollTargetSlot(targetSlot.slot);
     closePowerVariantDialog();
   }
 
@@ -495,6 +502,7 @@ function App() {
     }
 
     placeTravelPower(power, targetSlot);
+    setBuildScrollTargetSlot(targetSlot.slot);
     closeTravelPowerDialog();
   }
 
@@ -605,6 +613,7 @@ function App() {
 
     setLastPowerDialogFrameworkId(displayFrameworkId);
     placePower(power, displayFrameworkId, targetSlot);
+    setBuildScrollTargetSlot(targetSlot.slot);
     closePowerDialog();
   }
 
@@ -920,6 +929,7 @@ function App() {
           buildSlots={buildSlots}
           powers={powers}
           powerVariantSlots={powerVariantSlots}
+          selectedSuperStats={selectedSuperStats}
           onClose={() => setBuildCheckDialogOpen(false)}
           onSelectMissingRequirement={filterPowersForMissingRequirement}
         />
@@ -1014,6 +1024,7 @@ function App() {
               ? selectedPowerVariantTargetBuildSlot?.slot ?? null
               : null
           }
+          scrollTargetSlot={buildScrollTargetSlot}
           invalidPowerSlotNumbers={invalidPowerSlotNumbers}
           invalidPowerVariantSlotNumbers={invalidPowerVariantSlotNumbers}
           lockedPowerSlotNumbers={lockedPowerSlotNumbers}

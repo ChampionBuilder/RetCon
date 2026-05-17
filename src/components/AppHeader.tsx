@@ -122,13 +122,13 @@ export function AppHeader({
             Travel Powers
           </button>
           <button className="reset-button" onClick={onResetSpecializations}>
-            Specializations
+            Specs
           </button>
           <button className="reset-button" onClick={onResetPowers}>
             Powers
           </button>
           <button className="reset-button" onClick={onResetPowerVariants}>
-            Power Variants
+            PVD
           </button>
           <button className="reset-button" onClick={onResetDevices}>
             Devices

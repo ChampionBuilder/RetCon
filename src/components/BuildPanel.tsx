@@ -1,4 +1,4 @@
-import { useState, type MouseEvent } from "react";
+import { useEffect, useRef, useState, type MouseEvent } from "react";
 import type { Advantage } from "../types/advantages";
 import type { BuildSlot } from "../types/builds";
 import type { Archetype, ArchetypeGroup } from "../types/character";
@@ -36,6 +36,7 @@ type BuildPanelProps = {
   highlightedPowerTargetSlot: number | null;
   highlightedTravelPowerTargetSlot: number | null;
   highlightedPowerVariantTargetSlot: number | null;
+  scrollTargetSlot: number | null;
   invalidPowerSlotNumbers: Set<number>;
   invalidPowerVariantSlotNumbers: Set<number>;
   lockedPowerSlotNumbers: Set<number>;
@@ -90,12 +91,15 @@ export function BuildPanel({
   highlightedPowerTargetSlot,
   highlightedTravelPowerTargetSlot,
   highlightedPowerVariantTargetSlot,
+  scrollTargetSlot,
   invalidPowerSlotNumbers,
   invalidPowerVariantSlotNumbers,
   lockedPowerSlotNumbers,
 }: BuildPanelProps) {
   const advantageBudgetExceeded = totalAdvantagePoints > advantagePointBudget;
   const [closedSections, setClosedSections] = useState<string[]>([]);
+  const bodyRef = useRef<HTMLDivElement | null>(null);
+  const slotElementsRef = useRef(new Map<number, HTMLDivElement>());
 
   function getPowerAdvantages(power: Power) {
     return advantages.filter((advantage) =>
@@ -132,6 +136,31 @@ export function BuildPanel({
       </button>
     );
   }
+
+  useEffect(() => {
+    if (scrollTargetSlot === null) {
+      return;
+    }
+
+    const body = bodyRef.current;
+    const target = slotElementsRef.current.get(scrollTargetSlot);
+
+    if (!body || !target) {
+      return;
+    }
+
+    const bodyRect = body.getBoundingClientRect();
+    const targetRect = target.getBoundingClientRect();
+    const isHiddenAbove = targetRect.top < bodyRect.top;
+    const isHiddenBelow = targetRect.bottom > bodyRect.bottom;
+
+    if (isHiddenAbove || isHiddenBelow) {
+      target.scrollIntoView({
+        block: "nearest",
+        behavior: "smooth",
+      });
+    }
+  }, [scrollTargetSlot]);
 
   return (
     <section className="panel build-panel">
@@ -170,7 +199,7 @@ export function BuildPanel({
         </div>
       </div>
 
-      <div className="build-panel__body">
+      <div className="build-panel__body" ref={bodyRef}>
         <section className="power-tier build-section">
           {renderSectionToggle("powers", "Powers")}
           {!closedSections.includes("powers") ? (
@@ -184,7 +213,17 @@ export function BuildPanel({
                 const isPowerLocked = lockedPowerSlotNumbers.has(slot.slot);
 
                 return (
-                  <div className="build-entry" key={slot.slot}>
+                  <div
+                    className="build-entry"
+                    key={slot.slot}
+                    ref={(element) => {
+                      if (element) {
+                        slotElementsRef.current.set(slot.slot, element);
+                      } else {
+                        slotElementsRef.current.delete(slot.slot);
+                      }
+                    }}
+                  >
                     <div
                       className={
                         [
@@ -263,7 +302,17 @@ export function BuildPanel({
                   : [];
 
                 return (
-                  <div className="build-entry" key={slot.slot}>
+                  <div
+                    className="build-entry"
+                    key={slot.slot}
+                    ref={(element) => {
+                      if (element) {
+                        slotElementsRef.current.set(slot.slot, element);
+                      } else {
+                        slotElementsRef.current.delete(slot.slot);
+                      }
+                    }}
+                  >
                     <div
                       className={[
                         "build-entry__summary",
@@ -338,7 +387,17 @@ export function BuildPanel({
                 );
 
                 return (
-                  <div className="build-entry" key={slot.slot}>
+                  <div
+                    className="build-entry"
+                    key={slot.slot}
+                    ref={(element) => {
+                      if (element) {
+                        slotElementsRef.current.set(slot.slot, element);
+                      } else {
+                        slotElementsRef.current.delete(slot.slot);
+                      }
+                    }}
+                  >
                     <div
                       className={[
                         "build-entry__summary",

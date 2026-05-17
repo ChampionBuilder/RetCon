@@ -13,9 +13,9 @@ export type Power = {
   tooltip?: string | null;
   range_tags?: string[];
   tags?: string[];
+  scaling_stats?: string[];
   advantages: number[];
   icon_override?: string | null;
-  is_shared?: boolean;
   power_dependency?: number[];
   is_disabled?: boolean;
   is_legacy?: boolean;

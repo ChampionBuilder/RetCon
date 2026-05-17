@@ -1,5 +1,6 @@
 import type { Advantage } from "../types/advantages";
 import type { BuildSlot } from "../types/builds";
+import { getRequiredAdvantage } from "../utils/advantageDependencies";
 import {
   canAddAdvantage,
   getSlotAdvantagePoints,
@@ -26,21 +27,18 @@ function formatTooltip(tooltip: string | null) {
 function getMissingDependency(
   advantage: Advantage,
   selectedAdvantageIds: number[],
-  advantages: Advantage[],
+  slotAdvantages: Advantage[],
 ) {
+  const requiredAdvantage = getRequiredAdvantage(advantage, slotAdvantages);
+
   if (
-    advantage.dependency_advantage_id === null ||
-    selectedAdvantageIds.includes(advantage.dependency_advantage_id)
+    requiredAdvantage === null ||
+    selectedAdvantageIds.includes(requiredAdvantage.advantage_id)
   ) {
     return null;
   }
 
-  return (
-    advantages.find(
-      (candidate) =>
-        candidate.advantage_id === advantage.dependency_advantage_id,
-    ) ?? null
-  );
+  return requiredAdvantage;
 }
 
 function getLockedReason(
