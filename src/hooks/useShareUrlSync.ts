@@ -20,9 +20,7 @@ export function useShareUrlSync({
     }
 
     hasAttemptedUrlHydrationRef.current = true;
-    const serializedData = new URLSearchParams(window.location.search).get(
-      "build",
-    );
+    const serializedData = new URLSearchParams(window.location.search).get("b");
 
     if (serializedData) {
       window.setTimeout(() => {
