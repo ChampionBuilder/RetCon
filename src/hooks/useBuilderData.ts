@@ -13,6 +13,10 @@ function fetchJson<T>(url: string) {
   );
 }
 
+function dataUrl(fileName: string) {
+  return `${import.meta.env.BASE_URL}data/${fileName}`;
+}
+
 export function useBuilderData() {
   const [powers, setPowers] = useState<Power[]>([]);
   const [advantages, setAdvantages] = useState<Advantage[]>([]);
@@ -25,31 +29,33 @@ export function useBuilderData() {
     useState<SpecializationTreesData | null>(null);
 
   useEffect(() => {
-    fetchJson<Power[]>("/data/powers.json").then((data) => {
+    fetchJson<Power[]>(dataUrl("powers.json")).then((data) => {
       setPowers(data);
     });
   }, []);
 
   useEffect(() => {
-    fetchJson<Advantage[]>("/data/advantages.json").then((data) => {
+    fetchJson<Advantage[]>(dataUrl("advantages.json")).then((data) => {
       setAdvantages(data);
     });
   }, []);
 
   useEffect(() => {
-    fetchJson<ArchetypesData>("/data/archetypes.json").then((data) => {
+    fetchJson<ArchetypesData>(dataUrl("archetypes.json")).then((data) => {
       setArchetypesData(data);
     });
   }, []);
 
   useEffect(() => {
-    fetchJson<StatsTalentsData>("/data/stats-talents.json").then((data) => {
+    fetchJson<StatsTalentsData>(dataUrl("stats-talents.json")).then((data) => {
       setStatsTalentsData(data);
     });
   }, []);
 
   useEffect(() => {
-    fetchJson<SpecializationTreesData>("/data/specialization-trees.json").then(
+    fetchJson<SpecializationTreesData>(
+      dataUrl("specialization-trees.json"),
+    ).then(
       (data) => {
         setSpecializationTreesData(data);
       },

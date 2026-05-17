@@ -13,8 +13,11 @@ export function SpriteIcon({
   className,
   title,
 }: SpriteIconProps) {
-  const requestedSource = name.startsWith("/") ? name : `/icons/${name}.png`;
-  const genericSource = "/icons/Any_Generic.png";
+  const baseUrl = import.meta.env.BASE_URL;
+  const requestedSource = name.startsWith("/")
+    ? `${baseUrl}${name.slice(1)}`
+    : `${baseUrl}icons/${name}.png`;
+  const genericSource = `${baseUrl}icons/Any_Generic.png`;
   const imageClassName = className
     ? `sprite-icon sprite-icon--image ${className}`
     : "sprite-icon sprite-icon--image";
