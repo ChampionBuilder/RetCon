@@ -1,0 +1,22 @@
+export type Power = {
+  power_id: number;
+  name: string;
+  framework_id: string | null;
+  powerset_id: string | null;
+  tier: number | null;
+  POWER_TYPE?: string | null;
+  Power_Type?: string | null;
+  activation_time?: number | string | null;
+  max_duration?: number | string | null;
+  tick_rate?: number | string | null;
+  cooldown?: number | string | null;
+  tooltip?: string | null;
+  range_tags?: string[];
+  tags?: string[];
+  advantages: number[];
+  icon_override?: string | null;
+  is_shared?: boolean;
+  power_dependency?: number[];
+  is_disabled?: boolean;
+  is_legacy?: boolean;
+};

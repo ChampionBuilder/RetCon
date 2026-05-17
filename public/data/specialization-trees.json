@@ -1,0 +1,1552 @@
+{
+  "version": 37,
+  "specializationTrees": [
+    {
+      "id": 0,
+      "name": null,
+      "superStat": null,
+      "icon": null,
+      "tip": null,
+      "specializationList": []
+    },
+    {
+      "id": 1,
+      "name": "Strength",
+      "superStat": "Strength",
+      "icon": "Strength",
+      "tip": "Primary Super Stat Strength",
+      "specializationList": [
+        {
+          "id": 0,
+          "tier": 1,
+          "maxPoints": 3,
+          "name": "Swole",
+          "icon": "/spec-icons/superstat/strength/Specialization_Swole.png",
+          "tip": "Strength now also grants you +1/2/3 Maximum Health Points."
+        },
+        {
+          "id": 1,
+          "tier": 1,
+          "maxPoints": 3,
+          "name": "Physical Peak",
+          "icon": "/spec-icons/superstat/strength/Specialization_PhysicalPeak.png",
+          "tip": "Your Secondary Super Stats now grant a Cost Discount to your Melee powers."
+        },
+        {
+          "id": 2,
+          "tier": 1,
+          "maxPoints": 2,
+          "name": "Quick Recovery",
+          "icon": "/spec-icons/superstat/strength/Specialization_QuickRecovery.png",
+          "tip": "Your Recovery increases your Health Regeneration. This effect only triggers while in combat."
+        },
+        {
+          "id": 3,
+          "tier": 1,
+          "maxPoints": 2,
+          "name": "Aggression",
+          "icon": "/spec-icons/superstat/strength/Specialization_Aggression.png",
+          "tip": "Increases the amount of Offense you receive from items by 10/20%."
+        },
+        {
+          "id": 4,
+          "tier": 2,
+          "maxPoints": 2,
+          "name": "Balance",
+          "icon": "/spec-icons/superstat/strength/Specialization_Balance.png",
+          "tip": "Your Strength now grants Knock bonuses to your Ranged Knock powers, equal to 25% of the bonus it grants your Melee powers. However, this Specialization causes your Ego to no longer affect the Knock strength of your Ranged powers."
+        },
+        {
+          "id": 5,
+          "tier": 2,
+          "maxPoints": 2,
+          "name": "Brutality",
+          "icon": "/spec-icons/superstat/strength/Specialization_Brutality.png",
+          "tip": "Your Secondary Super Stats now increase your Critical Severity."
+        },
+        {
+          "id": 6,
+          "tier": 2,
+          "maxPoints": 3,
+          "name": "Juggernaut",
+          "icon": "/spec-icons/superstat/strength/Specialization_Juggernaut.png",
+          "tip": "Your Constitution now grants Defense."
+        },
+        {
+          "id": 7,
+          "tier": 2,
+          "maxPoints": 3,
+          "name": "Overpower",
+          "icon": "/spec-icons/superstat/strength/Specialization_Overpower.png",
+          "tip": "Your Strength now increases your Melee Critical Chance."
+        },
+        {
+          "id": 8,
+          "tier": 3,
+          "maxPoints": 1,
+          "name": "Strength Mastery",
+          "icon": "/spec-icons/superstat/strength/Specialization_StrengthMastery.png",
+          "tip": "You gain 20 Strength and 30 Offense."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Dexterity",
+      "superStat": "Dexterity",
+      "icon": "Dexterity",
+      "tip": "Primary Super Stat Dexterity",
+      "specializationList": [
+        {
+          "id": 0,
+          "tier": 1,
+          "maxPoints": 3,
+          "name": "Combat Training",
+          "icon": "/spec-icons/superstat/dexterity/Specialization_CombatTraining.png",
+          "tip": "Offense now grants Critical Strike Rating."
+        },
+        {
+          "id": 1,
+          "tier": 1,
+          "maxPoints": 3,
+          "name": "Gear Utilization",
+          "icon": "/spec-icons/superstat/dexterity/Specialization_GearUtilization.png",
+          "tip": "Increases the amount of Offense and Defense you receive from items by 6/12/18%."
+        },
+        {
+          "id": 2,
+          "tier": 1,
+          "maxPoints": 2,
+          "name": "Brush It Off",
+          "icon": "/spec-icons/superstat/dexterity/Specialization_BrushItOff.png",
+          "tip": "Increases your chance to Dodge AoE attacks by 5/10%."
+        },
+        {
+          "id": 3,
+          "tier": 1,
+          "maxPoints": 2,
+          "name": "Power Swell",
+          "icon": "/spec-icons/superstat/dexterity/Specialization_PowerSwell.png",
+          "tip": "Whenever you get a Critical Strike, the cost of your next Damage or Healing power activation is reduced by 5/10%."
+        },
+        {
+          "id": 4,
+          "tier": 2,
+          "maxPoints": 2,
+          "name": "Evasion",
+          "icon": "/spec-icons/superstat/dexterity/Specialization_Evasion.png",
+          "tip": "Your Secondary Super Stats now grant Avoidance Rating."
+        },
+        {
+          "id": 5,
+          "tier": 2,
+          "maxPoints": 3,
+          "name": "Deadly Aim",
+          "icon": "/spec-icons/superstat/dexterity/Specialization_DeadlyAim.png",
+          "tip": "Your Secondary Super Stats now increase your Critical Severity."
+        },
+        {
+          "id": 6,
+          "tier": 2,
+          "maxPoints": 2,
+          "name": "Expose Weakness",
+          "icon": "/spec-icons/superstat/dexterity/Specialization_ExposeWeakness.png",
+          "tip": "Whenever you Critically Strike a foe, you reduce their Resistance to your attacks by 1/2% for 10 seconds. This effect stacks up to 5 times."
+        },
+        {
+          "id": 7,
+          "tier": 2,
+          "maxPoints": 3,
+          "name": "Quick Reflexes",
+          "icon": "/spec-icons/superstat/dexterity/Specialization_QuickReflexes.png",
+          "tip": "Your Dexterity now grants Dodge Chance Rating."
+        },
+        {
+          "id": 8,
+          "tier": 3,
+          "maxPoints": 1,
+          "name": "Dexterity Mastery",
+          "icon": "/spec-icons/superstat/dexterity/Specialization_DexterityMastery.png",
+          "tip": "You gain 20 Dexterity and 10 Critical Severity and Avoidance Rating."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Constitution",
+      "superStat": "Constitution",
+      "icon": "Constitution",
+      "tip": "Primary Super Stat Constitution",
+      "specializationList": [
+        {
+          "id": 0,
+          "tier": 1,
+          "maxPoints": 2,
+          "name": "Unyielding",
+          "icon": "/spec-icons/superstat/constitution/Specialization_Unyielding.png",
+          "tip": "Your Constitution now increases your Hold Resistance."
+        },
+        {
+          "id": 1,
+          "tier": 1,
+          "maxPoints": 3,
+          "name": "Fuel My Fire",
+          "icon": "/spec-icons/superstat/constitution/Specialization_FuelMyFire.png",
+          "tip": "Taking damage grants you 2/4/6% of your Max Energy. This effect can only occur once per second."
+        },
+        {
+          "id": 2,
+          "tier": 1,
+          "maxPoints": 3,
+          "name": "Tough",
+          "icon": "/spec-icons/superstat/constitution/Specialization_Tough.png",
+          "tip": "Your Secondary Super Stats now provide an additional +0.25/0.50/0.75 Maximum Health Points."
+        },
+        {
+          "id": 3,
+          "tier": 1,
+          "maxPoints": 2,
+          "name": "Resilient",
+          "icon": "/spec-icons/superstat/constitution/Specialization_Resilient.png",
+          "tip": "Your Constitution now increases your Knock Resistance."
+        },
+        {
+          "id": 4,
+          "tier": 2,
+          "maxPoints": 3,
+          "name": "Deflection",
+          "icon": "/spec-icons/superstat/constitution/Specialization_Deflection.png",
+          "tip": "Your Dexterity now grants Dodge Chance Rating."
+        },
+        {
+          "id": 5,
+          "tier": 2,
+          "maxPoints": 3,
+          "name": "Quick Healing",
+          "icon": "/spec-icons/superstat/constitution/Specialization_QuickHealing.png",
+          "tip": "Your Secondary Super Stats increase your Health Regeneration by +Health Points every 3 sec. This effect only triggers while in combat."
+        },
+        {
+          "id": 6,
+          "tier": 2,
+          "maxPoints": 2,
+          "name": "Adrenaline Rush",
+          "icon": "/spec-icons/superstat/constitution/Specialization_AdrenalineRush.png",
+          "tip": "Whenever one of your attacks Critically Hits, you are healed for 1/2% of your Max Health."
+        },
+        {
+          "id": 7,
+          "tier": 2,
+          "maxPoints": 2,
+          "name": "Armored",
+          "icon": "/spec-icons/superstat/constitution/Specialization_Armored.png",
+          "tip": "Increases the amount of Defense you receive from items by 10/20%."
+        },
+        {
+          "id": 8,
+          "tier": 3,
+          "maxPoints": 1,
+          "name": "Constitution Mastery",
+          "icon": "/spec-icons/superstat/constitution/Specialization_ConstitutionMastery.png",
+          "tip": "You gain 20 Constitution and Defense."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Intelligence",
+      "superStat": "Intelligence",
+      "icon": "Intelligence",
+      "tip": "Primary Super Stat Intelligence",
+      "specializationList": [
+        {
+          "id": 0,
+          "tier": 1,
+          "maxPoints": 2,
+          "name": "Preparation",
+          "icon": "/spec-icons/superstat/intelligence/Specialization_Preparation.png",
+          "tip": "Your Secondary Super Stats now grant +Defense."
+        },
+        {
+          "id": 1,
+          "tier": 1,
+          "maxPoints": 2,
+          "name": "Revitalize",
+          "icon": "/spec-icons/superstat/intelligence/Specialization_Revitalize.png",
+          "tip": "Your Energy Builder reduces the remaining Recharge Time of all your abilities by 3/6%. This effect can only occur once every 6 sec."
+        },
+        {
+          "id": 2,
+          "tier": 1,
+          "maxPoints": 3,
+          "name": "Tactician",
+          "icon": "/spec-icons/superstat/intelligence/Specialization_Tactician.png",
+          "tip": "Your Secondary Super Stats now grant +Offense."
+        },
+        {
+          "id": 3,
+          "tier": 1,
+          "maxPoints": 3,
+          "name": "Battle of Wits",
+          "icon": "/spec-icons/superstat/intelligence/Specialization_BattleOfWits.png",
+          "tip": "Your Intelligence now grants a +% bonus to Hold Strength."
+        },
+        {
+          "id": 4,
+          "tier": 2,
+          "maxPoints": 3,
+          "name": "Enlightened",
+          "icon": "/spec-icons/superstat/intelligence/Specialization_Enlightened.png",
+          "tip": "Your Cooldown Reduction from items now grants +% Bonus Healing."
+        },
+        {
+          "id": 5,
+          "tier": 2,
+          "maxPoints": 3,
+          "name": "Detect Vulnerability",
+          "icon": "/spec-icons/superstat/intelligence/Specialization_DetectVulnerability.png",
+          "tip": "Your damaging attacks now ignore -% damage resistance. This amount scales with your Intelligence."
+        },
+        {
+          "id": 6,
+          "tier": 2,
+          "maxPoints": 2,
+          "name": "Tinkering",
+          "icon": "/spec-icons/superstat/intelligence/Specialization_Tinkering.png",
+          "tip": "Increases the amount of Offense and Defense you receive from items by 6/12%."
+        },
+        {
+          "id": 7,
+          "tier": 2,
+          "maxPoints": 2,
+          "name": "Expertise",
+          "icon": "/spec-icons/superstat/intelligence/Specialization_Expertise.png",
+          "tip": "Your Secondary Super Stats grant 10/20% more of their default stated bonuses. This does not affect the bonus Damage, Healing, or Threat modifiers granted from your Secondary Super Stats."
+        },
+        {
+          "id": 8,
+          "tier": 3,
+          "maxPoints": 1,
+          "name": "Intelligence Mastery",
+          "icon": "/spec-icons/superstat/intelligence/Specialization_IntelligenceMastery.png",
+          "tip": "You gain 20 Intelligence and 30 Maximum Energy."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Ego",
+      "superStat": "Ego",
+      "icon": "Ego",
+      "tip": "Primary Super Stat Ego",
+      "specializationList": [
+        {
+          "id": 0,
+          "tier": 1,
+          "maxPoints": 3,
+          "name": "Mental Endurance",
+          "icon": "/spec-icons/superstat/ego/Specialization_MentalEndurance.png",
+          "tip": "Increases the amount of Maximum Energy your Recovery grants by 33/67/100%."
+        },
+        {
+          "id": 1,
+          "tier": 1,
+          "maxPoints": 2,
+          "name": "Force of Will",
+          "icon": "/spec-icons/superstat/ego/Specialization_ForceOfWill.png",
+          "tip": "Your Secondary Super Stats now grant +Defense."
+        },
+        {
+          "id": 2,
+          "tier": 1,
+          "maxPoints": 3,
+          "name": "Insight",
+          "icon": "/spec-icons/superstat/ego/Specialization_Insight.png",
+          "tip": "Your Ego now grants a Cost Discount to your Ranged powers."
+        },
+        {
+          "id": 3,
+          "tier": 1,
+          "maxPoints": 2,
+          "name": "Aggression",
+          "icon": "/spec-icons/superstat/ego/Specialization_Aggression.png",
+          "tip": "Increases the amount of Offense you receive from items by 10/20%."
+        },
+        {
+          "id": 4,
+          "tier": 2,
+          "maxPoints": 3,
+          "name": "Follow Through",
+          "icon": "/spec-icons/superstat/ego/Specialization_FollowThrough.png",
+          "tip": "Your Ego now increases your Critical Severity."
+        },
+        {
+          "id": 5,
+          "tier": 2,
+          "maxPoints": 2,
+          "name": "Exploit Opening",
+          "icon": "/spec-icons/superstat/ego/Specialization_ExploitOpening.png",
+          "tip": "Whenever you Critically Strike a foe, your next non-Critical Strike deals additional damage equal to 15/30% of your Critical Severity."
+        },
+        {
+          "id": 6,
+          "tier": 2,
+          "maxPoints": 3,
+          "name": "Sixth Sense",
+          "icon": "/spec-icons/superstat/ego/Specialization_SixthSense.png",
+          "tip": "Your Secondary Super Stats now increase your Critical Chance."
+        },
+        {
+          "id": 7,
+          "tier": 2,
+          "maxPoints": 2,
+          "name": "Mind Over Matter",
+          "icon": "/spec-icons/superstat/ego/Specialization_MindOverMatter.png",
+          "tip": "Your Ego now grants Knock bonuses to your Melee Knock powers, equal to 25/50% the bonus it grants your Ranged powers. However, this Specialization causes your Strength to no longer affect the Kock strength of your Melee powers."
+        },
+        {
+          "id": 8,
+          "tier": 3,
+          "maxPoints": 1,
+          "name": "Ego Mastery",
+          "icon": "/spec-icons/superstat/ego/Specialization_EgoMastery.png",
+          "tip": "Increases your Secondary Super Stats by 20."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Presence",
+      "superStat": "Presence",
+      "icon": "Presence",
+      "tip": "Primary Super Stat Presence",
+      "specializationList": [
+        {
+          "id": 0,
+          "tier": 1,
+          "maxPoints": 3,
+          "name": "Repurpose",
+          "icon": "/spec-icons/superstat/presence/Specialization_Repurpose.png",
+          "tip": "Your Offense from items now grants +% Bonus Healing."
+        },
+        {
+          "id": 1,
+          "tier": 1,
+          "maxPoints": 2,
+          "name": "Selfless Ally",
+          "icon": "/spec-icons/superstat/presence/Specialization_SelflessAlly.png",
+          "tip": "Healing a friendly target heals you for 5/10% of that amount."
+        },
+        {
+          "id": 2,
+          "tier": 1,
+          "maxPoints": 2,
+          "name": "Dominion",
+          "icon": "/spec-icons/superstat/presence/Specialization_Dominion.png",
+          "tip": "Increases the amount of Hold Strength your Presence grants by 25/50%."
+        },
+        {
+          "id": 3,
+          "tier": 1,
+          "maxPoints": 3,
+          "name": "Grandeur",
+          "icon": "/spec-icons/superstat/presence/Specialization_Grandeur.png",
+          "tip": "You gain 1/2/3 Offense for every 10 Presence you have."
+        },
+        {
+          "id": 4,
+          "tier": 2,
+          "maxPoints": 3,
+          "name": "Brilliance",
+          "icon": "/spec-icons/superstat/presence/Specialization_Brilliance.png",
+          "tip": "Your Critical Heals now increase the healing you do to that target by 1/2/3% for 10 sec. This effect stacks up to 3 times."
+        },
+        {
+          "id": 5,
+          "tier": 2,
+          "maxPoints": 3,
+          "name": "Moment of Glory",
+          "icon": "/spec-icons/superstat/presence/Specialization_MomentOfGlory.png",
+          "tip": "Your Secondary Super Stats now increase your Critical Chance."
+        },
+        {
+          "id": 6,
+          "tier": 2,
+          "maxPoints": 2,
+          "name": "Force of Will",
+          "icon": "/spec-icons/superstat/presence/Specialization_ForceOfWill.png",
+          "tip": "Your Secondary Super Stats now grant Defense."
+        },
+        {
+          "id": 7,
+          "tier": 2,
+          "maxPoints": 2,
+          "name": "Vulnerability",
+          "icon": "/spec-icons/superstat/presence/Specialization_Vulnerability.png",
+          "tip": "Your Paralyze and Sleep effects reduce the damage resistance of affected targets by 5/10% for 5 sec."
+        },
+        {
+          "id": 8,
+          "tier": 3,
+          "maxPoints": 1,
+          "name": "Presence Mastery",
+          "icon": "/spec-icons/superstat/presence/Specialization_PresenceMastery.png",
+          "tip": "Your direct Heals also Shield your target for 10% of the amount Healed, and your direct Shields also grant the target 10% additional Healing received. Both of these effects last 6 seconds."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Recovery",
+      "superStat": "Recovery",
+      "icon": "Recovery",
+      "tip": "Primary Super Stat Recovery",
+      "specializationList": [
+        {
+          "id": 0,
+          "tier": 1,
+          "maxPoints": 3,
+          "name": "Gear Utilization",
+          "icon": "/spec-icons/superstat/recovery/Specialization_GearUtilization.png",
+          "tip": "Increases the amount of Offense and Defense you receive from items by 6/12/18%."
+        },
+        {
+          "id": 1,
+          "tier": 1,
+          "maxPoints": 2,
+          "name": "Withstand",
+          "icon": "/spec-icons/superstat/recovery/Specialization_Withstand.png",
+          "tip": "You gain 1/2 Crowd Control Resistance for every 20 points you have in your Secondary Super Stats."
+        },
+        {
+          "id": 2,
+          "tier": 1,
+          "maxPoints": 3,
+          "name": "Rapid Recovery",
+          "icon": "/spec-icons/superstat/recovery/Specialization_RapidRecovery.png",
+          "tip": "Your Recovery increases your Health Regeneration by +Health Points. This effect only triggers while in combat."
+        },
+        {
+          "id": 3,
+          "tier": 1,
+          "maxPoints": 2,
+          "name": "Staying Power",
+          "icon": "/spec-icons/superstat/recovery/Specialization_StayingPower.png",
+          "tip": "Increases the amount of Maximum Energy your Recovery grants by 50/100%."
+        },
+        {
+          "id": 4,
+          "tier": 2,
+          "maxPoints": 3,
+          "name": "Super Charged",
+          "icon": "/spec-icons/superstat/recovery/Specialization_SuperCharged.png",
+          "tip": "When your Energy level is above 90%, your chance to Critically Strike is increased 5/10/15%."
+        },
+        {
+          "id": 5,
+          "tier": 2,
+          "maxPoints": 3,
+          "name": "Efficient",
+          "icon": "/spec-icons/superstat/recovery/Specialization_Efficient.png",
+          "tip": "Increases the amount of Energy gained from Energy Unlock powers by 5/10/15%."
+        },
+        {
+          "id": 6,
+          "tier": 2,
+          "maxPoints": 2,
+          "name": "Well Rounded",
+          "icon": "/spec-icons/superstat/recovery/Specialization_WellRounded.png",
+          "tip": "Your non-Super Stats increase your Max Health by 1/2 and Max Energy by 0.1/0.2."
+        },
+        {
+          "id": 7,
+          "tier": 2,
+          "maxPoints": 2,
+          "name": "Second Wind",
+          "icon": "/spec-icons/superstat/recovery/Specialization_SecondWind.png",
+          "tip": "Your Secondary Super Stats increase your Power Recharge Speed."
+        },
+        {
+          "id": 8,
+          "tier": 3,
+          "maxPoints": 1,
+          "name": "Recovery Mastery",
+          "icon": "/spec-icons/superstat/recovery/Specialization_RecoveryMastery.png",
+          "tip": "Increases all of your Super Stats by 10."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Endurance",
+      "superStat": "Endurance",
+      "icon": "Endurance",
+      "tip": "Primary Super Stat Endurance",
+      "specializationList": [
+        {
+          "id": 0,
+          "tier": 1,
+          "maxPoints": 3,
+          "name": "Readiness",
+          "icon": "/spec-icons/superstat/endurance/Specialization_Readiness.png",
+          "tip": "Your Endurance increases your Equilibrium."
+        },
+        {
+          "id": 1,
+          "tier": 1,
+          "maxPoints": 2,
+          "name": "Withstand",
+          "icon": "/spec-icons/superstat/endurance/Specialization_Withstand.png",
+          "tip": "Your Secondary Super Stats increase your Crowd Control Resistance."
+        },
+        {
+          "id": 2,
+          "tier": 1,
+          "maxPoints": 3,
+          "name": "Gear Utilization",
+          "icon": "/spec-icons/superstat/endurance/Specialization_GearUtilization.png",
+          "tip": "Increases the amount of Offense and Defense you receive from items by 6/12/18%."
+        },
+        {
+          "id": 3,
+          "tier": 1,
+          "maxPoints": 2,
+          "name": "Kickback",
+          "icon": "/spec-icons/superstat/endurance/Specialization_Kickback.png",
+          "tip": "Your Energy Builder causes your next non-Energy Builder attack to grant 5/10% of your maximum Energy."
+        },
+        {
+          "id": 4,
+          "tier": 2,
+          "maxPoints": 2,
+          "name": "Quick Recovery",
+          "icon": "/spec-icons/superstat/endurance/Specialization_QuickRecovery.png",
+          "tip": "Your Recovery increases your Health Regeneration by +0.5 Health Points. This effect only triggers while in combat."
+        },
+        {
+          "id": 5,
+          "tier": 2,
+          "maxPoints": 3,
+          "name": "Outburst",
+          "icon": "/spec-icons/superstat/endurance/Specialization_Outburst.png",
+          "tip": "When your Energy is above 90%, the Damage on your attacks is increased by 5/10/15% base damage.<br /><br />The Healing portions of your powers are increased by 5/10/15%.<br /><br />Your power costs are increased by 5/10/15%."
+        },
+        {
+          "id": 6,
+          "tier": 2,
+          "maxPoints": 3,
+          "name": "Power Overwhelming",
+          "icon": "/spec-icons/superstat/endurance/Specialization_PowerOverwhelming.png",
+          "tip": "Your Secondary Super Stats now grant Offense."
+        },
+        {
+          "id": 7,
+          "tier": 2,
+          "maxPoints": 2,
+          "name": "Hardened",
+          "icon": "/spec-icons/superstat/endurance/Specialization_Hardened.png",
+          "tip": "Your Endurance now provides an additional +2/4 Maximum Health Points."
+        },
+        {
+          "id": 8,
+          "tier": 3,
+          "maxPoints": 1,
+          "name": "Endurance Mastery",
+          "icon": "/spec-icons/superstat/endurance/Specialization_EnduranceMastery.png",
+          "tip": "You gain 3% of your Maximum Energy when certain criteria are met, dependent on your Role:<br /><br />Tank Role: Whenever you take damage. This effect can only occur once every 3 seconds.<br /><br />Melee Damage or Ranged Roles: Whenever you deal damage. This effect can only occur once every 3 seconds.<br /><br />Support Role: Whenever you Heal a target. This effect can only occur once every 3 seconds.<br /><br />Hybrid Role: Every 5 seconds you are in combat."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Protector",
+      "superStat": null,
+      "icon": "/spec-icons/role/protector/Specialization_ProtectorMastery.png",
+      "tip": "Pure Tank",
+      "specializationList": [
+        {
+          "id": 0,
+          "tier": 1,
+          "maxPoints": 3,
+          "name": "Fortified Gear",
+          "icon": "/spec-icons/role/protector/Specialization_FortifiedGear.png",
+          "tip": "Increases the amount of Defense you receive from items by 10/20/30%."
+        },
+        {
+          "id": 1,
+          "tier": 1,
+          "maxPoints": 3,
+          "name": "Beacon of Hope",
+          "icon": "/spec-icons/role/protector/Specialization_BeaconOfHope.png",
+          "tip": "Increase healing received from others by 3/6/9%."
+        },
+        {
+          "id": 2,
+          "tier": 1,
+          "maxPoints": 2,
+          "name": "Unrelenting",
+          "icon": "/spec-icons/role/protector/Specialization_Unrelenting.png",
+          "tip": "Snare will no longer reduce your movement speed, and your Run Speed is increased by 10/20%."
+        },
+        {
+          "id": 3,
+          "tier": 1,
+          "maxPoints": 2,
+          "name": "Bulwark",
+          "icon": "/spec-icons/role/protector/Specialization_Bulwark.png",
+          "tip": "Increases your Maximum Health by 5/10% when not in the Hybrid Role.<br /><br />When in the Hybrid Role, this Specialization instead causes your Super Stats to increase your Threat Generation."
+        },
+        {
+          "id": 4,
+          "tier": 2,
+          "maxPoints": 2,
+          "name": "Debilitating Challenge",
+          "icon": "/spec-icons/role/protector/Specialization_DebilitatingChallenge.png",
+          "tip": "Your Challenge! now reduces the damage resistance of your primary target by 2/4% for 12 sec."
+        },
+        {
+          "id": 5,
+          "tier": 2,
+          "maxPoints": 2,
+          "name": "Exhausting Strikes",
+          "icon": "/spec-icons/role/protector/Specialization_ExhaustingStrikes.png",
+          "tip": "Your Energy Builder attacks now reduce your primary target\\'s damage dealt by 5/10% for 10 sec."
+        },
+        {
+          "id": 6,
+          "tier": 2,
+          "maxPoints": 3,
+          "name": "Defensive Expertise",
+          "icon": "/spec-icons/role/protector/Specialization_DefensiveExpertise.png",
+          "tip": "Your Active Defense powers benefit from an additional 7/14/21% Power Recharge Reduction."
+        },
+        {
+          "id": 7,
+          "tier": 2,
+          "maxPoints": 3,
+          "name": "Resolute",
+          "icon": "/spec-icons/role/protector/Specialization_Resolute.png",
+          "tip": "Whenever you are Knocked or Held, you regain 2/4/6% of your Maximum Health over the next 5 seconds."
+        },
+        {
+          "id": 8,
+          "tier": 3,
+          "maxPoints": 1,
+          "name": "Protector Mastery",
+          "icon": "/spec-icons/role/protector/Specialization_ProtectorMastery.png",
+          "tip": "Whenever a damaging attack brings you below 30% Health, the Recharge Time on your Active Defense powers is reset. This effect can only occur once every 60 seconds."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Brawler",
+      "superStat": null,
+      "icon": "/spec-icons/role/brawler/Specialization_BrawlerMastery.png",
+      "tip": "Pure Melee",
+      "specializationList": [
+        {
+          "id": 0,
+          "tier": 1,
+          "maxPoints": 3,
+          "name": "The Glory of Battle",
+          "icon": "/spec-icons/role/brawler/Specialization_TheGloryOfBattle.png",
+          "tip": "Your AoE attacks grant a stack of Glory for each target they hit. When you reach 30 stacks of Glory, the stack is consumed and becomes Glorious Battle, which grants you 16/33/49 Offense and Critical Strike Rating. Glorious Battle lasts for 15 seconds, and prevents you from gaining additional stacks of Glory for the duration."
+        },
+        {
+          "id": 1,
+          "tier": 1,
+          "maxPoints": 3,
+          "name": "No Escape",
+          "icon": "/spec-icons/role/brawler/Specialization_NoEscape.png",
+          "tip": "Your Energy Builder has a 33/67/100% chance to Daze your target for 4s if they are within 10 feet of you. Dazed characters move 20% slower."
+        },
+        {
+          "id": 2,
+          "tier": 1,
+          "maxPoints": 2,
+          "name": "Penetrating Strikes",
+          "icon": "/spec-icons/role/brawler/Specialization_PenetratingStrikes.png",
+          "tip": "When getting a Critical Hit with a direct melee attack, applies Penetrating Strikes for 5 sec, causing attacks to ignore 5/10% of the target\\'s Resistances."
+        },
+        {
+          "id": 3,
+          "tier": 1,
+          "maxPoints": 2,
+          "name": "Ruthless",
+          "icon": "/spec-icons/role/brawler/Specialization_Ruthless.png",
+          "tip": "Increases your Critical Severity by 5/10%."
+        },
+        {
+          "id": 4,
+          "tier": 2,
+          "maxPoints": 3,
+          "name": "Finishing Blow",
+          "icon": "/spec-icons/role/brawler/Specialization_FinishingBlow.png",
+          "tip": "Your Single Target attacks now do an additional 3.3/6.7/10% base damage to targets under 35% health."
+        },
+        {
+          "id": 5,
+          "tier": 2,
+          "maxPoints": 2,
+          "name": "Setup",
+          "icon": "/spec-icons/role/brawler/Specialization_Setup.png",
+          "tip": "Your Melee Combo attacks have an increasing chance to cause your next non-Combo Melee attack to deal an additional 10/20% base damage."
+        },
+        {
+          "id": 6,
+          "tier": 2,
+          "maxPoints": 3,
+          "name": "Flanking",
+          "icon": "/spec-icons/role/brawler/Specialization_Flanking.png",
+          "tip": "Increases the Melee Damage you deal from behind your target by 3.3/6.7/10%."
+        },
+        {
+          "id": 7,
+          "tier": 2,
+          "maxPoints": 2,
+          "name": "Offensive Expertise",
+          "icon": "/spec-icons/role/brawler/Specialization_OffensiveExpertise.png",
+          "tip": "Your Active Offense powers benefit from an additional 7/14% Power Recharge Reduction."
+        },
+        {
+          "id": 8,
+          "tier": 3,
+          "maxPoints": 1,
+          "name": "Brawler Mastery",
+          "icon": "/spec-icons/role/brawler/Specialization_BrawlerMastery.png",
+          "tip": "Whenever you Lunge, the base damage of your next Melee attack is increased by 10%. This effect can only occur once every 10 sec."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Avenger",
+      "superStat": null,
+      "icon": "/spec-icons/role/avenger/Specialization_AvengerMastery.png",
+      "tip": "Pure Range",
+      "specializationList": [
+        {
+          "id": 0,
+          "tier": 1,
+          "maxPoints": 2,
+          "name": "Ruthless",
+          "icon": "/spec-icons/role/avenger/Specialization_Ruthless.png",
+          "tip": "Increases your Critical Severity by 5/10%."
+        },
+        {
+          "id": 1,
+          "tier": 1,
+          "maxPoints": 3,
+          "name": "Can't Touch This",
+          "icon": "/spec-icons/role/avenger/Specialization_CantTouchThis.png",
+          "tip": "When your Energy Builder deals damage it has a 33/67/100% chance to Daze your target for 4s if they are more than 10 feet away from you. Dazed characters move 20% slower."
+        },
+        {
+          "id": 2,
+          "tier": 1,
+          "maxPoints": 2,
+          "name": "Anguish",
+          "icon": "/spec-icons/role/avenger/Specialization_Anguish.png",
+          "tip": "Whenever you Critically Strike with a Ranged attack, you deal additional Penetrating Damage every 2 sec for 6 sec. (Penetrating Damage is only resisted by Resistance to All damage, and ignores half of that resistance. Penetrating Damage also ignores half of the absorption provided by Shields.)"
+        },
+        {
+          "id": 3,
+          "tier": 1,
+          "maxPoints": 3,
+          "name": "Round 'Em Up",
+          "icon": "/spec-icons/role/avenger/Specialization_RoundEmUp.png",
+          "tip": "Your AoE attacks cause your targets to take 1/2/3% more damage from further AoE attacks you make. Stacks up to 3 times and lasts 10s."
+        },
+        {
+          "id": 4,
+          "tier": 2,
+          "maxPoints": 2,
+          "name": "Surprise Attack",
+          "icon": "/spec-icons/role/avenger/Specialization_SurpriseAttack.png",
+          "tip": "Striking a target above 90% Health with a single target attack now grants you an additional 5/10% Critical Chance for 4 sec."
+        },
+        {
+          "id": 5,
+          "tier": 2,
+          "maxPoints": 3,
+          "name": "Relentless Assault",
+          "icon": "/spec-icons/role/avenger/Specialization_RelentlessAssault.png",
+          "tip": "Your Maintained attacks increase your Offense by 10/20/30 for 8 sec. Stacks up to 5 times."
+        },
+        {
+          "id": 6,
+          "tier": 2,
+          "maxPoints": 2,
+          "name": "Offensive Expertise",
+          "icon": "/spec-icons/role/avenger/Specialization_OffensiveExpertise.png",
+          "tip": "Your Active Offense powers benefit from an additional 7/14% Power Recharge Reduction."
+        },
+        {
+          "id": 7,
+          "tier": 2,
+          "maxPoints": 3,
+          "name": "Preemptive Strike",
+          "icon": "/spec-icons/role/avenger/Specialization_PreemptiveStrike.png",
+          "tip": "Your Ranged Blast attacks cause your next non-Blast Ranged attack to deal an additional 5/10/15% base damage."
+        },
+        {
+          "id": 8,
+          "tier": 3,
+          "maxPoints": 1,
+          "name": "Avenger Mastery",
+          "icon": "/spec-icons/role/avenger/Specialization_AvengerMastery.png",
+          "tip": "Whenever you get 2 Critical attacks within 5 sec, your next Blast power has its Charge time reduced by 50%."
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Sentinel",
+      "superStat": null,
+      "icon": "/spec-icons/role/sentinel/Specialization_SentinelMastery.png",
+      "tip": "Pure Support",
+      "specializationList": [
+        {
+          "id": 0,
+          "tier": 1,
+          "maxPoints": 2,
+          "name": "Torment",
+          "icon": "/spec-icons/role/sentinel/Specialization_Torment.png",
+          "tip": "Increases the duration of your Hold powers by 10/20%."
+        },
+        {
+          "id": 1,
+          "tier": 1,
+          "maxPoints": 2,
+          "name": "Eternal Spring",
+          "icon": "/spec-icons/role/sentinel/Specialization_EternalSpring.png",
+          "tip": "Your Critical Heals heal for an additional 10/20% over 6 seconds."
+        },
+        {
+          "id": 2,
+          "tier": 1,
+          "maxPoints": 3,
+          "name": "Caregiver",
+          "icon": "/spec-icons/role/sentinel/Specialization_Caregiver.png",
+          "tip": "The strength of your Heals and Shields on other players is increased by 4/8/12%."
+        },
+        {
+          "id": 3,
+          "tier": 1,
+          "maxPoints": 3,
+          "name": "Sentinel Aura",
+          "icon": "/spec-icons/role/sentinel/Specialization_SentinelAura.png",
+          "tip": "You and your Teammates regain Health every 3 sec. This number is based on your level, and is affected by your Bonus Healing.<br /><br />This effect has a range of 100ft and a target cap of 20."
+        },
+        {
+          "id": 4,
+          "tier": 2,
+          "maxPoints": 3,
+          "name": "Moment of Need",
+          "icon": "/spec-icons/role/sentinel/Specialization_MomentOfNeed.png",
+          "tip": "Increase your chance to get a Critical Heal effect by 3/6/9%."
+        },
+        {
+          "id": 5,
+          "tier": 2,
+          "maxPoints": 3,
+          "name": "Rejuvenated",
+          "icon": "/spec-icons/role/sentinel/Specialization_Rejuvenated.png",
+          "tip": "Your Active Heal Over Time ticks have a 33/67/100% chance to grant you Energy. This amount scales with your Recovery and can occur once every 2 sec."
+        },
+        {
+          "id": 6,
+          "tier": 2,
+          "maxPoints": 2,
+          "name": "Wither",
+          "icon": "/spec-icons/role/sentinel/Specialization_Wither.png",
+          "tip": "Your Paralyze, Stun and Sleep effects reduce the damage resistance of affected targets by 5/10%. This effect lasts up to 8 sec depending on the Rank of the target."
+        },
+        {
+          "id": 7,
+          "tier": 2,
+          "maxPoints": 2,
+          "name": "Genesis",
+          "icon": "/spec-icons/role/sentinel/Specialization_Genesis.png",
+          "tip": "Reduces the Energy Cost of your Heals, Shields, Confuses, Incapacitates, Paralyzes, and Placates by 10/20%."
+        },
+        {
+          "id": 8,
+          "tier": 3,
+          "maxPoints": 1,
+          "name": "Sentinel Mastery",
+          "icon": "/spec-icons/role/sentinel/Specialization_SentinelMastery.png",
+          "tip": "Your Paralyze, Incapacitate, Stun, and Sleep effects cause allies who strike the affected target to be healed for 2% of their maximum health. A target can only be affected by this heal once every second. The duration of this effect lasts up to 8s, but is dependent on the rank of your target."
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Commander",
+      "superStat": null,
+      "icon": "/spec-icons/role/commander/Specialization_CommanderMastery.png",
+      "tip": "Pure Pet",
+      "specializationList": [
+        {
+          "id": 0,
+          "tier": 1,
+          "maxPoints": 2,
+          "name": "Evasive Action",
+          "icon": "/spec-icons/role/commander/Specialization_EvasiveAction.png",
+          "tip": "Grants your pet an additional +25/50% resistance to all damage against AoE attacks."
+        },
+        {
+          "id": 1,
+          "tier": 1,
+          "maxPoints": 2,
+          "name": "Rapid Response",
+          "icon": "/spec-icons/role/commander/Specialization_RapidResponse.png",
+          "tip": "Decrease the summon time of your pet powers by 0.5/1 seconds."
+        },
+        {
+          "id": 2,
+          "tier": 1,
+          "maxPoints": 2,
+          "name": "Create an Opening",
+          "icon": "/spec-icons/role/commander/Specialization_CreateAnOpening.png",
+          "tip": "Whenever you Critically Strike, your pegs Critical Chance is increased by 10/20% for 5 sec."
+        },
+        {
+          "id": 3,
+          "tier": 1,
+          "maxPoints": 3,
+          "name": "Multitasker",
+          "icon": "/spec-icons/role/commander/Specialization_Multitasker.png",
+          "tip": "Reduces the Energy Penalty caused by having Pets out by 17/33/50%."
+        },
+        {
+          "id": 4,
+          "tier": 2,
+          "maxPoints": 2,
+          "name": "Well Trained",
+          "icon": "/spec-icons/role/commander/Specialization_WellTrained.png",
+          "tip": "The Recharge time of all your Pet\\'s abilities is reduced by 10/20%."
+        },
+        {
+          "id": 5,
+          "tier": 2,
+          "maxPoints": 3,
+          "name": "Durable",
+          "icon": "/spec-icons/role/commander/Specialization_Durable.png",
+          "tip": "Your Secondary Stats now further increase the pet health and the amount of healing pets receive."
+        },
+        {
+          "id": 6,
+          "tier": 2,
+          "maxPoints": 3,
+          "name": "Relief",
+          "icon": "/spec-icons/role/commander/Specialization_Relief.png",
+          "tip": "Your Secondary Stats now further increase the healing done by your pets."
+        },
+        {
+          "id": 7,
+          "tier": 2,
+          "maxPoints": 3,
+          "name": "Savage",
+          "icon": "/spec-icons/role/commander/Specialization_Savage.png",
+          "tip": "Your Secondary Stats now further increase the damage dealt by your pets."
+        },
+        {
+          "id": 8,
+          "tier": 3,
+          "maxPoints": 1,
+          "name": "Commander Mastery",
+          "icon": "/spec-icons/role/commander/Specialization_CommanderMastery.png",
+          "tip": "Increases the Base Damage of your pets by 10%."
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Warden",
+      "superStat": null,
+      "icon": "/spec-icons/role/warden/Specialization_WardenMastery.png",
+      "tip": "Melee / Tank",
+      "specializationList": [
+        {
+          "id": 0,
+          "tier": 1,
+          "maxPoints": 3,
+          "name": "Fortified Gear",
+          "icon": "/spec-icons/role/warden/Specialization_FortifiedGear.png",
+          "tip": "Increases the amount of Defense you receive from items by 10/20/30%."
+        },
+        {
+          "id": 1,
+          "tier": 1,
+          "maxPoints": 3,
+          "name": "Slaughter",
+          "icon": "/spec-icons/role/warden/Specialization_Slaughter.png",
+          "tip": "Increases the Critical Strike chance of your Melee Combo attacks by 3/6/9%."
+        },
+        {
+          "id": 2,
+          "tier": 1,
+          "maxPoints": 2,
+          "name": "Ruthless",
+          "icon": "/spec-icons/role/warden/Specialization_Ruthless.png",
+          "tip": "Increases your Critical Severity by 5/10%."
+        },
+        {
+          "id": 3,
+          "tier": 1,
+          "maxPoints": 2,
+          "name": "Elusive",
+          "icon": "/spec-icons/role/warden/Specialization_Elusive.png",
+          "tip": "Increases your Resistance to AoE attacks by 10/20%."
+        },
+        {
+          "id": 4,
+          "tier": 2,
+          "maxPoints": 2,
+          "name": "Reactive Strikes",
+          "icon": "/spec-icons/role/warden/Specialization_ReactiveStrikes.png",
+          "tip": "Single Target attacks made against you have a 10% chance to deal 10/20% of that damage back to the attacker as Penetrating Damage. (Penetrating Damage is only resisted by Resistance to All Damage, and ignores half of that resistance. Penetrating Damage also ignores half of the absorption provided by Shields.)"
+        },
+        {
+          "id": 5,
+          "tier": 2,
+          "maxPoints": 2,
+          "name": "Tenacious",
+          "icon": "/spec-icons/role/warden/Specialization_Tenacious.png",
+          "tip": "Whenever you take damage, you gain 5/10 Offense. This effect lasts 15s, stacks up to 5 times, and can only occur once per second."
+        },
+        {
+          "id": 6,
+          "tier": 2,
+          "maxPoints": 3,
+          "name": "Upper Hand",
+          "icon": "/spec-icons/role/warden/Specialization_UpperHand.png",
+          "tip": "Increases Melee damage you deal to targets affected by Demolish, Shredded, Disintegrate, No Quarter, Stress and Stagger by 2/4/6%."
+        },
+        {
+          "id": 7,
+          "tier": 2,
+          "maxPoints": 3,
+          "name": "The Best Defense",
+          "icon": "/spec-icons/role/warden/Specialization_TheBestDefense.png",
+          "tip": "You gain 33/67/100% of your Defense from gear as Offense."
+        },
+        {
+          "id": 8,
+          "tier": 3,
+          "maxPoints": 1,
+          "name": "Warden Mastery",
+          "icon": "/spec-icons/role/warden/Specialization_WardenMastery.png",
+          "tip": "Increases the damage of your Combo powers by 10% and whenever you finish a Combo, you gain a stack of Grit. Grit increases your Damage Resistance by 3%, and stacks up to 3 times."
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Guardian",
+      "superStat": null,
+      "icon": "/spec-icons/role/guardian/Specialization_GuardianMastery.png",
+      "tip": "Range / Tank",
+      "specializationList": [
+        {
+          "id": 0,
+          "tier": 1,
+          "maxPoints": 3,
+          "name": "Fortified Gear",
+          "icon": "/spec-icons/role/guardian/Specialization_FortifiedGear.png",
+          "tip": "Increases the amount of Defense you receive from items by 10/20%."
+        },
+        {
+          "id": 1,
+          "tier": 1,
+          "maxPoints": 2,
+          "name": "Locus",
+          "icon": "/spec-icons/role/guardian/Specialization_Locus.png",
+          "tip": "When you strike with or are struck by an AoE, you gain a stack of Locus. When you reach 30 stacks of Locus, the stack is consumed and becomes Locus Eruption, which grants you 25/49 Offense and Defense. Locus Eruption lasts for 15 seconds, and prevents you from gaining additional stacks of Locus for the duration."
+        },
+        {
+          "id": 2,
+          "tier": 1,
+          "maxPoints": 3,
+          "name": "Make It Count",
+          "icon": "/spec-icons/role/guardian/Specialization_MakeItCount.png",
+          "tip": "Increases the Damage and decreases the Cost of your Blast attacks by 2/4/6%."
+        },
+        {
+          "id": 3,
+          "tier": 1,
+          "maxPoints": 2,
+          "name": "Ruthless",
+          "icon": "/spec-icons/role/guardian/Specialization_Ruthless.png",
+          "tip": "Increases your Critical Severity by 5/10%."
+        },
+        {
+          "id": 4,
+          "tier": 2,
+          "maxPoints": 2,
+          "name": "Retribution",
+          "icon": "/spec-icons/role/guardian/Specialization_Retribution.png",
+          "tip": "Single Target attacks made against you have a 10% chance to trigger Retribution on you for 6s, which grants you +5/10% all damage strength and +30/60 Health Points every 2 sec."
+        },
+        {
+          "id": 5,
+          "tier": 2,
+          "maxPoints": 2,
+          "name": "Tenacious",
+          "icon": "/spec-icons/role/guardian/Specialization_Tenacious.png",
+          "tip": "Whenever you take damage, you gain 5/10 Offense. This effect lasts 15s, stacks up to 5 times, and can only occur once per second."
+        },
+        {
+          "id": 6,
+          "tier": 2,
+          "maxPoints": 3,
+          "name": "Find the Mark",
+          "icon": "/spec-icons/role/guardian/Specialization_FindTheMark.png",
+          "tip": "Your Ranged attacks have a 10/20/30% chance to Expose your target. Expose increases your chance to Critically Strike that target with Ranged attacks by 3% for 10s and stacks up to 3 times."
+        },
+        {
+          "id": 7,
+          "tier": 2,
+          "maxPoints": 3,
+          "name": "The Best Defense",
+          "icon": "/spec-icons/role/guardian/Specialization_TheBestDefense.png",
+          "tip": "You gain 33/67/100% of your Defense from gear as Offense."
+        },
+        {
+          "id": 8,
+          "tier": 3,
+          "maxPoints": 1,
+          "name": "Guardian Mastery",
+          "icon": "/spec-icons/role/guardian/Specialization_GuardianMastery.png",
+          "tip": "Your Blast powers give you a stack of Alacrity, which reduces the charge time of Blast powers by 3% and grants you 9 Dodge Chance Rating. Alacrity stacks up to 3 times."
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Sentry",
+      "superStat": null,
+      "icon": "/spec-icons/role/sentry/Specialization_SentryMastery.png",
+      "tip": "Support / Tank",
+      "specializationList": [
+        {
+          "id": 0,
+          "tier": 1,
+          "maxPoints": 3,
+          "name": "Fortified Gear",
+          "icon": "/spec-icons/role/sentry/Specialization_FortifiedGear.png",
+          "tip": "Increases the amount of Defense you receive from items by 10/20/30%."
+        },
+        {
+          "id": 1,
+          "tier": 1,
+          "maxPoints": 2,
+          "name": "Twist Fate",
+          "icon": "/spec-icons/role/sentry/Specialization_TwistFate.png",
+          "tip": "Your Energy Builder grants stacks of Twist Fate for 5s. Each stack increases your Dodge and Crit chance by 1.5/3%. Stacks up to 3 times."
+        },
+        {
+          "id": 2,
+          "tier": 1,
+          "maxPoints": 3,
+          "name": "Precise",
+          "icon": "/spec-icons/role/sentry/Specialization_Precise.png",
+          "tip": "The strength of your Single Target attacks and your Heals and Shields on other players is increased by 3/6/9%."
+        },
+        {
+          "id": 3,
+          "tier": 1,
+          "maxPoints": 3,
+          "name": "Sentry Aura",
+          "icon": "/spec-icons/role/sentry/Specialization_SentryAura.png",
+          "tip": "You and your Teammates gain an additional +2/4/6% resistance to all damage.<br /><br />This effect has a range of 100ft and a target cap of 20."
+        },
+        {
+          "id": 4,
+          "tier": 2,
+          "maxPoints": 2,
+          "name": "Fortify",
+          "icon": "/spec-icons/role/sentry/Specialization_Fortify.png",
+          "tip": "Whenever you get a Critical Effect (from Damage or Healing powers) you gain Fortify, which lasts 10s and stacks up to 3 times. Each stack increases your Healing Strength and Damage Resistance by 1/2%."
+        },
+        {
+          "id": 5,
+          "tier": 2,
+          "maxPoints": 3,
+          "name": "Stalling Tactics",
+          "icon": "/spec-icons/role/sentry/Specialization_StallingTactics.png",
+          "tip": "Increases the duration of your Stun, Sleep, and Snare effects by 5/10/15%."
+        },
+        {
+          "id": 6,
+          "tier": 2,
+          "maxPoints": 2,
+          "name": "Persevere",
+          "icon": "/spec-icons/role/sentry/Specialization_Persevere.png",
+          "tip": "Single Target attacks made against you have a 10% chance to heal you and your nearby teammates for 10/20% of the damage dealt."
+        },
+        {
+          "id": 7,
+          "tier": 2,
+          "maxPoints": 2,
+          "name": "Reinforce",
+          "icon": "/spec-icons/role/sentry/Specialization_Reinforce.png",
+          "tip": "Whenever you Critically Heal, your target gains +5/10% resistance to all damage for 5 sec. Whenever you Critically Strike with a Single Target attack, you gain +5/10% resistance to all damage for 5 sec."
+        },
+        {
+          "id": 8,
+          "tier": 3,
+          "maxPoints": 1,
+          "name": "Sentry Mastery",
+          "icon": "/spec-icons/role/sentry/Specialization_SentryMastery.png",
+          "tip": "Whenever a damaging attack brings you below 50% Health, the attacker is Stunned and you heal nearby allies for 10% of your Maximum Health. This Stun lasts 3s and is twice as powerful as normal Stuns, and can affect enemies that are not normally affected by stuns. This effect can only occur once every 60 seconds."
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Arbiter",
+      "superStat": null,
+      "icon": "/spec-icons/role/arbiter/Specialization_ArbiterMastery.png",
+      "tip": "Melee / Support",
+      "specializationList": [
+        {
+          "id": 0,
+          "tier": 1,
+          "maxPoints": 3,
+          "name": "Enforcer",
+          "icon": "/spec-icons/role/arbiter/Specialization_Enforcer.png",
+          "tip": "The strength of your Combo Attacks, Heals, and Shields is increased by 2/4/6%."
+        },
+        {
+          "id": 1,
+          "tier": 1,
+          "maxPoints": 3,
+          "name": "Ruthless",
+          "icon": "/spec-icons/role/arbiter/Specialization_Ruthless.png",
+          "tip": "Increases your Critical Severity by 5/10/15%."
+        },
+        {
+          "id": 2,
+          "tier": 1,
+          "maxPoints": 2,
+          "name": "Enhanced Mending",
+          "icon": "/spec-icons/role/arbiter/Specialization_EnhancedMending.png",
+          "tip": "Directly damaging a foe with a non energy builder Melee attack increases the duration of your active Rune powers by 1/2 sec. The duration cannot exceed the normal duration of the power."
+        },
+        {
+          "id": 3,
+          "tier": 1,
+          "maxPoints": 2,
+          "name": "Rend",
+          "icon": "/spec-icons/role/arbiter/Specialization_Rend.png",
+          "tip": "Whenever you Critically Strike an enemy, you reduce their damage resistance by 2/4% for 5 sec."
+        },
+        {
+          "id": 4,
+          "tier": 2,
+          "maxPoints": 2,
+          "name": "Honor",
+          "icon": "/spec-icons/role/arbiter/Specialization_Honor.png",
+          "tip": "Whenever you directly Heal or Shield an ally, your next attack gains 2.5/5% base damage strength. This effect lasts 10 sec, stacks up to 3 times and expires after using a direct damaging attack."
+        },
+        {
+          "id": 5,
+          "tier": 2,
+          "maxPoints": 3,
+          "name": "Concussion",
+          "icon": "/spec-icons/role/arbiter/Specialization_Concussion.png",
+          "tip": "Whenever you Stun a target, you now also reduce the damage the target deals by 5/10/15%. The duration of this effect lasts up to 8s, but is dependent on the Rank of your target."
+        },
+        {
+          "id": 6,
+          "tier": 2,
+          "maxPoints": 2,
+          "name": "Preservation",
+          "icon": "/spec-icons/role/arbiter/Specialization_Preservation.png",
+          "tip": "Reduces the Energy Cost of your Heals, Holds, and Single Target Melee attacks by 7.5/15%."
+        },
+        {
+          "id": 7,
+          "tier": 2,
+          "maxPoints": 3,
+          "name": "Enhanced Gear",
+          "icon": "/spec-icons/role/arbiter/Specialization_EnhancedGear.png",
+          "tip": "Increases the amount of Offense you receive from items by 10/20/30%."
+        },
+        {
+          "id": 8,
+          "tier": 3,
+          "maxPoints": 1,
+          "name": "Arbiter Mastery",
+          "icon": "/spec-icons/role/arbiter/Specialization_ArbiterMastery.png",
+          "tip": "Your Combo Finishers heal yourself for 1% of your maximum Health, and heals up to 5 allies within 25ft for 3% of their maximum Health."
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Overseer",
+      "superStat": null,
+      "icon": "/spec-icons/role/overseer/Specialization_OverseerMastery.png",
+      "tip": "Range / Support",
+      "specializationList": [
+        {
+          "id": 0,
+          "tier": 1,
+          "maxPoints": 3,
+          "name": "Administer",
+          "icon": "/spec-icons/role/overseer/Specialization_Administer.png",
+          "tip": "The strength of your Blast Attacks, Heals, and Shields is increased by 3/6/9%."
+        },
+        {
+          "id": 1,
+          "tier": 1,
+          "maxPoints": 3,
+          "name": "Ruthless",
+          "icon": "/spec-icons/role/overseer/Specialization_Ruthless.png",
+          "tip": "Increases your Critical Severity by 5/10/15%."
+        },
+        {
+          "id": 2,
+          "tier": 1,
+          "maxPoints": 2,
+          "name": "Enhanced Mending",
+          "icon": "/spec-icons/role/overseer/Specialization_EnhancedMending.png",
+          "tip": "Directly damaging a foe with a non energy builder Ranged attack increases the duration of your active Rune powers by 1/2 sec. The duration cannot exceed the normal duration of the power."
+        },
+        {
+          "id": 3,
+          "tier": 1,
+          "maxPoints": 2,
+          "name": "Impact",
+          "icon": "/spec-icons/role/overseer/Specialization_Impact.png",
+          "tip": "Whenever you Critically Strike an enemy, you reduce the Damage they deal by 4/8% for 5 sec."
+        },
+        {
+          "id": 4,
+          "tier": 2,
+          "maxPoints": 2,
+          "name": "Honor",
+          "icon": "/spec-icons/role/overseer/Specialization_Honor.png",
+          "tip": "Whenever you directly Heal or Shield an ally, your next attack gains 2.5/5% base damage strength. This effect lasts 10 sec, stacks up to 3 times and expires after using a direct damaging attack."
+        },
+        {
+          "id": 5,
+          "tier": 2,
+          "maxPoints": 3,
+          "name": "Trapped",
+          "icon": "/spec-icons/role/overseer/Specialization_Trapped.png",
+          "tip": "Your Paralyze, Incapacitate, and Root effects reduce the damage resistance of affected targets by 3/6/9%. This effect lasts up to 8 sec depending on the Rank of the target."
+        },
+        {
+          "id": 6,
+          "tier": 2,
+          "maxPoints": 2,
+          "name": "Conservation",
+          "icon": "/spec-icons/role/overseer/Specialization_Conservation.png",
+          "tip": "Reduces the Energy Cost of your Heals, Paralyzes, Incapacitates, Confuses, Placates, and Ranged attacks by 7.5/15%."
+        },
+        {
+          "id": 7,
+          "tier": 2,
+          "maxPoints": 3,
+          "name": "Enhanced Gear",
+          "icon": "/spec-icons/role/overseer/Specialization_EnhancedGear.png",
+          "tip": "Increases the amount of Offense you receive from items by 10/20/30%."
+        },
+        {
+          "id": 8,
+          "tier": 3,
+          "maxPoints": 1,
+          "name": "Overseer Mastery",
+          "icon": "/spec-icons/role/overseer/Specialization_OverseerMastery.png",
+          "tip": "Increases the base damage or healing done to targets at or below 20% Health by 10%."
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Vindicator",
+      "superStat": null,
+      "icon": "/spec-icons/role/vindicator/Specialization_VindicatorMastery.png",
+      "tip": "Melee / Range",
+      "specializationList": [
+        {
+          "id": 0,
+          "tier": 1,
+          "maxPoints": 2,
+          "name": "Aggressive Stance",
+          "icon": "/spec-icons/role/vindicator/Specialization_AggressiveStance.png",
+          "tip": "You gain 10/20% of your Offense from gear as Defense.<br /><br />Additionally, you gain 10/20% of your Offense from individual powers as Defense."
+        },
+        {
+          "id": 1,
+          "tier": 1,
+          "maxPoints": 3,
+          "name": "Merciless",
+          "icon": "/spec-icons/role/vindicator/Specialization_Merciless.png",
+          "tip": "Increases your Critical Severity by 5/10/15%"
+        },
+        {
+          "id": 2,
+          "tier": 1,
+          "maxPoints": 2,
+          "name": "Initiative",
+          "icon": "/spec-icons/role/vindicator/Specialization_Initiative.png",
+          "tip": "Your Energy Builder attacks now reduce the resistance of affected targets by 2/4% for 12 sec."
+        },
+        {
+          "id": 3,
+          "tier": 1,
+          "maxPoints": 3,
+          "name": "The Rush of Battle",
+          "icon": "/spec-icons/role/vindicator/Specialization_TheRushOfBattle.png",
+          "tip": "When you defeat an enemy, you regain 5/10/15% of your Max Health over the next 5 sec."
+        },
+        {
+          "id": 4,
+          "tier": 2,
+          "maxPoints": 3,
+          "name": "Focused Strikes",
+          "icon": "/spec-icons/role/vindicator/Specialization_FocusedStrikes.png",
+          "tip": "Increases the Critical Strike Chance of your Single Target attacks by 2/4/6%."
+        },
+        {
+          "id": 5,
+          "tier": 2,
+          "maxPoints": 2,
+          "name": "Modified Gear",
+          "icon": "/spec-icons/role/vindicator/Specialization_ModifiedGear.png",
+          "tip": "Increases the amount of Offense you receive from items by 10/20%."
+        },
+        {
+          "id": 6,
+          "tier": 2,
+          "maxPoints": 2,
+          "name": "Offensive Expertise",
+          "icon": "/spec-icons/role/vindicator/Specialization_OffensiveExpertise.png",
+          "tip": "Your Active Offense powers benefit from an additional 7/14% Power Recharge Reduction."
+        },
+        {
+          "id": 7,
+          "tier": 2,
+          "maxPoints": 3,
+          "name": "Mass Destruction",
+          "icon": "/spec-icons/role/vindicator/Specialization_MassDestruction.png",
+          "tip": "Increases the Critical Strike Chance of your AoE attacks by 2/4/6%."
+        },
+        {
+          "id": 8,
+          "tier": 3,
+          "maxPoints": 1,
+          "name": "Vindicator Mastery",
+          "icon": "/spec-icons/role/vindicator/Specialization_VindicatorMastery.png",
+          "tip": "Grants bonus Ranged Damage equal to 1/3 the bonus Strength gives to Melee Damage, and grants bonus Melee Damage equal to 1/3 the bonus Ego gives to Ranged Damage."
+        }
+      ]
+    }
+  ]
+}

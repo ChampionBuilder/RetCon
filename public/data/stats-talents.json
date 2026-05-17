@@ -1,0 +1,1781 @@
+{
+  "version": 37,
+  "superStats": [
+    {
+      "id": 0,
+      "name": "",
+      "info": "",
+      "forms": null,
+      "primaryEUs": null,
+      "secondaryEUs": null
+    },
+    {
+      "id": 1,
+      "name": "Strength",
+      "info": "Improves Melee Damage, Melee Knocks, Knock Resistance, and the pick-up and throw ability.",
+      "forms": [
+        "Aspect of the Machine",
+        "Enrage",
+        "Aspect of the Bestial"
+      ],
+      "primaryEUs": null,
+      "secondaryEUs": null
+    },
+    {
+      "id": 2,
+      "name": "Dexterity",
+      "info": "Improves a hero's Critical Hit Chance and effectiveness of Stealth granting powers.",
+      "forms": [
+        "Chilled Form",
+        "Sharp Shooter",
+        "Form of the Tempest",
+        "Form of the Tiger",
+        "Form of the Swordsman",
+        "Form of the Master",
+        "Mental Discipline",
+        "Mental Precision"
+      ],
+      "primaryEUs": [
+        "Steadfast"
+      ],
+      "secondaryEUs": null
+    },
+    {
+      "id": 3,
+      "name": "Constitution",
+      "info": "Improves a hero's Hit Points.",
+      "forms": null,
+      "primaryEUs": null,
+      "secondaryEUs": null
+    },
+    {
+      "id": 4,
+      "name": "Intelligence",
+      "info": "Affects the hero's power cooldown length, Stealth Detection, and the Energy Cost of their powers.",
+      "forms": [
+        "Concentration",
+        "Particle Accelerator",
+        "Manipulator",
+        "Spellcaster"
+      ],
+      "primaryEUs": [
+        "Molecular Self-Assembly",
+        "Conjuring"
+      ],
+      "secondaryEUs": null
+    },
+    {
+      "id": 5,
+      "name": "Ego",
+      "info": "Improves Ranged Damage, Ranged Knocks, and Hold Resistance.",
+      "forms": [
+        "Chilled Form",
+        "Concentration"
+      ],
+      "primaryEUs": [
+        "Hunter's Instinct"
+      ],
+      "secondaryEUs": null
+    },
+    {
+      "id": 6,
+      "name": "Presence",
+      "info": "Improves Healing Strength, Hold Duration, and Crowd Control Resistance.",
+      "forms": [
+        "Manipulator",
+        "Shadow Manifestation",
+        "Fear Consumption",
+        "Compassion"
+      ],
+      "primaryEUs": [
+        "Telepathic Reverberation"
+      ],
+      "secondaryEUs": null
+    },
+    {
+      "id": 7,
+      "name": "Recovery",
+      "info": "Sets the hero's Equilibrium, increases rate of Energy generated from Energy building attacks, and grants a small increase to Maximum Energy.",
+      "forms": [
+        "Fiery Will",
+        "Smoldering",
+        "Compassion"
+      ],
+      "primaryEUs": [
+        "Ionic Reverberation",
+        "Killer Instinct",
+        "Relentless",
+        "Chi Manipulation",
+        "Telekinetic Reverberation",
+        "Pulverizer",
+        "Spirit Reverberation",
+        "Supernatural Power"
+      ],
+      "secondaryEUs": [
+        "Thermal Reverberation",
+        "Wind Reverberation",
+        "Icy Embrace",
+        "Hunter's Instinct",
+        "Molecular Self-Assembly",
+        "Overdrive",
+        "Unified Theory",
+        "Steadfast",
+        "Desetructive",
+        "Telepathic Reverberation",
+        "Conjuring",
+        "Wild Thing",
+        "Mephitic"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Endurance",
+      "info": "Affects a hero's Maximum Energy and rate of energy generated from fighting attacks.",
+      "forms": [
+        "Power Source"
+      ],
+      "primaryEUs": [
+        "Ionic Reverberation",
+        "Thermal Reverberation",
+        "Wind Reverberation",
+        "Icy Embrace",
+        "Overdrive",
+        "Unified Theory",
+        "Destructive",
+        "Wild Thing",
+        "Mephitic"
+      ],
+      "secondaryEUs": [
+        "Killer Instinct",
+        "Relentless",
+        "Chi Manipulation",
+        "Telekinetic Reverberation",
+        "Pulverizer",
+        "Spirit Reverberation"
+      ]
+    }
+  ],
+  "innateTalents": [
+    {
+      "id": 0,
+      "name": "",
+      "overrideTip": null,
+      "stats": {
+        "str": 5,
+        "dex": 5,
+        "con": 5,
+        "int": 5,
+        "ego": 5,
+        "pre": 5,
+        "rec": 5,
+        "end": 5
+      }
+    },
+    {
+      "id": 1,
+      "name": "Sureshot",
+      "overrideTip": "Your hand-eye coordination is unmatched.",
+      "stats": {
+        "str": 5,
+        "dex": 12,
+        "con": 5,
+        "int": 12,
+        "ego": 5,
+        "pre": 5,
+        "rec": 5,
+        "end": 5
+      }
+    },
+    {
+      "id": 2,
+      "name": "Abyssal",
+      "overrideTip": "You draw your power from dark places.",
+      "stats": {
+        "str": 5,
+        "dex": 5,
+        "con": 12,
+        "int": 5,
+        "ego": 5,
+        "pre": 5,
+        "rec": 5,
+        "end": 12
+      }
+    },
+    {
+      "id": 3,
+      "name": "Energized",
+      "overrideTip": "The power flows through you.",
+      "stats": {
+        "str": 5,
+        "dex": 5,
+        "con": 5,
+        "int": 5,
+        "ego": 5,
+        "pre": 5,
+        "rec": 12,
+        "end": 12
+      }
+    },
+    {
+      "id": 4,
+      "name": "Incandescent",
+      "overrideTip": "A fire burns deep within you.",
+      "stats": {
+        "str": 5,
+        "dex": 5,
+        "con": 5,
+        "int": 5,
+        "ego": 5,
+        "pre": 12,
+        "rec": 12,
+        "end": 5
+      }
+    },
+    {
+      "id": 5,
+      "name": "Impetus",
+      "overrideTip": "Your power is unstoppable.",
+      "stats": {
+        "str": 5,
+        "dex": 5,
+        "con": 5,
+        "int": 5,
+        "ego": 12,
+        "pre": 5,
+        "rec": 5,
+        "end": 12
+      }
+    },
+    {
+      "id": 6,
+      "name": "Tech Savvy",
+      "overrideTip": "You know what makes things tick.",
+      "stats": {
+        "str": 5,
+        "dex": 5,
+        "con": 5,
+        "int": 12,
+        "ego": 5,
+        "pre": 5,
+        "rec": 5,
+        "end": 12
+      }
+    },
+    {
+      "id": 7,
+      "name": "Absolute Zero",
+      "overrideTip": "You have a cold outlook on life.",
+      "stats": {
+        "str": 5,
+        "dex": 12,
+        "con": 5,
+        "int": 5,
+        "ego": 5,
+        "pre": 5,
+        "rec": 12,
+        "end": 5
+      }
+    },
+    {
+      "id": 8,
+      "name": "One of Mind and Body",
+      "overrideTip": "You have achieved the balance.",
+      "stats": {
+        "str": 12,
+        "dex": 12,
+        "con": 5,
+        "int": 5,
+        "ego": 5,
+        "pre": 5,
+        "rec": 5,
+        "end": 5
+      }
+    },
+    {
+      "id": 9,
+      "name": "Superhuman",
+      "overrideTip": "You have the strength of many.",
+      "stats": {
+        "str": 12,
+        "dex": 5,
+        "con": 12,
+        "int": 5,
+        "ego": 5,
+        "pre": 5,
+        "rec": 5,
+        "end": 5
+      }
+    },
+    {
+      "id": 10,
+      "name": "Quick Trigger",
+      "overrideTip": "You are fast on the draw.",
+      "stats": {
+        "str": 5,
+        "dex": 12,
+        "con": 5,
+        "int": 5,
+        "ego": 12,
+        "pre": 5,
+        "rec": 5,
+        "end": 5
+      }
+    },
+    {
+      "id": 11,
+      "name": "Mechanized",
+      "overrideTip": "You know how to maximize efficiency.",
+      "stats": {
+        "str": 12,
+        "dex": 5,
+        "con": 5,
+        "int": 12,
+        "ego": 5,
+        "pre": 5,
+        "rec": 5,
+        "end": 5
+      }
+    },
+    {
+      "id": 12,
+      "name": "Arcanus",
+      "overrideTip": "You have an intuitive grasp of magic.",
+      "stats": {
+        "str": 5,
+        "dex": 5,
+        "con": 5,
+        "int": 12,
+        "ego": 5,
+        "pre": 12,
+        "rec": 5,
+        "end": 5
+      }
+    },
+    {
+      "id": 13,
+      "name": "Inhuman",
+      "overrideTip": "You have an unspeakable heritage.",
+      "stats": {
+        "str": 5,
+        "dex": 5,
+        "con": 12,
+        "int": 5,
+        "ego": 5,
+        "pre": 5,
+        "rec": 12,
+        "end": 5
+      }
+    },
+    {
+      "id": 14,
+      "name": "Matter Manipulator",
+      "overrideTip": "You know what it takes to get things moving.",
+      "stats": {
+        "str": 5,
+        "dex": 5,
+        "con": 12,
+        "int": 5,
+        "ego": 12,
+        "pre": 5,
+        "rec": 5,
+        "end": 5
+      }
+    },
+    {
+      "id": 15,
+      "name": "Mind over Matter",
+      "overrideTip": "You know what motivates people.",
+      "stats": {
+        "str": 5,
+        "dex": 5,
+        "con": 5,
+        "int": 5,
+        "ego": 12,
+        "pre": 12,
+        "rec": 5,
+        "end": 5
+      }
+    },
+    {
+      "id": 16,
+      "name": "The Hero",
+      "overrideTip": "The picture of balanced perfection, this character is the Jack-of-All-Trades, master of none, though often better than the master of one.",
+      "stats": {
+        "str": 8,
+        "dex": 8,
+        "con": 8,
+        "int": 8,
+        "ego": 8,
+        "pre": 8,
+        "rec": 6,
+        "end": 6
+      }
+    },
+    {
+      "id": 17,
+      "name": "Divinity",
+      "overrideTip": "You have been inspired by forces beyond.",
+      "stats": {
+        "str": 5,
+        "dex": 5,
+        "con": 12,
+        "int": 5,
+        "ego": 5,
+        "pre": 12,
+        "rec": 5,
+        "end": 5
+      }
+    },
+    {
+      "id": 18,
+      "name": "Feral",
+      "overrideTip": "Within you beats the heart of an animal.",
+      "stats": {
+        "str": 12,
+        "dex": 5,
+        "con": 5,
+        "int": 5,
+        "ego": 5,
+        "pre": 5,
+        "rec": 12,
+        "end": 5
+      }
+    },
+    {
+      "id": 19,
+      "name": "The Inferno",
+      "overrideTip": "This is the innate characteristic for The Inferno.",
+      "stats": {
+        "str": 5,
+        "dex": 10,
+        "con": 5,
+        "int": 5,
+        "ego": 8,
+        "pre": 5,
+        "rec": 10,
+        "end": 10
+      }
+    },
+    {
+      "id": 20,
+      "name": "The Soldier",
+      "overrideTip": "This is the innate characteristic for The Soldier.",
+      "stats": {
+        "str": 5,
+        "dex": 10,
+        "con": 5,
+        "int": 8,
+        "ego": 10,
+        "pre": 5,
+        "rec": 10,
+        "end": 5
+      }
+    },
+    {
+      "id": 21,
+      "name": "The Blade",
+      "overrideTip": "This is the innate characteristic for The Blade.",
+      "stats": {
+        "str": 10,
+        "dex": 10,
+        "con": 5,
+        "int": 5,
+        "ego": 5,
+        "pre": 5,
+        "rec": 10,
+        "end": 8
+      }
+    },
+    {
+      "id": 22,
+      "name": "The Savage",
+      "overrideTip": "This is the innate characteristic for The Brute.",
+      "stats": {
+        "str": 10,
+        "dex": 8,
+        "con": 10,
+        "int": 5,
+        "ego": 5,
+        "pre": 5,
+        "rec": 10,
+        "end": 5
+      }
+    },
+    {
+      "id": 23,
+      "name": "The Behemoth",
+      "overrideTip": "This is the innate characteristic for The Behemoth.",
+      "stats": {
+        "str": 10,
+        "dex": 5,
+        "con": 10,
+        "int": 5,
+        "ego": 5,
+        "pre": 5,
+        "rec": 10,
+        "end": 8
+      }
+    },
+    {
+      "id": 24,
+      "name": "The Glacier",
+      "overrideTip": "This is the innate characteristic for The Glacier.",
+      "stats": {
+        "str": 5,
+        "dex": 8,
+        "con": 10,
+        "int": 10,
+        "ego": 5,
+        "pre": 5,
+        "rec": 5,
+        "end": 10
+      }
+    },
+    {
+      "id": 25,
+      "name": "The Mind",
+      "overrideTip": "This is the innate characteristic for The Mind.",
+      "stats": {
+        "str": 5,
+        "dex": 5,
+        "con": 5,
+        "int": 8,
+        "ego": 10,
+        "pre": 10,
+        "rec": 5,
+        "end": 10
+      }
+    },
+    {
+      "id": 26,
+      "name": "The Grimoire",
+      "overrideTip": "This is the innate characteristic for The Grimoire.",
+      "stats": {
+        "str": 5,
+        "dex": 5,
+        "con": 5,
+        "int": 10,
+        "ego": 10,
+        "pre": 10,
+        "rec": 8,
+        "end": 5
+      }
+    },
+    {
+      "id": 27,
+      "name": "The Assassin",
+      "overrideTip": "This is the innate characteristic for The Assassin.",
+      "stats": {
+        "str": 10,
+        "dex": 10,
+        "con": 5,
+        "int": 8,
+        "ego": 10,
+        "pre": 5,
+        "rec": 5,
+        "end": 5
+      }
+    },
+    {
+      "id": 28,
+      "name": "The Marksman",
+      "overrideTip": "This is the innate characteristic for The Marksman.",
+      "stats": {
+        "str": 5,
+        "dex": 10,
+        "con": 5,
+        "int": 10,
+        "ego": 10,
+        "pre": 5,
+        "rec": 5,
+        "end": 8
+      }
+    },
+    {
+      "id": 29,
+      "name": "The Void",
+      "overrideTip": "This is the innate characteristic for The Void.",
+      "stats": {
+        "str": 5,
+        "dex": 8,
+        "con": 10,
+        "int": 5,
+        "ego": 5,
+        "pre": 5,
+        "rec": 10,
+        "end": 10
+      }
+    },
+    {
+      "id": 30,
+      "name": "The Inventor",
+      "overrideTip": "This is the innate characteristic for The Inventor.",
+      "stats": {
+        "str": 5,
+        "dex": 5,
+        "con": 5,
+        "int": 10,
+        "ego": 5,
+        "pre": 10,
+        "rec": 10,
+        "end": 8
+      }
+    },
+    {
+      "id": 31,
+      "name": "The Tempest",
+      "overrideTip": "This is the innate characteristic for The Tempest.",
+      "stats": {
+        "str": 5,
+        "dex": 8,
+        "con": 5,
+        "int": 5,
+        "ego": 10,
+        "pre": 5,
+        "rec": 10,
+        "end": 10
+      }
+    },
+    {
+      "id": 32,
+      "name": "The Devastator",
+      "overrideTip": "This is the innate characteristic for The Devastator.",
+      "stats": {
+        "str": 10,
+        "dex": 5,
+        "con": 10,
+        "int": 5,
+        "ego": 5,
+        "pre": 5,
+        "rec": 10,
+        "end": 8
+      }
+    },
+    {
+      "id": 33,
+      "name": "The Disciple",
+      "overrideTip": "This is the innate characteristic for The Disciple.",
+      "stats": {
+        "str": 5,
+        "dex": 10,
+        "con": 5,
+        "int": 8,
+        "ego": 10,
+        "pre": 5,
+        "rec": 10,
+        "end": 5
+      }
+    },
+    {
+      "id": 34,
+      "name": "The Impulse",
+      "overrideTip": "This is the innate characteristic for The Impulse.",
+      "stats": {
+        "str": 5,
+        "dex": 5,
+        "con": 5,
+        "int": 10,
+        "ego": 10,
+        "pre": 5,
+        "rec": 8,
+        "end": 10
+      }
+    },
+    {
+      "id": 35,
+      "name": "The Fist",
+      "overrideTip": "This is the innate characteristic for The Fist.",
+      "stats": {
+        "str": 10,
+        "dex": 10,
+        "con": 5,
+        "int": 10,
+        "ego": 5,
+        "pre": 5,
+        "rec": 8,
+        "end": 5
+      }
+    },
+    {
+      "id": 36,
+      "name": "The Protector",
+      "overrideTip": "This is the innate characteristic for The Master.",
+      "stats": {
+        "str": 10,
+        "dex": 10,
+        "con": 10,
+        "int": 5,
+        "ego": 5,
+        "pre": 5,
+        "rec": 8,
+        "end": 5
+      }
+    },
+    {
+      "id": 37,
+      "name": "The Scourge",
+      "overrideTip": "This is the innate characteristic for The Scourge and The Cursed.",
+      "stats": {
+        "str": 5,
+        "dex": 5,
+        "con": 10,
+        "int": 5,
+        "ego": 10,
+        "pre": 5,
+        "rec": 10,
+        "end": 8
+      }
+    },
+    {
+      "id": 38,
+      "name": "The Squall",
+      "overrideTip": "This is the innate characteristic for The Squall.",
+      "stats": {
+        "str": 5,
+        "dex": 8,
+        "con": 5,
+        "int": 5,
+        "ego": 10,
+        "pre": 5,
+        "rec": 10,
+        "end": 10
+      }
+    },
+    {
+      "id": 39,
+      "name": "The Mountain",
+      "overrideTip": "This is the innate characteristic for The Mountain.",
+      "stats": {
+        "str": 8,
+        "dex": 5,
+        "con": 10,
+        "int": 5,
+        "ego": 10,
+        "pre": 5,
+        "rec": 5,
+        "end": 10
+      }
+    },
+    {
+      "id": 40,
+      "name": "The Unleashed",
+      "overrideTip": "This is the innate characteristic for The Unleashed.",
+      "stats": {
+        "str": 10,
+        "dex": 10,
+        "con": 5,
+        "int": 8,
+        "ego": 5,
+        "pre": 5,
+        "rec": 10,
+        "end": 5
+      }
+    },
+    {
+      "id": 41,
+      "name": "The Radiant",
+      "overrideTip": "This is the innate characteristic for The Radiant.",
+      "stats": {
+        "str": 5,
+        "dex": 5,
+        "con": 5,
+        "int": 10,
+        "ego": 10,
+        "pre": 10,
+        "rec": 8,
+        "end": 5
+      }
+    },
+    {
+      "id": 42,
+      "name": "The Invincible",
+      "overrideTip": "This is the innate characteristic for The Invincible.",
+      "stats": {
+        "str": 5,
+        "dex": 5,
+        "con": 10,
+        "int": 10,
+        "ego": 8,
+        "pre": 5,
+        "rec": 5,
+        "end": 10
+      }
+    },
+    {
+      "id": 43,
+      "name": "The Night Avenger",
+      "overrideTip": "This is the innate characteristic for The Night Avenger.",
+      "stats": {
+        "str": 10,
+        "dex": 10,
+        "con": 5,
+        "int": 5,
+        "ego": 10,
+        "pre": 5,
+        "rec": 5,
+        "end": 8
+      }
+    },
+    {
+      "id": 44,
+      "name": "The Chiller",
+      "overrideTip": "This is the innate characteristic for The Chiller.",
+      "stats": {
+        "str": 5,
+        "dex": 10,
+        "con": 10,
+        "int": 5,
+        "ego": 5,
+        "pre": 5,
+        "rec": 8,
+        "end": 10
+      }
+    },
+    {
+      "id": 45,
+      "name": "The Rockstar",
+      "overrideTip": "This is the innate characteristic for The Rockstar.",
+      "stats": {
+        "str": 10,
+        "dex": 5,
+        "con": 10,
+        "int": 5,
+        "ego": 5,
+        "pre": 5,
+        "rec": 8,
+        "end": 10
+      }
+    },
+    {
+      "id": 46,
+      "name": "The Predator",
+      "overrideTip": "This is the innate characteristic for The Predator.",
+      "stats": {
+        "str": 10,
+        "dex": 10,
+        "con": 8,
+        "int": 5,
+        "ego": 5,
+        "pre": 5,
+        "rec": 10,
+        "end": 5
+      }
+    },
+    {
+      "id": 47,
+      "name": "The Penitent",
+      "overrideTip": "This is the innate characteristic for The Penitent.",
+      "stats": {
+        "str": 10,
+        "dex": 10,
+        "con": 5,
+        "int": 5,
+        "ego": 5,
+        "pre": 5,
+        "rec": 8,
+        "end": 10
+      }
+    },
+    {
+      "id": 48,
+      "name": "The Hexslinger",
+      "overrideTip": "This is the innate characteristic for The Hexslinger.",
+      "stats": {
+        "str": 5,
+        "dex": 10,
+        "con": 5,
+        "int": 10,
+        "ego": 10,
+        "pre": 8,
+        "rec": 5,
+        "end": 5
+      }
+    },
+    {
+      "id": 49,
+      "name": "The Witch",
+      "overrideTip": "This is the innate characteristic for The Witch.",
+      "stats": {
+        "str": 5,
+        "dex": 5,
+        "con": 10,
+        "int": 8,
+        "ego": 5,
+        "pre": 10,
+        "rec": 10,
+        "end": 5
+      }
+    },
+    {
+      "id": 50,
+      "name": "The Automaton",
+      "overrideTip": "This is the innate characteristic for The Automaton.",
+      "stats": {
+        "str": 5,
+        "dex": 5,
+        "con": 10,
+        "int": 10,
+        "ego": 10,
+        "pre": 5,
+        "rec": 5,
+        "end": 8
+      }
+    },
+    {
+      "id": 51,
+      "name": "The Cybernetic Warrior",
+      "overrideTip": "This is the innate characteristic for The Cybernetic Warrior.",
+      "stats": {
+        "str": 5,
+        "dex": 5,
+        "con": 10,
+        "int": 10,
+        "ego": 5,
+        "pre": 5,
+        "rec": 8,
+        "end": 10
+      }
+    },
+    {
+      "id": 52,
+      "name": "The Gunslinger",
+      "overrideTip": "This is the innate characteristic for The Gunslinger.",
+      "stats": {
+        "str": 5,
+        "dex": 10,
+        "con": 10,
+        "int": 5,
+        "ego": 8,
+        "pre": 5,
+        "rec": 10,
+        "end": 5
+      }
+    },
+    {
+      "id": 53,
+      "name": "The Specialist",
+      "overrideTip": "This is the innate characteristic for The Specialist.",
+      "stats": {
+        "str": 5,
+        "dex": 10,
+        "con": 10,
+        "int": 8,
+        "ego": 5,
+        "pre": 5,
+        "rec": 10,
+        "end": 5
+      }
+    },
+    {
+      "id": 54,
+      "name": "The Psychokinetic",
+      "overrideTip": "This is the innate characteristic for The Psychokinetic.",
+      "stats": {
+        "str": 5,
+        "dex": 10,
+        "con": 5,
+        "int": 5,
+        "ego": 10,
+        "pre": 5,
+        "rec": 10,
+        "end": 8
+      }
+    },
+    {
+      "id": 55,
+      "name": "The Blazing",
+      "overrideTip": "This is the innate characteristic for The Blazing.",
+      "stats": {
+        "str": 5,
+        "dex": 5,
+        "con": 5,
+        "int": 5,
+        "ego": 8,
+        "pre": 10,
+        "rec": 10,
+        "end": 10
+      }
+    },
+    {
+      "id": 56,
+      "name": "The Dragon",
+      "overrideTip": "This is the innate characteristic for The Dragon.",
+      "stats": {
+        "str": 10,
+        "dex": 10,
+        "con": 8,
+        "int": 5,
+        "ego": 5,
+        "pre": 5,
+        "rec": 10,
+        "end": 5
+      }
+    },
+    {
+      "id": 57,
+      "name": "The Master",
+      "overrideTip": "This is the innate characteristic for The Master.",
+      "stats": {
+        "str": 8,
+        "dex": 10,
+        "con": 10,
+        "int": 5,
+        "ego": 5,
+        "pre": 5,
+        "rec": 10,
+        "end": 5
+      }
+    },
+    {
+      "id": 58,
+      "name": "The Samurai",
+      "overrideTip": "This is the innate characteristic for The Samurai.",
+      "stats": {
+        "str": 5,
+        "dex": 10,
+        "con": 10,
+        "int": 5,
+        "ego": 5,
+        "pre": 5,
+        "rec": 10,
+        "end": 8
+      }
+    },
+    {
+      "id": 59,
+      "name": "The Midnight",
+      "overrideTip": "This is the innate characteristic for The Midnight.",
+      "stats": {
+        "str": 5,
+        "dex": 10,
+        "con": 5,
+        "int": 8,
+        "ego": 5,
+        "pre": 10,
+        "rec": 10,
+        "end": 5
+      }
+    },
+    {
+      "id": 60,
+      "name": "The Wrecker",
+      "overrideTip": "This is the innate characteristic for The Wrecker.",
+      "stats": {
+        "str": 10,
+        "dex": 8,
+        "con": 10,
+        "int": 5,
+        "ego": 5,
+        "pre": 5,
+        "rec": 10,
+        "end": 5
+      }
+    },
+    {
+      "id": 61,
+      "name": "The Tenebrous",
+      "overrideTip": "This is the innate characteristic for The Tenebrous.",
+      "stats": {
+        "str": 5,
+        "dex": 5,
+        "con": 8,
+        "int": 5,
+        "ego": 10,
+        "pre": 10,
+        "rec": 10,
+        "end": 5
+      }
+    },
+    {
+      "id": 62,
+      "name": "The Combatant",
+      "overrideTip": "This is the innate characteristic for The Combatant.",
+      "stats": {
+        "str": 10,
+        "dex": 10,
+        "con": 5,
+        "int": 8,
+        "ego": 10,
+        "pre": 5,
+        "rec": 5,
+        "end": 5
+      }
+    },
+    {
+      "id": 63,
+      "name": "The Fissile",
+      "overrideTip": "This is the innate characteristic for The Fissile.",
+      "stats": {
+        "str": 5,
+        "dex": 10,
+        "con": 5,
+        "int": 10,
+        "ego": 8,
+        "pre": 5,
+        "rec": 10,
+        "end": 5
+      }
+    },
+    {
+      "id": 64,
+      "name": "The Overseer",
+      "overrideTip": "This is the innate characteristic for The Overseer.",
+      "stats": {
+        "str": 5,
+        "dex": 5,
+        "con": 5,
+        "int": 10,
+        "ego": 10,
+        "pre": 10,
+        "rec": 5,
+        "end": 8
+      }
+    }
+  ],
+  "talents": [
+    {
+      "id": 0,
+      "name": "",
+      "stats": {
+        "str": 0,
+        "dex": 0,
+        "con": 0,
+        "int": 0,
+        "ego": 0,
+        "pre": 0,
+        "rec": 0,
+        "end": 0
+      }
+    },
+    {
+      "id": 1,
+      "name": "Mighty",
+      "stats": {
+        "str": 8,
+        "dex": 0,
+        "con": 0,
+        "int": 0,
+        "ego": 0,
+        "pre": 0,
+        "rec": 0,
+        "end": 0
+      }
+    },
+    {
+      "id": 2,
+      "name": "Agile",
+      "stats": {
+        "str": 0,
+        "dex": 8,
+        "con": 0,
+        "int": 0,
+        "ego": 0,
+        "pre": 0,
+        "rec": 0,
+        "end": 0
+      }
+    },
+    {
+      "id": 3,
+      "name": "Enduring",
+      "stats": {
+        "str": 0,
+        "dex": 0,
+        "con": 8,
+        "int": 0,
+        "ego": 0,
+        "pre": 0,
+        "rec": 0,
+        "end": 0
+      }
+    },
+    {
+      "id": 4,
+      "name": "Brilliant",
+      "stats": {
+        "str": 0,
+        "dex": 0,
+        "con": 0,
+        "int": 8,
+        "ego": 0,
+        "pre": 0,
+        "rec": 0,
+        "end": 0
+      }
+    },
+    {
+      "id": 5,
+      "name": "Indomitable",
+      "stats": {
+        "str": 0,
+        "dex": 0,
+        "con": 0,
+        "int": 0,
+        "ego": 8,
+        "pre": 0,
+        "rec": 0,
+        "end": 0
+      }
+    },
+    {
+      "id": 6,
+      "name": "Intimidating",
+      "stats": {
+        "str": 0,
+        "dex": 0,
+        "con": 0,
+        "int": 0,
+        "ego": 0,
+        "pre": 8,
+        "rec": 0,
+        "end": 0
+      }
+    },
+    {
+      "id": 7,
+      "name": "Tireless",
+      "stats": {
+        "str": 0,
+        "dex": 0,
+        "con": 0,
+        "int": 0,
+        "ego": 0,
+        "pre": 0,
+        "rec": 8,
+        "end": 0
+      }
+    },
+    {
+      "id": 8,
+      "name": "Energetic",
+      "stats": {
+        "str": 0,
+        "dex": 0,
+        "con": 0,
+        "int": 0,
+        "ego": 0,
+        "pre": 0,
+        "rec": 0,
+        "end": 8
+      }
+    },
+    {
+      "id": 9,
+      "name": "Martial Focus",
+      "stats": {
+        "str": 5,
+        "dex": 5,
+        "con": 0,
+        "int": 0,
+        "ego": 0,
+        "pre": 0,
+        "rec": 0,
+        "end": 0
+      }
+    },
+    {
+      "id": 10,
+      "name": "Physical Conditioning",
+      "stats": {
+        "str": 5,
+        "dex": 0,
+        "con": 5,
+        "int": 0,
+        "ego": 0,
+        "pre": 0,
+        "rec": 0,
+        "end": 0
+      }
+    },
+    {
+      "id": 11,
+      "name": "Body and Mind",
+      "stats": {
+        "str": 5,
+        "dex": 0,
+        "con": 0,
+        "int": 5,
+        "ego": 0,
+        "pre": 0,
+        "rec": 0,
+        "end": 0
+      }
+    },
+    {
+      "id": 12,
+      "name": "Professional Athlete",
+      "stats": {
+        "str": 5,
+        "dex": 0,
+        "con": 0,
+        "int": 0,
+        "ego": 5,
+        "pre": 0,
+        "rec": 0,
+        "end": 0
+      }
+    },
+    {
+      "id": 13,
+      "name": "Impressive Physique",
+      "stats": {
+        "str": 5,
+        "dex": 0,
+        "con": 0,
+        "int": 0,
+        "ego": 0,
+        "pre": 5,
+        "rec": 0,
+        "end": 0
+      }
+    },
+    {
+      "id": 14,
+      "name": "Relentless",
+      "stats": {
+        "str": 5,
+        "dex": 0,
+        "con": 0,
+        "int": 0,
+        "ego": 0,
+        "pre": 0,
+        "rec": 5,
+        "end": 0
+      }
+    },
+    {
+      "id": 15,
+      "name": "Bodybuilder",
+      "stats": {
+        "str": 5,
+        "dex": 0,
+        "con": 0,
+        "int": 0,
+        "ego": 0,
+        "pre": 0,
+        "rec": 0,
+        "end": 5
+      }
+    },
+    {
+      "id": 16,
+      "name": "Acrobat",
+      "stats": {
+        "str": 0,
+        "dex": 5,
+        "con": 5,
+        "int": 0,
+        "ego": 0,
+        "pre": 0,
+        "rec": 0,
+        "end": 0
+      }
+    },
+    {
+      "id": 17,
+      "name": "Coordinated",
+      "stats": {
+        "str": 0,
+        "dex": 5,
+        "con": 0,
+        "int": 5,
+        "ego": 0,
+        "pre": 0,
+        "rec": 0,
+        "end": 0
+      }
+    },
+    {
+      "id": 18,
+      "name": "Shooter",
+      "stats": {
+        "str": 0,
+        "dex": 5,
+        "con": 0,
+        "int": 0,
+        "ego": 5,
+        "pre": 0,
+        "rec": 0,
+        "end": 0
+      }
+    },
+    {
+      "id": 19,
+      "name": "Finesse",
+      "stats": {
+        "str": 0,
+        "dex": 5,
+        "con": 0,
+        "int": 0,
+        "ego": 0,
+        "pre": 5,
+        "rec": 0,
+        "end": 0
+      }
+    },
+    {
+      "id": 20,
+      "name": "Impresario",
+      "stats": {
+        "str": 0,
+        "dex": 5,
+        "con": 0,
+        "int": 0,
+        "ego": 0,
+        "pre": 0,
+        "rec": 5,
+        "end": 0
+      }
+    },
+    {
+      "id": 21,
+      "name": "Accurate",
+      "stats": {
+        "str": 0,
+        "dex": 5,
+        "con": 0,
+        "int": 0,
+        "ego": 0,
+        "pre": 0,
+        "rec": 0,
+        "end": 5
+      }
+    },
+    {
+      "id": 22,
+      "name": "Healthy Mind",
+      "stats": {
+        "str": 0,
+        "dex": 0,
+        "con": 5,
+        "int": 5,
+        "ego": 0,
+        "pre": 0,
+        "rec": 0,
+        "end": 0
+      }
+    },
+    {
+      "id": 23,
+      "name": "Ascetic",
+      "stats": {
+        "str": 0,
+        "dex": 0,
+        "con": 5,
+        "int": 0,
+        "ego": 5,
+        "pre": 0,
+        "rec": 0,
+        "end": 0
+      }
+    },
+    {
+      "id": 24,
+      "name": "Shrug It Off",
+      "stats": {
+        "str": 0,
+        "dex": 0,
+        "con": 5,
+        "int": 0,
+        "ego": 0,
+        "pre": 5,
+        "rec": 0,
+        "end": 0
+      }
+    },
+    {
+      "id": 25,
+      "name": "Quick Recovery",
+      "stats": {
+        "str": 0,
+        "dex": 0,
+        "con": 5,
+        "int": 0,
+        "ego": 0,
+        "pre": 0,
+        "rec": 5,
+        "end": 0
+      }
+    },
+    {
+      "id": 26,
+      "name": "Boundless Reserves",
+      "stats": {
+        "str": 0,
+        "dex": 0,
+        "con": 5,
+        "int": 0,
+        "ego": 0,
+        "pre": 0,
+        "rec": 0,
+        "end": 5
+      }
+    },
+    {
+      "id": 27,
+      "name": "Academics",
+      "stats": {
+        "str": 0,
+        "dex": 0,
+        "con": 0,
+        "int": 5,
+        "ego": 5,
+        "pre": 0,
+        "rec": 0,
+        "end": 0
+      }
+    },
+    {
+      "id": 28,
+      "name": "Diplomatic",
+      "stats": {
+        "str": 0,
+        "dex": 0,
+        "con": 0,
+        "int": 5,
+        "ego": 0,
+        "pre": 5,
+        "rec": 0,
+        "end": 0
+      }
+    },
+    {
+      "id": 29,
+      "name": "Negotiator",
+      "stats": {
+        "str": 0,
+        "dex": 0,
+        "con": 0,
+        "int": 5,
+        "ego": 0,
+        "pre": 0,
+        "rec": 5,
+        "end": 0
+      }
+    },
+    {
+      "id": 30,
+      "name": "Investigator",
+      "stats": {
+        "str": 0,
+        "dex": 0,
+        "con": 0,
+        "int": 5,
+        "ego": 0,
+        "pre": 0,
+        "rec": 0,
+        "end": 5
+      }
+    },
+    {
+      "id": 31,
+      "name": "Showmanship",
+      "stats": {
+        "str": 0,
+        "dex": 0,
+        "con": 0,
+        "int": 0,
+        "ego": 5,
+        "pre": 5,
+        "rec": 0,
+        "end": 0
+      }
+    },
+    {
+      "id": 32,
+      "name": "Wordly",
+      "stats": {
+        "str": 0,
+        "dex": 0,
+        "con": 0,
+        "int": 0,
+        "ego": 5,
+        "pre": 0,
+        "rec": 5,
+        "end": 0
+      }
+    },
+    {
+      "id": 33,
+      "name": "Daredevil",
+      "stats": {
+        "str": 0,
+        "dex": 0,
+        "con": 0,
+        "int": 0,
+        "ego": 5,
+        "pre": 0,
+        "rec": 0,
+        "end": 5
+      }
+    },
+    {
+      "id": 34,
+      "name": "Lasting Impression",
+      "stats": {
+        "str": 0,
+        "dex": 0,
+        "con": 0,
+        "int": 0,
+        "ego": 0,
+        "pre": 5,
+        "rec": 5,
+        "end": 0
+      }
+    },
+    {
+      "id": 35,
+      "name": "Prodigy",
+      "stats": {
+        "str": 0,
+        "dex": 0,
+        "con": 0,
+        "int": 0,
+        "ego": 0,
+        "pre": 5,
+        "rec": 0,
+        "end": 5
+      }
+    },
+    {
+      "id": 36,
+      "name": "Amazing Stamina",
+      "stats": {
+        "str": 0,
+        "dex": 0,
+        "con": 0,
+        "int": 0,
+        "ego": 0,
+        "pre": 0,
+        "rec": 5,
+        "end": 5
+      }
+    },
+    {
+      "id": 37,
+      "name": "Covert Ops Training",
+      "stats": {
+        "str": 3,
+        "dex": 3,
+        "con": 3,
+        "int": 3,
+        "ego": 0,
+        "pre": 0,
+        "rec": 0,
+        "end": 0
+      }
+    },
+    {
+      "id": 38,
+      "name": "Martial Training",
+      "stats": {
+        "str": 3,
+        "dex": 3,
+        "con": 0,
+        "int": 0,
+        "ego": 3,
+        "pre": 0,
+        "rec": 3,
+        "end": 0
+      }
+    },
+    {
+      "id": 39,
+      "name": "Paramilitary Training",
+      "stats": {
+        "str": 3,
+        "dex": 0,
+        "con": 3,
+        "int": 0,
+        "ego": 0,
+        "pre": 0,
+        "rec": 3,
+        "end": 3
+      }
+    },
+    {
+      "id": 40,
+      "name": "Discipline Training",
+      "stats": {
+        "str": 3,
+        "dex": 0,
+        "con": 0,
+        "int": 3,
+        "ego": 0,
+        "pre": 3,
+        "rec": 0,
+        "end": 3
+      }
+    },
+    {
+      "id": 41,
+      "name": "Sniper Training",
+      "stats": {
+        "str": 0,
+        "dex": 3,
+        "con": 0,
+        "int": 0,
+        "ego": 3,
+        "pre": 3,
+        "rec": 0,
+        "end": 3
+      }
+    },
+    {
+      "id": 42,
+      "name": "Command Training",
+      "stats": {
+        "str": 0,
+        "dex": 0,
+        "con": 0,
+        "int": 3,
+        "ego": 3,
+        "pre": 3,
+        "rec": 3,
+        "end": 0
+      }
+    },
+    {
+      "id": 43,
+      "name": "Survival Training",
+      "stats": {
+        "str": 0,
+        "dex": 3,
+        "con": 3,
+        "int": 0,
+        "ego": 0,
+        "pre": 3,
+        "rec": 2,
+        "end": 2
+      }
+    },
+    {
+      "id": 44,
+      "name": "Field Ops Training",
+      "stats": {
+        "str": 0,
+        "dex": 0,
+        "con": 3,
+        "int": 3,
+        "ego": 3,
+        "pre": 0,
+        "rec": 2,
+        "end": 2
+      }
+    },
+    {
+      "id": 45,
+      "name": "Jack of All Trades",
+      "stats": {
+        "str": 2,
+        "dex": 2,
+        "con": 2,
+        "int": 2,
+        "ego": 2,
+        "pre": 2,
+        "rec": 2,
+        "end": 2
+      }
+    }
+  ]
+}

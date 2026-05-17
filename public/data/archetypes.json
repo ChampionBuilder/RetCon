@@ -1,0 +1,2157 @@
+{
+  "version": 37,
+  "archetypeGroups": [
+    {
+      "id": 0,
+      "name": null,
+      "toolTip": null
+    },
+    {
+      "id": 1,
+      "name": "Any / Multiple",
+      "icon": "Role_Freeform",
+      "toolTip": "You are well-rounded and are capable of switching between one or more roles as the situation demands. Note that this is to indicate a character capable of switching between multiple roles, such as Tank and Melee Damage, and should not be confused with the general-purpose Hybrid role."
+    },
+    {
+      "id": 2,
+      "name": "Hybrid",
+      "icon": "Role_Hybrid",
+      "toolTip": "You are the basis to which other champions are compared, neither excelling nor falling behind in any area of combat.",
+      "extra": "Damage and Healing are modified by a small amount, scaling with your Super Stats.  While Hybrid is well-rounded and has no actual penalties, its bonuses are notably smaller than the more specialized roles."
+    },
+    {
+      "id": 3,
+      "name": "Tank",
+      "icon": "Role_Tank",
+      "toolTip": "You are built to take damage and are good at grabbing your foes' attention in combat, but you generate less Energy than other roles.",
+      "extra": "Max Health: +125%/Damage Resistance: +110%/Threat: +110%/Control Resistance: +125%/Energy From Blocking: +125%/Max Energy: -80%/Equilibrium: -80%"
+    },
+    {
+      "id": 4,
+      "name": "Melee Damage",
+      "icon": "Role_MeleeDamage",
+      "toolTip": "You excel at dealing Melee damage, but aren't much use at range. When the rush of combat leaves you, your Energy drops faster than most.",
+      "extra": "Melee Damage: +125%/Energy Building Strength: +110%/Control Power Strength: -80%/Energy From Blocking: -50%"
+    },
+    {
+      "id": 5,
+      "name": "Ranged Damage",
+      "icon": "Role_RangedDamage",
+      "toolTip": "You deal good damage from a distance, but are weak in Melee combat and can take less damage than other roles can.",
+      "extra": "Ranged Damage: +125%/Energy Building Strength: +130%/Control Power Strength: -80%/Energy From Blocking: -50%"
+    },
+    {
+      "id": 6,
+      "name": "Support",
+      "icon": "Role_Support",
+      "toolTip": "You are adept at supporting others, but are also capable of standing on your own. You generate more Energy than other roles, but also deal less damage and have less Health.",
+      "extra": "Healing: +125%/Base Equilibrium: +200%/Energy Recovery: +200%/Energy Decay: +50%/Control Power Strength: +125%/Threat: +90%/Max Health: -90%/Damage: -90%"
+    }
+  ],
+  "archetypeUnlocks": [
+    {
+      "id": 0,
+      "info": null
+    },
+    {
+      "id": 1,
+      "info": "Freely available"
+    },
+    {
+      "id": 2,
+      "info": "Subscription/LTS or C-Store Purchase"
+    },
+    {
+      "id": 3,
+      "info": "Reach Level 40"
+    },
+    {
+      "id": 4,
+      "info": "Winter Event"
+    },
+    {
+      "id": 5,
+      "info": "Forum Malvanum"
+    },
+    {
+      "id": 6,
+      "info": "Nightmare Invasion"
+    },
+    {
+      "id": 7,
+      "info": "Nighthawk Event"
+    },
+    {
+      "id": 8,
+      "info": "Foxbatcon"
+    },
+    {
+      "id": 9,
+      "info": "Blood Moon"
+    },
+    {
+      "id": 10,
+      "info": "High Noon at Snake Gulch"
+    },
+    {
+      "id": 11,
+      "info": "Patriot Event"
+    }
+  ],
+  "archetypes": [
+    {
+      "id": 0,
+      "name": null,
+      "unlockType": 0,
+      "group": 0,
+      "superStatList": [],
+      "icon": "",
+      "powerList": null,
+      "specializationTreeList": [],
+      "overview": null,
+      "concepts": null,
+      "extra": null
+    },
+    {
+      "id": 1,
+      "name": "Freeform",
+      "unlockType": 2,
+      "group": 1,
+      "superStatList": [],
+      "icon": "Archetype_Freeform",
+      "powerList": null,
+      "specializationTreeList": [],
+      "overview": "Choose this option to mix and match your starting powers from any archetype. Tailor your hero's characteristics by choosing an Innate Talent. Archetypes are built and balanced to provide everything a hero needs, but those who want complete control can use a custom champion.",
+      "concepts": null,
+      "extra": null
+    },
+    {
+      "id": 2,
+      "name": "The Inferno",
+      "unlockType": 1,
+      "group": 5,
+      "superStatList": [
+        7,
+        8,
+        5
+      ],
+      "icon": "Archetype_Inferno",
+      "innateTalent": 19,
+      "powerList": [
+        25,
+        26,
+        [
+          31,
+          29
+        ],
+        27,
+        [
+          33,
+          41
+        ],
+        28,
+        52,
+        30,
+        37,
+        [
+          40,
+          43
+        ],
+        34,
+        [
+          50,
+          49
+        ]
+      ],
+      "specializationTreeList": [
+        7,
+        11,
+        15
+      ],
+      "overview": "You control the devastating element of fire, creating and shaping it to your will. Whether hurling flaming projectiles or erupting into a deadly firestorm, you leave a blazing swath of destruction in your wake.",
+      "concepts": "Fire Mutation, Flame Mage, Magma Creature, Plasma Control Suit, Pyrokinetic",
+      "extra": "You have Ranged area attacks that cause Damage over Time. You can't take a lot of damage though, so be sure to hit your targets hard enough to take them down or recruit a tough ally who can take the damage for you. You can also absorb Energy from fire around you, so you become most powerful when you set things on fire. Light things up and feel the burn!"
+    },
+    {
+      "id": 3,
+      "name": "The Tempest",
+      "unlockType": 2,
+      "group": 5,
+      "superStatList": [
+        8,
+        5,
+        7
+      ],
+      "icon": "Archetype_Tempest",
+      "innateTalent": 31,
+      "powerList": [
+        1,
+        2,
+        6,
+        3,
+        [
+          19,
+          12
+        ],
+        9,
+        22,
+        5,
+        7,
+        [
+          20,
+          23
+        ],
+        4,
+        [
+          15,
+          13
+        ]
+      ],
+      "specializationTreeList": [
+        8,
+        11,
+        15
+      ],
+      "overview": "You are able to control and create electrical currents, generating electricity on your own or even directly affecting the weather itself. With a bolt of lightning from the sky or a continuous barrage of electricity, you are able to devastate your foes.",
+      "concepts": "Tesla Coil Suit, Air Elemental, Electric Mutation, Lightning Wizard, Weather Control Artifact",
+      "extra": "You have a variety of Ranged attacks, many of which are capable of hitting multiple foes. Many of your powers leave your targets electrically charged, setting you up for future attacks against them. You aren't so great at taking a beating yourself, so take them down quickly before they overwhelm you."
+    },
+    {
+      "id": 4,
+      "name": "The Marksman",
+      "unlockType": 1,
+      "group": 5,
+      "superStatList": [
+        2,
+        4,
+        5
+      ],
+      "icon": "Archetype_Marksman",
+      "innateTalent": 28,
+      "powerList": [
+        122,
+        124,
+        [
+          131,
+          125
+        ],
+        130,
+        136,
+        129,
+        140,
+        319,
+        127,
+        [
+          135,
+          139
+        ],
+        [
+          126,
+          134
+        ],
+        [
+          137,
+          138
+        ]
+      ],
+      "specializationTreeList": [
+        2,
+        11,
+        15
+      ],
+      "overview": "You are an expert with the bow, and your precision and finesse allow you to take foes down from long range. Your arsenal of arrows provides you with the tools for many situations.",
+      "concepts": "Arcane Hunter, Master Archer, Ancient Deity, Expert Tracker, Dimensional Nomad",
+      "extra": "You have a versatile set of Ranged attacks, always trying to have the right arrow for any situation. You focus on a target's weak spots, dealing many critical hits to your foes."
+    },
+    {
+      "id": 5,
+      "name": "The Scourge",
+      "unlockType": 2,
+      "group": 5,
+      "superStatList": [
+        7,
+        3,
+        5
+      ],
+      "icon": "Archetype_Scourge",
+      "innateTalent": 37,
+      "powerList": [
+        569,
+        570,
+        573,
+        590,
+        [
+          593,
+          577
+        ],
+        572,
+        [
+          585,
+          580
+        ],
+        478,
+        592,
+        594,
+        584,
+        587
+      ],
+      "specializationTreeList": [
+        7,
+        18,
+        11
+      ],
+      "overview": "Your power comes from somewhere beyond this mortal realm, allowing you to infest your foes with toxic energy. You use these infernal powers as you see fit, leaving your foes gasping through an onslaught of poison.",
+      "concepts": "Toxic Mutant, Demonic Gift, Ancient Curse, Nightmare Creature, Remorseful Demon",
+      "extra": "Many of your powers poison your foes, and your strength increases as your poisons wither them away. Your pestilent clouds will weaken your foes as you press the attack, and you'll have some ability to hinder your opponents' mobility."
+    },
+    {
+      "id": 6,
+      "name": "The Icicle",
+      "unlockType": [
+        2,
+        4
+      ],
+      "group": 5,
+      "superStatList": [
+        2,
+        8,
+        3
+      ],
+      "icon": "Archetype_Icicle",
+      "innateTalent": 44,
+      "powerList": [
+        91,
+        92,
+        101,
+        97,
+        [
+          102,
+          96
+        ],
+        93,
+        111,
+        99,
+        100,
+        98,
+        [
+          104,
+          95
+        ],
+        45
+      ],
+      "specializationTreeList": [
+        2,
+        19,
+        15
+      ],
+      "overview": "You have the power to create ice and shape it at will. Hurl frozen shards at your enemies, chill them to the bone, then shatter them for devastating effect!",
+      "concepts": "Cold Mutation, Freeze Device, Ice Wizard, Tundra Creature",
+      "extra": "You have ranged attacks that cause your enemies to become chilled. You cause more damage the more you chill your foes, so be sure to make them as frosty as possible! You can't take a lot of damage though, so be sure to hit your targets hard enough to take them down or recruit a tough ally who can take the damage for you."
+    },
+    {
+      "id": 7,
+      "name": "The Squall",
+      "unlockType": [
+        2,
+        11
+      ],
+      "group": 5,
+      "superStatList": [
+        5,
+        7,
+        8
+      ],
+      "icon": "Archetype_Squall",
+      "innateTalent": 38,
+      "powerList": [
+        75,
+        76,
+        77,
+        78,
+        [
+          81,
+          95
+        ],
+        258,
+        [
+          86,
+          85
+        ],
+        80,
+        82,
+        [
+          4,
+          98
+        ],
+        83,
+        90
+      ],
+      "specializationTreeList": [
+        5,
+        19,
+        11
+      ],
+      "overview": "You can control the wind and weather currents around you, creating raging hurricanes, powerful twisters, and huge gusts of wind to knock down and disorient your foes.",
+      "concepts": "Storm Spirit, Atmospheric Manipulation, Weather Mutation, Air Wizard, Portable Wind Generator",
+      "extra": "You possess a multitude of mid and long range attacks, many of which can Repel and Disorient your enemies, allowing you to direct movement on battlefield. You don't last long when enemies focus on you, so keep them off their feet while you take them down."
+    },
+    {
+      "id": 8,
+      "name": "The Soldier",
+      "unlockType": 1,
+      "group": 5,
+      "superStatList": [
+        5,
+        2,
+        7
+      ],
+      "icon": "Archetype_Soldier",
+      "innateTalent": 20,
+      "powerList": [
+        186,
+        197,
+        [
+          191,
+          194
+        ],
+        228,
+        258,
+        [
+          196,
+          204
+        ],
+        439,
+        211,
+        192,
+        [
+          206,
+          210
+        ],
+        [
+          203,
+          201
+        ],
+        [
+          213,
+          209
+        ]
+      ],
+      "specializationTreeList": [
+        5,
+        19,
+        11
+      ],
+      "overview": "You possess a formidable arsenal of military weapons and know how to use them. From heavy pistols and assault rifles to rockets and sniper rifles, you are the ultimate one-man army.",
+      "concepts": "Android Mercenary, Ex-Special Forces, Gun-Toting Vigilante, Special Agent, Super-Soldier",
+      "extra": "Your strength lies in your Ranged attacks. You have a number of single-target and area effect attacks that inflict heavy damage to your target. Be careful though, all those weapons don't leave much room for body armor, so you either need to take down your opponent quickly or find someone who can draw incoming fire!"
+    },
+    {
+      "id": 9,
+      "name": "The Glacier",
+      "unlockType": 1,
+      "group": 3,
+      "superStatList": [
+        3,
+        8,
+        5
+      ],
+      "icon": "Archetype_Glacier",
+      "innateTalent": 24,
+      "powerList": [
+        91,
+        92,
+        96,
+        224,
+        [
+          105,
+          95
+        ],
+        258,
+        98,
+        99,
+        [
+          101,
+          100
+        ],
+        235,
+        [
+          103,
+          104
+        ],
+        109
+      ],
+      "specializationTreeList": [
+        3,
+        15,
+        9
+      ],
+      "overview": "You are able to create ice and cold out of thin air and manipulate it various ways. You blast your foes with ice shards, trap them in solid blocks of ice, then shatter them with only a thought.",
+      "concepts": "Cold Mutation, Cryo-Suit, Frost Warrior, Ice Elemental, Winter Spirit",
+      "extra": "You have a number of powers used to lock down your opponents, holding them in place so your allies can finish them off. You eventually gain the ability to shatter your ice constructs, causing damage to any opponent in their icy embrace."
+    },
+    {
+      "id": 10,
+      "name": "The Mountain",
+      "unlockType": 2,
+      "group": 3,
+      "superStatList": [
+        3,
+        5,
+        8
+      ],
+      "icon": "Archetype_Mountain",
+      "innateTalent": 39,
+      "powerList": [
+        413,
+        414,
+        421,
+        400,
+        [
+          422,
+          425
+        ],
+        258,
+        [
+          417,
+          424
+        ],
+        420,
+        415,
+        [
+          426,
+          423
+        ],
+        235,
+        427
+      ],
+      "specializationTreeList": [
+        3,
+        9,
+        15
+      ],
+      "overview": "You are an embodiment of the rocks and earth that surround us, standing firm in the face of your foes. You manipulate the stone and soil to assault and harass those that would stand against you and your allies.",
+      "concepts": "Rock Golem, Nature's Guardian, Earth Elemental, Druidic Enchantment, Primordial Entity",
+      "extra": "You have multiple powers that can knock down and weaken your foes, allowing you to gain control of the fight and the attention of your enemies. Your assault enables your allies to attack unhindered, so focus on keeping your enemies attacking you instead of them!"
+    },
+    {
+      "id": 11,
+      "name": "The Master",
+      "unlockType": 2,
+      "group": 3,
+      "superStatList": [
+        3,
+        2,
+        7
+      ],
+      "icon": "Archetype_Master",
+      "innateTalent": 36,
+      "powerList": [
+        300,
+        301,
+        [
+          325,
+          313
+        ],
+        318,
+        [
+          303,
+          308
+        ],
+        305,
+        [
+          309,
+          311
+        ],
+        319,
+        302,
+        330,
+        [
+          333,
+          312
+        ],
+        328
+      ],
+      "specializationTreeList": [
+        3,
+        14,
+        9
+      ],
+      "overview": "Your ability to sense and avoid incoming danger is unparalleled, making you a difficult adversary to defeat. Your skill with unarmed martial arts allows you to pummel your foes, all while avoiding their assault against you.",
+      "concepts": "Blind Monk, Time-Shifted Foot Soldier, Venerable Sensei, Sixth Sense Mutation",
+      "extra": "You are adept at prolonged fights due to your abilities to avoid and dodge your attackers. In team fights, you work to keep foes focused on you with your martial arts powers, leaving your allies free to attack them unhindered."
+    },
+    {
+      "id": 12,
+      "name": "The Invincible",
+      "unlockType": 2,
+      "group": 3,
+      "superStatList": [
+        4,
+        3,
+        8
+      ],
+      "icon": "Archetype_Invincible",
+      "innateTalent": 42,
+      "powerList": [
+        215,
+        [
+          218,
+          217
+        ],
+        [
+          225,
+          223
+        ],
+        224,
+        [
+          233,
+          231
+        ],
+        258,
+        [
+          238,
+          236
+        ],
+        [
+          222,
+          56
+        ],
+        226,
+        235,
+        [
+          239,
+          237
+        ],
+        [
+          265,
+          230
+        ]
+      ],
+      "specializationTreeList": [
+        4,
+        9,
+        15
+      ],
+      "overview": "Who said you need superpowers to be a superhero? Using the latest in cutting-edge technology, your suit of armor offers near-invincible levels of protection while remaining light and flexible enough for maneuverability. And with its arsenals of guns, lasers, and missiles, you can dish out as much as you can take.",
+      "concepts": "Powered Armor, Future Soldier, Genius Industrialist, Billionaire Scientist, Discovered Alien Technology",
+      "extra": "Your suit is equipped with the latest in damage dealing technology. It is even capable of using multiple powers at once, allowing you to deal massive Area of Effect Damage."
+    },
+    {
+      "id": 13,
+      "name": "The Behemoth",
+      "unlockType": 1,
+      "group": 3,
+      "superStatList": [
+        3,
+        1,
+        7
+      ],
+      "icon": "Archetype_Behemoth",
+      "innateTalent": 23,
+      "powerList": [
+        428,
+        430,
+        438,
+        400,
+        [
+          440,
+          445
+        ],
+        451,
+        [
+          446,
+          448
+        ],
+        439,
+        403,
+        [
+          447,
+          450
+        ],
+        [
+          454,
+          453
+        ],
+        441
+      ],
+      "specializationTreeList": [
+        3,
+        9,
+        14
+      ],
+      "overview": "You are an unstoppable juggernaut of raw strength who can take a lot of punishment. Your crushing blows send enemies flying or can Stun them into submission.",
+      "concepts": "Exo-Skeleton, Golem, Radioactive Boost, Secret Formula, Strength Mutation",
+      "extra": "You've got some strong close combat powers designed to damage and knock down your opponents. You can take a lot of damage which you can turn around and use against your enemies. When you're teamed up with other heroes, a lot of them will be depending on you to soak up enemy fire so charge in and start attacking!"
+    },
+    {
+      "id": 14,
+      "name": "The Disciple",
+      "unlockType": 2,
+      "group": 4,
+      "superStatList": [
+        5,
+        7,
+        2
+      ],
+      "icon": "Archetype_Disciple",
+      "innateTalent": 33,
+      "powerList": [
+        340,
+        342,
+        347,
+        [
+          346,
+          362
+        ],
+        345,
+        348,
+        363,
+        354,
+        353,
+        [
+          355,
+          361
+        ],
+        [
+          367,
+          360
+        ],
+        [
+          393,
+          358
+        ]
+      ],
+      "specializationTreeList": [
+        5,
+        19,
+        10
+      ],
+      "overview": "You are a master of manipulating kinetic Energy. These powers primarily manifest themselves as your kinetic weaponry, but you can also summon even greater telekinetic power to shield yourself or destroy foes.",
+      "concepts": "Telekinetic Warrior, Psychic Ninja, Psi-Assassin, Mental Mastermind, Technological Energy Blades",
+      "extra": "You have many powerful Melee attacks, as well as close range group attacks. You have the ability to dish out tons of damage immediately around you, and can use your mental prowess to gain energy while defeating foes in combat."
+    },
+    {
+      "id": 15,
+      "name": "The Unleashed",
+      "unlockType": 1,
+      "group": 4,
+      "superStatList": [
+        2,
+        7,
+        1
+      ],
+      "icon": "Archetype_Unleashed",
+      "innateTalent": 40,
+      "powerList": [
+        266,
+        267,
+        268,
+        326,
+        [
+          57,
+          270
+        ],
+        [
+          55,
+          272
+        ],
+        [
+          330,
+          382
+        ],
+        271,
+        56,
+        320,
+        [
+          316,
+          69
+        ],
+        [
+          67,
+          70
+        ]
+      ],
+      "specializationTreeList": [
+        2,
+        14,
+        19
+      ],
+      "overview": "You are in tune with the universe in ways few can understand. This understanding has enhanced your formidable swordsmanship with powers beyond, enabling you to knock and control your foes from a distance, allowing you to close the gap and finish them.",
+      "concepts": "Cosmic Knight, Militant Monk, Dark Inquisitor, Eldritch Warrior, Mysterious Visitor",
+      "extra": "You are a fearsome opponent at close range, capable of quickly dispatching multiple foes with your dual blades. You will learn to enhance your combat style with ways to knock your foes around the battle field, bringing them to you with a flick of your wrist."
+    },
+    {
+      "id": 16,
+      "name": "The Blade",
+      "unlockType": 1,
+      "group": 4,
+      "superStatList": [
+        2,
+        1,
+        7
+      ],
+      "icon": "Archetype_Blade",
+      "innateTalent": 21,
+      "powerList": [
+        286,
+        287,
+        [
+          325,
+          289
+        ],
+        326,
+        292,
+        291,
+        [
+          297,
+          295
+        ],
+        290,
+        320,
+        [
+          322,
+          330
+        ],
+        [
+          316,
+          328
+        ],
+        [
+          321,
+          313
+        ]
+      ],
+      "specializationTreeList": [
+        2,
+        10,
+        14
+      ],
+      "overview": "You are trained in the ancient arts of martial combat and have mastered the way of the sword. You are deadly in close combat, your focused strikes swiftly cutting down any who dares stand against you.",
+      "concepts": "Alien Gladiator, Blade Master, Mystic Knight, Ninja Warrior, Robot Assassin",
+      "extra": "You are the master of close combat, specialized in swiftly taking down single targets. Finish your enemies before they get a chance to retaliate, as you cannot sustain a great deal of injuries yourself."
+    },
+    {
+      "id": 17,
+      "name": "The Devastator",
+      "unlockType": [
+        2,
+        5
+      ],
+      "group": 4,
+      "superStatList": [
+        1,
+        7,
+        3
+      ],
+      "icon": "Archetype_Devastator",
+      "innateTalent": 32,
+      "powerList": [
+        396,
+        397,
+        404,
+        406,
+        [
+          409,
+          399
+        ],
+        451,
+        [
+          412,
+          408
+        ],
+        402,
+        37,
+        [
+          407,
+          401
+        ],
+        [
+          452,
+          453
+        ],
+        411
+      ],
+      "specializationTreeList": [
+        1,
+        10,
+        14
+      ],
+      "overview": "You've got a really big weapon, and you aren't afraid to use it. Whether it's a huge axes, sword, or hammer, you use it to crush your foes, knocking them aside if they think about giving you trouble.",
+      "concepts": "Runic Weapon, Planar Emissary, Ancient Deity, Transdimensional Soldier, Primal Warrior",
+      "extra": "With your strong, heavy swings you are able to take on many foes at once, utilizing the weight of your weapon to Knock your foes down and Disorient them. Striking at one foe or many, you'll make them regret getting close to you."
+    },
+    {
+      "id": 18,
+      "name": "The Fist",
+      "unlockType": 2,
+      "group": 4,
+      "superStatList": [
+        2,
+        1,
+        7
+      ],
+      "icon": "Archetype_Fist",
+      "innateTalent": 35,
+      "powerList": [
+        300,
+        306,
+        [
+          325,
+          313
+        ],
+        326,
+        [
+          303,
+          307
+        ],
+        305,
+        [
+          309,
+          310
+        ],
+        319,
+        302,
+        [
+          311,
+          308
+        ],
+        316,
+        [
+          322,
+          330
+        ]
+      ],
+      "specializationTreeList": [
+        2,
+        10,
+        19
+      ],
+      "overview": "Your expertise in unarmed combat is formidable, allowing you to catch enemies off guard with your powerful strikes. Your rapid strikes make you highly dangerous up close, quickly dispatching any foe in your way.",
+      "concepts": "Street Brawler, Mixed Martial Artist, Reflect Enhancement Experiment, Warrior Monk",
+      "extra": "You are an up close combatant, with powers that are effective in single and multiple target situations. You have several ways to hinder your enemies during a fight, by Stunning or Knocking them down, but you won't last long with too many enemies attacking you."
+    },
+    {
+      "id": 19,
+      "name": "The Void",
+      "unlockType": [
+        2,
+        6
+      ],
+      "group": 2,
+      "superStatList": [
+        6,
+        3,
+        7
+      ],
+      "icon": "Archetype_Void",
+      "innateTalent": 29,
+      "powerList": [
+        475,
+        476,
+        482,
+        [
+          483,
+          503
+        ],
+        [
+          480,
+          493
+        ],
+        484,
+        478,
+        497,
+        486,
+        [
+          485,
+          489
+        ],
+        [
+          491,
+          501
+        ],
+        [
+          496,
+          495
+        ]
+      ],
+      "specializationTreeList": [
+        6,
+        15,
+        11
+      ],
+      "overview": "You are connected to a realm of shadows and darkness. This connection allows you to channel dimensional energy to assault your foes, drawing out their fears and draining them of their essence.",
+      "concepts": "Shadow Entity, Dark Magician, Soul Vampire, Demonic Blood, Multi-Dimensional Being",
+      "extra": "You have a good range of mid and long range attacks, both single target and group attacks. You have the ability to lock down and weaken your foes, and can learn to summon creatures of pure shadow to assist you in combat."
+    },
+    {
+      "id": 20,
+      "name": "The Grimoire",
+      "unlockType": 1,
+      "group": 2,
+      "superStatList": [
+        4,
+        5,
+        6
+      ],
+      "icon": "Archetype_Grimoire",
+      "innateTalent": 26,
+      "powerList": [
+        529,
+        530,
+        533,
+        504,
+        [
+          537,
+          521
+        ],
+        [
+          258,
+          535
+        ],
+        [
+          514,
+          542
+        ],
+        532,
+        [
+          516,
+          506
+        ],
+        [
+          509,
+          511
+        ],
+        [
+          508,
+          510
+        ],
+        [
+          540,
+          520
+        ]
+      ],
+      "specializationTreeList": [
+        4,
+        15,
+        18
+      ],
+      "overview": "You have unlocked mysterious arcane secrets. You use this knowledge to weave powerful magic into auras, sigils, and spells designed to confound your enemies and protect your allies.",
+      "concepts": "Dimensional Sorcerer, Master Mage, Rune Witch, Shaman, Street Wizard",
+      "extra": "You have a good range of abilities that allow you to set up areas of control to focus your mystic powers. This allows you to heal your allies, debilitate your foes, and deal decent area effect damage."
+    },
+    {
+      "id": 21,
+      "name": "The Impulse",
+      "unlockType": 2,
+      "group": 2,
+      "superStatList": [
+        8,
+        5,
+        4
+      ],
+      "icon": "Archetype_Impulse",
+      "innateTalent": 34,
+      "powerList": [
+        53,
+        54,
+        55,
+        [
+          62,
+          61
+        ],
+        68,
+        63,
+        [
+          64,
+          67
+        ],
+        56,
+        69,
+        57,
+        [
+          73,
+          70
+        ],
+        72
+      ],
+      "specializationTreeList": [
+        8,
+        15,
+        18
+      ],
+      "overview": "You can create powerful blasts, eruptions, and protective bubbles out of pure energy. You use these forces to knock your foes around, keeping them off balance while you pummel them from afar.",
+      "concepts": "Force Fields, Master of Gravity, Energy Manipulation, Technological Shields, Force of Will",
+      "extra": "Many of your powers allow you to knock foes back, keeping them away from you and preventing them from attacking while they fly through the air. You will gain the ability to shield yourself and allies, while also being able to dish out serious damage."
+    },
+    {
+      "id": 22,
+      "name": "The Specialist",
+      "unlockType": 2,
+      "group": 2,
+      "superStatList": [
+        2,
+        3,
+        7
+      ],
+      "icon": "Archetype_Specialist",
+      "innateTalent": 52,
+      "powerList": [
+        185,
+        [
+          187,
+          267
+        ],
+        [
+          191,
+          198
+        ],
+        [
+          318,
+          326
+        ],
+        268,
+        272,
+        [
+          199,
+          270
+        ],
+        [
+          214,
+          271
+        ],
+        320,
+        319,
+        [
+          206,
+          328
+        ],
+        [
+          212,
+          273
+        ]
+      ],
+      "specializationTreeList": [
+        2,
+        19,
+        15
+      ],
+      "overview": "You are an expert at taking down your target with whatever means necessary. You are well trained with pistols and swords, alternating between them in combat with deadly quickness.",
+      "concepts": "Bounty Hunter, Cybernetic Mercenary, Techno-Ninja, Covert Ops, Military Specialist",
+      "extra": "You excel at short and mid-range combat, whether with your swords or your pistols. Your quick reflexes allow you to avoid incoming attacks, all the while whittling away at your foes with your rapid strikes."
+    },
+    {
+      "id": 23,
+      "name": "The Savage",
+      "unlockType": 2,
+      "group": 2,
+      "superStatList": [
+        1,
+        3,
+        7
+      ],
+      "icon": "Archetype_Savage",
+      "innateTalent": 22,
+      "powerList": [
+        589,
+        548,
+        554,
+        591,
+        556,
+        550,
+        568,
+        [
+          549,
+          319
+        ],
+        592,
+        [
+          560,
+          552
+        ],
+        [
+          594,
+          452
+        ],
+        [
+          574,
+          564
+        ]
+      ],
+      "specializationTreeList": [
+        1,
+        14,
+        10
+      ],
+      "overview": "You are a vicious hybrid of man and beast with powers far greater than either. You rip apart enemies with your razor-sharp claws and teeth while rapidly healing your own injuries.",
+      "concepts": "Animal Mutation, Lab Experiment, Man-Animal Hybrid, Mechanical Beast, Supernatural Creature",
+      "extra": "You've got a good mix of close combat attack powers, and can take a fair amount of damage due to your self-healing abilities. While you don't have the same offensive or defensive capabilities as dedicated archetypes, you're a good balance of both."
+    },
+    {
+      "id": 24,
+      "name": "The Night Avenger",
+      "unlockType": [
+        2,
+        7
+      ],
+      "group": 2,
+      "superStatList": [
+        2,
+        1,
+        5
+      ],
+      "icon": "Archetype_NightAvenger",
+      "innateTalent": 43,
+      "powerList": [
+        274,
+        275,
+        323,
+        327,
+        [
+          161,
+          279
+        ],
+        [
+          277,
+          258
+        ],
+        177,
+        319,
+        151,
+        [
+          282,
+          285
+        ],
+        [
+          170,
+          167
+        ],
+        184
+      ],
+      "specializationTreeList": [
+        2,
+        15,
+        19
+      ],
+      "overview": "Your personal training and skills with advanced gadgets makes you a precise force for justice. You reach out from the shadows and stop villainy in its tracks, and serve as a symbol to any who need your help.",
+      "concepts": "Vigilante, Eccentric Billionaire, Technical Genius, Vengeful Orphan, Street Warrior",
+      "extra": "You strike from the shadows and deal heavy damage with claws and versatile gadgets. You strike swiftly and with brutal precision, prowling the night to bring justice."
+    },
+    {
+      "id": 25,
+      "name": "The Radiant",
+      "unlockType": 1,
+      "group": 6,
+      "superStatList": [
+        6,
+        5,
+        4
+      ],
+      "icon": "Archetype_Radiant",
+      "innateTalent": 41,
+      "powerList": [
+        529,
+        462,
+        469,
+        468,
+        470,
+        535,
+        [
+          519,
+          511
+        ],
+        532,
+        514,
+        [
+          531,
+          595
+        ],
+        520,
+        545
+      ],
+      "specializationTreeList": [
+        6,
+        16,
+        12
+      ],
+      "overview": "You have been blessed with the powers of light. You inflict damage on your opponents while healing the wounds of those who fight alongside you. You possess the power to revive your fallen allies, making you an invaluable asset.",
+      "concepts": "Radiant Sorcerer, Solar Guardian, Archangel, Luminescent Warrior, Disciple of the Dawn",
+      "extra": "Your wide array of light based powers allow you to heal your allies in addition to damaging your enemies. In times of need you can paralyze your foes and even revive your fallen allies."
+    },
+    {
+      "id": 26,
+      "name": "The Mind",
+      "unlockType": 1,
+      "group": 6,
+      "superStatList": [
+        6,
+        8,
+        5
+      ],
+      "icon": "Archetype_Mind",
+      "innateTalent": 25,
+      "powerList": [
+        368,
+        369,
+        [
+          374,
+          376
+        ],
+        505,
+        [
+          383,
+          375
+        ],
+        535,
+        373,
+        354,
+        378,
+        357,
+        [
+          387,
+          385
+        ],
+        389
+      ],
+      "specializationTreeList": [
+        6,
+        12,
+        16
+      ],
+      "overview": "You have tapped into powerful psychic energies. You use your mental might to lash out at opponents and reach into their psyches to make their darkest nightmares real.",
+      "concepts": "Alien Overmind, Mental Mutation, Mind-Control Ray, Psionic Projector, Telepath",
+      "extra": "You have limited Ranged attack abilities, but have a number of powers designed to lock down enemies and boost allies. You are most powerful when supporting other heroes."
+    },
+    {
+      "id": 27,
+      "name": "The Inventor",
+      "unlockType": [
+        2,
+        8
+      ],
+      "group": 6,
+      "superStatList": [
+        4,
+        6,
+        5
+      ],
+      "icon": "Archetype_Inventor",
+      "innateTalent": 30,
+      "powerList": [
+        145,
+        146,
+        149,
+        152,
+        [
+          166,
+          173
+        ],
+        258,
+        147,
+        222,
+        175,
+        [
+          172,
+          182
+        ],
+        [
+          162,
+          178
+        ],
+        180
+      ],
+      "specializationTreeList": [
+        4,
+        18,
+        13
+      ],
+      "overview": "You are an incredibly gifted creator of advanced technology, using unconventional ideas that the average person would think impossible. Your quirky designs get the job done, with only the occasional unintended side effect.",
+      "concepts": "Scientific Entrepreneur, Prototype Cyber Soldier, Technopath, Kid Genius, Mad Scientist",
+      "extra": "Your set of wacky gadgets provides you with a good variety of abilities. You will learn to create personal robots to aid you in combat, and several of your gizmos will be valuable assets in assisting other heroes."
+    },
+    {
+      "id": 28,
+      "name": "The Cursed",
+      "unlockType": 9,
+      "group": 5,
+      "superStatList": [
+        7,
+        3,
+        5
+      ],
+      "icon": "Archetype_Cursed",
+      "innateTalent": 37,
+      "powerList": [
+        569,
+        570,
+        573,
+        590,
+        [
+          593,
+          577
+        ],
+        572,
+        [
+          585,
+          580
+        ],
+        478,
+        592,
+        594,
+        584,
+        587
+      ],
+      "specializationTreeList": [
+        7,
+        18,
+        11
+      ],
+      "overview": "Your power comes from somewhere beyond this mortal realm, allowing you to infest your foes with toxic energy. You use these infernal powers as you see fit, leaving your foes gasping through an onslaught of poison.",
+      "concepts": "Toxic Mutant, Demonic Gift, Ancient Curse, Nightmare Creature, Remorseful Demon",
+      "extra": "Many of your powers poison your foes, and your strength increases as your poisons wither them away. Your pestilent clouds will weaken your foes as you press the attack, and you'll have some ability to hinder your opponents' mobility."
+    },
+    {
+      "id": 29,
+      "name": "The Automaton",
+      "unlockType": 3,
+      "group": 5,
+      "superStatList": [
+        5,
+        4,
+        3
+      ],
+      "icon": "Archetype_Automaton",
+      "innateTalent": 51,
+      "powerList": [
+        216,
+        [
+          219,
+          220
+        ],
+        228,
+        [
+          227,
+          229
+        ],
+        258,
+        [
+          155,
+          207
+        ],
+        230,
+        [
+          236,
+          243
+        ],
+        153,
+        [
+          222,
+          56
+        ],
+        [
+          154,
+          235
+        ],
+        [
+          260,
+          180
+        ]
+      ],
+      "specializationTreeList": [
+        5,
+        18,
+        19
+      ],
+      "overview": "You are the most technologically advanced machine known to man. You assess targets and terminate them without hesitation.",
+      "concepts": "Advanced Robot, Tactical Mastermind, Supercomputer Processing, Mechanized Brawler, Perfect Targeting",
+      "extra": "You are a sentient offensive weapons platform with a shoot-first attitude. While proficient at ranged combat, you possess options for melee engagements and in-combat recovery."
+    },
+    {
+      "id": 30,
+      "name": "The Rockstar",
+      "unlockType": 2,
+      "group": 3,
+      "superStatList": [
+        1,
+        8,
+        3
+      ],
+      "icon": "Archetype_Rockstar",
+      "innateTalent": 45,
+      "powerList": [
+        396,
+        397,
+        400,
+        [
+          409,
+          399
+        ],
+        451,
+        [
+          406,
+          443
+        ],
+        410,
+        [
+          39,
+          594
+        ],
+        37,
+        402,
+        [
+          452,
+          411
+        ],
+        459
+      ],
+      "specializationTreeList": [
+        1,
+        14,
+        9
+      ],
+      "overview": "You wield a mighty weapon befitting a Rockstar.  While you can use any heavy weapon, you like the axes and preferrably that of the musical variety.  Combined with your pyrotechnic powers of Rock and Roll, you are a force with whom to be reckoned with.",
+      "concepts": "Rock'n'Roll Warrior, God of Rock, Heavy Metal Mercenary, Battle Bard, Rockabilly Rebel.",
+      "extra": "With your wild, heavy swings and pyrotechnic powers, you are able to take on many foes at once, causing them damage and disorientation.  Rock on!"
+    },
+    {
+      "id": 31,
+      "name": "The Predator",
+      "unlockType": 2,
+      "group": 4,
+      "superStatList": [
+        2,
+        1,
+        7
+      ],
+      "icon": "Archetype_Predator",
+      "innateTalent": 46,
+      "powerList": [
+        589,
+        548,
+        [
+          554,
+          593
+        ],
+        590,
+        556,
+        550,
+        568,
+        [
+          549,
+          439
+        ],
+        592,
+        [
+          552,
+          564
+        ],
+        [
+          328,
+          316
+        ],
+        567
+      ],
+      "specializationTreeList": [
+        2,
+        19,
+        10
+      ],
+      "overview": "You are the ultimate hunter.  Once you engage your target in close combat, few can survive the fury of your assault.  You have a number of offensive attacks to wear down your enemies, all the while healing your own injuries.",
+      "concepts": "Savage Mutation, Evolved Insect, Genetically Enhanced, Clockwork Assassin, Arcane Hunter",
+      "extra": "You're a close-combat offensive powerhouse.  You can cause bleeding on targets, which you can use to your advantage.  You're not as tough as other archetypes, but you can fall back on your self-healing abilities."
+    },
+    {
+      "id": 32,
+      "name": "The Penitent",
+      "unlockType": 2,
+      "group": 4,
+      "superStatList": [
+        1,
+        2,
+        8
+      ],
+      "icon": "Archetype_Penitent",
+      "innateTalent": 47,
+      "powerList": [
+        286,
+        [
+          288,
+          547
+        ],
+        [
+          325,
+          289
+        ],
+        [
+          404,
+          326
+        ],
+        [
+          550,
+          291
+        ],
+        [
+          555,
+          177
+        ],
+        150,
+        [
+          549,
+          439
+        ],
+        557,
+        [
+          551,
+          191
+        ],
+        [
+          328,
+          452
+        ],
+        [
+          199,
+          126
+        ]
+      ],
+      "specializationTreeList": [
+        1,
+        14,
+        10
+      ],
+      "overview": "You have many destructive devices at your disposal.  From chains to chainsaws, your mix of short-range and close-range combat weapons give you a strong offense.  While you can't take a lot of damage, you can use your self-healing capabilities to stay in the fight.",
+      "concepts": "Reformed Convict, Escaped Madman, controlled Prisoner, Crazed Gadgeteer, Government Special Agent",
+      "extra": "You've got close-combat and short-range offensive capabilities.  You can cause bleeding on targets, which you can use to your advantage.  You're not as tough as other archetypes, but you can fall back on your self-healing abilities."
+    },
+    {
+      "id": 33,
+      "name": "The Hexslinger",
+      "unlockType": 2,
+      "group": 5,
+      "superStatList": [
+        4,
+        2,
+        5
+      ],
+      "icon": "Archetype_Hexslinger",
+      "innateTalent": 48,
+      "powerList": [
+        529,
+        530,
+        507,
+        [
+          527,
+          537
+        ],
+        536,
+        512,
+        528,
+        532,
+        [
+          516,
+          506
+        ],
+        [
+          540,
+          538
+        ],
+        [
+          466,
+          594
+        ],
+        [
+          545,
+          509
+        ]
+      ],
+      "specializationTreeList": [
+        4,
+        15,
+        11
+      ],
+      "overview": "You have a number of offensive spells at your disposal, as well as a few defensive abilities to keep yourself safe.  You can use your Curses to weaken your enemies, and Enchantments to enhance your own abilities.  You have access to a power that increases your damage when you have both conditions in effect.",
+      "concepts": "Occult Master, Superhuman Hunter, Dimensional Arcanist, Being of Magic, Mystic Conduit, Specialization_SuperCharged Avenger",
+      "extra": "You excel at ranged offensive capabilities.  You can cast Curses on targets, weakening your enemies in various ways.  You can also cast Enchantments to buff yourself.  You're not as tough as other archetypes, but you have some limited self-healing abilities."
+    },
+    {
+      "id": 34,
+      "name": "The Witch",
+      "unlockType": 2,
+      "group": 6,
+      "superStatList": [
+        6,
+        3,
+        7
+      ],
+      "icon": "Archetype_Witch",
+      "innateTalent": 49,
+      "powerList": [
+        569,
+        573,
+        575,
+        502,
+        [
+          510,
+          593
+        ],
+        [
+          535,
+          391
+        ],
+        [
+          480,
+          580
+        ],
+        579,
+        [
+          592,
+          576
+        ],
+        [
+          581,
+          586
+        ],
+        [
+          582,
+          466
+        ],
+        [
+          588,
+          594
+        ]
+      ],
+      "specializationTreeList": [
+        6,
+        12,
+        18
+      ],
+      "overview": "You have a few ranged attacks, and a number of support abilities.  Your main attribute is Constitution, so focusing on that will make you more powerful and give you more hit points.  Cursing your enemies will increase the power of your support abilities, allowing you to heal yourself and others more effectively.",
+      "concepts": "Witch, Warlock, Voodoo Master, Poison Elemental, Dark Soul, Corrupted Spirit",
+      "extra": "You excel with support powers and work best on a team.  You can cast Curses on targets, poisoning or stunning your enemies.  You also can heal yourself and others, with the healing increased by the amount of active Poisons.  You don't have damage reduction capabilities, but your hit points are typically higher."
+    },
+    {
+      "id": 35,
+      "name": "The Cybernetic Warrior",
+      "unlockType": 2,
+      "group": 4,
+      "superStatList": [
+        4,
+        3,
+        8
+      ],
+      "icon": "Archetype_CyberneticWarrior",
+      "innateTalent": 50,
+      "powerList": [
+        241,
+        242,
+        246,
+        249,
+        [
+          247,
+          243
+        ],
+        248,
+        257,
+        [
+          254,
+          236
+        ],
+        250,
+        245,
+        [
+          4,
+          328
+        ],
+        [
+          253,
+          255
+        ]
+      ],
+      "specializationTreeList": [
+        4,
+        19,
+        10
+      ],
+      "overview": "Your main weapon is your laser sword, a high-damage close-combat weapon capable of a number of attacks.  You also have Cybernetic energy weapons and other devices at your disposal to make you a deadly adversary.",
+      "concepts": "Digital Daemon, High-Tech Mercenary, Robotic Hunter, Electronic Entity, Future Soldier",
+      "extra": "You've got close-combat and short range offensive capabilities.  You can cause plasma burns on targets you can use to your advantage.  While you're not a tank you can hold your own in a fight, and have some self-healing capabilities."
+    },
+    {
+      "id": 36,
+      "name": "The Gunslinger",
+      "unlockType": [
+        2,
+        10
+      ],
+      "group": 5,
+      "superStatList": [
+        2,
+        7,
+        3
+      ],
+      "icon": "Archetype_Gunslinger",
+      "innateTalent": 53,
+      "powerList": [
+        185,
+        188,
+        [
+          191,
+          193
+        ],
+        189,
+        [
+          208,
+          199
+        ],
+        195,
+        [
+          214,
+          200
+        ],
+        [
+          549,
+          439
+        ],
+        192,
+        212,
+        [
+          328,
+          206
+        ],
+        [
+          213,
+          202
+        ]
+      ],
+      "specializationTreeList": [
+        2,
+        19,
+        14
+      ],
+      "overview": "You excel at short and mid-range combat with your pistols.  You can put out a lot of single target and area effect damage.",
+      "concepts": "Robot Gunslinger, Old West Shootist, Law Enforcer, Post-Apocalyptic Survivor, Heroic Street Vigilante",
+      "extra": "The Gunslinger has short to mid-range attacks.  You can build up stacks of Furious which can be used to temporarily increase your critical chance and recover some health when hit.  Your intimidating presence can also put fear in their enemies."
+    },
+    {
+      "id": 37,
+      "name": "The Psychokinetic",
+      "unlockType": 2,
+      "group": 5,
+      "superStatList": [
+        5,
+        7,
+        2
+      ],
+      "icon": "Archetype_Psychokinetic",
+      "innateTalent": 54,
+      "powerList": [
+        341,
+        343,
+        390,
+        [
+          351,
+          359
+        ],
+        361,
+        349,
+        [
+          366,
+          365
+        ],
+        354,
+        353,
+        [
+          367,
+          360
+        ],
+        [
+          356,
+          357
+        ],
+        [
+          393,
+          358
+        ]
+      ],
+      "specializationTreeList": [
+        5,
+        19,
+        11
+      ],
+      "overview": "While others may rush headlong into the fray, you've mastered the ability to bring the fray to your opponent.  Use the power of your mind to send the enemy flying with kinetic blasts and devastating critical hits.",
+      "concepts": "Telekinetic Warrior, Mental Mastermind, Mental Attacker, Frontline Psychic Artillery",
+      "extra": "There's no faster weapon than your mind.  You don't have to get near the enemy when you can simply reach out with your blast them with just a thought.  Put your mind over matter to heal some of the damage that may get to you, but don't let it stack up.[sic]"
+    },
+    {
+      "id": 38,
+      "name": "The Blazing",
+      "unlockType": 2,
+      "group": 6,
+      "superStatList": [
+        6,
+        7,
+        3
+      ],
+      "icon": "Archetype_Blazing",
+      "innateTalent": 55,
+      "powerList": [
+        25,
+        26,
+        [
+          31,
+          29
+        ],
+        32,
+        [
+          42,
+          38
+        ],
+        36,
+        [
+          39,
+          43
+        ],
+        30,
+        37,
+        [
+          41,
+          33
+        ],
+        50,
+        [
+          48,
+          46
+        ]
+      ],
+      "specializationTreeList": [
+        6,
+        12,
+        18
+      ],
+      "overview": "You control the flames of life!  Burn evil to cinders while raising the worthy from the ashes.  As long as you live, so does justice!",
+      "concepts": "Angelic Protector, Mystic Healer, Death/Life Deity",
+      "extra": "The flames of justice rage on.  As The Blazing use your short to medium range attacks to apply Clinging Flames to your enemies.  The more the flames rage the more you can hael the injuries inflicted on you and your allies."
+    },
+    {
+      "id": 39,
+      "name": "The Dragon Spirit",
+      "unlockType": 1,
+      "group": 2,
+      "superStatList": [
+        1,
+        2,
+        7
+      ],
+      "icon": "Archetype_DragonSpirit",
+      "innateTalent": 56,
+      "powerList": [
+        299,
+        306,
+        [
+          325,
+          304
+        ],
+        [
+          326,
+          318
+        ],
+        [
+          315,
+          308
+        ],
+        305,
+        309,
+        439,
+        302,
+        [
+          311,
+          450
+        ],
+        [
+          316,
+          330
+        ],
+        339
+      ],
+      "specializationTreeList": [
+        1,
+        14,
+        10
+      ],
+      "overview": "You have studied the ancient texts and spent years honing your chi.  Now the power of the Dragon stirs inside you, giving you the power to defend the weak and strike down your opponents.",
+      "concepts": "Warrior Monk, Alien Martial Artist, Street Fighter, Master of the Glow",
+      "extra": "Channel the powers of the Dragon!  You can use your inner chi to build your own defenses, or remove those of your enemies.  Reach a high enough power level and you can channel the Dragon itself!"
+    },
+    {
+      "id": 40,
+      "name": "The Samurai",
+      "unlockType": 2,
+      "group": 3,
+      "superStatList": [
+        3,
+        2,
+        7
+      ],
+      "icon": "Archetype_Samurai",
+      "innateTalent": 58,
+      "powerList": [
+        286,
+        287,
+        [
+          289,
+          313
+        ],
+        318,
+        294,
+        291,
+        295,
+        290,
+        320,
+        [
+          296,
+          273
+        ],
+        330,
+        [
+          328,
+          561
+        ]
+      ],
+      "specializationTreeList": [
+        3,
+        9,
+        17
+      ],
+      "overview": "Your time studying the blade has made you a peerless warrior with a sword.  In close combat, your focused strikes remove any threat in front of you in no time at all.",
+      "concepts": "Ronin, Blind Swordsman, Honorable Warrior, Ancient Master",
+      "extra": "Honor and your blade sustain you.  Battling face to face with an enemy is the only way to live, and you are the master of oneon one combat and controlling a large number of enemies.  However, this fighting style leaves you open to damage, and so you must finish your opponents quickly."
+    },
+    {
+      "id": 41,
+      "name": "The Midnight",
+      "unlockType": 2,
+      "group": 5,
+      "superStatList": [
+        2,
+        6,
+        7
+      ],
+      "icon": "Archetype_Midnight",
+      "innateTalent": 59,
+      "powerList": [
+        475,
+        476,
+        482,
+        483,
+        [
+          490,
+          493
+        ],
+        484,
+        497,
+        478,
+        486,
+        [
+          485,
+          517
+        ],
+        [
+          496,
+          501
+        ],
+        498
+      ],
+      "specializationTreeList": [
+        2,
+        18,
+        11
+      ],
+      "overview": "The Darkest Part of the Night fuels you, and you can use your powers to inspire fear and drain the life from your foes.",
+      "concepts": "Demon Sorcerer, Mad Psychologist, Interdimensional Schemer, Exile of an Evil Race",
+      "extra": "Your powers cause fear and drain life from your enemies.  This dark power allows you to lessen the amount of damage they do, and to heal yourself.  But be careful, you cannot take the punishment for long."
+    },
+    {
+      "id": 42,
+      "name": "The Wrecker",
+      "unlockType": 2,
+      "group": 4,
+      "superStatList": [
+        1,
+        3,
+        7
+      ],
+      "icon": "Archetype_Wrecker",
+      "innateTalent": 60,
+      "powerList": [
+        428,
+        429,
+        438,
+        404,
+        [
+          442,
+          440
+        ],
+        451,
+        448,
+        439,
+        403,
+        [
+          450,
+          447
+        ],
+        [
+          452,
+          453
+        ],
+        459
+      ],
+      "specializationTreeList": [
+        1,
+        14,
+        10
+      ],
+      "overview": "The force of your fists is unmatched, and your punches strike fear into your enemies' hearts - not to mention bruises on their faces.  But be careful, you can dish it out, but you can't always take it.",
+      "concepts": "Mystical Monk, Underground Boxer, Living Demolition Machine, Professional Wrestler",
+      "extra": "You've never met anyone on this whole planet who can match you, blow for blow.  Your punches break down walls, and send your enemies flying.  Taking damage isn't your thing, though - you're built to dish it out.  If you're gonna be facing an enemy that hits hard, make sure to grab a friend."
+    },
+    {
+      "id": 43,
+      "name": "The Tenebrous",
+      "unlockType": 1,
+      "group": 6,
+      "superStatList": [
+        6,
+        7,
+        2
+      ],
+      "icon": "Archetype_Tenebrous",
+      "innateTalent": 61,
+      "powerList": [
+        475,
+        476,
+        482,
+        481,
+        491,
+        479,
+        [
+          493,
+          496
+        ],
+        478,
+        486,
+        [
+          480,
+          501
+        ],
+        594,
+        488
+      ],
+      "specializationTreeList": [
+        6,
+        16,
+        12
+      ],
+      "overview": "You've discovered the ability to manipulate the life energy of others, connection to the darkness of the world.  You can use this power to drain the health and vitality of your enemies.  This power you have drained can then be turnred into healing and support for your allies.",
+      "concepts": "Blood Mage, Dark Wizard, Vampire, Soul Stealer",
+      "extra": "Your power comes from the ability to drain life from others.  You can reach out your and take their vitality, and use that life energy to heal your allies."
+    }
+  ]
+}
