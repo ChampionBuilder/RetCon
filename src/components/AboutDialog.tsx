@@ -29,7 +29,7 @@ export function AboutDialog({ onClose }: AboutDialogProps) {
         <div className="selection-dialog__header">
           <div>
             <h3>About</h3>
-            <p>Project history and legal notes</p>
+            <p>Project credits and legal notes</p>
           </div>
           <button className="dialog-close" type="button" onClick={onClose}>
             x
@@ -38,9 +38,9 @@ export function AboutDialog({ onClose }: AboutDialogProps) {
 
         <div className="about-dialog__content">
           <section>
-            <h4>PowerHouse</h4>
+            <h4>RetCon</h4>
             <p>
-              PowerHouse is an HTML/Javascript character planner for{" "}
+              RetCon is a modern character planner for{" "}
               <a
                 href="http://www.champions-online.com/"
                 rel="noreferrer"
@@ -48,111 +48,119 @@ export function AboutDialog({ onClose }: AboutDialogProps) {
               >
                 Champions Online
               </a>{" "}
-              players.
+              players, designed for long-term community maintenance and
+              expansion.
             </p>
             <p>
-              It is similar to and inspired by{" "}
+              At the core of the project is a freely accessible database
+              intended to be maintained and expanded by the community over
+              time. It is publicly available and may be reused by anyone for
+              their own tools or projects.
+            </p>
+            <p>
               <a
-                href="http://extantforce.com/championBuilder.htm"
+                href="https://docs.google.com/spreadsheets/d/1-JkGNwuQQqYBSwPSVHnxpwHgUW0hwa1_jhsBCnUYoXM/edit?usp=sharing"
                 rel="noreferrer"
                 target="_blank"
               >
-                championBuilder
+                Database spreadsheet
               </a>
-              , written by Moritz Hartmeier and maintained by Roxstar, which is
-              a Java application that performs a similar function.
             </p>
-            <p>Copyright 2010-2016 Kyle W. T. Sherman.</p>
+            <p>
+              The RetCon source code is distributed under the GNU GPL 3.0
+              license. It is provided in the hope that it will be useful, but
+              without warranty.
+            </p>
+            <p>
+              RetCon is looking for contributors to help maintain and improve
+              both the project and its database over time.
+            </p>
           </section>
 
           <section>
-            <h4>Links</h4>
+            <h4>Special Thanks</h4>
             <p>
-              <a
-                href="http://powerhouse.nullware.com"
-                rel="noreferrer"
-                target="_blank"
-              >
-                Kyle Sherman's Website
-              </a>
+              This project builds upon the work of the community tools that came
+              before it, and would not exist without the years of documentation,
+              testing, and knowledge shared by Champions Online players.
             </p>
             <p>
-              <a
-                href="https://github.com/woof-wolf/powerhouse"
-                rel="noreferrer"
-                target="_blank"
-              >
-                PowerHouse on GitHub
-              </a>
+              Special thanks to 0ccult and the Champions Online development team
+              for resources that greatly helped reconstruct the project
+              database.
             </p>
+
+            <ul>
+              <li>
+                <a
+                  href="http://powerhouse.nullware.com/"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  PowerHouse
+                </a>{" "}
+                by Kyle W. T. Sherman
+              </li>
+              <li>
+                championBuilder by Moritz Hartmeier, later maintained by
+                Roxstar
+              </li>
+              <li>
+                <a
+                  href="https://aesica.net/co/herocreator.htm"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  HeroCreator
+                </a>{" "}
+                by Aesica
+              </li>
+            </ul>
+            <p>Please also visit and support the following community projects:</p>
+            <ul>
+              <li>
+                <a
+                  href="https://woof-wolf.github.io/powerhouse/index.html"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  PowerHouse
+                </a>{" "}
+                by BehemothKing
+              </li>
+              <li>
+                <a
+                  href="https://vtwind.github.io/HeroBuilder/"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Winds Hero Builder
+                </a>{" "}
+                by Winds
+              </li>
+            </ul>
           </section>
 
           <section>
             <h4>Game Content</h4>
             <p>
-              Text descriptions and graphics are copyright 2009 Cryptic
-              Studios, Inc. and are used as per their terms of service.
+              Text descriptions, graphics, and other Champions Online assets are
+              copyright 2009-2026 Cryptic Studios, Inc. and are used for the
+              purposes of this non-commercial community project.
             </p>
             <p>
               Champions Online is a registered trademark of Cryptic Studios,
-              Inc. Champions Online and all related content is copyright 2009
-              Cryptic Studios, Inc. All rights reserved.
+              Inc. Champions Online and all related content are copyright
+              2009-2026 Cryptic Studios, Inc. All rights reserved.
             </p>
             <p>
               <a
-                href="http://www.champions-online.com/terms_of_service"
+                href="https://account.arcgames.com/en/about/terms"
                 rel="noreferrer"
                 target="_blank"
               >
-                Champions Online Terms of Service
+                Arc Games Terms of Service
               </a>
-            </p>
-          </section>
-
-          <section>
-            <h4>License</h4>
-            <p>
-              This program is free software: you can redistribute it and/or
-              modify it under the terms of the GNU General Public License as
-              published by the Free Software Foundation, either version 3 of
-              the License, or any later version.
-            </p>
-            <p>
-              This program is distributed in the hope that it will be useful,
-              but without any warranty; without even the implied warranty of
-              merchantability or fitness for a particular purpose.
-            </p>
-            <p>
-              <a
-                href="https://www.gnu.org/licenses/"
-                rel="noreferrer"
-                target="_blank"
-              >
-                GNU General Public License
-              </a>
-            </p>
-          </section>
-
-          <section>
-            <h4>Thanks</h4>
-            <p>
-              Special thanks to{" "}
-              <a
-                href="http://champions-online-wiki.com/wiki/User:Lohr"
-                rel="noreferrer"
-                target="_blank"
-              >
-                Lohr
-              </a>{" "}
-              and all of the contributors at{" "}
-              <a
-                href="http://champions-online-wiki.com/"
-                rel="noreferrer"
-                target="_blank"
-              >
-                Champions Online Wiki
-              </a>{" "}
-              for their hard work.
             </p>
           </section>
         </div>

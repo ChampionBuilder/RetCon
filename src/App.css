@@ -645,6 +645,16 @@ h3 {
   line-height: 1.5;
 }
 
+.about-dialog__content ul {
+  display: grid;
+  gap: 4px;
+  margin: 0;
+  padding-left: 18px;
+  color: #c1c9e0;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
 .about-dialog__content a {
   color: #8fb3ff;
 }
