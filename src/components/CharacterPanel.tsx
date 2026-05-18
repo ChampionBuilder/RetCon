@@ -8,6 +8,7 @@ import type {
 import type { BuildSlot } from "../types/builds";
 import { getPowerIconName, getStatIconName } from "../utils/icons";
 import { getPowerTooltipText } from "../utils/powerText";
+import { getPowerTooltipAttribute } from "../utils/powerTooltip";
 import {
   getInnateTalentStatEntries,
   getSelectedStatKeys,
@@ -200,6 +201,7 @@ export function CharacterPanel({
               <button
                 className="device-slot__name-button"
                 title={getPowerTooltipText(slot.power)}
+                data-power-tooltip={getPowerTooltipAttribute(slot.power)}
                 type="button"
                 onClick={(event: MouseEvent<HTMLButtonElement>) => {
                   event.stopPropagation();

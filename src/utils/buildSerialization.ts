@@ -386,10 +386,7 @@ export function serializeBuild(input: BuildSerializationInput) {
     writeVarint(bytes, treeId),
   );
   writeSpecializationPoints(bytes, input.specializationPointsBySlot);
-  writeVarint(
-    bytes,
-    input.selectedMasterySlot === null ? 0 : input.selectedMasterySlot + 1,
-  );
+  writeVarint(bytes, input.selectedMasterySlot === null ? 0 : input.selectedMasterySlot + 1);
   writeVarint(bytes, input.camsLevel);
 
   return base64UrlEncode(Uint8Array.from(bytes));

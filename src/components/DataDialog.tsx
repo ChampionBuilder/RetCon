@@ -11,17 +11,6 @@ type DataDialogProps = {
   onSaveCurrentBuild: () => void;
 };
 
-function formatUpdatedAt(updatedAt: string) {
-  const date = new Date(updatedAt);
-
-  return Number.isNaN(date.getTime())
-    ? ""
-    : date.toLocaleString(undefined, {
-        dateStyle: "medium",
-        timeStyle: "short",
-      });
-}
-
 export function DataDialog({
   currentBuildName,
   savedBuilds,
@@ -53,10 +42,7 @@ export function DataDialog({
         onMouseDown={(event) => event.stopPropagation()}
       >
         <div className="selection-dialog__header">
-          <div>
-            <h3>My Builds</h3>
-            <p>{savedBuilds.length} saved build{savedBuilds.length === 1 ? "" : "s"}</p>
-          </div>
+          <h3>My Builds</h3>
           <button className="dialog-close" type="button" onClick={onClose}>
             x
           </button>
@@ -77,25 +63,24 @@ export function DataDialog({
               <article className="data-dialog__item" key={savedBuild.id}>
                 <div className="data-dialog__summary">
                   <strong>{savedBuild.name || "Unnamed build"}</strong>
-                  <span>{formatUpdatedAt(savedBuild.updatedAt)}</span>
                 </div>
                 <div className="data-dialog__actions">
                   <button
-                    className="reset-button"
+                    className="utility-button"
                     type="button"
                     onClick={() => onLoadBuild(savedBuild.id)}
                   >
                     Load
                   </button>
                   <button
-                    className="reset-button"
+                    className="utility-button"
                     type="button"
                     onClick={() => onOverwriteBuild(savedBuild.id)}
                   >
                     Overwrite
                   </button>
                   <button
-                    className="reset-button data-dialog__delete"
+                    className="utility-button data-dialog__delete"
                     type="button"
                     onClick={() => onDeleteBuild(savedBuild.id)}
                   >

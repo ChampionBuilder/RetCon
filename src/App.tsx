@@ -64,6 +64,8 @@ import { useAdvantageActions } from "./hooks/useAdvantageActions";
 import { getMatchingRequirementPowerIds } from "./utils/buildValidation";
 function App() {
   const [buildName, setBuildName] = useState("My Awesome Build");
+  const [energyBuilderSelectionVersion, setEnergyBuilderSelectionVersion] =
+    useState(0);
   const [buildCheckDialogOpen, setBuildCheckDialogOpen] = useState(false);
   const [buildScrollTargetSlot, setBuildScrollTargetSlot] = useState<number | null>(
     null,
@@ -411,6 +413,11 @@ function App() {
     }
 
     placePower(power, displayFrameworkId, targetSlot);
+
+    if (power.tier === -1) {
+      setEnergyBuilderSelectionVersion((currentVersion) => currentVersion + 1);
+    }
+
     setBuildScrollTargetSlot(targetSlot.slot);
     setBuildCheckPowerFilter(null);
     clearPowerTarget();
@@ -611,8 +618,18 @@ function App() {
       return;
     }
 
+    if (targetSlot.power?.power_id === power.power_id) {
+      closePowerDialog();
+      return;
+    }
+
     setLastPowerDialogFrameworkId(displayFrameworkId);
     placePower(power, displayFrameworkId, targetSlot);
+
+    if (power.tier === -1) {
+      setEnergyBuilderSelectionVersion((currentVersion) => currentVersion + 1);
+    }
+
     setBuildScrollTargetSlot(targetSlot.slot);
     closePowerDialog();
   }
@@ -959,6 +976,7 @@ function App() {
           key={`powers-${powerSearchResetKey}`}
           advantages={advantages}
           buildSlots={allPowerSlots}
+          energyBuilderSelectionVersion={energyBuilderSelectionVersion}
           canAddPower={(power) =>
             isStandardDevice(power)
               ? powerPanelTargetDeviceSlot !== null

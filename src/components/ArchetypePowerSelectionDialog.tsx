@@ -1,6 +1,7 @@
 import type { Power } from "../types/powers";
 import { getPowerIconName } from "../utils/icons";
 import { getPowerTooltipText } from "../utils/powerText";
+import { getPowerTooltipAttribute } from "../utils/powerTooltip";
 import type { DialogAnchor } from "./AnchoredDialog";
 import { AnchoredDialog } from "./AnchoredDialog";
 import { SpriteIcon } from "./SpriteIcon";
@@ -54,6 +55,7 @@ export function ArchetypePowerSelectionDialog({
                 .filter(Boolean)
                 .join(" ")}
               key={power.power_id}
+              data-power-tooltip={getPowerTooltipAttribute(power)}
               title={getPowerTooltipText(power)}
               type="button"
               onClick={() => onSelectPower(slotNumber, power.power_id)}

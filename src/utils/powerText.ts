@@ -1,11 +1,14 @@
 import type { Power } from "../types/powers";
+import { getPowerTooltipData } from "./powerTooltip";
 
 export function getPowerTooltipText(power: Power | null | undefined) {
-  const tooltip = power?.tooltip?.trim();
-
   if (!power) {
     return undefined;
   }
 
-  return tooltip ? `${power.name}\n\n${tooltip}` : power.name;
+  const tooltip = getPowerTooltipData(power);
+
+  return tooltip?.fallbackText
+    ? `${power.name}\n\n${tooltip.fallbackText}`
+    : power.name;
 }

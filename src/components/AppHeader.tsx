@@ -1,3 +1,5 @@
+import { useEffect, useRef } from "react";
+
 type AppHeaderProps = {
   buildName: string;
   shareUrl: string;
@@ -39,108 +41,160 @@ export function AppHeader({
   onResetSpecializations,
   onRandomize,
 }: AppHeaderProps) {
+  const resetMenuRef = useRef<HTMLDetailsElement | null>(null);
+
+  useEffect(() => {
+    function closeResetMenuOnOutsidePointer(event: PointerEvent) {
+      const resetMenu = resetMenuRef.current;
+
+      if (!resetMenu?.open || resetMenu.contains(event.target as Node)) {
+        return;
+      }
+
+      resetMenu.open = false;
+    }
+
+    document.addEventListener("pointerdown", closeResetMenuOnOutsidePointer);
+
+    return () => {
+      document.removeEventListener("pointerdown", closeResetMenuOnOutsidePointer);
+    };
+  }, []);
+
   function copyLink() {
     void navigator.clipboard?.writeText(shareUrl);
   }
 
   return (
     <header className="app-header">
-      <div className="app-header__top">
-        <div className="brand-row">
-          <h1>RetCon</h1>
-          <nav className="top-tabs" aria-label="Main sections">
-            <button
-              className="header-action-button"
-              title="Open your saved builds and manage your collection."
-              type="button"
-              onClick={onOpenData}
-            >
-              My Builds
-            </button>
-            <button
-              className="header-action-button"
-              title="View project credits, sources, and acknowledgements."
-              type="button"
-              onClick={onOpenAbout}
-            >
-              About
-            </button>
-          </nav>
-        </div>
-      </div>
+      <img className="brand-logo" src="/RetCon.png" alt="RetCon" />
 
-      <div className="app-header__controls">
-        <label className="name-field">
-          <span>Name :</span>
-          <input
-            value={buildName}
-            onChange={(event) => onBuildNameChange(event.target.value)}
-          />
-        </label>
+      <div className="app-header__content">
+        <div className="app-header__controls">
+          <button
+            className="header-action-button"
+            title="Open your saved builds and manage your collection."
+            type="button"
+            onClick={onOpenData}
+          >
+            My Builds
+          </button>
 
-        <button
-          className="header-action-button"
-          title="Copy a link to share this build."
-          type="button"
-          onClick={copyLink}
-        >
-          Copy Link
-        </button>
-        <button
-          className="header-action-button"
-          title="Save this build to My Builds."
-          type="button"
-          onClick={onSave}
-        >
-          Save
-        </button>
-        <button
-          className="header-action-button"
-          title="Check whether this build includes the core power types."
-          type="button"
-          onClick={onOpenBuildCheck}
-        >
-          Check Build
-        </button>
+          <label className="name-field">
+            <span>Name :</span>
+            <input
+              value={buildName}
+              onChange={(event) => onBuildNameChange(event.target.value)}
+            />
+          </label>
 
-        <div className="reset-bar" aria-label="Reset build sections">
-          <span>Reset :</span>
-          <button className="reset-button" onClick={onResetAll}>
-            All
+          <button
+            className="header-action-button"
+            title="Copy a link to share this build."
+            type="button"
+            onClick={copyLink}
+          >
+            Copy Link
           </button>
           <button
-            className="reset-button"
-            disabled={resetSuperStatsDisabled}
-            onClick={onResetSuperStats}
+            className="header-action-button"
+            title="Save this build to My Builds."
+            type="button"
+            onClick={onSave}
           >
-            Super Stats
+            Save
           </button>
-          <button className="reset-button" onClick={onResetTalents}>
-            Talents
+          <button
+            className="utility-button"
+            title="Check whether this build includes the core power types."
+            type="button"
+            onClick={onOpenBuildCheck}
+          >
+            Check Build
           </button>
-          <button className="reset-button" onClick={onResetTravelPowers}>
-            Travel Powers
+
+          <button className="utility-button" type="button" onClick={onRandomize}>
+            Randomize
           </button>
-          <button className="reset-button" onClick={onResetSpecializations}>
-            Specs
-          </button>
-          <button className="reset-button" onClick={onResetPowers}>
-            Powers
-          </button>
-          <button className="reset-button" onClick={onResetPowerVariants}>
-            PVD
-          </button>
-          <button className="reset-button" onClick={onResetDevices}>
-            Devices
-          </button>
-          <button className="reset-button" onClick={onResetAdvantages}>
-            Advantages
-          </button>
+
+          <details ref={resetMenuRef} className="reset-menu">
+            <summary className="reset-menu__trigger utility-button">Reset</summary>
+            <div className="reset-menu__panel" aria-label="Reset build sections">
+              <button className="reset-menu__item" type="button" onClick={onResetAll}>
+                All
+              </button>
+              <span className="reset-menu__divider" aria-hidden="true" />
+              <button
+                className="reset-menu__item"
+                disabled={resetSuperStatsDisabled}
+                type="button"
+                onClick={onResetSuperStats}
+              >
+                Super Stats
+              </button>
+              <button
+                className="reset-menu__item"
+                type="button"
+                onClick={onResetTalents}
+              >
+                Talents
+              </button>
+              <button
+                className="reset-menu__item"
+                type="button"
+                onClick={onResetPowers}
+              >
+                Powers
+              </button>
+              <button
+                className="reset-menu__item"
+                type="button"
+                onClick={onResetTravelPowers}
+              >
+                Travel Powers
+              </button>
+              <button
+                className="reset-menu__item"
+                type="button"
+                onClick={onResetSpecializations}
+              >
+                Specs
+              </button>
+              <button
+                className="reset-menu__item"
+                type="button"
+                onClick={onResetPowerVariants}
+              >
+                PVD
+              </button>
+              <button
+                className="reset-menu__item"
+                type="button"
+                onClick={onResetDevices}
+              >
+                Devices
+              </button>
+              <button
+                className="reset-menu__item"
+                type="button"
+                onClick={onResetAdvantages}
+              >
+                Advantages
+              </button>
+            </div>
+          </details>
         </div>
 
-        <button className="randomize-button" type="button" onClick={onRandomize}>
-          Randomize
-        </button>
+        <nav className="top-tabs" aria-label="Main sections">
+          <button
+            className="header-action-button"
+            title="View project credits, sources, and acknowledgements."
+            type="button"
+            onClick={onOpenAbout}
+          >
+            About
+          </button>
+        </nav>
       </div>
     </header>
   );

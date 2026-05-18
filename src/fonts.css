@@ -1,4 +1,4 @@
-﻿@font-face {
+@font-face {
   font-family: "Inter 18pt";
   src: url("./assets/Fonts/static/Inter_18pt-Regular.ttf") format("truetype");
   font-display: swap;
@@ -28,12 +28,4 @@
   font-display: swap;
   font-style: normal;
   font-weight: 800;
-}
-
-@font-face {
-  font-family: "Inter 18pt";
-  src: url("./assets/Fonts/static/Inter_18pt-Black.ttf") format("truetype");
-  font-display: swap;
-  font-style: normal;
-  font-weight: 900;
 }

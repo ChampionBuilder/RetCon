@@ -3,6 +3,8 @@ import type { SyntheticEvent } from "react";
 type SpriteIconProps = {
   name: string;
   size?: number;
+  width?: number;
+  height?: number;
   className?: string;
   title?: string;
 };
@@ -10,14 +12,13 @@ type SpriteIconProps = {
 export function SpriteIcon({
   name,
   size = 28,
+  width,
+  height,
   className,
   title,
 }: SpriteIconProps) {
-  const baseUrl = import.meta.env.BASE_URL;
-  const requestedSource = name.startsWith("/")
-    ? `${baseUrl}${name.slice(1)}`
-    : `${baseUrl}icons/${name}.png`;
-  const genericSource = `${baseUrl}icons/Any_Generic.png`;
+  const requestedSource = name.startsWith("/") ? name : `/icons/${name}.png`;
+  const genericSource = "/icons/Any_Generic.png";
   const imageClassName = className
     ? `sprite-icon sprite-icon--image ${className}`
     : "sprite-icon sprite-icon--image";
@@ -36,8 +37,8 @@ export function SpriteIcon({
       onError={handleError}
       title={title}
       style={{
-        width: size,
-        height: size,
+        width: width ?? size,
+        height: height ?? size,
       }}
     />
   );

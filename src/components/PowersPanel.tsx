@@ -4,6 +4,7 @@ import type { BuildSlot } from "../types/builds";
 import type { Power } from "../types/powers";
 import { getFrameworkIconName, getPowerIconName } from "../utils/icons";
 import { getPowerTooltipText } from "../utils/powerText";
+import { getPowerTooltipAttribute } from "../utils/powerTooltip";
 import {
   formatFrameworkName,
   getPowerDisplayFrameworkId,
@@ -23,6 +24,7 @@ type PowersPanelProps = {
   frameworkGroups: PowerFrameworkFilterGroup[];
   selectedFramework: string | null;
   buildSlots: BuildSlot[];
+  energyBuilderSelectionVersion: number;
   restrictedPowerIds: Set<number> | null;
   restrictedPowerSectionLabel: string | null;
   canAddPower: (power: Power) => boolean;
@@ -97,6 +99,7 @@ export function PowersPanel({
   frameworkGroups,
   selectedFramework,
   buildSlots,
+  energyBuilderSelectionVersion,
   restrictedPowerIds,
   restrictedPowerSectionLabel,
   canAddPower,
@@ -105,6 +108,10 @@ export function PowersPanel({
 }: PowersPanelProps) {
   const [search, setSearch] = useState("");
   const [closedSections, setClosedSections] = useState<string[]>([]);
+  const [
+    reopenedEnergyBuilderSelectionVersion,
+    setReopenedEnergyBuilderSelectionVersion,
+  ] = useState(0);
   const [frameworkStripColumns, setFrameworkStripColumns] = useState(1);
   const frameworkStripRef = useRef<HTMLDivElement | null>(null);
   const hasEnergyBuilder = buildSlots.some((slot) => slot.power?.tier === -1);
@@ -146,6 +153,9 @@ export function PowersPanel({
       return (
         normalizeSearchText(power.name).includes(normalizedSearch) ||
         normalizeSearchText(getSearchablePowerType(power)).includes(
+          normalizedSearch,
+        ) ||
+        normalizeSearchText(power.range_tags?.join(" ")).includes(
           normalizedSearch,
         ) ||
         normalizeSearchText(power.tooltip).includes(normalizedSearch) ||
@@ -299,6 +309,24 @@ export function PowersPanel({
   }, [hasEnergyBuilder]);
 
   function toggleSection(key: string) {
+    if (key === "-1") {
+      if (isSectionClosed(key)) {
+        setClosedSections((currentClosedSections) =>
+          currentClosedSections.filter((closedSection) => closedSection !== key),
+        );
+        setReopenedEnergyBuilderSelectionVersion(
+          energyBuilderSelectionVersion,
+        );
+        return;
+      }
+
+      setClosedSections((currentClosedSections) => [
+        ...currentClosedSections,
+        key,
+      ]);
+      return;
+    }
+
     setClosedSections((currentClosedSections) => {
       if (currentClosedSections.includes(key)) {
         return currentClosedSections.filter(
@@ -308,6 +336,14 @@ export function PowersPanel({
 
       return [...currentClosedSections, key];
     });
+  }
+
+  function isSectionClosed(key: string) {
+    return (
+      closedSections.includes(key) ||
+      (key === "-1" &&
+        energyBuilderSelectionVersion > reopenedEnergyBuilderSelectionVersion)
+    );
   }
 
   function renderFrameworkStripItems() {
@@ -473,7 +509,7 @@ export function PowersPanel({
 
       <div className="power-tier-list">
         {powerSections.map((section) => {
-          const isClosed = closedSections.includes(section.key);
+          const isClosed = isSectionClosed(section.key);
 
           return (
             <section className="power-tier" key={section.key}>
@@ -507,6 +543,7 @@ export function PowersPanel({
                         }
                         disabled={!canAdd}
                         key={power.power_id}
+                        data-power-tooltip={getPowerTooltipAttribute(power)}
                         onClick={() =>
                           onAddPower(
                             power,

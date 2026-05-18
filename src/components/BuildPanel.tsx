@@ -6,6 +6,7 @@ import type { Power } from "../types/powers";
 import type { DialogAnchor } from "./AnchoredDialog";
 import { getPowerIconName } from "../utils/icons";
 import { getPowerTooltipText } from "../utils/powerText";
+import { getPowerTooltipAttribute } from "../utils/powerTooltip";
 import {
   getPowerVariantDisplayAdvantages,
   hasPowerVariantParent,
@@ -177,7 +178,7 @@ export function BuildPanel({
               })
             }
           >
-            <SpriteIcon name={archetype?.icon ?? "Archetype_Freeform"} size={22} />
+            <SpriteIcon name={archetype?.icon ?? "Archetype_Freeform"} size={30} />
             <strong>{archetype?.name ?? "Freeform"}</strong>
           </button>
           <button
@@ -194,7 +195,11 @@ export function BuildPanel({
               })
             }
           >
-            <SpriteIcon name={role?.icon ?? "Role_Freeform"} size={22} />
+            <SpriteIcon
+              name={role?.icon ?? "Role_Freeform"}
+              width={22.5}
+              height={30}
+            />
           </button>
         </div>
       </div>
@@ -252,6 +257,7 @@ export function BuildPanel({
                           aria-disabled={isPowerLocked}
                           tabIndex={isPowerLocked ? -1 : undefined}
                           title={getPowerTooltipText(slot.power)}
+                          data-power-tooltip={getPowerTooltipAttribute(slot.power)}
                           type="button"
                           onClick={(event: MouseEvent<HTMLButtonElement>) => {
                             event.stopPropagation();
@@ -331,6 +337,7 @@ export function BuildPanel({
                         <button
                           className="build-entry__name-button"
                           title={getPowerTooltipText(slot.power)}
+                          data-power-tooltip={getPowerTooltipAttribute(slot.power)}
                           type="button"
                           onClick={(event: MouseEvent<HTMLButtonElement>) => {
                             event.stopPropagation();
@@ -419,6 +426,7 @@ export function BuildPanel({
                         <button
                           className="build-entry__name-button"
                           title={getPowerTooltipText(slot.power)}
+                          data-power-tooltip={getPowerTooltipAttribute(slot.power)}
                           type="button"
                           onClick={(event: MouseEvent<HTMLButtonElement>) => {
                             event.stopPropagation();

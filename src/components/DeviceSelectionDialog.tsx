@@ -3,6 +3,7 @@ import type { Power } from "../types/powers";
 import { arrangeItemsByColumns } from "../utils/gridLayout";
 import { getPowerIconName } from "../utils/icons";
 import { getPowerTooltipText } from "../utils/powerText";
+import { getPowerTooltipAttribute } from "../utils/powerTooltip";
 import { formatFrameworkName, isStandardDevice } from "../utils/powerFrameworks";
 import type { DialogAnchor } from "./AnchoredDialog";
 import { AnchoredDialog } from "./AnchoredDialog";
@@ -81,6 +82,7 @@ export function DeviceSelectionDialog({
                         .filter(Boolean)
                         .join(" ")}
                       key={device.power_id}
+                      data-power-tooltip={getPowerTooltipAttribute(device)}
                       title={getPowerTooltipText(device)}
                       type="button"
                       onClick={() => onSelectDevice(buildSlot.slot, device)}

@@ -4,6 +4,7 @@ import type { Power } from "../types/powers";
 import { arrangeItemsByColumns } from "../utils/gridLayout";
 import { getFrameworkIconName, getPowerIconName } from "../utils/icons";
 import { getPowerTooltipText } from "../utils/powerText";
+import { getPowerTooltipAttribute } from "../utils/powerTooltip";
 import {
   getPowerDisplayFrameworkId,
   getPowerFrameworkSortIndex,
@@ -231,6 +232,7 @@ export function PowerSelectionDialog({
                       }
                       disabled={!canSelect}
                       key={power.power_id}
+                      data-power-tooltip={getPowerTooltipAttribute(power)}
                       title={getPowerTooltipText(power)}
                       type="button"
                       onClick={() =>

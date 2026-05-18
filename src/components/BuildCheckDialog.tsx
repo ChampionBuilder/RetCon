@@ -11,6 +11,7 @@ import {
 } from "../utils/buildValidation";
 import { getPowerIconName } from "../utils/icons";
 import { getPowerTooltipText } from "../utils/powerText";
+import { getPowerTooltipAttribute } from "../utils/powerTooltip";
 import { SpriteIcon } from "./SpriteIcon";
 
 type BuildCheckDialogProps = {
@@ -139,6 +140,7 @@ function BuildCheckSection({
               <span
                 className="build-check-entry__power-name"
                 title={getPowerTooltipText(requirement.power)}
+                data-power-tooltip={getPowerTooltipAttribute(requirement.power)}
               >
                 {requirement.power?.name ?? requirement.label}
               </span>

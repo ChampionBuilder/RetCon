@@ -1,7 +1,19 @@
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { PowerTooltip } from "./PowerTooltip";
+import type { PowerTooltipData } from "../utils/powerTooltip";
+
+type TooltipContent =
+  | {
+      kind: "text";
+      text: string;
+    }
+  | {
+      kind: "power";
+      data: PowerTooltipData;
+    };
 
 type TooltipState = {
-  text: string;
+  content: TooltipContent;
   x: number;
   y: number;
 };
@@ -15,9 +27,13 @@ function getTooltipElement(target: EventTarget | null) {
     return null;
   }
 
-  const element = target.closest<HTMLElement>("[title]");
+  const element = target.closest<HTMLElement>("[title], [data-power-tooltip]");
 
-  if (!element?.title.trim()) {
+  if (!element) {
+    return null;
+  }
+
+  if (!element.title.trim() && !element.dataset.powerTooltip) {
     return null;
   }
 
@@ -70,7 +86,30 @@ export function InstantTooltip() {
   }, [tooltip]);
 
   useEffect(() => {
+    function getTooltipContent(element: HTMLElement): TooltipContent | null {
+      if (element.dataset.powerTooltip) {
+        try {
+          return {
+            kind: "power",
+            data: JSON.parse(element.dataset.powerTooltip) as PowerTooltipData,
+          };
+        } catch {
+          // Fall back to the plain title when a malformed dataset slips through.
+        }
+      }
+
+      const text = element.title.trim();
+
+      return text ? { kind: "text", text } : null;
+    }
+
     function showTooltip(element: HTMLElement, x: number, y: number) {
+      const content = getTooltipContent(element);
+
+      if (!content) {
+        return;
+      }
+
       if (activeElementRef.current !== element) {
         releaseTooltipElement(activeElementRef.current);
       }
@@ -80,7 +119,7 @@ export function InstantTooltip() {
       element.removeAttribute("title");
 
       setTooltip({
-        text: element.dataset.instantTooltipTitle,
+        content,
         x,
         y,
       });
@@ -184,7 +223,11 @@ export function InstantTooltip() {
         top: tooltip.y,
       }}
     >
-      {tooltip.text}
+      {tooltip.content.kind === "power" ? (
+        <PowerTooltip tooltip={tooltip.content.data} />
+      ) : (
+        tooltip.content.text
+      )}
     </div>
   );
 }
