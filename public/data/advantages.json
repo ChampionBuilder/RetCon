@@ -86,7 +86,7 @@
   {
     "advantage_id": 8,
     "name": "Rank 2",
-    "points_cost": 2,
+    "points_cost": 1,
     "tooltip": "Increases the speed of this travel power.",
     "tags": [],
     "is_disabled": false,
@@ -98,7 +98,7 @@
   {
     "advantage_id": 9,
     "name": "Rank 3",
-    "points_cost": 2,
+    "points_cost": 1,
     "tooltip": "Further increases the speed of this travel power.",
     "tags": [],
     "is_disabled": false,
