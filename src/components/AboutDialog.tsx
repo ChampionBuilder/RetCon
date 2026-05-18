@@ -59,11 +59,20 @@ export function AboutDialog({ onClose }: AboutDialogProps) {
             </p>
             <p>
               <a
-                href="https://docs.google.com/spreadsheets/d/1-JkGNwuQQqYBSwPSVHnxpwHgUW0hwa1_jhsBCnUYoXM/edit?usp=sharing"
+                href="https://docs.google.com/spreadsheets/d/1NHZ0smilWfqULr17W9ythxLwY4m7Ac9v2-eGWdUFXf8/edit?usp=sharing"
                 rel="noreferrer"
                 target="_blank"
               >
                 Database spreadsheet
+              </a>
+            </p>
+            <p>
+              <a
+                href="https://github.com/ChampionBuilder/RetCon"
+                rel="noreferrer"
+                target="_blank"
+              >
+                GitHub repository
               </a>
             </p>
             <p>

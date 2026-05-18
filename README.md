@@ -8,7 +8,7 @@ It lets players build freeform or archetype characters, browse powers, assign ad
 
 At the core of the project is a freely accessible database intended to be maintained and expanded by the community over time. It is publicly available and may be reused by anyone for their own tools or projects.
 
-[Database spreadsheet](https://docs.google.com/spreadsheets/d/1-JkGNwuQQqYBSwPSVHnxpwHgUW0hwa1_jhsBCnUYoXM/edit?usp=sharing)
+[Database spreadsheet](https://docs.google.com/spreadsheets/d/1NHZ0smilWfqULr17W9ythxLwY4m7Ac9v2-eGWdUFXf8/edit?usp=sharing)
 
 RetCon is looking for contributors to help maintain and improve both the project and its database over time.
 
