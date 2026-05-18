@@ -6,6 +6,7 @@ import type {
   StatsTalentsData,
 } from "../types/character";
 import type { Power } from "../types/powers";
+import { publicAssetUrl } from "../utils/publicAssetUrl";
 
 function fetchJson<T>(url: string) {
   return fetch(url, { cache: "no-store" }).then(
@@ -25,35 +26,41 @@ export function useBuilderData() {
     useState<SpecializationTreesData | null>(null);
 
   useEffect(() => {
-    fetchJson<Power[]>("/data/powers.json").then((data) => {
+    fetchJson<Power[]>(publicAssetUrl("/data/powers.json")).then((data) => {
       setPowers(data);
     });
   }, []);
 
   useEffect(() => {
-    fetchJson<Advantage[]>("/data/advantages.json").then((data) => {
-      setAdvantages(data);
-    });
+    fetchJson<Advantage[]>(publicAssetUrl("/data/advantages.json")).then(
+      (data) => {
+        setAdvantages(data);
+      },
+    );
   }, []);
 
   useEffect(() => {
-    fetchJson<ArchetypesData>("/data/archetypes.json").then((data) => {
-      setArchetypesData(data);
-    });
+    fetchJson<ArchetypesData>(publicAssetUrl("/data/archetypes.json")).then(
+      (data) => {
+        setArchetypesData(data);
+      },
+    );
   }, []);
 
   useEffect(() => {
-    fetchJson<StatsTalentsData>("/data/stats-talents.json").then((data) => {
+    fetchJson<StatsTalentsData>(
+      publicAssetUrl("/data/stats-talents.json"),
+    ).then((data) => {
       setStatsTalentsData(data);
     });
   }, []);
 
   useEffect(() => {
-    fetchJson<SpecializationTreesData>("/data/specialization-trees.json").then(
-      (data) => {
-        setSpecializationTreesData(data);
-      },
-    );
+    fetchJson<SpecializationTreesData>(
+      publicAssetUrl("/data/specialization-trees.json"),
+    ).then((data) => {
+      setSpecializationTreesData(data);
+    });
   }, []);
 
   return {

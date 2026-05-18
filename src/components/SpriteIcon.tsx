@@ -1,4 +1,5 @@
 import type { SyntheticEvent } from "react";
+import { publicAssetUrl } from "../utils/publicAssetUrl";
 
 type SpriteIconProps = {
   name: string;
@@ -17,8 +18,10 @@ export function SpriteIcon({
   className,
   title,
 }: SpriteIconProps) {
-  const requestedSource = name.startsWith("/") ? name : `/icons/${name}.png`;
-  const genericSource = "/icons/Any_Generic.png";
+  const requestedSource = publicAssetUrl(
+    name.startsWith("/") ? name : `/icons/${name}.png`,
+  );
+  const genericSource = publicAssetUrl("/icons/Any_Generic.png");
   const imageClassName = className
     ? `sprite-icon sprite-icon--image ${className}`
     : "sprite-icon sprite-icon--image";

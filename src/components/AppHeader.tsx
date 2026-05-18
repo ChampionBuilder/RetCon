@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { publicAssetUrl } from "../utils/publicAssetUrl";
 
 type AppHeaderProps = {
   buildName: string;
@@ -67,7 +68,11 @@ export function AppHeader({
 
   return (
     <header className="app-header">
-      <img className="brand-logo" src="/RetCon.png" alt="RetCon" />
+      <img
+        className="brand-logo"
+        src={publicAssetUrl("/RetCon.png")}
+        alt="RetCon"
+      />
 
       <div className="app-header__content">
         <div className="app-header__controls">
