@@ -26,6 +26,10 @@ function isTierUnlockedBySlotLevel(power: Power, targetSlotLevel: number | null)
   }
 }
 
+export function isPowerEnabled(power: Power | null | undefined) {
+  return power?.is_disabled !== true;
+}
+
 export function isEnergyUnlockPower(power: Power | null | undefined) {
   return power ? getNormalizedPowerType(power) === "ENERGY_UNLOCK" : false;
 }
@@ -35,6 +39,10 @@ export function canSelectPower(
   buildSlots: BuildSlot[],
   targetSlotNumber?: number,
 ): boolean {
+  if (!isPowerEnabled(power)) {
+    return false;
+  }
+
   const isTargetSlot = (slot: BuildSlot) => slot.slot === targetSlotNumber;
   const targetSlotLevel =
     buildSlots.find((slot) => slot.slot === targetSlotNumber)?.level ?? null;

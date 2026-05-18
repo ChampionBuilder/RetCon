@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import type { BuildSlot } from "../types/builds";
 import type { Power } from "../types/powers";
-import { canSelectPower } from "../utils/powerrules";
+import { canSelectPower, isPowerEnabled } from "../utils/powerrules";
 import {
   getPowerVariantParentPowerIds,
   hasPowerVariantParent,
@@ -132,7 +132,10 @@ export function useBuildPowerState({
 
     return (archetypeAlternativePowerIdsBySlot.get(activePowerSlot) ?? [])
       .map((powerId) => powersById.get(powerId) ?? null)
-      .filter((power): power is Power => power !== null);
+      .filter(
+        (power): power is Power =>
+          power !== null && isPowerEnabled(power),
+      );
   }, [
     activePowerSlot,
     archetypeAlternativePowerIdsBySlot,

@@ -13,6 +13,7 @@ import {
 } from "./buildValidation";
 import { getPowerDisplayFrameworkId, isTravelPower } from "./powerFrameworks";
 import { canSelectPower } from "./powerrules";
+import { isPowerEnabled } from "./powerrules";
 
 type RandomFreeformBuildOptions = {
   combatPowers: Power[];
@@ -67,7 +68,9 @@ function placeRandomCorePowers(buildSlots: BuildSlot[], combatPowers: Power[]) {
       combatPowers,
     );
     const candidatePowers = getRandomUniqueItems(
-      combatPowers.filter((power) => matchingPowerIds.has(power.power_id)),
+      combatPowers.filter(
+        (power) => isPowerEnabled(power) && matchingPowerIds.has(power.power_id),
+      ),
       matchingPowerIds.size,
     );
 
@@ -107,7 +110,7 @@ function randomizeCombatPowers(combatPowers: Power[]) {
     }
 
     const availablePowers = combatPowers.filter((power) =>
-      canSelectPower(power, buildSlots, slot.slot),
+      isPowerEnabled(power) && canSelectPower(power, buildSlots, slot.slot),
     );
     const power = getRandomItem(availablePowers) ?? null;
 
@@ -127,7 +130,7 @@ function randomizeCombatPowers(combatPowers: Power[]) {
 
 function randomizeTravelPowers(powers: Power[]) {
   const travelPowers = getRandomUniqueItems(
-    powers.filter((power) => isTravelPower(power)),
+    powers.filter((power) => isPowerEnabled(power) && isTravelPower(power)),
     initialTravelPowerSlots.length,
   );
 

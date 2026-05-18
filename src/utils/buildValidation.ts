@@ -2,6 +2,7 @@ import type { BuildSlot } from "../types/builds";
 import type { SuperStat } from "../types/character";
 import type { Power } from "../types/powers";
 import { isUltimatePowerVariantDevice } from "./powerFrameworks";
+import { isPowerEnabled } from "./powerrules";
 
 export type BuildRequirementKey =
   | "energy-builder"
@@ -129,10 +130,11 @@ export function getMatchingRequirementPowerIds(
   return new Set(
     powers
       .filter((power) =>
-        requirement.key === "ultimate"
+        isPowerEnabled(power) &&
+        (requirement.key === "ultimate"
           ? requirement.powerTypes.includes(getPowerType(power) ?? "") ||
             isUltimatePowerVariantDevice(power)
-          : requirement.powerTypes.includes(getPowerType(power) ?? ""),
+          : requirement.powerTypes.includes(getPowerType(power) ?? "")),
       )
       .map((power) => power.power_id),
   );

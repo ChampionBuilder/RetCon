@@ -7,7 +7,7 @@ import type { Archetype } from "../types/character";
 import type { Power } from "../types/powers";
 import { clearBuildSlot } from "./buildSlots";
 import { getPowerDisplayFrameworkId } from "./powerFrameworks";
-import { canSelectPower } from "./powerrules";
+import { canSelectPower, isPowerEnabled } from "./powerrules";
 
 export function getPowerPlacementPreview(
   power: Power,
@@ -212,9 +212,12 @@ export function createArchetypeBuildSlots(
     );
     const selectedPowerId =
       currentSlot?.power &&
+      isPowerEnabled(currentSlot.power) &&
       allowedPowerIds.includes(currentSlot.power.power_id)
         ? currentSlot.power.power_id
-        : allowedPowerIds[0];
+        : allowedPowerIds.find((powerId) =>
+            isPowerEnabled(powersById.get(powerId)),
+          );
     const power =
       selectedPowerId === undefined ? null : powersById.get(selectedPowerId) ?? null;
 

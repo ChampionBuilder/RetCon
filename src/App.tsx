@@ -41,6 +41,7 @@ import {
   canPlacePowerInSlot,
   getFirstValidPowerSlot,
 } from "./utils/powerSlots";
+import { isPowerEnabled } from "./utils/powerrules";
 import { createRandomFreeformBuild } from "./utils/randomizer";
 import {
   createShareUrl,
@@ -217,9 +218,13 @@ function App() {
   const [dataDialogOpen, setDataDialogOpen] = useState(false);
   const [aboutDialogOpen, setAboutDialogOpen] = useState(false);
 
-  const combatPowers = useMemo(() => {
-    return powers.filter((power) => power.tier !== null);
+  const selectablePowers = useMemo(() => {
+    return powers.filter((power) => isPowerEnabled(power));
   }, [powers]);
+
+  const combatPowers = useMemo(() => {
+    return selectablePowers.filter((power) => power.tier !== null);
+  }, [selectablePowers]);
 
   const frameworkGroups = useMemo(() => {
     return getVisiblePowerFrameworkGroups(combatPowers);
@@ -427,7 +432,7 @@ function App() {
     requirement: BuildRequirementResult,
   ) {
     setBuildCheckPowerFilter({
-      ids: getMatchingRequirementPowerIds(requirement, powers),
+      ids: getMatchingRequirementPowerIds(requirement, selectablePowers),
       label: requirement.label,
     });
     clearPowerPanelTargets();
@@ -794,7 +799,7 @@ function App() {
 
     const randomizedBuild = createRandomFreeformBuild({
       combatPowers,
-      powers,
+      powers: selectablePowers,
       statsTalentsData,
     });
     const randomizedSuperStats = randomizedBuild.superStats;
@@ -944,7 +949,7 @@ function App() {
       {buildCheckDialogOpen ? (
         <BuildCheckDialog
           buildSlots={buildSlots}
-          powers={powers}
+          powers={selectablePowers}
           powerVariantSlots={powerVariantSlots}
           selectedSuperStats={selectedSuperStats}
           onClose={() => setBuildCheckDialogOpen(false)}
@@ -997,7 +1002,7 @@ function App() {
                   : false
           }
           frameworkGroups={frameworkGroups}
-          powers={powers}
+          powers={selectablePowers}
           restrictedPowerIds={activeRestrictedPowerIds}
           restrictedPowerSectionLabel={activeRestrictedPowerSectionLabel}
           selectedFramework={selectedFramework}
@@ -1114,7 +1119,7 @@ function App() {
           anchor={powerVariantDialogAnchor}
           buildSlot={activePowerVariantBuildSlot}
           powerVariantSlots={powerVariantSlots}
-          powers={powers}
+          powers={selectablePowers}
           onClearPowerVariant={clearPowerVariantSlot}
           onClose={closePowerVariantDialog}
           onSelectPowerVariant={selectPowerVariantForSlot}
@@ -1125,7 +1130,7 @@ function App() {
         <TravelPowerSelectionDialog
           anchor={travelPowerDialogAnchor}
           buildSlot={activeTravelPowerBuildSlot}
-          powers={powers}
+          powers={selectablePowers}
           onClearTravelPower={clearTravelPowerSlot}
           onClose={closeTravelPowerDialog}
           onSelectTravelPower={selectTravelPowerForSlot}
@@ -1136,7 +1141,7 @@ function App() {
         <DeviceSelectionDialog
           anchor={deviceDialogAnchor}
           buildSlot={activeDeviceBuildSlot}
-          powers={powers}
+          powers={selectablePowers}
           onClearDevice={clearDeviceSlot}
           onClose={closeDeviceDialog}
           onSelectDevice={selectDeviceForSlot}

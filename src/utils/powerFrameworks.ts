@@ -1,4 +1,5 @@
 import type { Power } from "../types/powers";
+import { isPowerEnabled } from "./powerrules";
 
 export type PowerFrameworkFilter = {
   id: string;
@@ -325,6 +326,10 @@ export function isPowerVisibleInFramework(
   power: Power,
   selectedFramework: string | null,
 ) {
+  if (!isPowerEnabled(power)) {
+    return false;
+  }
+
   if (selectedFramework === null) {
     return (
       !isTravelPower(power) &&

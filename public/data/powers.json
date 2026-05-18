@@ -13206,7 +13206,7 @@
     "max_duration": 2.5,
     "tick_rate": null,
     "cooldown": null,
-    "tooltip": "Form (Presence). Buff/Form/Empathy. Gives you a stacking buff that increases your healing, as well as your damage to a lesser degree. + You gain a stack each time you apply a Mental State, such as Ego Leech, Fear, Stress, and Dependency. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
+    "tooltip": "Form (Recovery). Buff/Form/Empathy. Gives you a stacking buff that increases your healing, as well as your damage to a lesser degree. + You gain a stack each time you apply a Mental State, such as Ego Leech, Fear, Stress, and Dependency. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
     "range_tags": [],
     "tags": [],
     "scaling_stats": [
@@ -14548,7 +14548,7 @@
   },
   {
     "powerset_id": "Mystic",
-    "framework_id": "Shared_Sorcery",
+    "framework_id": "Sorcery",
     "power_id": 529,
     "name": "Eldritch Bolts",
     "tier": -1,
@@ -14576,7 +14576,7 @@
   },
   {
     "powerset_id": "Mystic",
-    "framework_id": "Shared_Sorcery",
+    "framework_id": "Sorcery",
     "power_id": 530,
     "name": "Eldritch Blast",
     "tier": 1,
@@ -14609,7 +14609,7 @@
   },
   {
     "powerset_id": "Mystic",
-    "framework_id": "Shared_Sorcery",
+    "framework_id": "Sorcery",
     "power_id": 531,
     "name": "Binding of Aratron",
     "tier": 1,
@@ -14638,7 +14638,7 @@
   },
   {
     "powerset_id": "Mystic",
-    "framework_id": "Shared_Sorcery",
+    "framework_id": "Sorcery",
     "power_id": 532,
     "name": "Eldritch Shield",
     "tier": 1,
@@ -14664,7 +14664,7 @@
   },
   {
     "powerset_id": "Mystic",
-    "framework_id": "Shared_Sorcery",
+    "framework_id": "Sorcery",
     "power_id": 533,
     "name": "Pillar of Poz",
     "tier": 1,
@@ -14715,7 +14715,7 @@
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Sorcery_TyrannonsFamiliar",
-    "is_disabled": false
+    "is_disabled": true
   },
   {
     "powerset_id": "Mystic",
@@ -14745,7 +14745,7 @@
   },
   {
     "powerset_id": "Mystic",
-    "framework_id": "Shared_Sorcery",
+    "framework_id": "Sorcery",
     "power_id": 536,
     "name": "Magician's Dust",
     "tier": 2,
@@ -14772,7 +14772,7 @@
   },
   {
     "powerset_id": "Mystic",
-    "framework_id": "Shared_Sorcery",
+    "framework_id": "Sorcery",
     "power_id": 537,
     "name": "Skarn's Bane",
     "tier": 2,
@@ -14804,7 +14804,7 @@
   },
   {
     "powerset_id": "Mystic",
-    "framework_id": "Shared_Sorcery",
+    "framework_id": "Sorcery",
     "power_id": 538,
     "name": "Warlock's Blades",
     "tier": 2,
@@ -14829,7 +14829,7 @@
   },
   {
     "powerset_id": "Mystic",
-    "framework_id": "Shared_Sorcery",
+    "framework_id": "Celestial",
     "power_id": 539,
     "name": "Ascension",
     "tier": 3,
@@ -14853,7 +14853,7 @@
   },
   {
     "powerset_id": "Mystic",
-    "framework_id": "Shared_Sorcery",
+    "framework_id": "Sorcery",
     "power_id": 540,
     "name": "Hex of Suffering",
     "tier": 3,
@@ -14886,7 +14886,7 @@
   },
   {
     "powerset_id": "Mystic",
-    "framework_id": "Shared_Sorcery",
+    "framework_id": "Sorcery",
     "power_id": 541,
     "name": "Urthona's Charm",
     "tier": 3,
@@ -14913,7 +14913,7 @@
   },
   {
     "powerset_id": "Mystic",
-    "framework_id": "Shared_Sorcery",
+    "framework_id": "Sorcery",
     "power_id": 542,
     "name": "Vala's Light",
     "tier": 3,
@@ -21554,7 +21554,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": "Device_HPEN",
+    "icon_override": "Device_EN",
     "is_disabled": false
   },
   {
@@ -21614,7 +21614,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_HP",
     "is_disabled": false
   },
   {
@@ -21634,7 +21634,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_HPEN",
     "is_disabled": false
   },
   {
