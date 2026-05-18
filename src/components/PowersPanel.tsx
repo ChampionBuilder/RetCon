@@ -1,4 +1,11 @@
-import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
+import {
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+  type MouseEvent,
+  type ReactNode,
+} from "react";
 import type { Advantage } from "../types/advantages";
 import type { BuildSlot } from "../types/builds";
 import type { Power } from "../types/powers";
@@ -10,8 +17,11 @@ import {
   getPowerDisplayFrameworkId,
   getPowerFrameworkSortIndex,
   type PowerFrameworkFilterGroup,
+  type SelectedFrameworks,
+  isPowerVisibleInSelectedFrameworks,
   isUltimatePowerVariantDevice,
-  isPowerVisibleInFramework,
+  isUtilityFrameworkFilter,
+  isUtilityFrameworkSelection,
   devicesFilterId,
   powerVariantsFilterId,
   travelPowerFilterId,
@@ -22,13 +32,13 @@ type PowersPanelProps = {
   powers: Power[];
   advantages: Advantage[];
   frameworkGroups: PowerFrameworkFilterGroup[];
-  selectedFramework: string | null;
+  selectedFrameworks: SelectedFrameworks;
   buildSlots: BuildSlot[];
   energyBuilderSelectionVersion: number;
   restrictedPowerIds: Set<number> | null;
   restrictedPowerSectionLabel: string | null;
   canAddPower: (power: Power) => boolean;
-  onSelectFramework: (frameworkId: string | null) => void;
+  onSelectFramework: (frameworkId: string | null, additive: boolean) => void;
   onAddPower: (power: Power, displayFrameworkId: string | null) => void;
 };
 
@@ -97,7 +107,7 @@ export function PowersPanel({
   powers,
   advantages,
   frameworkGroups,
-  selectedFramework,
+  selectedFrameworks,
   buildSlots,
   energyBuilderSelectionVersion,
   restrictedPowerIds,
@@ -116,9 +126,18 @@ export function PowersPanel({
   const frameworkStripRef = useRef<HTMLDivElement | null>(null);
   const hasEnergyBuilder = buildSlots.some((slot) => slot.power?.tier === -1);
   const hadEnergyBuilderRef = useRef(hasEnergyBuilder);
-  const isTravelMode = selectedFramework === travelPowerFilterId;
-  const isPowerVariantsMode = selectedFramework === powerVariantsFilterId;
-  const isDevicesMode = selectedFramework === devicesFilterId;
+  const isTravelMode = isUtilityFrameworkSelection(
+    selectedFrameworks,
+    travelPowerFilterId,
+  );
+  const isPowerVariantsMode = isUtilityFrameworkSelection(
+    selectedFrameworks,
+    powerVariantsFilterId,
+  );
+  const isDevicesMode = isUtilityFrameworkSelection(
+    selectedFrameworks,
+    devicesFilterId,
+  );
   const selectedPowerIds = new Set(
     buildSlots
       .map((slot) => slot.power?.power_id)
@@ -141,7 +160,7 @@ export function PowersPanel({
 
       if (
         restrictedPowerIds === null &&
-        !isPowerVisibleInFramework(power, selectedFramework)
+        !isPowerVisibleInSelectedFrameworks(power, selectedFrameworks)
       ) {
         return false;
       }
@@ -171,7 +190,7 @@ export function PowersPanel({
     powers,
     restrictedPowerIds,
     search,
-    selectedFramework,
+    selectedFrameworks,
   ]);
 
   const powerSections = useMemo(() => {
@@ -372,7 +391,7 @@ export function PowersPanel({
       isDisabled: boolean,
       iconName: string,
       title: string,
-      onClick: () => void,
+      onClick: (event: MouseEvent<HTMLButtonElement>) => void,
     ) {
       return (
         <button
@@ -397,22 +416,22 @@ export function PowersPanel({
 
     cells[0] = createFrameworkButton(
       "all-frameworks",
-      selectedFramework === null,
+      selectedFrameworks === null,
       false,
       "Any_Generic",
       "All frameworks",
-      () => onSelectFramework(null),
+      () => onSelectFramework(null, false),
     );
 
     const utilityButtons =
       utilityGroup?.filters.map((framework) =>
         createFrameworkButton(
           framework.id,
-          selectedFramework === framework.id,
+          isUtilityFrameworkSelection(selectedFrameworks, framework.id),
           !framework.selectable,
           framework.iconId ?? getFrameworkIconName(framework.id),
           framework.title,
-          () => onSelectFramework(framework.id),
+          () => onSelectFramework(framework.id, false),
         ),
       ) ?? [];
     const utilityRow = frameworkStripRows - 1;
@@ -433,11 +452,11 @@ export function PowersPanel({
       const groupItems = frameworkGroup.filters.map((framework) =>
         createFrameworkButton(
           framework.id,
-          selectedFramework === framework.id,
+          selectedFrameworks?.includes(framework.id) ?? false,
           !framework.selectable,
           framework.iconId ?? getFrameworkIconName(framework.id),
           framework.title,
-          () => onSelectFramework(framework.id),
+          (event) => onSelectFramework(framework.id, event.shiftKey),
         ),
       );
       const isAtRowStart = column === firstFrameworkColumn;
@@ -547,7 +566,16 @@ export function PowersPanel({
                         onClick={() =>
                           onAddPower(
                             power,
-                            getPowerDisplayFrameworkId(power, selectedFramework),
+                            getPowerDisplayFrameworkId(
+                              power,
+                              selectedFrameworks?.find(
+                                (frameworkId) =>
+                                  !isUtilityFrameworkFilter(frameworkId) &&
+                                  isPowerVisibleInSelectedFrameworks(power, [
+                                    frameworkId,
+                                  ]),
+                              ) ?? null,
+                            ),
                           )
                         }
                         title={getPowerTooltipText(power)}

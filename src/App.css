@@ -14,6 +14,7 @@
   --choice-taken-shadow:
     inset 0 0 0 1px rgba(174, 153, 103, 0.14),
     0 0 6px rgba(120, 95, 47, 0.1);
+  --selected-power-accent: #c6b386;
   display: flex;
   height: 100vh;
   flex-direction: column;
@@ -927,7 +928,7 @@ h3 {
 .power-selection-choice--taken:not(.power-selection-choice--current) span,
 .advantage-selection-choice--selected span,
 .specialization-role-choice--taken:not(.specialization-role-choice--current) span {
-  color: #c6b386;
+  color: var(--selected-power-accent);
 }
 
 .tab-button--active {
@@ -1303,6 +1304,12 @@ h3 {
   background: #121212;
 }
 
+.framework-button:focus-visible {
+  outline: none;
+  border-color: #587fcf;
+  box-shadow: 0 0 0 1px rgba(89, 150, 255, 0.28);
+}
+
 .framework-button__icon {
   width: 30px !important;
   height: 40px !important;
@@ -1313,6 +1320,11 @@ h3 {
 }
 
 .framework-button--active {
+  border-color: #6ea6ff;
+  box-shadow: 0 0 0 1px rgba(89, 150, 255, 0.4);
+}
+
+.framework-button--active:focus-visible {
   border-color: #6ea6ff;
   box-shadow: 0 0 0 1px rgba(89, 150, 255, 0.4);
 }
@@ -1443,7 +1455,20 @@ h3 {
 }
 
 .power-choice--selected span {
-  color: #c6b386;
+  color: var(--selected-power-accent);
+}
+
+.inline-choice-button__details strong,
+.talent-slot-button__details strong,
+.innate-choice small strong,
+.talent-choice small strong {
+  color: var(--selected-power-accent);
+  font-weight: 700;
+}
+
+.inline-choice-button__details strong,
+.talent-slot-button__details strong {
+  font-weight: 800;
 }
 
 .power-choice--selected:hover {

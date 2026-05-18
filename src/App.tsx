@@ -33,6 +33,8 @@ import {
   isPowerVariantDevice,
   isStandardDevice,
   isTravelPower,
+  isUtilityFrameworkFilter,
+  isUtilityFrameworkSelection,
   devicesFilterId,
   powerVariantsFilterId,
   travelPowerFilterId,
@@ -305,12 +307,12 @@ function App() {
     powerSearchResetKey,
     resetPowerSearch,
     selectedDeviceTargetBuildSlot,
-    selectedFramework,
+    selectedFrameworks,
     selectedPowerTargetBuildSlot,
     selectedPowerTargetSlot,
     selectedPowerVariantTargetBuildSlot,
     selectPowerPanelTarget,
-    setSelectedFramework,
+    setSelectedFrameworks,
   } = usePowerPanelTargets({
     archetypeAlternativePowerSlotNumbers,
     buildSlots,
@@ -386,6 +388,14 @@ function App() {
       return;
     }
 
+    const existingSlot =
+      buildSlots.find((slot) => slot.power?.power_id === power.power_id) ??
+      null;
+
+    if (existingSlot && selectedPowerTargetBuildSlot === null) {
+      return;
+    }
+
     const targetSlot =
       selectedPowerTargetBuildSlot ??
       getFirstValidPowerSlot(power, buildSlots);
@@ -437,7 +447,7 @@ function App() {
     });
     clearPowerPanelTargets();
     resetPowerSearch();
-    setSelectedFramework(null);
+    setSelectedFrameworks(null);
     setBuildCheckDialogOpen(false);
   }
 
@@ -727,7 +737,7 @@ function App() {
     resetAllAuxiliaryPowerSlots();
     setCamsLevel(0);
     resetArchetypeRole();
-    setSelectedFramework(null);
+    setSelectedFrameworks(null);
     clearPowerPanelTargets();
     resetAllStatsTalents();
     resetAllSpecializations();
@@ -773,7 +783,7 @@ function App() {
       selectedMasterySlot: hydratedBuild.selectedMasterySlot,
     });
     setCamsLevel(hydratedBuild.camsLevel);
-    setSelectedFramework(null);
+    setSelectedFrameworks(null);
     clearPowerPanelTargets();
     closePowerDialogs();
     closeArchetypeDialog();
@@ -966,7 +976,7 @@ function App() {
           talents={selectedTalents}
           deviceSlots={deviceSlots}
           highlightedDeviceTargetSlot={
-            selectedFramework === devicesFilterId
+            isUtilityFrameworkSelection(selectedFrameworks, devicesFilterId)
               ? selectedDeviceTargetBuildSlot?.slot ?? null
               : null
           }
@@ -1005,11 +1015,40 @@ function App() {
           powers={selectablePowers}
           restrictedPowerIds={activeRestrictedPowerIds}
           restrictedPowerSectionLabel={activeRestrictedPowerSectionLabel}
-          selectedFramework={selectedFramework}
+          selectedFrameworks={selectedFrameworks}
           onAddPower={addPower}
-          onSelectFramework={(frameworkId) => {
+          onSelectFramework={(frameworkId, additive) => {
             setBuildCheckPowerFilter(null);
-            setSelectedFramework(frameworkId);
+            setSelectedFrameworks((currentFrameworks) => {
+              if (frameworkId === null) {
+                return null;
+              }
+
+              if (isUtilityFrameworkFilter(frameworkId)) {
+                return [frameworkId];
+              }
+
+              if (!additive) {
+                return [frameworkId];
+              }
+
+              const currentStandardFrameworks =
+                currentFrameworks?.filter(
+                  (currentFrameworkId) =>
+                    !isUtilityFrameworkFilter(currentFrameworkId),
+                ) ?? [];
+
+              if (currentStandardFrameworks.includes(frameworkId)) {
+                const nextFrameworks = currentStandardFrameworks.filter(
+                  (currentFrameworkId) =>
+                    currentFrameworkId !== frameworkId,
+                );
+
+                return nextFrameworks.length > 0 ? nextFrameworks : null;
+              }
+
+              return [...currentStandardFrameworks, frameworkId];
+            });
           }}
         />
 
@@ -1038,12 +1077,12 @@ function App() {
             selectedPowerTargetBuildSlot?.slot ?? null
           }
           highlightedTravelPowerTargetSlot={
-            selectedFramework === travelPowerFilterId
+            isUtilityFrameworkSelection(selectedFrameworks, travelPowerFilterId)
               ? powerPanelTargetTravelPowerSlot?.slot ?? null
               : null
           }
           highlightedPowerVariantTargetSlot={
-            selectedFramework === powerVariantsFilterId
+            isUtilityFrameworkSelection(selectedFrameworks, powerVariantsFilterId)
               ? selectedPowerVariantTargetBuildSlot?.slot ?? null
               : null
           }

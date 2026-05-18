@@ -18,6 +18,8 @@ export const travelPowerFilterId = "__travel_powers__";
 export const powerVariantsFilterId = "__power_variants__";
 export const devicesFilterId = "__devices__";
 
+export type SelectedFrameworks = string[] | null;
+
 const sharedFrameworkChildren: Record<string, string[]> = {
   Shared_Brick: ["Earth", "Heavy_Weapon", "Might"],
   Shared_Energy_Projector: ["Electricity", "Fire", "Force", "Ice", "Wind"],
@@ -356,6 +358,44 @@ export function isPowerVisibleInFramework(
 
   return getSharedFrameworksForFramework(selectedFramework).includes(
     power.framework_id ?? "",
+  );
+}
+
+export function isUtilityFrameworkFilter(frameworkId: string) {
+  return [
+    travelPowerFilterId,
+    powerVariantsFilterId,
+    devicesFilterId,
+  ].includes(frameworkId);
+}
+
+export function isUtilityFrameworkSelection(
+  selectedFrameworks: SelectedFrameworks,
+  frameworkId: string,
+) {
+  return (
+    selectedFrameworks?.length === 1 &&
+    selectedFrameworks[0] === frameworkId
+  );
+}
+
+export function isPowerVisibleInSelectedFrameworks(
+  power: Power,
+  selectedFrameworks: SelectedFrameworks,
+) {
+  if (selectedFrameworks === null) {
+    return isPowerVisibleInFramework(power, null);
+  }
+
+  if (
+    selectedFrameworks.length === 1 &&
+    isUtilityFrameworkFilter(selectedFrameworks[0] ?? "")
+  ) {
+    return isPowerVisibleInFramework(power, selectedFrameworks[0] ?? null);
+  }
+
+  return selectedFrameworks.some((frameworkId) =>
+    isPowerVisibleInFramework(power, frameworkId),
   );
 }
 

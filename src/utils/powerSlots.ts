@@ -171,15 +171,30 @@ export function canPlacePowerInSlot(
     return true;
   }
 
-  if (sourceSlot) {
-    return true;
-  }
-
   if (!canSelectPower(power, previewSlots, targetSlot.slot)) {
     return false;
   }
 
-  return true;
+  const currentInvalidSlotNumbers = new Set(
+    currentBuildSlots
+      .filter(
+        (slot) =>
+          slot.power !== null &&
+          !canSelectPower(slot.power, currentBuildSlots, slot.slot),
+      )
+      .map((slot) => slot.slot),
+  );
+  const nextInvalidSlotNumbers = previewSlots
+    .filter(
+      (slot) =>
+        slot.power !== null &&
+        !canSelectPower(slot.power, previewSlots, slot.slot),
+    )
+    .map((slot) => slot.slot);
+
+  return nextInvalidSlotNumbers.every((slotNumber) =>
+    currentInvalidSlotNumbers.has(slotNumber),
+  );
 }
 
 export function getFirstValidPowerSlot(

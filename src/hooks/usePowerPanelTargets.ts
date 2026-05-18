@@ -1,5 +1,6 @@
 import { useState } from "react";
 import type { BuildSlot } from "../types/builds";
+import type { SelectedFrameworks } from "../utils/powerFrameworks";
 
 type PowerPanelTargetKind = "power" | "travelPower" | "powerVariant" | "device";
 
@@ -20,9 +21,8 @@ export function usePowerPanelTargets({
   powerVariantSlots,
   travelPowerSlots,
 }: UsePowerPanelTargetsOptions) {
-  const [selectedFramework, setSelectedFramework] = useState<string | null>(
-    null,
-  );
+  const [selectedFrameworks, setSelectedFrameworks] =
+    useState<SelectedFrameworks>(null);
   const [selectedPowerTargetSlot, setSelectedPowerTargetSlot] =
     useState<number | null>(null);
   const [powerSearchResetKey, setPowerSearchResetKey] = useState(0);
@@ -122,7 +122,7 @@ export function usePowerPanelTargets({
     frameworkId: string | null,
     resetSearch: boolean,
   ) {
-    setSelectedFramework(frameworkId);
+    setSelectedFrameworks(frameworkId === null ? null : [frameworkId]);
 
     if (resetSearch) {
       setPowerSearchResetKey((currentResetKey) => currentResetKey + 1);
@@ -173,11 +173,11 @@ export function usePowerPanelTargets({
     powerSearchResetKey,
     resetPowerSearch,
     selectedDeviceTargetBuildSlot,
-    selectedFramework,
+    selectedFrameworks,
     selectedPowerTargetBuildSlot,
     selectedPowerTargetSlot,
     selectedPowerVariantTargetBuildSlot,
     selectPowerPanelTarget,
-    setSelectedFramework,
+    setSelectedFrameworks,
   };
 }
