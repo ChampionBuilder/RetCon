@@ -2,6 +2,7 @@ import type { Advantage } from "../types/advantages";
 import type { BuildSlot } from "../types/builds";
 import type { Power } from "../types/powers";
 import { isUltimatePowerVariantDevice } from "./powerFrameworks";
+import { getPowerAdvantages } from "./powerAdvantages";
 
 const inheritedPvdAdvantageNames = new Set(["Rank 2", "Rank 3", "Challenge!"]);
 
@@ -29,16 +30,8 @@ export function hasPowerVariantParent(
 }
 
 function getSlotAdvantages(slot: BuildSlot, advantages: Advantage[]) {
-  if (!slot.power) {
-    return [];
-  }
-
-  const powerAdvantageIds = new Set(slot.power.advantages);
-
-  return advantages.filter(
-    (advantage) =>
-      powerAdvantageIds.has(advantage.advantage_id) &&
-      slot.selectedAdvantages.includes(advantage.advantage_id),
+  return getPowerAdvantages(slot.power, advantages).filter((advantage) =>
+    slot.selectedAdvantages.includes(advantage.advantage_id),
   );
 }
 
@@ -62,9 +55,7 @@ function getUltimateInheritedAdvantages(
       return;
     }
 
-    const parentAdvantages = advantages.filter((advantage) =>
-      parentSlot.power?.advantages.includes(advantage.advantage_id),
-    );
+    const parentAdvantages = getPowerAdvantages(parentSlot.power, advantages);
     const selectedAdvantages = getSlotAdvantages(parentSlot, advantages);
     const selectedPointTotal = selectedAdvantages.reduce(
       (sum, advantage) => sum + (advantage.points_cost ?? 0),

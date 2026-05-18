@@ -5,15 +5,10 @@ import {
   getRequiredAdvantage,
 } from "./advantageDependencies";
 import { canAddAdvantage } from "./advantagerules";
+import { getPowerAdvantages } from "./powerAdvantages";
 
 function getSlotAdvantages(slot: BuildSlot, advantages: Advantage[]) {
-  if (!slot.power) {
-    return [];
-  }
-
-  return advantages.filter((advantage) =>
-    slot.power?.advantages.includes(advantage.advantage_id),
-  );
+  return getPowerAdvantages(slot.power, advantages);
 }
 
 export function toggleAdvantageForSlots(

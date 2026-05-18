@@ -2,7 +2,6 @@ import { useEffect, useRef, useState, type MouseEvent } from "react";
 import type { Advantage } from "../types/advantages";
 import type { BuildSlot } from "../types/builds";
 import type { Archetype, ArchetypeGroup } from "../types/character";
-import type { Power } from "../types/powers";
 import type { DialogAnchor } from "./AnchoredDialog";
 import { getPowerIconName } from "../utils/icons";
 import { getPowerTooltipText } from "../utils/powerText";
@@ -11,6 +10,7 @@ import {
   getPowerVariantDisplayAdvantages,
   hasPowerVariantParent,
 } from "../utils/powerVariantRules";
+import { getPowerAdvantages } from "../utils/powerAdvantages";
 import { SpriteIcon } from "./SpriteIcon";
 
 type BuildPanelProps = {
@@ -101,12 +101,6 @@ export function BuildPanel({
   const [closedSections, setClosedSections] = useState<string[]>([]);
   const bodyRef = useRef<HTMLDivElement | null>(null);
   const slotElementsRef = useRef(new Map<number, HTMLDivElement>());
-
-  function getPowerAdvantages(power: Power) {
-    return advantages.filter((advantage) =>
-      power.advantages.includes(advantage.advantage_id),
-    );
-  }
 
   function toggleSection(sectionKey: string) {
     setClosedSections((currentClosedSections) =>
@@ -211,7 +205,7 @@ export function BuildPanel({
             <div className="build-list">
               {buildSlots.map((slot) => {
                 const slotAdvantages = slot.power
-                  ? getPowerAdvantages(slot.power)
+                  ? getPowerAdvantages(slot.power, advantages)
                   : [];
                 const isPowerIllegal =
                   slot.power !== null && invalidPowerSlotNumbers.has(slot.slot);
@@ -304,7 +298,7 @@ export function BuildPanel({
             <div className="travel-build-list">
               {travelPowerSlots.map((slot) => {
                 const slotAdvantages = slot.power
-                  ? getPowerAdvantages(slot.power)
+                  ? getPowerAdvantages(slot.power, advantages)
                   : [];
 
                 return (

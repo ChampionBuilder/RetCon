@@ -6,6 +6,7 @@ import {
   getSlotAdvantagePoints,
   maxAdvantagePointsPerPower,
 } from "../utils/advantagerules";
+import { getPowerAdvantages } from "../utils/powerAdvantages";
 import type { DialogAnchor } from "./AnchoredDialog";
 import { AnchoredDialog } from "./AnchoredDialog";
 
@@ -83,11 +84,7 @@ export function AdvantageSelectionDialog({
   onClose,
   onToggleAdvantage,
 }: AdvantageSelectionDialogProps) {
-  const slotAdvantages = buildSlot.power
-    ? advantages.filter((advantage) =>
-        buildSlot.power?.advantages.includes(advantage.advantage_id),
-      )
-    : [];
+  const slotAdvantages = getPowerAdvantages(buildSlot.power, advantages);
   const slotPointTotal = getSlotAdvantagePoints(buildSlot, slotAdvantages);
 
   return (
