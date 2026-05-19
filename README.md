@@ -1,6 +1,6 @@
 # RetCon
 
-RetCon is a modern character planner for Champions Online players, designed for long-term community maintenance and expansion.
+RetCon is a modern character planner for Champions Online, designed for long-term community maintenance and expansion.
 
 It lets players build freeform or archetype characters, browse powers, assign advantages, manage travel powers and devices, and share builds through links or local saves.
 
@@ -29,18 +29,19 @@ npm run build
 
 RetCon builds upon the work of the community tools that came before it, and would not exist without the years of documentation, testing, and knowledge shared by Champions Online players.
 
-Special thanks to 0ccult and the Champions Online development team for resources that greatly helped reconstruct the project database.
+Special thanks to Aesica for the colossal work accomplished on HeroCreator, and to 0ccult, the Champions Online development team, and ongoing community projects for providing resources that greatly helped reconstruct and consolidate the project database.
 
-Older community projects:
-
-- [PowerHouse](http://powerhouse.nullware.com/) by Kyle W. T. Sherman
-- championBuilder by Moritz Hartmeier, later maintained by Roxstar
-- [HeroCreator](https://aesica.net/co/herocreator.htm) by Aesica
-
-Current community projects:
+Please, visit and support the following community projects:
 
 - [PowerHouse](https://woof-wolf.github.io/powerhouse/index.html) by BehemothKing
 - [Winds Hero Builder](https://vtwind.github.io/HeroBuilder/) by Winds
+
+Older community projects:
+
+- [HeroCreator](https://aesica.net/co/herocreator.htm) by Aesica
+- [PowerHouse](http://powerhouse.nullware.com/) by Kyle W. T. Sherman
+- championBuilder by Moritz Hartmeier, later maintained by Roxstar
+
 
 ## Legal notes
 

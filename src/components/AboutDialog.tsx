@@ -89,42 +89,16 @@ export function AboutDialog({ onClose }: AboutDialogProps) {
           <section>
             <h4>Special Thanks</h4>
             <p>
-              This project builds upon the work of the community tools that came
-              before it, and would not exist without the years of documentation,
-              testing, and knowledge shared by Champions Online players.
+              RetCon builds upon the work of the community tools that came before it,
+              and would not exist without the years of documentation, testing,
+              and knowledge shared by Champions Online players.
             </p>
             <p>
-              Special thanks to 0ccult and the Champions Online development team
-              for resources that greatly helped reconstruct the project
-              database.
+              Special thanks to Aesica for the colossal work accomplished on HeroCreator,
+              and to 0ccult, BalakfangKnight, the Champions Online development team,
+              and ongoing community projects whose resources, documentation, and maintenance
+              work greatly helped reconstruct and consolidate the project database.
             </p>
-
-            <ul>
-              <li>
-                <a
-                  href="http://powerhouse.nullware.com/"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  PowerHouse
-                </a>{" "}
-                by Kyle W. T. Sherman
-              </li>
-              <li>
-                championBuilder by Moritz Hartmeier, later maintained by
-                Roxstar
-              </li>
-              <li>
-                <a
-                  href="https://aesica.net/co/herocreator.htm"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  HeroCreator
-                </a>{" "}
-                by Aesica
-              </li>
-            </ul>
             <p>Please also visit and support the following community projects:</p>
             <ul>
               <li>
@@ -148,6 +122,34 @@ export function AboutDialog({ onClose }: AboutDialogProps) {
                 by Winds
               </li>
             </ul>
+            <p>Older community projects:</p>            
+            <ul>
+              <li>
+                <a
+                  href="https://aesica.net/co/herocreator.htm"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  HeroCreator
+                </a>{" "}
+                by Aesica
+              </li>              
+              <li>
+                <a
+                  href="http://powerhouse.nullware.com/"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  PowerHouse
+                </a>{" "}
+                by Kyle W. T. Sherman
+              </li>
+              <li>
+                championBuilder by Moritz Hartmeier, later maintained by
+                Roxstar
+              </li>
+             </ul>
+
           </section>
 
           <section>
