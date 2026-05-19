@@ -1,7 +1,6 @@
 import { useMemo } from "react";
 import type { DialogAnchor } from "./AnchoredDialog";
 import { AnchoredDialog } from "./AnchoredDialog";
-import { usePersistentBoolean } from "../hooks/usePersistentBoolean";
 import type { SuperStat, Talent } from "../types/character";
 import { getSelectedStatKeys } from "../utils/innateTalents";
 import {
@@ -31,16 +30,13 @@ export function TalentSelectionDialog({
   onAutofillTalents,
   onSelectTalent,
 }: TalentSelectionDialogProps) {
-  const [sortBySelectedStats, setSortBySelectedStats] = usePersistentBoolean(
-    "retcon.sortMatches.talents",
-  );
   const selectedStatKeys = useMemo(() => {
     return getSelectedStatKeys(selectedSuperStats);
   }, [selectedSuperStats]);
   const selectedTalentId = selectedTalentIds[slotIndex] ?? 0;
   const selectableTalents = useMemo(() => {
-    return getSortedTalents(talents, selectedStatKeys, sortBySelectedStats);
-  }, [selectedStatKeys, sortBySelectedStats, talents]);
+    return getSortedTalents(talents, selectedStatKeys, true);
+  }, [selectedStatKeys, talents]);
 
   return (
     <AnchoredDialog
@@ -63,20 +59,6 @@ export function TalentSelectionDialog({
           onClick={onAutofillTalents}
         >
           Autofill
-        </button>
-        <button
-          className={
-            sortBySelectedStats ? "tab-button tab-button--active" : "tab-button"
-          }
-          title="Sort talents by matching selected super stats"
-          type="button"
-          onClick={() =>
-            setSortBySelectedStats(
-              (currentSortBySelectedStats) => !currentSortBySelectedStats,
-            )
-          }
-        >
-          Sort Matches
         </button>
         <button
           aria-label="Close talent selection"

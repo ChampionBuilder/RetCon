@@ -118,13 +118,13 @@ export const supplementalFrameworkFilters: PowerFrameworkFilter[] = [
   },
   {
     id: powerVariantsFilterId,
-    iconId: "Gadgeteering_SonicDevice",
+    iconId: "Role_Hybrid",
     title: "Power Variants",
     selectable: true,
   },
   {
     id: devicesFilterId,
-    iconId: "Gadgeteering_SonicDevice",
+    iconId: "Icon_Bag",
     title: "Devices",
     selectable: true,
   },

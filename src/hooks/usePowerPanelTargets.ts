@@ -176,6 +176,7 @@ export function usePowerPanelTargets({
     selectedFrameworks,
     selectedPowerTargetBuildSlot,
     selectedPowerTargetSlot,
+    selectedTravelPowerTargetBuildSlot,
     selectedPowerVariantTargetBuildSlot,
     selectPowerPanelTarget,
     setSelectedFrameworks,

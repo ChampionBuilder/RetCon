@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { publicAssetUrl } from "../utils/publicAssetUrl";
 
 type AppHeaderProps = {
@@ -43,6 +43,10 @@ export function AppHeader({
   onRandomize,
 }: AppHeaderProps) {
   const resetMenuRef = useRef<HTMLDetailsElement | null>(null);
+  const saveFeedbackTimeoutRef = useRef<number | null>(null);
+  const copyFeedbackTimeoutRef = useRef<number | null>(null);
+  const [saveFeedbackVisible, setSaveFeedbackVisible] = useState(false);
+  const [copyFeedbackVisible, setCopyFeedbackVisible] = useState(false);
 
   useEffect(() => {
     function closeResetMenuOnOutsidePointer(event: PointerEvent) {
@@ -62,8 +66,49 @@ export function AppHeader({
     };
   }, []);
 
+  useEffect(() => {
+    return () => {
+      if (saveFeedbackTimeoutRef.current !== null) {
+        window.clearTimeout(saveFeedbackTimeoutRef.current);
+      }
+
+      if (copyFeedbackTimeoutRef.current !== null) {
+        window.clearTimeout(copyFeedbackTimeoutRef.current);
+      }
+    };
+  }, []);
+
+  function showTemporaryFeedback(
+    setVisible: (visible: boolean) => void,
+    timeoutRef: React.MutableRefObject<number | null>,
+  ) {
+    setVisible(true);
+
+    if (timeoutRef.current !== null) {
+      window.clearTimeout(timeoutRef.current);
+    }
+
+    timeoutRef.current = window.setTimeout(() => {
+      setVisible(false);
+      timeoutRef.current = null;
+    }, 1600);
+  }
+
+  function handleSave() {
+    onSave();
+    showTemporaryFeedback(setSaveFeedbackVisible, saveFeedbackTimeoutRef);
+  }
+
   function copyLink() {
-    void navigator.clipboard?.writeText(shareUrl);
+    const writePromise = navigator.clipboard?.writeText(shareUrl);
+
+    if (!writePromise) {
+      return;
+    }
+
+    void writePromise.then(() =>
+      showTemporaryFeedback(setCopyFeedbackVisible, copyFeedbackTimeoutRef),
+    );
   }
 
   return (
@@ -95,7 +140,11 @@ export function AppHeader({
 
           <button
             className="header-action-button"
-            title="Copy a link to share this build."
+            title={
+              copyFeedbackVisible
+                ? "Link copied!"
+                : "Copy a link to share this build."
+            }
             type="button"
             onClick={copyLink}
           >
@@ -103,9 +152,11 @@ export function AppHeader({
           </button>
           <button
             className="header-action-button"
-            title="Save this build to My Builds."
+            title={
+              saveFeedbackVisible ? "Saved!" : "Save this build to My Builds."
+            }
             type="button"
-            onClick={onSave}
+            onClick={handleSave}
           >
             Save
           </button>

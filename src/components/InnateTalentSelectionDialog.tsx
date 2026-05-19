@@ -1,7 +1,6 @@
 import { useMemo } from "react";
 import type { DialogAnchor } from "./AnchoredDialog";
 import { AnchoredDialog } from "./AnchoredDialog";
-import { usePersistentBoolean } from "../hooks/usePersistentBoolean";
 import type { InnateTalent, SuperStat } from "../types/character";
 import {
   countInnateTalentVisibleStats,
@@ -31,9 +30,6 @@ export function InnateTalentSelectionDialog({
   onClose,
   onSelectTalent,
 }: InnateTalentSelectionDialogProps) {
-  const [sortBySelectedStats, setSortBySelectedStats] = usePersistentBoolean(
-    "retcon.sortMatches.innateTalents",
-  );
   const selectedStatKeys = useMemo(() => {
     return getSelectedStatKeys(selectedSuperStats);
   }, [selectedSuperStats]);
@@ -50,37 +46,35 @@ export function InnateTalentSelectionDialog({
       return statCountDifference || a.index - b.index;
     });
 
-    if (sortBySelectedStats) {
-      talentList.sort((a, b) => {
-        const matchPriorityDifference =
-          getInnateTalentMatchPriority(a.talent, selectedStatKeys) -
-          getInnateTalentMatchPriority(b.talent, selectedStatKeys);
-        const matchDifference =
-          countMatchingStats(b.talent, selectedStatKeys) -
-          countMatchingStats(a.talent, selectedStatKeys);
-        const matchedValueDifference =
-          getMatchingInnateTalentStatValue(b.talent, selectedStatKeys) -
-          getMatchingInnateTalentStatValue(a.talent, selectedStatKeys);
-        const profilePriorityDifference =
-          getInnateTalentProfilePriority(a.talent) -
-          getInnateTalentProfilePriority(b.talent);
-        const statCountDifference =
-          countInnateTalentVisibleStats(a.talent) -
-          countInnateTalentVisibleStats(b.talent);
+    talentList.sort((a, b) => {
+      const matchPriorityDifference =
+        getInnateTalentMatchPriority(a.talent, selectedStatKeys) -
+        getInnateTalentMatchPriority(b.talent, selectedStatKeys);
+      const matchDifference =
+        countMatchingStats(b.talent, selectedStatKeys) -
+        countMatchingStats(a.talent, selectedStatKeys);
+      const matchedValueDifference =
+        getMatchingInnateTalentStatValue(b.talent, selectedStatKeys) -
+        getMatchingInnateTalentStatValue(a.talent, selectedStatKeys);
+      const profilePriorityDifference =
+        getInnateTalentProfilePriority(a.talent) -
+        getInnateTalentProfilePriority(b.talent);
+      const statCountDifference =
+        countInnateTalentVisibleStats(a.talent) -
+        countInnateTalentVisibleStats(b.talent);
 
-        return (
-          matchPriorityDifference ||
-          matchDifference ||
-          matchedValueDifference ||
-          profilePriorityDifference ||
-          statCountDifference ||
-          a.index - b.index
-        );
-      });
-    }
+      return (
+        matchPriorityDifference ||
+        matchDifference ||
+        matchedValueDifference ||
+        profilePriorityDifference ||
+        statCountDifference ||
+        a.index - b.index
+      );
+    });
 
     return talentList.map(({ talent }) => talent);
-  }, [selectedStatKeys, sortBySelectedStats, talents]);
+  }, [selectedStatKeys, talents]);
 
   return (
     <AnchoredDialog
@@ -96,20 +90,6 @@ export function InnateTalentSelectionDialog({
           onClick={() => onSelectTalent(0)}
         >
           Clear
-        </button>
-        <button
-          className={
-            sortBySelectedStats ? "tab-button tab-button--active" : "tab-button"
-          }
-          title="Sort innate talents by matching selected super stats"
-          type="button"
-          onClick={() =>
-            setSortBySelectedStats(
-              (currentSortBySelectedStats) => !currentSortBySelectedStats,
-            )
-          }
-        >
-          Sort Matches
         </button>
         <button
           aria-label="Close innate talent selection"

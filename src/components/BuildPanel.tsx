@@ -245,7 +245,12 @@ export function BuildPanel({
                     >
                       <div className="build-entry__power-main">
                         <span className="level-label">{slot.level}</span>
-                        <SpriteIcon name={getPowerIconName(slot.power)} size={26} />
+                        <SpriteIcon
+                          name={
+                            slot.power ? getPowerIconName(slot.power) : "Role_Freeform"
+                          }
+                          size={26}
+                        />
                         <button
                           className="build-entry__name-button"
                           aria-disabled={isPowerLocked}
@@ -327,7 +332,12 @@ export function BuildPanel({
                     >
                       <div className="build-entry__power-main">
                         <span className="level-label">{slot.level}</span>
-                        <SpriteIcon name={getPowerIconName(slot.power)} size={26} />
+                        <SpriteIcon
+                          name={
+                            slot.power ? getPowerIconName(slot.power) : "Role_Freeform"
+                          }
+                          size={26}
+                        />
                         <button
                           className="build-entry__name-button"
                           title={getPowerTooltipText(slot.power)}
@@ -416,7 +426,12 @@ export function BuildPanel({
                     >
                       <div className="build-entry__power-main">
                         <span className="level-label">-</span>
-                        <SpriteIcon name={getPowerIconName(slot.power)} size={26} />
+                        <SpriteIcon
+                          name={
+                            slot.power ? getPowerIconName(slot.power) : "Role_Hybrid"
+                          }
+                          size={26}
+                        />
                         <button
                           className="build-entry__name-button"
                           title={getPowerTooltipText(slot.power)}

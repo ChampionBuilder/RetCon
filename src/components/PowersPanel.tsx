@@ -69,7 +69,7 @@ function tierLabel(tier: Power["tier"]) {
   }
 
   if (tier === null) {
-    return "Travel and variants";
+    return "Variants";
   }
 
   if (tier === 4) {
@@ -418,7 +418,7 @@ export function PowersPanel({
       "all-frameworks",
       selectedFrameworks === null,
       false,
-      "Any_Generic",
+      "Role_Freeform",
       "All frameworks",
       () => onSelectFramework(null, false),
     );

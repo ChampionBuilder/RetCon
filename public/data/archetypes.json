@@ -322,22 +322,22 @@
       "powerList": [
         91,
         92,
-        101,
+        102,
         97,
         [
-          102,
-          96
+          106,
+          95
         ],
         93,
         111,
         99,
         100,
+        101,
         98,
         [
           104,
-          95
-        ],
-        45
+          45
+        ]
       ],
       "specializationTreeList": [
         2,
@@ -358,25 +358,25 @@
       "group": 5,
       "superStatList": [
         5,
-        7,
-        8
+        8,
+        7
       ],
       "icon": "Archetype_Squall",
       "innateTalent": 38,
       "powerList": [
         75,
         76,
-        77,
         78,
         [
           81,
           95
         ],
-        258,
         [
           86,
           85
         ],
+        79,
+        77,
         80,
         82,
         [
@@ -424,12 +424,12 @@
         211,
         192,
         [
-          206,
-          210
+          210,
+          206
         ],
         [
-          203,
-          201
+          201,
+          203
         ],
         [
           213,
@@ -460,30 +460,33 @@
       "powerList": [
         91,
         92,
-        96,
+        [
+          96,
+          102
+        ],
         224,
         [
           105,
           95
         ],
-        258,
-        98,
+        93,
+        101,
         99,
-        [
-          101,
-          100
-        ],
-        235,
+        100,
         [
           103,
-          104
+          235
+        ],
+        [
+          104,
+          98
         ],
         109
       ],
       "specializationTreeList": [
         3,
-        15,
-        9
+        9,
+        18
       ],
       "overview": "You are able to create ice and cold out of thin air and manipulate it various ways. You blast your foes with ice shards, trap them in solid blocks of ice, then shatter them with only a thought.",
       "concepts": "Cold Mutation, Cryo-Suit, Frost Warrior, Ice Elemental, Winter Spirit",
@@ -544,7 +547,7 @@
         7
       ],
       "icon": "Archetype_Master",
-      "innateTalent": 36,
+      "innateTalent": 57,
       "powerList": [
         300,
         301,
@@ -654,8 +657,8 @@
         438,
         400,
         [
-          440,
-          445
+          445,
+          432
         ],
         451,
         [
@@ -690,8 +693,8 @@
       "group": 4,
       "superStatList": [
         5,
-        7,
-        2
+        2,
+        7
       ],
       "icon": "Archetype_Disciple",
       "innateTalent": 33,
@@ -860,7 +863,10 @@
           408
         ],
         402,
-        37,
+        [
+          403,
+          37
+        ],
         [
           407,
           401
@@ -1054,25 +1060,28 @@
       "powerList": [
         53,
         54,
-        55,
+        [
+          55,
+          68
+        ],
         [
           62,
           61
         ],
-        68,
-        63,
         [
           64,
           67
         ],
+        65,
+        72,
         56,
+        59,
         69,
-        57,
         [
           73,
           70
         ],
-        72
+        116
       ],
       "specializationTreeList": [
         8,
@@ -1094,30 +1103,30 @@
         7
       ],
       "icon": "Archetype_Specialist",
-      "innateTalent": 52,
+      "innateTalent": 53,
       "powerList": [
         185,
         [
-          187,
-          267
+          267,
+          187
         ],
         [
-          191,
-          198
+          198,
+          191
         ],
         [
-          318,
-          326
+          326,
+          318
         ],
         268,
         272,
         [
-          199,
-          270
+          270,
+          199
         ],
         [
-          214,
-          271
+          271,
+          214
         ],
         320,
         319,
@@ -1126,8 +1135,8 @@
           328
         ],
         [
-          212,
-          273
+          273,
+          212
         ]
       ],
       "specializationTreeList": [
@@ -1197,35 +1206,35 @@
       "superStatList": [
         2,
         1,
-        5
+        7
       ],
       "icon": "Archetype_NightAvenger",
       "innateTalent": 43,
       "powerList": [
         274,
         275,
-        323,
+        161,
         327,
         [
-          161,
-          279
+          323,
+          151
         ],
-        [
-          277,
-          258
-        ],
+        277,
         177,
-        319,
-        151,
         [
           282,
           285
         ],
+        320,
+        319,
         [
           170,
           167
         ],
-        184
+        [
+          336,
+          184
+        ]
       ],
       "specializationTreeList": [
         2,
@@ -1332,7 +1341,7 @@
       "superStatList": [
         4,
         6,
-        5
+        7
       ],
       "icon": "Archetype_Inventor",
       "innateTalent": 30,
@@ -1342,27 +1351,27 @@
         149,
         152,
         [
-          166,
-          173
+          147,
+          175
         ],
-        258,
-        147,
+        165,
+        171,
         222,
-        175,
-        [
-          172,
-          182
-        ],
+        153,
+        182,
         [
           162,
-          178
+          172
         ],
-        180
+        [
+          260,
+          180
+        ]
       ],
       "specializationTreeList": [
         4,
         18,
-        13
+        12
       ],
       "overview": "You are an incredibly gifted creator of advanced technology, using unconventional ideas that the average person would think impossible. Your quirky designs get the job done, with only the occasional unintended side effect.",
       "concepts": "Scientific Entrepreneur, Prototype Cyber Soldier, Technopath, Kid Genius, Mad Scientist",
@@ -1420,7 +1429,7 @@
         3
       ],
       "icon": "Archetype_Automaton",
-      "innateTalent": 51,
+      "innateTalent": 50,
       "powerList": [
         216,
         [
@@ -1490,12 +1499,18 @@
           406,
           443
         ],
-        410,
+        [
+          410,
+          401
+        ],
         [
           39,
           594
         ],
-        37,
+        [
+          37,
+          403
+        ],
         402,
         [
           452,
@@ -1505,8 +1520,8 @@
       ],
       "specializationTreeList": [
         1,
-        14,
-        9
+        9,
+        14
       ],
       "overview": "You wield a mighty weapon befitting a Rockstar.  While you can use any heavy weapon, you like the axes and preferrably that of the musical variety.  Combined with your pyrotechnic powers of Rock and Roll, you are a force with whom to be reckoned with.",
       "concepts": "Rock'n'Roll Warrior, God of Rock, Heavy Metal Mercenary, Battle Bard, Rockabilly Rebel.",
@@ -1738,7 +1753,7 @@
         8
       ],
       "icon": "Archetype_CyberneticWarrior",
-      "innateTalent": 50,
+      "innateTalent": 51,
       "powerList": [
         241,
         242,
@@ -1788,7 +1803,7 @@
         3
       ],
       "icon": "Archetype_Gunslinger",
-      "innateTalent": 53,
+      "innateTalent": 52,
       "powerList": [
         185,
         188,
@@ -1837,8 +1852,8 @@
       "group": 5,
       "superStatList": [
         5,
-        7,
-        2
+        2,
+        7
       ],
       "icon": "Archetype_Psychokinetic",
       "innateTalent": 54,
@@ -2152,6 +2167,50 @@
       "overview": "You've discovered the ability to manipulate the life energy of others, connection to the darkness of the world.  You can use this power to drain the health and vitality of your enemies.  This power you have drained can then be turnred into healing and support for your allies.",
       "concepts": "Blood Mage, Dark Wizard, Vampire, Soul Stealer",
       "extra": "Your power comes from the ability to drain life from others.  You can reach out your and take their vitality, and use that life energy to heal your allies."
+    },
+    {
+      "id": 44,
+      "name": "The Fissile",
+      "unlockType": 2,
+      "group": 5,
+      "superStatList": [
+        4,
+        2,
+        7
+      ],
+      "icon": "Archetype_Fissile",
+      "powerList": [
+        144,
+        143,
+        156,
+        160,
+        [
+          169,
+          179
+        ],
+        164,
+        157,
+        159,
+        153,
+        181,
+        [
+          154,
+          168
+        ],
+        [
+          180,
+          260
+        ]
+      ],
+      "specializationTreeList": [
+        4,
+        15,
+        19
+      ],
+      "overview": null,
+      "concepts": null,
+      "extra": null,
+      "innateTalent": 63
     }
   ]
 }

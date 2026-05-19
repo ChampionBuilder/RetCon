@@ -3885,8 +3885,8 @@
     "framework_id": "Gadgeteering",
     "power_id": 143,
     "name": "Particle Blaster",
-    "tier": -1,
-    "Power_Type": "ENERGY_BUILDER",
+    "tier": 0,
+    "Power_Type": "RANGED_ATTACK",
     "advantages": [
       1,
       2,
@@ -14579,7 +14579,7 @@
     "framework_id": "Sorcery",
     "power_id": 530,
     "name": "Eldritch Blast",
-    "tier": 1,
+    "tier": 0,
     "Power_Type": null,
     "advantages": [
       1,
@@ -20801,7 +20801,7 @@
     "powerset_id": "Device",
     "framework_id": "Blood_Moon",
     "power_id": 789,
-    "name": "Fists of Complmiance",
+    "name": "Fists of Compliance",
     "tier": null,
     "Power_Type": null,
     "advantages": [],
@@ -20974,7 +20974,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_PestilentCloud",
     "is_disabled": false
   },
   {
@@ -20994,7 +20994,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_ZombieBone",
     "is_disabled": false
   },
   {
@@ -21074,7 +21074,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_TeleiosaurusPheromone",
     "is_disabled": false
   },
   {
@@ -21094,7 +21094,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Munitions_FragGrenade",
     "is_disabled": false
   },
   {
@@ -21114,7 +21114,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_CupidArrow",
     "is_disabled": false
   },
   {
@@ -21134,7 +21134,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Telekinesis_MentalDiscipline",
     "is_disabled": false
   },
   {
@@ -21154,7 +21154,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Might_Hurl",
     "is_disabled": false
   },
   {
@@ -21174,7 +21174,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_DrayshaGun",
     "is_disabled": false
   },
   {
@@ -21194,7 +21194,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_PerpetratorDevice",
     "is_disabled": false
   },
   {
@@ -21214,7 +21214,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Telepathy_MindLock",
     "is_disabled": false
   },
   {
@@ -21234,7 +21234,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_AsclepialSerum",
     "is_disabled": false
   },
   {
@@ -21254,7 +21254,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_TKForceFieldInducer",
     "is_disabled": false
   },
   {
@@ -21294,7 +21294,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_ContainedRadiation",
     "is_disabled": false
   },
   {
@@ -21314,7 +21314,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_DemonicFleshGraft",
     "is_disabled": false
   },
   {
@@ -21334,7 +21334,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_HumidityDome",
     "is_disabled": false
   },
   {
@@ -21354,7 +21354,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_KhusorsDoom",
     "is_disabled": false
   },
   {
@@ -21374,7 +21374,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_NightmareGenerator",
     "is_disabled": false
   },
   {
@@ -21394,7 +21394,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_RaggedProletariatArmband",
     "is_disabled": false
   },
   {
@@ -21414,7 +21414,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Telekinesis_TelekineticBurst",
     "is_disabled": false
   },
   {
@@ -21434,7 +21434,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "PVD_ShadowShred",
     "is_disabled": false
   },
   {
@@ -21454,7 +21454,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_ThunderboltWand",
     "is_disabled": false
   },
   {
@@ -21474,12 +21474,12 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_VoidPossession",
     "is_disabled": false
   },
   {
     "powerset_id": "Device",
-    "framework_id": "Foxbatcon",
+    "framework_id": "Other",
     "power_id": 823,
     "name": "Bubblegum Gun",
     "tier": null,
@@ -21499,7 +21499,7 @@
   },
   {
     "powerset_id": "Device",
-    "framework_id": "Foxbatcon",
+    "framework_id": "Other",
     "power_id": 824,
     "name": "Seismic Ping Pong Ball",
     "tier": null,
@@ -21519,7 +21519,7 @@
   },
   {
     "powerset_id": "Device",
-    "framework_id": "Foxbatcon",
+    "framework_id": "Other",
     "power_id": 825,
     "name": "Throw Foxbat Pins",
     "tier": null,
@@ -21654,7 +21654,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_MagicGauntlets",
     "is_disabled": false
   },
   {
@@ -21714,7 +21714,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Ice_FrostBreath",
     "is_disabled": false
   },
   {
@@ -21734,7 +21734,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_HP",
     "is_disabled": false
   },
   {
@@ -21754,7 +21754,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_NPG",
     "is_disabled": false
   },
   {
@@ -21774,7 +21774,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_PsionicSruge",
     "is_disabled": false
   },
   {
@@ -21794,7 +21794,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Might_Shockwave",
     "is_disabled": false
   },
   {
@@ -21814,7 +21814,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_ExperimentalLifeInjection",
     "is_disabled": false
   },
   {
@@ -21834,7 +21834,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_DestroyerHead",
     "is_disabled": false
   },
   {
@@ -21854,7 +21854,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_EchoStick",
     "is_disabled": false
   },
   {
@@ -21874,7 +21874,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Electricity_Electrocute",
     "is_disabled": false
   },
   {
@@ -21894,7 +21894,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_Energy Absorbing Crashsuit",
     "is_disabled": false
   },
   {
@@ -21914,7 +21914,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_ExperimentaPlasmeRifle",
     "is_disabled": false
   },
   {
@@ -21934,7 +21934,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Munitions_Gunslinger",
     "is_disabled": false
   },
   {
@@ -21954,7 +21954,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_MutagenicInfection",
     "is_disabled": false
   },
   {
@@ -21974,7 +21974,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Munitions_LockNLoad",
     "is_disabled": false
   },
   {
@@ -21994,7 +21994,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "MartialArts_ShurikenThrow",
     "is_disabled": false
   },
   {
@@ -22014,7 +22014,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_PsionicEchoes",
     "is_disabled": false
   },
   {
@@ -22034,7 +22034,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_ReprogrammedRobot",
     "is_disabled": false
   },
   {
@@ -22054,7 +22054,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_PrimusSparckShield",
     "is_disabled": false
   },
   {
@@ -22074,7 +22074,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Electricity_ElectricBolt",
     "is_disabled": false
   },
   {
@@ -22094,7 +22094,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_Brainscrambler",
     "is_disabled": false
   },
   {
@@ -22114,7 +22114,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_PhoenixTears",
     "is_disabled": false
   },
   {
@@ -22134,7 +22134,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_ShatteringRain",
     "is_disabled": false
   },
   {
@@ -22154,7 +22154,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Mentalist_MindLink",
     "is_disabled": false
   },
   {
@@ -22174,7 +22174,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Telekinesis_TelekineticShards",
     "is_disabled": false
   },
   {
@@ -22194,7 +22194,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_MutagenicInfection",
     "is_disabled": false
   },
   {
@@ -22214,7 +22214,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_Punji",
     "is_disabled": false
   },
   {
@@ -22234,7 +22234,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_TameWeabeast",
     "is_disabled": false
   },
   {
@@ -22254,7 +22254,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_TeleiosLithgningRod",
     "is_disabled": false
   },
   {
@@ -22274,7 +22274,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_DevouringShadow",
     "is_disabled": false
   },
   {
@@ -22294,7 +22294,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_Trident",
     "is_disabled": false
   },
   {
@@ -22314,7 +22314,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_BeneficientConstruct",
     "is_disabled": false
   },
   {
@@ -22334,7 +22334,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_ExperimentalLifeInjection",
     "is_disabled": false
   },
   {
@@ -22354,7 +22354,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_CerebroStimulator",
     "is_disabled": false
   },
   {
@@ -22374,7 +22374,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_Charm",
     "is_disabled": false
   },
   {
@@ -22394,7 +22394,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_Skull",
     "is_disabled": false
   },
   {
@@ -22414,7 +22414,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_GadroonForceTech",
     "is_disabled": false
   },
   {
@@ -22434,7 +22434,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_ForceShieldBelt",
     "is_disabled": false
   },
   {
@@ -22454,7 +22454,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Sorcery_ArcaneVitality",
     "is_disabled": false
   },
   {
@@ -22474,7 +22474,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_HornOfAllegiance",
     "is_disabled": false
   },
   {
@@ -22494,7 +22494,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_RhinoHelm",
     "is_disabled": false
   },
   {
@@ -22514,7 +22514,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_BearSpear",
     "is_disabled": false
   },
   {
@@ -22534,7 +22534,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_ManimalControl",
     "is_disabled": false
   },
   {
@@ -22554,7 +22554,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_Lasso",
     "is_disabled": false
   },
   {
@@ -22894,7 +22894,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_Serum",
     "is_disabled": false
   },
   {
@@ -22914,7 +22914,7 @@
     "tags": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_Jetboots",
     "is_disabled": false
   },
   {
@@ -23175,6 +23175,706 @@
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Device_InnerFlame",
+    "is_disabled": false
+  },
+  {
+    "powerset_id": "Device",
+    "framework_id": "Recognition_Vendor",
+    "power_id": 908,
+    "name": "Silver Bullet",
+    "tier": null,
+    "Power_Type": null,
+    "advantages": [],
+    "activation_time": null,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": null,
+    "tooltip": null,
+    "range_tags": [],
+    "tags": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "icon_override": "Device_SilverBuller",
+    "is_disabled": false
+  },
+  {
+    "powerset_id": "Device",
+    "framework_id": "Recognition_Vendor",
+    "power_id": 909,
+    "name": "Totemic Helm",
+    "tier": null,
+    "Power_Type": null,
+    "advantages": [],
+    "activation_time": null,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": null,
+    "tooltip": null,
+    "range_tags": [],
+    "tags": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "icon_override": "Ice_SnowStorm",
+    "is_disabled": false
+  },
+  {
+    "powerset_id": "Device",
+    "framework_id": "Blood_Moon",
+    "power_id": 910,
+    "name": "Portal of Darkness",
+    "tier": null,
+    "Power_Type": null,
+    "advantages": [],
+    "activation_time": null,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": null,
+    "tooltip": null,
+    "range_tags": [],
+    "tags": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "icon_override": "Device_PortalOfDarkness",
+    "is_disabled": false
+  },
+  {
+    "powerset_id": "Device",
+    "framework_id": "Other",
+    "power_id": 911,
+    "name": "Therakiel Dissonance",
+    "tier": null,
+    "Power_Type": null,
+    "advantages": [],
+    "activation_time": null,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": null,
+    "tooltip": null,
+    "range_tags": [],
+    "tags": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "icon_override": "Device_TherakielDissonance",
+    "is_disabled": false
+  },
+  {
+    "powerset_id": "Device",
+    "framework_id": "Other",
+    "power_id": 912,
+    "name": "Taser Shot",
+    "tier": null,
+    "Power_Type": null,
+    "advantages": [],
+    "activation_time": null,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": null,
+    "tooltip": null,
+    "range_tags": [],
+    "tags": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "icon_override": "PVD_Taser",
+    "is_disabled": false
+  },
+  {
+    "powerset_id": "Device",
+    "framework_id": "Other",
+    "power_id": 913,
+    "name": "Soul Vortex",
+    "tier": null,
+    "Power_Type": null,
+    "advantages": [],
+    "activation_time": null,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": null,
+    "tooltip": null,
+    "range_tags": [],
+    "tags": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "icon_override": "Darkness_SoulVortex",
+    "is_disabled": false
+  },
+  {
+    "powerset_id": "Device",
+    "framework_id": "Passive",
+    "power_id": 914,
+    "name": "Tough Resolve",
+    "tier": null,
+    "Power_Type": null,
+    "advantages": [],
+    "activation_time": null,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": null,
+    "tooltip": null,
+    "range_tags": [],
+    "tags": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "icon_override": "Device_ToughResolve",
+    "is_disabled": false
+  },
+  {
+    "powerset_id": "Device",
+    "framework_id": "Blood_Moon",
+    "power_id": 915,
+    "name": "Thorn Shield",
+    "tier": null,
+    "Power_Type": null,
+    "advantages": [],
+    "activation_time": null,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": null,
+    "tooltip": null,
+    "range_tags": [],
+    "tags": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "icon_override": "InfernalSupernatural_Epidemic",
+    "is_disabled": false
+  },
+  {
+    "powerset_id": "Device",
+    "framework_id": "Other",
+    "power_id": 916,
+    "name": "Bleak Essence",
+    "tier": null,
+    "Power_Type": null,
+    "advantages": [],
+    "activation_time": null,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": null,
+    "tooltip": null,
+    "range_tags": [],
+    "tags": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "icon_override": "Device_BleakEssence",
+    "is_disabled": false
+  },
+  {
+    "powerset_id": "Device",
+    "framework_id": "Other",
+    "power_id": 917,
+    "name": "Gunslinger's Resolve",
+    "tier": null,
+    "Power_Type": null,
+    "advantages": [],
+    "activation_time": null,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": null,
+    "tooltip": null,
+    "range_tags": [],
+    "tags": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "icon_override": "Munitions_Gunslinger",
+    "is_disabled": false
+  },
+  {
+    "powerset_id": "Device",
+    "framework_id": "Blood_Moon",
+    "power_id": 918,
+    "name": "Abyssal Wave",
+    "tier": null,
+    "Power_Type": null,
+    "advantages": [],
+    "activation_time": null,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": null,
+    "tooltip": null,
+    "range_tags": [],
+    "tags": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "icon_override": "Device_AbyssalWave",
+    "is_disabled": false
+  },
+  {
+    "powerset_id": "Device",
+    "framework_id": "Blood_Moon",
+    "power_id": 919,
+    "name": "Ghostly Wail",
+    "tier": null,
+    "Power_Type": null,
+    "advantages": [],
+    "activation_time": null,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": null,
+    "tooltip": null,
+    "range_tags": [],
+    "tags": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "icon_override": "Device_GhostlyWail",
+    "is_disabled": false
+  },
+  {
+    "powerset_id": "Device",
+    "framework_id": "Blood_Moon",
+    "power_id": 920,
+    "name": "Vapors of the Nether Realm",
+    "tier": null,
+    "Power_Type": null,
+    "advantages": [],
+    "activation_time": null,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": null,
+    "tooltip": null,
+    "range_tags": [],
+    "tags": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "icon_override": "Device_VaporsNetherRealm",
+    "is_disabled": false
+  },
+  {
+    "powerset_id": "Device",
+    "framework_id": "Other",
+    "power_id": 921,
+    "name": "Portable Robotic Factory",
+    "tier": null,
+    "Power_Type": null,
+    "advantages": [],
+    "activation_time": null,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": null,
+    "tooltip": null,
+    "range_tags": [],
+    "tags": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "icon_override": "Device_GhostlyWail",
+    "is_disabled": false
+  },
+  {
+    "powerset_id": "Device",
+    "framework_id": "Other",
+    "power_id": 922,
+    "name": "Chimeral Potion  of the Vulture",
+    "tier": null,
+    "Power_Type": null,
+    "advantages": [],
+    "activation_time": null,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": null,
+    "tooltip": null,
+    "range_tags": [],
+    "tags": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "icon_override": "Device_VulturePotion",
+    "is_disabled": false
+  },
+  {
+    "powerset_id": "Device",
+    "framework_id": "Other",
+    "power_id": 923,
+    "name": "Lemurian Sparks",
+    "tier": null,
+    "Power_Type": null,
+    "advantages": [],
+    "activation_time": null,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": null,
+    "tooltip": null,
+    "range_tags": [],
+    "tags": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "icon_override": "Device_LemurianSparks",
+    "is_disabled": false
+  },
+  {
+    "powerset_id": "Device",
+    "framework_id": "Blood_Moon",
+    "power_id": 924,
+    "name": "Blade Dance",
+    "tier": null,
+    "Power_Type": null,
+    "advantages": [],
+    "activation_time": null,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": null,
+    "tooltip": null,
+    "range_tags": [],
+    "tags": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "icon_override": "Device_BladeDance",
+    "is_disabled": false
+  },
+  {
+    "powerset_id": "Device",
+    "framework_id": "Blood_Moon",
+    "power_id": 925,
+    "name": "Illuminating Burst",
+    "tier": null,
+    "Power_Type": null,
+    "advantages": [],
+    "activation_time": null,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": null,
+    "tooltip": null,
+    "range_tags": [],
+    "tags": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "icon_override": "Device_IlluminatingBurst",
+    "is_disabled": false
+  },
+  {
+    "powerset_id": "Device",
+    "framework_id": "Blood_Moon",
+    "power_id": 926,
+    "name": "Telekinetic Disarray",
+    "tier": null,
+    "Power_Type": null,
+    "advantages": [],
+    "activation_time": null,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": null,
+    "tooltip": null,
+    "range_tags": [],
+    "tags": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "icon_override": "Device_TKDisarray",
+    "is_disabled": false
+  },
+  {
+    "powerset_id": "Device",
+    "framework_id": "Blood_Moon",
+    "power_id": 927,
+    "name": "Broken Wand",
+    "tier": null,
+    "Power_Type": null,
+    "advantages": [],
+    "activation_time": null,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": null,
+    "tooltip": null,
+    "range_tags": [],
+    "tags": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "icon_override": "Device_BrokenWand",
+    "is_disabled": false
+  },
+  {
+    "powerset_id": "Device",
+    "framework_id": "Blood_Moon",
+    "power_id": 928,
+    "name": "Scorching storm",
+    "tier": null,
+    "Power_Type": null,
+    "advantages": [],
+    "activation_time": null,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": null,
+    "tooltip": null,
+    "range_tags": [],
+    "tags": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "icon_override": "Fire_Conflagration",
+    "is_disabled": false
+  },
+  {
+    "powerset_id": "Device",
+    "framework_id": "Blood_Moon",
+    "power_id": 929,
+    "name": "Corrosive Lash",
+    "tier": null,
+    "Power_Type": null,
+    "advantages": [],
+    "activation_time": null,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": null,
+    "tooltip": null,
+    "range_tags": [],
+    "tags": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "icon_override": "Fire_HeatWave",
+    "is_disabled": false
+  },
+  {
+    "powerset_id": "Device",
+    "framework_id": "Blood_Moon",
+    "power_id": 930,
+    "name": "Fist of Defiance",
+    "tier": null,
+    "Power_Type": null,
+    "advantages": [],
+    "activation_time": null,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": null,
+    "tooltip": null,
+    "range_tags": [],
+    "tags": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "icon_override": "Device_FistOfDefiance",
+    "is_disabled": false
+  },
+  {
+    "powerset_id": "Device",
+    "framework_id": "Blood_Moon",
+    "power_id": 931,
+    "name": "Cold Burst",
+    "tier": null,
+    "Power_Type": null,
+    "advantages": [],
+    "activation_time": null,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": null,
+    "tooltip": null,
+    "range_tags": [],
+    "tags": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "icon_override": "Wind_Updraft",
+    "is_disabled": false
+  },
+  {
+    "powerset_id": "Device",
+    "framework_id": "Blood_Moon",
+    "power_id": 932,
+    "name": "Atomic Strike",
+    "tier": null,
+    "Power_Type": null,
+    "advantages": [],
+    "activation_time": null,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": null,
+    "tooltip": null,
+    "range_tags": [],
+    "tags": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "icon_override": "Device_AtomicStrike",
+    "is_disabled": false
+  },
+  {
+    "powerset_id": "Device",
+    "framework_id": "Blood_Moon",
+    "power_id": 933,
+    "name": "Focused Power",
+    "tier": null,
+    "Power_Type": null,
+    "advantages": [],
+    "activation_time": null,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": null,
+    "tooltip": null,
+    "range_tags": [],
+    "tags": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "icon_override": "Device_FocusedPower",
+    "is_disabled": false
+  },
+  {
+    "powerset_id": "Device",
+    "framework_id": "Blood_Moon",
+    "power_id": 934,
+    "name": "Deadly drop Attack",
+    "tier": null,
+    "Power_Type": null,
+    "advantages": [],
+    "activation_time": null,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": null,
+    "tooltip": null,
+    "range_tags": [],
+    "tags": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "icon_override": "FightingClaws_DragonsClaws",
+    "is_disabled": false
+  },
+  {
+    "powerset_id": "Device",
+    "framework_id": "Blood_Moon",
+    "power_id": 935,
+    "name": "Sanguine Storm",
+    "tier": null,
+    "Power_Type": null,
+    "advantages": [],
+    "activation_time": null,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": null,
+    "tooltip": null,
+    "range_tags": [],
+    "tags": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "icon_override": "Device_SanguineStorm",
+    "is_disabled": false
+  },
+  {
+    "powerset_id": "Device",
+    "framework_id": "Blood_Moon",
+    "power_id": 936,
+    "name": "Dark Wand",
+    "tier": null,
+    "Power_Type": null,
+    "advantages": [],
+    "activation_time": null,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": null,
+    "tooltip": null,
+    "range_tags": [],
+    "tags": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "icon_override": "Device_DarkWand",
+    "is_disabled": false
+  },
+  {
+    "powerset_id": "Device",
+    "framework_id": "Other",
+    "power_id": 937,
+    "name": "Toy Bomb",
+    "tier": null,
+    "Power_Type": null,
+    "advantages": [],
+    "activation_time": null,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": null,
+    "tooltip": null,
+    "range_tags": [],
+    "tags": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "icon_override": "Device_ToyBomb",
+    "is_disabled": false
+  },
+  {
+    "powerset_id": "Device",
+    "framework_id": "Other",
+    "power_id": 938,
+    "name": "Vampiric Feast",
+    "tier": null,
+    "Power_Type": null,
+    "advantages": [],
+    "activation_time": null,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": null,
+    "tooltip": null,
+    "range_tags": [],
+    "tags": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "icon_override": "Device_VampiricFeast",
+    "is_disabled": false
+  },
+  {
+    "powerset_id": "Device",
+    "framework_id": "Other",
+    "power_id": 939,
+    "name": "Vikorin's Headdress",
+    "tier": null,
+    "Power_Type": null,
+    "advantages": [],
+    "activation_time": null,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": null,
+    "tooltip": null,
+    "range_tags": [],
+    "tags": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "icon_override": "Device_VikorinsHeaddress",
+    "is_disabled": false
+  },
+  {
+    "powerset_id": "Device",
+    "framework_id": "Other",
+    "power_id": 940,
+    "name": "Destroyer's Gauntlets",
+    "tier": null,
+    "Power_Type": null,
+    "advantages": [],
+    "activation_time": null,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": null,
+    "tooltip": null,
+    "range_tags": [],
+    "tags": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "icon_override": "Device_Gauntlets",
+    "is_disabled": false
+  },
+  {
+    "powerset_id": "Device",
+    "framework_id": "Other",
+    "power_id": 941,
+    "name": "Chimeral Potion of the Rat",
+    "tier": null,
+    "Power_Type": null,
+    "advantages": [],
+    "activation_time": null,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": null,
+    "tooltip": null,
+    "range_tags": [],
+    "tags": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "icon_override": "Device_RatPotion",
+    "is_disabled": false
+  },
+  {
+    "powerset_id": "Device",
+    "framework_id": "Other",
+    "power_id": 942,
+    "name": "Chimeral Potion of the Rhinoceros",
+    "tier": null,
+    "Power_Type": null,
+    "advantages": [],
+    "activation_time": null,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": null,
+    "tooltip": null,
+    "range_tags": [],
+    "tags": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "icon_override": "Device_RhinoPotion",
     "is_disabled": false
   }
 ]

@@ -310,6 +310,7 @@ function App() {
     selectedFrameworks,
     selectedPowerTargetBuildSlot,
     selectedPowerTargetSlot,
+    selectedTravelPowerTargetBuildSlot,
     selectedPowerVariantTargetBuildSlot,
     selectPowerPanelTarget,
     setSelectedFrameworks,
@@ -452,6 +453,14 @@ function App() {
   }
 
   function addTravelPower(power: Power) {
+    const existingSlot =
+      travelPowerSlots.find((slot) => slot.power?.power_id === power.power_id) ??
+      null;
+
+    if (existingSlot && selectedTravelPowerTargetBuildSlot === null) {
+      return;
+    }
+
     const targetSlot = powerPanelTargetTravelPowerSlot;
 
     if (!targetSlot) {
@@ -469,6 +478,15 @@ function App() {
   }
 
   function addPowerVariant(power: Power) {
+    const existingSlot =
+      powerVariantSlots.find(
+        (slot) => slot.power?.power_id === power.power_id,
+      ) ?? null;
+
+    if (existingSlot && selectedPowerVariantTargetBuildSlot === null) {
+      return;
+    }
+
     const targetSlot = powerPanelTargetPowerVariantSlot;
 
     if (!targetSlot) {
@@ -487,6 +505,14 @@ function App() {
   }
 
   function addDevice(power: Power) {
+    const existingSlot =
+      deviceSlots.find((slot) => slot.power?.power_id === power.power_id) ??
+      null;
+
+    if (existingSlot && selectedDeviceTargetBuildSlot === null) {
+      return;
+    }
+
     const targetSlot = powerPanelTargetDeviceSlot;
 
     if (!targetSlot) {
@@ -994,11 +1020,23 @@ function App() {
           energyBuilderSelectionVersion={energyBuilderSelectionVersion}
           canAddPower={(power) =>
             isStandardDevice(power)
-              ? powerPanelTargetDeviceSlot !== null
+              ? powerPanelTargetDeviceSlot !== null &&
+                (selectedDeviceTargetBuildSlot !== null ||
+                  !deviceSlots.some(
+                    (slot) => slot.power?.power_id === power.power_id,
+                  ))
               : isPowerVariantDevice(power)
-              ? powerPanelTargetPowerVariantSlot !== null
+              ? powerPanelTargetPowerVariantSlot !== null &&
+                (selectedPowerVariantTargetBuildSlot !== null ||
+                  !powerVariantSlots.some(
+                    (slot) => slot.power?.power_id === power.power_id,
+                  ))
               : isTravelPower(power)
-              ? powerPanelTargetTravelPowerSlot !== null
+              ? powerPanelTargetTravelPowerSlot !== null &&
+                (selectedTravelPowerTargetBuildSlot !== null ||
+                  !travelPowerSlots.some(
+                    (slot) => slot.power?.power_id === power.power_id,
+                  ))
               : selectedPowerTargetBuildSlot
                 ? isFreeform
                   ? canPlacePowerInSlot(
@@ -1010,8 +1048,7 @@ function App() {
                 : isFreeform
                   ? getFirstValidPowerSlot(power, buildSlots) !== null
                   : false
-          }
-          frameworkGroups={frameworkGroups}
+          }          frameworkGroups={frameworkGroups}
           powers={selectablePowers}
           restrictedPowerIds={activeRestrictedPowerIds}
           restrictedPowerSectionLabel={activeRestrictedPowerSectionLabel}

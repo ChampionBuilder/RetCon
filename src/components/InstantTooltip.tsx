@@ -48,13 +48,17 @@ function releaseTooltipElement(element: HTMLElement | null) {
   const storedTitle = element.dataset.instantTooltipTitle;
 
   if (storedTitle !== undefined) {
-    element.title = storedTitle;
+    if (!element.title.trim()) {
+      element.title = storedTitle;
+    }
+
     delete element.dataset.instantTooltipTitle;
   }
 }
 
 export function InstantTooltip() {
   const activeElementRef = useRef<HTMLElement | null>(null);
+  const mutationObserverRef = useRef<MutationObserver | null>(null);
   const tooltipRef = useRef<HTMLDivElement | null>(null);
   const [tooltip, setTooltip] = useState<TooltipState | null>(null);
 
@@ -98,9 +102,17 @@ export function InstantTooltip() {
         }
       }
 
-      const text = element.title.trim();
+      const text =
+        element.title.trim() ||
+        element.dataset.instantTooltipTitle?.trim() ||
+        "";
 
       return text ? { kind: "text", text } : null;
+    }
+
+    function disconnectMutationObserver() {
+      mutationObserverRef.current?.disconnect();
+      mutationObserverRef.current = null;
     }
 
     function showTooltip(element: HTMLElement, x: number, y: number) {
@@ -123,9 +135,32 @@ export function InstantTooltip() {
         x,
         y,
       });
+
+      disconnectMutationObserver();
+      mutationObserverRef.current = new MutationObserver(() => {
+        const nextContent = getTooltipContent(element);
+
+        if (!nextContent) {
+          return;
+        }
+
+        setTooltip((currentTooltip) =>
+          currentTooltip
+            ? {
+                ...currentTooltip,
+                content: nextContent,
+              }
+            : currentTooltip,
+        );
+      });
+      mutationObserverRef.current.observe(element, {
+        attributeFilter: ["data-power-tooltip", "title"],
+        attributes: true,
+      });
     }
 
     function hideTooltip() {
+      disconnectMutationObserver();
       releaseTooltipElement(activeElementRef.current);
       activeElementRef.current = null;
       setTooltip(null);
@@ -205,6 +240,7 @@ export function InstantTooltip() {
       document.removeEventListener("mouseout", handleMouseOut);
       document.removeEventListener("focusin", handleFocusIn);
       document.removeEventListener("focusout", hideTooltip);
+      disconnectMutationObserver();
       releaseTooltipElement(activeElementRef.current);
     };
   }, []);

@@ -197,7 +197,10 @@ export function CharacterPanel({
               key={slot.slot}
               onClick={() => onSelectDeviceSlot(slot.slot)}
             >
-              <SpriteIcon name={getPowerIconName(slot.power)} size={22} />
+              <SpriteIcon
+                name={slot.power ? getPowerIconName(slot.power) : "Icon_Bag"}
+                size={22}
+              />
               <button
                 className="device-slot__name-button"
                 title={getPowerTooltipText(slot.power)}
