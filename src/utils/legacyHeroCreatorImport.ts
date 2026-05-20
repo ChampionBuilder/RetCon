@@ -657,7 +657,7 @@ function parseLegacyBuildWithMode(
   const canUseBalakParser = version === 38 && parseBalakUrlParams !== null;
   const shouldApplyBalakConversion =
     canUseBalakParser && balakOverride === true;
-  let balakConversionReason = "n/a";
+  let balakConversionReason: string;
 
   if (!canUseBalakParser) {
     balakConversionReason =
@@ -903,10 +903,10 @@ function parseLegacyBuildWithMode(
         }
         case 11:
         case 12: {
-          let code1 = "";
-          let code2 = "";
-          let travelPowerId = 0;
-          let mask = 0;
+          let code1: string;
+          let code2: string;
+          let travelPowerId: number;
+          let mask: number;
 
           if (version < 20) {
             code1 = applyVersionUpdate(engine, legacyData, version, "code1", {

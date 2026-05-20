@@ -69,13 +69,16 @@ export function AppHeader({
   }, []);
 
   useEffect(() => {
+    const saveFeedbackTimeout = saveFeedbackTimeoutRef.current;
+    const copyFeedbackTimeout = copyFeedbackTimeoutRef.current;
+
     return () => {
-      if (saveFeedbackTimeoutRef.current !== null) {
-        window.clearTimeout(saveFeedbackTimeoutRef.current);
+      if (saveFeedbackTimeout !== null) {
+        window.clearTimeout(saveFeedbackTimeout);
       }
 
-      if (copyFeedbackTimeoutRef.current !== null) {
-        window.clearTimeout(copyFeedbackTimeoutRef.current);
+      if (copyFeedbackTimeout !== null) {
+        window.clearTimeout(copyFeedbackTimeout);
       }
     };
   }, []);

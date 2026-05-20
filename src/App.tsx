@@ -819,7 +819,19 @@ function App() {
     closeRoleDialog();
 
     return true;
-  }, [closeArchetypeDialog, closePowerDialogs, closeRoleDialog, powersById]);
+  }, [
+    clearPowerPanelTargets,
+    closeArchetypeDialog,
+    closePowerDialogs,
+    closeRoleDialog,
+    hydrateArchetypeRole,
+    hydrateAuxiliaryPowerSlots,
+    hydrateSpecializations,
+    hydrateStatsTalents,
+    powersById,
+    replaceBuildSlots,
+    setSelectedFrameworks,
+  ]);
 
   function loadSavedBuild(buildId: string) {
     const savedBuildData = getSavedBuildData(buildId);
