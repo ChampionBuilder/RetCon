@@ -12,6 +12,7 @@ import { CharacterPanel } from "./components/CharacterPanel";
 import { DataDialog } from "./components/DataDialog";
 import { DeviceSelectionDialog } from "./components/DeviceSelectionDialog";
 import { InnateTalentSelectionDialog } from "./components/InnateTalentSelectionDialog";
+import { ImportBuildDialog } from "./components/ImportBuildDialog";
 import { InstantTooltip } from "./components/InstantTooltip";
 import { PowerSelectionDialog } from "./components/PowerSelectionDialog";
 import { PowerVariantSelectionDialog } from "./components/PowerVariantSelectionDialog";
@@ -51,6 +52,7 @@ import {
   parseSerializedBuild,
   serializeBuild,
 } from "./utils/buildSerialization";
+import { importLegacyHeroCreatorBuild } from "./utils/legacyHeroCreatorImport";
 import { useSavedBuilds } from "./hooks/useSavedBuilds";
 import { useShareUrlSync } from "./hooks/useShareUrlSync";
 import { useBuilderData } from "./hooks/useBuilderData";
@@ -219,6 +221,7 @@ function App() {
   const [camsLevel, setCamsLevel] = useState(0);
   const [dataDialogOpen, setDataDialogOpen] = useState(false);
   const [aboutDialogOpen, setAboutDialogOpen] = useState(false);
+  const [importBuildDialogOpen, setImportBuildDialogOpen] = useState(false);
 
   const selectablePowers = useMemo(() => {
     return powers.filter((power) => isPowerEnabled(power));
@@ -868,6 +871,23 @@ function App() {
     );
   }
 
+  async function importHeroCreatorBuild(importInput: string) {
+    const importResult = await importLegacyHeroCreatorBuild(importInput, {
+      advantages,
+      archetypesData,
+      powers,
+      specializationTreesData,
+      statsTalentsData,
+    });
+    const importedBuildData = serializeBuild(importResult.build);
+
+    if (!applyHydratedBuild(importedBuildData)) {
+      throw new Error("Unsupported or invalid build data.");
+    }
+
+    return importResult.warnings;
+  }
+
   function selectArchetype(archetypeId: number) {
     const archetype =
       archetypesData?.archetypes.find(
@@ -953,6 +973,7 @@ function App() {
         onOpenAbout={() => setAboutDialogOpen(true)}
         onOpenBuildCheck={() => setBuildCheckDialogOpen(true)}
         onOpenData={() => setDataDialogOpen(true)}
+        onImportBuild={() => setImportBuildDialogOpen(true)}
         onSave={saveCurrentBuild}
         onResetAll={resetAll}
         onResetSuperStats={resetSuperStats}
@@ -980,6 +1001,13 @@ function App() {
 
       {aboutDialogOpen ? (
         <AboutDialog onClose={() => setAboutDialogOpen(false)} />
+      ) : null}
+
+      {importBuildDialogOpen ? (
+        <ImportBuildDialog
+          onClose={() => setImportBuildDialogOpen(false)}
+          onImportBuild={importHeroCreatorBuild}
+        />
       ) : null}
 
       {buildCheckDialogOpen ? (

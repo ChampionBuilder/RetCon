@@ -110,9 +110,7 @@ export function AdvantageSelectionDialog({
           className="dialog-close"
           type="button"
           onClick={onClose}
-        >
-          x
-        </button>
+        >X</button>
       </div>
 
       <div className="advantage-selection-list">

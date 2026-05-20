@@ -23876,5 +23876,50 @@
     "power_dependency": [],
     "icon_override": "Device_RhinoPotion",
     "is_disabled": false
+  },
+  {
+    "powerset_id": "Technology",
+    "framework_id": "Gadgeteering",
+    "power_id": 943,
+    "name": "Detonator Switch",
+    "tier": 3,
+    "Power_Type": "RANGED_AREA_ATTACK",
+    "advantages": [
+      1,
+      2
+    ],
+    "activation_time": 1,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": 60,
+    "tooltip": "All of your current Gadgeteer Pets are defeated and placed on a 5 sec cooldown. + Particle Mine Causes this power to immediately detonate and increases the damage radius to 25ft. + Munitions Bots Deals Particle Damage to up to 5 targets within 15ft. + Attack Toys Deals Particle Damage to up to 5 targets within 15ft. + Attack Toys Clones Deals Particle Damage to up to 5 targets within 15ft. + Support Drones Support Mode: Heals up to 5 allies within 20ft + Turret Mode: Deals Particle Damage to up to 5 targets within 15ft.",
+    "range_tags": [],
+    "tags": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "icon_override": "Gadgeteering_DetonatorSwitch",
+    "is_disabled": false
+  },
+  {
+    "powerset_id": "Device",
+    "framework_id": "Other",
+    "power_id": 944,
+    "name": "Molotov Cocktail",
+    "tier": null,
+    "Power_Type": null,
+    "advantages": [],
+    "activation_time": null,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": 60,
+    "tooltip": "Deals Fire Damage and creates a Pyre Patch at your primary target for 10 sec, dealing Fire Damage every 1 sec to foes within 15ft. + Foes standing in the Pyre Patch have a 10% chance to be affected by Clinging Flames, causing Fire Damage every 2 sec for 12 sec. Clinging Flames may leap to other foes near the target.",
+    "range_tags": [
+      "Target foes (5 max) 50 feet, 15 foot Sphere"
+    ],
+    "tags": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "icon_override": "Device_Molotov",
+    "is_disabled": false
   }
 ]

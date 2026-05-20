@@ -61,9 +61,7 @@ export function BuildCheckDialog({
             <h3>Check Build</h3>
             <p>Review common build components</p>
           </div>
-          <button className="dialog-close" type="button" onClick={onClose}>
-            x
-          </button>
+          <button className="dialog-close" type="button" onClick={onClose}>X</button>
         </div>
 
         <div className="build-check-dialog__content">

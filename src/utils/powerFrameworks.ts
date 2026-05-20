@@ -118,7 +118,7 @@ export const supplementalFrameworkFilters: PowerFrameworkFilter[] = [
   },
   {
     id: powerVariantsFilterId,
-    iconId: "Role_Hybrid",
+    iconId: "Power_Variant",
     title: "Power Variants",
     selectable: true,
   },

@@ -63,9 +63,7 @@ export function SpecializationSelectionDialog({
           className="dialog-close"
           type="button"
           onClick={onClose}
-        >
-          x
-        </button>
+        >X</button>
       </div>
 
       {slotIndex > 0 && canChangeTree ? (

@@ -31,9 +31,7 @@ export function AboutDialog({ onClose }: AboutDialogProps) {
             <h3>About</h3>
             <p>Project credits and legal notes</p>
           </div>
-          <button className="dialog-close" type="button" onClick={onClose}>
-            x
-          </button>
+          <button className="dialog-close" type="button" onClick={onClose}>X</button>
         </div>
 
         <div className="about-dialog__content">
@@ -95,7 +93,7 @@ export function AboutDialog({ onClose }: AboutDialogProps) {
             </p>
             <p>
               Special thanks to Aesica for the colossal work accomplished on HeroCreator,
-              and to 0ccult, BalakfangKnight, the Champions Online development team,
+              and to 0ccult, BalakKnightfang, the Champions Online development team,
               and ongoing community projects whose resources, documentation, and maintenance
               work greatly helped reconstruct and consolidate the project database.
             </p>

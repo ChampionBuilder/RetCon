@@ -29,7 +29,7 @@ npm run build
 
 RetCon builds upon the work of the community tools that came before it, and would not exist without the years of documentation, testing, and knowledge shared by Champions Online players.
 
-Special thanks to Aesica for the colossal work accomplished on HeroCreator, and to 0ccult, the Champions Online development team, and ongoing community projects for providing resources that greatly helped reconstruct and consolidate the project database.
+Special thanks to Aesica for the colossal work accomplished on HeroCreator, and to 0ccult, BalakKnightfang, the Champions Online development team, and ongoing community projects whose resources, discoveries, documentation, and maintenance work greatly helped reconstruct and consolidate the project database.
 
 Please, visit and support the following community projects:
 

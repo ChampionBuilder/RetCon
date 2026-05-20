@@ -139,6 +139,7 @@ h3 {
 .tab-button,
 .primary-button,
 .header-action-button,
+.dialog-close,
 .utility-button,
 .remove-button,
 .cams-control button {
@@ -307,7 +308,9 @@ h3 {
 .tab-button:hover,
 .tab-button:focus-visible,
 .header-action-button:hover,
-.header-action-button:focus-visible {
+.header-action-button:focus-visible,
+.dialog-close:hover,
+.dialog-close:focus-visible {
   border-color: #7aa0ff;
   color: #dfe8ff;
   background: linear-gradient(180deg, #2a51bd, #183187);
@@ -472,6 +475,88 @@ h3 {
   top: 50%;
   width: min(560px, calc(100vw - 44px));
   transform: translate(-50%, -50%);
+}
+
+.import-build-dialog {
+  left: 50%;
+  top: 50%;
+  width: min(620px, calc(100vw - 44px));
+  transform: translate(-50%, -50%);
+}
+
+.import-build-dialog__content {
+  display: grid;
+  min-height: 0;
+  gap: 10px;
+  padding: 0 16px 16px;
+}
+
+.import-build-dialog__label {
+  color: #cdd7ee;
+  font-size: 13px;
+}
+
+.import-build-dialog__input {
+  min-height: 132px;
+  resize: vertical;
+  border: 1px solid #343943;
+  border-radius: 3px;
+  padding: 9px 10px;
+  color: #dfe8ff;
+  background:
+    linear-gradient(180deg, rgba(18, 21, 29, 0.96), rgba(9, 11, 17, 0.96)),
+    #090b11;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.import-build-dialog__input:focus-visible {
+  outline: 1px solid #5b84d7;
+  outline-offset: 0;
+}
+
+.import-build-dialog__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  padding-top: 2px;
+}
+
+.import-build-dialog__error {
+  border: 1px solid rgba(171, 86, 86, 0.88);
+  border-radius: 3px;
+  padding: 7px 8px;
+  color: #ffd8d8;
+  background:
+    linear-gradient(180deg, rgba(89, 36, 36, 0.98), rgba(45, 19, 19, 0.98)),
+    #2a1212;
+  font-size: 13px;
+}
+
+.import-build-dialog__warnings {
+  display: grid;
+  gap: 6px;
+  border: 1px solid rgba(193, 146, 81, 0.88);
+  border-radius: 3px;
+  padding: 8px 10px;
+  color: #f5d3a4;
+  background:
+    linear-gradient(180deg, rgba(87, 58, 29, 0.98), rgba(46, 30, 15, 0.98)),
+    #2d1d10;
+  font-size: 13px;
+}
+
+.import-build-dialog__warnings p {
+  color: #ffddb3;
+  font-weight: 700;
+}
+
+.import-build-dialog__warnings ul {
+  display: grid;
+  gap: 4px;
+  margin: 0;
+  padding-left: 16px;
 }
 
 .build-check-dialog__content {
@@ -848,10 +933,7 @@ h3 {
 .dialog-close {
   width: 28px;
   height: 26px;
-  border: 1px solid #405c9c;
-  border-radius: 2px;
-  color: #dce6ff;
-  background: #18275e;
+  padding: 0;
   font-size: 14px;
 }
 
@@ -1192,7 +1274,7 @@ h3 {
   border: 1px solid transparent;
   border-radius: 3px;
   color: #94b2ff;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 700;
 }
 
@@ -1220,7 +1302,7 @@ h3 {
   border: 0;
   color: inherit;
   background: transparent;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 700;
   text-overflow: ellipsis;
   text-align: left;
@@ -2084,8 +2166,9 @@ h3 {
 .build-footer {
   display: flex;
   flex: 0 0 auto;
-  flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
   margin-top: 10px;
   padding: 13px;
   border: 1px solid #333;
@@ -2097,7 +2180,9 @@ h3 {
 
 .advantage-points {
   margin: 0;
+  margin-left: auto;
   text-align: right;
+  white-space: nowrap;
 }
 
 .advantage-points--over-budget {
@@ -2109,8 +2194,9 @@ h3 {
   display: grid;
   grid-template-columns: max-content 12px 23px 23px;
   gap: 8px;
-  margin-top: 11px;
+  margin-top: 0;
   justify-content: end;
+  white-space: nowrap;
 }
 
 .cams-control button {

@@ -38,9 +38,7 @@ export function RoleSelectionDialog({
           className="dialog-close"
           type="button"
           onClick={onClose}
-        >
-          x
-        </button>
+        >X</button>
       </div>
 
       <div className="role-selection-list">

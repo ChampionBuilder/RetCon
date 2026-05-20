@@ -37,9 +37,7 @@ export function ArchetypePowerSelectionDialog({
           className="dialog-close"
           type="button"
           onClick={onClose}
-        >
-          x
-        </button>
+        >X</button>
       </div>
 
       <div className="archetype-power-selection-list">

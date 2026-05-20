@@ -428,7 +428,9 @@ export function BuildPanel({
                         <span className="level-label">-</span>
                         <SpriteIcon
                           name={
-                            slot.power ? getPowerIconName(slot.power) : "Role_Hybrid"
+                            slot.power
+                              ? getPowerIconName(slot.power)
+                              : "Power_Variant"
                           }
                           size={26}
                         />
@@ -465,15 +467,6 @@ export function BuildPanel({
       </div>
 
       <div className="build-footer">
-        <p
-          className={
-            advantageBudgetExceeded
-              ? "advantage-points advantage-points--over-budget"
-              : "advantage-points"
-          }
-        >
-          Advantage points : {totalAdvantagePoints} / {advantagePointBudget}
-        </p>
         <div className="cams-control">
           <span>CAMS level :</span>
           <strong>{camsLevel}</strong>
@@ -492,6 +485,15 @@ export function BuildPanel({
             +
           </button>
         </div>
+        <p
+          className={
+            advantageBudgetExceeded
+              ? "advantage-points advantage-points--over-budget"
+              : "advantage-points"
+          }
+        >
+          Advantage points : {totalAdvantagePoints} / {advantagePointBudget}
+        </p>
       </div>
     </section>
   );

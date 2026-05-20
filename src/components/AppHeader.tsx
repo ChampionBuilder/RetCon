@@ -9,6 +9,7 @@ type AppHeaderProps = {
   onOpenAbout: () => void;
   onOpenBuildCheck: () => void;
   onOpenData: () => void;
+  onImportBuild: () => void;
   onSave: () => void;
   onResetAll: () => void;
   onResetSuperStats: () => void;
@@ -30,6 +31,7 @@ export function AppHeader({
   onOpenAbout,
   onOpenBuildCheck,
   onOpenData,
+  onImportBuild,
   onSave,
   onResetAll,
   onResetSuperStats,
@@ -171,6 +173,15 @@ export function AppHeader({
 
           <button className="utility-button" type="button" onClick={onRandomize}>
             Randomize
+          </button>
+
+          <button
+            className="utility-button"
+            title="Beta import from HeroCreator/Aesica. Most builds should import, but results are not guaranteed."
+            type="button"
+            onClick={onImportBuild}
+          >
+            Import Build
           </button>
 
           <details ref={resetMenuRef} className="reset-menu">

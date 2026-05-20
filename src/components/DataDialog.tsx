@@ -43,9 +43,7 @@ export function DataDialog({
       >
         <div className="selection-dialog__header">
           <h3>My Builds</h3>
-          <button className="dialog-close" type="button" onClick={onClose}>
-            x
-          </button>
+          <button className="dialog-close" type="button" onClick={onClose}>X</button>
         </div>
 
         <div className="data-dialog__toolbar">

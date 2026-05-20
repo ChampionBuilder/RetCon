@@ -96,9 +96,7 @@ export function InnateTalentSelectionDialog({
           className="dialog-close"
           type="button"
           onClick={onClose}
-        >
-          x
-        </button>
+        >X</button>
       </div>
 
       <div className="innate-choice-grid">
