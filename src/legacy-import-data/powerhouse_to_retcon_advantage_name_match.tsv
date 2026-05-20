@@ -1,0 +1,707 @@
+source_powerhouse_advantage_ids	source_name	normalized_name	match_status	target_count	target_retcon_advantage_ids	target_advantage_names
+3	20/20 Fission	2020fission	matched	1	10	20/20 Fission
+4	Absolutely Stunning	absolutelystunning	matched	1	11	Absolutely Stunning
+3	Absolve	absolve	matched	1	12	Absolve
+3|4|5|6|7|8|9	Accelerated Metabolism	acceleratedmetabolism	matched	1	3	Accelerated Metabolism
+3	Achilles' Heel	achillesheel	matched	1	14	Achilles' Heel
+3	Admonish	admonish	matched	1	15	Admonish
+5	Advance!	advance	matched	1	16	Advance!
+3	Advanced Casting	advancedcasting	matched	1	17	Advanced Casting
+3	Aftershock	aftershock	ambiguous	2	18|669	Aftershock|Aftershock
+3	Aggression	aggression	matched	1	19	Aggression
+3	Aggression Inhibitor	aggressioninhibitor	matched	1	20	Aggression Inhibitor
+3	Aggressive Gravitation	aggressivegravitation	matched	1	21	Aggressive Gravitation
+3	Alpha Strike	alphastrike	matched	1	22	Alpha Strike
+3	Analyze Weakness	analyzeweakness	matched	1	23	Analyze Weakness
+3	Anvil of Dawn	anvilofdawn	matched	1	24	Anvil of Dawn
+3	Arcturus Cooling System	arcturuscoolingsystem	matched	1	25	Arcturus Cooling System
+4|5	Armor Piercing	armorpiercing	matched	1	26	Armor Piercing
+4	Assault	assault	matched	1	27	Assault
+3	Automated Assault	automatedassault	matched	1	28	Automated Assault
+3	Aversion	aversion	matched	1	29	Aversion
+5	Back to the Darkness	backtothedarkness	matched	1	30	Back to the Darkness
+3	Backdraft	backdraft	matched	1	31	Backdraft
+4	Bad Footing	badfooting	matched	1	32	Bad Footing
+6	Bad Luck	badluck	matched	1	33	Bad Luck
+3	Bad Wiring	badwiring	matched	1	34	Bad Wiring
+3	Balance	balance	matched	1	35	Balance
+3	Ballista Bolt	ballistabolt	matched	1	36	Ballista Bolt
+3	Barbed Chains	barbedchains	matched	1	37	Barbed Chains
+5	Barrier	barrier	matched	1	654	Barrier
+3	Befuddling Rage	befuddlingrage	matched	1	38	Befuddling Rage
+3	Below the Belt	belowthebelt	matched	1	39	Below the Belt
+3	Bend the Earth	bendtheearth	matched	1	40	Bend the Earth
+3	Bewilder	bewilder	matched	1	41	Bewilder
+3	Bitter Cold	bittercold	matched	1	42	Bitter Cold
+3	Blade Beyond the Veil	bladebeyondtheveil	matched	1	43	Blade Beyond the Veil
+3	Blast Radius	blastradius	matched	1	44	Blast Radius
+3	Blazing Body	blazingbody	matched	1	45	Blazing Body
+3	Blazing Impact	blazingimpact	matched	1	46	Blazing Impact
+4	Blender	blender	matched	1	47	Blender
+5	Blinding Light	blindinglight	matched	1	48	Blinding Light
+5	Blinding Shot	blindingshot	matched	1	49	Blinding Shot
+3	Blindside	blindside	matched	1	50	Blindside
+3	Blindside Blow	blindsideblow	matched	1	51	Blindside Blow
+5	Blood in the Water	bloodinthewater	matched	1	52	Blood in the Water
+3	Blood Roar	bloodroar	matched	1	53	Blood Roar
+3	Blood Sacrifice	bloodsacrifice	matched	1	54	Blood Sacrifice
+3	Bloody Mess	bloodymess	matched	1	55	Bloody Mess
+3	Blot	blot	matched	1	56	Blot
+4	Blunt Force	bluntforce	matched	1	57	Blunt Force
+5	Bold Entrance	boldentrance	matched	1	58	Bold Entrance
+6	Boogeyman	boogeyman	matched	1	59	Boogeyman
+4	Boot to the Head	boottothehead	matched	1	60	Boot to the Head
+3	Breaching Round	breachinground	matched	1	61	Breaching Round
+4	Break Formation	breakformation	matched	1	62	Break Formation
+5|6|7|8	Break Through	breakthrough	matched	1	7	Break Through
+4	Breakout	breakout	ambiguous	2	64|662	Breakout|Breakout
+3	Brilliance	brilliance	matched	1	65	Brilliance
+5	Bruiser	bruiser	matched	1	652	Bruiser
+4	Brutal Strike	brutalstrike	matched	1	66	Brutal Strike
+4	Brute Force	bruteforce	matched	1	67	Brute Force
+3	Bull Rush	bullrush	matched	1	68	Bull Rush
+3	Bunker Buster	bunkerbuster	matched	1	69	Bunker Buster
+4|6	Burn Bright	burnbright	matched	1	70	Burn Bright
+4	Burn Up	burnup	matched	1	71	Burn Up
+3	Burninator	burninator	matched	1	72	Burninator
+3	Burning Desire	burningdesire	matched	1	73	Burning Desire
+3	Burning Rain	burningrain	matched	1	74	Burning Rain
+5|6	Burning Sun	burningsun	ambiguous	2	75|663	Burning Sun|Burning Sun
+3	Butcher's Blades	butchersblades	matched	1	76	Butcher's Blades
+4	Buzzsaw	buzzsaw	matched	1	77	Buzzsaw
+3	Can't Stop Me	cantstopme	matched	1	78	Can't Stop Me
+4	Center of Gravity	centerofgravity	matched	1	645	Center of Gravity
+4|5|6|7|8|9|10	Challenge!	challenge	matched	1	5	Challenge!
+4	Chant	chant	matched	1	80	Chant
+4	Chaos Magic	chaosmagic	matched	1	81	Chaos Magic
+3	Chaos! Chaos!	chaoschaos	matched	1	82	Chaos! Chaos!
+5	Chaotic Movements	chaoticmovements	matched	1	83	Chaotic Movements
+6	Char	char	matched	1	84	Char
+4	Charged Attack	chargedattack	matched	1	85	Charged Attack
+3	Charged Up	chargedup	ambiguous	2	86|698	Charged Up|Charged Up
+3	Chemical Burn	chemicalburn	matched	1	87	Chemical Burn
+3	Chemical Fire	chemicalfire	ambiguous	2	88|660	Chemical Fire|Chemical Fire
+3|5	Chi Flame	chiflame	ambiguous	2	89|670	Chi Flame|Chi Flame
+4	Chilled Air	chilledair	matched	1	90	Chilled Air
+4	Chilling Out	chillingout	matched	1	91	Chilling Out
+3	Chilling Reminder	chillingreminder	matched	1	92	Chilling Reminder
+3	Chilling Touch	chillingtouch	matched	1	93	Chilling Touch
+4	Chilly Barrier	chillybarrier	matched	1	94	Chilly Barrier
+4	Cleanse	cleanse	matched	1	95	Cleanse
+3	Cleaving Strikes	cleavingstrikes	matched	1	96	Cleaving Strikes
+3	Close the Gap	closethegap	matched	1	97	Close the Gap
+3	Cobra Strike	cobrastrike	matched	1	98	Cobra Strike
+4	Cold Drift	colddrift	matched	1	99	Cold Drift
+4	Cold Embrace	coldembrace	matched	1	100	Cold Embrace
+3	Cold Front	coldfront	matched	1	101	Cold Front
+4	Cold to the Touch	coldtothetouch	matched	1	102	Cold To The Touch
+3	Collateral Damage	collateraldamage	matched	1	103	Collateral Damage
+3|4	Commanding Presence	commandingpresence	matched	1	6	Commanding Presence
+3	Compound Fracture	compoundfracture	matched	1	105	Compound Fracture
+3	Concentrated Shots	concentratedshots	matched	1	106	Concentrated Shots
+3	Concussion	concussion	matched	1	107	Concussion
+3	Concussive Blast	concussiveblast	matched	1	108	Concussive Blast
+3	Concussive Blow	concussiveblow	matched	1	109	Concussive Blow
+3	Concussive Escape	concussiveescape	matched	1	110	Concussive Escape
+4|5	Concussive Force	concussiveforce	matched	1	111	Concussive Force
+3	Concussive Rocket	concussiverocket	matched	1	112	Concussive Rocket
+3	Conditioning	conditioning	matched	1	113	Conditioning
+3	Constricting Coils	constrictingcoils	matched	1	114	Constricting Coils
+7	Consume Fear	consumefear	matched	1	115	Consume Fear
+3	Consume Will	consumewill	matched	1	116	Consume Will
+4	Consumption	consumption	matched	1	117	Consumption
+3	Convergence	convergence	matched	1	118	Convergence
+4|6	Corrosion	corrosion	ambiguous	2	119|671	Corrosion|Corrosion
+6	Corrupt	corrupt	matched	1	120	Corrupt
+4	Corrupting Force	corruptingforce	matched	1	121	Corrupting Force
+5	Covet	covet	matched	1	122	Covet
+3	Crashing Crescendo	crashingcrescendo	matched	1	123	Crashing Crescendo
+3	Crushed Ice	crushedice	matched	1	124	Crushed Ice
+3	Cry Havoc	cryhavoc	matched	1	125	Cry Havoc
+3	Cull the Weak	culltheweak	matched	1	126	Cull the Weak
+4	Cursed	cursed	matched	1	127	Cursed
+4	Cut to Shreds	cuttoshreds	matched	1	128	Cut to Shreds
+3	Cuts and Scrapes	cutsandscrapes	matched	1	129	Cuts and Scrapes
+3	Dark Displacement	darkdisplacement	matched	1	130	Dark Displacement
+4	Dark Presence	darkpresence	matched	1	131	Dark Presence
+5	Dark Rune	darkrune	matched	1	132	Dark Rune
+5	Darkness Feast	darknessfeast	matched	1	133	Darkness Feast
+3	Data Conversion	dataconversion	matched	1	134	Data Conversion
+5	Data Leak	dataleak	matched	1	135	Data Leak
+5	Daybreaker	daybreaker	matched	1	136	Daybreaker
+3	Dazzle	dazzle	matched	1	137	Dazzle
+3	Deadly Dissonance	deadlydissonance	matched	1	138	Deadly Dissonance
+6	Deadly Fangs	deadlyfangs	matched	1	139	Deadly Fangs
+3	Deafening	deafening	matched	1	140	Deafening
+3	Deafening Dissolution	deafeningdissolution	matched	1	141	Deafening Dissolution
+3	Deafening Voice	deafeningvoice	matched	1	142	Deafening Voice
+3	Death Arc	deatharc	matched	1	143	Death Arc
+3	Death Ray	deathray	matched	1	144	Death Ray
+3	Decay	decay	matched	1	145	Decay
+3	Defensive Stance	defensivestance	matched	1	146	Defensive Stance
+3	Delayed Attack	delayedattack	matched	1	147	Delayed Attack
+3	Deliverance	deliverance	matched	1	148	Deliverance
+4	Demolishing Blast	demolishingblast	ambiguous	2	149|648	Demolishing Blast|Demolishing Blast
+3|4|5	Demolishing Strikes	demolishingstrikes	ambiguous	3	150|672|673	Demolishing Strikes|Demolishing Strikes|Demolishing Strikes
+3	Demolition	demolition	matched	1	151	Demolition
+3	Deplete	deplete	matched	1	152	Deplete
+3	Despondency	despondency	matched	1	153	Despondency
+3	Destructive Force	destructiveforce	matched	1	154	Destructive Force
+4	Devoid	devoid	ambiguous	2	155|674	Devoid|Devoid
+4	Devour Soul	devoursoul	matched	1	156	Devour Soul
+3	Devouring Darkness	devouringdarkness	matched	1	157	Devouring Darkness
+5	Didn't See That Coming	didntseethatcoming	matched	1	158	Didn't See That Coming
+5	Dilemma	dilemma	matched	1	159	Dilemma
+4	Direct Hit	directhit	matched	1	160	Direct Hit
+3|4	Disintegration Ray	disintegrationray	ambiguous	2	161|675	Disintegration Ray|Disintegration Ray
+3	Dispersal	dispersal	matched	1	162	Dispersal
+4	Disruption Module	disruptionmodule	matched	1	163	Disruption Module
+3	Disruptive Force	disruptiveforce	matched	1	653	Disruptive Force
+3|4|5	Dizzying Impact	dizzyingimpact	ambiguous	3	164|676|677	Dizzying Impact|Dizzying Impact|Dizzying Impact
+3	Domineering Will	domineeringwill	matched	1	165	Domineering Will
+3	Double Vortex	doublevortex	matched	1	166	Double Vortex
+3|4|5|6	Download	download	ambiguous	2	167|661	Download|Download
+3	Downrange Disaster	downrangedisaster	matched	1	168	Downrange Disaster
+5	Drag Back	dragback	matched	1	169	Drag Back
+4|5|6	Dragon Rush	dragonrush	matched	1	170	Dragon Rush
+5	Draining Shadows	drainingshadows	matched	1	171	Draining Shadows
+4	Drop Kick	dropkick	matched	1	172	Drop Kick
+3	Drunken Master	drunkenmaster	matched	1	173	Drunken Master
+3	Dubious Custom Work	dubiouscustomwork	matched	1	174	Dubious Custom Work
+3	Earthen Embrace	earthenembrace	matched	1	175	Earthen Embrace
+3	Egomaniacal	egomaniacal	matched	1	176	Egomaniacal
+4	Electric Field	electricfield	matched	1	177	Electric Field
+4	Electric Jolt	electricjolt	matched	1	178	Electric Jolt
+3	Electric Personality	electricpersonality	matched	1	179	Electric Personality
+3	Electric Vengeance	electricvengeance	matched	1	180	Electric Vengeance
+4	Electrify	electrify	matched	1	181	Electrify
+3	Emerging Nightmares	emergingnightmares	matched	1	182	Emerging Nightmares
+3	Empathic Amplification	empathicamplification	matched	1	183	Empathic Amplification
+3	Encryption	encryption	matched	1	184	Encryption
+3	End of Line	endofline	matched	1	185	End of Line
+6	Endless Void	endlessvoid	matched	1	186	Endless Void
+3	Energy Refraction	energyrefraction	matched	1	640	Energy Refraction
+3|6	Engulfing Flames	engulfingflames	ambiguous	3	188|678|679	Engulfing Flames|Engulfing Flames|Engulfing Flames
+3	Enhanced Form	enhancedform	matched	1	189	Enhanced Form
+3	Entropic Collapse	entropiccollapse	matched	1	646	Entropic Collapse
+4	Entropy Blast	entropyblast	matched	1	641	Entropy Blast
+4	Entropy Field	entropyfield	ambiguous	2	651|680	Entropy Field|Entropy Field
+3	Envelop in Darkness	envelopindarkness	matched	1	190	Envelop in Darkness
+6	Envelop in Shadows	envelopinshadows	matched	1	191	Envelop in Shadows
+3	Ephemeral Endowment	ephemeralendowment	matched	1	192	Ephemeral Endowment
+3	Escape Artist	escapeartist	matched	1	193	Escape Artist
+3	Essence Assault	essenceassault	matched	1	194	Essence Assault
+4	Event Horizon	eventhorizon	matched	1	195	Event Horizon
+3	Excessive Force	excessiveforce	matched	1	196	Excessive Force
+4	Expanding Earth	expandingearth	matched	1	197	Expanding Earth
+3	Expansive Intellect	expansiveintellect	matched	1	198	Expansive Intellect
+3	Expansive Terrain	expansiveterrain	matched	1	199	Expansive Terrain
+4	Expel	expel	matched	1	200	Expel
+3	Expel Impurity	expelimpurity	matched	1	658	Expel Impurity
+6	Explosive	explosive	matched	1	201	Explosive
+3	Explosive Potential	explosivepotential	matched	1	202	Explosive Potential
+5	Extra Radiated	extraradiated	matched	1	203	Extra Radiated
+3	Eye of the Storm	eyeofthestorm	matched	1	204	Eye of the Storm
+3	Eyes on Me	eyesonme	matched	1	205	Eyes On Me
+3	Fade Away	fadeaway	matched	1	206	Fade Away
+3	Fade Into Darkness	fadeintodarkness	matched	1	207	Fade Into Darkness
+3|5	Falling Hammer	fallinghammer	matched	1	208	Falling Hammer
+3	Faltering Strikes	falteringstrikes	matched	1	209	Faltering Strikes
+4|5	Fan the Flames	fantheflames	ambiguous	2	210|664	Fan the Flames|Fan the Flames
+3	Fanfare	fanfare	matched	1	211	Fanfare
+4	Fang of the Dragon	fangofthedragon	matched	1	212	Fang of the Dragon
+4	Fatal Allure	fatalallure	matched	1	213	Fatal Allure
+4	Fear Machine	fearmachine	matched	1	214	Fear Machine
+3	Fear Sense	fearsense	matched	1	215	Fear Sense
+4	Fearsome Howl	fearsomehowl	matched	1	216	Fearsome Howl
+4	Feed the Flames	feedtheflames	matched	1	217	Feed the Flames
+3	Fester	fester	ambiguous	2	218|681	Fester|Fester
+3	Festering Bites	festeringbites	matched	1	219	Festering Bites
+4	Field Expulsion	fieldexpulsion	matched	1	643	Field Expulsion
+3|4	Field Inversion	fieldinversion	matched	1	647	Field Inversion
+4	Field Medic	fieldmedic	matched	1	220	Field Medic
+4|5	Fiery Blade	fieryblade	ambiguous	2	221|668	Fiery Blade|Fiery Blade
+4	Fiery Chasm	fierychasm	matched	1	222	Fiery Chasm
+4	Fiery Path	fierypath	matched	1	223	Fiery Path
+3|5	Fiery Spirit	fieryspirit	ambiguous	2	224|667	Fiery Spirit|Fiery Spirit
+4	Fighting Spirit	fightingspirit	ambiguous	2	225|666	Fighting Spirit|Fighting Spirit
+3	Final Delivery	finaldelivery	matched	1	226	Final Delivery
+3	Finish Him	finishhim	matched	1	227	Finish Him
+4	Finite Improbability Engine	finiteimprobabilityengine	matched	1	228	Finite Improbability Engine
+3	Fists of Righteous Flame	fistsofrighteousflame	matched	1	229	Fists of Righteous Flame
+5	Flame Drop	flamedrop	matched	1	230	Flame Drop
+5	Flaming Chicken Wing	flamingchickenwing	matched	1	231	Flaming Chicken Wing
+4	Flaming Dragon Tail	flamingdragontail	matched	1	232	Flaming Dragon Tail
+4	Flaming Fists	flamingfists	matched	1	233	Flaming Fists
+3	Flippin'	flippin	matched	1	234	Flippin'
+3	Floating Butterfly	floatingbutterfly	matched	1	235	Floating Butterfly
+3|4	Floating Lotus Blossom	floatinglotusblossom	ambiguous	2	236|682	Floating Lotus Blossom|Floating Lotus Blossom
+3	Flowing Like the River	flowingliketheriver	matched	1	237	Flowing like the River
+3|4	Flowing Strikes	flowingstrikes	matched	1	238	Flowing Strikes
+3	Focus Point	focuspoint	matched	1	656	Focus Point
+5	Focused	focused	matched	1	239	Focused
+5	Focused Energy	focusedenergy	matched	1	240	Focused Energy
+3	Follow Through	followthrough	matched	1	241	Follow Through
+5	Footwork	footwork	matched	1	242	Footwork
+4	Force Collapse	forcecollapse	matched	1	243	Force Collapse
+3	Force Sheathe	forcesheathe	matched	1	659	Force Sheathe
+3	Forced March	forcedmarch	matched	1	244	Forced March
+4|5	Frail Armor	frailarmor	ambiguous	2	245|683	Frail Armor|Frail Armor
+3	Free Your Mind!	freeyourmind	matched	1	246	Free Your Mind!
+5	Freeze Dry	freezedry	matched	1	247	Freeze Dry
+3	Freeze, Dirtbag	freezedirtbag	matched	1	248	Freeze, Dirtbag
+4	Freezer Burn	freezerburn	matched	1	249	Freezer Burn
+3	Frenetic Blast	freneticblast	matched	1	250	Frenetic Blast
+3	Frigid Air	frigidair	matched	1	251	Frigid Air
+3|4	Frost Bite	frostbite	ambiguous	2	252|684	Frost Bite|Frost Bite
+3	Frozen Footsteps	frozenfootsteps	matched	1	253	Frozen Footsteps
+5	Frozen Wonderland	frozenwonderland	matched	1	254	Frozen Wonderland
+4	Fuel My Fire	fuelmyfire	matched	1	255	Fuel My FIre
+3	Furious Rush	furiousrush	matched	1	256	Furious Rush
+3	Furor Venenum	furorvenenum	matched	1	257	Furor Venenum
+3	Garroting Grip	garrotinggrip	matched	1	258	Garroting Grip
+3	Gaseous Emitter	gaseousemitter	matched	1	259	Gaseous Emitter
+5	Gather Up	gatherup	matched	1	260	Gather Up
+3	Gathering Storm	gatheringstorm	matched	1	261	Gathering Storm
+5	Ghost Fire	ghostfire	matched	1	262	Ghost Fire
+4|5|6	Ghostly Strikes	ghostlystrikes	matched	1	263	Ghostly Strikes
+3	Giant Growth	giantgrowth	matched	1	264	Giant Growth
+4	Gifts of the Storm	giftsofthestorm	matched	1	265	Gifts of the Storm
+4	Glimpse of the Abyss	glimpseoftheabyss	matched	1	266	Glimpse of the Abyss
+4	Glossolalia	glossolalia	matched	1	267	Glossolalia
+3	Graceful Shots	gracefulshots	matched	1	268	Graceful Shots
+3	Grasping Hand	graspinghand	matched	1	269	Grasping Hand
+3	Grave Consequences	graveconsequences	matched	1	270	Grave Consequences
+5	Gravitational Collapse	gravitationalcollapse	matched	1	271	Gravitational Collapse
+3	Gravitational Polarity	gravitationalpolarity	matched	1	642	Gravitational Polarity
+3	Gravitational Pull	gravitationalpull	matched	1	657	Gravitational Pull
+3	Grinning Ghost	grinningghost	matched	1	272	Grinning Ghost
+3	Guide	guide	matched	1	273	Guide
+4	Guitar Solo	guitarsolo	matched	1	274	Guitar Solo
+4	Gut Strike	gutstrike	matched	1	275	Gut Strike
+4	Hailstorm	hailstorm	matched	1	276	Hailstorm
+4	Hard Fall	hardfall	matched	1	277	Hard Fall
+3|4	Hard Frost	hardfrost	matched	1	278	Hard Frost
+3	Hard Landing	hardlanding	matched	1	650	Hard Landing
+3	Hardened Particle Matrix	hardenedparticlematrix	matched	1	279	Hardened Particle Matrix
+3	Head Shot	headshot	matched	1	280	Head Shot
+3|4	Head Trauma	headtrauma	ambiguous	2	281|685	Head Trauma|Head Trauma
+3	Heavenly Mana	heavenlymana	matched	1	282	Heavenly Mana
+4	Heavy Blade	heavyblade	matched	1	283	Heavy Blade
+5	Hellfire	hellfire	matched	1	284	Hellfire
+5	Here I Am	hereiam	matched	1	285	Here I Am
+3	Hold the Line	holdtheline	matched	1	286	Hold The Line
+3	Horrifying Shadows	horrifyingshadows	matched	1	287	Horrifying Shadows
+3	I Need a Nap	ineedanap	matched	1	288	I Need a Nap
+4	I Pay It Gladly	ipayitgladly	matched	1	289	I Pay It Gladly
+3	Ice Impaler	iceimpaler	matched	1	290	Ice Impaler
+3	Id Blades	idblades	matched	1	291	Id Blades
+3|4|5	Illuminate	illuminate	ambiguous	2	292|686	Illuminate|Illuminate
+4	Illumination	illumination	matched	1	293	Illumination
+3	Illusive	illusive	matched	1	294	Illusive
+3	Imbue With Power	imbuewithpower	matched	1	295	Imbue with Power
+4	Immense Power	immensepower	matched	1	296	Immense Power
+3	Impact	impact	matched	1	297	Impact
+3	Impaled	impaled	matched	1	298	Impaled
+7	Impaler	impaler	matched	1	299	Impaler
+3	Impart Freedom	impartfreedom	matched	1	300	Impart Freedom
+3	Impose	impose	matched	1	301	Impose
+4	Impure Waters	impurewaters	matched	1	302	Impure Waters
+3|4	Incisive Wit	incisivewit	matched	1	303	Incisive Wit
+4	Indomitable	indomitable	matched	1	304	Indomitable
+4	Infared Guidance System	infaredguidancesystem	matched	1	305	Infared Guidance System
+4	Infectious Bile	infectiousbile	matched	1	306	Infectious Bile
+3	Infernal Bond	infernalbond	matched	1	307	Infernal Bond
+4	Initiative	initiative	matched	1	308	Initiative
+3|4|5|6	Inner Peace	innerpeace	matched	1	309	Inner Peace
+3	Instep Crush	instepcrush	matched	1	310	Instep Crush
+4	Instill Doubt	instilldoubt	matched	1	311	Instill Doubt
+3	Intense Gravity	intensegravity	matched	1	312	Intense Gravity
+3	Intimidate	intimidate	matched	1	313	Intimidate
+3|4	Intimidating Force	intimidatingforce	ambiguous	2	314|665	Intimidating Force|Intimidating Force
+4	Intimidation	intimidation	matched	1	315	Intimidation
+3	Inverse Polarity	inversepolarity	matched	1	644	Inverse Polarity
+3	Inverse Polarization Field	inversepolarizationfield	matched	1	316	Inverse Polarization Field
+3	Invigorating Chill	invigoratingchill	matched	1	317	Invigorating Chill
+3	Ionic Compression	ioniccompression	matched	1	318	Ionic Compression
+4	Ionic Discharge	ionicdischarge	matched	1	319	Ionic Discharge
+4	Ionic Infusion	ionicinfusion	matched	1	320	Ionic Infusion
+3	Is It Not Just Mayhem?	isitnotjustmayhem	matched	1	321	Is It Not Just Mayhem?
+3|4	It Burns!	itburns	matched	1	322	It Burns!
+4	It's Raining Fire!	itsrainingfire	matched	1	323	It's Raining Fire!
+3	It's That Time	itsthattime	matched	1	324	It's That Time
+3	Jinx	jinx	matched	1	325	Jinx
+3	Judgement	judgement	unmatched	0		
+3	Just Blow It Up	justblowitup	matched	1	327	Just Blow It Up
+3	Justice	justice	matched	1	328	Justice
+4	Kindling	kindling	matched	1	329	Kindling
+3	Laser Knight	laserknight	matched	1	330	Laser Knight
+3	Lashing Dragon Tail	lashingdragontail	matched	1	331	Lashing Dragon Tail
+3	Leave a Mark	leaveamark	matched	1	332	Leave a Mark
+3|4	Leeching Strikes	leechingstrikes	matched	1	333	Leeching Strikes
+4	Legacy Code	legacycode	matched	1	334	Legacy Code
+3	Let the Dust Settle	letthedustsettle	matched	1	335	Let The Dust Settle
+4	Lethal Poison	lethalpoison	matched	1	336	Lethal Poison
+3|4	Light Everlasting	lighteverlasting	ambiguous	3	337|687|688	Light Everlasting|Light Everlasting|Light Everlasting
+3|7	Light Mend	lightmend	matched	1	338	Light Mend
+5	Light Up the Sky	lightupthesky	matched	1	339	Light Up The Sky
+3	Lightning Helix	lightninghelix	matched	1	340	Lightning Helix
+3	Lightning Overload	lightningoverload	matched	1	341	Lightning Overload
+5	Lightning Rod	lightningrod	matched	1	342	Lightning Rod
+6	Lingering Darkness	lingeringdarkness	matched	1	343	Lingering Darkness
+3	Listen to Reason	listentoreason	matched	1	344	Listen to Reason
+5	Locust Breath	locustbreath	matched	1	345	Locust Breath
+4	Lunar Force	lunarforce	matched	1	346	Lunar Force
+3	Madness?!	madness	matched	1	347	Madness?!
+3|6	Magma Burst	magmaburst	ambiguous	2	348|699	Magma Burst|Magma Burst
+3	Magnetic	magnetic	matched	1	349	Magnetic
+4	Magnitude	magnitude	matched	1	350	Magnitude
+4	Major Impact	majorimpact	matched	1	351	Major Impact
+3	Make Them Tremble	makethemtremble	matched	1	352	Make them Tremble
+3	Malaise	malaise	matched	1	353	Malaise
+3	Malevolent Manifestation	malevolentmanifestation	matched	1	354	Malevolent Manifestation
+3	Mass Effect	masseffect	matched	1	355	Mass Effect
+4	Mass Resurrection	massresurrection	matched	1	356	Mass Resurrection
+3	Massive Attack	massiveattack	matched	1	357	Massive Attack
+3	Matter - Energy Union	matterenergyunion	matched	1	358	Matter - Energy Union
+4	Maybe I'm Just Better	maybeimjustbetter	matched	1	359	Maybe I'm Just Better
+3	Melta Cannon	meltacannon	matched	1	360	Melta Cannon
+3	Menacing	menacing	matched	1	361	Menacing
+4|5	Mending Protocol	mendingprotocol	matched	1	362	Mending Protocol
+3	Mental Acuity	mentalacuity	matched	1	363	Mental Acuity
+3	Mental Artillery	mentalartillery	matched	1	364	Mental Artillery
+5	Mental Block	mentalblock	matched	1	365	Mental Block
+4	Mental Instability	mentalinstability	matched	1	366	Mental Instability
+3	Mental Weakness	mentalweakness	matched	1	367	Mental Weakness
+3|4|5	Messy	messy	matched	1	368	Messy
+3	Microelectronic Controllers	microelectroniccontrollers	matched	1	369	Microelectronic Controllers
+3	Microfilament Wire	microfilamentwire	matched	1	370	Microfilament Wire
+5	Midnight Frenzy	midnightfrenzy	matched	1	371	Midnight Frenzy
+3	Mind Opener	mindopener	matched	1	372	Mind Opener
+4	Mind The Uniform	mindtheuniform	matched	1	373	Mind the Uniform
+3	Molten Core	moltencore	matched	1	374	Molten Core
+3	Moonlight	moonlight	matched	1	375	Moonlight
+3	More Souls!	moresouls	matched	1	376	More Souls!
+3	Mouth of Madness	mouthofmadness	matched	1	377	Mouth of Madness
+3|5	Mow 'Em Down	mowemdown	matched	1	378	Mow 'Em Down
+3|4	Mystic Transference	mystictransference	matched	1	379	Mystic Transference
+3|4|5|6	Mystical	mystical	ambiguous	3	380|689|690	Mystical|Mystical|Mystical
+3|4|5|6|7	Nailed to the Ground	nailedtotheground	matched	1	4	Nailed to the Ground
+4	Needles	needles	matched	1	382	Needles
+4	Nerve Damage	nervedamage	matched	1	383	Nerve Damage
+5	Never Strikes Twice	neverstrikestwice	matched	1	384	Never Strikes Twice
+3	Night Hunt	nighthunt	matched	1	385	Night Hunt
+3	Night Terror	nightterror	matched	1	386	Night Terror
+4	Night Vision	nightvision	matched	1	387	Night Vision
+6	Nightmare	nightmare	matched	1	388	Nightmare
+3	Nimble Mind	nimblemind	matched	1	389	Nimble Mind
+3	No Code of Conduct	nocodeofconduct	matched	1	390	No Code Of Conduct
+3	No Mercy	nomercy	matched	1	391	No Mercy
+3|5	No Quarter	noquarter	ambiguous	2	392|691	No Quarter|No Quarter
+3	Not Without Incident	notwithoutincident	matched	1	393	Not Without Incident
+3	Noxious Fumes	noxiousfumes	matched	1	394	Noxious Fumes
+3|4	Nuclear Fallout	nuclearfallout	matched	1	395	Nuclear Fallout
+4	Null Value	nullvalue	matched	1	396	Null Value
+3	Nyctophobia	nyctophobia	matched	1	397	Nyctophobia
+3	Oasis	oasis	matched	1	398	Oasis
+4	Off Your Feet	offyourfeet	matched	1	399	Off Your Feet
+3|4|5	Open Wound	openwound	matched	1	400	Open Wound
+3	Out of My Way!	outofmyway	matched	1	401	Out of My Way!
+3	Outbreak	outbreak	matched	1	402	Outbreak
+3	Overloaded Circuits	overloadedcircuits	matched	1	403	Overloaded Circuits
+3	Oversized Pellet Bag	oversizedpelletbag	matched	1	404	Oversized Pellet Bag
+3|4	Overwhelming Force	overwhelmingforce	ambiguous	2	405|655	Overwhelming Force|Overwhelming Force
+3	Pact	pact	matched	1	406	Pact
+3	Paint the Target	paintthetarget	matched	1	407	Paint the Target
+3	Panic	panic	matched	1	408	Panic
+4	Panic and Run	panicandrun	matched	1	409	Panic and Run
+3	Paralytic Bile	paralyticbile	matched	1	410	Paralytic Bile
+4	Paranormal Paranoia	paranormalparanoia	matched	1	411	Paranormal Paranoia
+3|4	Particle Acceleration	particleacceleration	matched	1	412	Particle Acceleration
+3	Particle Blast	particleblast	matched	1	413	Particle Blast
+3	Particle Burst	particleburst	matched	1	414	Particle Burst
+5	Particle Storm	particlestorm	matched	1	415	Particle Storm
+3	Peerless Predation	peerlesspredation	matched	1	416	Peerless Predation
+3|4	Penetrating Strikes	penetratingstrikes	matched	1	417	Penetrating Strikes
+3	Perfect Storm	perfectstorm	matched	1	418	Perfect Storm
+4	Peripheral Vision	peripheralvision	matched	1	419	Peripheral Vision
+4	Phalanx Defense System	phalanxdefensesystem	matched	1	420	Phalanx Defense System
+3	Phlebotomist	phlebotomist	matched	1	421	Phlebotomist
+3	Pin Down	pindown	matched	1	422	Pin Down
+4	Plague	plague	matched	1	423	Plague
+3	Plague Bearer	plaguebearer	matched	1	424	Plague Bearer
+3	Plagued by Nightmares	plaguedbynightmares	matched	1	425	Plagued by Nightmares
+3	Point Blank Blast	pointblankblast	matched	1	426	Point Blank Blast
+5	Poised to Strike	poisedtostrike	matched	1	427	Poised To Strike
+3	Poison Shuriken	poisonshuriken	matched	1	428	Poison Shuriken
+4	Poison Tipped Claws	poisontippedclaws	matched	1	429	Poison Tipped Claws
+3	Power Consumption	powerconsumption	matched	1	430	Power Consumption
+3	Power Shift	powershift	ambiguous	2	431|692	Power Shift|Power Shift
+5	Power Sweep	powersweep	matched	1	432	Power Sweep
+5	Precise Attack	preciseattack	matched	1	433	Precise Attack
+3	Predictable	predictable	matched	1	434	Predictable
+5	Psionic Amplification	psionicamplification	matched	1	435	Psionic Amplification
+3	Psionic Emanation	psionicemanation	matched	1	436	Psionic Emanation
+4	Psychic Reverberations	psychicreverberations	matched	1	437	Psychic Reverberations
+3	Psychic Tides	psychictides	matched	1	438	Psychic Tides
+3	Psychotic Break	psychoticbreak	matched	1	439	Psychotic Break
+5	Pummel	pummel	matched	1	440	Pummel
+3	Punitive Pummeling	punitivepummeling	matched	1	441	Punitive Pummeling
+3	Put Them Down	putthemdown	matched	1	442	Put Them Down
+9	PVD: Bitter Storm	pvdbitterstorm	unmatched	0		
+7	PVD: Blade Barrage	pvdbladebarrage	unmatched	0		
+8	PVD: Blade Bomb	pvdbladebomb	unmatched	0		
+5|6	PVD: Blight Touch	pvdblighttouch	unmatched	0		
+6	PVD: Bolting Fervor	pvdboltingfervor	unmatched	0		
+9	PVD: Brilliant Cleave	pvdbrilliantcleave	unmatched	0		
+7	PVD: Burning Blades	pvdburningblades	unmatched	0		
+10	PVD: Callous Cleaver	pvdcallouscleaver	unmatched	0		
+8	PVD: Cauldron Fire	pvdcauldronfire	unmatched	0		
+7	PVD: Cryoclysm	pvdcryoclysm	unmatched	0		
+7	PVD: Denial of Service	pvddenialofservice	unmatched	0		
+6	PVD: Electric Vengeance	pvdelectricvengeance	unmatched	0		
+8	PVD: Fiery Spirit	pvdfieryspirit	unmatched	0		
+8	PVD: Fire Fangs	pvdfirefangs	unmatched	0		
+9	PVD: Flaming Frenzy	pvdflamingfrenzy	unmatched	0		
+9	PVD: Flaming Pumpkin	pvdflamingpumpkin	unmatched	0		
+7	PVD: Frost Ice Rifle	pvdfrosticerifle	unmatched	0		
+11	PVD: Frozen Lance	pvdfrozenlance	unmatched	0		
+9	PVD: Glacial Rend	pvdglacialrend	unmatched	0		
+7	PVD: Haunted Blades	pvdhauntedblades	unmatched	0		
+6	PVD: Havoc Hammer	pvdhavochammer	unmatched	0		
+8	PVD: Heat Vortex	pvdheatvortex	unmatched	0		
+7	PVD: Hellrend	pvdhellrend	unmatched	0		
+8	PVD: Ice Breaker	pvdicebreaker	unmatched	0		
+6	PVD: Icefall	pvdicefall	unmatched	0		
+9	PVD: Laser Shotgun	pvdlasershotgun	unmatched	0		
+6	PVD: Lightning Bolter	pvdlightningbolter	unmatched	0		
+7	PVD: Power Cycle	pvdpowercycle	unmatched	0		
+8	PVD: Pulp Fiction Ray Gun	pvdpulpfictionraygun	unmatched	0		
+5|9	PVD: Pulp Fiction Rifle	pvdpulpfictionrifle	unmatched	0		
+8	PVD: Qularr Toxic Rifle	pvdqularrtoxicrifle	unmatched	0		
+8	PVD: Ray Tracer	pvdraytracer	unmatched	0		
+8	PVD: Scorching Claw	pvdscorchingclaw	unmatched	0		
+7	PVD: Searing Carnage	pvdsearingcarnage	unmatched	0		
+9	PVD: Shadow Shred	pvdshadowshred	unmatched	0		
+10	PVD: Shocking Strikes	pvdshockingstrikes	unmatched	0		
+8	PVD: Stormpiercer	pvdstormpiercer	unmatched	0		
+7	PVD: Tendrils of Anguish	pvdtendrilsofanguish	unmatched	0		
+7	PVD: Thundering Claws	pvdthunderingclaws	unmatched	0		
+9	PVD: Toxic Blades	pvdtoxicblades	unmatched	0		
+10	PVD: U-MD Ghosthunter Phase Rifle	pvdumdghosthunterphaserifle	unmatched	0		
+7	PVD: Venom Shock	pvdvenomshock	unmatched	0		
+10	PVD: Virulent Shot	pvdvirulentshot	unmatched	0		
+3	Quills	quills	matched	1	443	Quills
+8	Qularr Toxic Barrage	qularrtoxicbarrage	unmatched	0		
+4	Rabies	rabies	matched	1	444	Rabies
+3	Radiant Renewal	radiantrenewal	matched	1	445	Radiant Renewal
+4|5	Radiate	radiate	matched	1	446	Radiate
+4|5	Radioactive Decay	radioactivedecay	matched	1	447	Radioactive Decay
+4	Rage of the Beast	rageofthebeast	matched	1	448	Rage of the Beast
+4|6	Rampant	rampant	matched	1	449	Rampant
+1	Rank 2	rank2	ambiguous	2	1|8	Rank 2|Rank 2
+2	Rank 3	rank3	ambiguous	2	2|9	Rank 3|Rank 3
+4	Rattle	rattle	matched	1	450	Rattle
+5	Reactor	reactor	matched	1	451	Reactor
+3	Real Ultimate Power	realultimatepower	matched	1	452	Real Ultimate Power
+3	Reanimator	reanimator	matched	1	453	Reanimator
+3	Rebounding Resilience	reboundingresilience	matched	1	454	Rebounding Resilience
+3|4|5|6	Recharge	recharge	matched	1	455	Recharge
+3	Reciprocating Gizmo	reciprocatinggizmo	matched	1	456	Reciprocating Gizmo
+3|4|5	Reckless Endangerment	recklessendangerment	ambiguous	4	457|693|694|695	Reckless Endangerment|Reckless Endangerment|Reckless Endangerment|Reckless Endangerment
+3	Reckless Strike	recklessstrike	matched	1	458	Reckless Strike
+3	Reconstruct	reconstruct	matched	1	459	Reconstruct
+5	Red Hot	redhot	matched	1	460	Red Hot
+5	Red Hot Fury	redhotfury	matched	1	461	Red Hot Fury
+3	Red-Eyed Dragon	redeyeddragon	matched	1	462	Red-Eyed Dragon
+3	Redemption Denied	redemptiondenied	matched	1	463	Redemption Denied
+3	Redirect Energy	redirectenergy	matched	1	464	Redirect Energy
+4	Redirect Power	redirectpower	matched	1	465	Redirect Power
+3	Refraction of Sound	refractionofsound	matched	1	466	Refraction of Sound
+3	Rejuvenating Injectors	rejuvenatinginjectors	matched	1	467	Rejuvenating Injectors
+3	Rejuvenator	rejuvenator	matched	1	468	Rejuvenator
+3	Relentless	relentless	matched	1	469	Relentless
+3	Relentless Recurve	relentlessrecurve	matched	1	470	Relentless Recurve
+4	Remember Me	rememberme	matched	1	471	Remember Me
+3	Rending Blades	rendingblades	matched	1	472	Rending Blades
+3	Repulsing Waves	repulsingwaves	matched	1	473	Repulsing Waves
+3	Restraining Order	restrainingorder	matched	1	474	Restraining Order
+3	Resurgent Reiki	resurgentreiki	matched	1	475	Resurgent Reiki
+3	Retribution	retribution	matched	1	476	Retribution
+3	Reverence	reverence	matched	1	477	Reverence
+4	Reverse Polarity	reversepolarity	matched	1	478	Reverse Polarity
+3	Revitalizing Boost	revitalizingboost	matched	1	479	Revitalizing Boost
+3	Righteous Fury	righteousfury	matched	1	480	Righteous Fury
+3	Rip and Tear!	ripandtear	matched	1	481	Rip and Tear!
+3	Ripsaw	ripsaw	matched	1	482	Ripsaw
+3	Rock Concert	rockconcert	matched	1	483	Rock Concert
+3	Rock Solid	rocksolid	matched	1	484	Rock Solid
+3	Rubble Trouble	rubbletrouble	matched	1	485	Rubble Trouble
+4	Rude Awakening	rudeawakening	matched	1	486	Rude Awakening
+3	Run Away!	runaway	matched	1	487	Run Away!
+4	Rune of Dismay	runeofdismay	matched	1	488	Rune of Dismay
+3	Rune of Lethargy	runeoflethargy	matched	1	489	Rune of Lethargy
+5	Rune of Terror	runeofterror	matched	1	490	Rune of Terror
+3	Rupture	rupture	matched	1	491	Rupture
+3	Salvation	salvation	matched	1	492	Salvation
+4	Sapped Strength	sappedstrength	matched	1	493	Sapped Strength
+3	Sapping Solution	sappingsolution	matched	1	494	Sapping Solution
+4	Scalding Water	scaldingwater	matched	1	495	Scalding Water
+3	Scarab Embrace	scarabembrace	matched	1	496	Scarab Embrace
+4|5	Scent of Blood	scentofblood	matched	1	497	Scent of Blood
+3	Scorched Earth	scorchedearth	matched	1	498	Scorched Earth
+4	Scorched Ground	scorchedground	matched	1	499	Scorched Ground
+3	Scorching Blade	scorchingblade	matched	1	500	Scorching Blade
+4	Seeing Stars	seeingstars	matched	1	501	Seeing Stars
+3	Serenity	serenity	matched	1	502	Serenity
+3	Serrated Blade	serratedblade	matched	1	503	Serrated Blade
+4	Serrated Edges	serratededges	matched	1	504	Serrated Edges
+3	Serrated Shards	serratedshards	matched	1	505	Serrated Shards
+4	Setup	setup	matched	1	506	Setup
+3	Sever	sever	matched	1	507	Sever
+3|6	Shadow Attack	shadowattack	matched	1	508	Shadow Attack
+3	Shard Burst	shardburst	matched	1	509	Shard Burst
+4	Sharp Edges	sharpedges	matched	1	510	Sharp Edges
+8	Sharpened Blade	sharpenedblade	matched	1	511	Sharpened Blade
+4	Shattering Strike	shatteringstrike	matched	1	512	Shattering Strike
+4	Sheer Force	sheerforce	matched	1	513	Sheer Force
+3	Shield Dispersal	shielddispersal	matched	1	514	Shield Dispersal
+5	Shield Generator	shieldgenerator	matched	1	649	Shield Generator
+3	Shocking Strike	shockingstrike	matched	1	515	Shocking Strike
+4	Shred to Pieces	shredtopieces	matched	1	516	Shred To Pieces
+4	Silent Predation	silentpredation	matched	1	517	Silent Predation
+3	Silent Running	silentrunning	matched	1	518	Silent Running
+3|4|5|6	Single Minded	singleminded	ambiguous	2	519|696	Single Minded|Single Minded
+4	Sinkhole	sinkhole	matched	1	520	Sinkhole
+4|5	Siphoning Strikes	siphoningstrikes	matched	1	521	Siphoning Strikes
+3	Slave Mentality	slavementality	matched	1	522	Slave Mentality
+3	Sleight of Mind	sleightofmind	matched	1	523	Sleight of Mind
+5	Slice and Dice	sliceanddice	matched	1	524	Slice and Dice
+4|5	Slicer	slicer	matched	1	525	Slicer
+3	Sonic Bombardment	sonicbombardment	matched	1	526	Sonic Bombardment
+4	Sonic Boost	sonicboost	matched	1	527	Sonic Boost
+4	Sonic Reverberations	sonicreverberations	matched	1	528	Sonic Reverberations
+3	Sonic Suppression Enhancer	sonicsuppressionenhancer	matched	1	529	Sonic Suppression Enhancer
+3	Sorceror's Whim	sorcerorswhim	matched	1	530	Sorceror's Whim
+3	Soul Capturing Blade	soulcapturingblade	matched	1	531	Soul Capturing Blade
+3	Soul Drain	souldrain	matched	1	532	Soul Drain
+3	Sparks	sparks	matched	1	533	Sparks
+5	Spatial Anomaly	spatialanomaly	matched	1	534	Spatial Anomaly
+5	Spectral Dragon Tail	spectraldragontail	matched	1	535	Spectral Dragon Tail
+3	Spikes	spikes	matched	1	536	Spikes
+4	Spitfire	spitfire	ambiguous	2	537|700	Spitfire|Spitfire
+4	Splatter	splatter	matched	1	538	Splatter
+3	Split the Arrow	splitthearrow	matched	1	539	Split the Arrow
+3	Spreading Flames	spreadingflames	matched	1	540	Spreading Flames
+4	Squall	squall	matched	1	541	Squall
+4	Stand Your Ground	standyourground	matched	1	542	Stand Your Ground
+3	Stiff Breeze	stiffbreeze	matched	1	543	Stiff Breeze
+3|4	Stim Pack	stimpack	matched	1	544	Stim Pack
+5	Stinging Bee	stingingbee	matched	1	545	Stinging Bee
+3	Stolen Thunder	stolenthunder	matched	1	546	Stolen Thunder
+4|5|6	Stop Right There!	stoprightthere	matched	1	547	Stop Right There!
+5	Storm's Eye Prana	stormseyeprana	matched	1	548	Storm's Eye Prana
+3|4	Stressed Out	stressedout	matched	1	549	Stressed Out
+4	Stressful	stressful	matched	1	550	Stressful
+4	Strike Down	strikedown	matched	1	551	Strike Down
+3	Strong Winds	strongwinds	matched	1	552	Strong Winds
+3	Stun Grenade	stungrenade	matched	1	553	Stun Grenade
+3	Sub-Zero Cellblock	subzerocellblock	matched	1	554	Sub-Zero Cellblock
+3	Subtlety of the Tides	subtletyofthetides	matched	1	555	Subtlety of the Tides
+3	Sudden Impact	suddenimpact	matched	1	556	Sudden Impact
+3	Sudden Strike	suddenstrike	ambiguous	2	557|697	Sudden Strike|Sudden Strike
+3	Suffocating Earth	suffocatingearth	matched	1	558	Suffocating Earth
+4	Supercharged	supercharged	matched	1	559	Supercharged
+3|4	Superconductor	superconductor	ambiguous	2	560|701	Superconductor|Superconductor
+3	Supercooled	supercooled	matched	1	561	Supercooled
+3	Superiority Complex	superioritycomplex	matched	1	562	Superiority Complex
+3	Surge of Strength	surgeofstrength	matched	1	563	Surge of Strength
+3	Svengali's Guile	svengalisguile	matched	1	564	Svengali's Guile
+3	Swallowtail Cut	swallowtailcut	matched	1	565	Swallowtail Cut
+3|5	Sweltering Heat	swelteringheat	matched	1	566	Sweltering Heat
+4	Take a Beating	takeabeating	matched	1	567	Take a Beating
+3	Taking Names	takingnames	matched	1	568	Taking Names
+3	Telekinetic Reinforcement	telekineticreinforcement	matched	1	569	Telekinetic Reinforcement
+3	Tenable Bonds	tenablebonds	matched	1	570	Tenable Bonds
+3	Terrifying Visage	terrifyingvisage	matched	1	571	Terrifying Visage
+3	Thaw	thaw	matched	1	572	Thaw
+3	The Elusive Monk	theelusivemonk	matched	1	573	The Elusive Monk
+3	The Elusive Swordsman	theelusiveswordsman	matched	1	574	The Elusive Swordsman
+3	They Never Go Easy	theynevergoeasy	matched	1	575	They Never Go Easy
+3	Thought Sever	thoughtsever	matched	1	576	Thought Sever
+3	Three Edged Blade	threeedgedblade	matched	1	577	Three Edged Blade
+3	Thrill of the Hunt	thrillofthehunt	matched	1	578	Thrill of the Hunt
+5	Thunderbolt	thunderbolt	matched	1	579	Thunderbolt
+4	Thundering Roar	thunderingroar	matched	1	580	Thundering Roar
+3	Tiger's Courage	tigerscourage	matched	1	581	Tiger's Courage
+3	Time Alteration	timealteration	matched	1	582	Time Alteration
+4	To the Heavens	totheheavens	matched	1	583	To The Heavens
+3	Toppling Winds	topplingwinds	matched	1	584	Toppling Winds
+3	Toxicity	toxicity	matched	1	585	Toxicity
+3	Toxin Overload	toxinoverload	matched	1	586	Toxin Overload
+3	Trail Blazer	trailblazer	matched	1	587	Trail Blazer
+6	Tranced	tranced	matched	1	588	Tranced
+3|4	Trauma	trauma	matched	1	589	Trauma
+3	Tread Softly	treadsoftly	matched	1	590	Tread Softly
+3	Trick Shot	trickshot	matched	1	591	Trick Shot
+3	Triple Threat	triplethreat	matched	1	592	Triple Threat
+3	Triplicity	triplicity	matched	1	593	Triplicity
+3	Tungsten Rounds	tungstenrounds	matched	1	594	Tungsten Rounds
+3	Two Smoking Barrels	twosmokingbarrels	matched	1	595	Two Smoking Barrels
+3	U-238 Rounds	u238rounds	matched	1	596	U-238 Rounds
+3	Unbound Ritual	unboundritual	matched	1	597	Unbound Ritual
+3	Unchained	unchained	matched	1	598	Unchained
+4	Uncompromising	uncompromising	matched	1	599	Uncompromising
+4	Unhinged	unhinged	matched	1	600	Unhinged
+3	Unknown Threat	unknownthreat	matched	1	601	Unknown Threat
+4	Unlimited Power!	unlimitedpower	matched	1	602	Unlimited Power!
+3	Unnerving Rage	unnervingrage	matched	1	603	Unnerving Rage
+4	Unpredictable Effects	unpredictableeffects	matched	1	604	Unpredictable Effects
+6	Unrelenting	unrelenting	matched	1	605	Unrelenting
+3|5	Unstable Accelerant	unstableaccelerant	matched	1	606	Unstable Accelerant
+3	Unstable Footing	unstablefooting	matched	1	607	Unstable Footing
+3	Until Morale Improves	untilmoraleimproves	matched	1	608	Until Morale Improves
+3	Unyielding Agony	unyieldingagony	matched	1	609	Unyielding Agony
+7	UPVD: Sonic Boom Generator	upvdsonicboomgenerator	unmatched	0		
+10	UPVD: Ultimate Brimstone	upvdultimatebrimstone	unmatched	0		
+9	UPVD: Ultimate Cave In	upvdultimatecavein	unmatched	0		
+6	UPVD: Ultimate Chest Beam	upvdultimatechestbeam	unmatched	0		
+10	UPVD: Ultimate Fireball	upvdultimatefireball	unmatched	0		
+8	UPVD: Ultimate Force Cascade	upvdultimateforcecascade	unmatched	0		
+8	UPVD: Ultimate Havoc Stomp	upvdultimatehavocstomp	unmatched	0		
+10	UPVD: Ultimate Open Palm Strike	upvdultimateopenpalmstrike	unmatched	0		
+6	UPVD: Ultimate Orbital Cannon	upvdultimateorbitalcannon	unmatched	0		
+8	UPVD: Ultimate Particle Smash	upvdultimateparticlesmash	unmatched	0		
+9	UPVD: Ultimate Pillar of Poz	upvdultimatepillarofpoz	unmatched	0		
+9	UPVD: Ultimate Sword Cyclone	upvdultimateswordcyclone	unmatched	0		
+9	UPVD: Ultimate Thunderstrike	upvdultimatethunderstrike	unmatched	0		
+4|5	USB Arrow	usbarrow	matched	1	610	USB Arrow
+5	Vainglorious	vainglorious	matched	1	611	Vainglorious
+3	Vampiric Sympathy	vampiricsympathy	matched	1	612	Vampiric Sympathy
+3	Vengeful Shadows	vengefulshadows	matched	1	613	Vengeful Shadows
+3	Versatility	versatility	matched	1	614	Versatility
+4	Vicious	vicious	matched	1	615	Vicious
+5	Viral	viral	matched	1	616	Viral
+3	Virulent Propagation	virulentpropagation	matched	1	617	Virulent Propagation
+5	Void	void	matched	1	618	Void
+5	Void Feast	voidfeast	matched	1	619	Void Feast
+3	Voodoo Curse	voodoocurse	matched	1	620	Voodoo Curse
+3	Voracious Darkness	voraciousdarkness	matched	1	621	Voracious Darkness
+3	Vortex	vortex	matched	1	622	Vortex
+3	Vortex Technique	vortextechnique	matched	1	623	Vortex Technique
+3	Wall of Blades	wallofblades	matched	1	624	Wall of Blades
+5	Wall of Bullets	wallofbullets	matched	1	625	Wall of Bullets
+3	Wall of Fire	walloffire	matched	1	626	Wall of Fire
+3	Warlock's Malice	warlocksmalice	matched	1	627	Warlock's Malice
+5|6	Weak Points	weakpoints	matched	1	628	Weak Points
+4	Weapon Cover	weaponcover	matched	1	629	Weapon Cover
+3	Weather the Storm	weatherthestorm	matched	1	630	Weather the Storm
+4	What Do I Have in My Utility Belt?	whatdoihaveinmyutilitybelt	matched	1	631	What Do I have In My Utility Belt?
+3	Where's the Kaboom?	wheresthekaboom	matched	1	632	Where's the Kaboom?
+4	Wild Slashes	wildslashes	matched	1	633	Wild Slashes
+5	Wild Strikes	wildstrikes	matched	1	634	Wild Strikes
+3|4	Wildfire	wildfire	matched	1	635	Wildfire
+3	Wizard's Discretion	wizardsdiscretion	matched	1	636	Wizard's Discretion
+3|4|5|6	Work Up	workup	matched	1	637	Work Up
+5	Wrecking Ball	wreckingball	unmatched	0		
+3	You Clean, We'll Sweep	youcleanwellsweep	matched	1	639	You Clean, We'll Sweep

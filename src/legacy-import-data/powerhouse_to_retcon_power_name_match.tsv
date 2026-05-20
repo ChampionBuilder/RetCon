@@ -1,0 +1,874 @@
+source_type	source_powerhouse_id	source_name	normalized_name	match_status	target_count	target_retcon_power_ids	target_power_names	target_frameworks
+combat	1	Electric Bolt	electricbolt	matched	1	1	Electric Bolt	Electricity
+combat	2	Chain Lightning	chainlightning	matched	1	2	Chain Lightning	Electricity
+combat	3	Sparkstorm	sparkstorm	matched	1	11	Sparkstorm	Electricity
+combat	4	Sigils of the Storm	sigilsofthestorm	matched	1	10	Sigils of the Storm	Electricity
+combat	5	Electrical Current	electricalcurrent	matched	1	6	Electrical Current	Electricity
+combat	6	Lightning Strike	lightningstrike	matched	1	8	Lightning Strike	Electricity
+combat	7	Electric Sheath	electricsheath	matched	1	4	Electric Sheath	Electricity
+combat	8	Electric Form	electricform	matched	1	3	Electric Form	Electricity
+combat	9	Power Source	powersource	matched	1	9	Power Source	Electricity
+combat	10	Electric Shield	electricshield	matched	1	5	Electric Shield	Electricity
+combat	11	Ionic Reverberation	ionicreverberation	matched	1	7	Ionic Reverberation	Electricity
+combat	12	Storm Summoner	stormsummoner	matched	1	18	Storm Summoner	Electricity
+combat	13	Thunderstrike	thunderstrike	matched	1	19	Thunderstrike	Electricity
+combat	14	Electrocute	electrocute	matched	1	15	Electrocute	Electricity
+combat	15	Blinding Light	blindinglight	matched	1	13	Blinding Light	Electricity
+combat	16	Ball Lightning	balllightning	matched	1	12	Ball Lightning	Electricity
+combat	17	Electrical Siphon	electricalsiphon	matched	1	14	Electrical Siphon	Electricity
+combat	18	Neuroelectric Pulse	neuroelectricpulse	matched	1	16	Neuroelectric Pulse	Electricity
+combat	19	Storm Cloud	stormcloud	matched	1	17	Storm Cloud	Electricity
+combat	20	Lightning Arc	lightningarc	matched	1	22	Lightning Arc	Electricity
+combat	21	Gigabolt	gigabolt	matched	1	20	Gigabolt	Electricity
+combat	22	Lightning Storm	lightningstorm	matched	1	23	Lightning Storm	Electricity
+combat	23	Sundering Breath	sunderingbreath	matched	1	21	Sundering Breath	Electricity
+combat	24	Thundering Return	thunderingreturn	matched	1	24	Thundering Return	Electricity
+combat	25	Energy Storm	energystorm	matched	1	113	Energy Storm	Shared_Energy_Projector
+combat	26	Gravity Driver	gravitydriver	matched	1	117	Gravity Driver	Shared_Energy_Projector
+combat	27	Fractal Aegis	fractalaegis	matched	1	118	Fractal Aegis	Shared_Energy_Projector
+combat	28	Storm Strike	stormstrike	matched	1	114	Storm Strike	Shared_Energy_Projector
+combat	29	Meteor Blaze	meteorblaze	matched	1	115	Meteor Blaze	Shared_Energy_Projector
+combat	30	Whirlpool	whirlpool	matched	1	119	Whirlpool	Shared_Energy_Projector
+combat	31	Redirected Force	redirectedforce	matched	1	116	Redirected Force	Shared_Energy_Projector
+combat	32	Tornado	tornado	matched	1	120	Tornado	Shared_Energy_Projector
+combat	33	Prismatic Detonation	prismaticdetonation	matched	1	121	Prismatic Detonation	Shared_Energy_Projector
+combat	34	Throw Fire	throwfire	matched	1	25	Throw Fire	Fire
+combat	35	Fire Strike	firestrike	matched	1	26	Fire Strike	Fire
+combat	36	Fire Breath	firebreath	matched	1	29	Fire Breath	Fire
+combat	37	Living Fire	livingfire	matched	1	35	Living Fire	Fire
+combat	38	Fireball	fireball	matched	1	31	Fireball	Fire
+combat	39	Heat Wave	heatwave	matched	1	33	Heat Wave	Fire
+combat	40	Warmth	warmth	matched	1	38	Warmth	Fire
+combat	41	Immolation	immolation	matched	1	34	Immolation	Fire
+combat	42	Fiery Form	fieryform	matched	1	27	Fiery Form	Fire
+combat	43	Hearth	hearth	matched	1	32	Hearth	Fire
+combat	44	Fiery Will	fierywill	matched	1	28	Fiery Will	Fire
+combat	45	Smoldering	smoldering	matched	1	36	Smoldering	Fire
+combat	46	Fire Shield	fireshield	matched	1	30	Fire Shield	Fire
+combat	47	Thermal Reverberation	thermalreverberation	matched	1	37	Thermal Reverberation	Fire
+combat	48	Pyre	pyre	matched	1	43	Pyre	Fire
+combat	49	Rimefire Burst	rimefireburst	matched	1	45	Rimefire Burst	Fire
+combat	50	Conflagration	conflagration	matched	1	40	Conflagration	Fire
+combat	51	Scorching Impact	scorchingimpact	matched	1	47	Scorching Impact	Fire
+combat	52	Flame Prison	flameprison	matched	1	41	Flame Prison	Fire
+combat	53	Pyromancer's Blades	pyromancersblades	matched	1	44	Pyromancer's Blades	Fire
+combat	54	Absorb Heat	absorbheat	matched	1	39	Absorb Heat	Fire
+combat	55	Nova Flare	novaflare	matched	1	42	Nova Flare	Fire
+combat	56	Rise from the Ashes	risefromtheashes	matched	1	46	Rise From the Ashes	Fire
+combat	57	Incinerate	incinerate	matched	1	52	Incinerate	Fire
+combat	58	Flashfire	flashfire	matched	1	50	Flash Fire	Fire
+combat	59	Fire Snake	firesnake	matched	1	49	Fire Snake	Fire
+combat	60	Hydra	hydra	matched	1	51	Hydra	Fire
+combat	61	Fiery Embrace	fieryembrace	matched	1	48	Fiery Embrace	Fire
+combat	62	Energy Storm	energystorm	matched	1	113	Energy Storm	Shared_Energy_Projector
+combat	63	Gravity Driver	gravitydriver	matched	1	117	Gravity Driver	Shared_Energy_Projector
+combat	64	Fractal Aegis	fractalaegis	matched	1	118	Fractal Aegis	Shared_Energy_Projector
+combat	65	Storm Strike	stormstrike	matched	1	114	Storm Strike	Shared_Energy_Projector
+combat	66	Meteor Blaze	meteorblaze	matched	1	115	Meteor Blaze	Shared_Energy_Projector
+combat	67	Whirlpool	whirlpool	matched	1	119	Whirlpool	Shared_Energy_Projector
+combat	68	Redirected Force	redirectedforce	matched	1	116	Redirected Force	Shared_Energy_Projector
+combat	69	Tornado	tornado	matched	1	120	Tornado	Shared_Energy_Projector
+combat	70	Prismatic Detonation	prismaticdetonation	matched	1	121	Prismatic Detonation	Shared_Energy_Projector
+combat	71	Force Bolts	forcebolts	matched	1	53	Force Bolts	Force
+combat	72	Force Blast	forceblast	matched	1	54	Force Blast	Force
+combat	73	Force Eruption	forceeruption	matched	1	55	Force Eruption	Force
+combat	74	Force Snap	forcesnap	matched	1	57	Force Snap	Force
+combat	75	Crushing Wave	crushingwave	matched	1	68	Crushing Wave	Force
+combat	76	Protection Field	protectionfield	matched	1	64	Protection Field	Force
+combat	77	Shield Restoration	shieldrestoration	matched	1	58	Shield Restoration	Force
+combat	78	Personal Force Field	personalforcefield	matched	1	62	Personal Force Field	Force
+combat	79	Kinetic Manipulation	kineticmanipulation	matched	1	61	Kinetic Manipulation	Force
+combat	80	Inertial Dampening Field	inertialdampeningfield	matched	1	63	Inertial Dampening Field	Force
+combat	81	Force Control	forcecontrol	matched	1	65	Force Control	Force
+combat	82	Vital Shielding	vitalshielding	matched	1	66	Vital Shielding	Force
+combat	83	Force Shield	forceshield	matched	1	56	Force Shield	Force
+combat	84	Impact Force	impactforce	matched	1	59	Impact Force	Force
+combat	85	Power Barrier	powerbarrier	matched	1	60	Power Barrier	Force
+combat	86	Force Geyser	forcegeyser	matched	1	70	Force Geyser	Force
+combat	87	Singularity Bomb	singularitybomb	matched	1	71	Singularity Bomb	Force
+combat	88	Containment Field	containmentfield	matched	1	67	Containment Field	Force
+combat	89	Field Surge	fieldsurge	matched	1	69	Field Surge	Force
+combat	90	Gravitic Ripple	graviticripple	matched	1	74	Gravitic Ripple	Force
+combat	91	Force Cascade	forcecascade	matched	1	72	Force Cascade	Force
+combat	92	Force Detonation	forcedetonation	matched	1	73	Force Detonation	Force
+combat	93	Energy Storm	energystorm	matched	1	113	Energy Storm	Shared_Energy_Projector
+combat	94	Gravity Driver	gravitydriver	matched	1	117	Gravity Driver	Shared_Energy_Projector
+combat	95	Fractal Aegis	fractalaegis	matched	1	118	Fractal Aegis	Shared_Energy_Projector
+combat	96	Storm Strike	stormstrike	matched	1	114	Storm Strike	Shared_Energy_Projector
+combat	97	Meteor Blaze	meteorblaze	matched	1	115	Meteor Blaze	Shared_Energy_Projector
+combat	98	Whirlpool	whirlpool	matched	1	119	Whirlpool	Shared_Energy_Projector
+combat	99	Redirected Force	redirectedforce	matched	1	116	Redirected Force	Shared_Energy_Projector
+combat	100	Tornado	tornado	matched	1	120	Tornado	Shared_Energy_Projector
+combat	101	Prismatic Detonation	prismaticdetonation	matched	1	121	Prismatic Detonation	Shared_Energy_Projector
+combat	102	Wind Lash	windlash	matched	1	75	Wind Lash	Wind
+combat	103	Gust	gust	matched	1	76	Gust	Wind
+combat	104	Wind Breath	windbreath	matched	1	81	Wind Breath	Wind
+combat	105	Stormbringer	stormbringer	matched	1	78	Stormbringer	Wind
+combat	106	Weather Shaping	weathershaping	matched	1	79	Weather Shaping	Wind
+combat	107	Wind Barrier	windbarrier	matched	1	80	Wind Barrier	Wind
+combat	108	Wind Reverberation	windreverberation	matched	1	82	Wind Reverberation	Wind
+combat	109	Torrent	torrent	matched	1	84	Torrent	Wind
+combat	110	Hurricane	hurricane	matched	1	77	Hurricane	Wind
+combat	111	Updraft	updraft	matched	1	86	Updraft	Wind
+combat	112	Whirlwind	whirlwind	matched	1	88	Whirlwind	Wind
+combat	113	Twister	twister	matched	1	85	Twister	Wind
+combat	114	Veil of Mist	veilofmist	matched	1	87	Veil of Mist	Wind
+combat	115	Dust Devil	dustdevil	matched	1	83	Dust Devil	Wind
+combat	116	Typhoon	typhoon	matched	1	90	Typhoon	Wind
+combat	117	Air Elemental	airelemental	matched	1	89	Air Elemental	Wind
+combat	118	Energy Storm	energystorm	matched	1	113	Energy Storm	Shared_Energy_Projector
+combat	119	Gravity Driver	gravitydriver	matched	1	117	Gravity Driver	Shared_Energy_Projector
+combat	120	Fractal Aegis	fractalaegis	matched	1	118	Fractal Aegis	Shared_Energy_Projector
+combat	121	Storm Strike	stormstrike	matched	1	114	Storm Strike	Shared_Energy_Projector
+combat	122	Meteor Blaze	meteorblaze	matched	1	115	Meteor Blaze	Shared_Energy_Projector
+combat	123	Whirlpool	whirlpool	matched	1	119	Whirlpool	Shared_Energy_Projector
+combat	124	Redirected Force	redirectedforce	matched	1	116	Redirected Force	Shared_Energy_Projector
+combat	125	Tornado	tornado	matched	1	120	Tornado	Shared_Energy_Projector
+combat	126	Prismatic Detonation	prismaticdetonation	matched	1	121	Prismatic Detonation	Shared_Energy_Projector
+combat	127	Ice Shards	iceshards	matched	1	91	Ice Shards	Ice
+combat	128	Ice Blast	iceblast	matched	1	92	Ice Blast	Ice
+combat	129	Shatter	shatter	matched	1	101	Shatter	Ice
+combat	130	Frost Breath	frostbreath	matched	1	95	Frost Breath	Ice
+combat	131	Ice Cage	icecage	matched	1	96	Ice Cage	Ice
+combat	132	Wall of Ice	wallofice	matched	1	102	Wall of Ice	Ice
+combat	133	Ice Sheath	icesheath	matched	1	98	Ice Sheath	Ice
+combat	134	Ice Form	iceform	matched	1	97	Ice Form	Ice
+combat	135	Chilled Form	chilledform	matched	1	93	Chilled Form	Ice
+combat	136	Frigid Determination	frigiddetermination	matched	1	94	Frigid Determination	Ice
+combat	137	Ice Shield	iceshield	matched	1	99	Ice Shield	Ice
+combat	138	Icy Embrace	icyembrace	matched	1	100	Icy Embrace	Ice
+combat	139	Winter Gale	wintergale	matched	1	106	Winter Gale	Ice
+combat	140	Ice Burst	iceburst	matched	1	104	Ice Burst	Ice
+combat	141	Snow Storm	snowstorm	matched	1	105	Snow Storm	Ice
+combat	142	Cold Shoulder	coldshoulder	matched	1	110	Cold Shoulder	Ice
+combat	143	Ice Barrier	icebarrier	matched	1	103	Ice Barrier	Ice
+combat	144	Icicle Spear	iciclespear	matched	1	111	Icicle Spear	Ice
+combat	145	Avalanche	avalanche	matched	1	109	Avalanche	Ice
+combat	146	Arctic Beast	arcticbeast	matched	1	107	Arctic Beast	Ice
+combat	147	Aurora	aurora	matched	1	108	Aurora	Ice
+combat	148	Vapor Form	vaporform	matched	1	112	Vapor Form	Ice
+combat	149	Energy Storm	energystorm	matched	1	113	Energy Storm	Shared_Energy_Projector
+combat	150	Gravity Driver	gravitydriver	matched	1	117	Gravity Driver	Shared_Energy_Projector
+combat	151	Fractal Aegis	fractalaegis	matched	1	118	Fractal Aegis	Shared_Energy_Projector
+combat	152	Storm Strike	stormstrike	matched	1	114	Storm Strike	Shared_Energy_Projector
+combat	153	Meteor Blaze	meteorblaze	matched	1	115	Meteor Blaze	Shared_Energy_Projector
+combat	154	Whirlpool	whirlpool	matched	1	119	Whirlpool	Shared_Energy_Projector
+combat	155	Redirected Force	redirectedforce	matched	1	116	Redirected Force	Shared_Energy_Projector
+combat	156	Tornado	tornado	matched	1	120	Tornado	Shared_Energy_Projector
+combat	157	Prismatic Detonation	prismaticdetonation	matched	1	121	Prismatic Detonation	Shared_Energy_Projector
+combat	158	Strafe	strafe	matched	1	122	Strafe	Archery
+combat	159	Straight Shot	straightshot	matched	1	124	Straight Shot	Archery
+combat	160	Snap Shot	snapshot	matched	1	123	Snap Shot	Archery
+combat	161	Desperate Shot	desperateshot	matched	1	125	Desperate Shot	Archery
+combat	162	Evasive Maneuvers	evasivemaneuvers	matched	1	126	Evasive Maneuvers	Archery
+combat	163	Taser Arrow	taserarrow	matched	1	132	Taser Arrow	Archery
+combat	164	Sonic Arrow	sonicarrow	matched	1	131	Sonic Arrow	Archery
+combat	165	Medical Arrow	medicalarrow	matched	1	128	Medical Arrow	Archery
+combat	166	Quarry	quarry	matched	1	130	Quarry	Archery
+combat	167	Precision	precision	matched	1	129	Precision	Archery
+combat	168	Concentration	concentration	matched	1	258	Concentration	Shared_Technology
+combat	169	Hunter's Instinct	huntersinstinct	matched	1	127	Hunter's Instinct	Archery
+combat	170	Storm of Arrows	stormofarrows	matched	1	135	Storm of Arrows	Archery
+combat	171	Torrent of Arrows	torrentofarrows	matched	1	136	Torrent of Arrows	Archery
+combat	172	Fair Game	fairgame	matched	1	134	Fair Game	Archery
+combat	173	Caltrops	caltrops	matched	1	133	Caltrops	Archery
+combat	174	Focused Shot	focusedshot	matched	1	138	Focused Shot	Archery
+combat	175	Rapid Shots	rapidshots	matched	1	140	Rapid Shots	Archery
+combat	176	Explosive Arrow	explosivearrow	matched	1	137	Explosive Arrow	Archery
+combat	177	Gas Arrow	gasarrow	matched	1	139	Gas Arrow	Archery
+combat	178	Implosion Engine	implosionengine	matched	1	260	Implosion Engine	Shared_Technology
+combat	179	Mechanical Monstrosity	mechanicalmonstrosity	matched	1	261	Mechanical Monstrosity	Shared_Technology
+combat	180	Meltdown	meltdown	matched	1	262	Meltdown	Shared_Technology
+combat	181	Fire All Weapons	fireallweapons	matched	1	265	Fire All Weapons	Shared_Technology
+combat	182	Showdown	showdown	matched	1	264	Showdown	Shared_Technology
+combat	183	Arrow Assault	arrowassault	matched	1	259	Arrow Assault	Shared_Technology
+combat	184	Bullet Barrage	bulletbarrage	matched	1	263	Bullet Barrage	Shared_Technology
+combat	185	Gunslinger	gunslinger	matched	1	185	Gunslinger	Munitions
+combat	186	Steady Shot	steadyshot	matched	1	186	Steady Shot	Munitions
+combat	187	Burst Shot	burstshot	matched	1	187	Burst Shot	Munitions
+combat	188	Pistol Whip	pistolwhip	matched	1	193	Pistol Whip	Munitions
+combat	189	Rifle Butt	riflebutt	matched	1	194	Rifle Butt	Munitions
+combat	190	Holdout Shot	holdoutshot	matched	1	191	Holdout Shot	Munitions
+combat	191	Trip Wire	tripwire	matched	1	198	Trip Wire	Munitions
+combat	192	Shotgun Blast	shotgunblast	matched	1	196	Shotgun Blast	Munitions
+combat	193	Flamethrower	flamethrower	matched	1	190	Flamethrower	Munitions
+combat	194	Bullet Hail	bullethail	matched	1	188	Bullet Hail	Munitions
+combat	195	Submachinegun Burst	submachinegunburst	matched	1	197	Submachinegun Burst	Munitions
+combat	196	Composure	composure	matched	1	189	Composure	Munitions
+combat	197	Sharp Shooter	sharpshooter	matched	1	195	Sharp Shooter	Munitions
+combat	198	Concentration	concentration	matched	1	258	Concentration	Shared_Technology
+combat	199	Killer Instinct	killerinstinct	matched	1	192	Killer Instinct	Munitions
+combat	200	Execution Shot	executionshot	matched	1	202	Execution Shot	Munitions
+combat	201	Bullet Ballet	bulletballet	matched	1	200	Bullet Ballet	Munitions
+combat	202	Mini Mines	minimines	matched	1	207	Mini Mines	Munitions
+combat	203	Rocket	rocket	matched	1	209	Rocket	Munitions
+combat	204	Gatling Gun	gatlinggun	matched	1	204	Gatling Gun	Munitions
+combat	205	Concussion Grenade	concussiongrenade	matched	1	201	Concussion Grenade	Munitions
+combat	206	Incendiary Grenade	incendiarygrenade	matched	1	205	Incendiary Grenade	Munitions
+combat	207	Breakaway Shot	breakawayshot	matched	1	199	Breakaway Shot	Munitions
+combat	208	Parting Shot	partingshot	matched	1	208	Parting Shot	Munitions
+combat	209	Smoke Grenade	smokegrenade	matched	1	210	Smoke Grenade	Munitions
+combat	210	Lock N Load	locknload	matched	1	206	Lock N Load	Munitions
+combat	211	Frag Grenade	fraggrenade	matched	1	203	Frag Grenade	Munitions
+combat	212	Sniper Rifle	sniperrifle	matched	1	213	Sniper Rifle	Munitions
+combat	213	Two-Gun Mojo	twogunmojo	matched	1	214	Two-Gun Mojo	Munitions
+combat	214	Assault Rifle	assaultrifle	matched	1	211	Assault Rifle	Munitions
+combat	215	Lead Tempest	leadtempest	matched	1	212	Lead Tempest	Munitions
+combat	216	Implosion Engine	implosionengine	matched	1	260	Implosion Engine	Shared_Technology
+combat	217	Mechanical Monstrosity	mechanicalmonstrosity	matched	1	261	Mechanical Monstrosity	Shared_Technology
+combat	218	Meltdown	meltdown	matched	1	262	Meltdown	Shared_Technology
+combat	219	Fire All Weapons	fireallweapons	matched	1	265	Fire All Weapons	Shared_Technology
+combat	220	Showdown	showdown	matched	1	264	Showdown	Shared_Technology
+combat	221	Arrow Assault	arrowassault	matched	1	259	Arrow Assault	Shared_Technology
+combat	222	Bullet Barrage	bulletbarrage	matched	1	263	Bullet Barrage	Shared_Technology
+combat	223	Wrist Bolter	wristbolter	matched	1	216	Wrist Bolter	Power_Armor
+combat	224	Power Bolts	powerbolts	matched	1	215	Power Bolts	Power_Armor
+combat	225	Power Gauntlet	powergauntlet	matched	1	219	Power Gauntlet	Power_Armor
+combat	226	Tactical Missiles	tacticalmissiles	matched	1	220	Tactical Missiles	Power_Armor
+combat	227	Dual Wrist Rocket Barrage	dualwristrocketbarrage	matched	1	218	Dual Wrist Rocket Barrage	Power_Armor
+combat	228	Concussor Beam	concussorbeam	matched	1	217	Concussor Beam	Power_Armor
+combat	229	Eye Beam	eyebeam	matched	1	223	Eye Beam	Power_Armor
+combat	230	Mini Gun	minigun	matched	1	225	Mini Gun	Power_Armor
+combat	231	Rocket Punch	rocketpunch	matched	1	227	Rocket Punch	Power_Armor
+combat	232	Targeting Computer	targetingcomputer	matched	1	228	Targeting Computer	Power_Armor
+combat	233	Invulnerability	invulnerability	matched	1	224	Invulnerability	Power_Armor
+combat	234	Aspect of the Machine	aspectofthemachine	matched	1	221	Aspect of the Machine	Power_Armor
+combat	235	Concentration	concentration	matched	1	258	Concentration	Shared_Technology
+combat	236	Energy Shield	energyshield	matched	1	222	Energy Shield	Power_Armor
+combat	237	Overdrive	overdrive	matched	1	226	Overdrive	Power_Armor
+combat	238	Micro Munitions	micromunitions	matched	1	233	Micro Munitions	Power_Armor
+combat	239	Chest Beam	chestbeam	matched	1	230	Chest Beam	Power_Armor
+combat	240	Chest Laser	chestlaser	matched	1	231	Chest Laser	Power_Armor
+combat	241	Plasma Beam	plasmabeam	matched	1	234	Plasma Beam	Power_Armor
+combat	242	Chest Rocket Assault	chestrocketassault	matched	1	232	Chest Rocket Assault	Power_Armor
+combat	243	Binding Shot	bindingshot	matched	1	229	Binding Shot	Power_Armor
+combat	244	Unbreakable	unbreakable	matched	1	235	Unbreakable	Power_Armor
+combat	245	Energy Wave	energywave	matched	1	236	Energy Wave	Power_Armor
+combat	246	Shoulder Launcher	shoulderlauncher	matched	1	239	Shoulder Launcher	Power_Armor
+combat	247	Hand Cannon	handcannon	matched	1	237	Hand Cannon	Power_Armor
+combat	248	Reconstruction Circuits	reconstructioncircuits	matched	1	238	Reconstruction Circuits	Power_Armor
+combat	249	Implosion Engine	implosionengine	matched	1	260	Implosion Engine	Shared_Technology
+combat	250	Mechanical Monstrosity	mechanicalmonstrosity	matched	1	261	Mechanical Monstrosity	Shared_Technology
+combat	251	Meltdown	meltdown	matched	1	262	Meltdown	Shared_Technology
+combat	252	Fire All Weapons	fireallweapons	matched	1	265	Fire All Weapons	Shared_Technology
+combat	253	Showdown	showdown	matched	1	264	Showdown	Shared_Technology
+combat	254	Arrow Assault	arrowassault	matched	1	259	Arrow Assault	Shared_Technology
+combat	255	Bullet Barrage	bulletbarrage	matched	1	263	Bullet Barrage	Shared_Technology
+combat	256	Sonic Blaster	sonicblaster	matched	1	145	Sonic Blaster	Gadgeteering
+combat	257	Particle Rifle	particlerifle	matched	1	144	Particle Rifle	Gadgeteering
+combat	258	Boomerang Toss	boomerangtoss	matched	1	141	Boomerang Toss	Gadgeteering
+combat	259	Energy Blaster	energyblaster	matched	1	142	Energy Blaster	Gadgeteering
+combat	260	Experimental Blaster	experimentalblaster	matched	1	146	Experimental Blaster	Gadgeteering
+combat	261	Ricochet Throw	ricochetthrow	matched	1	161	Ricochet Throw	Gadgeteering
+combat	262	Particle Blaster	particleblaster	matched	1	143	Particle Blaster	Gadgeteering
+combat	263	Grapple Gun Pull	grapplegunpull	matched	1	151	Grapple Gun Pull	Gadgeteering
+combat	264	Particle Mine	particlemine	matched	1	155	Particle Mine	Gadgeteering
+combat	265	Experimental Burst Ray	experimentalburstray	matched	1	149	Experimental Burst Ray	Gadgeteering
+combat	266	Plasma Radiation	plasmaradiation	matched	1	156	Plasma Radiation	Gadgeteering
+combat	267	Entangling Mesh	entanglingmesh	matched	1	148	Entangling Mesh	Gadgeteering
+combat	268	Sonic Device	sonicdevice	matched	1	162	Sonic Device	Gadgeteering
+combat	269	Bionic Shielding	bionicshielding	matched	1	147	Bionic Shielding	Gadgeteering
+combat	270	Nanobot Swarm	nanobotswarm	matched	1	154	Nanobot Swarm	Gadgeteering
+combat	271	Toxic Nanites	toxicnanites	matched	1	178	Toxic Nanites	Gadgeteering
+combat	272	Radiation Poisoning	radiationpoisoning	matched	1	158	Radiation Poisoning	Gadgeteering
+combat	273	Medical Nanites	medicalnanites	matched	1	152	Medical Nanites	Gadgeteering
+combat	274	Radiation Suit	radiationsuit	matched	1	160	Radiation Suit	Gadgeteering
+combat	275	Technological Prowess	technologicalprowess	matched	1	164	Technological Prowess	Gadgeteering
+combat	276	Technological Advancements	technologicaladvancements	matched	1	165	Technological Advancements	Gadgeteering
+combat	277	Concentration	concentration	matched	1	258	Concentration	Shared_Technology
+combat	278	Radiation Shield	radiationshield	matched	1	159	Radiation Shield	Gadgeteering
+combat	279	Molecular Self-Assembly	molecularselfassembly	matched	1	153	Molecular Self-Assembly	Gadgeteering
+combat	280	Sound Amplification	soundamplification	matched	1	163	Sound Amplification	Gadgeteering
+combat	281	Chainsaw Gauntlet	chainsawgauntlet	unmatched	0			
+combat	282	Sonic Boom Generator	sonicboomgenerator	matched	1	174	Sonic Boom Generator	Gadgeteering
+combat	283	Throwing Blades	throwingblades	matched	1	177	Throwing Blades	Gadgeteering
+combat	284	Tractor Beam	tractorbeam	matched	1	179	Tractor Beam	Gadgeteering
+combat	285	Tanglecoil Launcher	tanglecoillauncher	matched	1	176	Tanglecoil Launcher	Gadgeteering
+combat	286	Bolas	bolas	matched	1	167	Bolas	Gadgeteering
+combat	287	Cloaking Device	cloakingdevice	matched	1	168	Cloaking Device	Gadgeteering
+combat	288	Electro Magnet	electromagnet	matched	1	169	Electro Magnet	Gadgeteering
+combat	289	Munitions Bots	munitionsbots	matched	1	173	Munitions Bots	Gadgeteering
+combat	290	Support Drones	supportdrones	matched	1	175	Support Drones	Gadgeteering
+combat	291	Attack Toys!	attacktoys	matched	1	166	Attack Toys	Gadgeteering
+combat	292	Medical Beam	medicalbeam	matched	1	171	Medical Beam	Gadgeteering
+combat	293	Gas Pellets	gaspellets	matched	1	170	Gas Pellets	Gadgeteering
+combat	294	Miniaturization Drive	miniaturizationdrive	matched	1	172	Miniaturization Drive	Gadgeteering
+combat	295	Sonic Beam	sonicbeam	matched	1	183	Sonic Beam	Gadgeteering
+combat	296	Pulse Beam Rifle	pulsebeamrifle	matched	1	157	Pulse Beam Rifle	Gadgeteering
+combat	297	Orbital Cannon	orbitalcannon	matched	1	180	Orbital Cannon	Gadgeteering
+combat	298	Strafing Run	strafingrun	matched	1	184	Strafing Run	Gadgeteering
+combat	299	Detonator Switch	detonatorswitch	unmatched	0			
+combat	300	Plasma Cannon	plasmacannon	matched	1	181	Plasma Cannon	Gadgeteering
+combat	301	Resurrection Serum	resurrectionserum	matched	1	182	Resurrection Serum	Gadgeteering
+combat	302	Implosion Engine	implosionengine	matched	1	260	Implosion Engine	Shared_Technology
+combat	303	Mechanical Monstrosity	mechanicalmonstrosity	matched	1	261	Mechanical Monstrosity	Shared_Technology
+combat	304	Meltdown	meltdown	matched	1	262	Meltdown	Shared_Technology
+combat	305	Fire All Weapons	fireallweapons	matched	1	265	Fire All Weapons	Shared_Technology
+combat	306	Showdown	showdown	matched	1	264	Showdown	Shared_Technology
+combat	307	Arrow Assault	arrowassault	matched	1	259	Arrow Assault	Shared_Technology
+combat	308	Bullet Barrage	bulletbarrage	matched	1	263	Bullet Barrage	Shared_Technology
+combat	309	Laser Edge	laseredge	matched	1	241	Laser Edge	Laser_Sword
+combat	310	Lightspeed Strike	lightspeedstrike	matched	1	242	Lightspeed Strike	Laser_Sword
+combat	311	Eye Lasers	eyelasers	matched	1	240	Eye Lasers	Laser_Sword
+combat	312	Glance	glance	matched	1	244	Glance	Laser_Sword
+combat	313	Lightwave Slash	lightwaveslash	matched	1	247	Lightwave Slash	Laser_Sword
+combat	314	Cybernetic Tether	cybernetictether	matched	1	243	Cybernetic Tether	Laser_Sword
+combat	315	Lightspeed Dash	lightspeeddash	matched	1	246	Lightspeed Dash	Laser_Sword
+combat	316	Quantum Stabilizer	quantumstabilizer	matched	1	249	Quantum Stabilizer	Laser_Sword
+combat	317	Particle Accelerator	particleaccelerator	matched	1	248	Particle Accelerator	Laser_Sword
+combat	318	Concentration	concentration	matched	1	258	Concentration	Shared_Technology
+combat	319	Laser Deflection	laserdeflection	matched	1	245	Laser Deflection	Laser_Sword
+combat	320	Unified Theory	unifiedtheory	matched	1	250	Unified Theory	Laser_Sword
+combat	321	Plasma Cutter	plasmacutter	matched	1	255	Plasma Cutter	Laser_Sword
+combat	322	Particle Smash	particlesmash	matched	1	253	Particle Smash	Laser_Sword
+combat	323	Particle Wave	particlewave	matched	1	254	Particle Wave	Laser_Sword
+combat	324	Power Conversion	powerconversion	matched	1	256	Power Conversion	Laser_Sword
+combat	325	Bad Sector	badsector	matched	1	251	Bad Sector	Laser_Sword
+combat	326	Luminescent Slash	luminescentslash	matched	1	257	Luminescent Slash	Laser_Sword
+combat	327	Implosion Engine	implosionengine	matched	1	260	Implosion Engine	Shared_Technology
+combat	328	Mechanical Monstrosity	mechanicalmonstrosity	matched	1	261	Mechanical Monstrosity	Shared_Technology
+combat	329	Meltdown	meltdown	matched	1	262	Meltdown	Shared_Technology
+combat	330	Fire All Weapons	fireallweapons	matched	1	265	Fire All Weapons	Shared_Technology
+combat	331	Showdown	showdown	matched	1	264	Showdown	Shared_Technology
+combat	332	Arrow Assault	arrowassault	matched	1	259	Arrow Assault	Shared_Technology
+combat	333	Bullet Barrage	bulletbarrage	matched	1	263	Bullet Barrage	Shared_Technology
+combat	334	Rain of Steel	rainofsteel	matched	1	266	Rain of Steel	Dual_Blades
+combat	335	Blade Tempest	bladetempest	matched	1	267	Blade Tempest	Dual_Blades
+combat	336	Storm's Harvest	stormsharvest	matched	1	269	Storm's Harvest	Dual_Blades
+combat	337	Inexorable Tides	inexorabletides	matched	1	315	Inexorable Tides	Shared_Martial_Arts
+combat	338	Bladed Cyclone	bladedcyclone	matched	1	312	Bladed Cyclone	Shared_Martial_Arts
+combat	339	Shuriken Throw	shurikenthrow	matched	1	321	Shuriken Throw	Shared_Martial_Arts
+combat	340	Chained Kunai	chainedkunai	matched	1	313	Chained Kunai	Shared_Martial_Arts
+combat	341	Strike Down	strikedown	matched	1	270	Strike Down	Dual_Blades
+combat	342	Thunderbolt Lunge	thunderboltlunge	matched	1	325	Thunderbolt Lunge	Shared_Martial_Arts
+combat	343	Smoke Bomb Lunge	smokebomblunge	matched	1	323	Smoke Bomb Lunge	Shared_Martial_Arts
+combat	344	Laughing Zephyr	laughingzephyr	matched	1	317	Laughing Zephyr	Shared_Martial_Arts
+combat	345	Smoke Bomb	smokebomb	matched	1	322	Smoke Bomb	Shared_Martial_Arts
+combat	346	Intensity	intensity	matched	1	316	Intensity	Shared_Martial_Arts
+combat	347	Lightning Reflexes	lightningreflexes	matched	1	318	Lightning Reflexes	Shared_Martial_Arts
+combat	348	Way of the Warrior	wayofthewarrior	matched	1	326	Way of the Warrior	Shared_Martial_Arts
+combat	349	Night Warrior	nightwarrior	matched	1	327	Night Warrior	Shared_Martial_Arts
+combat	350	Form of the Tempest	formofthetempest	matched	1	268	Form of the Tempest	Dual_Blades
+combat	351	Parry	parry	matched	1	319	Parry	Shared_Martial_Arts
+combat	352	Fluidity	fluidity	matched	1	314	Fluidity	Shared_Martial_Arts
+combat	353	Steadfast	steadfast	matched	1	324	Steadfast	Shared_Martial_Arts
+combat	354	Relentless	relentless	matched	1	320	Relentless	Shared_Martial_Arts
+combat	355	Dragon's Wrath	dragonswrath	matched	1	271	Dragon's Wrath	Dual_Blades
+combat	356	Rising Knee	risingknee	matched	1	329	Rising Knee	Shared_Martial_Arts
+combat	357	Eye of the Storm	eyeofthestorm	matched	1	272	Eye of the Storm	Dual_Blades
+combat	358	Shuriken Sweep	shurikensweep	matched	1	332	Shuriken Sweep	Shared_Martial_Arts
+combat	359	Bountiful Chi Resurgence	bountifulchiresurgence	matched	1	330	Bountiful Chi Resurgence	Shared_Martial_Arts
+combat	360	Masterful Dodge	masterfuldodge	matched	1	328	Masterful Dodge	Shared_Martial_Arts
+combat	361	Caltrops Tashibishi	caltropstashibishi	matched	1	331	Caltrops Tashibishi	Shared_Martial_Arts
+combat	362	Sword Cyclone	swordcyclone	matched	1	273	Sword Cyclone	Dual_Blades
+combat	363	Shuriken Storm	shurikenstorm	matched	1	333	Shuriken Storm	Shared_Martial_Arts
+combat	364	Fury of the Dragon	furyofthedragon	matched	1	339	Fury of the Dragon	Shared_Martial_Arts
+combat	365	Vorpal Blade	vorpalblade	matched	1	337	Vorpal Blade	Shared_Martial_Arts
+combat	366	Devastating Strike	devastatingstrike	matched	1	338	Devastating Strike	Shared_Martial_Arts
+combat	367	Whirling Dragon Strike	whirlingdragonstrike	matched	1	334	Whirling Dragon Strike	Shared_Martial_Arts
+combat	368	Bladed Fury	bladedfury	matched	1	335	Bladed Fury	Shared_Martial_Arts
+combat	369	Shadow Strike	shadowstrike	matched	1	336	Shadow Strike	Shared_Martial_Arts
+combat	370	Hawk's Talons	hawkstalons	matched	1	274	Hawk's Talons	Fighting_Claws
+combat	371	Viper's Fangs	vipersfangs	matched	1	275	Viper's Fangs	Fighting_Claws
+combat	372	Scorpion Sting	scorpionsting	matched	1	280	Scorpion Sting	Fighting_Claws
+combat	373	Inexorable Tides	inexorabletides	matched	1	315	Inexorable Tides	Shared_Martial_Arts
+combat	374	Bladed Cyclone	bladedcyclone	matched	1	312	Bladed Cyclone	Shared_Martial_Arts
+combat	375	Spitting Cobra	spittingcobra	matched	1	281	Spitting Cobra	Fighting_Claws
+combat	376	Shuriken Throw	shurikenthrow	matched	1	321	Shuriken Throw	Shared_Martial_Arts
+combat	377	Chained Kunai	chainedkunai	matched	1	313	Chained Kunai	Shared_Martial_Arts
+combat	378	Leopard's Leap	leopardsleap	matched	1	278	Leopard's Leap	Fighting_Claws
+combat	379	Thunderbolt Lunge	thunderboltlunge	matched	1	325	Thunderbolt Lunge	Shared_Martial_Arts
+combat	380	Smoke Bomb Lunge	smokebomblunge	matched	1	323	Smoke Bomb Lunge	Shared_Martial_Arts
+combat	381	Laughing Zephyr	laughingzephyr	matched	1	317	Laughing Zephyr	Shared_Martial_Arts
+combat	382	Smoke Bomb	smokebomb	matched	1	322	Smoke Bomb	Shared_Martial_Arts
+combat	383	Intensity	intensity	matched	1	316	Intensity	Shared_Martial_Arts
+combat	384	Lightning Reflexes	lightningreflexes	matched	1	318	Lightning Reflexes	Shared_Martial_Arts
+combat	385	Way of the Warrior	wayofthewarrior	matched	1	326	Way of the Warrior	Shared_Martial_Arts
+combat	386	Night Warrior	nightwarrior	matched	1	327	Night Warrior	Shared_Martial_Arts
+combat	387	Form of the Tiger	formofthetiger	matched	1	277	Form of the Tiger	Fighting_Claws
+combat	388	Counterattack	counterattack	matched	1	276	Counterattack	Fighting_Claws
+combat	389	Parry	parry	matched	1	319	Parry	Shared_Martial_Arts
+combat	390	Fluidity	fluidity	matched	1	314	Fluidity	Shared_Martial_Arts
+combat	391	Steadfast	steadfast	matched	1	324	Steadfast	Shared_Martial_Arts
+combat	392	Relentless	relentless	matched	1	320	Relentless	Shared_Martial_Arts
+combat	393	Dragon's Claws	dragonsclaws	matched	1	282	Dragon's Claws	Fighting_Claws
+combat	394	Scarlet Arc	scarletarc	matched	1	284	Scarlet Arc	Fighting_Claws
+combat	395	Rising Knee	risingknee	matched	1	329	Rising Knee	Shared_Martial_Arts
+combat	396	Rend and Tear	rendandtear	matched	1	279	Rend and Tear	Fighting_Claws
+combat	397	Shuriken Sweep	shurikensweep	matched	1	332	Shuriken Sweep	Shared_Martial_Arts
+combat	398	Eagle's Grasp	eaglesgrasp	matched	1	283	Eagle's Grasp	Fighting_Claws
+combat	399	Bountiful Chi Resurgence	bountifulchiresurgence	matched	1	330	Bountiful Chi Resurgence	Shared_Martial_Arts
+combat	400	Masterful Dodge	masterfuldodge	matched	1	328	Masterful Dodge	Shared_Martial_Arts
+combat	401	Caltrops Tashibishi	caltropstashibishi	matched	1	331	Caltrops Tashibishi	Shared_Martial_Arts
+combat	402	Tiger's Bite	tigersbite	matched	1	285	Tiger's Bite	Fighting_Claws
+combat	403	Shuriken Storm	shurikenstorm	matched	1	333	Shuriken Storm	Shared_Martial_Arts
+combat	404	Fury of the Dragon	furyofthedragon	matched	1	339	Fury of the Dragon	Shared_Martial_Arts
+combat	405	Vorpal Blade	vorpalblade	matched	1	337	Vorpal Blade	Shared_Martial_Arts
+combat	406	Devastating Strike	devastatingstrike	matched	1	338	Devastating Strike	Shared_Martial_Arts
+combat	407	Whirling Dragon Strike	whirlingdragonstrike	matched	1	334	Whirling Dragon Strike	Shared_Martial_Arts
+combat	408	Bladed Fury	bladedfury	matched	1	335	Bladed Fury	Shared_Martial_Arts
+combat	409	Shadow Strike	shadowstrike	matched	1	336	Shadow Strike	Shared_Martial_Arts
+combat	410	Reaper's Touch	reaperstouch	matched	1	286	Reaper's Touch	Single_Blade
+combat	411	Reaper's Caress	reaperscaress	matched	1	287	Reaper's Caress	Single_Blade
+combat	412	Slash	slash	matched	1	288	Slash	Single_Blade
+combat	413	Swift Strike	swiftstrike	matched	1	293	Swift Strike	Single_Blade
+combat	414	Scything Blade	scythingblade	matched	1	292	Scything Blade	Single_Blade
+combat	415	Inexorable Tides	inexorabletides	matched	1	315	Inexorable Tides	Shared_Martial_Arts
+combat	416	Bladed Cyclone	bladedcyclone	matched	1	312	Bladed Cyclone	Shared_Martial_Arts
+combat	417	Shuriken Throw	shurikenthrow	matched	1	321	Shuriken Throw	Shared_Martial_Arts
+combat	418	Chained Kunai	chainedkunai	matched	1	313	Chained Kunai	Shared_Martial_Arts
+combat	419	Cut Down	cutdown	matched	1	289	Cut Down	Single_Blade
+combat	420	Thunderbolt Lunge	thunderboltlunge	matched	1	325	Thunderbolt Lunge	Shared_Martial_Arts
+combat	421	Smoke Bomb Lunge	smokebomblunge	matched	1	323	Smoke Bomb Lunge	Shared_Martial_Arts
+combat	422	Laughing Zephyr	laughingzephyr	matched	1	317	Laughing Zephyr	Shared_Martial_Arts
+combat	423	Smoke Bomb	smokebomb	matched	1	322	Smoke Bomb	Shared_Martial_Arts
+combat	424	Intensity	intensity	matched	1	316	Intensity	Shared_Martial_Arts
+combat	425	Lightning Reflexes	lightningreflexes	matched	1	318	Lightning Reflexes	Shared_Martial_Arts
+combat	426	Way of the Warrior	wayofthewarrior	matched	1	326	Way of the Warrior	Shared_Martial_Arts
+combat	427	Night Warrior	nightwarrior	matched	1	327	Night Warrior	Shared_Martial_Arts
+combat	428	Form of the Swordsman	formoftheswordsman	matched	1	291	Form of the Swordsman	Single_Blade
+combat	429	Deflect	deflect	matched	1	290	Deflect	Single_Blade
+combat	430	Parry	parry	matched	1	319	Parry	Shared_Martial_Arts
+combat	431	Fluidity	fluidity	matched	1	314	Fluidity	Shared_Martial_Arts
+combat	432	Steadfast	steadfast	matched	1	324	Steadfast	Shared_Martial_Arts
+combat	433	Relentless	relentless	matched	1	320	Relentless	Shared_Martial_Arts
+combat	434	Dragon's Bite	dragonsbite	matched	1	295	Dragon's Bite	Single_Blade
+combat	435	Rising Knee	risingknee	matched	1	329	Rising Knee	Shared_Martial_Arts
+combat	436	Crimson Bloom	crimsonbloom	matched	1	294	Crimson Bloom	Single_Blade
+combat	437	Tornado Slash	tornadoslash	matched	1	296	Tornado Slash	Single_Blade
+combat	438	Shuriken Sweep	shurikensweep	matched	1	332	Shuriken Sweep	Shared_Martial_Arts
+combat	439	Bountiful Chi Resurgence	bountifulchiresurgence	matched	1	330	Bountiful Chi Resurgence	Shared_Martial_Arts
+combat	440	Masterful Dodge	masterfuldodge	matched	1	328	Masterful Dodge	Shared_Martial_Arts
+combat	441	Caltrops Tashibishi	caltropstashibishi	matched	1	331	Caltrops Tashibishi	Shared_Martial_Arts
+combat	442	Reaper's Embrace	reapersembrace	matched	1	297	Reaper's Embrace	Single_Blade
+combat	443	Relentless Pursuit	relentlesspursuit	matched	1	298	Relentless Pursuit	Single_Blade
+combat	444	Shuriken Storm	shurikenstorm	matched	1	333	Shuriken Storm	Shared_Martial_Arts
+combat	445	Fury of the Dragon	furyofthedragon	matched	1	339	Fury of the Dragon	Shared_Martial_Arts
+combat	446	Vorpal Blade	vorpalblade	matched	1	337	Vorpal Blade	Shared_Martial_Arts
+combat	447	Devastating Strike	devastatingstrike	matched	1	338	Devastating Strike	Shared_Martial_Arts
+combat	448	Whirling Dragon Strike	whirlingdragonstrike	matched	1	334	Whirling Dragon Strike	Shared_Martial_Arts
+combat	449	Bladed Fury	bladedfury	matched	1	335	Bladed Fury	Shared_Martial_Arts
+combat	450	Shadow Strike	shadowstrike	matched	1	336	Shadow Strike	Shared_Martial_Arts
+combat	451	Righteous Fists	righteousfists	matched	1	299	Righteous Fists	Unarmed
+combat	452	Vicious Strikes	viciousstrikes	matched	1	300	Vicious Strikes	Unarmed
+combat	453	Thundering Kicks	thunderingkicks	matched	1	301	Thundering Kicks	Unarmed
+combat	454	Crashing Wave Kick	crashingwavekick	matched	1	303	Crashing Wave Kick	Unarmed
+combat	455	One Hundred Hands	onehundredhands	matched	1	306	One Hundred Hands	Unarmed
+combat	456	Inexorable Tides	inexorabletides	matched	1	315	Inexorable Tides	Shared_Martial_Arts
+combat	457	Bladed Cyclone	bladedcyclone	matched	1	312	Bladed Cyclone	Shared_Martial_Arts
+combat	458	Shuriken Throw	shurikenthrow	matched	1	321	Shuriken Throw	Shared_Martial_Arts
+combat	459	Chained Kunai	chainedkunai	matched	1	313	Chained Kunai	Shared_Martial_Arts
+combat	460	Elbow Slam	elbowslam	matched	1	304	Elbow Slam	Unarmed
+combat	461	Thunderbolt Lunge	thunderboltlunge	matched	1	325	Thunderbolt Lunge	Shared_Martial_Arts
+combat	462	Smoke Bomb Lunge	smokebomblunge	matched	1	323	Smoke Bomb Lunge	Shared_Martial_Arts
+combat	463	Laughing Zephyr	laughingzephyr	matched	1	317	Laughing Zephyr	Shared_Martial_Arts
+combat	464	Smoke Bomb	smokebomb	matched	1	322	Smoke Bomb	Shared_Martial_Arts
+combat	465	Intensity	intensity	matched	1	316	Intensity	Shared_Martial_Arts
+combat	466	Lightning Reflexes	lightningreflexes	matched	1	318	Lightning Reflexes	Shared_Martial_Arts
+combat	467	Way of the Warrior	wayofthewarrior	matched	1	326	Way of the Warrior	Shared_Martial_Arts
+combat	468	Night Warrior	nightwarrior	matched	1	327	Night Warrior	Shared_Martial_Arts
+combat	469	Form of the Master	formofthemaster	matched	1	305	Form of the Master	Unarmed
+combat	470	Parry	parry	matched	1	319	Parry	Shared_Martial_Arts
+combat	471	Fluidity	fluidity	matched	1	314	Fluidity	Shared_Martial_Arts
+combat	472	Chi Manipulation	chimanipulation	matched	1	302	Chi Manipulation	Unarmed
+combat	473	Steadfast	steadfast	matched	1	324	Steadfast	Shared_Martial_Arts
+combat	474	Relentless	relentless	matched	1	320	Relentless	Shared_Martial_Arts
+combat	475	Backhand Chop	backhandchop	matched	1	307	Backhand Chop	Unarmed
+combat	476	Rising Knee	risingknee	matched	1	329	Rising Knee	Shared_Martial_Arts
+combat	477	Dragon Kick	dragonkick	matched	1	308	Dragon Kick	Unarmed
+combat	478	Shuriken Sweep	shurikensweep	matched	1	332	Shuriken Sweep	Shared_Martial_Arts
+combat	479	Bountiful Chi Resurgence	bountifulchiresurgence	matched	1	330	Bountiful Chi Resurgence	Shared_Martial_Arts
+combat	480	Masterful Dodge	masterfuldodge	matched	1	328	Masterful Dodge	Shared_Martial_Arts
+combat	481	Caltrops Tashibishi	caltropstashibishi	matched	1	331	Caltrops Tashibishi	Shared_Martial_Arts
+combat	482	Burning Chi Fist	burningchifist	matched	1	309	Burning Chi Fist	Unarmed
+combat	483	Dragon Uppercut	dragonuppercut	matched	1	310	Dragon Uppercut	Unarmed
+combat	484	Open Palm Strike	openpalmstrike	matched	1	311	Open Palm Strike	Unarmed
+combat	485	Shuriken Storm	shurikenstorm	matched	1	333	Shuriken Storm	Shared_Martial_Arts
+combat	486	Fury of the Dragon	furyofthedragon	matched	1	339	Fury of the Dragon	Shared_Martial_Arts
+combat	487	Vorpal Blade	vorpalblade	matched	1	337	Vorpal Blade	Shared_Martial_Arts
+combat	488	Devastating Strike	devastatingstrike	matched	1	338	Devastating Strike	Shared_Martial_Arts
+combat	489	Whirling Dragon Strike	whirlingdragonstrike	matched	1	334	Whirling Dragon Strike	Shared_Martial_Arts
+combat	490	Bladed Fury	bladedfury	matched	1	335	Bladed Fury	Shared_Martial_Arts
+combat	491	Shadow Strike	shadowstrike	matched	1	336	Shadow Strike	Shared_Martial_Arts
+combat	492	Kinetic Darts	kineticdarts	matched	1	341	Kinetic Darts	Telekinesis
+combat	493	Ego Blade	egoblade	matched	1	340	Ego Blade	Telekinesis
+combat	494	Ego Weaponry	egoweaponry	matched	1	342	Ego Weaponry	Telekinesis
+combat	495	Telekinetic Strike	telekineticstrike	matched	1	343	Telekinetic Strike	Telekinesis
+combat	496	Ego Blade Astonish	egobladeastonish	matched	1	344	Ego Blade Astonish	Telekinesis
+combat	497	Ego Blade Frenzy	egobladefrenzy	matched	1	346	Ego Blade Frenzy	Telekinesis
+combat	498	Telekinesis	telekinesis	matched	1	350	Telekinesis	Telekinesis
+combat	499	Telekinetic Lariat	telekineticlariat	matched	1	352	Telekinetic Lariat	Telekinesis
+combat	500	Telekinetic Burst	telekineticburst	matched	1	351	Telekinetic Burst	Telekinesis
+combat	501	Ego Blade Dash	egobladedash	matched	1	345	Ego Blade Dash	Telekinesis
+combat	502	Id Mastery	idmastery	matched	1	347	Id Mastery	Telekinesis
+combat	503	Ego Form	egoform	matched	1	390	Ego Form	Shared_Mentalist
+combat	504	Mental Discipline	mentaldiscipline	matched	1	348	Mental Discipline	Telekinesis
+combat	505	Mental Precision	mentalprecision	matched	1	349	Mental Precision	Telekinesis
+combat	506	Manipulator	manipulator	matched	1	391	Manipulator	Shared_Mentalist
+combat	507	Telekinetic Shield	telekineticshield	matched	1	354	Telekinetic Shield	Telekinesis
+combat	508	Telekinetic Reverberation	telekineticreverberation	matched	1	353	Telekinetic Reverberation	Telekinesis
+combat	509	Ego Blade Breach	egobladebreach	matched	1	355	Ego Blade Breach	Telekinesis
+combat	510	Telekinetic Eruption	telekineticeruption	matched	1	360	Telekinetic Eruption	Telekinesis
+combat	511	Telekinetic Wave	telekineticwave	matched	1	362	Telekinetic Wave	Telekinesis
+combat	512	Telekinetic Shards	telekineticshards	matched	1	361	Telekinetic Shards	Telekinesis
+combat	513	Telekinetic Barrage	telekineticbarrage	matched	1	359	Telekinetic Barrage	Telekinesis
+combat	514	Ego Choke	egochoke	matched	1	356	Ego Choke	Telekinesis
+combat	515	Ego Hold	egohold	matched	1	357	Ego Hold	Telekinesis
+combat	516	Ego Surge	egosurge	matched	1	358	Ego Surge	Telekinesis
+combat	517	Ego Blade Annihilation	egobladeannihilation	matched	1	363	Ego Blade Annihilation	Telekinesis
+combat	518	Telekinetic Maelstrom	telekineticmaelstrom	matched	1	367	Telekinetic Maelstrom	Telekinesis
+combat	519	Telekinetic Lance	telekineticlance	matched	1	366	Telekinetic Lance	Telekinesis
+combat	520	Telekinetic Assault	telekineticassault	matched	1	365	Telekinetic Assault	Telekinesis
+combat	521	Lance Rain	lancerain	matched	1	364	Lance Rain	Telekinesis
+combat	522	Mind Link	mindlink	matched	1	395	Mind Link	Shared_Mentalist
+combat	523	Mental Impact	mentalimpact	matched	1	394	Mental Impact	Shared_Mentalist
+combat	524	Master of the Mind	masterofthemind	matched	1	393	Master of the Mind	Shared_Mentalist
+combat	525	Ego Blade Pandemonium	egobladepandemonium	matched	1	392	Ego Blade Pandemonium	Shared_Mentalist
+combat	526	Psi Lash	psilash	matched	1	368	Psi Lash	Telepathy
+combat	527	Ego Blast	egoblast	matched	1	369	Ego Blast	Telepathy
+combat	528	Mind Break	mindbreak	matched	1	370	Mind Break	Telepathy
+combat	529	Ego Placate	egoplacate	matched	1	372	Ego Placate	Telepathy
+combat	530	Ego Sleep	egosleep	matched	1	373	Ego Sleep	Telepathy
+combat	531	Empathic Healing	empathichealing	matched	1	375	Empathic Healing	Telepathy
+combat	532	Ego Sprites	egosprites	matched	1	374	Ego Sprites	Telepathy
+combat	533	Mental Leech	mentalleech	matched	1	376	Mental Leech	Telepathy
+combat	534	Shadow of Doubt	shadowofdoubt	matched	1	377	Shadow of Doubt	Telepathy
+combat	535	Congress of Selves	congressofselves	matched	1	371	Congress of Selves	Telepathy
+combat	536	Ego Form	egoform	matched	1	390	Ego Form	Shared_Mentalist
+combat	537	Manipulator	manipulator	matched	1	391	Manipulator	Shared_Mentalist
+combat	538	Telepathic Reverberation	telepathicreverberation	matched	1	378	Telepathic Reverberation	Telepathy
+combat	539	Mind Lock	mindlock	matched	1	381	Mind Lock	Telepathy
+combat	540	Psychic Vortex	psychicvortex	matched	1	384	Psychic Vortex	Telepathy
+combat	541	Mind Wipe	mindwipe	matched	1	382	Mind Wipe	Telepathy
+combat	542	Mind Control	mindcontrol	matched	1	379	Mind Control	Telepathy
+combat	543	Summon Nightmare	summonnightmare	matched	1	385	Summon Nightmare	Telepathy
+combat	544	Psionic Healing	psionichealing	matched	1	383	Psionic Healing	Telepathy
+combat	545	Mind Drain	minddrain	matched	1	380	Mind Drain	Telepathy
+combat	546	Ego Storm	egostorm	matched	1	387	Ego Storm	Telepathy
+combat	547	Mental Storm	mentalstorm	matched	1	388	Mental Storm	Telepathy
+combat	548	Collective Will	collectivewill	matched	1	386	Collective Will	Telepathy
+combat	549	Mindful Reinforcement	mindfulreinforcement	matched	1	389	Mindful Reinforcement	Telepathy
+combat	550	Mind Link	mindlink	matched	1	395	Mind Link	Shared_Mentalist
+combat	551	Mental Impact	mentalimpact	matched	1	394	Mental Impact	Shared_Mentalist
+combat	552	Master of the Mind	masterofthemind	matched	1	393	Master of the Mind	Shared_Mentalist
+combat	553	Ego Blade Pandemonium	egobladepandemonium	matched	1	392	Ego Blade Pandemonium	Shared_Mentalist
+combat	554	Bludgeon	bludgeon	matched	1	396	Bludgeon	Heavy_Weapon
+combat	555	Cleave	cleave	matched	1	397	Cleave	Heavy_Weapon
+combat	556	Brute Strike	brutestrike	matched	1	398	Brute Strike	Heavy_Weapon
+combat	557	Eruption	eruption	ambiguous	2	401|838	Eruption|Eruption	Heavy_Weapon|Questionite_Store
+combat	558	Decimate	decimate	matched	1	399	Decimate	Heavy_Weapon
+combat	559	Defiance	defiance	matched	1	400	Defiance	Shared_Brick
+combat	560	Unstoppable	unstoppable	matched	1	404	Unstoppable	Shared_Brick
+combat	561	Wrathful Blade	wrathfulblade	matched	1	405	Wrathful Blade	Heavy_Weapon
+combat	562	Enrage	enrage	matched	1	451	Enrage	Shared_Brick
+combat	563	Guard	guard	matched	1	402	Guard	Heavy_Weapon
+combat	564	Pulverizer	pulverizer	matched	1	403	Pulverizer	Shared_Brick
+combat	565	Arc of Ruin	arcofruin	matched	1	406	Arc of Ruin	Heavy_Weapon
+combat	566	Skullcrusher	skullcrusher	matched	1	408	Skullcrusher	Heavy_Weapon
+combat	567	Earth Splitter	earthsplitter	matched	1	407	Earth Splitter	Heavy_Weapon
+combat	568	Vicious Descent	viciousdescent	matched	1	409	Vicious Descent	Heavy_Weapon
+combat	569	Endorphin Rush	endorphinrush	matched	1	453	Endorphin Rush	Shared_Brick
+combat	570	Aggressor	aggressor	matched	1	452	Aggressor	Shared_Brick
+combat	571	Indestructible	indestructible	matched	1	454	Indestructible	Shared_Brick
+combat	572	Annihilate	annihilate	matched	1	410	Annihilate	Heavy_Weapon
+combat	573	Brimstone	brimstone	matched	1	411	Brimstone	Heavy_Weapon
+combat	574	Skewer	skewer	matched	1	412	Skewer	Heavy_Weapon
+combat	575	Unleashed Rage	unleashedrage	matched	1	459	Unleashed Rage	Shared_Brick
+combat	576	Power Chord	powerchord	matched	1	458	Power Chord	Shared_Brick
+combat	577	Catastrophic Pummeling	catastrophicpummeling	matched	1	455	Catastrophic Pummeling	Shared_Brick
+combat	578	Final Punch	finalpunch	matched	1	457	Final Punch	Shared_Brick
+combat	579	Earthquake	earthquake	matched	1	456	Earthquake	Shared_Brick
+combat	580	Crushing Ruin	crushingruin	matched	1	460	Crushing Ruin	Shared_Brick
+combat	581	Wield Earth	wieldearth	matched	1	413	Wield Earth	Earth
+combat	582	Stone Shot	stoneshot	matched	1	414	Stone Shot	Earth
+combat	583	Onslaught	onslaught	matched	1	418	Onslaught	Earth
+combat	584	Tremor	tremor	matched	1	421	Tremor	Earth
+combat	585	Land Slide	landslide	matched	1	417	Land Slide	Earth
+combat	586	Rock Formation	rockformation	matched	1	419	Rock Formation	Earth
+combat	587	Earth Form	earthform	matched	1	416	Earth Form	Earth
+combat	588	Defiance	defiance	matched	1	400	Defiance	Shared_Brick
+combat	589	Unstoppable	unstoppable	matched	1	404	Unstoppable	Shared_Brick
+combat	590	Enrage	enrage	matched	1	451	Enrage	Shared_Brick
+combat	591	Stone Shroud	stoneshroud	matched	1	420	Stone Shroud	Earth
+combat	592	Destructive	destructive	matched	1	415	Destructive	Earth
+combat	593	Pulverizer	pulverizer	matched	1	403	Pulverizer	Shared_Brick
+combat	594	Upheaval	upheaval	matched	1	425	Upheaval	Earth
+combat	595	Quicksand	quicksand	matched	1	423	Quicksand	Earth
+combat	596	Cave In	cavein	matched	1	422	Cave In	Earth
+combat	597	Seismic Smash	seismicsmash	matched	1	424	Seismic Smash	Earth
+combat	598	Endorphin Rush	endorphinrush	matched	1	453	Endorphin Rush	Shared_Brick
+combat	599	Aggressor	aggressor	matched	1	452	Aggressor	Shared_Brick
+combat	600	Indestructible	indestructible	matched	1	454	Indestructible	Shared_Brick
+combat	601	Fissure	fissure	matched	1	427	Fissure	Earth
+combat	602	Fault Line	faultline	matched	1	426	Fault Line	Earth
+combat	603	Unleashed Rage	unleashedrage	matched	1	459	Unleashed Rage	Shared_Brick
+combat	604	Power Chord	powerchord	matched	1	458	Power Chord	Shared_Brick
+combat	605	Catastrophic Pummeling	catastrophicpummeling	matched	1	455	Catastrophic Pummeling	Shared_Brick
+combat	606	Final Punch	finalpunch	matched	1	457	Final Punch	Shared_Brick
+combat	607	Earthquake	earthquake	matched	1	456	Earthquake	Shared_Brick
+combat	608	Crushing Ruin	crushingruin	matched	1	460	Crushing Ruin	Shared_Brick
+combat	609	Clobber	clobber	matched	1	428	Clobber	Might
+combat	610	Beatdown	beatdown	matched	1	429	Beatdown	Might
+combat	611	Defensive Combo	defensivecombo	matched	1	430	Defensive Combo	Might
+combat	612	Mighty Kick	mightykick	matched	1	437	Mighty Kick	Might
+combat	613	Head Butt	headbutt	matched	1	431	Head Butt	Might
+combat	614	Roomsweeper	roomsweeper	matched	1	440	Roomsweeper	Might
+combat	615	Heel Smash	heelsmash	matched	1	432	Heel Smash	Might
+combat	616	Hurl	hurl	matched	1	433	Hurl	Might
+combat	617	Iron Chain	ironchain	matched	1	434	Iron Chain	Might
+combat	618	Iron Lariat	ironlariat	matched	1	436	Iron Lariat	Might
+combat	619	Iron Cyclone	ironcyclone	matched	1	435	Iron Cyclone	Might
+combat	620	Mighty Leap	mightyleap	matched	1	438	Mighty Leap	Might
+combat	621	Defiance	defiance	matched	1	400	Defiance	Shared_Brick
+combat	622	Unstoppable	unstoppable	matched	1	404	Unstoppable	Shared_Brick
+combat	623	Enrage	enrage	matched	1	451	Enrage	Shared_Brick
+combat	624	Retaliation	retaliation	matched	1	439	Retaliation	Might
+combat	625	Pulverizer	pulverizer	matched	1	403	Pulverizer	Shared_Brick
+combat	626	Uppercut	uppercut	matched	1	446	Uppercut	Might
+combat	627	Demolish	demolish	matched	1	442	Demolish	Might
+combat	628	Thunderclap	thunderclap	matched	1	445	Thunderclap	Might
+combat	629	Hyper Voice	hypervoice	matched	1	443	Hyper Voice	Might
+combat	630	Impressive Physique	impressivephysique	matched	1	444	Impressive Physique	Might
+combat	631	Endorphin Rush	endorphinrush	matched	1	453	Endorphin Rush	Shared_Brick
+combat	632	Aggressor	aggressor	matched	1	452	Aggressor	Shared_Brick
+combat	633	Indestructible	indestructible	matched	1	454	Indestructible	Shared_Brick
+combat	634	Call to Battle	calltobattle	matched	1	441	Call To Battle	Might
+combat	635	Haymaker	haymaker	matched	1	448	Haymaker	Might
+combat	636	Havoc Stomp	havocstomp	matched	1	447	Havoc Stomp	Might
+combat	637	Shockwave	shockwave	matched	1	450	Shockwave	Might
+combat	638	Nuclear Shockwave	nuclearshockwave	matched	1	449	Nuclear Shockwave	Might
+combat	639	Unleashed Rage	unleashedrage	matched	1	459	Unleashed Rage	Shared_Brick
+combat	640	Power Chord	powerchord	matched	1	458	Power Chord	Shared_Brick
+combat	641	Catastrophic Pummeling	catastrophicpummeling	matched	1	455	Catastrophic Pummeling	Shared_Brick
+combat	642	Final Punch	finalpunch	matched	1	457	Final Punch	Shared_Brick
+combat	643	Earthquake	earthquake	matched	1	456	Earthquake	Shared_Brick
+combat	644	Crushing Ruin	crushingruin	matched	1	460	Crushing Ruin	Shared_Brick
+combat	645	Radiance	radiance	matched	1	461	Radiance	Celestial
+combat	646	Rebuke	rebuke	matched	1	462	Rebuke	Celestial
+combat	647	Celestial Conduit	celestialconduit	matched	1	463	Celestial Conduit	Celestial
+combat	648	Vengeance	vengeance	matched	1	469	Vengeance	Celestial
+combat	649	Conviction	conviction	matched	1	464	Conviction	Celestial
+combat	650	Iniquity	iniquity	matched	1	467	Iniquity	Celestial
+combat	651	Imbue	imbue	matched	1	466	Imbue	Celestial
+combat	652	Illumination	illumination	matched	1	465	Illumination	Celestial
+combat	653	Seraphim	seraphim	matched	1	468	Seraphim	Celestial
+combat	654	Compassion	compassion	matched	1	535	Compassion	Shared_Sorcery
+combat	655	Expulse	expulse	matched	1	470	Expulse	Celestial
+combat	656	Holy Water	holywater	matched	1	474	Holy Water	Celestial
+combat	657	Redemption	redemption	matched	1	472	Redemption	Celestial
+combat	658	Palliate	palliate	matched	1	471	Palliate	Celestial
+combat	659	Celestial Cleansing	celestialcleansing	matched	1	473	Celestial Cleansing	Celestial
+combat	660	Ascension	ascension	matched	1	539	Ascension	Celestial
+combat	661	Planar Fracture	planarfracture	matched	1	545	Planar Fracture	Shared_Sorcery
+combat	662	Endbringer's Grasp	endbringersgrasp	matched	1	544	Endbringer's Grasp	Shared_Sorcery
+combat	663	Crashing Incantation	crashingincantation	matched	1	543	Crashing Incantation	Shared_Sorcery
+combat	664	Feral Rage	feralrage	matched	1	597	Feral Rage	Shared_Supernatural
+combat	665	Corrosive Pit	corrosivepit	matched	1	596	Corrosive Pit	Shared_Supernatural
+combat	666	Transcendence	transcendence	matched	1	546	Transcendence	Shared_Sorcery
+combat	667	Shadow Bolt	shadowbolt	matched	1	475	Shadow Bolt	Darkness
+combat	668	Shadow Blast	shadowblast	matched	1	476	Shadow Blast	Darkness
+combat	669	Dark Tether	darktether	matched	1	477	Dark Tether	Darkness
+combat	670	Shadow Embrace	shadowembrace	matched	1	482	Shadow Embrace	Darkness
+combat	671	Void Shift	voidshift	matched	1	487	Void Shift	Darkness
+combat	672	Grasping Shadows	graspingshadows	matched	1	480	Grasping Shadows	Darkness
+combat	673	Shadow Shroud	shadowshroud	matched	1	485	Shadow Shroud	Darkness
+combat	674	Shadow Form	shadowform	matched	1	483	Shadow Form	Darkness
+combat	675	Harbinger	harbinger	matched	1	481	Harbinger	Darkness
+combat	676	Shadow Manifestation	shadowmanifestation	matched	1	484	Shadow Manifestation	Darkness
+combat	677	Fear Consumption	fearconsumption	matched	1	479	Fear Consumption	Darkness
+combat	678	Compassion	compassion	matched	1	535	Compassion	Shared_Sorcery
+combat	679	Ebon Void	ebonvoid	matched	1	478	Ebon Void	Darkness
+combat	680	Spirit Reverberation	spiritreverberation	matched	1	486	Spirit Reverberation	Darkness
+combat	681	Lifedrain	lifedrain	matched	1	491	Lifedrain	Darkness
+combat	682	Dimensional Collapse	dimensionalcollapse	matched	1	490	Dimensional Collapse	Darkness
+combat	683	Shadow Scheme	shadowscheme	matched	1	492	Shadow Scheme	Darkness
+combat	684	Soul Vortex	soulvortex	ambiguous	2	493|913	Soul Vortex|Soul Vortex	Darkness|Other
+combat	685	Veil of Darkness	veilofdarkness	matched	1	494	Veil of Darkness	Darkness
+combat	686	Void Horror	voidhorror	matched	1	495	Void Horror	Darkness
+combat	687	Dark Pact	darkpact	matched	1	488	Dark Pact	Darkness
+combat	688	Dark Transfusion	darktransfusion	matched	1	489	Dark Transfusion	Darkness
+combat	689	Ebon Ruin	ebonruin	matched	1	497	Ebon Ruin	Darkness
+combat	690	Ebon Rift	ebonrift	matched	1	496	Ebon Rift	Darkness
+combat	691	Shadow Eruption	shadoweruption	matched	1	500	Shadow Eruption	Darkness
+combat	692	Shade Storm	shadestorm	matched	1	499	Shade Storm	Darkness
+combat	693	Madness Aura	madnessaura	matched	1	498	Madness Aura	Darkness
+combat	694	Summon Shadows	summonshadows	matched	1	501	Summon Shadows	Darkness
+combat	695	Planar Fracture	planarfracture	matched	1	545	Planar Fracture	Shared_Sorcery
+combat	696	Endbringer's Grasp	endbringersgrasp	matched	1	544	Endbringer's Grasp	Shared_Sorcery
+combat	697	Crashing Incantation	crashingincantation	matched	1	543	Crashing Incantation	Shared_Sorcery
+combat	698	Feral Rage	feralrage	matched	1	597	Feral Rage	Shared_Supernatural
+combat	699	Corrosive Pit	corrosivepit	matched	1	596	Corrosive Pit	Shared_Supernatural
+combat	700	Transcendence	transcendence	matched	1	546	Transcendence	Shared_Sorcery
+combat	701	Eldritch Bolts	eldritchbolts	matched	1	529	Eldritch Bolts	Sorcery
+combat	702	Eldritch Blast	eldritchblast	matched	1	530	Eldritch Blast	Sorcery
+combat	703	Sigils of Arcane Runes	sigilsofarcanerunes	matched	1	508	Sigils of Arcane Runes	Sorcery
+combat	704	Sigils of Destruction	sigilsofdestruction	matched	1	509	Sigils of Destruction	Sorcery
+combat	705	Binding of Aratron	bindingofaratron	matched	1	531	Binding of Aratron	Sorcery
+combat	706	Tyrannon's Familiar	tyrannonsfamiliar	matched	1	513	Tyrannon's Familiar	Sorcery
+combat	707	Pillar of Poz	pillarofpoz	matched	1	533	Pillar of Poz	Sorcery
+combat	708	Sigils of Radiant Sanctuary	sigilsofradiantsanctuary	matched	1	511	Sigils of Radiant Sanctuary	Sorcery
+combat	709	Sigils of Ebon Weakness	sigilsofebonweakness	matched	1	510	Sigils of Ebon Weakness	Sorcery
+combat	710	Aura of Arcane Clarity	auraofarcaneclarity	matched	1	502	Aura of Arcane Clarity	Sorcery
+combat	711	Enchanter	enchanter	matched	1	507	Enchanter	Sorcery
+combat	712	Aura of Ebon Destruction	auraofebondestruction	matched	1	503	Aura of Ebon Destruction	Sorcery
+combat	713	Aura of Primal Majesty	auraofprimalmajesty	matched	1	504	Aura of Primal Majesty	Sorcery
+combat	714	Aura of Radiant Protection	auraofradiantprotection	matched	1	505	Aura of Radiant Protection	Sorcery
+combat	715	Spellcaster	spellcaster	matched	1	512	Spellcaster	Sorcery
+combat	716	Compassion	compassion	matched	1	535	Compassion	Shared_Sorcery
+combat	717	Eldritch Shield	eldritchshield	matched	1	532	Eldritch Shield	Sorcery
+combat	718	Conjuring	conjuring	matched	1	506	Conjuring	Sorcery
+combat	719	Invocation of Storm Calling	invocationofstormcalling	matched	1	521	Invocation of Storm Calling	Sorcery
+combat	720	Skarn's Bane	skarnsbane	matched	1	537	Skarn's Bane	Sorcery
+combat	721	Star Barrage	starbarrage	matched	1	527	Star Barrage	Sorcery
+combat	722	Banish	banish	matched	1	515	Banish	Sorcery
+combat	723	Magician's Dust	magiciansdust	matched	1	536	Magician's Dust	Sorcery
+combat	724	March of the Dead	marchofthedead	matched	1	522	March of the Dead	Sorcery
+combat	725	Warlock's Blades	warlocksblades	matched	1	538	Warlock's Blades	Sorcery
+combat	726	Ritual of Ebon Summoning	ritualofebonsummoning	matched	1	524	Ritual of Ebon Summoning	Sorcery
+combat	727	Ritual of Radiant Summoning	ritualofradiantsummoning	matched	1	526	Ritual of Radiant Summoning	Sorcery
+combat	728	Ritual of Primal Summoning	ritualofprimalsummoning	matched	1	525	Ritual of Primal Summoning	Sorcery
+combat	729	Ritual of Arcane Summoning	ritualofarcanesummoning	matched	1	523	Ritual of Arcane Summoning	Sorcery
+combat	730	Arcane Vitality	arcanevitality	matched	1	514	Arcane Vitality	Sorcery
+combat	731	Divine Renewal	divinerenewal	matched	1	520	Divine Renewal	Sorcery
+combat	732	Circle of Arcane Power	circleofarcanepower	matched	1	516	Circle of Arcane Power	Sorcery
+combat	733	Circle of Ebon Wrath	circleofebonwrath	matched	1	517	Circle of Ebon Wrath	Sorcery
+combat	734	Circle of Primal Dominion	circleofprimaldominion	matched	1	518	Circle of Primal Dominion	Sorcery
+combat	735	Circle of Radiant Glory	circleofradiantglory	matched	1	519	Circle of Radiant Glory	Sorcery
+combat	736	Soul Beam	soulbeam	matched	1	528	Soul Beam	Sorcery
+combat	737	Urthona's Charm	urthonascharm	matched	1	541	Urthona's Charm	Sorcery
+combat	738	Vala's Light	valaslight	matched	1	542	Vala's Light	Sorcery
+combat	739	Hex of Suffering	hexofsuffering	matched	1	540	Hex of Suffering	Sorcery
+combat	740	Planar Fracture	planarfracture	matched	1	545	Planar Fracture	Shared_Sorcery
+combat	741	Endbringer's Grasp	endbringersgrasp	matched	1	544	Endbringer's Grasp	Shared_Sorcery
+combat	742	Crashing Incantation	crashingincantation	matched	1	543	Crashing Incantation	Shared_Sorcery
+combat	743	Feral Rage	feralrage	matched	1	597	Feral Rage	Shared_Supernatural
+combat	744	Corrosive Pit	corrosivepit	matched	1	596	Corrosive Pit	Shared_Supernatural
+combat	745	Transcendence	transcendence	matched	1	546	Transcendence	Shared_Sorcery
+combat	746	Bestial Fury	bestialfury	matched	1	589	Bestial Fury	Bestial_Supernatural
+combat	747	Shred	shred	matched	1	548	Shred	Bestial_Supernatural
+combat	748	Barbed Chain	barbedchain	matched	1	547	Barbed Chain	Bestial_Supernatural
+combat	749	Bite	bite	matched	1	552	Bite	Bestial_Supernatural
+combat	750	Feint	feint	matched	1	553	Feint	Bestial_Supernatural
+combat	751	Thrash	thrash	matched	1	564	Thrash	Bestial_Supernatural
+combat	752	Frenzy	frenzy	matched	1	554	Frenzy	Bestial_Supernatural
+combat	753	Venomous Breath	venomousbreath	matched	1	593	Venomous Breath	Shared_Supernatural
+combat	754	Barbed Lariat	barbedlariat	matched	1	551	Barbed Lariat	Bestial_Supernatural
+combat	755	Pounce	pounce	matched	1	556	Pounce	Bestial_Supernatural
+combat	756	Regeneration	regeneration	matched	1	591	Regeneration	Shared_Supernatural
+combat	757	Pestilence	pestilence	matched	1	590	Pestilence	Shared_Supernatural
+combat	758	Aspect of the Bestial	aspectofthebestial	matched	1	550	Aspect of the Bestial	Bestial_Supernatural
+combat	759	Compassion	compassion	matched	1	535	Compassion	Shared_Sorcery
+combat	760	Antagonize	antagonize	matched	1	549	Antagonize	Bestial_Supernatural
+combat	761	Wild Thing	wildthing	matched	1	557	Wild Thing	Bestial_Supernatural
+combat	762	Supernatural Power	supernaturalpower	matched	1	592	Supernatural Power	Shared_Supernatural
+combat	763	Lacerating Cyclone	laceratingcyclone	matched	1	555	Lacerating Cyclone	Bestial_Supernatural
+combat	764	Tear Down	teardown	matched	1	563	Tear Down	Bestial_Supernatural
+combat	765	Cower	cower	matched	1	559	Cower	Bestial_Supernatural
+combat	766	Soul Mesmerism	soulmesmerism	matched	1	595	Soul Mesmerism	Shared_Supernatural
+combat	767	Command Animals	commandanimals	matched	1	558	Command Animals	Bestial_Supernatural
+combat	768	Moonstruck	moonstruck	matched	1	562	Moonstruck	Bestial_Supernatural
+combat	769	Last Stand	laststand	matched	1	561	Last Stand	Bestial_Supernatural
+combat	770	Violent Roar	violentroar	matched	1	565	Violent Roar	Bestial_Supernatural
+combat	771	Resurgence	resurgence	matched	1	594	Resurgence	Shared_Supernatural
+combat	772	Howl	howl	matched	1	560	Howl	Bestial_Supernatural
+combat	773	Massacre	massacre	matched	1	568	Massacre	Bestial_Supernatural
+combat	774	Eviscerate	eviscerate	matched	1	567	Eviscerate	Bestial_Supernatural
+combat	775	Brutal Charge	brutalcharge	matched	1	566	Brutal Charge	Bestial_Supernatural
+combat	776	Planar Fracture	planarfracture	matched	1	545	Planar Fracture	Shared_Sorcery
+combat	777	Endbringer's Grasp	endbringersgrasp	matched	1	544	Endbringer's Grasp	Shared_Sorcery
+combat	778	Crashing Incantation	crashingincantation	matched	1	543	Crashing Incantation	Shared_Sorcery
+combat	779	Feral Rage	feralrage	matched	1	597	Feral Rage	Shared_Supernatural
+combat	780	Corrosive Pit	corrosivepit	matched	1	596	Corrosive Pit	Shared_Supernatural
+combat	781	Transcendence	transcendence	matched	1	546	Transcendence	Shared_Sorcery
+combat	782	Infernal Bolts	infernalbolts	matched	1	569	Infernal Bolts	Infernal_Supernatural
+combat	783	Lash	lash	matched	1	571	Lash	Infernal_Supernatural
+combat	784	Infernal Blast	infernalblast	matched	1	570	Infernal Blast	Infernal_Supernatural
+combat	785	Devour Essence	devouressence	matched	1	574	Devour Essence	Infernal_Supernatural
+combat	786	Venomous Breath	venomousbreath	matched	1	593	Venomous Breath	Shared_Supernatural
+combat	787	Vile Lariat	vilelariat	matched	1	578	Vile Lariat	Infernal_Supernatural
+combat	788	Vicious Cyclone	viciouscyclone	matched	1	577	Vicious Cyclone	Infernal_Supernatural
+combat	789	Condemn	condemn	matched	1	573	Condemn	Infernal_Supernatural
+combat	790	Life Essence	lifeessence	matched	1	575	Life Essence	Infernal_Supernatural
+combat	791	Regeneration	regeneration	matched	1	591	Regeneration	Shared_Supernatural
+combat	792	Pestilence	pestilence	matched	1	590	Pestilence	Shared_Supernatural
+combat	793	Aspect of the Infernal	aspectoftheinfernal	matched	1	572	Aspect of the Infernal	Infernal_Supernatural
+combat	794	Compassion	compassion	matched	1	535	Compassion	Shared_Sorcery
+combat	795	Voodoo Doll	voodoodoll	matched	1	579	Voodoo Doll	Infernal_Supernatural
+combat	796	Mephitic	mephitic	matched	1	576	Mephitic	Infernal_Supernatural
+combat	797	Supernatural Power	supernaturalpower	matched	1	592	Supernatural Power	Shared_Supernatural
+combat	798	Epidemic	epidemic	matched	1	584	Epidemic	Infernal_Supernatural
+combat	799	Crippling Coils	cripplingcoils	matched	1	580	Crippling Coils	Infernal_Supernatural
+combat	800	Locust Swarm	locustswarm	matched	1	585	Locust Swarm	Infernal_Supernatural
+combat	801	Entrancing	entrancing	matched	1	583	Entrancing	Infernal_Supernatural
+combat	802	Curse	curse	matched	1	581	Curse	Infernal_Supernatural
+combat	803	Soul Mesmerism	soulmesmerism	matched	1	595	Soul Mesmerism	Shared_Supernatural
+combat	804	Death's Embrace	deathsembrace	matched	1	582	Death's Embrace	Infernal_Supernatural
+combat	805	Resurgence	resurgence	matched	1	594	Resurgence	Shared_Supernatural
+combat	806	Will-O'-The-Wisp	willothewisp	matched	1	586	Will-o'-the-Wisp	Infernal_Supernatural
+combat	807	Defile	defile	matched	1	587	Defile	Infernal_Supernatural
+combat	808	Rebirth	rebirth	matched	1	588	Rebirth	Infernal_Supernatural
+combat	809	Planar Fracture	planarfracture	matched	1	545	Planar Fracture	Shared_Sorcery
+combat	810	Endbringer's Grasp	endbringersgrasp	matched	1	544	Endbringer's Grasp	Shared_Sorcery
+combat	811	Crashing Incantation	crashingincantation	matched	1	543	Crashing Incantation	Shared_Sorcery
+combat	812	Feral Rage	feralrage	matched	1	597	Feral Rage	Shared_Supernatural
+combat	813	Corrosive Pit	corrosivepit	matched	1	596	Corrosive Pit	Shared_Supernatural
+combat	814	Transcendence	transcendence	matched	1	546	Transcendence	Shared_Sorcery
+travel	1	Flight	flight	matched	1	610	Flight	Flight
+travel	2	Superjump	superjump	matched	1	678	Superjump	Superjump
+travel	3	Superspeed	superspeed	matched	1	662	Superspeed	Superspeed
+travel	4	Acrobatics	acrobatics	matched	1	680	Acrobatics	Athletics
+travel	5	Mach Speed	machspeed	matched	1	655	Mach Speed	Superspeed
+travel	6	Athletics	athletics	matched	1	681	Athletics	Athletics
+travel	7	Teleportation	teleportation	matched	1	719	Teleportation	Teleportation
+travel	8	Ice Slide	iceslide	matched	1	614	Ice Slide	Flight
+travel	9	Swinging	swinging	matched	1	704	Swinging	Swinging
+travel	10	Tunneling	tunneling	matched	1	679	Tunneling	Superjump
+travel	11	Jet Boots	jetboots	matched	1	615	Jet Boots	Flight
+travel	12	Rocket Jump	rocketjump	matched	1	676	Rocket Jump	Superjump
+travel	13	Fire Flight	fireflight	matched	1	608	Fire Flight	Flight
+travel	14	Hover Disk	hoverdisk	matched	1	612	Hover Disk	Flight
+travel	15	Earth Flight	earthflight	matched	1	605	Earth Flight	Flight
+travel	16	Lightspeed	lightspeed	matched	1	653	Light Speed	Superspeed
+travel	17	Rainbow Flight	rainbowflight	ambiguous	2	624|890	Rainbow Flight|Rainbow Flight	Flight|Travel_Power
+travel	18	Rainbow Flight: Cloud	rainbowflightcloud	matched	1	625	Rainbow Flight: Cloud	Flight
+travel	19	Phoenix Flight	phoenixflight	matched	1	621	Phoenix Flight	Flight
+travel	20	Tornado Flight	tornadoflight	matched	1	634	Tornado Flight	Flight
+travel	21	Magic Carpet	magiccarpet	matched	1	617	Magic Carpet	Flight
+travel	22	Jet Pack	jetpack	matched	1	616	Jet Pack	Flight
+travel	23	Heroic Flight	heroicflight	matched	1	611	Heroic Flight	Flight
+travel	24	Power Flight	powerflight	matched	1	622	Power Flight	Flight
+travel	25	Scarab Tunneling	scarabtunneling	matched	1	677	Scarab Tunneling	Superjump
+travel	26	Blazing Speed	blazingspeed	ambiguous	2	644|886	Blazing Speed|Blazing Speed	Superspeed|Travel_Power
+travel	27	Lightning Flash	lightningflash	matched	1	713	Lightning Flash	Teleportation
+travel	28	Electric Arc	electricarc	matched	1	710	Electric Arc	Teleportation
+travel	29	Snowball Roll	snowballroll	matched	1	661	Snowball Roll	Superspeed
+travel	30	Distortion Superspeed	distortionsuperspeed	matched	1	647	Distortion Superspeed	Superspeed
+travel	31	Displacement Superspeed	displacementsuperspeed	matched	1	646	Displacement Superspeed	Superspeed
+travel	32	Distortion Acrobatics	distortionacrobatics	matched	1	686	Distortion Acrobatics	Athletics
+travel	33	Displacement Acrobatics	displacementacrobatics	matched	1	685	Displacement Acrobatics	Athletics
+travel	34	Retractable Wings	retractablewings	matched	1	627	Retractable Wings	Flight
+travel	35	Electro Flight	electroflight	matched	1	607	Electro Flight	Flight
+travel	36	Hyper Ball	hyperball	matched	1	652	Hyper Ball	Superspeed
+travel	37	Mystic Flight	mysticflight	matched	1	619	Mystic Flight	Flight
+travel	38	Bat Flight	batflight	matched	1	600	Bat Flight	Flight
+travel	39	Scarab Flight	scarabflight	matched	1	628	Scarab Flight	Flight
+travel	40	Ooze Tunneling	oozetunneling	matched	1	674	Ooze Tunneling	Superjump
+travel	41	Inky Ooze Tunneling	inkyoozetunneling	matched	1	672	Inky Ooze Tunneling	Superjump
+travel	42	Metallic Ooze Tunneling	metallicoozetunneling	matched	1	673	Metallic Ooze Tunneling	Superjump
+travel	43	Chain Swinging	chainswinging	matched	1	700	Chain Swinging	Swinging
+travel	44	Energy Swinging	energyswinging	matched	1	701	Energy Swinging	Swinging
+travel	45	Vine Swinging	vineswinging	matched	1	705	Vine Swinging	Swinging
+travel	46	Storm Rider	stormrider	matched	1	633	Storm Rider	Flight
+travel	47	R.A.D. Sphere	radsphere	matched	1	658	R.A.D. Sphere	Superspeed
+travel	48	Aethyric Incantation	aethyricincantation	matched	1	598	Aethyric Incantation	Flight
+travel	49	Energy Slide	energyslide	matched	1	688	Energy Slide	Athletics
+travel	50	Flag Speed	flagspeed	matched	1	650	Flag Speed	Superspeed
+travel	51	Millennial Flight	millennialflight	unmatched	0			
+travel	52	Ninja Vanish	ninjavanish	matched	1	716	Ninja Vanish	Teleportation
+travel	53	Cape Glide	capeglide	matched	1	604	Cape Glide	Flight
+travel	54	Shadow Wings	shadowwings	matched	1	631	Shadow Wings	Flight
+travel	55	Shadow Skull Flight	shadowskullflight	matched	1	630	Shadow Skull Flight	Flight
+travel	56	Ninja Leaves	ninjaleaves	matched	1	715	Ninja Leaves	Teleportation
+travel	57	Flag Flight	flagflight	matched	1	609	Flag Flight	Flight
+travel	58	Canadian Flag Flight	canadianflagflight	matched	1	603	Canadian Flag Flight	Flight
+travel	59	Hoverboard	hoverboard	matched	1	613	Hoverboard	Flight

@@ -384,13 +384,13 @@ async function loadLegacyEngine() {
   }
 
   legacyEnginePromise = Promise.all([
-    import("../../work_data/HeroCreator/js/hc-data.js?raw"),
-    import("../../work_data/HeroBuilder/hc-data.js?raw"),
-    import("../../work_data/HeroCreator/js/powerhouse-version.js?raw"),
-    import("../../work_data/powerhouse-master/powerhouse-data.js?raw"),
-    import("../../work_data/powerhouse-master/powerhouse.js?raw"),
-    import("../../work_data/matching/powerhouse_to_retcon_power_name_match.tsv?raw"),
-    import("../../work_data/matching/powerhouse_to_retcon_advantage_name_match.tsv?raw"),
+    import("../legacy-import-data/hc-data-v37.js?raw"),
+    import("../legacy-import-data/hc-data-v38.js?raw"),
+    import("../legacy-import-data/powerhouse-version.js?raw"),
+    import("../legacy-import-data/powerhouse-data.js?raw"),
+    import("../legacy-import-data/powerhouse.js?raw"),
+    import("../legacy-import-data/powerhouse_to_retcon_power_name_match.tsv?raw"),
+    import("../legacy-import-data/powerhouse_to_retcon_advantage_name_match.tsv?raw"),
   ]).then(([
     hcDataV37Module,
     hcDataV38Module,
