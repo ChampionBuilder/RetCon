@@ -297,7 +297,7 @@ combat	295	Sonic Beam	sonicbeam	matched	1	183	Sonic Beam	Gadgeteering
 combat	296	Pulse Beam Rifle	pulsebeamrifle	matched	1	157	Pulse Beam Rifle	Gadgeteering
 combat	297	Orbital Cannon	orbitalcannon	matched	1	180	Orbital Cannon	Gadgeteering
 combat	298	Strafing Run	strafingrun	matched	1	184	Strafing Run	Gadgeteering
-combat	299	Detonator Switch	detonatorswitch	unmatched	0			
+combat	299	Detonator Switch	detonatorswitch	matched	1	943	Detonator Switch	Gadgeteering
 combat	300	Plasma Cannon	plasmacannon	matched	1	181	Plasma Cannon	Gadgeteering
 combat	301	Resurrection Serum	resurrectionserum	matched	1	182	Resurrection Serum	Gadgeteering
 combat	302	Implosion Engine	implosionengine	matched	1	260	Implosion Engine	Shared_Technology

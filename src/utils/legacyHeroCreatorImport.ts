@@ -383,33 +383,19 @@ async function loadLegacyEngine() {
     return legacyEnginePromise;
   }
 
-  legacyEnginePromise = Promise.all([
-    import("../legacy-import-data/hc-data-v37.js?raw"),
-    import("../legacy-import-data/hc-data-v38.js?raw"),
-    import("../legacy-import-data/powerhouse-version.js?raw"),
-    import("../legacy-import-data/powerhouse-data.js?raw"),
-    import("../legacy-import-data/powerhouse.js?raw"),
-    import("../legacy-import-data/powerhouse_to_retcon_power_name_match.tsv?raw"),
-    import("../legacy-import-data/powerhouse_to_retcon_advantage_name_match.tsv?raw"),
-  ]).then(([
-    hcDataV37Module,
-    hcDataV38Module,
-    versionModule,
-    powerhouseDataModule,
-    powerhouseModule,
-    powerMatchTsvModule,
-    advantageMatchTsvModule,
-  ]) => {
+  legacyEnginePromise = import("../legacy-import-data/index").then(({
+    legacyImportData,
+  }) => {
     const hcDataV37Factory = new Function(
-      `${hcDataV37Module.default}\n; return HCData;`,
+      `${legacyImportData.hcDataV37Raw}\n; return HCData;`,
     );
     const hcDataV38Factory = new Function(
-      `${hcDataV38Module.default}\n; return HCData;`,
+      `${legacyImportData.hcDataV38Raw}\n; return HCData;`,
     );
     const legacyDataV37 = hcDataV37Factory() as LegacyHCData;
     const legacyDataV38 = hcDataV38Factory() as LegacyHCData;
     const powerhouseDataFactory = new Function(
-      `${powerhouseDataModule.default}
+      `${legacyImportData.powerhouseDataRaw}
         ; return {
           dataPower,
           dataTravelPower,
@@ -459,7 +445,7 @@ async function loadLegacyEngine() {
       "dataArchetype",
       "dataPowerIdFromCode",
       "debug",
-      `${versionModule.default}\n; return getDataVersionUpdate();`,
+      `${legacyImportData.powerhouseVersionRaw}\n; return getDataVersionUpdate();`,
     );
     const dataVersionUpdate = versionFactory(
       numToUrlCode,
@@ -470,7 +456,7 @@ async function loadLegacyEngine() {
       false,
     ) as LegacyVersionUpdate[];
     const parseBalakSource = getFunctionSource(
-      powerhouseModule.default,
+      legacyImportData.powerhouseRaw,
       "function parseBalakUrlParams(url)",
     );
     const parseBalakUrlParams = parseBalakSource
@@ -510,8 +496,10 @@ async function loadLegacyEngine() {
     >();
     const powerIdsBySourceTypeAndNormalizedName = new Map<string, number[]>();
     const advantageIdsByNormalizedName = new Map<string, number[]>();
-    const powerMatchRows = parseTsv(powerMatchTsvModule.default);
-    const advantageMatchRows = parseTsv(advantageMatchTsvModule.default);
+    const powerMatchRows = parseTsv(legacyImportData.powerNameMatchTsvRaw);
+    const advantageMatchRows = parseTsv(
+      legacyImportData.advantageNameMatchTsvRaw,
+    );
 
     powerMatchRows.forEach((row) => {
       const sourceType = row.source_type;
