@@ -9,9 +9,7 @@ import type { Power } from "../types/powers";
 import { publicAssetUrl } from "../utils/publicAssetUrl";
 
 function fetchJson<T>(url: string) {
-  return fetch(url, { cache: "no-store" }).then(
-    (response) => response.json() as Promise<T>,
-  );
+  return fetch(url).then((response) => response.json() as Promise<T>);
 }
 
 export function useBuilderData() {

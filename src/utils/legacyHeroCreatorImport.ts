@@ -23,7 +23,7 @@ type LegacyVersionUpdate = {
 
 type LegacyPowerEntry = {
   id: number;
-  name: string;
+  name: string | null;
   framework: number;
   power: number;
   tier?: number | null;
@@ -137,6 +137,18 @@ type LegacyPowerIdConversion = {
   devicePowerIdByLegacyId: Record<number, number>;
 };
 
+type LegacyMatchMapsData = {
+  advantageByName: Record<string, number[]>;
+  powerByLegacyId: Record<
+    string,
+    {
+      sourceNormalizedName: string;
+      targetIds: number[];
+    }
+  >;
+  powerByName: Record<string, number[]>;
+};
+
 type LegacyPowerSourceType = "combat" | "travel" | "device";
 
 const defaultImportedBuildName = "Imported HeroCreator Build";
@@ -236,47 +248,6 @@ function urlCodeToNum4(code: string) {
   );
 }
 
-function getFunctionSource(script: string, signature: string) {
-  const signatureIndex = script.indexOf(signature);
-
-  if (signatureIndex < 0) {
-    return null;
-  }
-
-  const blockStart = script.indexOf("{", signatureIndex);
-
-  if (blockStart < 0) {
-    return null;
-  }
-
-  let blockDepth = 0;
-  let blockEnd = -1;
-
-  for (let index = blockStart; index < script.length; index += 1) {
-    const character = script[index];
-
-    if (character === "{") {
-      blockDepth += 1;
-      continue;
-    }
-
-    if (character === "}") {
-      blockDepth -= 1;
-
-      if (blockDepth === 0) {
-        blockEnd = index + 1;
-        break;
-      }
-    }
-  }
-
-  if (blockEnd < 0) {
-    return null;
-  }
-
-  return script.slice(signatureIndex, blockEnd);
-}
-
 function buildPowerCodeLookup(legacyData: LegacyHCData) {
   const dataPowerIdFromCode: Record<string, number> = {};
 
@@ -294,42 +265,6 @@ function buildPowerCodeLookup(legacyData: LegacyHCData) {
   });
 
   return dataPowerIdFromCode;
-}
-
-function parseTsv(raw: string) {
-  const normalizedLines = raw
-    .replace(/\r\n/g, "\n")
-    .replace(/\r/g, "\n")
-    .split("\n")
-    .filter((line) => line.trim().length > 0);
-
-  if (normalizedLines.length === 0) {
-    return [];
-  }
-
-  const headers = normalizedLines[0].split("\t");
-
-  return normalizedLines.slice(1).map((line) => {
-    const values = line.split("\t");
-    const record: Record<string, string> = {};
-
-    headers.forEach((header, index) => {
-      record[header] = values[index] ?? "";
-    });
-
-    return record;
-  });
-}
-
-function parsePipeSeparatedIds(value: string) {
-  if (!value) {
-    return [];
-  }
-
-  return value
-    .split("|")
-    .map((part) => Number.parseInt(part, 10))
-    .filter((id) => Number.isFinite(id) && id > 0);
 }
 
 function parseBalakOverrideFlag(value: string | null) {
@@ -386,79 +321,38 @@ async function loadLegacyEngine() {
   legacyEnginePromise = import("../legacy-import-data/index").then(({
     legacyImportData,
   }) => {
-    const hcDataV37Factory = new Function(
-      `${legacyImportData.hcDataV37Raw}\n; return HCData;`,
-    );
-    const hcDataV38Factory = new Function(
-      `${legacyImportData.hcDataV38Raw}\n; return HCData;`,
-    );
-    const legacyDataV37 = hcDataV37Factory() as LegacyHCData;
-    const legacyDataV38 = hcDataV38Factory() as LegacyHCData;
-    const powerhouseDataFactory = new Function(
-      `${legacyImportData.powerhouseDataRaw}
-        ; return {
-          dataPower,
-          dataTravelPower,
-          dataFramework,
-          dataArchetype,
-          dataSuperStat,
-          dataInnateTalent,
-          dataTalent,
-          dataArchetypeGroup,
-          dataSpecializationTree
-        };`,
-    );
-    const powerhouseData = powerhouseDataFactory() as {
-      dataPower: LegacyPowerEntry[];
-      dataTravelPower: LegacyHCData["travelPower"];
-      dataFramework: LegacyHCData["framework"];
-      dataArchetype: LegacyHCData["archetype"];
-      dataSuperStat: LegacyHCData["superStat"];
-      dataInnateTalent: LegacyHCData["innateTalent"];
-      dataTalent: LegacyHCData["talent"];
-      dataArchetypeGroup: LegacyHCData["archetypeGroup"];
-      dataSpecializationTree: LegacyHCData["specializationTree"];
-    };
-    const legacyDataPowerhouse: LegacyHCData = {
-      archetype: powerhouseData.dataArchetype,
-      archetypeGroup: powerhouseData.dataArchetypeGroup,
-      device: [],
-      framework: powerhouseData.dataFramework,
-      innateTalent: powerhouseData.dataInnateTalent,
-      power: powerhouseData.dataPower,
-      specializationTree: powerhouseData.dataSpecializationTree,
-      superStat: powerhouseData.dataSuperStat,
-      talent: powerhouseData.dataTalent,
-      travelPower: powerhouseData.dataTravelPower,
-      version: 2,
-    };
+    const legacyDataV37 = legacyImportData.hcDataV37 as unknown as LegacyHCData;
+    const legacyDataV38 = legacyImportData.hcDataV38 as unknown as LegacyHCData;
+    const legacyDataPowerhouse =
+      legacyImportData.phData as unknown as LegacyHCData;
     const dataPowerIdFromCodeV37 = buildPowerCodeLookup(legacyDataV37);
     const dataPowerIdFromCodeV38 = buildPowerCodeLookup(legacyDataV38);
     const dataPowerIdFromCodePowerhouse = buildPowerCodeLookup(
       legacyDataPowerhouse,
     );
 
-    const versionFactory = new Function(
-      "numToUrlCode",
-      "urlCodeToNum",
-      "dataPower",
-      "dataArchetype",
-      "dataPowerIdFromCode",
-      "debug",
-      `${legacyImportData.powerhouseVersionRaw}\n; return getDataVersionUpdate();`,
-    );
-    const dataVersionUpdate = versionFactory(
-      numToUrlCode,
-      urlCodeToNum,
-      legacyDataV37.power,
-      legacyDataV37.archetype,
-      dataPowerIdFromCodeV37,
-      false,
-    ) as LegacyVersionUpdate[];
-    const parseBalakSource = getFunctionSource(
-      legacyImportData.powerhouseRaw,
-      "function parseBalakUrlParams(url)",
-    );
+    const dataVersionUpdate =
+      legacyImportData.phVersionFunctions.functionSources.map(
+        (functionSource): LegacyVersionUpdate => ({
+          funct: new Function(
+            "numToUrlCode",
+            "urlCodeToNum",
+            "dataPower",
+            "dataArchetype",
+            "dataPowerIdFromCode",
+            "debug",
+            `return (${functionSource});`,
+          )(
+            numToUrlCode,
+            urlCodeToNum,
+            legacyDataV37.power,
+            legacyDataV37.archetype,
+            dataPowerIdFromCodeV37,
+            false,
+          ) as LegacyVersionUpdate["funct"],
+        }),
+      );
+    const parseBalakSource = legacyImportData.phBalakParser.source;
     const parseBalakUrlParams = parseBalakSource
       ? (new Function(
           "numToUrlCode",
@@ -487,62 +381,23 @@ async function loadLegacyEngine() {
           legacyDataV37.archetype,
         ) as (source: string) => string[])
       : null;
+    const matchMaps =
+      legacyImportData.phMatchMaps as unknown as LegacyMatchMapsData;
     const powerIdsBySourceTypeAndLegacyId = new Map<
       string,
       {
         sourceNormalizedName: string;
         targetIds: number[];
       }
-    >();
-    const powerIdsBySourceTypeAndNormalizedName = new Map<string, number[]>();
-    const advantageIdsByNormalizedName = new Map<string, number[]>();
-    const powerMatchRows = parseTsv(legacyImportData.powerNameMatchTsvRaw);
-    const advantageMatchRows = parseTsv(
-      legacyImportData.advantageNameMatchTsvRaw,
+    >(
+      Object.entries(matchMaps.powerByLegacyId),
     );
-
-    powerMatchRows.forEach((row) => {
-      const sourceType = row.source_type;
-      const sourceLegacyPowerId = Number.parseInt(row.source_powerhouse_id ?? "", 10);
-      const normalizedName = row.normalized_name;
-      const matchedIds = parsePipeSeparatedIds(row.target_retcon_power_ids);
-
-      if (
-        (sourceType !== "combat" &&
-          sourceType !== "travel" &&
-          sourceType !== "device") ||
-        !normalizedName ||
-        matchedIds.length === 0
-      ) {
-        return;
-      }
-
-      if (Number.isFinite(sourceLegacyPowerId) && sourceLegacyPowerId > 0) {
-        powerIdsBySourceTypeAndLegacyId.set(
-          `${sourceType}:${sourceLegacyPowerId}`,
-          {
-            sourceNormalizedName: normalizedName,
-            targetIds: matchedIds,
-          },
-        );
-      }
-
-      powerIdsBySourceTypeAndNormalizedName.set(
-        `${sourceType}:${normalizedName}`,
-        matchedIds,
-      );
-    });
-
-    advantageMatchRows.forEach((row) => {
-      const normalizedName = row.normalized_name;
-      const matchedIds = parsePipeSeparatedIds(row.target_retcon_advantage_ids);
-
-      if (!normalizedName || matchedIds.length === 0) {
-        return;
-      }
-
-      advantageIdsByNormalizedName.set(normalizedName, matchedIds);
-    });
+    const powerIdsBySourceTypeAndNormalizedName = new Map<string, number[]>(
+      Object.entries(matchMaps.powerByName),
+    );
+    const advantageIdsByNormalizedName = new Map<string, number[]>(
+      Object.entries(matchMaps.advantageByName),
+    );
 
     return {
       advantageIdsByNormalizedName,
