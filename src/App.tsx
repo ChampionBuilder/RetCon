@@ -71,6 +71,10 @@ function App() {
   const [buildName, setBuildName] = useState("My Awesome Build");
   const [energyBuilderSelectionVersion, setEnergyBuilderSelectionVersion] =
     useState(0);
+  const [energyBuilderReopenRequest, setEnergyBuilderReopenRequest] = useState({
+    selectionVersion: 0,
+    version: 0,
+  });
   const [buildCheckDialogOpen, setBuildCheckDialogOpen] = useState(false);
   const [buildScrollTargetSlot, setBuildScrollTargetSlot] = useState<number | null>(
     null,
@@ -280,6 +284,7 @@ function App() {
   const {
     deleteSavedBuild,
     getSavedBuildData,
+    importSavedBuildsFromText,
     overwriteSavedBuild,
     savedBuilds,
     saveCurrentBuild,
@@ -603,11 +608,25 @@ function App() {
       return;
     }
 
+    reopenEnergyBuilderSectionForSlot(slotNumber);
     openPowerDialogState(slotNumber, anchor);
+  }
+
+  function reopenEnergyBuilderSectionForSlot(slotNumber: number) {
+    const targetSlot =
+      buildSlots.find((slot) => slot.slot === slotNumber) ?? null;
+
+    if (targetSlot?.slot === 1 || targetSlot?.power?.tier === -1) {
+      setEnergyBuilderReopenRequest((currentRequest) => ({
+        selectionVersion: energyBuilderSelectionVersion,
+        version: currentRequest.version + 1,
+      }));
+    }
   }
 
   function selectBuildSlotAsPowerTarget(slotNumber: number) {
     setBuildCheckPowerFilter(null);
+    reopenEnergyBuilderSectionForSlot(slotNumber);
 
     if (!isFreeform) {
       if (archetypeAlternativePowerSlotNumbers.has(slotNumber)) {
@@ -617,7 +636,7 @@ function App() {
       return;
     }
 
-    selectPowerPanelTarget("power", slotNumber, null, true);
+    selectPowerPanelTarget("power", slotNumber, undefined, false);
   }
 
   function selectPowerVariantSlotAsTarget(slotNumber: number) {
@@ -632,7 +651,7 @@ function App() {
 
   function selectArchetypePowerSlotAsTarget(slotNumber: number) {
     setBuildCheckPowerFilter(null);
-    selectPowerPanelTarget("power", slotNumber, null, true);
+    selectPowerPanelTarget("power", slotNumber, undefined, false);
   }
 
   function selectTravelPowerSlotAsTarget(slotNumber: number) {
@@ -1005,6 +1024,7 @@ function App() {
           savedBuilds={savedBuilds}
           onClose={() => setDataDialogOpen(false)}
           onDeleteBuild={deleteSavedBuild}
+          onImportBuildsFromText={importSavedBuildsFromText}
           onLoadBuild={loadSavedBuild}
           onOverwriteBuild={overwriteSavedBuild}
           onSaveCurrentBuild={saveCurrentBuild}
@@ -1057,6 +1077,10 @@ function App() {
           key={`powers-${powerSearchResetKey}`}
           advantages={advantages}
           buildSlots={allPowerSlots}
+          energyBuilderReopenRequestSelectionVersion={
+            energyBuilderReopenRequest.selectionVersion
+          }
+          energyBuilderReopenRequestVersion={energyBuilderReopenRequest.version}
           energyBuilderSelectionVersion={energyBuilderSelectionVersion}
           canAddPower={(power) =>
             isStandardDevice(power)

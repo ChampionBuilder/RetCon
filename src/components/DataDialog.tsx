@@ -1,4 +1,5 @@
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
+import type { ImportSavedBuildsResult } from "../hooks/useSavedBuilds";
 import type { SavedBuild } from "../types/share";
 
 type DataDialogProps = {
@@ -7,6 +8,7 @@ type DataDialogProps = {
   onClose: () => void;
   onDeleteBuild: (buildId: string) => void;
   onLoadBuild: (buildId: string) => void;
+  onImportBuildsFromText: (text: string) => ImportSavedBuildsResult;
   onOverwriteBuild: (buildId: string) => void;
   onSaveCurrentBuild: () => void;
 };
@@ -17,9 +19,13 @@ export function DataDialog({
   onClose,
   onDeleteBuild,
   onLoadBuild,
+  onImportBuildsFromText,
   onOverwriteBuild,
   onSaveCurrentBuild,
 }: DataDialogProps) {
+  const loadDataInputRef = useRef<HTMLInputElement | null>(null);
+  const [dataMessage, setDataMessage] = useState<string | null>(null);
+
   useEffect(() => {
     function handleKeyDown(event: KeyboardEvent) {
       if (event.key === "Escape") {
@@ -31,6 +37,49 @@ export function DataDialog({
 
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [onClose]);
+
+  function getSavedBuildUrl(savedBuild: SavedBuild) {
+    const url = new URL(window.location.href);
+
+    url.searchParams.delete("build");
+    url.searchParams.set("b", savedBuild.data);
+
+    return url.toString();
+  }
+
+  function saveDataFile() {
+    const content = savedBuilds.map(getSavedBuildUrl).join("\n");
+    const blob = new Blob([`${content}\n`], { type: "text/plain;charset=utf-8" });
+    const link = document.createElement("a");
+
+    link.href = URL.createObjectURL(blob);
+    link.download = "retcon-builds.txt";
+    link.click();
+    URL.revokeObjectURL(link.href);
+    setDataMessage(
+      `${savedBuilds.length} build URL${
+        savedBuilds.length === 1 ? "" : "s"
+      } saved. Your download should start soon.`,
+    );
+  }
+
+  async function loadDataFile(file: File | null) {
+    if (!file) {
+      return;
+    }
+
+    const result = onImportBuildsFromText(await file.text());
+    setDataMessage(
+      `${result.imported} build${result.imported === 1 ? "" : "s"} imported` +
+        (result.skipped > 0
+          ? `, ${result.skipped} skipped.`
+          : "."),
+    );
+
+    if (loadDataInputRef.current) {
+      loadDataInputRef.current.value = "";
+    }
+  }
 
   return (
     <div className="dialog-backdrop" role="presentation" onMouseDown={onClose}>
@@ -88,6 +137,36 @@ export function DataDialog({
               </article>
             ))
           )}
+        </div>
+
+        <div className="data-dialog__footer">
+          <div className="data-dialog__data-actions">
+            <button
+              className="utility-button"
+              disabled={savedBuilds.length === 0}
+              type="button"
+              onClick={saveDataFile}
+            >
+              Save data
+            </button>
+            <button
+              className="utility-button"
+              type="button"
+              onClick={() => loadDataInputRef.current?.click()}
+            >
+              Load data
+            </button>
+            <input
+              ref={loadDataInputRef}
+              accept=".txt,text/plain"
+              className="data-dialog__file-input"
+              type="file"
+              onChange={(event) => void loadDataFile(event.target.files?.[0] ?? null)}
+            />
+          </div>
+          {dataMessage ? (
+            <p className="data-dialog__data-message">{dataMessage}</p>
+          ) : null}
         </div>
       </section>
     </div>

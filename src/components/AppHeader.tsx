@@ -180,7 +180,8 @@ export function AppHeader({
 
           <button
             className="utility-button"
-            title="Beta import from HeroCreator/Aesica. Most builds should import, but results are not guaranteed."
+            title="Recover your Aesica and BalakKnightfang builds.
+            Most builds should import, but results are not guaranteed."
             type="button"
             onClick={onImportBuild}
           >

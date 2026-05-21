@@ -151,6 +151,12 @@ h3 {
   box-shadow:
     inset 0 0 0 1px rgba(125, 164, 255, 0.25),
     0 0 8px rgba(40, 78, 177, 0.22);
+  transition:
+    border-color 120ms ease,
+    color 120ms ease,
+    background 120ms ease,
+    box-shadow 120ms ease,
+    transform 80ms ease;
 }
 
 .tab-button {
@@ -181,6 +187,19 @@ h3 {
   background:
     linear-gradient(180deg, rgba(37, 49, 79, 0.98), rgba(20, 26, 44, 0.98)),
     #171d2d;
+}
+
+.utility-button:not(:disabled):active {
+  border-color: #6d90d9;
+  color: #eef4ff;
+  background:
+    linear-gradient(180deg, rgba(13, 18, 34, 0.98), rgba(30, 45, 82, 0.98)),
+    #11182a;
+  box-shadow:
+    inset 0 2px 5px rgba(0, 0, 0, 0.55),
+    inset 0 0 0 1px rgba(126, 164, 255, 0.18),
+    0 0 5px rgba(35, 70, 160, 0.18);
+  transform: translateY(1px);
 }
 
 .reset-menu__trigger {
@@ -317,6 +336,22 @@ h3 {
   box-shadow:
     inset 0 0 0 1px rgba(150, 184, 255, 0.3),
     0 0 10px rgba(64, 112, 220, 0.3);
+}
+
+.tab-button:not(:disabled):active,
+.primary-button:not(:disabled):active,
+.header-action-button:not(:disabled):active,
+.dialog-close:not(:disabled):active,
+.remove-button:not(:disabled):active,
+.cams-control button:not(:disabled):active {
+  border-color: #9bb7ff;
+  color: #f4f7ff;
+  background: linear-gradient(180deg, #12246d, #254ec0);
+  box-shadow:
+    inset 0 2px 6px rgba(0, 0, 0, 0.5),
+    inset 0 0 0 1px rgba(170, 198, 255, 0.24),
+    0 0 6px rgba(64, 112, 220, 0.2);
+  transform: translateY(1px);
 }
 
 .workspace-grid {
@@ -758,6 +793,34 @@ h3 {
   gap: 8px;
   overflow-y: auto;
   padding: 14px 16px 16px;
+}
+
+.data-dialog__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 16px 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.data-dialog__data-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.data-dialog__file-input {
+  display: none;
+}
+
+.data-dialog__data-message {
+  overflow: hidden;
+  margin: 0;
+  color: #a9b7d7;
+  font-size: 13px;
+  text-align: right;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .data-dialog__empty {

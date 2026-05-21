@@ -119,10 +119,12 @@ export function usePowerPanelTargets({
   function selectPowerPanelTarget(
     kind: PowerPanelTargetKind,
     slotNumber: number,
-    frameworkId: string | null,
+    frameworkId: string | null | undefined,
     resetSearch: boolean,
   ) {
-    setSelectedFrameworks(frameworkId === null ? null : [frameworkId]);
+    if (frameworkId !== undefined) {
+      setSelectedFrameworks(frameworkId === null ? null : [frameworkId]);
+    }
 
     if (resetSearch) {
       setPowerSearchResetKey((currentResetKey) => currentResetKey + 1);

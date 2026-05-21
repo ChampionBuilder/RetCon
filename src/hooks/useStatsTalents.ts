@@ -184,7 +184,11 @@ export function useStatsTalents({
     }
 
     setSelectedSuperStatIds(nextStatIds);
-    onPrimarySuperStatChange(nextStatIds[0] ?? 0);
+
+    if ((nextStatIds[0] ?? 0) !== (selectedSuperStatIds[0] ?? 0)) {
+      onPrimarySuperStatChange(nextStatIds[0] ?? 0);
+    }
+
     closeSuperStatDialog();
   }
 

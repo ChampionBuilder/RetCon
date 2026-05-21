@@ -1,11 +1,37 @@
 import { useEffect, useState } from "react";
 import type { SavedBuild } from "../types/share";
+import { parseSerializedBuild } from "../utils/buildSerialization";
 import { loadSavedBuilds, storeSavedBuilds } from "../utils/savedBuilds";
 
 type UseSavedBuildsOptions = {
   buildName: string;
   serializedBuild: string;
 };
+
+export type ImportSavedBuildsResult = {
+  imported: number;
+  skipped: number;
+};
+
+function getSerializedBuildFromLine(line: string) {
+  const trimmedLine = line.trim();
+
+  if (!trimmedLine || trimmedLine.startsWith("#")) {
+    return null;
+  }
+
+  try {
+    const url = new URL(trimmedLine);
+
+    return url.searchParams.get("b");
+  } catch {
+    if (trimmedLine.startsWith("?") || trimmedLine.includes("b=")) {
+      return new URLSearchParams(trimmedLine.replace(/^[^?]*\?/u, "")).get("b");
+    }
+
+    return trimmedLine;
+  }
+}
 
 export function useSavedBuilds({
   buildName,
@@ -56,9 +82,57 @@ export function useSavedBuilds({
     );
   }
 
+  function importSavedBuildsFromText(text: string): ImportSavedBuildsResult {
+    const importedBuilds: SavedBuild[] = [];
+    const existingBuildData = new Set(
+      savedBuilds.map((savedBuild) => savedBuild.data),
+    );
+    let skipped = 0;
+
+    text.split(/\r?\n/u).forEach((line) => {
+      const serializedImportedBuild = getSerializedBuildFromLine(line);
+
+      if (!serializedImportedBuild || existingBuildData.has(serializedImportedBuild)) {
+        if (line.trim()) {
+          skipped += 1;
+        }
+
+        return;
+      }
+
+      const parsedBuild = parseSerializedBuild(serializedImportedBuild);
+
+      if (!parsedBuild) {
+        skipped += 1;
+        return;
+      }
+
+      existingBuildData.add(serializedImportedBuild);
+      importedBuilds.push({
+        id: crypto.randomUUID(),
+        name: parsedBuild.buildName || "Imported build",
+        data: serializedImportedBuild,
+        updatedAt: new Date().toISOString(),
+      });
+    });
+
+    if (importedBuilds.length > 0) {
+      setSavedBuilds((currentSavedBuilds) => [
+        ...importedBuilds,
+        ...currentSavedBuilds,
+      ]);
+    }
+
+    return {
+      imported: importedBuilds.length,
+      skipped,
+    };
+  }
+
   return {
     deleteSavedBuild,
     getSavedBuildData,
+    importSavedBuildsFromText,
     overwriteSavedBuild,
     savedBuilds,
     saveCurrentBuild,

@@ -34,6 +34,8 @@ type PowersPanelProps = {
   frameworkGroups: PowerFrameworkFilterGroup[];
   selectedFrameworks: SelectedFrameworks;
   buildSlots: BuildSlot[];
+  energyBuilderReopenRequestSelectionVersion: number;
+  energyBuilderReopenRequestVersion: number;
   energyBuilderSelectionVersion: number;
   restrictedPowerIds: Set<number> | null;
   restrictedPowerSectionLabel: string | null;
@@ -97,10 +99,74 @@ function normalizeSearchText(value: string | null | undefined) {
   return value?.replace(/<br\s*\/?>/gi, " ").toLowerCase() ?? "";
 }
 
+function normalizeStrictSearchText(value: string | null | undefined) {
+  return normalizeSearchText(value).replace(/[_-]+/g, " ");
+}
+
 function getSearchablePowerType(power: Power) {
   const powerType = power.Power_Type ?? power.POWER_TYPE ?? "";
 
   return `${powerType} ${powerType.replace(/_/g, " ")}`;
+}
+
+type SearchPrefix = "adv" | "scale" | "type";
+
+type ParsedPowerSearch = {
+  advantageQueries: string[];
+  normalQuery: string;
+  scaleQueries: string[];
+  typeQueries: string[];
+};
+
+function parsePowerSearch(search: string): ParsedPowerSearch {
+  const trimmedSearch = search.trim();
+  const parsedSearch: ParsedPowerSearch = {
+    advantageQueries: [],
+    normalQuery: "",
+    scaleQueries: [],
+    typeQueries: [],
+  };
+  const prefixRegex = /\b(adv|scale|type)\s*:/giu;
+  const matches = [...trimmedSearch.matchAll(prefixRegex)];
+
+  if (matches.length === 0) {
+    parsedSearch.normalQuery = trimmedSearch.toLowerCase();
+
+    return parsedSearch;
+  }
+
+  parsedSearch.normalQuery = trimmedSearch
+    .slice(0, matches[0]?.index ?? 0)
+    .trim()
+    .toLowerCase();
+
+  matches.forEach((match, index) => {
+    const prefix = match[1]?.toLowerCase() as SearchPrefix | undefined;
+    const queryStart = (match.index ?? 0) + match[0].length;
+    const queryEnd =
+      index + 1 < matches.length
+        ? matches[index + 1]?.index ?? trimmedSearch.length
+        : trimmedSearch.length;
+    const query = trimmedSearch.slice(queryStart, queryEnd).trim().toLowerCase();
+
+    if (!prefix) {
+      return;
+    }
+
+    if (prefix === "adv") {
+      parsedSearch.advantageQueries.push(query);
+      return;
+    }
+
+    if (prefix === "scale") {
+      parsedSearch.scaleQueries.push(query);
+      return;
+    }
+
+    parsedSearch.typeQueries.push(query);
+  });
+
+  return parsedSearch;
 }
 
 export function PowersPanel({
@@ -109,6 +175,8 @@ export function PowersPanel({
   frameworkGroups,
   selectedFrameworks,
   buildSlots,
+  energyBuilderReopenRequestSelectionVersion,
+  energyBuilderReopenRequestVersion,
   energyBuilderSelectionVersion,
   restrictedPowerIds,
   restrictedPowerSectionLabel,
@@ -119,11 +187,16 @@ export function PowersPanel({
   const [search, setSearch] = useState("");
   const [closedSections, setClosedSections] = useState<string[]>([]);
   const [
+    closedEnergyBuilderReopenRequestVersion,
+    setClosedEnergyBuilderReopenRequestVersion,
+  ] = useState(0);
+  const [
     reopenedEnergyBuilderSelectionVersion,
     setReopenedEnergyBuilderSelectionVersion,
   ] = useState(0);
   const [frameworkStripColumns, setFrameworkStripColumns] = useState(1);
   const frameworkStripRef = useRef<HTMLDivElement | null>(null);
+  const parsedSearch = useMemo(() => parsePowerSearch(search), [search]);
   const hasEnergyBuilder = buildSlots.some((slot) => slot.power?.tier === -1);
   const hadEnergyBuilderRef = useRef(hasEnergyBuilder);
   const isTravelMode = isUtilityFrameworkSelection(
@@ -148,7 +221,50 @@ export function PowersPanel({
   }, [advantages]);
 
   const visiblePowers = useMemo(() => {
-    const normalizedSearch = search.trim().toLowerCase();
+    function matchesGeneralSearch(power: Power, query: string) {
+      return (
+        normalizeSearchText(power.name).includes(query) ||
+        normalizeSearchText(getSearchablePowerType(power)).includes(query) ||
+        normalizeSearchText(power.range_tags?.join(" ")).includes(query) ||
+        normalizeSearchText(power.tooltip).includes(query) ||
+        power.advantages.some((advantageId) =>
+          normalizeSearchText(advantagesById.get(advantageId)?.tooltip).includes(
+            query,
+          ),
+        )
+      );
+    }
+
+    function matchesAdvantageSearch(power: Power, query: string) {
+      return power.advantages.some((advantageId) => {
+        const advantage = advantagesById.get(advantageId);
+
+        return (
+          normalizeSearchText(advantage?.name).includes(query) ||
+          normalizeSearchText(advantage?.tooltip).includes(query)
+        );
+      });
+    }
+
+    function matchesScalingStatSearch(power: Power, query: string) {
+      const normalizedScalingStatSearch = query.replace(/[^a-z0-9]+/giu, "");
+
+      if (!normalizedScalingStatSearch) {
+        return true;
+      }
+
+      return (power.scaling_stats ?? []).some(
+        (scalingStat) =>
+          scalingStat.toLowerCase().replace(/[^a-z0-9]+/giu, "") ===
+          normalizedScalingStatSearch,
+      );
+    }
+
+    function matchesTypeSearch(power: Power, query: string) {
+      return normalizeStrictSearchText(getSearchablePowerType(power)).includes(
+        normalizeStrictSearchText(query),
+      );
+    }
 
     return powers.filter((power) => {
       if (
@@ -165,31 +281,44 @@ export function PowersPanel({
         return false;
       }
 
-      if (normalizedSearch === "") {
-        return true;
+      if (
+        parsedSearch.normalQuery &&
+        !matchesGeneralSearch(power, parsedSearch.normalQuery)
+      ) {
+        return false;
       }
 
-      return (
-        normalizeSearchText(power.name).includes(normalizedSearch) ||
-        normalizeSearchText(getSearchablePowerType(power)).includes(
-          normalizedSearch,
-        ) ||
-        normalizeSearchText(power.range_tags?.join(" ")).includes(
-          normalizedSearch,
-        ) ||
-        normalizeSearchText(power.tooltip).includes(normalizedSearch) ||
-        power.advantages.some((advantageId) =>
-          normalizeSearchText(advantagesById.get(advantageId)?.tooltip).includes(
-            normalizedSearch,
-          ),
+      if (
+        parsedSearch.advantageQueries.some(
+          (query) => query && !matchesAdvantageSearch(power, query),
         )
-      );
+      ) {
+        return false;
+      }
+
+      if (
+        parsedSearch.scaleQueries.some(
+          (query) => query && !matchesScalingStatSearch(power, query),
+        )
+      ) {
+        return false;
+      }
+
+      if (
+        parsedSearch.typeQueries.some(
+          (query) => query && !matchesTypeSearch(power, query),
+        )
+      ) {
+        return false;
+      }
+
+      return true;
     });
   }, [
     advantagesById,
+    parsedSearch,
     powers,
     restrictedPowerIds,
-    search,
     selectedFrameworks,
   ]);
 
@@ -339,6 +468,9 @@ export function PowersPanel({
         return;
       }
 
+      setClosedEnergyBuilderReopenRequestVersion(
+        energyBuilderReopenRequestVersion,
+      );
       setClosedSections((currentClosedSections) => [
         ...currentClosedSections,
         key,
@@ -358,6 +490,17 @@ export function PowersPanel({
   }
 
   function isSectionClosed(key: string) {
+    const hasActiveEnergyBuilderReopenRequest =
+      key === "-1" &&
+      energyBuilderReopenRequestVersion >
+        closedEnergyBuilderReopenRequestVersion &&
+      energyBuilderReopenRequestSelectionVersion >=
+        energyBuilderSelectionVersion;
+
+    if (hasActiveEnergyBuilderReopenRequest) {
+      return false;
+    }
+
     return (
       closedSections.includes(key) ||
       (key === "-1" &&

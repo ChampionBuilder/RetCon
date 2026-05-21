@@ -31,7 +31,7 @@ export function ImportBuildDialog({
     const trimmedSource = importSource.trim();
 
     if (!trimmedSource) {
-      setErrorMessage("Paste a HeroCreator URL or legacy code.");
+      setErrorMessage("Paste an Aesica or BalakKnightfang URL");
       return;
     }
 
@@ -70,8 +70,7 @@ export function ImportBuildDialog({
           <div>
             <h3>Import Build</h3>
             <p>
-              Beta import from HeroCreator/Aesica. Most builds should import,
-              but results are not guaranteed.
+              Most builds from Aesica or BalakKnightfang should import, but results are not guaranteed.
             </p>
           </div>
           <button className="dialog-close" type="button" onClick={onClose}>X</button>
@@ -79,12 +78,14 @@ export function ImportBuildDialog({
 
         <form className="import-build-dialog__content" onSubmit={handleImport}>
           <label className="import-build-dialog__label" htmlFor="import-build-source">
-            HeroCreator URL or legacy code
+            Paste your build URL here:
           </label>
           <textarea
             className="import-build-dialog__input"
             id="import-build-source"
-            placeholder="https://aesica.net/co/herocreator.htm?v=...&n=...&d=..."
+            placeholder={`https://aesica.net/co/herocreator.htm?v=...&n=...&d=...
+OR
+https://balaknightfang.dev/HeroCreator/?v=38&n=...&d=...&e=...`}
             value={importSource}
             onChange={(event) => setImportSource(event.target.value)}
           />
