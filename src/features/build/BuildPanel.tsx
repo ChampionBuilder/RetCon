@@ -11,6 +11,7 @@ import {
   hasPowerVariantParent,
 } from "@/utils/powerVariantRules";
 import { getPowerAdvantages } from "@/utils/powerAdvantages";
+import { isEnergyUnlockPower } from "@/utils/powerrules";
 import { SpriteIcon } from "@/shared/ui/SpriteIcon";
 
 type BuildPanelProps = {
@@ -274,7 +275,7 @@ export function BuildPanel({
                           {slot.power?.name ?? "Empty power slot"}
                         </button>
                       </div>
-                      {slot.power && (
+                      {slot.power && !isEnergyUnlockPower(slot.power) && (
                         <button
                           className="build-entry__advantages"
                           type="button"

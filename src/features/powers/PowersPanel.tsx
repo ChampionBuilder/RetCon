@@ -697,14 +697,25 @@ export function PowersPanel({
         {renderFrameworkStripItems()}
       </div>
 
-      <label className="search-field">
-        <span>Search powers</span>
+      <div className="search-field">
+        <label htmlFor="powers-search">Search powers</label>
         <input
+          id="powers-search"
           value={search}
           placeholder="Search powers..."
           onChange={(event) => setSearch(event.target.value)}
         />
-      </label>
+        {search ? (
+          <button
+            aria-label="Clear power search"
+            className="search-field__clear"
+            type="button"
+            onClick={() => setSearch("")}
+          >
+            X
+          </button>
+        ) : null}
+      </div>
 
       <div className="power-tier-list">
         {powerSections.map((section) => {

@@ -4,7 +4,9 @@ import type { SpecializationTree } from "@/types/character";
 import {
   canDecrementSpecialization,
   canIncrementSpecialization,
+  getSpecializationTreePoints,
   getSpecializationTreeIcon,
+  specializationPointMax,
   type SpecializationSlotIndex,
   type SpecializationTreePoints,
 } from "./specializations";
@@ -42,6 +44,7 @@ export function SpecializationSelectionDialog({
   onSelectTree,
 }: SpecializationSelectionDialogProps) {
   const roleTrees = trees.filter((candidateTree) => candidateTree.id >= 9);
+  const totalPoints = getSpecializationTreePoints(points);
 
   return (
     <AnchoredDialog
@@ -58,6 +61,9 @@ export function SpecializationSelectionDialog({
         >
           Clear
         </button>
+        <div className="specialization-dialog__title">
+          <strong>{tree ? `${tree.name} Tree` : "Specialization"}</strong>
+        </div>
         <button
           aria-label="Close specialization selection"
           className="dialog-close"
@@ -96,6 +102,14 @@ export function SpecializationSelectionDialog({
               </button>
             );
           })}
+          <div
+            aria-label={`Specialization points: ${totalPoints} of ${specializationPointMax}`}
+            className="specialization-role-points"
+            title="Specialization point budget"
+          >
+            <span>Points</span>
+            <strong>{`${totalPoints}/${specializationPointMax}`}</strong>
+          </div>
         </div>
       ) : null}
 

@@ -34,12 +34,10 @@ import {
   TravelPowerSelectionDialog,
   usePowerPanelTargets,
 } from "@/features/powers";
-import {
-  ImportBuildDialog,
-  importLegacyHeroCreatorBuild,
-} from "@/features/import-build";
+import { ImportBuildDialog } from "@/features/import-build";
 import { DataDialog, useSavedBuilds } from "@/features/saved-builds";
 import { InstantTooltip, type DialogAnchor } from "@/shared/ui";
+import type { BuildSlot } from "@/types/builds";
 import type { Power } from "@/types/powers";
 import type { BuildRequirementResult } from "@/utils/buildValidation";
 import {
@@ -592,7 +590,15 @@ function App() {
       return;
     }
 
+    const powerSlotsWillBeEmpty = buildSlots.every(
+      (slot) => slot.slot === slotNumber || slot.power === null,
+    );
+
     removeCombatPower(slotNumber);
+
+    if (powerSlotsWillBeEmpty) {
+      requestOpenEnergyBuilderSection();
+    }
   }
 
   function clearPowerVariantSlot(slotNumber: number) {
@@ -621,8 +627,19 @@ function App() {
       return;
     }
 
+    resetUtilityPowerFilterForCombatSlot();
     updateEnergyBuilderPanelForPowerSlot(slotNumber);
     openPowerDialogState(slotNumber, anchor);
+  }
+
+  function getCombatPowerSlotFrameworkTarget() {
+    return selectedFrameworks?.some(isUtilityFrameworkFilter) ? null : undefined;
+  }
+
+  function resetUtilityPowerFilterForCombatSlot() {
+    if (selectedFrameworks?.some(isUtilityFrameworkFilter)) {
+      setSelectedFrameworks(null);
+    }
   }
 
   function updateEnergyBuilderPanelForPowerSlot(slotNumber: number) {
@@ -645,11 +662,7 @@ function App() {
     }
 
     if (shouldOpenEnergyBuilderSection) {
-      setEnergyBuilderPanelRequest((currentRequest) => ({
-        action: "open",
-        selectionVersion: energyBuilderSelectionVersion,
-        version: currentRequest.version + 1,
-      }));
+      requestOpenEnergyBuilderSection();
       return;
     }
 
@@ -658,13 +671,38 @@ function App() {
     }
   }
 
-  function requestCloseEnergyBuilderSection() {
+  const requestCloseEnergyBuilderSection = useCallback(() => {
     setEnergyBuilderPanelRequest((currentRequest) => ({
       action: "close",
       selectionVersion: energyBuilderSelectionVersion,
       version: currentRequest.version + 1,
     }));
-  }
+  }, [energyBuilderSelectionVersion]);
+
+  const requestOpenEnergyBuilderSection = useCallback(() => {
+    setEnergyBuilderPanelRequest((currentRequest) => ({
+      action: "open",
+      selectionVersion: energyBuilderSelectionVersion,
+      version: currentRequest.version + 1,
+    }));
+  }, [energyBuilderSelectionVersion]);
+
+  const syncEnergyBuilderPanelForBuildSlots = useCallback((nextBuildSlots: BuildSlot[]) => {
+    const hasEnergyBuilder = nextBuildSlots.some(
+      (slot) => slot.power?.tier === -1,
+    );
+    const hasAnyPower = nextBuildSlots.some((slot) => slot.power !== null);
+
+    if (hasEnergyBuilder) {
+      setEnergyBuilderSelectionVersion((currentVersion) => currentVersion + 1);
+      requestCloseEnergyBuilderSection();
+      return;
+    }
+
+    if (!hasAnyPower) {
+      requestOpenEnergyBuilderSection();
+    }
+  }, [requestCloseEnergyBuilderSection, requestOpenEnergyBuilderSection]);
 
   function closeEnergyBuilderSectionWhenLeavingPowerTarget() {
     if (selectedPowerTargetBuildSlot?.power?.tier === -1) {
@@ -684,7 +722,12 @@ function App() {
       return;
     }
 
-    selectPowerPanelTarget("power", slotNumber, undefined, false);
+    selectPowerPanelTarget(
+      "power",
+      slotNumber,
+      getCombatPowerSlotFrameworkTarget(),
+      false,
+    );
   }
 
   function selectPowerVariantSlotAsTarget(slotNumber: number) {
@@ -700,7 +743,12 @@ function App() {
 
   function selectArchetypePowerSlotAsTarget(slotNumber: number) {
     setBuildCheckPowerFilter(null);
-    selectPowerPanelTarget("power", slotNumber, undefined, false);
+    selectPowerPanelTarget(
+      "power",
+      slotNumber,
+      getCombatPowerSlotFrameworkTarget(),
+      false,
+    );
   }
 
   function selectTravelPowerSlotAsTarget(slotNumber: number) {
@@ -777,6 +825,7 @@ function App() {
       resetArchetypePowers(selectedArchetype, powersById);
     } else {
       resetFreeformPowers();
+      requestOpenEnergyBuilderSection();
     }
 
     clearPowerTarget();
@@ -833,6 +882,7 @@ function App() {
   function resetAll() {
     setBuildName("My Awesome Build");
     resetFreeformPowers();
+    requestOpenEnergyBuilderSection();
     resetAllAuxiliaryPowerSlots();
     setCamsLevel(0);
     resetArchetypeRole();
@@ -870,6 +920,7 @@ function App() {
       selectedTalentIds: hydratedBuild.selectedTalentIds,
     });
     replaceBuildSlots(hydratedBuild.buildSlots);
+    syncEnergyBuilderPanelForBuildSlots(hydratedBuild.buildSlots);
     hydrateAuxiliaryPowerSlots({
       travelPowerSlots: hydratedBuild.travelPowerSlots,
       powerVariantSlots: hydratedBuild.powerVariantSlots,
@@ -901,6 +952,7 @@ function App() {
     powersById,
     replaceBuildSlots,
     setSelectedFrameworks,
+    syncEnergyBuilderPanelForBuildSlots,
   ]);
 
   function loadSavedBuild(buildId: string) {
@@ -940,6 +992,7 @@ function App() {
       ),
     });
     replaceBuildSlots(randomizedBuild.buildSlots);
+    syncEnergyBuilderPanelForBuildSlots(randomizedBuild.buildSlots);
     replaceTravelPowerSlots(randomizedBuild.travelPowerSlots);
     clearPowerTarget();
     clearTravelPowerTarget();
@@ -954,6 +1007,9 @@ function App() {
   }
 
   async function importHeroCreatorBuild(importInput: string) {
+    const { importLegacyHeroCreatorBuild } = await import(
+      "@/features/import-build/legacyHeroCreatorImport"
+    );
     const importResult = await importLegacyHeroCreatorBuild(importInput, {
       advantages,
       archetypesData,
