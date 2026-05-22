@@ -1,4 +1,4 @@
-import type { Advantage } from "../types/advantages";
+import type { Advantage } from "@/types/advantages";
 
 export function getRequiredAdvantage(
   advantage: Advantage,

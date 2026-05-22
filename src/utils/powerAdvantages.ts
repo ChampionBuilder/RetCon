@@ -1,5 +1,5 @@
-import type { Advantage } from "../types/advantages";
-import type { Power } from "../types/powers";
+import type { Advantage } from "@/types/advantages";
+import type { Power } from "@/types/powers";
 
 export function getPowerAdvantages(
   power: Power | null | undefined,

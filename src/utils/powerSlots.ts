@@ -1,10 +1,10 @@
 import {
   initialArchetypeBuildSlots,
   initialBuildSlots,
-} from "../constants/buildSlots";
-import type { BuildSlot } from "../types/builds";
-import type { Archetype } from "../types/character";
-import type { Power } from "../types/powers";
+} from "@/constants/buildSlots";
+import type { BuildSlot } from "@/types/builds";
+import type { Archetype } from "@/types/character";
+import type { Power } from "@/types/powers";
 import { clearBuildSlot } from "./buildSlots";
 import { getPowerDisplayFrameworkId } from "./powerFrameworks";
 import { canSelectPower, isPowerEnabled } from "./powerrules";

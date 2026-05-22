@@ -1,4 +1,4 @@
-import type { Power } from "../types/powers";
+import type { Power } from "@/types/powers";
 
 type PowerListProps = {
   powers: Power[];

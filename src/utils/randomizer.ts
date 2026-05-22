@@ -1,12 +1,12 @@
-import { initialBuildSlots, initialTravelPowerSlots } from "../constants/buildSlots";
-import type { BuildSlot } from "../types/builds";
+import { initialBuildSlots, initialTravelPowerSlots } from "@/constants/buildSlots";
+import type { BuildSlot } from "@/types/builds";
 import type {
   InnateTalent,
   StatsTalentsData,
   SuperStat,
   Talent,
-} from "../types/character";
-import type { Power } from "../types/powers";
+} from "@/types/character";
+import type { Power } from "@/types/powers";
 import {
   coreBuildRequirements,
   getMatchingRequirementPowerIds,

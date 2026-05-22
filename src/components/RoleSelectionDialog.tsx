@@ -1,7 +1,7 @@
-import type { ArchetypeGroup } from "../types/character";
-import type { DialogAnchor } from "./AnchoredDialog";
-import { AnchoredDialog } from "./AnchoredDialog";
-import { SpriteIcon } from "./SpriteIcon";
+import type { ArchetypeGroup } from "@/types/character";
+import type { DialogAnchor } from "@/shared/ui/AnchoredDialog";
+import { AnchoredDialog } from "@/shared/ui/AnchoredDialog";
+import { SpriteIcon } from "@/shared/ui/SpriteIcon";
 
 type RoleSelectionDialogProps = {
   anchor: DialogAnchor;

@@ -1,6 +1,6 @@
-import type { BuildSlot } from "../types/builds";
-import type { SuperStat } from "../types/character";
-import type { Power } from "../types/powers";
+import type { BuildSlot } from "@/types/builds";
+import type { SuperStat } from "@/types/character";
+import type { Power } from "@/types/powers";
 import { isUltimatePowerVariantDevice } from "./powerFrameworks";
 import { isPowerEnabled } from "./powerrules";
 

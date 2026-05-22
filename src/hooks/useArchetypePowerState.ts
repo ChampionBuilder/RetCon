@@ -1,6 +1,6 @@
 import { useMemo } from "react";
-import type { BuildSlot } from "../types/builds";
-import type { Archetype } from "../types/character";
+import type { BuildSlot } from "@/types/builds";
+import type { Archetype } from "@/types/character";
 
 type UseArchetypePowerStateOptions = {
   buildSlots: BuildSlot[];

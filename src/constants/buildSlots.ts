@@ -1,4 +1,4 @@
-import type { BuildSlot } from "../types/builds";
+import type { BuildSlot } from "@/types/builds";
 
 function createInitialSlots(levels: number[], firstSlot = 1): BuildSlot[] {
   return levels.map((level, index) => ({

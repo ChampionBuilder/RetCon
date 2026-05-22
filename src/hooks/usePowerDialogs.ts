@@ -1,5 +1,5 @@
 import { useState } from "react";
-import type { DialogAnchor } from "../components/AnchoredDialog";
+import type { DialogAnchor } from "@/shared/ui/AnchoredDialog";
 
 export function usePowerDialogs() {
   const [activePowerSlot, setActivePowerSlot] = useState<number | null>(null);

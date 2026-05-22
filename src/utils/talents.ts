@@ -1,4 +1,4 @@
-import type { StatBlock, Talent } from "../types/character";
+import type { StatBlock, Talent } from "@/types/character";
 import { innateTalentStatLabels } from "./innateTalents";
 
 export function getTalentStatEntries(

@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
-import type { Advantage } from "../types/advantages";
+import type { Advantage } from "@/types/advantages";
 import type {
   ArchetypesData,
   SpecializationTreesData,
   StatsTalentsData,
-} from "../types/character";
-import type { Power } from "../types/powers";
-import { publicAssetUrl } from "../utils/publicAssetUrl";
+} from "@/types/character";
+import type { Power } from "@/types/powers";
+import { publicAssetUrl } from "@/shared/utils/publicAssetUrl";
 
 function fetchJson<T>(url: string) {
   return fetch(url).then((response) => response.json() as Promise<T>);

@@ -1,6 +1,6 @@
 import { useState } from "react";
-import type { DialogAnchor } from "../components/AnchoredDialog";
-import type { Archetype, ArchetypesData } from "../types/character";
+import type { DialogAnchor } from "@/shared/ui/AnchoredDialog";
+import type { Archetype, ArchetypesData } from "@/types/character";
 
 export function useArchetypeRoleState(archetypesData: ArchetypesData | null) {
   const [selectedArchetypeId, setSelectedArchetypeId] = useState(1);

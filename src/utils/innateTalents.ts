@@ -1,4 +1,4 @@
-import type { InnateTalent, StatBlock, SuperStat } from "../types/character";
+import type { InnateTalent, StatBlock, SuperStat } from "@/types/character";
 
 export const innateTalentStatLabels: Record<keyof StatBlock, string> = {
   str: "Str",

@@ -1,34 +1,50 @@
 import { useCallback, useMemo, useState } from "react";
 import "./App.css";
-import type { DialogAnchor } from "./components/AnchoredDialog";
-import { AdvantageSelectionDialog } from "./components/AdvantageSelectionDialog";
-import { AboutDialog } from "./components/AboutDialog";
-import { AppHeader } from "./components/AppHeader";
-import { ArchetypePowerSelectionDialog } from "./components/ArchetypePowerSelectionDialog";
-import { ArchetypeSelectionDialog } from "./components/ArchetypeSelectionDialog";
-import { BuildPanel } from "./components/BuildPanel";
-import { BuildCheckDialog } from "./components/BuildCheckDialog";
-import { CharacterPanel } from "./components/CharacterPanel";
-import { DataDialog } from "./components/DataDialog";
-import { DeviceSelectionDialog } from "./components/DeviceSelectionDialog";
-import { InnateTalentSelectionDialog } from "./components/InnateTalentSelectionDialog";
-import { ImportBuildDialog } from "./components/ImportBuildDialog";
-import { InstantTooltip } from "./components/InstantTooltip";
-import { PowerSelectionDialog } from "./components/PowerSelectionDialog";
-import { PowerVariantSelectionDialog } from "./components/PowerVariantSelectionDialog";
-import { PowersPanel } from "./components/PowersPanel";
-import { RoleSelectionDialog } from "./components/RoleSelectionDialog";
-import { SpecializationsPanel } from "./components/SpecializationsPanel";
-import { SpecializationMasteryDialog } from "./components/SpecializationMasteryDialog";
-import { SpecializationSelectionDialog } from "./components/SpecializationSelectionDialog";
-import { StatSelectionDialog } from "./components/StatSelectionDialog";
-import { TalentSelectionDialog } from "./components/TalentSelectionDialog";
-import { TravelPowerSelectionDialog } from "./components/TravelPowerSelectionDialog";
-import type { Power } from "./types/powers";
-import type { BuildRequirementResult } from "./utils/buildValidation";
+import { AboutDialog } from "@/components/AboutDialog";
+import { AppHeader } from "@/components/AppHeader";
+import { ArchetypePowerSelectionDialog } from "@/components/ArchetypePowerSelectionDialog";
+import { ArchetypeSelectionDialog } from "@/components/ArchetypeSelectionDialog";
+import { RoleSelectionDialog } from "@/components/RoleSelectionDialog";
+import {
+  BuildCheckDialog,
+  BuildPanel,
+  useAuxiliaryPowerSlots,
+  useBuildPowerState,
+  useCombatPowerSlots,
+} from "@/features/build";
+import {
+  SpecializationMasteryDialog,
+  SpecializationSelectionDialog,
+  SpecializationsPanel,
+  useSpecializations,
+} from "@/features/specializations";
+import {
+  CharacterPanel,
+  InnateTalentSelectionDialog,
+  StatSelectionDialog,
+  TalentSelectionDialog,
+  useStatsTalents,
+} from "@/features/character";
+import {
+  AdvantageSelectionDialog,
+  DeviceSelectionDialog,
+  PowerSelectionDialog,
+  PowerVariantSelectionDialog,
+  PowersPanel,
+  TravelPowerSelectionDialog,
+  usePowerPanelTargets,
+} from "@/features/powers";
+import {
+  ImportBuildDialog,
+  importLegacyHeroCreatorBuild,
+} from "@/features/import-build";
+import { DataDialog, useSavedBuilds } from "@/features/saved-builds";
+import { InstantTooltip, type DialogAnchor } from "@/shared/ui";
+import type { Power } from "@/types/powers";
+import type { BuildRequirementResult } from "@/utils/buildValidation";
 import {
   maxCamsLevel,
-} from "./utils/advantagerules";
+} from "@/utils/advantagerules";
 import {
   getVisiblePowerFrameworkGroups,
   isPowerVariantDevice,
@@ -39,39 +55,36 @@ import {
   devicesFilterId,
   powerVariantsFilterId,
   travelPowerFilterId,
-} from "./utils/powerFrameworks";
+} from "@/utils/powerFrameworks";
 import {
   canPlacePowerInSlot,
   getFirstValidPowerSlot,
-} from "./utils/powerSlots";
-import { isPowerEnabled } from "./utils/powerrules";
-import { createRandomFreeformBuild } from "./utils/randomizer";
+} from "@/utils/powerSlots";
+import { isPowerEnabled } from "@/utils/powerrules";
+import { createRandomFreeformBuild } from "@/utils/randomizer";
 import {
   createShareUrl,
   hydrateSerializedBuild,
   parseSerializedBuild,
   serializeBuild,
-} from "./utils/buildSerialization";
-import { importLegacyHeroCreatorBuild } from "./utils/legacyHeroCreatorImport";
-import { useSavedBuilds } from "./hooks/useSavedBuilds";
-import { useShareUrlSync } from "./hooks/useShareUrlSync";
-import { useBuilderData } from "./hooks/useBuilderData";
-import { useSpecializations } from "./hooks/useSpecializations";
-import { useStatsTalents } from "./hooks/useStatsTalents";
-import { usePowerDialogs } from "./hooks/usePowerDialogs";
-import { usePowerPanelTargets } from "./hooks/usePowerPanelTargets";
-import { useBuildPowerState } from "./hooks/useBuildPowerState";
-import { useAuxiliaryPowerSlots } from "./hooks/useAuxiliaryPowerSlots";
-import { useCombatPowerSlots } from "./hooks/useCombatPowerSlots";
-import { useArchetypeRoleState } from "./hooks/useArchetypeRoleState";
-import { useArchetypePowerState } from "./hooks/useArchetypePowerState";
-import { useAdvantageActions } from "./hooks/useAdvantageActions";
-import { getMatchingRequirementPowerIds } from "./utils/buildValidation";
+} from "@/utils/buildSerialization";
+import { useShareUrlSync } from "@/hooks/useShareUrlSync";
+import { useBuilderData } from "@/hooks/useBuilderData";
+import { usePowerDialogs } from "@/hooks/usePowerDialogs";
+import { useArchetypeRoleState } from "@/hooks/useArchetypeRoleState";
+import { useArchetypePowerState } from "@/hooks/useArchetypePowerState";
+import { useAdvantageActions } from "@/hooks/useAdvantageActions";
+import { getMatchingRequirementPowerIds } from "@/utils/buildValidation";
 function App() {
   const [buildName, setBuildName] = useState("My Awesome Build");
   const [energyBuilderSelectionVersion, setEnergyBuilderSelectionVersion] =
     useState(0);
-  const [energyBuilderReopenRequest, setEnergyBuilderReopenRequest] = useState({
+  const [energyBuilderPanelRequest, setEnergyBuilderPanelRequest] = useState<{
+    action: "close" | "none" | "open";
+    selectionVersion: number;
+    version: number;
+  }>({
+    action: "none",
     selectionVersion: 0,
     version: 0,
   });
@@ -608,25 +621,60 @@ function App() {
       return;
     }
 
-    reopenEnergyBuilderSectionForSlot(slotNumber);
+    updateEnergyBuilderPanelForPowerSlot(slotNumber);
     openPowerDialogState(slotNumber, anchor);
   }
 
-  function reopenEnergyBuilderSectionForSlot(slotNumber: number) {
+  function updateEnergyBuilderPanelForPowerSlot(slotNumber: number) {
     const targetSlot =
       buildSlots.find((slot) => slot.slot === slotNumber) ?? null;
+    const targetIsEnergyBuilder = targetSlot?.power?.tier === -1;
+    const isDeselectingEnergyBuilderSlot =
+      selectedPowerTargetBuildSlot?.slot === slotNumber &&
+      targetIsEnergyBuilder;
+    const shouldOpenEnergyBuilderSection =
+      targetSlot?.slot === 1 || targetIsEnergyBuilder;
+    const isLeavingEnergyBuilderSlot =
+      selectedPowerTargetBuildSlot?.power?.tier === -1 &&
+      selectedPowerTargetBuildSlot.slot !== slotNumber &&
+      !targetIsEnergyBuilder;
 
-    if (targetSlot?.slot === 1 || targetSlot?.power?.tier === -1) {
-      setEnergyBuilderReopenRequest((currentRequest) => ({
+    if (isDeselectingEnergyBuilderSlot) {
+      requestCloseEnergyBuilderSection();
+      return;
+    }
+
+    if (shouldOpenEnergyBuilderSection) {
+      setEnergyBuilderPanelRequest((currentRequest) => ({
+        action: "open",
         selectionVersion: energyBuilderSelectionVersion,
         version: currentRequest.version + 1,
       }));
+      return;
+    }
+
+    if (isLeavingEnergyBuilderSlot) {
+      requestCloseEnergyBuilderSection();
+    }
+  }
+
+  function requestCloseEnergyBuilderSection() {
+    setEnergyBuilderPanelRequest((currentRequest) => ({
+      action: "close",
+      selectionVersion: energyBuilderSelectionVersion,
+      version: currentRequest.version + 1,
+    }));
+  }
+
+  function closeEnergyBuilderSectionWhenLeavingPowerTarget() {
+    if (selectedPowerTargetBuildSlot?.power?.tier === -1) {
+      requestCloseEnergyBuilderSection();
     }
   }
 
   function selectBuildSlotAsPowerTarget(slotNumber: number) {
     setBuildCheckPowerFilter(null);
-    reopenEnergyBuilderSectionForSlot(slotNumber);
+    updateEnergyBuilderPanelForPowerSlot(slotNumber);
 
     if (!isFreeform) {
       if (archetypeAlternativePowerSlotNumbers.has(slotNumber)) {
@@ -641,6 +689,7 @@ function App() {
 
   function selectPowerVariantSlotAsTarget(slotNumber: number) {
     setBuildCheckPowerFilter(null);
+    closeEnergyBuilderSectionWhenLeavingPowerTarget();
     selectPowerPanelTarget(
       "powerVariant",
       slotNumber,
@@ -656,6 +705,7 @@ function App() {
 
   function selectTravelPowerSlotAsTarget(slotNumber: number) {
     setBuildCheckPowerFilter(null);
+    closeEnergyBuilderSectionWhenLeavingPowerTarget();
     selectPowerPanelTarget(
       "travelPower",
       slotNumber,
@@ -666,6 +716,7 @@ function App() {
 
   function selectDeviceSlotAsTarget(slotNumber: number) {
     setBuildCheckPowerFilter(null);
+    closeEnergyBuilderSectionWhenLeavingPowerTarget();
     selectPowerPanelTarget("device", slotNumber, devicesFilterId, true);
   }
 
@@ -1077,10 +1128,11 @@ function App() {
           key={`powers-${powerSearchResetKey}`}
           advantages={advantages}
           buildSlots={allPowerSlots}
-          energyBuilderReopenRequestSelectionVersion={
-            energyBuilderReopenRequest.selectionVersion
+          energyBuilderPanelRequestAction={energyBuilderPanelRequest.action}
+          energyBuilderPanelRequestSelectionVersion={
+            energyBuilderPanelRequest.selectionVersion
           }
-          energyBuilderReopenRequestVersion={energyBuilderReopenRequest.version}
+          energyBuilderPanelRequestVersion={energyBuilderPanelRequest.version}
           energyBuilderSelectionVersion={energyBuilderSelectionVersion}
           canAddPower={(power) =>
             isStandardDevice(power)

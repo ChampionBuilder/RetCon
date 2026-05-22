@@ -1,5 +1,5 @@
-import type { Power } from "../types/powers";
-import type { BuildSlot } from "../types/builds";
+import type { Power } from "@/types/powers";
+import type { BuildSlot } from "@/types/builds";
 import { areFrameworksRelatedForUnlock } from "./powerFrameworks";
 
 function getNormalizedPowerType(power: Power) {

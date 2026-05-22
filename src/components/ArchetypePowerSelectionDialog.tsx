@@ -1,10 +1,10 @@
-import type { Power } from "../types/powers";
-import { getPowerIconName } from "../utils/icons";
-import { getPowerTooltipText } from "../utils/powerText";
-import { getPowerTooltipAttribute } from "../utils/powerTooltip";
-import type { DialogAnchor } from "./AnchoredDialog";
-import { AnchoredDialog } from "./AnchoredDialog";
-import { SpriteIcon } from "./SpriteIcon";
+import type { Power } from "@/types/powers";
+import { getPowerIconName } from "@/shared/utils/icons";
+import { getPowerTooltipText } from "@/shared/utils/powerText";
+import { getPowerTooltipAttribute } from "@/shared/utils/powerTooltip";
+import type { DialogAnchor } from "@/shared/ui/AnchoredDialog";
+import { AnchoredDialog } from "@/shared/ui/AnchoredDialog";
+import { SpriteIcon } from "@/shared/ui/SpriteIcon";
 
 type ArchetypePowerSelectionDialogProps = {
   anchor: DialogAnchor;

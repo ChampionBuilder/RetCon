@@ -1,6 +1,6 @@
-import type { Advantage } from "../types/advantages";
-import type { BuildSlot } from "../types/builds";
-import type { Power } from "../types/powers";
+import type { Advantage } from "@/types/advantages";
+import type { BuildSlot } from "@/types/builds";
+import type { Power } from "@/types/powers";
 import { isUltimatePowerVariantDevice } from "./powerFrameworks";
 import { getPowerAdvantages } from "./powerAdvantages";
 

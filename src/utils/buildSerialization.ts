@@ -4,13 +4,13 @@ import {
   initialDeviceSlots,
   initialPowerVariantSlots,
   initialTravelPowerSlots,
-} from "../constants/buildSlots";
-import type { BuildSlot } from "../types/builds";
-import type { Power } from "../types/powers";
+} from "@/constants/buildSlots";
+import type { BuildSlot } from "@/types/builds";
+import type { Power } from "@/types/powers";
 import {
   createEmptySpecializationPoints,
   type SpecializationTreePoints,
-} from "./specializations";
+} from "@/features/specializations";
 import { getPowerDisplayFrameworkId } from "./powerFrameworks";
 
 type BuildSerializationInput = {

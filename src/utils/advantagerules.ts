@@ -1,5 +1,5 @@
-import type { Advantage } from "../types/advantages";
-import type { BuildSlot } from "../types/builds";
+import type { Advantage } from "@/types/advantages";
+import type { BuildSlot } from "@/types/builds";
 
 export const baseAdvantagePointBudget = 36;
 export const maxAdvantagePointsPerPower = 5;

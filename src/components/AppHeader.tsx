@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { publicAssetUrl } from "../utils/publicAssetUrl";
+import { publicAssetUrl } from "@/shared/utils/publicAssetUrl";
 
 type AppHeaderProps = {
   buildName: string;

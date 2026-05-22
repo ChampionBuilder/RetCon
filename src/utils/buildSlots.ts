@@ -1,4 +1,4 @@
-import type { BuildSlot } from "../types/builds";
+import type { BuildSlot } from "@/types/builds";
 
 export function clearBuildSlot(slot: BuildSlot): BuildSlot {
   return {
