@@ -46,8 +46,6 @@ type PowersPanelProps = {
 };
 
 const tierOrder = [-1, 0, 1, 2, 3, 4, null] as const;
-const frameworkButtonWidth = 34;
-const frameworkStripGap = 5;
 const travelFrameworkOrder = [
   "Flight",
   "Superspeed",
@@ -204,6 +202,8 @@ export function PowersPanel({
     setReopenedEnergyBuilderSelectionVersion,
   ] = useState(0);
   const [frameworkStripColumns, setFrameworkStripColumns] = useState(1);
+  const [frameworkGroupSeparatorColumns, setFrameworkGroupSeparatorColumns] =
+    useState(1);
   const frameworkStripRef = useRef<HTMLDivElement | null>(null);
   const parsedSearch = useMemo(() => parsePowerSearch(search), [search]);
   const hasEnergyBuilder = buildSlots.some((slot) => slot.power?.tier === -1);
@@ -446,8 +446,25 @@ export function PowersPanel({
       return;
     }
 
+    const frameworkStrip = frameworkStripElement;
+
     function updateFrameworkStripColumns() {
-      const width = frameworkStripElement?.clientWidth ?? 0;
+      const width = frameworkStrip.clientWidth;
+      const styles = window.getComputedStyle(frameworkStrip);
+      const frameworkButtonWidth = Number.parseFloat(
+        styles.getPropertyValue("--framework-button-width"),
+      ) || 34;
+      const frameworkStripGap = Number.parseFloat(
+        styles.getPropertyValue("--framework-strip-gap"),
+      ) || 5;
+      const nextFrameworkGroupSeparatorColumns = Math.max(
+        0,
+        Math.round(
+          Number.parseFloat(
+            styles.getPropertyValue("--framework-group-separator-columns"),
+          ) || 0,
+        ),
+      );
       const nextColumns = Math.max(
         1,
         Math.floor(
@@ -457,13 +474,14 @@ export function PowersPanel({
       );
 
       setFrameworkStripColumns(nextColumns);
+      setFrameworkGroupSeparatorColumns(nextFrameworkGroupSeparatorColumns);
     }
 
     updateFrameworkStripColumns();
 
     const resizeObserver = new ResizeObserver(updateFrameworkStripColumns);
 
-    resizeObserver.observe(frameworkStripElement);
+    resizeObserver.observe(frameworkStrip);
 
     return () => resizeObserver.disconnect();
   }, []);
@@ -547,7 +565,12 @@ export function PowersPanel({
 
   function renderFrameworkStripItems() {
     const frameworkStripRows = 2;
-    const firstFrameworkColumn = Math.min(2, frameworkStripColumns);
+    const isCompactFrameworkStrip = frameworkGroupSeparatorColumns === 0;
+    const firstFrameworkColumn = isCompactFrameworkStrip
+      ? 1
+      : Math.min(2, frameworkStripColumns);
+    const firstFrameworkColumnByRow = (targetRow: number) =>
+      isCompactFrameworkStrip && targetRow > 0 ? 0 : firstFrameworkColumn;
     const utilityGroup = frameworkGroups.find(
       (frameworkGroup) => frameworkGroup.id === "utility",
     );
@@ -615,14 +638,15 @@ export function PowersPanel({
         ),
       ) ?? [];
     const utilityRow = frameworkStripRows - 1;
+    const utilityPreGapColumns = isCompactFrameworkStrip ? 0 : 1;
     const reservedUtilityStartColumn = Math.max(
-      firstFrameworkColumn,
-      frameworkStripColumns - utilityButtons.length - 1,
+      firstFrameworkColumnByRow(utilityRow),
+      frameworkStripColumns - utilityButtons.length - utilityPreGapColumns,
     );
 
     let row = 0;
-    let column = firstFrameworkColumn;
-    let utilityRowNextColumn = firstFrameworkColumn;
+    let column = firstFrameworkColumnByRow(row);
+    let utilityRowNextColumn = firstFrameworkColumnByRow(utilityRow);
     const getAvailableColumns = (targetRow: number) =>
       targetRow === utilityRow
         ? reservedUtilityStartColumn
@@ -639,28 +663,37 @@ export function PowersPanel({
           (event) => onSelectFramework(framework.id, event.shiftKey),
         ),
       );
-      const isAtRowStart = column === firstFrameworkColumn;
-      const separatorWidth = isAtRowStart ? 0 : 1;
+      const isAtRowStart = column === firstFrameworkColumnByRow(row);
+      const separatorWidth = isAtRowStart ? 0 : frameworkGroupSeparatorColumns;
       const requiredWidth = separatorWidth + groupItems.length;
 
-      if (column + requiredWidth > getAvailableColumns(row)) {
+      if (!isCompactFrameworkStrip && column + requiredWidth > getAvailableColumns(row)) {
         row += 1;
-        column = firstFrameworkColumn;
+        column = firstFrameworkColumnByRow(row);
       }
 
       if (row >= frameworkStripRows) {
         return;
       }
 
-      if (column + groupItems.length > getAvailableColumns(row)) {
+      if (!isCompactFrameworkStrip && column + groupItems.length > getAvailableColumns(row)) {
         return;
       }
 
-      if (column !== firstFrameworkColumn) {
+      if (!isCompactFrameworkStrip && column !== firstFrameworkColumnByRow(row)) {
         column += 1;
       }
 
       groupItems.forEach((item) => {
+        if (column >= getAvailableColumns(row)) {
+          row += 1;
+          column = firstFrameworkColumnByRow(row);
+        }
+
+        if (row >= frameworkStripRows) {
+          return;
+        }
+
         const cellIndex = row * frameworkStripColumns + column;
 
         cells[cellIndex] = item;
@@ -673,7 +706,10 @@ export function PowersPanel({
     });
 
     const utilityStartColumn = Math.min(
-      Math.max(utilityRowNextColumn + 1, firstFrameworkColumn),
+      Math.max(
+        utilityRowNextColumn + utilityPreGapColumns,
+        firstFrameworkColumnByRow(utilityRow),
+      ),
       frameworkStripColumns - utilityButtons.length,
     );
 

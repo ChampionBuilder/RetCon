@@ -527,7 +527,8 @@ export function BuildPanel({
               </div>
             ) : null}
           </div>
-          <span>CAMS level :</span>
+          <span className="cams-control__label-full">CAMS level :</span>
+          <span className="cams-control__label-short">CAMS lvl :</span>
           <strong>{camsLevel}</strong>
           <button
             disabled={camsLevel <= 0}

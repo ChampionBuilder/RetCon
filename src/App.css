@@ -1,5 +1,6 @@
 .app-shell {
   --character-column-width: 250px;
+  --specializations-column-width: clamp(250px, calc(0px + 16.667vw), 330px);
   --workspace-column-gap: 7px;
   --choice-border: #263653;
   --choice-background: rgba(12, 15, 22, 0.84);
@@ -203,6 +204,8 @@ h3 {
 }
 
 .reset-menu__trigger {
+  display: inline-flex;
+  align-items: center;
   min-width: 74px;
   list-style: none;
   padding: 2px 24px 2px 12px;
@@ -324,6 +327,42 @@ h3 {
   padding: 2px 18px;
 }
 
+@media (max-width: 1500px) {
+  .app-header__controls,
+  .top-tabs {
+    gap: 7px;
+  }
+
+  .header-action-button,
+  .utility-button,
+  .reset-menu__trigger {
+    font-size: 12px;
+    line-height: 1;
+    white-space: nowrap;
+  }
+
+  .header-action-button {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  .utility-button {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .reset-menu__trigger {
+    min-width: 62px;
+    min-height: 25px;
+    padding-right: 20px;
+    padding-left: 10px;
+  }
+
+  .reset-menu__trigger::after {
+    right: 9px;
+  }
+}
+
 .tab-button:hover,
 .tab-button:focus-visible,
 .header-action-button:hover,
@@ -362,7 +401,7 @@ h3 {
     var(--character-column-width)
     minmax(420px, 1.28fr)
     minmax(330px, 0.87fr)
-    330px;
+    var(--specializations-column-width);
   gap: var(--workspace-column-gap);
 }
 
@@ -1436,13 +1475,19 @@ h3 {
 }
 
 .framework-strip {
+  --framework-button-height: 44px;
+  --framework-button-width: 34px;
+  --framework-icon-height: 40px;
+  --framework-icon-width: 30px;
+  --framework-group-separator-columns: 1;
+  --framework-strip-gap: 5px;
   display: grid;
   flex: 0 0 112px;
   height: 112px;
   align-content: flex-start;
-  grid-auto-rows: 44px;
-  grid-template-columns: repeat(auto-fill, 34px);
-  gap: 5px;
+  grid-auto-rows: var(--framework-button-height);
+  grid-template-columns: repeat(auto-fill, var(--framework-button-width));
+  gap: var(--framework-strip-gap);
   box-sizing: border-box;
   overflow: hidden;
   padding: 9px 0 10px;
@@ -1453,16 +1498,16 @@ h3 {
 }
 
 .framework-spacer {
-  width: 34px;
-  height: 44px;
+  width: var(--framework-button-width);
+  height: var(--framework-button-height);
   pointer-events: none;
 }
 
 .framework-button {
   display: grid;
-  width: 34px;
+  width: var(--framework-button-width);
   min-width: 0;
-  height: 44px;
+  height: var(--framework-button-height);
   place-items: center;
   padding: 0;
   border: 1px solid transparent;
@@ -1477,8 +1522,8 @@ h3 {
 }
 
 .framework-button__icon {
-  width: 30px !important;
-  height: 40px !important;
+  width: var(--framework-icon-width) !important;
+  height: var(--framework-icon-height) !important;
 }
 
 .framework-button:disabled {
@@ -1493,6 +1538,38 @@ h3 {
 .framework-button--active:focus-visible {
   border-color: #6ea6ff;
   box-shadow: 0 0 0 1px rgba(89, 150, 255, 0.4);
+}
+
+@media (max-width: 1850px) {
+  .framework-strip {
+    --framework-button-height: 39px;
+    --framework-button-width: 30px;
+    --framework-icon-height: 35px;
+    --framework-icon-width: 26px;
+    --framework-strip-gap: 4px;
+    flex-basis: 101px;
+    height: 101px;
+    padding-top: 8px;
+    padding-bottom: 7px;
+  }
+}
+
+@media (max-width: 1650px) {
+  .framework-strip {
+    --framework-group-separator-columns: 0;
+  }
+
+  .framework-spacer {
+    display: none;
+  }
+}
+
+@media (max-width: 1500px) {
+  .framework-strip {
+    --framework-button-width: 28px;
+    --framework-icon-width: 24px;
+    --framework-strip-gap: 2px;
+  }
 }
 
 .search-field {
@@ -1625,6 +1702,12 @@ h3 {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 4px 8px;
+}
+
+@media (max-width: 1500px) {
+  .power-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 .power-choice {
@@ -2296,9 +2379,9 @@ h3 {
   flex: 0 0 auto;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
+  gap: 6px;
   margin-top: 10px;
-  padding: 13px;
+  padding: 10px 10px 10px 10px;
   border: 1px solid #333;
   border-radius: 3px;
   color: #f0f2fa;
@@ -2335,8 +2418,8 @@ h3 {
 .cams-control {
   display: grid;
   position: relative;
-  grid-template-columns: 28px max-content 12px 23px 23px;
-  gap: 8px;
+  grid-template-columns: 24px max-content 12px 23px 23px;
+  gap: 6px;
   margin-top: 0;
   justify-content: end;
   white-space: nowrap;
@@ -2361,13 +2444,27 @@ h3 {
 
 .cams-control .cams-control__icon-button {
   display: grid;
-  width: 28px;
+  width: 24px;
   height: 28px;
   place-items: center;
   padding: 0;
   border: 0;
   background: transparent;
   box-shadow: none;
+}
+
+.cams-control__label-short {
+  display: none;
+}
+
+@media (max-width: 1500px) {
+  .cams-control__label-full {
+    display: none;
+  }
+
+  .cams-control__label-short {
+    display: inline;
+  }
 }
 
 .cams-control .cams-control__icon-button:hover,

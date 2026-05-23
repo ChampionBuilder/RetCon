@@ -16,11 +16,11 @@ function isTierUnlockedBySlotLevel(power: Power, targetSlotLevel: number | null)
 
   switch (power.tier) {
     case 1:
-      return targetSlotLevel >= 6;
-    case 2:
       return targetSlotLevel >= 8;
+    case 2:
+      return targetSlotLevel >= 14;
     case 3:
-      return targetSlotLevel >= 17;
+      return targetSlotLevel >= 20;
     default:
       return false;
   }
@@ -127,9 +127,8 @@ export function canSelectPower(
       areFrameworksRelatedForUnlock(p.framework_id, power.framework_id)
   ).length;
 
-  const otherCount = selectedPowers.filter(
-    (p) =>
-      p.tier !== -1
+  const anyFrameworkCount = selectedPowers.filter(
+    (p) => p.tier !== -1,
   ).length;
 
   // ========================================
@@ -145,21 +144,21 @@ export function canSelectPower(
       return (
         isTierUnlockedBySlotLevel(power, targetSlotLevel) ||
         frameworkCount >= 1 ||
-        otherCount >= 2
+        anyFrameworkCount >= 2
       );
 
     case 2:
       return (
         isTierUnlockedBySlotLevel(power, targetSlotLevel) ||
         frameworkCount >= 3 ||
-        otherCount >= 4
+        anyFrameworkCount >= 4
       );
 
     case 3:
       return (
         isTierUnlockedBySlotLevel(power, targetSlotLevel) ||
         frameworkCount >= 5 ||
-        otherCount >= 6
+        anyFrameworkCount >= 6
       );
 
     default:
