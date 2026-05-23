@@ -104,6 +104,7 @@ export type LegacyImportBuild = {
   specializationPointsBySlot: [number[], number[], number[]];
   selectedMasterySlot: number | null;
   camsLevel: number;
+  camsIconName: string;
 };
 
 export type LegacyImportResult = {
@@ -1935,6 +1936,7 @@ export async function importLegacyHeroCreatorBuild(
   return {
     build: {
       buildName: parsedBuild.buildName || defaultImportedBuildName,
+      camsIconName: "CAMS_Generic",
       camsLevel: 0,
       buildSlots,
       deviceSlots,

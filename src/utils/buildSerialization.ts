@@ -28,6 +28,7 @@ type BuildSerializationInput = {
   specializationPointsBySlot: SpecializationTreePoints[];
   selectedMasterySlot: number | null;
   camsLevel: number;
+  camsIconName: string;
 };
 
 type EncodedSlot = {
@@ -51,6 +52,7 @@ type ParsedSerializedBuild = {
   specializationPointsBySlot: SpecializationTreePoints[];
   selectedMasterySlot: number | null;
   camsLevel: number;
+  camsIconName: string;
 };
 
 export type HydratedBuild = Omit<
@@ -65,6 +67,12 @@ const maxSpecializationPointValue = 3;
 const emptySuperStatIds = [0, 0, 0];
 const emptyTalentIds = [0, 0, 0, 0, 0, 0];
 const emptySpecializationTreeIds = [0, 0, 0];
+const camsLevelBitMask = 0b111;
+const serializedCamsIconNames = [
+  "CAMS_Generic",
+  "CAMS_Green",
+  "CAMS_blue",
+] as const;
 
 // Append-only: changing existing positions would invalidate shared-power display codes.
 const serializedDisplayFrameworkIds = [
@@ -368,6 +376,31 @@ function hydratePowerIdSlots(
   });
 }
 
+function getCamsIconCode(camsIconName: string) {
+  const iconIndex = serializedCamsIconNames.indexOf(
+    camsIconName as (typeof serializedCamsIconNames)[number],
+  );
+
+  return iconIndex >= 0 ? iconIndex : 0;
+}
+
+function packCamsSettings(camsLevel: number, camsIconName: string) {
+  const safeCamsLevel = Math.max(0, Math.min(camsLevelBitMask, camsLevel));
+
+  return safeCamsLevel | (getCamsIconCode(camsIconName) << 3);
+}
+
+function unpackCamsSettings(encodedCamsSettings: number) {
+  const camsLevel = encodedCamsSettings & camsLevelBitMask;
+  const camsIconName =
+    serializedCamsIconNames[encodedCamsSettings >> 3] ?? "CAMS_Generic";
+
+  return {
+    camsIconName,
+    camsLevel,
+  };
+}
+
 export function serializeBuild(input: BuildSerializationInput) {
   const bytes: number[] = [];
 
@@ -387,7 +420,7 @@ export function serializeBuild(input: BuildSerializationInput) {
   );
   writeSpecializationPoints(bytes, input.specializationPointsBySlot);
   writeVarint(bytes, input.selectedMasterySlot === null ? 0 : input.selectedMasterySlot + 1);
-  writeVarint(bytes, input.camsLevel);
+  writeVarint(bytes, packCamsSettings(input.camsLevel, input.camsIconName));
 
   return base64UrlEncode(Uint8Array.from(bytes));
 }
@@ -431,7 +464,7 @@ export function parseSerializedBuild(serializedBuild: string) {
     );
     const specializationPointsBySlot = readSpecializationPoints(bytes, cursor);
     const selectedMasteryCode = readVarint(bytes, cursor);
-    const camsLevel = readVarint(bytes, cursor);
+    const camsSettings = unpackCamsSettings(readVarint(bytes, cursor));
 
     if (cursor.index !== bytes.length) {
       return null;
@@ -452,7 +485,8 @@ export function parseSerializedBuild(serializedBuild: string) {
       specializationPointsBySlot,
       selectedMasterySlot:
         selectedMasteryCode === 0 ? null : selectedMasteryCode - 1,
-      camsLevel,
+      camsIconName: camsSettings.camsIconName,
+      camsLevel: camsSettings.camsLevel,
     } satisfies ParsedSerializedBuild;
   } catch {
     return null;
@@ -494,6 +528,7 @@ export function hydrateSerializedBuild(
     selectedSpecializationTreeIds: payload.selectedSpecializationTreeIds,
     specializationPointsBySlot: payload.specializationPointsBySlot,
     selectedMasterySlot: payload.selectedMasterySlot,
+    camsIconName: payload.camsIconName,
     camsLevel: payload.camsLevel,
   };
 }

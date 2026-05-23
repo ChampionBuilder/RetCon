@@ -934,7 +934,7 @@ h3 {
 .power-tooltip__meta strong {
   color: #9ebaff;
   font-size: 11px;
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -1677,7 +1677,7 @@ h3 {
 
 .inline-choice-button__details strong,
 .talent-slot-button__details strong {
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .power-choice--selected:hover {
@@ -2073,7 +2073,7 @@ h3 {
 .advantage-selection-choice span {
   overflow: hidden;
   font-size: 13px;
-  font-weight: 800;
+  font-weight: 700;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -2136,7 +2136,7 @@ h3 {
 .archetype-selection-choice span {
   color: #9ebaff;
   font-size: 14px;
-  font-weight: 800;
+  font-weight: 700;
   line-height: 16px;
 }
 
@@ -2228,7 +2228,7 @@ h3 {
   overflow: hidden;
   color: #9ebaff;
   font-size: 14px;
-  font-weight: 800;
+  font-weight: 700;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -2257,7 +2257,7 @@ h3 {
   overflow: hidden;
   color: #9ebaff;
   font-size: 14px;
-  font-weight: 800;
+  font-weight: 700;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -2291,6 +2291,7 @@ h3 {
 }
 
 .build-footer {
+  container-type: inline-size;
   display: flex;
   flex: 0 0 auto;
   align-items: center;
@@ -2312,6 +2313,20 @@ h3 {
   white-space: nowrap;
 }
 
+.advantage-points__label-short {
+  display: none;
+}
+
+@container (max-width: 360px) {
+  .advantage-points__label-full {
+    display: none;
+  }
+
+  .advantage-points__label-short {
+    display: inline;
+  }
+}
+
 .advantage-points--over-budget {
   color: #ff5b5b;
   font-weight: 700;
@@ -2319,11 +2334,17 @@ h3 {
 
 .cams-control {
   display: grid;
-  grid-template-columns: max-content 12px 23px 23px;
+  position: relative;
+  grid-template-columns: 28px max-content 12px 23px 23px;
   gap: 8px;
   margin-top: 0;
   justify-content: end;
   white-space: nowrap;
+}
+
+.cams-control__icon-menu {
+  position: relative;
+  display: grid;
 }
 
 .cams-control button {
@@ -2334,8 +2355,101 @@ h3 {
   color: #d9e6ff;
   background: #172762;
   font-size: 15px;
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1;
+}
+
+.cams-control .cams-control__icon-button {
+  display: grid;
+  width: 28px;
+  height: 28px;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.cams-control .cams-control__icon-button:hover,
+.cams-control .cams-control__icon-button:focus-visible {
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.cams-control .cams-control__icon-button:not(:disabled):active {
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  transform: translateY(1px);
+}
+
+.cams-choice-menu {
+  position: absolute;
+  bottom: calc(100% + 7px);
+  left: 0;
+  z-index: 40;
+  display: grid;
+  width: max-content;
+  min-width: 150px;
+  gap: 5px;
+  padding: 7px;
+  border: 1px solid #303744;
+  border-radius: 3px;
+  background:
+    linear-gradient(180deg, rgba(29, 33, 42, 0.98), rgba(17, 19, 26, 0.98)),
+    #12151d;
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.035),
+    0 10px 24px rgba(0, 0, 0, 0.42);
+}
+
+.cams-control .cams-choice-menu__item {
+  display: grid;
+  width: 100%;
+  height: auto;
+  min-height: 30px;
+  grid-template-columns: 24px max-content;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 9px 4px 5px;
+  border-color: #343943;
+  color: #c9d3e8;
+  background:
+    linear-gradient(180deg, rgba(31, 34, 42, 0.98), rgba(16, 18, 24, 0.98)),
+    #14161c;
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.035),
+    0 0 8px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+.cams-control .cams-choice-menu__item:hover,
+.cams-control .cams-choice-menu__item:focus-visible {
+  border-color: #557ed1;
+  color: #dfe8ff;
+  background:
+    linear-gradient(180deg, rgba(37, 49, 79, 0.98), rgba(20, 26, 44, 0.98)),
+    #171d2d;
+}
+
+.cams-control .cams-choice-menu__item:not(:disabled):active {
+  border-color: #6d90d9;
+  color: #eef4ff;
+  background:
+    linear-gradient(180deg, rgba(13, 18, 34, 0.98), rgba(30, 45, 82, 0.98)),
+    #11182a;
+  box-shadow:
+    inset 0 2px 5px rgba(0, 0, 0, 0.55),
+    inset 0 0 0 1px rgba(126, 164, 255, 0.18),
+    0 0 6px rgba(64, 112, 220, 0.16);
+  transform: translateY(1px);
+}
+
+.cams-choice-menu__item span {
+  color: #dbe5ff;
+  font-size: 13px;
+  font-weight: 700;
 }
 
 .cams-control button:disabled {
@@ -2375,7 +2489,7 @@ h3 {
   color: #9eb6ff;
   background: transparent;
   font-size: 15px;
-  font-weight: 800;
+  font-weight: 700;
   text-align: left;
 }
 
@@ -2459,7 +2573,7 @@ h3 {
   color: #d9e6ff;
   background: #172762;
   font-size: 15px;
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1;
 }
 
@@ -2530,7 +2644,7 @@ h3 {
   overflow: hidden;
   color: #9ebaff;
   font-size: 14px;
-  font-weight: 800;
+  font-weight: 700;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -2560,18 +2674,18 @@ h3 {
   text-align: center;
 }
 
-.specialization-role-points span {
+.specialization-role-points span:not(.specialization-role-points__value) {
   color: #9ebaff;
   font-size: 10px;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
 
-.specialization-role-points strong {
+.specialization-role-points__value {
   color: #f3f7ff;
   font-size: 14px;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .specialization-dialog-option-list {

@@ -234,6 +234,8 @@ function App() {
     travelPowerSlots,
   } = useAuxiliaryPowerSlots();
   const [camsLevel, setCamsLevel] = useState(0);
+  const [camsIconName, setCamsIconName] = useState("CAMS_Generic");
+  const [camsMenuOpen, setCamsMenuOpen] = useState(false);
   const [dataDialogOpen, setDataDialogOpen] = useState(false);
   const [aboutDialogOpen, setAboutDialogOpen] = useState(false);
   const [importBuildDialogOpen, setImportBuildDialogOpen] = useState(false);
@@ -270,10 +272,12 @@ function App() {
         specializationPointsBySlot,
         selectedMasterySlot,
         camsLevel,
+        camsIconName,
       }),
     [
       buildName,
       buildSlots,
+      camsIconName,
       camsLevel,
       selectedArchetypeId,
       selectedInnateTalentId,
@@ -292,6 +296,34 @@ function App() {
     () => createShareUrl(serializedBuild),
     [serializedBuild],
   );
+
+  function closeAllPopupsExceptCams() {
+    closePowerDialogs();
+    closeArchetypeDialog();
+    closeRoleDialog();
+    closeStatsTalentDialogs();
+    closeSpecializationTreeDialog();
+    closeMasteryDialog();
+    setBuildCheckDialogOpen(false);
+    setDataDialogOpen(false);
+    setAboutDialogOpen(false);
+    setImportBuildDialogOpen(false);
+  }
+
+  function closeCamsMenu() {
+    setCamsMenuOpen(false);
+  }
+
+  function toggleCamsMenu() {
+    if (camsMenuOpen) {
+      setCamsMenuOpen(false);
+      return;
+    }
+
+    closeAllPopupsExceptCams();
+    setCamsMenuOpen(true);
+  }
+
   const {
     deleteSavedBuild,
     getSavedBuildData,
@@ -627,6 +659,7 @@ function App() {
       return;
     }
 
+    closeCamsMenu();
     resetUtilityPowerFilterForCombatSlot();
     updateEnergyBuilderPanelForPowerSlot(slotNumber);
     openPowerDialogState(slotNumber, anchor);
@@ -885,6 +918,7 @@ function App() {
     requestOpenEnergyBuilderSection();
     resetAllAuxiliaryPowerSlots();
     setCamsLevel(0);
+    setCamsIconName("CAMS_Generic");
     resetArchetypeRole();
     setSelectedFrameworks(null);
     clearPowerPanelTargets();
@@ -933,6 +967,7 @@ function App() {
       selectedMasterySlot: hydratedBuild.selectedMasterySlot,
     });
     setCamsLevel(hydratedBuild.camsLevel);
+    setCamsIconName(hydratedBuild.camsIconName);
     setSelectedFrameworks(null);
     clearPowerPanelTargets();
     closePowerDialogs();
@@ -1072,11 +1107,70 @@ function App() {
     slotIndex: number,
     anchor: DialogAnchor,
   ) {
+    closeCamsMenu();
     openSuperStatDialog(slotIndex, anchor, isFreeform);
   }
 
   function openCurrentInnateTalentDialog(anchor: DialogAnchor) {
+    closeCamsMenu();
     openInnateTalentDialog(anchor, isFreeform);
+  }
+
+  function openCurrentTalentDialog(slotIndex: number, anchor: DialogAnchor) {
+    closeCamsMenu();
+    openTalentDialog(slotIndex, anchor);
+  }
+
+  function openCurrentArchetypeDialog(anchor: DialogAnchor) {
+    closeCamsMenu();
+    openArchetypeDialog(anchor);
+  }
+
+  function openCurrentRoleDialog(anchor: DialogAnchor) {
+    closeCamsMenu();
+    openRoleDialog(anchor);
+  }
+
+  function openCurrentDeviceDialog(slotNumber: number, anchor: DialogAnchor) {
+    closeCamsMenu();
+    openDeviceDialog(slotNumber, anchor);
+  }
+
+  function openCurrentTravelPowerDialog(
+    slotNumber: number,
+    anchor: DialogAnchor,
+  ) {
+    closeCamsMenu();
+    openTravelPowerDialog(slotNumber, anchor);
+  }
+
+  function openCurrentPowerVariantDialog(
+    slotNumber: number,
+    anchor: DialogAnchor,
+  ) {
+    closeCamsMenu();
+    openPowerVariantDialog(slotNumber, anchor);
+  }
+
+  function openCurrentAdvantageDialog(
+    slotNumber: number,
+    anchor: DialogAnchor,
+  ) {
+    closeCamsMenu();
+    openAdvantageDialog(slotNumber, anchor);
+  }
+
+  function openCurrentSpecializationTreeDialog(
+    slotIndex: 0 | 1 | 2,
+    anchor: DialogAnchor,
+  ) {
+    closeCamsMenu();
+    openSpecializationTreeDialog(slotIndex, anchor);
+  }
+
+  function openCurrentMasteryDialog(anchor: DialogAnchor) {
+    closeCamsMenu();
+    openMasteryDialog(anchor);
   }
 
   function selectCurrentSuperStat(slotIndex: number, statId: number) {
@@ -1108,10 +1202,22 @@ function App() {
         shareUrl={shareUrl}
         resetSuperStatsDisabled={!isFreeform}
         onBuildNameChange={setBuildName}
-        onOpenAbout={() => setAboutDialogOpen(true)}
-        onOpenBuildCheck={() => setBuildCheckDialogOpen(true)}
-        onOpenData={() => setDataDialogOpen(true)}
-        onImportBuild={() => setImportBuildDialogOpen(true)}
+        onOpenAbout={() => {
+          closeCamsMenu();
+          setAboutDialogOpen(true);
+        }}
+        onOpenBuildCheck={() => {
+          closeCamsMenu();
+          setBuildCheckDialogOpen(true);
+        }}
+        onOpenData={() => {
+          closeCamsMenu();
+          setDataDialogOpen(true);
+        }}
+        onImportBuild={() => {
+          closeCamsMenu();
+          setImportBuildDialogOpen(true);
+        }}
         onSave={saveCurrentBuild}
         onResetAll={resetAll}
         onResetSuperStats={resetSuperStats}
@@ -1175,9 +1281,9 @@ function App() {
           }
           onSelectInnateTalent={openCurrentInnateTalentDialog}
           onSelectSuperStatSlot={openCurrentSuperStatDialog}
-          onSelectTalentSlot={openTalentDialog}
+          onSelectTalentSlot={openCurrentTalentDialog}
           onSelectDeviceSlot={selectDeviceSlotAsTarget}
-          onSelectDeviceName={openDeviceDialog}
+          onSelectDeviceName={openCurrentDeviceDialog}
         />
 
         <PowersPanel
@@ -1271,16 +1377,20 @@ function App() {
           travelPowerSlots={travelPowerSlots}
           powerVariantSlots={powerVariantSlots}
           camsLevel={camsLevel}
+          camsIconName={camsIconName}
+          camsMenuOpen={camsMenuOpen}
           totalAdvantagePoints={totalAdvantagePoints}
           onChangeCamsLevel={changeCamsLevel}
-          onSelectArchetype={openArchetypeDialog}
-          onSelectRole={openRoleDialog}
+          onSelectCamsIcon={setCamsIconName}
+          onToggleCamsMenu={toggleCamsMenu}
+          onSelectArchetype={openCurrentArchetypeDialog}
+          onSelectRole={openCurrentRoleDialog}
           onSelectBuildSlot={selectBuildSlotAsPowerTarget}
           onSelectTravelPowerSlot={selectTravelPowerSlotAsTarget}
-          onSelectTravelPowerName={openTravelPowerDialog}
+          onSelectTravelPowerName={openCurrentTravelPowerDialog}
           onSelectPowerVariantSlot={selectPowerVariantSlotAsTarget}
-          onSelectPowerVariantName={openPowerVariantDialog}
-          onSelectAdvantageSlot={openAdvantageDialog}
+          onSelectPowerVariantName={openCurrentPowerVariantDialog}
+          onSelectAdvantageSlot={openCurrentAdvantageDialog}
           onSelectPowerSlot={openPowerDialog}
           highlightedPowerTargetSlot={
             selectedPowerTargetBuildSlot?.slot ?? null
@@ -1305,8 +1415,8 @@ function App() {
           masterySlot={selectedMasterySlot}
           pointsBySlot={specializationPointsBySlot}
           trees={selectedSpecializationTrees}
-          onOpenSpecialization={openSpecializationTreeDialog}
-          onSelectMastery={openMasteryDialog}
+          onOpenSpecialization={openCurrentSpecializationTreeDialog}
+          onSelectMastery={openCurrentMasteryDialog}
         />
       </main>
 

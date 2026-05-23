@@ -21,11 +21,15 @@ type BuildPanelProps = {
   advantages: Advantage[];
   advantagePointBudget: number;
   camsLevel: number;
+  camsIconName: string;
+  camsMenuOpen: boolean;
   totalAdvantagePoints: number;
   archetype: Archetype | null;
   role: ArchetypeGroup | null;
   roleLocked: boolean;
   onChangeCamsLevel: (delta: 1 | -1) => void;
+  onSelectCamsIcon: (iconName: string) => void;
+  onToggleCamsMenu: () => void;
   onSelectArchetype: (anchor: DialogAnchor) => void;
   onSelectRole: (anchor: DialogAnchor) => void;
   onSelectBuildSlot: (slotNumber: number) => void;
@@ -43,6 +47,25 @@ type BuildPanelProps = {
   invalidPowerVariantSlotNumbers: Set<number>;
   lockedPowerSlotNumbers: Set<number>;
 };
+
+const camsIconOptions = [
+  {
+    iconName: "CAMS_Generic",
+    label: "Any",
+    tooltip: "Choose any CAMS",
+  },
+  {
+    iconName: "CAMS_Green",
+    label: "Green CAMS",
+    tooltip: "Increase your max HP by 100/300/600/1200/2000",
+  },
+  {
+    iconName: "CAMS_blue",
+    label: "Blue CAMS",
+    tooltip:
+      "Increase your max energy by 5/15/30/50/75\nIncrease your energy regeneneration by 1/3/6/10/15 per second",
+  },
+];
 
 function formatAdvantageText(selectedAdvantages: Advantage[]) {
   if (selectedAdvantages.length === 0) {
@@ -76,11 +99,15 @@ export function BuildPanel({
   advantages,
   advantagePointBudget,
   camsLevel,
+  camsIconName,
+  camsMenuOpen,
   totalAdvantagePoints,
   archetype,
   role,
   roleLocked,
   onChangeCamsLevel,
+  onSelectCamsIcon,
+  onToggleCamsMenu,
   onSelectArchetype,
   onSelectRole,
   onSelectBuildSlot,
@@ -469,6 +496,37 @@ export function BuildPanel({
 
       <div className="build-footer">
         <div className="cams-control">
+          <div className="cams-control__icon-menu">
+            <button
+              aria-expanded={camsMenuOpen}
+              aria-label="Select CAMS color"
+              className="cams-control__icon-button"
+              title="Select CAMS color"
+              type="button"
+              onClick={onToggleCamsMenu}
+            >
+              <SpriteIcon name={camsIconName} size={28} />
+            </button>
+            {camsMenuOpen ? (
+              <div className="cams-choice-menu">
+                {camsIconOptions.map((option) => (
+                  <button
+                    className="cams-choice-menu__item"
+                    key={option.iconName}
+                    title={option.tooltip}
+                    type="button"
+                    onClick={() => {
+                      onSelectCamsIcon(option.iconName);
+                      onToggleCamsMenu();
+                    }}
+                  >
+                    <SpriteIcon name={option.iconName} size={22} />
+                    <span>{option.label}</span>
+                  </button>
+                ))}
+              </div>
+            ) : null}
+          </div>
           <span>CAMS level :</span>
           <strong>{camsLevel}</strong>
           <button
@@ -493,7 +551,9 @@ export function BuildPanel({
               : "advantage-points"
           }
         >
-          Advantage points : {totalAdvantagePoints} / {advantagePointBudget}
+          <span className="advantage-points__label-full">Advantage points</span>
+          <span className="advantage-points__label-short">Adv. points</span>
+          {` : ${totalAdvantagePoints} / ${advantagePointBudget}`}
         </p>
       </div>
     </section>

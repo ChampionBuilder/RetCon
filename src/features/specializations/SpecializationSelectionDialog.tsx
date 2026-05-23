@@ -108,7 +108,9 @@ export function SpecializationSelectionDialog({
             title="Specialization point budget"
           >
             <span>Points</span>
-            <strong>{`${totalPoints}/${specializationPointMax}`}</strong>
+            <span className="specialization-role-points__value">
+              {`${totalPoints}/${specializationPointMax}`}
+            </span>
           </div>
         </div>
       ) : null}
