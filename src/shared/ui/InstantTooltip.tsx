@@ -59,6 +59,7 @@ function releaseTooltipElement(element: HTMLElement | null) {
 export function InstantTooltip() {
   const activeElementRef = useRef<HTMLElement | null>(null);
   const mutationObserverRef = useRef<MutationObserver | null>(null);
+  const longPressTimeoutRef = useRef<number | null>(null);
   const tooltipRef = useRef<HTMLDivElement | null>(null);
   const [tooltip, setTooltip] = useState<TooltipState | null>(null);
 
@@ -90,6 +91,10 @@ export function InstantTooltip() {
   }, [tooltip]);
 
   useEffect(() => {
+    const hoverMediaQuery = window.matchMedia(
+      "(hover: hover) and (pointer: fine)",
+    );
+
     function getTooltipContent(element: HTMLElement): TooltipContent | null {
       if (element.dataset.powerTooltip) {
         try {
@@ -166,6 +171,13 @@ export function InstantTooltip() {
       setTooltip(null);
     }
 
+    function clearLongPressTimeout() {
+      if (longPressTimeoutRef.current !== null) {
+        window.clearTimeout(longPressTimeoutRef.current);
+        longPressTimeoutRef.current = null;
+      }
+    }
+
     function handleMouseOver(event: MouseEvent) {
       if (
         event.target instanceof Element &&
@@ -228,11 +240,60 @@ export function InstantTooltip() {
       showTooltip(element, rect.left + rect.width / 2, rect.bottom);
     }
 
-    document.addEventListener("mouseover", handleMouseOver);
-    document.addEventListener("mousemove", handleMouseMove);
-    document.addEventListener("mouseout", handleMouseOut);
-    document.addEventListener("focusin", handleFocusIn);
-    document.addEventListener("focusout", hideTooltip);
+    function handlePointerDown(event: PointerEvent) {
+      if (event.pointerType === "mouse") {
+        return;
+      }
+
+      clearLongPressTimeout();
+
+      const element = getTooltipElement(event.target);
+
+      if (!element) {
+        hideTooltip();
+        return;
+      }
+
+      longPressTimeoutRef.current = window.setTimeout(() => {
+        showTooltip(element, event.clientX, event.clientY);
+        longPressTimeoutRef.current = null;
+      }, 520);
+    }
+
+    function handlePointerCancel() {
+      clearLongPressTimeout();
+    }
+
+    function handlePointerUp(event: PointerEvent) {
+      clearLongPressTimeout();
+
+      if (
+        event.pointerType !== "mouse" &&
+        activeElementRef.current &&
+        !activeElementRef.current.contains(event.target as Node)
+      ) {
+        hideTooltip();
+      }
+    }
+
+    function handlePointerMove(event: PointerEvent) {
+      if (event.pointerType !== "mouse") {
+        clearLongPressTimeout();
+      }
+    }
+
+    if (hoverMediaQuery.matches) {
+      document.addEventListener("mouseover", handleMouseOver);
+      document.addEventListener("mousemove", handleMouseMove);
+      document.addEventListener("mouseout", handleMouseOut);
+      document.addEventListener("focusin", handleFocusIn);
+      document.addEventListener("focusout", hideTooltip);
+    }
+
+    document.addEventListener("pointerdown", handlePointerDown);
+    document.addEventListener("pointercancel", handlePointerCancel);
+    document.addEventListener("pointermove", handlePointerMove);
+    document.addEventListener("pointerup", handlePointerUp);
 
     return () => {
       document.removeEventListener("mouseover", handleMouseOver);
@@ -240,6 +301,11 @@ export function InstantTooltip() {
       document.removeEventListener("mouseout", handleMouseOut);
       document.removeEventListener("focusin", handleFocusIn);
       document.removeEventListener("focusout", hideTooltip);
+      document.removeEventListener("pointerdown", handlePointerDown);
+      document.removeEventListener("pointercancel", handlePointerCancel);
+      document.removeEventListener("pointermove", handlePointerMove);
+      document.removeEventListener("pointerup", handlePointerUp);
+      clearLongPressTimeout();
       disconnectMutationObserver();
       releaseTooltipElement(activeElementRef.current);
     };

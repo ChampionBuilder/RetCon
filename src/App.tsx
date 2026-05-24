@@ -1,4 +1,4 @@
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import "./App.css";
 import { AboutDialog } from "@/components/AboutDialog";
 import { AppHeader } from "@/components/AppHeader";
@@ -323,6 +323,32 @@ function App() {
     closeAllPopupsExceptCams();
     setCamsMenuOpen(true);
   }
+
+  useEffect(() => {
+    if (!camsMenuOpen) {
+      return;
+    }
+
+    function closeCamsMenuOnOutsidePointer(event: PointerEvent) {
+      if (
+        event.target instanceof Element &&
+        event.target.closest(".cams-control")
+      ) {
+        return;
+      }
+
+      closeCamsMenu();
+    }
+
+    document.addEventListener("pointerdown", closeCamsMenuOnOutsidePointer);
+
+    return () => {
+      document.removeEventListener(
+        "pointerdown",
+        closeCamsMenuOnOutsidePointer,
+      );
+    };
+  }, [camsMenuOpen]);
 
   const {
     deleteSavedBuild,

@@ -1,7 +1,7 @@
 .app-shell {
   --character-column-width: clamp(210px, 13.37vw, 250px);
   --specializations-column-width: clamp(230px, 16.667vw, 330px);
-  --workspace-column-gap: 7px;
+  --workspace-column-gap: 6px;
   --choice-border: #263653;
   --choice-background: rgba(12, 15, 22, 0.84);
   --choice-hover-border: #5b84d7;
@@ -56,7 +56,7 @@
   display: grid;
   flex: 0 0 auto;
   height: 50px;
-  grid-template-columns: var(--character-column-width) minmax(0, 1fr);
+  grid-template-columns: max-content minmax(0, 1fr);
   grid-template-rows: minmax(0, 1fr);
   align-items: stretch;
   column-gap: var(--workspace-column-gap);
@@ -106,8 +106,9 @@ h1 {
 
 h2 {
   color: #d7ddea;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 700;
+  line-height: 32px;
   letter-spacing: 0;
   text-transform: uppercase;
 }
@@ -428,7 +429,7 @@ h3 {
   min-height: 0;
   overflow: hidden;
   border-radius: 6px;
-  padding: 8px 10px;
+  padding: 0px 3px 6px 8px;
 }
 
 .character-panel,
@@ -439,16 +440,15 @@ h3 {
   flex-direction: column;
 }
 
-.powers-panel h2 {
-  font-size: 15px;
-}
-
 .powers-panel h3 {
   font-size: 13px;
 }
 
-.character-panel {
+.character-panel__body {
+  flex: 1 1 auto;
+  min-height: 0;
   overflow-y: auto;
+  padding-right: 4px;
 }
 
 .panel-section {
@@ -1265,7 +1265,7 @@ h3 {
 }
 
 .inline-value {
-  margin-top: 8px;
+  margin-top: 6px;
   color: var(--small-blue-button-text);
   font-size: 14px;
 }
@@ -1274,7 +1274,7 @@ h3 {
   display: grid;
   width: 100%;
   min-height: 46px;
-  margin-top: 8px;
+  margin-top: 6px;
   align-content: center;
   gap: 3px;
   border: 1px solid transparent;
@@ -1661,7 +1661,7 @@ h3 {
 }
 
 .power-tier-list {
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .power-tier {
@@ -1675,7 +1675,7 @@ h3 {
   align-items: center;
   justify-content: flex-start;
   gap: 6px;
-  margin-bottom: 9px;
+  margin-bottom: 7px;
   border: 0;
   color: #f4f4f4;
   background: transparent;
@@ -1885,6 +1885,7 @@ h3 {
 
 .build-panel__header {
   display: flex;
+  min-height: 32px;
   align-items: center;
   justify-content: space-between;
   gap: 12px;
@@ -2357,7 +2358,7 @@ h3 {
 
 .build-extra-section {
   padding-top: 9px;
-  margin-top: 8px;
+  margin-top: 6px;
   border-top: 1px solid #292929;
 }
 
@@ -2385,8 +2386,8 @@ h3 {
   align-items: center;
   justify-content: space-between;
   gap: 6px;
-  margin-top: 10px;
-  padding: 10px 10px 10px 10px;
+  margin-top: 8px;
+  padding: 7px 8px 7px 5px; 
   border: 1px solid #333;
   border-radius: 3px;
   color: #f0f2fa;
@@ -2568,7 +2569,7 @@ h3 {
 
 .specialization-tree {
   padding: 0 0 15px;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
   border-bottom: 1px solid #292929;
 }
 
@@ -2797,6 +2798,90 @@ h3 {
 .specialization-mastery-choice:disabled {
   cursor: not-allowed;
   opacity: 0.45;
+}
+
+@media (max-width: 1500px) {
+  .workspace-grid h2 {
+    font-size: 13px;
+    line-height: 28px;
+  }
+
+  .workspace-grid h3,
+  .workspace-grid .build-footer,
+  .workspace-grid .cams-control strong {
+    font-size: 13px;
+  }
+
+  .workspace-grid .powers-panel h3,
+  .workspace-grid .stat-token,
+  .workspace-grid .inline-choice-button,
+  .workspace-grid .talent-slot-button,
+  .workspace-grid .device-slot,
+  .workspace-grid .device-slot__name-button,
+  .workspace-grid .compact-list,
+  .workspace-grid .power-tier__toggle,
+  .workspace-grid .build-entry__name-button,
+  .workspace-grid .build-entry__name,
+  .workspace-grid .archetype-badge,
+  .workspace-grid .role-button,
+  .workspace-grid .specialization-tree__header,
+  .workspace-grid .specialization-role-points__value {
+    font-size: 13px;
+  }
+
+  .workspace-grid .inline-choice-button__details,
+  .workspace-grid .talent-slot-button__details,
+  .workspace-grid .build-entry__advantages,
+  .workspace-grid .build-section-label,
+  .workspace-grid .specialization-tree__header small,
+  .workspace-grid .specialization-option,
+  .workspace-grid .specialization-tree__empty-copy {
+    font-size: 12px;
+  }
+
+  .workspace-grid .level-label,
+  .workspace-grid .specialization-option small {
+    font-size: 11px;
+  }
+
+  .workspace-grid .stat-token small {
+    font-size: 8px;
+  }
+
+  .workspace-grid .power-choice span {
+    font-size: 15px;
+  }
+
+  .workspace-grid .cams-control button,
+  .workspace-grid .specialization-option button {
+    font-size: 14px;
+  }
+
+  .workspace-grid .build-panel__header {
+    min-height: 28px;
+  }
+
+  .workspace-grid .archetype-badge {
+    height: 28px;
+    gap: 4px;
+    padding-right: 4px;
+    padding-left: 4px;
+  }
+
+  .workspace-grid .archetype-badge .sprite-icon {
+    width: 26px !important;
+    height: 26px !important;
+  }
+
+  .workspace-grid .role-button {
+    width: 28px;
+    height: 28px;
+  }
+
+  .workspace-grid .role-button .sprite-icon {
+    width: 21px !important;
+    height: 28px !important;
+  }
 }
 
 @media (max-width: 760px) {
