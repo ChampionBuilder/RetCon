@@ -5,8 +5,7 @@ import { getPowerIconName } from "@/shared/utils/icons";
 import { getPowerTooltipText } from "@/shared/utils/powerText";
 import { getPowerTooltipAttribute } from "@/shared/utils/powerTooltip";
 import { formatFrameworkName, isStandardDevice } from "@/utils/powerFrameworks";
-import type { DialogAnchor } from "@/shared/ui/AnchoredDialog";
-import { AnchoredDialog } from "@/shared/ui/AnchoredDialog";
+import { AnchoredSelectionDialog, type DialogAnchor } from "@/shared/ui";
 import { SpriteIcon } from "@/shared/ui/SpriteIcon";
 
 type DeviceSelectionDialogProps = {
@@ -32,29 +31,25 @@ export function DeviceSelectionDialog({
   ).sort((a, b) => formatFrameworkName(a).localeCompare(formatFrameworkName(b)));
 
   return (
-    <AnchoredDialog
+    <AnchoredSelectionDialog
       anchor={anchor}
       ariaLabel="Select device"
-      className="selection-dialog power-selection-dialog device-selection-dialog"
+      className="power-selection-dialog device-selection-dialog"
+      closeAriaLabel="Close device selection"
+      menuChildren={
+        <>
+          <button
+            className="tab-button"
+            type="button"
+            onClick={() => onClearDevice(buildSlot.slot)}
+          >
+            Clear
+          </button>
+          <strong>Device</strong>
+        </>
+      }
       onClose={onClose}
     >
-      <div className="selection-dialog__menu">
-        <button
-          className="tab-button"
-          type="button"
-          onClick={() => onClearDevice(buildSlot.slot)}
-        >
-          Clear
-        </button>
-        <strong>Device</strong>
-        <button
-          aria-label="Close device selection"
-          className="dialog-close"
-          type="button"
-          onClick={onClose}
-        >X</button>
-      </div>
-
       <div className="power-selection-list">
         {frameworkIds.map((frameworkId) => {
           const frameworkDevices = devices
@@ -95,6 +90,6 @@ export function DeviceSelectionDialog({
           );
         })}
       </div>
-    </AnchoredDialog>
+    </AnchoredSelectionDialog>
   );
 }

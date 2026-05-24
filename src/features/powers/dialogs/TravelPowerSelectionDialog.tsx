@@ -6,8 +6,7 @@ import { getPowerIconName } from "@/shared/utils/icons";
 import { getPowerTooltipText } from "@/shared/utils/powerText";
 import { getPowerTooltipAttribute } from "@/shared/utils/powerTooltip";
 import { formatFrameworkName, isTravelPower } from "@/utils/powerFrameworks";
-import type { DialogAnchor } from "@/shared/ui/AnchoredDialog";
-import { AnchoredDialog } from "@/shared/ui/AnchoredDialog";
+import { AnchoredSelectionDialog, type DialogAnchor } from "@/shared/ui";
 import { SpriteIcon } from "@/shared/ui/SpriteIcon";
 
 type TravelPowerSelectionDialogProps = {
@@ -42,31 +41,27 @@ export function TravelPowerSelectionDialog({
     selectedFramework === null ? frameworkIds : [selectedFramework];
 
   return (
-    <AnchoredDialog
+    <AnchoredSelectionDialog
       anchor={anchor}
       ariaLabel="Select travel power"
-      className="selection-dialog power-selection-dialog travel-power-selection-dialog"
+      className="power-selection-dialog travel-power-selection-dialog"
+      closeAriaLabel="Close travel power selection"
+      menuChildren={
+        <>
+          <button
+            className="tab-button"
+            type="button"
+            onClick={() => onClearTravelPower(buildSlot.slot)}
+          >
+            Clear
+          </button>
+          <span className="power-selection-dialog__framework-title">
+            {selectedFrameworkTitle}
+          </span>
+        </>
+      }
       onClose={onClose}
     >
-      <div className="selection-dialog__menu">
-        <button
-          className="tab-button"
-          type="button"
-          onClick={() => onClearTravelPower(buildSlot.slot)}
-        >
-          Clear
-        </button>
-        <span className="power-selection-dialog__framework-title">
-          {selectedFrameworkTitle}
-        </span>
-        <button
-          aria-label="Close travel power selection"
-          className="dialog-close"
-          type="button"
-          onClick={onClose}
-        >X</button>
-      </div>
-
       <div
         className="power-selection-framework-strip"
         aria-label="Travel power frameworks"
@@ -149,6 +144,6 @@ export function TravelPowerSelectionDialog({
           );
         })}
       </div>
-    </AnchoredDialog>
+    </AnchoredSelectionDialog>
   );
 }

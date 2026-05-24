@@ -1,6 +1,5 @@
 import { useMemo } from "react";
-import type { DialogAnchor } from "@/shared/ui/AnchoredDialog";
-import { AnchoredDialog } from "@/shared/ui/AnchoredDialog";
+import { AnchoredSelectionDialog, type DialogAnchor } from "@/shared/ui";
 import type { InnateTalent, SuperStat } from "@/types/character";
 import {
   countInnateTalentVisibleStats,
@@ -77,13 +76,12 @@ export function InnateTalentSelectionDialog({
   }, [selectedStatKeys, talents]);
 
   return (
-    <AnchoredDialog
+    <AnchoredSelectionDialog
       anchor={anchor}
       ariaLabel="Select innate talent"
-      className="selection-dialog innate-selection-dialog"
-      onClose={onClose}
-    >
-      <div className="selection-dialog__menu">
+      className="innate-selection-dialog"
+      closeAriaLabel="Close innate talent selection"
+      menuChildren={
         <button
           className="tab-button"
           type="button"
@@ -91,14 +89,9 @@ export function InnateTalentSelectionDialog({
         >
           Clear
         </button>
-        <button
-          aria-label="Close innate talent selection"
-          className="dialog-close"
-          type="button"
-          onClick={onClose}
-        >X</button>
-      </div>
-
+      }
+      onClose={onClose}
+    >
       <div className="innate-choice-grid">
         {selectableTalents.map((talent) => {
           const isCurrent = selectedTalentId === talent.id;
@@ -134,6 +127,6 @@ export function InnateTalentSelectionDialog({
           );
         })}
       </div>
-    </AnchoredDialog>
+    </AnchoredSelectionDialog>
   );
 }

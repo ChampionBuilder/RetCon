@@ -1,6 +1,6 @@
 import type { SuperStat } from "@/types/character";
 import { getStatIconName } from "@/shared/utils/icons";
-import { AnchoredDialog, type DialogAnchor } from "@/shared/ui/AnchoredDialog";
+import { AnchoredSelectionDialog, type DialogAnchor } from "@/shared/ui";
 import { SpriteIcon } from "@/shared/ui/SpriteIcon";
 
 type StatSelectionDialogProps = {
@@ -44,13 +44,11 @@ export function StatSelectionDialog({
   const selectableStats = stats.filter((stat) => stat.id > 0);
 
   return (
-    <AnchoredDialog
+    <AnchoredSelectionDialog
       anchor={anchor}
       ariaLabel="Select super stat"
-      className="selection-dialog"
-      onClose={onClose}
-    >
-      <div className="selection-dialog__menu">
+      closeAriaLabel="Close super stat selection"
+      menuChildren={
         <button
           className="tab-button"
           type="button"
@@ -58,14 +56,9 @@ export function StatSelectionDialog({
         >
           Clear
         </button>
-        <button
-          aria-label="Close super stat selection"
-          className="dialog-close"
-          type="button"
-          onClick={onClose}
-        >X</button>
-      </div>
-
+      }
+      onClose={onClose}
+    >
       <div className="stat-choice-grid">
         {selectableStats.map((stat) => {
           const isCurrent = currentStatId === stat.id;
@@ -92,6 +85,6 @@ export function StatSelectionDialog({
           );
         })}
       </div>
-    </AnchoredDialog>
+    </AnchoredSelectionDialog>
   );
 }

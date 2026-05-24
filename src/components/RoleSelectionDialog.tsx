@@ -1,6 +1,5 @@
 import type { ArchetypeGroup } from "@/types/character";
-import type { DialogAnchor } from "@/shared/ui/AnchoredDialog";
-import { AnchoredDialog } from "@/shared/ui/AnchoredDialog";
+import { AnchoredSelectionDialog, type DialogAnchor } from "@/shared/ui";
 import { SpriteIcon } from "@/shared/ui/SpriteIcon";
 
 type RoleSelectionDialogProps = {
@@ -25,22 +24,14 @@ export function RoleSelectionDialog({
     .filter((group): group is ArchetypeGroup => group !== null);
 
   return (
-    <AnchoredDialog
+    <AnchoredSelectionDialog
       anchor={anchor}
       ariaLabel="Select role"
-      className="selection-dialog role-selection-dialog"
+      className="role-selection-dialog"
+      closeAriaLabel="Close role selection"
+      menuChildren={<strong>Role</strong>}
       onClose={onClose}
     >
-      <div className="selection-dialog__menu">
-        <strong>Role</strong>
-        <button
-          aria-label="Close role selection"
-          className="dialog-close"
-          type="button"
-          onClick={onClose}
-        >X</button>
-      </div>
-
       <div className="role-selection-list">
         {selectableGroups.map((group) => {
           const isCurrent = selectedRoleId === group.id;
@@ -64,6 +55,6 @@ export function RoleSelectionDialog({
           );
         })}
       </div>
-    </AnchoredDialog>
+    </AnchoredSelectionDialog>
   );
 }

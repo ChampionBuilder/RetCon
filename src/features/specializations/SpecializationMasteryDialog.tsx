@@ -1,5 +1,4 @@
-import type { DialogAnchor } from "@/shared/ui/AnchoredDialog";
-import { AnchoredDialog } from "@/shared/ui/AnchoredDialog";
+import { AnchoredSelectionDialog, type DialogAnchor } from "@/shared/ui";
 import type { SpecializationTree } from "@/types/character";
 import { getTreeMastery } from "./specializations";
 import { SpriteIcon } from "@/shared/ui/SpriteIcon";
@@ -20,13 +19,12 @@ export function SpecializationMasteryDialog({
   onSelectMastery,
 }: SpecializationMasteryDialogProps) {
   return (
-    <AnchoredDialog
+    <AnchoredSelectionDialog
       anchor={anchor}
       ariaLabel="Select specialization mastery"
-      className="selection-dialog specialization-mastery-dialog"
-      onClose={onClose}
-    >
-      <div className="selection-dialog__menu">
+      className="specialization-mastery-dialog"
+      closeAriaLabel="Close mastery selection"
+      menuChildren={
         <button
           className="tab-button"
           type="button"
@@ -34,14 +32,9 @@ export function SpecializationMasteryDialog({
         >
           Clear
         </button>
-        <button
-          aria-label="Close mastery selection"
-          className="dialog-close"
-          type="button"
-          onClick={onClose}
-        >X</button>
-      </div>
-
+      }
+      onClose={onClose}
+    >
       <div className="specialization-mastery-choice-grid">
         {trees.map((tree, slotIndex) => {
           const mastery = getTreeMastery(tree);
@@ -69,6 +62,6 @@ export function SpecializationMasteryDialog({
           );
         })}
       </div>
-    </AnchoredDialog>
+    </AnchoredSelectionDialog>
   );
 }

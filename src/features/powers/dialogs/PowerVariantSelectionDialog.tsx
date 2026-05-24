@@ -12,8 +12,7 @@ import {
   isPowerVariantDevice,
   isUltimatePowerVariantDevice,
 } from "@/utils/powerFrameworks";
-import type { DialogAnchor } from "@/shared/ui/AnchoredDialog";
-import { AnchoredDialog } from "@/shared/ui/AnchoredDialog";
+import { AnchoredSelectionDialog, type DialogAnchor } from "@/shared/ui";
 import { SpriteIcon } from "@/shared/ui/SpriteIcon";
 
 type PowerVariantSelectionDialogProps = {
@@ -84,31 +83,27 @@ export function PowerVariantSelectionDialog({
   });
 
   return (
-    <AnchoredDialog
+    <AnchoredSelectionDialog
       anchor={anchor}
       ariaLabel="Select power variant"
-      className="selection-dialog power-selection-dialog power-variant-selection-dialog"
+      className="power-selection-dialog power-variant-selection-dialog"
+      closeAriaLabel="Close power variant selection"
+      menuChildren={
+        <>
+          <button
+            className="tab-button"
+            type="button"
+            onClick={() => onClearPowerVariant(buildSlot.slot)}
+          >
+            Clear
+          </button>
+          <span className="power-selection-dialog__framework-title">
+            {selectedFrameworkTitle}
+          </span>
+        </>
+      }
       onClose={onClose}
     >
-      <div className="selection-dialog__menu">
-        <button
-          className="tab-button"
-          type="button"
-          onClick={() => onClearPowerVariant(buildSlot.slot)}
-        >
-          Clear
-        </button>
-        <span className="power-selection-dialog__framework-title">
-          {selectedFrameworkTitle}
-        </span>
-        <button
-          aria-label="Close power variant selection"
-          className="dialog-close"
-          type="button"
-          onClick={onClose}
-        >X</button>
-      </div>
-
       <div
         className="power-selection-framework-strip"
         aria-label="Power variant parent frameworks"
@@ -206,6 +201,6 @@ export function PowerVariantSelectionDialog({
           );
         })}
       </div>
-    </AnchoredDialog>
+    </AnchoredSelectionDialog>
   );
 }

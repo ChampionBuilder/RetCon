@@ -11,8 +11,7 @@ import {
   getSelectablePowerFrameworkGroups,
   isPowerVisibleInFramework,
 } from "@/utils/powerFrameworks";
-import type { DialogAnchor } from "@/shared/ui/AnchoredDialog";
-import { AnchoredDialog } from "@/shared/ui/AnchoredDialog";
+import { AnchoredSelectionDialog, type DialogAnchor } from "@/shared/ui";
 import { SpriteIcon } from "@/shared/ui/SpriteIcon";
 
 type PowerSelectionDialogProps = {
@@ -130,31 +129,27 @@ export function PowerSelectionDialog({
   );
 
   return (
-    <AnchoredDialog
+    <AnchoredSelectionDialog
       anchor={anchor}
       ariaLabel="Select power"
-      className="selection-dialog power-selection-dialog"
+      className="power-selection-dialog"
+      closeAriaLabel="Close power selection"
+      menuChildren={
+        <>
+          <button
+            className="tab-button"
+            type="button"
+            onClick={() => onClearPower(buildSlot.slot)}
+          >
+            Clear
+          </button>
+          <span className="power-selection-dialog__framework-title">
+            {selectedFrameworkTitle}
+          </span>
+        </>
+      }
       onClose={onClose}
     >
-      <div className="selection-dialog__menu">
-        <button
-          className="tab-button"
-          type="button"
-          onClick={() => onClearPower(buildSlot.slot)}
-        >
-          Clear
-        </button>
-        <span className="power-selection-dialog__framework-title">
-          {selectedFrameworkTitle}
-        </span>
-        <button
-          aria-label="Close power selection"
-          className="dialog-close"
-          type="button"
-          onClick={onClose}
-        >X</button>
-      </div>
-
       <div
         className="power-selection-framework-strip"
         aria-label="Power frameworks"
@@ -251,6 +246,6 @@ export function PowerSelectionDialog({
           );
         })}
       </div>
-    </AnchoredDialog>
+    </AnchoredSelectionDialog>
   );
 }

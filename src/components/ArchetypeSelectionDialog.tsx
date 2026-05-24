@@ -4,8 +4,7 @@ import type {
   ArchetypeGroup,
   ArchetypeUnlock,
 } from "@/types/character";
-import type { DialogAnchor } from "@/shared/ui/AnchoredDialog";
-import { AnchoredDialog } from "@/shared/ui/AnchoredDialog";
+import { AnchoredSelectionDialog, type DialogAnchor } from "@/shared/ui";
 import { SpriteIcon } from "@/shared/ui/SpriteIcon";
 
 type ArchetypeSelectionDialogProps = {
@@ -79,22 +78,14 @@ export function ArchetypeSelectionDialog({
     : null;
 
   return (
-    <AnchoredDialog
+    <AnchoredSelectionDialog
       anchor={anchor}
       ariaLabel="Select archetype"
-      className="selection-dialog archetype-selection-dialog"
+      className="archetype-selection-dialog"
+      closeAriaLabel="Close archetype selection"
+      menuChildren={<strong>Archetypes</strong>}
       onClose={onClose}
     >
-      <div className="selection-dialog__menu">
-        <strong>Archetypes</strong>
-        <button
-          aria-label="Close archetype selection"
-          className="dialog-close"
-          type="button"
-          onClick={onClose}
-        >X</button>
-      </div>
-
       <div className="archetype-selection-layout">
         <div className="archetype-selection-list">
           {selectableArchetypes.map((archetype) => {
@@ -163,6 +154,6 @@ export function ArchetypeSelectionDialog({
           </aside>
         ) : null}
       </div>
-    </AnchoredDialog>
+    </AnchoredSelectionDialog>
   );
 }

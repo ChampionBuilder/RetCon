@@ -1,6 +1,5 @@
 import { useMemo } from "react";
-import type { DialogAnchor } from "@/shared/ui/AnchoredDialog";
-import { AnchoredDialog } from "@/shared/ui/AnchoredDialog";
+import { AnchoredSelectionDialog, type DialogAnchor } from "@/shared/ui";
 import type { SuperStat, Talent } from "@/types/character";
 import { getSelectedStatKeys } from "@/utils/innateTalents";
 import {
@@ -39,35 +38,31 @@ export function TalentSelectionDialog({
   }, [selectedStatKeys, talents]);
 
   return (
-    <AnchoredDialog
+    <AnchoredSelectionDialog
       anchor={anchor}
       ariaLabel="Select talent"
-      className="selection-dialog talent-selection-dialog"
+      className="talent-selection-dialog"
+      closeAriaLabel="Close talent selection"
+      menuChildren={
+        <>
+          <button
+            className="tab-button"
+            type="button"
+            onClick={() => onSelectTalent(slotIndex, 0)}
+          >
+            Clear
+          </button>
+          <button
+            className="tab-button"
+            type="button"
+            onClick={onAutofillTalents}
+          >
+            Autofill
+          </button>
+        </>
+      }
       onClose={onClose}
     >
-      <div className="selection-dialog__menu">
-        <button
-          className="tab-button"
-          type="button"
-          onClick={() => onSelectTalent(slotIndex, 0)}
-        >
-          Clear
-        </button>
-        <button
-          className="tab-button"
-          type="button"
-          onClick={onAutofillTalents}
-        >
-          Autofill
-        </button>
-        <button
-          aria-label="Close talent selection"
-          className="dialog-close"
-          type="button"
-          onClick={onClose}
-        >X</button>
-      </div>
-
       <div className="talent-choice-grid">
         {selectableTalents.map((talent) => {
           const isCurrent = selectedTalentId === talent.id;
@@ -107,6 +102,6 @@ export function TalentSelectionDialog({
           );
         })}
       </div>
-    </AnchoredDialog>
+    </AnchoredSelectionDialog>
   );
 }

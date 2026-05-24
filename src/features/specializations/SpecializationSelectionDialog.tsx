@@ -1,5 +1,4 @@
-import type { DialogAnchor } from "@/shared/ui/AnchoredDialog";
-import { AnchoredDialog } from "@/shared/ui/AnchoredDialog";
+import { AnchoredSelectionDialog, type DialogAnchor } from "@/shared/ui";
 import type { SpecializationTree } from "@/types/character";
 import {
   canDecrementSpecialization,
@@ -47,31 +46,27 @@ export function SpecializationSelectionDialog({
   const totalPoints = getSpecializationTreePoints(points);
 
   return (
-    <AnchoredDialog
+    <AnchoredSelectionDialog
       anchor={anchor}
       ariaLabel="Select specialization"
-      className="selection-dialog specialization-selection-dialog"
+      className="specialization-selection-dialog"
+      closeAriaLabel="Close specialization selection"
+      menuChildren={
+        <>
+          <button
+            className="tab-button"
+            type="button"
+            onClick={() => onClearSlot(slotIndex)}
+          >
+            Clear
+          </button>
+          <div className="specialization-dialog__title">
+            <strong>{tree ? `${tree.name} Tree` : "Specialization"}</strong>
+          </div>
+        </>
+      }
       onClose={onClose}
     >
-      <div className="selection-dialog__menu">
-        <button
-          className="tab-button"
-          type="button"
-          onClick={() => onClearSlot(slotIndex)}
-        >
-          Clear
-        </button>
-        <div className="specialization-dialog__title">
-          <strong>{tree ? `${tree.name} Tree` : "Specialization"}</strong>
-        </div>
-        <button
-          aria-label="Close specialization selection"
-          className="dialog-close"
-          type="button"
-          onClick={onClose}
-        >X</button>
-      </div>
-
       {slotIndex > 0 && canChangeTree ? (
         <div className="specialization-role-picker">
           {roleTrees.map((roleTree) => {
@@ -188,6 +183,6 @@ export function SpecializationSelectionDialog({
           Select a specialization tree first
         </p>
       )}
-    </AnchoredDialog>
+    </AnchoredSelectionDialog>
   );
 }

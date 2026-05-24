@@ -1,40 +1,19 @@
-import { useEffect } from "react";
+import { ModalDialog } from "@/shared/ui";
 
 type AboutDialogProps = {
   onClose: () => void;
 };
 
 export function AboutDialog({ onClose }: AboutDialogProps) {
-  useEffect(() => {
-    function handleKeyDown(event: KeyboardEvent) {
-      if (event.key === "Escape") {
-        onClose();
-      }
-    }
-
-    window.addEventListener("keydown", handleKeyDown);
-
-    return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [onClose]);
-
   return (
-    <div className="dialog-backdrop" role="presentation" onMouseDown={onClose}>
-      <section
-        aria-label="About"
-        aria-modal="true"
-        className="selection-dialog about-dialog"
-        role="dialog"
-        onMouseDown={(event) => event.stopPropagation()}
-      >
-        <div className="selection-dialog__header">
-          <div>
-            <h3>About</h3>
-            <p>Project credits and legal notes</p>
-          </div>
-          <button className="dialog-close" type="button" onClick={onClose}>X</button>
-        </div>
-
-        <div className="about-dialog__content">
+    <ModalDialog
+      ariaLabel="About"
+      className="about-dialog"
+      description="Project credits and legal notes"
+      title="About"
+      onClose={onClose}
+    >
+      <div className="about-dialog__content">
           <section>
             <h4>RetCon</h4>
             <p>
@@ -172,8 +151,7 @@ export function AboutDialog({ onClose }: AboutDialogProps) {
               </a>
             </p>
           </section>
-        </div>
-      </section>
-    </div>
+      </div>
+    </ModalDialog>
   );
 }

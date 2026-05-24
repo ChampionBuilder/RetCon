@@ -7,8 +7,7 @@ import {
   maxAdvantagePointsPerPower,
 } from "@/utils/advantagerules";
 import { getPowerAdvantages } from "@/utils/powerAdvantages";
-import type { DialogAnchor } from "@/shared/ui/AnchoredDialog";
-import { AnchoredDialog } from "@/shared/ui/AnchoredDialog";
+import { AnchoredSelectionDialog, type DialogAnchor } from "@/shared/ui";
 
 type AdvantageSelectionDialogProps = {
   anchor: DialogAnchor;
@@ -88,31 +87,27 @@ export function AdvantageSelectionDialog({
   const slotPointTotal = getSlotAdvantagePoints(buildSlot, slotAdvantages);
 
   return (
-    <AnchoredDialog
+    <AnchoredSelectionDialog
       anchor={anchor}
       ariaLabel="Select advantages"
-      className="selection-dialog advantage-selection-dialog"
+      className="advantage-selection-dialog"
+      closeAriaLabel="Close advantage selection"
+      menuChildren={
+        <>
+          <button
+            className="tab-button"
+            type="button"
+            onClick={() => onClearAdvantages(buildSlot.slot)}
+          >
+            Clear
+          </button>
+          <span className="advantage-selection-dialog__points">
+            {slotPointTotal}/{maxAdvantagePointsPerPower}
+          </span>
+        </>
+      }
       onClose={onClose}
     >
-      <div className="selection-dialog__menu">
-        <button
-          className="tab-button"
-          type="button"
-          onClick={() => onClearAdvantages(buildSlot.slot)}
-        >
-          Clear
-        </button>
-        <span className="advantage-selection-dialog__points">
-          {slotPointTotal}/{maxAdvantagePointsPerPower}
-        </span>
-        <button
-          aria-label="Close advantage selection"
-          className="dialog-close"
-          type="button"
-          onClick={onClose}
-        >X</button>
-      </div>
-
       <div className="advantage-selection-list">
         {slotAdvantages.map((advantage) => {
           const isSelected = buildSlot.selectedAdvantages.includes(
@@ -161,6 +156,6 @@ export function AdvantageSelectionDialog({
           );
         })}
       </div>
-    </AnchoredDialog>
+    </AnchoredSelectionDialog>
   );
 }

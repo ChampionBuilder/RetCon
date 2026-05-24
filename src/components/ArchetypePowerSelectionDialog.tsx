@@ -2,8 +2,7 @@ import type { Power } from "@/types/powers";
 import { getPowerIconName } from "@/shared/utils/icons";
 import { getPowerTooltipText } from "@/shared/utils/powerText";
 import { getPowerTooltipAttribute } from "@/shared/utils/powerTooltip";
-import type { DialogAnchor } from "@/shared/ui/AnchoredDialog";
-import { AnchoredDialog } from "@/shared/ui/AnchoredDialog";
+import { AnchoredSelectionDialog, type DialogAnchor } from "@/shared/ui";
 import { SpriteIcon } from "@/shared/ui/SpriteIcon";
 
 type ArchetypePowerSelectionDialogProps = {
@@ -24,22 +23,14 @@ export function ArchetypePowerSelectionDialog({
   onSelectPower,
 }: ArchetypePowerSelectionDialogProps) {
   return (
-    <AnchoredDialog
+    <AnchoredSelectionDialog
       anchor={anchor}
       ariaLabel="Select archetype power"
-      className="selection-dialog archetype-power-selection-dialog"
+      className="archetype-power-selection-dialog"
+      closeAriaLabel="Close archetype power selection"
+      menuChildren={<strong>Power choice</strong>}
       onClose={onClose}
     >
-      <div className="selection-dialog__menu">
-        <strong>Power choice</strong>
-        <button
-          aria-label="Close archetype power selection"
-          className="dialog-close"
-          type="button"
-          onClick={onClose}
-        >X</button>
-      </div>
-
       <div className="archetype-power-selection-list">
         {powers.map((power) => {
           const isCurrent = currentPowerId === power.power_id;
@@ -64,6 +55,6 @@ export function ArchetypePowerSelectionDialog({
           );
         })}
       </div>
-    </AnchoredDialog>
+    </AnchoredSelectionDialog>
   );
 }

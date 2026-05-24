@@ -1,5 +1,6 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import type { ImportSavedBuildsResult } from "@/features/saved-builds/useSavedBuilds";
+import { ModalDialog } from "@/shared/ui";
 import type { SavedBuild } from "@/types/share";
 
 type DataDialogProps = {
@@ -25,18 +26,6 @@ export function DataDialog({
 }: DataDialogProps) {
   const loadDataInputRef = useRef<HTMLInputElement | null>(null);
   const [dataMessage, setDataMessage] = useState<string | null>(null);
-
-  useEffect(() => {
-    function handleKeyDown(event: KeyboardEvent) {
-      if (event.key === "Escape") {
-        onClose();
-      }
-    }
-
-    window.addEventListener("keydown", handleKeyDown);
-
-    return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [onClose]);
 
   function getSavedBuildUrl(savedBuild: SavedBuild) {
     const url = new URL(window.location.href);
@@ -82,19 +71,12 @@ export function DataDialog({
   }
 
   return (
-    <div className="dialog-backdrop" role="presentation" onMouseDown={onClose}>
-      <section
-        aria-label="Saved builds"
-        aria-modal="true"
-        className="selection-dialog data-dialog"
-        role="dialog"
-        onMouseDown={(event) => event.stopPropagation()}
-      >
-        <div className="selection-dialog__header">
-          <h3>My Builds</h3>
-          <button className="dialog-close" type="button" onClick={onClose}>X</button>
-        </div>
-
+    <ModalDialog
+      ariaLabel="Saved builds"
+      className="data-dialog"
+      title="My Builds"
+      onClose={onClose}
+    >
         <div className="data-dialog__toolbar">
           <button className="primary-button" type="button" onClick={onSaveCurrentBuild}>
             Save Current Build
@@ -168,7 +150,6 @@ export function DataDialog({
             <p className="data-dialog__data-message">{dataMessage}</p>
           ) : null}
         </div>
-      </section>
-    </div>
+    </ModalDialog>
   );
 }

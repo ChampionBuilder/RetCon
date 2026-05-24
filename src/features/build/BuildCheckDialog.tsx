@@ -1,7 +1,7 @@
-import { useEffect } from "react";
 import type { BuildSlot } from "@/types/builds";
 import type { SuperStat } from "@/types/character";
 import type { Power } from "@/types/powers";
+import { ModalDialog } from "@/shared/ui";
 import type { BuildRequirementResult } from "@/utils/buildValidation";
 import {
   getCoreBuildRequirementResults,
@@ -35,36 +35,15 @@ export function BuildCheckDialog({
   const optionalRequirementResults =
     getOptionalBuildRequirementResults(buildSlots, powerVariantSlots);
 
-  useEffect(() => {
-    function handleKeyDown(event: KeyboardEvent) {
-      if (event.key === "Escape") {
-        onClose();
-      }
-    }
-
-    window.addEventListener("keydown", handleKeyDown);
-
-    return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [onClose]);
-
   return (
-    <div className="dialog-backdrop" role="presentation" onMouseDown={onClose}>
-      <section
-        aria-label="Check build"
-        aria-modal="true"
-        className="selection-dialog build-check-dialog"
-        role="dialog"
-        onMouseDown={(event) => event.stopPropagation()}
-      >
-        <div className="selection-dialog__header">
-          <div>
-            <h3>Check Build</h3>
-            <p>Review common build components</p>
-          </div>
-          <button className="dialog-close" type="button" onClick={onClose}>X</button>
-        </div>
-
-        <div className="build-check-dialog__content">
+    <ModalDialog
+      ariaLabel="Check build"
+      className="build-check-dialog"
+      description="Review common build components"
+      title="Check Build"
+      onClose={onClose}
+    >
+      <div className="build-check-dialog__content">
           <BuildCheckSection
             label="Core"
             powers={powers}
@@ -79,9 +58,8 @@ export function BuildCheckDialog({
             selectedSuperStats={selectedSuperStats}
             onSelectMissingRequirement={onSelectMissingRequirement}
           />
-        </div>
-      </section>
-    </div>
+      </div>
+    </ModalDialog>
   );
 }
 
