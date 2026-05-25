@@ -4,10 +4,10 @@ export type PowerTooltipData = {
   title: string;
   framework: string | null;
   powerType: string | null;
+  activationType: string | null;
   metrics: string[];
   rangeTags: string[];
   tags: string[];
-  overview: string[];
   effects: string[];
   fallbackText: string | null;
 };
@@ -38,6 +38,16 @@ function formatSeconds(value: number | string | null | undefined) {
   return `${numericValue} sec`;
 }
 
+function isChargeActivationType(value: string | null | undefined) {
+  const normalizedValue = value?.replace(/[_-]/g, " ").trim().toLowerCase();
+
+  return (
+    normalizedValue === "blast" ||
+    normalizedValue === "charge" ||
+    normalizedValue === "full charge"
+  );
+}
+
 function cleanTooltipText(tooltip: string | null | undefined) {
   return (
     tooltip
@@ -52,19 +62,6 @@ function splitSentences(text: string) {
     .split(/(?<=[.!?])\s+/)
     .map((sentence) => sentence.trim())
     .filter(Boolean);
-}
-
-function isOverviewSentence(sentence: string) {
-  const trimmedSentence = sentence.trim();
-
-  return (
-    trimmedSentence.length <= 110 &&
-    (/^(Targets|Affects|Passive|Energy Unlock|Form)\b/i.test(
-      trimmedSentence,
-    ) ||
-      /^\d+\s+feet\b/i.test(trimmedSentence) ||
-      trimmedSentence.includes("/"))
-  );
 }
 
 function stripTrailingPeriod(value: string) {
@@ -97,7 +94,6 @@ export function getPowerTooltipData(
 
   const tooltipText = cleanTooltipText(power.tooltip);
   const tooltipSentences = splitSentences(tooltipText);
-  const overview: string[] = [];
 
   if (
     tooltipSentences[0] &&
@@ -107,18 +103,17 @@ export function getPowerTooltipData(
     tooltipSentences.shift();
   }
 
-  while (tooltipSentences[0] && isOverviewSentence(tooltipSentences[0])) {
-    overview.push(stripTrailingPeriod(tooltipSentences.shift() ?? ""));
-  }
-
   const remainingText = tooltipSentences.join(" ");
   const activationTime = formatSeconds(power.activation_time);
   const maxDuration = formatSeconds(power.max_duration);
   const tickRate = formatSeconds(power.tick_rate);
   const cooldown = formatSeconds(power.cooldown);
+  const maxDurationLabel = isChargeActivationType(power.activation_type)
+    ? "Charge time"
+    : "Duration";
   const metrics = [
     activationTime ? `Activation ${activationTime}` : null,
-    maxDuration ? `Max duration ${maxDuration}` : null,
+    maxDuration ? `${maxDurationLabel} ${maxDuration}` : null,
     tickRate ? `Tick every ${tickRate}` : null,
     cooldown ? `Cooldown ${cooldown}` : null,
   ].filter((value): value is string => Boolean(value));
@@ -133,10 +128,10 @@ export function getPowerTooltipData(
     title: power.name,
     framework: formatIdentifier(power.framework_id),
     powerType: formatIdentifier(power.Power_Type ?? power.POWER_TYPE),
+    activationType: formatIdentifier(power.activation_type),
     metrics,
     rangeTags,
     tags,
-    overview,
     effects: splitEffects(remainingText),
     fallbackText: tooltipText || null,
   };

@@ -6,6 +6,7 @@ export type Power = {
   tier: number | null;
   POWER_TYPE?: string | null;
   Power_Type?: string | null;
+  activation_type?: string | null;
   activation_time?: number | string | null;
   max_duration?: number | string | null;
   tick_rate?: number | string | null;

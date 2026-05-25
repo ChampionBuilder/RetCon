@@ -45,6 +45,7 @@ import {
 } from "@/utils/advantagerules";
 import {
   getVisiblePowerFrameworkGroups,
+  isCombatPower,
   isPowerVariantDevice,
   isStandardDevice,
   isTravelPower,
@@ -245,7 +246,7 @@ function App() {
   }, [powers]);
 
   const combatPowers = useMemo(() => {
-    return selectablePowers.filter((power) => power.tier !== null);
+    return selectablePowers.filter((power) => isCombatPower(power));
   }, [selectablePowers]);
 
   const frameworkGroups = useMemo(() => {

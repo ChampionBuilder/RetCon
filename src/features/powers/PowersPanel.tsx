@@ -18,8 +18,12 @@ import {
   getPowerFrameworkSortIndex,
   type PowerFrameworkFilterGroup,
   type SelectedFrameworks,
+  isCombatPower,
+  isPowerVariantDevice,
+  isStandardDevice,
+  isTravelPower,
   isPowerVisibleInSelectedFrameworks,
-  isUltimatePowerVariantDevice,
+  isUltimatePower,
   isUtilityFrameworkFilter,
   isUtilityFrameworkSelection,
   devicesFilterId,
@@ -104,8 +108,9 @@ function normalizeStrictSearchText(value: string | null | undefined) {
 
 function getSearchablePowerType(power: Power) {
   const powerType = power.Power_Type ?? power.POWER_TYPE ?? "";
+  const tierType = isUltimatePower(power) ? "Ultimate" : "";
 
-  return `${powerType} ${powerType.replace(/_/g, " ")}`;
+  return `${powerType} ${powerType.replace(/_/g, " ")} ${tierType}`;
 }
 
 type SearchPrefix = "adv" | "power" | "scale" | "type";
@@ -290,11 +295,27 @@ export function PowersPanel({
         return false;
       }
 
-      if (
-        restrictedPowerIds === null &&
-        !isPowerVisibleInSelectedFrameworks(power, selectedFrameworks)
-      ) {
-        return false;
+      if (restrictedPowerIds === null) {
+        if (isPowerVariantsMode && !isPowerVariantDevice(power)) {
+          return false;
+        }
+
+        if (isDevicesMode && !isStandardDevice(power)) {
+          return false;
+        }
+
+        if (isTravelMode && !isTravelPower(power)) {
+          return false;
+        }
+
+        if (
+          !isPowerVariantsMode &&
+          !isDevicesMode &&
+          !isTravelMode &&
+          !isPowerVisibleInSelectedFrameworks(power, selectedFrameworks)
+        ) {
+          return false;
+        }
       }
 
       if (
@@ -344,6 +365,9 @@ export function PowersPanel({
     powers,
     restrictedPowerIds,
     selectedFrameworks,
+    isPowerVariantsMode,
+    isDevicesMode,
+    isTravelMode,
   ]);
 
   const powerSections = useMemo(() => {
@@ -399,8 +423,7 @@ export function PowersPanel({
           .filter((power) => power.framework_id === frameworkId)
           .sort((a, b) => {
             const variantTypeDifference =
-              Number(isUltimatePowerVariantDevice(a)) -
-              Number(isUltimatePowerVariantDevice(b));
+              Number(isUltimatePower(a)) - Number(isUltimatePower(b));
 
             return variantTypeDifference || a.name.localeCompare(b.name);
           }),
@@ -423,13 +446,36 @@ export function PowersPanel({
       }));
     }
 
-    return tierOrder
+    const tierSections = tierOrder
       .map((tier) => ({
         key: tierKey(tier),
         label: tierLabel(tier),
-        powers: visiblePowers.filter((power) => power.tier === tier),
+        powers: visiblePowers.filter(
+          (power) => isCombatPower(power) && power.tier === tier,
+        ),
       }))
       .filter((section) => section.powers.length > 0);
+    const variantPowers = visiblePowers
+      .filter((power) => isPowerVariantDevice(power))
+      .sort((a, b) => {
+        const variantTypeDifference =
+          Number(isUltimatePower(a)) - Number(isUltimatePower(b));
+
+        return variantTypeDifference || a.name.localeCompare(b.name);
+      });
+
+    if (variantPowers.length === 0) {
+      return tierSections;
+    }
+
+    return [
+      ...tierSections,
+      {
+        key: "framework-variants",
+        label: "Variants",
+        powers: variantPowers,
+      },
+    ];
   }, [
     isPowerVariantsMode,
     isDevicesMode,

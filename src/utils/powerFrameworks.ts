@@ -146,15 +146,19 @@ export function isStandardDevice(power: Power) {
   return power.powerset_id?.toLowerCase() === "device";
 }
 
-function getNormalizedPowerType(power: Power) {
-  return (power.Power_Type ?? power.POWER_TYPE ?? "")
-    .replace(/[^a-z0-9]+/gi, "_")
-    .replace(/^_+|_+$/g, "")
-    .toUpperCase();
+export function isUltimatePower(power: Power | null | undefined) {
+  return power?.tier === 4;
 }
 
-export function isUltimatePowerVariantDevice(power: Power) {
-  return isPowerVariantDevice(power) && getNormalizedPowerType(power) === "ULTIMATE";
+export function isCombatPower(power: Power | null | undefined) {
+  return (
+    power !== null &&
+    power !== undefined &&
+    power.tier !== null &&
+    !isTravelPower(power) &&
+    !isPowerVariantDevice(power) &&
+    !isStandardDevice(power)
+  );
 }
 
 function toFrameworkFilter(frameworkId: string): PowerFrameworkFilter {

@@ -14,6 +14,16 @@ function fetchJson<T>(url: string) {
   );
 }
 
+function normalizePowerData(powers: Power[]) {
+  return powers.map((power) => {
+    const isUltimatePowerVariant =
+      power.powerset_id?.toLowerCase() === "pvd" &&
+      /^ultimate\b/i.test(power.name);
+
+    return isUltimatePowerVariant ? { ...power, tier: 4 } : power;
+  });
+}
+
 export function useBuilderData() {
   const [powers, setPowers] = useState<Power[]>([]);
   const [advantages, setAdvantages] = useState<Advantage[]>([]);
@@ -27,7 +37,7 @@ export function useBuilderData() {
 
   useEffect(() => {
     fetchJson<Power[]>(publicAssetUrl("/data/powers.json")).then((data) => {
-      setPowers(data);
+      setPowers(normalizePowerData(data));
     });
   }, []);
 

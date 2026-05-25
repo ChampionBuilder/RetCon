@@ -10,7 +10,7 @@ import {
   getFrameworkGroupsForIds,
   getPowerFrameworkSortIndex,
   isPowerVariantDevice,
-  isUltimatePowerVariantDevice,
+  isUltimatePower,
 } from "@/utils/powerFrameworks";
 import { AnchoredSelectionDialog, type DialogAnchor } from "@/shared/ui";
 import { SpriteIcon } from "@/shared/ui/SpriteIcon";
@@ -150,8 +150,7 @@ export function PowerVariantSelectionDialog({
             .filter((power) => power.framework_id === frameworkId)
             .sort((a, b) => {
               const variantTypeDifference =
-                Number(isUltimatePowerVariantDevice(a)) -
-                Number(isUltimatePowerVariantDevice(b));
+                Number(isUltimatePower(a)) - Number(isUltimatePower(b));
 
               return variantTypeDifference || a.name.localeCompare(b.name);
             });

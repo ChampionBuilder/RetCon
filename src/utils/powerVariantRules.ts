@@ -1,7 +1,7 @@
 import type { Advantage } from "@/types/advantages";
 import type { BuildSlot } from "@/types/builds";
 import type { Power } from "@/types/powers";
-import { isUltimatePowerVariantDevice } from "./powerFrameworks";
+import { isUltimatePower } from "./powerFrameworks";
 import { getPowerAdvantages } from "./powerAdvantages";
 
 const inheritedPvdAdvantageNames = new Set(["Rank 2", "Rank 3", "Challenge!"]);
@@ -103,7 +103,7 @@ export function getPowerVariantDisplayAdvantages(
 ) {
   const parentSlots = getPowerVariantParentSlots(power, buildSlots);
 
-  if (power && isUltimatePowerVariantDevice(power)) {
+  if (isUltimatePower(power)) {
     return getUltimateInheritedAdvantages(parentSlots, advantages);
   }
 

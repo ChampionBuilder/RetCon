@@ -1,7 +1,7 @@
 import type { BuildSlot } from "@/types/builds";
 import type { SuperStat } from "@/types/character";
 import type { Power } from "@/types/powers";
-import { isUltimatePowerVariantDevice } from "./powerFrameworks";
+import { isCombatPower, isUltimatePower } from "./powerFrameworks";
 import { isPowerEnabled } from "./powerrules";
 
 export type BuildRequirementKey =
@@ -76,7 +76,7 @@ export const optionalBuildRequirements: BuildRequirement[] = [
     key: "ultimate",
     label: "Ultimate",
     section: "optional",
-    powerTypes: ["ULTIMATE"],
+    powerTypes: [],
   },
   {
     key: "threat-wipe",
@@ -132,8 +132,7 @@ export function getMatchingRequirementPowerIds(
       .filter((power) =>
         isPowerEnabled(power) &&
         (requirement.key === "ultimate"
-          ? requirement.powerTypes.includes(getPowerType(power) ?? "") ||
-            isUltimatePowerVariantDevice(power)
+          ? isCombatPower(power) && isUltimatePower(power)
           : requirement.powerTypes.includes(getPowerType(power) ?? "")),
       )
       .map((power) => power.power_id),
@@ -150,10 +149,10 @@ function getRequirementResults(
     power:
       requirement.key === "ultimate"
         ? buildSlots.find((slot) =>
-            requirement.powerTypes.includes(getPowerType(slot.power) ?? ""),
+            isUltimatePower(slot.power),
           )?.power ??
           powerVariantSlots.find((slot) =>
-            slot.power ? isUltimatePowerVariantDevice(slot.power) : false,
+            isUltimatePower(slot.power),
           )?.power ??
           null
         : buildSlots.find((slot) =>

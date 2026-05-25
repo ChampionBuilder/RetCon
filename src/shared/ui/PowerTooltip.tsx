@@ -5,13 +5,15 @@ type PowerTooltipProps = {
 };
 
 export function PowerTooltip({ tooltip }: PowerTooltipProps) {
+  const typeLine = [tooltip.powerType, tooltip.activationType]
+    .filter(Boolean)
+    .join(" - ");
   const hasStructuredContent =
     tooltip.framework ||
-    tooltip.powerType ||
+    typeLine ||
     tooltip.metrics.length > 0 ||
     tooltip.rangeTags.length > 0 ||
     tooltip.tags.length > 0 ||
-    tooltip.overview.length > 0 ||
     tooltip.effects.length > 0;
 
   if (!hasStructuredContent && tooltip.fallbackText) {
@@ -25,36 +27,34 @@ export function PowerTooltip({ tooltip }: PowerTooltipProps) {
         {tooltip.framework && <span>{tooltip.framework}</span>}
       </div>
 
-      {(tooltip.powerType || tooltip.metrics.length > 0) && (
+      {(typeLine ||
+        tooltip.metrics.length > 0 ||
+        tooltip.tags.length > 0 ||
+        tooltip.rangeTags.length > 0) && (
         <div className="power-tooltip__meta">
-          {tooltip.powerType && <strong>{tooltip.powerType}</strong>}
-          {tooltip.metrics.length > 0 && (
-            <span>{tooltip.metrics.join(" / ")}</span>
+          {typeLine && <strong>{typeLine}</strong>}
+
+          {tooltip.tags.length > 0 && (
+            <div className="power-tooltip__tags">
+              {tooltip.tags.map((tag) => (
+                <span key={tag}>{tag}</span>
+              ))}
+            </div>
           )}
-        </div>
-      )}
 
-      {tooltip.overview.length > 0 && (
-        <div className="power-tooltip__overview">
-          {tooltip.overview.map((item) => (
-            <span key={item}>{item}</span>
-          ))}
-        </div>
-      )}
+          <div className="power-tooltip__details">
+            <div className="power-tooltip__metrics">
+              {tooltip.metrics.map((metric) => (
+                <span key={metric}>{metric}</span>
+              ))}
+            </div>
 
-      {tooltip.rangeTags.length > 0 && (
-        <div className="power-tooltip__range">
-          {tooltip.rangeTags.map((tag) => (
-            <span key={tag}>{tag}</span>
-          ))}
-        </div>
-      )}
-
-      {tooltip.tags.length > 0 && (
-        <div className="power-tooltip__tags">
-          {tooltip.tags.map((tag) => (
-            <span key={tag}>{tag}</span>
-          ))}
+            <div className="power-tooltip__range">
+              {tooltip.rangeTags.map((tag) => (
+                <span key={tag}>{tag}</span>
+              ))}
+            </div>
+          </div>
         </div>
       )}
 
