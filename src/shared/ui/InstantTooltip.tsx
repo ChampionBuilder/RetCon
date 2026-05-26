@@ -10,6 +10,10 @@ type TooltipContent =
   | {
       kind: "power";
       data: PowerTooltipData;
+    }
+  | {
+      kind: "stat";
+      data: StatTooltipData;
     };
 
 type TooltipState = {
@@ -21,6 +25,13 @@ type TooltipState = {
   positioned: boolean;
 };
 
+type StatTooltipData = {
+  info: string | null;
+  forms: string[];
+  primaryEUs: string[];
+  secondaryEUs: string[];
+};
+
 function getTooltipElement(target: EventTarget | null) {
   if (!(target instanceof Element)) {
     return null;
@@ -30,17 +41,53 @@ function getTooltipElement(target: EventTarget | null) {
     return null;
   }
 
-  const element = target.closest<HTMLElement>("[title], [data-power-tooltip]");
+  const element = target.closest<HTMLElement>(
+    "[title], [data-power-tooltip], [data-stat-tooltip]",
+  );
 
   if (!element) {
     return null;
   }
 
-  if (!element.title.trim() && !element.dataset.powerTooltip) {
+  if (
+    !element.title.trim() &&
+    !element.dataset.powerTooltip &&
+    !element.dataset.statTooltip
+  ) {
     return null;
   }
 
   return element;
+}
+
+function StatTooltip({ data }: { data: StatTooltipData }) {
+  return (
+    <div className="stat-tooltip">
+      {data.info ? (
+        <p className="stat-tooltip__intro">
+          <strong>{data.info}</strong>
+        </p>
+      ) : null}
+      {data.forms.length > 0 ? (
+        <div className="stat-tooltip__section">
+          <strong>Toggle</strong>
+          <span>{data.forms.join(", ")}</span>
+        </div>
+      ) : null}
+      {data.primaryEUs.length > 0 ? (
+        <div className="stat-tooltip__section">
+          <strong>Primary</strong>
+          <span>{data.primaryEUs.join(", ")}</span>
+        </div>
+      ) : null}
+      {data.secondaryEUs.length > 0 ? (
+        <div className="stat-tooltip__section">
+          <strong>Secondary</strong>
+          <span>{data.secondaryEUs.join(", ")}</span>
+        </div>
+      ) : null}
+    </div>
+  );
 }
 
 function releaseTooltipElement(element: HTMLElement | null) {
@@ -126,6 +173,17 @@ export function InstantTooltip() {
         }
       }
 
+      if (element.dataset.statTooltip) {
+        try {
+          return {
+            kind: "stat",
+            data: JSON.parse(element.dataset.statTooltip) as StatTooltipData,
+          };
+        } catch {
+          // Fall back to the plain title when a malformed dataset slips through.
+        }
+      }
+
       const text =
         element.title.trim() ||
         element.dataset.instantTooltipTitle?.trim() ||
@@ -181,7 +239,7 @@ export function InstantTooltip() {
         );
       });
       mutationObserverRef.current.observe(element, {
-        attributeFilter: ["data-power-tooltip", "title"],
+        attributeFilter: ["data-power-tooltip", "data-stat-tooltip", "title"],
         attributes: true,
       });
     }
@@ -350,6 +408,8 @@ export function InstantTooltip() {
     >
       {tooltip.content.kind === "power" ? (
         <PowerTooltip tooltip={tooltip.content.data} />
+      ) : tooltip.content.kind === "stat" ? (
+        <StatTooltip data={tooltip.content.data} />
       ) : (
         tooltip.content.text
       )}

@@ -12,24 +12,13 @@ type StatSelectionDialogProps = {
   onClose: () => void;
 };
 
-function getStatTip(stat: SuperStat) {
-  const lines = [stat.info];
-
-  if (stat.forms?.length) {
-    lines.push(`Forms: ${stat.forms.join(", ")}`);
-  }
-
-  if (stat.primaryEUs?.length) {
-    lines.push(`Energy Unlocks (Main Bonus): ${stat.primaryEUs.join(", ")}`);
-  }
-
-  if (stat.secondaryEUs?.length) {
-    lines.push(
-      `Energy Unlocks (Lesser Bonus): ${stat.secondaryEUs.join(", ")}`,
-    );
-  }
-
-  return lines.filter(Boolean).join("\n\n");
+function getStatTooltipAttribute(stat: SuperStat) {
+  return JSON.stringify({
+    info: stat.info,
+    forms: stat.forms ?? [],
+    primaryEUs: stat.primaryEUs ?? [],
+    secondaryEUs: stat.secondaryEUs ?? [],
+  });
 }
 
 export function StatSelectionDialog({
@@ -75,7 +64,7 @@ export function StatSelectionDialog({
                 .filter(Boolean)
                 .join(" ")}
               key={stat.id}
-              title={getStatTip(stat)}
+              data-stat-tooltip={getStatTooltipAttribute(stat)}
               type="button"
               onClick={() => onSelectStat(slotIndex, stat.id)}
             >

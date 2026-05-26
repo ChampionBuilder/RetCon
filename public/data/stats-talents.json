@@ -15,6 +15,7 @@
       "info": "Improves Melee Damage, Melee Knocks, Knock Resistance, and the pick-up and throw ability.",
       "forms": [
         "Aspect of the Machine",
+        "Wrathful Blade",
         "Enrage",
         "Aspect of the Bestial"
       ],
@@ -27,6 +28,7 @@
       "info": "Improves a hero's Critical Hit Chance and effectiveness of Stealth granting powers.",
       "forms": [
         "Chilled Form",
+        "Frigid Determination",
         "Sharp Shooter",
         "Form of the Tempest",
         "Form of the Tiger",
@@ -36,14 +38,14 @@
         "Mental Precision"
       ],
       "primaryEUs": [
-        "Steadfast"
+        "Relentless"
       ],
       "secondaryEUs": null
     },
     {
       "id": 3,
       "name": "Constitution",
-      "info": "Improves a hero's Hit Points.",
+      "info": "Improves a hero's Hit Points. +15 HP per point.",
       "forms": null,
       "primaryEUs": null,
       "secondaryEUs": null
@@ -53,12 +55,17 @@
       "name": "Intelligence",
       "info": "Affects the hero's power cooldown length, Stealth Detection, and the Energy Cost of their powers.",
       "forms": [
-        "Concentration",
+        "Precision",
+        "Technological Prowess",
+        "Technological Advancements",
         "Particle Accelerator",
+        "Concentration",
         "Manipulator",
-        "Spellcaster"
+        "Spellcaster",
+        "Aspect of the Infernal"
       ],
       "primaryEUs": [
+        "Hunter's Instinct",
         "Molecular Self-Assembly",
         "Conjuring"
       ],
@@ -70,11 +77,11 @@
       "info": "Improves Ranged Damage, Ranged Knocks, and Hold Resistance.",
       "forms": [
         "Chilled Form",
-        "Concentration"
+        "Aspect of the Machine",
+        "Concentration",
+        "Aspect of the Infernal"
       ],
-      "primaryEUs": [
-        "Hunter's Instinct"
-      ],
+      "primaryEUs": null,
       "secondaryEUs": null
     },
     {
@@ -84,7 +91,6 @@
       "forms": [
         "Manipulator",
         "Shadow Manifestation",
-        "Fear Consumption",
         "Compassion"
       ],
       "primaryEUs": [
@@ -99,13 +105,15 @@
       "forms": [
         "Fiery Will",
         "Smoldering",
+        "Fear Consumption",
         "Compassion"
       ],
       "primaryEUs": [
         "Ionic Reverberation",
+        "Sound Amplification",
         "Killer Instinct",
-        "Relentless",
         "Chi Manipulation",
+        "Steadfast",
         "Telekinetic Reverberation",
         "Pulverizer",
         "Spirit Reverberation",
@@ -113,15 +121,17 @@
       ],
       "secondaryEUs": [
         "Thermal Reverberation",
+        "Impact Force",
+        "Power Barrier",
         "Wind Reverberation",
         "Icy Embrace",
         "Hunter's Instinct",
         "Molecular Self-Assembly",
         "Overdrive",
         "Unified Theory",
-        "Steadfast",
-        "Desetructive",
+        "Relentless",
         "Telepathic Reverberation",
+        "Destructive",
         "Conjuring",
         "Wild Thing",
         "Mephitic"
@@ -130,13 +140,17 @@
     {
       "id": 8,
       "name": "Endurance",
-      "info": "Affects a hero's Maximum Energy and rate of energy generated from fighting attacks.",
+      "info": "Affects a hero's Maximum Energy and rate of energy generated from fighting attacks. +1 Energy per point.",
       "forms": [
-        "Power Source"
+        "Power Source",
+        "Force Control",
+        "Vital Shielding",
+        "Weather Shaping"
       ],
       "primaryEUs": [
-        "Ionic Reverberation",
         "Thermal Reverberation",
+        "Impact Force",
+        "Power Barrier",
         "Wind Reverberation",
         "Icy Embrace",
         "Overdrive",
@@ -146,9 +160,11 @@
         "Mephitic"
       ],
       "secondaryEUs": [
+        "Ionic Reverberation",
+        "Sound Amplification",
         "Killer Instinct",
-        "Relentless",
         "Chi Manipulation",
+        "Steadfast",
         "Telekinetic Reverberation",
         "Pulverizer",
         "Spirit Reverberation"

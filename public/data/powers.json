@@ -1890,7 +1890,7 @@
       "Affects foe (5 max)",
       "10 foot Sphere"
     ],
-    "tooltip": "Deals Crushing Damage to nearby foes. + When charged at least half way, has a 50-100% chance to Knock Back affected targets. + If your target is immune to Knock effects, increases this power's base damage by up tp 25% based on charge time.",
+    "tooltip": "Deals Crushing Damage to nearby foes. + When charged at least half way, has a 50-100% chance to Knock Back affected targets. + If your target is immune to Knock effects, increases this power's base damage by up to 25% based on charge time.",
     "tags": [
       "Knock Back"
     ],
@@ -3046,7 +3046,7 @@
       "100 feet",
       "5 foot Cylinder"
     ],
-    "tooltip": "Deals Crushing Damage and Cold Damage to all targets and they have a 25-100% chance to be Repelled. + Targets have a 50% chance to be Knocked Down. If they are Disoriented, they instead have a 100% chance to be Staggered and Knocked Back. + If your target is immune to Knock effects, increases this power's base damage by up tp 30% based on charge time. + Stagger reduces all damage resistance by 2% and movement speed by 25% for 15 sec. Stacks up to 3 times.",
+    "tooltip": "Deals Crushing Damage and Cold Damage to all targets and they have a 25-100% chance to be Repelled. + Targets have a 50% chance to be Knocked Down. If they are Disoriented, they instead have a 100% chance to be Staggered and Knocked Back. + If your target is immune to Knock effects, increases this power's base damage by up to 30% based on charge time. + Stagger reduces all damage resistance by 2% and movement speed by 25% for 15 sec. Stacks up to 3 times.",
     "tags": [
       "Repel",
       "Knock Down",
@@ -4160,7 +4160,7 @@
       29,
       3
     ],
-    "activation_type": null,
+    "activation_type": "TOGGLE",
     "activation_time": 0.5,
     "max_duration": null,
     "tick_rate": null,
@@ -4169,9 +4169,11 @@
       "Targets foe",
       "50 feet"
     ],
-    "tooltip": "Energy Builder/Ranged Damage. Deals 57 Piercing damage and generates 14 Energy with each subsequent shot.",
+    "tooltip": "Deals Piercing damage and generates Energy",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Piercing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Archery_Strafe",
@@ -4183,7 +4185,7 @@
     "power_id": 123,
     "name": "Snap Shot",
     "tier": 0,
-    "power_type": null,
+    "power_type": "RANGED_DAMAGE",
     "advantages": [
       1,
       2,
@@ -4194,8 +4196,8 @@
       7,
       5
     ],
-    "activation_type": null,
-    "activation_time": 0.5,
+    "activation_type": "COMBO",
+    "activation_time": "0.5-0.83",
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
@@ -4203,9 +4205,13 @@
       "Targets foe",
       "100 feet"
     ],
-    "tooltip": "Ranged Damage/Combo. Deals 104/161/234 Piercing Damage (based on combo hit) to the target, with 25 health. The third hit applies Disorient.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Piercing Damage to the target. + Deals additionnal Piercing Damage to targets below 25% Health.  + The last hit applies Disorient.",
+    "tags": [
+      "Disorient"
+    ],
+    "damage_type": [
+      "Piercing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Archery_SnapShot",
@@ -4217,7 +4223,7 @@
     "power_id": 124,
     "name": "Straight Shot",
     "tier": 0,
-    "power_type": null,
+    "power_type": "RANGED_DAMAGE",
     "advantages": [
       1,
       2,
@@ -4228,7 +4234,7 @@
       7,
       5
     ],
-    "activation_type": null,
+    "activation_type": "CHARGE",
     "activation_time": 0.67,
     "max_duration": 1.33,
     "tick_rate": null,
@@ -4237,9 +4243,13 @@
       "Targets foe",
       "100 feet"
     ],
-    "tooltip": "Ranged Damage/Blast/Root. Deals 180-511 Piercing Damage and has a 35-100% chance (based on charge time) to Root your target for 13 sec.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Piercing Damage. + Has a 35-100% chance (based on charge time) to Root your target for 13 sec.",
+    "tags": [
+      "Root"
+    ],
+    "damage_type": [
+      "Piercing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Archery_StraightShot",
@@ -4251,7 +4261,7 @@
     "power_id": 125,
     "name": "Desperate Shot",
     "tier": 1,
-    "power_type": null,
+    "power_type": "RANGED_DAMAGE",
     "advantages": [
       1,
       2,
@@ -4261,7 +4271,7 @@
       3,
       7
     ],
-    "activation_type": null,
+    "activation_type": "CLICK",
     "activation_time": 1.67,
     "max_duration": null,
     "tick_rate": null,
@@ -4270,9 +4280,13 @@
       "Targets foe",
       "100 feet"
     ],
-    "tooltip": "Ranged Damage. Deals 504 Piercing Damage to the target. Deals 100 Health, deals double damage and Stuns the target for 1.7 sec.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Piercing Damage to your target.  +The Critical Severity on this power is increased by 100%. + When fired with less than 50% Health, deals additional Piercing Damage and Stuns the target for 1.7 sec.",
+    "tags": [
+      "Stun"
+    ],
+    "damage_type": [
+      "Piercing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Archery_DesperateShot",
@@ -4284,14 +4298,14 @@
     "power_id": 126,
     "name": "Evasive Maneuvers",
     "tier": 1,
-    "power_type": null,
+    "power_type": "REVERSE_LUNGE",
     "advantages": [
       1,
       2,
       523,
       544
     ],
-    "activation_type": null,
+    "activation_type": "CLICK",
     "activation_time": 0.67,
     "max_duration": null,
     "tick_rate": null,
@@ -4301,9 +4315,13 @@
       "100 feet",
       "40 foot lunge"
     ],
-    "tooltip": "Reverse Lunge/Self Buff. You lunge away from the target and gain Evasive Maneuvers, increasing your Dodge Chance for 6 sec.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "You lunge away from the target. + Applies Evasive Maneuvers to you, increasing your  Dodge chance for 6 sec.",
+    "tags": [
+      "Evasive Maneuvers"
+    ],
+    "damage_type": [
+      "Piercing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Archery_EvasiveManeuvers",
@@ -4317,13 +4335,13 @@
     "tier": 1,
     "power_type": "ENERGY_UNLOCK",
     "advantages": [],
-    "activation_type": null,
+    "activation_type": "PASSIVE",
     "activation_time": null,
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
-    "tooltip": "Energy Unlock. Innate Passive/Ego/Recovery. + Generates energy every 3 seconds over 6 seconds each time you deal a critical hit with a damag-dealing Archery power. + The energy gained scales with your Intelligence, and to a lesser degree, your Recovery.",
+    "tooltip": "Whenever you perform a Citical Hit with a damaging Archery power,  you gain Energy every 3 sec for 6 sec. This effect cannot stack. + The energy gained scales with your Intelligence, and to a lesser degree, your Recovery.",
     "tags": [],
     "damage_type": [],
     "scaling_stats": [
@@ -4340,7 +4358,7 @@
     "power_id": 128,
     "name": "Medical Arrow",
     "tier": 1,
-    "power_type": null,
+    "power_type": "RANGED_DAMAGE",
     "advantages": [
       1,
       2,
@@ -4349,7 +4367,7 @@
       610,
       3
     ],
-    "activation_type": null,
+    "activation_type": "CLICK",
     "activation_time": 1,
     "max_duration": null,
     "tick_rate": null,
@@ -4358,9 +4376,15 @@
       "Targets foe",
       "100 feet"
     ],
-    "tooltip": "Ranged Damage/Heal/Rune/Enhancement. Deals 174 Piercing damage to the target and creates a Healing Rune at their location.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Piercing damage to your target. + Creates a Healing Rune at your target, healing up to 5 allies within 15ft every 1 sec for 10 sec.",
+    "tags": [
+      "Heal",
+      "Rune",
+      "Enchantement"
+    ],
+    "damage_type": [
+      "Piercing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Archery_MedicalArrow",
@@ -4377,13 +4401,13 @@
       1,
       2
     ],
-    "activation_type": null,
+    "activation_type": "CLICK",
     "activation_time": 1,
-    "max_duration": 2.5,
+    "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
-    "tooltip": "Form (Intelligence). Buff/Form/Analyze. Gives you a stacking buff that increases your ranged damage, as well as your melee damage to a lesser degree. + You gain a stack each time you deal a Critical Hit with an Archery power. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
+    "tooltip": "Gives you a stacking buff that increases your ranged damage, as well as your melee damage to a lesser degree. + You gain a stack each time you deal a Critical Hit with an Archery power. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
     "tags": [],
     "damage_type": [],
     "scaling_stats": [
@@ -4404,16 +4428,23 @@
       1,
       2
     ],
-    "activation_type": null,
+    "activation_type": "PASSIVE",
     "activation_time": null,
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
-    "tooltip": "Passive (Offense). Slotted Offensive Passive. + Increases your Physical damage. + Increases your Non-Physical damage by a lesser amount. + Increases your Dodge Chance by a small amount. + When using non-energy-builder attacks, you gain a stack of Audacity. Audacity increases your Avoidance, Intelligence, and Ego by a small amount and can stack up to 3 times.",
+    "tooltip": "Increases your Physical damage. + Increases your Non-Physical damage by a lesser amount. + Increases your Dodge Chance by a small amount. + When using non-energy-builder attacks, you gain a stack of Audacity. Audacity increases your Avoidance, Intelligence, and Ego by a small amount and can stack up to 3 times.",
     "tags": [],
-    "damage_type": [],
-    "scaling_stats": [],
+    "damage_type": [
+      "Piercing",
+      "Slashing",
+      "Crushing"
+    ],
+    "scaling_stats": [
+      "INT",
+      "EGO"
+    ],
     "power_dependency": [],
     "icon_override": "Archery_Quarry",
     "is_disabled": false
@@ -4424,7 +4455,7 @@
     "power_id": 131,
     "name": "Sonic Arrow",
     "tier": 1,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -4434,7 +4465,7 @@
       3,
       5
     ],
-    "activation_type": null,
+    "activation_type": "CHARGE",
     "activation_time": 0.67,
     "max_duration": 1.83,
     "tick_rate": null,
@@ -4444,9 +4475,15 @@
       "100 feet",
       "10 foot Sphere"
     ],
-    "tooltip": "Ranged AoE Damage/Stun/Paralyze. Deals 69-247 Piercing Damage to the main target and 69-247 Sonic Damage to all targets, based on charge time. When not fully charged, Stuns affected targets for 1.7 sec. When fully charged, applies Paralyze to affected targets for 12 sec.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Piercing Damage to the main target and Sonic Damage to all targets based on charge time.  + If not fully charged, Stuns affected targets. + If fully charged instead Paralyzes affected targets.",
+    "tags": [
+      "Stun",
+      "Hold"
+    ],
+    "damage_type": [
+      "Piercing",
+      "Sonic"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Archery_SonicArrow",
@@ -4458,7 +4495,7 @@
     "power_id": 132,
     "name": "Taser Arrow",
     "tier": 1,
-    "power_type": null,
+    "power_type": "RANGED_DAMAGE",
     "advantages": [
       1,
       2,
@@ -4466,18 +4503,23 @@
       177,
       3
     ],
-    "activation_type": null,
+    "activation_type": "FULL_CHARGE",
     "activation_time": 0.5,
     "max_duration": 2,
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [
-      "Targets foe",
+      "Targets non-destructible foe",
       "100 feet"
     ],
-    "tooltip": "Ranged Damage/Paralyze. Deals 149 Piercing Damage, 448 Electrical Damage, and Paralyzes the target for 12 sec.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Piercing Damage and Electrical Damage. + Paralyzes the target,",
+    "tags": [
+      "Hold"
+    ],
+    "damage_type": [
+      "Piercing",
+      "Electrical"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Archery_TaserArrow",
@@ -4489,13 +4531,13 @@
     "power_id": 133,
     "name": "Caltrops",
     "tier": 2,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
       536
     ],
-    "activation_type": null,
+    "activation_type": "CLICK",
     "activation_time": 0.67,
     "max_duration": null,
     "tick_rate": null,
@@ -4503,9 +4545,13 @@
     "range_tags": [
       "Targets self"
     ],
-    "tooltip": "Ranged AoE Damage/Snare. Create a patch of Caltrops in front of you, dealing 45 Piercing Damage every sec for 16 sec to each target within the area of effect. Affected targets are also Snared, reducing their movement speed by 100% for 3.3 sec.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "You toss out a cluster of Caltrops that deal Piercing Damage every 1 sec for 16 sec to targets within 10ft. + Targets in the Caltrops are Snared, reducing their movement speed by 100% for a small amount of time.",
+    "tags": [
+      "Snare"
+    ],
+    "damage_type": [
+      "Piercing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Archery_Caltrops",
@@ -4517,13 +4563,13 @@
     "power_id": 134,
     "name": "Fair Game",
     "tier": 2,
-    "power_type": null,
+    "power_type": "SELF_HEAL_OVER_TIME",
     "advantages": [
       1,
       2,
       268
     ],
-    "activation_type": null,
+    "activation_type": "CLICK",
     "activation_time": null,
     "max_duration": null,
     "tick_rate": null,
@@ -4531,10 +4577,13 @@
     "range_tags": [
       "Targets self"
     ],
-    "tooltip": "Self Heal Over Time. For the next 15 seconds, defeating a foe heals you for 59 Health Points every 2 sec over 6 sec, stacking up to 5 times.",
+    "tooltip": "For the next 15 sec defeating a foe heals you for a small amount of Health Points every 2 sec over 6 sec. Stacks up to 5 times. + Activates a shared cooldown of 15 seconds on all Self Heal Over Time powers.",
     "tags": [],
     "damage_type": [],
-    "scaling_stats": [],
+    "scaling_stats": [
+      "INT",
+      "DEX"
+    ],
     "power_dependency": [],
     "icon_override": "Archery_FairGame",
     "is_disabled": false
@@ -4545,7 +4594,7 @@
     "power_id": 135,
     "name": "Storm of Arrows",
     "tier": 2,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -4554,7 +4603,7 @@
       3,
       5
     ],
-    "activation_type": null,
+    "activation_type": "MAINTAIN",
     "activation_time": 1,
     "max_duration": 5,
     "tick_rate": 1,
@@ -4564,9 +4613,11 @@
       "100 feet",
       "15 foot Sphere"
     ],
-    "tooltip": "Ranged AoE Damage",
+    "tooltip": "Deals Piercing Damage every 1 sec to all targets and has a 50% chance to deal an additional Piercing Damage up to twice per period.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Piercing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Archery_StormofArrows",
@@ -4578,7 +4629,7 @@
     "power_id": 136,
     "name": "Torrent of Arrows",
     "tier": 2,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -4587,7 +4638,7 @@
       3,
       5
     ],
-    "activation_type": null,
+    "activation_type": "CHARGE",
     "activation_time": 0.67,
     "max_duration": 1.83,
     "tick_rate": null,
@@ -4597,9 +4648,13 @@
       "100 feet",
       "30 degree Cone"
     ],
-    "tooltip": "Ranged AoE Damage/Knock. Deals 196-696 Piercing Damage and has a 34-100% chance (based on charge time) to Knock Down targets.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Piercing Damage. + Has a 34-100% chance (based on charge time) to Knock Down targets.",
+    "tags": [
+      "Knock Down"
+    ],
+    "damage_type": [
+      "Piercing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Archery_TorrentofArrows",
@@ -4611,7 +4666,7 @@
     "power_id": 137,
     "name": "Explosive Arrow",
     "tier": 3,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -4621,7 +4676,7 @@
       3,
       5
     ],
-    "activation_type": null,
+    "activation_type": "CHARGE",
     "activation_time": 0.67,
     "max_duration": 1.83,
     "tick_rate": null,
@@ -4631,9 +4686,13 @@
       "100 feet",
       "10 foot Sphere"
     ],
-    "tooltip": "Ranged AoE Damage. Deals 180-638 Fire Damage and has a 27-100% chance (based on charge time) to Knock Up affected targets.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Fire Damage to all targets based on charge time. + Has a 27-100% chance to Knock Up affected targets.",
+    "tags": [
+      "Knock Up"
+    ],
+    "damage_type": [
+      "Fire"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Archery_ExplosiveArrow",
@@ -4645,14 +4704,14 @@
     "power_id": 138,
     "name": "Focused Shot",
     "tier": 3,
-    "power_type": null,
+    "power_type": "RANGED_DAMAGE",
     "advantages": [
       1,
       2,
       36,
       3
     ],
-    "activation_type": null,
+    "activation_type": "FULL_CHARGE",
     "activation_time": 1,
     "max_duration": 3,
     "tick_rate": null,
@@ -4661,9 +4720,11 @@
       "Targets foe",
       "120 feet"
     ],
-    "tooltip": "Ranged Damage. Deals 1170 Piercing Damage to the target. Fully charging this power applies Total Focus to you, reducing this power's charge time by 15% for 10 seconds. Stacks up to 3 times. Taking any damage will interrupt this power and remove all stacks of Total Focus.",
+    "tooltip": "Deals Piercing Damage to the target. + Fully charging this power applies Total Focus to you, reducing this power's charge time by 15% for 10 seconds. Stacks up to 3 times. + Taking any damage will interrupt this power and remove all stacks of Total Focus.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Piercing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Archery_FocusedShot",
@@ -4675,7 +4736,7 @@
     "power_id": 139,
     "name": "Gas Arrow",
     "tier": 3,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -4683,7 +4744,7 @@
       3,
       5
     ],
-    "activation_type": null,
+    "activation_type": "CLICK",
     "activation_time": 0.67,
     "max_duration": null,
     "tick_rate": null,
@@ -4693,9 +4754,13 @@
       "100 feet",
       "15 foot Sphere"
     ],
-    "tooltip": "Ranged AoE Damage/DoT/Perception Debuff. Creates a Gas Cloud at the target's location for 12 sec. Deals 82 Toxic Damage every sec to affected foes and reduces their Perception by 200SCCD%",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Creates a Gas Cloud at the targets location which deals Toxic Damage every 1 sec for 12 sec to foes within 15ft. + The Gas Cloud reduces the Perception of foes by 600%. + Places all Perception Debuff powers on a 15 sec cooldown.",
+    "tags": [
+      "Perception"
+    ],
+    "damage_type": [
+      "Toxic"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Archery_GasArrow",
@@ -4707,7 +4772,7 @@
     "power_id": 140,
     "name": "Rapid Shots",
     "tier": 3,
-    "power_type": null,
+    "power_type": "RANGED_DAMAGE",
     "advantages": [
       1,
       2,
@@ -4715,7 +4780,7 @@
       3,
       5
     ],
-    "activation_type": null,
+    "activation_type": "MAINTAIN",
     "activation_time": 0.5,
     "max_duration": 5,
     "tick_rate": 0.5,
@@ -4724,9 +4789,13 @@
       "Targets foe",
       "100 feet"
     ],
-    "tooltip": "Ranged Damage/Snare. Deals 174 Piercing Damage to the target every 0.5 sec. Has a 15 chance when fully maintained, to Snare the target, reducing their movement speed by 100% for 13 sec.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Piercing Damage every 0.5 sec. + Has a 15% chance every hit to Snare your target, reducing their movement speed by 100% for 13 sec. When fully maintained this chance is guaranteed.",
+    "tags": [
+      "Snare"
+    ],
+    "damage_type": [
+      "Piercing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Archery_RapidShots",
@@ -8188,13 +8257,13 @@
       1,
       2
     ],
-    "activation_type": null,
+    "activation_type": "CLICK",
     "activation_time": 1,
-    "max_duration": 2.5,
+    "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
-    "tooltip": "Form (Intelligence or Ego). Buff/Form/Concentration. Gives you a stacking buff that increases your ranged damage, as well as your melee damage to a lesser degree. + You gain a stack each time you maintain or charge a ranged power at least halfway, or when you hit a target at least 25 feet away. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
+    "tooltip": "Gives you a stacking buff that increases your ranged damage, as well as your melee damage to a lesser degree. + You gain a stack each time you maintain or charge a ranged power at least halfway, or when you hit a target at least 25 feet away. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
     "tags": [],
     "damage_type": [],
     "scaling_stats": [
@@ -8211,25 +8280,32 @@
     "power_id": 259,
     "name": "Arrow Assault",
     "tier": 4,
-    "power_type": "ULTIMATE",
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
       111,
       327
     ],
-    "activation_type": null,
+    "activation_type": "FULL_CHARGE",
     "activation_time": 0.67,
     "max_duration": 0.83,
     "tick_rate": null,
     "cooldown": 60,
     "range_tags": [
+      "Targets foe (10 max)",
       "100 feet",
       "25 foot Sphere"
     ],
-    "tooltip": "Ranged AoE Damage. Deals 275 Piercing damage and all targets are Knocked Down. After 1 sec, deals 533 Fire damage and all targets are Stunned for 4.2 sec.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Piercing Damage and after 1 sec deals additional Fire Damage to all targets. + Knocks Down all targets. + After 1 sec Stuns all targets.",
+    "tags": [
+      "Knock Down",
+      "Stun"
+    ],
+    "damage_type": [
+      "Piercing",
+      "Fire"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Technology_ArrowAssault",
@@ -21797,17 +21873,33 @@
     "power_id": 738,
     "name": "Cryoclysm",
     "tier": null,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
+    "activation_type": "MAINTAIN",
+    "activation_time": 0.5,
+    "max_duration": 3,
+    "tick_rate": 0.3,
     "cooldown": 90,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets non-desctructible foe (5 max)",
+      "50 feet",
+      "15 foot Sphere"
+    ],
+    "tooltip": "Deals Cold Damage every 0.3 sec to foes. Or deals different type of damage depending on your Energy builder. Ice Shards = Cold Damage. Electric Bolt = Electrical Damage. Throw Fire = Fire Damage. Force Bolts and Wind Lash = Deals Crushing Damage. + When maintained the power has a 50% chance of applying Chill, Clinging Flames, Negatives Ions, Power Shield, Stager per tick based on your Energy Builder. + Additionally when fully maintained Knocks Up (Wind) affected targets or Knocks Down (Force) enemies based on your Energy Builder. + When fully maintained creates a 25ft zone for 15 seconds. Up to 10 enemies within the zone receive the Cryoclysm debuff, increasing all damage they take by 10/12/15% depending on the rank of the Avalanche power. This effect will only occur if you own the Avalanche power. + Goes on a 90 sec cooldown if you do not own the Avalanche power.",
+    "tags": [
+      "Chill",
+      "Clinging Flames",
+      "Negative Ions",
+      "Stagger",
+      "Knock up",
+      "Knock Down"
+    ],
+    "damage_type": [
+      "Fire",
+      "Cold",
+      "Electrical",
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       109
@@ -21821,18 +21913,30 @@
     "power_id": 739,
     "name": "Denial of Service",
     "tier": null,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "FULL_CHARGE",
+    "activation_time": 0.67,
+    "max_duration": 2.5,
     "tick_rate": null,
-    "cooldown": 90,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
-    "scaling_stats": [],
+    "cooldown": 120,
+    "range_tags": [
+      "Targets foe (5 max)",
+      "100 feet",
+      "5 foot Cylinder"
+    ],
+    "tooltip": "Deals Particle Damage to all targets. + If you are affected by the Download buff, this power's base damage is increased by 20% and the Download buff is consumed.  + Has a chance to Interrupt affected targets. If your target cannot be interrupted, applies Download to you instead, reducing the cost of your Technology powers by 20% and increases the effectiveness of your energy gain powers for 12 sec. This effect will only occur if you own the Force Cascade power. + Applies Depleted to your primary target: Ends all active energy gain effects. Reduces all energy gain effectiveness by 100% for 8 sec, this amount scales with your RECOVERY. Removes -10 power, this amount scales with your ENDURANCE. + When this power is successfully activated, consumes all of your energy and ends all of your active energy gain effects. For the next 8 sec, reduces all energy gain effectiveness on you by 200% If you are affected by a Self Energy Gain power, consumes that effect instead and places the power on cooldown. + If used without a Self Energy Gain effect active, this power goes on a 8 sec cooldown. + Goes on a 120 sec cooldown if you do not own the Force Cascade power.",
+    "tags": [
+      "Download",
+      "Interrupt"
+    ],
+    "damage_type": [
+      "Particle"
+    ],
+    "scaling_stats": [
+      "END",
+      "REC"
+    ],
     "power_dependency": [
       72
     ],
@@ -22421,17 +22525,29 @@
     "power_id": 764,
     "name": "Stormpiercer",
     "tier": null,
-    "power_type": null,
+    "power_type": "RANGED_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
+    "activation_type": "CLICK",
+    "activation_time": 1.97,
     "max_duration": null,
     "tick_rate": null,
     "cooldown": 90,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe",
+      "100 Feet"
+    ],
+    "tooltip": "Deals Electrical Damage to your target. + The Critical Severity on this power is increased by 100%. When fired at an enemy afflicted with the Negative Ions debuff, it consumes the Negative Ions debuff to complete a Circuit, apply the Superconductor debuff and deal addition Electrical Damage. + When Stormpiercer hits an enemy effected by the Negative Ions debuff it Arcs to a target within 25 feet, dealing Electrical Damage to that target. + Additionally, Stormpiercer will Stun the target for 2 sec if the Player has the Download buff. + Goes on a 90 sec cooldown if you do not own the Desperate Shot power.",
+    "tags": [
+      "Negative Ions",
+      "Arc",
+      "Circuit",
+      "Superconductor",
+      "Stun",
+      "Download"
+    ],
+    "damage_type": [
+      "Electrical"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       125
@@ -22912,7 +23028,8 @@
     "tooltip": "Deals Crushing Damage and Knocks Back affected targets 67ft. The base damage is increased by 20% if an affected target is immune to Knock effects. + If you are affected by a direct Shield effect, consumes the shield and deals an additional Crushing Damage to up to 10 targets within 25ft of your primary target. + If a target is affected by a Shield effect, deals an additional Crushing Damage to up to 10 targets within 25ft of the shielded target. + Making use of of the above effects is considered to be a Field Inversion effect. - Activates a shared cooldown of 60 sec on all Ultimate powers.",
     "tags": [
       "Knock Back",
-      "Field Inversion"
+      "Field Inversion",
+      "Shield"
     ],
     "damage_type": [
       "Crushing"

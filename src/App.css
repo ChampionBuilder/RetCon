@@ -964,6 +964,32 @@ h3 {
   white-space: normal;
 }
 
+.stat-tooltip {
+  display: grid;
+  gap: 8px;
+  min-width: min(260px, calc(100vw - 54px));
+  max-width: 390px;
+  white-space: normal;
+}
+
+.stat-tooltip__intro {
+  margin: 0;
+  color: #edf3ff;
+}
+
+.stat-tooltip__section {
+  display: grid;
+  gap: 3px;
+}
+
+.stat-tooltip__section strong {
+  color: #f2d77b;
+}
+
+.stat-tooltip__section span {
+  color: #dfe8ff;
+}
+
 .power-tooltip__header {
   display: flex;
   justify-content: space-between;

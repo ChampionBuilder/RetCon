@@ -56,6 +56,18 @@ function formatTier(value: number | null | undefined) {
   return `Tier ${value}`;
 }
 
+function isPowerVariantDevice(power: Power) {
+  return power.powerset_id?.toLowerCase() === "pvd";
+}
+
+function formatHeaderMeta(power: Power) {
+  if (isPowerVariantDevice(power)) {
+    return power.tier === 4 ? "Ultimate Variant" : "Power Variant";
+  }
+
+  return formatTier(power.tier);
+}
+
 function isChargeActivationType(value: string | null | undefined) {
   const normalizedValue = value?.replace(/[_-]/g, " ").trim().toLowerCase();
 
@@ -145,7 +157,7 @@ export function getPowerTooltipData(
   return {
     title: power.name,
     framework: formatIdentifier(power.framework_id),
-    tier: formatTier(power.tier),
+    tier: formatHeaderMeta(power),
     powerType: formatIdentifier(getPowerType(power)),
     activationType: formatIdentifier(power.activation_type),
     metrics,
