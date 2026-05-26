@@ -8,8 +8,9 @@ export function PowerTooltip({ tooltip }: PowerTooltipProps) {
   const typeLine = [tooltip.powerType, tooltip.activationType]
     .filter(Boolean)
     .join(" - ");
+  const headerMeta = [tooltip.framework, tooltip.tier].filter(Boolean).join(" - ");
   const hasStructuredContent =
-    tooltip.framework ||
+    headerMeta ||
     typeLine ||
     tooltip.metrics.length > 0 ||
     tooltip.rangeTags.length > 0 ||
@@ -24,7 +25,7 @@ export function PowerTooltip({ tooltip }: PowerTooltipProps) {
     <div className="power-tooltip">
       <div className="power-tooltip__header">
         <strong>{tooltip.title}</strong>
-        {tooltip.framework && <span>{tooltip.framework}</span>}
+        {headerMeta && <span>{headerMeta}</span>}
       </div>
 
       {(typeLine ||

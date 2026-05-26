@@ -1,8 +1,10 @@
 import type { Power } from "@/types/powers";
+import { getPowerType } from "./powerTypes";
 
 export type PowerTooltipData = {
   title: string;
   framework: string | null;
+  tier: string | null;
   powerType: string | null;
   activationType: string | null;
   metrics: string[];
@@ -36,6 +38,22 @@ function formatSeconds(value: number | string | null | undefined) {
   }
 
   return `${numericValue} sec`;
+}
+
+function formatTier(value: number | null | undefined) {
+  if (value === null || value === undefined) {
+    return null;
+  }
+
+  if (value === -1) {
+    return "Energy Builder";
+  }
+
+  if (value === 4) {
+    return "Ultimate";
+  }
+
+  return `Tier ${value}`;
 }
 
 function isChargeActivationType(value: string | null | undefined) {
@@ -127,7 +145,8 @@ export function getPowerTooltipData(
   return {
     title: power.name,
     framework: formatIdentifier(power.framework_id),
-    powerType: formatIdentifier(power.Power_Type ?? power.POWER_TYPE),
+    tier: formatTier(power.tier),
+    powerType: formatIdentifier(getPowerType(power)),
     activationType: formatIdentifier(power.activation_type),
     metrics,
     rangeTags,

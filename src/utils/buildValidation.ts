@@ -1,6 +1,7 @@
 import type { BuildSlot } from "@/types/builds";
 import type { SuperStat } from "@/types/character";
 import type { Power } from "@/types/powers";
+import { getNormalizedPowerType } from "@/shared/utils/powerTypes";
 import { isCombatPower, isUltimatePower } from "./powerFrameworks";
 import { isPowerEnabled } from "./powerrules";
 
@@ -37,7 +38,13 @@ export const coreBuildRequirements: BuildRequirement[] = [
     key: "slotted-passive",
     label: "Slotted Passive",
     section: "core",
-    powerTypes: ["SLOTTED_PASSIVES"],
+    powerTypes: [
+      "SLOTTED_DEFENSIVE_PASSIVE",
+      "SLOTTED_HYBRID_PASSIVE",
+      "SLOTTED_OFFENSIVE_PASSIVE",
+      "SLOTTED_PASSIVES",
+      "SLOTTED_SUPPORT_PASSIVE",
+    ],
   },
   {
     key: "toggle-form",
@@ -86,10 +93,6 @@ export const optionalBuildRequirements: BuildRequirement[] = [
   },
 ];
 
-function getPowerType(power: Power | null | undefined) {
-  return power?.Power_Type ?? power?.POWER_TYPE ?? null;
-}
-
 const superStatNameToCode: Record<string, string> = {
   Strength: "STR",
   Dexterity: "DEX",
@@ -133,7 +136,7 @@ export function getMatchingRequirementPowerIds(
         isPowerEnabled(power) &&
         (requirement.key === "ultimate"
           ? isCombatPower(power) && isUltimatePower(power)
-          : requirement.powerTypes.includes(getPowerType(power) ?? "")),
+          : requirement.powerTypes.includes(getNormalizedPowerType(power))),
       )
       .map((power) => power.power_id),
   );
@@ -156,7 +159,7 @@ function getRequirementResults(
           )?.power ??
           null
         : buildSlots.find((slot) =>
-            requirement.powerTypes.includes(getPowerType(slot.power) ?? ""),
+            requirement.powerTypes.includes(getNormalizedPowerType(slot.power)),
           )?.power ?? null,
   }));
 }

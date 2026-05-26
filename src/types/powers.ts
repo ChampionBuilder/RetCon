@@ -4,6 +4,7 @@ export type Power = {
   framework_id: string | null;
   powerset_id: string | null;
   tier: number | null;
+  power_type?: string | null;
   POWER_TYPE?: string | null;
   Power_Type?: string | null;
   activation_type?: string | null;

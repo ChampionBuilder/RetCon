@@ -1,13 +1,7 @@
 import type { Power } from "@/types/powers";
 import type { BuildSlot } from "@/types/builds";
+import { getNormalizedPowerType } from "@/shared/utils/powerTypes";
 import { areFrameworksRelatedForUnlock } from "./powerFrameworks";
-
-function getNormalizedPowerType(power: Power) {
-  return (power.Power_Type ?? power.POWER_TYPE ?? "")
-    .replace(/[^a-z0-9]+/gi, "_")
-    .replace(/^_+|_+$/g, "")
-    .toUpperCase();
-}
 
 function isTierUnlockedBySlotLevel(power: Power, targetSlotLevel: number | null) {
   if (targetSlotLevel === null) {

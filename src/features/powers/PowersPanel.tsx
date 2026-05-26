@@ -10,6 +10,7 @@ import type { Advantage } from "@/types/advantages";
 import type { BuildSlot } from "@/types/builds";
 import type { Power } from "@/types/powers";
 import { getFrameworkIconName, getPowerIconName } from "@/shared/utils/icons";
+import { getPowerType } from "@/shared/utils/powerTypes";
 import { getPowerTooltipText } from "@/shared/utils/powerText";
 import { getPowerTooltipAttribute } from "@/shared/utils/powerTooltip";
 import {
@@ -84,6 +85,28 @@ function tierLabel(tier: Power["tier"]) {
   return `Tier ${tier}`;
 }
 
+function sectionUnlockTooltip(sectionKey: string) {
+  switch (sectionKey) {
+    case "-1":
+      return "You may have only one Energy Builder.";
+    case "0":
+      return "No unlock restrictions.";
+    case "1":
+      return "You need 1 power from the same framework, including Energy Builders, or 2 non-Energy Builder powers from any framework.";
+    case "2":
+      return "You need 3 powers from the same framework, including Energy Builders, or 4 non-Energy Builder powers from any framework.";
+    case "3":
+      return "You need 5 powers from the same framework, including Energy Builders, or 6 non-Energy Builder powers from any framework.";
+    case "4":
+      return "You may have only one Ultimate power. Ultimate PVD and Ultimate powers share the same cooldown.";
+    case "framework-variants":
+    case "__power_variants__":
+      return "Power Variant Devices have lower values and go on cooldown when used without the parent power. Ultimate Power Variants can't be used without the parent power.";
+    default:
+      return undefined;
+  }
+}
+
 function travelFrameworkLabel(frameworkId: string | null) {
   if (!frameworkId) {
     return "Travel";
@@ -107,7 +130,7 @@ function normalizeStrictSearchText(value: string | null | undefined) {
 }
 
 function getSearchablePowerType(power: Power) {
-  const powerType = power.Power_Type ?? power.POWER_TYPE ?? "";
+  const powerType = getPowerType(power) ?? "";
   const tierType = isUltimatePower(power) ? "Ultimate" : "";
 
   return `${powerType} ${powerType.replace(/_/g, " ")} ${tierType}`;
@@ -802,6 +825,7 @@ export function PowersPanel({
       <div className="power-tier-list">
         {powerSections.map((section) => {
           const isClosed = isSectionClosed(section.key);
+          const unlockTooltip = sectionUnlockTooltip(section.key);
 
           return (
             <section className="power-tier" key={section.key}>
@@ -809,6 +833,7 @@ export function PowersPanel({
                 className="power-tier__toggle"
                 aria-expanded={!isClosed}
                 onClick={() => toggleSection(section.key)}
+                title={unlockTooltip}
               >
                 <span>{section.label}</span>
                 <span

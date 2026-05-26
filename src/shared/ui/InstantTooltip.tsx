@@ -14,8 +14,11 @@ type TooltipContent =
 
 type TooltipState = {
   content: TooltipContent;
-  x: number;
-  y: number;
+  cursorX: number;
+  cursorY: number;
+  left: number;
+  top: number;
+  positioned: boolean;
 };
 
 function getTooltipElement(target: EventTarget | null) {
@@ -75,18 +78,34 @@ export function InstantTooltip() {
     const rect = tooltipElement.getBoundingClientRect();
     const maxLeft = Math.max(margin, window.innerWidth - rect.width - margin);
     const maxTop = Math.max(margin, window.innerHeight - rect.height - margin);
-    const preferredLeft = tooltip.x + gap;
-    const preferredTop = tooltip.y + gap;
+    const preferredLeft = tooltip.cursorX + gap;
+    const preferredTop = tooltip.cursorY + gap;
     const nextLeft =
-      preferredLeft > maxLeft ? tooltip.x - rect.width - gap : preferredLeft;
+      preferredLeft > maxLeft
+        ? tooltip.cursorX - rect.width - gap
+        : preferredLeft;
     const nextTop =
-      preferredTop > maxTop ? tooltip.y - rect.height - gap : preferredTop;
+      preferredTop > maxTop
+        ? tooltip.cursorY - rect.height - gap
+        : preferredTop;
     const clampedLeft = Math.min(Math.max(nextLeft, margin), maxLeft);
     const clampedTop = Math.min(Math.max(nextTop, margin), maxTop);
 
-    if (clampedLeft !== tooltip.x || clampedTop !== tooltip.y) {
-      tooltipElement.style.left = `${clampedLeft}px`;
-      tooltipElement.style.top = `${clampedTop}px`;
+    if (
+      clampedLeft !== tooltip.left ||
+      clampedTop !== tooltip.top ||
+      !tooltip.positioned
+    ) {
+      setTooltip((currentTooltip) =>
+        currentTooltip
+          ? {
+              ...currentTooltip,
+              left: clampedLeft,
+              top: clampedTop,
+              positioned: true,
+            }
+          : currentTooltip,
+      );
     }
   }, [tooltip]);
 
@@ -137,8 +156,11 @@ export function InstantTooltip() {
 
       setTooltip({
         content,
-        x,
-        y,
+        cursorX: x,
+        cursorY: y,
+        left: x,
+        top: y,
+        positioned: false,
       });
 
       disconnectMutationObserver();
@@ -205,8 +227,8 @@ export function InstantTooltip() {
         currentTooltip
           ? {
               ...currentTooltip,
-              x: event.clientX,
-              y: event.clientY,
+              cursorX: event.clientX,
+              cursorY: event.clientY,
             }
           : currentTooltip,
       );
@@ -321,8 +343,9 @@ export function InstantTooltip() {
       ref={tooltipRef}
       role="tooltip"
       style={{
-        left: tooltip.x,
-        top: tooltip.y,
+        left: tooltip.left,
+        top: tooltip.top,
+        visibility: tooltip.positioned ? "visible" : "hidden",
       }}
     >
       {tooltip.content.kind === "power" ? (
