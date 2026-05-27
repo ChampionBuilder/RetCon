@@ -1,5 +1,5 @@
 import type { Power } from "@/types/powers";
-import { getPowerType } from "./powerTypes";
+import { getNormalizedPowerType, getPowerType } from "./powerTypes";
 
 export type PowerTooltipData = {
   title: string;
@@ -66,6 +66,25 @@ function formatHeaderMeta(power: Power) {
   }
 
   return formatTier(power.tier);
+}
+
+function formatTitle(power: Power) {
+  const normalizedPowerType = getNormalizedPowerType(power);
+
+  if (
+    normalizedPowerType !== "TOGGLE_FORMS" &&
+    normalizedPowerType !== "ENERGY_UNLOCK"
+  ) {
+    return power.name;
+  }
+
+  const scalingStats = (power.scaling_stats ?? [])
+    .map((stat) => stat.trim().toUpperCase())
+    .filter(Boolean);
+
+  return scalingStats.length > 0
+    ? `${power.name} - ${scalingStats.join(" - ")}`
+    : power.name;
 }
 
 function isChargeActivationType(value: string | null | undefined) {
@@ -155,7 +174,7 @@ export function getPowerTooltipData(
     .filter((tag): tag is string => Boolean(tag));
 
   return {
-    title: power.name,
+    title: formatTitle(power),
     framework: formatIdentifier(power.framework_id),
     tier: formatHeaderMeta(power),
     powerType: formatIdentifier(getPowerType(power)),

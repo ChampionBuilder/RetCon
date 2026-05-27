@@ -532,10 +532,12 @@
       "Affects foe (5 max)",
       "15 foot Sphere"
     ],
-    "tooltip": "Deals Electrical Damage to all Roots them. + After this power expires, creates a Static Field for 10 sec. + Standing in the Static Field grants you and up to 10 nearby players Energy every 1 sec, while depleting Energy from foes. -Counts as a Rune. You cannot have more than one out a a time.",
+    "tooltip": "Deals Electrical Damage to all Roots them. + After this power expires, creates a Static Field for 10 sec. + Standing in the Static Field grants you and up to 10 nearby players Energy every 1 sec, while depleting Energy from foes. - Counts as a Rune. You cannot have more than one out a a time.",
     "tags": [
       "Root",
-      "Rune"
+      "Rune",
+      "Static Field",
+      "Enchantment"
     ],
     "damage_type": [
       "Electrical"
@@ -1268,7 +1270,9 @@
     "cooldown": null,
     "range_tags": [],
     "tooltip": "Being near targets affected by your Clinging Flames gives you energy every 3 sec for 6 sec. + The energy gained scales with your Endurance, and to a lesser degree, your Recovery.",
-    "tags": [],
+    "tags": [
+      "Clinging Flames"
+    ],
     "damage_type": [],
     "scaling_stats": [
       "END",
@@ -2513,7 +2517,7 @@
     ],
     "tooltip": "Deals Crushing Damage every 0.5 sec and Repels targets away. + This amount increases the longer you maintain this power. + The damage on this power is doubled if the target is immune to Knock effects.",
     "tags": [
-      "Repel"
+      "Reverse Repel"
     ],
     "damage_type": [
       "Crushing"
@@ -3743,7 +3747,7 @@
       "Targets non-object foe",
       "100 feet"
     ],
-    "tooltip": "Wipes your threat from the target and places you in Stealth for 3 seconds. + Shares a 30 second cooldown with other Threat Wipe abilities.",
+    "tooltip": "Wipes your threat from the target and places you in Stealth for 4 seconds. + Shares a 30 second cooldown with other Threat Wipe abilities.",
     "tags": [
       "Stealth"
     ],
@@ -4087,7 +4091,7 @@
     ],
     "tooltip": "Deals Crushing Damage And Cold Damage every 0.5 sec to foes within 20ft. Deals a lesser ammount of Crushing Damage to foes beyond beyond 20ft. + Affected targets within 15ft can have one of the following effects occur: 15% chance to Repel targets 17 ft. 15% chance to Knock Back targets 20ft. 15% chance to Knock Up targets 35ft. + Affected targets beyond 15ft are pulled towards you. + While maintaining this power you become Immune to most forms of Control effects and gain 200% resistance to all Knock effects. While maintaining this power grants Flight and Flight Speed.",
     "tags": [
-      "Repel",
+      "Reverse Repel",
       "Knock Back",
       "Knock Up",
       "Flight"
@@ -4813,15 +4817,22 @@
       2,
       3
     ],
-    "activation_type": null,
-    "activation_time": null,
+    "activation_type": "CLICK",
+    "activation_time": 0.67,
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Gadgeteering, Energy Builder, 50 foot Ranged Single Target Damage Use Boomerang Toss to throw a small projectile at your enemy.",
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe",
+      "50 feet"
+    ],
+    "tooltip": "Deals Slashing Damage and generate Energy.  + The first shot has 20% chance to Knock Back your target.",
+    "tags": [
+      "Knock Back"
+    ],
+    "damage_type": [
+      "Slashing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Gadgeteering_BoomerangToss",
@@ -4840,18 +4851,22 @@
       322,
       3
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "TOGGLE",
+    "activation_time": 0.5,
+    "max_duration": 4,
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [
       "Targets foe",
       "50 feet"
     ],
-    "tooltip": "Energy Builder/Ranged/Plasma Burn. Deals Particle damage to the target and generates energy. The first hit has a 15PlasmaBurn%",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Particle damage to the target and generates energy.  + The first hit has a 15% chance to apply Plasma Burn, causing Particle damage every 1 sec for 16 sec.",
+    "tags": [
+      "Plasma Burn"
+    ],
+    "damage_type": [
+      "Particle"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Gadgeteering_EnergyBlaster",
@@ -4875,18 +4890,22 @@
       7,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "CHARGE",
+    "activation_time": 0.5,
+    "max_duration": 1.5,
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [
       "Targets foe",
       "100 feet"
     ],
-    "tooltip": "Ranged Damage/Plasma Burn/Blast. Single Target Particle Damage Chance to Apply Plasma Burn. Refreshes the duration of your Plasma Burn stacks.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Particle Damage to your target. + Has a 25-100% chance to apply Plasma Burn, causing article Damage every 1 sec for 16 sec. + Refreshes the duration of your Plasma Burn if there are at least 3 stacks on the target.",
+    "tags": [
+      "Plasma Burn"
+    ],
+    "damage_type": [
+      "Particle"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Gadgeteering_ParticleBlaster",
@@ -4905,15 +4924,22 @@
       322,
       3
     ],
-    "activation_type": null,
-    "activation_time": null,
+    "activation_type": "TOGGLE",
+    "activation_time": 0.5,
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Gadgeteering, Energy Builder, 50 foot Ranged Single Target Damage Particle Rifle discharges concentrated bursts of Particle energy to assault your foes.",
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe",
+      "50 feet"
+    ],
+    "tooltip": "Deals Particle damage to the target and generates energy.  + The first hit has a 15% chance to apply Plasma Burn, causing Particle damage every 1 sec for 16 sec.",
+    "tags": [
+      "Plasma Burn"
+    ],
+    "damage_type": [
+      "Particle"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Gadgeteering_ParticleRifle",
@@ -4932,15 +4958,22 @@
       466,
       3
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "TOGGLE",
+    "activation_time": 0.5,
+    "max_duration": 4,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Gadgeteering, Energy Builder, 50 foot Ranged Single Target Damage Sonic Blaster emits a painfully concentrated beam of sound to rip through your enemies.",
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe",
+      "50 feet"
+    ],
+    "tooltip": "Deals Sonic Damage and generate Energy.  + The first shot has 15% chance to Knock Back your target.",
+    "tags": [
+      "Knock Back"
+    ],
+    "damage_type": [
+      "Sonic"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Gadgeteering_SonicBlaster",
@@ -4952,7 +4985,7 @@
     "power_id": 146,
     "name": "Experimental Blaster",
     "tier": 0,
-    "power_type": null,
+    "power_type": "RANGED_DAMAGE",
     "advantages": [
       1,
       2,
@@ -4964,15 +4997,23 @@
       7,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "CHARGE",
+    "activation_time": 0.5,
+    "max_duration": 2,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Gadgeteering, 100 foot Ranged Single Target Damage and Random Effects (Blast) Experimental Blaster is a weapon of your own invention that fires a beam at your target, dealing damage and sometimes having other more... unpredictable effects.",
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe",
+      "100 feet"
+    ],
+    "tooltip": "In most cases, deals Particle Damage to your target. + If charged for less than 1 sec, has a 35% chance to deal an additional Particle Damage to your target. + If charged for more than 1 sec, one of the following effects can occur:  + 10% chance to cause your target to be Knocked Up + 25% chance to Stun your target for up to 1.4 sec. + 50% chance to Disorient your target for 12 sec, reducing their damage by 10% and their movement speed by 50%. Chance is guaranteed when fully charged. + 1% chance to turn the target into a Teddy Bear for 10 sec, preventing them from using their powers. This effect only seems to work on Iow-ranking targets.",
+    "tags": [
+      "Knock Up",
+      "Stun:Disorient"
+    ],
+    "damage_type": [
+      "Particle"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Gadgeteering_ExperimentalBlaster",
@@ -4984,20 +5025,23 @@
     "power_id": 147,
     "name": "Bionic Shielding",
     "tier": 1,
-    "power_type": "HEAL",
+    "power_type": "HEAL_OVER_TIME",
     "advantages": [
       1,
       2,
       167,
       403
     ],
-    "activation_type": null,
-    "activation_time": null,
+    "activation_type": "CLICK",
+    "activation_time": 0.67,
     "max_duration": null,
     "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Gadgeteering, 100 foot Ranged Single Friend Buff and Heal Requires 1 power from Gadgeteering or 2 non-Energy Building powers from any framework. Bionic Shielding places a shield of healing energy around your target, causing them to be healed any time they take damage.",
+    "cooldown": 3,
+    "range_tags": [
+      "Targets friend",
+      "100 feet"
+    ],
+    "tooltip": "Places the Bionic Shielding buff on your target. The effect lasts up to 16 sec and can trigger up to 5 times before expiring. + Whenever the target takes damage, they are healed . + Also applies Bionic Tampering to the target, which prevents them from being affected by Bionic Shielding again for 15 sec.",
     "tags": [],
     "damage_type": [],
     "scaling_stats": [],
@@ -5011,7 +5055,7 @@
     "power_id": 148,
     "name": "Entangling Mesh",
     "tier": 1,
-    "power_type": null,
+    "power_type": "CROWD_CONTROL",
     "advantages": [
       1,
       2,
@@ -5019,14 +5063,19 @@
       4,
       3
     ],
-    "activation_type": null,
-    "activation_time": null,
+    "activation_type": "CLICK",
+    "activation_time": 0.83,
     "max_duration": null,
     "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Gadgeteering, 50 foot Ranged 15 foot Sphere AoE Root Requires 1 power from Gadgeteering or 2 non-Energy Building powers from any framework. Entangling Mesh adds a web-like explosion to your arsenal. Any enemies caught in the explosion become tangled in the mesh Rooting them in place.",
-    "tags": [],
+    "cooldown": 15,
+    "range_tags": [
+      "Targets non-destructible foe(7 max)",
+      "50 feet15 foot Sphere"
+    ],
+    "tooltip": "Root all targets.",
+    "tags": [
+      "Root"
+    ],
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
@@ -5039,7 +5088,7 @@
     "power_id": 149,
     "name": "Experimental Burst Ray",
     "tier": 1,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -5050,15 +5099,23 @@
       3,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "CHARGE",
+    "activation_time": 0.67,
+    "max_duration": 2,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe (5 max)",
+      "50 feet",
+      "45 degree Cone"
+    ],
+    "tooltip": "Deals Particle Damage to targets in front of you. + Has a 13-50% chance to Disorient your target for 12 sec, reducing their damage by 10% and their movement speed by 50%. + Charging this power for more than 1.5 sec will cause it to Overcharge, increasing the damage of this power by 12% for 10 sec. Stacks up to 5 times. + However, using this power while Overcharged has a 3.7-15% chance for every stack of Overcharge on you to apply Overheat, placing this power on cooldown for 5 sec and expiring all stacks of Overcharged. + Overcharging the weapon may also lead to Unforeseen Consequences.",
+    "tags": [
+      "Disorient"
+    ],
+    "damage_type": [
+      "Particle"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Gadgeteering_ExperimentalBurstRay",
@@ -5070,7 +5127,7 @@
     "power_id": 150,
     "name": "Gauntlet Chainsaw",
     "tier": 1,
-    "power_type": null,
+    "power_type": "MELEE_AOE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -5078,15 +5135,23 @@
       3,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
+    "activation_type": "MAINTAIN",
+    "activation_time": 0.5,
+    "max_duration": 5,
+    "tick_rate": 0.5,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Gadgeteering, 10 foot Melee 2.5 foot Cylinder AoE Damage Requires 1 power from Gadgeteering or 2 non-Energy Building powers from any framework. Gauntlet Chainsaw uses a glove mounted chainsaw to slash through any targets in your path.",
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe (5 max)",
+      "10 feet",
+      "2.5 foot Cylinder"
+    ],
+    "tooltip": "Deals Slashing Damage every 0.5 sec to targets in front of you. + Has a 10% chance to cause the target to Bleed, deeling Slashing Damage every 1 sec for 16 sec.",
+    "tags": [
+      "Bleed"
+    ],
+    "damage_type": [
+      "Slashing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Gadgeteering_GauntletChainsaw",
@@ -5105,15 +5170,22 @@
       3,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
+    "activation_type": "CLICK",
+    "activation_time": 1.3,
     "max_duration": null,
     "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Gadgeteering, 50 foot Ranged Single Target Damage and Knock To Requires 1 power from Gadgeteering or 2 non-Energy Building powers from any framework. Yank your foe to you using your trusty Grapple Gun.",
-    "tags": [],
-    "damage_type": [],
+    "cooldown": 6,
+    "range_tags": [
+      "Targets foe",
+      "50 feet"
+    ],
+    "tooltip": "Deasl Crushing Damage. + Your target is Knocked to you",
+    "tags": [
+      "Knock To"
+    ],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Gadgeteering_GrappleGunPull",
@@ -5130,16 +5202,23 @@
       1,
       2
     ],
-    "activation_type": null,
+    "activation_type": "PASSIVE",
     "activation_time": null,
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Gadgeteering, Support Passive, 100 foot PBAoE Friend HoT Requires 1 power from Gadgeteering or 2 non-Energy Building powers from any framework. + Heals you and allies within 100 feet every 3 seconds. + Affected allies also gain a small amount of damage resistance.",
-    "tags": [],
+    "range_tags": [
+      "Affects non-destructible friends (20 max)",
+      "100 feet Team"
+    ],
+    "tooltip": "Increase your Technologye healing. + You and your Teammates gain resistance to all damage. + You and your Teammatesgain Health every 3 sec.",
+    "tags": [
+      "Heal"
+    ],
     "damage_type": [],
-    "scaling_stats": [],
+    "scaling_stats": [
+      "PRE"
+    ],
     "power_dependency": [],
     "icon_override": "Gadgeteering_MedicalNanites",
     "is_disabled": false
@@ -5152,13 +5231,13 @@
     "tier": 1,
     "power_type": "ENERGY_UNLOCK",
     "advantages": [],
-    "activation_type": null,
+    "activation_type": "PASSIVE",
     "activation_time": null,
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
-    "tooltip": "Energy Unlock. Innate Passive/Intelligence/Recovery. + Generates energy every time one of your powers comes off cooldown. + Restores energy every 3 seconds over 6 seconds. + This ability does not stack, but additional applications will refresh the duration. + The energy gained scales with your Recovery, and to a lesser degree, your Endurance.",
+    "tooltip": "Whenever one of your abilities finishes recharging, you gain Energy every 3 sec for 6 sec. + The energy gained scales with your Intelliegence, and to a lesser degree, your Recovery.",
     "tags": [],
     "damage_type": [],
     "scaling_stats": [
@@ -5181,13 +5260,13 @@
       2,
       467
     ],
-    "activation_type": null,
+    "activation_type": "CLICK",
     "activation_time": null,
-    "max_duration": null,
+    "max_duration": 15,
     "tick_rate": null,
-    "cooldown": null,
+    "cooldown": 90,
     "range_tags": [],
-    "tooltip": "Gadgeteering, Self Recharge Reduction Requires 1 power from Gadgeteering or 2 non-Energy Building powers from any framework. Using millions of tiny robots you refresh yourself and continue fighting as though the fight just started.",
+    "tooltip": "Grants a 42/50/60% increase to all damage. + When activated, all powers that are currently recharging have their recharge time reduced by -12/-15/-28 sec. This does not affect Ultimate or Active powers.  + Applies Break Free damage to any Holds, Roots, or Disables affecting you. - Activates a shared cooldown of 90 seconds on all Active Offenses.",
     "tags": [],
     "damage_type": [],
     "scaling_stats": [],
@@ -5201,21 +5280,27 @@
     "power_id": 155,
     "name": "Particle Mine",
     "tier": 1,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
       414
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "CLICK",
+    "activation_time": 0.67,
+    "max_duration": 180,
     "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Gadgeteering, Placed AoE Ranged Damage Requires 1 power from Gadgeteering or 2 non-Energy Building powers from any framework. Particle Mine places a mine on the ground that will explode, dealing heavy Particle damage, when an enemy comes within range.",
-    "tags": [],
-    "damage_type": [],
+    "cooldown": 10,
+    "range_tags": [
+      "Targets Self"
+    ],
+    "tooltip": "Places a Particle Mine at your target, which lasts for 180 sec or until it detonates. Up to 5 of these can be out at a time. + When an enemy gets close enough to the Particle Mine, it detonates, dealing Particle Damage to foes within 15ft. + Knocks affected targets.",
+    "tags": [
+      "Knock Down"
+    ],
+    "damage_type": [
+      "Particle"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Gadgeteering_ParticleMine",
@@ -5227,7 +5312,7 @@
     "power_id": 156,
     "name": "Plasma Radiation",
     "tier": 1,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -5239,19 +5324,23 @@
       3,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
+    "activation_type": "MAINTAIN",
+    "activation_time": 0.67,
+    "max_duration": 4,
+    "tick_rate": 0.5,
     "cooldown": null,
     "range_tags": [
       "Targets Foe (5 Max)",
       "50 feet",
       "30 degree Cone"
     ],
-    "tooltip": "Ranged AoE Damage/Plasma Burn. Deals Particle damage to targets in front of you. Chance to apply Plasma Burn.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Particle Damage every 0.5 sec to all targets. + Has a 10% chance every hit to apply Plasma Burn to affected targets, causing Particle Damage every 1 sec for 16 sec.",
+    "tags": [
+      "Plasma Burn"
+    ],
+    "damage_type": [
+      "Particle"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Gadgeteering_PlasmaRadiation",
@@ -5263,7 +5352,7 @@
     "power_id": 157,
     "name": "Pulse Beam Rifle",
     "tier": 1,
-    "power_type": null,
+    "power_type": "RANGED_DAMAGE",
     "advantages": [
       1,
       2,
@@ -5272,18 +5361,20 @@
       3,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
+    "activation_type": "MAINTAIN",
+    "activation_time": 0.5,
+    "max_duration": 4,
+    "tick_rate": 0.5,
     "cooldown": null,
     "range_tags": [
       "Targets foe",
       "100 feet"
     ],
-    "tooltip": "Ranged Damage. Single target Particle damage. The amount of damage this power deals is highly erratic. Critical Chance and Critical Severity with this power increase every period. This bonus resets when the maintain ends.",
+    "tooltip": "Deals Particle Damage every 0.5 sec. + This power's chance to critically and critical severity increases for every period you maintain it.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Particle"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Gadgeteering_PulseBeamRifle",
@@ -5295,7 +5386,7 @@
     "power_id": 158,
     "name": "Radiation Poisoning",
     "tier": 1,
-    "power_type": null,
+    "power_type": "ON_NEXT_HIT",
     "advantages": [
       1,
       2,
@@ -5303,17 +5394,21 @@
       413,
       493
     ],
-    "activation_type": null,
+    "activation_type": "CLICK",
     "activation_time": null,
     "max_duration": null,
     "tick_rate": null,
-    "cooldown": null,
+    "cooldown": 30,
     "range_tags": [
       "Targets Self"
     ],
-    "tooltip": "On-Next-Hit/Ranged Damage/Plasma Burn. Adds Particle damage to your next damaging attack. Applies Plasma Burn to affected targets. This bonus will expire if not used within a certain amount of time Damage is reduced if used against multiple targets. Using this power places all other On-Next-Hit powers on cooldown.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Your next attack deals additional Particle Damage. Deals reduced Particle Damage when used against up to 5 targets, and even less Particle Damage when used against more. + Applies a stack of Plasma Burn to affected targets, dealing Particle Damage every 1 sec for 16 sec. Stacks up to 5 times. Refreshes any existing stacks of your Plasma Burn.  + Places all other On-Next-Hit powers on cooldown for 15 sec.",
+    "tags": [
+      "Plasma Burn"
+    ],
+    "damage_type": [
+      "Particle"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Gadgeteering_RadiationPoisoning",
@@ -5331,7 +5426,7 @@
       2,
       464
     ],
-    "activation_type": null,
+    "activation_type": "BLOCK",
     "activation_time": null,
     "max_duration": null,
     "tick_rate": null,
@@ -5339,7 +5434,7 @@
     "range_tags": [
       "Targets Self"
     ],
-    "tooltip": "Block. While blocking, grants 325 to all other damage types. Increases your resistance to Holds and Knocks, and reduces your movement speed.",
+    "tooltip": "While blocking, grants 325/390/470% resistance to all Energy damage, 250/300/360% resistance to all other damage. + Increases your resistance to Holds and Knocks, and reduces your movement speed. + Gives you energy when struck by an attack while blocking. This amount scales with your Recovery and the amount of damage you take.",
     "tags": [],
     "damage_type": [],
     "scaling_stats": [],
@@ -5358,15 +5453,21 @@
       1,
       2
     ],
-    "activation_type": null,
+    "activation_type": "PASSIVE",
     "activation_time": null,
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Increases your Energy damage, and all other damage by a lesser amount. + Absorbs damages when struck by an attack. If the damage is a Damage Over Time effect, absorbs a greater amount damage. + You gain resistance to Energy damage. + You gain Energy when you take Energy Damage. + While active, you have a chance to apply Plasma Burn whenever you directly deal Energy damage. This effect can occur once every 1 sec. You also have a increased chance when taking damage. + Plasma Burn causes Particle Damage every 1 sec for 16 sec. Stacks up to 5 times.",
+    "tags": [
+      "Plasma Burn"
+    ],
+    "damage_type": [
+      "Electrical",
+      "Particle",
+      "Sonic"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Gadgeteering_RadiationSuit",
@@ -5378,7 +5479,7 @@
     "power_id": 161,
     "name": "Ricochet Throw",
     "tier": 1,
-    "power_type": null,
+    "power_type": "RANGED_DAMAGE",
     "advantages": [
       1,
       2,
@@ -5388,15 +5489,19 @@
       7,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "BLAST",
+    "activation_time": 0.67,
+    "max_duration": 1.5,
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
-    "tooltip": "Gadgeteering, 100 foot Ranged Single Target Damage (Blast) Requires 1 power from Gadgeteering or 2 non-Energy Building powers from any framework. You throw a well aimed boomerang at your foes that can bounce to several, striking them for Crushing Damage.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Slashing Damage to the target. + If used from stealth, this power deals increased Slashing Damage. + Can bounce up to 5 times to other nearby targets within 20ft based on charge time, dealing 5% less damage per bounce.",
+    "tags": [
+      "Stealth"
+    ],
+    "damage_type": [
+      "Slashing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Gadgeteering_RicochetThrow",
@@ -5408,22 +5513,28 @@
     "power_id": 162,
     "name": "Sonic Device",
     "tier": 1,
-    "power_type": null,
+    "power_type": "ON_NEXT_HIT",
     "advantages": [
       1,
       2,
       141,
       160
     ],
-    "activation_type": null,
+    "activation_type": "CLICK",
     "activation_time": null,
     "max_duration": null,
     "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Gadgeteering, Self On-Next-Hit Damage and Stun Requires 1 power from Gadgeteering or 2 non-Energy Building powers from any framework. Sonic Device adds a focused Sonic pulse to your next attack, increasing the damage of the attack and adding the potential to Stun your target.",
-    "tags": [],
-    "damage_type": [],
+    "cooldown": 30,
+    "range_tags": [
+      "Targets Self"
+    ],
+    "tooltip": "Your next attack deals a additional Sonic Damage. Deals reduced Sonic Damage when used against up to 5 targets, and even less Sonic Damage when used against more. + Stuns your primary target.  + Places all other On-Next-Hit powers on cooldown for 15 sec.",
+    "tags": [
+      "Stun"
+    ],
+    "damage_type": [
+      "Sonic"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Gadgeteering_SonicDevice",
@@ -5437,14 +5548,16 @@
     "tier": 1,
     "power_type": "ENERGY_UNLOCK",
     "advantages": [],
-    "activation_type": null,
+    "activation_type": "PASSIVE",
     "activation_time": null,
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
-    "tooltip": "Energy Unlock. Innate Passive/Recovery/Endurance. + Generates energy every time one of you apply or refresh Disorient. This ability does not stack, but additional applications will refresh the duration. + The energy gained scales with your Recovery, and to a lesser degree, your Endurance.",
-    "tags": [],
+    "tooltip": "Applying or Refreshing Disorient grants you Energy every 3 sec for 6 sec. + The energy gained scales with your Recovery, and to a lesser degree, your Endurance.",
+    "tags": [
+      "Disorient"
+    ],
     "damage_type": [],
     "scaling_stats": [
       "REC",
@@ -5465,13 +5578,13 @@
       1,
       2
     ],
-    "activation_type": null,
+    "activation_type": "CLICK",
     "activation_time": null,
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
-    "tooltip": "Form (Intelligence). Buff/Form/Expertise. Gives you a stacking buff that increases your ranged damage, as well as your melee damage to a lesser degree. + You gain a stack each time one of your Technology powers is fully charge, maintained or comes off cooldown. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
+    "tooltip": "Gives you a stacking buff that increases your ranged damage, as well as your melee damage to a lesser degree. + You gain a stack each time one of your Technology powers is fully charge, maintained or comes off cooldown. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
     "tags": [],
     "damage_type": [],
     "scaling_stats": [
@@ -5492,13 +5605,13 @@
       1,
       2
     ],
-    "activation_type": null,
+    "activation_type": "CLICK",
     "activation_time": null,
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
-    "tooltip": "Form (Intelligence). Buff/Form/Medical Expertise. Gives you a stacking buff that increases your healing and shielding, as well as your melee and ranged damage to a lesser degree. + You gain a stack each time one of your Technology powers is fully charge, maintained or comes off cooldown. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
+    "tooltip": "Gives you a stacking buff that increases your healing and shielding, as well as your melee and ranged damage to a lesser degree. + You gain a stack each time one of your Technology powers is fully charge, maintained or comes off cooldown. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
     "tags": [],
     "damage_type": [],
     "scaling_stats": [
@@ -5519,15 +5632,19 @@
       1,
       2
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "FULL_CHARGE",
+    "activation_time": 0.87,
+    "max_duration": 1.83,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Gadgeteering, Controllable Pet Requires 3 powers from Gadgeteering or 4 non-Energy Building powers from any framework. This power summons automated Attack Toys that can periodically self replicate.",
+    "range_tags": [
+      "Targets Self"
+    ],
+    "tooltip": "Summons an Attack Toy to fight at your side.  + The Attack Toy will engage your enemies in melee combat, pummeling the enemy, dealing  Crushing Damage. + In addition, every 15 sec, the Attack Toy will create a Replicated Attack Toy to play with for 60 sec. Up to 2 of these can be out at a time.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Gadgeteering_AttackToys",
@@ -5539,7 +5656,7 @@
     "power_id": 167,
     "name": "Bolas",
     "tier": 2,
-    "power_type": null,
+    "power_type": "RANGED_DAMAGE",
     "advantages": [
       1,
       2,
@@ -5547,15 +5664,22 @@
       3,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "FULL_CHARGE",
+    "activation_time": 0.67,
+    "max_duration": 1.83,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Gadgeteering, 50 foot Ranged Single Target Damage and Hold Requires 3 powers from Gadgeteering or 4 non-energy building powers from any framework. Bolas throws a projectile that binds your foe, crushing them and preventing any actions.",
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets non-destructible foe",
+      "50 feet"
+    ],
+    "tooltip": "Paralyzes the target. + Deals Crushing Damage.",
+    "tags": [
+      "Hold"
+    ],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Gadgeteering_Bolas",
@@ -5573,17 +5697,19 @@
       2,
       601
     ],
-    "activation_type": null,
-    "activation_time": null,
+    "activation_type": "CLICK",
+    "activation_time": 1,
     "max_duration": null,
     "tick_rate": null,
-    "cooldown": null,
+    "cooldown": 90,
     "range_tags": [
       "Affects foe that is not destructible (20 Max)",
       "50 foot sphere"
     ],
-    "tooltip": "Threat Wipe/Stealth. Wipes all of your threat from nearby foes. Briefly places you in Stealth Puts all other threat wipe abilites on cooldown",
-    "tags": [],
+    "tooltip": "Wipes your threat from the target and places you in Stealth for 4 seconds. + Shares a 30 second cooldown with other Threat Wipe abilities.",
+    "tags": [
+      "Stealth"
+    ],
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
@@ -5596,7 +5722,7 @@
     "power_id": 169,
     "name": "Electro Magnet",
     "tier": 2,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -5605,18 +5731,28 @@
       533,
       3
     ],
-    "activation_type": null,
-    "activation_time": null,
+    "activation_type": "CLICK",
+    "activation_time": 0.67,
     "max_duration": null,
     "tick_rate": null,
-    "cooldown": null,
+    "cooldown": 10,
     "range_tags": [
-      "Targets Foe"
+      "Targets foe",
+      "50 feet"
     ],
-    "tooltip": "Ranged AoE Damage/DoT/Reverse Repel/Rune. Creates a[sic] Electro Magnet for 10 sec. Deals Particle damage to nearby targets Pulls nearby targets twoards the Electro Magnet When this power expires, leaves behind a Static Field for a short duration, which grants nearby allies energy and siphons power from foes. The amount of energy Static Field grants additionally sacles off of your recovery by a small amount You cannot have more than one Rune out at a time. Summoning this Rune counts as applying an Enchantment. This power cannot critically hit.",
-    "tags": [],
-    "damage_type": [],
-    "scaling_stats": [],
+    "tooltip": "Creates an Electro Magnet for 10 sec. + Foes within 15ft take Particle Damage every 1 sec, while foes within 20ft are pulled toward the Electro Magnet. + After this power expires, creates a Static Field for 10 sec. Standing in the Static Field grants you and up to 10 nearby players Energy every 1 sec, while depleting Energy from foes. + Count as a Rune. You cannot have more than one rune out at a time - This power cannot Critically hit",
+    "tags": [
+      "Reverse Repel",
+      "Rune",
+      "Static Field",
+      "Enchantment"
+    ],
+    "damage_type": [
+      "Particle"
+    ],
+    "scaling_stats": [
+      "REC"
+    ],
     "power_dependency": [],
     "icon_override": "Gadgeteering_ElectroMagnet",
     "is_disabled": false
@@ -5627,21 +5763,27 @@
     "power_id": 170,
     "name": "Gas Pellets",
     "tier": 2,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
       404
     ],
-    "activation_type": null,
-    "activation_time": null,
+    "activation_type": "CLICK",
+    "activation_time": 0.67,
     "max_duration": null,
     "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Gadgeteering, Ranged AoE Damage and Snare Requires 3 powers from Gadgeteering or 4 non-energy building powers from any framework. Gas Pellets throws 4 pellets that release a choking fume that damages and slows all enemies caught in its radius.",
-    "tags": [],
-    "damage_type": [],
+    "cooldown": 10,
+    "range_tags": [
+      "Targets Self"
+    ],
+    "tooltip": "You toss out a cluster of gas pellets that deal Toxic Damage every 1 sec for 8 sec to targets within 10ft. + Targets in the Gas Pellets are Snared, reducing their movement speed by 100% for a small mount of time.",
+    "tags": [
+      "Snare"
+    ],
+    "damage_type": [
+      "Toxic"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Gadgeteering_GasPellets",
@@ -5660,15 +5802,16 @@
       220,
       468
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
+    "activation_type": "MAINTAIN",
+    "activation_time": 0.5,
+    "max_duration": 5,
+    "tick_rate": 0.5,
     "cooldown": null,
     "range_tags": [
-      "Targets Friend"
+      "Targets friend",
+      "100 feet"
     ],
-    "tooltip": "Heal/Buff. Continuously heals the target while maintained. When targeting someone in Hybrid, Ranged, or Melee Role, increases the amount of damage they deal When targeting someone in Tank or Support Role, increases their resistance to damage NOTE: CURRENTLY BUGGED AND IS BASED ON THE USER'S ROLE, NOT TARGET'S",
+    "tooltip": "Heals your target every 0.5 sec. + While maintaining this power on any ally that is in the Hybrid, Ranged or Melee Role, increases the amount of base damage they deal.  + While maintaining this power on any ally that is in the Tank or Support Role, increases their resistance to damage.",
     "tags": [],
     "damage_type": [],
     "scaling_stats": [],
@@ -5682,20 +5825,24 @@
     "power_id": 172,
     "name": "Miniaturization Drive",
     "tier": 2,
-    "power_type": null,
+    "power_type": "ON_NEXT_HIT",
     "advantages": [
       1,
       2,
       456
     ],
-    "activation_type": null,
+    "activation_type": "CLICK",
     "activation_time": null,
     "max_duration": null,
     "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Gadgeteering, Self On-Next-Hit Debuff Requires 3 powers from Gadgeteering or 4 non-Energy Building powers from any framework. Miniaturization Drive charges your next attack with a miniaturization field, causing the target of the attack to shrink in size and strength.",
-    "tags": [],
+    "cooldown": 30,
+    "range_tags": [
+      "Targets Self"
+    ],
+    "tooltip": "Your next attack applies Disorient to affected targets, reducing their damage by and their movement speed for 12 sec. + This effect is reduced when used against multiple targets. + Places all other On-Next-Hit powers on cooldown for 15 sec.",
+    "tags": [
+      "Disorient"
+    ],
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
@@ -5713,15 +5860,19 @@
       1,
       2
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "FULL_CHARGE",
+    "activation_time": 0.87,
+    "max_duration": 1.83,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Gadgeteering, Controllable Pet Requires 3 powers from Gadgeteering or 4 non-Energy Building powers from any framework. With this power you may summon Munitions Bots that can transform back and forth between a minigun armed robot and a powerful but stationary rapid-fire turret.",
+    "range_tags": [
+      "Targets Self"
+    ],
+    "tooltip": "Summons 2 Munitions Bots to fight for you. They will use a Chaingun to attack your foes, dealing Piercing Damage every 0.5 sec. + When morphed into Turret Mode, they can no longer move, but use their Turret Cannon to deal increased Piercing Damage every 0.5 sec to foes in a line.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Piercing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Gadgeteering_MunitionsBots",
@@ -5733,7 +5884,7 @@
     "power_id": 174,
     "name": "Sonic Boom Generator",
     "tier": 2,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -5742,15 +5893,23 @@
       3,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "CHARGE",
+    "activation_time": 0.83,
+    "max_duration": 1.67,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Gadgeteering, 100 foot Ranged 15 foot Sphere AoE Damage Requires 3 powers from Gadgeteering or 4 non-Energy Building powers from any framework. With this enhanced Sonic Blaster, you can generate a highly concentrated pulse of Sonic energy, which erupts into near deafening levels on your foes.",
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe (5 max)",
+      "100 feet",
+      "10 foot Sphere"
+    ],
+    "tooltip": "Deals Sonic Damage. + Has a 17-50% chance to Disorient each target, reducing their damage by 10% and their movement speed by for 12 sec.",
+    "tags": [
+      "Disorient"
+    ],
+    "damage_type": [
+      "Sonic"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Gadgeteering_SonicBoomGenerator",
@@ -5767,15 +5926,21 @@
       1,
       2
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "FULL_CHARGE",
+    "activation_time": 0.87,
+    "max_duration": 1.83,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Gadgeteering, Controllable Pet Requires 3 powers from Gadgeteering or 4 non-Energy Building powers from any framework. This power summons 2 hovering Support Drones that can toggle between a healing mode, and a light high-tech energy weapon platform.",
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets Self"
+    ],
+    "tooltip": "Summons 2 Support Drones. The Support Drones have 2 modes, Support Mode and Weapons Platform Mode. + In their default Support Mode, they will use a Healing Beam on friendly targets, healing them every 0.5 sec. + In Weapons Platform Mode, they utilize a Gravatic Bolt to attack your foes, dealing Crushing Damage.",
+    "tags": [
+      "Heal"
+    ],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Gadgeteering_SupportDrones",
@@ -5787,7 +5952,7 @@
     "power_id": 176,
     "name": "Tanglecoil Launcher",
     "tier": 2,
-    "power_type": null,
+    "power_type": "CROWD_CONTROL",
     "advantages": [
       1,
       2,
@@ -5796,15 +5961,22 @@
       3,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "FULL_CHARGE",
+    "activation_time": 0.67,
+    "max_duration": 1.83,
     "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Gadgeteering, 50 foot Single Target Hold Requires 3 powers from Gadgeteering or 4 non-Energy Building powers from any framework. Tanglecoil fires a projectile thats binds your foe, crushing them and preventing any actions.",
-    "tags": [],
-    "damage_type": [],
+    "cooldown": 10,
+    "range_tags": [
+      "Targets non-destructible foe",
+      "50 feet"
+    ],
+    "tooltip": "Paralyzes the target. + Deals Crushing Damage every 1 sec for up to 16 sec while the target is Paralyzed.",
+    "tags": [
+      "Hold"
+    ],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Gadgeteering_TanglecoilLauncher",
@@ -5816,7 +5988,7 @@
     "power_id": 177,
     "name": "Throwing Blades",
     "tier": 2,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -5825,15 +5997,24 @@
       3,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "CHARGE",
+    "activation_time": 0.67,
+    "max_duration": 0.83,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Gadgeteering, 50 foot Ranged 120 degree Cone AoE Damage Requires 3 powers from Gadgeteering or 4 non-energy building powers from any framework. You throw a flurry of boomerangs at all targets in front of you.",
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe (5 max)",
+      "50 feet",
+      "120 degree Cone"
+    ],
+    "tooltip": "Deals Slashing Damage to all affected targets and deals increased Slashing Damage when used from Stealth. + When fully charged, applies Sudden Strike for 10 sec, causing the next Critical Hit you land to deal +10% Critical Severity. Expires once you land a Critical Hit.",
+    "tags": [
+      "Stealth",
+      "Sudden Strike"
+    ],
+    "damage_type": [
+      "Slashing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Gadgeteering_ThrowingBlades",
@@ -5845,7 +6026,7 @@
     "power_id": 178,
     "name": "Toxic Nanites",
     "tier": 2,
-    "power_type": null,
+    "power_type": "ON_NEXT_HIT",
     "advantages": [
       1,
       2,
@@ -5853,15 +6034,21 @@
       383,
       433
     ],
-    "activation_type": null,
+    "activation_type": "CLICK",
     "activation_time": null,
     "max_duration": null,
     "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Gadgeteering, Self On-Next-Hit DoT Requires 3 powers from Gadgeteering or 4 non-Energy Building powers from any framework. Toxic Nanites laces your next attack with deadly nanites, infecting your target and dealing Toxic Damage over Time.",
-    "tags": [],
-    "damage_type": [],
+    "cooldown": 30,
+    "range_tags": [
+      "Targets Self"
+    ],
+    "tooltip": "Your next attack deals additional Toxic Damage. Deals reducec Toxic Damage when used against up to 5 targets, and even less Toxic Damage when used against more. + Applies a stack of Deadly Poison to affected targets, dealing Toxic Damage every 1 sec fo 16 sec. Stacks up to 5 times. Refreshes any existing stacks of your Deadly Poison. + Places all other On-Next-Hit powers on cooldown for 15 sec.",
+    "tags": [
+      "Deadly Poison"
+    ],
+    "damage_type": [
+      "Toxic"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Gadgeteering_ToxicNanites",
@@ -5873,7 +6060,7 @@
     "power_id": 179,
     "name": "Tractor Beam",
     "tier": 2,
-    "power_type": null,
+    "power_type": "RANGED_DAMAGE",
     "advantages": [
       1,
       2,
@@ -5884,15 +6071,22 @@
       3,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Gadgeteering, 50 foot Ranged Single Target Reverse Repel Requires 3 powers from Gadgeteering or 4 non-Energy Building powers from any framework. Tractor Beam latches on to your target and pulls them towards you.",
-    "tags": [],
-    "damage_type": [],
+    "activation_type": "MAINTAIN",
+    "activation_time": 0.67,
+    "max_duration": 3,
+    "tick_rate": 0.5,
+    "cooldown": 6,
+    "range_tags": [
+      "Targets non-destructible foe",
+      "50 feet"
+    ],
+    "tooltip": "Deals Particle Damage every 0.5 sec and attempts to pull the target toward you.",
+    "tags": [
+      "Reverse Repel"
+    ],
+    "damage_type": [
+      "Particle"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Gadgeteering_TractorBeam",
@@ -5904,7 +6098,7 @@
     "power_id": 180,
     "name": "Orbital Cannon",
     "tier": 3,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -5912,15 +6106,23 @@
       395,
       3
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "FULL_CHARGE",
+    "activation_time": 0.67,
+    "max_duration": 2.33,
     "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Gadgeteering, 100 foot Ranged AoE Damage Requires 5 powers from Gadgeteering or 6 non-Energy Building powers from any framework. Orbital Cannon calls down a Particle blast to destroy your enemies from a weapon platform orbiting high overhead.",
-    "tags": [],
-    "damage_type": [],
+    "cooldown": 20,
+    "range_tags": [
+      "Targets foe",
+      "100 feet"
+    ],
+    "tooltip": "When the power is activated, the ground lights up with the Cannon's target marker. After 4.5 sec the Orbital Cannon deals Particle Damage to foes within 10ft. + Knocks Down and applies Plasma Burn to affected targets, causing Particle Damage every 1 sec for 16 sec. Stacks up to 5 times.",
+    "tags": [
+      "Plasma Burn",
+      "Knock Down"
+    ],
+    "damage_type": [
+      "Particle"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Gadgeteering_OrbitalCannon",
@@ -5932,7 +6134,7 @@
     "power_id": 181,
     "name": "Plasma Cannon",
     "tier": 3,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -5940,19 +6142,25 @@
       3,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "FULL_CHARGE",
+    "activation_time": 0.67,
+    "max_duration": 1.83,
     "tick_rate": null,
-    "cooldown": null,
+    "cooldown": 20,
     "range_tags": [
       "Targets Foe (5 Max)",
       "50 feet",
       "2 foot Cylinder"
     ],
-    "tooltip": "Ranged AoE Damage/Stun. Deals Particle damage to targets in front of you. Chance to Stun targets. Refreshes the duration of your Plasma Burn and Disintegrate. Deasl additional damage to targets affected by Radiation effects. Must be fully charged.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Particle Damage and deals an additional Particle Damage for each Radiation effect on the affected target. + Stuns targets. + Refreshes the durations of your Plasma Burn and Disintegrate effects.",
+    "tags": [
+      "Stun",
+      "Plasma Burn",
+      "Disintegrate"
+    ],
+    "damage_type": [
+      "Particle"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Gadgeteering_PlasmaCannon",
@@ -5964,20 +6172,23 @@
     "power_id": 182,
     "name": "Resurrection Serum",
     "tier": 3,
-    "power_type": null,
+    "power_type": "REVIVE",
     "advantages": [
       1,
       2,
       356,
       453
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "FULL_CHARGE",
+    "activation_time": 0.83,
+    "max_duration": 2,
     "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Gadgeteering, 15 foot Sphere PBAoE Revive Requires 5 powers from Gadgeteering or 6 non-Energy Building powers from any framework. Resurrection Serum is a carefully crafted concoction administered to fallen allies to return them to action.",
+    "cooldown": 3,
+    "range_tags": [
+      "Affects dead ally",
+      "25 foot Sphere"
+    ],
+    "tooltip": "Revives a nearby Hero, bringing them back from defeat with 50/75/100% of their Health.",
     "tags": [],
     "damage_type": [],
     "scaling_stats": [],
@@ -5991,7 +6202,7 @@
     "power_id": 183,
     "name": "Sonic Beam",
     "tier": 3,
-    "power_type": null,
+    "power_type": "RANGED_DAMAGE",
     "advantages": [
       1,
       2,
@@ -6000,18 +6211,22 @@
       3,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
+    "activation_type": "MAINTAIN",
+    "activation_time": 0.5,
+    "max_duration": 5,
+    "tick_rate": 0.5,
     "cooldown": null,
     "range_tags": [
       "Targets foe",
       "100 feet"
     ],
-    "tooltip": "Ranged Damage/Disorient. Deals Sonic damage to the target and Disorient",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Sonic Damage every 0.5 sec. + Has a 15% chance every hit to Disorient each target, reducing their damage by 10% and their movement speed by 50% for 12 sec.",
+    "tags": [
+      "Disorient"
+    ],
+    "damage_type": [
+      "Sonic"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Gadgeteering_SonicBeam",
@@ -6023,22 +6238,30 @@
     "power_id": 184,
     "name": "Strafing Run",
     "tier": 3,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
       88,
       3
     ],
-    "activation_type": null,
-    "activation_time": null,
+    "activation_type": "CLICK",
+    "activation_time": 1.67,
     "max_duration": null,
-    "tick_rate": null,
+    "tick_rate": 20,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Gadgeteering, Ranged AoE Damage Requires 5 powers from Gadgeteering or 6 non-energy building powers from any framework. You call in support from your high tech jet which then drops explosives in a targeted area.",
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe",
+      "50 feet"
+    ],
+    "tooltip": "Deals Fire Damage to up to 5 targets within 15ft for the first hit, increased Fire Damage for the second hit and even higher Fire Damage for the last hit. + Leaves behind a Pyre Patch on the target for 10 sec, dealing Fire Damage every 1 sec to up to 5 targets within 15ft. + Foes standing in the Pyre Patch have a 10% chance to be affected by Clinging Flames, causing Fire Damage every 2 sec for 12 sec.",
+    "tags": [
+      "Pyre Patch",
+      "Clinging Flames"
+    ],
+    "damage_type": [
+      "Fire"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Gadgeteering_StrafingRun",
@@ -6992,7 +7215,7 @@
       "Targets foe",
       "50 feet"
     ],
-    "tooltip": "Ranged Damage/Buff. Deals Piercing damage and has a 15Furious%",
+    "tooltip": "Power Armor, Energy Builder, 50 foot Ranged Single Target Damage Power Bolts fires pure Kinetic Energy at your enemy.",
     "tags": [],
     "damage_type": [],
     "scaling_stats": [],
@@ -7013,15 +7236,22 @@
       322,
       3
     ],
-    "activation_type": null,
-    "activation_time": null,
+    "activation_type": "TOGGLE",
+    "activation_time": "0.34-0.5",
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Power Armor, Energy Builder, 50 foot Ranged Single Target Damage Power Bolts fires pure Kinetic Energy at your enemy.",
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe",
+      "50 feet"
+    ],
+    "tooltip": "Deals Particle Damage and generates Energy. + The first shot has a 20% chance to apply Plasma Burn to your target.",
+    "tags": [
+      "Plasma Burn"
+    ],
+    "damage_type": [
+      "Particle"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "PowerArmor_PowerBolts",
@@ -7040,15 +7270,20 @@
       28,
       3
     ],
-    "activation_type": null,
-    "activation_time": null,
+    "activation_type": "TOGGLE",
+    "activation_time": 0.5,
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Power Armor, Energy Builder, 50 foot Ranged Single Target Damage Wrist Bolter uses wrist mounted Particle cannons to rain destruction down on your enemies.",
+    "range_tags": [
+      "Targets foe",
+      "50 feet"
+    ],
+    "tooltip": "Deals Particle Damage and generates Energy.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Particle"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "PowerArmor_WristBolter",
@@ -7060,7 +7295,7 @@
     "power_id": 217,
     "name": "Concussor Beam",
     "tier": 0,
-    "power_type": null,
+    "power_type": "RANGED_DAMAGE",
     "advantages": [
       1,
       2,
@@ -7068,15 +7303,23 @@
       3,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
+    "activation_type": "TOGGLE",
+    "activation_time": 0.5,
+    "max_duration": 5,
+    "tick_rate": 0.5,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Power Armor, 100 foot Ranged Single Target Damage and Repel Hand Slot Deals Particle damage and Repels targets up to 45 feet. The strength of this Repel increases with each pulse.",
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe",
+      "100 feet"
+    ],
+    "tooltip": "Deals Particle damage every 0.5 sec. + Repels your target.",
+    "tags": [
+      "Repel",
+      "Hand Slot"
+    ],
+    "damage_type": [
+      "Particle"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "PowerArmor_ConcussorBeam",
@@ -7088,7 +7331,7 @@
     "power_id": 218,
     "name": "Dual Wrist Rocket Barrage",
     "tier": 0,
-    "power_type": null,
+    "power_type": "RANGED_DAMAGE",
     "advantages": [
       1,
       2,
@@ -7096,15 +7339,23 @@
       3,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
+    "activation_type": "TOGGLE",
+    "activation_time": 0.5,
+    "max_duration": 5,
+    "tick_rate": 0.5,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Power Armor, 100 foot Ranged Single Target Damage and Repel Hand Slot Deals Crushing damage and Repels targets up to 45 feet. The strength of this Repel increases with each pulse.",
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe",
+      "100 feet"
+    ],
+    "tooltip": "Deals Particle damage every 0.5 sec. + Repels your target.",
+    "tags": [
+      "Repel",
+      "Hand Slot"
+    ],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "PowerArmor_DualWristRocketBarrage",
@@ -7116,7 +7367,7 @@
     "power_id": 219,
     "name": "Power Gauntlet",
     "tier": 0,
-    "power_type": null,
+    "power_type": "RANGED_DAMAGE",
     "advantages": [
       1,
       2,
@@ -7125,15 +7376,22 @@
       7,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "BLAST",
+    "activation_time": 0.5,
+    "max_duration": 1.5,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Power Armor, 100 foot Ranged Single Target Damage (Blast) Power Gauntlet uses your gloves as a point to focus Particle energy before using it to blast away any foes in your path.",
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe",
+      "100 feet"
+    ],
+    "tooltip": "Deals Particle Damage and has a 26-100% chance to Interrupt the target. + Higher ranked targets may not be affected by the Interrupt. If a target is Interrupted, they are immune to the effect for 8 sec.",
+    "tags": [
+      "Interrupt"
+    ],
+    "damage_type": [
+      "Particle"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "PowerArmor_PowerGauntlet",
@@ -7145,7 +7403,7 @@
     "power_id": 220,
     "name": "Tactical Missiles",
     "tier": 0,
-    "power_type": null,
+    "power_type": "RANGED_DAMAGE",
     "advantages": [
       1,
       2,
@@ -7154,15 +7412,22 @@
       7,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "BLAST",
+    "activation_time": 0.5,
+    "max_duration": 1.5,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Power Armor, 100 foot Ranged Single Target Damage (Blast) Tactical Missiles fire from your wrist to obliterate your target.",
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe",
+      "100 feet"
+    ],
+    "tooltip": "Deals Crushing Damage. + Has a 15-50% chance to Knock Down the target.",
+    "tags": [
+      "Knock Down"
+    ],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "PowerArmor_TacticalMissiles",
@@ -7179,13 +7444,15 @@
       1,
       2
     ],
-    "activation_type": null,
+    "activation_type": "CLICK",
     "activation_time": null,
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Power Armor, Form (Strength or Ego) Requires 1 power from Power Armor or 2 non-Energy Building powers from any framework. Gives you a stacking buff that increases your ranged and melee damage. + You gain a stack each time you kill something. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 5 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%. - Killing targets to generate stacks may not always be practical, so investing in ranks is recommended.",
+    "range_tags": [
+      "Targets Self"
+    ],
+    "tooltip": "Gives you a stacking buff that increases your ranged and melee damage. + You gain a stack each time you kill something. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 5 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
     "tags": [],
     "damage_type": [],
     "scaling_stats": [
@@ -7209,16 +7476,20 @@
       330,
       420
     ],
-    "activation_type": null,
+    "activation_type": "BLOCK",
     "activation_time": null,
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Power Armor, Block Requires 1 power from Power Armor or 2 non-Energy Building powers from any framework. While blocking, grants 270% resistance to all damage, increases your resistance to Holds and Knocks, and reduces your movement speed.",
+    "range_tags": [
+      "Targets Self"
+    ],
+    "tooltip": "While blocking, 270/320/390% resistance to all other damage. + Increases your resistance to Holds and Knocks, and reduces your movement speed. + Gives you energy when struck by an attack while blocking. This amount scales with your Recovery and the amount of damage you take.",
     "tags": [],
     "damage_type": [],
-    "scaling_stats": [],
+    "scaling_stats": [
+      "REC"
+    ],
     "power_dependency": [],
     "icon_override": "PowerArmor_EnergyShield",
     "is_disabled": false
@@ -7229,7 +7500,7 @@
     "power_id": 223,
     "name": "Eye Beam",
     "tier": 1,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -7238,15 +7509,23 @@
       3,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
+    "activation_type": "TOGGLE",
+    "activation_time": 0.5,
+    "max_duration": 5,
+    "tick_rate": 0.5,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Power Armor, 100 foot Ranged 2 foot cyllinder AoE Damage Requires 1 power from Power Armor or 2 non-Energy Building powers from any framework. Shoulder Slot Deals Particle damage to all targets in front of you.",
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe (5 max)",
+      "100 feet",
+      "2 foot Cylinder"
+    ],
+    "tooltip": "Deals Particle damage every 0.5 sec.",
+    "tags": [
+      "Shoulder Slot"
+    ],
+    "damage_type": [
+      "Particle"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "PowerArmor_EyeBeam",
@@ -7263,13 +7542,13 @@
       1,
       2
     ],
-    "activation_type": null,
+    "activation_type": "PASSIVE",
     "activation_time": null,
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
-    "tooltip": "Power Armor, Defensive Passive Requires 1 power from Power Armor or 2 non-Energy Building powers from any framework. Grants you a combination of percent-based and flat damage reduction.",
+    "tooltip": "Reduces incoming damage by a flat amount damage + Grants resistance to all damage.",
     "tags": [],
     "damage_type": [],
     "scaling_stats": [],
@@ -7283,7 +7562,7 @@
     "power_id": 225,
     "name": "Mini Gun",
     "tier": 1,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -7292,15 +7571,23 @@
       3,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
+    "activation_type": "TOGGLE",
+    "activation_time": 0.5,
+    "max_duration": 5,
+    "tick_rate": 0.5,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Power Armor, 100 foot Ranged 2 foot cyllinder AoE Damage Requires 1 power from Power Armor or 2 non-Energy Building powers from any framework. Shoulder Slot Deals Crushing damage to all targets in front of you.",
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe (5 max)",
+      "100 feet",
+      "2 foot Cylinder"
+    ],
+    "tooltip": "Deals Crushing damage every 0.5 sec.",
+    "tags": [
+      "Shoulder Slot"
+    ],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "PowerArmor_MiniGun",
@@ -7314,13 +7601,13 @@
     "tier": 1,
     "power_type": "ENERGY_UNLOCK",
     "advantages": [],
-    "activation_type": null,
+    "activation_type": "PASSIVE",
     "activation_time": null,
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
-    "tooltip": "Energy Unlock. Innate Passive/Endurance/Recovery. + Generates energy every 3 seconds over 9 seconds every time you use a toggle or maintain power for at least half of its duration. + This effect stacks up to 3 times. + The energy gained scales with your Endurance, and to a lesser degree, your Recovery.",
+    "tooltip": "Whenever one of you maintain one of your Maintain or Toggle abilities for at least half of its maximum maintain time, you gain Energy every 3 sec for 9 sec. + This effect stacks up to 3 times. + The energy gained scales with your Endurance, and to a lesser degree, your Recovery.",
     "tags": [],
     "damage_type": [],
     "scaling_stats": [
@@ -7337,7 +7624,7 @@
     "power_id": 227,
     "name": "Rocket Punch",
     "tier": 1,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -7346,15 +7633,23 @@
       7,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "BLAST",
+    "activation_time": 0.5,
+    "max_duration": 1.5,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
+    "range_tags": [
+      "Targets foe (5 max)",
+      "100 feet",
+      "10 foot Sphere"
+    ],
     "tooltip": "Power Armor, 100 foot Ranged 10 foot Sphere AoE Damage - Blast Requires 1 power from Power Armor or 2 non-Energy Building powers from any framework. Deals Crushing damage to targets. Has a 12-50% (based on charge time) chance to Knock Back targets.",
-    "tags": [],
-    "damage_type": [],
+    "tags": [
+      "Knock Back"
+    ],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "PowerArmor_RocketPunch",
@@ -7371,13 +7666,13 @@
       1,
       2
     ],
-    "activation_type": null,
+    "activation_type": "PASSIVE",
     "activation_time": null,
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
-    "tooltip": "Power Armor, Offensive Passive Requires 1 power from Power Armor or 2 non-Energy Building powers from any framework. + Increases your ranged Technology damage. + After 3 seconds, foes damaged by ranged Technology powers give you 5 critical severity, and a small amount of damage resistance against them.",
+    "tooltip": "You deal additional amage with all Ranged Technology attacks, and those attacks cause your Targeting Computer to start tracking your target. + After 3 seconds, it will Lock On to the target, granting you an additional 5/7.5/10% Critical Hit and an additional 10/12/15% Critical Severity on the target. + The tracking also makes you more aware of incoming attacks from those targets, granting you damage resistance to all damage from them.",
     "tags": [],
     "damage_type": [],
     "scaling_stats": [],
@@ -7391,7 +7686,7 @@
     "power_id": 229,
     "name": "Binding Shot",
     "tier": 2,
-    "power_type": null,
+    "power_type": "RANGED_DAMAGE",
     "advantages": [
       1,
       2,
@@ -7399,15 +7694,22 @@
       3,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "FULL_CHARGE",
+    "activation_time": 0.67,
+    "max_duration": 1.83,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Power Armor, 50 foot Single Target Hold Requires 3 powers from Power Armor or 4 non-Energy Building powers from any framework. Deals Crushing damage to the target and Paralyzes them.",
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets non-destructible foe",
+      "50 feet"
+    ],
+    "tooltip": "Deals Crushing damage, + Paralyze the target.",
+    "tags": [
+      "Hold"
+    ],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "PowerArmor_BindingShot",
@@ -7419,7 +7721,7 @@
     "power_id": 230,
     "name": "Chest Beam",
     "tier": 2,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -7427,15 +7729,24 @@
       3,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "CHARGE",
+    "activation_time": 0.67,
+    "max_duration": 1.83,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Power Armor, 50 foot Ranged 2 foot Cylinder AoE Damage and Debuff Requires 3 powers from Power Armor or 4 non-Energy Building powers from any framework. + Deals Particle damage to targets. In addition, targets are Knocked Back and are affected by Burn Through.",
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe(5 max)",
+      "50 feet",
+      "2 foot Cylinder"
+    ],
+    "tooltip": "Deals Particle Damage, + Knock Back Applies your targets. + Applies Burn Through to affected targets, reducing their Crushing and Particle resistance for your attacks by 15% for 15 sec.",
+    "tags": [
+      "Knock Back",
+      "Burn Through"
+    ],
+    "damage_type": [
+      "Particle"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "PowerArmor_ChestBeam",
@@ -7447,7 +7758,7 @@
     "power_id": 231,
     "name": "Chest Laser",
     "tier": 2,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -7455,15 +7766,23 @@
       3,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
+    "activation_type": "TOGGLE",
+    "activation_time": 0.5,
+    "max_duration": 5,
+    "tick_rate": 0.5,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Power Armor, 100 foot Ranged 2 foot Cylinder AoE Damage Requires 3 powers from Power Armor or 4 non-Energy Building powers from any framework. Chest Slot Deals Particle damage to all targets.",
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe (5 max)",
+      "100 feet",
+      "2 foot Cylinder"
+    ],
+    "tooltip": "Deals Particle damage every 0.5 sec.",
+    "tags": [
+      "Chest Slot"
+    ],
+    "damage_type": [
+      "Particle"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "PowerArmor_ChestLaser",
@@ -7475,7 +7794,7 @@
     "power_id": 232,
     "name": "Chest Rocket Assault",
     "tier": 2,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -7483,19 +7802,23 @@
       3,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
+    "activation_type": "TOGGLE",
+    "activation_time": 0.5,
+    "max_duration": 5,
+    "tick_rate": 0.5,
     "cooldown": null,
     "range_tags": [
       "Targets foe (5 max)",
-      "50 feet",
+      "100 feet",
       "2 foot Cylinder"
     ],
-    "tooltip": "Chest Slot/Ranged AoE Damage. Deals Crushing Damage to targets in front of you.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Crushing damage every 0.5 sec.",
+    "tags": [
+      "Chest Slot"
+    ],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "PowerArmor_ChestRocketAssault",
@@ -7507,7 +7830,7 @@
     "power_id": 233,
     "name": "Micro Munitions",
     "tier": 2,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -7515,15 +7838,23 @@
       3,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
+    "activation_type": "TOGGLE",
+    "activation_time": 0.5,
+    "max_duration": 5,
+    "tick_rate": 1,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Power Armor, 100 foot Ranged 15 foot Sphere AoE Damage Requires 3 powers from Power Armor or 4 non-Energy Building powers from any framework. Chest Slot Deals Crushing damage to all targets.",
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe (5 max)",
+      "100 feet",
+      "15 foot Sphere"
+    ],
+    "tooltip": "Deals Crushing damage every 1 sec.",
+    "tags": [
+      "Chest Slot"
+    ],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "PowerArmor_MicroMunitions",
@@ -7535,7 +7866,7 @@
     "power_id": 234,
     "name": "Plasma Beam",
     "tier": 2,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -7543,15 +7874,23 @@
       3,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
+    "activation_type": "TOGGLE",
+    "activation_time": 0.5,
+    "max_duration": 5,
+    "tick_rate": 0.5,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Power Armor, 50 foot Ranged 3 foot Cylinder AoE Damage Requires 3 powers from Power Armor or 4 non-Energy Building powers from any framework. Hand Slot Deals Particle damage to all targets.",
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe (5 max)",
+      "100 feet",
+      "2 foot Cylinder"
+    ],
+    "tooltip": "Deals Particle damage every 0.5 sec.",
+    "tags": [
+      "Hand Slot"
+    ],
+    "damage_type": [
+      "Particle"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "PowerArmor_PlasmaBeam",
@@ -7569,15 +7908,15 @@
       2,
       598
     ],
-    "activation_type": null,
+    "activation_type": "CLICK",
     "activation_time": null,
-    "max_duration": null,
+    "max_duration": 15,
     "tick_rate": null,
     "cooldown": 90,
     "range_tags": [
       "Targets Self"
     ],
-    "tooltip": "Active Defense. Absorbs up to 2310 damage. Each attack against you restores 1155 points of the absorption. Activates a shared cooldown of 90 seconds with other Active Defense powers.",
+    "tooltip": "Absorbs a large amount of damages. + Each time you are attacked, your resolve causes you to restore a portion of that absorption. + Activates a shared cooldown of 90 seconds on all Active Defenses.",
     "tags": [],
     "damage_type": [],
     "scaling_stats": [],
@@ -7591,7 +7930,7 @@
     "power_id": 236,
     "name": "Energy Wave",
     "tier": 3,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -7601,15 +7940,23 @@
       3,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "CHARGE",
+    "activation_time": 0.83,
+    "max_duration": 1.17,
     "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Power Armor, 25 foot Sphere PBAoE Ranged Damage - Repel - Knock Back Requires 5 powers from Power Armor or 6 non-Energy Building powers from any framework. Deals Particle damage to all nearby targets and repels them. If charged for at least 50%, each target is also Knocked Back.",
-    "tags": [],
-    "damage_type": [],
+    "cooldown": 10,
+    "range_tags": [
+      "Affects foe (5 max)",
+      "25 foot Sphere"
+    ],
+    "tooltip": "Deals Particle Damage to all targets and each target is Repelled. + If charged at least 50%, each target is Knocked Back.",
+    "tags": [
+      "Knock Back",
+      "Repel"
+    ],
+    "damage_type": [
+      "Particle"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "PowerArmor_EnergyWave",
@@ -7621,7 +7968,7 @@
     "power_id": 237,
     "name": "Hand Cannon",
     "tier": 3,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -7629,15 +7976,24 @@
       3,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "TOGGLE",
+    "activation_time": 0.5,
+    "max_duration": 4,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Power Armor, 100 foot Ranged 2 foot Cylinder AoE Damage and Knock Back Requires 5 powers from Power Armor or 6 non-Energy Building powers from any framework. Hand Slot After 4 seconds, deals Particle damage the target and half of that to all foes near the target. Each target has a 20% chance of being Knocked Back.",
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe (5 max)",
+      "100 feet",
+      "2 foot Cylinder"
+    ],
+    "tooltip": "After 4 sec deals Particle Damage to the primaty target, and a lesser amount of Particle Damage to foes near the target. + In addition, each target has a 50% chance to be Knocked Back",
+    "tags": [
+      "Knock Back",
+      "Hand Slot"
+    ],
+    "damage_type": [
+      "Particle"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "PowerArmor_HandCannon",
@@ -7649,19 +8005,23 @@
     "power_id": 238,
     "name": "Reconstruction Circuits",
     "tier": 3,
-    "power_type": null,
+    "power_type": "SELF_HEAL_OVER_TIME",
     "advantages": [
       1,
       2
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
+    "activation_type": "TOGGLE",
+    "activation_time": 0.5,
+    "max_duration": 8,
+    "tick_rate": 1,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Power Armor, Self Heal Over Time Requires 5 powers from Power Armor or 6 non-Energy Building powers from any framework. Chest Slot Heals you as long as it is toggled on.",
-    "tags": [],
+    "range_tags": [
+      "Targets Self"
+    ],
+    "tooltip": "Heals you every 1 sec. + This power cannot critically heal",
+    "tags": [
+      "Chest Slot"
+    ],
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
@@ -7674,7 +8034,7 @@
     "power_id": 239,
     "name": "Shoulder Launcher",
     "tier": 3,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -7682,15 +8042,25 @@
       3,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "TOGGLE",
+    "activation_time": 0.5,
+    "max_duration": 4,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Power Armor, 100 foot Ranged 10 foot Sphere AoE Damage and Knock Back Requires 5 powers from Power Armor or 6 non-Energy Building powers from any framework. Shoulder Slot After 4 seconds, deals Crushing and Particle damage the target and half of that to all foes near the target. Each target has a 20% chance of being Knocked Back.",
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe (5 max)",
+      "100 feet",
+      "2 foot Cylinder"
+    ],
+    "tooltip": "After 4 sec deals Crushing Damage and Particle Damage to the primaty target, and a lesser amount of Crushing Damage and Particle Damage to foes near the target. + In addition, each target has a 50% chance to be Knocked Back",
+    "tags": [
+      "Knock Back",
+      "Shoulder Slot"
+    ],
+    "damage_type": [
+      "Crushing",
+      "Particle"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "PowerArmor_ShoulderLauncher",
@@ -7702,7 +8072,7 @@
     "power_id": 240,
     "name": "Eye Lasers",
     "tier": 0,
-    "power_type": null,
+    "power_type": "MELEE/RANGED",
     "advantages": [
       1,
       2,
@@ -7713,18 +8083,22 @@
       3,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "BLAST",
+    "activation_time": 0.5,
+    "max_duration": 1.5,
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [
       "Targets Foe",
       "25 Feet or 100 feet"
     ],
-    "tooltip": "Ranged or Melee Damage/Plasma Burn/Blast. Single target Particle damage. This power's damage is considered to be Melee damage when you are within melee range. Chance to apply Plasma Burn. Refreshes the duration of your Plasma Burn stacks.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Particle Damage to your target. Increased damage under 15ft. + Has a 25-100% chance to apply Plasma Burn, causing Particle Damage every 1 sec for 16 sec. + Refreshes the duration of your Plasma Burn if there are at least 3 stacks on the target.",
+    "tags": [
+      "Plasma Burn"
+    ],
+    "damage_type": [
+      "Particle"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "LaserSword_EyeLasers",
@@ -7743,8 +8117,8 @@
       322,
       3
     ],
-    "activation_type": null,
-    "activation_time": 0.47,
+    "activation_type": "TOGGLE",
+    "activation_time": "0.33-0.47",
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
@@ -7752,9 +8126,13 @@
       "Targets foe",
       "10 feet"
     ],
-    "tooltip": "Energy Builder/Melee Damage/Plasma Burn. Deals Particle damage to the target and generates energy. The first hit has a 20PlasmaBurn%",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Particle damage to the target and generates energy. + The first hit has a 20% chance to apply Plasma Burn, causing Particle Damage every 1 sec for 16 sec.",
+    "tags": [
+      "Plasma Burn"
+    ],
+    "damage_type": [
+      "Particle"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "LaserSword_LaserEdge",
@@ -7766,7 +8144,7 @@
     "power_id": 242,
     "name": "Lightspeed Strike",
     "tier": 0,
-    "power_type": null,
+    "power_type": "MELEE_AOE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -7775,8 +8153,8 @@
       3,
       5
     ],
-    "activation_type": null,
-    "activation_time": 0.3,
+    "activation_type": "COMBO",
+    "activation_time": "0.3-0.67",
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
@@ -7785,9 +8163,14 @@
       "10 feet",
       "120-120-30 degree Cone"
     ],
-    "tooltip": "Melee Damage/Combo/Plasma Burn. Deals Particle damage to the target and has a 15/15/50PlasmaBurn%",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Particle Damage. + Has a 15/15/50% chance to apply Plasma Burn to your targets. This chance is doubled if you are affected by Unity.",
+    "tags": [
+      "Plasma Burn",
+      "Unity"
+    ],
+    "damage_type": [
+      "Particle"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "LaserSword_LightspeedStrike",
@@ -7799,7 +8182,7 @@
     "power_id": 243,
     "name": "Cybernetic Tether",
     "tier": 1,
-    "power_type": null,
+    "power_type": "MELEE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -7810,7 +8193,7 @@
       3,
       5
     ],
-    "activation_type": null,
+    "activation_type": "CHARGE",
     "activation_time": 0.83,
     "max_duration": 1.17,
     "tick_rate": null,
@@ -7819,9 +8202,14 @@
       "Targets foe",
       "25 feet"
     ],
-    "tooltip": "Melee Damage/Knock To/Plasma Burn. Deals Particle damage and knocks your target to you. Has a 46-100% (based on charge) chance to apply Plasma Burn to the target.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Particle Damage. + Your target is Knocked to you. + Has a 46-100% chance to apply Plasma Burn to your target. Plasma Burn deals 45 Particle Damage every 1 sec for 16 sec and stacks up to 5 times.",
+    "tags": [
+      "Knock To",
+      "Plasma Burn"
+    ],
+    "damage_type": [
+      "Particle"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "LaserSword_CyberneticTether",
@@ -7833,7 +8221,7 @@
     "power_id": 244,
     "name": "Glance",
     "tier": 1,
-    "power_type": null,
+    "power_type": "MELEE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -7843,7 +8231,7 @@
       3,
       5
     ],
-    "activation_type": null,
+    "activation_type": "CLICK",
     "activation_time": 0.5,
     "max_duration": null,
     "tick_rate": null,
@@ -7852,9 +8240,13 @@
       "Targets foe",
       "10 feet"
     ],
-    "tooltip": "Melee Damage/Stun. Deals single target Particle damage and briefly Stuns the target.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Particle damage. + Stuns the target for a small amount of time.",
+    "tags": [
+      "Stun"
+    ],
+    "damage_type": [
+      "Particle"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "LaserSword_Glance",
@@ -7872,7 +8264,7 @@
       2,
       134
     ],
-    "activation_type": null,
+    "activation_type": "BLOCK",
     "activation_time": 1,
     "max_duration": null,
     "tick_rate": null,
@@ -7880,7 +8272,7 @@
     "range_tags": [
       "Targets Self"
     ],
-    "tooltip": "Block. While blocking, grants 250% resistance to all damage, increases your resistance to Holds and Knocks, and reduces your movement speed. Features:",
+    "tooltip": "While blocking, grants 250/300/360% resistance to all other damage. + Increases your resistance to Holds and Knocks, and reduces your movement speed. + Gives you energy when struck by an attack while blocking. This amount scales with your Recovery and the amount of damage you take. + For up to 2 sec after you begin blocking, you will return a portion of one incoming attack to the attacker. This effect has a cooldown of 5 sec and cannot be triggered again until you release and reapply this block.",
     "tags": [],
     "damage_type": [],
     "scaling_stats": [],
@@ -7894,7 +8286,7 @@
     "power_id": 246,
     "name": "Lightspeed Dash",
     "tier": 1,
-    "power_type": null,
+    "power_type": "LUNGE",
     "advantages": [
       1,
       2,
@@ -7904,18 +8296,23 @@
       7,
       5
     ],
-    "activation_type": null,
+    "activation_type": "CLICK",
     "activation_time": 0.67,
     "max_duration": null,
     "tick_rate": null,
     "cooldown": 3,
     "range_tags": [
       "Targets foe",
-      "60 foot Lunge"
+      "60 foot"
     ],
-    "tooltip": "Lunge/Snare. Lunges to the target, dealing Particle damage and Snaring them for 13 seconds. If the target is further than 20 feet away, they are also Rooted for 17 seconds.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Lunges at the target, dealing 200 Particle Damage and Snaring them for 13 sec. + Roots your target for 13 sec if you Lunge from more than 20 feet away.",
+    "tags": [
+      "Snare",
+      "Root"
+    ],
+    "damage_type": [
+      "Particle"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "LaserSword_LightspeedDash",
@@ -7927,7 +8324,7 @@
     "power_id": 247,
     "name": "Lightwave Slash",
     "tier": 1,
-    "power_type": null,
+    "power_type": "MELEE_AOE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -7937,7 +8334,7 @@
       3,
       5
     ],
-    "activation_type": null,
+    "activation_type": "CHARGE",
     "activation_time": 0.67,
     "max_duration": 0.83,
     "tick_rate": null,
@@ -7946,9 +8343,13 @@
       "Affects Foe (5 max)",
       "10 foot Sphere"
     ],
-    "tooltip": "Melee AoE Damage/Knock Down. Deals particle damage to all targets within 10 feet of you. On a full charge, affected targets Knocked Down.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Particle Damage to the target. + On full charge Knocks your targets down.",
+    "tags": [
+      "Knock Down"
+    ],
+    "damage_type": [
+      "Particle"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "LaserSword_LightwaveSlash",
@@ -7965,14 +8366,16 @@
       1,
       2
     ],
-    "activation_type": null,
-    "activation_time": 1,
-    "max_duration": 2.5,
+    "activation_type": "CLICK",
+    "activation_time": null,
+    "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
-    "tooltip": "Form (Intelligence). Buff/Form/Unity. Gives you a stacking buff that increases your melee damage, as well as your ranged damage to a lesser degree. + You gain a stack each time you apply, refresh, or consume a Radiation effect. + Radiation effects include Plasma Burn, Disintegrate, Burn Through, and Overheat. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
-    "tags": [],
+    "tooltip": "Gives you a stacking buff that increases your melee damage, as well as your ranged damage to a lesser degree. + You gain a stack each time you apply, refresh, or consume a Radiation effect. + Radiation effects include Plasma Burn, Disintegrate, Burn Through, and Overheat. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
+    "tags": [
+      "Unity"
+    ],
     "damage_type": [],
     "scaling_stats": [
       "INT"
@@ -7992,15 +8395,19 @@
       1,
       2
     ],
-    "activation_type": null,
+    "activation_type": "PASSIVE",
     "activation_time": null,
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
-    "tooltip": "Offensive Passive. Slotted Offensive Passive. + Increases your Energy Damage strength, scaling with your Super Stats. + Increases your resistance to All damage by a small amount and your resistance to Particle damage by a larger amount, scaling with your Super Stats. + You gain energy over 3 seconds when you take Energy damage, scaling with your Recovery. + Increases your Knock resistance slightly, scaling with Super Stats.",
+    "tooltip": "Increases your Energy Damage. + Increases your resistance to All Damage and Particle Damage by a larger amount. + Increases your Resistance to Knock effects. This effect is doubled if you are Shielded. + Whenever you are hit by Energy typed damage, you gain Energy. This can occur once every 1 sec. + Scales with your Super Stats",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Electrical",
+      "Particle",
+      "Sonic"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "LaserSword_QuantumStabilizer",
@@ -8014,13 +8421,13 @@
     "tier": 1,
     "power_type": "ENERGY_UNLOCK",
     "advantages": [],
-    "activation_type": null,
+    "activation_type": "PASSIVE",
     "activation_time": null,
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
-    "tooltip": "Energy Unlock. Innate Passive/Endurance/Recovery. + Generates Energy every 3 seconds for 6 seconds whenever you apply a Radiation effect. This effect does not stack, but can be refreshed. + Radiation effects include Plasma Burn, Burn Through, overheat, and Disintegrate. + scales with you Endurance and, to a lesser degree, your Recovery.",
+    "tooltip": "Generates Energy every 3 seconds for 6 seconds whenever you apply a Radiation effect. + Radiation effects include Plasma Burn, Burn Through, overheat, and Disintegrate. + scales with you Endurance and, to a lesser degree, your Recovery. + This effect does not stack, but can be refreshed",
     "tags": [],
     "damage_type": [],
     "scaling_stats": [
@@ -8037,13 +8444,13 @@
     "power_id": 251,
     "name": "Bad Sector",
     "tier": 2,
-    "power_type": null,
+    "power_type": "CROWD_CONTROL",
     "advantages": [
       1,
       2,
       23
     ],
-    "activation_type": null,
+    "activation_type": "CLICK",
     "activation_time": 1,
     "max_duration": null,
     "tick_rate": null,
@@ -8051,8 +8458,12 @@
     "range_tags": [
       "Targets Self"
     ],
-    "tooltip": "Root/Plasma Burn/Rune. Creates a Bad Sector at your location for 10 sec. Foes within 10 feet are Rooted for 6.7 sec. Has a 20PlasmaBurn%",
-    "tags": [],
+    "tooltip": "Creates a Bad Sector at your location for 10 sec. + Foes within loft are Rooted for a short amount of time. + Has a 20% chance every 1 sec to apply Plasma Burn to your target, dealing Particle Damage every 1 sec for 16 sec. Stacks up to 5 times. + You cnanot have more than one Rune out at a time",
+    "tags": [
+      "Root",
+      "Plasma Burn",
+      "Rune"
+    ],
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
@@ -8086,7 +8497,7 @@
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "LaserSword_LightwaveSlash",
-    "is_disabled": false
+    "is_disabled": true
   },
   {
     "powerset_id": "Technology",
@@ -8094,7 +8505,7 @@
     "power_id": 253,
     "name": "Particle Smash",
     "tier": 2,
-    "power_type": null,
+    "power_type": "MELEE_AOE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -8104,19 +8515,24 @@
       3,
       5
     ],
-    "activation_type": null,
+    "activation_type": "CLICK",
     "activation_time": 0.67,
     "max_duration": null,
     "tick_rate": null,
-    "cooldown": 15,
+    "cooldown": 12,
     "range_tags": [
       "Targets foe (5 max)",
       "25 feet",
-      "15 foot Sphere"
+      "20 foot Sphere"
     ],
-    "tooltip": "Melee AoE Damage/Plasma Burn. Deals Particle damage to the target and nearby foes. If the targets are affected by Plasma Burn, consumes all stacks of Plasma Burn to deal additional Particle damage for every stack consumed as well as applying Disintegrate.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Particle Damage. + Targets affected by Plasma Burn have Disintegrate applied to them, lowering their resistance by -18% resistance to Particle Damage for 15 sec. + Consumes your Plasma Burn stacks on the targets, dealing additional Particle Damage for each one consumed.",
+    "tags": [
+      "Plasma Burn",
+      "Disintegrate"
+    ],
+    "damage_type": [
+      "Particle"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "LaserSword_ParticleSmash",
@@ -8137,7 +8553,7 @@
       3,
       5
     ],
-    "activation_type": null,
+    "activation_type": "CLICK",
     "activation_time": 0.83,
     "max_duration": null,
     "tick_rate": null,
@@ -8145,11 +8561,16 @@
     "range_tags": [
       "Targets foe (5 max)",
       "50 feet",
-      "60 foot Cone"
+      "60 degree Cone"
     ],
-    "tooltip": "Ranged AoE Damaage/Knock To/Plasma Burn. Deals Particle damage and knocks all affected targets toward you and applies a stack of Plasma Burn if they aren't already affected by it.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Particle Damage. + Knocks targets towards you. + Applies a stack of Plasma Burn to targets not already affected by it. Plasma Burn deals Particle Damage every 1 sec for 16 sec.",
+    "tags": [
+      "Knock To",
+      "Plasma Burn"
+    ],
+    "damage_type": [
+      "Particle"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "LaserSword_ParticleWave",
@@ -8161,7 +8582,7 @@
     "power_id": 255,
     "name": "Plasma Cutter",
     "tier": 2,
-    "power_type": null,
+    "power_type": "MELEE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -8170,7 +8591,7 @@
       3,
       5
     ],
-    "activation_type": null,
+    "activation_type": "CHARGE",
     "activation_time": 0.67,
     "max_duration": 0.83,
     "tick_rate": null,
@@ -8179,9 +8600,14 @@
       "Targets foe",
       "10 feet"
     ],
-    "tooltip": "Melee Damage/Plasma Burn. Deals Particle damage to the target and consumes all of their Plasma Burn stacks. After 6 seconds, applies Overheat which deals Particle Damage in a 10 foot radius. Overheat's damage is increased by the number of stacks consumed. during this time, you cannot apply stacks of Plasma Burn.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Particle Damage. + When not fully charged, adds 8 sec to the duration of your Plasma Burn. This cannot exceed the regular duration. + Fully charging this power consumes all stacks of Plasma Burn on the target. After 6 sec, applies Overheat which deals additonal Particle Damage in a 5ft radius for each Plasma Burn stack consumed. During this time you cannot apply any stacks of Plasma Burn.",
+    "tags": [
+      "Plasma Burn",
+      "Overheat"
+    ],
+    "damage_type": [
+      "Particle"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "LaserSword_PlasmaCutter",
@@ -8198,15 +8624,15 @@
       1,
       2
     ],
-    "activation_type": null,
+    "activation_type": "CLICK",
     "activation_time": null,
-    "max_duration": null,
+    "max_duration": 15,
     "tick_rate": null,
     "cooldown": 20,
     "range_tags": [
       "Targets Self"
     ],
-    "tooltip": "Self Energy Gain/Self Debuff. Upon activation, gain a large amount of energy. This energy scales with your maximum energy and your Recovery. It also applies the following effects to you for 15 sec: + Energy Equilibrium is set to 100",
+    "tooltip": "Upon activation you gain +50/75/100% Energy. + Your Energy Equilibrium isgreatly increased. + You gain slightly incresaed Energy Regeneration.  + Your base Damage and Healing output are reduced by -10%.",
     "tags": [],
     "damage_type": [],
     "scaling_stats": [],
@@ -8220,7 +8646,7 @@
     "power_id": 257,
     "name": "Luminescent Slash",
     "tier": 3,
-    "power_type": null,
+    "power_type": "MELEE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -8229,7 +8655,7 @@
       3,
       5
     ],
-    "activation_type": null,
+    "activation_type": "CHARGE",
     "activation_time": 0.5,
     "max_duration": 0.5,
     "tick_rate": null,
@@ -8238,9 +8664,13 @@
       "Targets foe",
       "10 feet"
     ],
-    "tooltip": "Melee Damage/Snare. Deals Particle damage and Snares your target for 3.3 sec.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Particle Damage. + Snares your target for short time, reducing their movement speed by 100%.",
+    "tags": [
+      "Snare"
+    ],
+    "damage_type": [
+      "Particle"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "LaserSword_LuminescentSlash",
@@ -8317,13 +8747,13 @@
     "power_id": 260,
     "name": "Implosion Engine",
     "tier": 4,
-    "power_type": "ULTIMATE",
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
       316
     ],
-    "activation_type": null,
+    "activation_type": "CLICK",
     "activation_time": 1,
     "max_duration": null,
     "tick_rate": null,
@@ -8332,8 +8762,11 @@
       "Targets foe",
       "100 feet"
     ],
-    "tooltip": "Ultimate/Ranged AoE Damage/Reverse Repel/Snare. You throw an Implosion Engine, a device that generates a massive gravitational vortex in a very small area, sucking in nearby matter, and dealing significant Dimensional damage. CLICK + Create and throw an Implosion Engine at your target, dealing Crushing damage from the massive gravity waves, pulling them toward the Engine. - This power is incapable of getting a Critical Hit.",
-    "tags": [],
+    "tooltip": "Creates an Implosion Engine that lasts for 12 sec. + Implosion Engine deals Particle Damage every 0.5 sec to targets within 40ft. Hits up to 10 targets. + Attempts to pull affected targets toward the Implosion Engine  and Snares them, reducing their Movement Speed by 100%. + This power cannot a Critically Hit.",
+    "tags": [
+      "Reverse Repel",
+      "Snare"
+    ],
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
@@ -8346,12 +8779,12 @@
     "power_id": 261,
     "name": "Mechanical Monstrosity",
     "tier": 4,
-    "power_type": "ULTIMATE",
+    "power_type": "UNCONTROLED_PET",
     "advantages": [
       1,
       2
     ],
-    "activation_type": null,
+    "activation_type": "FULL_CHARGE",
     "activation_time": 0.67,
     "max_duration": 1,
     "tick_rate": null,
@@ -8359,9 +8792,17 @@
     "range_tags": [
       "Targets Self"
     ],
-    "tooltip": "Ultimate/Uncontrolled Pet",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Summons a mechanical spider to do your bidding for 30 sec. It can use the follow abilities: + Spit: 50ft ranged attack that deals Toxic Damage. Removes travel powers and applies Debilitating Poison. + Swipe: 20ft melee cone attack that deals Slashing Damage and has a chance to Poison foes. + Electrocute: 15ft PBAoE attacks that deals Electrical Damage and has a chance to Knock foes. + Lunge: Slashing Damage",
+    "tags": [
+      "Debilitation Poison",
+      "Deadly Poison",
+      "Knock"
+    ],
+    "damage_type": [
+      "Toxic",
+      "Slashing",
+      "Electrical"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Technology_MechanicalMonstrosity",
@@ -8373,12 +8814,12 @@
     "power_id": 262,
     "name": "Meltdown",
     "tier": 4,
-    "power_type": "ULTIMATE",
+    "power_type": "MELEE_AOE_DAMAGE",
     "advantages": [
       1,
       2
     ],
-    "activation_type": null,
+    "activation_type": "FULL_CHARGE",
     "activation_time": 0.67,
     "max_duration": 0.83,
     "tick_rate": null,
@@ -8387,9 +8828,13 @@
       "Affects foe (10 max)",
       "20 foot Sphere"
     ],
-    "tooltip": "Ultimate/Melee AoE Damage",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Particle Damage to all targets. + Knocks Down all targets. + The initial strike immediately causes foes to be affected by Plasma Burn. Additional stacks of Plasma Burn apply over 5 sec.",
+    "tags": [
+      "Plasma Burn"
+    ],
+    "damage_type": [
+      "Particle"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Technology_Meltdown",
@@ -8460,12 +8905,12 @@
     "power_id": 265,
     "name": "Fire All Weapons",
     "tier": 4,
-    "power_type": "ULTIMATE",
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2
     ],
-    "activation_type": null,
+    "activation_type": "TOGGLE",
     "activation_time": 0.5,
     "max_duration": 5,
     "tick_rate": 0.5,
@@ -8475,9 +8920,15 @@
       "50 feet",
       "120 degree Cone"
     ],
-    "tooltip": "Ultimate. Hand Slot - Shoulder Slot - Chest Slot Deals Particle damage to all targets.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals PArticle Damage every 0.5 to all targets.",
+    "tags": [
+      "Hand Slot",
+      "Shoulder Slot",
+      "Chest Slot"
+    ],
+    "damage_type": [
+      "Particle"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Technology_FireAllWeapons",
@@ -21607,17 +22058,24 @@
     "power_id": 727,
     "name": "Pulp Fiction Rifle",
     "tier": null,
-    "power_type": null,
+    "power_type": "RANGED_DAMAGE",
     "advantages": [],
-    "activation_type": null,
+    "activation_type": "MAINTAIN/CHARGE",
     "activation_time": "0.67/1",
     "max_duration": "4/3",
     "tick_rate": 0.5,
     "cooldown": 90,
-    "range_tags": [],
-    "tooltip": "PULP FICTION ASSAULT MAINTAIN This device has different values if you own the Assault Rifle power. On tap, deals Particle Damage. While maintained, deals Particle Damage. Increases this power's damage by 10% if you are affected by Molecular Self Assembly or Unified Theory. Has a 5% chance every hit to apply Plasma Burn to your target, causing Particle Damage every 1 sec for 16 sec. Stacks up to 5 times. Goes on a 90 sec cooldown if you do not own the Assault Rifle power. PULP FICTION LANCE This device has different values if you own the Sniper Rifle power. This power is activated when you are greater than 90ft from your target. Deals Particle Damage. Expires all of your Plasma Burn stacks and deals Particle Damage for each one to up to 5 targets within 10ft of your main target. Taking damage while charging this power will interrupt it. Goes on a 90 sec cooldown if you do not own the Sniper Rifle power.",
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe",
+      "90/120 feet"
+    ],
+    "tooltip": "PULP FICTION ASSAULT MAINTAIN:  On tap, deals Particle Damage. While maintained, deals Particle Damage. Increases this power's damage by 10% if you are affected by Molecular Self Assembly or Unified Theory. + Has a 5% chance every hit to apply Plasma Burn to your target, causing Particle Damage every 1 sec for 16 sec. Stacks up to 5 times. + Goes on a 90 sec cooldown if you do not own the Assault Rifle power. + PULP FICTION LANCE: This power is activated when you are greater than 90ft from your target. + Deals Particle Damage. Expires all of your Plasma Burn stacks and deals Particle Damage for each one to up to 5 targets within 10ft of your main target.  + Taking damage while charging this power will interrupt it. + Goes on a 90 sec cooldown if you do not own the Sniper Rifle power.",
+    "tags": [
+      "Plasma Burn"
+    ],
+    "damage_type": [
+      "Particle"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       211,
@@ -21632,17 +22090,24 @@
     "power_id": 728,
     "name": "Pulp Fiction Ray Gun",
     "tier": null,
-    "power_type": null,
+    "power_type": "RANGED_DAMAGE",
     "advantages": [],
-    "activation_type": null,
+    "activation_type": "MAINTAIN",
     "activation_time": 0.5,
     "max_duration": 4,
     "tick_rate": 0.5,
     "cooldown": 90,
-    "range_tags": [],
-    "tooltip": "PULP FICTION RAY GUN MAINTAIN This device has different values if you own the Two Gun Mojo power. Deals Particle Damage every 0.5 sec. Increases this power's damage by 15% if you are affected by Molecular Self Assembly or Unified Theory. When maintaining has a 20% chance every hit to apply Plasma Burn to your target, causing Particle Damage every 1 sec for 16 sec. Stacks up to 5 times. Goes on a 90 sec cooldown if you do not own the Two Gun Mojo power.",
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe",
+      "100 feet"
+    ],
+    "tooltip": "Deals Particle Damage every 0.5 sec. + Increases this power's damage by 15% if you are affected by Molecular Self Assembly or Unified Theory. + When maintaining has a 20% chance every hit to apply Plasma Burn to your target, causing Particle Damage every 1 sec for 16 sec. Stacks up to 5 times. + Goes on a 90 sec cooldown if you do not own the Two Gun Mojo power.",
+    "tags": [
+      "Plasma Burn"
+    ],
+    "damage_type": [
+      "Particle"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       214
@@ -21680,17 +22145,25 @@
     "power_id": 730,
     "name": "Blade Barrage",
     "tier": null,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "CHARGE",
+    "activation_time": 0.67,
+    "max_duration": 0.83,
     "tick_rate": null,
     "cooldown": 90,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe (5 max)",
+      "50 feet",
+      "3 foot Cylinder"
+    ],
+    "tooltip": "Deals Piercing Damage to all targets. + Deals increased Piercing Damage if only 1 target is affected. Hits 5 times. + Has a 13-30% chance to Snare affected targets, reducing their movement speed by 100% for a small time. + Goes on a 90 sec cooldown if you do not own the Throwing Blades power.",
+    "tags": [
+      "Snare"
+    ],
+    "damage_type": [
+      "Piercing"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       177
@@ -21704,17 +22177,25 @@
     "power_id": 731,
     "name": "Blade Bomb",
     "tier": null,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "FULL_CHARGE",
+    "activation_time": 0.67,
+    "max_duration": 0.83,
     "tick_rate": null,
     "cooldown": 90,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe",
+      "50 feet"
+    ],
+    "tooltip": "After 3 seconds, deals Piercing Damage to up to 5 targets within 15ft. + Stuns your primary target and has a 25% chance to apply Frail Armor to affected targets, reducing their resistance to Piercing damage by for 15 sec. + This effect cannot be stacked on the same target. + Goes on a 90 sec cooldown if you do not own the Ricochet Throw power.",
+    "tags": [
+      "Stun",
+      "Frail Armor"
+    ],
+    "damage_type": [
+      "Piercing"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       161
@@ -22534,7 +23015,7 @@
     "cooldown": 90,
     "range_tags": [
       "Targets foe",
-      "100 Feet"
+      "100 feet"
     ],
     "tooltip": "Deals Electrical Damage to your target. + The Critical Severity on this power is increased by 100%. When fired at an enemy afflicted with the Negative Ions debuff, it consumes the Negative Ions debuff to complete a Circuit, apply the Superconductor debuff and deal addition Electrical Damage. + When Stormpiercer hits an enemy effected by the Negative Ions debuff it Arcs to a target within 25 feet, dealing Electrical Damage to that target. + Additionally, Stormpiercer will Stun the target for 2 sec if the Player has the Download buff. + Goes on a 90 sec cooldown if you do not own the Desperate Shot power.",
     "tags": [
@@ -22705,17 +23186,27 @@
     "power_id": 771,
     "name": "Ultimate Sonic Boom Generator",
     "tier": 4,
-    "power_type": "ULTIMATE",
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "FULL_CHARGE",
+    "activation_time": 0.83,
+    "max_duration": 1.67,
     "tick_rate": null,
     "cooldown": 60,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe (10 max)",
+      "100 Feet",
+      "25 foot Sphere"
+    ],
+    "tooltip": "Deals Sonic Damage and Stuns targets. + Applies Deafening to affected targets, causing -18% resistance to Sonic Damage for 15 sec. + Creates a Sonic Distortion on the main target for 12 sec, causing affected targets within 25ft to be -4% more vulnerable to Sonic damage powers and Gadgeteering damaging powers. This effect is considered to be a Ultimate Rune. + Activates a shared cooldown of 60 sec on all Ultimate powers.",
+    "tags": [
+      "Stun",
+      "Deafening",
+      "Rune"
+    ],
+    "damage_type": [
+      "Sonic"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       174
@@ -22777,17 +23268,27 @@
     "power_id": 774,
     "name": "Ultimate Chest Beam",
     "tier": 4,
-    "power_type": "ULTIMATE",
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "FULL_CHARGE",
+    "activation_time": 0.67,
+    "max_duration": 1.83,
     "tick_rate": null,
     "cooldown": 60,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe (10 max)",
+      "50 feet",
+      "10 foot Cylinder"
+    ],
+    "tooltip": "Deals Particle Damage and Knocks Back affected targetst. Base damage is increased by 20% if an affected target is immune to Knock effects. + Damage is further increased up to 20% based on how close a target is to you. + Affected targets have Burn Through applied to them, reducing their resistance to Crushing and Particle damage by 15% for 15 sec. + If you only hit 1 target, applies Overpower in place of Burn Through, reducing the target's resistance to all damage by 20% for 15 sec. + Activates a shared cooldown of 60 sec on all Ultimate powers.",
+    "tags": [
+      "Knock Back",
+      "Burn Through",
+      "Overpower"
+    ],
+    "damage_type": [
+      "Particle"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       230
@@ -22849,17 +23350,27 @@
     "power_id": 777,
     "name": "Ultimate Orbital Cannon",
     "tier": 4,
-    "power_type": "ULTIMATE",
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "FULL_CHARGE",
+    "activation_time": 0.67,
+    "max_duration": 2.33,
     "tick_rate": null,
     "cooldown": 60,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe",
+      "100 feet"
+    ],
+    "tooltip": "After 4.5 sec the Orbital Cannon deals Particle Damage and Knocks Down foes within 20ft. + After 4.5 sec, creates a Ultimate Anvil of Dawn at your primary target for 10 sec, causing Particle Damage every 1 sec for 10 sec to foes within 15ft. + Applies Plasma Burn to affected targets every hit, causing Particle Damage every 1 sec for 16 sec. Stacks up to 5 times. + After 4.5 sec, creates a Radiation Field at your primary target for 12 sec. Every 1 sec, foes within 20ft have a 20% chance for every stack of Plasma Burn on them to be Stunned for a short time. + Additionally, foes caught in the field have a 20% chance for every stack of Plasma Burn on them to be affected by Trauma, causing their healing to be less effective for 6 sec. + Activates a shared cooldown of 60 sec on all Ultimate powers. + Places your Orbital Cannon power on cooldown when used. + Activates a shared cooldown of 60 sec on all Ultimate powers.",
+    "tags": [
+      "Knock Down",
+      "Plasma Burn",
+      "Stun",
+      "Trauma"
+    ],
+    "damage_type": [
+      "Particle"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       180
@@ -22873,17 +23384,25 @@
     "power_id": 778,
     "name": "Ultimate Particle Smash",
     "tier": 4,
-    "power_type": "ULTIMATE",
+    "power_type": "MELEE_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
+    "activation_type": "CLICK",
+    "activation_time": 0.67,
     "max_duration": null,
     "tick_rate": null,
     "cooldown": 60,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe",
+      "25 feet"
+    ],
+    "tooltip": "Deals Particle damage. + If your target is affected by your Plasma Burn, consumes all stacks and applies Disintegrate and Particle Bomb to targets within 25ft. Disintegrate reduces resistance to Particle damage by for 15 sec. + Particle Bomb deals Particle damage based on number of targets hit, to up to 10 targets within 15ft of the affected target for each Plasma Burn stack consumed. + Places your Particle Smash power on cooldown when used. + Activates a shared cooldown of 60 sec on all Ultimate powers.",
+    "tags": [
+      "Plasma Burn",
+      "Disintegrate"
+    ],
+    "damage_type": [
+      "Particle"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       253
@@ -26543,22 +27062,26 @@
     "powerset_id": "Technology",
     "framework_id": "Gadgeteering",
     "power_id": 943,
-    "name": "Detonator Switch",
+    "name": "All of your current Gadgeteer Pets are defeated and placed on a 5 sec cooldown. + Particle Mine Causes this power to immediately detonate and increases the damage radius to 25ft. + Munitions Bots Deals Particle Damage to up to 5 targets within 15ft. + Attack Toys Deals Particle Damage to up to 5 targets within 15ft. + Attack Toys Clones Deals Particle Damage to up to 5 targets within 15ft. + Support Drones Support Mode: Heals up to 5 allies within 20ft + Turret Mode: Deals Particle Damage to up to 5 targets within 15ft.",
     "tier": 3,
     "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2
     ],
-    "activation_type": null,
+    "activation_type": "CLICK",
     "activation_time": 1,
     "max_duration": null,
     "tick_rate": null,
-    "cooldown": 60,
+    "cooldown": 45,
     "range_tags": [],
-    "tooltip": "All of your current Gadgeteer Pets are defeated and placed on a 5 sec cooldown. + Particle Mine Causes this power to immediately detonate and increases the damage radius to 25ft. + Munitions Bots Deals Particle Damage to up to 5 targets within 15ft. + Attack Toys Deals Particle Damage to up to 5 targets within 15ft. + Attack Toys Clones Deals Particle Damage to up to 5 targets within 15ft. + Support Drones Support Mode: Heals up to 5 allies within 20ft + Turret Mode: Deals Particle Damage to up to 5 targets within 15ft.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "All of your current Gadgeteer Pets are defeated and placed on a 5 sec cooldown. + Particle Mine Causes this power to immediately detonate and increases the damage radius to 25ft. + Munitions Bots Deals Particle Damage to up to 5 targets within 15ft. + Attack Toys Deals Particle Damage to up to 5 targets within 15ft. + Attack Toys Clones Deals Particle Damage to up to 5 targets within 15ft. + Support Drones Support Mode: Heals up to 5 allies within 20ft + Turret Mode: Deals Particle Damage to up to 5 targets within 15ft. + Place all of your Gadgeteer pets on a short cooldown",
+    "tags": [
+      "Heal"
+    ],
+    "damage_type": [
+      "Particle"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Gadgeteering_DetonatorSwitch",
@@ -26570,10 +27093,10 @@
     "power_id": 944,
     "name": "Molotov Cocktail",
     "tier": null,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
+    "activation_type": "CLICK",
+    "activation_time": 1,
     "max_duration": null,
     "tick_rate": null,
     "cooldown": 60,
@@ -26581,8 +27104,13 @@
       "Target foes (5 max) 50 feet, 15 foot Sphere"
     ],
     "tooltip": "Deals Fire Damage and creates a Pyre Patch at your primary target for 10 sec, dealing Fire Damage every 1 sec to foes within 15ft. + Foes standing in the Pyre Patch have a 10% chance to be affected by Clinging Flames, causing Fire Damage every 2 sec for 12 sec. Clinging Flames may leap to other foes near the target.",
-    "tags": [],
-    "damage_type": [],
+    "tags": [
+      "Clinging Flames",
+      "Pyre Patch"
+    ],
+    "damage_type": [
+      "Fire"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Device_Molotov",
