@@ -61,6 +61,7 @@ export function AboutDialog({ onClose }: AboutDialogProps) {
               RetCon is looking for contributors to help maintain and improve
               both the project and its database over time.
             </p>
+            <p>Current contributors: Leucha, Ice13th</p>
           </section>
 
           <section>

@@ -240,7 +240,7 @@
           "maxPoints": 2,
           "name": "Armored",
           "icon": "/spec-icons/superstat/constitution/Specialization_Armored.png",
-          "tip": "Increases the amount of Defense you receive from items by 10/20%."
+          "tip": "Increases the amount of Defense you receive from items by 10/20/30%."
         },
         {
           "id": 8,

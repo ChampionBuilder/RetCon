@@ -12,6 +12,8 @@ At the core of the project is a freely accessible database intended to be mainta
 
 RetCon is looking for contributors to help maintain and improve both the project and its database over time.
 
+Current contributors: Leucha, Ice13th
+
 ## Development
 
 ```bash
