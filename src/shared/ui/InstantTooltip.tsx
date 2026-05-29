@@ -112,6 +112,8 @@ export function InstantTooltip() {
   const longPressTimeoutRef = useRef<number | null>(null);
   const tooltipRef = useRef<HTMLDivElement | null>(null);
   const [tooltip, setTooltip] = useState<TooltipState | null>(null);
+  const [showAdvancedPowerTooltip, setShowAdvancedPowerTooltip] =
+    useState(false);
 
   useLayoutEffect(() => {
     const tooltipElement = tooltipRef.current;
@@ -154,7 +156,7 @@ export function InstantTooltip() {
           : currentTooltip,
       );
     }
-  }, [tooltip]);
+  }, [tooltip, showAdvancedPowerTooltip]);
 
   useEffect(() => {
     const hoverMediaQuery = window.matchMedia(
@@ -259,6 +261,8 @@ export function InstantTooltip() {
     }
 
     function handleMouseOver(event: MouseEvent) {
+      setShowAdvancedPowerTooltip(event.shiftKey);
+
       if (
         event.target instanceof Element &&
         event.target.closest("[data-no-instant-tooltip]")
@@ -277,6 +281,8 @@ export function InstantTooltip() {
     }
 
     function handleMouseMove(event: MouseEvent) {
+      setShowAdvancedPowerTooltip(event.shiftKey);
+
       if (!activeElementRef.current) {
         return;
       }
@@ -362,6 +368,22 @@ export function InstantTooltip() {
       }
     }
 
+    function handleKeyDown(event: KeyboardEvent) {
+      if (event.key === "Shift") {
+        setShowAdvancedPowerTooltip(true);
+      }
+    }
+
+    function handleKeyUp(event: KeyboardEvent) {
+      if (event.key === "Shift") {
+        setShowAdvancedPowerTooltip(false);
+      }
+    }
+
+    function handleWindowBlur() {
+      setShowAdvancedPowerTooltip(false);
+    }
+
     if (hoverMediaQuery.matches) {
       document.addEventListener("mouseover", handleMouseOver);
       document.addEventListener("mousemove", handleMouseMove);
@@ -374,6 +396,9 @@ export function InstantTooltip() {
     document.addEventListener("pointercancel", handlePointerCancel);
     document.addEventListener("pointermove", handlePointerMove);
     document.addEventListener("pointerup", handlePointerUp);
+    document.addEventListener("keydown", handleKeyDown);
+    document.addEventListener("keyup", handleKeyUp);
+    window.addEventListener("blur", handleWindowBlur);
 
     return () => {
       document.removeEventListener("mouseover", handleMouseOver);
@@ -385,6 +410,9 @@ export function InstantTooltip() {
       document.removeEventListener("pointercancel", handlePointerCancel);
       document.removeEventListener("pointermove", handlePointerMove);
       document.removeEventListener("pointerup", handlePointerUp);
+      document.removeEventListener("keydown", handleKeyDown);
+      document.removeEventListener("keyup", handleKeyUp);
+      window.removeEventListener("blur", handleWindowBlur);
       clearLongPressTimeout();
       disconnectMutationObserver();
       releaseTooltipElement(activeElementRef.current);
@@ -395,9 +423,18 @@ export function InstantTooltip() {
     return null;
   }
 
+  const advantages =
+    tooltip.content.kind === "power" ? tooltip.content.data.advantages ?? [] : [];
+  const hasAdvantagePanel =
+    showAdvancedPowerTooltip && advantages.length > 0;
+
   return (
     <div
-      className="instant-tooltip"
+      className={
+        hasAdvantagePanel
+          ? "instant-tooltip instant-tooltip--with-advantages"
+          : "instant-tooltip"
+      }
       ref={tooltipRef}
       role="tooltip"
       style={{
@@ -407,7 +444,10 @@ export function InstantTooltip() {
       }}
     >
       {tooltip.content.kind === "power" ? (
-        <PowerTooltip tooltip={tooltip.content.data} />
+        <PowerTooltip
+          showAdvantages={showAdvancedPowerTooltip}
+          tooltip={tooltip.content.data}
+        />
       ) : tooltip.content.kind === "stat" ? (
         <StatTooltip data={tooltip.content.data} />
       ) : (

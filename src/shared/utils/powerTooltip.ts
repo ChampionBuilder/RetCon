@@ -1,5 +1,14 @@
 import type { Power } from "@/types/powers";
+import type { Advantage } from "@/types/advantages";
 import { getNormalizedPowerType, getPowerType } from "./powerTypes";
+
+export type AdvantageTooltipData = {
+  id: number;
+  name: string;
+  pointsCost: number | null;
+  tooltip: string | null;
+  tags: string[];
+};
 
 export type PowerTooltipData = {
   title: string;
@@ -11,6 +20,7 @@ export type PowerTooltipData = {
   rangeTags: string[];
   tags: string[];
   effects: string[];
+  advantages: AdvantageTooltipData[];
   fallbackText: string | null;
 };
 
@@ -106,6 +116,39 @@ function cleanTooltipText(tooltip: string | null | undefined) {
   );
 }
 
+function cleanMultilineTooltipText(tooltip: string | null | undefined) {
+  const text = tooltip
+    ?.replace(/<br\s*\/?>/gi, "\n")
+    .replace(/[ \t]+/g, " ")
+    .replace(/\n\s+/g, "\n")
+    .trim();
+
+  return text || null;
+}
+
+function getAdvantageTooltipData(
+  power: Power,
+  advantagesById: ReadonlyMap<number, Advantage> | null | undefined,
+) {
+  if (!advantagesById) {
+    return [];
+  }
+
+  return power.advantages
+    .map((advantageId) => advantagesById.get(advantageId))
+    .filter((advantage): advantage is Advantage => Boolean(advantage))
+    .filter((advantage) => advantage.name !== "Rank 2" && advantage.name !== "Rank 3")
+    .map((advantage) => ({
+      id: advantage.advantage_id,
+      name: advantage.name,
+      pointsCost: advantage.points_cost,
+      tooltip: cleanMultilineTooltipText(advantage.tooltip),
+      tags: (advantage.tags ?? [])
+        .map((tag) => formatIdentifier(tag))
+        .filter((tag): tag is string => Boolean(tag)),
+    }));
+}
+
 function splitSentences(text: string) {
   return text
     .split(/(?<=[.!?])\s+/)
@@ -136,6 +179,7 @@ function splitEffects(text: string) {
 
 export function getPowerTooltipData(
   power: Power | null | undefined,
+  advantagesById?: ReadonlyMap<number, Advantage> | null,
 ): PowerTooltipData | null {
   if (!power) {
     return null;
@@ -183,14 +227,16 @@ export function getPowerTooltipData(
     rangeTags,
     tags,
     effects: splitEffects(remainingText),
+    advantages: getAdvantageTooltipData(power, advantagesById),
     fallbackText: tooltipText || null,
   };
 }
 
 export function getPowerTooltipAttribute(
   power: Power | null | undefined,
+  advantagesById?: ReadonlyMap<number, Advantage> | null,
 ) {
-  const tooltip = getPowerTooltipData(power);
+  const tooltip = getPowerTooltipData(power, advantagesById);
 
   return tooltip ? JSON.stringify(tooltip) : undefined;
 }

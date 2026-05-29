@@ -3,4 +3,5 @@ export type Advantage = {
   name: string;
   points_cost: number | null;
   tooltip: string | null;
+  tags?: string[];
 };

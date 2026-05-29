@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, type MouseEvent } from "react";
+import { useEffect, useMemo, useRef, useState, type MouseEvent } from "react";
 import type { Advantage } from "@/types/advantages";
 import type { BuildSlot } from "@/types/builds";
 import type { Archetype, ArchetypeGroup } from "@/types/character";
@@ -129,6 +129,13 @@ export function BuildPanel({
   const [closedSections, setClosedSections] = useState<string[]>([]);
   const bodyRef = useRef<HTMLDivElement | null>(null);
   const slotElementsRef = useRef(new Map<number, HTMLDivElement>());
+  const advantagesById = useMemo(
+    () =>
+      new Map(
+        advantages.map((advantage) => [advantage.advantage_id, advantage]),
+      ),
+    [advantages],
+  );
 
   function toggleSection(sectionKey: string) {
     setClosedSections((currentClosedSections) =>
@@ -284,7 +291,10 @@ export function BuildPanel({
                           aria-disabled={isPowerLocked}
                           tabIndex={isPowerLocked ? -1 : undefined}
                           title={getPowerTooltipText(slot.power)}
-                          data-power-tooltip={getPowerTooltipAttribute(slot.power)}
+                          data-power-tooltip={getPowerTooltipAttribute(
+                            slot.power,
+                            advantagesById,
+                          )}
                           type="button"
                           onClick={(event: MouseEvent<HTMLButtonElement>) => {
                             event.stopPropagation();
@@ -369,7 +379,10 @@ export function BuildPanel({
                         <button
                           className="build-entry__name-button"
                           title={getPowerTooltipText(slot.power)}
-                          data-power-tooltip={getPowerTooltipAttribute(slot.power)}
+                          data-power-tooltip={getPowerTooltipAttribute(
+                            slot.power,
+                            advantagesById,
+                          )}
                           type="button"
                           onClick={(event: MouseEvent<HTMLButtonElement>) => {
                             event.stopPropagation();
@@ -465,7 +478,10 @@ export function BuildPanel({
                         <button
                           className="build-entry__name-button"
                           title={getPowerTooltipText(slot.power)}
-                          data-power-tooltip={getPowerTooltipAttribute(slot.power)}
+                          data-power-tooltip={getPowerTooltipAttribute(
+                            slot.power,
+                            advantagesById,
+                          )}
                           type="button"
                           onClick={(event: MouseEvent<HTMLButtonElement>) => {
                             event.stopPropagation();

@@ -11367,7 +11367,7 @@
       "50 feet",
       "45 degree Cone"
     ],
-    "tooltip": "Deals 430-1,221 Slashing Damage. + Has a 45-100% chance to Snare affected target for 13 sec, reducing their movement speed by 100%.",
+    "tooltip": "Deals Slashing Damage. + Has a 45-100% chance to Snare affected target for 13 sec, reducing their movement speed by 100%.",
     "tags": [
       "Snare"
     ],
@@ -11645,8 +11645,10 @@
       "Targets foe",
       "10 feet"
     ],
-    "tooltip": "Deals Ego damage and generates Energy. + Has a 15% chance to grant you a stack of Ego Leech",
-    "tags": [],
+    "tooltip": "Deals Ego damage and generates Energy. + Has a 15% chance to grant you a stack of Ego Leech. Ego Leech reduces the cost of your Mentalist powers by 5% for 15 sec. stacks up to 5 times.",
+    "tags": [
+      "Ego Leech"
+    ],
     "damage_type": [
       "Ego"
     ],
@@ -11674,9 +11676,14 @@
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Telekinesis, Energy Builder, 50 foot Ranged Single Target Damage Use your mind to launch Kinetic Darts at your enemies, gathering energy as you focus your will in this basic attack mode.",
-    "tags": [],
+    "range_tags": [
+      "Targets foe",
+      "50 feet"
+    ],
+    "tooltip": "Deals Ego damage and generates Energy. + Has a 15% chance to grant you a stack of Ego Leech. Ego Leech reduces the cost of your Mentalist powers. Ego Leech reduces the cost of your Mentalist powers by 5% for 15 sec. stacks up to 5 times.",
+    "tags": [
+      "Ego Leech"
+    ],
     "damage_type": [
       "Ego"
     ],
@@ -11703,13 +11710,20 @@
       5
     ],
     "activation_type": "COMBO",
-    "activation_time": "0,35-0,4-0,83",
+    "activation_time": "0,35-0,83",
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Telekinesis, 10 foot Melee 180/180/360 degree Cone Damage - Combo Deals Ego damage to the targets. Your chance to critically strike with this power increases by 5 (based on combo hit) chance to gain a stack of Ego Leech, or 100% per hit if affected by Ego Infusion.",
-    "tags": [],
+    "range_tags": [
+      "Targets foe",
+      "10 feet",
+      "180 degree Cone"
+    ],
+    "tooltip": "Deals Ego damage to the targets. + Your chance to critically strike with this power increases by 5 (based on combo hit) chance to gain a stack of Ego Leech, or 100% per hit if affected by Ego Infusion. + Ego Leech reduces the cost of your Mentalist powers. Ego Leech reduces the cost of your Mentalist powers by 5% for 15 sec. stacks up to 5 times.",
+    "tags": [
+      "Ego Leech",
+      "Ego Infusion"
+    ],
     "damage_type": [
       "Ego"
     ],
@@ -11735,12 +11749,15 @@
       5
     ],
     "activation_type": "COMBO",
-    "activation_time": "0,35-0,4-0,83",
+    "activation_time": "0,35-0,83",
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Telekinesis, 100 foot Ranged Single Target Combo Deals Ego damage to the target. Your chance to critically strike with this power increases by 5 (based on combo hit) chance to gain a stack of Ego Leech, or 100% per hit if affected by Ego Infusion.",
+    "range_tags": [
+      "Targets foe",
+      "100 feet"
+    ],
+    "tooltip": "Deals Ego damage to the target. + Your chance to critically strike with this power increases by 5 (based on combo hit) chance to gain a stack of Ego Leech, or 100% per hit if affected by Ego Infusion. + Ego Leech reduces the cost of your Mentalist powers. Ego Leech reduces the cost of your Mentalist powers by 5% for 15 sec. stacks up to 5 times.",
     "tags": [],
     "damage_type": [
       "Ego"
@@ -11770,9 +11787,14 @@
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Telekinesis, 10 foot Melee Single Target Damage - Stun Requires 1 power from Telekinesis or 2 non-Energy Building powers from any framework. Deals Ego damage and briefly Stuns the target.",
-    "tags": [],
+    "range_tags": [
+      "Targets foe",
+      "10 feet"
+    ],
+    "tooltip": "Deals Ego damage. + Briefly Stuns the target.",
+    "tags": [
+      "Stun"
+    ],
     "damage_type": [
       "Ego"
     ],
@@ -11802,9 +11824,15 @@
     "max_duration": null,
     "tick_rate": null,
     "cooldown": 3,
-    "range_tags": [],
-    "tooltip": "Telekinesis, 60 foot Lunge, Snare, and Root Requires 1 power from Telekinesis or 2 non-Energy Building powers from any framework. Lunges to the target, dealing Ego damage and Snaring them for 13 seconds. If the target is further than 20 feet away, they are also Rooted for 17 seconds.",
-    "tags": [],
+    "range_tags": [
+      "Targets foe",
+      "60 feet Lunge"
+    ],
+    "tooltip": "Lunges to the target, dealing Ego damage and Snaring them for 13 seconds. + If the target is further than 20 feet away, they are also Rooted.",
+    "tags": [
+      "Snare",
+      "Roots"
+    ],
     "damage_type": [
       "Ego"
     ],
@@ -11834,9 +11862,14 @@
     "max_duration": null,
     "tick_rate": 0.5,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Telekinesis, 10 foot PBAoE Melee Sphere - Damage Requires 1 power from Telekinesis or 2 non-Energy Building powers from any framework. Deals Ego damage to targets. Your chance to critically strike with this power is increased by 5 chance per hit to apply a stack of Ego Leech.",
-    "tags": [],
+    "range_tags": [
+      "Affects foe (5 max)",
+      "10 foot Sphere"
+    ],
+    "tooltip": "Deals Ego damage to targets. + Your chance to critically strike with this power is increased by 5% chance for each stack of Ego Leech you have. + Has a 15% chance to grants you a stack of Ego Leech every hit. Ego Leech reduces the cost of your Mentalist powers by 5% for 15 sec. stacks up to 5 times.",
+    "tags": [
+      "Ego Leech"
+    ],
     "damage_type": [
       "Ego"
     ],
@@ -11863,14 +11896,16 @@
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
-    "tooltip": "Telekinesis, Offensive Passive Requires 1 power from Telekinesis or 2 non-Energy Building powers from any framework. + Can be slotted in an Offensive or Balanced passive power slot. + Increases all of your Paranormal Melee damage (Dimensional, Ego, Magic), and increases all other Paranormal damage to a lesser degree. These increases scale with your Super Stats. + Provides a small amount of damage resistance. This effect scales with your Super Stats. + Provides a cost reduction for all Mentalist (Telekinesis, Telepathy) powers. This effect scales with your Recovery.",
+    "tooltip": "Increases all of your Paranormal Melee damage, and increases all other Paranormal damage to a lesser degree. + Provides a small amount of damage resistance to all damage and an additional resistance to Ego damage. + Provides a cost reduction for all Mentalist powers. This effect scales with your Recovery.",
     "tags": [],
     "damage_type": [
       "Dimensional",
       "Ego",
       "Magic"
     ],
-    "scaling_stats": [],
+    "scaling_stats": [
+      "REC"
+    ],
     "power_dependency": [],
     "icon_override": "Telekinesis_IdMastery",
     "is_disabled": false
@@ -11893,7 +11928,7 @@
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
-    "tooltip": "Telekinesis, Form (Dexterity) Requires 1 power from Telekinesis or 2 non-Energy Building powers from any framework. Gives you stacks of Focus, increasing your melee damage, as well as your ranged damage to a lesser degree. + You gain a stack each time you apply, refresh, or consume a Mental State. + Mental State effects include Ego Leech, Stress, Dependency, Despondency, and Fear. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
+    "tooltip": "Gives you a stacking buff that increases your melee damage, as well as your ranged damage to a lesser degree. + You gain a stack each time you apply, refresh, or consume a Mental State. + Mental State effects include Ego Leech, Stress, Dependency, Despondency, and Fear. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
     "tags": [
       "Focus"
     ],
@@ -11922,8 +11957,10 @@
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
-    "tooltip": "Telekinesis, Form (Dexterity) Requires 1 power from Telekinesis or 2 non-Energy Building powers from any framework. Gives you stacks of Precision, increasing your ranged damage, as well as your melee damage to a lesser degree. + You gain a stack each time you apply, refresh, or consume a Mental State. + Mental State effects include Ego Leech, Stress, Dependency, Despondency, and Fear. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
-    "tags": [],
+    "tooltip": "Gives you a stacking buff that increases your ranged damage, as well as your melee damage to a lesser degree. + You gain a stack each time you apply, refresh, or consume a Mental State. + Mental State effects include Ego Leech, Stress, Dependency, Despondency, and Fear. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
+    "tags": [
+      "Precision"
+    ],
     "damage_type": [],
     "scaling_stats": [
       "DEX"
@@ -11948,9 +11985,17 @@
     "max_duration": null,
     "tick_rate": null,
     "cooldown": 3,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
+    "range_tags": [
+      "Targets non-destructible foe",
+      "100 feet"
+    ],
+    "tooltip": "Deals Ego Damage to your target. + If there is a destructable object within 50ft of you, deals a additional Ego Damage based on the Mass of the object to your target. Also deals Ego Damage to other targets within 15ft. + Objects of Mass 7 outright defeat Henchman or Villain rank enemies. + All affected targets are Disoriented, causing their damage to be reduced by 10% and their movement speed reduced by 50% for 12 sec. + Knocks down your primary target if a object with a Mass of 2 or less is thrown at them. + Knocks back your primary target if a object with a Mass of 3 or more is thrown at them. + Stuns all targets for a short time if a object with a Mass of 3 or more is thrown at them.",
+    "tags": [
+      "Knock Down",
+      "Knock Back",
+      "Stun",
+      "Disorient"
+    ],
     "damage_type": [
       "Ego"
     ],
@@ -11978,9 +12023,16 @@
     "max_duration": 1.33,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Telekinesis, 50 foot Ranged 15 foot Sphere - AoE Damage and Disorient Requires 1 power from Telekinesis or 2 non-Energy Building powers from any framework. Deals Ego damage to targets. Has a 34-100Disorient chance (based on charge time) to apply Ego Leech for every target you hit.",
-    "tags": [],
+    "range_tags": [
+      "Targets foe (5 max)",
+      "50feet",
+      "15 foot Sphere"
+    ],
+    "tooltip": "Deals Ego Damage to targets. + Has a 34-100% chance to Disorient each target for 12 sec. Disoriented targets have their damage reduced by 10% and their movement speed reduced by 50%. + Has a 34-100% chance to apply Ego Leech to you for each target hit. Ego Leech decreases the cost of your Mentalist abilities by 5% for 15 sec. Stacks up to 5 times.",
+    "tags": [
+      "Ego Leech",
+      "Disorient"
+    ],
     "damage_type": [
       "Ego"
     ],
@@ -12009,9 +12061,15 @@
     "max_duration": null,
     "tick_rate": null,
     "cooldown": 10,
-    "range_tags": [],
-    "tooltip": "Telekinesis, 50 foot Ranged Single Target - Knock To Damage Requires 1 power from Telekinesis or 2 non-Energy Building powers from any framework. Deals Ego damage and Knocks your target to you. Grants a stack of Ego Leech.",
-    "tags": [],
+    "range_tags": [
+      "Targets foe",
+      "50 feet"
+    ],
+    "tooltip": "Deals Ego Damage. + Your target is Knocked to you. + Gives you a stack of Ego Leech. Ego Leech decreases the cost of your Mentalist abilities by 5% for 15 sec. Stacks up to 5 times.",
+    "tags": [
+      "Ego Leech",
+      "Knock Tp"
+    ],
     "damage_type": [
       "Ego"
     ],
@@ -12034,8 +12092,10 @@
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
-    "tooltip": "Energy Unlock. Innate Passive/Recovery/Endurance. + Geenrates energy every 3 seconds for 6 seconds every time you apply a stack of Ego Leech. + The energy gained scales with your Recovery, and to a lesser degree, your Endurance.",
-    "tags": [],
+    "tooltip": "Whenever you apply a stack of Ego Leech, you gain energy every 3 seconds for 6 seconds. + The energy gained scales with your Recovery, and to a lesser degree, your Endurance. + This effect does not stack, but can be refreshed",
+    "tags": [
+      "Ego Leech"
+    ],
     "damage_type": [],
     "scaling_stats": [
       "REC",
@@ -12063,7 +12123,7 @@
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
-    "tooltip": "Telekinesis, Block Requires 1 power from Telekinesis or 2 non-Energy Building powers from any framework. While blocking, grants 300 resistance to all Non-Physical damage, increases your resistance to Holds and Knocks, and reduces your movement speed.",
+    "tooltip": "While blocking, grants 320/385/460% resistance to all Physical damage, 250/300/360% resistance to all Non-Physical damage. + Increases your resistance to Holds and Knocks, and reduces your movement speed. + Gives you energy when struck by an attack while blocking. This amount scales with your Recovery and the amount of damage you take.",
     "tags": [],
     "damage_type": [],
     "scaling_stats": [],
@@ -12091,9 +12151,14 @@
     "max_duration": 0.83,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Telekinesis, 10 foot Melee Single Target - Damage and Refresh Requires 3 powers from Telekinesis or 4 non-Energy Building powers from any framework. Deals Ego damage and refreshes your stacks of Ego Leech.",
-    "tags": [],
+    "range_tags": [
+      "Targets foe",
+      "10 feet"
+    ],
+    "tooltip": "Deals Ego damage twice. +Refreshes your stacks of Ego Leech.",
+    "tags": [
+      "Ego Leech"
+    ],
     "damage_type": [
       "Ego"
     ],
@@ -12121,9 +12186,15 @@
     "max_duration": 5,
     "tick_rate": 1,
     "cooldown": 10,
-    "range_tags": [],
-    "tooltip": "Telekinesis, 50 foot Ranged Single Target Damage and Incapacitate Requires 3 powers from Telekinesis or 4 non-Energy Building powers from any framework. Deals Ego damage to the target (increasing with each pulse). After 1 second, Incapacitates the target, with each additional pulse refreshing a portion of the duration and durability of the Incapacitate effect.",
-    "tags": [],
+    "range_tags": [
+      "Targets non-destructible foe",
+      "50 feet"
+    ],
+    "tooltip": "Deals increasing Ego Damage to the target. +  You have a 20% chance every hit to gain a stack of Ego Leech. + After maintaining this power for 1 second, it Incapacitates the target for up to and refreshes a portion of the duration and durability of the Incapacitate every 1 sec you maintain it.",
+    "tags": [
+      "Ego Leech",
+      "Incapacitate"
+    ],
     "damage_type": [
       "Ego"
     ],
@@ -12150,9 +12221,14 @@
     "max_duration": 1.83,
     "tick_rate": null,
     "cooldown": 10,
-    "range_tags": [],
-    "tooltip": "Telekinesis, 50 foot Ranged Single Target Hold Requires 3 powers from Telekinesis or 4 non-Energy Building powers from any framework. Paralyzes the target.",
-    "tags": [],
+    "range_tags": [
+      "Targets non-destructible foe",
+      "50 feet"
+    ],
+    "tooltip": "Paralyzes the target.",
+    "tags": [
+      "Hold"
+    ],
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
@@ -12177,7 +12253,7 @@
     "tick_rate": null,
     "cooldown": 90,
     "range_tags": [],
-    "tooltip": "Telekinesis, Active Offense Requires 3 powers from Telekinesis or 4 non-Energy Building powers from any framework. Increases your damage strength as well as your Ego stat. Applies Break Free damage to any Holds, Roots, or Disables affecting you. Activates a shared cooldown of 90 seconds with other Active Offense powers.",
+    "tooltip": "Grants a 42/50/60% increase to all damage. + Increase your Ego by 66/80/95 points. + Applies Break Free damage to any Holds, Roots, or Disables affecting you. + Activates a shared cooldown of 90 seconds on all Active Offenses.",
     "tags": [],
     "damage_type": [],
     "scaling_stats": [],
@@ -12205,9 +12281,15 @@
     "max_duration": 4,
     "tick_rate": 0.5,
     "cooldown": null,
-    "range_tags": [],
+    "range_tags": [
+      "Targets foe (5 max)",
+      "100feet",
+      "10 foot Sphere"
+    ],
     "tooltip": "Telekinesis, 100 foot Ranged 10 foot Sphere - AoE Damage Requires 3 powers from Telekinesis or 4 non-Energy Building powers from any framework. Deals Ego damage to targets. Your chance to critically strike with this power is increased by 5 chance per hit to gain a stack of Ego Leech.",
-    "tags": [],
+    "tags": [
+      "Ego Leech"
+    ],
     "damage_type": [
       "Ego"
     ],
@@ -12236,9 +12318,17 @@
     "max_duration": 1.83,
     "tick_rate": null,
     "cooldown": 10,
-    "range_tags": [],
-    "tooltip": "Telekinesis, 25 foot Sphere PBAoE - Ranged Damage Requires 3 powers from Telekinesis or 4 non-Energy Building powers from any framework. Deals Ego damage to nearby targets. If charged less than a second, Knocks Down targets. If charged for more than a second, Knocks Back targets based on charge time. Charging this power for at least 1 second applies Id Surge to the user.",
-    "tags": [],
+    "range_tags": [
+      "Affects foe (5 max)",
+      "25 foot Sphere"
+    ],
+    "tooltip": "Deals Ego Damage to nearby targets. + If charged less than a second, Knocks Down affected targets. + If charged more than a second, Knocks Back affected targets. + Charging this power for at least 1 sec applies the ld Surge buff, giving you +15% Ego Damage strength and +13 Ego for 15 sec. + Each target hit gives you a 30-100% chance to gain a stack of Ego Leech. Ego Leech decreases the cost of your Mentalist abilities by 5% for 15 sec. Stacks up to 5 times.",
+    "tags": [
+      "Ego Leech",
+      "Id Surge",
+      "Knock Down",
+      "Knock Back"
+    ],
     "damage_type": [
       "Ego"
     ],
@@ -12268,9 +12358,16 @@
     "max_duration": null,
     "tick_rate": null,
     "cooldown": 10,
-    "range_tags": [],
-    "tooltip": "Telekinesis, 100 foot 10 foot Sphere - AoE Damage and Refresh Requires 3 powers from Telekinesis or 4 non-Energy Building powers from any framework. Deals Ego damage and refreshes your stacks of Ego Leech. Your primary target is Knocked Down.",
-    "tags": [],
+    "range_tags": [
+      "Targets foe (5 max)",
+      "100feet",
+      "10 foot Sphere"
+    ],
+    "tooltip": "Deals Ego Damage. + Knocks Down your primary target. + Refreshes all of your stacks of Ego Leech.",
+    "tags": [
+      "Ego Leech",
+      "Knock Down"
+    ],
     "damage_type": [
       "Ego"
     ],
@@ -12300,9 +12397,16 @@
     "max_duration": 1.83,
     "tick_rate": null,
     "cooldown": 10,
-    "range_tags": [],
-    "tooltip": "Telekinesis, 50 foot Ranged 60 degree Cone AoE Damage Requires 3 powers from Telekinesis or 4 non-Energy Building powers from any framework. Deals Ego damage to targets and knocks them back based on charge time. Has a 34-100% chance (based on charge time) to apply a stack of Ego Leech per target hit.",
-    "tags": [],
+    "range_tags": [
+      "Targets foe (5 max)",
+      "50 feet",
+      "60 degree Cone"
+    ],
+    "tooltip": "Deals Ego Damage to all targets. + Knocks Back affected targets. + Has a 34-100% chance to apply a stack of Ego Leech to you for each target hit. Ego Leech decreases the cost of your Mentalist abilities by 5% for 15 sec. Stacks up to 5 times.",
+    "tags": [
+      "Ego Leech",
+      "Knock Back"
+    ],
     "damage_type": [
       "Ego"
     ],
@@ -12330,9 +12434,15 @@
     "max_duration": 0.67,
     "tick_rate": null,
     "cooldown": 10,
-    "range_tags": [],
-    "tooltip": "Telekinesis, 10 foot Melee Single Target Damage Requires 5 powers from Telekinesis or 6 non-Energy Building powers from any framework. Deals Ego damage to the target. When fully charged, this power consumes all stacks of Ego Leech to deal additional damage to your primary target and 25% of that damage to targets within 10 feet of that target. Grants Ego Infusion for 2 seconds per stack consumed. Ego Infusion gives you a stack of Ego Leech every 2 seconds. Applies Ego Annihilation to the target for 2 sec. This duration is increased by 2 seconds for every stack of Ego Leech consumed. Ego Annihilation deals Ego damage every 2 seconds.",
-    "tags": [],
+    "range_tags": [
+      "Targets foe",
+      "10 feet"
+    ],
+    "tooltip": "Deals Ego Damage to your target. + When fully charged, this power consumes all stacks of Ego Leech and deals an additional Ego Damage to your target for each stack consumed. + Applies a stack of Ego Annihilation to your target for 2 sec. This duration increases by 2 sec for each stack of Ego Leech consumed. Ego Annihilation deals Ego Damage every 2 sec. + In addition, grants you Ego Infusion for 2 seconds for each stack consumed. Ego Infusion grants you a stack of Ego Leech every 2 seconds.",
+    "tags": [
+      "Ego Leech",
+      "Rupture"
+    ],
     "damage_type": [
       "Ego"
     ],
@@ -12361,12 +12471,15 @@
     "tick_rate": null,
     "cooldown": 10,
     "range_tags": [
-      "Targets foe (5 max)",
+      "Targets foe (7 max)",
       "100 feet",
       "25 foot Sphere"
     ],
-    "tooltip": "Ranged AoE Damage",
-    "tags": [],
+    "tooltip": "Deals Ego Damage to all targets within 25 ft feet of your primary target. + This power consumes all stacks of Ego Leech, dealing additional Ego Damage for each stack consumed. + In addition, it grants you Ego Infusion for 2 seconds for each stack consumed. Ego Infusion grants you a stack of Ego Leech every 2 seconds.",
+    "tags": [
+      "Ego Leech",
+      "Rupture"
+    ],
     "damage_type": [
       "Ego"
     ],
@@ -12395,9 +12508,14 @@
     "max_duration": 4,
     "tick_rate": 0.5,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Telekinesis, 100 foot Ranged Single Target Damage Requires 5 powers from Telekinesis or 6 non-Energy Building powers from any framework. Deals Ego damage to the target. This damage is increased by 4% per stack of Ego Leech.",
-    "tags": [],
+    "range_tags": [
+      "Targets foe",
+      "100 feet"
+    ],
+    "tooltip": "Deals Ego Damage every 0.5 sec to your target. + The base damage of this power is increased by 4% for each stack of Ego leech on you.",
+    "tags": [
+      "Ego Leech"
+    ],
     "damage_type": [
       "Ego"
     ],
@@ -12424,9 +12542,15 @@
     "max_duration": 1.17,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Telekinesis, 100 foot - Ranged Single Target Damage Requires 5 powers from Telekinesis or 6 non-Energy Building powers from any framework. Deals Ego damage to the target. When fully charged, this power consumes all stacks of Ego Leech to deal additional damage to your primary target and 25% of that damage to targets within 10 feet of that target. Grants Ego Infusion for 2 seconds per stack consumed. Ego Infusion gives you a stack of Ego Leech every 2 seconds.",
-    "tags": [],
+    "range_tags": [
+      "Targets foe",
+      "100 feet"
+    ],
+    "tooltip": "Deals Ego Damage to your target. + When fully charged, this power consumes all stacks of Ego Leech and deals an additional Ego Damage to your target for each stack consumed. + Applies a stack of Ego Annihilation to your target for 2 sec. This duration increases by 2 sec for each stack of Ego Leech consumed. Ego Annihilation deals Ego Damage every 2 sec. + In addition, grants you Ego Infusion for 2 seconds for each stack consumed. Ego Infusion grants you a stack of Ego Leech every 2 seconds.",
+    "tags": [
+      "Ego Leech",
+      "Rupture"
+    ],
     "damage_type": [
       "Ego"
     ],
@@ -12455,9 +12579,15 @@
     "max_duration": 1.83,
     "tick_rate": null,
     "cooldown": 10,
-    "range_tags": [],
-    "tooltip": "Telekinesis, 25 foot Sphere - PBAoE Ranged Damage and Stun Requires 5 powers from Telekinesis or 6 non-Energy Building powers from any framework. Deals Ego damage to affected targets and Stuns them for 2 seconds. Each target hit grants you a stack of Ego Leech.",
-    "tags": [],
+    "range_tags": [
+      "Affects foe (5 max)",
+      "25 foot Sphere"
+    ],
+    "tooltip": "Deals Ego Damage to affected targets. + Stuns targets for a short time. + Each target hit gives you a stack of Ego Leech. Ego Leech decreases the cost of your Mentalist abilities by 5% for 15 sec. Stacks up to 5 times.",
+    "tags": [
+      "Ego Leech",
+      "Stun"
+    ],
     "damage_type": [
       "Ego"
     ],
@@ -12484,8 +12614,11 @@
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Telepathy, Energy Builder, 50 foot Ranged Single Target Damage Assault your foe with this psychic attack, damaging their body as you ready yourself for greater attacks.",
+    "range_tags": [
+      "Targets foe",
+      "50 feet"
+    ],
+    "tooltip": "Deals Ego damage and generates Energy.",
     "tags": [],
     "damage_type": [
       "Ego"
@@ -12516,9 +12649,14 @@
     "max_duration": 1.5,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
+    "range_tags": [
+      "Targets foe",
+      "100 feet"
+    ],
+    "tooltip": "Deals Ego Damage. + Has a 25-100% chance to Disorient the target for 12 sec. Disoriented targets have their damage reduced by 10% and their movement speed reduced by 50%.",
+    "tags": [
+      "Disorient"
+    ],
     "damage_type": [
       "Ego"
     ],
@@ -12545,9 +12683,17 @@
     "max_duration": 1.5,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
+    "range_tags": [
+      "Targets foe",
+      "100 feet"
+    ],
+    "tooltip": "Deals Ego Damage to your target. + This power consumes your Regret, Dependency, and Stress debuffs for bonus damage and effects. + This power deals additional Ego Damage for each stack of a debuff consumed. + For each Stress stack, Mind Break ignores 6.5% of the target's resistance. + For each Regret stack, Mind Break restores Energy to you. + For each Dependency stack, Mind Break heals allies near target foe.",
+    "tags": [
+      "Regret",
+      "Dependency",
+      "Stress",
+      "Rupture"
+    ],
     "damage_type": [
       "Ego"
     ],
@@ -12574,7 +12720,7 @@
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
-    "tooltip": "Telepathy, Slotted Hybrid Passive Requires 1 power from Telepathy or 2 non-Energy Building powers from any framework. + Can be used in any passive slot. + Your Ego damage over time effects deal increased damage and ignore 10% damage resistance. + Increases your Ego damage resistance and restores energy whenever you take Ego damage. + Grants a power cost discount to all Mentalist powers. + Increases your Aggression Stealth and reduces your Threat Generation.",
+    "tooltip": "Increase your Ego Damage Over Time and make them ignore 10% of the target's resistance. + You gain Ego Damage Resistance. + You gain a small amount of energy when you suffer Ego Damage. + Grants Power Cost Discount to all Mentalist powers. + In addition, you gain Aggression Stealth and reduced threat generation. Agression Stealth reduces the range at which you will aggro foes.",
     "tags": [],
     "damage_type": [
       "Ego"
@@ -12601,9 +12747,14 @@
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Telepathy, 50 foot Ranged Single Target Placate Requires 1 power from Telepathy or 2 non-Energy Building powers from any framework. You are able to subtly convince the target that you are not a threat, never mind that you just beat up a nearby group of their friends.",
-    "tags": [],
+    "range_tags": [
+      "Targets foe",
+      "50 feet"
+    ],
+    "tooltip": "Placate the target for I0 sec, preventing them from attacking you. + Reduces your threat against the target by threat each time you use this power. + Disorients the target. Disoriented targets have their damage reduced by 10% and their movement speed reduced by 50%",
+    "tags": [
+      "Disorient"
+    ],
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
@@ -12628,9 +12779,16 @@
     "max_duration": 1.5,
     "tick_rate": null,
     "cooldown": 15,
-    "range_tags": [],
-    "tooltip": "Telepathy, 50 foot Ranged 0-15 foot Sphere AoE Sleep Requires 1 power from Telepathy or 2 non-Energy Building powers from any framework. The strength of your mind forces slumber over your enemies.",
-    "tags": [],
+    "range_tags": [
+      "Targets non-destructible foe (7 max)",
+      "50 feet",
+      "0-15 foot Sphere"
+    ],
+    "tooltip": "Puts your foes to Sleep. + Any damage they take will awaken them, and when they awaken they are Disoriented. Disoriented targets have their damage reduced by 10% and their movement speed reduced by 50%. + Charging this power increases the area of effect.",
+    "tags": [
+      "Sleep",
+      "Disorient"
+    ],
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
@@ -12658,9 +12816,15 @@
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Telepathy, 25 foot Sphere PBAoE DoT Requires 1 power from Telepathy or 2 non-Energy Building powers from any framework. This ability unleashes sprites composed of psychic energy to assault and harass your enemies.",
-    "tags": [],
+    "range_tags": [
+      "Affects non-destructible foe (5 max)",
+      "25 foot Sphere"
+    ],
+    "tooltip": "Deals Ego Damage every 1 sec for 10 sec to all targets. + Has a 10% chance every hit to Disorient the target, causing their damage to be reduced by 10% and their movement speed reduced by 50% for 12 sec. + Damage dealt by this power doesn't break Sleep effects.",
+    "tags": [
+      "Sleep",
+      "Disorient"
+    ],
     "damage_type": [
       "Ego"
     ],
@@ -12686,8 +12850,11 @@
     "max_duration": 5,
     "tick_rate": 0.5,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Telepathy, 50 foot Ranged Single Target Heal Requires 1 power from Telepathy or 2 non-Energy Building powers from any framework. Using the power of your trained mind you are able to speed the healing of wounds.",
+    "range_tags": [
+      "Targets friend",
+      "50 feet"
+    ],
+    "tooltip": "Heals your target every 0.5 sec. + The amount healed increases as you maintain this power",
     "tags": [],
     "damage_type": [],
     "scaling_stats": [],
@@ -12714,9 +12881,16 @@
     "max_duration": null,
     "tick_rate": null,
     "cooldown": 8,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
+    "range_tags": [
+      "Targets foe (5 max)",
+      "50 feet",
+      "20 foot Sphere"
+    ],
+    "tooltip": "Deals Ego Damage every 1 sec for 6 sec to affected targets. + When Mental Leech expires it applies Dependency to the target. Dependency heals an ally near the foe every 0.5 seconds for 20 sec and can stack up to 3 times. + When this power expires, refreshes all of your stacks of Dependency.",
+    "tags": [
+      "Dependency",
+      "DoT"
+    ],
     "damage_type": [
       "Ego"
     ],
@@ -12744,9 +12918,16 @@
     "max_duration": null,
     "tick_rate": null,
     "cooldown": 8,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
+    "range_tags": [
+      "Targets foe (5 max)",
+      "50 feet",
+      "10 foot Sphere"
+    ],
+    "tooltip": "Deals Ego Damage every 1 sec for 6 sec to all targets. + When Shadow of Doubt expires it applies Regret to the target. Regret causes -8% all damage strength for 20 sec to affected targets and can stack up to 3 times.",
+    "tags": [
+      "Regret",
+      "DoT"
+    ],
     "damage_type": [
       "Ego"
     ],
@@ -12769,7 +12950,7 @@
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
-    "tooltip": "Energy Unlock. Innate Passive/Presence/Recovery. + Generates energy every time you Hold with a Telepathy power or whenever you damage a Held, Confused, or Disoriented target with your Telepathy attacks. + This effect can only occur once every 3 seconds. + The energy gained scales with your Presence, and to a lesser degree, your Recovery.",
+    "tooltip": "Whenever you Hold a target, or attack a Held, Confused or Disoriented target, you gain energy every 3 seconds for 6 seconds. + The energy gained scales with your Presence, and to a lesser degree, your Recovery. + This effect does not stack, but can be refreshed",
     "tags": [],
     "damage_type": [],
     "scaling_stats": [
@@ -12797,9 +12978,14 @@
     "max_duration": 1,
     "tick_rate": null,
     "cooldown": 25,
-    "range_tags": [],
-    "tooltip": "Telepathy, 100 foot Ranged Single Target Debuff Requires 3 powers from Telepathy or 4 non-Energy Building powers from any framework. You are able to bend weak minded individuals to server you. This power can be unlocked by purchasing the Psionic Hair and Mind Control Power item from the Zen Store.",
-    "tags": [],
+    "range_tags": [
+      "Targets non-destructible foe",
+      "100 feet"
+    ],
+    "tooltip": "If your target is a Henchmen, Villain or Enforcer, Corrupts them for 10 sec, forcing them to fight for you. + After Corrupted expires, targets have their health reduced by a few %",
+    "tags": [
+      "Corrupt"
+    ],
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
@@ -12825,9 +13011,14 @@
     "max_duration": 4,
     "tick_rate": 0.5,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Telepathy, 50 foot Ranged Single Target Damage and Self Heal Requires 3 powers from Telepathy or 4 non-Energy Building powers from any framework. Deals Ego damage to the target, healing you as you deal damage.",
-    "tags": [],
+    "range_tags": [
+      "Targets foe",
+      "50 feet"
+    ],
+    "tooltip": "Deals Ego Damage to your target and you heals you every 0.5 seconds.",
+    "tags": [
+      "Life Drain"
+    ],
     "damage_type": [
       "Ego"
     ],
@@ -12853,9 +13044,14 @@
     "max_duration": 1,
     "tick_rate": null,
     "cooldown": 15,
-    "range_tags": [],
-    "tooltip": "Telepathy, 100 foot Ranged Single Target Confuse and Debuff Requires 3 powers from Telepathy or 4 non-Energy Building powers from any framework. Flashing lights, spooky voices, a barrage of twisting images -- one of your mental assaults will certainly confuse your target.",
-    "tags": [],
+    "range_tags": [
+      "Targets foe",
+      "100 feet"
+    ],
+    "tooltip": "If a target is a Henchmen, Villain or Enforcer, Confuses them, causing them to attack targets randomly.",
+    "tags": [
+      "Confuse"
+    ],
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
@@ -12879,9 +13075,14 @@
     "max_duration": null,
     "tick_rate": null,
     "cooldown": 45,
-    "range_tags": [],
-    "tooltip": "Telepathy, 50 foot Single Target Threat Wipe Requires 3 powers from Telepathy or 4 non-Energy Building powers from any framework.",
-    "tags": [],
+    "range_tags": [
+      "Targets non-destructible foe",
+      "100 feet"
+    ],
+    "tooltip": "Wipes your threat from the target and places you in Stealth for 4 seconds. + Shares a 30 second cooldown with other Threat Wipe abilities.",
+    "tags": [
+      "Stealth"
+    ],
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
@@ -12905,8 +13106,11 @@
     "max_duration": 3,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Telepathy, 100 foot Ranged Single Target Heal Requires 3 powers from Telepathy or 4 non-Energy Building powers from any framework. You are able to use your mental training to heal yourself and your allies.",
+    "range_tags": [
+      "Targets friend",
+      "100 feet"
+    ],
+    "tooltip": "Heals the target. + When healing a target other than yourself and not charged, you gain Energy.",
     "tags": [],
     "damage_type": [],
     "scaling_stats": [],
@@ -12931,8 +13135,11 @@
     "max_duration": 1,
     "tick_rate": null,
     "cooldown": 15,
-    "range_tags": [],
-    "tooltip": "Telepathy, 50 foot Ranged Single Target Debuff Requires 3 powers from Telepathy or 4 non-Energy Building powers from any framework. Creates a feedback loop in the minds of your enemies, causing them to take damage whenever they attempt to harm another.",
+    "range_tags": [
+      "Targets foe",
+      "50 feet"
+    ],
+    "tooltip": "Creates a Vortex for 24 sec that causes up to 5 targets within 25ft to take Ego Damage if they deal damage to any target. + If they continue to deal damage, the amount of damage dealt to them by the Vortex increases.",
     "tags": [],
     "damage_type": [
       "Ego"
@@ -12960,9 +13167,14 @@
     "max_duration": 1,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Telepathy, Uncontrolled Pet Requires 3 powers from Telepathy or 4 non-Energy Building powers from any framework. You manifest a psychokinetic nightmare that assaults your target with haunting and brutal attacks.",
-    "tags": [],
+    "range_tags": [
+      "Targets non-destructible foe",
+      "50 feet"
+    ],
+    "tooltip": "Creates a Larval Horror to fight for you. It is unable to move, and will attack your target in melee range with its Mindworm Bite, dealing Ego Damage to your foes. + When fully charged, you also summon an Etherhound to attack your foes. It will use Ego Bite on them, dealing Ego Damage. It will also occasionaly use Ego Blast, dealing Ego Damage and Disorienting them for 12 sec. Disoriented targets have their damage reduced by 6% and their movement speed reduced by 10%.",
+    "tags": [
+      "Disorient"
+    ],
     "damage_type": [
       "Ego"
     ],
@@ -12988,9 +13200,16 @@
     "max_duration": 1,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
+    "range_tags": [
+      "Targets foe",
+      "50 feet"
+    ],
+    "tooltip": "Summons an entity for 21 sec that deals Ego Damage whenever it attacks. + Will summon up to 3 additional entities if nearby foes are affected by a Hold, Sleep, or Confuse.",
+    "tags": [
+      "Hold",
+      "Sleep",
+      "Confuse"
+    ],
     "damage_type": [
       "Ego"
     ],
@@ -13017,9 +13236,14 @@
     "max_duration": 5,
     "tick_rate": 1,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Telepathy, 25 foot Sphere PBAoE Ranged Damage and Hold Requires 5 powers from Telepathy or 6 non-Energy Building powers from any framework. Summon a storm of mental energy and press it into action, damaging the foes daring enough to come close to you.",
-    "tags": [],
+    "range_tags": [
+      "Affects non-destructible foe (5 max)",
+      "25 foot Sphere"
+    ],
+    "tooltip": "Deals increasing Ego Damage to nearby targets. + After maintaining this power for 1 sec, it Incapacitates the target for up to and refreshes a portion of the duration and durability of the Incapacitate every 1 sec you maintain it.",
+    "tags": [
+      "Incapacitate"
+    ],
     "damage_type": [
       "Ego"
     ],
@@ -13047,9 +13271,16 @@
     "max_duration": 1.83,
     "tick_rate": null,
     "cooldown": 12,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
+    "range_tags": [
+      "Targets foe (5 max)",
+      "50 feet",
+      "10 foot Sphere"
+    ],
+    "tooltip": "Deals Ego Damage every 1 sec for 16 sec to all targets. + If not fully charged, Stuns affected targets for a short time. + If fully charged instead Paralyzes affected targets.",
+    "tags": [
+      "Stun",
+      "Hold"
+    ],
     "damage_type": [
       "Ego"
     ],
@@ -13076,8 +13307,11 @@
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Telepathy, 50 foot Ranged Single Friend Shield and Heal Requires 5 powers from Telepathy or 6 non-Energy Building powers from any framework. Activating this power is a true statement of mind over matter, granting your target a damage absorbing shield, which can heal your target.",
+    "range_tags": [
+      "Targets friend",
+      "50 feet"
+    ],
+    "tooltip": "Shields your target, absorbing damage for 8 sec. + After 8 sec, the target is healed for twice the remaining Shield amount.",
     "tags": [],
     "damage_type": [],
     "scaling_stats": [],
@@ -13103,12 +13337,15 @@
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
-    "tooltip": "Passive (Offense). Slotted Offensive Passive. + Increases your Paranormal damage. + Increases your Physical damage by a lesser amount.+ Increases your Ego damage resistance. + Increases your resistance to all damage by a lesser amount. + Grants a small power cost discount to Mentalist powers. + Recovers Energy when you take Ego damage, scaling with your Equilibrium.",
+    "tooltip": "Increases all of your Paranormal Damage, and increases Physical Damage to a lesser degree. + Provides a small amount of damage resistance to all damage and an additional resistance to Ego damage. + You gain energy whenever you suffer Ego Damage. + Provides a cost reduction for all Mentalist powers. This effect scales with your Recovery.",
     "tags": [],
     "damage_type": [
       "Dimensional",
       "Ego",
-      "Magic"
+      "Magic",
+      "Crushing",
+      "Piercing",
+      "Slashing"
     ],
     "scaling_stats": [],
     "power_dependency": [],
@@ -13132,7 +13369,7 @@
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
-    "tooltip": "Form (Intelligence or Presence). Buff/Form/Manipulator. Gives you a stacking buff that increases the magnitude of Stuns, Incapacitates, Paralyzes, Roots, Sleeps, and Confuses. It also increases your ranged and melee damage by a lesser amount. + You gain a stack each time you Stun, Incapacitate, Paralyze, Root, Sleep, or Confuse a target. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
+    "tooltip": "Gives you a stacking buff that increases the magnitude of Stuns, Incapacitates, Paralyzes, Roots, Sleeps, and Confuses. It also increases your ranged and melee damage by a lesser amount. + You gain a stack each time you Stun, Incapacitate, Paralyze, Root, Sleep, or Confuse a target. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
     "tags": [],
     "damage_type": [],
     "scaling_stats": [
@@ -13165,9 +13402,13 @@
       "Affects foe (10 max)",
       "10 foot Sphere"
     ],
-    "tooltip": "Ultimate/Melee AoE Damage",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Ego Damage to all targets every 1 sec. + Your chance to Critically Hit with your Telekinetic abilities is increased by 2.8% for each stack of Ego Leech you have.",
+    "tags": [
+      "Ego Leech"
+    ],
+    "damage_type": [
+      "Ego"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Mentalist_EgoBladePandemonium",
@@ -13192,7 +13433,7 @@
     "range_tags": [
       "Targets Self"
     ],
-    "tooltip": "Active Ultimate. Applies a large amount of Break Free damage to any Holds, Roots, or Disables affecting you and applies the following effects for 15 seconds: + 208 increased resistance to all damage. + Flight and +33 Flight Speed + Increased critical strike chance for each stack of Ego Leech. + 1 stack of Ego Leech every sec. Activates a shared cooldown of 90 seconds with other Active Defense and Active Offense powers.",
+    "tooltip": "Applies a large amount of Break Free damage to any Holds, Roots, or Disables affecting you. + Increase your resistance to all damage. + Grants you Flight and  Flight Speed + Increased critical strike chance for each stack of Ego Leech. + 1 stack of Ego Leech every sec. +  Activates a shared cooldown of 90 seconds with other Active Defense and Active Offense powers.",
     "tags": [],
     "damage_type": [],
     "scaling_stats": [],
@@ -13222,9 +13463,15 @@
       "100 feet",
       "20 foot Sphere"
     ],
-    "tooltip": "Ultimate/Ranged AoE Damage/Damage Resistance Debuff/Knock Down",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Ego Damage to foes. + Knocks Down affected targets.  +Applies Overpower, which reduces all damage resistance by 20% for 15 sec. + Gives you a stack of Ego Leech for every target you hit, up to 5 stacks.",
+    "tags": [
+      "Ego Leech",
+      "Knock Down",
+      "Overpower"
+    ],
+    "damage_type": [
+      "Ego"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Mentalist_MentalImpact",
@@ -13251,9 +13498,11 @@
       "Targets non-object foe (7 max)",
       "50 foot Sphere"
     ],
-    "tooltip": "Ultimate/AoE Damage/Triggered Damage. This telepathic link allows you to share pain amongst the enemies around you by forging a psychic bond that forces them to feel the pain of others. MAINTAIN + A portion of any damage dealt to you or nearby foes while you maintain this power is immediately dealt as Ego damage to all targets in range, up to a maximum of your Ego x 4. + Damage from this effect causes very little threat. - This effect only occurs once every half second. Increasing the rank of this power increases the maximum damage dealt. + At Rank 2, this power deals a maximum of Ego x 5 damage. + At Rank 3, this power deals a maximum of Ego x 6 damage.",
+    "tooltip": "Creates a link between you and nearby foes. When you or any of these foes takes damage, you deal Ego Damage to foes in the area of effect, based on the initial damage dealt. This effect can only occur once every 0.5 sec.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Ego"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Mentalist_MindLink",
@@ -13282,9 +13531,13 @@
       "Targets foe (5 max)",
       "3 foot Cylinder"
     ],
-    "tooltip": "Melee Damage/Energy Builder. Deals Crushing damage (based on number of targets hit) and generates energy. The first hit deals additional damage, recovers more energy, and has a 15Disorient%",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Crushing damage and generates energy. + The first hit has a 15% chance to apply Disorient. Disoriented targets have their damage reduced by 10% and their movement speed reduced by 50%.",
+    "tags": [
+      "Disorient"
+    ],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "HeavyWeapon_Bludgeon",
@@ -13308,18 +13561,25 @@
       5
     ],
     "activation_type": "COMBO",
-    "activation_time": "0.83-0,83-1",
+    "activation_time": "0.83-1",
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [
       "Targets foe (5 max)",
       "15 feet",
-      "360-360-50 degree Cone"
+      "50-360 degree Cone"
     ],
-    "tooltip": "Melee AoE Damage/Combo. The first two hits deal 256/295 Crushing damage and have a 50 chance to be Knocked Down. If the targets are immune to Knock effects, has a 20ClingingFlames%",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Crushing Damage and Fire Damage to targets. + Knocks Down your primary target. Has 50% chance to Knock Down other foes.  + If your primary target is Disoriented, the chance to apply Knock is guaranteed. If an affected target is immune to Knock effects, has a 50% chance against your primary target and a 20% chance against other targets to apply Clinging Flames, causing Fire Damage every 2 sec for 12 sec. This effect can leap to other nearby foes.",
+    "tags": [
+      "Knock Down",
+      "Disorient",
+      "Clinging Flame"
+    ],
+    "damage_type": [
+      "Crushing",
+      "Fire"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "HeavyWeapon_Cleave",
@@ -13349,9 +13609,13 @@
       "Targets foe",
       "10 feet"
     ],
-    "tooltip": "Melee Damage/Stun. Deals Crushing damage and Stuns the target briefly.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Crushing damage and Stuns the target briefly.",
+    "tags": [
+      "Stun"
+    ],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "HeavyWeapon_BruteStrike",
@@ -13382,9 +13646,14 @@
       "Targets foe",
       "60 foot Lunge"
     ],
-    "tooltip": "Lunge/Disorient. Lunges at the target, dealing Crushing damage and Snaring them for 13 sec. If used from more than 20 feet away, the target is also Disoriented.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Lunges at the target, dealing Crushing Damage and Snaring them for 13 sec. + Disorients your target if you Lunge from more than 20 feet away.",
+    "tags": [
+      "Snare",
+      "Disorient"
+    ],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "HeavyWeapon_Decimate",
@@ -13407,7 +13676,7 @@
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
-    "tooltip": "Passive (Defense). Slotted Defensive Passive. Passively provides you with 1 stack of Defiant. Whenever you take damage, you gain a stack of Defiant for 20 sec. This can occur once every 2 seconds, and each stack refreshes the duration of existing stacks. Defiant stacks up to 6 times, and each stack provides you with 6% Resistance to all damage, scaling with rank and your Super Stats.",
+    "tooltip": "Passively provides you with 1 stack of Defiant. + Whenever you take damage, you gain a stack of Defiant for 20 sec. This can occur once every 2 seconds, and each stack refreshes the duration of existing stacks. + Defiant stacks up to 6 times, and each stack provides you with Resistance to all damage, scaling with rank and your Super Stats.",
     "tags": [],
     "damage_type": [],
     "scaling_stats": [],
@@ -13442,9 +13711,16 @@
       "15 feet",
       "320 degree Cone"
     ],
-    "tooltip": "Melee Damage/Knock Upward. Deals 206 Crushing and 206 Fire damage and the targets are Knocked Upward. Against Disoriented targets, damage is increaed by 15 and they are Stunned for 1.7 sec.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Crushing Damage and Fire Damage. + Targets are Knocked Up + If your target is Disoriented, increases this power's base damage by 15% and the Knock Up height is doubled. + If your target is immune to Knock effects, increases this power's base damage by 15% and briefly Stuns the target.",
+    "tags": [
+      "Knock Up",
+      "Disoriented",
+      "Stun"
+    ],
+    "damage_type": [
+      "Crushing",
+      "Fire"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "HeavyWeapon_Eruption",
@@ -13471,8 +13747,10 @@
     "range_tags": [
       "Targets Self"
     ],
-    "tooltip": "Block. While blocking, grants 250.",
-    "tags": [],
+    "tooltip": "While blocking, grants 250/300/360% resistance to all damage. + Increases your resistance to Holds and Knocks, and reduces your movement speed. + Gives you energy when struck by an attack while blocking. This amount scales with your Recovery and the amount of damage you take. + Damage taken while blocking applies or refreshes the Retaliation buff, which increases the damage of your next attack. This buff lasts up to 5 sec.",
+    "tags": [
+      "Retaliation"
+    ],
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
@@ -13493,8 +13771,10 @@
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
-    "tooltip": "Energy Unlock. Innate Passive/Recovery/Endurance. + Generates 5.2 energy every 3 seconds over 9 seconds every time you attempt to Knock a foe. + This effect stacks up to 3 times. + Existing stacks are refreshed by 9 seconds if you already have 3 stacks active. + The energy gained scales with your Recovery, and to a lesser degree, your Endurance.",
-    "tags": [],
+    "tooltip": "Whenever you attempt to Knock a foe, you generate energy every 3 seconds over 9 seconds. + This effect stacks up to 3 times. + Existing stacks are refreshed by 9 seconds if you already have 3 stacks active. + The energy gained scales with your Recovery, and to a lesser degree, your Endurance.",
+    "tags": [
+      "Knock"
+    ],
     "damage_type": [],
     "scaling_stats": [
       "REC",
@@ -13521,10 +13801,12 @@
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
-    "tooltip": "Passive (Offense). Slotted Offensive Passive. + Increases your Melee and Bleed damage by 29, scaling with your Super Stats. + Increases your Knock and Hold resistance by 0 energy each time you are Knocked, scaling with Recovery.",
+    "tooltip": "Increases your Melee and Bleed damage. Also increases all other damage by a lower ammount. + Increases your Knock and Hold Resistance. + Absorbs a small amount damage when struck by an attack. + Whenever you are Knocked by an attack, you gain Energy. This amount scale with your Recovery",
     "tags": [],
     "damage_type": [],
-    "scaling_stats": [],
+    "scaling_stats": [
+      "REC"
+    ],
     "power_dependency": [],
     "icon_override": "Brick_Unstoppable",
     "is_disabled": false
@@ -13547,8 +13829,10 @@
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
-    "tooltip": "Form (Strength). Buff/Form/Enraged!. Gives you a stacking buff that increases your melee damage, as well as your ranged damage to a lesser degree. + You gain a stack each time apply a burning effect to an attack. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
-    "tags": [],
+    "tooltip": "Gives you a stacking buff that increases your melee damage, as well as your ranged damage to a lesser degree. + You gain a stack each time apply a burning effect to an attack. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
+    "tags": [
+      "Enrage"
+    ],
     "damage_type": [],
     "scaling_stats": [
       "STR"
@@ -13581,9 +13865,13 @@
       "Affects foe (5 max)",
       "15 foot Sphere"
     ],
-    "tooltip": "Melee AoE Damage/Disorient. Deals Crushing damage to targets and has a 43-100Disorient%",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Crushing Damage to targets. + Has a 42-100% chance to apply Disorient to the target, reducing their damage by 10% and their movement speed by 50%.",
+    "tags": [
+      "Disorient"
+    ],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "HeavyWeapon_ArcofRuin",
@@ -13595,7 +13883,7 @@
     "power_id": 407,
     "name": "Earth Splitter",
     "tier": 2,
-    "power_type": "MELEE_AOE_DAMAGE",
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -13616,9 +13904,15 @@
       "50 feet",
       "5 foot Cylinder"
     ],
-    "tooltip": "Ranged AoE Damage/Knock Upward/Burning. Deals 116-278 Crushing and 116-278 Fire damage. Also has a 42-100 chance (based on charge time) to apply Reckless to you.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Crushing Damage and Fire Damage to targets. + Has a 42-100% chance to Knock Up targets. + Has a 42-100% chance to apply Reckless to you, which gives 35% resistance to all Knock effects for 15 sec. Stacks up to 3 times. + When dealing direct damage Reckless applies Bastion, causing 10% of your direct damage pre-damage mitigation to be applied to you as a Shield for 10 sec. Stacks up to 10 times. + If your target is immune to Knock effects, increases this power's base damage by 15%.",
+    "tags": [
+      "Knock Up",
+      "Reckless"
+    ],
+    "damage_type": [
+      "Crushing",
+      "Fire"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "HeavyWeapon_EarthSplitter",
@@ -13650,9 +13944,15 @@
       "15 feet",
       "3 foot Cylinder"
     ],
-    "tooltip": "Melee AoE Damage/Knock Down. Deals 128-273 Crushing and 128-273 Fire damage to targets and they are Knocked Down. Also has a 50-100% chance (based on charge time) to Disorient targets.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Crushing Damage and Fire Damage to targets. + Affected targets are Knocked Down. + Has a 50-100% chance to apply Disorient, reducing their damage by 10% and movement speed by 50%.",
+    "tags": [
+      "Knock Down",
+      "Disorient"
+    ],
+    "damage_type": [
+      "Crushing",
+      "Fire"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "HeavyWeapon_Skullcrusher",
@@ -13686,9 +13986,15 @@
       "60 foot Lunge",
       "15 foot Sphere"
     ],
-    "tooltip": "Lunge/Melee AoE Damage. Lunges at your target, dealing 139 Crushing and 139 Fire damage to all nearby targets, Snaring them for 16 sec. Also applies Reckless to you.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Lunges at your primary target. Deals Crushing Damage and Fire Damage to all targets and Snares them. + Applies Reckless to you, which gives 35% resistance to all Knock effects for 15 sec. Stacks up to 3 times. When dealing direct damage Reckless applies Bastion, causing 10% of your direct damage pre-damage mitigation to be applied to you as a Shield for I0 sec. Stacks up to I0 times.",
+    "tags": [
+      "Snare",
+      "Reckless"
+    ],
+    "damage_type": [
+      "Crushing",
+      "Fire"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "HeavyWeapon_ViciousDescent",
@@ -13718,9 +14024,13 @@
       "Targets foe",
       "15 feet"
     ],
-    "tooltip": "Melee Damage/Knock Back. Deals 408-970 Crushing damage and the target is Knocked Back. Damage is increased by 25% against Knock-immune targets.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Crushing Damage and your target is Knocked Back. + This power's base damage is increased by 30% if the target is immune to Knock effects.",
+    "tags": [
+      "Knock Back"
+    ],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "HeavyWeapon_Annihilate",
@@ -13752,9 +14062,16 @@
       "Affects foe (5 max)",
       "15 foot Sphere"
     ],
-    "tooltip": "Melee AoE Damage/Knock Down. Deals 135-321 Crushing and 135-321 Fire damage to affected targets. If partially charged, they are Knocked Up. If fully charged, targets are Knocked Down. Knock-immune targets take 15.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Crushing Damage and Fire Damage to foes. + Targets are Knocked Down. + Partially charging this power instead Knocks Up foes. + If your target is immune to Knock effects, Snares affected targets, reducing their movement speed by 100%. Additionally, increases this power's base damage by 15% when partially charged.",
+    "tags": [
+      "Knock Down",
+      "Knock Up",
+      "Snare"
+    ],
+    "damage_type": [
+      "Crushing",
+      "Fire"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "HeavyWeapon_Brimstone",
@@ -13789,9 +14106,13 @@
       "15 feet",
       "3 foot Cylinder"
     ],
-    "tooltip": "Melee AoE Damage/Bleed. Deals 261-522 Crushing damage to your primary target, and 174-348 Crushing damage to secondary targets. Has a 22-50Bleed%",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Crushing Damage to your selected target, and reduced Crushing Damage to additional foes in front of you. + Has a 22-50% chance to cause the target to Bleed, suffering Slashing Damage every 1 sec for 16 sec.",
+    "tags": [
+      "Bleed"
+    ],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "HeavyWeapon_Skewer",
@@ -13815,10 +14136,17 @@
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Earth, Energy Builder, 10 foot Melee 50 foot Ranged Single Target Damage Bend the nearby stone to assault foes at both close and long range by smashing them with shards of rock.",
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe",
+      "10-50 feet"
+    ],
+    "tooltip": "Deals Crushing damage and generates energy. + The first hit has a 20% chance to apply Stagger. Stagger reduces all damage resistance by 2% and movement speed by 25% for 15 sec. Stacks up to 3 times.",
+    "tags": [
+      "Stagger"
+    ],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Earth_WieldEarth",
@@ -13844,10 +14172,18 @@
     "max_duration": 1.17,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Earth, 100 foot Ranged 0-10 foot Sphere AoE Damage and Stagger (Blast) After pressing nearby earth into a dense ball you launch it at your foes.",
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe (5 max)",
+      "100 foot",
+      "0-10 foot Sphere"
+    ],
+    "tooltip": "Deals Crushing Damage. + Has a 50-100% chance to Stagger your primary target.  + Deals reduced Crushing Damage to foes within 0-5ft (based on charge time) of your primary target. +  Stagger reduces all damage resistance by 2% and movement speed by 25% for 15 sec. Stacks up to 3 times.",
+    "tags": [
+      "Stagger"
+    ],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Earth_StoneShot",
@@ -13867,8 +14203,10 @@
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
-    "tooltip": "Energy Unlock. Energy Return/Endurance/Recovery. + Generates 16 energy every 3 seconds over 6 seconds every time you apply or refresh Stagger. + The energy gained scales with your Endurance, and to a lesser degree, your Recovery.",
-    "tags": [],
+    "tooltip": "Whenever you apply or refresh stagger, you generates energy every 3 sec for 6 sec. + The energy gained scales with your Endurance, and to a lesser degree, your Recovery. + This effect does not stack, but can be refreshed",
+    "tags": [
+      "Stagger"
+    ],
     "damage_type": [],
     "scaling_stats": [
       "END",
@@ -13894,10 +14232,17 @@
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Earth, Offensive Passive Requires 1 power from Earth or 2 non-Energy Building powers from any framework. + Increases your Physical damage. + Increases your Crushing damage resistance. + Increases your Physical damage resistance by a lesser amount. + Reduces the movement speed of foes within 10/20/30 feet of you by 30/20/10%, based on distance. + Recovers Energy when you take Crushing damage.",
+    "range_tags": [
+      "Affects foe (5 max)",
+      "30 foot Sphere"
+    ],
+    "tooltip": "Increase you Physical Damage. + You gain Physical Damage Resistance and a additional Crushing Damage Resistance. + You gain a small amount of energy when you suffer Crushing Damage. + Foes within 10-30ft of you have their movement speed reduced based on their distance from you.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Crushing",
+      "Slashing",
+      "Piercing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Earth_EarthForm",
@@ -13924,10 +14269,18 @@
     "max_duration": null,
     "tick_rate": null,
     "cooldown": 3,
-    "range_tags": [],
-    "tooltip": "Earth, 60 foot Lunge, Snare, and Disorient Requires 1 power from Earth or 2 non-Energy Building powers from any framework. Lunges to the target, dealing Crushing damage and Snaring them for 13 seconds. If the target is further than 20 feet away, they are also Staggered.",
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe",
+      "60 foot lunge"
+    ],
+    "tooltip": "Lunges at the target, dealing Crushing Damage and Snaring them for 13 sec. + Staggers your target if you Lunge from more than 20ft away. Stagger reduces all damage resistance by 2% and movement speed by 25% for 15 sec. Stacks up to 3 times.",
+    "tags": [
+      "Snare",
+      "Stagger"
+    ],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Earth_LandSlide",
@@ -13949,14 +14302,22 @@
       5
     ],
     "activation_type": "COMBO",
-    "activation_time": "0,67-0,67-0,83",
+    "activation_time": "0,67-0,83",
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Earth, 10 foot Melee 120 degree Cone AoE Damage Requires 1 power from Earth or 2 non-Energy Building powers from any framework. You unleash a hail of stones to crush your foes in a flurry of shale and earth.",
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Tagerts foe (5 max)",
+      "10 feet",
+      "120 degree Cone"
+    ],
+    "tooltip": "Deals Crushing Damage and has a 25-50% chance to Stagger affected targets for 15 sec, reducing all damage resistance by 2% and movement speed by 25% for 15 sec. Stacks up to 3 times. + Chance to apply is guaranteed against your primary target.",
+    "tags": [
+      "Stagger"
+    ],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Earth_Onslaught",
@@ -13983,12 +14344,15 @@
     "tick_rate": null,
     "cooldown": 15,
     "range_tags": [
-      "Targets foe that is not destructible (5 Max)",
+      "Targets non-destructible foe (5 Max)",
       "50 feet",
       "15 foot sphere"
     ],
-    "tooltip": "Ranged AoE Hold/Stagger. Must be fully charged Paralyzes all targets. Affected targets are staggered.",
-    "tags": [],
+    "tooltip": "Paralyzes all targets. + Staggers affected targets, reducing their resistance to damage by 2% and their movement speed by 25% for 15 sec. Stacks up to 3 times.",
+    "tags": [
+      "Hold",
+      "Stagger"
+    ],
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
@@ -14011,11 +14375,16 @@
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Earth, Block Requires 1 power from Earth or 2 non-Energy Building powers from any framework. While blocking, grants 250, 20 respectively.",
+    "range_tags": [
+      "Affects foe (5 max)",
+      "30 foot Sphere"
+    ],
+    "tooltip": "While blocking, grants 250/300/360% resistance to all damage. + Increases your resistance to Holds and Knocks, and reduces your movement speed. + Gives you energy when struck by an attack while blocking. This amount scales with your Recovery and the amount of damage you take. + Foes within 10-30ft of you have their movement speed reduced based on their distance from you.",
     "tags": [],
     "damage_type": [],
-    "scaling_stats": [],
+    "scaling_stats": [
+      "REC"
+    ],
     "power_dependency": [],
     "icon_override": "Earth_StoneShroud",
     "is_disabled": false
@@ -14039,10 +14408,19 @@
     "max_duration": 1.67,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Earth, 50 foot Ranged 15 foot Sphere AoE Damage and Knock Requires 1 power from Earth or 2 non-Energy Building powers from any framework. Cause a burst of earth to erupt under enemy targets, launching them into the air.",
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe (5 max)",
+      "50 feet",
+      "15 foot Sphere"
+    ],
+    "tooltip": "Deals Crushing Damage to all targets. + The main target is Knocked Up and other nearby targets are Knocked Back away from the main target. + If fully charged, secondary targets are instead Knocked Up.",
+    "tags": [
+      "Knock Up",
+      "Knock Back"
+    ],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Earth_Tremor",
@@ -14070,10 +14448,18 @@
     "max_duration": 1.83,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Earth, 50 foot Ranged Single Target Damage and Stun Requires 3 powers from Earth or 4 non-Energy Building powers from any framework. Summon massive rocks to crush your enemy in a deluge of stone.",
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe",
+      "50 feet"
+    ],
+    "tooltip": "Deals Crushing Damage. + Has a 13-50% chance to Stagger your target, reducing all damage resistance by 2% and movement speed by 25% for 15 sec. Stacks up to 3 times. + If fully charged and the target is Staggered, Stuns your target for a short amount of time.",
+    "tags": [
+      "Stagger",
+      "Stun"
+    ],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Earth_CaveIn",
@@ -14098,10 +14484,15 @@
     "max_duration": 5,
     "tick_rate": 0.5,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Earth, 10-25 foot Sphere PBAoE Ranged Damage and Slow Requires 3 powers from Earth or 4 non-Energy Building powers from any framework. Cause the earth around you to become a quagmire that damages foes as it slowly seeps outward.",
+    "range_tags": [
+      "Affects foe (5 max)",
+      "10-25 foot Sphere"
+    ],
+    "tooltip": "Deals increasing Crushing Damage (based on pulse) every 0.5 sec to nearby targets and reduces their movement speed.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Earth_Quicksand",
@@ -14127,10 +14518,20 @@
     "max_duration": 0.5,
     "tick_rate": null,
     "cooldown": 15,
-    "range_tags": [],
-    "tooltip": "Earth, 25 foot Lunge 15 foot Sphere PBAoE Ranged Damage Requires 3 powers from Earth or 4 non-Energy Building powers from any framework. Crush your enemy between a rock and a hard place as you blast them through a stone wall.",
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe",
+      "25 too lunge"
+    ],
+    "tooltip": "Lunges at the target, dealing Crushing Damage to the target, and to enemies within a 15ft cone behind the target.  + The main target is Knocked Back and additional targets are Knocked Down. + Has a 25% chance to Stagger targets. Stagger reduces all damage resistance by 2% and movement speed by 25% for 15 sec. Stacks up to 3 times. + If fully charged, applies or refreshes Enrage",
+    "tags": [
+      "Knock Back",
+      "Knock Down",
+      "Stagger",
+      "Enrage"
+    ],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Earth_SeismicSmash",
@@ -14157,10 +14558,19 @@
     "max_duration": 1.33,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Earth, 10 foot Melee Single Target Damage and Knock Up Requires 3 powers from Earth or 4 non-Energy Building powers from any framework. You swing with the weight of the earth behind you, launching your foe into the air.",
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe",
+      "10 feet"
+    ],
+    "tooltip": "Deals Crushing Damage and your target is Knocked Up. Staggered targets are Knocked Back. + Deals an additional 5% damage for each of your stacks of Stagger on the target.",
+    "tags": [
+      "Knock Back",
+      "Knock Up",
+      "Stagger"
+    ],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Earth_Upheaval",
@@ -14185,10 +14595,20 @@
     "max_duration": 1.33,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Earth, 50 foot Ranged 5 foot Cylinder AoE Damage and Knock Up Requires 5 powers from Earth or 6 non-Energy Building powers from any framework. Strike the earth with a mighty blow, causing a rupture that launches enemies into the air.",
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Affects foe (5 max)",
+      "50 feet",
+      "5 foot Cuminder"
+    ],
+    "tooltip": "Deals Crushing Damage and your targets are Knocked Up. + Deals 10% more damage per stack of Stagger on each target. This consumes the stacks of Stagger on the targets.",
+    "tags": [
+      "Knock Up",
+      "Stagger",
+      "Rupture"
+    ],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Earth_FaultLine",
@@ -14213,10 +14633,19 @@
     "max_duration": 1,
     "tick_rate": null,
     "cooldown": 15,
-    "range_tags": [],
-    "tooltip": "Earth, 50 foot Ranged 15 foot Sphere AoE Damage and DoT Requires 5 powers from Earth or 6 non-Energy Building powers from any framework. Cause a Fissure in the earth to form below your targets.",
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe",
+      "50 feet"
+    ],
+    "tooltip": "When fully charged, creates a Fissure for 10 sec, causing Crushing Damage and Fire Damage every 1 sec to targets within 15ft. + Foes standing in the Fissure have their movement speed reduced by 32%. + Has a 20% chance every hit to Knock Down affected targets. Every stack of Stagger on a target increases this chance by 10%.",
+    "tags": [
+      "Knock Down",
+      "Stagger"
+    ],
+    "damage_type": [
+      "Crushing",
+      "Fire"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Earth_Fissure",
@@ -14236,7 +14665,7 @@
       3
     ],
     "activation_type": "TOGGLE",
-    "activation_time": "0.48-0,36-0,36",
+    "activation_time": "0,36-0.48",
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
@@ -14244,9 +14673,13 @@
       "Targets foe",
       "10 feet"
     ],
-    "tooltip": "Energy Builder/Melee Damage. The first hit deals 77 Crushing damage, restores 16 chance to Disorient the target. Each additional hit deals 41 Crushing damage and restores 8.5% Energy.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Crushing damage and generates energy. + The first hit has a 15% chance to apply Disorient. Disoriented targets have their damage reduced by 10% and their movement speed reduced by 50%.",
+    "tags": [
+      "Disorient"
+    ],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Might_Clobber",
@@ -14269,18 +14702,23 @@
       5
     ],
     "activation_type": "COMBO",
-    "activation_time": "0.5-0,5-0,67",
+    "activation_time": "0.5-0,67",
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [
       "Targets foe (5 max)",
       "10 feet",
-      "180-180-180 degree Cone"
+      "180 degree Cone"
     ],
-    "tooltip": "Melee Damage/Knock/Combo. Deals 179/206/323 Crushing damage to all targets. The last hit knocks down all targets, or if the primary target is affected by a Hold effect or Hold resistance, the primary target is Knocked Up instead.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Crushing damage to all targets. + The last hit knocks down all targets, or if the primary target is affected by a Hold effect or Hold resistance, the primary target is Knocked Up instead.",
+    "tags": [
+      "Knock Down",
+      "Knock Up"
+    ],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Might_Beatdown",
@@ -14304,18 +14742,22 @@
       5
     ],
     "activation_type": "COMBO",
-    "activation_time": "0.4-0,4-0,7",
+    "activation_time": "0.4-0,7",
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [
       "Targets foe (5 max)",
       "10 feet",
-      "180-180-180 degree Cone"
+      "180 degree Cone"
     ],
-    "tooltip": "Melee Damage/Shield/Combo. Deals 130/149/307 Crushing damage to targets and applies a damage absorption shield to you. This shield lasts for 3 seconds, can stack, and is applied to incoming damage after Resistance is factored in.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Crushing damage to targets and applies a damage absorption shield to you. This shield lasts for 3 seconds and can stack. + Has a 50% chance to Knock Down your primary target and a 25% chance against other targets. This chance is doubled if you are affected by Enrage.",
+    "tags": [
+      "Knock Down"
+    ],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Might_DefensiveCombo",
@@ -14345,9 +14787,13 @@
       "Targets foe",
       "10 feet"
     ],
-    "tooltip": "Melee Damage/Stun. Deals 146 Crushing damage and Stuns the target for 1.7 sec.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Crushing damage and Stuns the target briefly.",
+    "tags": [
+      "Stun"
+    ],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Might_HeadButt",
@@ -14374,10 +14820,20 @@
     "max_duration": 0.83,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe (5 max)",
+      "10 feet",
+      "10 foot Sphere"
+    ],
+    "tooltip": "Deals Crushing Damage to all targets withing 10ft and deal Sonic Damages to targets further away + Has a 45-100% chance to Knock Down affected targets. + If fully charged, instead Knocks Up affected targets instead.",
+    "tags": [
+      "Knock Down",
+      "Knock Up"
+    ],
+    "damage_type": [
+      "Crushing",
+      "Sonic"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Might_HeelSmash",
@@ -14410,9 +14866,13 @@
       "Targets foe",
       "100 feet"
     ],
-    "tooltip": "Ranged Damage/Knock. Deals 139 Crushing damage and the target is Knocked Down.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Crushing damage and the target is Knocked Down.",
+    "tags": [
+      "Knock Down"
+    ],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Might_Hurl",
@@ -14424,7 +14884,7 @@
     "power_id": 434,
     "name": "Iron Chain",
     "tier": 1,
-    "power_type": "RANGED_DAMAGE",
+    "power_type": "MELEE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -14435,7 +14895,7 @@
       5
     ],
     "activation_type": "COMBO",
-    "activation_time": "0.5-0,5-1",
+    "activation_time": "0.5-1",
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
@@ -14443,9 +14903,13 @@
       "Targets foe",
       "25 feet"
     ],
-    "tooltip": "Melee Damage/Knock/Combo. Deals 154/178/417 Crushing damage to the target. The final combo hit strikes up to 3 foes in a 30 degree cone and they are Knocked Up.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Crushing damage to the target. + The final combo hit strikes up to 3 foes in a 30 degree cone and they are Knocked Up.",
+    "tags": [
+      "Knock Up"
+    ],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Might_IronChain",
@@ -14475,9 +14939,14 @@
       "Affects foe (5 max)",
       "25 foot Sphere"
     ],
-    "tooltip": "Ranged AoE Damage/Knock Back. Deals 122 Crushing damage every 0.5 sec to targets. Targets have a 10 chance to be affected by Disorient.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "DealsCrushing Damage every 0.5 sec to all targets. + Has a 10% chance to Knock Back targets. + Has a 10% chance to apply Disorient to your target. Disoriented targets have their damage reduced by 10% and their movement speed reduced by 50%.",
+    "tags": [
+      "Knock Back",
+      "Disorient"
+    ],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Might_IronCyclone",
@@ -14509,9 +14978,14 @@
       "Targets foe",
       "25 feet"
     ],
-    "tooltip": "Melee Damage/Knock To. Deals 269-642 Crushing damage and your target is Knocked To you. Has a 46-100Disorient%",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Crushing Damage and your target is Knocked to you. + Has a 46-100% chance based on charge time to apply Disorient to your target. Disoriented targets have their damage reduced by 10% and their movement speed reduced by 50%.",
+    "tags": [
+      "Knock To",
+      "Disorient"
+    ],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Might_IronLariat",
@@ -14543,9 +15017,14 @@
       "Targets foe",
       "10 feet"
     ],
-    "tooltip": "Melee Damage/Knock Back. Deals 205-402 Crushing damage to the target and Repels them. If fully charged, they are instead Knocked Back. Base damage against Knock-immune targets is increased by 60%.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Crushing Damage and target is Repelled. + If fully charged, target is instead Knocked Back. + If your target is immune to Knock effects, increases this power's base damage by up t0 30% based on charge time.",
+    "tags": [
+      "Knock Back",
+      "Repel"
+    ],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Might_MightyKick",
@@ -14578,9 +15057,14 @@
       "Targets foe",
       "60 foot lunge"
     ],
-    "tooltip": "Lunge/Snare/Stun. Lunges to the target, dealing Crushing damage and Snaring them for 13 sec. If used from more than 20 feet away, the target is also Stunned for 1.7 sec.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Lunges at the target, dealing Crushing Damage. + Snares the target for 13 sec, reducing their movement speed by 100%. + Briefly Stuns your target if you Lunge from more than 20ft away.",
+    "tags": [
+      "Snare",
+      "Stun"
+    ],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Might_MightyLeap",
@@ -14607,8 +15091,10 @@
     "range_tags": [
       "Targets Self"
     ],
-    "tooltip": "Block. While blocking, grants 250 and lasts 5 sec.",
-    "tags": [],
+    "tooltip": "While blocking, grants 250/300/360% resistance to all damage. + Increases your resistance to Holds and Knocks, and reduces your movement speed. + Gives you energy when struck by an attack while blocking. This amount scales with your Recovery and the amount of damage you take. + Damage taken while blocking applies or refreshes the Retaliation buff, which increases the damage of your next attack. This buff lasts up to 5 sec.",
+    "tags": [
+      "Retaliation"
+    ],
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
@@ -14641,9 +15127,14 @@
       "10 feet",
       "180 degree Cone"
     ],
-    "tooltip": "Melee AoE Damage/Knock. Deals 189-512 Crushing damage to targets and they are Knocked Back. If Held or affected by Hold Resistance, they are Knocked Up instead. Base damage against Knock-immune targets is increased by 30%.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Crushing Damage to all targets. + All targets hit are Knocked Back + Targets currently affected by a Hold effect or Hold Resistance are Knocked Up instead. + If your target is immune to Knock effects, increases this power's base damage by 30%.",
+    "tags": [
+      "Knock Back",
+      "Knock Up"
+    ],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Might_Roomsweeper",
@@ -14674,8 +15165,11 @@
       "Affects non-destructible foe (5 max)",
       "25 foot Sphere"
     ],
-    "tooltip": "Reckless/Disorient. Applies Disorient to targets. Applies and refreshes Reckless on you and nearby allies.",
-    "tags": [],
+    "tooltip": "Disorients targets for 12 sec, reducing their damage by 15% and their movement speed by 50%. + Applies 1/2/3 stack of Reckless to you and nearby allies, also refreshes any existing stacks. Reckless gives 35% resistance to all Knock effects for 15 sec. Stacks up to 3 times. When dealing direct damage Reckless applies Bastion, causing 10% of your direct damage pre-damage mitigation to be applied to you as a Shield for 10 sec. Stacks up to 10 times.",
+    "tags": [
+      "Disorient",
+      "Reckless"
+    ],
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
@@ -14706,9 +15200,13 @@
       "Targets foe",
       "10 feet"
     ],
-    "tooltip": "Melee Damage/Debuff. Deals 320-682 Crushing damage to the target. When fully charged, applies Demolish.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Crushing Damage. + When fully charged applies Demolish which does -18% resistance to Crushing Damage for 15 sec.",
+    "tags": [
+      "Demolish"
+    ],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Might_Demolish",
@@ -14739,9 +15237,14 @@
       "50 feet",
       "60 degree Cone"
     ],
-    "tooltip": "Ranged AoE Damage. Deals 122 Sonic damage every 0.5 sec and Repels targets 2 feet from you with each hit. Fully maintaining this power Knocks Down affected targets.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Sonic Damage every 0.5 sec. + Repels targets from you every hit. + Fully maintaining Hyper Voice Knocks down affected targets.",
+    "tags": [
+      "Repel",
+      "Knock Down"
+    ],
+    "damage_type": [
+      "Sonic"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Might_HyperVoice",
@@ -14753,7 +15256,7 @@
     "power_id": 444,
     "name": "Impressive Physique",
     "tier": 2,
-    "power_type": "ALLY_HEAL",
+    "power_type": "TEAM_HEAL",
     "advantages": [
       1,
       2,
@@ -14770,10 +15273,12 @@
       "Affects friend (5 max)",
       "20 foot Sphere"
     ],
-    "tooltip": "Heal. Affected targets are Healed for 279 Health Points every 1 sec. Absorbs up to 1540 damage dealt to you. This effect is reapplied every 1 sec.",
+    "tooltip": "Affected targets are healed every 1 sec. + Does not heal you, but shields you instead, absorbing damage. This effect reapplies every 1 sec. + The heal and shield on this power scales with your Strength instead of your Presence.",
     "tags": [],
     "damage_type": [],
-    "scaling_stats": [],
+    "scaling_stats": [
+      "STR"
+    ],
     "power_dependency": [],
     "icon_override": "Might_ImpressivePhysique",
     "is_disabled": false
@@ -14803,9 +15308,13 @@
       "Affects foe (5 max)",
       "10 foot Sphere"
     ],
-    "tooltip": "Melee AoE Damage/Stun. Deals 216 Crushing damage and Stuns all targets for 1.7 sec.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Crushing damage and Stuns all target briefly.",
+    "tags": [
+      "Stun"
+    ],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Might_Thunderclap",
@@ -14836,9 +15345,13 @@
       "Targets foe",
       "10 feet"
     ],
-    "tooltip": "Melee Damage/Knock Up. Deals 312-744 Crushing damage and your target is Knocked Up 2.9-30 feet.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Crushing Damage. + Knock Up your target. + If your is immune to Knock effects, increases this power's base damage by 30%.",
+    "tags": [
+      "Knock Up"
+    ],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Might_Uppercut",
@@ -14869,9 +15382,14 @@
       "Affects foe (5 max)",
       "10 foot Sphere"
     ],
-    "tooltip": "Melee AoE Damage/Knock. Deals 340-743 Crushing damage to targets. If charged less than 90, each target is Knocked Back 17 feet. Base damage against Knock-immune targets is increased by 30%.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Crushing Damage to all targets. + If charged less than 90%, each target hit is Knocked up. + If charged at least 90%, each target is Knocked back instread. + If your target is immune to Knock effects, increases this power's base damage by 30%.",
+    "tags": [
+      "Knock Up",
+      "Knock Back"
+    ],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Might_HavocStomp",
@@ -14901,8 +15419,12 @@
       "10 feet"
     ],
     "tooltip": "Melee Damage/Knock Back. Deals 366-1300 Crushing damage and the target is Knocked Back 0-53 feet. Base damage against Knock-immune targets is increased by 30%.",
-    "tags": [],
-    "damage_type": [],
+    "tags": [
+      "Knock Back"
+    ],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Might_Haymaker",
@@ -14932,9 +15454,17 @@
       "75 feet",
       "10 foot Cylinder"
     ],
-    "tooltip": "Ranged AoE Damage/Knock/Plasma Burn",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Crushing Damage and Particle Damage to all foes in a line in front of you. + Knocks back targets within 15ft of you. Knocks Down targets within 50ft. Repels target further than 50ft. + Has a 50% chance to apply Plasma Burn to your targets. Plasma Burn deals Particle Damage every 1 sec for 16 sec.",
+    "tags": [
+      "Knock Back",
+      "Knock Down",
+      "Repel",
+      "Plasma Burn"
+    ],
+    "damage_type": [
+      "Crushing",
+      "Particle"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Might_NuclearShockwave",
@@ -14966,9 +15496,15 @@
       "50 feet",
       "90 degree Cone"
     ],
-    "tooltip": "Ranged AoE Damage/Snare/Knock. Deals 162 Crushing damage every 0.5 sec to targets within 10 feet of you. Targets further than 10 feet suffer 116 Sonic damage every 0.5 sec. All targets are Snared for 3.3 sec, reducing their movement speed by 100%. If fully maintained, all targets are Knocked Down.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Crushing Damage every 0.5 sec to targets within 10ft of you. + Targets further away take Sonic Damage every 0.5 sec. + Snares affected targets, reducing their movement speed by 100%. + If fully maintained, all targets are Knocked down.",
+    "tags": [
+      "Snare",
+      "Knock Down"
+    ],
+    "damage_type": [
+      "Crushing",
+      "Sonic"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Might_Shockwave",
@@ -14992,8 +15528,10 @@
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
-    "tooltip": "Form (Strength). Buff/Form/Enraged!. Gives you a stacking buff that increases your melee damage, as well as your ranged damage to a lesser degree. + You gain a stack each time you Knock an enemy. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
-    "tags": [],
+    "tooltip": "Gives you a stacking buff that increases your melee damage, as well as your ranged damage to a lesser degree. + You gain a stack each time you Knock an enemy. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
+    "tags": [
+      "Enrage"
+    ],
     "damage_type": [],
     "scaling_stats": [
       "STR"
@@ -15022,7 +15560,7 @@
     "range_tags": [
       "Targets Self"
     ],
-    "tooltip": "Active Offense. Increases all damage by 42/60/80AOCD%",
+    "tooltip": "Grants a 42/50/60% increase to all damage. + Reduces your power cost by 52% + Increase your Strenght and Constituion by 42/50/60 points. + Applies Break Free damage to any Holds, Roots, or Disables affecting you. + Activates a shared cooldown of 90 seconds on all Active Offenses.",
     "tags": [],
     "damage_type": [],
     "scaling_stats": [],
@@ -15050,10 +15588,13 @@
     "range_tags": [
       "Targets Self"
     ],
-    "tooltip": "Self Heal Over Time. For the next 15 sec, dealing or receiving direct damage heals you for 70 Health Points every 2 sec over 6 sec.",
+    "tooltip": "For the next 15 sec directly damaging a foe or being directly damaged by a foe heals you every 2 sec over 6 sec. + This heal scales with your Recovery and Constitution. + This power cannot Critically Hit. + Activates a shared cooldown of 15 seconds on all Self Heal Over Time powers.",
     "tags": [],
     "damage_type": [],
-    "scaling_stats": [],
+    "scaling_stats": [
+      "CON",
+      "REC"
+    ],
     "power_dependency": [],
     "icon_override": "Brick_EndorphinRush",
     "is_disabled": false
@@ -15072,13 +15613,13 @@
     ],
     "activation_type": "CLICK",
     "activation_time": null,
-    "max_duration": null,
+    "max_duration": 15,
     "tick_rate": null,
     "cooldown": 90,
     "range_tags": [
       "Targets Self"
     ],
-    "tooltip": "Active Defense. Increases your Damage Resistance by 125ADCD%",
+    "tooltip": "Increases your resistance to all damage and reduces incoming damage by a flat amount damage. + Activates a shared cooldown of 90 seconds on all Active Defenses.",
     "tags": [],
     "damage_type": [],
     "scaling_stats": [],
@@ -15109,7 +15650,9 @@
     ],
     "tooltip": "Ultimate/Melee Damage",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Brick_CatastrophicPummeling",
@@ -15139,7 +15682,9 @@
     ],
     "tooltip": "Ranged AoE Damage/Ultimate. Creates an Earthquake at your location for 12 seconds. This Earthquake deals 210 Crushing damage every sec for 12 sec to targets in a 15 foot radius, or 140 Crushing damage to targets further than 15 feet. Hits a maximum of 10 targets. Affected targets are also Knocked Up every 2 sec. Foes affected by Stagger have their movement speed reduced by 120 if you are standing in the effect radius of this power.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Brick_Earthquake",
@@ -15167,7 +15712,9 @@
     ],
     "tooltip": "Melee Damage/Knock Back/Ultimate. Deals 896 Crushing damage to your primary target. This damage scales based on the number of Enrage stacks on you. Affected targets are Knocked Back 69 feet. Base damage against Knock-immune targets is increased by 30%. Consumes all of your form stacks when used.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Brick_FinalPunch",
@@ -15197,7 +15744,9 @@
     ],
     "tooltip": "Melee AoE Damage/Knock Back/Disorient. Deals 123 Sonic damage every 0.5 sec. Damage increases for every stack of Enrage on you. When you stop maintaining this power, it deals 324 Sonic damage and affected targets are Knocked Back 37 feet and Disoriented. While maintaining this power, you become immune to most Control effects and gain 200% resistance to all Knock effects.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Sonic"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Brick_PowerChord",
@@ -15227,7 +15776,9 @@
     ],
     "tooltip": "Ultimate/Melee AoE Damage/Knock Down/Fear. Deals 354 Crushing damage to targets. This damage is increased for every stack of Enrage you have. Additionally, targets are Knocked Down and Disoriented.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Brick_UnleashedRage",
@@ -15257,7 +15808,9 @@
     ],
     "tooltip": "Ultimate/Melee Damage/Overpower. Deals Crushing damage every 0.5 sec. You gain immunity to most Control effects and 200. Applies Overpower. Overpower reduces all damage resistance by 20% for 15 seconds.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Brick_CrushingRuin",
@@ -15284,7 +15837,9 @@
     "range_tags": [],
     "tooltip": "Celestial, Energy Builder, 50 foot Ranged Single Target Damage and Heal Radiance fires bolts of dimensional energy at your target, healing your friends and destroying your foes.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Dimensional"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Celestial_Radiance",
@@ -15313,7 +15868,9 @@
     "range_tags": [],
     "tooltip": "Celestial, 100 foot Ranged Single Target Damage and Heal (Blast) Call upon dimensional forces to judge your target, healing your friends and destroying your foes.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Dimensional"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Celestial_Rebuke",
@@ -15325,7 +15882,7 @@
     "power_id": 463,
     "name": "Celestial Conduit",
     "tier": 1,
-    "power_type": null,
+    "power_type": "RANGED_DAMAGE",
     "advantages": [
       1,
       2,
@@ -15334,15 +15891,17 @@
       7,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
+    "activation_type": "MAINTAIN",
+    "activation_time": 0.5,
+    "max_duration": 5,
+    "tick_rate": 0.5,
     "cooldown": null,
     "range_tags": [],
     "tooltip": "Celestial, 50 foot Ranged Single Target Damage and Heal Requires 1 power from Celestial or 2 non-Energy Building powers from any framework. Deals Dimensional damage to an enemy target or heals a friendly target every 0.5 sec. If used on a target affected by Illuminated or Illumination, it will chain up to 3 times to additional targets.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Dimensional"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Celestial_CelestialConduit",
@@ -15354,14 +15913,14 @@
     "power_id": 464,
     "name": "Conviction",
     "tier": 1,
-    "power_type": null,
+    "power_type": "SELF_HEAL",
     "advantages": [
       1,
       2,
       477
     ],
-    "activation_type": null,
-    "activation_time": null,
+    "activation_type": "CLICK",
+    "activation_time": 0.5,
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
@@ -15380,7 +15939,7 @@
     "power_id": 465,
     "name": "Illumination",
     "tier": 1,
-    "power_type": null,
+    "power_type": "HEAL",
     "advantages": [
       1,
       2,
@@ -15388,8 +15947,8 @@
       3,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
+    "activation_type": "CLICK",
+    "activation_time": 0.5,
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
@@ -15418,7 +15977,7 @@
     "activation_time": null,
     "max_duration": null,
     "tick_rate": null,
-    "cooldown": null,
+    "cooldown": 5,
     "range_tags": [],
     "tooltip": "Celestial, Active Offense Self Critical Chance Buff Requires 1 power from Celestial or 2 non-Energy Building powers from any framework. Increases your Critical Hit and Critical Severity chances by 2.5/3.5/4.7 applies 1860 Break Free damage to any Holds, Roots, or Disables affectding you. Activates a shared cooldown of 90 seconds with other Active Offense powers.",
     "tags": [],
@@ -15434,14 +15993,14 @@
     "power_id": 467,
     "name": "Iniquity",
     "tier": 1,
-    "power_type": null,
+    "power_type": "ALLY_HEAL",
     "advantages": [
       1,
       2,
       328
     ],
-    "activation_type": null,
-    "activation_time": null,
+    "activation_type": "CLICK",
+    "activation_time": 0.5,
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
@@ -15474,7 +16033,11 @@
     "range_tags": [],
     "tooltip": "Passive (Support). Slotted Support Passive. + Increases your Paranormal damage. + Increases your Dimensional damage resistance. + Increases your Paranormal damage by a lesser amount. + Increases the strength of your healing. + Heals you and nearby friends every 3 seconds. + Recovers Energy when you take Dimensional damage.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Dimensional",
+      "Ego",
+      "Magic"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Celestial_Seraphim",
@@ -15486,7 +16049,7 @@
     "power_id": 469,
     "name": "Vengeance",
     "tier": 1,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -15494,15 +16057,17 @@
       3,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "CHARGE",
+    "activation_time": 0.83,
+    "max_duration": 1.67,
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
     "tooltip": "Celestial, 50 foot Ranged 8-15 foot Sphere AoE Damage Requires 1 power from Celestial or 2 non-Energy Building powers from any framework. Vengeance causes a concentrated burst of dimensional energy to slam into your enemies.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Dimensional"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Celestial_Vengeance",
@@ -15514,7 +16079,7 @@
     "power_id": 470,
     "name": "Expulse",
     "tier": 2,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -15524,7 +16089,7 @@
       3,
       5
     ],
-    "activation_type": null,
+    "activation_type": "FULL_CHARGE",
     "activation_time": 0.5,
     "max_duration": 1,
     "tick_rate": null,
@@ -15535,7 +16100,9 @@
     ],
     "tooltip": "Ranged AoE Damage/Heal/Rune/Enchantment",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Dimensional"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Celestial_Expulse",
@@ -15547,17 +16114,17 @@
     "power_id": 471,
     "name": "Palliate",
     "tier": 2,
-    "power_type": null,
+    "power_type": "ALLY_HEAL",
     "advantages": [
       1,
       2,
       12
     ],
-    "activation_type": null,
+    "activation_type": "CLICK",
     "activation_time": null,
     "max_duration": null,
     "tick_rate": null,
-    "cooldown": null,
+    "cooldown": 120,
     "range_tags": [],
     "tooltip": "Celestial, 100 foot Ranged Single Friend Heal and Buff Requires 3 powers from Celestial or 4 non-Energy Building powers from any framework. Calling upon dimensional energies you are able to heal your allies and imbue them with Presence.",
     "tags": [],
@@ -15573,13 +16140,13 @@
     "power_id": 472,
     "name": "Redemption",
     "tier": 2,
-    "power_type": null,
+    "power_type": "REVIVE",
     "advantages": [
       1,
       2,
       492
     ],
-    "activation_type": null,
+    "activation_type": "FULL_CHARGE",
     "activation_time": 0.83,
     "max_duration": 2,
     "tick_rate": null,
@@ -15602,17 +16169,17 @@
     "power_id": 473,
     "name": "Celestial Cleansing",
     "tier": 3,
-    "power_type": null,
+    "power_type": "DEBUFF",
     "advantages": [
       1,
       2,
       148
     ],
-    "activation_type": null,
-    "activation_time": null,
+    "activation_type": "CLICK",
+    "activation_time": 0.5,
     "max_duration": null,
     "tick_rate": null,
-    "cooldown": null,
+    "cooldown": 25,
     "range_tags": [],
     "tooltip": "Celestial, 100 foot Ranged Single Friend Cleanse Requires 5 powers from Celestial or 6 non-Energy Building powers from any framework. Purge a target, banishing an undesirable effect to far off dimensions.",
     "tags": [],
@@ -15628,7 +16195,7 @@
     "power_id": 474,
     "name": "Holy Water",
     "tier": 3,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -15637,15 +16204,17 @@
       3,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
+    "activation_type": "CLICK",
+    "activation_time": 1,
     "max_duration": null,
     "tick_rate": null,
-    "cooldown": null,
+    "cooldown": 20,
     "range_tags": [],
     "tooltip": "Celestial, 25 foot 90 Degree Cone Damage or Heal Requires 5 powers from Celestial or 6 non-Energy Building powers from any framework. + If Targeting foes, deals Dimensional damage to affected targets every 1 sec for 10 sec. Illuminated foes will also become Disoriented. + If Targeting allies, heals affected targets once every 2 sec for 10 sec.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Dimensional"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Celestial_HolyWater",
@@ -15665,7 +16234,7 @@
       3
     ],
     "activation_type": "TOGGLE",
-    "activation_time": 0.5,
+    "activation_time": "0.5-0,35",
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
@@ -15675,7 +16244,9 @@
     ],
     "tooltip": "Ranged Damage/Energy Builder/Fear. Deals Dimensional damage and generates energy. The initial hit is slightly more effective and has a 20Fear%",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Dimensional"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Darkness_ShadowBolt",
@@ -15687,7 +16258,7 @@
     "power_id": 476,
     "name": "Shadow Blast",
     "tier": 0,
-    "power_type": null,
+    "power_type": "RANGED_DAMAGE",
     "advantages": [
       1,
       2,
@@ -15698,7 +16269,7 @@
       7,
       5
     ],
-    "activation_type": null,
+    "activation_type": "CHARGE",
     "activation_time": 0.5,
     "max_duration": 1.5,
     "tick_rate": null,
@@ -15709,7 +16280,9 @@
     ],
     "tooltip": "Ranged Damage/Fear/Blast. Deals Dimensional damage and has a 25-100Fear%",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Dimensional"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Darkness_ShadowBlast",
@@ -15721,7 +16294,7 @@
     "power_id": 477,
     "name": "Dark Tether",
     "tier": 1,
-    "power_type": null,
+    "power_type": "RANGED_DAMAGE",
     "advantages": [
       1,
       2,
@@ -15731,7 +16304,7 @@
       3,
       5
     ],
-    "activation_type": null,
+    "activation_type": "CHARGE",
     "activation_time": 0.83,
     "max_duration": 1.17,
     "tick_rate": null,
@@ -15742,7 +16315,9 @@
     ],
     "tooltip": "Ranged Damage/Knock To/Fear. Deals Dimensional damage and knocks the target to you. Has a 46-100Fear%",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Dimensional"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Darkness_DarkTether",
@@ -15770,7 +16345,9 @@
     ],
     "tooltip": "Block. While blocking, grants 250% resistance to all damage, increases your resistance to Holds and Knocks, and reduces your movement speed. Features: + Deals damage to attackers and heals you each time you take damage while blocking. This effect can only occur once every second.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Dimensional"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Darkness_EbonVoid",
@@ -15789,7 +16366,7 @@
     ],
     "activation_type": "CLICK",
     "activation_time": 1,
-    "max_duration": 2.5,
+    "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
@@ -15809,7 +16386,7 @@
     "power_id": 480,
     "name": "Grasping Shadows",
     "tier": 1,
-    "power_type": null,
+    "power_type": "CROWD_CONTROL",
     "advantages": [
       1,
       2,
@@ -15819,7 +16396,7 @@
       3,
       5
     ],
-    "activation_type": null,
+    "activation_type": "FULL_CHARGE",
     "activation_time": 0.83,
     "max_duration": 2.17,
     "tick_rate": null,
@@ -15868,7 +16445,7 @@
     "power_id": 482,
     "name": "Shadow Embrace",
     "tier": 1,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -15879,10 +16456,10 @@
       3,
       5
     ],
-    "activation_type": null,
+    "activation_type": "MAINTAIN",
     "activation_time": 0.67,
-    "max_duration": null,
-    "tick_rate": 5,
+    "max_duration": 5,
+    "tick_rate": 0.5,
     "cooldown": null,
     "range_tags": [
       "Targets foe (5 max)",
@@ -15891,7 +16468,9 @@
     ],
     "tooltip": "Ranged AoE Damage/Fear. Deals Dimensional damage to foes. Has a 20Fear%",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Dimensional"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Darkness_ShadowEmbrace",
@@ -15916,7 +16495,11 @@
     "range_tags": [],
     "tooltip": "Passive (Offensive). Slotted Offensive Passive. + Increases your Paranormal damage. + Increases your Dimensional damage resistance. + Increases your Paranormal damage resistance by a lesser amount. + Increases your Aggression Stealth and Perception Stealth. + Reduces your threat slightly. + When you attack a foe, you have a chance to recover a small percentage of your health. This can only happen once every 3 seconds. + Recovers Energy when you take Dimensional damage.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Dimensional",
+      "Ego",
+      "Magic"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Darkness_ShadowForm",
@@ -16009,7 +16592,7 @@
     "power_id": 487,
     "name": "Void Shift",
     "tier": 1,
-    "power_type": null,
+    "power_type": "LUNGE",
     "advantages": [
       1,
       2,
@@ -16019,7 +16602,7 @@
       7,
       5
     ],
-    "activation_type": null,
+    "activation_type": "CLICK",
     "activation_time": 0.5,
     "max_duration": null,
     "tick_rate": null,
@@ -16030,7 +16613,9 @@
     ],
     "tooltip": "Lunge/Melee Damage. Lunges to the target, dealing Dimensional damage and Snaring them for 13 seconds. If the target is further than 20 feet away, they are also Stunned briefly.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Dimensional"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Darkness_VoidShift",
@@ -16042,13 +16627,13 @@
     "power_id": 488,
     "name": "Dark Pact",
     "tier": 2,
-    "power_type": null,
+    "power_type": "REVIVE",
     "advantages": [
       1,
       2,
       376
     ],
-    "activation_type": null,
+    "activation_type": "FULL_CHARGE",
     "activation_time": 0.83,
     "max_duration": 2,
     "tick_rate": null,
@@ -16071,14 +16656,14 @@
     "power_id": 489,
     "name": "Dark Transfusion",
     "tier": 2,
-    "power_type": null,
+    "power_type": "BUFF_SELF",
     "advantages": [
       1,
       2,
       54,
       3
     ],
-    "activation_type": null,
+    "activation_type": "CLICK",
     "activation_time": null,
     "max_duration": null,
     "tick_rate": null,
@@ -16100,7 +16685,7 @@
     "power_id": 490,
     "name": "Dimensional Collapse",
     "tier": 2,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -16111,7 +16696,7 @@
       3,
       5
     ],
-    "activation_type": null,
+    "activation_type": "CLICK",
     "activation_time": 0.67,
     "max_duration": null,
     "tick_rate": null,
@@ -16123,7 +16708,9 @@
     ],
     "tooltip": "Ranged AoE Damage/DoT/Knock. Deals Dimensional damage every sec for 16 sec to targets. Affected targets are Knocked Down.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Dimensional"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Darkness_DimensionalCollapse",
@@ -16135,7 +16722,7 @@
     "power_id": 491,
     "name": "Lifedrain",
     "tier": 2,
-    "power_type": null,
+    "power_type": "RANGED_DAMAGE",
     "advantages": [
       1,
       2,
@@ -16143,7 +16730,7 @@
       3,
       5
     ],
-    "activation_type": null,
+    "activation_type": "MAINTAIN",
     "activation_time": 0.5,
     "max_duration": 4,
     "tick_rate": 0.5,
@@ -16154,7 +16741,9 @@
     ],
     "tooltip": "Ranged Damage/Self Heal. Deals Dimensional damage to the target and heals you every 0.5 seconds.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Dimensional"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Darkness_Lifedrain",
@@ -16166,21 +16755,23 @@
     "power_id": 492,
     "name": "Shadow Scheme",
     "tier": 2,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
       3
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "FULL_CHARGE",
+    "activation_time": 0.67,
+    "max_duration": 1.33,
     "tick_rate": null,
-    "cooldown": null,
+    "cooldown": 30,
     "range_tags": [],
     "tooltip": null,
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Dimensional"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Darkness_ShadowScheme",
@@ -16192,7 +16783,7 @@
     "power_id": 493,
     "name": "Soul Vortex",
     "tier": 2,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -16201,7 +16792,7 @@
       3,
       5
     ],
-    "activation_type": null,
+    "activation_type": "CLICK",
     "activation_time": 0.67,
     "max_duration": null,
     "tick_rate": null,
@@ -16212,7 +16803,9 @@
     ],
     "tooltip": "Ranged AoE Damage/Heal/Rune/Enchantment. Creates a Rift near your target, dealing Dimensional damage over time to targets within 15 feet of it. Targets within 20 feet are pulled toward the Soul Vortex. After this power expires, it leaves a Healing Rune behind.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Dimensional"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Darkness_SoulVortex",
@@ -16224,18 +16817,18 @@
     "power_id": 494,
     "name": "Veil of Darkness",
     "tier": 2,
-    "power_type": null,
+    "power_type": "DEBUFF",
     "advantages": [
       1,
       2,
       131,
       207
     ],
-    "activation_type": null,
+    "activation_type": "CLICK",
     "activation_time": 0.67,
     "max_duration": null,
     "tick_rate": null,
-    "cooldown": 15,
+    "cooldown": 90,
     "range_tags": [
       "Targets Self"
     ],
@@ -16258,7 +16851,7 @@
       1,
       2
     ],
-    "activation_type": null,
+    "activation_type": "FULL_CHARGE",
     "activation_time": 0.87,
     "max_duration": 2,
     "tick_rate": null,
@@ -16268,7 +16861,9 @@
     ],
     "tooltip": "Controllable Pet",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Dimensional"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Darkness_VoidHorror",
@@ -16280,7 +16875,7 @@
     "power_id": 496,
     "name": "Ebon Rift",
     "tier": 3,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -16291,10 +16886,10 @@
       3,
       5
     ],
-    "activation_type": null,
+    "activation_type": "MAINTAIN",
     "activation_time": 0.5,
-    "max_duration": null,
-    "tick_rate": 6,
+    "max_duration": 6,
+    "tick_rate": 0.5,
     "cooldown": 15,
     "range_tags": [
       "Targets foe (5 max)",
@@ -16303,7 +16898,9 @@
     ],
     "tooltip": "Ranged AoE Damage/Snare/Fear. Deals Dimensional Damage every 0.5 sec to all targets. Foes within 20 feet have their movement speed reduced by 100 chance to apply Fear to affected targets. Fear causes the target to cower for 3 seconds. The longer you maintain this power, the longer the rift will linger afterward.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Dimensional"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Darkness_EbonRift",
@@ -16315,7 +16912,7 @@
     "power_id": 497,
     "name": "Ebon Ruin",
     "tier": 3,
-    "power_type": null,
+    "power_type": "RANGED_DAMAGE",
     "advantages": [
       1,
       2,
@@ -16325,7 +16922,7 @@
       3,
       5
     ],
-    "activation_type": null,
+    "activation_type": "CHARGE",
     "activation_time": 0.67,
     "max_duration": 1.83,
     "tick_rate": null,
@@ -16336,7 +16933,9 @@
     ],
     "tooltip": "Ranged Damage/Snare. Deals Dimensional damage to the target. On a full charge, Snares the target for 13 seconds, reducing their movement speed by 100%",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Dimensional"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Darkness_EbonRuin",
@@ -16348,16 +16947,16 @@
     "power_id": 498,
     "name": "Madness Aura",
     "tier": 3,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
       82
     ],
-    "activation_type": null,
+    "activation_type": "TOGGLE",
     "activation_time": 1,
-    "max_duration": null,
-    "tick_rate": 10,
+    "max_duration": 10,
+    "tick_rate": 1,
     "cooldown": 30,
     "range_tags": [
       "Affects foe (1 max)",
@@ -16365,7 +16964,9 @@
     ],
     "tooltip": "Pick Up and Throw/Fear. Has a 20Fear chance every sec to throw an object at a target within 25 feet of you. This object deals Dimensional damage based on the mass of the object and hits targets within 5 feet of the primary target. Affected targets are Knocked Down. Has a 15Devoid%",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Dimensional"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Darkness_MadnessAura",
@@ -16377,7 +16978,7 @@
     "power_id": 499,
     "name": "Shade Storm",
     "tier": 3,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -16387,10 +16988,10 @@
       3,
       5
     ],
-    "activation_type": null,
+    "activation_type": "MAINTAIN",
     "activation_time": 0.5,
-    "max_duration": null,
-    "tick_rate": 5,
+    "max_duration": 5,
+    "tick_rate": 0.5,
     "cooldown": null,
     "range_tags": [
       "Targets foe (5 max)",
@@ -16399,7 +17000,9 @@
     ],
     "tooltip": "Ranged AoE Damage/Fear/Knockdown",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Dimensional"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Darkness_ShadeStorm",
@@ -16411,7 +17014,7 @@
     "power_id": 500,
     "name": "Shadow Eruption",
     "tier": 3,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -16423,7 +17026,7 @@
       3,
       5
     ],
-    "activation_type": null,
+    "activation_type": "CHARGE",
     "activation_time": 0.67,
     "max_duration": 1.83,
     "tick_rate": null,
@@ -16434,7 +17037,9 @@
     ],
     "tooltip": "Ranged AoE Damage/Knock Back",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Dimensional"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Darkness_ShadowEruption",
@@ -16446,13 +17051,13 @@
     "power_id": 501,
     "name": "Summon Shadows",
     "tier": 3,
-    "power_type": null,
+    "power_type": "UNCONTROLED_PET",
     "advantages": [
       1,
       2,
       157
     ],
-    "activation_type": null,
+    "activation_type": "FULL_CHARGE",
     "activation_time": 0.67,
     "max_duration": 1,
     "tick_rate": null,
@@ -16462,7 +17067,9 @@
     ],
     "tooltip": "Uncontrolled Pet. Summons 3 Shadows to attack your foes. These Shadows attack your foes, dealing Dimensional damage.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Dimensional"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Darkness_SummonShadows",
@@ -16520,7 +17127,9 @@
     ],
     "tooltip": "You and allies gainsl additional damage strentth. + The bonuses applied to you scale with your Super Stats, while the bonuses applied to allies scales with your Presence. + These bonuses scale differently depending on whether you're in the Hybrid or Support role, with Hybrid favoring you and Support favoring your allies.  + Whenever someone affected by this power lands a critical hit with a damaging attack, that foe suffers additional Magic damage. This may only occur twice every 6 seconds. + The aura is always active on you, but will only apply on teammates while you're in combat.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Magic"
+    ],
     "scaling_stats": [
       "PRE"
     ],
@@ -16632,7 +17241,11 @@
     "range_tags": [],
     "tooltip": "Passive (Offense). Slotted Offensive Passive. + Increases your Magic, Dimensional, and Toxic damage. + Increases your Magic, Dimensional, and Toxic resistance. + Recovers Energy when you take Magic, Dimensional, or Toxic damage.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Magic",
+      "Dimensional",
+      "Toxic"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Sorcery_Enchanter",
@@ -16644,7 +17257,7 @@
     "power_id": 508,
     "name": "Sigils of Arcane Runes",
     "tier": 1,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -16652,7 +17265,7 @@
       379,
       3
     ],
-    "activation_type": null,
+    "activation_type": "FULL_CHARGE",
     "activation_time": 0.67,
     "max_duration": 1.33,
     "tick_rate": null,
@@ -16662,7 +17275,9 @@
     ],
     "tooltip": "Sigils/AoE Damage. Summons 5 Arcane Sigils in a circle around you. When an enemy comes within 15 feet of an Arcane Sigil, it explodes, dealing Magic damage to up to 5 targets within range.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Magic"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Sorcery_SigilsofArcaneRunes",
@@ -16674,7 +17289,7 @@
     "power_id": 509,
     "name": "Sigils of Destruction",
     "tier": 1,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -16682,7 +17297,7 @@
       379,
       3
     ],
-    "activation_type": null,
+    "activation_type": "FULL_CHARGE",
     "activation_time": 0.67,
     "max_duration": 1.33,
     "tick_rate": null,
@@ -16692,7 +17307,9 @@
     ],
     "tooltip": "Sigils/Ranged Damage. Summons 5 Destructive Sigils in a circle around you. Foes within 15 feet of a Destructive Sigil will be struck by lightning and suffer Magic damage every 2 seconds, with a 10 of the initial damage.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Magic"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Sorcery_SigilsofDestruction",
@@ -16704,7 +17321,7 @@
     "power_id": 510,
     "name": "Sigils of Ebon Weakness",
     "tier": 1,
-    "power_type": null,
+    "power_type": "CROWD_CONTROL",
     "advantages": [
       1,
       2,
@@ -16712,7 +17329,7 @@
       379,
       3
     ],
-    "activation_type": null,
+    "activation_type": "FULL_CHARGE",
     "activation_time": 0.67,
     "max_duration": 1.33,
     "tick_rate": null,
@@ -16734,7 +17351,7 @@
     "power_id": 511,
     "name": "Sigils of Radiant Sanctuary",
     "tier": 1,
-    "power_type": null,
+    "power_type": "BUFF_TARGETS",
     "advantages": [
       1,
       2,
@@ -16742,7 +17359,7 @@
       379,
       3
     ],
-    "activation_type": null,
+    "activation_type": "FULL_CHARGE",
     "activation_time": 0.67,
     "max_duration": 1.33,
     "tick_rate": null,
@@ -16771,7 +17388,7 @@
     ],
     "activation_type": "CLICK",
     "activation_time": 1,
-    "max_duration": 2.5,
+    "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
@@ -16791,12 +17408,12 @@
     "power_id": 513,
     "name": "Tyrannon's Familiar",
     "tier": 1,
-    "power_type": null,
+    "power_type": "CONTROLLABLE_PET",
     "advantages": [
       1,
       2
     ],
-    "activation_type": null,
+    "activation_type": "FULL_CHARGE",
     "activation_time": 0.87,
     "max_duration": 2,
     "tick_rate": null,
@@ -16806,7 +17423,9 @@
     ],
     "tooltip": "Controllable Pet",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Sorcery_TyrannonsFamiliar",
@@ -16818,14 +17437,14 @@
     "power_id": 514,
     "name": "Arcane Vitality",
     "tier": 2,
-    "power_type": null,
+    "power_type": "HEAL",
     "advantages": [
       1,
       2,
       300,
       689
     ],
-    "activation_type": null,
+    "activation_type": "MAINTAIN",
     "activation_time": 0.67,
     "max_duration": 4,
     "tick_rate": 0.5,
@@ -16849,14 +17468,14 @@
     "power_id": 515,
     "name": "Banish",
     "tier": 2,
-    "power_type": null,
+    "power_type": "CROWD_CONTROL",
     "advantages": [
       1,
       2,
       514,
       4
     ],
-    "activation_type": null,
+    "activation_type": "FULL_CHARGE",
     "activation_time": 0.67,
     "max_duration": 1.83,
     "tick_rate": null,
@@ -16879,13 +17498,13 @@
     "power_id": 516,
     "name": "Circle of Arcane Power",
     "tier": 2,
-    "power_type": null,
+    "power_type": "CIRCLE",
     "advantages": [
       1,
       2,
       17
     ],
-    "activation_type": null,
+    "activation_type": "FULL_CHARGE",
     "activation_time": 0.67,
     "max_duration": 0.83,
     "tick_rate": null,
@@ -16907,15 +17526,15 @@
     "power_id": 517,
     "name": "Circle of Ebon Wrath",
     "tier": 2,
-    "power_type": null,
+    "power_type": "CIRCLE",
     "advantages": [
       1,
       2,
       17
     ],
-    "activation_type": null,
+    "activation_type": "FULL_CHARGE",
     "activation_time": 0.67,
-    "max_duration": 1.5,
+    "max_duration": 0.83,
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [
@@ -16935,15 +17554,15 @@
     "power_id": 518,
     "name": "Circle of Primal Dominion",
     "tier": 2,
-    "power_type": null,
+    "power_type": "CIRCLE",
     "advantages": [
       1,
       2,
       17
     ],
-    "activation_type": null,
+    "activation_type": "FULL_CHARGE",
     "activation_time": 0.67,
-    "max_duration": 1.5,
+    "max_duration": 0.83,
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [
@@ -16963,14 +17582,14 @@
     "power_id": 519,
     "name": "Circle of Radiant Glory",
     "tier": 2,
-    "power_type": null,
+    "power_type": "CIRCLE",
     "advantages": [
       1,
       2
     ],
-    "activation_type": null,
+    "activation_type": "FULL_CHARGE",
     "activation_time": 0.67,
-    "max_duration": 1.5,
+    "max_duration": 0.83,
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [
@@ -16990,16 +17609,16 @@
     "power_id": 520,
     "name": "Divine Renewal",
     "tier": 2,
-    "power_type": null,
+    "power_type": "REVIVE",
     "advantages": [
       1,
       2,
       445
     ],
-    "activation_type": null,
+    "activation_type": "FULL_CHARGE",
     "activation_time": 0.83,
     "max_duration": 2,
-    "tick_rate": null,
+    "tick_rate": 1,
     "cooldown": null,
     "range_tags": [
       "Affects dead ally",
@@ -17019,7 +17638,7 @@
     "power_id": 521,
     "name": "Invocation of Storm Calling",
     "tier": 2,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -17030,7 +17649,7 @@
       3,
       5
     ],
-    "activation_type": null,
+    "activation_type": "MAINTAIN",
     "activation_time": 1,
     "max_duration": 4,
     "tick_rate": 1,
@@ -17041,7 +17660,9 @@
     ],
     "tooltip": "Ranged PBAoE Damage. Deals Magic damage to foes within range every second while maintained. Upon being fully maintained, foes are struck with a magical blast, dealing additional Magic damage and 50Jinxed%",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Magic"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Sorcery_InvocationofStormCalling",
@@ -17053,13 +17674,13 @@
     "power_id": 522,
     "name": "March of the Dead",
     "tier": 2,
-    "power_type": null,
+    "power_type": "UNCONTROLED_PET",
     "advantages": [
       1,
       2,
       244
     ],
-    "activation_type": null,
+    "activation_type": "FULL_CHARGE",
     "activation_time": 0.67,
     "max_duration": 1,
     "tick_rate": null,
@@ -17069,7 +17690,10 @@
     ],
     "tooltip": "Uncontrolled Pet. Summons 3 Walking Dead to attack your foes for a duration of at least 20 seconds, modified by your Inteliigence. Using this power decreases your Equilibrium for a short period of time.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Crushing",
+      "Toxic"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Sorcery_MarchoftheDead",
@@ -17081,13 +17705,13 @@
     "power_id": 523,
     "name": "Ritual of Arcane Summoning",
     "tier": 2,
-    "power_type": null,
+    "power_type": "CONTROLLABLE_PET",
     "advantages": [
       1,
       2,
       597
     ],
-    "activation_type": null,
+    "activation_type": "FULL_CHARGE",
     "activation_time": 0.67,
     "max_duration": 1.5,
     "tick_rate": null,
@@ -17097,7 +17721,9 @@
     ],
     "tooltip": "Controllable Pet",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Sorcery_RitualofArcaneSummoning",
@@ -17109,13 +17735,13 @@
     "power_id": 524,
     "name": "Ritual of Ebon Summoning",
     "tier": 2,
-    "power_type": null,
+    "power_type": "CONTROLLABLE_PET",
     "advantages": [
       1,
       2,
       597
     ],
-    "activation_type": null,
+    "activation_type": "FULL_CHARGE",
     "activation_time": 0.67,
     "max_duration": 1.5,
     "tick_rate": null,
@@ -17125,7 +17751,9 @@
     ],
     "tooltip": "Controllable Pet",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Fire"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Sorcery_RitualofEbonSummoning",
@@ -17137,13 +17765,13 @@
     "power_id": 525,
     "name": "Ritual of Primal Summoning",
     "tier": 2,
-    "power_type": null,
+    "power_type": "CONTROLLABLE_PET",
     "advantages": [
       1,
       2,
       597
     ],
-    "activation_type": null,
+    "activation_type": "FULL_CHARGE",
     "activation_time": 0.67,
     "max_duration": 1.5,
     "tick_rate": null,
@@ -17153,7 +17781,11 @@
     ],
     "tooltip": "Controllable Pet",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Piercing",
+      "Crushing",
+      "Electrical"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Sorcery_RitualofPrimalSummoning",
@@ -17165,13 +17797,13 @@
     "power_id": 526,
     "name": "Ritual of Radiant Summoning",
     "tier": 2,
-    "power_type": null,
+    "power_type": "CONTROLLABLE_PET",
     "advantages": [
       1,
       2,
       597
     ],
-    "activation_type": null,
+    "activation_type": "FULL_CHARGE",
     "activation_time": 0.67,
     "max_duration": 1.5,
     "tick_rate": null,
@@ -17181,7 +17813,10 @@
     ],
     "tooltip": "Controllable Pet",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Dimensional",
+      "Slashing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Sorcery_RitualofRadiantSummoning",
@@ -17193,7 +17828,7 @@
     "power_id": 527,
     "name": "Star Barrage",
     "tier": 2,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -17202,7 +17837,7 @@
       3,
       5
     ],
-    "activation_type": null,
+    "activation_type": "MAINTAIN",
     "activation_time": 0.5,
     "max_duration": 4,
     "tick_rate": 0.5,
@@ -17214,7 +17849,9 @@
     ],
     "tooltip": "Ranged AoE Damage/Curse. Deals Magic damage and has a 20Illuminated%",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Magic"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Sorcery_StarBarrage",
@@ -17226,7 +17863,7 @@
     "power_id": 528,
     "name": "Soul Beam",
     "tier": 3,
-    "power_type": null,
+    "power_type": "RANGED_DAMAGE",
     "advantages": [
       1,
       2,
@@ -17234,7 +17871,7 @@
       3,
       5
     ],
-    "activation_type": null,
+    "activation_type": "MAINTAIN",
     "activation_time": 0.5,
     "max_duration": 4,
     "tick_rate": 0.5,
@@ -17245,7 +17882,9 @@
     ],
     "tooltip": "Ranged Damage. Deals Magic damage to the target. Deals 10 additional damage if you are affected by an Enchantment.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Magic"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Sorcery_SoulBeam",
@@ -17265,7 +17904,7 @@
       3
     ],
     "activation_type": "TOGGLE",
-    "activation_time": 0.5,
+    "activation_time": "0.5-0,34",
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
@@ -17275,7 +17914,9 @@
     ],
     "tooltip": "Ranged Damage/Energy Builder/Root. Deals Magic damage and generates energy. The initial hit is slightly more effective and has a 15% chance to Root the target for 11 seconds.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Magic"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Sorcery_EldritchBolts",
@@ -17287,7 +17928,7 @@
     "power_id": 530,
     "name": "Eldritch Blast",
     "tier": 0,
-    "power_type": null,
+    "power_type": "RANGED_DAMAGE",
     "advantages": [
       1,
       2,
@@ -17299,7 +17940,7 @@
       7,
       5
     ],
-    "activation_type": null,
+    "activation_type": "CHARGE",
     "activation_time": 0.5,
     "max_duration": 1.5,
     "tick_rate": null,
@@ -17310,7 +17951,9 @@
     ],
     "tooltip": "Ranged Damage/Blast. Deals Magic damage and has a 12-50Mystified%",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Magic"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Sorcery_EldritchBlast",
@@ -17322,7 +17965,7 @@
     "power_id": 531,
     "name": "Binding of Aratron",
     "tier": 1,
-    "power_type": null,
+    "power_type": "RANGED_DAMAGE",
     "advantages": [
       1,
       2,
@@ -17330,7 +17973,7 @@
       3,
       5
     ],
-    "activation_type": null,
+    "activation_type": "MAINTAIN",
     "activation_time": 0.67,
     "max_duration": 5,
     "tick_rate": 1,
@@ -17341,7 +17984,9 @@
     ],
     "tooltip": "Ranged Damage/Incapacitate/Control. Deals Magic damage to the target. After maintaining for 1 second, the target is Incapacitated. Each additional tick partially refreshes the duration and durability of the Incapacitate effect.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Magic"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Sorcery_BindingofAratron",
@@ -17381,7 +18026,7 @@
     "power_id": 533,
     "name": "Pillar of Poz",
     "tier": 1,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -17392,7 +18037,7 @@
       3,
       5
     ],
-    "activation_type": null,
+    "activation_type": "CLICK",
     "activation_time": 0.83,
     "max_duration": null,
     "tick_rate": null,
@@ -17403,7 +18048,9 @@
     ],
     "tooltip": "Ranged AoE Damage/Heal/Rune/Enchantment. Deals Magic damage to nearby foes. Summons a Healing Rune at your location.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Magic"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Sorcery_PillarofPoz",
@@ -17447,7 +18094,7 @@
     ],
     "activation_type": "CLICK",
     "activation_time": 1,
-    "max_duration": 2.5,
+    "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
@@ -17497,7 +18144,7 @@
     "power_id": 537,
     "name": "Skarn's Bane",
     "tier": 2,
-    "power_type": null,
+    "power_type": "MELEE_AOE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -17508,7 +18155,7 @@
       3,
       5
     ],
-    "activation_type": null,
+    "activation_type": "MAINTAIN",
     "activation_time": 0.67,
     "max_duration": 5,
     "tick_rate": 0.5,
@@ -17519,7 +18166,9 @@
     ],
     "tooltip": "Ranged AoE Damage/Curse. Deals Magic damage to targets. Fully maintaining this power applies Hexed to targets.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Magic"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Sorcery_SkarnsBane",
@@ -17531,12 +18180,12 @@
     "power_id": 538,
     "name": "Warlock's Blades",
     "tier": 2,
-    "power_type": null,
+    "power_type": "UNCONTROLED_PET",
     "advantages": [
       1,
       2
     ],
-    "activation_type": null,
+    "activation_type": "FULL_CHARGE",
     "activation_time": 0.67,
     "max_duration": 1,
     "tick_rate": null,
@@ -17546,7 +18195,9 @@
     ],
     "tooltip": "Uncontrolled Pet. Summons a pair of magical blades to attack up to 3 foes at a time, dealing Magic damage with each hit.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Magic"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Sorcery_WarlocksBlades",
@@ -17568,7 +18219,7 @@
     "activation_time": null,
     "max_duration": null,
     "tick_rate": null,
-    "cooldown": null,
+    "cooldown": 90,
     "range_tags": [],
     "tooltip": "Celestial, Active Offense Requires 5 powers from Celestial or 6 non-Energy Building powers from any framework. You are able to temporarily draw massive energy from other dimensions, increasing your damage and healing and granting you flight for a short time.",
     "tags": [],
@@ -17584,7 +18235,7 @@
     "power_id": 540,
     "name": "Hex of Suffering",
     "tier": 3,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -17595,7 +18246,7 @@
       3,
       5
     ],
-    "activation_type": null,
+    "activation_type": "CLICK",
     "activation_time": 0.67,
     "max_duration": null,
     "tick_rate": null,
@@ -17607,7 +18258,9 @@
     ],
     "tooltip": "Ranged AoE Damage/DoT/Curse. Deals Magic damage every second for 16 seconds and applies Hexed to targets.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Magic"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Sorcery_HexofSuffering",
@@ -17619,13 +18272,13 @@
     "power_id": 541,
     "name": "Urthona's Charm",
     "tier": 3,
-    "power_type": null,
+    "power_type": "CROWD_CONTROL",
     "advantages": [
       1,
       2,
       192
     ],
-    "activation_type": null,
+    "activation_type": "FULL_CHARGE",
     "activation_time": 0.67,
     "max_duration": 1,
     "tick_rate": null,
@@ -17648,13 +18301,13 @@
     "power_id": 542,
     "name": "Vala's Light",
     "tier": 3,
-    "power_type": null,
+    "power_type": "HEAL",
     "advantages": [
       1,
       2,
       337
     ],
-    "activation_type": null,
+    "activation_type": "CHARGE",
     "activation_time": 0.67,
     "max_duration": 0.83,
     "tick_rate": null,
@@ -17678,12 +18331,12 @@
     "power_id": 543,
     "name": "Crashing Incantation",
     "tier": 4,
-    "power_type": "ULTIMATE",
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2
     ],
-    "activation_type": null,
+    "activation_type": "FULL_CHARGE",
     "activation_time": 0.67,
     "max_duration": 1.83,
     "tick_rate": null,
@@ -17695,7 +18348,9 @@
     ],
     "tooltip": "Ultimate/Ranged AoE Damage/Corruption/Curse",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Magic"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Mystic_CrashingIncantation",
@@ -17707,14 +18362,14 @@
     "power_id": 544,
     "name": "Endbringer's Grasp",
     "tier": 4,
-    "power_type": "ULTIMATE",
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2
     ],
-    "activation_type": null,
+    "activation_type": "FULL_CHARGE",
     "activation_time": 0.67,
-    "max_duration": 2,
+    "max_duration": 1.5,
     "tick_rate": null,
     "cooldown": 60,
     "range_tags": [
@@ -17723,7 +18378,9 @@
     ],
     "tooltip": "Ultimate/Ranged AoE Damage/Corruption/Curse",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Dimensional"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Mystic_EndbringersGrasp",
@@ -17735,13 +18392,13 @@
     "power_id": 545,
     "name": "Planar Fracture",
     "tier": 4,
-    "power_type": "ULTIMATE",
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
       166
     ],
-    "activation_type": null,
+    "activation_type": "FULL_CHARGE",
     "activation_time": 0.67,
     "max_duration": 2,
     "tick_rate": null,
@@ -17752,7 +18409,9 @@
     ],
     "tooltip": "Ultimate/Ranged AoE Damage/DoT/Debuff. Planar Fracture creates a tear in time and space, linking this plane with another. Chaotic energy pours forth from the fracture, causing random damage and status effects on your foes. CHARGE + Creates a Planar Fracture near your target. + Planar Fracture deals Dimensional damage to targets close to it. + The chaotic energies flowing from the Planar Fracture create random status effects on nearby enemies. - Must be fully charged. - This power is incapable of getting a Critical Hit.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Dimensional"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Mystic_PlanarFracture",
@@ -17764,12 +18423,12 @@
     "power_id": 546,
     "name": "Transcendence",
     "tier": 4,
-    "power_type": "ULTIMATE",
+    "power_type": "REVIVE",
     "advantages": [
       1,
       2
     ],
-    "activation_type": null,
+    "activation_type": "FULL_CHARGE",
     "activation_time": 1,
     "max_duration": 0.83,
     "tick_rate": null,
@@ -17792,7 +18451,7 @@
     "power_id": 547,
     "name": "Barbed Chain",
     "tier": 0,
-    "power_type": null,
+    "power_type": "MELEE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -17802,15 +18461,17 @@
       7,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
+    "activation_type": "COMBO",
+    "activation_time": "0,5-0,5-1",
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
     "tooltip": "Bestial Supernatural, 25 foot Melee Damage and Bleed (Combo) Deals Slashing damage and has a 25/25/50Bleed%",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Slashing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "BestialSupernatural_BarbedChain",
@@ -17822,7 +18483,7 @@
     "power_id": 548,
     "name": "Shred",
     "tier": 0,
-    "power_type": null,
+    "power_type": "MELEE_AOE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -17832,15 +18493,17 @@
       7,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
+    "activation_type": "COMBO",
+    "activation_time": "0,5-0,5-0,67",
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
     "tooltip": "Bestial Supernatural, 10 foot Melee Single Target Damage and Bleed (Combo) Shred uses your claws to slash at your enemies, frequently causing them to start bleeding.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Slashing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "BestialSupernatural_Shred",
@@ -17859,7 +18522,7 @@
       443
     ],
     "activation_type": "CLICK",
-    "activation_time": null,
+    "activation_time": 1,
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
@@ -17885,7 +18548,7 @@
       264
     ],
     "activation_type": "CLICK",
-    "activation_time": null,
+    "activation_time": 1,
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
@@ -17906,7 +18569,7 @@
     "power_id": 551,
     "name": "Barbed Lariat",
     "tier": 1,
-    "power_type": null,
+    "power_type": "MELEE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -17918,15 +18581,17 @@
       3,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "CHARGE",
+    "activation_time": 0.83,
+    "max_duration": 1.17,
     "tick_rate": null,
-    "cooldown": null,
+    "cooldown": 10,
     "range_tags": [],
     "tooltip": "Bestial Supernatural, 25 foot Melee Single Target Damage and Knock To Requires 1 power from Bestial Supernatural or 2 non-Energy Building powers from any framework. + Deals single target Slashing damage and Knocks the target toward you. + Has a 46-100Bleed%",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Slashing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "BestialSupernatural_BarbedLariat",
@@ -17938,7 +18603,7 @@
     "power_id": 552,
     "name": "Bite",
     "tier": 1,
-    "power_type": null,
+    "power_type": "MELEE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -17948,15 +18613,17 @@
       3,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "CHARGE",
+    "activation_time": 0.67,
+    "max_duration": 0.83,
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
     "tooltip": "Bestial Supernatural, 10 foot Melee Single Target Damage and Bleed Requires 1 power from Bestial Supernatural or 2 non-Energy Building powers from any framework. + Deals Slashing damage and has a 20Bleed% + When fully charged, consumes all of your Bleed effects and heals you based on the amount consumed.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Slashing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "BestialSupernatural_Bite",
@@ -17968,7 +18635,7 @@
     "power_id": 553,
     "name": "Feint",
     "tier": 1,
-    "power_type": null,
+    "power_type": "MELEE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -17977,15 +18644,17 @@
       3,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
+    "activation_type": "CLICK",
+    "activation_time": 0.5,
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
     "tooltip": "Bestial Supernatural, 10 foot Melee Single Target Damage and Stun Requires 1 power from Bestial Supernatural or 2 non-Energy Building powers from any framework. Deals single target Slashing damage and Stuns the target.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Slashing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "BestialSupernatural_Feint",
@@ -17997,7 +18666,7 @@
     "power_id": 554,
     "name": "Frenzy",
     "tier": 1,
-    "power_type": null,
+    "power_type": "MELEE_AOE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -18008,15 +18677,17 @@
       7,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
+    "activation_type": "COMBO",
+    "activation_time": "0,5-0,5-0,5",
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
     "tooltip": "Bestial Supernatural, 10 foot Melee (Combo) Cone AoE Damage and Bleed Requires 1 power from Bestial Supernatural or 2 non-Energy Building powers from any framework. You make wide, swiping attacks with your claws, hitting targets in front of you with a 15/15/50Bleed%",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Slashing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "BestialSupernatural_Frenzy",
@@ -18028,7 +18699,7 @@
     "power_id": 555,
     "name": "Lacerating Cyclone",
     "tier": 1,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -18037,7 +18708,7 @@
       3,
       5
     ],
-    "activation_type": null,
+    "activation_type": "MAINTAIN",
     "activation_time": 0.5,
     "max_duration": 2.5,
     "tick_rate": 0.5,
@@ -18048,7 +18719,9 @@
     ],
     "tooltip": "Ranged AoE Damage/Knock Back. Deals Slashing damage every 0.5 seconds to nearby enemies and has a 10 chance to apply Bleed to targets. Bleed deals Slashing damage every second for 16 sec, can stack up to 5 times, and is considered a Wound effect.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Slashing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "BestialSupernatural_LaceratingCyclone",
@@ -18060,7 +18733,7 @@
     "power_id": 556,
     "name": "Pounce",
     "tier": 1,
-    "power_type": null,
+    "power_type": "LUNGE",
     "advantages": [
       1,
       2,
@@ -18070,15 +18743,17 @@
       7,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
+    "activation_type": "CLICK",
+    "activation_time": 0.35,
     "max_duration": null,
     "tick_rate": null,
-    "cooldown": null,
+    "cooldown": 3,
     "range_tags": [],
     "tooltip": "Bestial Supernatural, 60 foot Lunge, Snare, and Knock Down Requires 1 power from Bestial Supernatural or 2 non-Energy Building powers from any framework. Lunges to the target, dealing Slashing damage and Snaring them for 13 seconds. If the target is further than 20 feet away, they are also Knocked Down if not already affected by a control power.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Slashing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "BestialSupernatural_Pounce",
@@ -18115,20 +18790,24 @@
     "power_id": 558,
     "name": "Command Animals",
     "tier": 2,
-    "power_type": null,
+    "power_type": "CONTROLLABLE_PET",
     "advantages": [
       1,
       2
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "FULL_CHARGE",
+    "activation_time": 0.87,
+    "max_duration": 2,
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
     "tooltip": "Bestial Supernatural, Controllable Pet Requires 3 powers from Bestial Supernatural or 4 non-Energy Building powers from any framework. With this power you may summon powerful animal companions.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Slashing",
+      "Toxic",
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "BestialSupernatural_CommandAnimals",
@@ -18147,10 +18826,10 @@
       487
     ],
     "activation_type": "CLICK",
-    "activation_time": null,
+    "activation_time": 1,
     "max_duration": null,
     "tick_rate": null,
-    "cooldown": null,
+    "cooldown": 90,
     "range_tags": [],
     "tooltip": "Bestial Supernatural, AoE Threat Wipe and Stealth Requires 3 powers from Bestial Supernatural or 4 non-Energy Building powers from any framework. - Applies Fear to you.",
     "tags": [],
@@ -18166,7 +18845,7 @@
     "power_id": 560,
     "name": "Howl",
     "tier": 2,
-    "power_type": null,
+    "power_type": "BUFF_TARGETS",
     "advantages": [
       1,
       2,
@@ -18176,11 +18855,11 @@
       3,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
+    "activation_type": "CLICK",
+    "activation_time": 0.83,
     "max_duration": null,
     "tick_rate": null,
-    "cooldown": null,
+    "cooldown": 20,
     "range_tags": [],
     "tooltip": null,
     "tags": [],
@@ -18196,7 +18875,7 @@
     "power_id": 561,
     "name": "Last Stand",
     "tier": 2,
-    "power_type": "ACTIVE_DEFENSE",
+    "power_type": "SELF_RESURRECTION",
     "advantages": [
       1,
       2,
@@ -18225,7 +18904,7 @@
     "power_id": 562,
     "name": "Moonstruck",
     "tier": 2,
-    "power_type": null,
+    "power_type": "HEAL",
     "advantages": [
       1,
       2,
@@ -18236,7 +18915,7 @@
       3,
       5
     ],
-    "activation_type": null,
+    "activation_type": "CLICK",
     "activation_time": 1,
     "max_duration": null,
     "tick_rate": null,
@@ -18259,7 +18938,7 @@
     "power_id": 563,
     "name": "Tear Down",
     "tier": 2,
-    "power_type": null,
+    "power_type": "LUNGE",
     "advantages": [
       1,
       2,
@@ -18271,7 +18950,7 @@
       7,
       5
     ],
-    "activation_type": null,
+    "activation_type": "CLICK",
     "activation_time": 1,
     "max_duration": null,
     "tick_rate": null,
@@ -18282,7 +18961,9 @@
     ],
     "tooltip": "Lunge/Bleed/Knock Down",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Slashing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "BestialSupernatural_TearDown",
@@ -18294,7 +18975,7 @@
     "power_id": 564,
     "name": "Thrash",
     "tier": 2,
-    "power_type": null,
+    "power_type": "MELEE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -18304,15 +18985,17 @@
       3,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
+    "activation_type": "MAINTAIN",
+    "activation_time": 0.5,
+    "max_duration": 4,
+    "tick_rate": 0.5,
     "cooldown": null,
     "range_tags": [],
     "tooltip": "Bestial Supernatural, Maintained Melee Slashing Damage, Heal, and Snare Requires 3 powers from Bestial Supernatural or 4 non-Energy Building powers from any framework. + Single target melee Slashing damage. + Snares the affected target. + The damage dealt by this power heals you for every one of your Bleeds or Deep wounds on the target. + Bleeds or Deep wounds from other sources do not count toward the heal.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Slashing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "BestialSupernatural_Thrash",
@@ -18335,7 +19018,7 @@
     "activation_time": null,
     "max_duration": null,
     "tick_rate": null,
-    "cooldown": null,
+    "cooldown": 90,
     "range_tags": [
       "Targets Self"
     ],
@@ -18353,7 +19036,7 @@
     "power_id": 566,
     "name": "Brutal Charge",
     "tier": 3,
-    "power_type": null,
+    "power_type": "LUNGE",
     "advantages": [
       1,
       2,
@@ -18365,15 +19048,17 @@
       7,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "FULL_CHARGE",
+    "activation_time": 0.67,
+    "max_duration": 1.33,
     "tick_rate": null,
-    "cooldown": null,
+    "cooldown": 15,
     "range_tags": [],
     "tooltip": "Brutal Charge. 60 foot lunge/10 foot Sphere. Lunge/AoE Melee Damage/Knock",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Slashing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "BestialSupernatural_BrutalCharge",
@@ -18385,7 +19070,7 @@
     "power_id": 567,
     "name": "Eviscerate",
     "tier": 3,
-    "power_type": null,
+    "power_type": "MELEE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -18394,15 +19079,17 @@
       7,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "CHARGE",
+    "activation_time": 0.67,
+    "max_duration": 0.83,
     "tick_rate": null,
-    "cooldown": null,
+    "cooldown": 3,
     "range_tags": [],
     "tooltip": "Bestial Supernatural, 10 foot Melee Single Target Damage and Bleed Consume Requires 5 powers from Bestial Supernatural or 6 non-Energy Building powers from any framework. Tap + Deals Slashing damage to your target, refreshing any Bleeds currently active. Charge + Increases the power and cost of the tap effect. + If fully charged, replaces all of your Bleeds with Deep wounds. Deep Wounds deals heavy Slashing damage over time, with the amount of damage scaling with the number of Bleeds consumed. Damage from Deep wounds ignores dodge, Shields, and partially ignores resistance. + While Deep wounds is active, you cannot apply any new Bleeds.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Slashing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "BestialSupernatural_Eviscerate",
@@ -18414,7 +19101,7 @@
     "power_id": 568,
     "name": "Massacre",
     "tier": 3,
-    "power_type": null,
+    "power_type": "MELEE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -18423,15 +19110,17 @@
       3,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "CHARGE",
+    "activation_time": 0.67,
+    "max_duration": 0.83,
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
     "tooltip": "Bestial Supernatural, 10 foot Melee Single Target Damage and Knock Down Requires 5 powers from Bestial Supernatural or 6 non-Energy Building powers from any framework. You assault your foe with a powerful slash.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Slashing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "BestialSupernatural_Massacre",
@@ -18451,14 +19140,16 @@
       3
     ],
     "activation_type": "TOGGLE",
-    "activation_time": null,
+    "activation_time": "0,5-0,34",
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
     "tooltip": "Infernal Supernatural, Energy Builder, 50 foot Ranged Single Target Damage Infernal Bolts fires shards of toxic energy at your enemy.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Toxic"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "InfernalSupernatural_InfernalBolts",
@@ -18470,7 +19161,7 @@
     "power_id": 570,
     "name": "Infernal Blast",
     "tier": 0,
-    "power_type": null,
+    "power_type": "RANGED_DAMAGE",
     "advantages": [
       1,
       2,
@@ -18479,15 +19170,17 @@
       7,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "CHARGE",
+    "activation_time": 0.5,
+    "max_duration": 1.5,
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
     "tooltip": "Infernal Supernatural, 100 foot Ranged Single Target Damage and Poison (Blast) Infernal Blast is a highly focused bolt of Toxic power. Your foes will lose this war of attrition.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Toxic"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "InfernalSupernatural_InfernalBlast",
@@ -18499,7 +19192,7 @@
     "power_id": 571,
     "name": "Lash",
     "tier": 0,
-    "power_type": null,
+    "power_type": "RANGED_DAMAGE",
     "advantages": [
       1,
       2,
@@ -18508,15 +19201,17 @@
       7,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
+    "activation_type": "COMBO",
+    "activation_time": "0,5-0,5-1",
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
     "tooltip": "Infernal Supernatural, 50 foot Ranged (Combo) Single Target Damage Lash swings a length of infernal chain at your enemy.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Toxic"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "InfernalSupernatural_Lash",
@@ -18534,7 +19229,7 @@
       2
     ],
     "activation_type": "CLICK",
-    "activation_time": null,
+    "activation_time": 1,
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
@@ -18556,7 +19251,7 @@
     "power_id": 573,
     "name": "Condemn",
     "tier": 1,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -18567,15 +19262,17 @@
       3,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "CHARGE",
+    "activation_time": 0.83,
+    "max_duration": 1.67,
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
     "tooltip": "Infernal Supernatural, 50 foot Ranged 8-15 foot Sphere AoE Damage Requires 1 power from Infernal Supernatural or 2 non-Energy Building powers from any framework. Condemn causes a concentrated burst of Toxic energy to slam into your enemies.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Toxic"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "InfernalSupernatural_Condemn",
@@ -18587,7 +19284,7 @@
     "power_id": 574,
     "name": "Devour Essence",
     "tier": 1,
-    "power_type": null,
+    "power_type": "MELEE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -18597,15 +19294,17 @@
       3,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
+    "activation_type": "MAINTAIN",
+    "activation_time": 0.5,
+    "max_duration": 4,
+    "tick_rate": 0.5,
     "cooldown": null,
     "range_tags": [],
     "tooltip": "Infernal Supernatural, 10 foot Melee Single Target Damage and Self Heal Requires 1 power from Infernal Supernatural or 2 non-Energy Building powers from any framework. Devour Essence is a parasitic attack that drains Health from your enemy and transfers it to you.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Toxic"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "InfernalSupernatural_DevourEssence",
@@ -18617,7 +19316,7 @@
     "power_id": 575,
     "name": "Life Essence",
     "tier": 1,
-    "power_type": null,
+    "power_type": "HEAL",
     "advantages": [
       1,
       2,
@@ -18625,10 +19324,10 @@
       3,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
+    "activation_type": "MAINTAIN",
+    "activation_time": 0.5,
+    "max_duration": 4,
+    "tick_rate": 0.5,
     "cooldown": null,
     "range_tags": [],
     "tooltip": "Infernal Supernatural, 20 foot PBAoE Heal Requires 1 power from Infernal Supernatural or 2 non-Energy Building powers from any framework. Heals you once per tick for an amount, and any allies within 20 feet are healed for half of that amount. If the target is affected by any Poison, the ally healing is doubled.",
@@ -18670,7 +19369,7 @@
     "power_id": 577,
     "name": "Vicious Cyclone",
     "tier": 1,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -18679,7 +19378,7 @@
       3,
       5
     ],
-    "activation_type": null,
+    "activation_type": "MAINTAIN",
     "activation_time": 0.5,
     "max_duration": 2.5,
     "tick_rate": 0.5,
@@ -18690,7 +19389,9 @@
     ],
     "tooltip": "Ranged AoE Damage/Knock Back. Deals Toxic damage every 0.5 seconds to nearby enemies and has a 10 chance to apply Deadly Poison to targets. Deadly Poison deals Toxic damage every 2 seconds for 10 seconds.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Toxic"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "InfernalSupernatural_ViciousCyclone",
@@ -18702,7 +19403,7 @@
     "power_id": 578,
     "name": "Vile Lariat",
     "tier": 1,
-    "power_type": null,
+    "power_type": "RANGED_DAMAGE",
     "advantages": [
       1,
       2,
@@ -18714,15 +19415,17 @@
       3,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "CHARGE",
+    "activation_time": 0.83,
+    "max_duration": 1.17,
     "tick_rate": null,
-    "cooldown": null,
+    "cooldown": 10,
     "range_tags": [],
     "tooltip": "Infernal Supernatural, 50 foot Ranged Single Target Damage and Knock To Requires 1 power from Infernal Supernatural or 2 non-Energy Building powers from any framework. Vile Lariat lashes out at your enemy using an infernal chain as a whip.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Toxic"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "InfernalSupernatural_VileLariat",
@@ -18748,7 +19451,9 @@
     "range_tags": [],
     "tooltip": "Infernal Supernatural, Block Requires 1 power from Infernal Supernatural or 2 non-Energy Building powers from any framework. While blocking, grants 250% resistance to all damage, increases your resistance to Holds and Knocks, and reduces your movement speed. Features: + Blocking an attack deals Toxic damage to the attacker.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Toxic"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "InfernalSupernatural_VoodooDoll",
@@ -18760,7 +19465,7 @@
     "power_id": 580,
     "name": "Crippling Coils",
     "tier": 2,
-    "power_type": null,
+    "power_type": "RANGED_DAMAGE",
     "advantages": [
       1,
       2,
@@ -18770,15 +19475,17 @@
       3,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
-    "cooldown": null,
+    "activation_type": "MAINTAIN",
+    "activation_time": 1,
+    "max_duration": 5,
+    "tick_rate": 1,
+    "cooldown": 10,
     "range_tags": [],
     "tooltip": "Infernal Supernatural, 50 foot Ranged Single Target Incapacitate Requires 3 powers from Infernal Supernatural or 4 non-Energy Building powers from any framework. Crippling Coils sends chains through the ground to latch on to your foe, preventing them from attacking or even moving.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Toxic"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "InfernalSupernatural_CripplingCoils",
@@ -18790,7 +19497,7 @@
     "power_id": 581,
     "name": "Curse",
     "tier": 2,
-    "power_type": null,
+    "power_type": "RANGED_DAMAGE",
     "advantages": [
       1,
       2,
@@ -18801,15 +19508,17 @@
       3,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
+    "activation_type": "CLICK",
+    "activation_time": 1,
     "max_duration": null,
     "tick_rate": null,
-    "cooldown": null,
+    "cooldown": 12,
     "range_tags": [],
     "tooltip": "Infernal Supernatural, 50 foot Ranged 15 foot AoE Target Damage Stun Requires 3 powers from Infernal Supernatural or 4 non-Energy Building powers from any framework. + Deals Toxic Damage. + Briefly Stuns targets. + If a target is affected by 5 or more Poison effects, they are Paralyzed instead for 12 seconds.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Toxic"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "InfernalSupernatural_Curse",
@@ -18821,13 +19530,13 @@
     "power_id": 582,
     "name": "Death's Embrace",
     "tier": 2,
-    "power_type": null,
+    "power_type": "REVIVE",
     "advantages": [
       1,
       2,
       406
     ],
-    "activation_type": null,
+    "activation_type": "FULL_CHARGE",
     "activation_time": 0.83,
     "max_duration": 2,
     "tick_rate": null,
@@ -18856,10 +19565,10 @@
       2
     ],
     "activation_type": "CLICK",
-    "activation_time": null,
+    "activation_time": 1,
     "max_duration": null,
     "tick_rate": null,
-    "cooldown": null,
+    "cooldown": 45,
     "range_tags": [],
     "tooltip": "Infernal Supernatural, 50 foot Single Target Threat Wipe Requires 3 powers from Infernal Supernatural or 4 non-Energy Building powers from any framework.",
     "tags": [],
@@ -18875,7 +19584,7 @@
     "power_id": 584,
     "name": "Epidemic",
     "tier": 2,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -18883,15 +19592,17 @@
       423,
       3
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
+    "activation_type": "MAINTAIN",
+    "activation_time": 0.5,
+    "max_duration": 4,
+    "tick_rate": 0.5,
     "cooldown": null,
     "range_tags": [],
     "tooltip": "Infernal Supernatural, 25 foot Sphere PBAoE Ranged Damage and Poison Requires 3 powers from Infernal Supernatural or 4 non-Energy Building powers from any framework. Unleash a great plague upon your enemies.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Toxic"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "InfernalSupernatural_Epidemic",
@@ -18903,7 +19614,7 @@
     "power_id": 585,
     "name": "Locust Swarm",
     "tier": 2,
-    "power_type": null,
+    "power_type": "CROWD_CONTROL",
     "advantages": [
       1,
       2,
@@ -18912,11 +19623,11 @@
       7,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "FULL_CHARGE",
+    "activation_time": 0.67,
+    "max_duration": 1.83,
     "tick_rate": null,
-    "cooldown": null,
+    "cooldown": 10,
     "range_tags": [],
     "tooltip": "Infernal Supernatural, 50 foot Single Target Hold Requires 3 powers from Infernal Supernatural or 4 non-Energy Building powers from any framework. You call a swarm of locusts on your foe, preventing them from taking any actions.",
     "tags": [],
@@ -18932,7 +19643,7 @@
     "power_id": 586,
     "name": "Will-o'-the-Wisp",
     "tier": 2,
-    "power_type": null,
+    "power_type": "DEBUFF",
     "advantages": [
       1,
       2,
@@ -18942,15 +19653,17 @@
       3,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
+    "activation_type": "CLICK",
+    "activation_time": 0.5,
     "max_duration": null,
     "tick_rate": null,
-    "cooldown": null,
+    "cooldown": 10,
     "range_tags": [],
     "tooltip": null,
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Toxic"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "InfernalSupernatural_WillotheWisp",
@@ -18962,7 +19675,7 @@
     "power_id": 587,
     "name": "Defile",
     "tier": 3,
-    "power_type": null,
+    "power_type": "RANGED_DAMAGE",
     "advantages": [
       1,
       2,
@@ -18971,15 +19684,17 @@
       3,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "CHARGE",
+    "activation_time": 0.67,
+    "max_duration": 1.83,
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
     "tooltip": "Infernal Supernatural, 100 foot Ranged Single Target Damage and Debuff Requires 5 powers from Infernal Supernatural or 6 non-Energy Building powers from any framework. Defile greatly damages your target and weakens their resistance to toxic damage.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Toxic"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "InfernalSupernatural_Defile",
@@ -18991,17 +19706,17 @@
     "power_id": 588,
     "name": "Rebirth",
     "tier": 3,
-    "power_type": null,
+    "power_type": "SELF_RESURRECTION",
     "advantages": [
       1,
       2,
       270
     ],
-    "activation_type": null,
-    "activation_time": null,
+    "activation_type": "CLICK",
+    "activation_time": 2,
     "max_duration": null,
     "tick_rate": null,
-    "cooldown": null,
+    "cooldown": 300,
     "range_tags": [],
     "tooltip": "Infernal Supernatural, Self Resurrection and Heal Requires 5 powers from Infernal Supernatural or 6 non-Energy Building powers from any framework. Can be used while dead to resurrect with 100 to damage strength. + 100 of your maximum health every second. - Shares a cooldown with similar powers.",
     "tags": [],
@@ -19025,14 +19740,16 @@
       3
     ],
     "activation_type": "TOGGLE",
-    "activation_time": null,
+    "activation_time": "0,48-0,32-0,33",
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
     "tooltip": "Bestial Supernatural, Energy Builder, 10 foot Melee Single Target Damage Bestial Fury uses your hands as deadly claws to slash apart your enemies.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Slashing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "BestialSupernatural_BestialFury",
@@ -19057,7 +19774,10 @@
     "range_tags": [],
     "tooltip": null,
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Toxic",
+      "Slashing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Supernatural_Pestilence",
@@ -19118,7 +19838,7 @@
     "power_id": 593,
     "name": "Venomous Breath",
     "tier": 1,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
@@ -19128,15 +19848,17 @@
       3,
       5
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
+    "activation_type": "MAINTAIN",
+    "activation_time": 0.5,
+    "max_duration": 5,
+    "tick_rate": 0.5,
     "cooldown": null,
     "range_tags": [],
     "tooltip": null,
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Toxic"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Supernatural_VenomousBreath",
@@ -19156,7 +19878,7 @@
     ],
     "activation_type": "CLICK",
     "activation_time": null,
-    "max_duration": null,
+    "max_duration": 15,
     "tick_rate": null,
     "cooldown": 90,
     "range_tags": [
@@ -19176,18 +19898,18 @@
     "power_id": 595,
     "name": "Soul Mesmerism",
     "tier": 2,
-    "power_type": null,
+    "power_type": "CROWD_CONTROL",
     "advantages": [
       1,
       2,
       267,
       3
     ],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "FULL_CHARGE",
+    "activation_time": 0.67,
+    "max_duration": 1.83,
     "tick_rate": null,
-    "cooldown": null,
+    "cooldown": 10,
     "range_tags": [],
     "tooltip": null,
     "tags": [],
@@ -19203,13 +19925,13 @@
     "power_id": 596,
     "name": "Corrosive Pit",
     "tier": 4,
-    "power_type": "ULTIMATE",
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
       1,
       2,
       585
     ],
-    "activation_type": null,
+    "activation_type": "CLICK",
     "activation_time": 1,
     "max_duration": null,
     "tick_rate": null,
@@ -19221,7 +19943,9 @@
     ],
     "tooltip": "Ranged AoE Damage/Poison. Deals 232 Toxic damage to all targets and creates a Corrosive Pit under your primary target for 16 seconds. Every second, Corrosive Pit does the following to affected targets, up to 10 max: + Deals 116 Toxic damage. + Has a 15DeadlyPoisonNoxiousPoison for 3.3 sec.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Toxic"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Mystic_CorrosivePit",
@@ -19233,18 +19957,18 @@
     "power_id": 597,
     "name": "Feral Rage",
     "tier": 4,
-    "power_type": "ULTIMATE",
+    "power_type": "ACTIVE_POWERS",
     "advantages": [
       1,
       2,
       288,
       315
     ],
-    "activation_type": null,
+    "activation_type": "CLICK",
     "activation_time": null,
-    "max_duration": null,
+    "max_duration": 15,
     "tick_rate": null,
-    "cooldown": null,
+    "cooldown": 90,
     "range_tags": [
       "Targets Self"
     ],
@@ -24364,17 +25088,25 @@
     "power_id": 798,
     "name": "Zombie Bone",
     "tier": null,
-    "power_type": null,
+    "power_type": "RANGED_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
+    "activation_type": "CLICK",
+    "activation_time": 0.83,
     "max_duration": null,
     "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Deals Crushing damage to the target.Has a 25% chance to apply Jinxed to the target. %Jinxed%",
-    "tags": [],
-    "damage_type": [],
+    "cooldown": 45,
+    "range_tags": [
+      "Targets foe",
+      "100 feet"
+    ],
+    "tooltip": "Deals Crushing Damage to target. + Has a 25% chance to apply Jinxed to foes. Jinxed does -10% all damage strength and -35% Run Speed for 8 sec to affected targets. When Jinxed expires targets are Knocked down.",
+    "tags": [
+      "Jinxed",
+      "Knock Down"
+    ],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Device_ZombieBone",
@@ -24518,17 +25250,25 @@
     "power_id": 805,
     "name": "Psionic Accelerator",
     "tier": null,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "FULL_CHARGE",
+    "activation_time": 1,
+    "max_duration": 1,
     "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Deals Ego damage and Paraylzes the target for up to 14 seconds. This power cannot critically hit.",
-    "tags": [],
-    "damage_type": [],
+    "cooldown": 10,
+    "range_tags": [
+      "Targets foe (5 max)",
+      "100 feet",
+      "90 degree Cone"
+    ],
+    "tooltip": "Deals Ego damage. + Paraylzes the targets. + This power cannot critically hit.",
+    "tags": [
+      "Hold"
+    ],
+    "damage_type": [
+      "Ego"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Telekinesis_MentalDiscipline",

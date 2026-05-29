@@ -860,7 +860,10 @@ export function PowersPanel({
                         }
                         disabled={!canAdd}
                         key={power.power_id}
-                        data-power-tooltip={getPowerTooltipAttribute(power)}
+                        data-power-tooltip={getPowerTooltipAttribute(
+                          power,
+                          advantagesById,
+                        )}
                         onClick={() =>
                           onAddPower(
                             power,
