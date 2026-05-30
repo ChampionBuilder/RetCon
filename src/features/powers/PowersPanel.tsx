@@ -13,6 +13,7 @@ import { getFrameworkIconName, getPowerIconName } from "@/shared/utils/icons";
 import { getPowerType } from "@/shared/utils/powerTypes";
 import { getPowerTooltipText } from "@/shared/utils/powerText";
 import { getPowerTooltipAttribute } from "@/shared/utils/powerTooltip";
+import { getFrameworkGlossaryTooltipAttribute } from "@/utils/frameworkGlossary";
 import {
   formatFrameworkName,
   getPowerDisplayFrameworkId,
@@ -234,6 +235,8 @@ export function PowersPanel({
     useState(1);
   const frameworkStripRef = useRef<HTMLDivElement | null>(null);
   const parsedSearch = useMemo(() => parsePowerSearch(search), [search]);
+  const forceAdvancedPowerTooltip = parsedSearch.advantageQueries.length > 0;
+  const advantageHighlightQueries = parsedSearch.advantageQueries.filter(Boolean);
   const hasEnergyBuilder = buildSlots.some((slot) => slot.power?.tier === -1);
   const hadEnergyBuilderRef = useRef(hasEnergyBuilder);
   const isTravelMode = isUtilityFrameworkSelection(
@@ -665,6 +668,8 @@ export function PowersPanel({
       title: string,
       onClick: (event: MouseEvent<HTMLButtonElement>) => void,
     ) {
+      const frameworkTooltip = getFrameworkGlossaryTooltipAttribute(key);
+
       return (
         <button
           className={
@@ -676,6 +681,7 @@ export function PowersPanel({
           key={key}
           onClick={onClick}
           title={title}
+          data-framework-tooltip={frameworkTooltip}
         >
           <SpriteIcon
             className="framework-button__icon"
@@ -864,6 +870,14 @@ export function PowersPanel({
                           power,
                           advantagesById,
                         )}
+                        data-power-tooltip-advanced={
+                          forceAdvancedPowerTooltip ? "true" : undefined
+                        }
+                        data-power-tooltip-advantage-queries={
+                          advantageHighlightQueries.length > 0
+                            ? JSON.stringify(advantageHighlightQueries)
+                            : undefined
+                        }
                         onClick={() =>
                           onAddPower(
                             power,

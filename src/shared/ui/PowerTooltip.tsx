@@ -1,11 +1,13 @@
 import type { PowerTooltipData } from "@/shared/utils/powerTooltip";
 
 type PowerTooltipProps = {
+  advantageHighlightQueries?: string[];
   tooltip: PowerTooltipData;
   showAdvantages?: boolean;
 };
 
 export function PowerTooltip({
+  advantageHighlightQueries = [],
   tooltip,
   showAdvantages = false,
 }: PowerTooltipProps) {
@@ -25,6 +27,28 @@ export function PowerTooltip({
   if (!hasStructuredContent && tooltip.fallbackText) {
     return <>{tooltip.fallbackText}</>;
   }
+
+  const normalizedAdvantageHighlightQueries = advantageHighlightQueries
+    .map((query) => query.trim().toLowerCase())
+    .filter(Boolean);
+  const isAdvantageHighlighted = (advantage: (typeof advantages)[number]) => {
+    if (normalizedAdvantageHighlightQueries.length === 0) {
+      return false;
+    }
+
+    const searchableText = [
+      advantage.name,
+      advantage.tooltip,
+      advantage.tags.join(" "),
+    ]
+      .filter(Boolean)
+      .join(" ")
+      .toLowerCase();
+
+    return normalizedAdvantageHighlightQueries.some((query) =>
+      searchableText.includes(query),
+    );
+  };
 
   return (
     <div className="power-tooltip-shell">
@@ -80,7 +104,11 @@ export function PowerTooltip({
           <div className="power-tooltip-advantages__list">
             {advantages.map((advantage) => (
               <section
-                className="power-tooltip-advantages__item"
+                className={
+                  isAdvantageHighlighted(advantage)
+                    ? "power-tooltip-advantages__item power-tooltip-advantages__item--highlighted"
+                    : "power-tooltip-advantages__item"
+                }
                 key={advantage.id}
               >
                 <div className="power-tooltip-advantages__header">
