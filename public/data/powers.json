@@ -274,21 +274,26 @@
     "power_id": 9,
     "name": "Power Source",
     "tier": 1,
-    "power_type": "TOGGLE_FORMS",
+    "power_type": "TOGGLE_FORM",
     "advantages": [
       1,
       2
     ],
     "activation_type": "CLICK",
     "activation_time": 1,
-    "max_duration": 2.5,
+    "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [
       "Targets Self"
     ],
     "tooltip": "Gives you a stacking buff that increases your ranged damage, as well as your melee damage to a lesser degree. + You gain a stack each time your attacks Arc, whenever you apply Negative Ions, and whenever you complete a Circuit by consuming Negative Ions. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
-    "tags": [],
+    "tags": [
+      "Untapped Power",
+      "Arc",
+      "Negative Ions",
+      "Circuit"
+    ],
     "damage_type": [],
     "scaling_stats": [
       "END"
@@ -426,7 +431,7 @@
       "Targets non-object foe",
       "100 feet"
     ],
-    "tooltip": "Wipes your threat from the target and places you in Stealth for 4 seconds + Shares a 30 second cooldown with other Threat Wipe abilities.",
+    "tooltip": "Wipes your threat from the target and places you in Stealth for 4/5/6 seconds + Shares a 30 second cooldown with other Threat Wipe abilities.",
     "tags": [
       "Stealth"
     ],
@@ -576,8 +581,7 @@
     "tooltip": "Deals Electrical Damage and applies Stormy Weather to targets for 16 sec. + When dealing direct Electrical damage to targets affected by Stormy Weather, 50% chance to Arc to a target within 25 ft, dealing Electrical Damage. This effect can occur once every 0.25 sec. + Additionally, has a 15% chance to apply Negative Ions to affected targets. This effect can occur once every 0.25 sec.",
     "tags": [
       "Negative Ions",
-      "Arc",
-      "Stormy weather"
+      "Arc"
     ],
     "damage_type": [
       "Electrical"
@@ -962,7 +966,7 @@
     "power_id": 28,
     "name": "Fiery Will",
     "tier": 1,
-    "power_type": "TOGGLE_FORMS",
+    "power_type": "TOGGLE_FORM",
     "advantages": [
       1,
       2
@@ -972,9 +976,14 @@
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Gives you a stacking buff that increases your ranged damage, as well as your melee damage to a lesser degree. + You gain a stack each time your attacks applies a Burning effect. Burning effects include Clinging Flames, Leaping Flames, Pyre Patch, and Fire Snake. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
-    "tags": [],
+    "range_tags": [
+      "Targets Self"
+    ],
+    "tooltip": "Gives you a stacking buff that increases your ranged damage, as well as your melee damage to a lesser degree. + You gain a stack each time your attacks applies a Burning effect. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
+    "tags": [
+      "Boundless Energy",
+      "Burning"
+    ],
     "damage_type": [],
     "scaling_stats": [
       "REC"
@@ -1112,7 +1121,7 @@
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
-    "tooltip": "Increase your Elemental Damage. + You gain Elemental Damage Resistance and an additional Fire Damage Resistance. + Recovers Energy when you take Fire damage. + Increase the Healing you perform. + Heals you and your nearby teammates every 3 sec. + Also, while active, you have a 20% chance to apply Clinging Flames to foes that attack you, which does Fire Damage every 2 sec for 12 sec. Clinging Flames may leap to other foes near the target. + Scales with your Super Stats",
+    "tooltip": "Increase your Elemental Damage. + You gain Elemental Damage Resistance and an additional Fire Damage Resistance. + Recovers Energy when you take Fire damage. + Increase the Healing you perform. + Heals you and your nearby teammates every 3 sec. + Also, while active, you have a 20% chance to apply Clinging Flames to foes that attack you, which does Fire Damage every 2 sec for 12 sec. Clinging Flames may leap to other foes near the target.",
     "tags": [
       "Clinging Flames"
     ],
@@ -1185,7 +1194,7 @@
     "range_tags": [
       "Targets Self"
     ],
-    "tooltip": "Increases the damage strength of your attacks by 42/60/80% and discount your energy costs by 33/40/48%. Applies Break Free damage to any Holds, Roots, or Disables affecting you. + While active, has 25% chance to apply Clinging Flames to foes attacking you, causing Fire Damage every 2 sec for 12 sec. Clinging Flames may leap to other foes near the target.   + Can be used while Held or Confused. + Lasts 15 sec. Activates a shared cooldown of 90 seconds with other Active Offense powers.",
+    "tooltip": "Increases the damage strength of your attacks by 42/60/80% and discount your energy costs by 33/40/48%. + Applies Break Free damage to any Holds, Roots, or Disables affecting you. + While active, has 25% chance to apply Clinging Flames to foes attacking you, causing Fire Damage every 2 sec for 12 sec. Clinging Flames may leap to other foes near the target.   + Can be used while Held or Confused. + Activates a shared cooldown of 90 seconds with other Active Offense powers.",
     "tags": [
       "Clinging Flames"
     ],
@@ -1216,7 +1225,7 @@
     "range_tags": [
       "Targets Self"
     ],
-    "tooltip": "Summons 5 Living Fire sigils near your location. + When an enemy comes within 15 ft of an Living Fire it explodes and deals Fire Damage to up to 5 targets within range. - Only one set of sigils may be active at a time. - Must be fully charged",
+    "tooltip": "Summons 5 Living Fire sigils near your location. + When an enemy comes within 15 ft of an Living Fire it explodes and deals Fire Damage to up to 5 targets within range. - Only one set of sigils may be active at a time.",
     "tags": [
       "Sigils"
     ],
@@ -1234,7 +1243,7 @@
     "power_id": 36,
     "name": "Smoldering",
     "tier": 1,
-    "power_type": "TOGGLE_FORMS",
+    "power_type": "TOGGLE_FORM",
     "advantages": [
       1,
       2
@@ -1244,9 +1253,14 @@
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
+    "range_tags": [
+      "Targets Self"
+    ],
     "tooltip": "Gives you a stacking buff that increases your healing, as well as your damage to a lesser degree. + You gain a stack each time your attacks applies a Burning effect. Burning effects include Clinging Flames, Leaping Flames, Pyre Patch, and Fire Snake. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
-    "tags": [],
+    "tags": [
+      "Empathy",
+      "Burning"
+    ],
     "damage_type": [],
     "scaling_stats": [
       "REC"
@@ -1660,7 +1674,7 @@
     "power_id": 49,
     "name": "Fire Snake",
     "tier": 3,
-    "power_type": "CONTROLLABLE_PET",
+    "power_type": "UNCONTROLED_PET",
     "advantages": [
       1,
       2,
@@ -1998,8 +2012,7 @@
     "tooltip": "Creates a Shielding Rune at your target, shielding up to 5 allies within 15ft for up to 10 sec. + If an ally is affected by a Direct Shield, restores a portion of it. - You cannot have more than one Rune out at a time",
     "tags": [
       "Rune",
-      "Shield",
-      "Enchantment"
+      "Shield"
     ],
     "damage_type": [],
     "scaling_stats": [
@@ -2188,19 +2201,22 @@
     "power_id": 65,
     "name": "Force Control",
     "tier": 1,
-    "power_type": "TOGGLE_FORMS",
+    "power_type": "TOGGLE_FORM",
     "advantages": [
       1,
       2
     ],
     "activation_type": "CLICK",
-    "activation_time": null,
+    "activation_time": 1,
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
+    "range_tags": [
+      "Targets Self"
+    ],
     "tooltip": "Gives you a stacking buff that increases your ranged damage, as well as your melee damage to a lesser degree. + You gain a stack each time you attempt to Knock a target. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
     "tags": [
+      "Untapped Power",
       "Knock"
     ],
     "damage_type": [],
@@ -2217,19 +2233,22 @@
     "power_id": 66,
     "name": "Vital Shielding",
     "tier": 1,
-    "power_type": "TOGGLE_FORMS",
+    "power_type": "TOGGLE_FORM",
     "advantages": [
       1,
       2
     ],
     "activation_type": "CLICK",
-    "activation_time": null,
+    "activation_time": 1,
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
+    "range_tags": [
+      "Targets Self"
+    ],
     "tooltip": "Gives you a stacking buff that increases your healing and shielding, as well as your melee and ranged damage to a lesser degree. + You gain a stack each time you apply a Direct Shield or apply a Field Inversion effect. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
     "tags": [
+      "Vitality",
       "Shield",
       "Field Inversion"
     ],
@@ -2428,7 +2447,7 @@
     "advantages": [
       1,
       2,
-      647,
+      705,
       656,
       3,
       5
@@ -2671,7 +2690,7 @@
     "power_id": 79,
     "name": "Weather Shaping",
     "tier": 1,
-    "power_type": "TOGGLE_FORMS",
+    "power_type": "TOGGLE_FORM",
     "advantages": [
       1,
       2
@@ -2681,9 +2700,14 @@
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
+    "range_tags": [
+      "Targets Self"
+    ],
     "tooltip": "Gives you a stacking buff that increases your ranged damage, as well as your melee damage to a lesser degree. + You gain a stack each time you attempt to Repel a target. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
-    "tags": [],
+    "tags": [
+      "Untapped Power",
+      "Repel"
+    ],
     "damage_type": [],
     "scaling_stats": [
       "END"
@@ -2905,9 +2929,9 @@
       3,
       5
     ],
-    "activation_type": "CLICK",
+    "activation_type": "CHARGE",
     "activation_time": 0.67,
-    "max_duration": null,
+    "max_duration": 0.83,
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [
@@ -3014,7 +3038,7 @@
     "range_tags": [
       "Targets Self"
     ],
-    "tooltip": "Summons an Air Elemental to fight for you. + It will attack your target at range with Storm Lash, dealing Crushing Damage and Cold Damage to your foes.",
+    "tooltip": "Summons an Air Elemental to fight for you. + It will attack your target at range with Storm Lash, dealing Crushing Damage and Cold Damage to your foes. + New skills are acquired upon ranking this power on pets",
     "tags": [],
     "damage_type": [
       "Cold",
@@ -3146,19 +3170,23 @@
     "power_id": 93,
     "name": "Chilled Form",
     "tier": 1,
-    "power_type": "TOGGLE_FORMS",
+    "power_type": "TOGGLE_FORM",
     "advantages": [
       1,
       2
     ],
     "activation_type": "CLICK",
-    "activation_time": null,
+    "activation_time": 1,
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
+    "range_tags": [
+      "Targets Self"
+    ],
     "tooltip": "Gives you a stacking buff that increases your ranged damage, as well as your melee damage to a lesser degree. + You gain a stack each time you maintain or charge a ranged power at least halfway, or when you hit a target at least 25 feet away. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
-    "tags": [],
+    "tags": [
+      "Chilled"
+    ],
     "damage_type": [],
     "scaling_stats": [
       "EGO",
@@ -3174,23 +3202,25 @@
     "power_id": 94,
     "name": "Frigid Determination",
     "tier": 1,
-    "power_type": "TOGGLE_FORMS",
+    "power_type": "TOGGLE_FORM",
     "advantages": [
       1,
       2
     ],
     "activation_type": "CLICK",
-    "activation_time": null,
+    "activation_time": 1,
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
+    "range_tags": [
+      "Targets Self"
+    ],
     "tooltip": "Gives you a stacking buff that increases your melee damage, as well as your ranged damage to a lesser degree. + You gain a stack each time you apply of refresh Chilled on a target, or you Shatter an Ice Structure + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
     "tags": [
+      "Focus",
       "Chill",
       "Shatter",
-      "Ice structure",
-      "Focus"
+      "Ice structure"
     ],
     "damage_type": [],
     "scaling_stats": [
@@ -3451,7 +3481,7 @@
       1,
       2,
       253,
-      510
+      702
     ],
     "activation_type": "CLICK",
     "activation_time": 0.67,
@@ -3466,7 +3496,6 @@
     "tags": [
       "Chill",
       "Ice Cage",
-      "Cold Spot",
       "DoT",
       "Root"
     ],
@@ -3501,7 +3530,8 @@
     "tooltip": "Creates 3/4/5 Ice Barriers near you for 30 sec. + Each Ice Barriers grants you +20% resistance to all damage and 100% resistance to Knock effects. This effect is doubled if you area afected by Cold Snap. + Creates a Healing Rune at your location, which heals nearby allies within 15ft every 1 sec for 30 sec. + Once an Ice Barrier expires, deals Cold Damage to up to 5 targets within 10ft. - Activates a shared cooldown of 90 seconds on all Active Defenses.",
     "tags": [
       "Rune",
-      "Cold Snap"
+      "Cold Snap",
+      "Ice Barriers"
     ],
     "damage_type": [],
     "scaling_stats": [],
@@ -3562,7 +3592,7 @@
       2,
       204,
       247,
-      278,
+      704,
       3,
       5
     ],
@@ -3579,6 +3609,7 @@
     "tooltip": "Deals Cold Damage every 1 sec to foes in the target area. + Has a 10% chance every 1 sec to apply Chll, reducing the target's movement speed by 42% for 16 sec and occasionally traps targets in an Ice Cage. Stacks up to 3 times. + After 1 sec, reduces the Perception of affected targets by 500% while this power is maintained.",
     "tags": [
       "Chill",
+      "Ice Cage",
       "Perception"
     ],
     "damage_type": [
@@ -3647,7 +3678,7 @@
     "range_tags": [
       "Targets Self"
     ],
-    "tooltip": "Summons an Arctic Beast to fight for you. + It will attack your target in melee range, using its Frigid Bite to deal Slashing Damage and Cold Damage to your foes.  +The Beast can also Lunge at your target, Knocking Down the target, removing travel powers, and dealing Crushing Damage (Base). + In addition, it can Spit Ice at targets from range, dealing Cold Damage.",
+    "tooltip": "Summons an Arctic Beast to fight for you. + It will attack your target in melee range, using its Frigid Bite to deal Slashing Damage and Cold Damage to your foes.  +The Beast can also Lunge at your target, Knocking Down the target, removing travel powers, and dealing Crushing Damage (Base). + In addition, it can Spit Ice at targets from range, dealing Cold Damage.  + New skills are acquired upon ranking this power on pets",
     "tags": [],
     "damage_type": [
       "Cold",
@@ -3718,6 +3749,7 @@
     "tooltip": "Deals Cold Damage every 0.5 sec and has a 10% chance to Knock Down affected targets. + Has a 15% chance to apply Chill, reducing the target's movement speed by 42% for 16 sec and occasionally traps targets in an Ice Cage. Stacks up to 3 times.",
     "tags": [
       "Chill",
+      "Ice Cage",
       "Knock Down"
     ],
     "damage_type": [
@@ -3748,7 +3780,7 @@
       "Targets non-object foe",
       "100 feet"
     ],
-    "tooltip": "Wipes your threat from the target and places you in Stealth for 4 seconds. + Shares a 30 second cooldown with other Threat Wipe abilities.",
+    "tooltip": "Wipes your threat from the target and places you in Stealth for 4/5/6 seconds + Shares a 30 second cooldown with other Threat Wipe abilities.",
     "tags": [
       "Stealth"
     ],
@@ -3816,7 +3848,7 @@
     "range_tags": [
       "Targets Self"
     ],
-    "tooltip": "When activated, wipes your threat from up to 10 targets within 50ft of you. + Places you in Stealth for 2 sec. While transformed your resistance to damage is increased by 83%.  +You gain Flight and Flight Speed. + Foes that damage you are affected by Chill, reducing their movement speed by 42% for 16 sec and occasionally traps targets in an Ice Cage. Stacks up to 3 times. + You cannot use any powers while transformed. Sets your other threat wipe abilities on a 30 sec cooldown.",
+    "tooltip": "When activated, wipes your threat from up to 10 targets within 50ft of you. + Places you in Stealth for 2/3/4 sec. While transformed your resistance to damage is increased by 83%.  +You gain Flight and Flight Speed. + Foes that damage you are affected by Chill, reducing their movement speed by 42% for 16 sec and occasionally traps targets in an Ice Cage. Stacks up to 3 times. + You cannot use any powers while transformed. Sets your other threat wipe abilities on a 30 sec cooldown.",
     "tags": [
       "Chill",
       "Stealth",
@@ -4381,7 +4413,7 @@
       "Targets foe",
       "100 feet"
     ],
-    "tooltip": "Deals Piercing damage to your target. + Creates a Healing Rune at your target, healing up to 5 allies within 15ft every 1 sec for 10 sec.",
+    "tooltip": "Deals Piercing damage to your target. + Creates a Healing Rune at your target, healing up to 5 allies within 15ft every 1 sec for 10 sec. + You cannot have more than one Rune out at a time.",
     "tags": [
       "Heal",
       "Rune",
@@ -4401,7 +4433,7 @@
     "power_id": 129,
     "name": "Precision",
     "tier": 1,
-    "power_type": "TOGGLE_FORMS",
+    "power_type": "TOGGLE_FORM",
     "advantages": [
       1,
       2
@@ -4411,9 +4443,13 @@
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
+    "range_tags": [
+      "Targets Self"
+    ],
     "tooltip": "Gives you a stacking buff that increases your ranged damage, as well as your melee damage to a lesser degree. + You gain a stack each time you deal a Critical Hit with an Archery power. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
-    "tags": [],
+    "tags": [
+      "Analyze"
+    ],
     "damage_type": [],
     "scaling_stats": [
       "INT"
@@ -5322,7 +5358,7 @@
       119,
       174,
       338,
-      566,
+      703,
       3,
       5
     ],
@@ -5575,19 +5611,23 @@
     "power_id": 164,
     "name": "Technological Prowess",
     "tier": 1,
-    "power_type": "TOGGLE_FORMS",
+    "power_type": "TOGGLE_FORM",
     "advantages": [
       1,
       2
     ],
     "activation_type": "CLICK",
-    "activation_time": null,
+    "activation_time": 1,
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
+    "range_tags": [
+      "Targets Self"
+    ],
     "tooltip": "Gives you a stacking buff that increases your ranged damage, as well as your melee damage to a lesser degree. + You gain a stack each time one of your Technology powers is fully charge, maintained or comes off cooldown. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
-    "tags": [],
+    "tags": [
+      "Expertise"
+    ],
     "damage_type": [],
     "scaling_stats": [
       "INT"
@@ -5602,19 +5642,23 @@
     "power_id": 165,
     "name": "Technological Advancements",
     "tier": 1,
-    "power_type": "TOGGLE_FORMS",
+    "power_type": "TOGGLE_FORM",
     "advantages": [
       1,
       2
     ],
     "activation_type": "CLICK",
-    "activation_time": null,
+    "activation_time": 1,
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
+    "range_tags": [
+      "Targets Self"
+    ],
     "tooltip": "Gives you a stacking buff that increases your healing and shielding, as well as your melee and ranged damage to a lesser degree. + You gain a stack each time one of your Technology powers is fully charge, maintained or comes off cooldown. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
-    "tags": [],
+    "tags": [
+      "Medical Expertise"
+    ],
     "damage_type": [],
     "scaling_stats": [
       "INT"
@@ -5642,7 +5686,7 @@
     "range_tags": [
       "Targets Self"
     ],
-    "tooltip": "Summons an Attack Toy to fight at your side.  + The Attack Toy will engage your enemies in melee combat, pummeling the enemy, dealing  Crushing Damage. + In addition, every 15 sec, the Attack Toy will create a Replicated Attack Toy to play with for 60 sec. Up to 2 of these can be out at a time.",
+    "tooltip": "Summons an Attack Toy to fight at your side.  + The Attack Toy will engage your enemies in melee combat, pummeling the enemy, dealing  Crushing Damage. + In addition, every 15 sec, the Attack Toy will create a Replicated Attack Toy to play with for 60 sec. Up to 2 of these can be out at a time.  + New skills are acquired upon ranking this power on pets",
     "tags": [],
     "damage_type": [
       "Crushing"
@@ -5708,7 +5752,7 @@
       "Affects foe that is not destructible (20 Max)",
       "50 foot sphere"
     ],
-    "tooltip": "Wipes your threat from the target and places you in Stealth for 4 seconds. + Shares a 30 second cooldown with other Threat Wipe abilities.",
+    "tooltip": "Wipes your threat from the target and places you in Stealth for 4/5/6 seconds + Shares a 30 second cooldown with other Threat Wipe abilities.",
     "tags": [
       "Stealth"
     ],
@@ -5870,7 +5914,7 @@
     "range_tags": [
       "Targets Self"
     ],
-    "tooltip": "Summons 2 Munitions Bots to fight for you. They will use a Chaingun to attack your foes, dealing Piercing Damage every 0.5 sec. + When morphed into Turret Mode, they can no longer move, but use their Turret Cannon to deal increased Piercing Damage every 0.5 sec to foes in a line.",
+    "tooltip": "Summons 2 Munitions Bots to fight for you. They will use a Chaingun to attack your foes, dealing Piercing Damage every 0.5 sec. + When morphed into Turret Mode, they can no longer move, but use their Turret Cannon to deal increased Piercing Damage every 0.5 sec to foes in a line.  + New skills are acquired upon ranking this power on pets",
     "tags": [],
     "damage_type": [
       "Piercing"
@@ -5936,7 +5980,7 @@
     "range_tags": [
       "Targets Self"
     ],
-    "tooltip": "Summons 2 Support Drones. The Support Drones have 2 modes, Support Mode and Weapons Platform Mode. + In their default Support Mode, they will use a Healing Beam on friendly targets, healing them every 0.5 sec. + In Weapons Platform Mode, they utilize a Gravatic Bolt to attack your foes, dealing Crushing Damage.",
+    "tooltip": "Summons 2 Support Drones. The Support Drones have 2 modes, Support Mode and Weapons Platform Mode. + In their default Support Mode, they will use a Healing Beam on friendly targets, healing them every 0.5 sec. + In Weapons Platform Mode, they utilize a Gravatic Bolt to attack your foes, dealing Crushing Damage.  + New skills are acquired upon ranking this power on pets",
     "tags": [
       "Heal"
     ],
@@ -6615,19 +6659,22 @@
     "power_id": 195,
     "name": "Sharp Shooter",
     "tier": 1,
-    "power_type": "TOGGLE_FORMS",
+    "power_type": "TOGGLE_FORM",
     "advantages": [
       1,
       2
     ],
     "activation_type": "CLICK",
     "activation_time": 1,
-    "max_duration": 2.5,
+    "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
+    "range_tags": [
+      "Targets Self"
+    ],
     "tooltip": "Gives you a stacking buff that increases your ranged damage, as well as your melee damage to a lesser degree. + You gain a stack each time you gain a stack of Furious or deal a critical hit while Furious. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
     "tags": [
+      "Precision",
       "Furious"
     ],
     "damage_type": [],
@@ -7548,13 +7595,13 @@
     "power_id": 221,
     "name": "Aspect of the Machine",
     "tier": 1,
-    "power_type": "TOGGLE_FORMS",
+    "power_type": "TOGGLE_FORM",
     "advantages": [
       1,
       2
     ],
     "activation_type": "CLICK",
-    "activation_time": null,
+    "activation_time": 1,
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
@@ -7562,7 +7609,9 @@
       "Targets Self"
     ],
     "tooltip": "Gives you a stacking buff that increases your ranged and melee damage. + You gain a stack each time you kill something. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 5 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
-    "tags": [],
+    "tags": [
+      "Frenzy"
+    ],
     "damage_type": [],
     "scaling_stats": [
       "EGO",
@@ -8470,17 +8519,19 @@
     "power_id": 248,
     "name": "Particle Accelerator",
     "tier": 1,
-    "power_type": "TOGGLE_FORMS",
+    "power_type": "TOGGLE_FORM",
     "advantages": [
       1,
       2
     ],
     "activation_type": "CLICK",
-    "activation_time": null,
+    "activation_time": 1,
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
+    "range_tags": [
+      "Targets Self"
+    ],
     "tooltip": "Gives you a stacking buff that increases your melee damage, as well as your ranged damage to a lesser degree. + You gain a stack each time you apply, refresh, or consume a Radiation effect. + Radiation effects include Plasma Burn, Disintegrate, Burn Through, and Overheat. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
     "tags": [
       "Unity"
@@ -8567,7 +8618,7 @@
     "range_tags": [
       "Targets Self"
     ],
-    "tooltip": "Creates a Bad Sector at your location for 10 sec. + Foes within loft are Rooted for a short amount of time. + Has a 20% chance every 1 sec to apply Plasma Burn to your target, dealing Particle Damage every 1 sec for 16 sec. Stacks up to 5 times. + You cnanot have more than one Rune out at a time",
+    "tooltip": "Creates a Bad Sector at your location for 10 sec. + Foes within loft are Rooted for a short amount of time. + Has a 20% chance every 1 sec to apply Plasma Burn to your target, dealing Particle Damage every 1 sec for 16 sec. Stacks up to 5 times. + You cannot have more than one Rune out at a time",
     "tags": [
       "Root",
       "Plasma Burn",
@@ -8637,7 +8688,8 @@
     "tooltip": "Deals Particle Damage. + Targets affected by Plasma Burn have Disintegrate applied to them, lowering their resistance by -18% resistance to Particle Damage for 15 sec. + Consumes your Plasma Burn stacks on the targets, dealing additional Particle Damage for each one consumed.",
     "tags": [
       "Plasma Burn",
-      "Disintegrate"
+      "Disintegrate",
+      "Rupture"
     ],
     "damage_type": [
       "Particle"
@@ -8712,7 +8764,8 @@
     "tooltip": "Deals Particle Damage. + When not fully charged, adds 8 sec to the duration of your Plasma Burn. This cannot exceed the regular duration. + Fully charging this power consumes all stacks of Plasma Burn on the target. After 6 sec, applies Overheat which deals additonal Particle Damage in a 5ft radius for each Plasma Burn stack consumed. During this time you cannot apply any stacks of Plasma Burn.",
     "tags": [
       "Plasma Burn",
-      "Overheat"
+      "Overheat",
+      "Rupture"
     ],
     "damage_type": [
       "Particle"
@@ -8791,7 +8844,7 @@
     "power_id": 258,
     "name": "Concentration",
     "tier": 1,
-    "power_type": "TOGGLE_FORMS",
+    "power_type": "TOGGLE_FORM",
     "advantages": [
       1,
       2
@@ -8801,9 +8854,13 @@
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
+    "range_tags": [
+      "Targets Self"
+    ],
     "tooltip": "Gives you a stacking buff that increases your ranged damage, as well as your melee damage to a lesser degree. + You gain a stack each time you maintain or charge a ranged power at least halfway, or when you hit a target at least 25 feet away. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
-    "tags": [],
+    "tags": [
+      "Concentration"
+    ],
     "damage_type": [],
     "scaling_stats": [
       "EGO",
@@ -9127,7 +9184,7 @@
     "power_id": 268,
     "name": "Form of the Tempest",
     "tier": 1,
-    "power_type": "TOGGLE_FORMS",
+    "power_type": "TOGGLE_FORM",
     "advantages": [
       1,
       2
@@ -9137,7 +9194,9 @@
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
+    "range_tags": [
+      "Targets Self"
+    ],
     "tooltip": "Gives you a stacking buff that increases your melee damage, as well as your ranged damage to a lesser degree. + You gain a stack each time you land a critical hit. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
     "tags": [
       "Focus"
@@ -9433,7 +9492,7 @@
     "power_id": 277,
     "name": "Form of the Tiger",
     "tier": 1,
-    "power_type": "TOGGLE_FORMS",
+    "power_type": "TOGGLE_FORM",
     "advantages": [
       1,
       2
@@ -9443,7 +9502,9 @@
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
+    "range_tags": [
+      "Targets Self"
+    ],
     "tooltip": "Gives you a stacking buff that increases your melee damage, as well as your ranged damage to a lesser degree. + You gain a stack each time you charge a melee power at least halfway. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
     "tags": [
       "Focus"
@@ -9942,7 +10003,7 @@
     "power_id": 291,
     "name": "Form of the Swordsman",
     "tier": 1,
-    "power_type": "TOGGLE_FORMS",
+    "power_type": "TOGGLE_FORM",
     "advantages": [
       1,
       2
@@ -9952,10 +10013,13 @@
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
+    "range_tags": [
+      "Targets Self"
+    ],
     "tooltip": "Gives you a stacking buff that increases your melee damage, as well as your ranged damage to a lesser degree. + You gain a stack each time you apply, refresh, or consume a Bleed effect. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
     "tags": [
-      "Focus"
+      "Focus",
+      "Bleed"
     ],
     "damage_type": [],
     "scaling_stats": [
@@ -10343,14 +10407,7 @@
     "range_tags": [],
     "tooltip": "Whenever you apply a Chi Energy effect, you gain Energy every 3 sec for 6 sec. + Chi Energy effects include: Chi Flame, Lithe, Quick Maneuvering, Ebb and Flow, Nimble Movements, Sudden Strike, Dragon Rush and Bountiful Chi Resurgence.  +The energy gained scales with your Recovery, and to a lesser degree, your Endurance. + This effect does not stack, but can be refreshed",
     "tags": [
-      "Chi Flame",
-      "Lithe",
-      "Quick Maneuvering",
-      "Ebb and Flow",
-      "Nimble Movements",
-      "Sudden Strike",
-      "Dragon Rush",
-      "Bountiful Chi Resurgence"
+      "Chi Energy"
     ],
     "damage_type": [],
     "scaling_stats": [
@@ -10444,7 +10501,7 @@
     "power_id": 305,
     "name": "Form of the Master",
     "tier": 1,
-    "power_type": "TOGGLE_FORMS",
+    "power_type": "TOGGLE_FORM",
     "advantages": [
       1,
       2
@@ -10454,18 +10511,13 @@
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
+    "range_tags": [
+      "Targets Self"
+    ],
     "tooltip": "Gives you a stacking buff that increases your melee damage, as well as your ranged damage to a lesser degree. + You gain a stack each time you apply a Chi Energy effect. + Chi Energy effects include: Chi Flame, Lithe, Quick Maneuvering, Ebb and Flow, Nimble Movements, Sudden Strike, Dragon Rush and Bountiful Chi Resurgence. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
     "tags": [
       "Focus",
-      "Chi Flame",
-      "Lithe",
-      "Quick Maneuvering",
-      "Ebb and Flow",
-      "Nimble Movements",
-      "Sudden Strike",
-      "Dragon Rush",
-      "Bountiful Chi Resurgence"
+      "Chi Energy"
     ],
     "damage_type": [],
     "scaling_stats": [
@@ -11049,7 +11101,7 @@
       "Affects non-object foe (10 max)",
       "50 foot Sphere"
     ],
-    "tooltip": "Wipes your threat from the target and places you in Stealth for 4 seconds + Shares a 30 second cooldown with other Threat Wipe abilities.",
+    "tooltip": "Wipes your threat from the target and places you in Stealth for 4/5/6 seconds + Shares a 30 second cooldown with other Threat Wipe abilities.",
     "tags": [
       "Stealth"
     ],
@@ -11917,21 +11969,24 @@
     "power_id": 348,
     "name": "Mental Discipline",
     "tier": 1,
-    "power_type": "TOGGLE_FORMS",
+    "power_type": "TOGGLE_FORM",
     "advantages": [
       1,
       2,
       291
     ],
     "activation_type": "CLICK",
-    "activation_time": 0.67,
+    "activation_time": 1,
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
+    "range_tags": [
+      "Targets Self"
+    ],
     "tooltip": "Gives you a stacking buff that increases your melee damage, as well as your ranged damage to a lesser degree. + You gain a stack each time you apply, refresh, or consume a Mental State. + Mental State effects include Ego Leech, Stress, Dependency, Despondency, and Fear. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
     "tags": [
-      "Focus"
+      "Focus",
+      "Mental States"
     ],
     "damage_type": [],
     "scaling_stats": [
@@ -11947,7 +12002,7 @@
     "power_id": 349,
     "name": "Mental Precision",
     "tier": 1,
-    "power_type": "TOGGLE_FORMS",
+    "power_type": "TOGGLE_FORM",
     "advantages": [
       1,
       2
@@ -11957,10 +12012,13 @@
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
+    "range_tags": [
+      "Targets Self"
+    ],
     "tooltip": "Gives you a stacking buff that increases your ranged damage, as well as your melee damage to a lesser degree. + You gain a stack each time you apply, refresh, or consume a Mental State. + Mental State effects include Ego Leech, Stress, Dependency, Despondency, and Fear. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
     "tags": [
-      "Precision"
+      "Precision",
+      "Mental States"
     ],
     "damage_type": [],
     "scaling_stats": [
@@ -12752,9 +12810,10 @@
       "Targets foe",
       "50 feet"
     ],
-    "tooltip": "Placate the target for I0 sec, preventing them from attacking you. + Reduces your threat against the target by threat each time you use this power. + Disorients the target. Disoriented targets have their damage reduced by 10% and their movement speed reduced by 50%",
+    "tooltip": "Placate the target for 10 sec, preventing them from attacking you. + Reduces your threat against the target by threat each time you use this power. + Disorients the target. Disoriented targets have their damage reduced by 10% and their movement speed reduced by 50%",
     "tags": [
-      "Disorient"
+      "Disorient",
+      "Placate"
     ],
     "damage_type": [],
     "scaling_stats": [],
@@ -13080,7 +13139,7 @@
       "Targets non-destructible foe",
       "100 feet"
     ],
-    "tooltip": "Wipes your threat from the target and places you in Stealth for 4 seconds. + Shares a 30 second cooldown with other Threat Wipe abilities.",
+    "tooltip": "Wipes your threat from the target and places you in Stealth for 4/5/6 seconds + Shares a 30 second cooldown with other Threat Wipe abilities.",
     "tags": [
       "Stealth"
     ],
@@ -13359,7 +13418,7 @@
     "power_id": 391,
     "name": "Manipulator",
     "tier": 1,
-    "power_type": "TOGGLE_FORMS",
+    "power_type": "TOGGLE_FORM",
     "advantages": [
       1,
       2
@@ -13369,9 +13428,14 @@
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
+    "range_tags": [
+      "Targets Self"
+    ],
     "tooltip": "Gives you a stacking buff that increases the magnitude of Stuns, Incapacitates, Paralyzes, Roots, Sleeps, and Confuses. It also increases your ranged and melee damage by a lesser amount. + You gain a stack each time you Stun, Incapacitate, Paralyze, Root, Sleep, or Confuse a target. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
-    "tags": [],
+    "tags": [
+      "Manipulator",
+      "Controls"
+    ],
     "damage_type": [],
     "scaling_stats": [
       "INT",
@@ -13817,7 +13881,7 @@
     "power_id": 405,
     "name": "Wrathful Blade",
     "tier": 1,
-    "power_type": "TOGGLE_FORMS",
+    "power_type": "TOGGLE_FORM",
     "advantages": [
       1,
       2,
@@ -13828,10 +13892,13 @@
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
+    "range_tags": [
+      "Targets Self"
+    ],
     "tooltip": "Gives you a stacking buff that increases your melee damage, as well as your ranged damage to a lesser degree. + You gain a stack each time apply a burning effect to an attack. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
     "tags": [
-      "Enrage"
+      "Enrage",
+      "Burning"
     ],
     "damage_type": [],
     "scaling_stats": [
@@ -15516,7 +15583,7 @@
     "power_id": 451,
     "name": "Enrage",
     "tier": 1,
-    "power_type": "TOGGLE_FORMS",
+    "power_type": "TOGGLE_FORM",
     "advantages": [
       1,
       2,
@@ -15524,13 +15591,16 @@
     ],
     "activation_type": "CLICK",
     "activation_time": 1,
-    "max_duration": 2.5,
+    "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
+    "range_tags": [
+      "Targets Self"
+    ],
     "tooltip": "Gives you a stacking buff that increases your melee damage, as well as your ranged damage to a lesser degree. + You gain a stack each time you Knock an enemy. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
     "tags": [
-      "Enrage"
+      "Enrage",
+      "Knock"
     ],
     "damage_type": [],
     "scaling_stats": [
@@ -16442,7 +16512,7 @@
     "power_id": 479,
     "name": "Fear Consumption",
     "tier": 1,
-    "power_type": "TOGGLE_FORMS",
+    "power_type": "TOGGLE_FORM",
     "advantages": [
       1,
       2
@@ -16452,14 +16522,13 @@
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
+    "range_tags": [
+      "Targets Self"
+    ],
     "tooltip": "Gives you a stacking buff that increases your healing, as well as your damage to a lesser degree. + You gain a stack each time you apply a Mental State, such as Ego Leech, Fear, Stress, and Dependency. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
     "tags": [
-      "Ego Leech",
-      "Fear",
-      "Stress",
-      "Dependency",
-      "Daunting"
+      "Daunting",
+      "Mental States"
     ],
     "damage_type": [],
     "scaling_stats": [
@@ -16609,24 +16678,23 @@
     "power_id": 484,
     "name": "Shadow Manifestation",
     "tier": 1,
-    "power_type": "TOGGLE_FORMS",
+    "power_type": "TOGGLE_FORM",
     "advantages": [
       1,
       2
     ],
     "activation_type": "CLICK",
     "activation_time": 1,
-    "max_duration": 2.5,
+    "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
+    "range_tags": [
+      "Targets Self"
+    ],
     "tooltip": "Gives you a stacking buff that increases your ranged damage, as well as your melee damage to a lesser degree. + You gain a stack each time you apply a Mental State, such as Ego Leech, Fear, Stress, and Dependency. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
     "tags": [
-      "Ego Leech",
-      "Fear",
-      "Stress",
-      "Dependency",
-      "Empathy"
+      "Empathy",
+      "Mental States"
     ],
     "damage_type": [],
     "scaling_stats": [
@@ -16924,7 +16992,7 @@
       "Targets foe",
       "50 feet"
     ],
-    "tooltip": "Creates a Soul Vortex at your targets location for 10 sec. + Foes within 15ft take Dimensional Damage every 1 sec. + Foes within 20ft are pulled toward the Soul Vortex. + After this power expires, creates a Healing Rune. Heals up to 5 allies within 15ft every 1 sec for 10 sec. + You only have one Rune out at a time +This power cannot critically hit",
+    "tooltip": "Creates a Soul Vortex at your targets location for 10 sec. + Foes within 15ft take Dimensional Damage every 1 sec. + Foes within 20ft are pulled toward the Soul Vortex. + After this power expires, creates a Healing Rune. Heals up to 5 allies within 15ft every 1 sec for 10 sec.+ You cannot have more than one Rune out at a time.  +This power cannot critically hit",
     "tags": [
       "Reverse Repel",
       "Rune",
@@ -16989,7 +17057,7 @@
     "range_tags": [
       "Targets Self"
     ],
-    "tooltip": "Summons a Void Horror to fight for you. + It will attack your target in melee range, usually dealing Dimensional Damage to your foes. + Void Ravage: Dimensional Damage, or Feed on Fear: Dimentional Damage and Dimensional Damage every 2 sec for 6 sec to the target. + The Horror can also Lunge at your target, removing travel powers and dealing Dimensional Damage.",
+    "tooltip": "Summons a Void Horror to fight for you. + It will attack your target in melee range, usually dealing Dimensional Damage to your foes. + Void Ravage: Dimensional Damage, or Feed on Fear: Dimentional Damage and Dimensional Damage every 2 sec for 6 sec to the target. + The Horror can also Lunge at your target, removing travel powers and dealing Dimensional Damage.  + New skills are acquired upon ranking this power on pets",
     "tags": [],
     "damage_type": [
       "Dimensional"
@@ -17354,13 +17422,7 @@
     "range_tags": [],
     "tooltip": "Whenever you apply a Curse, you gain Energy every 3 sec for 6 sec. + Curses includes: Corrupted, Debilitating Poison, Devoid, Hexed, Illuminated, Jinxed, Noxious Poison. + The energy gained scales with your Intelligence, and to a lesser degree, your Recovery. + This effect does not stack, but can be refreshed",
     "tags": [
-      "Corruption",
-      "Debilitating Poison",
-      "Devoid",
-      "Hexed",
-      "Illuminated",
-      "Jinxed",
-      "Noxious Poison"
+      "Curses"
     ],
     "damage_type": [],
     "scaling_stats": [
@@ -17539,7 +17601,7 @@
     "power_id": 512,
     "name": "Spellcaster",
     "tier": 1,
-    "power_type": "TOGGLE_FORMS",
+    "power_type": "TOGGLE_FORM",
     "advantages": [
       1,
       2
@@ -17549,9 +17611,14 @@
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
+    "range_tags": [
+      "Targets Self"
+    ],
     "tooltip": "Gives you a stacking buff that increases your ranged damage, as well as your melee damage to a lesser degree. + You gain a stack each time you apply an Enchantment or Curse. + This form counts as an Enchantment, but will not trigger stacks. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
-    "tags": [],
+    "tags": [
+      "Ensorcelled",
+      "Curses"
+    ],
     "damage_type": [],
     "scaling_stats": [
       "INT"
@@ -18239,7 +18306,7 @@
       "Affects foe (5 max)",
       "15 foot Sphere"
     ],
-    "tooltip": "Deals Magic Damage to nearby foes. + Creates a Healing Rune, healing up to 5 allies within 15ft every 1 sec for 10 sec.",
+    "tooltip": "Deals Magic Damage to nearby foes. + Creates a Healing Rune, healing up to 5 allies within 15ft every 1 sec for 10 sec. + You cannot have more than one Rune out at a time.",
     "tags": [
       "Rune",
       "Heal"
@@ -18283,7 +18350,7 @@
     "power_id": 535,
     "name": "Compassion",
     "tier": 1,
-    "power_type": "TOGGLE_FORMS",
+    "power_type": "TOGGLE_FORM",
     "advantages": [
       1,
       2
@@ -18293,10 +18360,13 @@
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
+    "range_tags": [
+      "Targets Self"
+    ],
     "tooltip": "Gives you a stacking buff that increases your healing, as well as your ranged and melee damage to a lesser degree. + You gain a stack each time you heal a target. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
     "tags": [
-      "Compassion"
+      "Compassion",
+      "Heal"
     ],
     "damage_type": [],
     "scaling_stats": [
@@ -18328,7 +18398,7 @@
       "50 feet",
       "45 degree Cone"
     ],
-    "tooltip": "Wipes your threat from the target and places you in Stealth for 4 seconds. + Shares a 30 second cooldown with other Threat Wipe abilities.",
+    "tooltip": "Wipes your threat from the target and places you in Stealth for 4/5/6 seconds + Shares a 30 second cooldown with other Threat Wipe abilities.",
     "tags": [
       "Stealth"
     ],
@@ -18652,10 +18722,11 @@
       "Affects non-destructible foe (10 max)",
       "30 foot Sphere"
     ],
-    "tooltip": "Repels targets if they are within 15ft of you. After 1 sec Knocks targets upwards. + Heals or revives up to 10 allies. If they are affected by Illumination, instead heals them for a greater amount.  +Creates a Transcended Rune at your location, which heals up to 10 nearby allies within 25ft every 1 sec for 10 sec. + If they are affected by Illumination, instead heals for a greater amount. + Fallen allies will be revived if standing in this Rune. This can occur once every 5 sec and can only revive 1 ally at a time. + Anyone revived by this ability cannot be revived again by it for 90 sec.",
+    "tooltip": "Repels targets if they are within 15ft of you. After 1 sec Knocks targets upwards. + Heals or revives up to 10 allies. If they are affected by Illumination, instead heals them for a greater amount. + Creates a Transcended Rune at your location, which heals up to 10 nearby allies within 25ft every 1 sec for 10 sec. + If they are affected by Illumination, instead heals for a greater amount. + Fallen allies will be revived if standing in this Rune. This can occur once every 5 sec and can only revive 1 ally at a time. + Anyone revived by this ability cannot be revived again by it for 90 sec. + You cannot have more than one Rune out at a time.",
     "tags": [
       "Repel",
-      "Illumination"
+      "Illumination",
+      "Rune"
     ],
     "damage_type": [],
     "scaling_stats": [],
@@ -18771,7 +18842,7 @@
     "power_id": 550,
     "name": "Aspect of the Bestial",
     "tier": 1,
-    "power_type": "TOGGLE_FORMS",
+    "power_type": "TOGGLE_FORM",
     "advantages": [
       1,
       2,
@@ -18782,10 +18853,14 @@
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
+    "range_tags": [
+      "Targets Self"
+    ],
     "tooltip": "Gives you a stacking buff that increases your melee damage, as well as your ranged damage to a lesser degree. + You gain a stack each time you apply, refresh, or consume a Bleed or Deadly Poison. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
     "tags": [
-      "Enrage"
+      "Enrage",
+      "Bleed",
+      "Deadly Poison"
     ],
     "damage_type": [],
     "scaling_stats": [
@@ -19105,9 +19180,10 @@
       "Affect non-destructible foe (20 max)",
       "50 foot Sphere"
     ],
-    "tooltip": "Wipes your threat from your target. + Placates targets, preventing them from attacking you. + Applies Fear to you, debuffing your damage. + Places you in Stealth for 4 sec. + Sets your other threat wipe abilities on a 30 cooldown.",
+    "tooltip": "Wipes your threat from your target. + Placates targets, preventing them from attacking you. + Applies Fear to you, debuffing your damage. + Places you in Stealth for 4/5/6 sec. + Sets your other threat wipe abilities on a 30 cooldown.",
     "tags": [
-      "Stealth"
+      "Stealth",
+      "Placate"
     ],
     "damage_type": [],
     "scaling_stats": [],
@@ -19209,7 +19285,7 @@
       "Affects non-object foe (5 max)",
       "15 foot Sphere"
     ],
-    "tooltip": "Knocks Down nearby targets. + Drops a Healing Rune which heals nearby allies every 1 sec for 10 sec.",
+    "tooltip": "Knocks Down nearby targets. + Drops a Healing Rune which heals nearby allies every 1 sec for 10 sec. + You cannot have more than one Rune out at a time.",
     "tags": [
       "Knowk Down",
       "Rune"
@@ -19401,7 +19477,8 @@
     "tooltip": "Deals Slashing Damage to your target. + When not fully charged, adds 8 sec to the duration of your Bleeds. This cannot exceed the regular duration of the Bleed effects. + When fully charged, consumes all Bleeds and applies Deep Wound, causing increased Slashing Damage every 2 sec for 16 sec for each Bleed consumed. This effect ignores Dodge, Shields and half of the target's Resistance. + While Deep Wound is active you cannot apply any other Bleeds. Deep Wound cannot be refreshed or stacked.",
     "tags": [
       "Bleed",
-      "Deep Wound"
+      "Deep Wound",
+      "Rupture"
     ],
     "damage_type": [
       "Slashing"
@@ -19559,7 +19636,7 @@
     "power_id": 572,
     "name": "Aspect of the Infernal",
     "tier": 1,
-    "power_type": "TOGGLE_FORMS",
+    "power_type": "TOGGLE_FORM",
     "advantages": [
       1,
       2
@@ -19569,14 +19646,13 @@
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
+    "range_tags": [
+      "Targets Self"
+    ],
     "tooltip": "Gives you a stacking buff that increases your ranged damage, as well as your melee damage to a lesser degree. + You gain a stack each time you apply or refresh a Poison. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
     "tags": [
-      "Deadly Poison",
-      "Debilitating Poison",
-      "Noxious Poison",
-      "Infect",
-      "Concentration"
+      "Concentration",
+      "Poisons"
     ],
     "damage_type": [],
     "scaling_stats": [
@@ -19713,10 +19789,7 @@
     "range_tags": [],
     "tooltip": "Whenever you apply or refresh a Poison, you gain Energy every 3 sec for 6 sec. + Poisons includes: Deadly Poison, Debilitating Poison, Noxious Poison + The energy gained scales with your Intelligence, and to a lesser degree, your Recovery. + This effect does not stack, but can be refreshed",
     "tags": [
-      "Deadly Poison",
-      "Debilitating Poison",
-      "Noxious Poison",
-      "Infect"
+      "Poisons"
     ],
     "damage_type": [],
     "scaling_stats": [
@@ -19958,7 +20031,7 @@
     "tick_rate": null,
     "cooldown": 45,
     "range_tags": [],
-    "tooltip": "Wipes your threat from the target and places you in Stealth for 4 seconds. + Shares a 30 second cooldown with other Threat Wipe abilities.",
+    "tooltip": "Wipes your threat from the target and places you in Stealth for 4/5/6 seconds + Shares a 30 second cooldown with other Threat Wipe abilities.",
     "tags": [
       "Stealth"
     ],
@@ -23776,17 +23849,26 @@
     "power_id": 729,
     "name": "Bitter Storm",
     "tier": null,
-    "power_type": null,
+    "power_type": "MELEE_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
+    "activation_type": "MAINTAIN",
+    "activation_time": 0.5,
+    "max_duration": 3,
+    "tick_rate": 0.5,
     "cooldown": 90,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Affects foe (5 max)"
+    ],
+    "tooltip": "Deals Cold Damage every 0.5 sec. + If you have maintained this power for at least 1 sec, deals additional Cold Damage once you stop maintaining. + Has a 20% chance to apply Chill, reducing the target's movement speed by 35% for 16 sec. Stacks up to 3 times. This chance is increased if you are affected by Cold Snap. + Targets affected by Chill will be trapped in a Ice Cage for up to 10 sec, Rooting them in place while the structure is active. Additionally, targets affected by your Ice Cage also take Cold Damage every 1 sec. + When an Ice Cage expires, deals Cold Damage to up to 5 targets within 10ft. + When fully maintained, has a 25% chance to apply Cold Snap on you for 10 sec.",
+    "tags": [
+      "Chill",
+      "Ice Cage",
+      "Root",
+      "Cold Snap"
+    ],
+    "damage_type": [
+      "Cold"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       411
@@ -24133,17 +24215,26 @@
     "power_id": 742,
     "name": "Fire Fangs",
     "tier": null,
-    "power_type": null,
+    "power_type": "MELEE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
+    "activation_type": "MAINTAIN",
+    "activation_time": 0.5,
+    "max_duration": 4,
+    "tick_rate": 0.5,
     "cooldown": 90,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe",
+      "10 feet"
+    ],
+    "tooltip": "Deals Fire Damage every 0.5 sec and heals you for each stack of Fiery Escalation on you. This is considered to be a Life Drain effect. + When fully maintained, applies a stack of Fiery Escalation on you for 12 sec and refreshes any existing stacks. Stacks up to 4 times. + Has a 5% chance every hit to apply Clinging Flames, causing Fire Damage every 2 sec for 12 sec.",
+    "tags": [
+      "Fiery Escalation",
+      "Clinging Flame",
+      "Life Drain"
+    ],
+    "damage_type": [
+      "Fire"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       564
@@ -24349,17 +24440,27 @@
     "power_id": 751,
     "name": "Hellrend",
     "tier": null,
-    "power_type": null,
+    "power_type": "MELEE_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "CHARGE",
+    "activation_time": 0.83,
+    "max_duration": 1.17,
     "tick_rate": null,
     "cooldown": 90,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targers foe (5 max)",
+      "15 feet",
+      "320 degree Cone"
+    ],
+    "tooltip": "Deals Fire Damage and Crushing Damage . Deals an additional 30% damage if your target is immune to Knock effects. + Knocks Back affected targets. + Has a 25% chance to apply Clinging Flames to affected targets, dealing Fire Damage every 2 sec for 12 sec. + This chance is increased to 50% chance if the power is fully Charged.",
+    "tags": [
+      "Knock Back",
+      "Clinging Flames"
+    ],
+    "damage_type": [
+      "Crushing",
+      "Fire"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       410
@@ -24493,17 +24594,25 @@
     "power_id": 757,
     "name": "Qularr Toxic Barrage",
     "tier": null,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
+    "activation_type": "MAINTAIN",
+    "activation_time": 0.5,
+    "max_duration": 5,
+    "tick_rate": 0.5,
     "cooldown": 90,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe (5 max)",
+      "100 feet",
+      "3 foot Cylinder"
+    ],
+    "tooltip": "Deals Toxic Damage 2 times every 0.5 sec. + Has a 5% chance every 0.5 sec to apply Deadly Poison to affected targets, causing Toxic Damage every 1 sec for 16 sec. Stacks up to 5 times. + When fully maintained, spreads any of your Poison effects on your primary target to up to 3 foes within 5ft. + Refreshes the duration of your Poison effects on targets that these effects were spread to.",
+    "tags": [
+      "Deadly Poison"
+    ],
+    "damage_type": [
+      "Toxic"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       204
@@ -24517,17 +24626,24 @@
     "power_id": 758,
     "name": "Qularr Toxic Rifle",
     "tier": null,
-    "power_type": null,
+    "power_type": "RANGED_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
+    "activation_type": "MAINTAIN",
+    "activation_time": 0.5,
+    "max_duration": 4,
+    "tick_rate": 0.5,
     "cooldown": 90,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe",
+      "100 feet"
+    ],
+    "tooltip": "On tap, deals increased Toxic Damage. + While maintained, deals Toxic Damage every 0.5 sec. Increases this power's damage by 6% for every stack of your Deadly Poison on the target. + When maintaining, has a 10% chance every hit to apply Deadly Poison to your target. Deadly Poison deals Toxic Damage every 1 sec for 16 sec and stacks up to 5 times.",
+    "tags": [
+      "Deadly Poison"
+    ],
+    "damage_type": [
+      "Toxic"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       211
@@ -24541,17 +24657,26 @@
     "power_id": 759,
     "name": "Ray Tracer",
     "tier": null,
-    "power_type": null,
+    "power_type": "RANGED_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
+    "activation_type": "MAINTAIN",
+    "activation_time": 0.5,
+    "max_duration": 4,
+    "tick_rate": 0.5,
     "cooldown": 90,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe",
+      "100 feet"
+    ],
+    "tooltip": "On tap, deals increased Cold Damage. + While maintained, deals Cold Damage every 0.5 sec. Increases this power's damage by 10% for every stack of your Chill effect on the target. + When maintaining, has a 25% chance to apply Chill, reducing the target's movement speed by 60% for 16 sec and occasionally traps targets in an Ice Cage. Stacks up to 3 times. This chance is doubled if you are affected by Cold Snap. + When fully maintained, has a 100% chance to Shatter your Ice Structures, dealing Cold Damage based on the rank and type of the structure, to up to 5 foes within 15ft.",
+    "tags": [
+      "Chill",
+      "Shatter",
+      "Cold Snap"
+    ],
+    "damage_type": [
+      "Cold"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       200
@@ -26281,17 +26406,26 @@
     "power_id": 831,
     "name": "Potent Magic Imbued Gauntlets",
     "tier": null,
-    "power_type": null,
+    "power_type": "MELEE_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
+    "activation_type": "COMBO",
+    "activation_time": "0.4-0.7",
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Deals Magic damage to the target. The last combo hit affects up to 5 foes near the target and has a 25% chance to apply Bane to affected targets and a 10% chance to create a Healing Rune at your location.%Bane%%HealingRune%",
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe (5 max)",
+      "10 feet",
+      "180 degree Cone"
+    ],
+    "tooltip": "Deals Magic damage to the targets. + Last hit has a 25% chance to apply Bane to affected targets and a 10% chance to create a Healing Rune at your location. + You cannot have more than one Rune out at a time.",
+    "tags": [
+      "Bane",
+      "Rune"
+    ],
+    "damage_type": [
+      "Magic"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Device_MagicGauntlets",

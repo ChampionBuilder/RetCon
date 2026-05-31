@@ -1023,6 +1023,15 @@ h3 {
   font-size: 12px;
 }
 
+.framework-tooltip__hint,
+.power-tooltip__hint {
+  padding-top: 6px;
+  border-top: 1px solid rgba(150, 174, 224, 0.14);
+  color: #8f9dbd;
+  font-size: 11px;
+  font-style: italic;
+}
+
 .stat-tooltip__intro {
   margin: 0;
   color: #edf3ff;
@@ -1196,6 +1205,24 @@ h3 {
   margin: 0;
   color: #dfe8ff;
   white-space: pre-line;
+}
+
+.advantage-tooltip {
+  display: grid;
+  gap: 7px;
+  max-width: 360px;
+}
+
+.advantage-tooltip p {
+  margin: 0;
+  color: #dfe8ff;
+  line-height: 1.45;
+  white-space: pre-line;
+}
+
+.advantage-tooltip__warning {
+  color: #f6c260;
+  font-weight: 700;
 }
 
 .selection-dialog__header {

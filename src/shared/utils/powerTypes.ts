@@ -5,8 +5,10 @@ export function getPowerType(power: Power | null | undefined) {
 }
 
 export function getNormalizedPowerType(power: Power | null | undefined) {
-  return (getPowerType(power) ?? "")
+  const normalizedType = (getPowerType(power) ?? "")
     .replace(/[^a-z0-9]+/gi, "_")
     .replace(/^_+|_+$/g, "")
     .toUpperCase();
+
+  return normalizedType === "TOGGLE_FORMS" ? "TOGGLE_FORM" : normalizedType;
 }

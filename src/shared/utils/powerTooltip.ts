@@ -82,7 +82,7 @@ function formatTitle(power: Power) {
   const normalizedPowerType = getNormalizedPowerType(power);
 
   if (
-    normalizedPowerType !== "TOGGLE_FORMS" &&
+    normalizedPowerType !== "TOGGLE_FORM" &&
     normalizedPowerType !== "ENERGY_UNLOCK"
   ) {
     return power.name;

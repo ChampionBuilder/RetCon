@@ -1,4 +1,4 @@
-export type FrameworkGlossarySection = {
+﻿export type FrameworkGlossarySection = {
   label: string;
   tags: string[];
 };
@@ -68,7 +68,29 @@ const frameworkGlossaries: Record<string, FrameworkGlossaryTooltip> = {
     sections: [
       {
         label: "Mental States",
-        tags: ["Fear", "Stress", "Regret", "Dependency", "Ego Leech"],
+        tags: ["Fear", "Stress", "Regret", "Dependency", "Ego Leech", "Despondency"],
+      },
+    ],
+  },
+  Telekinesis: {
+    framework: "Telekinesis",
+    sections: [
+      {
+        label: "Mental States",
+        tags: ["Fear", "Stress", "Regret", "Dependency", "Ego Leech", "Despondency"],
+      },
+    ],
+  },
+  Telepathy: {
+    framework: "Telepathy",
+    sections: [
+      {
+        label: "Mental States",
+        tags: ["Fear", "Stress", "Regret", "Dependency", "Ego Leech", "Despondency"],
+      },
+      {
+        label: "Controls",
+        tags: ["Stun", "Hold", "Incapacitate", "Sleep", "Root", "Confuse"],
       },
     ],
   },
@@ -135,3 +157,4 @@ export function getFrameworkGlossaryTooltipAttribute(frameworkId: string) {
 
   return glossary ? JSON.stringify(glossary) : undefined;
 }
+

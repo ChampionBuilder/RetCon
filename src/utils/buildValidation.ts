@@ -50,7 +50,7 @@ export const coreBuildRequirements: BuildRequirement[] = [
     key: "toggle-form",
     label: "Toggle Form",
     section: "core",
-    powerTypes: ["TOGGLE_FORMS"],
+    powerTypes: ["TOGGLE_FORM"],
   },
   {
     key: "block",

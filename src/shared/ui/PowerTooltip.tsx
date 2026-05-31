@@ -96,6 +96,12 @@ export function PowerTooltip({
             ))}
           </ul>
         )}
+
+        {!showAdvantages && advantages.length > 0 ? (
+          <div className="power-tooltip__hint">
+            Hold Shift to see Advantages
+          </div>
+        ) : null}
       </div>
 
       {showAdvantages && advantages.length > 0 ? (
@@ -117,7 +123,6 @@ export function PowerTooltip({
                     <span>{advantage.pointsCost} pt</span>
                   ) : null}
                 </div>
-                {advantage.tooltip ? <p>{advantage.tooltip}</p> : null}
                 {advantage.tags.length > 0 ? (
                   <div className="power-tooltip__tags">
                     {advantage.tags.map((tag) => (
@@ -125,6 +130,7 @@ export function PowerTooltip({
                     ))}
                   </div>
                 ) : null}
+                {advantage.tooltip ? <p>{advantage.tooltip}</p> : null}
               </section>
             ))}
           </div>

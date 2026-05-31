@@ -9,6 +9,10 @@ type TooltipContent =
       text: string;
     }
   | {
+      kind: "advantage";
+      data: AdvantageTooltipData;
+    }
+  | {
       kind: "power";
       data: PowerTooltipData;
     }
@@ -39,6 +43,14 @@ type StatTooltipData = {
   secondaryEUs: string[];
 };
 
+type AdvantageTooltipData = {
+  name: string;
+  pointsCost: number | null;
+  tags: string[];
+  tooltip: string | null;
+  lockedReason: string | null;
+};
+
 function getTooltipElement(target: EventTarget | null) {
   if (!(target instanceof Element)) {
     return null;
@@ -49,7 +61,7 @@ function getTooltipElement(target: EventTarget | null) {
   }
 
   const element = target.closest<HTMLElement>(
-    "[title], [data-power-tooltip], [data-stat-tooltip], [data-framework-tooltip]",
+    "[title], [data-advantage-tooltip], [data-power-tooltip], [data-stat-tooltip], [data-framework-tooltip]",
   );
 
   if (!element) {
@@ -58,6 +70,7 @@ function getTooltipElement(target: EventTarget | null) {
 
   if (
     !element.title.trim() &&
+    !element.dataset.advantageTooltip &&
     !element.dataset.powerTooltip &&
     !element.dataset.statTooltip &&
     !element.dataset.frameworkTooltip
@@ -115,6 +128,34 @@ function FrameworkTooltip({ data }: { data: FrameworkGlossaryTooltip }) {
           </div>
         </div>
       ))}
+
+      <div className="framework-tooltip__hint">
+        Hold Shift to select multiple framework.
+      </div>
+    </div>
+  );
+}
+
+function AdvantageTooltip({ data }: { data: AdvantageTooltipData }) {
+  return (
+    <div className="advantage-tooltip">
+      <div className="power-tooltip-advantages__header">
+        <strong>{data.name}</strong>
+        {data.pointsCost !== null ? <span>{data.pointsCost} pt</span> : null}
+      </div>
+
+      {data.tags.length > 0 ? (
+        <div className="power-tooltip__tags">
+          {data.tags.map((tag) => (
+            <span key={tag}>{tag}</span>
+          ))}
+        </div>
+      ) : null}
+
+      {data.tooltip ? <p>{data.tooltip}</p> : null}
+      {data.lockedReason ? (
+        <p className="advantage-tooltip__warning">{data.lockedReason}</p>
+      ) : null}
     </div>
   );
 }
@@ -215,6 +256,19 @@ export function InstantTooltip() {
     );
 
     function getTooltipContent(element: HTMLElement): TooltipContent | null {
+      if (element.dataset.advantageTooltip) {
+        try {
+          return {
+            kind: "advantage",
+            data: JSON.parse(
+              element.dataset.advantageTooltip,
+            ) as AdvantageTooltipData,
+          };
+        } catch {
+          // Fall back to the plain title when a malformed dataset slips through.
+        }
+      }
+
       if (element.dataset.powerTooltip) {
         try {
           return {
@@ -315,6 +369,7 @@ export function InstantTooltip() {
           "data-power-tooltip",
           "data-power-tooltip-advantage-queries",
           "data-power-tooltip-advanced",
+          "data-advantage-tooltip",
           "data-stat-tooltip",
           "data-framework-tooltip",
           "title",
@@ -528,6 +583,8 @@ export function InstantTooltip() {
           showAdvantages={shouldShowAdvancedPowerTooltip}
           tooltip={tooltip.content.data}
         />
+      ) : tooltip.content.kind === "advantage" ? (
+        <AdvantageTooltip data={tooltip.content.data} />
       ) : tooltip.content.kind === "stat" ? (
         <StatTooltip data={tooltip.content.data} />
       ) : tooltip.content.kind === "framework" ? (

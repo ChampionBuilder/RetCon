@@ -24,6 +24,29 @@ function formatTooltip(tooltip: string | null) {
   return tooltip?.replace(/<br\s*\/?>/gi, "\n").trim() ?? "";
 }
 
+function formatTag(tag: string) {
+  return tag
+    .replace(/_/g, " ")
+    .toLowerCase()
+    .replace(/\b\w/g, (character) => character.toUpperCase());
+}
+
+function getAdvantageTooltipAttribute(
+  advantage: Advantage,
+  lockedReason: string | null,
+) {
+  const tooltipLockedReason =
+    lockedReason === "Not enough advantage points" ? null : lockedReason;
+
+  return JSON.stringify({
+    name: advantage.name,
+    pointsCost: advantage.points_cost,
+    tags: (advantage.tags ?? []).map(formatTag).filter(Boolean),
+    tooltip: formatTooltip(advantage.tooltip) || null,
+    lockedReason: tooltipLockedReason,
+  });
+}
+
 function getMissingDependency(
   advantage: Advantage,
   selectedAdvantageIds: number[],
@@ -122,13 +145,6 @@ export function AdvantageSelectionDialog({
                 totalAdvantagePoints,
                 advantagePointBudget,
               );
-          const tooltip = [
-            formatTooltip(advantage.tooltip),
-            lockedReason,
-          ]
-            .filter(Boolean)
-            .join("\n\n");
-
           return (
             <button
               aria-disabled={lockedReason ? true : undefined}
@@ -139,8 +155,11 @@ export function AdvantageSelectionDialog({
               ]
                 .filter(Boolean)
                 .join(" ")}
+              data-advantage-tooltip={getAdvantageTooltipAttribute(
+                advantage,
+                lockedReason,
+              )}
               key={advantage.advantage_id}
-              title={tooltip}
               type="button"
               onClick={() => {
                 if (lockedReason) {
