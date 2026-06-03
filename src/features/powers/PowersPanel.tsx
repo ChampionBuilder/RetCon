@@ -527,7 +527,8 @@ export function PowersPanel({
         styles.getPropertyValue("--framework-button-width"),
       ) || 34;
       const frameworkStripGap = Number.parseFloat(
-        styles.getPropertyValue("--framework-strip-gap"),
+        styles.getPropertyValue("--framework-layout-gap") ||
+          styles.getPropertyValue("--framework-strip-gap"),
       ) || 5;
       const nextFrameworkGroupSeparatorColumns = Math.max(
         0,
