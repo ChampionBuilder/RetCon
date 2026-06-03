@@ -667,8 +667,15 @@ export function PowersPanel({
       iconName: string,
       title: string,
       onClick: (event: MouseEvent<HTMLButtonElement>) => void,
+      showMultiSelectHint = false,
     ) {
-      const frameworkTooltip = getFrameworkGlossaryTooltipAttribute(key);
+      const frameworkTooltip = getFrameworkGlossaryTooltipAttribute(
+        key,
+        title,
+        showMultiSelectHint
+          ? "Hold Shift to select multiple framework."
+          : null,
+      );
 
       return (
         <button
@@ -710,6 +717,7 @@ export function PowersPanel({
           framework.iconId ?? getFrameworkIconName(framework.id),
           framework.title,
           () => onSelectFramework(framework.id, false),
+          false,
         ),
       ) ?? [];
     const utilityRow = frameworkStripRows - 1;
@@ -736,6 +744,7 @@ export function PowersPanel({
           framework.iconId ?? getFrameworkIconName(framework.id),
           framework.title,
           (event) => onSelectFramework(framework.id, event.shiftKey),
+          true,
         ),
       );
       const isAtRowStart = column === firstFrameworkColumnByRow(row);

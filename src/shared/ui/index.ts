@@ -4,3 +4,4 @@ export { InstantTooltip } from "./InstantTooltip";
 export { ModalDialog } from "./ModalDialog";
 export { PowerTooltip } from "./PowerTooltip";
 export { SpriteIcon } from "./SpriteIcon";
+export { TooltipTags } from "./TooltipTags";

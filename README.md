@@ -14,6 +14,8 @@ RetCon is looking for contributors to help maintain and improve both the project
 
 Current contributors: Leucha, Ice13th
 
+Please, report bugs, leave comments and suggestions on the official Champions Online Discord: <https://discord.com/channels/1372170926598131874/1506734717456613448/1506734906213138553>
+
 ## Development
 
 ```bash

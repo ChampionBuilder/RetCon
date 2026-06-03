@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import "./App.css";
+import "./styles/tooltips.css";
 import { AboutDialog } from "@/components/AboutDialog";
 import { AppHeader } from "@/components/AppHeader";
 import { ArchetypePowerSelectionDialog } from "@/components/ArchetypePowerSelectionDialog";

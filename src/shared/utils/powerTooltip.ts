@@ -1,5 +1,10 @@
 import type { Power } from "@/types/powers";
 import type { Advantage } from "@/types/advantages";
+import {
+  cleanMultilineTooltipText,
+  cleanTooltipText,
+  formatTooltipLabel,
+} from "./tooltipText";
 import { getNormalizedPowerType, getPowerType } from "./powerTypes";
 
 export type AdvantageTooltipData = {
@@ -23,17 +28,6 @@ export type PowerTooltipData = {
   advantages: AdvantageTooltipData[];
   fallbackText: string | null;
 };
-
-function formatIdentifier(value: string | null | undefined) {
-  if (!value) {
-    return null;
-  }
-
-  return value
-    .replace(/_/g, " ")
-    .toLowerCase()
-    .replace(/\b\w/g, (character) => character.toUpperCase());
-}
 
 function formatSeconds(value: number | string | null | undefined) {
   if (value === null || value === undefined || value === "") {
@@ -107,25 +101,6 @@ function isChargeActivationType(value: string | null | undefined) {
   );
 }
 
-function cleanTooltipText(tooltip: string | null | undefined) {
-  return (
-    tooltip
-      ?.replace(/<br\s*\/?>/gi, " ")
-      .replace(/\s+/g, " ")
-      .trim() ?? ""
-  );
-}
-
-function cleanMultilineTooltipText(tooltip: string | null | undefined) {
-  const text = tooltip
-    ?.replace(/<br\s*\/?>/gi, "\n")
-    .replace(/[ \t]+/g, " ")
-    .replace(/\n\s+/g, "\n")
-    .trim();
-
-  return text || null;
-}
-
 function getAdvantageTooltipData(
   power: Power,
   advantagesById: ReadonlyMap<number, Advantage> | null | undefined,
@@ -144,7 +119,7 @@ function getAdvantageTooltipData(
       pointsCost: advantage.points_cost,
       tooltip: cleanMultilineTooltipText(advantage.tooltip),
       tags: (advantage.tags ?? [])
-        .map((tag) => formatIdentifier(tag))
+        .map((tag) => formatTooltipLabel(tag))
         .filter((tag): tag is string => Boolean(tag)),
     }));
 }
@@ -214,15 +189,15 @@ export function getPowerTooltipData(
     .map((tag) => tag.trim())
     .filter(Boolean);
   const tags = (power.tags ?? [])
-    .map((tag) => formatIdentifier(tag))
+    .map((tag) => formatTooltipLabel(tag))
     .filter((tag): tag is string => Boolean(tag));
 
   return {
     title: formatTitle(power),
-    framework: formatIdentifier(power.framework_id),
+    framework: formatTooltipLabel(power.framework_id),
     tier: formatHeaderMeta(power),
-    powerType: formatIdentifier(getPowerType(power)),
-    activationType: formatIdentifier(power.activation_type),
+    powerType: formatTooltipLabel(getPowerType(power)),
+    activationType: formatTooltipLabel(power.activation_type),
     metrics,
     rangeTags,
     tags,

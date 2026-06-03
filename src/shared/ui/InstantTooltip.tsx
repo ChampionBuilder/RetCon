@@ -1,202 +1,14 @@
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
-import { PowerTooltip } from "@/shared/ui/PowerTooltip";
-import type { FrameworkGlossaryTooltip } from "@/utils/frameworkGlossary";
-import type { PowerTooltipData } from "@/shared/utils/powerTooltip";
-
-type TooltipContent =
-  | {
-      kind: "text";
-      text: string;
-    }
-  | {
-      kind: "advantage";
-      data: AdvantageTooltipData;
-    }
-  | {
-      kind: "power";
-      data: PowerTooltipData;
-    }
-  | {
-      kind: "stat";
-      data: StatTooltipData;
-    }
-  | {
-      kind: "framework";
-      data: FrameworkGlossaryTooltip;
-    };
-
-type TooltipState = {
-  advantageHighlightQueries: string[];
-  content: TooltipContent;
-  cursorX: number;
-  cursorY: number;
-  forceAdvancedPowerTooltip: boolean;
-  left: number;
-  top: number;
-  positioned: boolean;
-};
-
-type StatTooltipData = {
-  info: string | null;
-  forms: string[];
-  primaryEUs: string[];
-  secondaryEUs: string[];
-};
-
-type AdvantageTooltipData = {
-  name: string;
-  pointsCost: number | null;
-  tags: string[];
-  tooltip: string | null;
-  lockedReason: string | null;
-};
-
-function getTooltipElement(target: EventTarget | null) {
-  if (!(target instanceof Element)) {
-    return null;
-  }
-
-  if (target.closest("[data-no-instant-tooltip]")) {
-    return null;
-  }
-
-  const element = target.closest<HTMLElement>(
-    "[title], [data-advantage-tooltip], [data-power-tooltip], [data-stat-tooltip], [data-framework-tooltip]",
-  );
-
-  if (!element) {
-    return null;
-  }
-
-  if (
-    !element.title.trim() &&
-    !element.dataset.advantageTooltip &&
-    !element.dataset.powerTooltip &&
-    !element.dataset.statTooltip &&
-    !element.dataset.frameworkTooltip
-  ) {
-    return null;
-  }
-
-  return element;
-}
-
-function StatTooltip({ data }: { data: StatTooltipData }) {
-  return (
-    <div className="stat-tooltip">
-      {data.info ? (
-        <p className="stat-tooltip__intro">
-          <strong>{data.info}</strong>
-        </p>
-      ) : null}
-      {data.forms.length > 0 ? (
-        <div className="stat-tooltip__section">
-          <strong>Toggle</strong>
-          <span>{data.forms.join(", ")}</span>
-        </div>
-      ) : null}
-      {data.primaryEUs.length > 0 ? (
-        <div className="stat-tooltip__section">
-          <strong>Primary</strong>
-          <span>{data.primaryEUs.join(", ")}</span>
-        </div>
-      ) : null}
-      {data.secondaryEUs.length > 0 ? (
-        <div className="stat-tooltip__section">
-          <strong>Secondary</strong>
-          <span>{data.secondaryEUs.join(", ")}</span>
-        </div>
-      ) : null}
-    </div>
-  );
-}
-
-function FrameworkTooltip({ data }: { data: FrameworkGlossaryTooltip }) {
-  return (
-    <div className="framework-tooltip">
-      <div className="framework-tooltip__header">
-        <strong>{data.framework}</strong>
-      </div>
-
-      {data.sections.map((section) => (
-        <div className="framework-tooltip__section" key={section.label}>
-          <strong>{section.label}</strong>
-          <div className="framework-tooltip__tags">
-            {section.tags.map((tag) => (
-              <span key={tag}>{tag}</span>
-            ))}
-          </div>
-        </div>
-      ))}
-
-      <div className="framework-tooltip__hint">
-        Hold Shift to select multiple framework.
-      </div>
-    </div>
-  );
-}
-
-function AdvantageTooltip({ data }: { data: AdvantageTooltipData }) {
-  return (
-    <div className="advantage-tooltip">
-      <div className="power-tooltip-advantages__header">
-        <strong>{data.name}</strong>
-        {data.pointsCost !== null ? <span>{data.pointsCost} pt</span> : null}
-      </div>
-
-      {data.tags.length > 0 ? (
-        <div className="power-tooltip__tags">
-          {data.tags.map((tag) => (
-            <span key={tag}>{tag}</span>
-          ))}
-        </div>
-      ) : null}
-
-      {data.tooltip ? <p>{data.tooltip}</p> : null}
-      {data.lockedReason ? (
-        <p className="advantage-tooltip__warning">{data.lockedReason}</p>
-      ) : null}
-    </div>
-  );
-}
-
-function releaseTooltipElement(element: HTMLElement | null) {
-  if (!element) {
-    return;
-  }
-
-  const storedTitle = element.dataset.instantTooltipTitle;
-
-  if (storedTitle !== undefined) {
-    if (!element.title.trim()) {
-      element.title = storedTitle;
-    }
-
-    delete element.dataset.instantTooltipTitle;
-  }
-}
-
-function shouldForceAdvancedPowerTooltip(element: HTMLElement) {
-  return element.dataset.powerTooltipAdvanced === "true";
-}
-
-function getAdvantageHighlightQueries(element: HTMLElement) {
-  const rawQueries = element.dataset.powerTooltipAdvantageQueries;
-
-  if (!rawQueries) {
-    return [];
-  }
-
-  try {
-    const queries = JSON.parse(rawQueries);
-
-    return Array.isArray(queries)
-      ? queries.filter((query): query is string => typeof query === "string")
-      : [];
-  } catch {
-    return [];
-  }
-}
+import { InstantTooltipContent } from "@/shared/ui/InstantTooltipContent";
+import {
+  getAdvantageHighlightQueries,
+  getTooltipContent,
+  getTooltipElement,
+  instantTooltipAttributeFilter,
+  releaseTooltipElement,
+  shouldForceAdvancedPowerTooltip,
+} from "@/shared/ui/instantTooltipDom";
+import type { TooltipState } from "@/shared/ui/instantTooltipTypes";
 
 export function InstantTooltip() {
   const activeElementRef = useRef<HTMLElement | null>(null);
@@ -206,6 +18,12 @@ export function InstantTooltip() {
   const [tooltip, setTooltip] = useState<TooltipState | null>(null);
   const [showAdvancedPowerTooltip, setShowAdvancedPowerTooltip] =
     useState(false);
+  const hasScrollableAdvantagePanel = Boolean(
+    tooltip &&
+      tooltip.content.kind === "power" &&
+      (showAdvancedPowerTooltip || tooltip.forceAdvancedPowerTooltip) &&
+      (tooltip.content.data.advantages?.length ?? 0) > 0,
+  );
 
   useLayoutEffect(() => {
     const tooltipElement = tooltipRef.current;
@@ -251,66 +69,42 @@ export function InstantTooltip() {
   }, [tooltip, showAdvancedPowerTooltip]);
 
   useEffect(() => {
+    if (!hasScrollableAdvantagePanel) {
+      return;
+    }
+
+    function handleWheel(event: WheelEvent) {
+      const advantagesPanel = tooltipRef.current?.querySelector<HTMLElement>(
+        ".power-tooltip-advantages",
+      );
+
+      if (
+        !advantagesPanel ||
+        advantagesPanel.scrollHeight <= advantagesPanel.clientHeight
+      ) {
+        return;
+      }
+
+      const previousScrollTop = advantagesPanel.scrollTop;
+      advantagesPanel.scrollTop += event.deltaY;
+
+      if (advantagesPanel.scrollTop !== previousScrollTop) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+    }
+
+    document.addEventListener("wheel", handleWheel, { passive: false });
+
+    return () => {
+      document.removeEventListener("wheel", handleWheel);
+    };
+  }, [hasScrollableAdvantagePanel]);
+
+  useEffect(() => {
     const hoverMediaQuery = window.matchMedia(
       "(hover: hover) and (pointer: fine)",
     );
-
-    function getTooltipContent(element: HTMLElement): TooltipContent | null {
-      if (element.dataset.advantageTooltip) {
-        try {
-          return {
-            kind: "advantage",
-            data: JSON.parse(
-              element.dataset.advantageTooltip,
-            ) as AdvantageTooltipData,
-          };
-        } catch {
-          // Fall back to the plain title when a malformed dataset slips through.
-        }
-      }
-
-      if (element.dataset.powerTooltip) {
-        try {
-          return {
-            kind: "power",
-            data: JSON.parse(element.dataset.powerTooltip) as PowerTooltipData,
-          };
-        } catch {
-          // Fall back to the plain title when a malformed dataset slips through.
-        }
-      }
-
-      if (element.dataset.statTooltip) {
-        try {
-          return {
-            kind: "stat",
-            data: JSON.parse(element.dataset.statTooltip) as StatTooltipData,
-          };
-        } catch {
-          // Fall back to the plain title when a malformed dataset slips through.
-        }
-      }
-
-      if (element.dataset.frameworkTooltip) {
-        try {
-          return {
-            kind: "framework",
-            data: JSON.parse(
-              element.dataset.frameworkTooltip,
-            ) as FrameworkGlossaryTooltip,
-          };
-        } catch {
-          // Fall back to the plain title when a malformed dataset slips through.
-        }
-      }
-
-      const text =
-        element.title.trim() ||
-        element.dataset.instantTooltipTitle?.trim() ||
-        "";
-
-      return text ? { kind: "text", text } : null;
-    }
 
     function disconnectMutationObserver() {
       mutationObserverRef.current?.disconnect();
@@ -365,15 +159,7 @@ export function InstantTooltip() {
         );
       });
       mutationObserverRef.current.observe(element, {
-        attributeFilter: [
-          "data-power-tooltip",
-          "data-power-tooltip-advantage-queries",
-          "data-power-tooltip-advanced",
-          "data-advantage-tooltip",
-          "data-stat-tooltip",
-          "data-framework-tooltip",
-          "title",
-        ],
+        attributeFilter: instantTooltipAttributeFilter,
         attributes: true,
       });
     }
@@ -577,21 +363,11 @@ export function InstantTooltip() {
         visibility: tooltip.positioned ? "visible" : "hidden",
       }}
     >
-      {tooltip.content.kind === "power" ? (
-        <PowerTooltip
-          advantageHighlightQueries={tooltip.advantageHighlightQueries}
-          showAdvantages={shouldShowAdvancedPowerTooltip}
-          tooltip={tooltip.content.data}
-        />
-      ) : tooltip.content.kind === "advantage" ? (
-        <AdvantageTooltip data={tooltip.content.data} />
-      ) : tooltip.content.kind === "stat" ? (
-        <StatTooltip data={tooltip.content.data} />
-      ) : tooltip.content.kind === "framework" ? (
-        <FrameworkTooltip data={tooltip.content.data} />
-      ) : (
-        tooltip.content.text
-      )}
+      <InstantTooltipContent
+        advantageHighlightQueries={tooltip.advantageHighlightQueries}
+        content={tooltip.content}
+        showAdvancedPowerTooltip={shouldShowAdvancedPowerTooltip}
+      />
     </div>
   );
 }

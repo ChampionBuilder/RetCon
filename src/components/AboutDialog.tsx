@@ -62,6 +62,17 @@ export function AboutDialog({ onClose }: AboutDialogProps) {
               both the project and its database over time.
             </p>
             <p>Current contributors: Leucha, Ice13th</p>
+            <p>
+              Please, report bugs, leave comments and suggestions on the
+              official Champions Online Discord:{" "}
+              <a
+                href="https://discord.com/channels/1372170926598131874/1506734717456613448/1506734906213138553"
+                rel="noreferrer"
+                target="_blank"
+              >
+                RetCon feedback thread
+              </a>
+            </p>
           </section>
 
           <section>

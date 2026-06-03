@@ -1,0 +1,140 @@
+import type { PowerTooltipData } from "@/shared/utils/powerTooltip";
+import type { FrameworkGlossaryTooltip } from "@/utils/frameworkGlossary";
+import type {
+  AdvantageTooltipData,
+  StatTooltipData,
+  TooltipContent,
+} from "@/shared/ui/instantTooltipTypes";
+
+export const instantTooltipAttributeFilter = [
+  "data-power-tooltip",
+  "data-power-tooltip-advantage-queries",
+  "data-power-tooltip-advanced",
+  "data-advantage-tooltip",
+  "data-stat-tooltip",
+  "data-framework-tooltip",
+  "title",
+];
+
+export function getTooltipElement(target: EventTarget | null) {
+  if (!(target instanceof Element)) {
+    return null;
+  }
+
+  if (target.closest("[data-no-instant-tooltip]")) {
+    return null;
+  }
+
+  const element = target.closest<HTMLElement>(
+    "[title], [data-advantage-tooltip], [data-power-tooltip], [data-stat-tooltip], [data-framework-tooltip]",
+  );
+
+  if (!element) {
+    return null;
+  }
+
+  if (
+    !element.title.trim() &&
+    !element.dataset.advantageTooltip &&
+    !element.dataset.powerTooltip &&
+    !element.dataset.statTooltip &&
+    !element.dataset.frameworkTooltip
+  ) {
+    return null;
+  }
+
+  return element;
+}
+
+export function releaseTooltipElement(element: HTMLElement | null) {
+  if (!element) {
+    return;
+  }
+
+  const storedTitle = element.dataset.instantTooltipTitle;
+
+  if (storedTitle !== undefined) {
+    if (!element.title.trim()) {
+      element.title = storedTitle;
+    }
+
+    delete element.dataset.instantTooltipTitle;
+  }
+}
+
+export function shouldForceAdvancedPowerTooltip(element: HTMLElement) {
+  return element.dataset.powerTooltipAdvanced === "true";
+}
+
+export function getAdvantageHighlightQueries(element: HTMLElement) {
+  const rawQueries = element.dataset.powerTooltipAdvantageQueries;
+
+  if (!rawQueries) {
+    return [];
+  }
+
+  try {
+    const queries = JSON.parse(rawQueries);
+
+    return Array.isArray(queries)
+      ? queries.filter((query): query is string => typeof query === "string")
+      : [];
+  } catch {
+    return [];
+  }
+}
+
+export function getTooltipContent(element: HTMLElement): TooltipContent | null {
+  if (element.dataset.advantageTooltip) {
+    try {
+      return {
+        kind: "advantage",
+        data: JSON.parse(
+          element.dataset.advantageTooltip,
+        ) as AdvantageTooltipData,
+      };
+    } catch {
+      // Fall back to the plain title when a malformed dataset slips through.
+    }
+  }
+
+  if (element.dataset.powerTooltip) {
+    try {
+      return {
+        kind: "power",
+        data: JSON.parse(element.dataset.powerTooltip) as PowerTooltipData,
+      };
+    } catch {
+      // Fall back to the plain title when a malformed dataset slips through.
+    }
+  }
+
+  if (element.dataset.statTooltip) {
+    try {
+      return {
+        kind: "stat",
+        data: JSON.parse(element.dataset.statTooltip) as StatTooltipData,
+      };
+    } catch {
+      // Fall back to the plain title when a malformed dataset slips through.
+    }
+  }
+
+  if (element.dataset.frameworkTooltip) {
+    try {
+      return {
+        kind: "framework",
+        data: JSON.parse(
+          element.dataset.frameworkTooltip,
+        ) as FrameworkGlossaryTooltip,
+      };
+    } catch {
+      // Fall back to the plain title when a malformed dataset slips through.
+    }
+  }
+
+  const text =
+    element.title.trim() || element.dataset.instantTooltipTitle?.trim() || "";
+
+  return text ? { kind: "text", text } : null;
+}

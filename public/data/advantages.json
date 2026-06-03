@@ -2140,7 +2140,7 @@
     "advantage_id": 141,
     "name": "Deafening Dissolution",
     "points_cost": 2,
-    "tooltip": "Deals 20 additional damage with AoE attacks.",
+    "tooltip": "Reduces single target damage by 20%, but increases the damage against multiple targets by 80%",
     "tags": [
       "Deafening"
     ],
@@ -3994,7 +3994,7 @@
     "advantage_id": 259,
     "name": "Gaseous Emitter",
     "points_cost": 2,
-    "tooltip": "Deals less damage against a single target, but deals additional damage when used against multiple targets.",
+    "tooltip": "Reduces single target damage by 20%, but increases the damage against multiple targets by 80%",
     "tags": [],
     "damage_type": [],
     "is_disabled": false,
@@ -4646,7 +4646,7 @@
     "advantage_id": 301,
     "name": "Impose",
     "points_cost": 2,
-    "tooltip": "All targets hit are Snared after 2 seconds, reducing their movement speed for a time.",
+    "tooltip": "All targets hit are Snared after 2 seconds, reducing their movement speed for a short time.",
     "tags": [
       "Snare"
     ],
@@ -4662,9 +4662,8 @@
     "advantage_id": 302,
     "name": "Impure Waters",
     "points_cost": 2,
-    "tooltip": "Causes Illuminated targets to be affected by Deadly Poison instead of Disorient. Deadly Poison deals Toxic damage every 2 seconds for 10 seconds.",
+    "tooltip": "Illuminated targets ar affected by Deadly Poison instead of Disorient.",
     "tags": [
-      "Disorient",
       "Deadly Poison",
       "Illuminated"
     ],
@@ -4680,7 +4679,7 @@
     "advantage_id": 303,
     "name": "Incisive Wit",
     "points_cost": 2,
-    "tooltip": "Adds a 15% chance to activate an Id Surge.+ Increases your Ego damage strength by +15% and your Ego by +13 for 15 seconds.",
+    "tooltip": "15% chance every hit to apply Id Surge to you, increasing your Ego damage strength by +15% and your Ego by +13 for 15 seconds.",
     "tags": [
       "Id Surge"
     ],
@@ -4696,7 +4695,7 @@
     "advantage_id": 304,
     "name": "Indomitable",
     "points_cost": 3,
-    "tooltip": "Taking damage while blocking 5",
+    "tooltip": "Taking damage while maintaining this power gives you 5% resistance to all damage, resistance to Knock and resistance to Hold effects for 5 sec. This amount scales the lower your health gets up to 120%.",
     "tags": [],
     "damage_type": [],
     "is_disabled": false,
@@ -4710,7 +4709,7 @@
     "advantage_id": 305,
     "name": "Infrared Guidance System",
     "points_cost": 1,
-    "tooltip": "Increases the radius",
+    "tooltip": "Increases the radius to 5ft.",
     "tags": [],
     "damage_type": [],
     "is_disabled": false,
@@ -4724,8 +4723,9 @@
     "advantage_id": 306,
     "name": "Infectious Bile",
     "points_cost": 2,
-    "tooltip": "Increases the chance to Poison targets that are Bleeding to 50%.",
+    "tooltip": "50% chance to apply Deadly Poison against Bleeding targets.",
     "tags": [
+      "Deadly Poison",
       "Bleed"
     ],
     "damage_type": [],
@@ -4742,7 +4742,9 @@
     "points_cost": 2,
     "tooltip": "Deals Toxic damage to the target in addition to its normal effects.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Toxic"
+    ],
     "is_disabled": false,
     "temporary": "Life Essence",
     "range_tags": [],
@@ -4754,7 +4756,7 @@
     "advantage_id": 308,
     "name": "Initiative",
     "points_cost": 1,
-    "tooltip": "You let loose with a quick burst of strength, increasing the Tap (and base) damage by 15%.",
+    "tooltip": "Increases the Tap and base damage by 15%.",
     "tags": [],
     "damage_type": [],
     "is_disabled": false,
@@ -4784,7 +4786,7 @@
     "advantage_id": 310,
     "name": "Instep Crush",
     "points_cost": 2,
-    "tooltip": "The primary target is Rooted for 16 sec.",
+    "tooltip": "Root your primary target.",
     "tags": [
       "Root"
     ],
@@ -4800,9 +4802,8 @@
     "advantage_id": 311,
     "name": "Instill Doubt",
     "points_cost": 2,
-    "tooltip": "Gives you a 15% chance per hit to apply Dependencey to targets. Dependency causes the affected target to heal you or one of your nearby allies for a small amount over 20 seconds. Can stack up to 3 times.",
+    "tooltip": "15% chance per hit to apply Dependencey to targets. Dependency causes the affected target to heal you or one of your nearby allies for a small amount over 20 seconds. Can stack up to 3 times.",
     "tags": [
-      "Heal",
       "Dependency"
     ],
     "damage_type": [],
@@ -4833,8 +4834,10 @@
     "advantage_id": 313,
     "name": "Intimidate",
     "points_cost": 2,
-    "tooltip": "Applies Fear to the target. Fear causes the target to cower for 3 seconds.",
-    "tags": [],
+    "tooltip": "Applies Fear to the target.",
+    "tags": [
+      "Fear"
+    ],
     "damage_type": [],
     "is_disabled": false,
     "temporary": "Iron Lariat",
@@ -4863,7 +4866,7 @@
     "advantage_id": 315,
     "name": "Intimidation",
     "points_cost": 1,
-    "tooltip": "Applies threat over time to targets you hit with a melee attack. The amount of threat scales with the number of Enraged! stacks on you. + This effect stacks with Challenge! - Cannot be stacked more than once per target per activation. - Cannot be refreshed.",
+    "tooltip": "Applies threat over time to targets you hit with a melee attack. The amount of threat scales with the number of Enrage stacks on you.",
     "tags": [
       "Enrage"
     ],
@@ -4879,8 +4882,10 @@
     "advantage_id": 316,
     "name": "Inverse Polarization Field",
     "points_cost": 2,
-    "tooltip": "Just before self-destructing, the polarity of the gravitational field created by will reverse, sending all affected enemies flying.",
-    "tags": [],
+    "tooltip": "Known Back affected targets on the last hit.",
+    "tags": [
+      "Knock Back"
+    ],
     "damage_type": [],
     "is_disabled": false,
     "temporary": "Implosion Engine",
@@ -4895,7 +4900,6 @@
     "points_cost": 2,
     "tooltip": "When expires, applies Cold Snap to you.",
     "tags": [
-      "Chill",
       "Cold Snap"
     ],
     "damage_type": [],
@@ -4910,7 +4914,7 @@
     "advantage_id": 318,
     "name": "Ionic Compression",
     "points_cost": 2,
-    "tooltip": "Affected targets are Rooted for 16 seconds.",
+    "tooltip": "Root affected targets.",
     "tags": [
       "Root"
     ],
@@ -4943,7 +4947,7 @@
     "advantage_id": 320,
     "name": "Ionic Infusion",
     "points_cost": 2,
-    "tooltip": "Doubles the chance to apply Negative Ions to your target on every attack.",
+    "tooltip": "50% chance every hit to apply Negative Ions to your target.",
     "tags": [
       "Negative Ions"
     ],
@@ -4959,8 +4963,10 @@
     "advantage_id": 321,
     "name": "Is It Not Just Mayhem?",
     "points_cost": 2,
-    "tooltip": "Applies Fear to the target. Fear causes the target to cower for 3 seconds.",
-    "tags": [],
+    "tooltip": "Applies Fear to the target.",
+    "tags": [
+      "Fear"
+    ],
     "damage_type": [],
     "is_disabled": false,
     "temporary": "Execution Shot",
@@ -4973,7 +4979,7 @@
     "advantage_id": 322,
     "name": "It Burns!",
     "points_cost": 2,
-    "tooltip": "Has a chance on each hit to apply Plasma Burn.",
+    "tooltip": "15% chance every hit to apply Plasma Burn to your target.",
     "tags": [
       "Plasma Burn"
     ],
@@ -4989,8 +4995,10 @@
     "advantage_id": 323,
     "name": "It's Raining Fire!",
     "points_cost": 1,
-    "tooltip": "Has a 10% chance per tick to apply Fear to targets.",
-    "tags": [],
+    "tooltip": "10% chance per tick to apply Fear to targets.",
+    "tags": [
+      "Fear"
+    ],
     "damage_type": [],
     "is_disabled": false,
     "temporary": "Conflagration",
@@ -5003,7 +5011,7 @@
     "advantage_id": 324,
     "name": "It's That Time",
     "points_cost": 2,
-    "tooltip": "All hits have a 15% chance to apply Disorient instead of just the first.",
+    "tooltip": "15% chance every hit to apply Disorient,  instead of just the initial attack.",
     "tags": [
       "Disorient"
     ],
@@ -5019,7 +5027,7 @@
     "advantage_id": 325,
     "name": "Jinx",
     "points_cost": 2,
-    "tooltip": "Applies Jinxed to your target, causing them to move slower and deal less damage. + After a short amount of time, targets affected by Jinxed are Knocked down. + Jinxed is a type",
+    "tooltip": "Applies Jinxed to your target, causing them to move slower and deal less damage. After a short amount of time, targets affected by Jinxed are Knocked down.",
     "tags": [
       "Knock Down",
       "Jinxed"
@@ -5036,12 +5044,16 @@
     "advantage_id": 326,
     "name": "Judgement",
     "points_cost": 2,
-    "tooltip": "All Illuminations within 100 feet are consumed. Friendly targets who were Illuminated are healed. Enemy targets who were Illuminated take damage.",
+    "tooltip": "Consume all Illuminations and Illuminated within 100 feet. Respectively heals friends and deals Dimensional damage to foes.",
     "tags": [
       "Illumination",
-      "Illuminated"
+      "Illuminated",
+      "Heal",
+      "Rupture"
     ],
-    "damage_type": [],
+    "damage_type": [
+      "Dimensional"
+    ],
     "is_disabled": false,
     "temporary": "Ascension",
     "range_tags": [],
@@ -5055,8 +5067,6 @@
     "points_cost": 3,
     "tooltip": "Applies Overpower instead of Knock Down and Stun.",
     "tags": [
-      "Stun",
-      "Knock Down",
       "Overpower"
     ],
     "damage_type": [],
@@ -5101,7 +5111,7 @@
     "advantage_id": 330,
     "name": "Laser Knight",
     "points_cost": 3,
-    "tooltip": "While is slotted, you gain +33 resistance to all damage and +33 Knock Resistance for 2 seconds every time you make a melee attack, however your melee attacks deal 10% less damage.",
+    "tooltip": "When you use a melee attack it will activate the Laser Knight shield for 2 sec, increasing your resistance to damage by 33% and your resistance to Knock effects by 33%. Reduces your damage by 10%.",
     "tags": [
       "Shield"
     ],
@@ -5117,8 +5127,10 @@
     "advantage_id": 331,
     "name": "Lashing Dragon Tail",
     "points_cost": 2,
-    "tooltip": "Fully charging applies Nimble Movement to you.",
-    "tags": [],
+    "tooltip": "On a full charge,, applies Nimble Movement to you.",
+    "tags": [
+      "Nimble Movement"
+    ],
     "damage_type": [],
     "is_disabled": false,
     "temporary": "Dragon Kick",
@@ -5145,7 +5157,7 @@
     "advantage_id": 333,
     "name": "Leeching Strikes",
     "points_cost": 2,
-    "tooltip": "All attacks of this combo gain a 15% chance to grant you a stack of Ego Leech, instead of just the initial attack.",
+    "tooltip": "15% chance every hit to gain a stack of Ego Leech, instead of just the initial attack.",
     "tags": [
       "Ego Leech"
     ],
@@ -5193,8 +5205,10 @@
     "advantage_id": 336,
     "name": "Lethal Poison",
     "points_cost": 2,
-    "tooltip": "Increases the damage against targets afflicted by multiple Poisnn effects.",
-    "tags": [],
+    "tooltip": "Increases base damage by 30% if the target if affected by at least 5 Poison effects.",
+    "tags": [
+      "Poison"
+    ],
     "damage_type": [],
     "is_disabled": false,
     "temporary": "Defile",
@@ -5208,7 +5222,9 @@
     "name": "Light Everlasting",
     "points_cost": 2,
     "tooltip": "When fully charged, applies Light Everlasting to nearby allies.",
-    "tags": [],
+    "tags": [
+      "Light Everlasting"
+    ],
     "damage_type": [],
     "is_disabled": false,
     "temporary": "Vala's Light;Crippling Coils",
@@ -5221,7 +5237,7 @@
     "advantage_id": 338,
     "name": "Light Mend",
     "points_cost": 2,
-    "tooltip": "Adds 10 seconds to the duration of your Disintegrate effect. This cannot increase its duration above the initial value.",
+    "tooltip": "Adds 10 seconds to Disintegrate.",
     "tags": [
       "Disintegrate"
     ],
@@ -5270,8 +5286,10 @@
     "advantage_id": 341,
     "name": "Lightning Overload",
     "points_cost": 1,
-    "tooltip": "Grants a chance to jump to another target on every attack.",
-    "tags": [],
+    "tooltip": "20% chance to arc to a target.",
+    "tags": [
+      "Arc"
+    ],
     "damage_type": [],
     "is_disabled": false,
     "temporary": "Electric Bolt",
@@ -5287,7 +5305,8 @@
     "tooltip": "Foes affected by Negative Ions are Knocked To you. Also grants you Aegis.",
     "tags": [
       "Negative Ions",
-      "Knock To"
+      "Knock To",
+      "Aegis"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -5301,8 +5320,10 @@
     "advantage_id": 343,
     "name": "Lingering Darkness",
     "points_cost": 2,
-    "tooltip": "Refreshes your Devoid debuff by 12 seconds. After the initial hit, has a 20% chance to refresh Devoid by an additional 2 seconds.",
-    "tags": [],
+    "tooltip": "Refreshes your Devoid debuff by 12 seconds. After the initial hit, has a 20% chance every hit to refresh Devoid by an additional 2 seconds.",
+    "tags": [
+      "Devoid"
+    ],
     "damage_type": [],
     "is_disabled": false,
     "temporary": "Dimensional Collapse",
@@ -5315,8 +5336,9 @@
     "advantage_id": 344,
     "name": "Listen to Reason",
     "points_cost": 2,
-    "tooltip": "15Fear% Refreshes all stacks of Furious.",
+    "tooltip": "15% chance every hit to apply Fear. Refreshes all stacks of Furious.",
     "tags": [
+      "Fear",
       "Furious"
     ],
     "damage_type": [],
@@ -5331,7 +5353,7 @@
     "advantage_id": 345,
     "name": "Locust Breath",
     "points_cost": 0,
-    "tooltip": "Becomes Locust Breath.",
+    "tooltip": "Becomes Locust Breath. (FX change)",
     "tags": [],
     "damage_type": [],
     "is_disabled": false,
@@ -5345,7 +5367,7 @@
     "advantage_id": 346,
     "name": "Lunar Force",
     "points_cost": 2,
-    "tooltip": "Standing in the area of effect increases Knock resistance by 25 if affected by Furious.",
+    "tooltip": "Standing in the area of effect increases Knock resistance by 25% if affected by Furious.",
     "tags": [
       "Furious"
     ],
@@ -5375,11 +5397,13 @@
     "advantage_id": 348,
     "name": "Magma Burst",
     "points_cost": 2,
-    "tooltip": "Causes a burst of magma to explode on your target, dealing Fire damage and applying Clinging Flames to all enemies within 15 feet of your target. Clinging Flames deals Fire damage every 2 seconds for 12 seconds, with a chance to leap to other nearby targets. Clinging Flames is a Burning effect.",
+    "tooltip": "Deals Fire Damage within 15ft. Applies Clinging Flames to your primary target, and has 30% change to apply it too to secondary targets.",
     "tags": [
       "Clinging Flames"
     ],
-    "damage_type": [],
+    "damage_type": [
+      "Fire"
+    ],
     "is_disabled": false,
     "temporary": "Eruption",
     "range_tags": [],
@@ -5391,7 +5415,7 @@
     "advantage_id": 349,
     "name": "Magnetic",
     "points_cost": 2,
-    "tooltip": "Draws enemies toward you while maintained.The chance to apply Negative Ions to targets within 5 feet of you is increased to 100%.",
+    "tooltip": "Draws enemies toward you while maintained. Applies Negative Ions to targets within 5 feet.",
     "tags": [
       "Negative Ions",
       "Reverse Repel"
@@ -5408,7 +5432,7 @@
     "advantage_id": 350,
     "name": "Magnitude",
     "points_cost": 2,
-    "tooltip": "Targets are now Knocked Back 31 feet.",
+    "tooltip": "Knock Back targets.",
     "tags": [
       "Knock Back"
     ],
@@ -5424,7 +5448,7 @@
     "advantage_id": 351,
     "name": "Major Impact",
     "points_cost": 2,
-    "tooltip": "Instead of knocking targets away, targets within 20 feet are Knocked To you instead.",
+    "tooltip": "Targets further than 20 ft are Knocked To you instead of Knocked Back.",
     "tags": [
       "Knock To"
     ],
@@ -5440,7 +5464,7 @@
     "advantage_id": 352,
     "name": "Make them Tremble",
     "points_cost": 1,
-    "tooltip": "The enemies who hear are so terrified they have a difficult time moving, becoming Snared and Rooted for a short while.",
+    "tooltip": "Applies Snare and Root to affected targets.",
     "tags": [
       "Snare",
       "Root"
@@ -5471,9 +5495,11 @@
     "advantage_id": 354,
     "name": "Malevolent Manifestation",
     "points_cost": 2,
-    "tooltip": "Becomes its own entity and will blast your enemies without your assistance after being created. This advantage increases the cost by 20%, and will cause to be incapable of getting a Critical Hit.",
+    "tooltip": "Becomes a static summon instead of a maintain. Increases the cost by 20%, and cannot Criticaly Hit.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Ego"
+    ],
     "is_disabled": false,
     "temporary": "Ego Storm",
     "range_tags": [],
@@ -5485,10 +5511,9 @@
     "advantage_id": 355,
     "name": "Mass Effect",
     "points_cost": 2,
-    "tooltip": "Mass Effect causes the target and enemies near target to become Snared, reducing their movement speed for a time.",
+    "tooltip": "Snare your main target and foes nearby.",
     "tags": [
-      "Snare",
-      "Hold"
+      "Snare"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -5502,7 +5527,7 @@
     "advantage_id": 356,
     "name": "Mass Resurrection",
     "points_cost": 2,
-    "tooltip": "Can resurrect multiple targets. + Healing received is divided amongst targets resurrected.",
+    "tooltip": "Revives up to 4 nearby allies within 50 feet. The healing received is divided among the number of allies revived at a time.",
     "tags": [],
     "damage_type": [],
     "is_disabled": false,
@@ -5530,7 +5555,7 @@
     "advantage_id": 358,
     "name": "Matter - Energy Union",
     "points_cost": 2,
-    "tooltip": "Also grants you an absorption shield when activated.",
+    "tooltip": "Grants a damage absorption shield when activate.",
     "tags": [
       "Shield"
     ],
@@ -5546,7 +5571,7 @@
     "advantage_id": 359,
     "name": "Maybe I'm Just Better",
     "points_cost": 2,
-    "tooltip": "Has a chance to apply Furious. Furious increases melee damage by 5% per stack.",
+    "tooltip": "10% chance every hit to apply Furious.",
     "tags": [
       "Furious"
     ],
@@ -5562,7 +5587,7 @@
     "advantage_id": 360,
     "name": "Melta Cannon",
     "points_cost": 2,
-    "tooltip": "Gains a 10% chance to apply Plasma Burn, which deals Particle damage every second for 16 seconds per stack.Plasma Burn is a type of Radiation.",
+    "tooltip": "10% chance every hit to apply Plasma Burn.",
     "tags": [
       "Plasma Burn"
     ],
@@ -5578,7 +5603,7 @@
     "advantage_id": 361,
     "name": "Menacing",
     "points_cost": 1,
-    "tooltip": "Applies large threat over time debuff on your target. +This amount scales with how many stacks of Ego Leech you have. + This effect can be stacked on top of the Challenge! effect. + This effect cannot be refreshed.",
+    "tooltip": "Applies large threat over time debuff on your target. This amount scales with how many stacks of Ego Leech you have. This effect stacks with Challenge.",
     "tags": [
       "Ego Leech"
     ],
@@ -5594,7 +5619,7 @@
     "advantage_id": 362,
     "name": "Mending Protocol",
     "points_cost": 2,
-    "tooltip": "The lower your health is, the higher the chance that the base damage of this attack will Heal you instead of dealing damage. This effect only applies to the initial damage deals, and not any bonus damage chances.",
+    "tooltip": "Gives a change to Heal you for the amount of damage dealt. That chance increases the lower is your Health.",
     "tags": [
       "Heal"
     ],
@@ -5610,7 +5635,7 @@
     "advantage_id": 363,
     "name": "Mental Acuity",
     "points_cost": 2,
-    "tooltip": "Increases the damage of the Ego Leech consumption portion by 100.Increases the damage of the Ego Annihilation DoT by 50.",
+    "tooltip": "Doubles the damage per Ego Leech consumed. Increases by 50% the damage from Ego Anniliation effect.",
     "tags": [
       "Ego Leech"
     ],
@@ -5626,7 +5651,7 @@
     "advantage_id": 364,
     "name": "Mental Artillery",
     "points_cost": 2,
-    "tooltip": "Has a 20% chance every hit to apply Stress to affected targets.",
+    "tooltip": "20% chance every hit to apply Stress.",
     "tags": [
       "Stress"
     ],
@@ -5658,7 +5683,7 @@
     "advantage_id": 366,
     "name": "Mental Instability",
     "points_cost": 2,
-    "tooltip": "Targets are Knocked To you instead of away.",
+    "tooltip": "Targets are Knocked To you instead of Knocked Back.",
     "tags": [
       "Knock To"
     ],
@@ -5674,7 +5699,7 @@
     "advantage_id": 367,
     "name": "Mental Weakness",
     "points_cost": 2,
-    "tooltip": "Increases the time it takes for foes to charge powers by 15%.",
+    "tooltip": "Target suffers -15% to their power recharge speed for 10 seconds.",
     "tags": [],
     "damage_type": [],
     "is_disabled": false,
@@ -5688,7 +5713,7 @@
     "advantage_id": 368,
     "name": "Messy",
     "points_cost": 2,
-    "tooltip": "Adds 10 seconds to your Shredded debuff. This cannot exceed the original duration.",
+    "tooltip": "Adds 10 seconds to Shredded.",
     "tags": [
       "Shredded"
     ],
@@ -5704,7 +5729,7 @@
     "advantage_id": 369,
     "name": "Microelectronic Controllers",
     "points_cost": 2,
-    "tooltip": "Your boomerangs deal increased damage for each subsequent target they hit.",
+    "tooltip": "Deals increased damage for each subsequent target they hit.",
     "tags": [],
     "damage_type": [],
     "is_disabled": false,
@@ -5718,7 +5743,7 @@
     "advantage_id": 370,
     "name": "Microfilament Wire",
     "points_cost": 2,
-    "tooltip": "If used within Melee range of a target, the primary target will be Knocked Towards you and the secondary targets will be knocked down after you land.",
+    "tooltip": "If used within Melee range of a target, the primary target will be Knocked Towards you and the secondary targets will be Knocked Down after you land.",
     "tags": [
       "Knock Down",
       "Knock To"
@@ -5735,7 +5760,7 @@
     "advantage_id": 371,
     "name": "Midnight Frenzy",
     "points_cost": 1,
-    "tooltip": "After using Howl, standing in Moonlight grants you a shield that increases in strength over time.",
+    "tooltip": "After using Howl, standing in Moonlight grants you a damabe absorbing shield that increases in strength over time.",
     "tags": [
       "Shield"
     ],
@@ -5751,7 +5776,7 @@
     "advantage_id": 372,
     "name": "Mind Opener",
     "points_cost": 2,
-    "tooltip": "Damage dealt is increased 30% while you are affected by Telepathic Reverberation.",
+    "tooltip": "Increase base damage by 30% if you are affected by Telepathic Reverberation.",
     "tags": [],
     "damage_type": [],
     "is_disabled": false,
@@ -5765,8 +5790,10 @@
     "advantage_id": 373,
     "name": "Mind the Uniform",
     "points_cost": 2,
-    "tooltip": "Applies Fear to affected targets. Fear causes the target to cower for 3 seconds.",
-    "tags": [],
+    "tooltip": "Applies Fear to affected targets.",
+    "tags": [
+      "Fear"
+    ],
     "damage_type": [],
     "is_disabled": false,
     "temporary": "Shotgun Blast",
@@ -5779,9 +5806,11 @@
     "advantage_id": 374,
     "name": "Molten Core",
     "points_cost": 1,
-    "tooltip": "Remove the Crushing Damage portion and greatly increases the Fire Damage portion of your Fissure while active.",
+    "tooltip": "While active, remove the Crushing Damage portion of your Fissure power, and greatly increases its Fire Damage.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Fire"
+    ],
     "is_disabled": false,
     "temporary": "Earthquake",
     "range_tags": [],
@@ -5840,7 +5869,7 @@
     "advantage_id": 378,
     "name": "Mow 'Em Down",
     "points_cost": 2,
-    "tooltip": "Can hit up to 3 targets in a 2 foot cylinder. + Considered an area effect power.",
+    "tooltip": "Can hit up to 3 targets in a 2 foot cylinder. Now considered an AoE power.",
     "tags": [],
     "damage_type": [],
     "is_disabled": false,
@@ -5854,7 +5883,7 @@
     "advantage_id": 379,
     "name": "Mystic Transference",
     "points_cost": 1,
-    "tooltip": "Reduces the number of Sigils summoned to 2, but they can be used alongside your other Sigils. This also lowers the base charge time to 0.83, the cost to 26 energy, and the cooldown to 10 seconds.",
+    "tooltip": "Reduces the number of Sigils summoned to 2, but they can be used alongside your other Sigils. This also lowers the base charge time to 0.83, the energy cost, and the cooldown to 10 seconds.",
     "tags": [
       "Sigils"
     ],
@@ -5870,9 +5899,9 @@
     "advantage_id": 380,
     "name": "Mystical",
     "points_cost": 2,
-    "tooltip": "Applies Mystified to you. Mystified lasts 15 seconds and reduces the cost of your Sorcery, Celestial, Darkness, and Infernal powers by 3%, stacking up to 3 times. Mystified is an Enchantment.",
+    "tooltip": "Applies Mystified to you. Mystified lasts 15 seconds and reduces the cost of your Sorcery, Celestial, Darkness, and Infernal powers by 3%, stacking up to 3 times.",
     "tags": [
-      "Enchantment"
+      "Mystified"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -5902,7 +5931,7 @@
     "advantage_id": 383,
     "name": "Nerve Damage",
     "points_cost": 2,
-    "tooltip": "Increases the chance of getting secondary effects and halves the chance and duration of overheating.",
+    "tooltip": "Apply Snare to target(s)",
     "tags": [
       "Snare"
     ],
@@ -5964,10 +5993,9 @@
     "advantage_id": 387,
     "name": "Night Vision",
     "points_cost": 2,
-    "tooltip": "Applies Detect to you, increasing your Stealth Sight by +22, and Minimap Radius by +75 for 15 sec. Detect is an Enchantment.",
+    "tooltip": "While active, aApplies Detect to you, increasing your Stealth Sight by 22%, your Perception by 150%, and your Minimap Radius by 75.",
     "tags": [
-      "Stealth",
-      "Enchantment"
+      "Perception"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -5981,10 +6009,9 @@
     "advantage_id": 388,
     "name": "Nightmare",
     "points_cost": 2,
-    "tooltip": "Fully charging creates a Pyre Patch at your location. The Pyre Patch persists on the ground for 10 seconds. Every second, it deals Fire damage and has a 10% chance to apply Clinging Flames to enemies standing in it. You can only have one Pyre Patch active at a time.",
+    "tooltip": "Fully charging creates a Pyre Patch at your location.",
     "tags": [
-      "Pyre Patch",
-      "Clinging Flames"
+      "Pyre Patch"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -6014,11 +6041,14 @@
     "advantage_id": 390,
     "name": "No Code Of Conduct",
     "points_cost": 2,
-    "tooltip": "Chance to inflict additional damage around your + This chance is guaranteed if your target is affected by your Shredded; or if you are affected by multiple",
+    "tooltip": "30% chance every hit to inflict additional Slashing Damage to foes within 10ft. This chance is guaranteed if your target is affected by your Shredded or if you are affected by 3 stacks of Furious.",
     "tags": [
-      "Shredded"
+      "Shredded",
+      "Furious"
     ],
-    "damage_type": [],
+    "damage_type": [
+      "Slashing"
+    ],
     "is_disabled": false,
     "temporary": "Rend and Tear",
     "range_tags": [],
@@ -6030,7 +6060,7 @@
     "advantage_id": 391,
     "name": "No Mercy",
     "points_cost": 2,
-    "tooltip": "Instead of consuming just Bleeds, consumes all Wound effects. For each Wound consumed, deals Slashing damage initially, followed by 2 subsequent hits over 4 seconds for 50% of the original hit's damage. This damage over time cannot be Dodged and cannot be refreshed or reapplied while active.",
+    "tooltip": "Consumes Wounds instead of just Bleed. Deals Slashing damage initially, followed by 2 subsequent hits over 4 seconds for 50% of the original hit's damage.",
     "tags": [
       "Wounds"
     ],
@@ -6062,7 +6092,7 @@
     "advantage_id": 393,
     "name": "Not Without Incident",
     "points_cost": 2,
-    "tooltip": "30 while Furious) chance to inflict AoE damage (10ft range, max of 5 targets) around your target.",
+    "tooltip": "30% chance to deal additional Crushing damage to up to 5 targets within 10 ft. Chance is guaranteed if you are affected by Furious.",
     "tags": [
       "Furious"
     ],
@@ -6078,7 +6108,7 @@
     "advantage_id": 394,
     "name": "Noxious Fumes",
     "points_cost": 2,
-    "tooltip": "Has a 10 if Disoriented) chance every sec to Stun affected targets.",
+    "tooltip": "10% chance every 1 sec to Stun target standinf in the Gas Cloud. 25% chance of the target is Disoriented.",
     "tags": [
       "Stun",
       "Disorient"
@@ -6128,8 +6158,10 @@
     "advantage_id": 397,
     "name": "Nyctophobia",
     "points_cost": 2,
-    "tooltip": "Increases damage by 30% against Feared targets.",
-    "tags": [],
+    "tooltip": "Increases base damage by 30% against Feared targets.",
+    "tags": [
+      "Fear"
+    ],
     "damage_type": [],
     "is_disabled": false,
     "temporary": "Ebon Ruin",
@@ -6159,7 +6191,7 @@
     "advantage_id": 399,
     "name": "Off Your Feet",
     "points_cost": 2,
-    "tooltip": "Knocks enemies back.",
+    "tooltip": "Knock Back targets.",
     "tags": [
       "Knock Back"
     ],
@@ -6192,11 +6224,14 @@
     "advantage_id": 401,
     "name": "Out of My Way!",
     "points_cost": 2,
-    "tooltip": "For a short time after lunging, you deal Slashing you while moving. + If a target is immune to Knock effects, chance to apply Disorient reducing their damage and movement speed.",
+    "tooltip": "For a short time after lunging, you deal Slashing Damage and Knock Back targets around you while moving. If a target is immune to Knock effects, chance to apply Disorient reducing their damage and movement speed.",
     "tags": [
+      "Knock Back",
       "Disorient"
     ],
-    "damage_type": [],
+    "damage_type": [
+      "Slashing"
+    ],
     "is_disabled": false,
     "temporary": "Brutal Charge",
     "range_tags": [],
@@ -6208,7 +6243,7 @@
     "advantage_id": 402,
     "name": "Outbreak",
     "points_cost": 2,
-    "tooltip": "Reduces the maximum maintain time by one second. Also increases the chance to apply Deadly Poison to 25%.",
+    "tooltip": "Reduces the maximum maintain time by one second. Increases the chance to apply Deadly Poison to 25% every hit.",
     "tags": [
       "Deadly Poison"
     ],
@@ -6224,11 +6259,11 @@
     "advantage_id": 403,
     "name": "Overloaded Circuits",
     "points_cost": 2,
-    "tooltip": "Places an active defense system in your bionic shielding, dealing Electrical damage to anyone who triggers your shield. Damage dealt is based on incoming damage.",
-    "tags": [
-      "Shield"
+    "tooltip": "Deals Electrical damage to anyone who triggers your shield. Damage dealt is based on incoming damage.",
+    "tags": [],
+    "damage_type": [
+      "Electrical"
     ],
-    "damage_type": [],
     "is_disabled": false,
     "temporary": "Bionic Shielding",
     "range_tags": [],
@@ -6254,7 +6289,7 @@
     "advantage_id": 405,
     "name": "Overwhelming Force",
     "points_cost": 2,
-    "tooltip": "Fully charging applies Armor Piercing to your primary target as well as any secondary targets affected by Disorient.",
+    "tooltip": "When fully charged, applies Armor Piercing to your primary target as well as any Disoriented secondary targets.",
     "tags": [
       "Disorient",
       "Armor Piercing"
@@ -6288,7 +6323,7 @@
     "advantage_id": 407,
     "name": "Paint the Target",
     "points_cost": 2,
-    "tooltip": "Each shot focuses your aim, increasing your chance to Critically Hit by 3. This effect stacks up to 5 times, and is consumed when you perform a Critical Hit.",
+    "tooltip": "Increasins your Critical Chance by 3% every hit. This effect stacks up to 5 times, and is consumed when you perform a Critical Hit.",
     "tags": [],
     "damage_type": [],
     "is_disabled": false,
@@ -6302,9 +6337,10 @@
     "advantage_id": 408,
     "name": "Panic",
     "points_cost": 2,
-    "tooltip": "20% chance to stun targets for 2 seconds.If the target is affected by Fear, this chance is increased to 100.",
+    "tooltip": "20% chance every hit to Stun your targets. 100% chance against targets is affected by Fear.",
     "tags": [
-      "Stun"
+      "Stun",
+      "Fear"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -6318,7 +6354,7 @@
     "advantage_id": 409,
     "name": "Panic and Run",
     "points_cost": 2,
-    "tooltip": "Each hit has a 15% chance to Stagger targets.Stagger reduces damage resistance by 2 and movement speed by 25% for 12 seconds, stacking up to 3 times.",
+    "tooltip": "15% chance every hit to apply Stagger to targets.",
     "tags": [
       "Stagger"
     ],
@@ -6336,6 +6372,7 @@
     "points_cost": 2,
     "tooltip": "Targets hit with Venemous Breath have a chance to suffer from an Infection that Stuns them for a short time. Targets that are Bleeding have a 100% chance to be Infected.",
     "tags": [
+      "Infect",
       "Stun",
       "Bleed"
     ],
@@ -6351,8 +6388,10 @@
     "advantage_id": 411,
     "name": "Paranormal Paranoia",
     "points_cost": 2,
-    "tooltip": "Has a 30-100Fear%",
-    "tags": [],
+    "tooltip": "30-100% chance to apply Fear",
+    "tags": [
+      "Fear"
+    ],
     "damage_type": [],
     "is_disabled": false,
     "temporary": "Ebon Ruin",
@@ -6365,7 +6404,7 @@
     "advantage_id": 412,
     "name": "Particle Acceleration",
     "points_cost": 2,
-    "tooltip": "Finishing combo applies Disintegrate.Disintegrate increases the Particle and Energy damage affected foes take for a short while.Disintegrate is a type of Radiation",
+    "tooltip": "Finishing combo applies Disintegrate.",
     "tags": [
       "Disintegrate"
     ],
@@ -6381,7 +6420,7 @@
     "advantage_id": 413,
     "name": "Particle Blast",
     "points_cost": 2,
-    "tooltip": "Deals less damage against a single target, but deals additional damage when used against multiple targets.",
+    "tooltip": "Reduces single target damage by 20%, but increases the damage against multiple targets by 80%",
     "tags": [],
     "damage_type": [],
     "is_disabled": false,
@@ -6395,7 +6434,7 @@
     "advantage_id": 414,
     "name": "Particle Burst",
     "points_cost": 2,
-    "tooltip": "Applies Plasma Burn to targets close. + Chance to apply to targets further away from the blast. + Plasma Burn is a type of Radiation.",
+    "tooltip": "Applies Plasma Burn to targets close. Chance to apply to targets further away from the blast.",
     "tags": [
       "Plasma Burn"
     ],
@@ -6411,7 +6450,7 @@
     "advantage_id": 415,
     "name": "Particle Storm",
     "points_cost": 2,
-    "tooltip": "Each tick has a 25% chance to apply Plasma Burn to targets. Plasma Burn is a stacking Particle damage over time effect that lasts 16 seconds and counts as a Radiation effect.This chance is doubled if the target is affected by Negative Ions.",
+    "tooltip": "25% chance every hit to apply Plasma Burn to targets. 50% chance if the target is affected by Negative Ions.",
     "tags": [
       "Negative Ions",
       "Plasma Burn"
@@ -6428,9 +6467,9 @@
     "advantage_id": 416,
     "name": "Peerless Predation",
     "points_cost": 2,
-    "tooltip": "Each attack gains a 10% chance to apply Focus. + If using a Martial Arts form, you gain an additional stack of Focus. + If not using a Martial Arts form, you can only gain a stack of Focus if not already affected by it.",
+    "tooltip": "15% chance every hit to apply Furious.",
     "tags": [
-      "Focus"
+      "Furious"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -6444,7 +6483,7 @@
     "advantage_id": 417,
     "name": "Penetrating Strikes",
     "points_cost": 2,
-    "tooltip": "Finishing the combo applies Shredded to the primary target, increasing all physical daamge they take by a small amount, and Slashing damage by an additional amount.",
+    "tooltip": "Applies Shredded to the primary target on last hit.",
     "tags": [
       "Shredded"
     ],
@@ -6460,12 +6499,15 @@
     "advantage_id": 418,
     "name": "Perfect Storm",
     "points_cost": 3,
-    "tooltip": "Also deals some Electrical damage, and has a chance to apply Chill and Negative Ions to your targets.",
+    "tooltip": "Deals additional Electrical Damage and has 15% chance to apply Chil and Negative Ions every hit.",
     "tags": [
       "Negative Ions",
-      "Chill"
+      "Chill",
+      "Ice Cage"
     ],
-    "damage_type": [],
+    "damage_type": [
+      "Electrical"
+    ],
     "is_disabled": false,
     "temporary": "Hurricane",
     "range_tags": [],
@@ -6477,7 +6519,7 @@
     "advantage_id": 419,
     "name": "Peripheral Vision",
     "points_cost": 1,
-    "tooltip": "Increases the radius",
+    "tooltip": "Increases the radius to 5 ft.",
     "tags": [],
     "damage_type": [],
     "is_disabled": false,
@@ -6491,10 +6533,8 @@
     "advantage_id": 420,
     "name": "Phalanx Defense System",
     "points_cost": 3,
-    "tooltip": "While is slotted, you gain +33 resistance to all damage and +33 Knock Resistance for 2 seconds every time you activate and while you maintain Power Armor Slot (Chest, Hand, or Shoulder) abilities.",
-    "tags": [
-      "Shield"
-    ],
+    "tooltip": "When you use a Power Armor Slot (Chest, Hand, or Shoulder) attack, it will activate the Laser Knight shield for 2 sec, increasing your resistance to damage by 10% and your resistance to Knock effects by 10%. Reduces your damage by 10%.",
+    "tags": [],
     "damage_type": [],
     "is_disabled": false,
     "temporary": "Energy Shield",
@@ -6507,10 +6547,11 @@
     "advantage_id": 421,
     "name": "Phlebotomist",
     "points_cost": 2,
-    "tooltip": "Causes Root its target for the duration of the attack, and will gain 150% healing from Bleeding or Poisoned targets.",
+    "tooltip": "Roots your target. Increase healing by 150% against from Bleeding or Poisoned targets.",
     "tags": [
+      "Root",
       "Bleed",
-      "Root"
+      "Deadly Poison"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -6524,7 +6565,7 @@
     "advantage_id": 422,
     "name": "Pin Down",
     "points_cost": 2,
-    "tooltip": "Snares your target, reducing their movement speed for a short time.",
+    "tooltip": "Snares your target.",
     "tags": [
       "Snare"
     ],
@@ -6554,8 +6595,10 @@
     "advantage_id": 424,
     "name": "Plague Bearer",
     "points_cost": 2,
-    "tooltip": "Fully charging places an AoE Toxic DoT on your target. The target and other foes within 10 feet take Toxic Damage over Time.",
-    "tags": [],
+    "tooltip": "Applies Noxious Poison to your target and neargy foes.",
+    "tags": [
+      "Noxious Poison"
+    ],
     "damage_type": [],
     "is_disabled": false,
     "temporary": "Defile",
@@ -6568,9 +6611,9 @@
     "advantage_id": 425,
     "name": "Plagued by Nightmares",
     "points_cost": 2,
-    "tooltip": "Plagues the target with terrifying nightmares while asleep, affecting them with Fear when they wake up. Fear",
+    "tooltip": "Applies Fear to your targets when they wake up.",
     "tags": [
-      "Sleep"
+      "Fear"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -6584,7 +6627,7 @@
     "advantage_id": 426,
     "name": "Point Blank Blast",
     "points_cost": 2,
-    "tooltip": "Deals increased damage to targets the closer they are to you.",
+    "tooltip": "Increases base damage up to 50% the closer you are to your target.",
     "tags": [],
     "damage_type": [],
     "is_disabled": false,
@@ -6614,8 +6657,10 @@
     "advantage_id": 428,
     "name": "Poison Shuriken",
     "points_cost": 2,
-    "tooltip": "Gives your Shuriken a 10DeadlyPoison%",
-    "tags": [],
+    "tooltip": "50-100% chance to apply Deadly Poison.",
+    "tags": [
+      "Deadly Poison"
+    ],
     "damage_type": [],
     "is_disabled": false,
     "temporary": "Shuriken Throw",
@@ -6628,8 +6673,11 @@
     "advantage_id": 429,
     "name": "Poison Tipped Claws",
     "points_cost": 2,
-    "tooltip": "Each attack has a 10/10/25DeadlyPoison%",
-    "tags": [],
+    "tooltip": "10% chance very hit to apply Deadly Poison. 25% chanc eon the last hit. Chance are doubled if you are affected by Enrage.",
+    "tags": [
+      "Deadly Poison",
+      "Enrage"
+    ],
     "damage_type": [],
     "is_disabled": false,
     "temporary": "Frenzy",
@@ -6645,7 +6693,6 @@
     "tooltip": "Heals you when attacking a target affected by your Negative Ions. +This heal is considered a Life Drain effect.",
     "tags": [
       "Negative Ions",
-      "Heal",
       "Life Drain"
     ],
     "damage_type": [],
@@ -6660,7 +6707,7 @@
     "advantage_id": 431,
     "name": "Power Shift",
     "points_cost": 2,
-    "tooltip": "Each hit has a 10% chance for targets to be Knocked To you. If fully maintained, all targets are Knocked To you.",
+    "tooltip": "10% chance every hit for targets to be Knocked To you. 100% chance if fully maintained.",
     "tags": [
       "Knock To"
     ],
@@ -6676,8 +6723,10 @@
     "advantage_id": 432,
     "name": "Power Sweep",
     "points_cost": 2,
-    "tooltip": "Has a 25ChiFlame%",
-    "tags": [],
+    "tooltip": "25% chance to apply Chi Flame",
+    "tags": [
+      "Chi Flame"
+    ],
     "damage_type": [],
     "is_disabled": false,
     "temporary": "Inexorable Tides",
@@ -6706,9 +6755,10 @@
     "advantage_id": 434,
     "name": "Predictable",
     "points_cost": 2,
-    "tooltip": "Wipes all threat from your primary target.Places you in Stealth briefly.Increases the cooldown to 45 seconds.",
+    "tooltip": "Wipes all threat from all foes within 10 feet of your primary target. Also places you in Stealth briefly. Increases the cooldown to 45 seconds and sets all other Threat Wipe abilities on a 30 second cooldown.",
     "tags": [
-      "Stealth"
+      "Stealth",
+      "Threat Wipe"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -6724,6 +6774,7 @@
     "points_cost": 2,
     "tooltip": "Deals additional base damage when used against Held or Disoriented targets.",
     "tags": [
+      "Hold",
       "Disorient"
     ],
     "damage_type": [],
@@ -6738,7 +6789,7 @@
     "advantage_id": 436,
     "name": "Psionic Emanation",
     "points_cost": 2,
-    "tooltip": "Grants a chance to perform an AoE heal around the target.",
+    "tooltip": "25% chance to perform an AoE heal around the target.",
     "tags": [
       "Heal"
     ],
@@ -6754,7 +6805,7 @@
     "advantage_id": 437,
     "name": "Psychic Reverberations",
     "points_cost": 2,
-    "tooltip": "Has a chance to Buff your Ego damage.",
+    "tooltip": "15% chance to increase your Ego damage by 10% damage strenght, for 6 sec.",
     "tags": [],
     "damage_type": [],
     "is_disabled": false,
@@ -6768,7 +6819,7 @@
     "advantage_id": 438,
     "name": "Psychic Tides",
     "points_cost": 2,
-    "tooltip": "Sets the Energy Equilibrium of targets to 1 for 16 seconds.Snares targets for 16 sec, reducing their movement speed by 100%.",
+    "tooltip": "Sets the Energy Equilibrium of targets to 1 for 16 seconds. Snares targets.",
     "tags": [
       "Snare"
     ],
@@ -6784,7 +6835,7 @@
     "advantage_id": 439,
     "name": "Psychotic Break",
     "points_cost": 2,
-    "tooltip": "Full charge vs Feared target pushes them into full on psychosis, Stunning the target and applying a stack of Bleed. Bleed deals Slashing damage every second for 16 sec, can stack up to 5 times, and is considered a Wound effect. This effect can only be applied once every 5 seconds per target.",
+    "tooltip": "When fully charged, Stuns and Bleed targets affect by Fear. ",
     "tags": [
       "Stun",
       "Bleed"
@@ -6801,12 +6852,9 @@
     "advantage_id": 440,
     "name": "Pummel",
     "points_cost": 2,
-    "tooltip": "The final combo hit has a 50% chance to Knock Down targets. If affected by Enrage, this chance is increased to 100 on the primary target. If the primary target is affected by a Hold or Hold Resistance, they are Knocked Up instead.",
+    "tooltip": "Applies Demolish on last hit.",
     "tags": [
-      "Knock Down",
-      "Hold",
-      "Enrage",
-      "Knock Up"
+      "Demolish"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -6820,8 +6868,10 @@
     "advantage_id": 441,
     "name": "Punitive Pummeling",
     "points_cost": 2,
-    "tooltip": "Attacks against you have a chance of reflecting their energy outwards. Every incoming attack that you block has a 100% chance of Knocking Back all nearby enemies. This effect can occur at most once every 10 seconds.",
-    "tags": [],
+    "tooltip": "When you take damage from a foe within 10ft of you, Knocks them Back. This can occur once every 10 sec.",
+    "tags": [
+      "Knock Back"
+    ],
     "damage_type": [],
     "is_disabled": false,
     "temporary": "Guard;Retaliation",
@@ -6850,8 +6900,11 @@
     "advantage_id": 443,
     "name": "Quills",
     "points_cost": 2,
-    "tooltip": "Adds a 10DeadlyPoisonBleed%",
-    "tags": [],
+    "tooltip": "10% to apply Deadly Poison or Bleed to nearby attacking targets while blocking.",
+    "tags": [
+      "Deadly Poison",
+      "Bleed"
+    ],
     "damage_type": [],
     "is_disabled": false,
     "temporary": "Antagonize",
@@ -6864,8 +6917,11 @@
     "advantage_id": 444,
     "name": "Rabies",
     "points_cost": 2,
-    "tooltip": "Fully charging on a Poisoned target will spread the affliction to another nearby target.This can occur for each type of poison.Adds a 20% chance to apply Poison.Refreshes the duration of all Poisons on all targets hit.",
-    "tags": [],
+    "tooltip": "20% chance to apply Deadly Poison on tap. Refreshes your Poisons. When charged at least half way, spreads any of your poison to up to 5 foe within 20 ft.",
+    "tags": [
+      "Deadly Poison",
+      "Poisons"
+    ],
     "damage_type": [],
     "is_disabled": false,
     "temporary": "Bite",
@@ -6878,11 +6934,8 @@
     "advantage_id": 445,
     "name": "Radiant Renewal",
     "points_cost": 2,
-    "tooltip": "Revives up to 4 nearby allies within 50 feet for 33/66% Health, based on rank. Charge time is doubled.",
-    "tags": [
-      "Team Heal",
-      "Heal"
-    ],
+    "tooltip": "Revives up to 4 nearby allies within 50 feet. The healing received is divided among the number of allies revived at a time.",
+    "tags": [],
     "damage_type": [],
     "is_disabled": false,
     "temporary": "Divine Renewal",
@@ -6911,12 +6964,14 @@
     "advantage_id": 447,
     "name": "Radioactive Decay",
     "points_cost": 2,
-    "tooltip": "Fully charging spreads any of your Plasma Burn and Disintegrate effects to nearby targets, as well as dealing additional Particle damage Refreshes the duration of your Plasma Burn and Disintegrate effects on targets that these effects were spread to.",
+    "tooltip": "When this power is fully charged, spreads any of your Plasma Burn and Disintegrate effects on your target to up to 3 foes within 20ft. Affected targets also take Particle Damage if you are within 15ft, and less Particle Damage if you are further away. Refreshes Plasma Burn and Disintegrate on targets that these effects were spread to.",
     "tags": [
       "Plasma Burn",
       "Disintegrate"
     ],
-    "damage_type": [],
+    "damage_type": [
+      "Particle"
+    ],
     "is_disabled": false,
     "temporary": "Particle Blaster;Eye Lasers",
     "range_tags": [],
@@ -6928,10 +6983,9 @@
     "advantage_id": 448,
     "name": "Rage of the Beast",
     "points_cost": 2,
-    "tooltip": "If you are Held or Rooted when is activated, applies 2232 Break Free damage tho those effects as well as 5 stacks of Charged Up to you. Each stack of Charged Up increases your Running Speed by 15%, your Jump Height by 2%, and your Flying Speed by 2%. This effect stacks up to 5 times and lasts 10 seconds.",
+    "tooltip": "If you are Held or Rooted when is activated, applies Break Free damage as well as 5 stacks of Charged Up to you. Each stack of Charged Up increases your Running Speed by 15%, your Jump Height by 2%, and your Flying Speed by 2%. This effect stacks up to 5 times and lasts 10 seconds.",
     "tags": [
-      "Charged Up",
-      "Root"
+      "Charged Up"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -6961,8 +7015,10 @@
     "advantage_id": 450,
     "name": "Rattle",
     "points_cost": 2,
-    "tooltip": "Has a 20Disorient%",
-    "tags": [],
+    "tooltip": "20% chance every hit to apply Disorient.",
+    "tags": [
+      "Disorient"
+    ],
     "damage_type": [],
     "is_disabled": false,
     "temporary": "Hyper Voice",
@@ -6991,8 +7047,10 @@
     "advantage_id": 452,
     "name": "Real Ultimate Power",
     "points_cost": 2,
-    "tooltip": "50Bleed%",
-    "tags": [],
+    "tooltip": "50% chance every hit to apply Bleed.",
+    "tags": [
+      "Bleed"
+    ],
     "damage_type": [],
     "is_disabled": false,
     "temporary": "Fury of the Dragon",
@@ -7005,7 +7063,7 @@
     "advantage_id": 453,
     "name": "Reanimator",
     "points_cost": 2,
-    "tooltip": "Modifies the function to allow its use on enemies who will then fight by your side as a zombie for a time. The duration increases for each rank you purchase. Taking this advantage replaces the original functionality of the power.",
+    "tooltip": "Doest revive friends anymore. Instead, allow its use on enemies who will then fight by your side as a zombie for a time. The duration increases with each rank.",
     "tags": [],
     "damage_type": [],
     "is_disabled": false,
@@ -7049,8 +7107,10 @@
     "advantage_id": 456,
     "name": "Reciprocating Gizmo",
     "points_cost": 2,
-    "tooltip": "Causes you to grow in size as your target shrinks, increasing your movement speed and damage.",
-    "tags": [],
+    "tooltip": "Applies 3 stacks of Charged Up, increasing your running speed by 15%, your jump height by 3 and your flying speed by 3 for 12 sec. Stacks up to 5 times.",
+    "tags": [
+      "Charged Up"
+    ],
     "damage_type": [],
     "is_disabled": false,
     "temporary": "Miniaturization Drive",
@@ -7079,7 +7139,7 @@
     "advantage_id": 458,
     "name": "Reckless Strike",
     "points_cost": 2,
-    "tooltip": "Deals additional base damage when you are affected by Reckless.",
+    "tooltip": "Increase base damage by 30% when you are affected by Reckless.",
     "tags": [
       "Reckless"
     ],
@@ -7095,9 +7155,9 @@
     "advantage_id": 459,
     "name": "Reconstruct",
     "points_cost": 2,
-    "tooltip": "Standing in will heal you over time. If you are actively using Stone Shroud, this effect is doubled.",
+    "tooltip": "Drops a Healing Rune which heals nearby allies every 1 sec for 10 sec. You cannot have more than one Rune out at a time.  If you are blocking with Stone Shroud, this effect is doubled.",
     "tags": [
-      "Heal"
+      "Rune"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -7111,7 +7171,7 @@
     "advantage_id": 460,
     "name": "Red Hot",
     "points_cost": 2,
-    "tooltip": "Applies Clinging Flames to the target. Clinging Flames deals Fire damage every 2 seconds for 12 seconds, with a chance to leap to other nearby targets. Clinging Flames is a Burning effect.",
+    "tooltip": "Applies Clinging Flames to the target.",
     "tags": [
       "Clinging Flames"
     ],
@@ -7127,7 +7187,7 @@
     "advantage_id": 461,
     "name": "Red Hot Fury",
     "points_cost": 2,
-    "tooltip": "Applies 3 stacks of Furious to you. Furious increases melee damage by 5% per stack.",
+    "tooltip": "Applies 3 stacks of Furious to you",
     "tags": [
       "Furious"
     ],
@@ -7159,6 +7219,7 @@
     "points_cost": 2,
     "tooltip": "On a full charge, Paralyzes your primary target and Stuns any other affected targets.",
     "tags": [
+      "Hold",
       "Stun"
     ],
     "damage_type": [],
@@ -7173,7 +7234,7 @@
     "advantage_id": 464,
     "name": "Redirect Energy",
     "points_cost": 2,
-    "tooltip": "Reduces the cooldown on your Technology powers by every time you take damage while blocking. - Does not affect Ultimate or Active powers.",
+    "tooltip": "Reduces the cooldown on your Technology powers every time you take damage while blocking. - Does not affect Ultimate or Active powers.",
     "tags": [],
     "damage_type": [],
     "is_disabled": false,
@@ -7187,7 +7248,7 @@
     "advantage_id": 465,
     "name": "Redirect Power",
     "points_cost": 1,
-    "tooltip": "The static field applies at your location.",
+    "tooltip": "The Static Field applies at your location.",
     "tags": [
       "Static Field"
     ],
@@ -7233,7 +7294,7 @@
     "advantage_id": 468,
     "name": "Rejuvenator",
     "points_cost": 2,
-    "tooltip": "While maintaing, if one of yoru powers comes off of cooldown, boosts the amount of healing does by 50% for 6 seconds.",
+    "tooltip": "While maintaing, if one of your powers comes off of cooldown, boosts the amount of healing does by 50% for 6 seconds.",
     "tags": [],
     "damage_type": [],
     "is_disabled": false,
@@ -7263,7 +7324,7 @@
     "advantage_id": 470,
     "name": "Relentless Recurve",
     "points_cost": 2,
-    "tooltip": "Knocks back affected targets instead of knocking them down.",
+    "tooltip": "Knocks Back targets instead of Knock Down.",
     "tags": [
       "Knock Back"
     ],
@@ -7297,7 +7358,7 @@
     "advantage_id": 472,
     "name": "Rending Blades",
     "points_cost": 2,
-    "tooltip": "If your target is already affected by your shredded, refreshes the duration. When fully charged, applies Shredded to your target.",
+    "tooltip": "Refreshes Shredded.. When fully charged, applies Shredded to your target.",
     "tags": [
       "Shredded"
     ],
@@ -7313,7 +7374,7 @@
     "advantage_id": 473,
     "name": "Repulsing Waves",
     "points_cost": 2,
-    "tooltip": "Repels foes away from you instead of pulling them towards you. (Will not push them out of maximum range.) Also gains a chance to Stagger for all foes hit. Stagger reduces damage resistance by 2 and movement speed by 25 for 12 seconds, stacking up to 3 times.",
+    "tooltip": "Repels foes away from you instead of pulling them towards you. 20% chance every hit to apply Stagger.",
     "tags": [
       "Repel",
       "Stagger"
@@ -7330,7 +7391,7 @@
     "advantage_id": 474,
     "name": "Restraining Order",
     "points_cost": 2,
-    "tooltip": "When lunging from more than 20 feet away and the target isn't already controlled, attempts to Root them for 16 seconds.",
+    "tooltip": "When lunging from more than 20 feet away and the target isn't already controlled, Root them.",
     "tags": [
       "Root"
     ],
@@ -7348,7 +7409,7 @@
     "points_cost": 2,
     "tooltip": "You gain additional ticks of healing whenever you Dodge an attack while active. This effect can only occur once every 0.5 seconds.",
     "tags": [
-      "Bountiful Chi Resurgence"
+      "Heal"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -7362,10 +7423,8 @@
     "advantage_id": 476,
     "name": "Retribution",
     "points_cost": 2,
-    "tooltip": "Breaks you out of Hold effects when releasing this block.",
-    "tags": [
-      "Hold"
-    ],
+    "tooltip": "Once you stop blocking, applies Break Free damage to any Holds, Roots, or Disables affecting you.",
+    "tags": [],
     "damage_type": [],
     "is_disabled": false,
     "temporary": "Counterattack",
@@ -7379,9 +7438,7 @@
     "name": "Reverence",
     "points_cost": 2,
     "tooltip": "Adds a small AoE (15 foot radius, max of 5 targets) heal component.",
-    "tags": [
-      "Heal"
-    ],
+    "tags": [],
     "damage_type": [],
     "is_disabled": false,
     "temporary": "Conviction",
@@ -7394,8 +7451,10 @@
     "advantage_id": 478,
     "name": "Reverse Polarity",
     "points_cost": 2,
-    "tooltip": "Knocks Towards you instead of away from you.",
-    "tags": [],
+    "tooltip": "Knocks targets Toward you instead of Knock Back",
+    "tags": [
+      "Knock To"
+    ],
     "damage_type": [],
     "is_disabled": false,
     "temporary": "Energy Wave",
@@ -7408,7 +7467,7 @@
     "advantage_id": 479,
     "name": "Revitalizing Boost",
     "points_cost": 2,
-    "tooltip": "If shield absorbs the full amount it restores Energy to you.",
+    "tooltip": "If the shield absorbs the full amount of damage, it restores Energy to you. This amount scales with your Presence.",
     "tags": [
       "Shield"
     ],
@@ -7424,11 +7483,13 @@
     "advantage_id": 480,
     "name": "Righteous Fury",
     "points_cost": 2,
-    "tooltip": "Instead of applying Chi Flame on a full charge, deals Dimensional damage to up to 5 targets within 20 feet and Knocks them toward you.",
+    "tooltip": "Instead of applying Chi Flame on a full charge, deals Dimensional Damage to up to 5 targets within 20 feet and Knocks them Toward you.",
     "tags": [
-      "Chi Flame"
+      "Knock To"
     ],
-    "damage_type": [],
+    "damage_type": [
+      "Dimensional"
+    ],
     "is_disabled": false,
     "temporary": "Burning Chi Fist",
     "range_tags": [],
@@ -7440,7 +7501,7 @@
     "advantage_id": 481,
     "name": "Rip and Tear!",
     "points_cost": 2,
-    "tooltip": "Has a chance to cause ennemy to Bleed. This chance is boosted while affected by Enrage",
+    "tooltip": "15% chance every hit to apply Bleed. 30% chance if you are affected by Enrage",
     "tags": [
       "Bleed",
       "Enrage"
@@ -7457,7 +7518,7 @@
     "advantage_id": 482,
     "name": "Ripsaw",
     "points_cost": 2,
-    "tooltip": "Increases the damage deals when the target is below 30% Health.",
+    "tooltip": "Increases the base damage up to 35% the lower is the target's health.",
     "tags": [],
     "damage_type": [],
     "is_disabled": false,
@@ -7471,7 +7532,7 @@
     "advantage_id": 483,
     "name": "Rock Concert",
     "points_cost": 2,
-    "tooltip": "No longer gives you the Rocking Out buff. Instead, applies Exhilarate to nearby allies. Exhilarate increases their charge speed by a small amount and can stack up to 10 times. It also gives them energy.",
+    "tooltip": "While maintaining this power, up to 5 allies within 50ft gain the Exhilarate buff which boosts the charge speed of abilities by 2% for 15 sec. Stacks up to 6 times.",
     "tags": [],
     "damage_type": [],
     "is_disabled": false,
@@ -7488,7 +7549,8 @@
     "tooltip": "If used against a Staggered target, deals damage to foes within 10 feet of your target and all foes hit are Knocked Up. This consumes your stacks of Stagger on your target. Damage dealt and Knock severity are based on the number of stacks consumed.",
     "tags": [
       "Stagger",
-      "Knock Up"
+      "Knock Up",
+      "Rupture"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -7502,9 +7564,11 @@
     "advantage_id": 485,
     "name": "Rubble Trouble",
     "points_cost": 2,
-    "tooltip": "Deals 167 Crushing damage to foes within 10 feet of your primary target.",
+    "tooltip": "Deals Crushing Damage to foes within 10 feet of your primary target.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Crushing"
+    ],
     "is_disabled": false,
     "temporary": "Hurl",
     "range_tags": [],
@@ -7516,8 +7580,10 @@
     "advantage_id": 486,
     "name": "Rude Awakening",
     "points_cost": 1,
-    "tooltip": "Your mental assault is easier to perform on Sleeping targets, causing to deal 15% more damage to them.",
-    "tags": [],
+    "tooltip": "Increases base damage by 15% against Sleeping targets.",
+    "tags": [
+      "Sleep"
+    ],
     "damage_type": [],
     "is_disabled": false,
     "temporary": "Ego Blast",
@@ -7548,8 +7614,7 @@
     "points_cost": 2,
     "tooltip": "Stuns targets briefly.",
     "tags": [
-      "Stun",
-      "Rune"
+      "Stun"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -7563,9 +7628,8 @@
     "advantage_id": 489,
     "name": "Rune of Lethargy",
     "points_cost": 2,
-    "tooltip": "Roots affected targets for 8 seconds.",
+    "tooltip": "Roots affected targets.",
     "tags": [
-      "Rune",
       "Root"
     ],
     "damage_type": [],
@@ -7580,9 +7644,9 @@
     "advantage_id": 490,
     "name": "Rune of Terror",
     "points_cost": 2,
-    "tooltip": "Applies Fear to targets. Fear causes the target to cower for 3 seconds.",
+    "tooltip": "Applies Fear to targets.",
     "tags": [
-      "Rune"
+      "Fear"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -7596,10 +7660,9 @@
     "advantage_id": 491,
     "name": "Rupture",
     "points_cost": 2,
-    "tooltip": "If fully charged and your primary target is Staggered, applies a stack of Stagger to all targets hit. Stagger reduces damage resistance by 2 and movement speed by 25 for 12 seconds, stacking up to 3 times.",
+    "tooltip": "If fully charged and your primary target is Staggered, applies a stack of Stagger to all targets hit.",
     "tags": [
-      "Stagger",
-      "Rupture"
+      "Stagger"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -7614,10 +7677,7 @@
     "name": "Salvation",
     "points_cost": 2,
     "tooltip": "Revives up to 4 nearby allies within 50 feet. The healing received is divided among the number of allies revived at a time.",
-    "tags": [
-      "Team Heal",
-      "Heal"
-    ],
+    "tags": [],
     "damage_type": [],
     "is_disabled": false,
     "temporary": "Redemption",
@@ -7630,7 +7690,7 @@
     "advantage_id": 493,
     "name": "Sapped Strength",
     "points_cost": 2,
-    "tooltip": "Adds a Root to this ability, preventing targets moving for a short amount of time",
+    "tooltip": "Roots affected targets.",
     "tags": [
       "Root"
     ],
@@ -7646,7 +7706,7 @@
     "advantage_id": 494,
     "name": "Sapping Solution",
     "points_cost": 2,
-    "tooltip": "5 seconds after being hit, targets become Snared by the debilitating chemicals of the mesh, causing them to move slowly for a time.",
+    "tooltip": "5 seconds after being hit, Snare affected targets.",
     "tags": [
       "Snare"
     ],
@@ -7662,9 +7722,8 @@
     "advantage_id": 495,
     "name": "Scalding Water",
     "points_cost": 1,
-    "tooltip": "Instead of Chill, applies Clinging Flames. Clinging Flames deals Fire damage every 2 seconds for 12 seconds, with a chance to leap to other nearby targets. Clinging Flames is a Burning effect.",
+    "tooltip": "Instead of Chill, applies Clinging Flames.",
     "tags": [
-      "Chill",
       "Clinging Flames"
     ],
     "damage_type": [],
@@ -7693,7 +7752,7 @@
     "advantage_id": 497,
     "name": "Scent of Blood",
     "points_cost": 2,
-    "tooltip": "Charging at least halfway on a Bleeding target will spread the affliction to another nearby target.Refreshes the duration of all Bleeds on all targets hit.",
+    "tooltip": "Charging at least half way against a Bleeding target spreads the effect to up to 5 foes within 20ft. Refreshes the duration of Bleed effects on affected targets.",
     "tags": [
       "Bleed"
     ],
@@ -7709,10 +7768,9 @@
     "advantage_id": 498,
     "name": "Scorched Earth",
     "points_cost": 2,
-    "tooltip": "Creates a Pyre Patch beneath the target. The Pyre Patch persists on the ground for 10 seconds. Every second, it deals Fire damage and has a 10% chance to apply Clinging Flames to enemies standing in it. You can only have one Pyre Patch active at a time.",
+    "tooltip": "Creates a Pyre Patch at the target's location.",
     "tags": [
-      "Pyre Patch",
-      "Clinging Flames"
+      "Pyre Patch"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -7726,10 +7784,9 @@
     "advantage_id": 499,
     "name": "Scorched Ground",
     "points_cost": 2,
-    "tooltip": "Creates a Pyre Patch at the target's location. The Pyre Patch persists on the ground for 10 seconds. Every second, it deals Fire damage and has a 10% chance to apply Clinging Flames to enemies standing in it. You can only have one Pyre Patch active at a time.",
+    "tooltip": "Creates a Pyre Patch at the target's location.",
     "tags": [
-      "Pyre Patch",
-      "Clinging Flames"
+      "Pyre Patch"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -7743,7 +7800,7 @@
     "advantage_id": 500,
     "name": "Scorching Blade",
     "points_cost": 2,
-    "tooltip": "Deals 30% increased damage against targets affected by Clinging Flames.",
+    "tooltip": "Increases base damage by 30% against targets affected by Clinging Flames.",
     "tags": [
       "Clinging Flames"
     ],
@@ -8014,9 +8071,10 @@
     "advantage_id": 517,
     "name": "Silent Predation",
     "points_cost": 2,
-    "tooltip": "Briefly places you in stealth. When used, places all threat wipe powers on cooldown.",
+    "tooltip": "Briefly places you in Stealth. When used, places all Threat Wipe powers on cooldown.",
     "tags": [
-      "Stealth"
+      "Stealth",
+      "Threat Wipe"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -8109,7 +8167,8 @@
     "points_cost": 2,
     "tooltip": "Changes into a threat wipe, increasing the cooldown to 45 sec, wipes all threat from your Primary Target, and places you in stealth briefly. This effect can only occur once every 30 seconds.",
     "tags": [
-      "Stealth"
+      "Stealth",
+      "Threat Wipe"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -10259,10 +10318,9 @@
     "advantage_id": 660,
     "name": "Chemical Fire",
     "points_cost": 2,
-    "tooltip": "Instead of applying Clinging Flames, has a chance to apply Plasma Burn. Note: Plasma in this case refers to a state of matter, not a chemical.",
+    "tooltip": "Instead of applying Clinging Flames, now has a chance to apply Plasma Burn.",
     "tags": [
-      "Plasma Burn",
-      "Clinging Flames"
+      "Plasma Burn"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -10981,6 +11039,38 @@
     ],
     "is_disabled": false,
     "temporary": null,
+    "range_tags": [],
+    "scaling_stats": [],
+    "advantages": [],
+    "power_dependency": []
+  },
+  {
+    "advantage_id": 706,
+    "name": "Particle Acceleration",
+    "points_cost": 2,
+    "tooltip": "When fully maintained, applies Disintegrate.",
+    "tags": [
+      "Disintegrate"
+    ],
+    "damage_type": [],
+    "is_disabled": false,
+    "temporary": null,
+    "range_tags": [],
+    "scaling_stats": [],
+    "advantages": [],
+    "power_dependency": []
+  },
+  {
+    "advantage_id": 707,
+    "name": "Scent of Blood",
+    "points_cost": 2,
+    "tooltip": "Last hit against a Bleeding target spreads the effect to up to 5 foes within 20ft. Refreshes the duration of Bleed effects on affected targets.",
+    "tags": [
+      "Bleed"
+    ],
+    "damage_type": [],
+    "is_disabled": false,
+    "temporary": "Shred;Bite",
     "range_tags": [],
     "scaling_stats": [],
     "advantages": [],

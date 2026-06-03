@@ -1,4 +1,5 @@
 import type { PowerTooltipData } from "@/shared/utils/powerTooltip";
+import { TooltipTags } from "@/shared/ui/TooltipTags";
 
 type PowerTooltipProps = {
   advantageHighlightQueries?: string[];
@@ -65,13 +66,7 @@ export function PowerTooltip({
           <div className="power-tooltip__meta">
             {typeLine && <strong>{typeLine}</strong>}
 
-            {tooltip.tags.length > 0 && (
-              <div className="power-tooltip__tags">
-                {tooltip.tags.map((tag) => (
-                  <span key={tag}>{tag}</span>
-                ))}
-              </div>
-            )}
+            <TooltipTags tags={tooltip.tags} />
 
             <div className="power-tooltip__details">
               <div className="power-tooltip__metrics">
@@ -99,7 +94,7 @@ export function PowerTooltip({
 
         {!showAdvantages && advantages.length > 0 ? (
           <div className="power-tooltip__hint">
-            Hold Shift to see Advantages
+            Hold Shift to see advantages, and use mouse wheel to scroll
           </div>
         ) : null}
       </div>
@@ -123,13 +118,7 @@ export function PowerTooltip({
                     <span>{advantage.pointsCost} pt</span>
                   ) : null}
                 </div>
-                {advantage.tags.length > 0 ? (
-                  <div className="power-tooltip__tags">
-                    {advantage.tags.map((tag) => (
-                      <span key={tag}>{tag}</span>
-                    ))}
-                  </div>
-                ) : null}
+                <TooltipTags tags={advantage.tags} />
                 {advantage.tooltip ? <p>{advantage.tooltip}</p> : null}
               </section>
             ))}

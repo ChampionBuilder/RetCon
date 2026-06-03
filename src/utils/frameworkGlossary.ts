@@ -5,6 +5,7 @@
 
 export type FrameworkGlossaryTooltip = {
   framework: string;
+  hint?: string | null;
   sections: FrameworkGlossarySection[];
 };
 
@@ -128,7 +129,14 @@ const frameworkGlossaries: Record<string, FrameworkGlossaryTooltip> = {
       },
       {
         label: "Enchantements",
-        tags: ["Spellcaster toggle form", "Rune", "Illumination", "Mystified"],
+        tags: [
+          "Spellcaster toggle form",
+          "Rune",
+          "Illumination",
+          "Mystified",
+          "Light Everlasting",
+          "Detect",
+        ],
       },
     ],
   },
@@ -141,19 +149,41 @@ const frameworkGlossaries: Record<string, FrameworkGlossaryTooltip> = {
           "Deadly Poison",
           "Debilitating Poison",
           "Noxious Poison",
-          "Infects",
+          "Infect",
         ],
       },
     ],
   },
 };
 
-export function getFrameworkGlossaryTooltip(frameworkId: string) {
-  return frameworkGlossaries[frameworkId] ?? null;
+export function getFrameworkGlossaryTooltip(
+  frameworkId: string,
+  fallbackFrameworkName?: string,
+  hint?: string | null,
+) {
+  const glossary = frameworkGlossaries[frameworkId];
+
+  if (!glossary && !fallbackFrameworkName) {
+    return null;
+  }
+
+  return {
+    framework: glossary?.framework ?? fallbackFrameworkName ?? frameworkId,
+    hint: hint ?? null,
+    sections: glossary?.sections ?? [],
+  };
 }
 
-export function getFrameworkGlossaryTooltipAttribute(frameworkId: string) {
-  const glossary = getFrameworkGlossaryTooltip(frameworkId);
+export function getFrameworkGlossaryTooltipAttribute(
+  frameworkId: string,
+  fallbackFrameworkName?: string,
+  hint?: string | null,
+) {
+  const glossary = getFrameworkGlossaryTooltip(
+    frameworkId,
+    fallbackFrameworkName,
+    hint,
+  );
 
   return glossary ? JSON.stringify(glossary) : undefined;
 }

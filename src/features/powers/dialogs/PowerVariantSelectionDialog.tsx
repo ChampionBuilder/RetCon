@@ -12,6 +12,7 @@ import {
   isPowerVariantDevice,
   isUltimatePower,
 } from "@/utils/powerFrameworks";
+import { getFrameworkGlossaryTooltipAttribute } from "@/utils/frameworkGlossary";
 import { AnchoredSelectionDialog, type DialogAnchor } from "@/shared/ui";
 import { SpriteIcon } from "@/shared/ui/SpriteIcon";
 
@@ -116,6 +117,10 @@ export function PowerVariantSelectionDialog({
           }
           type="button"
           onClick={() => setSelectedFramework(null)}
+          data-framework-tooltip={getFrameworkGlossaryTooltipAttribute(
+            "all-frameworks",
+            "All frameworks",
+          )}
           title="All frameworks"
         >
           <SpriteIcon name="Any_Generic" size={24} />
@@ -132,6 +137,10 @@ export function PowerVariantSelectionDialog({
                 key={framework.id}
                 type="button"
                 onClick={() => setSelectedFramework(framework.id)}
+                data-framework-tooltip={getFrameworkGlossaryTooltipAttribute(
+                  framework.id,
+                  framework.title,
+                )}
                 title={framework.title}
               >
                 <SpriteIcon

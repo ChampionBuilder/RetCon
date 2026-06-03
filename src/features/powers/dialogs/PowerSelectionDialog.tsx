@@ -11,6 +11,7 @@ import {
   getSelectablePowerFrameworkGroups,
   isPowerVisibleInFramework,
 } from "@/utils/powerFrameworks";
+import { getFrameworkGlossaryTooltipAttribute } from "@/utils/frameworkGlossary";
 import { AnchoredSelectionDialog, type DialogAnchor } from "@/shared/ui";
 import { SpriteIcon } from "@/shared/ui/SpriteIcon";
 
@@ -169,6 +170,10 @@ export function PowerSelectionDialog({
                   setSelectedFramework(framework.id);
                   onSelectFramework(framework.id);
                 }}
+                data-framework-tooltip={getFrameworkGlossaryTooltipAttribute(
+                  framework.id,
+                  framework.title,
+                )}
                 title={framework.title}
               >
                 <SpriteIcon

@@ -6,6 +6,7 @@ import { getPowerIconName } from "@/shared/utils/icons";
 import { getPowerTooltipText } from "@/shared/utils/powerText";
 import { getPowerTooltipAttribute } from "@/shared/utils/powerTooltip";
 import { formatFrameworkName, isTravelPower } from "@/utils/powerFrameworks";
+import { getFrameworkGlossaryTooltipAttribute } from "@/utils/frameworkGlossary";
 import { AnchoredSelectionDialog, type DialogAnchor } from "@/shared/ui";
 import { SpriteIcon } from "@/shared/ui/SpriteIcon";
 
@@ -74,6 +75,10 @@ export function TravelPowerSelectionDialog({
           }
           type="button"
           onClick={() => setSelectedFramework(null)}
+          data-framework-tooltip={getFrameworkGlossaryTooltipAttribute(
+            "all-travel-powers",
+            "All travel powers",
+          )}
           title="All travel powers"
         >
           <SpriteIcon name="Any_Generic" size={24} />
@@ -89,6 +94,10 @@ export function TravelPowerSelectionDialog({
               key={frameworkId ?? "unknown"}
               type="button"
               onClick={() => setSelectedFramework(frameworkId)}
+              data-framework-tooltip={getFrameworkGlossaryTooltipAttribute(
+                frameworkId ?? "unknown",
+                formatFrameworkName(frameworkId) || "Unknown",
+              )}
               title={formatFrameworkName(frameworkId) || "Unknown"}
             >
               <SpriteIcon

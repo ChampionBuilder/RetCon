@@ -6,6 +6,10 @@ import {
   getSlotAdvantagePoints,
   maxAdvantagePointsPerPower,
 } from "@/utils/advantagerules";
+import {
+  cleanMultilineTooltipText,
+  formatTooltipLabel,
+} from "@/shared/utils/tooltipText";
 import { getPowerAdvantages } from "@/utils/powerAdvantages";
 import { AnchoredSelectionDialog, type DialogAnchor } from "@/shared/ui";
 
@@ -20,17 +24,6 @@ type AdvantageSelectionDialogProps = {
   onToggleAdvantage: (slotNumber: number, advantageId: number) => void;
 };
 
-function formatTooltip(tooltip: string | null) {
-  return tooltip?.replace(/<br\s*\/?>/gi, "\n").trim() ?? "";
-}
-
-function formatTag(tag: string) {
-  return tag
-    .replace(/_/g, " ")
-    .toLowerCase()
-    .replace(/\b\w/g, (character) => character.toUpperCase());
-}
-
 function getAdvantageTooltipAttribute(
   advantage: Advantage,
   lockedReason: string | null,
@@ -41,8 +34,8 @@ function getAdvantageTooltipAttribute(
   return JSON.stringify({
     name: advantage.name,
     pointsCost: advantage.points_cost,
-    tags: (advantage.tags ?? []).map(formatTag).filter(Boolean),
-    tooltip: formatTooltip(advantage.tooltip) || null,
+    tags: (advantage.tags ?? []).map(formatTooltipLabel).filter(Boolean),
+    tooltip: cleanMultilineTooltipText(advantage.tooltip),
     lockedReason: tooltipLockedReason,
   });
 }
