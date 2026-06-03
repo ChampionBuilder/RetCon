@@ -19,6 +19,7 @@ type SpecializationsPanelProps = {
     anchor: DialogAnchor,
   ) => void;
   onSelectMastery: (anchor: DialogAnchor) => void;
+  onToggleCollapse: () => void;
 };
 
 const slotLabels = ["Stat Tree", "Role Tree 1", "Role Tree 2"];
@@ -30,13 +31,22 @@ export function SpecializationsPanel({
   trees,
   onOpenSpecialization,
   onSelectMastery,
+  onToggleCollapse,
 }: SpecializationsPanelProps) {
   const masteryTree = masterySlot === null ? null : trees[masterySlot];
   const mastery = getTreeMastery(masteryTree);
 
   return (
     <aside className="panel specializations-panel">
-      <h2>Specializations</h2>
+      <h2>
+        <button
+          className="panel-title-button"
+          type="button"
+          onClick={onToggleCollapse}
+        >
+          Specializations
+        </button>
+      </h2>
 
       <div className="specialization-list">
         <section

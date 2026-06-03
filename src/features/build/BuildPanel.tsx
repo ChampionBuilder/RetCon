@@ -39,6 +39,7 @@ type BuildPanelProps = {
   onSelectPowerVariantName: (slotNumber: number, anchor: DialogAnchor) => void;
   onSelectAdvantageSlot: (slotNumber: number, anchor: DialogAnchor) => void;
   onSelectPowerSlot: (slotNumber: number, anchor: DialogAnchor) => void;
+  onToggleCollapse: () => void;
   highlightedPowerTargetSlot: number | null;
   highlightedTravelPowerTargetSlot: number | null;
   highlightedPowerVariantTargetSlot: number | null;
@@ -117,6 +118,7 @@ export function BuildPanel({
   onSelectPowerVariantName,
   onSelectAdvantageSlot,
   onSelectPowerSlot,
+  onToggleCollapse,
   highlightedPowerTargetSlot,
   highlightedTravelPowerTargetSlot,
   highlightedPowerVariantTargetSlot,
@@ -188,7 +190,15 @@ export function BuildPanel({
   return (
     <section className="panel build-panel">
       <div className="build-panel__header">
-        <h2>Build</h2>
+        <h2>
+          <button
+            className="panel-title-button"
+            type="button"
+            onClick={onToggleCollapse}
+          >
+            Build
+          </button>
+        </h2>
         <div className="build-panel__identity">
           <button
             className="archetype-badge"

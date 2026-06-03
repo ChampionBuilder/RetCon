@@ -3,6 +3,7 @@ import {
   useMemo,
   useRef,
   useState,
+  type CSSProperties,
   type MouseEvent,
   type ReactNode,
 } from "react";
@@ -49,9 +50,17 @@ type PowersPanelProps = {
   canAddPower: (power: Power) => boolean;
   onSelectFramework: (frameworkId: string | null, additive: boolean) => void;
   onAddPower: (power: Power, displayFrameworkId: string | null) => void;
+  onToggleCollapse: () => void;
+};
+
+type FrameworkStripCell = {
+  content: ReactNode;
+  isEmpty: boolean;
 };
 
 const tierOrder = [-1, 0, 1, 2, 3, 4, null] as const;
+const maxFrameworkStripColumns = 14;
+const keptTogetherFrameworkGroupIds = new Set(["martial-arts"]);
 const travelFrameworkOrder = [
   "Flight",
   "Superspeed",
@@ -219,6 +228,7 @@ export function PowersPanel({
   canAddPower,
   onSelectFramework,
   onAddPower,
+  onToggleCollapse,
 }: PowersPanelProps) {
   const [search, setSearch] = useState("");
   const [closedSections, setClosedSections] = useState<string[]>([]);
@@ -231,8 +241,6 @@ export function PowersPanel({
     setReopenedEnergyBuilderSelectionVersion,
   ] = useState(0);
   const [frameworkStripColumns, setFrameworkStripColumns] = useState(1);
-  const [frameworkGroupSeparatorColumns, setFrameworkGroupSeparatorColumns] =
-    useState(1);
   const frameworkStripRef = useRef<HTMLDivElement | null>(null);
   const parsedSearch = useMemo(() => parsePowerSearch(search), [search]);
   const forceAdvancedPowerTooltip = parsedSearch.advantageQueries.length > 0;
@@ -530,24 +538,18 @@ export function PowersPanel({
         styles.getPropertyValue("--framework-layout-gap") ||
           styles.getPropertyValue("--framework-strip-gap"),
       ) || 5;
-      const nextFrameworkGroupSeparatorColumns = Math.max(
-        0,
-        Math.round(
-          Number.parseFloat(
-            styles.getPropertyValue("--framework-group-separator-columns"),
-          ) || 0,
-        ),
-      );
-      const nextColumns = Math.max(
-        1,
-        Math.floor(
-          (width + frameworkStripGap) /
-            (frameworkButtonWidth + frameworkStripGap),
+      const nextColumns = Math.min(
+        maxFrameworkStripColumns,
+        Math.max(
+          1,
+          Math.floor(
+            (width + frameworkStripGap) /
+              (frameworkButtonWidth + frameworkStripGap),
+          ),
         ),
       );
 
       setFrameworkStripColumns(nextColumns);
-      setFrameworkGroupSeparatorColumns(nextFrameworkGroupSeparatorColumns);
     }
 
     updateFrameworkStripColumns();
@@ -638,27 +640,25 @@ export function PowersPanel({
 
   function renderFrameworkStripItems() {
     const frameworkStripRows = 2;
-    const isCompactFrameworkStrip = frameworkGroupSeparatorColumns === 0;
-    const firstFrameworkColumn = isCompactFrameworkStrip
-      ? 1
-      : Math.min(2, frameworkStripColumns);
-    const firstFrameworkColumnByRow = (targetRow: number) =>
-      isCompactFrameworkStrip && targetRow > 0 ? 0 : firstFrameworkColumn;
+    const firstFrameworkColumn = () => 0;
     const utilityGroup = frameworkGroups.find(
       (frameworkGroup) => frameworkGroup.id === "utility",
     );
     const standardFrameworkGroups = frameworkGroups.filter(
       (frameworkGroup) => frameworkGroup.id !== "utility",
     );
-    const cells: ReactNode[] = Array.from(
+    const cells: FrameworkStripCell[] = Array.from(
       { length: frameworkStripColumns * frameworkStripRows },
-      (_, index) => (
-        <span
-          className="framework-spacer"
-          aria-hidden="true"
-          key={`framework-empty-${index}`}
-        />
-      ),
+      (_, index) => ({
+        content: (
+          <span
+            className="framework-spacer"
+            aria-hidden="true"
+            key={`framework-empty-${index}`}
+          />
+        ),
+        isEmpty: true,
+      }),
     );
 
     function createFrameworkButton(
@@ -700,79 +700,22 @@ export function PowersPanel({
       );
     }
 
-    cells[0] = createFrameworkButton(
-      "all-frameworks",
-      selectedFrameworks === null,
-      false,
-      "Role_Freeform",
-      "All frameworks",
-      () => onSelectFramework(null, false),
-    );
-
-    const utilityButtons =
-      utilityGroup?.filters.map((framework) =>
-        createFrameworkButton(
-          framework.id,
-          isUtilityFrameworkSelection(selectedFrameworks, framework.id),
-          !framework.selectable,
-          framework.iconId ?? getFrameworkIconName(framework.id),
-          framework.title,
-          () => onSelectFramework(framework.id, false),
-          false,
-        ),
-      ) ?? [];
-    const utilityRow = frameworkStripRows - 1;
-    const utilityPreGapColumns = isCompactFrameworkStrip ? 0 : 1;
-    const reservedUtilityStartColumn = Math.max(
-      firstFrameworkColumnByRow(utilityRow),
-      frameworkStripColumns - utilityButtons.length - utilityPreGapColumns,
-    );
-
     let row = 0;
-    let column = firstFrameworkColumnByRow(row);
-    let utilityRowNextColumn = firstFrameworkColumnByRow(utilityRow);
-    const getAvailableColumns = (targetRow: number) =>
-      targetRow === utilityRow
-        ? reservedUtilityStartColumn
-        : frameworkStripColumns;
+    let column = firstFrameworkColumn();
 
     standardFrameworkGroups.forEach((frameworkGroup) => {
-      const groupItems = frameworkGroup.filters.map((framework) =>
-        createFrameworkButton(
-          framework.id,
-          selectedFrameworks?.includes(framework.id) ?? false,
-          !framework.selectable,
-          framework.iconId ?? getFrameworkIconName(framework.id),
-          framework.title,
-          (event) => onSelectFramework(framework.id, event.shiftKey),
-          true,
-        ),
-      );
-      const isAtRowStart = column === firstFrameworkColumnByRow(row);
-      const separatorWidth = isAtRowStart ? 0 : frameworkGroupSeparatorColumns;
-      const requiredWidth = separatorWidth + groupItems.length;
-
-      if (!isCompactFrameworkStrip && column + requiredWidth > getAvailableColumns(row)) {
+      if (
+        keptTogetherFrameworkGroupIds.has(frameworkGroup.id) &&
+        column + frameworkGroup.filters.length > frameworkStripColumns
+      ) {
         row += 1;
-        column = firstFrameworkColumnByRow(row);
+        column = firstFrameworkColumn();
       }
 
-      if (row >= frameworkStripRows) {
-        return;
-      }
-
-      if (!isCompactFrameworkStrip && column + groupItems.length > getAvailableColumns(row)) {
-        return;
-      }
-
-      if (!isCompactFrameworkStrip && column !== firstFrameworkColumnByRow(row)) {
-        column += 1;
-      }
-
-      groupItems.forEach((item) => {
-        if (column >= getAvailableColumns(row)) {
+      frameworkGroup.filters.forEach((framework) => {
+        if (column >= frameworkStripColumns) {
           row += 1;
-          column = firstFrameworkColumnByRow(row);
+          column = firstFrameworkColumn();
         }
 
         if (row >= frameworkStripRows) {
@@ -781,39 +724,108 @@ export function PowersPanel({
 
         const cellIndex = row * frameworkStripColumns + column;
 
-        cells[cellIndex] = item;
+        cells[cellIndex] = {
+          content: createFrameworkButton(
+            framework.id,
+            selectedFrameworks?.includes(framework.id) ?? false,
+            !framework.selectable,
+            framework.iconId ?? getFrameworkIconName(framework.id),
+            framework.title,
+            (event) => {
+              const isActive = selectedFrameworks?.includes(framework.id) ?? false;
+              onSelectFramework(
+                isActive && !event.shiftKey ? null : framework.id,
+                event.shiftKey,
+              );
+            },
+            true,
+          ),
+          isEmpty: false,
+        };
         column += 1;
       });
+    });
 
-      if (row === utilityRow) {
-        utilityRowNextColumn = column;
+    if (utilityGroup && column < frameworkStripColumns) {
+      column += 1;
+    } else if (utilityGroup) {
+      row += 1;
+      column = firstFrameworkColumn() + 1;
+    }
+
+    utilityGroup?.filters.forEach((framework) => {
+      if (column >= frameworkStripColumns) {
+        row += 1;
+        column = firstFrameworkColumn();
       }
+
+      if (row >= frameworkStripRows) {
+        return;
+      }
+
+      const cellIndex = row * frameworkStripColumns + column;
+
+      cells[cellIndex] = {
+        content: createFrameworkButton(
+          framework.id,
+          isUtilityFrameworkSelection(selectedFrameworks, framework.id),
+          !framework.selectable,
+          framework.iconId ?? getFrameworkIconName(framework.id),
+          framework.title,
+          () => onSelectFramework(framework.id, false),
+          false,
+        ),
+        isEmpty: false,
+      };
+      column += 1;
     });
 
-    const utilityStartColumn = Math.min(
-      Math.max(
-        utilityRowNextColumn + utilityPreGapColumns,
-        firstFrameworkColumnByRow(utilityRow),
-      ),
-      frameworkStripColumns - utilityButtons.length,
-    );
+    return cells.map((cell, index) => {
+      const cellRow = Math.floor(index / frameworkStripColumns);
+      const cellColumn = index % frameworkStripColumns;
+      const cellStyle = {
+        gridColumn: cellColumn + 1,
+        gridRow: cellRow + 1,
+      } satisfies CSSProperties;
 
-    utilityButtons.forEach((button, index) => {
-      cells[utilityRow * frameworkStripColumns + utilityStartColumn + index] =
-        button;
+      return (
+        <span
+          className={[
+            "framework-cell",
+            cell.isEmpty ? "framework-cell--empty" : "",
+          ]
+            .filter(Boolean)
+            .join(" ")}
+          key={`framework-cell-${index}`}
+          style={cellStyle}
+        >
+          {cell.content}
+        </span>
+      );
     });
-
-    return cells;
   }
 
   return (
     <section className="panel powers-panel">
-      <h2>Powers</h2>
+      <h2>
+        <button
+          className="panel-title-button"
+          type="button"
+          onClick={onToggleCollapse}
+        >
+          Powers
+        </button>
+      </h2>
 
       <div
         className="framework-strip"
         aria-label="Power frameworks"
         ref={frameworkStripRef}
+        style={
+          {
+            "--framework-strip-columns": frameworkStripColumns,
+          } as CSSProperties
+        }
       >
         {renderFrameworkStripItems()}
       </div>

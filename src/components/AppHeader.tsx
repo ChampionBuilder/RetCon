@@ -136,9 +136,10 @@ export function AppHeader({
           </button>
 
           <label className="name-field">
-            <span>Name :</span>
+            <span>Build name</span>
             <input
               value={buildName}
+              placeholder="Type your build name here..."
               onChange={(event) => onBuildNameChange(event.target.value)}
             />
           </label>

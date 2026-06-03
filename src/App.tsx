@@ -1,4 +1,11 @@
-import { useCallback, useEffect, useMemo, useState } from "react";
+import {
+  useCallback,
+  useEffect,
+  useMemo,
+  useState,
+  type CSSProperties,
+  type ReactNode,
+} from "react";
 import "./App.css";
 import "./styles/tooltips.css";
 import { AboutDialog } from "@/components/AboutDialog";
@@ -75,6 +82,63 @@ import { useArchetypeRoleState } from "@/hooks/useArchetypeRoleState";
 import { useArchetypePowerState } from "@/hooks/useArchetypePowerState";
 import { useAdvantageActions } from "@/hooks/useAdvantageActions";
 import { getMatchingRequirementPowerIds } from "@/utils/buildValidation";
+
+type WorkspacePanelId = "build" | "character" | "powers" | "specializations";
+
+type CollapsedWorkspacePanels = Record<WorkspacePanelId, boolean>;
+
+const collapsedPanelTrackWidth = "48px";
+const ultraCompactViewportQuery = "(max-width: 1209px)";
+const openPanelTracks = {
+  build: "minmax(330px, 1fr)",
+  character: "var(--character-column-width)",
+  powers: "minmax(410px, 1.28fr)",
+  specializations: "var(--specializations-column-width)",
+} satisfies Record<WorkspacePanelId, string>;
+
+function isUltraCompactViewport() {
+  return window.matchMedia(ultraCompactViewportQuery).matches;
+}
+
+function CollapsibleWorkspacePanel({
+  children,
+  collapsed,
+  panelId,
+  title,
+  onToggle,
+}: {
+  children: ReactNode;
+  collapsed: boolean;
+  panelId: WorkspacePanelId;
+  title: string;
+  onToggle: () => void;
+}) {
+  return (
+    <div
+      className={[
+        "workspace-panel-shell",
+        `workspace-panel-shell--${panelId}`,
+        collapsed ? "workspace-panel-shell--collapsed" : "",
+      ]
+        .filter(Boolean)
+        .join(" ")}
+    >
+      {collapsed ? (
+        <button
+          className="workspace-panel-rail"
+          type="button"
+          aria-label={`Open ${title} panel`}
+          onClick={onToggle}
+        >
+          <span className="workspace-panel-rail__label">{title}</span>
+        </button>
+      ) : (
+        children
+      )}
+    </div>
+  );
+}
+
 function App() {
   const [buildName, setBuildName] = useState("My Awesome Build");
   const [energyBuilderSelectionVersion, setEnergyBuilderSelectionVersion] =
@@ -241,6 +305,123 @@ function App() {
   const [dataDialogOpen, setDataDialogOpen] = useState(false);
   const [aboutDialogOpen, setAboutDialogOpen] = useState(false);
   const [importBuildDialogOpen, setImportBuildDialogOpen] = useState(false);
+  const [collapsedWorkspacePanels, setCollapsedWorkspacePanels] =
+    useState<CollapsedWorkspacePanels>({
+      build: false,
+      character: false,
+      powers: false,
+      specializations: false,
+    });
+
+  const toggleWorkspacePanel = useCallback((panelId: WorkspacePanelId) => {
+    setCollapsedWorkspacePanels((currentCollapsedPanels) => {
+      const wasCollapsed = currentCollapsedPanels[panelId];
+      const nextCollapsedPanels = {
+        ...currentCollapsedPanels,
+        [panelId]: !wasCollapsed,
+      };
+
+      if (!wasCollapsed || !isUltraCompactViewport()) {
+        return nextCollapsedPanels;
+      }
+
+      const powersOpen = !nextCollapsedPanels.powers;
+      const buildOpen = !nextCollapsedPanels.build;
+
+      if (!powersOpen) {
+        return nextCollapsedPanels;
+      }
+
+      if (panelId === "build") {
+        return {
+          ...nextCollapsedPanels,
+          character: true,
+          specializations: true,
+        };
+      }
+
+      if (
+        (panelId === "character" || panelId === "specializations") &&
+        buildOpen
+      ) {
+        return {
+          ...nextCollapsedPanels,
+          build: true,
+        };
+      }
+
+      if (
+        panelId === "powers" &&
+        buildOpen &&
+        (!nextCollapsedPanels.character || !nextCollapsedPanels.specializations)
+      ) {
+        return {
+          ...nextCollapsedPanels,
+          character: true,
+          specializations: true,
+        };
+      }
+
+      return nextCollapsedPanels;
+    });
+  }, []);
+
+  const workspaceGridStyle = useMemo(
+    () => {
+      const hasCollapsedPanel = Object.values(collapsedWorkspacePanels).some(
+        Boolean,
+      );
+
+      if (!hasCollapsedPanel) {
+        return {} as CSSProperties;
+      }
+
+      const getPanelTrack = (panelId: WorkspacePanelId) =>
+        collapsedWorkspacePanels[panelId]
+          ? collapsedPanelTrackWidth
+          : openPanelTracks[panelId];
+
+      return {
+        "--character-panel-track": getPanelTrack("character"),
+        "--powers-panel-track": getPanelTrack("powers"),
+        "--build-panel-track": getPanelTrack("build"),
+        "--specializations-panel-track": getPanelTrack("specializations"),
+      } as CSSProperties;
+    },
+    [collapsedWorkspacePanels],
+  );
+
+  useEffect(() => {
+    const ultraCompactViewport = window.matchMedia(ultraCompactViewportQuery);
+
+    function collapsePowersPanelInUltraCompactMode() {
+      if (!ultraCompactViewport.matches) {
+        return;
+      }
+
+      setCollapsedWorkspacePanels((currentCollapsedPanels) =>
+        currentCollapsedPanels.powers
+          ? currentCollapsedPanels
+          : {
+              ...currentCollapsedPanels,
+              powers: true,
+            },
+      );
+    }
+
+    collapsePowersPanelInUltraCompactMode();
+    ultraCompactViewport.addEventListener(
+      "change",
+      collapsePowersPanelInUltraCompactMode,
+    );
+
+    return () => {
+      ultraCompactViewport.removeEventListener(
+        "change",
+        collapsePowersPanelInUltraCompactMode,
+      );
+    };
+  }, []);
 
   const selectablePowers = useMemo(() => {
     return powers.filter((power) => isPowerEnabled(power));
@@ -1294,158 +1475,191 @@ function App() {
         />
       ) : null}
 
-      <main className="workspace-grid">
-        <CharacterPanel
-          innateTalent={selectedInnateTalent}
-          innateTalentLocked={!isFreeform}
-          superStats={selectedSuperStats}
-          superStatsLocked={!isFreeform}
-          talents={selectedTalents}
-          deviceSlots={deviceSlots}
-          highlightedDeviceTargetSlot={
-            isUtilityFrameworkSelection(selectedFrameworks, devicesFilterId)
-              ? selectedDeviceTargetBuildSlot?.slot ?? null
-              : null
-          }
-          onSelectInnateTalent={openCurrentInnateTalentDialog}
-          onSelectSuperStatSlot={openCurrentSuperStatDialog}
-          onSelectTalentSlot={openCurrentTalentDialog}
-          onSelectDeviceSlot={selectDeviceSlotAsTarget}
-          onSelectDeviceName={openCurrentDeviceDialog}
-        />
+      <main className="workspace-grid" style={workspaceGridStyle}>
+        <CollapsibleWorkspacePanel
+          collapsed={collapsedWorkspacePanels.character}
+          panelId="character"
+          title="Character"
+          onToggle={() => toggleWorkspacePanel("character")}
+        >
+          <CharacterPanel
+            innateTalent={selectedInnateTalent}
+            innateTalentLocked={!isFreeform}
+            superStats={selectedSuperStats}
+            superStatsLocked={!isFreeform}
+            talents={selectedTalents}
+            deviceSlots={deviceSlots}
+            highlightedDeviceTargetSlot={
+              isUtilityFrameworkSelection(selectedFrameworks, devicesFilterId)
+                ? selectedDeviceTargetBuildSlot?.slot ?? null
+                : null
+            }
+            onSelectInnateTalent={openCurrentInnateTalentDialog}
+            onSelectSuperStatSlot={openCurrentSuperStatDialog}
+            onSelectTalentSlot={openCurrentTalentDialog}
+            onSelectDeviceSlot={selectDeviceSlotAsTarget}
+            onSelectDeviceName={openCurrentDeviceDialog}
+            onToggleCollapse={() => toggleWorkspacePanel("character")}
+          />
+        </CollapsibleWorkspacePanel>
 
-        <PowersPanel
-          key={`powers-${powerSearchResetKey}`}
-          advantages={advantages}
-          buildSlots={allPowerSlots}
-          energyBuilderPanelRequestAction={energyBuilderPanelRequest.action}
-          energyBuilderPanelRequestSelectionVersion={
-            energyBuilderPanelRequest.selectionVersion
-          }
-          energyBuilderPanelRequestVersion={energyBuilderPanelRequest.version}
-          energyBuilderSelectionVersion={energyBuilderSelectionVersion}
-          canAddPower={(power) =>
-            isStandardDevice(power)
-              ? powerPanelTargetDeviceSlot !== null &&
-                (selectedDeviceTargetBuildSlot !== null ||
-                  !deviceSlots.some(
-                    (slot) => slot.power?.power_id === power.power_id,
-                  ))
-              : isPowerVariantDevice(power)
-              ? powerPanelTargetPowerVariantSlot !== null &&
-                (selectedPowerVariantTargetBuildSlot !== null ||
-                  !powerVariantSlots.some(
-                    (slot) => slot.power?.power_id === power.power_id,
-                  ))
-              : isTravelPower(power)
-              ? powerPanelTargetTravelPowerSlot !== null &&
-                (selectedTravelPowerTargetBuildSlot !== null ||
-                  !travelPowerSlots.some(
-                    (slot) => slot.power?.power_id === power.power_id,
-                  ))
-              : selectedPowerTargetBuildSlot
-                ? isFreeform
-                  ? canPlacePowerInSlot(
-                      power,
-                      selectedPowerTargetBuildSlot,
-                      buildSlots,
-                    )
-                  : restrictedPowerIds?.has(power.power_id) ?? false
-                : isFreeform
-                  ? getFirstValidPowerSlot(power, buildSlots) !== null
-                  : false
-          }          frameworkGroups={frameworkGroups}
-          powers={selectablePowers}
-          restrictedPowerIds={activeRestrictedPowerIds}
-          restrictedPowerSectionLabel={activeRestrictedPowerSectionLabel}
-          selectedFrameworks={selectedFrameworks}
-          onAddPower={addPower}
-          onSelectFramework={(frameworkId, additive) => {
-            setBuildCheckPowerFilter(null);
-            setSelectedFrameworks((currentFrameworks) => {
-              if (frameworkId === null) {
-                return null;
-              }
+        <CollapsibleWorkspacePanel
+          collapsed={collapsedWorkspacePanels.powers}
+          panelId="powers"
+          title="Powers"
+          onToggle={() => toggleWorkspacePanel("powers")}
+        >
+          <PowersPanel
+            key={`powers-${powerSearchResetKey}`}
+            advantages={advantages}
+            buildSlots={allPowerSlots}
+            energyBuilderPanelRequestAction={energyBuilderPanelRequest.action}
+            energyBuilderPanelRequestSelectionVersion={
+              energyBuilderPanelRequest.selectionVersion
+            }
+            energyBuilderPanelRequestVersion={energyBuilderPanelRequest.version}
+            energyBuilderSelectionVersion={energyBuilderSelectionVersion}
+            canAddPower={(power) =>
+              isStandardDevice(power)
+                ? powerPanelTargetDeviceSlot !== null &&
+                  (selectedDeviceTargetBuildSlot !== null ||
+                    !deviceSlots.some(
+                      (slot) => slot.power?.power_id === power.power_id,
+                    ))
+                : isPowerVariantDevice(power)
+                  ? powerPanelTargetPowerVariantSlot !== null &&
+                    (selectedPowerVariantTargetBuildSlot !== null ||
+                      !powerVariantSlots.some(
+                        (slot) => slot.power?.power_id === power.power_id,
+                      ))
+                  : isTravelPower(power)
+                    ? powerPanelTargetTravelPowerSlot !== null &&
+                      (selectedTravelPowerTargetBuildSlot !== null ||
+                        !travelPowerSlots.some(
+                          (slot) => slot.power?.power_id === power.power_id,
+                        ))
+                    : selectedPowerTargetBuildSlot
+                      ? isFreeform
+                        ? canPlacePowerInSlot(
+                            power,
+                            selectedPowerTargetBuildSlot,
+                            buildSlots,
+                          )
+                        : restrictedPowerIds?.has(power.power_id) ?? false
+                      : isFreeform
+                        ? getFirstValidPowerSlot(power, buildSlots) !== null
+                        : false
+            }
+            frameworkGroups={frameworkGroups}
+            powers={selectablePowers}
+            restrictedPowerIds={activeRestrictedPowerIds}
+            restrictedPowerSectionLabel={activeRestrictedPowerSectionLabel}
+            selectedFrameworks={selectedFrameworks}
+            onAddPower={addPower}
+            onToggleCollapse={() => toggleWorkspacePanel("powers")}
+            onSelectFramework={(frameworkId, additive) => {
+              setBuildCheckPowerFilter(null);
+              setSelectedFrameworks((currentFrameworks) => {
+                if (frameworkId === null) {
+                  return null;
+                }
 
-              if (isUtilityFrameworkFilter(frameworkId)) {
-                return [frameworkId];
-              }
+                if (isUtilityFrameworkFilter(frameworkId)) {
+                  return [frameworkId];
+                }
 
-              if (!additive) {
-                return [frameworkId];
-              }
+                if (!additive) {
+                  return [frameworkId];
+                }
 
-              const currentStandardFrameworks =
-                currentFrameworks?.filter(
-                  (currentFrameworkId) =>
-                    !isUtilityFrameworkFilter(currentFrameworkId),
-                ) ?? [];
+                const currentStandardFrameworks =
+                  currentFrameworks?.filter(
+                    (currentFrameworkId) =>
+                      !isUtilityFrameworkFilter(currentFrameworkId),
+                  ) ?? [];
 
-              if (currentStandardFrameworks.includes(frameworkId)) {
-                const nextFrameworks = currentStandardFrameworks.filter(
-                  (currentFrameworkId) =>
-                    currentFrameworkId !== frameworkId,
-                );
+                if (currentStandardFrameworks.includes(frameworkId)) {
+                  const nextFrameworks = currentStandardFrameworks.filter(
+                    (currentFrameworkId) =>
+                      currentFrameworkId !== frameworkId,
+                  );
 
-                return nextFrameworks.length > 0 ? nextFrameworks : null;
-              }
+                  return nextFrameworks.length > 0 ? nextFrameworks : null;
+                }
 
-              return [...currentStandardFrameworks, frameworkId];
-            });
-          }}
-        />
+                return [...currentStandardFrameworks, frameworkId];
+              });
+            }}
+          />
+        </CollapsibleWorkspacePanel>
 
-        <BuildPanel
-          advantagePointBudget={advantagePointBudget}
-          advantages={advantages}
-          archetype={selectedArchetype}
-          role={selectedRole}
-          roleLocked={!isFreeform}
-          buildSlots={buildSlots}
-          travelPowerSlots={travelPowerSlots}
-          powerVariantSlots={powerVariantSlots}
-          camsLevel={camsLevel}
-          camsIconName={camsIconName}
-          camsMenuOpen={camsMenuOpen}
-          totalAdvantagePoints={totalAdvantagePoints}
-          onChangeCamsLevel={changeCamsLevel}
-          onSelectCamsIcon={setCamsIconName}
-          onToggleCamsMenu={toggleCamsMenu}
-          onSelectArchetype={openCurrentArchetypeDialog}
-          onSelectRole={openCurrentRoleDialog}
-          onSelectBuildSlot={selectBuildSlotAsPowerTarget}
-          onSelectTravelPowerSlot={selectTravelPowerSlotAsTarget}
-          onSelectTravelPowerName={openCurrentTravelPowerDialog}
-          onSelectPowerVariantSlot={selectPowerVariantSlotAsTarget}
-          onSelectPowerVariantName={openCurrentPowerVariantDialog}
-          onSelectAdvantageSlot={openCurrentAdvantageDialog}
-          onSelectPowerSlot={openPowerDialog}
-          highlightedPowerTargetSlot={
-            selectedPowerTargetBuildSlot?.slot ?? null
-          }
-          highlightedTravelPowerTargetSlot={
-            isUtilityFrameworkSelection(selectedFrameworks, travelPowerFilterId)
-              ? powerPanelTargetTravelPowerSlot?.slot ?? null
-              : null
-          }
-          highlightedPowerVariantTargetSlot={
-            isUtilityFrameworkSelection(selectedFrameworks, powerVariantsFilterId)
-              ? selectedPowerVariantTargetBuildSlot?.slot ?? null
-              : null
-          }
-          scrollTargetSlot={buildScrollTargetSlot}
-          invalidPowerSlotNumbers={invalidPowerSlotNumbers}
-          invalidPowerVariantSlotNumbers={invalidPowerVariantSlotNumbers}
-          lockedPowerSlotNumbers={lockedPowerSlotNumbers}
-        />
+        <CollapsibleWorkspacePanel
+          collapsed={collapsedWorkspacePanels.build}
+          panelId="build"
+          title="Build"
+          onToggle={() => toggleWorkspacePanel("build")}
+        >
+          <BuildPanel
+            advantagePointBudget={advantagePointBudget}
+            advantages={advantages}
+            archetype={selectedArchetype}
+            role={selectedRole}
+            roleLocked={!isFreeform}
+            buildSlots={buildSlots}
+            travelPowerSlots={travelPowerSlots}
+            powerVariantSlots={powerVariantSlots}
+            camsLevel={camsLevel}
+            camsIconName={camsIconName}
+            camsMenuOpen={camsMenuOpen}
+            totalAdvantagePoints={totalAdvantagePoints}
+            onChangeCamsLevel={changeCamsLevel}
+            onSelectCamsIcon={setCamsIconName}
+            onToggleCamsMenu={toggleCamsMenu}
+            onSelectArchetype={openCurrentArchetypeDialog}
+            onSelectRole={openCurrentRoleDialog}
+            onSelectBuildSlot={selectBuildSlotAsPowerTarget}
+            onSelectTravelPowerSlot={selectTravelPowerSlotAsTarget}
+            onSelectTravelPowerName={openCurrentTravelPowerDialog}
+            onSelectPowerVariantSlot={selectPowerVariantSlotAsTarget}
+            onSelectPowerVariantName={openCurrentPowerVariantDialog}
+            onSelectAdvantageSlot={openCurrentAdvantageDialog}
+            onSelectPowerSlot={openPowerDialog}
+            onToggleCollapse={() => toggleWorkspacePanel("build")}
+            highlightedPowerTargetSlot={
+              selectedPowerTargetBuildSlot?.slot ?? null
+            }
+            highlightedTravelPowerTargetSlot={
+              isUtilityFrameworkSelection(selectedFrameworks, travelPowerFilterId)
+                ? powerPanelTargetTravelPowerSlot?.slot ?? null
+                : null
+            }
+            highlightedPowerVariantTargetSlot={
+              isUtilityFrameworkSelection(selectedFrameworks, powerVariantsFilterId)
+                ? selectedPowerVariantTargetBuildSlot?.slot ?? null
+                : null
+            }
+            scrollTargetSlot={buildScrollTargetSlot}
+            invalidPowerSlotNumbers={invalidPowerSlotNumbers}
+            invalidPowerVariantSlotNumbers={invalidPowerVariantSlotNumbers}
+            lockedPowerSlotNumbers={lockedPowerSlotNumbers}
+          />
+        </CollapsibleWorkspacePanel>
 
-        <SpecializationsPanel
-          masterySlot={selectedMasterySlot}
-          pointsBySlot={specializationPointsBySlot}
-          trees={selectedSpecializationTrees}
-          onOpenSpecialization={openCurrentSpecializationTreeDialog}
-          onSelectMastery={openCurrentMasteryDialog}
-        />
+        <CollapsibleWorkspacePanel
+          collapsed={collapsedWorkspacePanels.specializations}
+          panelId="specializations"
+          title="Specializations"
+          onToggle={() => toggleWorkspacePanel("specializations")}
+        >
+          <SpecializationsPanel
+            masterySlot={selectedMasterySlot}
+            pointsBySlot={specializationPointsBySlot}
+            trees={selectedSpecializationTrees}
+            onOpenSpecialization={openCurrentSpecializationTreeDialog}
+            onSelectMastery={openCurrentMasteryDialog}
+            onToggleCollapse={() => toggleWorkspacePanel("specializations")}
+          />
+        </CollapsibleWorkspacePanel>
       </main>
 
       {activeSuperStatSlot !== null && statsTalentsData && superStatDialogAnchor ? (

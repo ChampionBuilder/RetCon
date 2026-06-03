@@ -31,6 +31,7 @@ type CharacterPanelProps = {
   onSelectTalentSlot: (slotIndex: number, anchor: DialogAnchor) => void;
   onSelectDeviceSlot: (slotNumber: number) => void;
   onSelectDeviceName: (slotNumber: number, anchor: DialogAnchor) => void;
+  onToggleCollapse: () => void;
   highlightedDeviceTargetSlot: number | null;
 };
 
@@ -46,6 +47,7 @@ export function CharacterPanel({
   onSelectTalentSlot,
   onSelectDeviceSlot,
   onSelectDeviceName,
+  onToggleCollapse,
   highlightedDeviceTargetSlot,
 }: CharacterPanelProps) {
   const selectedStatKeys = getSelectedStatKeys(superStats);
@@ -55,7 +57,15 @@ export function CharacterPanel({
 
   return (
     <aside className="panel character-panel">
-      <h2>Character</h2>
+      <h2>
+        <button
+          className="panel-title-button"
+          type="button"
+          onClick={onToggleCollapse}
+        >
+          Character
+        </button>
+      </h2>
 
       <div className="character-panel__body">
         <section className="panel-section">
