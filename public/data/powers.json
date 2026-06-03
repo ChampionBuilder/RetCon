@@ -897,7 +897,7 @@
       2,
       210,
       329,
-      635,
+      708,
       3,
       7,
       5
@@ -2009,7 +2009,7 @@
       "Targets foe",
       "100 feet"
     ],
-    "tooltip": "Creates a Shielding Rune at your target, shielding up to 5 allies within 15ft for up to 10 sec. + If an ally is affected by a Direct Shield, restores a portion of it. - You cannot have more than one Rune out at a time",
+    "tooltip": "Creates a Shielding Rune at your target, shielding up to 5 allies within 15ft for up to 10 sec. + If an ally is affected by a Direct Shield, restores a portion of it. + You cannot have more than one Rune out at a time",
     "tags": [
       "Rune",
       "Shield"
@@ -2306,7 +2306,7 @@
     "advantages": [
       1,
       2,
-      651,
+      680,
       653,
       654,
       3,
@@ -5786,7 +5786,7 @@
       "Targets foe",
       "50 feet"
     ],
-    "tooltip": "Creates an Electro Magnet for 10 sec. + Foes within 15ft take Particle Damage every 1 sec, while foes within 20ft are pulled toward the Electro Magnet. + After this power expires, creates a Static Field for 10 sec. Standing in the Static Field grants you and up to 10 nearby players Energy every 1 sec, while depleting Energy from foes. + Count as a Rune. You cannot have more than one rune out at a time - This power cannot Critically hit",
+    "tooltip": "Creates an Electro Magnet for 10 sec. + Foes within 15ft take Particle Damage every 1 sec, while foes within 20ft are pulled toward the Electro Magnet. + After this power expires, creates a Static Field for 10 sec. Standing in the Static Field grants you and up to 10 nearby players Energy every 1 sec, while depleting Energy from foes. + Count as a Rune. You cannot have more than one Rune out at a time - This power cannot Critically hit",
     "tags": [
       "Reverse Repel",
       "Rune",
@@ -22371,7 +22371,7 @@
   },
   {
     "powerset_id": "Travel_power",
-    "framework_id": "Superjump",
+    "framework_id": "Tunneling",
     "power_id": 672,
     "name": "Inky Ooze Tunneling",
     "tier": null,
@@ -22397,7 +22397,7 @@
   },
   {
     "powerset_id": "Travel_power",
-    "framework_id": "Superjump",
+    "framework_id": "Tunneling",
     "power_id": 673,
     "name": "Metallic Ooze Tunneling",
     "tier": null,
@@ -22423,7 +22423,7 @@
   },
   {
     "powerset_id": "Travel_power",
-    "framework_id": "Superjump",
+    "framework_id": "Tunneling",
     "power_id": 674,
     "name": "Ooze Tunneling",
     "tier": null,
@@ -22449,7 +22449,7 @@
   },
   {
     "powerset_id": "Travel_power",
-    "framework_id": "Superjump",
+    "framework_id": "Tunneling",
     "power_id": 675,
     "name": "Rainbow Jump",
     "tier": null,
@@ -22475,7 +22475,7 @@
   },
   {
     "powerset_id": "Travel_power",
-    "framework_id": "Superjump",
+    "framework_id": "Tunneling",
     "power_id": 676,
     "name": "Rocket Jump",
     "tier": null,
@@ -22500,7 +22500,7 @@
   },
   {
     "powerset_id": "Travel_power",
-    "framework_id": "Superjump",
+    "framework_id": "Tunneling",
     "power_id": 677,
     "name": "Scarab Tunneling",
     "tier": null,
@@ -22526,7 +22526,7 @@
   },
   {
     "powerset_id": "Travel_power",
-    "framework_id": "Superjump",
+    "framework_id": "Tunneling",
     "power_id": 678,
     "name": "Superjump",
     "tier": null,
@@ -22552,7 +22552,7 @@
   },
   {
     "powerset_id": "Travel_power",
-    "framework_id": "Superjump",
+    "framework_id": "Tunneling",
     "power_id": 679,
     "name": "Tunneling",
     "tier": null,
@@ -25758,11 +25758,18 @@
     "activation_time": null,
     "max_duration": null,
     "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [],
-    "tooltip": "Periodically summons Teleiosaurus Hatchlings to fight for you.+ 25% chance every 10 seconds to summon a Hatchling.+ 25% chance every 10 seconds to summon a Hatchling.+ 25% chance every 10 seconds to summon a Coruscator.+ The Hatchling can last up to 30 seconds.+ The Coruscator can last up to 60 seconds.Hatchling powers:+ Bite: Slashing damage+ Spit: Toxic damage+ Lunge: Slashing damage+ Radiation Breath: Particle damage (30 sec recharge)Coruscator powers:+ Bite: Slashing damage+ Spit: Toxic damage+ Blast: Toxic damage (30 sec recharge)+ Radiation Breath: Particle damage (30 sec recharge)+ Foot Stomp: Crushing damage in a 15 foot sphere (30 sec recharge)+ Radiation Storm: Particle damage every 0.5 seconds in a 15 foot sphere (30 sec recharge)",
+    "cooldown": 30,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "25% chance every 10 seconds to summon a Hatchling, twice, lasting 30 sec. + 25% chance every 10 seconds to summon a Coruscator, lasting 60 sec. +Hatchling powers: + Bite: Slashing damage + Spit: Toxic damage + Lunge: Slashing damage + Radiation Breath: Particle damage (30 sec recharge) + Coruscator powers: + Bite: Slashing damage + Spit: Toxic damage + Blast: Toxic damage (30 sec recharge) + Radiation Breath: Particle damage (30 sec recharge) + Foot Stomp: Crushing damage in a 15 foot sphere (30 sec recharge) + Radiation Storm: Particle damage every 0.5 seconds in a 15 foot sphere (30 sec recharge)",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Crushing",
+      "Toxic",
+      "Slashing",
+      "Particle"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Device_TeleiosaurusPheromone",
@@ -25786,11 +25793,11 @@
       "100 feet",
       "25 foot Sphere"
     ],
-    "tooltip": "Deals Cold damage to targets and Roots them. + Stuns targets for 1 second. + Snares targets",
+    "tooltip": "Deals Cold Damage to targets. + Affected targets are placed in a Ice Cage for up to 10 sec, Rooting them in place while the structure is active. + Targets affected by your Ice Cage also suffer Cold Damage every 1 sec. + Once the Ice Cage expires, deals Cold Damage to up to 5 targets within 10ft. + Stuns affected targets for 1 sec.",
     "tags": [
-      "Snare",
       "Stun",
-      "Root"
+      "Root",
+      "Ice Cage"
     ],
     "damage_type": [
       "Cold"
@@ -25873,8 +25880,10 @@
       "Targets foe",
       "100 feet"
     ],
-    "tooltip": "Deals Crushing damage and the target has a 15% chance to be Knocked Back. Also applies Nailed to the Ground to the target, canceling Travel Powers for 5 seconds.",
-    "tags": [],
+    "tooltip": "Deals Crushing damage and Knock Down your target. + Applies Nailed to the Ground to the target, canceling Travel Powers for 5 seconds.",
+    "tags": [
+      "Knock Down"
+    ],
     "damage_type": [
       "Crushing"
     ],
@@ -25927,8 +25936,11 @@
       "80 feet",
       "15 foot Sphere"
     ],
-    "tooltip": "Deals Electrical damage to targets. The primary target is Stunned and secondary targets are Dazed.",
-    "tags": [],
+    "tooltip": "Deals Electrical damage to targets. + Stuns your primary target + Snares your secondary targets.",
+    "tags": [
+      "Stun",
+      "Snare"
+    ],
     "damage_type": [
       "Electrical"
     ],
@@ -25947,15 +25959,15 @@
     "advantages": [],
     "activation_type": "CLICK",
     "activation_time": 1.67,
-    "max_duration": 180,
+    "max_duration": null,
     "tick_rate": null,
-    "cooldown": null,
+    "cooldown": 180,
     "range_tags": [
-      "Targets foe that is not destructible(5 max)",
+      "Targets non-destructible(5 max)",
       "50 feet",
       "90 degree Cone"
     ],
-    "tooltip": "Applies Confuse to foes in a cone in front of you.",
+    "tooltip": "If a target is a Henchmen, Villain or Enforcer, Confuses them for 10 sec, causing them to attack targets randomly.",
     "tags": [
       "Confuse"
     ],
@@ -25981,7 +25993,7 @@
     "range_tags": [
       "Targets self"
     ],
-    "tooltip": "Heals you for a small amount 1 sec. + Gives you +25% resistance to all damage. Deals Toxic damage to foes within 10 feet of you every 2 seconds for 30 seconds.",
+    "tooltip": "Heals you for a small amount 1 sec. + Gives you +25% resistance to all damage. + Deals Toxic damage to foes within 10 feet of you every 2 sec for 30 sec.",
     "tags": [
       "Heal"
     ],
@@ -26007,10 +26019,10 @@
     "tick_rate": null,
     "cooldown": 30,
     "range_tags": [
-      "Targets foe that is not destructible",
+      "Targets non-destructible foe",
       "50 feet"
     ],
-    "tooltip": "Paralyzes the target for up to 12 seconds.",
+    "tooltip": "Paralyzes the target.",
     "tags": [],
     "damage_type": [],
     "scaling_stats": [],
@@ -26027,7 +26039,7 @@
     "power_type": "MELEE_AOE_DAMAGE",
     "advantages": [],
     "activation_type": "COMBO",
-    "activation_time": "0,67-0,67-0,83",
+    "activation_time": "0,67-0,83",
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
@@ -26036,8 +26048,10 @@
       "10 feet",
       "45-300 degree Cone"
     ],
-    "tooltip": "Deals Magical damage and has a 10/15/20% chance (based on combo hit) to apply Bane to targets. %Bane%",
-    "tags": [],
+    "tooltip": "Deals Magical damage and has a 10/15/20% chance (based on combo hit) to apply Bane to targets.",
+    "tags": [
+      "Bane"
+    ],
     "damage_type": [
       "Magic"
     ],
@@ -26064,7 +26078,9 @@
       "100 feet"
     ],
     "tooltip": "Deals Particle damage and Knocks Back the target.",
-    "tags": [],
+    "tags": [
+      "Knock Back"
+    ],
     "damage_type": [
       "Particle"
     ],
@@ -26089,8 +26105,10 @@
     "range_tags": [
       "Targets self"
     ],
-    "tooltip": "Absorbs up to a moderate amount of damage.",
-    "tags": [],
+    "tooltip": "Grants you a large absorbing damage shield.",
+    "tags": [
+      "Shield"
+    ],
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
@@ -26135,7 +26153,7 @@
     "range_tags": [
       "Targets self"
     ],
-    "tooltip": "Creates a level 40 Gnasher for 60 sec.Creates a level 40 Gnasher for 60 sec.50% chance Creates a level 40 Gnasher for 60 sec.50% chance Creates a level 40 Gnasher for 60 sec.50% chance Creates a level 40 Gnasher for 60 sec.50% chance Creates a level 40 Gnasher for 60 sec.",
+    "tooltip": "Summons up to 6 Gnashers to attack your foes. + This device will go on cooldown if all entities summoned are defeated.",
     "tags": [],
     "damage_type": [],
     "scaling_stats": [],
@@ -26157,8 +26175,10 @@
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
-    "tooltip": "When attacking, you have a 1% chance to summon a Stalking Horror for 60 sec.This creature can use the following attacks:Ego Claw: Deals Ego damage, plus a small amount of Ego Damage over 2 sec.Ego Bite: Deals Ego damage.Ego Lunge: Deals Ego damage.Ego Drain: Deals Ego damage and has 10% chance to apply Disorient to targets.",
-    "tags": [],
+    "tooltip": "When attacking, you have a 1% chance to summon a Stalking Horror for 60 sec. + This creature can use the following attacks: + Ego Claw: Deals Ego damage, plus a small amount of Ego Damage over 2 sec. + Ego Bite: Deals Ego damage. +Ego Lunge: Deals Ego damage. + Ego Drain: Deals Ego damage and has 10% chance to apply Disorient to targets.",
+    "tags": [
+      "Disorient"
+    ],
     "damage_type": [
       "Ego"
     ],
@@ -26183,7 +26203,7 @@
     "range_tags": [
       "Targets self"
     ],
-    "tooltip": "Summons 3 level 40 Zombies for 60 sec.",
+    "tooltip": "Summons 3 zombies to attack your foes. + This device will go on cooldown if all entities summoned are defeated.",
     "tags": [],
     "damage_type": [
       "Crushing",
@@ -26210,8 +26230,10 @@
     "range_tags": [
       "Targets self"
     ],
-    "tooltip": "Creates a level 40 Prototype Psi-Bomb for 15 sec, releasing gas that inhibits resistance to Psionics.",
-    "tags": [],
+    "tooltip": "Places down a Prototype Psi-Bomb which lasts for 15 sec and detonates when a target gets within 15ft. +  When it detonates, it applies 3 stacks of Stress, reducing the resistance of affected targets by 8% for 15 sec.",
+    "tags": [
+      "Stress"
+    ],
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
@@ -26234,9 +26256,14 @@
     "range_tags": [
       "Targets self"
     ],
-    "tooltip": "Creates a level 40 Shadow Rift for 15 sec.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Creates a Shadow Pact 20 ft in front of you. + Foes within 15ft of it take Dimensional Damage every 0.5 sec. + Foes within 20ft of it have their movement speed reduced by 100% and are pulled toward the Shadow Pact. + Has a 30% chance every hit to Fear targets. Fear reduces your target's damage by 10% for 12 sec",
+    "tags": [
+      "Reverse Pull",
+      "Fear"
+    ],
+    "damage_type": [
+      "Dimensional"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "PVD_ShadowShred",
@@ -26259,9 +26286,13 @@
       "Targets foe",
       "50 feet"
     ],
-    "tooltip": "Deals Electrical damage and can arc to 3 additional targets. The primary target is Dazed. %Daze%",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "Deals Electrical Damage. + This power can Arc to 3 additional targets dealing additional Electrical Damage each hit. + Applies Disorient to the primary target, causing their damage to be reduced by 10% and their movement speed to be reduced by 50% for 12 sec.",
+    "tags": [
+      "Disorient"
+    ],
+    "damage_type": [
+      "Electrical"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Device_ThunderboltWand",
@@ -26284,8 +26315,10 @@
       "Affects foe that is not destructible (5 max)",
       "15 foot Sphere"
     ],
-    "tooltip": "Heals you for a small amount every second and you gain 100% resistance to all damage while maintaining this power. Nearby foes are affected by Fear. %Fear%",
-    "tags": [],
+    "tooltip": "Heals you every 1 sec. + You gain +100% resistance to all damage while you maintain this power. + Applies Fear your targets, reducing their damage by 10% for 12 sec.",
+    "tags": [
+      "Fear"
+    ],
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
@@ -27122,12 +27155,12 @@
     "power_type": "SELF_RESURRECTION",
     "advantages": [],
     "activation_type": "CLICK",
-    "activation_time": null,
+    "activation_time": 0.5,
     "max_duration": null,
     "tick_rate": null,
     "cooldown": 60,
     "range_tags": [
-      "Affects non-destructible foe (5 max)",
+      "Affects foe that is not destructible (5 max)",
       "25 foot Sphere"
     ],
     "tooltip": "Deals Fire damage to nearby targets. + Revives you with 50% Health and Energy. + Restores an additional 10% Health and Energy every second for 6 seconds. + Cost 3 Gold Champion Recognition per use",
@@ -27146,17 +27179,22 @@
     "power_id": 855,
     "name": "Shattering Rain",
     "tier": null,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [],
+    "activation_type": "FULL_CHARGE",
+    "activation_time": 0.5,
+    "max_duration": 1,
+    "tick_rate": 0.5,
+    "cooldown": 30,
+    "range_tags": [
+      "Targets foe",
+      "50 feet"
+    ],
     "tooltip": "Deals Dimensional damage to targets every 0.5 seconds. Each hit has a 30% chance to apply Fear, Devoid, or Disorient to targets.This power cannot critically hit.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Dimensional"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Device_ShatteringRain",
@@ -27168,17 +27206,23 @@
     "power_id": 856,
     "name": "Manifest Mind Worms",
     "tier": null,
-    "power_type": null,
+    "power_type": "UNCONTROLED_PET",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "FULL_CHARGE",
+    "activation_time": 0.5,
+    "max_duration": 1,
     "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [],
+    "cooldown": 60,
+    "range_tags": [
+      "Targets foe",
+      "Affects foe that is not destructible",
+      "50 Feet"
+    ],
     "tooltip": "Creates 3 level 40 Mind Worms, each lasting for 20 seconds.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Ego"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Mentalist_MindLink",
@@ -27190,17 +27234,22 @@
     "power_id": 857,
     "name": "Elder Worms Crystal Eruption",
     "tier": null,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "CHARGE",
+    "activation_time": 0.83,
+    "max_duration": 2,
     "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [],
+    "cooldown": 60,
+    "range_tags": [
+      "Affects foe (5 max)",
+      "25 foot Sphere"
+    ],
     "tooltip": "Deals Crushing damage (based on charge time) to targets. When fully charged, targets are also Paralyzed for 14 seconds.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Telekinesis_TelekineticShards",
@@ -27212,17 +27261,22 @@
     "power_id": 858,
     "name": "Experimental Teleiosaurus Injection",
     "tier": null,
-    "power_type": null,
+    "power_type": "BUFF_SELF",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [],
+    "activation_type": "TOGGLE",
+    "activation_time": 1,
+    "max_duration": 20,
+    "tick_rate": 2,
+    "cooldown": 90,
+    "range_tags": [
+      "Affects foe (5 max)",
+      "5 foot Sphere"
+    ],
     "tooltip": "While toggled on, this device grants +30% Resistance to all damage. Nearby foes suffer Particle damage. Has a 25% chance to apply a stack of Plasma Burn to affected targets.This device can be used alongside other powers while the effects are active.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Particle"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Device_MutagenicInfection",
@@ -27234,17 +27288,21 @@
     "power_id": 859,
     "name": "Punji Stick Trap",
     "tier": null,
-    "power_type": null,
+    "power_type": "MELEE_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
+    "activation_type": "CLICK",
+    "activation_time": 1.3,
     "max_duration": null,
     "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [],
+    "cooldown": 45,
+    "range_tags": [
+      "Targets self"
+    ],
     "tooltip": "Summons a Punji Stick Trap for 15 seconds. Foes caught in the trap take Piercing damage every second and also suffer -200% to Run Speed, Flight Speed, Jump Speed, and Jump Height.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Piercing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Device_Punji",
@@ -27256,17 +27314,23 @@
     "power_id": 860,
     "name": "Tame Warbeast",
     "tier": null,
-    "power_type": null,
+    "power_type": "UNCONTROLED_PET",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "TOGGLE",
+    "activation_time": 1,
+    "max_duration": 300,
     "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [],
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
     "tooltip": "Creates a level 40 Warbeast for 90 seconds which has the following attacks:+ Swipe: Slashing damage+Lunge: Piercing damage+Warbeast Roar: Sonic damage in a 20 foot sphere+ Maul: Slashing damage with a 50% chance to Knock Back+ Bite: Piercing damage and a 30% chance to apply Venom, Feral Bleed, and/or Slashed.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Slashing",
+      "Sonic",
+      "Piercing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Device_TameWeabeast",
@@ -27278,17 +27342,21 @@
     "power_id": 861,
     "name": "Teleios Lightning Rod",
     "tier": null,
-    "power_type": null,
+    "power_type": "MELEE_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [],
+    "activation_type": "CLICK",
+    "activation_time": 1.3,
+    "max_duration": 15,
+    "tick_rate": 1,
+    "cooldown": 45,
+    "range_tags": [
+      "Targets self"
+    ],
     "tooltip": "Creates a level 40 Lightning Rod for 15 seconds, dealing Electrical damage every second to all targets in a 10 foot sphere. Affected targets are Snared and have 10% chance to be affected by Negative Ions and/or Feared.This power cannot critically hit.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Electrical"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Device_TeleiosLithgningRod",
@@ -27300,17 +27368,22 @@
     "power_id": 862,
     "name": "Devouring Shadows",
     "tier": null,
-    "power_type": null,
+    "power_type": "RANGED_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
+    "activation_type": "CHARGE",
+    "activation_time": 0.83,
     "max_duration": null,
     "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [],
+    "cooldown": 20,
+    "range_tags": [
+      "Targets foe",
+      "50 feet"
+    ],
     "tooltip": "Deals Dimensional damage, has a 45-100% chance to apply Fear, and they are Knocked To you. %Fear%Also applies Nailed to the Ground. %NG%",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Dimensional"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Device_DevouringShadow",
@@ -27322,17 +27395,22 @@
     "power_id": 863,
     "name": "Trident of the Elemental Master",
     "tier": null,
-    "power_type": null,
+    "power_type": "RANGED_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "FULL_CHARGE",
+    "activation_time": 0.83,
+    "max_duration": 2,
     "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [],
+    "cooldown": 45,
+    "range_tags": [
+      "Targets foe",
+      "50 feet"
+    ],
     "tooltip": "Deals Electrical damage, has a 50% chance to apply Negative Ions, and can arc to 3 additional targets.Applies Drained to the target, reducing Run Speed, Jump Speed, Jump Height, and Flight Speed by 200% for 5 sec.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Electrical"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Device_Trident",
@@ -27344,14 +27422,16 @@
     "power_id": 864,
     "name": "Beneficient Construct",
     "tier": null,
-    "power_type": null,
+    "power_type": "TEAM_HEAL",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "CLICK",
+    "activation_time": 0.83,
+    "max_duration": 21,
     "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [],
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
     "tooltip": "Creates a level 40 Beneficient Construct for 21 sec that heals nearby allies every 3 seconds.",
     "tags": [],
     "damage_type": [],
@@ -27366,9 +27446,9 @@
     "power_id": 865,
     "name": "Blood of Corruption",
     "tier": null,
-    "power_type": null,
+    "power_type": "DEVICE",
     "advantages": [],
-    "activation_type": null,
+    "activation_type": "PASSIVE",
     "activation_time": null,
     "max_duration": null,
     "tick_rate": null,
@@ -27388,9 +27468,9 @@
     "power_id": 866,
     "name": "Cerebro-Stimulator",
     "tier": null,
-    "power_type": null,
+    "power_type": "DEVICE",
     "advantages": [],
-    "activation_type": null,
+    "activation_type": "PASSIVE",
     "activation_time": null,
     "max_duration": null,
     "tick_rate": null,
@@ -27398,7 +27478,9 @@
     "range_tags": [],
     "tooltip": "Has a 1% chance to create a level 40 Larval Terror for 60 sec.Larval terror can attack foes for moderately strong Ego damage.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Ego"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Device_CerebroStimulator",
@@ -27410,17 +27492,22 @@
     "power_id": 867,
     "name": "Charm of the Wind",
     "tier": null,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [],
+    "activation_type": "CHARGE",
+    "activation_time": 0.83,
+    "max_duration": 5,
+    "tick_rate": 1,
+    "cooldown": 60,
+    "range_tags": [
+      "Affects foe (5 max)",
+      "15 foot Sphere"
+    ],
     "tooltip": "Deals Cold damage and has a 25% chance to apply Chill every 1 sec.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Cold"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Device_Charm",
@@ -27432,17 +27519,23 @@
     "power_id": 868,
     "name": "Necrull's Skull",
     "tier": null,
-    "power_type": null,
+    "power_type": "UNCONTROLED_PET",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 60,
     "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [],
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
     "tooltip": "Gives you the Necrull's Skull buff for 60 sec. While active, being damaged can trigger the following:66% chance to create a level 40 Zombie for 30 sec.33% chance to create a level 40 Shade for 30 sec.You can only have 1 Zombie and 1 Shade active at a time.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Crushing",
+      "Toxic",
+      "Dimensional"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Device_Skull",
@@ -27454,14 +27547,16 @@
     "power_id": 869,
     "name": "Gadroon Force Tech",
     "tier": null,
-    "power_type": null,
+    "power_type": "BUFF_SELF",
     "advantages": [],
-    "activation_type": null,
+    "activation_type": "CLICK",
     "activation_time": null,
-    "max_duration": null,
+    "max_duration": 15,
     "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [],
+    "cooldown": 60,
+    "range_tags": [
+      "Targets self"
+    ],
     "tooltip": "Gives you +25% resistance to all damage and +3.1% Energy every 1 sec for 15 sec.",
     "tags": [],
     "damage_type": [],
@@ -27476,14 +27571,16 @@
     "power_id": 870,
     "name": "Force Shield Belt",
     "tier": null,
-    "power_type": null,
+    "power_type": "SHIELD",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "CLICK",
+    "activation_time": 0.83,
+    "max_duration": 15,
     "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [],
+    "cooldown": 60,
+    "range_tags": [
+      "Targets self"
+    ],
     "tooltip": "Absorbs a moderate amount of damage.",
     "tags": [],
     "damage_type": [],
@@ -27498,17 +27595,21 @@
     "power_id": 871,
     "name": "Invocation of the Eclipse",
     "tier": null,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
+    "activation_type": "FULL_CHARGE",
     "activation_time": null,
-    "max_duration": null,
+    "max_duration": 1.67,
     "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [],
+    "cooldown": 90,
+    "range_tags": [
+      "Targets self"
+    ],
     "tooltip": "Summons 5 Eclipse Entites around you. When an enemy comes with 15 feet of an Eclipse Entity, it explodes, dealing Dimensional damage to up to 5 enemies within range.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Dimensional"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Sorcery_ArcaneVitality",
@@ -27520,14 +27621,16 @@
     "power_id": 872,
     "name": "Horn of Allegiance",
     "tier": null,
-    "power_type": null,
+    "power_type": "UNCONTROLED_PET",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "TOGGLE",
+    "activation_time": 1,
+    "max_duration": 300,
     "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [],
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
     "tooltip": "Creates a level 40 Hyena Hybrid for 60 sec.Creates a level 40 Hyena Hybrid for 60 sec.50% chance to create a level 40 Hyena Hybrid for 60 sec.25% chance to create a level 40 Hyena Hybrid for 60 sec.",
     "tags": [],
     "damage_type": [],
@@ -27542,17 +27645,22 @@
     "power_id": 873,
     "name": "Rhino Helm",
     "tier": null,
-    "power_type": null,
+    "power_type": "LUNGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
+    "activation_type": "CLICK",
+    "activation_time": 0.67,
     "max_duration": null,
     "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [],
+    "cooldown": 60,
+    "range_tags": [
+      "Targets foe",
+      "100 foot lunge"
+    ],
     "tooltip": "Deals Crushing damage to the target. Also, they are Knocked Back and Disoriented. %Disorient%",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Device_RhinoHelm",
@@ -27564,17 +27672,22 @@
     "power_id": 874,
     "name": "Bear Spear",
     "tier": null,
-    "power_type": null,
+    "power_type": "RANGED_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
+    "activation_type": "CLICK",
+    "activation_time": 1,
     "max_duration": null,
     "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [],
+    "cooldown": 25,
+    "range_tags": [
+      "Targets foe",
+      "100 feet"
+    ],
     "tooltip": "Deals Piercing damage and applies Bleed to the target. %Bleed%",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Piercing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Device_BearSpear",
@@ -27586,14 +27699,16 @@
     "power_id": 875,
     "name": "Manimal Control",
     "tier": null,
-    "power_type": null,
+    "power_type": "UNCONTROLED_PET",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "TOGGLE",
+    "activation_time": 1,
+    "max_duration": 300,
     "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [],
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
     "tooltip": "Creates a level 40 Rat Hybrid for 60 sec.Creates a level 40 Bird for 60 sec.50% chance to create a level 40 Rat Hybrid for 60 sec.50% chance to create a level 40 Bird for 60 sec.50% chance to create a level 40 Stag for 60 sec.",
     "tags": [],
     "damage_type": [],
@@ -27608,14 +27723,17 @@
     "power_id": 876,
     "name": "Lasso",
     "tier": null,
-    "power_type": null,
+    "power_type": "CROWD_CONTROL",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "CHARGE",
+    "activation_time": 1,
+    "max_duration": 2,
     "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [],
+    "cooldown": 25,
+    "range_tags": [
+      "Targets foe",
+      "100 feet"
+    ],
     "tooltip": "Your target is Knocked To you.",
     "tags": [],
     "damage_type": [],
@@ -27630,17 +27748,22 @@
     "power_id": 877,
     "name": "Branding Iron",
     "tier": null,
-    "power_type": null,
+    "power_type": "MELEE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
+    "activation_type": "CLICK",
+    "activation_time": 1,
     "max_duration": null,
     "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [],
+    "cooldown": 20,
+    "range_tags": [
+      "Targets foe",
+      "10 feet"
+    ],
     "tooltip": "Deals Fire damage and applies Clinging Flames to the target. %ClingingFlames%",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Fire"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Device_Branding",
@@ -27652,14 +27775,17 @@
     "power_id": 878,
     "name": "Yodel",
     "tier": null,
-    "power_type": null,
+    "power_type": "BUFF_TARGETS",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 30,
     "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [],
+    "cooldown": 10,
+    "range_tags": [
+      "Affects friends (10 max)",
+      "25 foot Sphere"
+    ],
     "tooltip": "Applies Inspiration to nearby allies. %Inspiration%",
     "tags": [],
     "damage_type": [],
@@ -27902,7 +28028,7 @@
     "tick_rate": null,
     "cooldown": 1,
     "range_tags": [],
-    "tooltip": "Grants +20 Flight Speed while active. Outside of combat, you build up speed over time. After 4 seconds, you gain +17 Flight Speed. After 10 seconds, you gain an additional +17 Flight Speed. While active, you suffer a -12% penalty to Power Cost Discount and your Energy Building strength is reduced by 15%.",
+    "tooltip": "Grants +30 Flight Speed while active. Outside of combat, you build up speed over time. After 4 seconds, you gain +26 Flight Speed. After 10 seconds, you gain an additional +26 Flight Speed. While active, you suffer a -12% penalty to Power Cost Discount and your Energy Building strength is reduced by 15%.",
     "tags": [],
     "damage_type": [],
     "scaling_stats": [],
@@ -27924,7 +28050,7 @@
     "tick_rate": null,
     "cooldown": 1,
     "range_tags": [],
-    "tooltip": "Grants +20 Flight Speed while active. Outside of combat, you build up speed over time. After 4 seconds, you gain +17 Flight Speed. After 10 seconds, you gain an additional +17 Flight Speed. While active, you suffer a -12% penalty to Power Cost Discount and your Energy Building strength is reduced by 15%.",
+    "tooltip": "Grants +30 Flight Speed while active. Outside of combat, you build up speed over time. After 4 seconds, you gain +26 Flight Speed. After 10 seconds, you gain an additional +26 Flight Speed. While active, you suffer a -12% penalty to Power Cost Discount and your Energy Building strength is reduced by 15%.",
     "tags": [],
     "damage_type": [],
     "scaling_stats": [],
@@ -28012,7 +28138,7 @@
     "tick_rate": null,
     "cooldown": 1,
     "range_tags": [],
-    "tooltip": "Grants +20 Flight Speed while active.You cannot elevate more than 15 feet from the ground with this. Counts as a Travel Power.",
+    "tooltip": "Grants +30 Flight Speed while active. Outside of combat, you build up speed over time. After 4 seconds, you gain +26 Flight Speed. After 10 seconds, you gain an additional +26 Flight Speed. While active, you suffer a -12% penalty to Power Cost Discount and your Energy Building strength is reduced by 15%.",
     "tags": [],
     "damage_type": [],
     "scaling_stats": [],
@@ -28034,7 +28160,7 @@
     "tick_rate": null,
     "cooldown": 1,
     "range_tags": [],
-    "tooltip": "Grants +20 Flight Speed while active.You cannot elevate more than 15 feet from the ground with this. Counts as a Travel Power.",
+    "tooltip": "Grants +30 Flight Speed while active. Outside of combat, you build up speed over time. After 4 seconds, you gain +26 Flight Speed. After 10 seconds, you gain an additional +26 Flight Speed. While active, you suffer a -12% penalty to Power Cost Discount and your Energy Building strength is reduced by 15%.",
     "tags": [],
     "damage_type": [],
     "scaling_stats": [],
@@ -28056,7 +28182,7 @@
     "tick_rate": null,
     "cooldown": 1,
     "range_tags": [],
-    "tooltip": "Grants +20 Flight Speed while active. Outside of combat, you build up speed over time. After 4 seconds, you gain +17 Flight Speed. After 10 seconds, you gain an additional +17 Flight Speed. While active, you suffer a -12% penalty to Power Cost Discount and your Energy Building strength is reduced by 15%.",
+    "tooltip": "Grants +30 Flight Speed while active. Outside of combat, you build up speed over time. After 4 seconds, you gain +26 Flight Speed. After 10 seconds, you gain an additional +26 Flight Speed. While active, you suffer a -12% penalty to Power Cost Discount and your Energy Building strength is reduced by 15%.",
     "tags": [],
     "damage_type": [],
     "scaling_stats": [],
@@ -28166,7 +28292,7 @@
     "tick_rate": null,
     "cooldown": 1,
     "range_tags": [],
-    "tooltip": "Grants +20 Flight Speed while active. Outside of combat, you build up speed over time. After 4 seconds, you gain +17 Flight Speed. After 10 seconds, you gain an additional +21 Flight Speed. While active, you suffer a -9.4% penalty to Power Cost Discount and your Energy Building strength is reduced by 15%. This power is less maneuverable than standard Flight.",
+    "tooltip": "Grants +30 Flight Speed while active. Outside of combat, you build up speed over time. After 4 seconds, you gain +26 Flight Speed. After 10 seconds, you gain an additional +26 Flight Speed. While active, you suffer a -12% penalty to Power Cost Discount and your Energy Building strength is reduced by 15%.",
     "tags": [],
     "damage_type": [],
     "scaling_stats": [],
@@ -28254,7 +28380,7 @@
     "tick_rate": null,
     "cooldown": 1,
     "range_tags": [],
-    "tooltip": "Grants +20 Flight Speed while active. Outside of combat, you build up speed over time. After 4 seconds, you gain +17 Flight Speed. After 10 seconds, you gain an additional +17 Flight Speed. While active, you suffer a -12% penalty to Power Cost Discount and your Energy Building strength is reduced by 15%.",
+    "tooltip": "Grants +30 Flight Speed while active. Outside of combat, you build up speed over time. After 4 seconds, you gain +26 Flight Speed. After 10 seconds, you gain an additional +26 Flight Speed. While active, you suffer a -12% penalty to Power Cost Discount and your Energy Building strength is reduced by 15%.",
     "tags": [],
     "damage_type": [],
     "scaling_stats": [],
@@ -28312,17 +28438,23 @@
     "power_id": 908,
     "name": "Silver Bullet",
     "tier": null,
-    "power_type": null,
+    "power_type": "RANGED_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "FULL_CHARGE",
+    "activation_time": 0.67,
+    "max_duration": 0.67,
     "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [],
+    "cooldown": 60,
+    "range_tags": [
+      "Targets foe",
+      "100 feet"
+    ],
     "tooltip": null,
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Piercing",
+      "Slashing"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Device_SilverBuller",
@@ -28334,17 +28466,23 @@
     "power_id": 909,
     "name": "Totemic Helm",
     "tier": null,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
+    "activation_type": "CLICK",
+    "activation_time": 1,
     "max_duration": null,
-    "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [],
+    "tick_rate": 2,
+    "cooldown": 90,
+    "range_tags": [
+      "Targets foe",
+      "50 feet",
+      "15 foot Sphere"
+    ],
     "tooltip": null,
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Cold"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Ice_SnowStorm",
@@ -29141,6 +29279,74 @@
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Device_Molotov",
+    "is_disabled": false
+  },
+  {
+    "powerset_id": "Device",
+    "framework_id": "Travel_Power",
+    "power_id": 945,
+    "name": "Qliphothic Tunneling",
+    "tier": null,
+    "power_type": "TRAVEL_POWER",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 2,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": 2,
+    "range_tags": [],
+    "tooltip": "While active, you burrow underground, allowing you to move around beneath the surface, undetected by foes. While active, you gain +64 Run Speed.",
+    "tags": [],
+    "damage_type": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "icon_override": "Telekinesis_EgoSurge",
+    "is_disabled": false
+  },
+  {
+    "powerset_id": "Device",
+    "framework_id": "Travel_Power",
+    "power_id": 946,
+    "name": "Dark Flight",
+    "tier": null,
+    "power_type": "TRAVEL_POWER",
+    "advantages": [],
+    "activation_type": "CHARGE",
+    "activation_time": 1,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": 1.5,
+    "range_tags": [],
+    "tooltip": "Grants +30 Flight Speed while active. Outside of combat, you build up speed over time. After 4 seconds, you gain +26 Flight Speed. After 10 seconds, you gain an additional +26 Flight Speed. While active, you suffer a -12% penalty to Power Cost Discount and your Energy Building strength is reduced by 15%.",
+    "tags": [],
+    "damage_type": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "icon_override": "TravelPower_DarkFlight",
+    "is_disabled": false
+  },
+  {
+    "powerset_id": "Device",
+    "framework_id": "Other",
+    "power_id": 947,
+    "name": "Colossus' Essence",
+    "tier": null,
+    "power_type": "BUFF_SELF",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1.5,
+    "max_duration": 60,
+    "tick_rate": null,
+    "cooldown": 90,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Increases all damage by 20% for 60 sec. Increases your size every 5 sec for the first 20 sec of this effect and lasts for 60 sec.",
+    "tags": [],
+    "damage_type": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "icon_override": "Device_ColossusEssence",
     "is_disabled": false
   }
 ]
