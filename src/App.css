@@ -407,6 +407,7 @@ h3 {
 
 @media (max-width: 1209px) {
   .app-shell {
+    --collapsed-panel-track-width: 32px;
     --workspace-column-gap: 4px;
     padding: var(--workspace-column-gap);
   }
@@ -1655,10 +1656,23 @@ h3 {
 
 @media (max-width: 1500px) {
   .framework-strip {
+    --framework-button-height: 34px;
     --framework-button-width: 26px;
+    --framework-icon-height: 29px;
     --framework-icon-width: 22px;
     --framework-strip-gap: 2px;
     --framework-layout-gap: 2px;
+    flex-basis: 74px;
+    height: 74px;
+  }
+}
+
+@media (max-width: 1209px) {
+  .framework-strip {
+    --framework-button-height: 34px;
+    --framework-icon-height: 29px;
+    flex-basis: 74px;
+    height: 74px;
   }
 }
 

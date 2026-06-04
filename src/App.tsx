@@ -87,7 +87,7 @@ type WorkspacePanelId = "build" | "character" | "powers" | "specializations";
 
 type CollapsedWorkspacePanels = Record<WorkspacePanelId, boolean>;
 
-const collapsedPanelTrackWidth = "48px";
+const collapsedPanelTrackWidth = "var(--collapsed-panel-track-width, 48px)";
 const ultraCompactViewportQuery = "(max-width: 1209px)";
 const openPanelTracks = {
   build: "minmax(330px, 1fr)",
