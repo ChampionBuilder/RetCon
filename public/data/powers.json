@@ -26915,22 +26915,24 @@
     "powerset_id": "Device",
     "framework_id": "Other",
     "power_id": 833,
-    "name": "Syphon Nightmare",
+    "name": "Dark Shard Robe",
     "tier": null,
-    "power_type": null,
+    "power_type": "DEVICE",
     "advantages": [],
-    "activation_type": null,
+    "activation_type": "PASSIVE",
     "activation_time": null,
     "max_duration": null,
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
-    "tooltip": "Eidolon",
+    "tooltip": "15% of the damage you take is dealt back to the attacker as Magic damage. + This damage has a limit of 1000.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Magic"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": "Device_SyphonNightmare",
+    "icon_override": "Device_DarkShardRobe",
     "is_disabled": false
   },
   {
@@ -29743,8 +29745,8 @@
     "is_disabled": false
   },
   {
-    "powerset_id": null,
-    "framework_id": null,
+    "powerset_id": "Device",
+    "framework_id": "Other",
     "power_id": 948,
     "name": "Nanomachines Pheromones",
     "tier": null,
@@ -29765,12 +29767,12 @@
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_NanomachinesPheromones",
     "is_disabled": false
   },
   {
-    "powerset_id": null,
-    "framework_id": null,
+    "powerset_id": "Device",
+    "framework_id": "Travel_Power",
     "power_id": 949,
     "name": "Dark Speed",
     "tier": null,
@@ -29787,12 +29789,12 @@
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "TravelPower_DarkSpeed.png",
     "is_disabled": false
   },
   {
-    "powerset_id": null,
-    "framework_id": null,
+    "powerset_id": "Device",
+    "framework_id": "Other",
     "power_id": 950,
     "name": "Siphon Nightmares",
     "tier": null,
@@ -29814,7 +29816,7 @@
     ],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": null,
+    "icon_override": "Device_SyphonNightmare",
     "is_disabled": false
   }
 ]
