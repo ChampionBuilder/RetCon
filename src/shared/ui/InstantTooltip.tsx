@@ -10,6 +10,18 @@ import {
 } from "@/shared/ui/instantTooltipDom";
 import type { TooltipState } from "@/shared/ui/instantTooltipTypes";
 
+function isTouchGeneratedMouseEvent(event: MouseEvent) {
+  const sourceCapabilities = (
+    event as MouseEvent & {
+      sourceCapabilities?: {
+        firesTouchEvents?: boolean;
+      };
+    }
+  ).sourceCapabilities;
+
+  return sourceCapabilities?.firesTouchEvents === true;
+}
+
 export function InstantTooltip() {
   const activeElementRef = useRef<HTMLElement | null>(null);
   const mutationObserverRef = useRef<MutationObserver | null>(null);
@@ -102,10 +114,6 @@ export function InstantTooltip() {
   }, [hasScrollableAdvantagePanel]);
 
   useEffect(() => {
-    const hoverMediaQuery = window.matchMedia(
-      "(hover: hover) and (pointer: fine)",
-    );
-
     function disconnectMutationObserver() {
       mutationObserverRef.current?.disconnect();
       mutationObserverRef.current = null;
@@ -179,6 +187,10 @@ export function InstantTooltip() {
     }
 
     function handleMouseOver(event: MouseEvent) {
+      if (isTouchGeneratedMouseEvent(event)) {
+        return;
+      }
+
       setShowAdvancedPowerTooltip(event.shiftKey);
 
       if (
@@ -199,6 +211,10 @@ export function InstantTooltip() {
     }
 
     function handleMouseMove(event: MouseEvent) {
+      if (isTouchGeneratedMouseEvent(event)) {
+        return;
+      }
+
       setShowAdvancedPowerTooltip(event.shiftKey);
 
       if (!activeElementRef.current) {
@@ -217,6 +233,10 @@ export function InstantTooltip() {
     }
 
     function handleMouseOut(event: MouseEvent) {
+      if (isTouchGeneratedMouseEvent(event)) {
+        return;
+      }
+
       const activeElement = activeElementRef.current;
 
       if (!activeElement) {
@@ -302,14 +322,11 @@ export function InstantTooltip() {
       setShowAdvancedPowerTooltip(false);
     }
 
-    if (hoverMediaQuery.matches) {
-      document.addEventListener("mouseover", handleMouseOver);
-      document.addEventListener("mousemove", handleMouseMove);
-      document.addEventListener("mouseout", handleMouseOut);
-      document.addEventListener("focusin", handleFocusIn);
-      document.addEventListener("focusout", hideTooltip);
-    }
-
+    document.addEventListener("mouseover", handleMouseOver);
+    document.addEventListener("mousemove", handleMouseMove);
+    document.addEventListener("mouseout", handleMouseOut);
+    document.addEventListener("focusin", handleFocusIn);
+    document.addEventListener("focusout", hideTooltip);
     document.addEventListener("pointerdown", handlePointerDown);
     document.addEventListener("pointercancel", handlePointerCancel);
     document.addEventListener("pointermove", handlePointerMove);

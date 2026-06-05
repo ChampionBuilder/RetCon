@@ -54,6 +54,7 @@ export function CharacterPanel({
   const innateTalentStats = innateTalent
     ? getInnateTalentStatEntries(innateTalent, selectedStatKeys)
     : [];
+  const hasDenseInnateTalentStats = innateTalent?.name === "The Hero";
 
   return (
     <aside className="panel character-panel">
@@ -130,7 +131,16 @@ export function CharacterPanel({
               {innateTalent?.name ?? "Select innate talent"}
             </span>
             {innateTalent ? (
-              <small className="inline-choice-button__details">
+              <small
+                className={[
+                  "inline-choice-button__details",
+                  hasDenseInnateTalentStats
+                    ? "inline-choice-button__details--dense"
+                    : "",
+                ]
+                  .filter(Boolean)
+                  .join(" ")}
+              >
                 {innateTalentStats.map((stat, index) => (
                   <span key={stat.key}>
                     {index > 0 ? ", " : ""}
@@ -153,6 +163,7 @@ export function CharacterPanel({
               const talentStats = talent
                 ? getTalentStatEntries(talent, selectedStatKeys)
                 : [];
+              const hasDenseTalentStats = talent?.name === "Jack of All Trades";
 
               return (
                 <button
@@ -174,7 +185,16 @@ export function CharacterPanel({
                     {talent?.name ?? `Talent ${index + 1}`}
                   </span>
                   {talent ? (
-                    <small className="talent-slot-button__details">
+                    <small
+                      className={[
+                        "talent-slot-button__details",
+                        hasDenseTalentStats
+                          ? "talent-slot-button__details--dense"
+                          : "",
+                      ]
+                        .filter(Boolean)
+                        .join(" ")}
+                    >
                       {talentStats.map((stat, statIndex) => (
                         <span key={stat.key}>
                           {statIndex > 0 ? ", " : ""}

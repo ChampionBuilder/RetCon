@@ -17803,7 +17803,7 @@
     "range_tags": [
       "Targets Self"
     ],
-    "tooltip": "Summons a Circle of Primal Dominion at your location. + You gain resistance to Knock effects, incresaed resistance to all damage and heal you every 1 sec. + You have reduced Threat Generation. + If you are in theTank role, you instead have increased Threat Generation. + Your power costs are increased by 10% and the recharge time on your powers are increased by 20%. + This Circle will persist for up to 2 sec while you are not standing in it. + Only one Circle can be active at a time",
+    "tooltip": "Summons a Circle of Primal Dominion at your location. + You gain resistance to Knock effects, increased resistance to all damage and heal you every 1 sec. + You have reduced Threat Generation. + If you are in the Tank role, you instead have increased Threat Generation. + Your power costs are increased by 10% and the recharge time on your powers are increased by 20%. + This Circle will persist for up to 2 sec while you are not standing in it. + Only one Circle can be active at a time",
     "tags": [
       "Enchentment",
       "Heal"
@@ -21995,18 +21995,18 @@
       297
     ],
     "activation_type": "TOGGLE",
-    "activation_time": 1.5,
+    "activation_time": null,
     "max_duration": null,
     "tick_rate": null,
-    "cooldown": 1,
+    "cooldown": null,
     "range_tags": [],
-    "tooltip": "Grants 100% Run Speed while active. Outside of Combat, you build up speed over time. After 4 seconds, you gain +85% Run Speed. After 10 seconds, you gain an additional +85% Run Speed. While moving quickly, your jump speed is slightly increases and foes are less likely to notice you. While active, you suffer a -9.4% penalty to Power Cost Discount and your Energy Building strength is reduced by 15%.",
+    "tooltip": null,
     "tags": [],
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "icon_override": "TravelPower_MachSpeed",
-    "is_disabled": false
+    "icon_override": null,
+    "is_disabled": null
   },
   {
     "powerset_id": "Travel_power",
@@ -23797,7 +23797,7 @@
       "Targets foe",
       "90/120 feet"
     ],
-    "tooltip": "PULP FICTION ASSAULT MAINTAIN:  On tap, deals Particle Damage. While maintained, deals Particle Damage. Increases this power's damage by 10% if you are affected by Molecular Self Assembly or Unified Theory. + Has a 5% chance every hit to apply Plasma Burn to your target, causing Particle Damage every 1 sec for 16 sec. Stacks up to 5 times. + Goes on a 90 sec cooldown if you do not own the Assault Rifle power. + PULP FICTION LANCE: This power is activated when you are greater than 90ft from your target. + Deals Particle Damage. Expires all of your Plasma Burn stacks and deals Particle Damage for each one to up to 5 targets within 10ft of your main target.  + Taking damage while charging this power will interrupt it. + Goes on a 90 sec cooldown if you do not own the Sniper Rifle power.",
+    "tooltip": "PULP FICTION ASSAULT MAINTAIN:  On tap, deals Particle Damage. While maintained, deals Particle Damage. Increases this power's damage by 10% if you are affected by Molecular Self Assembly or Unified Theory. + Has a 5% chance every hit to apply Plasma Burn to your target, causing Particle Damage every 1 sec for 16 sec. Stacks up to 5 times.  + PULP FICTION LANCE: This power is activated when you are greater than 90ft from your target. + Deals Particle Damage. Expires all of your Plasma Burn stacks and deals Particle Damage for each one to up to 5 targets within 10ft of your main target.  + Taking damage while charging this power will interrupt it.",
     "tags": [
       "Plasma Burn"
     ],
@@ -23829,7 +23829,7 @@
       "Targets foe",
       "100 feet"
     ],
-    "tooltip": "Deals Particle Damage every 0.5 sec. + Increases this power's damage by 15% if you are affected by Molecular Self Assembly or Unified Theory. + When maintaining has a 20% chance every hit to apply Plasma Burn to your target, causing Particle Damage every 1 sec for 16 sec. Stacks up to 5 times. + Goes on a 90 sec cooldown if you do not own the Two Gun Mojo power.",
+    "tooltip": "Deals Particle Damage every 0.5 sec. + Increases this power's damage by 15% if you are affected by Molecular Self Assembly or Unified Theory. + When maintaining has a 20% chance every hit to apply Plasma Burn to your target, causing Particle Damage every 1 sec for 16 sec. Stacks up to 5 times.",
     "tags": [
       "Plasma Burn"
     ],
@@ -23894,7 +23894,7 @@
       "50 feet",
       "3 foot Cylinder"
     ],
-    "tooltip": "Deals Piercing Damage to all targets. + Deals increased Piercing Damage if only 1 target is affected. Hits 5 times. + Has a 13-30% chance to Snare affected targets, reducing their movement speed by 100% for a small time. + Goes on a 90 sec cooldown if you do not own the Throwing Blades power.",
+    "tooltip": "Deals Piercing Damage to all targets. + Deals increased Piercing Damage if only 1 target is affected. Hits 5 times. + Has a 13-30% chance to Snare affected targets, reducing their movement speed by 100% for a small time.",
     "tags": [
       "Snare"
     ],
@@ -23925,7 +23925,7 @@
       "Targets foe",
       "50 feet"
     ],
-    "tooltip": "After 3 seconds, deals Piercing Damage to up to 5 targets within 15ft. + Stuns your primary target and has a 25% chance to apply Frail Armor to affected targets, reducing their resistance to Piercing damage by for 15 sec. + This effect cannot be stacked on the same target. + Goes on a 90 sec cooldown if you do not own the Ricochet Throw power.",
+    "tooltip": "After 3 seconds, deals Piercing Damage to up to 5 targets within 15ft. + Stuns your primary target and has a 25% chance to apply Frail Armor to affected targets, reducing their resistance to Piercing damage by for 15 sec. + This effect cannot be stacked on the same target. ",
     "tags": [
       "Stun",
       "Frail Armor"
@@ -23946,17 +23946,26 @@
     "power_id": 732,
     "name": "Blight Touch",
     "tier": null,
-    "power_type": null,
+    "power_type": "MELEE/RANGED",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "CHARGE",
+    "activation_time": 0.83,
+    "max_duration": 1.17,
     "tick_rate": null,
     "cooldown": 90,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe",
+      "10-100 feet"
+    ],
+    "tooltip": "This power is either Melee or Ranged, depending how far you are from your target, and if you own the parent power. + Deals Toxic Damage and expires all Deadly Poison on the target; dealing an additional Toxic Damage for each stacks consumed. + If this power is full chargedt and your target is affected by Debilitating Poison, after 2 sec applies Viral to the target. For the next 10 sec every 2 sec there's a 25% chance for your target o be affected by Deadly Poison. When this effect expires, has an additional 50% chance to apply Deadly Poison",
+    "tags": [
+      "Deadly Poison",
+      "Viral",
+      "Rupture"
+    ],
+    "damage_type": [
+      "Toxic"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       363,
@@ -23971,17 +23980,27 @@
     "power_id": 733,
     "name": "Bolting Fervor",
     "tier": null,
-    "power_type": null,
+    "power_type": "MELEE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "CHARGE",
+    "activation_time": 0.67,
+    "max_duration": 0.83,
     "tick_rate": null,
     "cooldown": 90,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe",
+      "10 feet"
+    ],
+    "tooltip": "Deals Electrical Damage and has a 75-100% chance to Stun your target briefly.  + When fully charged against a target affected by your Negative Ions, deals a additional Electrical Damage and Arcs to up to 5 targets within 15ft that are affected by your Negative Ions, dealing Electrical Damage to them. Completes the circuit.",
+    "tags": [
+      "Stun",
+      "Negative Ions",
+      "Arc",
+      "Circuit"
+    ],
+    "damage_type": [
+      "Electrical"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       285
@@ -23995,17 +24014,27 @@
     "power_id": 734,
     "name": "Brilliant Cleave",
     "tier": null,
-    "power_type": null,
+    "power_type": "MELEE_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
+    "activation_type": "COMBO",
+    "activation_time": "0.67-1.5",
     "max_duration": null,
     "tick_rate": null,
     "cooldown": 90,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe (5 max)",
+      "15 feet",
+      "60-360 degree Cone"
+    ],
+    "tooltip": "Deals Dimensional Damage to targets and heals you. + Heals up to 5 allies within 15ft. Healing value is doubled if your primary target is Illuminated. + On last hit, if you are affected by Illumination, increases the chance for this power to critically hit by 17% for 5 sec.",
+    "tags": [
+      "Illuminated",
+      "Illumination",
+      "Life Drain"
+    ],
+    "damage_type": [
+      "Dimensional"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       397
@@ -24019,17 +24048,26 @@
     "power_id": 735,
     "name": "Burning Blades",
     "tier": null,
-    "power_type": null,
+    "power_type": "MELEE_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
+    "activation_type": "COMBO",
+    "activation_time": "0.4-0.67",
     "max_duration": null,
     "tick_rate": null,
     "cooldown": 90,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe (5 max)",
+      "15 feet",
+      "200 degree Cone"
+    ],
+    "tooltip": "Deals Fire Damage and has a 20/20100% chance to apply Clinging Flames, causing Fire Damage every 2 sec for 12 sec. + Has 20/20/100% chance to apply Engulfing Flames, causing -8% resistance to Fire Damage debuff for 15 sec. Stacks up to 3 times.",
+    "tags": [
+      "Clinging Flames",
+      "Engulfing Flames"
+    ],
+    "damage_type": [
+      "Fire"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       267
@@ -24043,17 +24081,27 @@
     "power_id": 736,
     "name": "Callous Cleaver",
     "tier": null,
-    "power_type": null,
+    "power_type": "MELEE_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
+    "activation_type": "COMBO",
+    "activation_time": "0.83-1",
     "max_duration": null,
     "tick_rate": null,
     "cooldown": 90,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe (5 max)",
+      "15 feet",
+      "50-360 degree Cone"
+    ],
+    "tooltip": "Deals Cold Damage and has a 25/25100% chance to apply Chill to affected targets, reducing their movement speed by 60% for 16 sec and occasionally trapping them in an Ice Cage. Stacks up to 3 times. + Last hit increases the duration of your Chill effects by 16 sec. This cannot exceed the original duration. + Last hit applies Hard Frost to your primary target, reducing their resistance to Cold damage by 18% for 15 sec.",
+    "tags": [
+      "Chil",
+      "Ice Cage",
+      "Hard frost"
+    ],
+    "damage_type": [
+      "Cold"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       397
@@ -24067,17 +24115,26 @@
     "power_id": 737,
     "name": "Cauldron Fire",
     "tier": null,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
+    "activation_type": "CLICK",
+    "activation_time": 0.67,
     "max_duration": null,
     "tick_rate": null,
-    "cooldown": 90,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "cooldown": "15-90",
+    "range_tags": [
+      "Targets foe",
+      "50 feet"
+    ],
+    "tooltip": "Creates a Cauldron Fire on the target for or 16 sec dealing Magic Damage every 1 sec to foes within 15ft. + Foes standing in the Cauldron Fire have 20% chance every 1 sec to be afflicted by Deadly Poison , causing Toxic Damage every 1 sec for 16 sec. Stacks up to 5 times. + Snares affected targets, reducing their movement speed by 100%. + Hitting a foe standing in the Cauldron Fire with your Magic damage attacks has a 50% chance to apply Bane, which can cause one of the following effects: Bleeding, Chilled, Clinging Flames, Deadly Poison, Debilitating Poison, Demolish, Dependancy, Disintegrate, Disorient, Fear, Brail armor, Hexed, Plasma Burn, Stagger, Stress. Can occur once every 1 sec. + Cauldron Fire cannot be stacked with Pyre Patch. Places your Flashfire power on cooldown when used.",
+    "tags": [
+      "Deadly Poison",
+      "Snare",
+      "Bane"
+    ],
+    "damage_type": [
+      "Magic"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       50
@@ -24135,7 +24192,7 @@
     "advantages": [],
     "activation_type": "FULL_CHARGE",
     "activation_time": 0.67,
-    "max_duration": "46 144,00",
+    "max_duration": 2.33,
     "tick_rate": null,
     "cooldown": 120,
     "range_tags": [
@@ -24167,17 +24224,25 @@
     "power_id": 740,
     "name": "Electric Vengeance",
     "tier": null,
-    "power_type": null,
+    "power_type": "MELEE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "CHARGE",
+    "activation_time": 0.83,
+    "max_duration": 0.67,
     "tick_rate": null,
-    "cooldown": 90,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "cooldown": "0.5-90",
+    "range_tags": [
+      "Targets foe",
+      "10 feet"
+    ],
+    "tooltip": "Deals Electrical Damage to target. +  When fully charged, deals Electrical Damage to up to 5 targets within 15ft. Deals an additional Electrical Damage to all targets target is affected by Negative Ions. Completes the circuit. + If your primary target is not affected by Negative Ions, applies Electrical Body to you for 10 sec, which causes your direct damage attacks to have a 20% chance to apply Negative Ions for 20 sec. This chances increased to 30% if you own the Ionic Reverberation power.",
+    "tags": [
+      "Negative Ions",
+      "Circuit"
+    ],
+    "damage_type": [
+      "Electrical"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       297
@@ -24191,17 +24256,25 @@
     "power_id": 741,
     "name": "Fiery Spirit",
     "tier": null,
-    "power_type": null,
+    "power_type": "MELEE_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
+    "activation_type": "CLICK",
+    "activation_time": 0.83,
     "max_duration": null,
     "tick_rate": null,
-    "cooldown": 90,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "cooldown": "10-90",
+    "range_tags": [
+      "Affects foe (5 max)",
+      "15 foot Sphere"
+    ],
+    "tooltip": "Deals Fire Damage and applie Unstable Accelerant to affected targets, lowering their resistance to your Burning effects by 50% for 12 sec. + Creates a Pyre Patch at your location for 10 sec, dealing Fire Damage every I sec to foes within 15ft. + Foes standing in the Pyre Patch have a 10% chance to be affected by Clinging Flames, causing Fire Damage every 2 sec for 12 sec. Clinging Flames may leap to other foes near the target.",
+    "tags": [
+      "Unstable Accelerant",
+      "Pyre Patch"
+    ],
+    "damage_type": [
+      "Fire"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       560
@@ -24248,17 +24321,25 @@
     "power_id": 743,
     "name": "Flaming Frenzy",
     "tier": null,
-    "power_type": null,
+    "power_type": "MELEE_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
+    "activation_type": "COMBO",
+    "activation_time": 0.5,
     "max_duration": null,
     "tick_rate": null,
     "cooldown": 90,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Affects foe (5 max)",
+      "10 foot Sphere"
+    ],
+    "tooltip": "Deals Fire Damage and has a 25/25/100% chance to apply Clinging Flames, causing Fire Damage every 2 sec for 12 sec. + If a target is affected by Clinging Flames, expires that effect and heals you. If you are affected by Thermal Reverberation, no effect will be expired.",
+    "tags": [
+      "Clinging Flames",
+      "Heal"
+    ],
+    "damage_type": [
+      "Fire"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       554
@@ -24272,17 +24353,27 @@
     "power_id": 744,
     "name": "Flaming Pumpkin",
     "tier": null,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "CHARGE",
+    "activation_time": 0.67,
+    "max_duration": 1.33,
     "tick_rate": null,
     "cooldown": 90,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Affects foe (5 max)",
+      "50feet",
+      "0-20 foot Sphere"
+    ],
+    "tooltip": "Deals Toxic Damage to foes. Deals a additional Toxic Damage targetis affected by your Fear effect. + Has a 100% chance to affected targets, reducing their damage by 10% for 12 sec.  + When fully charged creates a Pyre Patch on the main target for 10 sec, dealing Fire Damage every 1 sec to foes within 15ft. This effect will only occur if you own the Fireball power. + Foes standing in the Pyre Patch have a 10% chance to be affected by Clinging Flames, causing Fire Damage every 2 sec for 12 sec. Clinging Flames to other foes near the target.",
+    "tags": [
+      "Fear",
+      "Clinging Flames"
+    ],
+    "damage_type": [
+      "Toxic",
+      "Fire"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       31
@@ -24296,17 +24387,27 @@
     "power_id": 745,
     "name": "Frost Ice Rifle",
     "tier": null,
-    "power_type": null,
+    "power_type": "RANGED_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
+    "activation_type": "MAINTAIN",
+    "activation_time": 0.67,
+    "max_duration": 4,
+    "tick_rate": 0.5,
     "cooldown": 90,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe",
+      "100 feet"
+    ],
+    "tooltip": "On tap, deals increased Cold Damage. + While maintained, dealsCold Damage every 0.5 sec. + Increases this power's damage by 10% for every stack of your Chill effect on the target. + When maintaining, has a 50% chance to apply Chill, reducing the target's movement speed by 60% for 16 sec and occasionally traps targets in an Ice Cage. Stacks up to 3 times. This chanceis doubled ifyou are affected by Cold Snap. + When fully maintained, has a 100% chance to Shatter your Ice Structures, dealing Cold Damage, based on the rank and type of the structure, to up to 5 foes within 15 ft.",
+    "tags": [
+      "Chill",
+      "Ice cage",
+      "Shatter",
+      "Cold Snap"
+    ],
+    "damage_type": [
+      "Cold"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       211
@@ -24320,17 +24421,26 @@
     "power_id": 746,
     "name": "Frozen Lance",
     "tier": null,
-    "power_type": null,
+    "power_type": "MELEE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "CHARGE",
+    "activation_time": 0.67,
+    "max_duration": 0.83,
     "tick_rate": null,
     "cooldown": 90,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe",
+      "15 feet"
+    ],
+    "tooltip": "Deals Cold Damage and for every Chilled effect on a target, this power's base damage is increased by 10%. + If you are affected by Cold Snap, deaIs a additional Cold Damage to up to 5 targets within 5ft of your primary target. + Has a 45-100% chance to apply Chill affected targets, reducing their movement speed by 60% for 16 sec and occasionally trapping them an Ice Cage.",
+    "tags": [
+      "Chill",
+      "Ice Cage",
+      "Cold Snap"
+    ],
+    "damage_type": [
+      "Cold"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       412
@@ -24344,17 +24454,29 @@
     "power_id": 747,
     "name": "Glacial Rend",
     "tier": null,
-    "power_type": null,
+    "power_type": "MELEE_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
+    "activation_type": "CLICK",
+    "activation_time": 0.83,
     "max_duration": null,
     "tick_rate": null,
-    "cooldown": 90,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "cooldown": "15-90",
+    "range_tags": [
+      "Targets foe (5 max)",
+      "15 feet",
+      "320 degree Cone"
+    ],
+    "tooltip": "Deals Cold Damage and Stuns affected targets for 2 sec. + Creates a Ice Column at your primary target. After I0 sec, the Ice Column explodes, dealing Cold Damage to up to 5 targets within 10ft. + Has a 20% chance every 1 secto apply Chill to targets within 20ft, reducing their movement speed by 70% for 16 sec and occasionally trapping them in an Ice cage. Stacks up to 3 times. + Additionally, if a target is affected by your Hard Frost, has a 20% chance to refresh thc duration. + Places Eruption and Ice Burst on cooldown.",
+    "tags": [
+      "Stun",
+      "Chill",
+      "Ice Cage",
+      "Ice Column",
+      "Hard frost"
+    ],
+    "damage_type": [
+      "Cold"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       401
@@ -24368,17 +24490,25 @@
     "power_id": 748,
     "name": "Haunted Blades",
     "tier": null,
-    "power_type": null,
+    "power_type": "MELEE_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
+    "activation_type": "MAINTAIN",
+    "activation_time": 0.67,
+    "max_duration": 5,
+    "tick_rate": 0.5,
     "cooldown": 90,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Affects foe (5 max)",
+      "10 foot Sphere"
+    ],
+    "tooltip": "Deals Dimensional Damage every 0.5 sec and has a 25% chance every hit to apply Fear to affected targets. + Heals you for every target hit that is affected by Fear. This counts as a life Drain effect.",
+    "tags": [
+      "Fear",
+      "Life Drain"
+    ],
+    "damage_type": [
+      "Dimensional"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       272
@@ -24392,17 +24522,28 @@
     "power_id": 749,
     "name": "Havoc Hammer",
     "tier": null,
-    "power_type": null,
+    "power_type": "MELEE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "CHARGE",
+    "activation_time": "0/67",
+    "max_duration": 1.83,
     "tick_rate": null,
-    "cooldown": 90,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "cooldown": "12-90",
+    "range_tags": [
+      "Targets foe",
+      "10 feet"
+    ],
+    "tooltip": "Deals Sonic Damage to target. Increases this power's base damage by 30% against targets affected by your Deafening. + 30% chance to Stun your target. Chance is guaranteed if the target is affected by Disorient + When fully charged: + Deals Sonic Damage to up to 5 targets within 15ft. + Paralyzes your primary target and Stuns secondary targets. + Applies Bastion, causing 30% of your direct damage pre-damage mitigation to be applied to you as a Shield for 10 sec. Stacks up to 10 times. + Goes on cooldown for 12 sec.",
+    "tags": [
+      "Deafening",
+      "Stun",
+      "Hold",
+      "Disorient",
+      "Bastion"
+    ],
+    "damage_type": [
+      "Sonic"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       448
@@ -24416,17 +24557,24 @@
     "power_id": 750,
     "name": "Heat Vortex",
     "tier": null,
-    "power_type": null,
+    "power_type": "MELEE_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
+    "activation_type": "MAINTAIN",
+    "activation_time": 0.5,
+    "max_duration": 6,
+    "tick_rate": 0.5,
     "cooldown": 90,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Affects foe (5 max)",
+      "10 foot Sphere"
+    ],
+    "tooltip": "Deals Fire Damage every 0.5 sec and has a 25% chance every hit to apply Clinging Flames, causing Fire Damage every 2 sec for 12 sec.",
+    "tags": [
+      "Clinging Flames"
+    ],
+    "damage_type": [
+      "Fire"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       273
@@ -24448,7 +24596,7 @@
     "tick_rate": null,
     "cooldown": 90,
     "range_tags": [
-      "Targers foe (5 max)",
+      "Targets foe (5 max)",
       "15 feet",
       "320 degree Cone"
     ],
@@ -24474,17 +24622,29 @@
     "power_id": 752,
     "name": "Ice Breaker",
     "tier": null,
-    "power_type": null,
+    "power_type": "MELEE_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "CHARGE",
+    "activation_time": 0.67,
+    "max_duration": 0.83,
     "tick_rate": null,
     "cooldown": 90,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe (5 max)",
+      "15 feet",
+      "10 foot Sphere"
+    ],
+    "tooltip": "Deals Cold Damage and Knocks Down affected targets. + Deals additional Cold Damage damage for each of your Chill stacks on a narget, and an additional 30% total damageu if you are affected by Cold Snap. Consumes any of your Chlll stacks on affected targets. + When fully charged, Shatters any of your Ice Structures, dealing Cold Damage, based on the rank and type of the structure, to up to 5 foes within 15ft.",
+    "tags": [
+      "Knock Down",
+      "Chill",
+      "Cold Snap",
+      "Shatter",
+      "Ice Structure"
+    ],
+    "damage_type": [
+      "Cold"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       408
@@ -24498,17 +24658,28 @@
     "power_id": 753,
     "name": "Icefall",
     "tier": null,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "CHARGE",
+    "activation_time": 0.67,
+    "max_duration": 0.83,
     "tick_rate": null,
     "cooldown": 90,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe (5 max)",
+      "50 feet",
+      "3 foot Cylinder"
+    ],
+    "tooltip": "Deals Cold Damage to targets. + Has a 45-100% chance to apply Chilll to your primary target, and 22-50% chance against secondary targets, reducing their movement speed by 60% for 16 sect and occasionally trapping them in an Ice Cage. Stacks up to 3 times. + When fully charged, has a 50% chance to apply Hard Frost to your primary target, reducing their resistance to Cold damage by 18% for; 15 sec. This chance is doubled if you are affected by cold Snap.",
+    "tags": [
+      "Chill",
+      "Ice Cage",
+      "Hard Frost",
+      "Cold Snap"
+    ],
+    "damage_type": [
+      "Cold"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       426
@@ -24522,17 +24693,25 @@
     "power_id": 754,
     "name": "Laser Shotgun",
     "tier": null,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "CHARGE",
+    "activation_time": 0.67,
+    "max_duration": 1.83,
     "tick_rate": null,
     "cooldown": 90,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe (5 max)",
+      "50 feet",
+      "30-90 degree Cone"
+    ],
+    "tooltip": "Deals Particle Damage to all targets. + Tapping this power applies Plasma Sheer fo 2 sec, increasing this power's damage by 10% per stack. Stacks up to 5 times. + Has 27-100% chance to apply Plasma Burn to affected targets, dealing Particle Damage every 1 sec for 16 sec. Stacks up to 5 times.",
+    "tags": [
+      "Plasma Burn"
+    ],
+    "damage_type": [
+      "Particle"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       196
@@ -24546,17 +24725,25 @@
     "power_id": 755,
     "name": "Lightning Bolter",
     "tier": null,
-    "power_type": null,
+    "power_type": "RANGED_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
+    "activation_type": "MAINTAIN",
+    "activation_time": 0.5,
+    "max_duration": 5,
+    "tick_rate": 0.5,
     "cooldown": 90,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe",
+      "100 feet"
+    ],
+    "tooltip": "Deals Electrical Damage every 0.5 sec to the target. + When fully maintained, deals a additional Electrical Damage if your target is affected by your Negative Ions. + 20% chance every hit to Stun your target for 0.83 sec.",
+    "tags": [
+      "Stun",
+      "Negative Ions"
+    ],
+    "damage_type": [
+      "Electrical"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       22
@@ -24570,17 +24757,25 @@
     "power_id": 756,
     "name": "Power Cycle",
     "tier": null,
-    "power_type": null,
+    "power_type": "LUNGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
+    "activation_type": "MAINTAIN",
+    "activation_time": 0.5,
+    "max_duration": 4,
+    "tick_rate": 0.5,
     "cooldown": 90,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe",
+      "25 foot lunge"
+    ],
+    "tooltip": "Lunges at the targe and deals Particle Damage every 0.5 sec. This power will continue do deal damage if the target stays within a 10ft range. + While maintaining this power, Snares the target, reducing their movementspeed by 100%. This effect will only occur ifyou own the Relentless Pursuit power. + Increases this power's base damage by 10% if you are affected by Download.",
+    "tags": [
+      "Snare",
+      "Download"
+    ],
+    "damage_type": [
+      "Particle"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       298
@@ -24690,17 +24885,26 @@
     "power_id": 760,
     "name": "Scorching Claw",
     "tier": null,
-    "power_type": null,
+    "power_type": "MELEE_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
+    "activation_type": "COMBO",
+    "activation_time": "0.5-0.67",
     "max_duration": null,
     "tick_rate": null,
     "cooldown": 90,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe (5 max)",
+      "15 feet",
+      "30-240 degree Cone"
+    ],
+    "tooltip": "Deals Fire Damage and has a 25/25/100% chance to apply Clinging Flames, causing Fire Damage every 2 sec for 12 sec. + Has 25/25/100% chance to apply Engulfing Flames, causing -8% resistance to Fire Damage debuff for 15 sec. Stacks up to 3 times.",
+    "tags": [
+      "Clinging Flames",
+      "Engulfing Flames"
+    ],
+    "damage_type": [
+      "Fire"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       548
@@ -24714,17 +24918,25 @@
     "power_id": 761,
     "name": "Searing Carnage",
     "tier": null,
-    "power_type": null,
+    "power_type": "MELEE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "CHARGE",
+    "activation_time": 0.67,
+    "max_duration": 0.83,
     "tick_rate": null,
     "cooldown": 90,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe",
+      "10 feet"
+    ],
+    "tooltip": "Deals Fire Damage. This power's base damage is increased by 10% forever stack of your Engulfing Flames on the target. + 12% chance to apply Clinging Flames, causing Fire Damage every 2 sec for 12 sec. 100% chance when fully charged.",
+    "tags": [
+      "Clinging Flames",
+      "Engulfing Flames"
+    ],
+    "damage_type": [
+      "Fire"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       568
@@ -24738,17 +24950,25 @@
     "power_id": 762,
     "name": "Shadow Shred",
     "tier": null,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
+    "activation_type": "MAINTAIN",
+    "activation_time": 0.67,
+    "max_duration": 5,
+    "tick_rate": 0.5,
     "cooldown": 90,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets non-destructible foe (5 max)",
+      "50 feet",
+      "45 degree Cone"
+    ],
+    "tooltip": "Deals Magic Damage every 0.5 sec to foes.  + All targets 20% chance every hit to be affected by Regret, causing -8% all damage strength for 20 sec to affected targets. Stacks up to 3 times. + All targets havea 15% chance every hit to be affected by Dependency, healing an ally near the foe every 0.5 sec for 20 sec. Stacks up to 3 times. This effect only applies of you own the Shadow Embrace power.",
+    "tags": [
+      "Dependency"
+    ],
+    "damage_type": [
+      "Magic"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       482
@@ -24762,17 +24982,27 @@
     "power_id": 763,
     "name": "Shocking Strikes",
     "tier": null,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
+    "activation_type": "COMBO",
+    "activation_time": "0.4-0.7",
     "max_duration": null,
     "tick_rate": null,
     "cooldown": 90,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe (5 max)",
+      "10 feet",
+      "220 degree Cone"
+    ],
+    "tooltip": "Deals Electrical Damage and has  25/25/100% chance to apply Negative lons to affected targets for 20 sec. + 25/25/100% chance to Arc to a target within 15 feet, dealing Electrical Damage. If this power or an Arc from this power hits a target affected by Negative Ions, the Arc can chain to 1 additional target.  + On last hit, 100% chance to apply Superconductor to your primary target, reducing their resistance to Electrical damage by 18% for 15 sec.",
+    "tags": [
+      "Negative Ions",
+      "Arc",
+      "Superconductor"
+    ],
+    "damage_type": [
+      "Electrical"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       275
@@ -24822,17 +25052,29 @@
     "power_id": 765,
     "name": "Tendrils of Anguish",
     "tier": null,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "CHARGE",
+    "activation_time": 0.5,
+    "max_duration": 1.5,
     "tick_rate": null,
     "cooldown": 90,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe (5 max)",
+      "100 feet",
+      "15 foot Sphere"
+    ],
+    "tooltip": "Deals Toxic Damage and applies Deadly Poison to all target. Deals Particle Damage instead if you have any of the following Energy Builders: Wrist Bolter/Power Bolts/Energy Blaster/Laser Edge. + Applies Debilitating Poison to all targets if you own lnfernal Blast power. + This power costs 30% of your Max Health to use. This cost is reduced to 26/23/20% depending on the rank of Infernal Blast. + WARNING : This can kill you. +  When fully charged the primary target is affected by Noxious Poison. Noxious Poison deals Toxic Damage every 1 sec over 16 sec to nearby foes. + When fully charged creates a Healing Mist at the main target location for 10 sec, healing all allies within 25ft every 1 sec. + This effect will only occur if you own the Infernal Blast power. + Healing Mist will Disorient targets in its area if you own the Infernal Blast power at Rank 3. Disoriented targets have their damage reduced by 10% and their movement speed reduced by 50%.",
+    "tags": [
+      "Deadly Poison",
+      "Debilitation Poison",
+      "Noxious Poison:Heal",
+      "Disorient"
+    ],
+    "damage_type": [
+      "Toxic",
+      "Particle"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       570
@@ -24846,17 +25088,24 @@
     "power_id": 766,
     "name": "Thundering Claws",
     "tier": null,
-    "power_type": null,
+    "power_type": "MELEE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "CHARGE",
+    "activation_time": 0.67,
+    "max_duration": 0.83,
     "tick_rate": null,
     "cooldown": 90,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe",
+      "10 feet"
+    ],
+    "tooltip": "Deals Electrical Damage to target, and deals an additional 5% damage for every one of your High Voltage stacks. + When fully charged against a target affected by Negative Ions, refreshes its duration and has a 50% chance to apply Neoatlve Ions to up to 5 other targets within 25ft. + Applies High Voltage to you for 12 sec for every one of your Negative Ions on up to 5 targets within 25ft. Stacks up to 5 times.",
+    "tags": [
+      "Negative Ions"
+    ],
+    "damage_type": [
+      "Electrical"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       282
@@ -24870,17 +25119,25 @@
     "power_id": 767,
     "name": "Toxic Blades",
     "tier": null,
-    "power_type": null,
+    "power_type": "MELEE_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
+    "activation_type": "COMBO",
+    "activation_time": "0,35-0,83",
     "max_duration": null,
     "tick_rate": null,
     "cooldown": 90,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe (5 max)",
+      "10 feet",
+      "180 degree Cone/10 foot Sphere"
+    ],
+    "tooltip": "Deals Toxic Damage andlhasa 30/55/85% chance to apply Deadly Poison on your targets. Deadly Poison deals Toxic Damage every sec for 16 sec and stacks up to 5 times. + Last hit refreshes your stacks of Deadly Poison",
+    "tags": [
+      "Deadly Poison"
+    ],
+    "damage_type": [
+      "Toxic"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       342
@@ -24894,17 +25151,25 @@
     "power_id": 768,
     "name": "U-MD Ghosthunter Phase Rifle",
     "tier": null,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
+    "activation_type": "MAINTAIN",
+    "activation_time": 0.67,
+    "max_duration": 5,
+    "tick_rate": 0.5,
     "cooldown": 90,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets non-destructible foe (5 max)",
+      "50 feet",
+      "15 foot Sphere"
+    ],
+    "tooltip": "Deals Ego Damage every 0.5 sec to foes within 5ft of the main target. Deals reduced Ego Damage to foes beyond 5ft. + Deals additional Ego Damage to foes if they are Undead. + Foes within 20ft are pulled towards the main target. This effect only applies ifyou own the Submachinegun Burst power.",
+    "tags": [
+      "Reverse Repel"
+    ],
+    "damage_type": [
+      "Ego"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       197
@@ -24918,17 +25183,24 @@
     "power_id": 769,
     "name": "Venom Shock",
     "tier": null,
-    "power_type": null,
+    "power_type": "MELEE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "CHARGE",
+    "activation_time": 0.67,
+    "max_duration": 0.83,
     "tick_rate": null,
     "cooldown": 90,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe",
+      "10 feet"
+    ],
+    "tooltip": "Deals Toxic Damage On full charge applies Debilitating Poison, reducing resistance to Toxic damage by 18% for 15 sec. + When partially charged, increases the duration of your Debilitating Poison by 3.8 sec.",
+    "tags": [
+      "Debilitating Poison"
+    ],
+    "damage_type": [
+      "Toxic"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       355
@@ -24942,17 +25214,26 @@
     "power_id": 770,
     "name": "Virulent Shot",
     "tier": null,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "CHARGE",
+    "activation_time": 0.67,
+    "max_duration": 0.83,
     "tick_rate": null,
     "cooldown": 90,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe (5 max)",
+      "50 feet",
+      "30 degree Cone"
+    ],
+    "tooltip": "Deals Toxic Damage to all targets. + 27-60% chance to apply Deadly Poison to your target, causing Toxic Damage every 1 sec for 16 sec. Stacks up to 5 times. + On a full charge, and if the target is affected by 3 or more of your Deadly Poison, has a 100% chance to apply Noxious Poison to affected targets, causing Toxic Damage every 1 sec for 16 sec to foes within 10ft.",
+    "tags": [
+      "Dead Poison",
+      "Noxious Poison"
+    ],
+    "damage_type": [
+      "Toxic"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       196
@@ -25000,17 +25281,31 @@
     "power_id": 772,
     "name": "Ultimate Brimstone",
     "tier": 4,
-    "power_type": "ULTIMATE",
+    "power_type": "MELEE_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "FULL_CHARGE",
+    "activation_time": 0.83,
+    "max_duration": 1.17,
     "tick_rate": null,
     "cooldown": 60,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Affects foe (10 max)",
+      "25 foot Sphere"
+    ],
+    "tooltip": "Deals Crushing Damage and and Fire Damage. Affected targets are Knocked Up. Base damage is increased by 30% if a target is immunelto Knock effects. + Applies Aegis for 15 sec, granting +100% resistance to all damage to you and 72% resistance to up to I0 allies. This amount is doubled on targets affected by Reckless. + Applies Negative lons to affected targets and creates a Pyre Patch for 16 sec, dealing Fire Damage every 1 sec to foes within 25ft. Foes standing in the Pyre Patch have a 10% chance to be affected by Clinging Flames, dealing Fire Damage every 2 sec for 12 sec. Clinging Flames may leap to other Foes near the target. + Foes standing in the Pyre Patch have a 85% chance to be Disoriented for 12 sec, reducing their damage by 10% and their movement speed by 50%. + Foes standing in the Pyre Patch havea 35% chance to be Stunned for a short time. This chance is guaranteed if the target is affected by Clinging Flames. + Places your Brimstone power on cooldown when used.",
+    "tags": [
+      "Knock Up",
+      "Aegis",
+      "Reckless",
+      "Negative Ions",
+      "Pyre Patch",
+      "Clinging Flames",
+      "Disorient:Stun"
+    ],
+    "damage_type": [
+      "Crushing",
+      "Fire"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       411
@@ -25024,17 +25319,27 @@
     "power_id": 773,
     "name": "Ultimate Cave In",
     "tier": 4,
-    "power_type": "ULTIMATE",
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "FULL_CHARGE",
+    "activation_time": 0.67,
+    "max_duration": 1.83,
     "tick_rate": null,
     "cooldown": 60,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe (10 max)",
+      "50 feet",
+      "25 foot Sphere"
+    ],
+    "tooltip": "Deals Crushing Damage to your primary target and reduced Crushing Damage to earby foes. If n affected target lis immune to Hold effeets, deals an additional 30% base damage. + Applies 3 stacks of Stagger to affected targets, reducing all damage resistance by 2% and movement speed by 25% for 15 sec. + Paralyzes affected targets. If the target is immune to Holds, instead Knocks them Down.",
+    "tags": [
+      "Stagger",
+      "Hold",
+      "Knock Down"
+    ],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       422
@@ -25082,17 +25387,26 @@
     "power_id": 775,
     "name": "Ultimate Havoc Stomp",
     "tier": 4,
-    "power_type": "ULTIMATE",
+    "power_type": "MELEE_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "FULL_CHARGE",
+    "activation_time": 0.83,
+    "max_duration": 1,
     "tick_rate": null,
     "cooldown": 60,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Affects foe (10 max)",
+      "200 foot lunge",
+      "25 foot Sphere"
+    ],
+    "tooltip": "Deals Crushing Damage and Knocks Up affected targets. Base Damage is increased by 30% if an affected target is immune to Knock effects. + Creates a Stomping Grounds at your location for 12 sec, causing affected targets within 15ft to be 10% more vulnerable to damage from abilities in the Brick Framework. This effect is considered to be an Ultimate Rune. +I f used from 25ft or more above the ground, the following effects applies instead: + Lunge directly down from wherever you are. Deals increased Crushing Damage and affected targets are Knock Up.",
+    "tags": [
+      "Knock Up",
+      "Rune"
+    ],
+    "damage_type": [
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       447
@@ -25106,17 +25420,28 @@
     "power_id": 776,
     "name": "Ultimate Open Palm Strike",
     "tier": 4,
-    "power_type": "ULTIMATE",
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "FULL_CHARGE",
+    "activation_time": 0.5,
+    "max_duration": 1.5,
     "tick_rate": null,
     "cooldown": 60,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe (10 max)",
+      "50 feet",
+      "10 foot Cylinder"
+    ],
+    "tooltip": "Deals Crushing Damage and Dimensional Damage. Deals an additional 20% damage ifpyour target is immune to Knock effects. + Knocks Back affected targets. + Applies Chil Flame to affected targets, dealing Dimensionall Damage every 2 sec for 12 sec, reducing resistance against your Chi Power focused attacks by 50%. + Applies Overpower to affected targets, reducing resistance to all damage types by 20% for 15 sec.",
+    "tags": [
+      "Knock Back",
+      "Chi Flame",
+      "Overpower"
+    ],
+    "damage_type": [
+      "Dimensional",
+      "Crushing"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       311
@@ -25196,17 +25521,26 @@
     "power_id": 779,
     "name": "Ultimate Pillar of Poz",
     "tier": 4,
-    "power_type": "ULTIMATE",
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "FULL_CHARGE",
+    "activation_time": 0.83,
+    "max_duration": 1.67,
     "tick_rate": null,
     "cooldown": 60,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Targets foe (10 max)",
+      "50 feet",
+      "25 foot Sphere"
+    ],
+    "tooltip": "Deals Magic Damage and Knocks Down affected targets. + Creates an Enchanted Rune on the main target for 12 sec, causing affected targets within 25ft to be 10% more vulnerable to Magic Damage. This effect is considered to be an Ultimatel une. + If you own multiple Circle powers, creates one at your location based on your currenvt role. The circle summoned will inherit any advantages and ranks you have purchased, as well as having an extended 10 sec duration when initially summoned. + Circle of Arcane Power if you are in Hybrid Role. + Circle of Ebon Wrath ifyou are  Ranged or Melee Role.  +Circle of Primal Dominion if you are in Tank Role. + Circle of Radiant Glory if you are Support Role. + If you only own one Circle power, creates it at your location regardless of your role. + Places your Pillar ofooz power on cooldown when used.",
+    "tags": [
+      "Knock Down",
+      "Rune"
+    ],
+    "damage_type": [
+      "Magic"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       533
@@ -25220,17 +25554,24 @@
     "power_id": 780,
     "name": "Ultimate Sword Cyclone",
     "tier": 4,
-    "power_type": "ULTIMATE",
+    "power_type": "MELEE_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "MAINTAIN",
+    "activation_time": 0.5,
+    "max_duration": 6,
     "tick_rate": null,
     "cooldown": 60,
-    "range_tags": [],
-    "tooltip": null,
-    "tags": [],
-    "damage_type": [],
+    "range_tags": [
+      "Affects foe (10 max)",
+      "20 foot Sphere"
+    ],
+    "tooltip": "Deals Slashing Damage (based on number of targets) every 0.5 sec. + Targets within 30ft are Knocked To you. + While maintaining this power, increases your chance to Dodge by 20%, and increases your Avoidance by 50%.",
+    "tags": [
+      "Knock To"
+    ],
+    "damage_type": [
+      "Slashing"
+    ],
     "scaling_stats": [],
     "power_dependency": [
       273
@@ -26129,7 +26470,7 @@
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
-    "tooltip": "When your Endurance threshold is reached, you gain +10% Resistance to all damage.",
+    "tooltip": "10% resistance to all damage when you are above 80% of your max Energy.",
     "tags": [],
     "damage_type": [],
     "scaling_stats": [],
@@ -26167,7 +26508,7 @@
     "power_id": 817,
     "name": "Nightmare Generator",
     "tier": null,
-    "power_type": "UNCONTROLED_PET",
+    "power_type": "DEVICE",
     "advantages": [],
     "activation_type": "PASSIVE",
     "activation_time": null,
@@ -26598,17 +26939,23 @@
     "power_id": 834,
     "name": "Freezing Gale",
     "tier": null,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "MAINTAIN",
+    "activation_time": 0.83,
+    "max_duration": 5,
     "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [],
+    "cooldown": 60,
+    "range_tags": [
+      "Targets foe (5 max)",
+      "50 feet",
+      "45 degree Cone"
+    ],
     "tooltip": "Kiga",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Cold"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Ice_FrostBreath",
@@ -27454,8 +27801,11 @@
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
-    "tooltip": "Has a 5% chance to Stun foes for 1 sec.Has a 5% chance to Corrupt Henchmen and Villain rank enemies for 10 sec. Corrupted foes are forced to fight for you and suffer a percentage of their maximum health when the effect expires.",
-    "tags": [],
+    "tooltip": "When taking direct damage, there is a 5% chance for one of the following effects to occur: + Stun the attacker for 1 sec. + If the attacker is a Henchmen, Villain or Enforcer, Corrupts them for 10 sec, forcing them to fight for you. After Corrupted expires, Henchman have their health reduced by 50%, Villains have their health reduced by 25%, and Enforcers have their health reduced by 15%.",
+    "tags": [
+      "Stun",
+      "Corruption"
+    ],
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
@@ -27476,7 +27826,7 @@
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
-    "tooltip": "Has a 1% chance to create a level 40 Larval Terror for 60 sec.Larval terror can attack foes for moderately strong Ego damage.",
+    "tooltip": "When attacking you have a 1% chance to Creates a level 40 Larval Terror for 60 sec. + Larval Terror can hit targets for Ego Damage.",
     "tags": [],
     "damage_type": [
       "Ego"
@@ -27808,9 +28158,11 @@
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
-    "tooltip": "5% Resistance to all Energy damage.While in combat, has 5% chance every 2 sec to deal Electrical damage to foes within 25 feet of you.",
+    "tooltip": "5% resistance to all Energy damage. + While in combat, has a 5% chance every 2 sec to deal Electrical Damage to targets within 25 feet of you. + When you are below 75% health this chance increases to 35%. + When you are below 10% health this chance increases to 75%. + When you are below 5% health this chance increases to 100%.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Electrical"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Device_VoltanicPotential",
@@ -27830,9 +28182,11 @@
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
-    "tooltip": "5% Resistance to all Paranormal Damage.While you are in combat and your Energy is above 75%: Has a 5% chance every 1 sec to summon a Gremlin for 60 seconds. You cannot have more than one Gremlin active at a time.The Gremlin deals Dimensional damage to foes.",
+    "tooltip": "5% resistance to all Paranormal Damage. + While you are in combat and your Energy is above 75%, has 5% chance every 1 sec to summon a Gremlin for 60 seconds. You cannot have more than one Gremlin active at a time. The Gremlin deals Dimensional damage to foes.",
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Dimensional"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Device_AnagonicAspect",
@@ -27852,8 +28206,10 @@
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
-    "tooltip": "5% Resistance to Ego Damage.+5 Resistance to Dimensional damage.+5 Resistance to Toxic damage.While you are in combat and your Energy is above 75%: Has a 10% chance every 1 sec to heal you for a small amount every 1 sec for 9 sec.",
-    "tags": [],
+    "tooltip": "5% resistance to Ego Damage. + 5% resistance to Dimensional damage. + 5% Resistance to Toxic damage. + While you are in combat and your Energy is above 75%, 10% chance every 1 sec to heal you for a small amount every 1 sec for 9 sec.",
+    "tags": [
+      "Heal"
+    ],
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
@@ -27874,9 +28230,13 @@
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
-    "tooltip": "5% Resistance to all Energy Damage. + While you are in combat and your Energy is below 25%: Has a 5% chance every 1 sec to blast foes in a 15 foot radius around you for heavy Particle damage, knocking them back.",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "5% resistance to all Energy damage. + If your energy is above 50%, has a 2.5% chance every 1 sec to blast foes in a 15ft radius around you for 1,600 Particle Damage as well as knocking them back. This effect will only occur while in combat. + If your energy is below 50%, 5% chance for this effect to occur.",
+    "tags": [
+      "Knock Back"
+    ],
+    "damage_type": [
+      "Particle"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Device_PrototypeOrbitalCannon",
@@ -27918,9 +28278,14 @@
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
-    "tooltip": "Increases your Energy damage resistance by 5% while equipped.While in combat and your health is below 25%, has a 15% chance per sec to deal Particle damage to foes within 10 feet of you. Affected foes are also affected by Plasma Burn and Knocked Back. %PlasmaBurn%",
-    "tags": [],
-    "damage_type": [],
+    "tooltip": "5% resistance to all Energy damage.  + While in combat and your health is below 25% the following effect can occur: 15% chance every 1 sec to deal Particle Damage to foes within 10ft of you. Also Knocks Back affected targets. + Applies Plasma Burn to affected targets, dealing Particle Damage every 1 sec for 16 sec. Stacks up to 5 times.",
+    "tags": [
+      "Knock Back",
+      "Plasma Burn"
+    ],
+    "damage_type": [
+      "Particle"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Device_Hyperconvection",
@@ -27940,8 +28305,11 @@
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
-    "tooltip": "Increases your Paranormal damage resistance by 5% while equipped.While in combat and your energy is above 75%: Has a 5% chance per sec to Fear targets within 15 feet of you. %Fear%Also has a 5% chance every 1 sec to Confuse targets for 8.3 sec. %Confused%",
-    "tags": [],
+    "tooltip": "5% resistance to all Paranormal damage. + When you are in combat and your energy is above 75% the following effect can occur: Targets within 15ft have a 5% chance every 1 sec to be Feared, reducing their damage by 10% for 12 sec. + If a target is a Henchmen, Villain or Enforcer, has a 5% chance every 1 sec to Confuse them for 10 sec, causing them to attack targets randomly.",
+    "tags": [
+      "Fear",
+      "Confuse"
+    ],
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
@@ -28402,8 +28770,10 @@
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
-    "tooltip": null,
-    "tags": [],
+    "tooltip": "5% resistance to all Physical damage. + When you are in combat and your health is below 25% the following effect can occur: 10% chance every 1 sec to cause you and allies within 5ft to heal for 2.5% health every 1 sec over 8 sec. This effect cannot be refreshed.",
+    "tags": [
+      "Heal"
+    ],
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
@@ -28424,8 +28794,10 @@
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
-    "tooltip": null,
-    "tags": [],
+    "tooltip": "5% resistance to all Elemental damage. + While your energy is above 75%, has a 10% chance every 1 sec to apply Fiery Retaliation for I0 sec. This can only occur while in combat. + If your energy is below 75%, has a 5% chance for this effect to occur. + While Fiery Retaliation is active, has a 20% chance every 1 sec to apply Clinging Flames to targets within 15ft, causing Fire Damage every 2 sec for 12 sec. Clinging Flames may leap to other foes near the target.",
+    "tags": [
+      "Clinging Flames"
+    ],
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
@@ -28516,17 +28888,23 @@
     "power_id": 911,
     "name": "Therakiel Dissonance",
     "tier": null,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [],
+    "activation_type": "MAINTAIN",
+    "activation_time": 0.5,
+    "max_duration": 5,
+    "tick_rate": 0.5,
+    "cooldown": 60,
+    "range_tags": [
+      "Targets foe (5 max)",
+      "100 feet",
+      "60 degree Cone"
+    ],
     "tooltip": null,
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Dimensional"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Device_TherakielDissonance",
@@ -28538,17 +28916,22 @@
     "power_id": 912,
     "name": "Taser Shot",
     "tier": null,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "FULL_CHARGE",
+    "activation_time": 0.83,
+    "max_duration": 1.67,
     "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [],
+    "cooldown": 60,
+    "range_tags": [
+      "Targets foe",
+      "50 feet"
+    ],
     "tooltip": null,
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Electrical"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "PVD_Taser",
@@ -28765,14 +29148,16 @@
     "power_id": 922,
     "name": "Chimeral Potion  of the Vulture",
     "tier": null,
-    "power_type": null,
+    "power_type": "HEAL",
     "advantages": [],
-    "activation_type": null,
+    "activation_type": "CLICK",
     "activation_time": null,
     "max_duration": null,
     "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [],
+    "cooldown": 90,
+    "range_tags": [
+      "Targets self"
+    ],
     "tooltip": null,
     "tags": [],
     "damage_type": [],
@@ -28787,17 +29172,23 @@
     "power_id": 923,
     "name": "Lemurian Sparks",
     "tier": null,
-    "power_type": null,
+    "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "MAINTAIN",
+    "activation_time": 0.67,
+    "max_duration": 5,
     "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [],
+    "cooldown": 45,
+    "range_tags": [
+      "Targets foe that is not destructible (5 max)",
+      "100 feet",
+      "15 foot Sphere"
+    ],
     "tooltip": null,
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Magic"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Device_LemurianSparks",
@@ -29139,17 +29530,19 @@
     "power_id": 939,
     "name": "Vikorin's Headdress",
     "tier": null,
-    "power_type": null,
+    "power_type": "MELEE_AOE_DAMAGE",
     "advantages": [],
-    "activation_type": null,
-    "activation_time": null,
-    "max_duration": null,
+    "activation_type": "FULL_CHARGE",
+    "activation_time": 0.67,
+    "max_duration": 2,
     "tick_rate": null,
-    "cooldown": null,
+    "cooldown": 30,
     "range_tags": [],
     "tooltip": null,
     "tags": [],
-    "damage_type": [],
+    "damage_type": [
+      "Dimensional"
+    ],
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Device_VikorinsHeaddress",
@@ -29347,6 +29740,81 @@
     "scaling_stats": [],
     "power_dependency": [],
     "icon_override": "Device_ColossusEssence",
+    "is_disabled": false
+  },
+  {
+    "powerset_id": null,
+    "framework_id": null,
+    "power_id": 948,
+    "name": "Nanomachines Pheromones",
+    "tier": null,
+    "power_type": "CROWD_CONTROL",
+    "advantages": [],
+    "activation_type": "FULL_CHARGE",
+    "activation_time": 0.9,
+    "max_duration": 0.5,
+    "tick_rate": null,
+    "cooldown": 90,
+    "range_tags": [
+      "Targets foes that is not destructible",
+      "50 feet",
+      "20 foot Sphere"
+    ],
+    "tooltip": null,
+    "tags": [],
+    "damage_type": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "icon_override": null,
+    "is_disabled": false
+  },
+  {
+    "powerset_id": null,
+    "framework_id": null,
+    "power_id": 949,
+    "name": "Dark Speed",
+    "tier": null,
+    "power_type": "TRAVEL_POWER",
+    "advantages": [],
+    "activation_type": "TOGGLE",
+    "activation_time": 1.5,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": 1,
+    "range_tags": [],
+    "tooltip": "Grants 184% Run Speed while active. Outside of Combat, you build up speed over time. After 4 seconds, you gain +169% Run Speed. After 10 seconds, you gain an additional +169% Run Speed. While moving quickly, your jump speed is slightly increases and foes are less likely to notice you. While active, you suffer a -9.4% penalty to Power Cost Discount and your Energy Building strength is reduced by 15%.",
+    "tags": [],
+    "damage_type": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "icon_override": null,
+    "is_disabled": false
+  },
+  {
+    "powerset_id": null,
+    "framework_id": null,
+    "power_id": 950,
+    "name": "Siphon Nightmares",
+    "tier": null,
+    "power_type": "RANGED_AOE_DAMAGE",
+    "advantages": [],
+    "activation_type": "MAINTAIN",
+    "activation_time": 1,
+    "max_duration": 8,
+    "tick_rate": 1,
+    "cooldown": 60,
+    "range_tags": [
+      "Affects foe that is not destructible (5 max)",
+      "20 foot Sphere"
+    ],
+    "tooltip": null,
+    "tags": [],
+    "damage_type": [
+      "Toxic"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "icon_override": null,
     "is_disabled": false
   }
 ]

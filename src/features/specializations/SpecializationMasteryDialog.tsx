@@ -57,7 +57,6 @@ export function SpecializationMasteryDialog({
             >
               <SpriteIcon name={mastery?.icon ?? "Any_Generic"} size={28} />
               <span>{mastery?.name ?? `Tree ${slotIndex + 1} Mastery`}</span>
-              <small>{tree?.name ?? "No tree selected"}</small>
             </button>
           );
         })}

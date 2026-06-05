@@ -7,7 +7,6 @@ import {
   getInnateTalentMatchPriority,
   getInnateTalentProfilePriority,
   getInnateTalentStatEntries,
-  getInnateTalentTip,
   getMatchingInnateTalentStatValue,
   getSelectedStatKeys,
 } from "@/utils/innateTalents";
@@ -96,17 +95,18 @@ export function InnateTalentSelectionDialog({
         {selectableTalents.map((talent) => {
           const isCurrent = selectedTalentId === talent.id;
           const stats = getInnateTalentStatEntries(talent, selectedStatKeys);
+          const isDenseStatLine = talent.name === "The Hero";
 
           return (
             <button
               className={[
                 "innate-choice",
                 isCurrent ? "innate-choice--current" : "",
+                isDenseStatLine ? "innate-choice--dense" : "",
               ]
                 .filter(Boolean)
                 .join(" ")}
               key={talent.id}
-              title={getInnateTalentTip(talent)}
               type="button"
               onClick={() => onSelectTalent(talent.id)}
             >

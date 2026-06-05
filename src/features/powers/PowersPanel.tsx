@@ -61,6 +61,8 @@ type FrameworkStripCell = {
 const tierOrder = [-1, 0, 1, 2, 3, 4, null] as const;
 const maxFrameworkStripColumns = 14;
 const keptTogetherFrameworkGroupIds = new Set(["martial-arts"]);
+const powerVariantsUnlockTooltip =
+  "Power Variant Devices have lower values and go on cooldown for 90 sec if you don't own the parent power. Ultimate Power Variants can't be used without the parent power.";
 const travelFrameworkOrder = [
   "Flight",
   "Superspeed",
@@ -111,7 +113,7 @@ function sectionUnlockTooltip(sectionKey: string) {
       return "You may have only one Ultimate power. Ultimate PVD and Ultimate powers share the same cooldown.";
     case "framework-variants":
     case "__power_variants__":
-      return "Power Variant Devices have lower values and go on cooldown when used without the parent power. Ultimate Power Variants can't be used without the parent power.";
+      return powerVariantsUnlockTooltip;
     default:
       return undefined;
   }
@@ -670,13 +672,14 @@ export function PowersPanel({
       onClick: (event: MouseEvent<HTMLButtonElement>) => void,
       showMultiSelectHint = false,
     ) {
-      const frameworkTooltip = getFrameworkGlossaryTooltipAttribute(
-        key,
-        title,
-        showMultiSelectHint
+      const isPowerVariantsButton = key === powerVariantsFilterId;
+      const hint =
+        showMultiSelectHint && !isPowerVariantsButton
           ? "Hold Shift to select multiple framework."
-          : null,
-      );
+          : null;
+      const frameworkTooltip = isPowerVariantsButton
+        ? undefined
+        : getFrameworkGlossaryTooltipAttribute(key, title, hint);
 
       return (
         <button
@@ -688,7 +691,7 @@ export function PowersPanel({
           disabled={isDisabled}
           key={key}
           onClick={onClick}
-          title={title}
+          title={isPowerVariantsButton ? powerVariantsUnlockTooltip : title}
           data-framework-tooltip={frameworkTooltip}
         >
           <SpriteIcon

@@ -489,7 +489,16 @@ export function BuildPanel({
                         </button>
                       </div>
                       {slot.power ? (
-                        <span className="build-entry__advantages">
+                        <span
+                          className={[
+                            "build-entry__advantages",
+                            !hasParentPower
+                              ? "build-entry__advantages--missing-parent"
+                              : "",
+                          ]
+                            .filter(Boolean)
+                            .join(" ")}
+                        >
                           {hasParentPower
                             ? `(${formatAdvantageText(inheritedAdvantages)})`
                             : "missing parent power"}

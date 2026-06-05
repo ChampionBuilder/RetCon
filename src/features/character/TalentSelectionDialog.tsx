@@ -2,11 +2,7 @@ import { useMemo } from "react";
 import { AnchoredSelectionDialog, type DialogAnchor } from "@/shared/ui";
 import type { SuperStat, Talent } from "@/types/character";
 import { getSelectedStatKeys } from "@/utils/innateTalents";
-import {
-  getSortedTalents,
-  getTalentStatEntries,
-  getTalentTip,
-} from "@/utils/talents";
+import { getSortedTalents, getTalentStatEntries } from "@/utils/talents";
 
 type TalentSelectionDialogProps = {
   anchor: DialogAnchor;
@@ -70,6 +66,7 @@ export function TalentSelectionDialog({
             !isCurrent &&
             selectedTalentIds.some((talentId) => talentId === talent.id);
           const stats = getTalentStatEntries(talent, selectedStatKeys);
+          const isDenseStatLine = talent.name === "Jack of All Trades";
 
           return (
             <button
@@ -77,11 +74,11 @@ export function TalentSelectionDialog({
                 "talent-choice",
                 isCurrent ? "talent-choice--current" : "",
                 isTaken ? "talent-choice--taken" : "",
+                isDenseStatLine ? "talent-choice--dense" : "",
               ]
                 .filter(Boolean)
                 .join(" ")}
               key={talent.id}
-              title={getTalentTip(talent)}
               type="button"
               onClick={() => onSelectTalent(slotIndex, talent.id)}
             >
