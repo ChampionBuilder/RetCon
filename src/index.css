@@ -49,15 +49,19 @@ button:disabled {
 @media (hover: none) and (pointer: coarse) {
   body {
     height: auto;
-    min-height: 100vh;
-    min-height: 100dvh;
+    min-height: calc(var(--visual-viewport-height, 100svh) + 48px);
     overflow-y: auto;
   }
 
   #root {
     height: auto;
-    min-height: 100vh;
-    min-height: 100dvh;
+    min-height: calc(var(--visual-viewport-height, 100svh) + 48px);
     overflow: visible;
+  }
+
+  #root::after {
+    display: block;
+    height: 48px;
+    content: "";
   }
 }

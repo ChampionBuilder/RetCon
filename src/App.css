@@ -463,8 +463,8 @@ h3 {
 
 @media (hover: none) and (pointer: coarse) {
   .app-shell {
-    height: auto;
-    min-height: calc(100dvh + 10px);
+    height: var(--visual-viewport-height, 100svh);
+    min-height: 0;
     overflow: visible;
   }
 }
