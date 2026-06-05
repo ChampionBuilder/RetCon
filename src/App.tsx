@@ -100,15 +100,6 @@ function isUltraCompactViewport() {
   return window.matchMedia(ultraCompactViewportQuery).matches;
 }
 
-function updateVisualViewportHeight() {
-  const viewportHeight = window.visualViewport?.height ?? window.innerHeight;
-
-  document.documentElement.style.setProperty(
-    "--visual-viewport-height",
-    `${viewportHeight}px`,
-  );
-}
-
 function CollapsibleWorkspacePanel({
   children,
   collapsed,
@@ -429,27 +420,6 @@ function App() {
         "change",
         collapsePowersPanelInUltraCompactMode,
       );
-    };
-  }, []);
-
-  useEffect(() => {
-    updateVisualViewportHeight();
-
-    window.visualViewport?.addEventListener("resize", updateVisualViewportHeight);
-    window.visualViewport?.addEventListener("scroll", updateVisualViewportHeight);
-    window.addEventListener("resize", updateVisualViewportHeight);
-
-    return () => {
-      window.visualViewport?.removeEventListener(
-        "resize",
-        updateVisualViewportHeight,
-      );
-      window.visualViewport?.removeEventListener(
-        "scroll",
-        updateVisualViewportHeight,
-      );
-      window.removeEventListener("resize", updateVisualViewportHeight);
-      document.documentElement.style.removeProperty("--visual-viewport-height");
     };
   }, []);
 

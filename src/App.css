@@ -461,14 +461,6 @@ h3 {
   }
 }
 
-@media (hover: none) and (pointer: coarse) {
-  .app-shell {
-    height: var(--visual-viewport-height, 100svh);
-    min-height: 0;
-    overflow: visible;
-  }
-}
-
 .tab-button:hover,
 .tab-button:focus-visible,
 .header-action-button:hover,
