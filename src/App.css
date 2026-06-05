@@ -464,7 +464,7 @@ h3 {
 @media (hover: none) and (pointer: coarse) {
   .app-shell {
     height: auto;
-    min-height: calc(100dvh + 1px);
+    min-height: calc(100dvh + 48px);
     overflow: visible;
   }
 }
