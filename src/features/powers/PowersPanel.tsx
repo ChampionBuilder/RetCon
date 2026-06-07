@@ -229,10 +229,17 @@ function isDebugMode() {
   );
 }
 
-type SearchPrefix = "activation" | "range" | "scale" | "tag" | "type";
+type SearchPrefix =
+  | "activation"
+  | "damage"
+  | "range"
+  | "scale"
+  | "tag"
+  | "type";
 
 type ParsedPowerSearch = {
   activationQueries: string[];
+  damageQueries: string[];
   normalQuery: string;
   rangeQueries: string[];
   scaleQueries: string[];
@@ -244,13 +251,15 @@ function parsePowerSearch(search: string): ParsedPowerSearch {
   const trimmedSearch = search.trim();
   const parsedSearch: ParsedPowerSearch = {
     activationQueries: [],
+    damageQueries: [],
     normalQuery: "",
     rangeQueries: [],
     scaleQueries: [],
     tagQueries: [],
     typeQueries: [],
   };
-  const prefixRegex = /\b(activation|range|scale|tag|type)\s*:/giu;
+  const prefixRegex =
+    /\b(activation|damage|range|scale|tag|type)\s*:/giu;
   const matches = [...trimmedSearch.matchAll(prefixRegex)];
 
   if (matches.length === 0) {
@@ -279,6 +288,11 @@ function parsePowerSearch(search: string): ParsedPowerSearch {
 
     if (prefix === "activation") {
       parsedSearch.activationQueries.push(query);
+      return;
+    }
+
+    if (prefix === "damage") {
+      parsedSearch.damageQueries.push(query);
       return;
     }
 
@@ -394,6 +408,7 @@ export function PowersPanel({
   const hasActivePowerSearchOrFilter =
     Boolean(parsedSearch.normalQuery) ||
     parsedSearch.activationQueries.some(Boolean) ||
+    parsedSearch.damageQueries.some(Boolean) ||
     parsedSearch.rangeQueries.some(Boolean) ||
     parsedSearch.scaleQueries.some(Boolean) ||
     parsedSearch.tagQueries.some(Boolean) ||
@@ -535,6 +550,38 @@ export function PowersPanel({
       });
     }
 
+    function matchesDamageSearch(power: Power, query: string) {
+      const normalizedDamageSearch = normalizeStrictSearchText(query);
+
+      if (!normalizedDamageSearch) {
+        return true;
+      }
+
+      const matchesPowerDamage =
+        searchInPowers &&
+        normalizeStrictSearchText(getPowerDamageTypes(power).join(" ")).includes(
+          normalizedDamageSearch,
+        );
+
+      if (matchesPowerDamage) {
+        return true;
+      }
+
+      if (!searchInAdvantages) {
+        return false;
+      }
+
+      return power.advantages.some((advantageId) => {
+        const advantage = advantagesById.get(advantageId);
+
+        return advantage
+          ? normalizeStrictSearchText(
+              getAdvantageDamageTypes(advantage).join(" "),
+            ).includes(normalizedDamageSearch)
+          : false;
+      });
+    }
+
     return powers.filter((power) => {
       if (
         restrictedPowerIds !== null &&
@@ -617,6 +664,14 @@ export function PowersPanel({
       if (
         parsedSearch.activationQueries.some(
           (query) => query && !matchesActivationSearch(power, query),
+        )
+      ) {
+        return false;
+      }
+
+      if (
+        parsedSearch.damageQueries.some(
+          (query) => query && !matchesDamageSearch(power, query),
         )
       ) {
         return false;
