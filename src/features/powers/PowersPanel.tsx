@@ -423,10 +423,7 @@ export function PowersPanel({
     selectedFrameworks === null && searchInPowers && hasActivePowerSearchOrFilter;
 
   const visiblePowers = useMemo(() => {
-    function matchesEffectGroupSearch(
-      tags: string[] | null | undefined,
-      query: string,
-    ) {
+    function matchesEffectGroupSearch(values: string[] | undefined, query: string) {
       const effectGroupTags = getEffectGroupTags(query);
 
       if (effectGroupTags.length === 0) {
@@ -434,7 +431,7 @@ export function PowersPanel({
       }
 
       return effectGroupTags.some((effectGroupTag) =>
-        normalizeSearchText(tags?.join(" ")).includes(
+        normalizeSearchText(values?.join(" ")).includes(
           normalizeSearchText(effectGroupTag),
         ),
       );
@@ -447,6 +444,7 @@ export function PowersPanel({
         normalizeSearchText(power.range_tags?.join(" ")).includes(query) ||
         normalizeSearchText(power.tags?.join(" ")).includes(query) ||
         matchesEffectGroupSearch(power.tags, query) ||
+        matchesEffectGroupSearch(getPowerDamageTypes(power), query) ||
         normalizeSearchText(power.tooltip).includes(query)
       );
     }
@@ -459,6 +457,10 @@ export function PowersPanel({
           normalizeSearchText(advantage?.name).includes(query) ||
           normalizeSearchText(advantage?.tags?.join(" ")).includes(query) ||
           matchesEffectGroupSearch(advantage?.tags, query) ||
+          matchesEffectGroupSearch(
+            advantage ? getAdvantageDamageTypes(advantage) : [],
+            query,
+          ) ||
           normalizeSearchText(advantage?.tooltip).includes(query)
         );
       });

@@ -45,6 +45,11 @@ const effectGroupAliases: Record<string, string[]> = {
     "Root",
     "Confuse",
   ],
+  "elemental damage": [
+    "Fire",
+    "Toxic",
+    "Cold",
+  ],
   "enchantments": [
     "Spellcaster",
     "Rune",
@@ -58,6 +63,11 @@ const effectGroupAliases: Record<string, string[]> = {
     "Illumination",
     "Mystified",
     "Light Everlasting",
+  ],
+  "energy damage": [
+    "Electrical",
+    "Sonic",
+    "Particle",
   ],
   "ice structures": [
     "Ice Cage",
@@ -84,6 +94,16 @@ const effectGroupAliases: Record<string, string[]> = {
     "Dependency",
     "Ego Leech",
     "Despondency",
+  ],
+  "paranormal damage": [
+    "Ego",
+    "Magic",
+    "Dimensional",
+  ],
+  "physical damage": [
+    "Slashing",
+    "Piercing",
+    "Crushing",
   ],
   "poisons": [
     "Deadly Poison",
