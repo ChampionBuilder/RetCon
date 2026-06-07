@@ -41,6 +41,7 @@ export function PowerTooltip({
       advantage.name,
       advantage.tooltip,
       advantage.tags.join(" "),
+      advantage.damageTypes.join(" "),
     ]
       .filter(Boolean)
       .join(" ")

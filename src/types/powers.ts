@@ -12,6 +12,8 @@ export type Power = {
   max_duration?: number | string | null;
   tick_rate?: number | string | null;
   cooldown?: number | string | null;
+  damage_type?: string[] | string | null;
+  damage_types?: string[] | string | null;
   tooltip?: string | null;
   range_tags?: string[];
   tags?: string[];

@@ -11,10 +11,35 @@ import type { Advantage } from "@/types/advantages";
 import type { BuildSlot } from "@/types/builds";
 import type { Power } from "@/types/powers";
 import { getFrameworkIconName, getPowerIconName } from "@/shared/utils/icons";
-import { getPowerType } from "@/shared/utils/powerTypes";
+import {
+  getNormalizedPowerType,
+  getPowerType,
+} from "@/shared/utils/powerTypes";
 import { getPowerTooltipText } from "@/shared/utils/powerText";
 import { getPowerTooltipAttribute } from "@/shared/utils/powerTooltip";
+import { getEffectGroupTags } from "@/utils/effectGroups";
 import { getFrameworkGlossaryTooltipAttribute } from "@/utils/frameworkGlossary";
+import {
+  powerActivationTypeOptions,
+  powerMatchesActivationTypeFilter,
+  type PowerActivationTypeFilter,
+} from "@/utils/powerActivationTypes";
+import {
+  getAdvantageDamageTypes,
+  getDamageTypeOptions,
+  getPowerDamageTypes,
+} from "@/utils/powerDamageTypes";
+import {
+  formatPowerRangeFilterLabel,
+  powerMatchesExactRange,
+  powerRangeSteps,
+} from "@/utils/powerRange";
+import { getPowerRoleOptions, getPowerRoles } from "@/utils/powerRoles";
+import {
+  powerMatchesTargetingFilter,
+  powerTargetingOptions,
+  type PowerTargetingFilter,
+} from "@/utils/powerTargeting";
 import {
   formatFrameworkName,
   getPowerDisplayFrameworkId,
@@ -76,6 +101,16 @@ const travelFrameworkLabels: Record<string, string> = {
   Superjump: "Super Jump",
   Superspeed: "Super Speed",
 };
+const scalingStatFilterOptions = [
+  "STR",
+  "DEX",
+  "CON",
+  "INT",
+  "EGO",
+  "PRE",
+  "REC",
+  "END",
+];
 
 function tierKey(tier: Power["tier"]) {
   return tier === null ? "travel" : String(tier);
@@ -138,36 +173,77 @@ function normalizeSearchText(value: string | null | undefined) {
 }
 
 function normalizeStrictSearchText(value: string | null | undefined) {
-  return normalizeSearchText(value).replace(/[_-]+/g, " ");
+  return normalizeSearchText(value)
+    .replace(/[_-]+/g, " ")
+    .replace(/[^a-z0-9]+/giu, " ")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 function getSearchablePowerType(power: Power) {
   const powerType = getPowerType(power) ?? "";
+  const normalizedPowerType = getNormalizedPowerType(power) ?? "";
+  const activationType = power.activation_type ?? "";
   const tierType = isUltimatePower(power) ? "Ultimate" : "";
+  const powerRoles = getPowerRoles(power).join(" ");
+  const powerTypeAliases =
+    normalizedPowerType === "TOGGLE_FORM" ? ["Toggle Forms"] : [];
 
-  return `${powerType} ${powerType.replace(/_/g, " ")} ${tierType}`;
+  return [
+    powerType,
+    powerType.replace(/_/g, " "),
+    normalizedPowerType,
+    normalizedPowerType.replace(/_/g, " "),
+    activationType,
+    activationType.replace(/_/g, " "),
+    tierType,
+    powerRoles,
+    ...powerTypeAliases,
+  ]
+    .filter(Boolean)
+    .join(" ");
 }
 
-type SearchPrefix = "adv" | "power" | "scale" | "type";
+function getSearchableRawPowerType(power: Power) {
+  const powerType = getPowerType(power) ?? "";
+  const normalizedPowerType = getNormalizedPowerType(power) ?? "";
+
+  return [
+    powerType,
+    powerType.replace(/_/g, " "),
+    normalizedPowerType,
+    normalizedPowerType.replace(/_/g, " "),
+  ]
+    .filter(Boolean)
+    .join(" ");
+}
+
+function normalizeScalingStat(value: string) {
+  return value.toLowerCase().replace(/[^a-z0-9]+/giu, "");
+}
+
+type SearchPrefix = "activation" | "range" | "scale" | "tag" | "type";
 
 type ParsedPowerSearch = {
-  advantageQueries: string[];
+  activationQueries: string[];
   normalQuery: string;
-  powerQueries: string[];
+  rangeQueries: string[];
   scaleQueries: string[];
+  tagQueries: string[];
   typeQueries: string[];
 };
 
 function parsePowerSearch(search: string): ParsedPowerSearch {
   const trimmedSearch = search.trim();
   const parsedSearch: ParsedPowerSearch = {
-    advantageQueries: [],
+    activationQueries: [],
     normalQuery: "",
-    powerQueries: [],
+    rangeQueries: [],
     scaleQueries: [],
+    tagQueries: [],
     typeQueries: [],
   };
-  const prefixRegex = /\b(adv|power|scale|type)\s*:/giu;
+  const prefixRegex = /\b(activation|range|scale|tag|type)\s*:/giu;
   const matches = [...trimmedSearch.matchAll(prefixRegex)];
 
   if (matches.length === 0) {
@@ -194,18 +270,23 @@ function parsePowerSearch(search: string): ParsedPowerSearch {
       return;
     }
 
-    if (prefix === "adv") {
-      parsedSearch.advantageQueries.push(query);
+    if (prefix === "activation") {
+      parsedSearch.activationQueries.push(query);
       return;
     }
 
-    if (prefix === "power") {
-      parsedSearch.powerQueries.push(query);
+    if (prefix === "range") {
+      parsedSearch.rangeQueries.push(query);
       return;
     }
 
     if (prefix === "scale") {
       parsedSearch.scaleQueries.push(query);
+      return;
+    }
+
+    if (prefix === "tag") {
+      parsedSearch.tagQueries.push(query);
       return;
     }
 
@@ -233,6 +314,20 @@ export function PowersPanel({
   onToggleCollapse,
 }: PowersPanelProps) {
   const [search, setSearch] = useState("");
+  const [isFilterPanelOpen, setIsFilterPanelOpen] = useState(false);
+  const [isScalingStatMenuOpen, setIsScalingStatMenuOpen] = useState(false);
+  const [isDamageTypeMenuOpen, setIsDamageTypeMenuOpen] = useState(false);
+  const [selectedPowerRoleFilter, setSelectedPowerRoleFilter] = useState("");
+  const [selectedScalingStats, setSelectedScalingStats] = useState<string[]>([]);
+  const [selectedDamageTypes, setSelectedDamageTypes] = useState<string[]>([]);
+  const [selectedRangeStepIndex, setSelectedRangeStepIndex] = useState(0);
+  const [selectedTargetingFilter, setSelectedTargetingFilter] = useState<
+    PowerTargetingFilter | ""
+  >("");
+  const [selectedActivationTypeFilter, setSelectedActivationTypeFilter] =
+    useState<PowerActivationTypeFilter | "">("");
+  const [searchInPowers, setSearchInPowers] = useState(true);
+  const [searchInAdvantages, setSearchInAdvantages] = useState(false);
   const [closedSections, setClosedSections] = useState<string[]>([]);
   const [
     handledEnergyBuilderPanelRequestVersion,
@@ -245,8 +340,12 @@ export function PowersPanel({
   const [frameworkStripColumns, setFrameworkStripColumns] = useState(1);
   const frameworkStripRef = useRef<HTMLDivElement | null>(null);
   const parsedSearch = useMemo(() => parsePowerSearch(search), [search]);
-  const forceAdvancedPowerTooltip = parsedSearch.advantageQueries.length > 0;
-  const advantageHighlightQueries = parsedSearch.advantageQueries.filter(Boolean);
+  const forceAdvancedPowerTooltip = searchInAdvantages;
+  const advantageHighlightQueries = [
+    ...(searchInAdvantages ? parsedSearch.tagQueries : []),
+    searchInAdvantages ? parsedSearch.normalQuery : "",
+    ...(searchInAdvantages ? selectedDamageTypes : []),
+  ].filter(Boolean);
   const hasEnergyBuilder = buildSlots.some((slot) => slot.power?.tier === -1);
   const hadEnergyBuilderRef = useRef(hasEnergyBuilder);
   const isTravelMode = isUtilityFrameworkSelection(
@@ -269,42 +368,82 @@ export function PowersPanel({
   const advantagesById = useMemo(() => {
     return new Map(advantages.map((advantage) => [advantage.advantage_id, advantage]));
   }, [advantages]);
+  const powerRoleFilterOptions = useMemo(
+    () => getPowerRoleOptions(powers),
+    [powers],
+  );
+  const damageTypeFilterOptions = useMemo(
+    () => getDamageTypeOptions(powers, advantages),
+    [advantages, powers],
+  );
+  const selectedMinimumRange = powerRangeSteps[selectedRangeStepIndex] ?? null;
+  const hasActivePowerSearchOrFilter =
+    Boolean(parsedSearch.normalQuery) ||
+    parsedSearch.activationQueries.some(Boolean) ||
+    parsedSearch.rangeQueries.some(Boolean) ||
+    parsedSearch.scaleQueries.some(Boolean) ||
+    parsedSearch.tagQueries.some(Boolean) ||
+    parsedSearch.typeQueries.some(Boolean) ||
+    Boolean(selectedPowerRoleFilter) ||
+    selectedScalingStats.length > 0 ||
+    selectedDamageTypes.length > 0 ||
+    selectedMinimumRange !== null ||
+    Boolean(selectedTargetingFilter) ||
+    Boolean(selectedActivationTypeFilter);
+  const includeAllFrameworkPowerVariants =
+    selectedFrameworks === null && searchInPowers && hasActivePowerSearchOrFilter;
 
   const visiblePowers = useMemo(() => {
-    function matchesGeneralSearch(power: Power, query: string) {
+    function matchesEffectGroupSearch(
+      tags: string[] | null | undefined,
+      query: string,
+    ) {
+      const effectGroupTags = getEffectGroupTags(query);
+
+      if (effectGroupTags.length === 0) {
+        return false;
+      }
+
+      return effectGroupTags.some((effectGroupTag) =>
+        normalizeSearchText(tags?.join(" ")).includes(
+          normalizeSearchText(effectGroupTag),
+        ),
+      );
+    }
+
+    function matchesGeneralPowerSearch(power: Power, query: string) {
       return (
         normalizeSearchText(power.name).includes(query) ||
         normalizeSearchText(getSearchablePowerType(power)).includes(query) ||
         normalizeSearchText(power.range_tags?.join(" ")).includes(query) ||
-        normalizeSearchText(power.tooltip).includes(query) ||
-        power.advantages.some((advantageId) =>
-          normalizeSearchText(advantagesById.get(advantageId)?.tooltip).includes(
-            query,
-          ),
-        )
+        normalizeSearchText(power.tags?.join(" ")).includes(query) ||
+        matchesEffectGroupSearch(power.tags, query) ||
+        normalizeSearchText(power.tooltip).includes(query)
       );
     }
 
-    function matchesAdvantageSearch(power: Power, query: string) {
+    function matchesGeneralAdvantageSearch(power: Power, query: string) {
       return power.advantages.some((advantageId) => {
         const advantage = advantagesById.get(advantageId);
 
         return (
           normalizeSearchText(advantage?.name).includes(query) ||
+          normalizeSearchText(advantage?.tags?.join(" ")).includes(query) ||
+          matchesEffectGroupSearch(advantage?.tags, query) ||
           normalizeSearchText(advantage?.tooltip).includes(query)
         );
       });
     }
 
-    function matchesPowerSearch(power: Power, query: string) {
+    function matchesGeneralSearch(power: Power, query: string) {
       return (
-        normalizeSearchText(power.name).includes(query) ||
-        normalizeSearchText(power.tooltip).includes(query)
+        (searchInPowers && matchesGeneralPowerSearch(power, query)) ||
+        (searchInAdvantages && matchesGeneralAdvantageSearch(power, query))
       );
     }
 
     function matchesScalingStatSearch(power: Power, query: string) {
-      const normalizedScalingStatSearch = query.replace(/[^a-z0-9]+/giu, "");
+      const normalizedScalingStatSearch = normalizeScalingStat(query);
 
       if (!normalizedScalingStatSearch) {
         return true;
@@ -312,15 +451,74 @@ export function PowersPanel({
 
       return (power.scaling_stats ?? []).some(
         (scalingStat) =>
-          scalingStat.toLowerCase().replace(/[^a-z0-9]+/giu, "") ===
-          normalizedScalingStatSearch,
+          normalizeScalingStat(scalingStat) === normalizedScalingStatSearch,
+      );
+    }
+
+    function matchesTagSearch(power: Power, query: string) {
+      const normalizedTagSearch = normalizeStrictSearchText(query);
+
+      if (!normalizedTagSearch) {
+        return true;
+      }
+
+      const matchesPowerTags =
+        searchInPowers &&
+        normalizeStrictSearchText(power.tags?.join(" ")).includes(
+          normalizedTagSearch,
+        );
+
+      if (matchesPowerTags) {
+        return true;
+      }
+
+      if (!searchInAdvantages) {
+        return false;
+      }
+
+      return power.advantages.some((advantageId) => {
+        const advantage = advantagesById.get(advantageId);
+
+        return normalizeStrictSearchText(advantage?.tags?.join(" ")).includes(
+          normalizedTagSearch,
+        );
+      });
+    }
+
+    function matchesRangeSearch(power: Power, query: string) {
+      return normalizeStrictSearchText(power.range_tags?.join(" ")).includes(
+        normalizeStrictSearchText(query),
       );
     }
 
     function matchesTypeSearch(power: Power, query: string) {
-      return normalizeStrictSearchText(getSearchablePowerType(power)).includes(
+      return normalizeStrictSearchText(getSearchableRawPowerType(power)).includes(
         normalizeStrictSearchText(query),
       );
+    }
+
+    function matchesActivationSearch(power: Power, query: string) {
+      return normalizeStrictSearchText(power.activation_type).includes(
+        normalizeStrictSearchText(query),
+      );
+    }
+
+    function matchesDamageTypeFilter(power: Power, damageType: string) {
+      if (searchInPowers && getPowerDamageTypes(power).includes(damageType)) {
+        return true;
+      }
+
+      if (!searchInAdvantages) {
+        return false;
+      }
+
+      return power.advantages.some((advantageId) => {
+        const advantage = advantagesById.get(advantageId);
+
+        return advantage
+          ? getAdvantageDamageTypes(advantage).includes(damageType)
+          : false;
+      });
     }
 
     return powers.filter((power) => {
@@ -348,7 +546,8 @@ export function PowersPanel({
           !isPowerVariantsMode &&
           !isDevicesMode &&
           !isTravelMode &&
-          !isPowerVisibleInSelectedFrameworks(power, selectedFrameworks)
+          !isPowerVisibleInSelectedFrameworks(power, selectedFrameworks) &&
+          !(includeAllFrameworkPowerVariants && isPowerVariantDevice(power))
         ) {
           return false;
         }
@@ -362,16 +561,56 @@ export function PowersPanel({
       }
 
       if (
-        parsedSearch.advantageQueries.some(
-          (query) => query && !matchesAdvantageSearch(power, query),
+        selectedPowerRoleFilter &&
+        !getPowerRoles(power).includes(selectedPowerRoleFilter)
+      ) {
+        return false;
+      }
+
+      if (
+        selectedScalingStats.length > 0 &&
+        !selectedScalingStats.some((stat) => matchesScalingStatSearch(power, stat))
+      ) {
+        return false;
+      }
+
+      if (
+        selectedDamageTypes.length > 0 &&
+        !selectedDamageTypes.some((damageType) =>
+          matchesDamageTypeFilter(power, damageType),
         )
       ) {
         return false;
       }
 
       if (
-        parsedSearch.powerQueries.some(
-          (query) => query && !matchesPowerSearch(power, query),
+        selectedMinimumRange !== null &&
+        !powerMatchesExactRange(power, selectedMinimumRange)
+      ) {
+        return false;
+      }
+
+      if (!powerMatchesTargetingFilter(power, selectedTargetingFilter)) {
+        return false;
+      }
+
+      if (
+        !powerMatchesActivationTypeFilter(power, selectedActivationTypeFilter)
+      ) {
+        return false;
+      }
+
+      if (
+        parsedSearch.activationQueries.some(
+          (query) => query && !matchesActivationSearch(power, query),
+        )
+      ) {
+        return false;
+      }
+
+      if (
+        parsedSearch.rangeQueries.some(
+          (query) => query && !matchesRangeSearch(power, query),
         )
       ) {
         return false;
@@ -380,6 +619,14 @@ export function PowersPanel({
       if (
         parsedSearch.scaleQueries.some(
           (query) => query && !matchesScalingStatSearch(power, query),
+        )
+      ) {
+        return false;
+      }
+
+      if (
+        parsedSearch.tagQueries.some(
+          (query) => query && !matchesTagSearch(power, query),
         )
       ) {
         return false;
@@ -400,7 +647,16 @@ export function PowersPanel({
     parsedSearch,
     powers,
     restrictedPowerIds,
+    searchInAdvantages,
+    searchInPowers,
+    selectedDamageTypes,
+    selectedScalingStats,
+    selectedMinimumRange,
+    selectedTargetingFilter,
+    selectedActivationTypeFilter,
+    selectedPowerRoleFilter,
     selectedFrameworks,
+    includeAllFrameworkPowerVariants,
     isPowerVariantsMode,
     isDevicesMode,
     isTravelMode,
@@ -640,6 +896,59 @@ export function PowersPanel({
     );
   }
 
+  function toggleScalingStatFilter(stat: string, isSelected: boolean) {
+    setSelectedScalingStats((currentStats) => {
+      if (isSelected) {
+        return currentStats.includes(stat)
+          ? currentStats
+          : [...currentStats, stat];
+      }
+
+      return currentStats.filter((currentStat) => currentStat !== stat);
+    });
+  }
+
+  function toggleDamageTypeFilter(damageType: string, isSelected: boolean) {
+    setSelectedDamageTypes((currentDamageTypes) => {
+      if (isSelected) {
+        return currentDamageTypes.includes(damageType)
+          ? currentDamageTypes
+          : [...currentDamageTypes, damageType];
+      }
+
+      return currentDamageTypes.filter(
+        (currentDamageType) => currentDamageType !== damageType,
+      );
+    });
+  }
+
+  function selectedScalingStatsLabel() {
+    return selectedScalingStats.length > 0
+      ? selectedScalingStats.join(";")
+      : "Any stats";
+  }
+
+  function selectedDamageTypesLabel() {
+    return selectedDamageTypes.length > 0
+      ? selectedDamageTypes.join(";")
+      : "Any damage";
+  }
+
+  function selectedRangeLabel() {
+    return formatPowerRangeFilterLabel(selectedMinimumRange);
+  }
+
+  function resetAdvancedFilters() {
+    setSelectedPowerRoleFilter("");
+    setSelectedScalingStats([]);
+    setSelectedDamageTypes([]);
+    setSelectedRangeStepIndex(0);
+    setSelectedTargetingFilter("");
+    setSelectedActivationTypeFilter("");
+    setIsScalingStatMenuOpen(false);
+    setIsDamageTypeMenuOpen(false);
+  }
+
   function renderFrameworkStripItems() {
     const frameworkStripRows = 2;
     const firstFrameworkColumn = () => 0;
@@ -775,7 +1084,14 @@ export function PowersPanel({
           !framework.selectable,
           framework.iconId ?? getFrameworkIconName(framework.id),
           framework.title,
-          () => onSelectFramework(framework.id, false),
+          () => {
+            const isActive = isUtilityFrameworkSelection(
+              selectedFrameworks,
+              framework.id,
+            );
+
+            onSelectFramework(isActive ? null : framework.id, false);
+          },
           false,
         ),
         isEmpty: false,
@@ -833,25 +1149,214 @@ export function PowersPanel({
         {renderFrameworkStripItems()}
       </div>
 
-      <div className="search-field">
-        <label htmlFor="powers-search">Search powers</label>
-        <input
-          id="powers-search"
-          value={search}
-          placeholder="Search powers..."
-          onChange={(event) => setSearch(event.target.value)}
-        />
-        {search ? (
-          <button
-            aria-label="Clear power search"
-            className="search-field__clear"
-            type="button"
-            onClick={() => setSearch("")}
-          >
-            X
-          </button>
-        ) : null}
+      <div className="search-row">
+        <div className="search-field">
+          <label htmlFor="powers-search">Search powers</label>
+          <input
+            id="powers-search"
+            value={search}
+            placeholder="Search powers..."
+            onChange={(event) => setSearch(event.target.value)}
+          />
+          {search ? (
+            <button
+              aria-label="Clear power search"
+              className="search-field__clear"
+              type="button"
+              onClick={() => setSearch("")}
+            >
+              X
+            </button>
+          ) : null}
+        </div>
+        <label className="search-scope-checkbox">
+          <input
+            checked={searchInPowers}
+            type="checkbox"
+            onChange={(event) => setSearchInPowers(event.target.checked)}
+          />
+          <span>Powers</span>
+        </label>
+        <label className="search-scope-checkbox">
+          <input
+            checked={searchInAdvantages}
+            type="checkbox"
+            onChange={(event) => setSearchInAdvantages(event.target.checked)}
+          />
+          <span>Adv</span>
+        </label>
+        <button
+          aria-label="Expand advanced power filters"
+          aria-expanded={isFilterPanelOpen}
+          className={
+            isFilterPanelOpen
+              ? "search-filter-button search-filter-button--active"
+              : "search-filter-button"
+          }
+          type="button"
+          onClick={() => setIsFilterPanelOpen((isOpen) => !isOpen)}
+        >
+          Filter
+        </button>
       </div>
+
+      {isFilterPanelOpen ? (
+        <div className="search-filter-panel">
+          <label className="search-filter-panel__field search-filter-panel__field--type">
+            <span className="search-filter-panel__label">Power type</span>
+            <select
+              value={selectedPowerRoleFilter}
+              onChange={(event) => setSelectedPowerRoleFilter(event.target.value)}
+            >
+              <option value="">Any type</option>
+              {powerRoleFilterOptions.map((option) => (
+                <option key={option.value} value={option.value}>
+                  {option.label}
+                </option>
+              ))}
+            </select>
+          </label>
+
+          <label className="search-filter-panel__field search-filter-panel__field--targeting">
+            <span className="search-filter-panel__label">Targeting</span>
+            <select
+              value={selectedTargetingFilter}
+              onChange={(event) =>
+                setSelectedTargetingFilter(
+                  event.target.value as PowerTargetingFilter | "",
+                )
+              }
+            >
+              <option value="">Any targeting</option>
+              {powerTargetingOptions.map((option) => (
+                <option key={option} value={option}>
+                  {option}
+                </option>
+              ))}
+            </select>
+          </label>
+
+          <label className="search-filter-panel__field search-filter-panel__field--activation">
+            <span className="search-filter-panel__label">Activation type</span>
+            <select
+              value={selectedActivationTypeFilter}
+              onChange={(event) =>
+                setSelectedActivationTypeFilter(
+                  event.target.value as PowerActivationTypeFilter | "",
+                )
+              }
+            >
+              <option value="">Any activation</option>
+              {powerActivationTypeOptions.map((option) => (
+                <option key={option} value={option}>
+                  {option}
+                </option>
+              ))}
+            </select>
+          </label>
+
+          <label className="search-filter-panel__field search-filter-panel__field--range">
+            <span className="search-filter-panel__label">Range</span>
+            <div className="search-filter-range">
+              <span className="search-filter-range__value">
+                {selectedRangeLabel()}
+              </span>
+              <input
+                max={powerRangeSteps.length - 1}
+                min={0}
+                type="range"
+                value={selectedRangeStepIndex}
+                onChange={(event) =>
+                  setSelectedRangeStepIndex(Number(event.target.value))
+                }
+              />
+            </div>
+          </label>
+
+          <div className="search-filter-panel__field search-filter-panel__field--damage">
+            <span className="search-filter-panel__label">Damage type</span>
+            <div className="search-filter-dropdown">
+              <button
+                aria-expanded={isDamageTypeMenuOpen}
+                className="search-filter-dropdown__button"
+                type="button"
+                onClick={() => setIsDamageTypeMenuOpen((isOpen) => !isOpen)}
+              >
+                <span>{selectedDamageTypesLabel()}</span>
+                <span className="search-filter-dropdown__arrow" />
+              </button>
+
+              {isDamageTypeMenuOpen ? (
+                <div className="search-filter-dropdown__menu search-filter-dropdown__menu--damage">
+                  {damageTypeFilterOptions.map((damageType) => (
+                    <label
+                      className="search-filter-panel__checkbox search-filter-panel__checkbox--stat"
+                      key={damageType}
+                    >
+                      <input
+                        checked={selectedDamageTypes.includes(damageType)}
+                        type="checkbox"
+                        onChange={(event) =>
+                          toggleDamageTypeFilter(
+                            damageType,
+                            event.target.checked,
+                          )
+                        }
+                      />
+                      <span>{damageType}</span>
+                    </label>
+                  ))}
+                </div>
+              ) : null}
+            </div>
+          </div>
+
+          <div className="search-filter-panel__field search-filter-panel__field--stats">
+            <span className="search-filter-panel__label">Scaling stats</span>
+            <div className="search-filter-dropdown">
+              <button
+                aria-expanded={isScalingStatMenuOpen}
+                className="search-filter-dropdown__button"
+                type="button"
+                onClick={() => setIsScalingStatMenuOpen((isOpen) => !isOpen)}
+              >
+                <span>{selectedScalingStatsLabel()}</span>
+                <span className="search-filter-dropdown__arrow" />
+              </button>
+
+              {isScalingStatMenuOpen ? (
+                <div className="search-filter-dropdown__menu">
+                  {scalingStatFilterOptions.map((stat) => (
+                    <label
+                      className="search-filter-panel__checkbox search-filter-panel__checkbox--stat"
+                      key={stat}
+                    >
+                      <input
+                        checked={selectedScalingStats.includes(stat)}
+                        type="checkbox"
+                        onChange={(event) =>
+                          toggleScalingStatFilter(stat, event.target.checked)
+                        }
+                      />
+                      <span>{stat}</span>
+                    </label>
+                  ))}
+                </div>
+              ) : null}
+            </div>
+          </div>
+
+          <div className="search-filter-panel__actions">
+            <button
+              className="search-filter-reset-button"
+              type="button"
+              onClick={resetAdvancedFilters}
+            >
+              Reset
+            </button>
+          </div>
+        </div>
+      ) : null}
 
       <div className="power-tier-list">
         {powerSections.map((section) => {

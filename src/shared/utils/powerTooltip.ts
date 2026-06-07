@@ -6,6 +6,7 @@ import {
   formatTooltipLabel,
 } from "./tooltipText";
 import { getNormalizedPowerType, getPowerType } from "./powerTypes";
+import { getAdvantageDamageTypes } from "@/utils/powerDamageTypes";
 
 export type AdvantageTooltipData = {
   id: number;
@@ -13,6 +14,7 @@ export type AdvantageTooltipData = {
   pointsCost: number | null;
   tooltip: string | null;
   tags: string[];
+  damageTypes: string[];
 };
 
 export type PowerTooltipData = {
@@ -34,14 +36,21 @@ function formatSeconds(value: number | string | null | undefined) {
     return null;
   }
 
-  const numericValue =
-    typeof value === "number" ? value : Number.parseFloat(String(value));
+  if (typeof value === "number") {
+    if (!Number.isFinite(value)) {
+      return null;
+    }
 
-  if (!Number.isFinite(numericValue)) {
+    return `${value} sec`;
+  }
+
+  const normalizedValue = String(value).trim().replace(/,/g, ".");
+
+  if (!/\d/.test(normalizedValue)) {
     return null;
   }
 
-  return `${numericValue} sec`;
+  return `${normalizedValue} sec`;
 }
 
 function formatTier(value: number | null | undefined) {
@@ -121,6 +130,7 @@ function getAdvantageTooltipData(
       tags: (advantage.tags ?? [])
         .map((tag) => formatTooltipLabel(tag))
         .filter((tag): tag is string => Boolean(tag)),
+      damageTypes: getAdvantageDamageTypes(advantage),
     }));
 }
 
