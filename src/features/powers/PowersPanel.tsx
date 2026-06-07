@@ -222,6 +222,13 @@ function normalizeScalingStat(value: string) {
   return value.toLowerCase().replace(/[^a-z0-9]+/giu, "");
 }
 
+function isDebugMode() {
+  return (
+    typeof window !== "undefined" &&
+    new URLSearchParams(window.location.search).get("dbg") === "1"
+  );
+}
+
 type SearchPrefix = "activation" | "range" | "scale" | "tag" | "type";
 
 type ParsedPowerSearch = {
@@ -375,6 +382,13 @@ export function PowersPanel({
   const damageTypeFilterOptions = useMemo(
     () => getDamageTypeOptions(powers, advantages),
     [advantages, powers],
+  );
+  const targetingFilterOptions = useMemo(
+    () =>
+      isDebugMode()
+        ? powerTargetingOptions
+        : powerTargetingOptions.filter((option) => option !== "Special"),
+    [],
   );
   const selectedMinimumRange = powerRangeSteps[selectedRangeStepIndex] ?? null;
   const hasActivePowerSearchOrFilter =
@@ -1183,7 +1197,7 @@ export function PowersPanel({
             type="checkbox"
             onChange={(event) => setSearchInAdvantages(event.target.checked)}
           />
-          <span>Adv</span>
+          <span>Adv.</span>
         </label>
         <button
           aria-label="Expand advanced power filters"
@@ -1228,7 +1242,7 @@ export function PowersPanel({
               }
             >
               <option value="">Any targeting</option>
-              {powerTargetingOptions.map((option) => (
+              {targetingFilterOptions.map((option) => (
                 <option key={option} value={option}>
                   {option}
                 </option>
