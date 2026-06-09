@@ -76,6 +76,23 @@ function AdvantageTooltip({ data }: { data: AdvantageTooltipData }) {
   );
 }
 
+function TextTooltip({ text }: { text: string }) {
+  const lines = text
+    .replace(/<br\s*\/?>/giu, "\n")
+    .split(/\r?\n/u);
+
+  return (
+    <>
+      {lines.map((line, index) => (
+        <span key={`${line}-${index}`}>
+          {index > 0 ? <br /> : null}
+          {line}
+        </span>
+      ))}
+    </>
+  );
+}
+
 type InstantTooltipContentProps = {
   advantageHighlightQueries: string[];
   content: TooltipContent;
@@ -109,5 +126,5 @@ export function InstantTooltipContent({
     return <FrameworkTooltip data={content.data} />;
   }
 
-  return content.text;
+  return <TextTooltip text={content.text} />;
 }

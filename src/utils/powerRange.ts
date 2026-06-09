@@ -13,8 +13,10 @@ export const powerRangeSteps = [
   75,
   80,
   100,
-  120,
+  "100+",
 ] as const;
+
+export type PowerRangeFilter = (typeof powerRangeSteps)[number];
 
 const volumePattern = /\b(?:cone|cylinder|cuminder|sphere|degree)\b/i;
 const targetPattern =
@@ -68,16 +70,27 @@ export function getPowerRangeFeet(power: Power) {
   return targetsSelfOnly ? 0 : null;
 }
 
-export function formatPowerRangeFilterLabel(range: number | null) {
+export function formatPowerRangeFilterLabel(range: PowerRangeFilter) {
   if (range === null) {
     return "Any range";
+  }
+
+  if (range === "100+") {
+    return "100+ ft";
   }
 
   return `${range} ft`;
 }
 
-export function powerMatchesExactRange(power: Power, expectedRange: number) {
+export function powerMatchesExactRange(
+  power: Power,
+  expectedRange: Exclude<PowerRangeFilter, null>,
+) {
   const powerRange = getPowerRangeFeet(power);
+
+  if (expectedRange === "100+") {
+    return powerRange !== null && powerRange > 100;
+  }
 
   return powerRange === expectedRange;
 }

@@ -629,7 +629,7 @@
           "maxPoints": 3,
           "name": "Outburst",
           "icon": "/spec-icons/superstat/endurance/Specialization_Outburst.png",
-          "tip": "When your Energy is above 90%, the Damage on your attacks is increased by 5/10/15% base damage.<br>The Healing portions of your powers are increased by 5/10/15%.<br>Your power costs are increased by 5/10/15%."
+          "tip": "When your Energy is above 90%:<br>The Damage on your attacks is increased by 5/10/15% base damage.<br>The Healing portions of your powers are increased by 5/10/15%.<br>Your power costs are increased by 5/10/15%."
         },
         {
           "id": 6,
