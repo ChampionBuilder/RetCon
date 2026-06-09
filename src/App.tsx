@@ -1608,6 +1608,7 @@ function App() {
             buildSlots={buildSlots}
             travelPowerSlots={travelPowerSlots}
             powerVariantSlots={powerVariantSlots}
+            powers={selectablePowers}
             camsLevel={camsLevel}
             camsIconName={camsIconName}
             camsMenuOpen={camsMenuOpen}

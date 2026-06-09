@@ -2700,7 +2700,7 @@
     "advantage_id": 188,
     "name": "Engulfing Flames",
     "points_cost": 2,
-    "tooltip": "Applies Engulfing Flames to targets affected by Clinging Flames. Engulfing Flames deals Fire damage every 2 seconds for 10 seconds.",
+    "tooltip": "Applies Engulfing Flames to your target if they are affected by Clinging Flames, reducing their resistance to your Fire damage. Removes all of your Clinging Flames on foes.",
     "tags": [
       "Engulfing Flames",
       "Clinging Flames"
@@ -2893,7 +2893,7 @@
     "advantage_id": 201,
     "name": "Explosive",
     "points_cost": 2,
-    "tooltip": "When fully charge, refreshes your Engulfing Flames debuff. Increases the range of the area effect primary target base don the number of Engulfing Flames on your primary target.",
+    "tooltip": "When fully charge, refreshes your Engulfing Flames debuff. Increases the range of the area effect primary target based on the number of Engulfing Flames on your primary target.",
     "tags": [
       "Engulfing Flames"
     ],
@@ -9961,7 +9961,7 @@
     "advantage_id": 678,
     "name": "Engulfing Flames",
     "points_cost": 2,
-    "tooltip": "Applies Engulfing Flames to the target. Engulfing Flames deals Fire damage every 2 seconds for 10 seconds.",
+    "tooltip": "Applies Engulfing Flames to your target, reducing their resistance to your Fire damage.",
     "tags": [
       "Engulfing Flames"
     ],

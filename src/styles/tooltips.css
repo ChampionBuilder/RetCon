@@ -191,6 +191,22 @@
   padding-left: 1px;
 }
 
+.power-tooltip__parents,
+.power-tooltip__source {
+  display: flex;
+  gap: 4px;
+  align-items: baseline;
+  margin-top: 2px;
+  color: #c8d1e4;
+  font-size: 12px;
+}
+
+.power-tooltip__parents strong,
+.power-tooltip__source strong {
+  flex: 0 0 auto;
+  color: #f2d77b;
+}
+
 .power-tooltip-advantages {
   display: grid;
   gap: 8px;

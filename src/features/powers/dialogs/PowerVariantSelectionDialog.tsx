@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import type { BuildSlot } from "@/types/builds";
 import type { Power } from "@/types/powers";
 import { arrangeItemsByColumns } from "@/shared/utils/gridLayout";
@@ -50,6 +50,9 @@ export function PowerVariantSelectionDialog({
   onClose,
   onSelectPowerVariant,
 }: PowerVariantSelectionDialogProps) {
+  const powersById = useMemo(() => {
+    return new Map(powers.map((power) => [power.power_id, power]));
+  }, [powers]);
   const powerVariants = powers.filter((power) => isPowerVariantDevice(power));
   const frameworkGroups = getFrameworkGroupsForIds(
     powerVariants.map((power) => power.framework_id),
@@ -192,7 +195,11 @@ export function PowerVariantSelectionDialog({
                         .filter(Boolean)
                         .join(" ")}
                       key={power.power_id}
-                      data-power-tooltip={getPowerTooltipAttribute(power)}
+                      data-power-tooltip={getPowerTooltipAttribute(
+                        power,
+                        undefined,
+                        powersById,
+                      )}
                       title={getPowerTooltipText(power)}
                       type="button"
                       onClick={() =>

@@ -1,3 +1,4 @@
+import { useMemo } from "react";
 import type { BuildSlot } from "@/types/builds";
 import type { Power } from "@/types/powers";
 import { arrangeItemsByColumns } from "@/shared/utils/gridLayout";
@@ -25,6 +26,9 @@ export function DeviceSelectionDialog({
   onClose,
   onSelectDevice,
 }: DeviceSelectionDialogProps) {
+  const powersById = useMemo(() => {
+    return new Map(powers.map((power) => [power.power_id, power]));
+  }, [powers]);
   const devices = powers.filter((power) => isStandardDevice(power));
   const frameworkIds = Array.from(
     new Set(devices.map((device) => device.framework_id)),
@@ -75,7 +79,11 @@ export function DeviceSelectionDialog({
                         .filter(Boolean)
                         .join(" ")}
                       key={device.power_id}
-                      data-power-tooltip={getPowerTooltipAttribute(device)}
+                      data-power-tooltip={getPowerTooltipAttribute(
+                        device,
+                        undefined,
+                        powersById,
+                      )}
                       title={getPowerTooltipText(device)}
                       type="button"
                       onClick={() => onSelectDevice(buildSlot.slot, device)}

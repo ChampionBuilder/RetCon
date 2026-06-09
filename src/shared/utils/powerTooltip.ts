@@ -27,6 +27,8 @@ export type PowerTooltipData = {
   rangeTags: string[];
   tags: string[];
   effects: string[];
+  parentPowers: string[];
+  sources: string[];
   advantages: AdvantageTooltipData[];
   fallbackText: string | null;
 };
@@ -162,9 +164,36 @@ function splitEffects(text: string) {
   return splitSentences(normalizedText);
 }
 
+function splitSourceValues(value: string[] | string | null | undefined) {
+  if (!value) {
+    return [];
+  }
+
+  const values = Array.isArray(value) ? value : [value];
+
+  return values
+    .flatMap((source) => String(source).split(";"))
+    .map((source) => source.trim())
+    .filter(Boolean);
+}
+
+function getParentPowerNames(
+  power: Power,
+  powersById: ReadonlyMap<number, Power> | null | undefined,
+) {
+  if (!isPowerVariantDevice(power) || !powersById) {
+    return [];
+  }
+
+  return (power.power_dependency ?? [])
+    .map((powerId) => powersById.get(powerId)?.name)
+    .filter((name): name is string => Boolean(name));
+}
+
 export function getPowerTooltipData(
   power: Power | null | undefined,
   advantagesById?: ReadonlyMap<number, Advantage> | null,
+  powersById?: ReadonlyMap<number, Power> | null,
 ): PowerTooltipData | null {
   if (!power) {
     return null;
@@ -201,6 +230,8 @@ export function getPowerTooltipData(
   const tags = (power.tags ?? [])
     .map((tag) => formatTooltipLabel(tag))
     .filter((tag): tag is string => Boolean(tag));
+  const parentPowers = getParentPowerNames(power, powersById);
+  const sources = splitSourceValues(power.source);
 
   return {
     title: formatTitle(power),
@@ -212,6 +243,8 @@ export function getPowerTooltipData(
     rangeTags,
     tags,
     effects: splitEffects(remainingText),
+    parentPowers,
+    sources,
     advantages: getAdvantageTooltipData(power, advantagesById),
     fallbackText: tooltipText || null,
   };
@@ -220,8 +253,9 @@ export function getPowerTooltipData(
 export function getPowerTooltipAttribute(
   power: Power | null | undefined,
   advantagesById?: ReadonlyMap<number, Advantage> | null,
+  powersById?: ReadonlyMap<number, Power> | null,
 ) {
-  const tooltip = getPowerTooltipData(power, advantagesById);
+  const tooltip = getPowerTooltipData(power, advantagesById, powersById);
 
   return tooltip ? JSON.stringify(tooltip) : undefined;
 }

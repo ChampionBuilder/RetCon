@@ -389,6 +389,9 @@ export function PowersPanel({
   const advantagesById = useMemo(() => {
     return new Map(advantages.map((advantage) => [advantage.advantage_id, advantage]));
   }, [advantages]);
+  const powersById = useMemo(() => {
+    return new Map(powers.map((power) => [power.power_id, power]));
+  }, [powers]);
   const powerRoleFilterOptions = useMemo(
     () => getPowerRoleOptions(powers),
     [powers],
@@ -1470,6 +1473,7 @@ export function PowersPanel({
                         data-power-tooltip={getPowerTooltipAttribute(
                           power,
                           advantagesById,
+                          powersById,
                         )}
                         data-power-tooltip-advanced={
                           forceAdvancedPowerTooltip ? "true" : undefined

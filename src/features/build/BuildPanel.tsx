@@ -1,7 +1,8 @@
-import { useEffect, useRef, useState, type MouseEvent } from "react";
+import { useEffect, useMemo, useRef, useState, type MouseEvent } from "react";
 import type { Advantage } from "@/types/advantages";
 import type { BuildSlot } from "@/types/builds";
 import type { Archetype, ArchetypeGroup } from "@/types/character";
+import type { Power } from "@/types/powers";
 import type { DialogAnchor } from "@/shared/ui/AnchoredDialog";
 import { getPowerIconName } from "@/shared/utils/icons";
 import { getPowerTooltipText } from "@/shared/utils/powerText";
@@ -18,6 +19,7 @@ type BuildPanelProps = {
   buildSlots: BuildSlot[];
   travelPowerSlots: BuildSlot[];
   powerVariantSlots: BuildSlot[];
+  powers: Power[];
   advantages: Advantage[];
   advantagePointBudget: number;
   camsLevel: number;
@@ -97,6 +99,7 @@ export function BuildPanel({
   buildSlots,
   travelPowerSlots,
   powerVariantSlots,
+  powers,
   advantages,
   advantagePointBudget,
   camsLevel,
@@ -128,6 +131,9 @@ export function BuildPanel({
   lockedPowerSlotNumbers,
 }: BuildPanelProps) {
   const advantageBudgetExceeded = totalAdvantagePoints > advantagePointBudget;
+  const powersById = useMemo(() => {
+    return new Map(powers.map((power) => [power.power_id, power]));
+  }, [powers]);
   const [closedSections, setClosedSections] = useState<string[]>([]);
   const bodyRef = useRef<HTMLDivElement | null>(null);
   const slotElementsRef = useRef(new Map<number, HTMLDivElement>());
@@ -294,7 +300,11 @@ export function BuildPanel({
                           aria-disabled={isPowerLocked}
                           tabIndex={isPowerLocked ? -1 : undefined}
                           title={getPowerTooltipText(slot.power)}
-                          data-power-tooltip={getPowerTooltipAttribute(slot.power)}
+                          data-power-tooltip={getPowerTooltipAttribute(
+                            slot.power,
+                            undefined,
+                            powersById,
+                          )}
                           type="button"
                           onClick={(event: MouseEvent<HTMLButtonElement>) => {
                             event.stopPropagation();
@@ -379,7 +389,11 @@ export function BuildPanel({
                         <button
                           className="build-entry__name-button"
                           title={getPowerTooltipText(slot.power)}
-                          data-power-tooltip={getPowerTooltipAttribute(slot.power)}
+                          data-power-tooltip={getPowerTooltipAttribute(
+                            slot.power,
+                            undefined,
+                            powersById,
+                          )}
                           type="button"
                           onClick={(event: MouseEvent<HTMLButtonElement>) => {
                             event.stopPropagation();
@@ -475,7 +489,11 @@ export function BuildPanel({
                         <button
                           className="build-entry__name-button"
                           title={getPowerTooltipText(slot.power)}
-                          data-power-tooltip={getPowerTooltipAttribute(slot.power)}
+                          data-power-tooltip={getPowerTooltipAttribute(
+                            slot.power,
+                            undefined,
+                            powersById,
+                          )}
                           type="button"
                           onClick={(event: MouseEvent<HTMLButtonElement>) => {
                             event.stopPropagation();

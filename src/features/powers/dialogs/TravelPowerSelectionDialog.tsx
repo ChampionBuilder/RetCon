@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import type { BuildSlot } from "@/types/builds";
 import type { Power } from "@/types/powers";
 import { arrangeItemsByColumns } from "@/shared/utils/gridLayout";
@@ -27,6 +27,9 @@ export function TravelPowerSelectionDialog({
   onClose,
   onSelectTravelPower,
 }: TravelPowerSelectionDialogProps) {
+  const powersById = useMemo(() => {
+    return new Map(powers.map((power) => [power.power_id, power]));
+  }, [powers]);
   const travelPowers = powers.filter((power) => isTravelPower(power));
   const frameworkIds = Array.from(
     new Set(travelPowers.map((power) => power.framework_id)),
@@ -138,7 +141,11 @@ export function TravelPowerSelectionDialog({
                         .filter(Boolean)
                         .join(" ")}
                       key={power.power_id}
-                      data-power-tooltip={getPowerTooltipAttribute(power)}
+                      data-power-tooltip={getPowerTooltipAttribute(
+                        power,
+                        undefined,
+                        powersById,
+                      )}
                       title={getPowerTooltipText(power)}
                       type="button"
                       onClick={() => onSelectTravelPower(buildSlot.slot, power)}

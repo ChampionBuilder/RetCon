@@ -14,6 +14,7 @@ export type Power = {
   cooldown?: number | string | null;
   damage_type?: string[] | string | null;
   damage_types?: string[] | string | null;
+  source?: string[] | string | null;
   tooltip?: string | null;
   range_tags?: string[];
   tags?: string[];

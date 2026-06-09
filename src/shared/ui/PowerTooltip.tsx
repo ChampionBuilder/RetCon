@@ -17,13 +17,17 @@ export function PowerTooltip({
     .join(" - ");
   const headerMeta = [tooltip.framework, tooltip.tier].filter(Boolean).join(" - ");
   const advantages = tooltip.advantages ?? [];
+  const parentPowers = tooltip.parentPowers ?? [];
+  const sources = tooltip.sources ?? [];
   const hasStructuredContent =
     headerMeta ||
     typeLine ||
     tooltip.metrics.length > 0 ||
     tooltip.rangeTags.length > 0 ||
     tooltip.tags.length > 0 ||
-    tooltip.effects.length > 0;
+    tooltip.effects.length > 0 ||
+    parentPowers.length > 0 ||
+    sources.length > 0;
 
   if (!hasStructuredContent && tooltip.fallbackText) {
     return <>{tooltip.fallbackText}</>;
@@ -92,6 +96,24 @@ export function PowerTooltip({
             ))}
           </ul>
         )}
+
+        {parentPowers.length > 0 ? (
+          <div className="power-tooltip__parents">
+            <strong>
+              {parentPowers.length === 1
+                ? "Parent Power:"
+                : "Parent Powers:"}
+            </strong>
+            <span>{parentPowers.join("; ")}</span>
+          </div>
+        ) : null}
+
+        {sources.length > 0 ? (
+          <div className="power-tooltip__source">
+            <strong>Source:</strong>
+            <span>{sources.join("; ")}</span>
+          </div>
+        ) : null}
 
         {!showAdvantages && advantages.length > 0 ? (
           <div className="power-tooltip__hint">

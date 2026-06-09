@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import type { BuildSlot } from "@/types/builds";
 import type { Power } from "@/types/powers";
 import { arrangeItemsByColumns } from "@/shared/utils/gridLayout";
@@ -111,6 +111,9 @@ export function PowerSelectionDialog({
   onSelectFramework,
   onSelectPower,
 }: PowerSelectionDialogProps) {
+  const powersById = useMemo(() => {
+    return new Map(powers.map((power) => [power.power_id, power]));
+  }, [powers]);
   const frameworkGroups = getSelectablePowerFrameworkGroups(powers);
   const preferredFrameworkId = buildSlot.power
     ? buildSlot.displayFrameworkId ?? getPowerDisplayFrameworkId(buildSlot.power)
@@ -230,7 +233,11 @@ export function PowerSelectionDialog({
                       }
                       disabled={!canSelect}
                       key={power.power_id}
-                      data-power-tooltip={getPowerTooltipAttribute(power)}
+                      data-power-tooltip={getPowerTooltipAttribute(
+                        power,
+                        undefined,
+                        powersById,
+                      )}
                       title={getPowerTooltipText(power)}
                       type="button"
                       onClick={() =>
