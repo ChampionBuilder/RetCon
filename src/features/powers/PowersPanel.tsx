@@ -317,6 +317,65 @@ function parsePowerSearch(search: string): ParsedPowerSearch {
   return parsedSearch;
 }
 
+function hasParsedPowerSearch(parsedSearch: ParsedPowerSearch) {
+  return (
+    Boolean(parsedSearch.normalQuery) ||
+    parsedSearch.activationQueries.some(Boolean) ||
+    parsedSearch.damageQueries.some(Boolean) ||
+    parsedSearch.rangeQueries.some(Boolean) ||
+    parsedSearch.scaleQueries.some(Boolean) ||
+    parsedSearch.tagQueries.some(Boolean) ||
+    parsedSearch.typeQueries.some(Boolean)
+  );
+}
+
+function parsePowerSearchClauses(search: string) {
+  return search
+    .split(";")
+    .map((searchClause) => parsePowerSearch(searchClause))
+    .filter(hasParsedPowerSearch);
+}
+
+function mergeParsedPowerSearches(parsedSearches: ParsedPowerSearch[]) {
+  return parsedSearches.reduce<ParsedPowerSearch>(
+    (mergedSearch, parsedSearch) => ({
+      activationQueries: [
+        ...mergedSearch.activationQueries,
+        ...parsedSearch.activationQueries,
+      ],
+      damageQueries: [
+        ...mergedSearch.damageQueries,
+        ...parsedSearch.damageQueries,
+      ],
+      normalQuery: [
+        mergedSearch.normalQuery,
+        parsedSearch.normalQuery,
+      ]
+        .filter(Boolean)
+        .join(" "),
+      rangeQueries: [
+        ...mergedSearch.rangeQueries,
+        ...parsedSearch.rangeQueries,
+      ],
+      scaleQueries: [
+        ...mergedSearch.scaleQueries,
+        ...parsedSearch.scaleQueries,
+      ],
+      tagQueries: [...mergedSearch.tagQueries, ...parsedSearch.tagQueries],
+      typeQueries: [...mergedSearch.typeQueries, ...parsedSearch.typeQueries],
+    }),
+    {
+      activationQueries: [],
+      damageQueries: [],
+      normalQuery: "",
+      rangeQueries: [],
+      scaleQueries: [],
+      tagQueries: [],
+      typeQueries: [],
+    },
+  );
+}
+
 export function PowersPanel({
   powers,
   advantages,
@@ -360,11 +419,20 @@ export function PowersPanel({
   ] = useState(0);
   const [frameworkStripColumns, setFrameworkStripColumns] = useState(1);
   const frameworkStripRef = useRef<HTMLDivElement | null>(null);
-  const parsedSearch = useMemo(() => parsePowerSearch(search), [search]);
+  const parsedSearchClauses = useMemo(
+    () => parsePowerSearchClauses(search),
+    [search],
+  );
+  const parsedSearch = useMemo(
+    () => mergeParsedPowerSearches(parsedSearchClauses),
+    [parsedSearchClauses],
+  );
   const forceAdvancedPowerTooltip = searchInAdvantages;
   const advantageHighlightQueries = [
     ...(searchInAdvantages ? parsedSearch.tagQueries : []),
-    searchInAdvantages ? parsedSearch.normalQuery : "",
+    ...(searchInAdvantages
+      ? parsedSearchClauses.map((searchClause) => searchClause.normalQuery)
+      : []),
     ...(searchInAdvantages ? selectedDamageTypes : []),
   ].filter(Boolean);
   const hasEnergyBuilder = buildSlots.some((slot) => slot.power?.tier === -1);
@@ -393,8 +461,8 @@ export function PowersPanel({
     return new Map(powers.map((power) => [power.power_id, power]));
   }, [powers]);
   const powerRoleFilterOptions = useMemo(
-    () => getPowerRoleOptions(powers),
-    [powers],
+    () => getPowerRoleOptions(powers, advantagesById),
+    [advantagesById, powers],
   );
   const damageTypeFilterOptions = useMemo(
     () => getDamageTypeOptions(powers, advantages),
@@ -409,13 +477,7 @@ export function PowersPanel({
   );
   const selectedMinimumRange = powerRangeSteps[selectedRangeStepIndex] ?? null;
   const hasActivePowerSearchOrFilter =
-    Boolean(parsedSearch.normalQuery) ||
-    parsedSearch.activationQueries.some(Boolean) ||
-    parsedSearch.damageQueries.some(Boolean) ||
-    parsedSearch.rangeQueries.some(Boolean) ||
-    parsedSearch.scaleQueries.some(Boolean) ||
-    parsedSearch.tagQueries.some(Boolean) ||
-    parsedSearch.typeQueries.some(Boolean) ||
+    hasParsedPowerSearch(parsedSearch) ||
     Boolean(selectedPowerRoleFilter) ||
     selectedScalingStats.length > 0 ||
     selectedDamageTypes.length > 0 ||
@@ -587,6 +649,68 @@ export function PowersPanel({
       });
     }
 
+    function matchesParsedSearchClause(
+      power: Power,
+      searchClause: ParsedPowerSearch,
+    ) {
+      if (
+        searchClause.normalQuery &&
+        !matchesGeneralSearch(power, searchClause.normalQuery)
+      ) {
+        return false;
+      }
+
+      if (
+        searchClause.activationQueries.some(
+          (query) => query && !matchesActivationSearch(power, query),
+        )
+      ) {
+        return false;
+      }
+
+      if (
+        searchClause.damageQueries.some(
+          (query) => query && !matchesDamageSearch(power, query),
+        )
+      ) {
+        return false;
+      }
+
+      if (
+        searchClause.rangeQueries.some(
+          (query) => query && !matchesRangeSearch(power, query),
+        )
+      ) {
+        return false;
+      }
+
+      if (
+        searchClause.scaleQueries.some(
+          (query) => query && !matchesScalingStatSearch(power, query),
+        )
+      ) {
+        return false;
+      }
+
+      if (
+        searchClause.tagQueries.some(
+          (query) => query && !matchesTagSearch(power, query),
+        )
+      ) {
+        return false;
+      }
+
+      if (
+        searchClause.typeQueries.some(
+          (query) => query && !matchesTypeSearch(power, query),
+        )
+      ) {
+        return false;
+      }
+
+      return true;
+    }
+
     return powers.filter((power) => {
       if (
         restrictedPowerIds !== null &&
@@ -620,15 +744,13 @@ export function PowersPanel({
       }
 
       if (
-        parsedSearch.normalQuery &&
-        !matchesGeneralSearch(power, parsedSearch.normalQuery)
-      ) {
-        return false;
-      }
-
-      if (
         selectedPowerRoleFilter &&
-        !getPowerRoles(power).includes(selectedPowerRoleFilter)
+        !getPowerRoles(power, {
+          advantagesById,
+          includeAdvantageTags: searchInAdvantages,
+          includePowerMetadata: searchInPowers,
+          includePowerTags: searchInPowers,
+        }).includes(selectedPowerRoleFilter)
       ) {
         return false;
       }
@@ -667,48 +789,8 @@ export function PowersPanel({
       }
 
       if (
-        parsedSearch.activationQueries.some(
-          (query) => query && !matchesActivationSearch(power, query),
-        )
-      ) {
-        return false;
-      }
-
-      if (
-        parsedSearch.damageQueries.some(
-          (query) => query && !matchesDamageSearch(power, query),
-        )
-      ) {
-        return false;
-      }
-
-      if (
-        parsedSearch.rangeQueries.some(
-          (query) => query && !matchesRangeSearch(power, query),
-        )
-      ) {
-        return false;
-      }
-
-      if (
-        parsedSearch.scaleQueries.some(
-          (query) => query && !matchesScalingStatSearch(power, query),
-        )
-      ) {
-        return false;
-      }
-
-      if (
-        parsedSearch.tagQueries.some(
-          (query) => query && !matchesTagSearch(power, query),
-        )
-      ) {
-        return false;
-      }
-
-      if (
-        parsedSearch.typeQueries.some(
-          (query) => query && !matchesTypeSearch(power, query),
+        parsedSearchClauses.some(
+          (searchClause) => !matchesParsedSearchClause(power, searchClause),
         )
       ) {
         return false;
@@ -718,7 +800,7 @@ export function PowersPanel({
     });
   }, [
     advantagesById,
-    parsedSearch,
+    parsedSearchClauses,
     powers,
     restrictedPowerIds,
     searchInAdvantages,

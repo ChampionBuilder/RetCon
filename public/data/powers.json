@@ -92,7 +92,9 @@
     "cooldown": null,
     "range_tags": [],
     "tooltip": "Increases your Energy Damage. + Increases your Electrical resistance. + Increases your Energy damage resistance by a lesser amount. + Recovers Energy when you take Electrical damage. + Increases base energy equilibrium and energy recovery. + Heals you for a small amount every time you damage a target affected by your Negative Ions. This heal can occur up to 3 times every 5 seconds. + Scales with your Super Stats",
-    "tags": [],
+    "tags": [
+      "Passive Heal"
+    ],
     "damage_type": [
       "Electrical",
       "Particle",
@@ -479,9 +481,9 @@
     ],
     "tooltip": "Consumes all of your Negative Ions on targets, completing a Circuit. + Heals you and nearby allies for each Negative Ions consumed.",
     "tags": [
-      "Team Heal",
       "Negative Ions",
-      "Circuit"
+      "Circuit",
+      "Team Heal"
     ],
     "damage_type": [],
     "scaling_stats": [],
@@ -556,8 +558,7 @@
     "tags": [
       "Root",
       "Rune",
-      "Static Field",
-      "Enchantment"
+      "Static Field"
     ],
     "damage_type": [
       "Electrical"
@@ -763,7 +764,7 @@
     ],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Kaiju Lockbox, unlocked on summoning Commander...sidekick",
+    "source": "Kaiju Lockbox, unlocked on summoning the sidekick",
     "icon_override": "Electricity_SunderingBreath",
     "is_disabled": false
   },
@@ -1099,7 +1100,7 @@
     "powerset_id": "Energy_Projector",
     "framework_id": "Fire",
     "power_id": 31,
-    "name": "Deals Fire Damage to the target, and less Fire Damage to foes near the target. + Has a 10-45% chance based on charge time to apply Clinging Flames to each target, causing Fire Damage every 2 sec for 12 sec. Clinging Flames may leap to other foes near the target.",
+    "name": "Fireball",
     "tier": 1,
     "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [
@@ -1154,7 +1155,8 @@
     "range_tags": [],
     "tooltip": "Increase your Elemental Damage. + You gain Elemental Damage Resistance and an additional Fire Damage Resistance. + Recovers Energy when you take Fire damage. + Increase the Healing you perform. + Heals you and your nearby teammates every 3 sec. + Also, while active, you have a 20% chance to apply Clinging Flames to foes that attack you, which does Fire Damage every 2 sec for 12 sec. Clinging Flames may leap to other foes near the target.",
     "tags": [
-      "Clinging Flames"
+      "Clinging Flames",
+      "Passive Heal"
     ],
     "damage_type": [
       "Fire",
@@ -1355,7 +1357,9 @@
       "50 feet"
     ],
     "tooltip": "Heals the target every 0.5 sec. + While healing a friendly target, you gain +15% resistance to all damage.",
-    "tags": [],
+    "tags": [
+      "Active Heal"
+    ],
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
@@ -1388,7 +1392,8 @@
     ],
     "tooltip": "Deals Fire Damage. + Expires all Clinging Flames on affected targets and heals up to 10 targets within 25ft for a certain amount of Health Points for each one consumed. + Heals a additional Health Points every 2 sec over 10 sec for every Clinging Flames consumed.",
     "tags": [
-      "Clinging Flames"
+      "Clinging Flames",
+      "Team Heal"
     ],
     "damage_type": [
       "Fire"
@@ -1481,7 +1486,7 @@
     "power_id": 42,
     "name": "Nova Flare",
     "tier": 2,
-    "power_type": "ALLY_HEAL",
+    "power_type": "TEAM_HEAL",
     "advantages": [
       1,
       2,
@@ -1497,9 +1502,10 @@
       "50 feet",
       "10 foot Sphere"
     ],
-    "tooltip": "Heals targets. + Applies a stack of Fiery Escalation for 12 sec, which causes this power to heal for additional Health Points for each stack. Fiery Escalation can stack up to 4 times.",
+    "tooltip": "Heals targets. + Applies a stack of Fiery Escalation for 12 sec, which causes this power to heal for additional Health Points for each stack. Fiery Escalation can stack up to 4 times. + This power cannot be used on yourself",
     "tags": [
-      "Fiery Escalation"
+      "Fiery Escalation",
+      "Team Heal"
     ],
     "damage_type": [],
     "scaling_stats": [],
@@ -3633,6 +3639,7 @@
     "tooltip": "Creates 3/4/5 Ice Barriers near you for 30 sec. + Each Ice Barriers grants you +20% resistance to all damage and 100% resistance to Knock effects. This effect is doubled if you area afected by Cold Snap. + Creates a Healing Rune at your location, which heals nearby allies within 15ft every 1 sec for 30 sec. + Once an Ice Barrier expires, deals Cold Damage to up to 5 targets within 10ft. - Activates a shared cooldown of 90 seconds on all Active Defenses.",
     "tags": [
       "Rune",
+      "Passive Heal",
       "Cold Snap",
       "Ice Barriers"
     ],
@@ -4284,7 +4291,8 @@
     "tooltip": "Deals damage to targets. The damage type of this power changes based on the last direct damage power you used. If no power was used within the last 10 sec, instead chooses a random damage type. + If your last ability used was a direct heal, this power instead heals allies within 25ft of your primary target. + If a target is a Henchmen, Villain or Enforcer, Confuses them for 10 sec, causing them to attack targets randomly. If the target is immune, instead deals an additional 20% damage. + Applies Overpower to affected foes, reducing their resistance to all damage by 20% for 15 sec.",
     "tags": [
       "Confuse",
-      "Overpower"
+      "Overpower",
+      "Active Heal"
     ],
     "damage_type": [
       "Slashing",
@@ -4543,9 +4551,8 @@
     ],
     "tooltip": "Deals Piercing damage to your target. + Creates a Healing Rune at your target, healing up to 5 allies within 15ft every 1 sec for 10 sec. + You cannot have more than one Rune out at a time.",
     "tags": [
-      "Heal",
       "Rune",
-      "Enchantement"
+      "Passive Heal"
     ],
     "damage_type": [
       "Piercing"
@@ -4753,7 +4760,9 @@
       "Targets self"
     ],
     "tooltip": "For the next 15 sec defeating a foe heals you for a small amount of Health Points every 2 sec over 6 sec. Stacks up to 5 times. + Activates a shared cooldown of 15 seconds on all Self Heal Over Time powers.",
-    "tags": [],
+    "tags": [
+      "Passive Heal"
+    ],
     "damage_type": [],
     "scaling_stats": [
       "INT",
@@ -5210,7 +5219,7 @@
     "power_id": 147,
     "name": "Bionic Shielding",
     "tier": 1,
-    "power_type": "HEAL_OVER_TIME",
+    "power_type": "HEAL",
     "advantages": [
       1,
       2,
@@ -5227,7 +5236,9 @@
       "100 feet"
     ],
     "tooltip": "Places the Bionic Shielding buff on your target. The effect lasts up to 16 sec and can trigger up to 5 times before expiring. + Whenever the target takes damage, they are healed . + Also applies Bionic Tampering to the target, which prevents them from being affected by Bionic Shielding again for 15 sec.",
-    "tags": [],
+    "tags": [
+      "Active Heal"
+    ],
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
@@ -5401,9 +5412,10 @@
       "Affects non-destructible friends (20 max)",
       "100 feet Team"
     ],
-    "tooltip": "Increase your Technologye healing. + You and your Teammates gain resistance to all damage. + You and your Teammatesgain Health every 3 sec.",
+    "tooltip": "Increase your Technology healing. + You and your Teammates gain resistance to all damage. + You and your Teammates gain Health every 3 sec.",
     "tags": [
-      "Heal"
+      "Active Heal",
+      "Passive Heal"
     ],
     "damage_type": [],
     "scaling_stats": [
@@ -5964,8 +5976,7 @@
     "tags": [
       "Reverse Repel",
       "Rune",
-      "Static Field",
-      "Enchantment"
+      "Static Field"
     ],
     "damage_type": [
       "Particle"
@@ -6033,8 +6044,10 @@
       "Targets friend",
       "100 feet"
     ],
-    "tooltip": "Heals your target every 0.5 sec. + While maintaining this power on any ally that is in the Hybrid, Ranged or Melee Role, increases the amount of base damage they deal.  + While maintaining this power on any ally that is in the Tank or Support Role, increases their resistance to damage.",
-    "tags": [],
+    "tooltip": "Heals your target every 0.5 sec. + While maintaining this power on any ally that is in the Hybrid, Ranged or Melee Role, increases the amount of base damage they deal.  + While maintaining this power on any ally that is in the Tank or Support Role, increases their resistance to damage. + This power cannot be used on yourself",
+    "tags": [
+      "Active Heal"
+    ],
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
@@ -6162,7 +6175,7 @@
     ],
     "tooltip": "Summons 2 Support Drones. The Support Drones have 2 modes, Support Mode and Weapons Platform Mode. + In their default Support Mode, they will use a Healing Beam on friendly targets, healing them every 0.5 sec. + In Weapons Platform Mode, they utilize a Gravatic Bolt to attack your foes, dealing Crushing Damage.  + New skills are acquired upon ranking this power on pets",
     "tags": [
-      "Heal"
+      "Passive Heal"
     ],
     "damage_type": [
       "Crushing"
@@ -8421,7 +8434,8 @@
     ],
     "tooltip": "Heals you every 1 sec. + This power cannot critically heal",
     "tags": [
-      "Chest Slot"
+      "Chest Slot",
+      "Passive Heal"
     ],
     "damage_type": [],
     "scaling_stats": [],
@@ -9055,7 +9069,7 @@
     "range_tags": [
       "Targets self"
     ],
-    "tooltip": "Upon activation you gain +50/75/100% Energy. + Your Energy Equilibrium isgreatly increased. + You gain slightly incresaed Energy Regeneration.  + Your base Damage and Healing output are reduced by -10%.",
+    "tooltip": "Upon activation you gain +50/75/100% Energy. + Your Energy Equilibrium is greatly increased. + You gain slightly incresaed Energy Regeneration.  + Your base Damage and Healing output are reduced by -10%.",
     "tags": [],
     "damage_type": [],
     "scaling_stats": [],
@@ -11693,7 +11707,9 @@
       "Targets self"
     ],
     "tooltip": "Heals you every 2 seconds over 16 seconds. + While active, your damage is reduced by 10% + Activates a shared cooldown on all Self Heal Over Time.",
-    "tags": [],
+    "tags": [
+      "Passive Heal"
+    ],
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
@@ -13298,7 +13314,9 @@
       "50 feet"
     ],
     "tooltip": "Heals your target every 0.5 sec. + The amount healed increases as you maintain this power",
-    "tags": [],
+    "tags": [
+      "Active Heal"
+    ],
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
@@ -13562,7 +13580,9 @@
       "100 feet"
     ],
     "tooltip": "Heals the target. + When healing a target other than yourself and not charged, you gain Energy.",
-    "tags": [],
+    "tags": [
+      "Active Heal"
+    ],
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
@@ -13769,7 +13789,9 @@
       "50 feet"
     ],
     "tooltip": "Shields your target, absorbing damage for 8 sec. + After 8 sec, the target is healed for twice the remaining Shield amount.",
-    "tags": [],
+    "tags": [
+      "Shield"
+    ],
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
@@ -15794,7 +15816,10 @@
       "20 foot Sphere"
     ],
     "tooltip": "Affected targets are healed every 1 sec. + Does not heal you, but shields you instead, absorbing damage. This effect reapplies every 1 sec. + The heal and shield on this power scales with your Strength instead of your Presence.",
-    "tags": [],
+    "tags": [
+      "Shield",
+      "Team Heal"
+    ],
     "damage_type": [],
     "scaling_stats": [
       "STR"
@@ -16121,7 +16146,9 @@
       "Targets self"
     ],
     "tooltip": "For the next 15 sec directly damaging a foe or being directly damaged by a foe heals you every 2 sec over 6 sec. + This heal scales with your Recovery and Constitution. + This power cannot Critically Hit. + Activates a shared cooldown of 15 seconds on all Self Heal Over Time powers.",
-    "tags": [],
+    "tags": [
+      "Passive Heal"
+    ],
     "damage_type": [],
     "scaling_stats": [
       "CON",
@@ -16400,9 +16427,9 @@
       "Targets foe/friend",
       "50 feet"
     ],
-    "tooltip": "If you target a foe : deals Dimensional Damage and generates energy. + If you target a friend : heals them and generate energy.",
+    "tooltip": "If you target a foe: deals Dimensional Damage and generates energy. + If you target a friend: heals them and generate energy.",
     "tags": [
-      "Heal"
+      "Active Heal"
     ],
     "damage_type": [
       "Dimensional"
@@ -16437,9 +16464,9 @@
       "Targets foe/friend",
       "100 feet"
     ],
-    "tooltip": "If you target a foe : deals Dimensional Damage. + If you target a friend : heals them.",
+    "tooltip": "If you target a foe: deals Dimensional Damage. + If you target a friend : heals them.",
     "tags": [
-      "Heal"
+      "Active Heal"
     ],
     "damage_type": [
       "Dimensional"
@@ -16478,7 +16505,7 @@
     "tags": [
       "Illuminated",
       "Illumination",
-      "Heal"
+      "Active Heal"
     ],
     "damage_type": [
       "Dimensional"
@@ -16510,7 +16537,9 @@
       "Targets self"
     ],
     "tooltip": "Grants you +15% Maximum Health Points for 20 sec and heals you. + Taking any damage will cancel the temporary health.",
-    "tags": [],
+    "tags": [
+      "Active Heal"
+    ],
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
@@ -16524,7 +16553,7 @@
     "power_id": 465,
     "name": "Illumination",
     "tier": 1,
-    "power_type": "HEAL",
+    "power_type": "TEAM_HEAL",
     "advantages": [
       1,
       2,
@@ -16589,7 +16618,7 @@
     "power_id": 467,
     "name": "Iniquity",
     "tier": 1,
-    "power_type": "ALLY_HEAL",
+    "power_type": "HEAL",
     "advantages": [
       1,
       2,
@@ -16605,7 +16634,9 @@
       "100 feet"
     ],
     "tooltip": "Funnel your health to a friendly target, draining your Health to Heal your target. + This power cannot critically hit + This power cannot be used on yourself",
-    "tags": [],
+    "tags": [
+      "Active Heal"
+    ],
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
@@ -16632,7 +16663,9 @@
     "cooldown": null,
     "range_tags": [],
     "tooltip": "You deal additional Paranormal Damage and the Healing you perform is also increased. + You gain Paranormal Damage Resistance and additional Dimensional Damage Resistance. + You also gain a small amount of energy when you suffer Dimensional Damage. + Heals you and nearby friends for a small amount every 3 sec.",
-    "tags": [],
+    "tags": [
+      "Passive Heal"
+    ],
     "damage_type": [
       "Dimensional",
       "Ego",
@@ -16706,8 +16739,8 @@
     ],
     "tooltip": "Deals Dimensional Damage to nearby foes. + Drops a Healing Rune which heals nearby allies every 1 sec for 10 sec. + You cannot have more than one Rune out at a time",
     "tags": [
-      "Heal",
-      "Rune"
+      "Rune",
+      "Passive Heal"
     ],
     "damage_type": [
       "Dimensional"
@@ -16740,7 +16773,9 @@
       "100 feet"
     ],
     "tooltip": "Heals the target for 24/29/35% Health Points and grants them additional Presence for 20 sec.",
-    "tags": [],
+    "tags": [
+      "Active Heal"
+    ],
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
@@ -16837,7 +16872,8 @@
     "tags": [
       "Illuminated",
       "Illumination",
-      "Disorient"
+      "Disorient",
+      "Active Healing"
     ],
     "damage_type": [
       "Dimensional"
@@ -16983,7 +17019,7 @@
     ],
     "tooltip": "While blocking, grants 250/300/360% resistance to all damage. + Increases your resistance to Holds and Knocks, and reduces your movement speed. + Gives you energy when struck by an attack while blocking. This amount scales with your Recovery and the amount of damage you take. + Receiving damage will cause you to deal Dimensional Damage to the attacker and heal you. This effect can only happen once every 1 sec.",
     "tags": [
-      "Heal"
+      "Passive Heal"
     ],
     "damage_type": [
       "Dimensional"
@@ -17152,7 +17188,7 @@
     "range_tags": [],
     "tooltip": "Increases your Paranormal damage. + You gain Paranormal Damage Resistance and additional Dimensional Damage Resistance. + Increases your Aggression Stealth and Perception Stealth. + Reduces your threat slightly. + When you attack a foe, you have a chance to recover a small percentage of your health. This can only happen once every 3 seconds. + Recovers Energy when you take Dimensional damage.",
     "tags": [
-      "Heal"
+      "Passive Heal"
     ],
     "damage_type": [
       "Dimensional",
@@ -17346,7 +17382,7 @@
     "range_tags": [
       "Targets self"
     ],
-    "tooltip": "Upon activation you gain a alrge amount of Energy and lose Health Points. + You lose an additional Health Points every 1 sec. + Your Energy Equilibrium is set to 293. + You gain Energy Regeneration. + Healing effects on you are reduced by 200%. However, Life Draining effects are not affected by this reduction.",
+    "tooltip": "Upon activation you gain a large amount of Energy and lose Health Points. + You lose an additional Health Points every 1 sec. + Your Energy Equilibrium is set to 293. + You gain Energy Regeneration. + Healing effects on you are reduced by 200%. However, Life Draining effects are not affected by this reduction.",
     "tags": [],
     "damage_type": [],
     "scaling_stats": [],
@@ -17459,7 +17495,8 @@
       "Root",
       "Stun",
       "Hold",
-      "Confuse:Devoid"
+      "Confuse",
+      "Devoid"
     ],
     "damage_type": [
       "Dimensional"
@@ -17498,7 +17535,7 @@
     "tags": [
       "Reverse Repel",
       "Rune",
-      "Heal",
+      "Passive Heal",
       "DoT"
     ],
     "damage_type": [
@@ -18107,7 +18144,7 @@
     "tooltip": "Summons 5 Radiant Sigils around you. + Allies whithing 15ft of a Radiant Sigil gain Aggression Stealth and Perception Stealth. + They also gain a resistance to all damage, Holds, and Knocks. + Heals nearby allies every 2 sec.",
     "tags": [
       "Sigil",
-      "Heal"
+      "Passive Heal"
     ],
     "damage_type": [],
     "scaling_stats": [],
@@ -18138,7 +18175,8 @@
     "tooltip": "Gives you a stacking buff that increases your ranged damage, as well as your melee damage to a lesser degree. + You gain a stack each time you apply an Enchantment or Curse. + This form counts as an Enchantment, but will not trigger stacks. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
     "tags": [
       "Ensorcelled",
-      "Curses"
+      "Curses",
+      "Enchantments"
     ],
     "damage_type": [],
     "scaling_stats": [
@@ -18205,7 +18243,9 @@
       "45 degree Cone"
     ],
     "tooltip": "Heals targets every 0.5 seconds. + Heals you if no friendly target is selected.",
-    "tags": [],
+    "tags": [
+      "Active Heal"
+    ],
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
@@ -18268,9 +18308,7 @@
       "Targets self"
     ],
     "tooltip": "Summons a Circle of Arcane Power at your location.  +While standing in the Circle of Arcane Power you gain Energy every 1 sec and you have reduced Energy Decay. + Energy Unlocks will not give you any energy while standing in the Circle of Arcane Power.  + This Circle will persist for up to 2 sec while you are not standing in it. + Only one Circle can be active at a time",
-    "tags": [
-      "Enchentment"
-    ],
+    "tags": [],
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
@@ -18300,7 +18338,6 @@
     ],
     "tooltip": "Summons a Circle of Ebon Wrath at your location. + While standing in the Circle of Ebon Wrath you gain damage strength, have reduced Threat Generation and Perception buff.  + Healing effects on you are reduced by 100%. Any foes that attack you or comes near the Circle of Ebon Wrath will be Feared causing them deal 10% less damage for 12 sec.  +This Circle will persist for up to 2 sec while you are not standing in it. + Only one Circle can be active at a time",
     "tags": [
-      "Enchentment",
       "Perception"
     ],
     "damage_type": [],
@@ -18331,10 +18368,7 @@
       "Targets self"
     ],
     "tooltip": "Summons a Circle of Primal Dominion at your location. + You gain resistance to Knock effects, increased resistance to all damage and heal you every 1 sec. + You have reduced Threat Generation. + If you are in the Tank role, you instead have increased Threat Generation. + Your power costs are increased by 10% and the recharge time on your powers are increased by 20%. + This Circle will persist for up to 2 sec while you are not standing in it. + Only one Circle can be active at a time",
-    "tags": [
-      "Enchentment",
-      "Heal"
-    ],
+    "tags": [],
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
@@ -18365,9 +18399,8 @@
     ],
     "tooltip": "Summons a Circle of Radiant Glory at your location. + If you are defeated while standing in the Circle of Radiant Glory you are resurrected.  When you are resurrected places all Resurrection powers on cooldown for 180 seconds. + While a Circle of Radiant Glory exists, you may tap this power to move it to your current location. + When it moves, up to 5 targets in its old location and up to 5 targets in its new location are all healed. + This Circle will persist for up to 10 sec while you are not standing in it. + Only one Circle can be active at a time",
     "tags": [
-      "Enchentment",
-      "Self-Resurection",
-      "Heal"
+      "Self-Resurrection",
+      "Active Heal"
     ],
     "damage_type": [],
     "scaling_stats": [],
@@ -18596,7 +18629,9 @@
       "Targets self"
     ],
     "tooltip": "Creates a Ritual Circle and summons a Radiant Entity to fight for you. + Leaving the Circle for too long will cause it to fail, and the Entity will disappear. + The Entity will use Beneficence to heal you and your allies, granting. When you and your allies are at high enough health, it will Rebuke your foes, dealing Dimensional Damage.  + If pressed into melee combat, your Entity will use its Radiant Blade, dealing Slashing Damage and Dimensional Damage. + New skills are acquired upon ranking this power ",
-    "tags": [],
+    "tags": [
+      "Passive Heal"
+    ],
     "damage_type": [
       "Dimensional",
       "Slashing"
@@ -18632,7 +18667,7 @@
       "100 feet",
       "10 foot Sphere"
     ],
-    "tooltip": "Deals Magic Damage every 0.5 sec. + Has a 20% chance to apply Illuminated on the target for 20 sec. Anyone attacking the Illuminated target are affected by Mend, healing them every 2 sec for 8 sec.",
+    "tooltip": "Deals Magic Damage every 0.5 sec to targets. + Has a 20% chance to apply Illuminated on the target for 20 sec. Anyone attacking the Illuminated target are affected by Mend, healing them every 2 sec for 8 sec.",
     "tags": [
       "Illuminated"
     ],
@@ -18670,8 +18705,8 @@
     ],
     "tooltip": "Deals Magic Damage every 0.5 sec to the target. + Deals  additional 10% damage to targets affected by a Curse. + Deals additional 10% damage if you are affected by a Enchantment.",
     "tags": [
-      "Cursed",
-      "Enchantement"
+      "Curses",
+      "Enchantments"
     ],
     "damage_type": [
       "Magic"
@@ -18851,7 +18886,7 @@
     "tooltip": "Deals Magic Damage to nearby foes. + Creates a Healing Rune, healing up to 5 allies within 15ft every 1 sec for 10 sec. + You cannot have more than one Rune out at a time.",
     "tags": [
       "Rune",
-      "Heal"
+      "Passive Heal"
     ],
     "damage_type": [
       "Magic"
@@ -18910,7 +18945,7 @@
     "tooltip": "Gives you a stacking buff that increases your healing, as well as your ranged and melee damage to a lesser degree. + You gain a stack each time you heal a target. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 seconds, and can only gain 1 stack every 4 seconds. - Increases energy costs by 10%.",
     "tags": [
       "Compassion",
-      "Heal"
+      "Active Heal"
     ],
     "damage_type": [],
     "scaling_stats": [
@@ -19043,7 +19078,7 @@
     "range_tags": [
       "Targets self"
     ],
-    "tooltip": "Grants a 42/50/60% increase to all damage. + Grants a 50/60/72% increased to you heals. + Grants you the ability to Fly +  Applies Break Free damage to any Holds, Roots, or Disables affecting you. + Can be used while Held or Confused.  + Activates a shared cooldown of 90 seconds on all Active Offenses.",
+    "tooltip": "Grants a 42/50/60% increase to all damage. + Grants a 50/60/72% increased to your heals. + Grants you the ability to Fly +  Applies Break Free damage to any Holds, Roots, or Disables affecting you. + Can be used while Held or Confused.  + Activates a shared cooldown of 90 seconds on all Active Offenses.",
     "tags": [],
     "damage_type": [],
     "scaling_stats": [],
@@ -19145,7 +19180,9 @@
       "25 foot Sphere"
     ],
     "tooltip": "Heals all targets.",
-    "tags": [],
+    "tags": [
+      "Team Heal"
+    ],
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
@@ -19281,7 +19318,8 @@
     "tags": [
       "Repel",
       "Illumination",
-      "Rune"
+      "Rune",
+      "Passive Heal"
     ],
     "damage_type": [],
     "scaling_stats": [],
@@ -19836,7 +19874,7 @@
     "power_id": 562,
     "name": "Moonstruck",
     "tier": 2,
-    "power_type": "HEAL",
+    "power_type": "TEAM_HEAL",
     "advantages": [
       1,
       2,
@@ -19859,7 +19897,8 @@
     "tooltip": "Knocks Down nearby targets. + Drops a Healing Rune which heals nearby allies every 1 sec for 10 sec. + You cannot have more than one Rune out at a time.",
     "tags": [
       "Knowk Down",
-      "Rune"
+      "Rune",
+      "Passive Heal"
     ],
     "damage_type": [],
     "scaling_stats": [],
@@ -20349,7 +20388,8 @@
     ],
     "tooltip": "Heals you, and your allies within 20ft for half the amount. + If your target is affected by a type of Poison, instead heals nearby allies for the full amount Health Points. + Poisons includes: Deadly Poison, Debilitating Poison, Noxious Poison ",
     "tags": [
-      "Life Drain"
+      "Life Drain",
+      "Team Heal"
     ],
     "damage_type": [],
     "scaling_stats": [],
@@ -20697,7 +20737,7 @@
       "Target non-destructible foe",
       "50 feet"
     ],
-    "tooltip": "Paralyzes the target. + While the target remains Paralyzed, they suffer 53 Toxic Damage every 1 sec.",
+    "tooltip": "Paralyzes the target. + While the target remains Paralyzed, they suffer Toxic Damage every 1 sec.",
     "tags": [
       "Hold"
     ],
@@ -21095,7 +21135,8 @@
     "tooltip": "Applies Break Free damage to any Holds, Roots, or Disables affecting you. + Grants you 250/300/360% resistance to Hold and Knock effects. + Increases your resistance to all damage. If you are affected by Regeneration, instead increases its effectivement. + Increases your Bestial Supernatural base attack damage for each stack of Enrage on you. +  Your Bestial Supernatural attacks gain a chance to inflict Bleed on your targets for each stack of Enrage on you. + Attacking targets heals you for each stack of your Bleed on the target. +  Increases your Running Speed. + When this power ends, removes all Form stacks from you. + Can be used while Held or Confused. + Activates a shared cooldown of 90 seconds on all Active Offenses and Active Defenses.",
     "tags": [
       "Bleed",
-      "Enrage"
+      "Enrage",
+      "Passive Heal"
     ],
     "damage_type": [],
     "scaling_stats": [],
@@ -21240,7 +21281,7 @@
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Lockbox: Aquatic;Collector Store",
+    "source": "Lockbox: Aquatic, Collector Store",
     "icon_override": "TravelPower_BubbleFlight",
     "is_disabled": false
   },
@@ -24806,7 +24847,7 @@
       211,
       213
     ],
-    "source": "Destroids Raise Again OM;Recognition Store",
+    "source": "Destroids Raise Again OM, Recognition Store",
     "icon_override": "PVD_PulpFictionRifle",
     "is_disabled": false
   },
@@ -24838,7 +24879,7 @@
     "power_dependency": [
       214
     ],
-    "source": "Destroids Raise Again OM;Recognition Store",
+    "source": "Destroids Raise Again OM, Recognition Store",
     "icon_override": "PVD_PulpFictionRayGun",
     "is_disabled": false
   },
@@ -24872,7 +24913,7 @@
     "power_dependency": [
       411
     ],
-    "source": "Winter Event;Recognition Store",
+    "source": "Winter Event, Recognition Store",
     "icon_override": "PVD_BitterStorm",
     "is_disabled": false
   },
@@ -24973,7 +25014,7 @@
       363,
       366
     ],
-    "source": "Bloodmoon Event;Recognition Store",
+    "source": "Bloodmoon Event, Recognition Store",
     "icon_override": "PVD_BlightTouch",
     "is_disabled": false
   },
@@ -25077,7 +25118,7 @@
     "power_dependency": [
       267
     ],
-    "source": "Forum Malvanum Event;Recognition Store",
+    "source": "Forum Malvanum Event, Recognition Store",
     "icon_override": "PVD_BurningBlades",
     "is_disabled": false
   },
@@ -25112,7 +25153,7 @@
     "power_dependency": [
       397
     ],
-    "source": "Winter Event;Recognition Store",
+    "source": "Winter Event, Recognition Store",
     "icon_override": "PVD_CallousCleaver",
     "is_disabled": false
   },
@@ -25146,7 +25187,7 @@
     "power_dependency": [
       50
     ],
-    "source": "Bloodmoon Event;Recognition Store",
+    "source": "Bloodmoon Event, Recognition Store",
     "icon_override": "PVD_CauldronFire",
     "is_disabled": false
   },
@@ -25187,7 +25228,7 @@
     "power_dependency": [
       109
     ],
-    "source": "Winter Event;Recognition Store",
+    "source": "Winter Event, Recognition Store",
     "icon_override": "PVD_Cryoclysm",
     "is_disabled": false
   },
@@ -25290,7 +25331,7 @@
     "power_dependency": [
       560
     ],
-    "source": "Bloodmoon Event;Recognition Store",
+    "source": "Bloodmoon Event, Recognition Store",
     "icon_override": "PVD_FierySpirit",
     "is_disabled": false
   },
@@ -25324,7 +25365,7 @@
     "power_dependency": [
       564
     ],
-    "source": "Bloodmoon Event;Recognition Store",
+    "source": "Bloodmoon Event, Recognition Store",
     "icon_override": "PVD_FireFangs",
     "is_disabled": false
   },
@@ -25348,7 +25389,7 @@
     "tooltip": "Deals Fire Damage and has a 25/25/100% chance to apply Clinging Flames, causing Fire Damage every 2 sec for 12 sec. + If a target is affected by Clinging Flames, expires that effect and heals you. If you are affected by Thermal Reverberation, no effect will be expired.",
     "tags": [
       "Clinging Flames",
-      "Heal"
+      "Active Heal"
     ],
     "damage_type": [
       "Fire"
@@ -25357,7 +25398,7 @@
     "power_dependency": [
       554
     ],
-    "source": "Bloodmoon Event;Recognition Store",
+    "source": "Bloodmoon Event, Recognition Store",
     "icon_override": "PVD_FlamingFrenzy",
     "is_disabled": false
   },
@@ -25392,7 +25433,7 @@
     "power_dependency": [
       31
     ],
-    "source": "Bloodmoon Event;Recognition Store",
+    "source": "Bloodmoon Event, Recognition Store",
     "icon_override": "PVD_FlamingPumpkin",
     "is_disabled": false
   },
@@ -25427,7 +25468,7 @@
     "power_dependency": [
       211
     ],
-    "source": "Winter Event;Recognition Store",
+    "source": "Winter Event, Recognition Store",
     "icon_override": "PVD_FrostIceRifle",
     "is_disabled": false
   },
@@ -25461,7 +25502,7 @@
     "power_dependency": [
       412
     ],
-    "source": "Winter Event;Recognition Store",
+    "source": "Winter Event, Recognition Store",
     "icon_override": "PVD_FrozenLance",
     "is_disabled": false
   },
@@ -25498,7 +25539,7 @@
     "power_dependency": [
       401
     ],
-    "source": "Winter Event;Recognition Store",
+    "source": "Winter Event, Recognition Store",
     "icon_override": "PVD_GlacialRend",
     "is_disabled": false
   },
@@ -25531,7 +25572,7 @@
     "power_dependency": [
       272
     ],
-    "source": "Bloodmoon Event;Recognition Store",
+    "source": "Bloodmoon Event, Recognition Store",
     "icon_override": "PVD_HauntedBlades",
     "is_disabled": false
   },
@@ -25599,7 +25640,7 @@
     "power_dependency": [
       273
     ],
-    "source": "Forum Malvanum Event;Recognition Store",
+    "source": "Forum Malvanum Event, Recognition Store",
     "icon_override": "PVD_HeatVortex",
     "is_disabled": false
   },
@@ -25634,7 +25675,7 @@
     "power_dependency": [
       410
     ],
-    "source": "(Formerly) Forum Malvanum Event;Recognition Store",
+    "source": "(Formerly) Forum Malvanum Event, Recognition Store",
     "icon_override": "PVD_Hellrend",
     "is_disabled": false
   },
@@ -25671,7 +25712,7 @@
     "power_dependency": [
       408
     ],
-    "source": "Winter Event;Recognition Store",
+    "source": "Winter Event, Recognition Store",
     "icon_override": "PVD_IceBreaker",
     "is_disabled": false
   },
@@ -25707,7 +25748,7 @@
     "power_dependency": [
       426
     ],
-    "source": "Winter Event;Recognition Store",
+    "source": "Winter Event, Recognition Store",
     "icon_override": "PVD_Icefall",
     "is_disabled": false
   },
@@ -25939,7 +25980,7 @@
     "power_dependency": [
       548
     ],
-    "source": "Bloodmoon Event;Recognition Store",
+    "source": "Bloodmoon Event, Recognition Store",
     "icon_override": "PVD_ScorchingClaw",
     "is_disabled": false
   },
@@ -25972,7 +26013,7 @@
     "power_dependency": [
       568
     ],
-    "source": "Bloodmoon Event;Recognition Store",
+    "source": "Bloodmoon Event, Recognition Store",
     "icon_override": "PVD_SearingCarnage",
     "is_disabled": false
   },
@@ -26103,7 +26144,8 @@
     "tags": [
       "Deadly Poison",
       "Debilitation Poison",
-      "Noxious Poison:Heal",
+      "Noxious Poison",
+      "Passive Heal",
       "Disorient"
     ],
     "damage_type": [
@@ -26114,7 +26156,7 @@
     "power_dependency": [
       570
     ],
-    "source": "Bloodmoon Event;Recognition Store",
+    "source": "Bloodmoon Event, Recognition Store",
     "icon_override": "PVD_TendrilOfAnguish",
     "is_disabled": false
   },
@@ -26179,7 +26221,7 @@
     "power_dependency": [
       342
     ],
-    "source": "Bloodmoon Event;Recognition Store",
+    "source": "Bloodmoon Event, Recognition Store",
     "icon_override": "PVD_ToxicBlades",
     "is_disabled": false
   },
@@ -26212,7 +26254,7 @@
     "power_dependency": [
       197
     ],
-    "source": "Bloodmoon Event;Recognition Store",
+    "source": "Bloodmoon Event, Recognition Store",
     "icon_override": "PVD_GhostHunterPhaseRifle",
     "is_disabled": false
   },
@@ -26244,7 +26286,7 @@
     "power_dependency": [
       355
     ],
-    "source": "Bloodmoon Event;Recognition Store",
+    "source": "Bloodmoon Event, Recognition Store",
     "icon_override": "PVD_VenomShock",
     "is_disabled": false
   },
@@ -26313,7 +26355,7 @@
     "power_dependency": [
       174
     ],
-    "source": "Collector Store;Lockbox: Electro Swing",
+    "source": "Collector Store, Lockbox: Electro Swing",
     "icon_override": "PVD_SonicBoomGenerator_Ultimate",
     "is_disabled": false
   },
@@ -26342,7 +26384,8 @@
       "Negative Ions",
       "Pyre Patch",
       "Clinging Flames",
-      "Disorient:Stun"
+      "Disorient",
+      "Stun"
     ],
     "damage_type": [
       "Crushing",
@@ -26352,7 +26395,7 @@
     "power_dependency": [
       411
     ],
-    "source": "Collector Store;Lockbox: Gladiator",
+    "source": "Collector Store, Lockbox: Gladiator",
     "icon_override": "PVD_Brimstone_Ultimate",
     "is_disabled": false
   },
@@ -26387,7 +26430,7 @@
     "power_dependency": [
       422
     ],
-    "source": "Collector Store;Lockbox: Forest Guardian",
+    "source": "Collector Store, Lockbox: Forest Guardian",
     "icon_override": "PVD_CaveIn_Ultimate",
     "is_disabled": false
   },
@@ -26422,7 +26465,7 @@
     "power_dependency": [
       230
     ],
-    "source": "Collector Store;Lockbox: Mecha",
+    "source": "Collector Store, Lockbox: Mecha",
     "icon_override": "PVD_ChestBeam_Ultimate",
     "is_disabled": false
   },
@@ -26456,7 +26499,7 @@
     "power_dependency": [
       447
     ],
-    "source": "Collector Store;Lockbox: Valorous",
+    "source": "Collector Store, Lockbox: Valorous",
     "icon_override": "PVD_HavocStomp_Ultimate",
     "is_disabled": false
   },
@@ -26492,7 +26535,7 @@
     "power_dependency": [
       311
     ],
-    "source": "Collector Store;Lockbox: Dragon Spirit",
+    "source": "Collector Store, Lockbox: Dragon Spirit",
     "icon_override": "PVD_OpenPalmStrike_Ultimate",
     "is_disabled": false
   },
@@ -26527,7 +26570,7 @@
     "power_dependency": [
       180
     ],
-    "source": "Collector Store;Lockbox: Mecha",
+    "source": "Collector Store, Lockbox: Mecha",
     "icon_override": "PVD_OrbitalCannon_Ultimate",
     "is_disabled": false
   },
@@ -26560,7 +26603,7 @@
     "power_dependency": [
       253
     ],
-    "source": "Collector Store;Lockbox: Scarlet Scarab",
+    "source": "Collector Store, Lockbox: Scarlet Scarab",
     "icon_override": "PVD_ParticleSmash_Ultimate",
     "is_disabled": false
   },
@@ -26582,7 +26625,7 @@
       "50 feet",
       "25 foot Sphere"
     ],
-    "tooltip": "Deals Magic Damage and Knocks Down affected targets. + Creates an Enchanted Rune on the main target for 12 sec, causing affected targets within 25ft to be 10% more vulnerable to Magic Damage. This effect is considered to be an Ultimatel une. + If you own multiple Circle powers, creates one at your location based on your currenvt role. The circle summoned will inherit any advantages and ranks you have purchased, as well as having an extended 10 sec duration when initially summoned. + Circle of Arcane Power if you are in Hybrid Role. + Circle of Ebon Wrath ifyou are  Ranged or Melee Role.  +Circle of Primal Dominion if you are in Tank Role. + Circle of Radiant Glory if you are Support Role. + If you only own one Circle power, creates it at your location regardless of your role. + Places your Pillar ofooz power on cooldown when used.",
+    "tooltip": "Deals Magic Damage and Knocks Down affected targets. + Creates an Enchanted Rune on the main target for 12 sec, causing affected targets within 25ft to be 10% more vulnerable to Magic Damage. This effect is considered to be an Ultimate Rune. + If you own multiple Circle powers, creates one at your location based on your currenvt role. The circle summoned will inherit any advantages and ranks you have purchased, as well as having an extended 10 sec duration when initially summoned. + Circle of Arcane Power if you are in Hybrid Role. + Circle of Ebon Wrath ifyou are  Ranged or Melee Role.  + Circle of Primal Dominion if you are in Tank Role. + Circle of Radiant Glory if you are Support Role. + If you only own one Circle power, creates it at your location regardless of your role. + Places your Pillar of Poz power on cooldown when used.",
     "tags": [
       "Knock Down",
       "Rune"
@@ -26594,7 +26637,7 @@
     "power_dependency": [
       533
     ],
-    "source": "Collector Store;Lockbox: Champions",
+    "source": "Collector Store, Lockbox: Champions",
     "icon_override": "PVD_PillarOfPoz_Ultimate",
     "is_disabled": false
   },
@@ -26626,7 +26669,7 @@
     "power_dependency": [
       273
     ],
-    "source": "Collector Store;Lockbox: Traveler",
+    "source": "Collector Store, Lockbox: Traveler",
     "icon_override": "PVD_SwordCyclone_Ultimate",
     "is_disabled": false
   },
@@ -26661,7 +26704,7 @@
     "power_dependency": [
       19
     ],
-    "source": "Collector Store;Lockbox: Kaiju",
+    "source": "Collector Store, Lockbox: Kaiju",
     "icon_override": "PVD_Thunderstrike_Ultimate",
     "is_disabled": false
   },
@@ -26683,7 +26726,7 @@
       "50 feet",
       "25 foot Sphere"
     ],
-    "tooltip": "Deals Fire Damage to your primary target and Fire Damage to nearby foes. + Applies Clinging Flames to affected targets, causing Fire Damage every 2 sec for 12 sec. Clinging Flames may leap to other foes near the target. + Applies Unstable Accelerant to affected targets, lowering their resistance to your Burning effects by 50% for 12 sec. + Creates a Scorched Earth on the main target for 12 sec, causing affected targets within 25ft to take -10% increased Fire damage. This effect is considered to be a Ultimate Rune. - Activates a shared cooldown of 60 sec on all Ultimate powers.",
+    "tooltip": "Deals Fire Damage to your primary target and Fire Damage to nearby foes. + Applies Clinging Flames to affected targets, causing Fire Damage every 2 sec for 12 sec. Clinging Flames may leap to other foes near the target. + Applies Unstable Accelerant to affected targets, lowering their resistance to your Burning effects by 50% for 12 sec. + Creates a Scorched Earth on the main target for 12 sec, causing affected targets within 25ft to take 10% increased Fire damage. This effect is considered to be a Ultimate Rune. - Activates a shared cooldown of 60 sec on all Ultimate powers.",
     "tags": [
       "Clinging Flames",
       "Unstable Accelerant",
@@ -26696,7 +26739,7 @@
     "power_dependency": [
       31
     ],
-    "source": "Collector Store;Lockbox: Forces of Nature",
+    "source": "Collector Store, Lockbox: Forces of Nature",
     "icon_override": "PVD_Fireball_Ultimate",
     "is_disabled": false
   },
@@ -26731,7 +26774,7 @@
     "power_dependency": [
       72
     ],
-    "source": "Collector Store;Lockbox: Champions",
+    "source": "Collector Store, Lockbox: Champions",
     "icon_override": "PVD_ForceCascade_Ultimate",
     "is_disabled": false
   },
@@ -27058,7 +27101,10 @@
       "50 feet"
     ],
     "tooltip": "Deals Toxic damage and heals up to 5 allies around you in a 15 foot sphere every second for 9 seconds.",
-    "tags": [],
+    "tags": [
+      "Active Heal",
+      "Team Heal"
+    ],
     "damage_type": [
       "Toxic"
     ],
@@ -27205,7 +27251,7 @@
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Collector Store;Lockbox: Cybernetic",
+    "source": "Collector Store, Lockbox: Cybernetic",
     "icon_override": "Device_TargetLocked",
     "is_disabled": false
   },
@@ -27490,7 +27536,7 @@
     ],
     "tooltip": "Heals you for a small amount 1 sec. + Gives you +25% resistance to all damage. + Deals Toxic damage to foes within 10 feet of you every 2 sec for 30 sec.",
     "tags": [
-      "Heal"
+      "Passive Heal"
     ],
     "damage_type": [
       "Toxic"
@@ -27824,7 +27870,8 @@
     ],
     "tooltip": "Heals you every 1 sec. + You gain +100% resistance to all damage while you maintain this power. + Applies Fear your targets, reducing their damage by 10% for 12 sec.",
     "tags": [
-      "Fear"
+      "Fear",
+      "Active Heal"
     ],
     "damage_type": [],
     "scaling_stats": [],
@@ -27960,7 +28007,9 @@
       "Targets self"
     ],
     "tooltip": "Restores 100% Health.",
-    "tags": [],
+    "tags": [
+      "Active Heal"
+    ],
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
@@ -27974,7 +28023,7 @@
     "power_id": 828,
     "name": "Heroic Endurance",
     "tier": null,
-    "power_type": "HEAL",
+    "power_type": "SELF_HEAL_OVER_TIME",
     "advantages": [],
     "activation_type": "CLICK",
     "activation_time": null,
@@ -27999,7 +28048,7 @@
     "power_id": 829,
     "name": "Heroic Persistence",
     "tier": null,
-    "power_type": "HEAL",
+    "power_type": "SELF_HEAL_OVER_TIME",
     "advantages": [],
     "activation_type": "CLICK",
     "activation_time": null,
@@ -28010,7 +28059,9 @@
       "Targets self"
     ],
     "tooltip": "Restores 100% Health over 10 seconds.",
-    "tags": [],
+    "tags": [
+      "Passive Heal"
+    ],
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
@@ -28024,7 +28075,7 @@
     "power_id": 830,
     "name": "Heroic Resonance",
     "tier": null,
-    "power_type": "HEAL",
+    "power_type": "SELF_HEAL",
     "advantages": [],
     "activation_type": "CLICK",
     "activation_time": null,
@@ -28035,7 +28086,9 @@
       "Targets self"
     ],
     "tooltip": "Restores 100% Health and Energy.",
-    "tags": [],
+    "tags": [
+      "Active Heal"
+    ],
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
@@ -28064,7 +28117,8 @@
     "tooltip": "Deals Magic Damage to the targets. + Last hit has a 25% chance to apply Bane to affected targets and a 10% chance to create a Healing Rune at your location. + You cannot have more than one Rune out at a time.",
     "tags": [
       "Bane",
-      "Rune"
+      "Rune",
+      "Passive Heal"
     ],
     "damage_type": [
       "Magic"
@@ -28180,7 +28234,9 @@
       "Targets self"
     ],
     "tooltip": "Gives you 188 Health every 1 second for 300 sec.",
-    "tags": [],
+    "tags": [
+      "Passive Heal"
+    ],
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
@@ -29033,7 +29089,7 @@
     ],
     "tooltip": "Creates a level 40 Beneficient Construct for 21 sec that heals nearby allies every 3 seconds.",
     "tags": [
-      "Heal"
+      "Passive Heal"
     ],
     "damage_type": [],
     "scaling_stats": [],
@@ -29493,7 +29549,7 @@
     "range_tags": [],
     "tooltip": "5% resistance to Ego Damage. + 5% resistance to Dimensional damage. + 5% Resistance to Toxic damage. + While you are in combat and your Energy is above 75%, 10% chance every 1 sec to heal you for a small amount every 1 sec for 9 sec.",
     "tags": [
-      "Heal"
+      "Passive Heal"
     ],
     "damage_type": [],
     "scaling_stats": [],
@@ -30122,7 +30178,7 @@
     "range_tags": [],
     "tooltip": "5% resistance to all Physical damage. + When you are in combat and your health is below 25% the following effect can occur: 10% chance every 1 sec to cause you and allies within 5ft to heal for 2.5% health every 1 sec over 8 sec. This effect cannot be refreshed.",
     "tags": [
-      "Heal"
+      "Passive Heal"
     ],
     "damage_type": [],
     "scaling_stats": [],
@@ -30560,7 +30616,7 @@
     "power_id": 922,
     "name": "Chimeral Potion  of the Vulture",
     "tier": null,
-    "power_type": "HEAL",
+    "power_type": "SELF_HEAL",
     "advantages": [],
     "activation_type": "CLICK",
     "activation_time": null,
@@ -31097,7 +31153,7 @@
     "power_id": 941,
     "name": "Chimeral Potion of the Rat",
     "tier": null,
-    "power_type": "HEAL",
+    "power_type": "SELF_HEAL",
     "advantages": [],
     "activation_type": "CLICK",
     "activation_time": null,
@@ -31122,7 +31178,7 @@
     "power_id": 942,
     "name": "Chimeral Potion of the Rhinoceros",
     "tier": null,
-    "power_type": "HEAL",
+    "power_type": "SELF_HEAL",
     "advantages": [],
     "activation_type": "CLICK",
     "activation_time": null,
@@ -31162,7 +31218,7 @@
     ],
     "tooltip": "All of your current Gadgeteer Pets are defeated and placed on a 5 sec cooldown. + Particle Mine Causes this power to immediately detonate and increases the damage radius to 25ft. + Munitions Bots Deals Particle Damage to up to 5 targets within 15ft. + Attack Toys Deals Particle Damage to up to 5 targets within 15ft. + Attack Toys Clones Deals Particle Damage to up to 5 targets within 15ft. + Support Drones Support Mode: Heals up to 5 allies within 20ft + Turret Mode: Deals Particle Damage to up to 5 targets within 15ft. + Place all of your Gadgeteer pets on a short cooldown",
     "tags": [
-      "Heal"
+      "Passive Heal"
     ],
     "damage_type": [
       "Particle"
@@ -31328,7 +31384,7 @@
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Oubliette OM;Resistance Adventure Pack",
+    "source": "Oubliette OM, Resistance Adventure Pack",
     "icon_override": "TravelPower_DarkSpeed.png",
     "is_disabled": false
   },
@@ -31451,7 +31507,7 @@
     "power_id": 954,
     "name": "Cozy Fire",
     "tier": null,
-    "power_type": "TEAM_HEAL",
+    "power_type": "BUFF_TARGETS",
     "advantages": [],
     "activation_type": "CLICK",
     "activation_time": 0.83,
@@ -31463,7 +31519,8 @@
     ],
     "tooltip": "Creates a Cozy Fire at your targeted location, healing up to 5 allies within 15ft every 1 sec for 10 sec. This effect counts as a Rune. + When created, removes all Chilled and Snared effects on affected allies. After that, has a 20% chance every 1 sec to remove those effects.",
     "tags": [
-      "Rune"
+      "Rune",
+      "Passive Heal"
     ],
     "damage_type": [],
     "scaling_stats": [],
@@ -31490,7 +31547,7 @@
     ],
     "tooltip": "Covers many readily available or event only healing consumables (Second Wind, Rejuvenating Formula, Mysticla Ward, Hotdog, Sweet, etc.) + All have bonus special effect on their own. + Once used, they all go in shared cooldown.",
     "tags": [
-      "Heal"
+      "Active Heal"
     ],
     "damage_type": [],
     "scaling_stats": [],

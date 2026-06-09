@@ -724,7 +724,7 @@
     "points_cost": 2,
     "tooltip": "Removes 1 Bleed from your target and heals you for each stack removed.",
     "tags": [
-      "Heal",
+      "Active Heal",
       "Bleed"
     ],
     "damage_type": [],
@@ -1060,7 +1060,7 @@
     "tooltip": "On a full charge, creates a Healing Rune at your location. Healing Rune heals nearby allies every second for 10 seconds. You cannot have more than one Rune out at a time.",
     "tags": [
       "Rune",
-      "Heal"
+      "Passive Heal"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -1338,7 +1338,7 @@
     "points_cost": 2,
     "tooltip": "Every strike made with this attack removes a stack of Deadly Poison or Bleeding from you. Heals you for a small amount every time one of these effects is removed in this manner.",
     "tags": [
-      "Heal",
+      "Active Heal",
       "Bleed",
       "Deadly Poison"
     ],
@@ -1416,7 +1416,7 @@
     "tooltip": "Consumes any Chill stacks you have on your targets and heals you for each one consumed.",
     "tags": [
       "Chill",
-      "Heal"
+      "Active Heal"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -1668,8 +1668,7 @@
     "points_cost": 2,
     "tooltip": "Gains a 20% chance to chain to a secondary target. The chain will have the opposite effect: An attack will chain a heal to a nearby friend; a heal will chain an attack to a nearby enemy.",
     "tags": [
-      "Arc",
-      "Heal"
+      "Team Heal"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -1868,12 +1867,10 @@
     "advantage_id": 132,
     "name": "Dark Rune",
     "points_cost": 2,
-    "tooltip": "On a full charge, creates a Healing Rune at the primary target's location. Healing Rune heals nearby allies every second for 10 seconds. You cannot have more than one Healing Rune active at a time. Healing Rune is a type of Enchantment.",
+    "tooltip": "On a full charge, creates a Healing Rune at the primary target's location. Healing Rune heals nearby allies every second for 10 seconds. You cannot have more than one Rune out at a time.",
     "tags": [
-      "Team Heal",
       "Rune",
-      "Enchantment",
-      "Heal"
+      "Passive Heal"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -3131,7 +3128,7 @@
     "points_cost": 2,
     "tooltip": "Each tick, heals you for 3.5% Health Point and removes 3.5% Energy from your target.",
     "tags": [
-      "Heal"
+      "Passive Heal"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -3662,8 +3659,8 @@
     "points_cost": 2,
     "tooltip": "Creates a Healing Rune on your primary target for a short duration, which heals nearby allies. + You cannot have more than one Rune out at a time.",
     "tags": [
-      "Team Heal",
-      "Rune"
+      "Rune",
+      "Passive Heal"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -3829,7 +3826,7 @@
     "points_cost": 3,
     "tooltip": "20% of any non-minor or over-time heal you receive to nearby allies while active, even if your health is full. This effect can only occur once every 2 seconds.",
     "tags": [
-      "Heal"
+      "Team Heal"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -4267,7 +4264,7 @@
     "points_cost": 2,
     "tooltip": "Adds a different effect to your shield based on which Aura you have active. AoAC: returns more energy during a block, scaling with your Intelligence. AoPM: has a chance to strike your attacker with a bolt of lightning. AoED: has a chance to Fear your attackers. AoRP:  has a chance to place a Heal over Time on you.",
     "tags": [
-      "Heal",
+      "Active Heal",
       "Fear"
     ],
     "damage_type": [],
@@ -4727,7 +4724,7 @@
     "tags": [
       "Illumination",
       "Illuminated",
-      "Heal",
+      "Team Heal",
       "Rupture"
     ],
     "damage_type": [
@@ -5264,7 +5261,7 @@
     "points_cost": 2,
     "tooltip": "Gives a change to Heal you for the amount of damage dealt. That chance increases the lower is your Health.",
     "tags": [
-      "Heal"
+      "Passive Heal"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -5466,10 +5463,7 @@
     "name": "More Souls!",
     "points_cost": 2,
     "tooltip": "Revives up to 4 nearby allies within 50 feet. The healing received is divided among the number of allies revived at a time.",
-    "tags": [
-      "Team Heal",
-      "Heal"
-    ],
+    "tags": [],
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5785,7 +5779,7 @@
     "tooltip": "On a full charge, creates a Healing Rune beneath you.",
     "tags": [
       "Rune",
-      "Heal"
+      "Passive Heal"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -5907,10 +5901,7 @@
     "name": "Pact",
     "points_cost": 2,
     "tooltip": "Revives up to 4 nearby allies within 50 feet. The healing received is divided among the number of allies revived at a time.",
-    "tags": [
-      "Team Heal",
-      "Heal"
-    ],
+    "tags": [],
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6361,7 +6352,7 @@
     "points_cost": 2,
     "tooltip": "25% chance to perform an AoE heal around the target.",
     "tags": [
-      "Heal"
+      "Team Heal"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -6704,7 +6695,8 @@
     "points_cost": 2,
     "tooltip": "Drops a Healing Rune which heals nearby allies every 1 sec for 10 sec. You cannot have more than one Rune out at a time.  If you are blocking with Stone Shroud, this effect is doubled.",
     "tags": [
-      "Rune"
+      "Rune",
+      "Passive Heal"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -6819,7 +6811,7 @@
     "points_cost": 2,
     "tooltip": "While active, heals you whenever one of your powers comes off of cooldown.",
     "tags": [
-      "Heal"
+      "Passive Heal"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -6940,7 +6932,7 @@
     "points_cost": 2,
     "tooltip": "You gain additional ticks of healing whenever you Dodge an attack while active. This effect can only occur once every 0.5 seconds.",
     "tags": [
-      "Heal"
+      "Passive Heal"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -6967,7 +6959,9 @@
     "name": "Reverence",
     "points_cost": 2,
     "tooltip": "Adds a small AoE (15 foot radius, max of 5 targets) heal component.",
-    "tags": [],
+    "tags": [
+      "Team Heal"
+    ],
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7335,9 +7329,7 @@
     "name": "Serenity",
     "points_cost": 2,
     "tooltip": "A portion of the energy you use to cast is returned if your target is affected by the heal component of Mend. The energy returned scales slightly with your Constitution.",
-    "tags": [
-      "Heal"
-    ],
+    "tags": [],
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7622,7 +7614,7 @@
     "points_cost": 3,
     "tooltip": "Attacks no longer deal additional damage when you perform a critical strike with them. Instead, you heal yourself for the amount of additional damage you would have done when performing a critical strike.",
     "tags": [
-      "Heal"
+      "Passive Heal"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -7637,7 +7629,7 @@
     "points_cost": 2,
     "tooltip": "Will return to you after damaging the enemy and heal you for a short time. This only occurs if the sprites dealt their full amount of damage. You can only have a maximum of 5 stacks of this heal at one time.",
     "tags": [
-      "Heal"
+      "Passive Heal"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -7772,7 +7764,8 @@
     "points_cost": 2,
     "tooltip": "56-100%  chance (based on charge time)  to apply Dependency. If your target is affected by Shredded, adds 12 sec to your Dependency stacks.",
     "tags": [
-      "Shredded:Dependency"
+      "Shredded",
+      "Dependency"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -7817,7 +7810,8 @@
     "points_cost": 2,
     "tooltip": "When fully charged, creates a Healing Rune on your primary target. You cannot have more than one Rune out at a time.",
     "tags": [
-      "Rune"
+      "Rune",
+      "Passive Heal"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -7908,10 +7902,7 @@
     "name": "Spreading Flames",
     "points_cost": 2,
     "tooltip": "Revives up to 4 nearby allies within 50 feet. The healing received is divided among the number of allies revived at a time.",
-    "tags": [
-      "Team Heal",
-      "Heal"
-    ],
+    "tags": [],
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8358,7 +8349,7 @@
     "points_cost": 2,
     "tooltip": "Each tick heals you for 2% Health point, and remove 5% energy from the target.",
     "tags": [
-      "Heal"
+      "Passive Heal"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -9422,7 +9413,8 @@
     "points_cost": 2,
     "tooltip": "On full charge, summon an Energy Field for 10 seconds. Standing in the Energy Field grants Energy to up to 5 allies within 15ft while depleting Energy from foes. Count as a Rune. You cannot have more than one rune out at a time",
     "tags": [
-      "Rune"
+      "Rune",
+      "Static Field"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -9739,7 +9731,7 @@
     "tooltip": "On a full charge, creates a Healing Rune beneath the user.",
     "tags": [
       "Rune",
-      "Heal"
+      "Passive Heal"
     ],
     "damage_type": [],
     "is_disabled": false,

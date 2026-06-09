@@ -629,7 +629,7 @@
           "maxPoints": 3,
           "name": "Outburst",
           "icon": "/spec-icons/superstat/endurance/Specialization_Outburst.png",
-          "tip": "When your Energy is above 90%, the Damage on your attacks is increased by 5/10/15% base damage.<br /><br />The Healing portions of your powers are increased by 5/10/15%.<br /><br />Your power costs are increased by 5/10/15%."
+          "tip": "When your Energy is above 90%, the Damage on your attacks is increased by 5/10/15% base damage.<br>The Healing portions of your powers are increased by 5/10/15%.<br>Your power costs are increased by 5/10/15%."
         },
         {
           "id": 6,
@@ -653,7 +653,7 @@
           "maxPoints": 1,
           "name": "Endurance Mastery",
           "icon": "/spec-icons/superstat/endurance/Specialization_EnduranceMastery.png",
-          "tip": "You gain 3% of your Maximum Energy when certain criteria are met, dependent on your Role:<br /><br />Tank Role: Whenever you take damage. This effect can only occur once every 3 seconds.<br /><br />Melee Damage or Ranged Roles: Whenever you deal damage. This effect can only occur once every 3 seconds.<br /><br />Support Role: Whenever you Heal a target. This effect can only occur once every 3 seconds.<br /><br />Hybrid Role: Every 5 seconds you are in combat."
+          "tip": "You gain 3% of your Maximum Energy when certain criteria are met, dependent on your Role:<br>Tank Role: Whenever you take damage. This effect can only occur once every 3 seconds.<br>Melee Damage or Ranged Roles: Whenever you deal damage. This effect can only occur once every 3 seconds.<br>Support Role: Whenever you Heal a target. This effect can only occur once every 3 seconds.<br>Hybrid Role: Every 5 seconds you are in combat."
         }
       ]
     },
@@ -694,7 +694,7 @@
           "maxPoints": 2,
           "name": "Bulwark",
           "icon": "/spec-icons/role/protector/Specialization_Bulwark.png",
-          "tip": "Increases your Maximum Health by 5/10% when not in the Hybrid Role.<br /><br />When in the Hybrid Role, this Specialization instead causes your Super Stats to increase your Threat Generation."
+          "tip": "Increases your Maximum Health by 5/10% when not in the Hybrid Role.<br>When in the Hybrid Role, this Specialization instead causes your Super Stats to increase your Threat Generation."
         },
         {
           "id": 4,
@@ -710,7 +710,7 @@
           "maxPoints": 2,
           "name": "Exhausting Strikes",
           "icon": "/spec-icons/role/protector/Specialization_ExhaustingStrikes.png",
-          "tip": "Your Energy Builder attacks now reduce your primary target\\'s damage dealt by 5/10% for 10 sec."
+          "tip": "Your Energy Builder attacks now reduce your primary target's damage dealt by 5/10% for 10 sec."
         },
         {
           "id": 6,
@@ -767,7 +767,7 @@
           "maxPoints": 2,
           "name": "Penetrating Strikes",
           "icon": "/spec-icons/role/brawler/Specialization_PenetratingStrikes.png",
-          "tip": "When getting a Critical Hit with a direct melee attack, applies Penetrating Strikes for 5 sec, causing attacks to ignore 5/10% of the target\\'s Resistances."
+          "tip": "When getting a Critical Hit with a direct melee attack, applies Penetrating Strikes for 5 sec, causing attacks to ignore 5/10% of the target's Resistances."
         },
         {
           "id": 3,
@@ -937,7 +937,7 @@
           "maxPoints": 3,
           "name": "Sentinel Aura",
           "icon": "/spec-icons/role/sentinel/Specialization_SentinelAura.png",
-          "tip": "You and your Teammates regain Health every 3 sec. This number is based on your level, and is affected by your Bonus Healing.<br /><br />This effect has a range of 100ft and a target cap of 20."
+          "tip": "You and your Teammates regain Health every 3 sec. This number is based on your level, and is affected by your Bonus Healing.<br>This effect has a range of 100ft and a target cap of 20."
         },
         {
           "id": 4,
@@ -1026,7 +1026,7 @@
           "maxPoints": 2,
           "name": "Well Trained",
           "icon": "/spec-icons/role/commander/Specialization_WellTrained.png",
-          "tip": "The Recharge time of all your Pet\\'s abilities is reduced by 10/20%."
+          "tip": "The Recharge time of all your Pet's abilities is reduced by 10/20%."
         },
         {
           "id": 5,
@@ -1261,7 +1261,7 @@
           "maxPoints": 3,
           "name": "Sentry Aura",
           "icon": "/spec-icons/role/sentry/Specialization_SentryAura.png",
-          "tip": "You and your Teammates gain an additional +2/4/6% resistance to all damage.<br /><br />This effect has a range of 100ft and a target cap of 20."
+          "tip": "You and your Teammates gain an additional +2/4/6% resistance to all damage.<br>This effect has a range of 100ft and a target cap of 20."
         },
         {
           "id": 4,
@@ -1480,7 +1480,7 @@
           "maxPoints": 2,
           "name": "Aggressive Stance",
           "icon": "/spec-icons/role/vindicator/Specialization_AggressiveStance.png",
-          "tip": "You gain 10/20% of your Offense from gear as Defense.<br /><br />Additionally, you gain 10/20% of your Offense from individual powers as Defense."
+          "tip": "You gain 10/20% of your Offense from gear as Defense.<br>Additionally, you gain 10/20% of your Offense from individual powers as Defense."
         },
         {
           "id": 1,

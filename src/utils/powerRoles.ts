@@ -1,11 +1,12 @@
 import type { Power } from "@/types/powers";
+import type { Advantage } from "@/types/advantages";
 import { getNormalizedPowerType } from "@/shared/utils/powerTypes";
 
 const powerTypeRoleRules: Array<[string, string[]]> = [
   ["ACTIVE_DEFENSE", ["Active Defense"]],
   ["ACTIVE_OFFENSE", ["Active Offense"]],
   ["ACTIVE_POWERS", ["Active Offense", "Active Defense"]],
-  ["ALLY_HEAL", ["Heal / Shield"]],
+  ["ALLY_HEAL", ["Active Heal / Shield"]],
   ["BLOCK", ["Block"]],
   ["BUFF_SELF", ["Buff / Debuff"]],
   ["BUFF_TARGETS", ["Buff / Debuff"]],
@@ -16,8 +17,8 @@ const powerTypeRoleRules: Array<[string, string[]]> = [
   ["DEVICE", ["Device"]],
   ["ENERGY_BUILDER", ["Energy Builder"]],
   ["ENERGY_UNLOCK", ["Energy Unlock"]],
-  ["HEAL", ["Heal / Shield"]],
-  ["HEAL_OVER_TIME", ["Heal / Shield"]],
+  ["HEAL", ["Active Heal / Shield"]],
+  ["HEAL_OVER_TIME", ["Active Heal / Shield"]],
   ["LUNGE", ["Lunge"]],
   ["MELEE_RANGED", ["Melee Damage", "Ranged Damage"]],
   ["MELEE_AOE_DAMAGE", ["Melee Damage"]],
@@ -26,16 +27,16 @@ const powerTypeRoleRules: Array<[string, string[]]> = [
   ["RANGED_AOE_DAMAGE", ["Ranged Damage"]],
   ["RANGED_DAMAGE", ["Ranged Damage"]],
   ["REVERSE_LUNGE", ["Lunge"]],
-  ["REVIVE", ["Resurrection"]],
-  ["SELF_HEAL", ["Heal / Shield"]],
-  ["SELF_HEAL_OVER_TIME", ["Heal / Shield"]],
-  ["SELF_RESURRECTION", ["Self Resurrection"]],
-  ["SHIELD", ["Heal / Shield"]],
+  ["REVIVE", ["Revive / Self-Rez"]],
+  ["SELF_HEAL", ["Active Heal / Shield"]],
+  ["SELF_HEAL_OVER_TIME", ["Passive Heal / Shield"]],
+  ["SELF_RESURRECTION", ["Revive / Self-Rez"]],
+  ["SHIELD", ["Active Heal / Shield"]],
   ["SLOTTED_DEFENSIVE_PASSIVE", ["Slotted Passive"]],
   ["SLOTTED_HYBRID_PASSIVE", ["Slotted Passive"]],
   ["SLOTTED_OFFENSIVE_PASSIVE", ["Slotted Passive"]],
   ["SLOTTED_SUPPORT_PASSIVE", ["Slotted Passive"]],
-  ["TEAM_HEAL", ["Heal / Shield"]],
+  ["TEAM_HEAL", ["Active Heal / Shield"]],
   ["THREAT_WIPE", ["Threat Wipe"]],
   ["TOGGLE_FORM", ["Toggle Form"]],
   ["TRAVEL_POWER", ["Travel Power"]],
@@ -51,9 +52,41 @@ const crowdControlTags = new Set([
   "sleep",
   "stun",
 ]);
-const powerRoleOrder = Array.from(
-  new Set(powerTypeRoleRules.flatMap(([, roles]) => roles)),
-);
+const buffDebuffTags = new Set(["static field"]);
+const activeHealShieldTags = new Set(["active heal", "life drain", "team heal"]);
+const passiveHealShieldTags = new Set([
+  "illuminated",
+  "illumination",
+  "light everlasting",
+  "passive heal",
+  "restoration",
+  "shield",
+]);
+const powerRoleOrder = [
+  "Ranged Damage",
+  "Melee Damage",
+  "Active Heal / Shield",
+  "Passive Heal / Shield",
+  "Slotted Passive",
+  "Toggle Form",
+  "Block",
+  "Energy Unlock",
+  "Active Defense",
+  "Active Offense",
+  "Revive / Self-Rez",
+  "Buff / Debuff",
+  "Crowd Control",
+  "Lunge",
+  "Pet",
+  "Threat Wipe",
+];
+
+type PowerRoleContext = {
+  advantagesById?: ReadonlyMap<number, Advantage> | null;
+  includeAdvantageTags?: boolean;
+  includePowerMetadata?: boolean;
+  includePowerTags?: boolean;
+};
 
 function normalizeRuleText(value: string | null | undefined) {
   return value?.replace(/[^a-z0-9]+/giu, " ").trim().toLowerCase() ?? "";
@@ -74,25 +107,94 @@ function hasLungeRangeTag(power: Power) {
   );
 }
 
-export function getPowerRoles(power: Power) {
+function hasActiveHealShieldTag(tags: string[] | null | undefined) {
+  return hasAnyNormalizedValue(tags, activeHealShieldTags);
+}
+
+function hasPassiveHealShieldTag(tags: string[] | null | undefined) {
+  return hasAnyNormalizedValue(tags, passiveHealShieldTags);
+}
+
+function getAdvantageTags(
+  power: Power,
+  advantagesById: ReadonlyMap<number, Advantage> | null | undefined,
+) {
+  if (!advantagesById) {
+    return [];
+  }
+
+  return power.advantages.flatMap((advantageId) => {
+    return advantagesById.get(advantageId)?.tags ?? [];
+  });
+}
+
+export function getPowerRoles(power: Power, context: PowerRoleContext = {}) {
   const roles = new Set<string>();
   const normalizedPowerType = getNormalizedPowerType(power);
+  const includePowerMetadata = context.includePowerMetadata ?? true;
+  const includePowerTags = context.includePowerTags ?? true;
+  const includeAdvantageTags = context.includeAdvantageTags ?? false;
 
-  powerTypeRoleMap.get(normalizedPowerType)?.forEach((role) => roles.add(role));
+  if (includePowerMetadata) {
+    powerTypeRoleMap.get(normalizedPowerType)?.forEach((role) => roles.add(role));
+  }
 
-  if (hasAnyNormalizedValue(power.tags, crowdControlTags)) {
+  if (includePowerTags && hasAnyNormalizedValue(power.tags, crowdControlTags)) {
     roles.add("Crowd Control");
   }
 
-  if (hasLungeRangeTag(power)) {
+  if (includePowerTags && hasAnyNormalizedValue(power.tags, buffDebuffTags)) {
+    roles.add("Buff / Debuff");
+  }
+
+  if (includePowerTags && hasActiveHealShieldTag(power.tags)) {
+    roles.add("Active Heal / Shield");
+  }
+
+  if (includePowerTags && hasPassiveHealShieldTag(power.tags)) {
+    roles.add("Passive Heal / Shield");
+  }
+
+  if (
+    includeAdvantageTags &&
+    hasAnyNormalizedValue(getAdvantageTags(power, context.advantagesById), buffDebuffTags)
+  ) {
+    roles.add("Buff / Debuff");
+  }
+
+  if (
+    includeAdvantageTags &&
+    hasActiveHealShieldTag(getAdvantageTags(power, context.advantagesById))
+  ) {
+    roles.add("Active Heal / Shield");
+  }
+
+  if (
+    includeAdvantageTags &&
+    hasPassiveHealShieldTag(getAdvantageTags(power, context.advantagesById))
+  ) {
+    roles.add("Passive Heal / Shield");
+  }
+
+  if (includePowerMetadata && hasLungeRangeTag(power)) {
     roles.add("Lunge");
   }
 
   return powerRoleOrder.filter((role) => roles.has(role));
 }
 
-export function getPowerRoleOptions(powers: Power[]) {
-  const availableRoles = new Set(powers.flatMap((power) => getPowerRoles(power)));
+export function getPowerRoleOptions(
+  powers: Power[],
+  advantagesById?: ReadonlyMap<number, Advantage> | null,
+) {
+  const availableRoles = new Set(
+    powers.flatMap((power) =>
+      getPowerRoles(power, {
+        advantagesById,
+        includeAdvantageTags: true,
+      }),
+    ),
+  );
 
   return powerRoleOrder
     .filter((role) => availableRoles.has(role))
