@@ -664,7 +664,8 @@
     "tooltip": "Fully charging applies Illumination to you and nearby allies. It also applies Illuminated to the target.",
     "tags": [
       "Illumination",
-      "Illuminated"
+      "Illuminated",
+      "Passive Heal"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -1280,7 +1281,8 @@
     "points_cost": 2,
     "tooltip": "Applies Restoration to you, healing you every 2 sec for 6 sec. If your health in below 20%, give you additional heal, and the value is increased.",
     "tags": [
-      "Restoration"
+      "Restoration",
+      "Passive Heal"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -1728,7 +1730,8 @@
     "points_cost": 2,
     "tooltip": "Applies Restoration to you, healing you every 2 sec for 6 sec. If your health in below 20%, give you additional heal, and the value is increased.",
     "tags": [
-      "Restoration"
+      "Restoration",
+      "Passive Heal"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -3945,7 +3948,8 @@
     "tooltip": "Applies Illumination to you and nearby allies as well as Illuminated to your targets.",
     "tags": [
       "Illumination",
-      "Illuminated"
+      "Illuminated",
+      "Passive Heal"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -4221,7 +4225,8 @@
     "tooltip": "Applies Illumination to you and nearby allies as well as Illuminated to your targets.",
     "tags": [
       "Illumination",
-      "Illuminated"
+      "Illuminated",
+      "Passive Heal"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -4236,7 +4241,8 @@
     "points_cost": 2,
     "tooltip": "Once expires, applies lluminated to affected targets, causing allies who attack them to heal.",
     "tags": [
-      "Illuminated"
+      "Illuminated",
+      "Passive Heal"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -4264,7 +4270,7 @@
     "points_cost": 2,
     "tooltip": "Adds a different effect to your shield based on which Aura you have active. AoAC: returns more energy during a block, scaling with your Intelligence. AoPM: has a chance to strike your attacker with a bolt of lightning. AoED: has a chance to Fear your attackers. AoRP:  has a chance to place a Heal over Time on you.",
     "tags": [
-      "Active Heal",
+      "Passive Heal",
       "Fear"
     ],
     "damage_type": [],
@@ -4362,7 +4368,7 @@
     "advantage_id": 302,
     "name": "Impure Waters",
     "points_cost": 2,
-    "tooltip": "Illuminated targets ar affected by Deadly Poison instead of Disorient.",
+    "tooltip": "Illuminated targets are affected by Deadly Poison instead of Disorient.",
     "tags": [
       "Deadly Poison",
       "Illuminated"
@@ -4465,7 +4471,8 @@
     "points_cost": 2,
     "tooltip": "Applies Restoration to you, healing you every 2 sec for 6 sec. If your health in below 20%, give you additional heal, and the value is increased.",
     "tags": [
-      "Restoration"
+      "Restoration",
+      "Passive Heal"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -4495,7 +4502,8 @@
     "points_cost": 2,
     "tooltip": "15% chance per hit to apply Dependencey to targets. Dependency causes the affected target to heal you or one of your nearby allies for a small amount over 20 seconds. Can stack up to 3 times.",
     "tags": [
-      "Dependency"
+      "Dependency",
+      "Passive Heal"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -4888,7 +4896,8 @@
     "points_cost": 2,
     "tooltip": "When fully charged, applies Light Everlasting to nearby allies.",
     "tags": [
-      "Light Everlasting"
+      "Light Everlasting",
+      "Passive Heal"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -4918,7 +4927,8 @@
     "points_cost": 2,
     "tooltip": "On a full maintain, applies Illuminated to foes.",
     "tags": [
-      "Illuminated"
+      "Illuminated",
+      "Passive Heal"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -6635,7 +6645,8 @@
     "points_cost": 2,
     "tooltip": "Applies Restoration to you, healing you every 2 sec for 6 sec. If your health in below 20%, give you additional heal, and the value is increased.",
     "tags": [
-      "Restoration"
+      "Restoration",
+      "Passive Heal"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -7762,10 +7773,11 @@
     "advantage_id": 531,
     "name": "Soul Capturing Blade",
     "points_cost": 2,
-    "tooltip": "56-100%  chance (based on charge time)  to apply Dependency. If your target is affected by Shredded, adds 12 sec to your Dependency stacks.",
+    "tooltip": "56-100%  chance (based on charge time) to apply Dependency. If your target is affected by Shredded, adds 12 sec to your Dependency stacks.",
     "tags": [
       "Shredded",
-      "Dependency"
+      "Dependency",
+      "Passive Heal"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -7780,7 +7792,8 @@
     "points_cost": 2,
     "tooltip": "Applies and refreshes Dependency on affected foes after the vortex expires.",
     "tags": [
-      "Dependency"
+      "Dependency",
+      "Passive Heal"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -7962,7 +7975,8 @@
     "points_cost": 2,
     "tooltip": "Applies Restoration to you, healing you every 2 sec for 6 sec. If your health in below 20%, give you additional heal, and the value is increased.",
     "tags": [
-      "Restoration"
+      "Restoration",
+      "Passive Heal"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -9340,7 +9354,8 @@
     "points_cost": 2,
     "tooltip": "Applies Restoration to you, healing you every 2 sec for 6 sec. If your health in below 20%, give you additional heal, and the value is increased.",
     "tags": [
-      "Restoration"
+      "Restoration",
+      "Passive Heal"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -10075,7 +10090,8 @@
     "points_cost": 2,
     "tooltip": "Applies Illuminated to the target.",
     "tags": [
-      "Illuminated"
+      "Illuminated",
+      "Passive Heal"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -10090,7 +10106,8 @@
     "points_cost": 2,
     "tooltip": "Applies Light Everlasting to allies near the primary target.",
     "tags": [
-      "Light Everlasting"
+      "Light Everlasting",
+      "Passive Heal"
     ],
     "damage_type": [],
     "is_disabled": false,
@@ -10105,7 +10122,8 @@
     "points_cost": 2,
     "tooltip": "When fully maintained, applies Light Everlasting to nearby allies.",
     "tags": [
-      "Light Everlasting"
+      "Light Everlasting",
+      "Passive Heal"
     ],
     "damage_type": [],
     "is_disabled": false,

@@ -6,7 +6,7 @@ const powerTypeRoleRules: Array<[string, string[]]> = [
   ["ACTIVE_DEFENSE", ["Active Defense"]],
   ["ACTIVE_OFFENSE", ["Active Offense"]],
   ["ACTIVE_POWERS", ["Active Offense", "Active Defense"]],
-  ["ALLY_HEAL", ["Active Heal / Shield"]],
+  ["ALLY_HEAL", []],
   ["BLOCK", ["Block"]],
   ["BUFF_SELF", ["Buff / Debuff"]],
   ["BUFF_TARGETS", ["Buff / Debuff"]],
@@ -17,8 +17,8 @@ const powerTypeRoleRules: Array<[string, string[]]> = [
   ["DEVICE", ["Device"]],
   ["ENERGY_BUILDER", ["Energy Builder"]],
   ["ENERGY_UNLOCK", ["Energy Unlock"]],
-  ["HEAL", ["Active Heal / Shield"]],
-  ["HEAL_OVER_TIME", ["Active Heal / Shield"]],
+  ["HEAL", []],
+  ["HEAL_OVER_TIME", []],
   ["LUNGE", ["Lunge"]],
   ["MELEE_RANGED", ["Melee Damage", "Ranged Damage"]],
   ["MELEE_AOE_DAMAGE", ["Melee Damage"]],
@@ -28,15 +28,15 @@ const powerTypeRoleRules: Array<[string, string[]]> = [
   ["RANGED_DAMAGE", ["Ranged Damage"]],
   ["REVERSE_LUNGE", ["Lunge"]],
   ["REVIVE", ["Revive / Self-Rez"]],
-  ["SELF_HEAL", ["Active Heal / Shield"]],
-  ["SELF_HEAL_OVER_TIME", ["Passive Heal / Shield"]],
+  ["SELF_HEAL", []],
+  ["SELF_HEAL_OVER_TIME", []],
   ["SELF_RESURRECTION", ["Revive / Self-Rez"]],
-  ["SHIELD", ["Active Heal / Shield"]],
+  ["SHIELD", ["Shield"]],
   ["SLOTTED_DEFENSIVE_PASSIVE", ["Slotted Passive"]],
   ["SLOTTED_HYBRID_PASSIVE", ["Slotted Passive"]],
   ["SLOTTED_OFFENSIVE_PASSIVE", ["Slotted Passive"]],
   ["SLOTTED_SUPPORT_PASSIVE", ["Slotted Passive"]],
-  ["TEAM_HEAL", ["Active Heal / Shield"]],
+  ["TEAM_HEAL", []],
   ["THREAT_WIPE", ["Threat Wipe"]],
   ["TOGGLE_FORM", ["Toggle Form"]],
   ["TRAVEL_POWER", ["Travel Power"]],
@@ -54,19 +54,14 @@ const crowdControlTags = new Set([
 ]);
 const buffDebuffTags = new Set(["static field"]);
 const activeHealShieldTags = new Set(["active heal", "life drain", "team heal"]);
-const passiveHealShieldTags = new Set([
-  "illuminated",
-  "illumination",
-  "light everlasting",
-  "passive heal",
-  "restoration",
-  "shield",
-]);
+const passiveHealShieldTags = new Set(["passive heal"]);
+const shieldTags = new Set(["shield"]);
 const powerRoleOrder = [
   "Ranged Damage",
   "Melee Damage",
-  "Active Heal / Shield",
-  "Passive Heal / Shield",
+  "Active Heal",
+  "Passive Heal",
+  "Shield",
   "Slotted Passive",
   "Toggle Form",
   "Block",
@@ -80,6 +75,13 @@ const powerRoleOrder = [
   "Pet",
   "Threat Wipe",
 ];
+const powerRoleAdvantageHighlightQueries: Record<string, string[]> = {
+  "Active Heal": [...activeHealShieldTags],
+  "Buff / Debuff": [...buffDebuffTags],
+  "Crowd Control": [...crowdControlTags],
+  "Passive Heal": [...passiveHealShieldTags],
+  Shield: [...shieldTags],
+};
 
 type PowerRoleContext = {
   advantagesById?: ReadonlyMap<number, Advantage> | null;
@@ -148,11 +150,15 @@ export function getPowerRoles(power: Power, context: PowerRoleContext = {}) {
   }
 
   if (includePowerTags && hasActiveHealShieldTag(power.tags)) {
-    roles.add("Active Heal / Shield");
+    roles.add("Active Heal");
   }
 
   if (includePowerTags && hasPassiveHealShieldTag(power.tags)) {
-    roles.add("Passive Heal / Shield");
+    roles.add("Passive Heal");
+  }
+
+  if (includePowerTags && hasAnyNormalizedValue(power.tags, shieldTags)) {
+    roles.add("Shield");
   }
 
   if (
@@ -166,14 +172,21 @@ export function getPowerRoles(power: Power, context: PowerRoleContext = {}) {
     includeAdvantageTags &&
     hasActiveHealShieldTag(getAdvantageTags(power, context.advantagesById))
   ) {
-    roles.add("Active Heal / Shield");
+    roles.add("Active Heal");
   }
 
   if (
     includeAdvantageTags &&
     hasPassiveHealShieldTag(getAdvantageTags(power, context.advantagesById))
   ) {
-    roles.add("Passive Heal / Shield");
+    roles.add("Passive Heal");
+  }
+
+  if (
+    includeAdvantageTags &&
+    hasAnyNormalizedValue(getAdvantageTags(power, context.advantagesById), shieldTags)
+  ) {
+    roles.add("Shield");
   }
 
   if (includePowerMetadata && hasLungeRangeTag(power)) {
@@ -202,4 +215,8 @@ export function getPowerRoleOptions(
       label: role,
       value: role,
     }));
+}
+
+export function getPowerRoleAdvantageHighlightQueries(role: string) {
+  return powerRoleAdvantageHighlightQueries[role] ?? [];
 }

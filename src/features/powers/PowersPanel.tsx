@@ -34,7 +34,11 @@ import {
   powerMatchesExactRange,
   powerRangeSteps,
 } from "@/utils/powerRange";
-import { getPowerRoleOptions, getPowerRoles } from "@/utils/powerRoles";
+import {
+  getPowerRoleAdvantageHighlightQueries,
+  getPowerRoleOptions,
+  getPowerRoles,
+} from "@/utils/powerRoles";
 import {
   powerMatchesTargetingFilter,
   powerTargetingOptions,
@@ -434,6 +438,9 @@ export function PowersPanel({
       ? parsedSearchClauses.map((searchClause) => searchClause.normalQuery)
       : []),
     ...(searchInAdvantages ? selectedDamageTypes : []),
+    ...(searchInAdvantages && selectedPowerRoleFilter
+      ? getPowerRoleAdvantageHighlightQueries(selectedPowerRoleFilter)
+      : []),
   ].filter(Boolean);
   const hasEnergyBuilder = buildSlots.some((slot) => slot.power?.tier === -1);
   const hadEnergyBuilderRef = useRef(hasEnergyBuilder);

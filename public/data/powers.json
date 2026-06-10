@@ -3464,7 +3464,7 @@
     "range_tags": [
       "Targets self"
     ],
-    "tooltip": "Grants a 42/50/60% increase to all damage. + Increases your Critical Severity for every stack of Chill on your target +. While active you have a 25% chance to apply Chll to foes that attack you, reducing their movement speed by 42% for 16 sec and occasionally trapping them in an Ice Cage. Stacks up to 3 times. + Applies Cold Snap to you for 10 sec. + Applies Break Free damage to any Holds, Roots, or Disables affecting you. - Activates a shared cooldown of 90 seconds on all Active Offenses.",
+    "tooltip": "Grants a 42/50/60% increase to all damage. + Increases your Critical Severity for every stack of Chill on your target. + While active you have a 25% chance to apply Chll to foes that attack you, reducing their movement speed by 42% for 16 sec and occasionally trapping them in an Ice Cage. Stacks up to 3 times. + Applies Cold Snap to you for 10 sec. + Applies Break Free damage to any Holds, Roots, or Disables affecting you. - Activates a shared cooldown of 90 seconds on all Active Offenses.",
     "tags": [
       "Chill",
       "Ice Cage",
@@ -4049,7 +4049,7 @@
     ],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Collector Store",
+    "source": "Collector Store, Lockbox: Rave",
     "icon_override": "EnergyProjector_StormStrike",
     "is_disabled": false
   },
@@ -4087,7 +4087,7 @@
     ],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Collector Store",
+    "source": "Collector Store, Lockbox: Blazing",
     "icon_override": "EnergyProjector_MeteorBlaze",
     "is_disabled": false
   },
@@ -4155,7 +4155,7 @@
     ],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Collector Store",
+    "source": "Collector Store, Lockbox: Ravenswood",
     "icon_override": "EnergyProjector_GravityDriver",
     "is_disabled": false
   },
@@ -4191,7 +4191,7 @@
     ],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Collector Store",
+    "source": "Collector Store, Lockbox: Frozen",
     "icon_override": "EnergyProjector_FractalAegis",
     "is_disabled": false
   },
@@ -4225,7 +4225,7 @@
     ],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Collector Store",
+    "source": "Collector Store, Lockbox: Aquatic",
     "icon_override": "EnergyProjector_Whirlpool",
     "is_disabled": false
   },
@@ -4262,7 +4262,7 @@
     ],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Collector Store",
+    "source": "Collector Store, Lockbox: Untamed",
     "icon_override": "EnergyProjector_Tornado",
     "is_disabled": false
   },
@@ -9182,7 +9182,7 @@
     ],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Collector Store",
+    "source": "Collector Store, Lockbox: Phantom",
     "icon_override": "Technology_ArrowAssault",
     "is_disabled": false
   },
@@ -9251,7 +9251,7 @@
     ],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Collector Store",
+    "source": "Collector Store, Lockbox: Spider",
     "icon_override": "Technology_MechanicalMonstrosity",
     "is_disabled": false
   },
@@ -9284,7 +9284,7 @@
     ],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Collector Store",
+    "source": "Collector Store, Lockbox: Toybox",
     "icon_override": "Technology_Meltdown",
     "is_disabled": false
   },
@@ -9318,7 +9318,7 @@
     ],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Collector Store",
+    "source": "Collector Store, Lockbox: Spy",
     "icon_override": "Technology_BulletBarrage",
     "is_disabled": false
   },
@@ -9353,7 +9353,7 @@
     ],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Collector Store",
+    "source": "Collector Store, Lockbox: Western",
     "icon_override": "Technology_Showdown",
     "is_disabled": false
   },
@@ -11853,7 +11853,7 @@
     ],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Collector Store",
+    "source": "Collector Store, Lockbox Buccaneer",
     "icon_override": "MartialArts_WhirlingDragonStrike",
     "is_disabled": false
   },
@@ -11890,7 +11890,7 @@
     ],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Collector Store",
+    "source": "Collector Store, Lockbox: Secret Identity",
     "icon_override": "MartialArts_BladedFury",
     "is_disabled": false
   },
@@ -11958,7 +11958,7 @@
     ],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Collector Store",
+    "source": "Collector Store, Lockbox: Mayhem",
     "icon_override": "MartialArts_VorpalBlade",
     "is_disabled": false
   },
@@ -11995,7 +11995,7 @@
     ],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Collector Store",
+    "source": "Collector Store, Lockbox: Shaolin",
     "icon_override": "MartialArts_DevastatingStrike",
     "is_disabled": false
   },
@@ -13145,7 +13145,8 @@
       "Regret",
       "Dependency",
       "Stress",
-      "Rupture"
+      "Rupture",
+      "Active Heal"
     ],
     "damage_type": [
       "Ego"
@@ -13351,7 +13352,8 @@
     "tooltip": "Deals Ego Damage every 1 sec for 6 sec to affected targets. + When Mental Leech expires it applies Dependency to the target. Dependency heals an ally near the foe every 0.5 seconds for 20 sec and can stack up to 3 times. + When this power expires, refreshes all of your stacks of Dependency.",
     "tags": [
       "Dependency",
-      "DoT"
+      "DoT",
+      "Passive Heal"
     ],
     "damage_type": [
       "Ego"
@@ -13898,7 +13900,7 @@
     ],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Collector Store",
+    "source": "Collector Store, Lockbox: Alien Invader",
     "icon_override": "Mentalist_EgoBladePandemonium",
     "is_disabled": false
   },
@@ -13963,7 +13965,7 @@
     ],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Collector Store",
+    "source": "Collector Store, Lockbox: Cybernetic",
     "icon_override": "Mentalist_MentalImpact",
     "is_disabled": false
   },
@@ -16220,7 +16222,7 @@
     ],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Collector Store",
+    "source": "Collector Store, Lockbox: Blockbuster",
     "icon_override": "Brick_CatastrophicPummeling",
     "is_disabled": false
   },
@@ -16256,7 +16258,7 @@
     ],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Collector Store",
+    "source": "Collector Store, Lockbox: Brutal",
     "icon_override": "Brick_Earthquake",
     "is_disabled": false
   },
@@ -16327,7 +16329,7 @@
     ],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Collector Store",
+    "source": "Collector Store, Lockbox: Rockbox",
     "icon_override": "Brick_PowerChord",
     "is_disabled": false
   },
@@ -16401,7 +16403,7 @@
     ],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Collector Store",
+    "source": "Collector Store, Lockbox: Starhawk",
     "icon_override": "Brick_CrushingRuin",
     "is_disabled": false
   },
@@ -16501,7 +16503,7 @@
       "Targets foe/friend",
       "50 feet"
     ],
-    "tooltip": "If you target a foe: deals Dimensional Damage every 0.5 sec. If the target is Illuminated, it chains to another foe, dealing Dimensional Damage. This chaining can happen up to 3 times. +If you target a friend: heals your target every 0.5 sec. If the target is affected by Illumination, it chains to another friend, healing them too. This chaining can happen up to 3 times",
+    "tooltip": "If you target a foe: deals Dimensional Damage every 0.5 sec. If the target is Illuminated, it chains to another foe, dealing Dimensional Damage. This chaining can happen up to 3 times. + If you target a friend: heals your target every 0.5 sec. If the target is affected by Illumination, it chains to another friend, healing them too. This chaining can happen up to 3 times",
     "tags": [
       "Illuminated",
       "Illumination",
@@ -16571,10 +16573,11 @@
       "50 feet",
       "20 foot Sphere"
     ],
-    "tooltip": "If you target foes: Places Illuminated on the target for 20 sec. Anyone attacking the target has a 15% chance to be affected by Mend, healing them every 2 sec for 8 sec. +If you target friends: Heals them. Places Illumination on a friendly target, increasing the direct healing they receive by 3% for 20 sec.",
+    "tooltip": "If you target foes: Places Illuminated on the target for 20 sec. Anyone attacking the target has a 15% chance to be affected by Mend, healing them every 2 sec for 8 sec. + If you target friends: Heals them. Places Illumination on a friendly target, increasing the direct healing they receive by 3% for 20 sec.",
     "tags": [
       "Illuminated",
-      "Illumination"
+      "Illumination",
+      "Passive Heal"
     ],
     "damage_type": [],
     "scaling_stats": [],
@@ -16868,12 +16871,12 @@
       "50 feet",
       "90 degree Cone"
     ],
-    "tooltip": "If you target a foe: deals Dimensional Damage every 1 sec. If the target is affected by Illuminated, Disorient them for 12 sec, reduction their damage by 10% and their movement speed by 50%. +If you target a friend: heals your targets every 2 sec over 10 sec.  If the target is under a Control effect and is also affected by Illumination, applied Break Free Damage on the initial hit.",
+    "tooltip": "If you target a foe: deals Dimensional Damage every 1 sec. If the target is affected by Illuminated, Disorient them for 12 sec, reduction their damage by 10% and their movement speed by 50%. + If you target a friend: heals your targets every 2 sec over 10 sec.  If the target is under a Control effect and is also affected by Illumination, applied Break Free Damage on the initial hit.",
     "tags": [
       "Illuminated",
       "Illumination",
       "Disorient",
-      "Active Healing"
+      "Passive Healing"
     ],
     "damage_type": [
       "Dimensional"
@@ -18225,7 +18228,7 @@
     "power_id": 514,
     "name": "Arcane Vitality",
     "tier": 2,
-    "power_type": "HEAL",
+    "power_type": "TEAM_HEAL",
     "advantages": [
       1,
       2,
@@ -18244,7 +18247,7 @@
     ],
     "tooltip": "Heals targets every 0.5 seconds. + Heals you if no friendly target is selected.",
     "tags": [
-      "Active Heal"
+      "Team Heal"
     ],
     "damage_type": [],
     "scaling_stats": [],
@@ -18669,7 +18672,8 @@
     ],
     "tooltip": "Deals Magic Damage every 0.5 sec to targets. + Has a 20% chance to apply Illuminated on the target for 20 sec. Anyone attacking the Illuminated target are affected by Mend, healing them every 2 sec for 8 sec.",
     "tags": [
-      "Illuminated"
+      "Illuminated",
+      "Passive Heal"
     ],
     "damage_type": [
       "Magic"
@@ -19222,7 +19226,7 @@
     ],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Collector Store",
+    "source": "Collector Store, Lockbox: Arcane",
     "icon_override": "Mystic_CrashingIncantation",
     "is_disabled": false
   },
@@ -19256,7 +19260,7 @@
     ],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Collector Store",
+    "source": "Collector Store, Lockbox: Villain",
     "icon_override": "Mystic_EndbringersGrasp",
     "is_disabled": false
   },
@@ -19319,12 +19323,13 @@
       "Repel",
       "Illumination",
       "Rune",
-      "Passive Heal"
+      "Passive Heal",
+      "Active Heal"
     ],
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Collector Store",
+    "source": "Collector Store, Lockbox: Scion",
     "icon_override": "Mystic_Transcendence",
     "is_disabled": false
   },
@@ -19859,7 +19864,7 @@
     ],
     "tooltip": "Can only be used while Defeated. + You are brought back from defeat gain +100% Health Points, Increased Maximum Health Points, Regeneration and resistance to all damage for 15 sec. + You also become Immune to most forms of Control effects and gain 200% resistance to all Knock effects. + After 15 sec, reduces your health by 90% and you are Immune to all healing effects for 10 sec. + Activates a shared cooldown of 90 seconds on all Active Defenses. + Activates a shared cooldown of 300 seconds on all Resurrections.",
     "tags": [
-      "Sef-Resurrection"
+      "Self-Resurrection"
     ],
     "damage_type": [],
     "scaling_stats": [],
@@ -20386,7 +20391,7 @@
       "Targets foe",
       "50 feet"
     ],
-    "tooltip": "Heals you, and your allies within 20ft for half the amount. + If your target is affected by a type of Poison, instead heals nearby allies for the full amount Health Points. + Poisons includes: Deadly Poison, Debilitating Poison, Noxious Poison ",
+    "tooltip": "Heals you, and your allies within 20ft for half the amount. + If your target is affected by a type of Poisons, instead heals nearby allies for the full amount Health Points.",
     "tags": [
       "Life Drain",
       "Team Heal"
@@ -20940,7 +20945,9 @@
     "cooldown": null,
     "range_tags": [],
     "tooltip": "You gain Health every 3 sec. This amount changes based on damage taken. +  Additionally you gain 20/25/30% resistance to all damage. This value is reduced as you take damage.",
-    "tags": [],
+    "tags": [
+      "Passive Heal"
+    ],
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
@@ -21033,7 +21040,9 @@
       "Targets self"
     ],
     "tooltip": "Heals you for 50/75/100% Health Points, and increases ytour Maximum Health point by 833/1000/1200 for 15 sec. +  Increases your Regeneration by 5/10/15%. + Can be used while Held or Confused. + Activates a shared cooldown of 90 seconds on all Active Defenses. + ",
-    "tags": [],
+    "tags": [
+      "Active Heal"
+    ],
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
@@ -21107,7 +21116,7 @@
     ],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Collector Store",
+    "source": "Collector Store, Lockbox: Goth & Glam",
     "icon_override": "Mystic_CorrosivePit",
     "is_disabled": false
   },
@@ -21141,7 +21150,7 @@
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Collector Store",
+    "source": "Collector Store, Lockbox: Punk",
     "icon_override": "Mystic_FeralRage",
     "is_disabled": false
   },
@@ -21197,7 +21206,7 @@
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Collector Store",
+    "source": "Collector Store, Lockbox: Arcane",
     "icon_override": "TravelPower_ArcaneFlight",
     "is_disabled": false
   },
@@ -21393,7 +21402,7 @@
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Collector Store",
+    "source": "Collector Store, Lockbox: Scion",
     "icon_override": "TravelPower_HoverDisk",
     "is_disabled": false
   },
@@ -21590,7 +21599,7 @@
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Q store",
+    "source": "Q store, Lockbox: Frozen",
     "icon_override": "TravelPower_Hoverboard",
     "is_disabled": false
   },
@@ -22122,7 +22131,7 @@
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Collector Store",
+    "source": "Collector Store, Lockbox: Shaolin",
     "icon_override": "TravelPower_StoicFlight",
     "is_disabled": false
   },
@@ -22431,7 +22440,7 @@
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Collector Store",
+    "source": "Collector Store, Lockbox Buccaneer",
     "icon_override": "TravelPower_SurfSlide",
     "is_disabled": false
   },
@@ -22489,7 +22498,7 @@
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Collector Store",
+    "source": "Collector Store, Lockbox: Toybox",
     "icon_override": "TravelPower_ColdSnapSpeed",
     "is_disabled": false
   },
@@ -22576,7 +22585,7 @@
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Collector Store",
+    "source": "Collector Store, Lockbox: Rave",
     "icon_override": "TravelPower_ElectricSpeed",
     "is_disabled": false
   },
@@ -22662,7 +22671,7 @@
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Collector Store",
+    "source": "Collector Store, Lockbox: Toybox",
     "icon_override": "TravelPower_FrostSpeed",
     "is_disabled": false
   },
@@ -22748,7 +22757,7 @@
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Collector Store",
+    "source": "Collector Store, Lockbox: Rave",
     "icon_override": "TravelPower_LightningSpeed",
     "is_disabled": false
   },
@@ -23180,7 +23189,7 @@
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Collector Store",
+    "source": "Collector Store, Lockbox: Corrosive",
     "icon_override": "TravelPower_Superjump",
     "is_disabled": false
   },
@@ -23701,7 +23710,7 @@
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Collector Store",
+    "source": "Collector Store, Lockbox: Scion",
     "icon_override": "TravelPower_EnergySlide",
     "is_disabled": false
   },
@@ -23904,7 +23913,7 @@
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Collector Store",
+    "source": "Collector Store, Lockbox: Blazing",
     "icon_override": "TravelPower_ScorchingSlide",
     "is_disabled": false
   },
@@ -24394,7 +24403,7 @@
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Collector Store",
+    "source": "Collector Store, Lockbox: Punk",
     "icon_override": "TravelPower_Teleportation",
     "is_disabled": false
   },
@@ -24478,7 +24487,7 @@
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Collector Store",
+    "source": "Collector Store, Lockbox: Alien Invader",
     "icon_override": "TravelPower_MindBlink",
     "is_disabled": false
   },
@@ -24590,7 +24599,7 @@
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Collector Store",
+    "source": "Collector Store, Lockbox: Vigilante",
     "icon_override": "TravelPower_Retrowave",
     "is_disabled": false
   },
@@ -24646,7 +24655,7 @@
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Collector Store",
+    "source": "Collector Store, Lockbox: Cybernetic",
     "icon_override": "TravelPower_Upload",
     "is_disabled": false
   },
@@ -24847,7 +24856,7 @@
       211,
       213
     ],
-    "source": "Destroids Raise Again OM, Recognition Store",
+    "source": "Destroids Rise Again OM, Recognition Store",
     "icon_override": "PVD_PulpFictionRifle",
     "is_disabled": false
   },
@@ -25416,7 +25425,7 @@
     "tick_rate": null,
     "cooldown": 90,
     "range_tags": [
-      "Affects foe (5 max)",
+      "Targets foe (5 max)",
       "50feet",
       "0-20 foot Sphere"
     ],
@@ -25560,7 +25569,7 @@
       "Affects foe (5 max)",
       "10 foot Sphere"
     ],
-    "tooltip": "Deals Dimensional Damage every 0.5 sec and has a 25% chance every hit to apply Fear to affected targets. + Heals you for every target hit that is affected by Fear. This counts as a life Drain effect.",
+    "tooltip": "Deals Dimensional Damage every 0.5 sec and has a 25% chance every hit to apply Fear to affected targets. + Heals you for every target hit that is affected by Fear. This counts as a Life Drain effect.",
     "tags": [
       "Fear",
       "Life Drain"
@@ -26037,7 +26046,8 @@
     ],
     "tooltip": "Deals Magic Damage every 0.5 sec to foes.  + All targets 20% chance every hit to be affected by Regret, causing -8% all damage strength for 20 sec to affected targets. Stacks up to 3 times. + All targets havea 15% chance every hit to be affected by Dependency, healing an ally near the foe every 0.5 sec for 20 sec. Stacks up to 3 times. This effect only applies of you own the Shadow Embrace power.",
     "tags": [
-      "Dependency"
+      "Dependency",
+      "Passive Heal"
     ],
     "damage_type": [
       "Magic"
@@ -27971,7 +27981,7 @@
     "power_id": 826,
     "name": "Heroic Jolt",
     "tier": null,
-    "power_type": "HEAL",
+    "power_type": "BUFF_SELF",
     "advantages": [],
     "activation_type": "CLICK",
     "activation_time": null,
@@ -27996,7 +28006,7 @@
     "power_id": 827,
     "name": "Heroic Vitality",
     "tier": null,
-    "power_type": "HEAL",
+    "power_type": "SELF_HEAL",
     "advantages": [],
     "activation_type": "CLICK",
     "activation_time": null,
@@ -28023,7 +28033,7 @@
     "power_id": 828,
     "name": "Heroic Endurance",
     "tier": null,
-    "power_type": "SELF_HEAL_OVER_TIME",
+    "power_type": "BUFF_SELF",
     "advantages": [],
     "activation_type": "CLICK",
     "activation_time": null,
@@ -29983,7 +29993,7 @@
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Collector Store",
+    "source": "Collector Store, Lockbox: Rave",
     "icon_override": "TravelPower_Superspeed",
     "is_disabled": false
   },
@@ -30008,7 +30018,7 @@
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Collector Store",
+    "source": "Collector Store, Lockbox: Rave",
     "icon_override": "TravelPower_MachSpeed",
     "is_disabled": false
   },
@@ -30033,7 +30043,7 @@
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Collector Store",
+    "source": "Collector Store, Lockbox: Alien Invader",
     "icon_override": "TravelPower_Teleportation",
     "is_disabled": false
   },
@@ -30083,7 +30093,7 @@
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Collector Store",
+    "source": "Collector Store, Lockbox: Cybernetic",
     "icon_override": "TravelPower_Teleportation",
     "is_disabled": false
   },
@@ -30108,7 +30118,7 @@
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Collector Store",
+    "source": "Collector Store, Lockbox: Toybox",
     "icon_override": "TravelPower_Superspeed",
     "is_disabled": false
   },
@@ -30133,7 +30143,7 @@
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Collector Store",
+    "source": "Collector Store, Lockbox: Toybox",
     "icon_override": "TravelPower_MachSpeed",
     "is_disabled": false
   },
@@ -30158,7 +30168,7 @@
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
-    "source": "Collector Store",
+    "source": "Collector Store, Lockbox: Arcane",
     "icon_override": "TravelPower_Flight",
     "is_disabled": false
   },
@@ -30627,7 +30637,9 @@
       "Targets self"
     ],
     "tooltip": null,
-    "tags": [],
+    "tags": [
+      "Active Heal"
+    ],
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
@@ -31164,7 +31176,9 @@
       "Targets self"
     ],
     "tooltip": null,
-    "tags": [],
+    "tags": [
+      "Active Heal"
+    ],
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
@@ -31189,7 +31203,9 @@
       "Targets self"
     ],
     "tooltip": null,
-    "tags": [],
+    "tags": [
+      "Active Heal"
+    ],
     "damage_type": [],
     "scaling_stats": [],
     "power_dependency": [],
@@ -31578,7 +31594,7 @@
     "scaling_stats": [],
     "power_dependency": [],
     "source": "Qular Simulation Alert (Anniversary Event)",
-    "icon_override": null,
+    "icon_override": "Device_QularMutagen",
     "is_disabled": false
   },
   {
@@ -31603,7 +31619,7 @@
     "scaling_stats": [],
     "power_dependency": [],
     "source": "Therakiel Event",
-    "icon_override": null,
+    "icon_override": "Device_SovereignSonsGang",
     "is_disabled": false
   },
   {
@@ -31631,7 +31647,7 @@
     "scaling_stats": [],
     "power_dependency": [],
     "source": "Therakiel Event",
-    "icon_override": null,
+    "icon_override": "Device_CursedMagic",
     "is_disabled": false
   },
   {
@@ -31659,7 +31675,7 @@
     "scaling_stats": [],
     "power_dependency": [],
     "source": "Therakiel Event",
-    "icon_override": null,
+    "icon_override": "Device_LycanRoar",
     "is_disabled": false
   },
   {
@@ -31684,7 +31700,7 @@
     "scaling_stats": [],
     "power_dependency": [],
     "source": "Therakiel Event",
-    "icon_override": null,
+    "icon_override": "Device_TreyKingsGang",
     "is_disabled": false
   },
   {
@@ -31709,7 +31725,7 @@
     "scaling_stats": [],
     "power_dependency": [],
     "source": "Therakiel Event",
-    "icon_override": null,
+    "icon_override": "Device_NewShadowsGang",
     "is_disabled": false
   },
   {
@@ -31734,7 +31750,7 @@
     "scaling_stats": [],
     "power_dependency": [],
     "source": "Therakiel Event",
-    "icon_override": null,
+    "icon_override": "Device_NephilimSwarm",
     "is_disabled": false
   },
   {
@@ -31763,7 +31779,7 @@
     "scaling_stats": [],
     "power_dependency": [],
     "source": "Therakiel's Temple Lair",
-    "icon_override": null,
+    "icon_override": "Device_TherakielBlade",
     "is_disabled": false
   },
   {
@@ -31813,7 +31829,7 @@
     "scaling_stats": [],
     "power_dependency": [],
     "source": "Serpent Lantern Adventure Pack",
-    "icon_override": null,
+    "icon_override": "Device_ViperRampageSerum",
     "is_disabled": false
   },
   {
@@ -31822,9 +31838,9 @@
     "power_id": 966,
     "name": "Electric Slide",
     "tier": null,
-    "power_type": null,
+    "power_type": "TRAVEL_POWER",
     "advantages": [],
-    "activation_type": null,
+    "activation_type": "CLICK",
     "activation_time": null,
     "max_duration": null,
     "tick_rate": null,
@@ -31845,9 +31861,9 @@
     "power_id": 967,
     "name": "Rainbow Jump",
     "tier": null,
-    "power_type": null,
+    "power_type": "TRAVEL_POWER",
     "advantages": [],
-    "activation_type": null,
+    "activation_type": "CLICK",
     "activation_time": null,
     "max_duration": null,
     "tick_rate": null,
@@ -31883,6 +31899,31 @@
     "power_dependency": [],
     "source": "Hi Pan Event",
     "icon_override": null,
+    "is_disabled": false
+  },
+  {
+    "powerset_id": "Device",
+    "framework_id": "Other",
+    "power_id": 969,
+    "name": "Call Up A Dogz Gang War",
+    "tier": null,
+    "power_type": "UNCONTROLED_PET",
+    "advantages": [],
+    "activation_type": "TOGGLE",
+    "activation_time": 1,
+    "max_duration": 300,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": null,
+    "tags": [],
+    "damage_type": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": "Therakiel Event",
+    "icon_override": "Device_TreyKingsGang",
     "is_disabled": false
   }
 ]
