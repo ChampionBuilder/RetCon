@@ -148,10 +148,6 @@ export function AdvantageSelectionDialog({
               ]
                 .filter(Boolean)
                 .join(" ")}
-              data-advantage-tooltip={getAdvantageTooltipAttribute(
-                advantage,
-                lockedReason,
-              )}
               key={advantage.advantage_id}
               type="button"
               onClick={() => {
@@ -162,7 +158,15 @@ export function AdvantageSelectionDialog({
                 onToggleAdvantage(buildSlot.slot, advantage.advantage_id);
               }}
             >
-              <span>{advantage.name}</span>
+              <span
+                className="advantage-selection-choice__label"
+                data-advantage-tooltip={getAdvantageTooltipAttribute(
+                  advantage,
+                  lockedReason,
+                )}
+              >
+                {advantage.name}
+              </span>
               <small>{advantage.points_cost ?? 0} pts</small>
             </button>
           );

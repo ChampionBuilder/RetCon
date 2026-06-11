@@ -1559,19 +1559,6 @@ export function PowersPanel({
                         }
                         disabled={!canAdd}
                         key={power.power_id}
-                        data-power-tooltip={getPowerTooltipAttribute(
-                          power,
-                          advantagesById,
-                          powersById,
-                        )}
-                        data-power-tooltip-advanced={
-                          forceAdvancedPowerTooltip ? "true" : undefined
-                        }
-                        data-power-tooltip-advantage-queries={
-                          advantageHighlightQueries.length > 0
-                            ? JSON.stringify(advantageHighlightQueries)
-                            : undefined
-                        }
                         onClick={() =>
                           onAddPower(
                             power,
@@ -1587,10 +1574,27 @@ export function PowersPanel({
                             ),
                           )
                         }
-                        title={getPowerTooltipText(power)}
                       >
                         <SpriteIcon name={getPowerIconName(power)} size={34} />
-                        <span>{power.name}</span>
+                        <span
+                          className="power-choice__label"
+                          data-power-tooltip={getPowerTooltipAttribute(
+                            power,
+                            advantagesById,
+                            powersById,
+                          )}
+                          data-power-tooltip-advanced={
+                            forceAdvancedPowerTooltip ? "true" : undefined
+                          }
+                          data-power-tooltip-advantage-queries={
+                            advantageHighlightQueries.length > 0
+                              ? JSON.stringify(advantageHighlightQueries)
+                              : undefined
+                          }
+                          title={getPowerTooltipText(power)}
+                        >
+                          {power.name}
+                        </span>
                       </button>
                     );
                   })}

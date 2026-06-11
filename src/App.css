@@ -1244,8 +1244,8 @@ h3 {
 
 .stat-choice--taken:not(.stat-choice--current) span,
 .talent-choice--taken:not(.talent-choice--current) > span,
-.power-selection-choice--taken:not(.power-selection-choice--current) span,
-.advantage-selection-choice--selected span,
+.power-selection-choice--taken:not(.power-selection-choice--current) .power-selection-choice__label,
+.advantage-selection-choice--selected .advantage-selection-choice__label,
 .specialization-role-choice--taken:not(.specialization-role-choice--current) span {
   color: var(--selected-power-accent);
 }
@@ -1529,10 +1529,15 @@ h3 {
 
 .device-slot__name-button {
   overflow: hidden;
-  min-width: 0;
-  width: 100%;
-  padding: 0;
+  box-sizing: border-box;
+  width: max-content;
+  min-width: min(66%, 100%);
+  max-width: 100%;
+  justify-self: start;
+  margin-inline: -5px 0;
+  padding: 2px 25px 2px 5px;
   border: 0;
+  border-radius: 3px;
   color: inherit;
   background: transparent;
   font-size: 14px;
@@ -2210,8 +2215,16 @@ h3 {
   text-align: left;
 }
 
-.power-choice span {
+.power-choice__label {
+  box-sizing: border-box;
+  display: block;
+  width: max-content;
+  min-width: min(66%, 100%);
+  max-width: 100%;
+  margin-inline: -6px 0;
+  padding: 4px 25px 4px 6px;
   overflow: hidden;
+  border-radius: 3px;
   font-size: 16px;
   font-weight: 700;
   text-overflow: ellipsis;
@@ -2233,7 +2246,7 @@ h3 {
     0 0 6px rgba(120, 95, 47, 0.1);
 }
 
-.power-choice--selected span {
+.power-choice--selected .power-choice__label {
   color: var(--selected-power-accent);
 }
 
@@ -2355,8 +2368,16 @@ h3 {
   opacity: 0.4;
 }
 
-.power-selection-choice span {
+.power-selection-choice__label {
+  box-sizing: border-box;
+  display: block;
+  width: max-content;
+  min-width: min(66%, 100%);
+  max-width: 100%;
+  margin-inline: -5px 0;
+  padding: 2px 25px 2px 5px;
   overflow: hidden;
+  border-radius: 3px;
   font-size: 14px;
   font-weight: 700;
   text-overflow: ellipsis;
@@ -2522,11 +2543,15 @@ h3 {
 
 .build-entry__name-button {
   overflow: hidden;
-  min-width: 0;
+  box-sizing: border-box;
+  width: max-content;
+  min-width: min(66%, 100%);
   max-width: 100%;
   justify-self: start;
-  padding: 0;
+  margin-inline: -5px 0;
+  padding: 2px 25px 2px 5px;
   border: 0;
+  border-radius: 3px;
   color: inherit;
   background: transparent;
   font-size: 14px;
@@ -2646,12 +2671,30 @@ h3 {
   background: rgba(9, 11, 16, 0.58);
 }
 
-.advantage-selection-choice span {
+.advantage-selection-choice__label {
+  box-sizing: border-box;
+  display: block;
+  width: max-content;
+  min-width: min(66%, 100%);
+  max-width: 100%;
+  padding: 2px 25px 2px 5px;
   overflow: hidden;
+  border-radius: 3px;
   font-size: 13px;
   font-weight: 700;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.app-shell--debug-tooltip-hitboxes .device-slot__name-button,
+.app-shell--debug-tooltip-hitboxes .power-choice__label,
+.app-shell--debug-tooltip-hitboxes .power-selection-choice__label,
+.app-shell--debug-tooltip-hitboxes .build-entry__name-button,
+.app-shell--debug-tooltip-hitboxes .advantage-selection-choice__label,
+.app-shell--debug-tooltip-hitboxes .specialization-tree__header-tooltip,
+.app-shell--debug-tooltip-hitboxes .specialization-option__tooltip-area {
+  outline: 1px solid rgba(255, 213, 94, 0.85);
+  background: rgba(255, 190, 44, 0.24);
 }
 
 .advantage-selection-choice small {
@@ -3133,6 +3176,15 @@ h3 {
   white-space: nowrap;
 }
 
+.specialization-tree__header-tooltip {
+  box-sizing: border-box;
+  flex: 0 1 auto;
+  width: max-content;
+  min-width: min(56%, 100%);
+  max-width: 100%;
+  padding-right: 25px;
+}
+
 .specialization-tree__header small {
   color: #c5cff4;
   font-size: 12px;
@@ -3174,11 +3226,16 @@ h3 {
   background: rgba(35, 63, 128, 0.22);
 }
 
+.specialization-option--panel-selected {
+  grid-template-columns: minmax(0, 1fr) 37px;
+}
+
 .specialization-option--locked {
   opacity: 0.46;
 }
 
-.specialization-option > span {
+.specialization-option > span,
+.specialization-option__tooltip-area > span {
   overflow: hidden;
   color: inherit;
   font-weight: 700;
@@ -3198,6 +3255,10 @@ h3 {
   grid-template-columns: 25px minmax(0, 1fr) 37px;
 }
 
+.specialization-tree--mastery .specialization-option--panel-selected {
+  grid-template-columns: minmax(0, 1fr) 37px;
+}
+
 .specialization-tree--mastery > .specialization-tree__empty-copy {
   display: grid;
   min-height: 31px;
@@ -3208,6 +3269,10 @@ h3 {
 
 .specialization-selection-dialog {
   width: min(590px, calc(100vw - 44px));
+}
+
+.specialization-selection-dialog--stat {
+  width: min(360px, calc(100vw - 44px));
 }
 
 .specialization-mastery-dialog {
@@ -3345,9 +3410,32 @@ h3 {
 
 .specialization-option--editable {
   min-height: 28px;
-  grid-template-columns: 23px minmax(0, 132px) 92px;
+  grid-template-columns: minmax(0, 1fr) 92px;
   gap: 4px;
   justify-content: start;
+}
+
+.specialization-option__tooltip-area {
+  box-sizing: border-box;
+  display: grid;
+  width: max-content;
+  min-width: min(66%, 100%);
+  max-width: 100%;
+  align-items: center;
+  align-self: stretch;
+  grid-template-columns: 23px minmax(0, 1fr);
+  gap: 4px;
+  padding-right: 25px;
+}
+
+.specialization-option--editable .specialization-option__tooltip-area {
+  width: 100%;
+  min-width: 100%;
+}
+
+.specialization-option__tooltip-area--panel {
+  grid-template-columns: 25px minmax(0, 1fr);
+  gap: 5px;
 }
 
 .specialization-point-controls {
@@ -3433,7 +3521,7 @@ h3 {
     font-size: 8px;
   }
 
-  .workspace-grid .power-choice span {
+  .workspace-grid .power-choice__label {
     font-size: 15px;
   }
 

@@ -140,6 +140,8 @@ function CollapsibleWorkspacePanel({
 }
 
 function App() {
+  const showTooltipHitboxes =
+    new URLSearchParams(window.location.search).get("dbg") === "1";
   const [buildName, setBuildName] = useState("My Awesome Build");
   const [energyBuilderSelectionVersion, setEnergyBuilderSelectionVersion] =
     useState(0);
@@ -1405,7 +1407,14 @@ function App() {
   });
 
   return (
-    <div className="app-shell">
+    <div
+      className={[
+        "app-shell",
+        showTooltipHitboxes ? "app-shell--debug-tooltip-hitboxes" : "",
+      ]
+        .filter(Boolean)
+        .join(" ")}
+    >
       <AppHeader
         buildName={buildName}
         shareUrl={shareUrl}

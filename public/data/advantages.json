@@ -5,6 +5,9 @@
     "points_cost": 2,
     "tooltip": "Increases the strength of the power by 20% and its energy building strength by ~10%.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -18,6 +21,9 @@
     "points_cost": 2,
     "tooltip": "Increases the strength of the power by 20% and its energy building strength by ~10%.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -31,6 +37,9 @@
     "points_cost": 1,
     "tooltip": "20% chance to restore 10% max energy. 15 sec shared cooldown.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -44,6 +53,9 @@
     "points_cost": 2,
     "tooltip": "Cancels and locks out Travel Powers for 5 seconds.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -57,6 +69,9 @@
     "points_cost": 1,
     "tooltip": "Applies threat over time to your main target for 4 sec, and reduced threat over time to secondary targets for 10 sec. Reduces targets damage for 10 sec.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -70,6 +85,9 @@
     "points_cost": 1,
     "tooltip": "Applies large threat over time to your targets for 10 sec. This effect stacks with Challenge.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -83,6 +101,9 @@
     "points_cost": 3,
     "tooltip": "Applies Provoked if the target is blocking, lowering damage resistance, healing, and dodge for 10 sec. The target gains Unwavering for 10 sec afterward, preventing block disable.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -96,6 +117,9 @@
     "points_cost": 1,
     "tooltip": "Increases the speed of this travel power.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -109,6 +133,9 @@
     "points_cost": 1,
     "tooltip": "Further increases the speed of this travel power.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -124,6 +151,9 @@
     "tags": [
       "Burn Through"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -139,6 +169,9 @@
     "tags": [
       "Stun"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -154,6 +187,9 @@
     "tags": [
       "Stealth"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -169,6 +205,9 @@
     "tags": [
       "Root"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -184,6 +223,9 @@
     "tags": [
       "Stun"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -197,6 +239,9 @@
     "points_cost": 1,
     "tooltip": "For the next 10 seconds, whenever you damage a foe with a Heavy Weapons, Earth, or Might attack, its cooldown is reduced by 1 second.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -210,6 +255,9 @@
     "points_cost": 3,
     "tooltip": "Persists for up to 10 seconds while you are not standing in it.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -225,6 +273,9 @@
     "tags": [
       "Superconductor"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -240,6 +291,9 @@
     "tags": [
       "Bleed"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -253,6 +307,9 @@
     "points_cost": 2,
     "tooltip": "While maintaining, all damage you take is reduced by 20%.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -269,6 +326,9 @@
       "Stagger",
       "Enrage"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -282,6 +342,9 @@
     "points_cost": 2,
     "tooltip": "Damage is increased when attacking fewer targets.The maximum bonus is applied against 1 target, but attacking 5 targets offers no bonus at all.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -295,6 +358,9 @@
     "points_cost": 3,
     "tooltip": "Absorbs damage, scaling up over time, as long as you remain within its area.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -310,6 +376,9 @@
     "tags": [
       "Plasma Burn"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -325,6 +394,9 @@
     "tags": [
       "Overheat"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -340,6 +412,9 @@
     "tags": [
       "Armor Piercing"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -355,6 +430,9 @@
     "tags": [
       "Armor Piercing"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -370,6 +448,9 @@
     "tags": [
       "Hand Slot"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -383,6 +464,9 @@
     "points_cost": 2,
     "tooltip": "Grants you Dodge and Avoidance rating for 12 sec.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -398,6 +482,9 @@
     "tags": [
       "Life Drain"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -413,6 +500,9 @@
     "tags": [
       "Knock Down"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -426,6 +516,9 @@
     "points_cost": 2,
     "tooltip": "Applies Disorient",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -441,6 +534,9 @@
     "tags": [
       "Jinxed"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -457,6 +553,9 @@
       "Stun",
       "Negative Ions"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -470,6 +569,9 @@
     "points_cost": 2,
     "tooltip": "Improves the healing aura effect. While in combat and active, up to 5 enemy targets within 25 feet take a small amount of Damage over Time.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [
       "Dimensional"
     ],
@@ -485,6 +587,9 @@
     "points_cost": 2,
     "tooltip": "Hits up to 3 targets in a 3 foot cylinder.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -501,6 +606,9 @@
       "Hold",
       "Bleed"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -516,6 +624,9 @@
     "tags": [
       "Confuse"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -531,6 +642,9 @@
     "tags": [
       "Knock Up"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -546,6 +660,9 @@
     "tags": [
       "Knock To"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -561,6 +678,9 @@
     "tags": [
       "Disorient"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -576,6 +696,9 @@
     "tags": [
       "Chill"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -589,6 +712,9 @@
     "points_cost": 2,
     "tooltip": "Deals Piercing damage to enemies attacking you in Melee range for the duration of the maintain. This can occur every 1 sec.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [
       "Piercing"
     ],
@@ -604,6 +730,9 @@
     "points_cost": 2,
     "tooltip": "Deals its damages in a 10 foot Sphere around your target.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -620,6 +749,9 @@
       "Stun",
       "Clinging Flames"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [
       "Fire"
     ],
@@ -635,6 +767,9 @@
     "points_cost": 2,
     "tooltip": "While this travel power is active, you gain a damage bonus which scales with your current speed. This bonus persists for a short time upon losing speed or stopping.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -650,6 +785,9 @@
     "tags": [
       "Knock To"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -667,6 +805,9 @@
       "Illuminated",
       "Passive Heal"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -683,6 +824,9 @@
       "Stun",
       "Knock Down"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -696,6 +840,9 @@
     "points_cost": 2,
     "tooltip": "Reduces your target's movement speed by 15% while maintained.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -712,6 +859,9 @@
       "Demolish",
       "Blindside"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -728,6 +878,9 @@
       "Active Heal",
       "Bleed"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -743,6 +896,9 @@
     "tags": [
       "Bleed"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -756,6 +912,9 @@
     "points_cost": 2,
     "tooltip": "Activating with the Blood Sacrifice advantage increases the damage of all of your attacks, up to a specific amount of total damage (approximately equal to a Shadow Blast at your level).",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -771,6 +930,9 @@
     "tags": [
       "Bleed"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -786,6 +948,9 @@
     "tags": [
       "Stun"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -801,6 +966,9 @@
     "tags": [
       "Disorient"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -816,6 +984,9 @@
     "tags": [
       "Reckless"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -831,6 +1002,9 @@
     "tags": [
       "Fear"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -846,6 +1020,9 @@
     "tags": [
       "Interrupt"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -863,6 +1040,9 @@
       "Armor Piercing",
       "Furious"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -878,6 +1058,9 @@
     "tags": [
       "Disorient"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -891,6 +1074,9 @@
     "points_cost": 1,
     "tooltip": "If the target is under a Control effect, applies Break Free damage. This effect can occur only once ever 10 seconds.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -906,6 +1092,9 @@
     "tags": [
       "Perception"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -921,6 +1110,9 @@
     "tags": [
       "Demolish"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -936,6 +1128,9 @@
     "tags": [
       "Demolish"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [
       "Slashing"
     ],
@@ -954,6 +1149,9 @@
       "Snare",
       "Knock Back"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -967,6 +1165,9 @@
     "points_cost": 2,
     "tooltip": "Deals additional damage to targets using Block.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -982,6 +1183,9 @@
     "tags": [
       "Plasma Burn"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -999,6 +1203,9 @@
       "Shatter",
       "Rupture"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [
       "Fire",
       "Cold"
@@ -1017,6 +1224,9 @@
     "tags": [
       "Clinging Flames"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1032,6 +1242,9 @@
     "tags": [
       "Clinging Flames"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1047,6 +1260,9 @@
     "tags": [
       "Pyre Patch"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1063,6 +1279,9 @@
       "Rune",
       "Passive Heal"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1076,6 +1295,9 @@
     "points_cost": 2,
     "tooltip": "Becomes a charge power instead of maintain: 2 sec charge time, 0.5 sec activation time.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1091,6 +1313,9 @@
     "tags": [
       "Snare"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1106,6 +1331,9 @@
     "tags": [
       "Charged Up"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1121,6 +1349,9 @@
     "tags": [
       "Hexed"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1136,6 +1367,9 @@
     "tags": [
       "Bane"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1151,6 +1385,9 @@
     "tags": [
       "Bane"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1164,6 +1401,9 @@
     "points_cost": 2,
     "tooltip": "While maintained, increase your Dodge chance.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1179,6 +1419,9 @@
     "tags": [
       "Stun"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1194,6 +1437,9 @@
     "tags": [
       "Negative Ions"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1210,6 +1456,9 @@
       "Negative Ions",
       "Charged Up"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1223,6 +1472,9 @@
     "points_cost": 2,
     "tooltip": "Applies No Quarter to your primary target.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1236,6 +1488,9 @@
     "points_cost": 1,
     "tooltip": "Deals Particle damages instead of Fire",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [
       "Particle"
     ],
@@ -1253,6 +1508,9 @@
     "tags": [
       "Chi Flame"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1268,6 +1526,9 @@
     "tags": [
       "Chill"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1284,6 +1545,9 @@
       "Restoration",
       "Passive Heal"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1297,6 +1561,9 @@
     "points_cost": 1,
     "tooltip": "Applies a large threat over time effect to your target. This effect stacks with Challenge.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1312,6 +1579,9 @@
     "tags": [
       "Chill"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1327,6 +1597,9 @@
     "tags": [
       "Shield"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1344,6 +1617,9 @@
       "Bleed",
       "Deadly Poison"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1359,6 +1635,9 @@
     "tags": [
       "Shredded"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1372,6 +1651,9 @@
     "points_cost": 2,
     "tooltip": "Deals increased base damage if you are closer to your target. This bonus caps out at 30% in melee range.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1388,6 +1670,9 @@
       "Stun",
       "Infect"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1404,6 +1689,9 @@
       "Hard Frost",
       "Ice Cage"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1420,6 +1708,9 @@
       "Chill",
       "Active Heal"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1435,6 +1726,9 @@
     "tags": [
       "Chill"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1450,6 +1744,9 @@
     "tags": [
       "Cold Snap"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1463,6 +1760,9 @@
     "points_cost": 2,
     "tooltip": "Increases range to 20 feet. Deals ranged Sonic damage foes beyond the initial 10 feet in place of Crushing damage.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [
       "Sonic"
     ],
@@ -1481,6 +1781,9 @@
       "Root",
       "Knock Up"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1494,6 +1797,9 @@
     "points_cost": 2,
     "tooltip": "Increases the base damage by 25%, but you can no l no longer move while maintaining it.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1509,6 +1815,9 @@
     "tags": [
       "Trauma"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1524,6 +1833,9 @@
     "tags": [
       "Knock Down"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1539,6 +1851,9 @@
     "tags": [
       "Stun"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1554,6 +1869,9 @@
     "tags": [
       "Knock Back"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1567,6 +1885,9 @@
     "points_cost": 1,
     "tooltip": "Changes the Fire damage portion to Crushing damage.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [
       "Crushing"
     ],
@@ -1584,6 +1905,9 @@
     "tags": [
       "Knock Back"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1599,6 +1923,9 @@
     "tags": [
       "Trauma"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1612,6 +1939,9 @@
     "points_cost": 2,
     "tooltip": "Double the damage dealt.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1627,6 +1957,9 @@
     "tags": [
       "Rupture"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1642,6 +1975,9 @@
     "tags": [
       "Stress"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1657,6 +1993,9 @@
     "tags": [
       "Life Drain"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1672,6 +2011,9 @@
     "tags": [
       "Team Heal"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1687,6 +2029,9 @@
     "tags": [
       "Plasma Burn"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1702,6 +2047,9 @@
     "tags": [
       "Poisons"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1717,6 +2065,9 @@
     "tags": [
       "Debilitation Poison"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1733,6 +2084,9 @@
       "Restoration",
       "Passive Heal"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1746,6 +2100,9 @@
     "points_cost": 2,
     "tooltip": "Each hit gives you a +2.5% chance to Critically Hit. This bonus resets upon scoring a successful Critical Hit.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1762,6 +2119,9 @@
       "Chill",
       "Shatter"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1775,6 +2135,9 @@
     "points_cost": 2,
     "tooltip": "Applies Fear to targets. Fear causes the target to cower for 3 seconds.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1788,6 +2151,9 @@
     "points_cost": 2,
     "tooltip": "If used on targets below 20. If the target is Henchman or Villain rank, they are defeated outright.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1801,6 +2167,9 @@
     "points_cost": 2,
     "tooltip": "Applies Hexed to your primary target, reducing their resistance to Magic damage by 18% for 12 seconds. Hexed is a type of Curse",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1816,6 +2185,9 @@
     "tags": [
       "Shredded"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1831,6 +2203,9 @@
     "tags": [
       "Armor Piercing"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1846,6 +2221,9 @@
     "tags": [
       "Knock Down"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1859,6 +2237,9 @@
     "points_cost": 2,
     "tooltip": "10% chance every 1 sec to apply Fear.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1875,6 +2256,9 @@
       "Rune",
       "Passive Heal"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1888,6 +2272,9 @@
     "points_cost": 1,
     "tooltip": "Using double the effectiveness of Shadow Form's healing effect.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1901,6 +2288,9 @@
     "points_cost": 3,
     "tooltip": "While is slotted, you gain +33 Knock Resistance for 2 seconds every time you make a melee attack, however your melee attacks deal 10% less damage.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1916,6 +2306,9 @@
     "tags": [
       "Plasma Burn"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1932,6 +2325,9 @@
       "Pyre Patch",
       "Clinging Flames"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1948,6 +2344,9 @@
       "Stun",
       "Ego Leech"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1963,6 +2362,9 @@
     "tags": [
       "Deafening"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1978,6 +2380,9 @@
     "tags": [
       "Bleed"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -1993,6 +2398,9 @@
     "tags": [
       "Deafening"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2008,6 +2416,9 @@
     "tags": [
       "Deafening"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2023,6 +2434,9 @@
     "tags": [
       "Deafening"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2038,6 +2452,9 @@
     "tags": [
       "Arc"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2051,6 +2468,9 @@
     "points_cost": 1,
     "tooltip": "Doubles the chance to deal additional Particle damage when charged less than 1 sec. 1% chance to defeat target. High-ranking target receives additional Particle Damage instead.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [
       "Particle"
     ],
@@ -2068,6 +2488,9 @@
     "tags": [
       "Debilitation Poison"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2083,6 +2506,9 @@
     "tags": [
       "Aegis"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2098,6 +2524,9 @@
     "tags": [
       "Jinxed"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2111,6 +2540,9 @@
     "points_cost": 2,
     "tooltip": "Gives Break Free damage to Held, friendly targets.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2127,6 +2559,9 @@
       "Disorient",
       "Demolish"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2142,6 +2577,9 @@
     "tags": [
       "Demolish"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2157,6 +2595,9 @@
     "tags": [
       "Demolish"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2173,6 +2614,9 @@
       "Team Heal",
       "Dependency"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2189,6 +2633,9 @@
       "Despondency",
       "Fear"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2204,6 +2651,9 @@
     "tags": [
       "Stun"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2219,6 +2669,9 @@
     "tags": [
       "Devoid"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2232,6 +2685,9 @@
     "points_cost": 3,
     "tooltip": "Above 50% health, increases the base damage by 30% and will no longer heal you. Increases base damage by 10% for 10 sec every full maintain. stacks 3 times. If you fall below 50% health, damage bonus is removed and healing effect is returned.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2247,6 +2703,9 @@
     "tags": [
       "Bane"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2263,6 +2722,9 @@
       "Disorient",
       "Demolish"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2278,6 +2740,9 @@
     "tags": [
       "Jinxed"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2293,6 +2758,9 @@
     "tags": [
       "Stun"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2308,6 +2776,9 @@
     "tags": [
       "Disintegrate"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2324,6 +2795,9 @@
       "Repel",
       "Knock Up"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2340,6 +2814,9 @@
       "Stun",
       "Disorient"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2355,6 +2832,9 @@
     "tags": [
       "Disorient"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2371,6 +2851,9 @@
       "Snare",
       "Knock Down"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2384,6 +2867,9 @@
     "points_cost": 2,
     "tooltip": "Causes 2 random Debuffs on each target instead of 1.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2399,6 +2885,9 @@
     "tags": [
       "Download"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2412,6 +2901,9 @@
     "points_cost": 2,
     "tooltip": "Deals less damage when you are close to the target and more damage the further you are from the target.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2427,6 +2919,9 @@
     "tags": [
       "Knock To"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2443,6 +2938,9 @@
       "Focus",
       "Dragon Rush"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2458,6 +2956,9 @@
     "tags": [
       "Life Drain"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2473,6 +2974,9 @@
     "tags": [
       "Trauma"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2486,6 +2990,9 @@
     "points_cost": 2,
     "tooltip": "When you score a critical hit, you gain Aversion for 12 seconds. Aversion increases your Dodge and Avoidance ratings. These bonuses scale with your Dexterity.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2499,6 +3006,9 @@
     "points_cost": 2,
     "tooltip": "Increases base damage by 50%, but has 5% chance every hit to go on cooldown for 5 sec.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2512,6 +3022,9 @@
     "points_cost": 2,
     "tooltip": "While tunneling, you will gain a stack of Earthen Embrace every 3 seconds, up to 6 stacks. Earthen Embrace increases your resistance to all types of damage. These stacks will persist for a short time after you stop tunneling.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2528,6 +3041,9 @@
       "Knock Down",
       "Root"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2543,6 +3059,9 @@
     "tags": [
       "Static Field"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2560,6 +3079,9 @@
       "Knock Down",
       "Knock Back"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2573,6 +3095,9 @@
     "points_cost": 3,
     "tooltip": "Changes to a toggle. The toggle has a max duration equal to the maintain limit and retains the same Energy Costs.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2586,6 +3111,9 @@
     "points_cost": 3,
     "tooltip": "If your Energy is high enough, will automatically deals Electrical Damage back to any foes attacking you, that are within 100 feet. This can occur once every 1.2 sec. Each strike consumes Energy.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [
       "Electrical"
     ],
@@ -2603,6 +3131,9 @@
     "tags": [
       "Negative Ions"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2618,6 +3149,9 @@
     "tags": [
       "Fear"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2631,6 +3165,9 @@
     "points_cost": 2,
     "tooltip": "When you heal someone else, you transfer the pain to yourself. You can then redirect this pain through your own attacks for a short period of time. Failing to redirect the pain quickly enough will cause you to take damage.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2646,6 +3183,9 @@
     "tags": [
       "Root"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2661,6 +3201,9 @@
     "tags": [
       "Download"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2676,6 +3219,9 @@
     "tags": [
       "Life Drain"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2689,6 +3235,9 @@
     "points_cost": 2,
     "tooltip": "While out of combat, your base Energy Equilibrium is increased by 83% and your Energy Recovery is increased by 100%.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2705,6 +3254,9 @@
       "Engulfing Flames",
       "Clinging Flames"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2720,6 +3272,9 @@
     "tags": [
       "Aegis"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2735,6 +3290,9 @@
     "tags": [
       "Root"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2750,6 +3308,9 @@
     "tags": [
       "Devoid"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2763,6 +3324,9 @@
     "points_cost": 2,
     "tooltip": "Grants your target 25% resistance to all damage, and +25 Run Speed for 10 seconds.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2779,6 +3343,9 @@
       "Threat Wipe",
       "Stealth"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2794,6 +3361,9 @@
     "tags": [
       "Stun"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2809,6 +3379,9 @@
     "tags": [
       "Bane"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2825,6 +3398,9 @@
       "Stagger",
       "Knock Down"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2841,6 +3417,9 @@
       "Hold",
       "Knock Up"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2854,6 +3433,9 @@
     "points_cost": 2,
     "tooltip": "Increases the radius AoE by 10 feet.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2867,6 +3449,9 @@
     "points_cost": 2,
     "tooltip": "Become a ranged power, increasing range to 50 feet.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2882,6 +3467,9 @@
     "tags": [
       "Knock Back"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2897,6 +3485,9 @@
     "tags": [
       "Engulfing Flames"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2910,6 +3501,9 @@
     "points_cost": 2,
     "tooltip": "Deals a lesser amount of damage to targets near your primary target.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2925,6 +3519,9 @@
     "tags": [
       "Plasma Burn"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2938,6 +3535,9 @@
     "points_cost": 2,
     "tooltip": "Deals Cold Damage back to attacking foes. This effect can occur once ever 0.5 sec.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [
       "Cold"
     ],
@@ -2953,6 +3553,9 @@
     "points_cost": 2,
     "tooltip": "Increases your threat generation while active.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2969,6 +3572,9 @@
       "Threat Wipe",
       "Stealth"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -2985,6 +3591,9 @@
       "Threat Wipe",
       "Stealth"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3000,6 +3609,9 @@
     "tags": [
       "Demolish"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3015,6 +3627,9 @@
     "tags": [
       "Stagger"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3030,6 +3645,9 @@
     "tags": [
       "Engulfing Flames"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3043,6 +3661,9 @@
     "points_cost": 0,
     "tooltip": "Adds fanfare music to the activation of the power.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3058,6 +3679,9 @@
     "tags": [
       "Shredded"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3073,6 +3697,9 @@
     "tags": [
       "Knock To"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3088,6 +3715,9 @@
     "tags": [
       "Fear"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3103,6 +3733,9 @@
     "tags": [
       "Furious"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3116,6 +3749,9 @@
     "points_cost": 2,
     "tooltip": "Deal Slashing Damage when used. Expires all effects of this ability.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [
       "Slashing"
     ],
@@ -3133,6 +3769,9 @@
     "tags": [
       "Passive Heal"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3148,6 +3787,9 @@
     "tags": [
       "Poisons"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3163,6 +3805,9 @@
     "tags": [
       "Deadly Poison"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3178,6 +3823,9 @@
     "tags": [
       "Team Heal"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3193,6 +3841,9 @@
     "tags": [
       "Clinging Flames"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3208,6 +3859,9 @@
     "tags": [
       "Clinging Flames"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3221,6 +3875,9 @@
     "points_cost": 2,
     "tooltip": "Instead of moving toward your target, follows you.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3234,6 +3891,9 @@
     "points_cost": 3,
     "tooltip": "You gain 50% resistance to Knock effects for 4 seconds after you stop blocking. Deals Break Free damage every second for 4 seconds if you are affected by a Hold.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3249,6 +3909,9 @@
     "tags": [
       "Chi Flame"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3264,6 +3927,9 @@
     "tags": [
       "Knock Back"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [
       "Particle"
     ],
@@ -3279,6 +3945,9 @@
     "points_cost": 2,
     "tooltip": "Last hit applies Finisher to you for 8 sec. Finisher increases damage of your archery powers by 15% against targets with less than 25% health.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3292,6 +3961,9 @@
     "points_cost": 2,
     "tooltip": "Increases Critical chance and Critical Severity, but they no longer increase over maintain. Increases base damage by 20%",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3307,6 +3979,9 @@
     "tags": [
       "Chi Flame"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3322,6 +3997,9 @@
     "tags": [
       "Chi Flame"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3337,6 +4015,9 @@
     "tags": [
       "Chi Flame"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3352,6 +4033,9 @@
     "tags": [
       "Chi Flame"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3367,6 +4051,9 @@
     "tags": [
       "Clinging Flames"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3380,6 +4067,9 @@
     "points_cost": 2,
     "tooltip": "While active, you gain a bonus to your ability to dodge attacks.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3393,6 +4083,9 @@
     "points_cost": 2,
     "tooltip": "Grants +10 Avoidance Rating while maintaining.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3408,6 +4101,9 @@
     "tags": [
       "Quick Maneuvering"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3421,6 +4117,9 @@
     "points_cost": 3,
     "tooltip": "If you maintain for at least 2 seconds, its bonuses will decay over 10 seconds after you stop maintaining it.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3436,6 +4135,9 @@
     "tags": [
       "Demolish"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3449,6 +4151,9 @@
     "points_cost": 2,
     "tooltip": "Full charge reduces cooldown on Active Offense powers.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3464,6 +4169,9 @@
     "tags": [
       "Chi Flame"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3477,6 +4185,9 @@
     "points_cost": 1,
     "tooltip": "Increase the Charge damage by 25%.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3492,6 +4203,9 @@
     "tags": [
       "Demolish"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3507,6 +4221,9 @@
     "tags": [
       "Devoid"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3520,6 +4237,9 @@
     "points_cost": 2,
     "tooltip": "Increases the duration your zombies are summoned for.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3535,6 +4255,9 @@
     "tags": [
       "Frail Armor"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3548,6 +4271,9 @@
     "points_cost": 2,
     "tooltip": "Applies Break Free damage to friends within 15 ft.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3563,6 +4289,9 @@
     "tags": [
       "Hold"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3578,6 +4307,9 @@
     "tags": [
       "Hold"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3593,6 +4325,9 @@
     "tags": [
       "Clinging Flames"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3606,6 +4341,9 @@
     "points_cost": 2,
     "tooltip": "Reduces your target's movement speed by 15% while maintained.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3621,6 +4359,9 @@
     "tags": [
       "Chill"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3636,6 +4377,9 @@
     "tags": [
       "Chill"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3649,6 +4393,9 @@
     "points_cost": 2,
     "tooltip": "Causes Wall of Ice to form in your path as you move.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3665,6 +4412,9 @@
       "Rune",
       "Passive Heal"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3680,6 +4430,9 @@
     "tags": [
       "Clinging Flames"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3695,6 +4448,9 @@
     "tags": [
       "Furious"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3714,6 +4470,9 @@
       "Deadly Poison",
       "Furious"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3729,6 +4488,9 @@
     "tags": [
       "Fear"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3742,6 +4504,9 @@
     "points_cost": 2,
     "tooltip": "Reduces single target damage by 20%, but increases the damage against multiple targets by 80%",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3757,6 +4522,9 @@
     "tags": [
       "Reversel Repel"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3770,6 +4538,9 @@
     "points_cost": 2,
     "tooltip": "Repels targets toward you. + Increases your chance to apply Chill.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3786,6 +4557,9 @@
       "Clinging Flames",
       "Fear"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3799,6 +4573,9 @@
     "points_cost": 1,
     "tooltip": "A portion of this damage is dealt as Dimensional damage. This increases the overall damage slightly and counts as a Chi Power effect.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [
       "Dimensional"
     ],
@@ -3816,6 +4593,9 @@
     "tags": [
       "Enrage"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3831,6 +4611,9 @@
     "tags": [
       "Team Heal"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3846,6 +4629,9 @@
     "tags": [
       "Fear"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3861,6 +4647,9 @@
     "tags": [
       "Hold"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [
       "Sonic"
     ],
@@ -3876,6 +4665,9 @@
     "points_cost": 2,
     "tooltip": "Defeating a foe gives you +12% Dodge Chance for 12 sec.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3891,6 +4683,9 @@
     "tags": [
       "Root"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3904,6 +4699,9 @@
     "points_cost": 2,
     "tooltip": "Summons three Zombies as you revive, lasting 30 sec.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3919,6 +4717,9 @@
     "tags": [
       "Knock Back"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3934,6 +4735,9 @@
     "tags": [
       "Focus"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3951,6 +4755,9 @@
       "Illuminated",
       "Passive Heal"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3964,6 +4771,9 @@
     "points_cost": 1,
     "tooltip": "Deals ranged damage instead and scales with your Concentration stacks.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3977,6 +4787,9 @@
     "points_cost": 2,
     "tooltip": "Applies Despondency to your target.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -3992,6 +4805,9 @@
     "tags": [
       "Chill"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4005,6 +4821,9 @@
     "points_cost": 2,
     "tooltip": "Applies Disorient",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4021,6 +4840,9 @@
       "Chill",
       "Hard Frost"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4036,6 +4858,9 @@
     "tags": [
       "Shield"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4051,6 +4876,9 @@
     "tags": [
       "Disorient"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4066,6 +4894,9 @@
     "tags": [
       "Stun"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4079,6 +4910,9 @@
     "points_cost": 2,
     "tooltip": "Gives Energy over time to friends and siphons Energy from foes. This effect scales with your Recovery.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4094,6 +4928,9 @@
     "tags": [
       "Knock Down"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4109,6 +4946,9 @@
     "tags": [
       "Pyre Patch"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4124,6 +4964,9 @@
     "tags": [
       "Stun"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4137,6 +4980,9 @@
     "points_cost": 1,
     "tooltip": "Maintaining counts as using a Block for interaction purposes for the first 3 seconds. This amount increases by 2 seconds based on the rank of your Force Shield power.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4152,6 +4998,9 @@
     "tags": [
       "Stun"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4170,6 +5019,9 @@
       "Placate",
       "Threat Wipe"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4185,6 +5037,9 @@
     "tags": [
       "Furious"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4198,6 +5053,9 @@
     "points_cost": 2,
     "tooltip": "Adds 15% Critical Chance for this power.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4211,6 +5069,9 @@
     "points_cost": 0,
     "tooltip": "Causes your Ego Blade powers to manifest Dual Id Blades instead of a single Ego Blade.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4228,6 +5089,9 @@
       "Illuminated",
       "Passive Heal"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4244,6 +5108,9 @@
       "Illuminated",
       "Passive Heal"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4257,6 +5124,9 @@
     "points_cost": 2,
     "tooltip": "You to generate less threat for 10 seconds.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4273,6 +5143,9 @@
       "Passive Heal",
       "Fear"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4286,6 +5159,9 @@
     "points_cost": 2,
     "tooltip": "Knocks targets away.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4299,6 +5175,9 @@
     "points_cost": 2,
     "tooltip": "While this travel power is active, you gain a damage bonus which scales with your current speed. This bonus persists for a short time upon losing speed or stopping.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4314,6 +5193,9 @@
     "tags": [
       "Stress"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4329,6 +5211,9 @@
     "tags": [
       "Knock To"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4342,6 +5227,9 @@
     "points_cost": 2,
     "tooltip": "On a full maintain, removes all Control effects.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4357,6 +5245,9 @@
     "tags": [
       "Snare"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4373,6 +5264,9 @@
       "Deadly Poison",
       "Illuminated"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4388,6 +5282,9 @@
     "tags": [
       "Id Surge"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4401,6 +5298,9 @@
     "points_cost": 3,
     "tooltip": "Taking damage while maintaining this power gives you 5% resistance to all damage, resistance to Knock and resistance to Hold effects for 5 sec. This amount scales the lower your health gets up to 120%.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4414,6 +5314,9 @@
     "points_cost": 1,
     "tooltip": "Increases the radius to 5ft.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4430,6 +5333,9 @@
       "Deadly Poison",
       "Bleed"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4443,6 +5349,9 @@
     "points_cost": 2,
     "tooltip": "Deals Toxic damage to the target in addition to its normal effects.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [
       "Toxic"
     ],
@@ -4458,6 +5367,9 @@
     "points_cost": 1,
     "tooltip": "Increases the Tap and base damage by 15%.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4474,6 +5386,9 @@
       "Restoration",
       "Passive Heal"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4489,6 +5404,9 @@
     "tags": [
       "Root"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4505,6 +5423,9 @@
       "Dependency",
       "Passive Heal"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4520,6 +5441,9 @@
     "tags": [
       "Stun"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4535,6 +5459,9 @@
     "tags": [
       "Fear"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4550,6 +5477,9 @@
     "tags": [
       "Knock Down"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4565,6 +5495,9 @@
     "tags": [
       "Enrage"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4580,6 +5513,9 @@
     "tags": [
       "Knock Back"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4595,6 +5531,9 @@
     "tags": [
       "Cold Snap"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4610,6 +5549,9 @@
     "tags": [
       "Root"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4626,6 +5568,9 @@
       "Negative Ions",
       "Arc"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4641,6 +5586,9 @@
     "tags": [
       "Negative Ions"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4656,6 +5604,9 @@
     "tags": [
       "Fear"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4671,6 +5622,9 @@
     "tags": [
       "Plasma Burn"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4686,6 +5640,9 @@
     "tags": [
       "Fear"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4701,6 +5658,9 @@
     "tags": [
       "Disorient"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4717,6 +5677,9 @@
       "Knock Down",
       "Jinxed"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4735,6 +5698,9 @@
       "Team Heal",
       "Rupture"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [
       "Dimensional"
     ],
@@ -4752,6 +5718,9 @@
     "tags": [
       "Overpower"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4765,6 +5734,9 @@
     "points_cost": 2,
     "tooltip": "Can target up to 5 friends in a cone in front of you. Is less effective per target for each target hit beyond the first.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4780,6 +5752,9 @@
     "tags": [
       "Fiery Escalation"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4795,6 +5770,9 @@
     "tags": [
       "Shield"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4810,6 +5788,9 @@
     "tags": [
       "Nimble Movement"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4823,6 +5804,9 @@
     "points_cost": 1,
     "tooltip": "Applies a large threat over time effect to your target. This effect stacks with Challenge.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4838,6 +5822,9 @@
     "tags": [
       "Ego Leech"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4853,6 +5840,9 @@
     "tags": [
       "Knock Down"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4868,6 +5858,9 @@
     "tags": [
       "Perception"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4883,6 +5876,9 @@
     "tags": [
       "Poison"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4899,6 +5895,9 @@
       "Light Everlasting",
       "Passive Heal"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4914,6 +5913,9 @@
     "tags": [
       "Disintegrate"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4930,6 +5932,9 @@
       "Illuminated",
       "Passive Heal"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4946,6 +5951,9 @@
       "Negative Ions",
       "Arc"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4961,6 +5969,9 @@
     "tags": [
       "Arc"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4978,6 +5989,9 @@
       "Knock To",
       "Aegis"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -4993,6 +6007,9 @@
     "tags": [
       "Devoid"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5009,6 +6026,9 @@
       "Fear",
       "Furious"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5022,6 +6042,9 @@
     "points_cost": 0,
     "tooltip": "Becomes Locust Breath. (FX change)",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5037,6 +6060,9 @@
     "tags": [
       "Furious"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5050,6 +6076,9 @@
     "points_cost": 2,
     "tooltip": "Refreshes the Defiant buff if you have the Defiance passive active.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5065,6 +6094,9 @@
     "tags": [
       "Clinging Flames"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [
       "Fire"
     ],
@@ -5083,6 +6115,9 @@
       "Negative Ions",
       "Reverse Repel"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5098,6 +6133,9 @@
     "tags": [
       "Knock Back"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5113,6 +6151,9 @@
     "tags": [
       "Knock To"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5129,6 +6170,9 @@
       "Snare",
       "Root"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5142,6 +6186,9 @@
     "points_cost": 2,
     "tooltip": "Target suffers -15% to their power recharge speed for 10 seconds.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5155,6 +6202,9 @@
     "points_cost": 2,
     "tooltip": "Becomes a static summon instead of a maintain. Increases the cost by 20%, and cannot Criticaly Hit.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [
       "Ego"
     ],
@@ -5172,6 +6222,9 @@
     "tags": [
       "Snare"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5185,6 +6238,9 @@
     "points_cost": 2,
     "tooltip": "Revives up to 4 nearby allies within 50 feet. The healing received is divided among the number of allies revived at a time.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5198,6 +6254,9 @@
     "points_cost": 2,
     "tooltip": "Removes AoE component of the power, causing it to deal 60% more damage.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5213,6 +6272,9 @@
     "tags": [
       "Shield"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5228,6 +6290,9 @@
     "tags": [
       "Furious"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5243,6 +6308,9 @@
     "tags": [
       "Plasma Burn"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5258,6 +6326,9 @@
     "tags": [
       "Ego Leech"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5273,6 +6344,9 @@
     "tags": [
       "Passive Heal"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5288,6 +6362,9 @@
     "tags": [
       "Ego Leech"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5303,6 +6380,9 @@
     "tags": [
       "Stress"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5318,6 +6398,9 @@
     "tags": [
       "Shield"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5333,6 +6416,9 @@
     "tags": [
       "Knock To"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5346,6 +6432,9 @@
     "points_cost": 2,
     "tooltip": "Target suffers -15% to their power recharge speed for 10 seconds.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5361,6 +6450,9 @@
     "tags": [
       "Shredded"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5374,6 +6466,9 @@
     "points_cost": 2,
     "tooltip": "Deals increased damage for each subsequent target they hit.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5390,6 +6485,9 @@
       "Knock Down",
       "Knock To"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5405,6 +6503,9 @@
     "tags": [
       "Shield"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5418,6 +6519,9 @@
     "points_cost": 2,
     "tooltip": "Increase base damage by 30% if you are affected by Telepathic Reverberation.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5433,6 +6537,9 @@
     "tags": [
       "Fear"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5446,6 +6553,9 @@
     "points_cost": 1,
     "tooltip": "While active, remove the Crushing Damage portion of your Fissure power, and greatly increases its Fire Damage.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [
       "Fire"
     ],
@@ -5461,6 +6571,9 @@
     "points_cost": 2,
     "tooltip": "While standing in the area of effect, the damage resistance granted by Regeneration is increased by 5% and doesn't diminish as you lose health.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5474,6 +6587,9 @@
     "points_cost": 2,
     "tooltip": "Revives up to 4 nearby allies within 50 feet. The healing received is divided among the number of allies revived at a time.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5489,6 +6605,9 @@
     "tags": [
       "Shredded"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5502,6 +6621,9 @@
     "points_cost": 2,
     "tooltip": "Can hit up to 3 targets in a 2 foot cylinder. Now considered an AoE power.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5517,6 +6639,9 @@
     "tags": [
       "Sigils"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5532,6 +6657,9 @@
     "tags": [
       "Mystified"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5547,6 +6675,9 @@
     "tags": [
       "Bleed"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5562,6 +6693,9 @@
     "tags": [
       "Snare"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5577,6 +6711,9 @@
     "tags": [
       "Hold"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5592,6 +6729,9 @@
     "tags": [
       "Sudden Strike"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5605,6 +6745,9 @@
     "points_cost": 2,
     "tooltip": "Nightmare entities have their life span increased. They will attack the target until it is defeated instead of disappearing partway through the fight.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5620,6 +6763,9 @@
     "tags": [
       "Perception"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5635,6 +6781,9 @@
     "tags": [
       "Pyre Patch"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5650,6 +6799,9 @@
     "tags": [
       "Ego Leech"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5666,6 +6818,9 @@
       "Shredded",
       "Furious"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [
       "Slashing"
     ],
@@ -5683,6 +6838,9 @@
     "tags": [
       "Wounds"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5698,6 +6856,9 @@
     "tags": [
       "Disorient"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5713,6 +6874,9 @@
     "tags": [
       "Furious"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5729,6 +6893,9 @@
       "Stun",
       "Disorient"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5744,6 +6911,9 @@
     "tags": [
       "Disintegrate"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5760,6 +6930,9 @@
       "Stun",
       "Knock Down"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5775,6 +6948,9 @@
     "tags": [
       "Fear"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5791,6 +6967,9 @@
       "Rune",
       "Passive Heal"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5806,6 +6985,9 @@
     "tags": [
       "Knock Back"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5822,6 +7004,9 @@
       "Bleed",
       "Open Wound"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5838,6 +7023,9 @@
       "Knock Back",
       "Disorient"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [
       "Slashing"
     ],
@@ -5855,6 +7043,9 @@
     "tags": [
       "Deadly Poison"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5868,6 +7059,9 @@
     "points_cost": 2,
     "tooltip": "Deals Electrical damage to anyone who triggers your shield. Damage dealt is based on incoming damage.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [
       "Electrical"
     ],
@@ -5883,6 +7077,9 @@
     "points_cost": 2,
     "tooltip": "Has a chance to apply poison.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5899,6 +7096,9 @@
       "Disorient",
       "Armor Piercing"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5912,6 +7112,9 @@
     "points_cost": 2,
     "tooltip": "Revives up to 4 nearby allies within 50 feet. The healing received is divided among the number of allies revived at a time.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5925,6 +7128,9 @@
     "points_cost": 2,
     "tooltip": "Increasins your Critical Chance by 3% every hit. This effect stacks up to 5 times, and is consumed when you perform a Critical Hit.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5941,6 +7147,9 @@
       "Stun",
       "Fear"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5956,6 +7165,9 @@
     "tags": [
       "Stagger"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5973,6 +7185,9 @@
       "Stun",
       "Bleed"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -5988,6 +7203,9 @@
     "tags": [
       "Fear"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6003,6 +7221,9 @@
     "tags": [
       "Disintegrate"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6016,6 +7237,9 @@
     "points_cost": 2,
     "tooltip": "Reduces single target damage by 20%, but increases the damage against multiple targets by 80%",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6031,6 +7255,9 @@
     "tags": [
       "Plasma Burn"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6047,6 +7274,9 @@
       "Negative Ions",
       "Plasma Burn"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6062,6 +7292,9 @@
     "tags": [
       "Furious"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6077,6 +7310,9 @@
     "tags": [
       "Shredded"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6094,6 +7330,9 @@
       "Chill",
       "Ice Cage"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [
       "Electrical"
     ],
@@ -6109,6 +7348,9 @@
     "points_cost": 1,
     "tooltip": "Increases the radius to 5 ft.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6122,6 +7364,9 @@
     "points_cost": 3,
     "tooltip": "When you use a Power Armor Slot (Chest, Hand, or Shoulder) attack, it will activate the Laser Knight shield for 2 sec, increasing your resistance to damage by 10% and your resistance to Knock effects by 10%. Reduces your damage by 10%.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6139,6 +7384,9 @@
       "Bleed",
       "Deadly Poison"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6154,6 +7402,9 @@
     "tags": [
       "Snare"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6167,6 +7418,9 @@
     "points_cost": 2,
     "tooltip": "Increases the effectiveness of the Toxic resistance debuff from your Pestilence passive while maintaing.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6182,6 +7436,9 @@
     "tags": [
       "Noxious Poison"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6197,6 +7454,9 @@
     "tags": [
       "Fear"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6210,6 +7470,9 @@
     "points_cost": 2,
     "tooltip": "Increases base damage up to 50% the closer you are to your target.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6225,6 +7488,9 @@
     "tags": [
       "Sudden Strike"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6240,6 +7506,9 @@
     "tags": [
       "Deadly Poison"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6256,6 +7525,9 @@
       "Deadly Poison",
       "Enrage"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6272,6 +7544,9 @@
       "Negative Ions",
       "Life Drain"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6287,6 +7562,9 @@
     "tags": [
       "Knock To"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6302,6 +7580,9 @@
     "tags": [
       "Chi Flame"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6317,6 +7598,9 @@
     "tags": [
       "Deadly Poison"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6333,6 +7617,9 @@
       "Stealth",
       "Threat Wipe"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6349,6 +7636,9 @@
       "Hold",
       "Disorient"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6364,6 +7654,9 @@
     "tags": [
       "Team Heal"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6377,6 +7670,9 @@
     "points_cost": 2,
     "tooltip": "15% chance to increase your Ego damage by 10% damage strenght, for 6 sec.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6392,6 +7688,9 @@
     "tags": [
       "Snare"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6408,6 +7707,9 @@
       "Stun",
       "Bleed"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6423,6 +7725,9 @@
     "tags": [
       "Demolish"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6438,6 +7743,9 @@
     "tags": [
       "Knock Back"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6453,6 +7761,9 @@
     "tags": [
       "Disorient"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6469,6 +7780,9 @@
       "Deadly Poison",
       "Bleed"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6485,6 +7799,9 @@
       "Deadly Poison",
       "Poisons"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6498,6 +7815,9 @@
     "points_cost": 2,
     "tooltip": "Revives up to 4 nearby allies within 50 feet. The healing received is divided among the number of allies revived at a time.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6513,6 +7833,9 @@
     "tags": [
       "Plasma Burn"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6529,6 +7852,9 @@
       "Plasma Burn",
       "Disintegrate"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [
       "Particle"
     ],
@@ -6546,6 +7872,9 @@
     "tags": [
       "Charged Up"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6561,6 +7890,9 @@
     "tags": [
       "Reckless"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6576,6 +7908,9 @@
     "tags": [
       "Disorient"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6591,6 +7926,9 @@
     "tags": [
       "Plasma Burn"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6606,6 +7944,9 @@
     "tags": [
       "Bleed"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6619,6 +7960,9 @@
     "points_cost": 2,
     "tooltip": "Doest revive friends anymore. Instead, allow its use on enemies who will then fight by your side as a zombie for a time. The duration increases with each rank.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6632,6 +7976,9 @@
     "points_cost": 2,
     "tooltip": "While active, holds are more difficult to land on you.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6648,6 +7995,9 @@
       "Restoration",
       "Passive Heal"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6663,6 +8013,9 @@
     "tags": [
       "Charged Up"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6678,6 +8031,9 @@
     "tags": [
       "Reckless"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6693,6 +8049,9 @@
     "tags": [
       "Reckless"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6709,6 +8068,9 @@
       "Rune",
       "Passive Heal"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6724,6 +8086,9 @@
     "tags": [
       "Clinging Flames"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6739,6 +8104,9 @@
     "tags": [
       "Furious"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6752,6 +8120,9 @@
     "points_cost": 2,
     "tooltip": "Will always be a Critical Hit, however, after each use you will not be able to Critically Hit with any power for 5 seconds.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6768,6 +8139,9 @@
       "Hold",
       "Stun"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6781,6 +8155,9 @@
     "points_cost": 2,
     "tooltip": "Reduces the cooldown on your Technology powers every time you take damage while blocking. - Does not affect Ultimate or Active powers.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6796,6 +8173,9 @@
     "tags": [
       "Static Field"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6809,6 +8189,9 @@
     "points_cost": 2,
     "tooltip": "Changes to deal damage in a cone instead of only to a single target.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6824,6 +8207,9 @@
     "tags": [
       "Passive Heal"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6837,6 +8223,9 @@
     "points_cost": 2,
     "tooltip": "While maintaing, if one of your powers comes off of cooldown, boosts the amount of healing does by 50% for 6 seconds.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6852,6 +8241,9 @@
     "tags": [
       "Knock Down"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6867,6 +8259,9 @@
     "tags": [
       "Knock Back"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6884,6 +8279,9 @@
       "Furious",
       "Root"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6899,6 +8297,9 @@
     "tags": [
       "Shredded"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6915,6 +8316,9 @@
       "Repel",
       "Stagger"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6930,6 +8334,9 @@
     "tags": [
       "Root"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6945,6 +8352,9 @@
     "tags": [
       "Passive Heal"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6958,6 +8368,9 @@
     "points_cost": 2,
     "tooltip": "Once you stop blocking, applies Break Free damage to any Holds, Roots, or Disables affecting you.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6973,6 +8386,9 @@
     "tags": [
       "Team Heal"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -6988,6 +8404,9 @@
     "tags": [
       "Knock To"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7003,6 +8422,9 @@
     "tags": [
       "Shield"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7018,6 +8440,9 @@
     "tags": [
       "Knock To"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [
       "Dimensional"
     ],
@@ -7036,6 +8461,9 @@
       "Bleed",
       "Enrage"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7049,6 +8477,9 @@
     "points_cost": 2,
     "tooltip": "Increases the base damage up to 35% the lower is the target's health.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7062,6 +8493,9 @@
     "points_cost": 2,
     "tooltip": "While maintaining this power, up to 5 allies within 50ft gain the Exhilarate buff which boosts the charge speed of abilities by 2% for 15 sec. Stacks up to 6 times.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7079,6 +8513,9 @@
       "Knock Up",
       "Rupture"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7092,6 +8529,9 @@
     "points_cost": 2,
     "tooltip": "Deals Crushing Damage to foes within 10 feet of your primary target.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [
       "Crushing"
     ],
@@ -7109,6 +8549,9 @@
     "tags": [
       "Sleep"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7124,6 +8567,9 @@
     "tags": [
       "Flight"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7139,6 +8585,9 @@
     "tags": [
       "Stun"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7154,6 +8603,9 @@
     "tags": [
       "Root"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7169,6 +8621,9 @@
     "tags": [
       "Fear"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7184,6 +8639,9 @@
     "tags": [
       "Stagger"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7197,6 +8655,9 @@
     "points_cost": 2,
     "tooltip": "Revives up to 4 nearby allies within 50 feet. The healing received is divided among the number of allies revived at a time.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7212,6 +8673,9 @@
     "tags": [
       "Root"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7227,6 +8691,9 @@
     "tags": [
       "Snare"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7242,6 +8709,9 @@
     "tags": [
       "Clinging Flames"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7255,6 +8725,9 @@
     "points_cost": 2,
     "tooltip": "While Tunneling you will gain a stack of Earthen Embrace every 3 seconds, up to 6 stacks. Earthen Embrace increases your resistance to all types of damage. These stacks will persist for a short time after you stop tunneling.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7270,6 +8743,9 @@
     "tags": [
       "Bleed"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7285,6 +8761,9 @@
     "tags": [
       "Pyre Patch"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7300,6 +8779,9 @@
     "tags": [
       "Pyre Patch"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7315,6 +8797,9 @@
     "tags": [
       "Clinging Flames"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7328,6 +8813,9 @@
     "points_cost": 2,
     "tooltip": "Fully charging applies Despondency.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7341,6 +8829,9 @@
     "points_cost": 2,
     "tooltip": "A portion of the energy you use to cast is returned if your target is affected by the heal component of Mend. The energy returned scales slightly with your Constitution.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7356,6 +8847,9 @@
     "tags": [
       "Shredded"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7371,6 +8865,9 @@
     "tags": [
       "Bleed"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7386,6 +8883,9 @@
     "tags": [
       "Ice structures"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7402,6 +8902,9 @@
       "Demolish",
       "Blindside"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7417,6 +8920,9 @@
     "tags": [
       "Shredded"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7432,6 +8938,9 @@
     "tags": [
       "Stealth"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7447,6 +8956,9 @@
     "tags": [
       "Stagger"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7463,6 +8975,9 @@
       "Snare",
       "Shredded"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7476,6 +8991,9 @@
     "points_cost": 1,
     "tooltip": "Deals Slashing damage instead of Crushing.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [
       "Slashing"
     ],
@@ -7493,6 +9011,9 @@
     "tags": [
       "Demolish"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7509,6 +9030,9 @@
       "Knock Down",
       "Repel"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7524,6 +9048,9 @@
     "tags": [
       "Power Shield"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7539,6 +9066,9 @@
     "tags": [
       "Stun"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7554,6 +9084,9 @@
     "tags": [
       "Shredded"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7570,6 +9103,9 @@
       "Stealth",
       "Threat Wipe"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7583,6 +9119,9 @@
     "points_cost": 1,
     "tooltip": "Increases your movement speed while sneaking.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7596,6 +9135,9 @@
     "points_cost": 2,
     "tooltip": "Increases its damage by 10% for 10 seconds each time is fully maintained. Stacks up to 3 times, and at 3 stacks, fully maintaining refreshes all existing stacks.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7612,6 +9154,9 @@
       "Stagger",
       "Root"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7627,6 +9172,9 @@
     "tags": [
       "Passive Heal"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7642,6 +9190,9 @@
     "tags": [
       "Passive Heal"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7658,6 +9209,9 @@
       "Stealth",
       "Threat Wipe"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7673,6 +9227,9 @@
     "tags": [
       "Bleed"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7688,6 +9245,9 @@
     "tags": [
       "Shredded"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7701,6 +9261,9 @@
     "points_cost": 2,
     "tooltip": "While maintained, the cooldown on your Gadgeteer powers will be reduced by 0.25 sec every hit. Does not affect Ultimate or Active powers.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7716,6 +9279,9 @@
     "tags": [
       "Disorient"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7729,6 +9295,9 @@
     "points_cost": 2,
     "tooltip": "Increases range to 20ft. The damage within 10ft remains melee crushing damage. The damage on the outer 10ft is ranged sonic damage.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [
       "Crushing",
       "Sonic"
@@ -7747,6 +9316,9 @@
     "tags": [
       "Disorient"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7762,6 +9334,9 @@
     "tags": [
       "Root"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7779,6 +9354,9 @@
       "Dependency",
       "Passive Heal"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7795,6 +9373,9 @@
       "Dependency",
       "Passive Heal"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7810,6 +9391,9 @@
     "tags": [
       "Negative Ions"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7826,6 +9410,9 @@
       "Rune",
       "Passive Heal"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7839,6 +9426,9 @@
     "points_cost": 1,
     "tooltip": "A portion of this damage is dealt as Dimensional damage. This increases the overall damage slightly and counts as a Chi Power effect.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [
       "Dimensional"
     ],
@@ -7856,6 +9446,9 @@
     "tags": [
       "Bleed"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7872,6 +9465,9 @@
       "Furious",
       "Clinging Flames"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7888,6 +9484,9 @@
       "Knock Up",
       "Fear"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7903,6 +9502,9 @@
     "tags": [
       "Armor Piercing"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7916,6 +9518,9 @@
     "points_cost": 2,
     "tooltip": "Revives up to 4 nearby allies within 50 feet. The healing received is divided among the number of allies revived at a time.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7933,6 +9538,9 @@
       "Circuit",
       "Knock Up"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7946,6 +9554,9 @@
     "points_cost": 2,
     "tooltip": "While maintaining, your Knock resistance is increased by 200%.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7962,6 +9573,9 @@
       "Repel",
       "Disorient"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7978,6 +9592,9 @@
       "Restoration",
       "Passive Heal"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -7993,6 +9610,9 @@
     "tags": [
       "Trauma"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8008,6 +9628,9 @@
     "tags": [
       "Knock Down"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8023,6 +9646,9 @@
     "tags": [
       "Interrupt"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8036,6 +9662,9 @@
     "points_cost": 3,
     "tooltip": "Every time you complete this combo, the cooldowns of your healing powers are reduced by 2 seconds.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8052,6 +9681,9 @@
       "Ego Infusion",
       "Stress"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8067,6 +9699,9 @@
     "tags": [
       "Stress"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8083,6 +9718,9 @@
       "Knock Down",
       "Superconductor"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8098,6 +9736,9 @@
     "tags": [
       "Repel"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8113,6 +9754,9 @@
     "tags": [
       "Stun"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8128,6 +9772,9 @@
     "tags": [
       "Interrupt"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8143,6 +9790,9 @@
     "tags": [
       "Ebb and Flow"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8158,6 +9808,9 @@
     "tags": [
       "Knock Down"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8173,6 +9826,9 @@
     "tags": [
       "Sudden Strike"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8188,6 +9844,9 @@
     "tags": [
       "Hold"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8203,6 +9862,9 @@
     "tags": [
       "Superconductor"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8219,6 +9881,9 @@
       "Negative Ions",
       "Superconductor"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8234,6 +9899,9 @@
     "tags": [
       "Chill"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8249,6 +9917,9 @@
     "tags": [
       "Knock Back"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8262,6 +9933,9 @@
     "points_cost": 2,
     "tooltip": "Refreshes stacks of Defiant if you have the Defiance passive active.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8279,6 +9953,9 @@
       "Dependency",
       "Stress"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8294,6 +9971,9 @@
     "tags": [
       "Swallowtail Cut"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8307,6 +9987,9 @@
     "points_cost": 2,
     "tooltip": "Enemies affected by the Pyre created by will have their movement speed reduced.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8322,6 +10005,9 @@
     "tags": [
       "Disorient"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8337,6 +10023,9 @@
     "tags": [
       "Furious"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8350,6 +10039,9 @@
     "points_cost": 3,
     "tooltip": "After blocking, provides you 17% resistance to all damage for 8 sec.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8365,6 +10057,9 @@
     "tags": [
       "Passive Heal"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8382,6 +10077,9 @@
       "Stun",
       "Bleed"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8395,6 +10093,9 @@
     "points_cost": 1,
     "tooltip": "Applies Break Free damage to the primary target and reduced Break Free damage to secondary targets.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8408,6 +10109,9 @@
     "points_cost": 3,
     "tooltip": "Reduces you melee damage strenght by 10%. Whenever you make a melee attack, grants you +5.9% Dodge Chance Rating, +79 Avoidance Rating, and 33% Knock Resistance for 2 sec.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8421,6 +10125,9 @@
     "points_cost": 3,
     "tooltip": "Reduces you melee damage strenght by 10%. Whenever you make a melee attack, grants you +5.9% Dodge Chance Rating, +79 Avoidance Rating, and 33% Knock Resistance for 2 sec.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8436,6 +10143,9 @@
     "tags": [
       "Trauma"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8449,6 +10159,9 @@
     "points_cost": 1,
     "tooltip": "Will reduce the Energy of the target with each hit in addition to dealing damage normally. Also causes deal an additional 20 Energy.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8465,6 +10178,9 @@
       "Focus",
       "Bleed"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8480,6 +10196,9 @@
     "tags": [
       "Charged Up"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8496,6 +10215,9 @@
       "Negative Ions",
       "Root"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8511,6 +10233,9 @@
     "tags": [
       "Disorient"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8524,6 +10249,9 @@
     "points_cost": 2,
     "tooltip": "Increase base damage up to 30%, scaling with your Critical Rate.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8537,6 +10265,9 @@
     "points_cost": 2,
     "tooltip": "While maintained, the cooldown on your Gadgeteer powers will be reduced every hit by 0.25 sec. Does not affect Ultimate or Active powers.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8553,6 +10284,9 @@
       "Disorient",
       "Knock Up"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8568,6 +10302,9 @@
     "tags": [
       "Stagger"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8583,6 +10320,9 @@
     "tags": [
       "Debilitation Poison"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8598,6 +10338,9 @@
     "tags": [
       "Deadly Poison"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8611,6 +10354,9 @@
     "points_cost": 2,
     "tooltip": "Increases the movement speed.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8627,6 +10373,9 @@
       "Stun",
       "Jinxed"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8642,6 +10391,9 @@
     "tags": [
       "Trauma"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8655,6 +10407,9 @@
     "points_cost": 2,
     "tooltip": "A significant bonus to Dodge and Avoidance while maintained. This bonus is doubled if you are currently Concentrated.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8671,6 +10426,9 @@
       "Furious",
       "Fear"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [
       "Piercing"
     ],
@@ -8689,6 +10447,9 @@
       "Negative Ions",
       "Chill"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [
       "Crushing",
       "Electrical",
@@ -8706,6 +10467,9 @@
     "points_cost": 2,
     "tooltip": "Summons three Ball Lightnings instead of one, but the periodic damage each one deals is reduced by 60%. All three deal AoE damage, but only the primary one will explode.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8719,6 +10483,9 @@
     "points_cost": 2,
     "tooltip": "Allows shots to hit up to 3 targets in a 3 foot Cylinder. Now considered an AoE power.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8732,6 +10499,9 @@
     "points_cost": 2,
     "tooltip": "Whenever you hit with a Melee attack, the cooldown on is reduced by 2 seconds. However, no longer grants bonus damage to your Melee attacks.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8747,6 +10517,9 @@
     "tags": [
       "Burn Through"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8760,6 +10533,9 @@
     "points_cost": 2,
     "tooltip": "Causes the pet summoned by this Ritual to no longer be bound to the circle. This allows the summon to follow you around wherever you may go, and your pet no longer goes away when another Ritual pet is summoned. This advantage also adds an energy cost to this summon power.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8776,6 +10552,9 @@
       "Hold",
       "Root"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8791,6 +10570,9 @@
     "tags": [
       "Furious"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8806,6 +10588,9 @@
     "tags": [
       "Reckless"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8819,6 +10604,9 @@
     "points_cost": 2,
     "tooltip": "Activating will cause you to generate less threat for a short time.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8835,6 +10623,9 @@
       "Negative Ions",
       "Circuit"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8850,6 +10641,9 @@
     "tags": [
       "Root"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8865,6 +10659,9 @@
     "tags": [
       "Bane"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8880,6 +10677,9 @@
     "tags": [
       "Bleed"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8896,6 +10696,9 @@
       "Unstable Accelerant",
       "Clinging Flames"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8912,6 +10715,9 @@
       "Knock Down",
       "Stagger"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8927,6 +10733,9 @@
     "tags": [
       "Disorient"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8940,6 +10749,9 @@
     "points_cost": 2,
     "tooltip": "Deals Dimensional damage every 1 sec for 12 sec. This damage does not reduce the durability of the Hold applied.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [
       "Dimensional"
     ],
@@ -8957,6 +10769,9 @@
     "tags": [
       "Download"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8970,6 +10785,9 @@
     "points_cost": 1,
     "tooltip": "The longer you maintain, the shorter its cooldown will be. Fully maintaining will reset the cooldown completely.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -8986,6 +10804,9 @@
       "Team Heal",
       "Fear"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9001,6 +10822,9 @@
     "tags": [
       "Knock Back"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [
       "Dimensional"
     ],
@@ -9018,6 +10842,9 @@
     "tags": [
       "Charged Up"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9031,6 +10858,9 @@
     "points_cost": 3,
     "tooltip": "Above 50% health, increases the base damage by 30% and will no longer heal you. Increases base damage by 10% for 10 sec every full maintain. stacks 3 times. If you fall below 50% health, damage bonus is removed and healing effect is returned.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9046,6 +10876,9 @@
     "tags": [
       "Deadly Poison"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9059,6 +10892,9 @@
     "points_cost": 2,
     "tooltip": "Fully charging on a Poisoned target will spread the affliction to a nearby foe. This can occur for each type of Poison on the target. Refreshes the duration of all Poisons on all targets hit.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9074,6 +10910,9 @@
     "tags": [
       "Trauma"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9089,6 +10928,9 @@
     "tags": [
       "Life Drain"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9104,6 +10946,9 @@
     "tags": [
       "Stun"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9117,6 +10962,9 @@
     "points_cost": 3,
     "tooltip": "When you take damage while blocking, applies and refreshes Voracious Darkness which gives you 10% bonus resistance to all damage for 10 seconds. This effect stacks up to 5 times.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9132,6 +10980,9 @@
     "tags": [
       "Reverse repel"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9148,6 +10999,9 @@
       "Knock To",
       "Furious"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9163,6 +11017,9 @@
     "tags": [
       "Aegis"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9178,6 +11035,9 @@
     "tags": [
       "Shield"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9191,6 +11051,9 @@
     "points_cost": 2,
     "tooltip": "Creates two sets of mines, allowing them to cover a larger area, but each set does 40% less damage.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9206,6 +11069,9 @@
     "tags": [
       "Root"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9221,6 +11087,9 @@
     "tags": [
       "Bleed"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9236,6 +11105,9 @@
     "tags": [
       "Shield"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9249,6 +11121,9 @@
     "points_cost": 2,
     "tooltip": "Secondary Energy Effects, such as Clinging Flames, have a chance to not be consumed when you use.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9264,6 +11139,9 @@
     "tags": [
       "Bane"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9279,6 +11157,9 @@
     "tags": [
       "Knock Up"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [
       "Piercing",
       "Fire"
@@ -9297,6 +11178,9 @@
     "tags": [
       "Furious"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9310,6 +11194,9 @@
     "points_cost": 2,
     "tooltip": "For a short time after using, whenever you directly damage a foe with a Supernatural attack, the cooldown on your Supernatural abilities is reduced. Energy builders will not trigger this effect. Does not affect Active or Ultimate powers.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9326,6 +11213,9 @@
       "Knock Down",
       "Clinging Flames"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9341,6 +11231,9 @@
     "tags": [
       "Stun"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9357,6 +11250,9 @@
       "Restoration",
       "Passive Heal"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9372,6 +11268,9 @@
     "tags": [
       "Demolish"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9385,6 +11284,9 @@
     "points_cost": 1,
     "tooltip": "Applies a large threat over time effect to your target. This effect stacks with Challenge.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9400,6 +11302,9 @@
     "tags": [
       "Shield"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9415,6 +11320,9 @@
     "tags": [
       "Power Shield"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9431,6 +11339,9 @@
       "Rune",
       "Static Field"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9446,6 +11357,9 @@
     "tags": [
       "Shield"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9461,6 +11375,9 @@
     "tags": [
       "Reverse Repel"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9477,6 +11394,9 @@
       "Rune",
       "Shield"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9492,6 +11412,9 @@
     "tags": [
       "Knock Down"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9509,6 +11432,9 @@
       "Power Shield",
       "Field Inversion"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [
       "Crushing"
     ],
@@ -9526,6 +11452,9 @@
     "tags": [
       "Demolish"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9541,6 +11470,9 @@
     "tags": [
       "Shield"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9556,6 +11488,9 @@
     "tags": [
       "Snare"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9572,6 +11507,9 @@
       "Shield",
       "Power Shield"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9587,6 +11525,9 @@
     "tags": [
       "Demolish"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9602,6 +11543,9 @@
     "tags": [
       "Knock Down"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9617,6 +11561,9 @@
     "tags": [
       "Shield"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9633,6 +11580,9 @@
       "Hold",
       "Stun"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9648,6 +11598,9 @@
     "tags": [
       "Focus"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9663,6 +11616,9 @@
     "tags": [
       "Knock Up"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9676,6 +11632,9 @@
     "points_cost": 1,
     "tooltip": "Removes 1 damage over time effect with the highest duration from your target.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9689,6 +11648,9 @@
     "points_cost": 3,
     "tooltip": "When you take damage while blocking, grants the Force Sheathe buff for 8 sec, which gives you +10% resistance to all damage and returns energy whenever you take damage. The amount of energy you get scales with your RECOVERY and how much damage you took.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9704,6 +11666,9 @@
     "tags": [
       "Plasma Burn"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9719,6 +11684,9 @@
     "tags": [
       "Download"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9732,6 +11700,9 @@
     "points_cost": 2,
     "tooltip": "If the target is under a Control effect, applies Breakfree damage. This effect can occur once every 2 sec.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9748,6 +11719,9 @@
       "Rune",
       "Passive Heal"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9764,6 +11738,9 @@
       "Pyre Patch",
       "Engulfing Flames"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9779,6 +11756,9 @@
     "tags": [
       "Knock Down"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9792,6 +11772,9 @@
     "points_cost": 1,
     "tooltip": "When this effect expires, the healing penalty is reduced by 5 seconds.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9807,6 +11790,9 @@
     "tags": [
       "Clinging Flames"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9822,6 +11808,9 @@
     "tags": [
       "Clinging Flames"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9837,6 +11826,9 @@
     "tags": [
       "Pyre Patch"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9852,6 +11844,9 @@
     "tags": [
       "Chi Flame"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9867,6 +11862,9 @@
     "tags": [
       "Poison"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9882,6 +11880,9 @@
     "tags": [
       "Demolish"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9897,6 +11898,9 @@
     "tags": [
       "Demolish"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9912,6 +11916,9 @@
     "tags": [
       "Devoid"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9927,6 +11934,9 @@
     "tags": [
       "Disintegrate"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9942,6 +11952,9 @@
     "tags": [
       "Disorient"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9957,6 +11970,9 @@
     "tags": [
       "Disorient"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9972,6 +11988,9 @@
     "tags": [
       "Engulfing Flames"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -9988,6 +12007,9 @@
       "Engulfing Flames",
       "Clinging Flames"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -10003,6 +12025,9 @@
     "tags": [
       "Power Shield"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -10016,6 +12041,9 @@
     "points_cost": 2,
     "tooltip": "Fully charging debuffs your target by -5% damage strength over 12 seconds for every one of your Poison stacks.",
     "tags": [],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -10031,6 +12059,9 @@
     "tags": [
       "Quick Maneuvering"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -10047,6 +12078,9 @@
       "Armor Piercing",
       "Frail Armor"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -10062,6 +12096,9 @@
     "tags": [
       "Chill"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -10077,6 +12114,9 @@
     "tags": [
       "Stun"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -10093,6 +12133,9 @@
       "Illuminated",
       "Passive Heal"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -10109,6 +12152,9 @@
       "Light Everlasting",
       "Passive Heal"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -10125,6 +12171,9 @@
       "Light Everlasting",
       "Passive Heal"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -10140,6 +12189,9 @@
     "tags": [
       "Mystified"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -10155,6 +12207,9 @@
     "tags": [
       "Mystified"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -10170,6 +12225,9 @@
     "tags": [
       "No Quarter"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -10185,6 +12243,9 @@
     "tags": [
       "Knock To"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -10200,6 +12261,9 @@
     "tags": [
       "Reckless"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -10215,6 +12279,9 @@
     "tags": [
       "Reckless"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -10230,6 +12297,9 @@
     "tags": [
       "Reckless"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -10245,6 +12315,9 @@
     "tags": [
       "Stun"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -10260,6 +12333,9 @@
     "tags": [
       "Sudden Strike"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -10276,6 +12352,9 @@
       "Negative Ions",
       "Charged Up"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -10291,6 +12370,9 @@
     "tags": [
       "Clinging Flames"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [
       "Fire"
     ],
@@ -10308,6 +12390,9 @@
     "tags": [
       "Clinging Flames"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -10323,6 +12408,9 @@
     "tags": [
       "Superconductor"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -10338,6 +12426,9 @@
     "tags": [
       "Bleed"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -10354,6 +12445,9 @@
       "Snare",
       "Root"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -10369,6 +12463,9 @@
     "tags": [
       "Hard Frost"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -10387,6 +12484,9 @@
       "Field Inversion",
       "Rupture"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [
       "Crushing"
     ],
@@ -10404,6 +12504,9 @@
     "tags": [
       "Disintegrate"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -10419,6 +12522,9 @@
     "tags": [
       "Bleed"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": false,
     "range_tags": [],
@@ -10434,6 +12540,9 @@
     "tags": [
       "Clinging Flames"
     ],
+    "apply_tag": null,
+    "refresh_tag": null,
+    "synergy_tag": null,
     "damage_type": [],
     "is_disabled": null,
     "range_tags": [],

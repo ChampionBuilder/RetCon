@@ -67,14 +67,24 @@ export function SpecializationsPanel({
               })
             }
           >
-            <span>{mastery ? `${masteryTree?.name} Mastery` : "Mastery"}</span>
+            <span
+              className="specialization-tree__header-tooltip"
+              title={mastery?.tip ?? "Mastery"}
+            >
+              {mastery ? `${masteryTree?.name} Mastery` : "Mastery"}
+            </span>
             <small>{mastery ? "(1/1)" : "(0/1)"}</small>
           </button>
 
           {mastery ? (
-            <div className="specialization-option specialization-option--selected">
-              <SpriteIcon name={mastery.icon} size={24} />
-              <span>{mastery.name}</span>
+            <div className="specialization-option specialization-option--selected specialization-option--panel-selected">
+              <div
+                className="specialization-option__tooltip-area specialization-option__tooltip-area--panel"
+                title={mastery.tip}
+              >
+                <SpriteIcon name={mastery.icon} size={24} />
+                <span>{mastery.name}</span>
+              </div>
               <small>1/1</small>
             </div>
           ) : (
@@ -101,7 +111,6 @@ export function SpecializationsPanel({
             >
               <button
                 className="specialization-tree__header"
-                title={tree?.tip ?? slotLabels[slotIndex]}
                 type="button"
                 onClick={(event: MouseEvent<HTMLButtonElement>) =>
                   onOpenSpecialization(slotIndex, {
@@ -110,7 +119,12 @@ export function SpecializationsPanel({
                   })
                 }
               >
-                <span>{tree ? `${tree.name} Tree` : slotLabels[slotIndex]}</span>
+                <span
+                  className="specialization-tree__header-tooltip"
+                  title={tree?.tip ?? slotLabels[slotIndex]}
+                >
+                  {tree ? `${tree.name} Tree` : slotLabels[slotIndex]}
+                </span>
                 <small>{`(${totalPoints}/${specializationPointMax})`}</small>
               </button>
 
@@ -127,12 +141,16 @@ export function SpecializationsPanel({
 
                       return (
                         <div
-                          className="specialization-option specialization-option--selected"
+                          className="specialization-option specialization-option--selected specialization-option--panel-selected"
                           key={specialization.id}
-                          title={specialization.tip}
                         >
-                          <SpriteIcon name={specialization.icon} size={24} />
-                          <span>{specialization.name}</span>
+                          <div
+                            className="specialization-option__tooltip-area specialization-option__tooltip-area--panel"
+                            title={specialization.tip}
+                          >
+                            <SpriteIcon name={specialization.icon} size={24} />
+                            <span>{specialization.name}</span>
+                          </div>
                           <small>{`${pointCount}/${specialization.maxPoints}`}</small>
                         </div>
                       );

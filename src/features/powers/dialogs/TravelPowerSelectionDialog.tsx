@@ -141,17 +141,21 @@ export function TravelPowerSelectionDialog({
                         .filter(Boolean)
                         .join(" ")}
                       key={power.power_id}
-                      data-power-tooltip={getPowerTooltipAttribute(
-                        power,
-                        undefined,
-                        powersById,
-                      )}
-                      title={getPowerTooltipText(power)}
                       type="button"
                       onClick={() => onSelectTravelPower(buildSlot.slot, power)}
                     >
                       <SpriteIcon name={getPowerIconName(power)} size={22} />
-                      <span>{power.name}</span>
+                      <span
+                        className="power-selection-choice__label"
+                        data-power-tooltip={getPowerTooltipAttribute(
+                          power,
+                          undefined,
+                          powersById,
+                        )}
+                        title={getPowerTooltipText(power)}
+                      >
+                        {power.name}
+                      </span>
                     </button>
                   );
                 })}

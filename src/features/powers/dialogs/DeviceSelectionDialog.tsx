@@ -79,17 +79,21 @@ export function DeviceSelectionDialog({
                         .filter(Boolean)
                         .join(" ")}
                       key={device.power_id}
-                      data-power-tooltip={getPowerTooltipAttribute(
-                        device,
-                        undefined,
-                        powersById,
-                      )}
-                      title={getPowerTooltipText(device)}
                       type="button"
                       onClick={() => onSelectDevice(buildSlot.slot, device)}
                     >
                       <SpriteIcon name={getPowerIconName(device)} size={22} />
-                      <span>{device.name}</span>
+                      <span
+                        className="power-selection-choice__label"
+                        data-power-tooltip={getPowerTooltipAttribute(
+                          device,
+                          undefined,
+                          powersById,
+                        )}
+                        title={getPowerTooltipText(device)}
+                      >
+                        {device.name}
+                      </span>
                     </button>
                   );
                 })}

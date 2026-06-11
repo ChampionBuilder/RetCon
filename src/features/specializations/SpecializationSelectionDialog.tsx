@@ -49,7 +49,12 @@ export function SpecializationSelectionDialog({
     <AnchoredSelectionDialog
       anchor={anchor}
       ariaLabel="Select specialization"
-      className="specialization-selection-dialog"
+      className={[
+        "specialization-selection-dialog",
+        slotIndex === 0 ? "specialization-selection-dialog--stat" : "",
+      ]
+        .filter(Boolean)
+        .join(" ")}
       closeAriaLabel="Close specialization selection"
       menuChildren={
         <>
@@ -146,10 +151,14 @@ export function SpecializationSelectionDialog({
                     .filter(Boolean)
                     .join(" ")}
                   key={specialization.id}
-                  title={specialization.tip}
                 >
-                  <SpriteIcon name={specialization.icon} size={24} />
-                  <span>{specialization.name}</span>
+                  <div
+                    className="specialization-option__tooltip-area"
+                    title={specialization.tip}
+                  >
+                    <SpriteIcon name={specialization.icon} size={24} />
+                    <span>{specialization.name}</span>
+                  </div>
                   <div
                     className="specialization-point-controls"
                     data-no-instant-tooltip
