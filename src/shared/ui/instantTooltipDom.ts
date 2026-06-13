@@ -5,10 +5,12 @@ import type {
   StatTooltipData,
   TooltipContent,
 } from "@/shared/ui/instantTooltipTypes";
+import type { TagSearchColumn } from "@/utils/powerTags";
 
 export const instantTooltipAttributeFilter = [
   "data-power-tooltip",
   "data-power-tooltip-advantage-queries",
+  "data-power-tooltip-advantage-tag-columns",
   "data-power-tooltip-advanced",
   "data-advantage-tooltip",
   "data-stat-tooltip",
@@ -78,6 +80,28 @@ export function getAdvantageHighlightQueries(element: HTMLElement) {
 
     return Array.isArray(queries)
       ? queries.filter((query): query is string => typeof query === "string")
+      : [];
+  } catch {
+    return [];
+  }
+}
+
+export function getAdvantageHighlightTagColumns(element: HTMLElement) {
+  const rawColumns = element.dataset.powerTooltipAdvantageTagColumns;
+
+  if (!rawColumns) {
+    return [];
+  }
+
+  try {
+    const columns = JSON.parse(rawColumns);
+    const allowedColumns = new Set(["apply", "refresh", "synergy"]);
+
+    return Array.isArray(columns)
+      ? columns.filter(
+          (column): column is TagSearchColumn =>
+            typeof column === "string" && allowedColumns.has(column),
+        )
       : [];
   } catch {
     return [];

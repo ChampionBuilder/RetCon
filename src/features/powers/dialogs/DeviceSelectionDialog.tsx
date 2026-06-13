@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import type { BuildSlot } from "@/types/builds";
 import type { Power } from "@/types/powers";
 import { arrangeItemsByColumns } from "@/shared/utils/gridLayout";
@@ -32,7 +32,20 @@ export function DeviceSelectionDialog({
   const devices = powers.filter((power) => isStandardDevice(power));
   const frameworkIds = Array.from(
     new Set(devices.map((device) => device.framework_id)),
-  ).sort((a, b) => formatFrameworkName(a).localeCompare(formatFrameworkName(b)));
+  );
+  const [selectedFramework, setSelectedFramework] = useState<string | null>(() => {
+    const currentFrameworkId = buildSlot.power?.framework_id ?? null;
+
+    return currentFrameworkId && frameworkIds.includes(currentFrameworkId)
+      ? currentFrameworkId
+      : frameworkIds[0] ?? null;
+  });
+  const selectedFrameworkTitle =
+    selectedFramework === null
+      ? "Devices"
+      : formatFrameworkName(selectedFramework) || "Unknown";
+  const visibleFrameworkIds =
+    selectedFramework === null ? [] : [selectedFramework];
 
   return (
     <AnchoredSelectionDialog
@@ -49,22 +62,44 @@ export function DeviceSelectionDialog({
           >
             Clear
           </button>
-          <strong>Device</strong>
+          <span className="power-selection-dialog__framework-title">
+            {selectedFrameworkTitle}
+          </span>
         </>
       }
       onClose={onClose}
     >
+      <div
+        className="power-selection-framework-strip"
+        aria-label="Device categories"
+      >
+        <div className="framework-group">
+          {frameworkIds.map((frameworkId) => (
+            <button
+              className={
+                selectedFramework === frameworkId
+                  ? "framework-button framework-button--active"
+                  : "framework-button"
+              }
+              key={frameworkId ?? "unknown"}
+              type="button"
+              onClick={() => setSelectedFramework(frameworkId)}
+              title={formatFrameworkName(frameworkId) || "Unknown"}
+            >
+              <SpriteIcon name="Any_Generic" size={24} />
+            </button>
+          ))}
+        </div>
+      </div>
+
       <div className="power-selection-list">
-        {frameworkIds.map((frameworkId) => {
+        {visibleFrameworkIds.map((frameworkId) => {
           const frameworkDevices = devices
             .filter((device) => device.framework_id === frameworkId)
             .sort((a, b) => a.name.localeCompare(b.name));
 
           return (
             <section className="power-selection-group" key={frameworkId ?? "unknown"}>
-              <strong className="power-variant-selection-group__title">
-                {formatFrameworkName(frameworkId) || "Unknown"}
-              </strong>
               <div className="power-selection-grid">
                 {arrangeItemsByColumns(frameworkDevices, 2).map((device) => {
                   const isCurrent =

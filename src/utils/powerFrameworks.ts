@@ -17,6 +17,7 @@ export type PowerFrameworkFilterGroup = {
 export const travelPowerFilterId = "__travel_powers__";
 export const powerVariantsFilterId = "__power_variants__";
 export const devicesFilterId = "__devices__";
+export const travelPowerPowersetId = "Travel_Power";
 
 export type SelectedFrameworks = string[] | null;
 
@@ -135,7 +136,7 @@ export function isSharedFramework(frameworkId: string | null) {
 }
 
 export function isTravelPower(power: Power) {
-  return power.powerset_id?.toLowerCase() === "travel_power";
+  return power.powerset_id?.toLowerCase() === travelPowerPowersetId.toLowerCase();
 }
 
 export function isPowerVariantDevice(power: Power) {

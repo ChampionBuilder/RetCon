@@ -1,6 +1,7 @@
 import type { Power } from "@/types/powers";
 import type { Advantage } from "@/types/advantages";
 import { getNormalizedPowerType } from "@/shared/utils/powerTypes";
+import { getSearchTags } from "./powerTags";
 
 const powerTypeRoleRules: Array<[string, string[]]> = [
   ["ACTIVE_DEFENSE", ["Active Defense"]],
@@ -126,7 +127,9 @@ function getAdvantageTags(
   }
 
   return power.advantages.flatMap((advantageId) => {
-    return advantagesById.get(advantageId)?.tags ?? [];
+    const advantage = advantagesById.get(advantageId);
+
+    return advantage ? getSearchTags(advantage) : [];
   });
 }
 
@@ -141,50 +144,53 @@ export function getPowerRoles(power: Power, context: PowerRoleContext = {}) {
     powerTypeRoleMap.get(normalizedPowerType)?.forEach((role) => roles.add(role));
   }
 
-  if (includePowerTags && hasAnyNormalizedValue(power.tags, crowdControlTags)) {
+  const powerTags = getSearchTags(power);
+  const advantageTags = getAdvantageTags(power, context.advantagesById);
+
+  if (includePowerTags && hasAnyNormalizedValue(powerTags, crowdControlTags)) {
     roles.add("Crowd Control");
   }
 
-  if (includePowerTags && hasAnyNormalizedValue(power.tags, buffDebuffTags)) {
+  if (includePowerTags && hasAnyNormalizedValue(powerTags, buffDebuffTags)) {
     roles.add("Buff / Debuff");
   }
 
-  if (includePowerTags && hasActiveHealShieldTag(power.tags)) {
+  if (includePowerTags && hasActiveHealShieldTag(powerTags)) {
     roles.add("Active Heal");
   }
 
-  if (includePowerTags && hasPassiveHealShieldTag(power.tags)) {
+  if (includePowerTags && hasPassiveHealShieldTag(powerTags)) {
     roles.add("Passive Heal");
   }
 
-  if (includePowerTags && hasAnyNormalizedValue(power.tags, shieldTags)) {
+  if (includePowerTags && hasAnyNormalizedValue(powerTags, shieldTags)) {
     roles.add("Shield");
   }
 
   if (
     includeAdvantageTags &&
-    hasAnyNormalizedValue(getAdvantageTags(power, context.advantagesById), buffDebuffTags)
+    hasAnyNormalizedValue(advantageTags, buffDebuffTags)
   ) {
     roles.add("Buff / Debuff");
   }
 
   if (
     includeAdvantageTags &&
-    hasActiveHealShieldTag(getAdvantageTags(power, context.advantagesById))
+    hasActiveHealShieldTag(advantageTags)
   ) {
     roles.add("Active Heal");
   }
 
   if (
     includeAdvantageTags &&
-    hasPassiveHealShieldTag(getAdvantageTags(power, context.advantagesById))
+    hasPassiveHealShieldTag(advantageTags)
   ) {
     roles.add("Passive Heal");
   }
 
   if (
     includeAdvantageTags &&
-    hasAnyNormalizedValue(getAdvantageTags(power, context.advantagesById), shieldTags)
+    hasAnyNormalizedValue(advantageTags, shieldTags)
   ) {
     roles.add("Shield");
   }

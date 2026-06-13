@@ -39,6 +39,7 @@ import {
   getPowerRoleOptions,
   getPowerRoles,
 } from "@/utils/powerRoles";
+import { getSearchTags, type TagSearchColumn } from "@/utils/powerTags";
 import {
   powerMatchesTargetingFilter,
   powerTargetingOptions,
@@ -67,6 +68,7 @@ import { SpriteIcon } from "@/shared/ui/SpriteIcon";
 type PowersPanelProps = {
   powers: Power[];
   advantages: Advantage[];
+  damageModsByFramework: ReadonlyMap<string, string>;
   frameworkGroups: PowerFrameworkFilterGroup[];
   selectedFrameworks: SelectedFrameworks;
   buildSlots: BuildSlot[];
@@ -383,6 +385,7 @@ function mergeParsedPowerSearches(parsedSearches: ParsedPowerSearch[]) {
 export function PowersPanel({
   powers,
   advantages,
+  damageModsByFramework,
   frameworkGroups,
   selectedFrameworks,
   buildSlots,
@@ -404,6 +407,9 @@ export function PowersPanel({
   const [selectedPowerRoleFilter, setSelectedPowerRoleFilter] = useState("");
   const [selectedScalingStats, setSelectedScalingStats] = useState<string[]>([]);
   const [selectedDamageTypes, setSelectedDamageTypes] = useState<string[]>([]);
+  const [selectedTagSearchColumns, setSelectedTagSearchColumns] = useState<
+    TagSearchColumn[]
+  >([]);
   const [selectedRangeStepIndex, setSelectedRangeStepIndex] = useState(0);
   const [selectedTargetingFilter, setSelectedTargetingFilter] = useState<
     PowerTargetingFilter | ""
@@ -432,10 +438,19 @@ export function PowersPanel({
     [parsedSearchClauses],
   );
   const forceAdvancedPowerTooltip = searchInAdvantages;
+  const getHighlightQueries = (query: string) => {
+    const effectGroupTags = getEffectGroupTags(query);
+
+    return effectGroupTags.length > 0 ? effectGroupTags : [query];
+  };
   const advantageHighlightQueries = [
-    ...(searchInAdvantages ? parsedSearch.tagQueries : []),
     ...(searchInAdvantages
-      ? parsedSearchClauses.map((searchClause) => searchClause.normalQuery)
+      ? parsedSearch.tagQueries.flatMap(getHighlightQueries)
+      : []),
+    ...(searchInAdvantages
+      ? parsedSearchClauses.flatMap((searchClause) =>
+          getHighlightQueries(searchClause.normalQuery),
+        )
       : []),
     ...(searchInAdvantages ? selectedDamageTypes : []),
     ...(searchInAdvantages && selectedPowerRoleFilter
@@ -509,13 +524,25 @@ export function PowersPanel({
       );
     }
 
+    function matchesTagValuesSearch(values: string[], query: string) {
+      return (
+        normalizeSearchText(values.join(" ")).includes(query) ||
+        matchesEffectGroupSearch(values, query)
+      );
+    }
+
     function matchesGeneralPowerSearch(power: Power, query: string) {
+      const powerTags = getSearchTags(power, selectedTagSearchColumns);
+
+      if (selectedTagSearchColumns.length > 0) {
+        return matchesTagValuesSearch(powerTags, query);
+      }
+
       return (
         normalizeSearchText(power.name).includes(query) ||
         normalizeSearchText(getSearchablePowerType(power)).includes(query) ||
         normalizeSearchText(power.range_tags?.join(" ")).includes(query) ||
-        normalizeSearchText(power.tags?.join(" ")).includes(query) ||
-        matchesEffectGroupSearch(power.tags, query) ||
+        matchesTagValuesSearch(powerTags, query) ||
         matchesEffectGroupSearch(getPowerDamageTypes(power), query) ||
         normalizeSearchText(power.tooltip).includes(query)
       );
@@ -525,15 +552,27 @@ export function PowersPanel({
       return power.advantages.some((advantageId) => {
         const advantage = advantagesById.get(advantageId);
 
+        if (!advantage) {
+          return false;
+        }
+
+        const advantageTags = getSearchTags(
+          advantage,
+          selectedTagSearchColumns,
+        );
+
+        if (selectedTagSearchColumns.length > 0) {
+          return matchesTagValuesSearch(advantageTags, query);
+        }
+
         return (
-          normalizeSearchText(advantage?.name).includes(query) ||
-          normalizeSearchText(advantage?.tags?.join(" ")).includes(query) ||
-          matchesEffectGroupSearch(advantage?.tags, query) ||
+          normalizeSearchText(advantage.name).includes(query) ||
+          matchesTagValuesSearch(advantageTags, query) ||
           matchesEffectGroupSearch(
-            advantage ? getAdvantageDamageTypes(advantage) : [],
+            getAdvantageDamageTypes(advantage),
             query,
           ) ||
-          normalizeSearchText(advantage?.tooltip).includes(query)
+          normalizeSearchText(advantage.tooltip).includes(query)
         );
       });
     }
@@ -567,7 +606,9 @@ export function PowersPanel({
 
       const matchesPowerTags =
         searchInPowers &&
-        normalizeStrictSearchText(power.tags?.join(" ")).includes(
+        normalizeStrictSearchText(
+          getSearchTags(power, selectedTagSearchColumns).join(" "),
+        ).includes(
           normalizedTagSearch,
         );
 
@@ -582,7 +623,11 @@ export function PowersPanel({
       return power.advantages.some((advantageId) => {
         const advantage = advantagesById.get(advantageId);
 
-        return normalizeStrictSearchText(advantage?.tags?.join(" ")).includes(
+        return normalizeStrictSearchText(
+          advantage
+            ? getSearchTags(advantage, selectedTagSearchColumns).join(" ")
+            : "",
+        ).includes(
           normalizedTagSearch,
         );
       });
@@ -814,6 +859,7 @@ export function PowersPanel({
     searchInPowers,
     selectedDamageTypes,
     selectedScalingStats,
+    selectedTagSearchColumns,
     selectedMinimumRange,
     selectedTargetingFilter,
     selectedActivationTypeFilter,
@@ -1085,6 +1131,18 @@ export function PowersPanel({
     });
   }
 
+  function toggleTagSearchColumn(column: TagSearchColumn, isSelected: boolean) {
+    setSelectedTagSearchColumns((currentColumns) => {
+      if (isSelected) {
+        return currentColumns.includes(column)
+          ? currentColumns
+          : [...currentColumns, column];
+      }
+
+      return currentColumns.filter((currentColumn) => currentColumn !== column);
+    });
+  }
+
   function selectedScalingStatsLabel() {
     return selectedScalingStats.length > 0
       ? selectedScalingStats.join(";")
@@ -1105,6 +1163,7 @@ export function PowersPanel({
     setSelectedPowerRoleFilter("");
     setSelectedScalingStats([]);
     setSelectedDamageTypes([]);
+    setSelectedTagSearchColumns([]);
     setSelectedRangeStepIndex(0);
     setSelectedTargetingFilter("");
     setSelectedActivationTypeFilter("");
@@ -1365,6 +1424,36 @@ export function PowersPanel({
 
       {isFilterPanelOpen ? (
         <div className="search-filter-panel">
+          <div
+            aria-label="Tag search columns"
+            className="search-filter-panel__tag-columns"
+          >
+            {[
+              { label: "Apply", value: "apply" },
+              { label: "Refresh", value: "refresh" },
+              { label: "Synergize", value: "synergy" },
+            ].map((option) => (
+              <label
+                className="search-filter-panel__checkbox search-filter-panel__checkbox--tag-column"
+                key={option.value}
+              >
+                <input
+                  checked={selectedTagSearchColumns.includes(
+                    option.value as TagSearchColumn,
+                  )}
+                  type="checkbox"
+                  onChange={(event) =>
+                    toggleTagSearchColumn(
+                      option.value as TagSearchColumn,
+                      event.target.checked,
+                    )
+                  }
+                />
+                <span>{option.label}</span>
+              </label>
+            ))}
+          </div>
+
           <label className="search-filter-panel__field search-filter-panel__field--type">
             <span className="search-filter-panel__label">Power type</span>
             <select
@@ -1582,6 +1671,7 @@ export function PowersPanel({
                             power,
                             advantagesById,
                             powersById,
+                            damageModsByFramework,
                           )}
                           data-power-tooltip-advanced={
                             forceAdvancedPowerTooltip ? "true" : undefined
@@ -1589,6 +1679,11 @@ export function PowersPanel({
                           data-power-tooltip-advantage-queries={
                             advantageHighlightQueries.length > 0
                               ? JSON.stringify(advantageHighlightQueries)
+                              : undefined
+                          }
+                          data-power-tooltip-advantage-tag-columns={
+                            selectedTagSearchColumns.length > 0
+                              ? JSON.stringify(selectedTagSearchColumns)
                               : undefined
                           }
                           title={getPowerTooltipText(power)}

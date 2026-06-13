@@ -1,14 +1,17 @@
 import type { PowerTooltipData } from "@/shared/utils/powerTooltip";
 import { TooltipTags } from "@/shared/ui/TooltipTags";
+import type { TagSearchColumn } from "@/utils/powerTags";
 
 type PowerTooltipProps = {
   advantageHighlightQueries?: string[];
+  advantageHighlightTagColumns?: TagSearchColumn[];
   tooltip: PowerTooltipData;
   showAdvantages?: boolean;
 };
 
 export function PowerTooltip({
   advantageHighlightQueries = [],
+  advantageHighlightTagColumns = [],
   tooltip,
   showAdvantages = false,
 }: PowerTooltipProps) {
@@ -17,6 +20,7 @@ export function PowerTooltip({
     .join(" - ");
   const headerMeta = [tooltip.framework, tooltip.tier].filter(Boolean).join(" - ");
   const advantages = tooltip.advantages ?? [];
+  const damageMods = tooltip.damageMods ?? [];
   const parentPowers = tooltip.parentPowers ?? [];
   const sources = tooltip.sources ?? [];
   const hasStructuredContent =
@@ -26,6 +30,7 @@ export function PowerTooltip({
     tooltip.rangeTags.length > 0 ||
     tooltip.tags.length > 0 ||
     tooltip.effects.length > 0 ||
+    damageMods.length > 0 ||
     parentPowers.length > 0 ||
     sources.length > 0;
 
@@ -36,20 +41,39 @@ export function PowerTooltip({
   const normalizedAdvantageHighlightQueries = advantageHighlightQueries
     .map((query) => query.trim().toLowerCase())
     .filter(Boolean);
+  const hasTagColumnScope = advantageHighlightTagColumns.length > 0;
+  const getScopedAdvantageTags = (advantage: (typeof advantages)[number]) => {
+    return advantageHighlightTagColumns.flatMap((column) => {
+      if (column === "apply") {
+        return advantage.applyTags;
+      }
+
+      if (column === "refresh") {
+        return advantage.refreshTags;
+      }
+
+      return advantage.synergyTags;
+    });
+  };
   const isAdvantageHighlighted = (advantage: (typeof advantages)[number]) => {
     if (normalizedAdvantageHighlightQueries.length === 0) {
       return false;
     }
 
-    const searchableText = [
-      advantage.name,
-      advantage.tooltip,
-      advantage.tags.join(" "),
-      advantage.damageTypes.join(" "),
-    ]
-      .filter(Boolean)
-      .join(" ")
-      .toLowerCase();
+    const searchableText = hasTagColumnScope
+      ? [getScopedAdvantageTags(advantage).join(" "), advantage.damageTypes.join(" ")]
+          .filter(Boolean)
+          .join(" ")
+          .toLowerCase()
+      : [
+          advantage.name,
+          advantage.tooltip,
+          advantage.tags.map((tag) => tag.label).join(" "),
+          advantage.damageTypes.join(" "),
+        ]
+          .filter(Boolean)
+          .join(" ")
+          .toLowerCase();
 
     return normalizedAdvantageHighlightQueries.some((query) =>
       searchableText.includes(query),
@@ -105,6 +129,15 @@ export function PowerTooltip({
                 : "Parent Powers:"}
             </strong>
             <span>{parentPowers.join("; ")}</span>
+          </div>
+        ) : null}
+
+        {damageMods.length > 0 ? (
+          <div className="power-tooltip__damage-mod">
+            <strong>
+              {damageMods.length === 1 ? "Damage Mod:" : "Damage Mods:"}
+            </strong>
+            <span>{damageMods.join("; ")}</span>
           </div>
         ) : null}
 

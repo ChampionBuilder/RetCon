@@ -34,15 +34,19 @@ export function TravelPowerSelectionDialog({
   const frameworkIds = Array.from(
     new Set(travelPowers.map((power) => power.framework_id)),
   );
-  const [selectedFramework, setSelectedFramework] = useState<string | null>(
-    buildSlot.power?.framework_id ?? null,
-  );
+  const [selectedFramework, setSelectedFramework] = useState<string | null>(() => {
+    const currentFrameworkId = buildSlot.power?.framework_id ?? null;
+
+    return currentFrameworkId && frameworkIds.includes(currentFrameworkId)
+      ? currentFrameworkId
+      : frameworkIds[0] ?? null;
+  });
   const selectedFrameworkTitle =
     selectedFramework === null
-      ? "All travel powers"
+      ? "Travel powers"
       : formatFrameworkName(selectedFramework);
   const visibleFrameworkIds =
-    selectedFramework === null ? frameworkIds : [selectedFramework];
+    selectedFramework === null ? [] : [selectedFramework];
 
   return (
     <AnchoredSelectionDialog
@@ -70,22 +74,6 @@ export function TravelPowerSelectionDialog({
         className="power-selection-framework-strip"
         aria-label="Travel power frameworks"
       >
-        <button
-          className={
-            selectedFramework === null
-              ? "framework-button framework-button--active"
-              : "framework-button"
-          }
-          type="button"
-          onClick={() => setSelectedFramework(null)}
-          data-framework-tooltip={getFrameworkGlossaryTooltipAttribute(
-            "all-travel-powers",
-            "All travel powers",
-          )}
-          title="All travel powers"
-        >
-          <SpriteIcon name="Any_Generic" size={24} />
-        </button>
         <div className="framework-group">
           {frameworkIds.map((frameworkId) => (
             <button
@@ -124,9 +112,6 @@ export function TravelPowerSelectionDialog({
 
           return (
             <section className="power-selection-group" key={frameworkId ?? "unknown"}>
-              <strong className="power-variant-selection-group__title">
-                {formatFrameworkName(frameworkId) || "Unknown"}
-              </strong>
               <div className="power-selection-grid">
                 {arrangeItemsByColumns(frameworkTravelPowers, 2).map((power) => {
                   const isCurrent =

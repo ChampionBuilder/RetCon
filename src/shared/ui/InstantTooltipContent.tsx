@@ -5,6 +5,7 @@ import type {
   StatTooltipData,
   TooltipContent,
 } from "@/shared/ui/instantTooltipTypes";
+import type { TagSearchColumn } from "@/utils/powerTags";
 import type { FrameworkGlossaryTooltip } from "@/utils/frameworkGlossary";
 
 function StatTooltip({ data }: { data: StatTooltipData }) {
@@ -95,18 +96,21 @@ function TextTooltip({ text }: { text: string }) {
 
 type InstantTooltipContentProps = {
   advantageHighlightQueries: string[];
+  advantageHighlightTagColumns: TagSearchColumn[];
   content: TooltipContent;
   showAdvancedPowerTooltip: boolean;
 };
 
 export function InstantTooltipContent({
   advantageHighlightQueries,
+  advantageHighlightTagColumns,
   content,
   showAdvancedPowerTooltip,
 }: InstantTooltipContentProps) {
   if (content.kind === "power") {
     return (
       <PowerTooltip
+        advantageHighlightTagColumns={advantageHighlightTagColumns}
         advantageHighlightQueries={advantageHighlightQueries}
         showAdvantages={showAdvancedPowerTooltip}
         tooltip={content.data}

@@ -21,6 +21,7 @@ type BuildPanelProps = {
   powerVariantSlots: BuildSlot[];
   powers: Power[];
   advantages: Advantage[];
+  damageModsByFramework: ReadonlyMap<string, string>;
   advantagePointBudget: number;
   camsLevel: number;
   camsIconName: string;
@@ -101,6 +102,7 @@ export function BuildPanel({
   powerVariantSlots,
   powers,
   advantages,
+  damageModsByFramework,
   advantagePointBudget,
   camsLevel,
   camsIconName,
@@ -304,6 +306,7 @@ export function BuildPanel({
                             slot.power,
                             undefined,
                             powersById,
+                            damageModsByFramework,
                           )}
                           type="button"
                           onClick={(event: MouseEvent<HTMLButtonElement>) => {
@@ -393,6 +396,7 @@ export function BuildPanel({
                             slot.power,
                             undefined,
                             powersById,
+                            damageModsByFramework,
                           )}
                           type="button"
                           onClick={(event: MouseEvent<HTMLButtonElement>) => {
@@ -493,6 +497,7 @@ export function BuildPanel({
                             slot.power,
                             undefined,
                             powersById,
+                            damageModsByFramework,
                           )}
                           type="button"
                           onClick={(event: MouseEvent<HTMLButtonElement>) => {

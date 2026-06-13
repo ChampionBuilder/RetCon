@@ -17,7 +17,10 @@ export type Power = {
   source?: string[] | string | null;
   tooltip?: string | null;
   range_tags?: string[];
-  tags?: string[];
+  apply_tag?: string[] | string | null;
+  refresh_tag?: string[] | string | null;
+  synergy_tag?: string[] | string | null;
+  filter_tag?: string[] | string | null;
   scaling_stats?: string[];
   advantages: number[];
   icon_override?: string | null;

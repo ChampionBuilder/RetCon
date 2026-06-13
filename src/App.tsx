@@ -44,8 +44,17 @@ import {
 } from "@/features/powers";
 import { ImportBuildDialog } from "@/features/import-build";
 import { DataDialog, useSavedBuilds } from "@/features/saved-builds";
+import {
+  GearModsDialog,
+  GearPanel,
+  GearRankDialog,
+  GearSelectionDialog,
+  useGearData,
+  useGearSlots,
+} from "@/features/gear";
 import { InstantTooltip, type DialogAnchor } from "@/shared/ui";
 import type { BuildSlot } from "@/types/builds";
+import type { GearItem, GearMod, GearModRank } from "@/types/gear";
 import type { Power } from "@/types/powers";
 import type { BuildRequirementResult } from "@/utils/buildValidation";
 import {
@@ -82,8 +91,14 @@ import { useArchetypeRoleState } from "@/hooks/useArchetypeRoleState";
 import { useArchetypePowerState } from "@/hooks/useArchetypePowerState";
 import { useAdvantageActions } from "@/hooks/useAdvantageActions";
 import { getMatchingRequirementPowerIds } from "@/utils/buildValidation";
+import { buildDamageModsByFramework } from "@/utils/powerDamageMods";
 
-type WorkspacePanelId = "build" | "character" | "powers" | "specializations";
+type WorkspacePanelId =
+  | "build"
+  | "character"
+  | "gear"
+  | "powers"
+  | "specializations";
 
 type CollapsedWorkspacePanels = Record<WorkspacePanelId, boolean>;
 
@@ -92,6 +107,7 @@ const ultraCompactViewportQuery = "(max-width: 1209px)";
 const openPanelTracks = {
   build: "minmax(330px, 1fr)",
   character: "var(--character-column-width)",
+  gear: "minmax(300px, 0.82fr)",
   powers: "minmax(410px, 1.28fr)",
   specializations: "var(--specializations-column-width)",
 } satisfies Record<WorkspacePanelId, string>;
@@ -140,9 +156,10 @@ function CollapsibleWorkspacePanel({
 }
 
 function App() {
-  const showTooltipHitboxes =
+  const debugMode =
     new URLSearchParams(window.location.search).get("dbg") === "1";
-  const [buildName, setBuildName] = useState("My Awesome Build");
+  const showTooltipHitboxes = debugMode;
+  const [buildName, setBuildName] = useState("");
   const [energyBuilderSelectionVersion, setEnergyBuilderSelectionVersion] =
     useState(0);
   const [energyBuilderPanelRequest, setEnergyBuilderPanelRequest] = useState<{
@@ -311,9 +328,53 @@ function App() {
     useState<CollapsedWorkspacePanels>({
       build: false,
       character: false,
+      gear: false,
       powers: false,
       specializations: false,
     });
+  const { gears, mods } = useGearData(debugMode, true);
+  const damageModsByFramework = useMemo(
+    () => buildDamageModsByFramework(mods, powers),
+    [mods, powers],
+  );
+  const {
+    clearGearMod,
+    clearGearSlot,
+    gearSlots,
+    placeGear,
+    placeGearMod,
+    resetAllGearMods,
+    resetAllGearSlots,
+  } = useGearSlots();
+  const [activeGearSlotId, setActiveGearSlotId] = useState<string | null>(null);
+  const [gearDialogAnchor, setGearDialogAnchor] =
+    useState<DialogAnchor | null>(null);
+  const [activeGearModsSlotId, setActiveGearModsSlotId] = useState<string | null>(
+    null,
+  );
+  const [activeGearModsSlotIndex, setActiveGearModsSlotIndex] =
+    useState<number | null>(null);
+  const [gearModsDialogAnchor, setGearModsDialogAnchor] =
+    useState<DialogAnchor | null>(null);
+  const [activeGearRankSlotId, setActiveGearRankSlotId] = useState<string | null>(
+    null,
+  );
+  const [activeGearRankSlotIndex, setActiveGearRankSlotIndex] =
+    useState<number | null>(null);
+  const [gearRankDialogAnchor, setGearRankDialogAnchor] =
+    useState<DialogAnchor | null>(null);
+  const activeGearSlot = useMemo(
+    () => gearSlots.find((slot) => slot.id === activeGearSlotId) ?? null,
+    [activeGearSlotId, gearSlots],
+  );
+  const activeGearModsSlot = useMemo(
+    () => gearSlots.find((slot) => slot.id === activeGearModsSlotId) ?? null,
+    [activeGearModsSlotId, gearSlots],
+  );
+  const activeGearRankSlot = useMemo(
+    () => gearSlots.find((slot) => slot.id === activeGearRankSlotId) ?? null,
+    [activeGearRankSlotId, gearSlots],
+  );
 
   const toggleWorkspacePanel = useCallback((panelId: WorkspacePanelId) => {
     setCollapsedWorkspacePanels((currentCollapsedPanels) => {
@@ -388,6 +449,7 @@ function App() {
         "--powers-panel-track": getPanelTrack("powers"),
         "--build-panel-track": getPanelTrack("build"),
         "--specializations-panel-track": getPanelTrack("specializations"),
+        "--gear-panel-track": getPanelTrack("gear"),
       } as CSSProperties;
     },
     [collapsedWorkspacePanels],
@@ -493,6 +555,26 @@ function App() {
     setDataDialogOpen(false);
     setAboutDialogOpen(false);
     setImportBuildDialogOpen(false);
+    closeGearDialog();
+    closeGearModsDialog();
+    closeGearRankDialog();
+  }
+
+  function closeGearDialog() {
+    setActiveGearSlotId(null);
+    setGearDialogAnchor(null);
+  }
+
+  function closeGearModsDialog() {
+    setActiveGearModsSlotId(null);
+    setActiveGearModsSlotIndex(null);
+    setGearModsDialogAnchor(null);
+  }
+
+  function closeGearRankDialog() {
+    setActiveGearRankSlotId(null);
+    setActiveGearRankSlotIndex(null);
+    setGearRankDialogAnchor(null);
   }
 
   function closeCamsMenu() {
@@ -862,6 +944,65 @@ function App() {
     closeDeviceDialog();
   }
 
+  function selectGearForSlot(slotId: string, gear: GearItem) {
+    placeGear(slotId, gear);
+    closeGearDialog();
+  }
+
+  function selectGearModForSlot(
+    slotId: string,
+    modSlotIndex: number,
+    mod: GearMod,
+    rank: GearModRank | null,
+  ) {
+    placeGearMod(slotId, modSlotIndex, mod, rank);
+    closeGearModsDialog();
+    closeGearRankDialog();
+  }
+
+  function selectGearModRankForSlot(
+    slotId: string,
+    modSlotIndex: number,
+    rank: GearModRank | null,
+  ) {
+    const gearSlot = gearSlots.find((slot) => slot.id === slotId);
+    const selectedMod = gearSlot?.selectedMods[modSlotIndex] ?? null;
+
+    if (!selectedMod) {
+      closeGearRankDialog();
+      return;
+    }
+
+    placeGearMod(slotId, modSlotIndex, selectedMod.mod, rank);
+    closeGearRankDialog();
+  }
+
+  function clearCurrentGearSlot(slotId: string) {
+    clearGearSlot(slotId);
+    closeGearDialog();
+    closeGearModsDialog();
+    closeGearRankDialog();
+  }
+
+  function clearCurrentGearMod(slotId: string, modSlotIndex: number) {
+    clearGearMod(slotId, modSlotIndex);
+    closeGearModsDialog();
+    closeGearRankDialog();
+  }
+
+  function resetCurrentGear() {
+    resetAllGearSlots();
+    closeGearDialog();
+    closeGearModsDialog();
+    closeGearRankDialog();
+  }
+
+  function resetCurrentGearMods() {
+    resetAllGearMods();
+    closeGearModsDialog();
+    closeGearRankDialog();
+  }
+
   function openPowerDialog(slotNumber: number, anchor: DialogAnchor) {
     if (
       !isFreeform &&
@@ -1124,7 +1265,6 @@ function App() {
   }
 
   function resetAll() {
-    setBuildName("My Awesome Build");
     resetFreeformPowers();
     requestOpenEnergyBuilderSection();
     resetAllAuxiliaryPowerSlots();
@@ -1135,12 +1275,16 @@ function App() {
     clearPowerPanelTargets();
     resetAllStatsTalents();
     resetAllSpecializations();
+    resetAllGearSlots();
     closePowerDialog();
     closePowerVariantDialog();
     closeDeviceDialog();
     closeAdvantageDialog();
     closeArchetypeDialog();
     closeRoleDialog();
+    closeGearDialog();
+    closeGearModsDialog();
+    closeGearRankDialog();
     resetPowerVariants();
     resetDevices();
   }
@@ -1347,6 +1491,40 @@ function App() {
     openDeviceDialog(slotNumber, anchor);
   }
 
+  function openCurrentGearDialog(slotId: string, anchor: DialogAnchor) {
+    closeCamsMenu();
+    closeGearModsDialog();
+    closeGearRankDialog();
+    setActiveGearSlotId(slotId);
+    setGearDialogAnchor(anchor);
+  }
+
+  function openCurrentGearModsDialog(
+    slotId: string,
+    modSlotIndex: number,
+    anchor: DialogAnchor,
+  ) {
+    closeCamsMenu();
+    closeGearDialog();
+    closeGearRankDialog();
+    setActiveGearModsSlotId(slotId);
+    setActiveGearModsSlotIndex(modSlotIndex);
+    setGearModsDialogAnchor(anchor);
+  }
+
+  function openCurrentGearRankDialog(
+    slotId: string,
+    modSlotIndex: number,
+    anchor: DialogAnchor,
+  ) {
+    closeCamsMenu();
+    closeGearDialog();
+    closeGearModsDialog();
+    setActiveGearRankSlotId(slotId);
+    setActiveGearRankSlotIndex(modSlotIndex);
+    setGearRankDialogAnchor(anchor);
+  }
+
   function openCurrentTravelPowerDialog(
     slotNumber: number,
     anchor: DialogAnchor,
@@ -1410,6 +1588,7 @@ function App() {
     <div
       className={[
         "app-shell",
+        debugMode ? "app-shell--debug-gear" : "",
         showTooltipHitboxes ? "app-shell--debug-tooltip-hitboxes" : "",
       ]
         .filter(Boolean)
@@ -1444,6 +1623,8 @@ function App() {
         onResetTravelPowers={resetTravelPowers}
         onResetPowerVariants={resetPowerVariants}
         onResetDevices={resetDevices}
+        onResetGear={debugMode ? resetCurrentGear : undefined}
+        onResetGearMods={debugMode ? resetCurrentGearMods : undefined}
         onResetAdvantages={resetAdvantages}
         onResetSpecializations={resetSpecializations}
         onRandomize={randomizeFreeformBuild}
@@ -1508,6 +1689,7 @@ function App() {
             onSelectTalentSlot={openCurrentTalentDialog}
             onSelectDeviceSlot={selectDeviceSlotAsTarget}
             onSelectDeviceName={openCurrentDeviceDialog}
+            onAutofillTalents={autofillTalents}
             onToggleCollapse={() => toggleWorkspacePanel("character")}
           />
         </CollapsibleWorkspacePanel>
@@ -1522,6 +1704,7 @@ function App() {
             key={`powers-${powerSearchResetKey}`}
             advantages={advantages}
             buildSlots={allPowerSlots}
+            damageModsByFramework={damageModsByFramework}
             energyBuilderPanelRequestAction={energyBuilderPanelRequest.action}
             energyBuilderPanelRequestSelectionVersion={
               energyBuilderPanelRequest.selectionVersion
@@ -1615,6 +1798,7 @@ function App() {
             role={selectedRole}
             roleLocked={!isFreeform}
             buildSlots={buildSlots}
+            damageModsByFramework={damageModsByFramework}
             travelPowerSlots={travelPowerSlots}
             powerVariantSlots={powerVariantSlots}
             powers={selectablePowers}
@@ -1670,6 +1854,23 @@ function App() {
             onToggleCollapse={() => toggleWorkspacePanel("specializations")}
           />
         </CollapsibleWorkspacePanel>
+
+        {debugMode ? (
+          <CollapsibleWorkspacePanel
+            collapsed={collapsedWorkspacePanels.gear}
+            panelId="gear"
+            title="Gear"
+            onToggle={() => toggleWorkspacePanel("gear")}
+          >
+            <GearPanel
+              gearSlots={gearSlots}
+              onToggleCollapse={() => toggleWorkspacePanel("gear")}
+              onSelectGearMod={openCurrentGearModsDialog}
+              onSelectGearModRank={openCurrentGearRankDialog}
+              onSelectGearSlot={openCurrentGearDialog}
+            />
+          </CollapsibleWorkspacePanel>
+        ) : null}
       </main>
 
       {activeSuperStatSlot !== null && statsTalentsData && superStatDialogAnchor ? (
@@ -1702,7 +1903,6 @@ function App() {
           slotIndex={activeTalentSlot}
           talents={statsTalentsData.talents}
           onClose={closeTalentDialog}
-          onAutofillTalents={autofillTalents}
           onSelectTalent={selectTalent}
         />
       ) : null}
@@ -1728,6 +1928,7 @@ function App() {
         <PowerVariantSelectionDialog
           anchor={powerVariantDialogAnchor}
           buildSlot={activePowerVariantBuildSlot}
+          damageModsByFramework={damageModsByFramework}
           powerVariantSlots={powerVariantSlots}
           powers={selectablePowers}
           onClearPowerVariant={clearPowerVariantSlot}
@@ -1755,6 +1956,48 @@ function App() {
           onClearDevice={clearDeviceSlot}
           onClose={closeDeviceDialog}
           onSelectDevice={selectDeviceForSlot}
+        />
+      ) : null}
+
+      {debugMode && activeGearSlot && gearDialogAnchor ? (
+        <GearSelectionDialog
+          anchor={gearDialogAnchor}
+          gearSlot={activeGearSlot}
+          gears={gears}
+          onClearGear={clearCurrentGearSlot}
+          onClose={closeGearDialog}
+          onSelectGear={selectGearForSlot}
+        />
+      ) : null}
+
+      {debugMode &&
+      activeGearModsSlot &&
+      activeGearModsSlotIndex !== null &&
+      gearModsDialogAnchor ? (
+        <GearModsDialog
+          anchor={gearModsDialogAnchor}
+          gearSlots={gearSlots}
+          gearSlot={activeGearModsSlot}
+          key={`${activeGearModsSlot.id}-${activeGearModsSlotIndex}`}
+          modSlotIndex={activeGearModsSlotIndex}
+          mods={mods}
+          onClearMod={clearCurrentGearMod}
+          onClose={closeGearModsDialog}
+          onSelectMod={selectGearModForSlot}
+        />
+      ) : null}
+
+      {debugMode &&
+      activeGearRankSlot &&
+      activeGearRankSlotIndex !== null &&
+      gearRankDialogAnchor &&
+      activeGearRankSlot.selectedMods[activeGearRankSlotIndex] ? (
+        <GearRankDialog
+          anchor={gearRankDialogAnchor}
+          gearSlot={activeGearRankSlot}
+          modSlotIndex={activeGearRankSlotIndex}
+          onClose={closeGearRankDialog}
+          onSelectRank={selectGearModRankForSlot}
         />
       ) : null}
 

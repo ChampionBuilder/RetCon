@@ -1,7 +1,26 @@
+import type { TooltipTagBadge } from "@/utils/powerTags";
+
+type TooltipTag = string | TooltipTagBadge;
+
 type TooltipTagsProps = {
   className?: string;
-  tags: string[];
+  tags: TooltipTag[];
 };
+
+function getTagLabel(tag: TooltipTag) {
+  return typeof tag === "string" ? tag : tag.label;
+}
+
+function getTagClassName(tag: TooltipTag) {
+  if (typeof tag === "string" || tag.categories.length === 0) {
+    return undefined;
+  }
+
+  return [
+    "tooltip-tag",
+    ...tag.categories.map((category) => `tooltip-tag--${category}`),
+  ].join(" ");
+}
 
 export function TooltipTags({
   className = "power-tooltip__tags",
@@ -14,7 +33,9 @@ export function TooltipTags({
   return (
     <div className={className}>
       {tags.map((tag) => (
-        <span key={tag}>{tag}</span>
+        <span className={getTagClassName(tag)} key={getTagLabel(tag)}>
+          {getTagLabel(tag)}
+        </span>
       ))}
     </div>
   );

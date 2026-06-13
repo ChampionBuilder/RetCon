@@ -5,5 +5,8 @@ export type Advantage = {
   tooltip: string | null;
   damage_type?: string[] | string | null;
   damage_types?: string[] | string | null;
-  tags?: string[];
+  apply_tag?: string[] | string | null;
+  refresh_tag?: string[] | string | null;
+  synergy_tag?: string[] | string | null;
+  filter_tag?: string[] | string | null;
 };

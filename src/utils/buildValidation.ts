@@ -104,10 +104,20 @@ const superStatNameToCode: Record<string, string> = {
   Endurance: "END",
 };
 
+const checkedScalingStatPowerTypes = new Set([
+  "ENERGY_UNLOCK",
+  "SLOTTED_SUPPORT_PASSIVE",
+  "TOGGLE_FORM",
+]);
+
 export function getMissingScalingStats(
   power: Power | null,
   selectedSuperStats: (SuperStat | null)[],
 ) {
+  if (!power || !checkedScalingStatPowerTypes.has(getNormalizedPowerType(power))) {
+    return [];
+  }
+
   const scalingStats = power?.scaling_stats ?? [];
 
   if (scalingStats.length === 0) {

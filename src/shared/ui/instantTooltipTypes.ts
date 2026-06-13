@@ -1,5 +1,6 @@
 import type { PowerTooltipData } from "@/shared/utils/powerTooltip";
 import type { FrameworkGlossaryTooltip } from "@/utils/frameworkGlossary";
+import type { TagSearchColumn, TooltipTagBadge } from "@/utils/powerTags";
 
 export type StatTooltipData = {
   info: string | null;
@@ -11,7 +12,7 @@ export type StatTooltipData = {
 export type AdvantageTooltipData = {
   name: string;
   pointsCost: number | null;
-  tags: string[];
+  tags: TooltipTagBadge[];
   tooltip: string | null;
   lockedReason: string | null;
 };
@@ -40,6 +41,7 @@ export type TooltipContent =
 
 export type TooltipState = {
   advantageHighlightQueries: string[];
+  advantageHighlightTagColumns: TagSearchColumn[];
   content: TooltipContent;
   cursorX: number;
   cursorY: number;

@@ -11,6 +11,7 @@ import {
   formatTooltipLabel,
 } from "@/shared/utils/tooltipText";
 import { getPowerAdvantages } from "@/utils/powerAdvantages";
+import { getTooltipTagBadges } from "@/utils/powerTags";
 import { AnchoredSelectionDialog, type DialogAnchor } from "@/shared/ui";
 
 type AdvantageSelectionDialogProps = {
@@ -34,7 +35,12 @@ function getAdvantageTooltipAttribute(
   return JSON.stringify({
     name: advantage.name,
     pointsCost: advantage.points_cost,
-    tags: (advantage.tags ?? []).map(formatTooltipLabel).filter(Boolean),
+    tags: getTooltipTagBadges(advantage)
+      .map((tag) => ({
+        ...tag,
+        label: formatTooltipLabel(tag.label) ?? "",
+      }))
+      .filter((tag) => Boolean(tag.label)),
     tooltip: cleanMultilineTooltipText(advantage.tooltip),
     lockedReason: tooltipLockedReason,
   });

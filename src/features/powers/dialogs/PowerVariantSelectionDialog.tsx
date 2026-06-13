@@ -19,6 +19,7 @@ import { SpriteIcon } from "@/shared/ui/SpriteIcon";
 type PowerVariantSelectionDialogProps = {
   anchor: DialogAnchor;
   buildSlot: BuildSlot;
+  damageModsByFramework: ReadonlyMap<string, string>;
   powerVariantSlots: BuildSlot[];
   powers: Power[];
   onClearPowerVariant: (slotNumber: number) => void;
@@ -31,7 +32,7 @@ function getFrameworkTitle(
   frameworkId: string | null,
 ) {
   if (frameworkId === null) {
-    return "All frameworks";
+    return "Power variants";
   }
 
   return (
@@ -44,6 +45,7 @@ function getFrameworkTitle(
 export function PowerVariantSelectionDialog({
   anchor,
   buildSlot,
+  damageModsByFramework,
   powerVariantSlots,
   powers,
   onClearPowerVariant,
@@ -57,9 +59,16 @@ export function PowerVariantSelectionDialog({
   const frameworkGroups = getFrameworkGroupsForIds(
     powerVariants.map((power) => power.framework_id),
   );
-  const [selectedFramework, setSelectedFramework] = useState<string | null>(
-    buildSlot.power?.framework_id ?? null,
+  const frameworkIds = frameworkGroups.flatMap((frameworkGroup) =>
+    frameworkGroup.filters.map((framework) => framework.id),
   );
+  const [selectedFramework, setSelectedFramework] = useState<string | null>(() => {
+    const currentFrameworkId = buildSlot.power?.framework_id ?? null;
+
+    return currentFrameworkId && frameworkIds.includes(currentFrameworkId)
+      ? currentFrameworkId
+      : frameworkIds[0] ?? null;
+  });
   const selectedFrameworkTitle = getFrameworkTitle(
     frameworkGroups,
     selectedFramework,
@@ -71,8 +80,7 @@ export function PowerVariantSelectionDialog({
       .filter((powerId) => powerId !== undefined),
   );
   const visiblePowerVariants = powerVariants.filter(
-    (power) =>
-      selectedFramework === null || power.framework_id === selectedFramework,
+    (power) => power.framework_id === selectedFramework,
   );
   const visibleFrameworkIds = Array.from(
     new Set(visiblePowerVariants.map((power) => power.framework_id)),
@@ -112,22 +120,6 @@ export function PowerVariantSelectionDialog({
         className="power-selection-framework-strip"
         aria-label="Power variant parent frameworks"
       >
-        <button
-          className={
-            selectedFramework === null
-              ? "framework-button framework-button--active"
-              : "framework-button"
-          }
-          type="button"
-          onClick={() => setSelectedFramework(null)}
-          data-framework-tooltip={getFrameworkGlossaryTooltipAttribute(
-            "all-frameworks",
-            "All frameworks",
-          )}
-          title="All frameworks"
-        >
-          <SpriteIcon name="Any_Generic" size={24} />
-        </button>
         {frameworkGroups.map((frameworkGroup) => (
           <div className="framework-group" key={frameworkGroup.id}>
             {frameworkGroup.filters.map((framework) => (
@@ -176,9 +168,6 @@ export function PowerVariantSelectionDialog({
               className="power-selection-group"
               key={frameworkId ?? "unknown"}
             >
-              <strong className="power-variant-selection-group__title">
-                {formatFrameworkName(frameworkId) || "Unknown"}
-              </strong>
               <div className="power-selection-grid">
                 {arrangeItemsByColumns(groupPowers, 2).map((power) => {
                   const isCurrent =
@@ -207,6 +196,7 @@ export function PowerVariantSelectionDialog({
                           power,
                           undefined,
                           powersById,
+                          damageModsByFramework,
                         )}
                         title={getPowerTooltipText(power)}
                       >

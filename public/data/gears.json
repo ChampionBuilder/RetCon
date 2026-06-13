@@ -1,0 +1,2517 @@
+[
+  {
+    "gear_id": 1,
+    "gear_set": "Justice",
+    "gear_slot": "Primary",
+    "gear_type": "Offense",
+    "name": "Justice Gloves of Precision",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Enhancement"
+    ],
+    "mod_slot_2": [
+      "Enhancement"
+    ],
+    "mod_slot_3": [
+      "Offense",
+      "Multicore"
+    ],
+    "mod_slot_4": [
+      "Offense",
+      "Multicore"
+    ],
+    "max_rank": 9,
+    "tag": [],
+    "source": [
+      "Recognition Store"
+    ],
+    "icon_override": "Gear_Justice_Offense",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Enhancement"
+      ],
+      [
+        "Enhancement"
+      ],
+      [
+        "Offense",
+        "Multicore"
+      ],
+      [
+        "Offense",
+        "Multicore"
+      ]
+    ]
+  },
+  {
+    "gear_id": 2,
+    "gear_set": "Justice",
+    "gear_slot": "Primary",
+    "gear_type": "Offense",
+    "name": "Justice Gloves of Healing",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Enhancement"
+    ],
+    "mod_slot_2": [
+      "Enhancement"
+    ],
+    "mod_slot_3": [
+      "Offense",
+      "Multicore"
+    ],
+    "mod_slot_4": [
+      "Offense",
+      "Multicore"
+    ],
+    "max_rank": 9,
+    "tag": [],
+    "source": [
+      "Recognition Store"
+    ],
+    "icon_override": "Gear_Justice_Offense",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Enhancement"
+      ],
+      [
+        "Enhancement"
+      ],
+      [
+        "Offense",
+        "Multicore"
+      ],
+      [
+        "Offense",
+        "Multicore"
+      ]
+    ]
+  },
+  {
+    "gear_id": 3,
+    "gear_set": "Justice",
+    "gear_slot": "Primary",
+    "gear_type": "Offense",
+    "name": "Justice Gloves of Growth",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Enhancement"
+    ],
+    "mod_slot_2": [
+      "Enhancement"
+    ],
+    "mod_slot_3": [
+      "Offense",
+      "Multicore"
+    ],
+    "mod_slot_4": [
+      "Offense",
+      "Multicore"
+    ],
+    "max_rank": 9,
+    "tag": [],
+    "source": [
+      "Recognition Store"
+    ],
+    "icon_override": "Gear_Justice_Offense",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Enhancement"
+      ],
+      [
+        "Enhancement"
+      ],
+      [
+        "Offense",
+        "Multicore"
+      ],
+      [
+        "Offense",
+        "Multicore"
+      ]
+    ]
+  },
+  {
+    "gear_id": 4,
+    "gear_set": "Justice",
+    "gear_slot": "Primary",
+    "gear_type": "Defense",
+    "name": "Justice Tights of Fitness",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Armoring"
+    ],
+    "mod_slot_2": [
+      "Armoring"
+    ],
+    "mod_slot_3": [
+      "Defense",
+      "Multicore"
+    ],
+    "mod_slot_4": [
+      "Defense",
+      "Multicore"
+    ],
+    "max_rank": 9,
+    "tag": [],
+    "source": [
+      "Recognition Store"
+    ],
+    "icon_override": "Gear_Justice_Defense",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Armoring"
+      ],
+      [
+        "Armoring"
+      ],
+      [
+        "Defense",
+        "Multicore"
+      ],
+      [
+        "Defense",
+        "Multicore"
+      ]
+    ]
+  },
+  {
+    "gear_id": 5,
+    "gear_set": "Justice",
+    "gear_slot": "Primary",
+    "gear_type": "Defense",
+    "name": "Justice Tights of Elusiveness",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Armoring"
+    ],
+    "mod_slot_2": [
+      "Armoring"
+    ],
+    "mod_slot_3": [
+      "Defense",
+      "Multicore"
+    ],
+    "mod_slot_4": [
+      "Defense",
+      "Multicore"
+    ],
+    "max_rank": 9,
+    "tag": [],
+    "source": [
+      "Recognition Store"
+    ],
+    "icon_override": "Gear_Justice_Defense",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Armoring"
+      ],
+      [
+        "Armoring"
+      ],
+      [
+        "Defense",
+        "Multicore"
+      ],
+      [
+        "Defense",
+        "Multicore"
+      ]
+    ]
+  },
+  {
+    "gear_id": 6,
+    "gear_set": "Justice",
+    "gear_slot": "Primary",
+    "gear_type": "Defense",
+    "name": "Justice Tights of Agility",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Armoring"
+    ],
+    "mod_slot_2": [
+      "Armoring"
+    ],
+    "mod_slot_3": [
+      "Defense",
+      "Multicore"
+    ],
+    "mod_slot_4": [
+      "Defense",
+      "Multicore"
+    ],
+    "max_rank": 9,
+    "tag": [],
+    "source": [
+      "Recognition Store"
+    ],
+    "icon_override": "Gear_Justice_Defense",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Armoring"
+      ],
+      [
+        "Armoring"
+      ],
+      [
+        "Defense",
+        "Multicore"
+      ],
+      [
+        "Defense",
+        "Multicore"
+      ]
+    ]
+  },
+  {
+    "gear_id": 7,
+    "gear_set": "Justice",
+    "gear_slot": "Primary",
+    "gear_type": "Utility",
+    "name": "Justice Mask of Speed",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Enhancement"
+    ],
+    "mod_slot_2": [
+      "Armoring"
+    ],
+    "mod_slot_3": [
+      "Utility",
+      "Multicore"
+    ],
+    "mod_slot_4": [
+      "Utility",
+      "Multicore"
+    ],
+    "max_rank": 9,
+    "tag": [],
+    "source": [
+      "Recognition Store"
+    ],
+    "icon_override": "Gear_Justice_Utility",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Enhancement"
+      ],
+      [
+        "Armoring"
+      ],
+      [
+        "Utility",
+        "Multicore"
+      ],
+      [
+        "Utility",
+        "Multicore"
+      ]
+    ]
+  },
+  {
+    "gear_id": 8,
+    "gear_set": "Justice",
+    "gear_slot": "Primary",
+    "gear_type": "Utility",
+    "name": "Justice Mask of Efficiency",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Enhancement"
+    ],
+    "mod_slot_2": [
+      "Armoring"
+    ],
+    "mod_slot_3": [
+      "Utility",
+      "Multicore"
+    ],
+    "mod_slot_4": [
+      "Utility",
+      "Multicore"
+    ],
+    "max_rank": 9,
+    "tag": [],
+    "source": [
+      "Recognition Store"
+    ],
+    "icon_override": "Gear_Justice_Utility",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Enhancement"
+      ],
+      [
+        "Armoring"
+      ],
+      [
+        "Utility",
+        "Multicore"
+      ],
+      [
+        "Utility",
+        "Multicore"
+      ]
+    ]
+  },
+  {
+    "gear_id": 9,
+    "gear_set": "Distinguished",
+    "gear_slot": "Primary",
+    "gear_type": "Offense",
+    "name": "Distinguished Gloves of Offense",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Enhancement"
+    ],
+    "mod_slot_2": [
+      "Enhancement"
+    ],
+    "mod_slot_3": [
+      "Offense",
+      "Multicore"
+    ],
+    "mod_slot_4": [
+      "Offense",
+      "Multicore"
+    ],
+    "max_rank": 9,
+    "tag": [],
+    "source": [
+      "Recognition Store"
+    ],
+    "icon_override": "Gear_Dist_Offense",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Enhancement"
+      ],
+      [
+        "Enhancement"
+      ],
+      [
+        "Offense",
+        "Multicore"
+      ],
+      [
+        "Offense",
+        "Multicore"
+      ]
+    ]
+  },
+  {
+    "gear_id": 10,
+    "gear_set": "Distinguished",
+    "gear_slot": "Primary",
+    "gear_type": "Offense",
+    "name": "Distinguished Gloves of Healing",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Enhancement"
+    ],
+    "mod_slot_2": [
+      "Enhancement"
+    ],
+    "mod_slot_3": [
+      "Offense",
+      "Multicore"
+    ],
+    "mod_slot_4": [
+      "Offense",
+      "Multicore"
+    ],
+    "max_rank": 9,
+    "tag": [],
+    "source": [
+      "Recognition Store"
+    ],
+    "icon_override": "Gear_Dist_Offense",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Enhancement"
+      ],
+      [
+        "Enhancement"
+      ],
+      [
+        "Offense",
+        "Multicore"
+      ],
+      [
+        "Offense",
+        "Multicore"
+      ]
+    ]
+  },
+  {
+    "gear_id": 11,
+    "gear_set": "Distinguished",
+    "gear_slot": "Primary",
+    "gear_type": "Offense",
+    "name": "Distinguished Gloves of Intimidation",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Enhancement"
+    ],
+    "mod_slot_2": [
+      "Enhancement"
+    ],
+    "mod_slot_3": [
+      "Offense",
+      "Multicore"
+    ],
+    "mod_slot_4": [
+      "Offense",
+      "Multicore"
+    ],
+    "max_rank": 9,
+    "tag": [],
+    "source": [
+      "Recognition Store"
+    ],
+    "icon_override": "Gear_Dist_Offense",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Enhancement"
+      ],
+      [
+        "Enhancement"
+      ],
+      [
+        "Offense",
+        "Multicore"
+      ],
+      [
+        "Offense",
+        "Multicore"
+      ]
+    ]
+  },
+  {
+    "gear_id": 12,
+    "gear_set": "Distinguished",
+    "gear_slot": "Primary",
+    "gear_type": "Defense",
+    "name": "Distinguished Armor of Freedom",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Armoring"
+    ],
+    "mod_slot_2": [
+      "Armoring"
+    ],
+    "mod_slot_3": [
+      "Defense",
+      "Multicore"
+    ],
+    "mod_slot_4": [
+      "Defense",
+      "Multicore"
+    ],
+    "max_rank": 9,
+    "tag": [],
+    "source": [
+      "Recognition Store"
+    ],
+    "icon_override": "Gear_Dist_Defense",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Armoring"
+      ],
+      [
+        "Armoring"
+      ],
+      [
+        "Defense",
+        "Multicore"
+      ],
+      [
+        "Defense",
+        "Multicore"
+      ]
+    ]
+  },
+  {
+    "gear_id": 13,
+    "gear_set": "Distinguished",
+    "gear_slot": "Primary",
+    "gear_type": "Defense",
+    "name": "Distinguished Armor of Elusiveness",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Armoring"
+    ],
+    "mod_slot_2": [
+      "Armoring"
+    ],
+    "mod_slot_3": [
+      "Defense",
+      "Multicore"
+    ],
+    "mod_slot_4": [
+      "Defense",
+      "Multicore"
+    ],
+    "max_rank": 9,
+    "tag": [],
+    "source": [
+      "Recognition Store"
+    ],
+    "icon_override": "Gear_Dist_Defense",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Armoring"
+      ],
+      [
+        "Armoring"
+      ],
+      [
+        "Defense",
+        "Multicore"
+      ],
+      [
+        "Defense",
+        "Multicore"
+      ]
+    ]
+  },
+  {
+    "gear_id": 14,
+    "gear_set": "Distinguished",
+    "gear_slot": "Primary",
+    "gear_type": "Defense",
+    "name": "Distinguished Armor of Agility",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Armoring"
+    ],
+    "mod_slot_2": [
+      "Armoring"
+    ],
+    "mod_slot_3": [
+      "Defense",
+      "Multicore"
+    ],
+    "mod_slot_4": [
+      "Defense",
+      "Multicore"
+    ],
+    "max_rank": 9,
+    "tag": [],
+    "source": [
+      "Recognition Store"
+    ],
+    "icon_override": "Gear_Dist_Defense",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Armoring"
+      ],
+      [
+        "Armoring"
+      ],
+      [
+        "Defense",
+        "Multicore"
+      ],
+      [
+        "Defense",
+        "Multicore"
+      ]
+    ]
+  },
+  {
+    "gear_id": 15,
+    "gear_set": "Distinguished",
+    "gear_slot": "Primary",
+    "gear_type": "Utility",
+    "name": "Distinguished Helmet of Speed",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Enhancement"
+    ],
+    "mod_slot_2": [
+      "Armoring"
+    ],
+    "mod_slot_3": [
+      "Utility",
+      "Multicore"
+    ],
+    "mod_slot_4": [
+      "Utility",
+      "Multicore"
+    ],
+    "max_rank": 9,
+    "tag": [],
+    "source": [
+      "Recognition Store"
+    ],
+    "icon_override": "Gear_Dist_Utility",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Enhancement"
+      ],
+      [
+        "Armoring"
+      ],
+      [
+        "Utility",
+        "Multicore"
+      ],
+      [
+        "Utility",
+        "Multicore"
+      ]
+    ]
+  },
+  {
+    "gear_id": 16,
+    "gear_set": "Distinguished",
+    "gear_slot": "Primary",
+    "gear_type": "Utility",
+    "name": "Distinguished Helmet of  Efficiency",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Enhancement"
+    ],
+    "mod_slot_2": [
+      "Armoring"
+    ],
+    "mod_slot_3": [
+      "Utility",
+      "Multicore"
+    ],
+    "mod_slot_4": [
+      "Utility",
+      "Multicore"
+    ],
+    "max_rank": 9,
+    "tag": [],
+    "source": [
+      "Recognition Store"
+    ],
+    "icon_override": "Gear_Dist_Utility",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Enhancement"
+      ],
+      [
+        "Armoring"
+      ],
+      [
+        "Utility",
+        "Multicore"
+      ],
+      [
+        "Utility",
+        "Multicore"
+      ]
+    ]
+  },
+  {
+    "gear_id": 17,
+    "gear_set": "Virtuous",
+    "gear_slot": "Primary",
+    "gear_type": "Offense",
+    "name": "Virtuous Gauntlets of Precision",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Enhancement"
+    ],
+    "mod_slot_2": [
+      "Enhancement"
+    ],
+    "mod_slot_3": [
+      "Offense",
+      "Multicore"
+    ],
+    "mod_slot_4": [
+      "Offense",
+      "Multicore"
+    ],
+    "max_rank": 9,
+    "tag": [],
+    "source": [
+      "Recognition Store"
+    ],
+    "icon_override": "Gear_Virt_Offense",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Enhancement"
+      ],
+      [
+        "Enhancement"
+      ],
+      [
+        "Offense",
+        "Multicore"
+      ],
+      [
+        "Offense",
+        "Multicore"
+      ]
+    ]
+  },
+  {
+    "gear_id": 18,
+    "gear_set": "Virtuous",
+    "gear_slot": "Primary",
+    "gear_type": "Offense",
+    "name": "Virtuous Gauntlets of Healing",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Enhancement"
+    ],
+    "mod_slot_2": [
+      "Enhancement"
+    ],
+    "mod_slot_3": [
+      "Offense",
+      "Multicore"
+    ],
+    "mod_slot_4": [
+      "Offense",
+      "Multicore"
+    ],
+    "max_rank": 9,
+    "tag": [],
+    "source": [
+      "Recognition Store"
+    ],
+    "icon_override": "Gear_Virt_Offense",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Enhancement"
+      ],
+      [
+        "Enhancement"
+      ],
+      [
+        "Offense",
+        "Multicore"
+      ],
+      [
+        "Offense",
+        "Multicore"
+      ]
+    ]
+  },
+  {
+    "gear_id": 19,
+    "gear_set": "Virtuous",
+    "gear_slot": "Primary",
+    "gear_type": "Offense",
+    "name": "Virtuous Gauntlets of Placation",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Enhancement"
+    ],
+    "mod_slot_2": [
+      "Enhancement"
+    ],
+    "mod_slot_3": [
+      "Offense",
+      "Multicore"
+    ],
+    "mod_slot_4": [
+      "Offense",
+      "Multicore"
+    ],
+    "max_rank": 9,
+    "tag": [],
+    "source": [
+      "Recognition Store"
+    ],
+    "icon_override": "Gear_Virt_Offense",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Enhancement"
+      ],
+      [
+        "Enhancement"
+      ],
+      [
+        "Offense",
+        "Multicore"
+      ],
+      [
+        "Offense",
+        "Multicore"
+      ]
+    ]
+  },
+  {
+    "gear_id": 20,
+    "gear_set": "Virtuous",
+    "gear_slot": "Primary",
+    "gear_type": "Defense",
+    "name": "Virtuous Armor of Fitness",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Armoring"
+    ],
+    "mod_slot_2": [
+      "Armoring"
+    ],
+    "mod_slot_3": [
+      "Defense",
+      "Multicore"
+    ],
+    "mod_slot_4": [
+      "Defense",
+      "Multicore"
+    ],
+    "max_rank": 9,
+    "tag": [],
+    "source": [
+      "Recognition Store"
+    ],
+    "icon_override": "Gear_Virt_Defense",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Armoring"
+      ],
+      [
+        "Armoring"
+      ],
+      [
+        "Defense",
+        "Multicore"
+      ],
+      [
+        "Defense",
+        "Multicore"
+      ]
+    ]
+  },
+  {
+    "gear_id": 21,
+    "gear_set": "Virtuous",
+    "gear_slot": "Primary",
+    "gear_type": "Defense",
+    "name": "Virtuous Armor of Elusiveness",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Armoring"
+    ],
+    "mod_slot_2": [
+      "Armoring"
+    ],
+    "mod_slot_3": [
+      "Defense",
+      "Multicore"
+    ],
+    "mod_slot_4": [
+      "Defense",
+      "Multicore"
+    ],
+    "max_rank": 9,
+    "tag": [],
+    "source": [
+      "Recognition Store"
+    ],
+    "icon_override": "Gear_Virt_Defense",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Armoring"
+      ],
+      [
+        "Armoring"
+      ],
+      [
+        "Defense",
+        "Multicore"
+      ],
+      [
+        "Defense",
+        "Multicore"
+      ]
+    ]
+  },
+  {
+    "gear_id": 22,
+    "gear_set": "Virtuous",
+    "gear_slot": "Primary",
+    "gear_type": "Defense",
+    "name": "Virtuous  Armor of Agility",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Armoring"
+    ],
+    "mod_slot_2": [
+      "Armoring"
+    ],
+    "mod_slot_3": [
+      "Defense",
+      "Multicore"
+    ],
+    "mod_slot_4": [
+      "Defense",
+      "Multicore"
+    ],
+    "max_rank": 9,
+    "tag": [],
+    "source": [
+      "Recognition Store"
+    ],
+    "icon_override": "Gear_Virt_Defense",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Armoring"
+      ],
+      [
+        "Armoring"
+      ],
+      [
+        "Defense",
+        "Multicore"
+      ],
+      [
+        "Defense",
+        "Multicore"
+      ]
+    ]
+  },
+  {
+    "gear_id": 23,
+    "gear_set": "Virtuous",
+    "gear_slot": "Primary",
+    "gear_type": "Utility",
+    "name": "Virtuous Helmet of Speed",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Enhancement"
+    ],
+    "mod_slot_2": [
+      "Armoring"
+    ],
+    "mod_slot_3": [
+      "Utility",
+      "Multicore"
+    ],
+    "mod_slot_4": [
+      "Utility",
+      "Multicore"
+    ],
+    "max_rank": 9,
+    "tag": [],
+    "source": [
+      "Recognition Store"
+    ],
+    "icon_override": "Gear_Virt_Utility",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Enhancement"
+      ],
+      [
+        "Armoring"
+      ],
+      [
+        "Utility",
+        "Multicore"
+      ],
+      [
+        "Utility",
+        "Multicore"
+      ]
+    ]
+  },
+  {
+    "gear_id": 24,
+    "gear_set": "Virtuous",
+    "gear_slot": "Primary",
+    "gear_type": "Utility",
+    "name": "Virtuous  Helmet of  Efficiency",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Enhancement"
+    ],
+    "mod_slot_2": [
+      "Armoring"
+    ],
+    "mod_slot_3": [
+      "Utility",
+      "Multicore"
+    ],
+    "mod_slot_4": [
+      "Utility",
+      "Multicore"
+    ],
+    "max_rank": 9,
+    "tag": [],
+    "source": [
+      "Recognition Store"
+    ],
+    "icon_override": "Gear_Virt_Utility",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Enhancement"
+      ],
+      [
+        "Armoring"
+      ],
+      [
+        "Utility",
+        "Multicore"
+      ],
+      [
+        "Utility",
+        "Multicore"
+      ]
+    ]
+  },
+  {
+    "gear_id": 25,
+    "gear_set": "Cosmic",
+    "gear_slot": "Secondary",
+    "gear_type": "Offense",
+    "name": "Cosmic Strike",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Offense"
+    ],
+    "mod_slot_2": [],
+    "mod_slot_3": [],
+    "mod_slot_4": [],
+    "max_rank": 5,
+    "tag": [],
+    "source": [
+      "Recognition Store",
+      "Cosmics Bosses"
+    ],
+    "icon_override": "Gear_Cosmic_Strike",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Offense"
+      ]
+    ]
+  },
+  {
+    "gear_id": 26,
+    "gear_set": "Cosmic",
+    "gear_slot": "Secondary",
+    "gear_type": "Offense",
+    "name": "Cosmic Ambition",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Offense"
+    ],
+    "mod_slot_2": [],
+    "mod_slot_3": [],
+    "mod_slot_4": [],
+    "max_rank": 5,
+    "tag": [],
+    "source": [
+      "Recognition Store",
+      "Cosmics Bosses"
+    ],
+    "icon_override": "Gear_Cosmic_Ambition",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Offense"
+      ]
+    ]
+  },
+  {
+    "gear_id": 27,
+    "gear_set": "Cosmic",
+    "gear_slot": "Secondary",
+    "gear_type": "Offense",
+    "name": "Cosmic Presence",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Offense"
+    ],
+    "mod_slot_2": [],
+    "mod_slot_3": [],
+    "mod_slot_4": [],
+    "max_rank": 5,
+    "tag": [],
+    "source": [
+      "Recognition Store",
+      "Cosmics Bosses"
+    ],
+    "icon_override": "Gear_Cosmic_Presence",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Offense"
+      ]
+    ]
+  },
+  {
+    "gear_id": 28,
+    "gear_set": "Cosmic",
+    "gear_slot": "Secondary",
+    "gear_type": "Offense",
+    "name": "Cosmic Wonder",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Offense"
+    ],
+    "mod_slot_2": [],
+    "mod_slot_3": [],
+    "mod_slot_4": [],
+    "max_rank": 5,
+    "tag": [],
+    "source": [
+      "Recognition Store",
+      "Cosmics Bosses"
+    ],
+    "icon_override": "Gear_Cosmic_Wonder",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Offense"
+      ]
+    ]
+  },
+  {
+    "gear_id": 29,
+    "gear_set": "Cosmic",
+    "gear_slot": "Secondary",
+    "gear_type": "Offense",
+    "name": "Cosmic Fang of Wrath",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Offense"
+    ],
+    "mod_slot_2": [],
+    "mod_slot_3": [],
+    "mod_slot_4": [],
+    "max_rank": 5,
+    "tag": [],
+    "source": [
+      "Recognition Store",
+      "Cosmics Bosses"
+    ],
+    "icon_override": "Gear_Cosmic_Fang",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Offense"
+      ]
+    ]
+  },
+  {
+    "gear_id": 30,
+    "gear_set": "Cosmic",
+    "gear_slot": "Secondary",
+    "gear_type": "Offense",
+    "name": "Cosmic Fang of Rage",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Offense"
+    ],
+    "mod_slot_2": [],
+    "mod_slot_3": [],
+    "mod_slot_4": [],
+    "max_rank": 5,
+    "tag": [],
+    "source": [
+      "Recognition Store",
+      "Cosmics Bosses"
+    ],
+    "icon_override": "Gear_Cosmic_Fang",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Offense"
+      ]
+    ]
+  },
+  {
+    "gear_id": 31,
+    "gear_set": "Cosmic",
+    "gear_slot": "Secondary",
+    "gear_type": "Defense",
+    "name": "Cosmic Talons of Wrath",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Defense"
+    ],
+    "mod_slot_2": [],
+    "mod_slot_3": [],
+    "mod_slot_4": [],
+    "max_rank": 5,
+    "tag": [],
+    "source": [
+      "Recognition Store",
+      "Cosmics Bosses"
+    ],
+    "icon_override": "Gear_Cosmic_Talon",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Defense"
+      ]
+    ]
+  },
+  {
+    "gear_id": 32,
+    "gear_set": "Cosmic",
+    "gear_slot": "Secondary",
+    "gear_type": "Defense",
+    "name": "Cosmic Talons of Rage",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Defense"
+    ],
+    "mod_slot_2": [],
+    "mod_slot_3": [],
+    "mod_slot_4": [],
+    "max_rank": 5,
+    "tag": [],
+    "source": [
+      "Recognition Store",
+      "Cosmics Bosses"
+    ],
+    "icon_override": "Gear_Cosmic_Talon",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Defense"
+      ]
+    ]
+  },
+  {
+    "gear_id": 33,
+    "gear_set": "Cosmic",
+    "gear_slot": "Secondary",
+    "gear_type": "Utility",
+    "name": "Cosmic Vision of Wrath",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Utility"
+    ],
+    "mod_slot_2": [],
+    "mod_slot_3": [],
+    "mod_slot_4": [],
+    "max_rank": 5,
+    "tag": [],
+    "source": [
+      "Recognition Store",
+      "Cosmics Bosses"
+    ],
+    "icon_override": "Gear_Cosmic_Vision",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Utility"
+      ]
+    ]
+  },
+  {
+    "gear_id": 34,
+    "gear_set": "Cosmic",
+    "gear_slot": "Secondary",
+    "gear_type": "Utility",
+    "name": "Cosmic Vision of Rage",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Utility"
+    ],
+    "mod_slot_2": [],
+    "mod_slot_3": [],
+    "mod_slot_4": [],
+    "max_rank": 5,
+    "tag": [],
+    "source": [
+      "Recognition Store",
+      "Cosmics Bosses"
+    ],
+    "icon_override": "Gear_Cosmic_Vision",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Utility"
+      ]
+    ]
+  },
+  {
+    "gear_id": 35,
+    "gear_set": "Onslaught",
+    "gear_slot": "Secondary",
+    "gear_type": "Offense",
+    "name": "Grond's Onslaught",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Enhancement"
+    ],
+    "mod_slot_2": [],
+    "mod_slot_3": [],
+    "mod_slot_4": [],
+    "max_rank": 5,
+    "tag": [],
+    "source": [
+      "OV Onslaught"
+    ],
+    "icon_override": "Gear_OV_Grond",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Enhancement"
+      ]
+    ]
+  },
+  {
+    "gear_id": 36,
+    "gear_set": "Onslaught",
+    "gear_slot": "Secondary",
+    "gear_type": "Offense",
+    "name": "Gravitar's Onslaught",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Enhancement"
+    ],
+    "mod_slot_2": [],
+    "mod_slot_3": [],
+    "mod_slot_4": [],
+    "max_rank": 5,
+    "tag": [],
+    "source": [
+      "OV Onslaught"
+    ],
+    "icon_override": "Gear_OV_Gravitar",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Enhancement"
+      ]
+    ]
+  },
+  {
+    "gear_id": 37,
+    "gear_set": "Onslaught",
+    "gear_slot": "Secondary",
+    "gear_type": "Offense",
+    "name": "Medusa's Onslaught",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Enhancement"
+    ],
+    "mod_slot_2": [],
+    "mod_slot_3": [],
+    "mod_slot_4": [],
+    "max_rank": 5,
+    "tag": [],
+    "source": [
+      "OV Onslaught"
+    ],
+    "icon_override": "Gear_OV_Medusa",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Enhancement"
+      ]
+    ]
+  },
+  {
+    "gear_id": 38,
+    "gear_set": "Onslaught",
+    "gear_slot": "Secondary",
+    "gear_type": "Offense",
+    "name": "Onslaught Gloves of the Slicer",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Enhancement"
+    ],
+    "mod_slot_2": [],
+    "mod_slot_3": [],
+    "mod_slot_4": [],
+    "max_rank": 5,
+    "tag": [],
+    "source": [
+      "OV Onslaught"
+    ],
+    "icon_override": "Gear_OV_Slicer",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Enhancement"
+      ]
+    ]
+  },
+  {
+    "gear_id": 39,
+    "gear_set": "Onslaught",
+    "gear_slot": "Secondary",
+    "gear_type": "Offense",
+    "name": "Onslaught Gloves of the Sniper",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Enhancement"
+    ],
+    "mod_slot_2": [],
+    "mod_slot_3": [],
+    "mod_slot_4": [],
+    "max_rank": 5,
+    "tag": [],
+    "source": [
+      "OV Onslaught"
+    ],
+    "icon_override": "Gear_OV_Sniper",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Enhancement"
+      ]
+    ]
+  },
+  {
+    "gear_id": 40,
+    "gear_set": "Onslaught",
+    "gear_slot": "Secondary",
+    "gear_type": "Offense",
+    "name": "Onslaught Gloves of the Savior",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Enhancement"
+    ],
+    "mod_slot_2": [],
+    "mod_slot_3": [],
+    "mod_slot_4": [],
+    "max_rank": 5,
+    "tag": [],
+    "source": [
+      "OV Onslaught"
+    ],
+    "icon_override": "Gear_OV_Savior",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Enhancement"
+      ]
+    ]
+  },
+  {
+    "gear_id": 41,
+    "gear_set": "Onslaught",
+    "gear_slot": "Secondary",
+    "gear_type": "Offense",
+    "name": "Onslaught Gloves of the Defender",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Enhancement"
+    ],
+    "mod_slot_2": [],
+    "mod_slot_3": [],
+    "mod_slot_4": [],
+    "max_rank": 5,
+    "tag": [],
+    "source": [
+      "OV Onslaught"
+    ],
+    "icon_override": "Gear_OV_Defender",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Enhancement"
+      ]
+    ]
+  },
+  {
+    "gear_id": 42,
+    "gear_set": "Onslaught",
+    "gear_slot": "Secondary",
+    "gear_type": "Defense",
+    "name": "Onslaught Tights of Freedom",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Enhancement"
+    ],
+    "mod_slot_2": [],
+    "mod_slot_3": [],
+    "mod_slot_4": [],
+    "max_rank": 5,
+    "tag": [],
+    "source": [
+      "OV Onslaught"
+    ],
+    "icon_override": "Gear_OV_Freedom",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Enhancement"
+      ]
+    ]
+  },
+  {
+    "gear_id": 43,
+    "gear_set": "Onslaught",
+    "gear_slot": "Secondary",
+    "gear_type": "Defense",
+    "name": "Onslaught Tights of Agility",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Enhancement"
+    ],
+    "mod_slot_2": [],
+    "mod_slot_3": [],
+    "mod_slot_4": [],
+    "max_rank": 5,
+    "tag": [],
+    "source": [
+      "OV Onslaught"
+    ],
+    "icon_override": "Gear_OV_Agility",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Enhancement"
+      ]
+    ]
+  },
+  {
+    "gear_id": 44,
+    "gear_set": "Onslaught",
+    "gear_slot": "Secondary",
+    "gear_type": "Defense",
+    "name": "Onslaught Tights of Fitness",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Enhancement"
+    ],
+    "mod_slot_2": [],
+    "mod_slot_3": [],
+    "mod_slot_4": [],
+    "max_rank": 5,
+    "tag": [],
+    "source": [
+      "OV Onslaught"
+    ],
+    "icon_override": "Gear_OV_Fitness",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Enhancement"
+      ]
+    ]
+  },
+  {
+    "gear_id": 45,
+    "gear_set": "Onslaught",
+    "gear_slot": "Secondary",
+    "gear_type": "Utility",
+    "name": "Onslaught Mask of Speed",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Enhancement"
+    ],
+    "mod_slot_2": [],
+    "mod_slot_3": [],
+    "mod_slot_4": [],
+    "max_rank": 5,
+    "tag": [],
+    "source": [
+      "OV Onslaught"
+    ],
+    "icon_override": "Gear_OV_Speed",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Enhancement"
+      ]
+    ]
+  },
+  {
+    "gear_id": 46,
+    "gear_set": "Onslaught",
+    "gear_slot": "Secondary",
+    "gear_type": "Utility",
+    "name": "Onslaught Mask of Efficiency",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Enhancement"
+    ],
+    "mod_slot_2": [],
+    "mod_slot_3": [],
+    "mod_slot_4": [],
+    "max_rank": 5,
+    "tag": [],
+    "source": [
+      "OV Onslaught"
+    ],
+    "icon_override": "Gear_OV_Efficiency",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Enhancement"
+      ]
+    ]
+  },
+  {
+    "gear_id": 47,
+    "gear_set": "Onslaught",
+    "gear_slot": "Secondary",
+    "gear_type": "Utility",
+    "name": "Onslaught Mask of Energy",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Enhancement"
+    ],
+    "mod_slot_2": [],
+    "mod_slot_3": [],
+    "mod_slot_4": [],
+    "max_rank": 5,
+    "tag": [],
+    "source": [
+      "OV Onslaught"
+    ],
+    "icon_override": "Gear_OV_Energy",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Enhancement"
+      ]
+    ]
+  },
+  {
+    "gear_id": 48,
+    "gear_set": "Eternal",
+    "gear_slot": "Secondary",
+    "gear_type": "Offense",
+    "name": "Eternal Rush",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Offense"
+    ],
+    "mod_slot_2": [],
+    "mod_slot_3": [],
+    "mod_slot_4": [],
+    "max_rank": 9,
+    "tag": [],
+    "source": [
+      "Eidolon of Destruction"
+    ],
+    "icon_override": "Gear_Rush",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Offense"
+      ]
+    ]
+  },
+  {
+    "gear_id": 49,
+    "gear_set": "Eternal",
+    "gear_slot": "Secondary",
+    "gear_type": "Defense",
+    "name": "Eternal Miasma",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Defense"
+    ],
+    "mod_slot_2": [],
+    "mod_slot_3": [],
+    "mod_slot_4": [],
+    "max_rank": 9,
+    "tag": [],
+    "source": [
+      "Eidolon of Destruction"
+    ],
+    "icon_override": "Gear_Miasma",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Defense"
+      ]
+    ]
+  },
+  {
+    "gear_id": 50,
+    "gear_set": "Eternal",
+    "gear_slot": "Secondary",
+    "gear_type": "Utility",
+    "name": "Eternal Madness",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Utility"
+    ],
+    "mod_slot_2": [],
+    "mod_slot_3": [],
+    "mod_slot_4": [],
+    "max_rank": 9,
+    "tag": [],
+    "source": [
+      "Eidolon of Destruction"
+    ],
+    "icon_override": "Gear_Madness",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Utility"
+      ]
+    ]
+  },
+  {
+    "gear_id": 51,
+    "gear_set": "Endless",
+    "gear_slot": "Secondary",
+    "gear_type": "Offense",
+    "name": "Endless Rush",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Offense"
+    ],
+    "mod_slot_2": [],
+    "mod_slot_3": [],
+    "mod_slot_4": [],
+    "max_rank": 9,
+    "tag": [],
+    "source": [
+      "Eidolon of Destruction"
+    ],
+    "icon_override": "Gear_Rush",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Offense"
+      ]
+    ]
+  },
+  {
+    "gear_id": 52,
+    "gear_set": "Endless",
+    "gear_slot": "Secondary",
+    "gear_type": "Defense",
+    "name": "Endless Miasma",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Defense"
+    ],
+    "mod_slot_2": [],
+    "mod_slot_3": [],
+    "mod_slot_4": [],
+    "max_rank": 9,
+    "tag": [],
+    "source": [
+      "Eidolon of Destruction"
+    ],
+    "icon_override": "Gear_Miasma",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Defense"
+      ]
+    ]
+  },
+  {
+    "gear_id": 53,
+    "gear_set": "Endless",
+    "gear_slot": "Secondary",
+    "gear_type": "Utility",
+    "name": "Endless Madness",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Utility"
+    ],
+    "mod_slot_2": [],
+    "mod_slot_3": [],
+    "mod_slot_4": [],
+    "max_rank": 9,
+    "tag": [],
+    "source": [
+      "Eidolon of Destruction"
+    ],
+    "icon_override": "Gear_Madness",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Utility"
+      ]
+    ]
+  },
+  {
+    "gear_id": 54,
+    "gear_set": "Nightmare",
+    "gear_slot": "Secondary",
+    "gear_type": "Offense",
+    "name": "Nightmare Rush",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Offense"
+    ],
+    "mod_slot_2": [],
+    "mod_slot_3": [],
+    "mod_slot_4": [],
+    "max_rank": 9,
+    "tag": [],
+    "source": [
+      "Eidolon of Destruction"
+    ],
+    "icon_override": "Gear_Rush",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Offense"
+      ]
+    ]
+  },
+  {
+    "gear_id": 55,
+    "gear_set": "Nightmare",
+    "gear_slot": "Secondary",
+    "gear_type": "Defense",
+    "name": "Nightmare Miasma",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Defense"
+    ],
+    "mod_slot_2": [],
+    "mod_slot_3": [],
+    "mod_slot_4": [],
+    "max_rank": 9,
+    "tag": [],
+    "source": [
+      "Eidolon of Destruction"
+    ],
+    "icon_override": "Gear_Miasma",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Defense"
+      ]
+    ]
+  },
+  {
+    "gear_id": 56,
+    "gear_set": "Nightmare",
+    "gear_slot": "Secondary",
+    "gear_type": "Utility",
+    "name": "Nightmare Madness",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Utility"
+    ],
+    "mod_slot_2": [],
+    "mod_slot_3": [],
+    "mod_slot_4": [],
+    "max_rank": 9,
+    "tag": [],
+    "source": [
+      "Eidolon of Destruction"
+    ],
+    "icon_override": "Gear_Madness",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Utility"
+      ]
+    ]
+  },
+  {
+    "gear_id": 57,
+    "gear_set": "Determination",
+    "gear_slot": "Secondary",
+    "gear_type": "Offense",
+    "name": "Agressive Belt of Determination",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Enhancement"
+    ],
+    "mod_slot_2": [],
+    "mod_slot_3": [],
+    "mod_slot_4": [],
+    "max_rank": 5,
+    "tag": [],
+    "source": [
+      "Teleios Ascendent"
+    ],
+    "icon_override": "Gear_Determination_Offense_Alt",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Enhancement"
+      ]
+    ]
+  },
+  {
+    "gear_id": 58,
+    "gear_set": "Determination",
+    "gear_slot": "Secondary",
+    "gear_type": "Offense",
+    "name": "Supportive Belt of Determination",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Enhancement"
+    ],
+    "mod_slot_2": [],
+    "mod_slot_3": [],
+    "mod_slot_4": [],
+    "max_rank": 5,
+    "tag": [],
+    "source": [
+      "Teleios Ascendent"
+    ],
+    "icon_override": "Gear_Determination_Offense_Alt",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Enhancement"
+      ]
+    ]
+  },
+  {
+    "gear_id": 59,
+    "gear_set": "Determination",
+    "gear_slot": "Secondary",
+    "gear_type": "Offense",
+    "name": "Protective Belt of Determination",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Enhancement"
+    ],
+    "mod_slot_2": [],
+    "mod_slot_3": [],
+    "mod_slot_4": [],
+    "max_rank": 5,
+    "tag": [],
+    "source": [
+      "Teleios Ascendent"
+    ],
+    "icon_override": "Gear_Determination_Offense_Alt",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Enhancement"
+      ]
+    ]
+  },
+  {
+    "gear_id": 60,
+    "gear_set": "Determination",
+    "gear_slot": "Secondary",
+    "gear_type": "Offense",
+    "name": "Impacting Belt of Determination",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Enhancement"
+    ],
+    "mod_slot_2": [],
+    "mod_slot_3": [],
+    "mod_slot_4": [],
+    "max_rank": 5,
+    "tag": [],
+    "source": [
+      "Recognition Store",
+      "Teleios Ascendent"
+    ],
+    "icon_override": "Gear_Determination_Offense",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Enhancement"
+      ]
+    ]
+  },
+  {
+    "gear_id": 61,
+    "gear_set": "Determination",
+    "gear_slot": "Secondary",
+    "gear_type": "Offense",
+    "name": "Rejuvinating Belt of Determination",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Enhancement"
+    ],
+    "mod_slot_2": [],
+    "mod_slot_3": [],
+    "mod_slot_4": [],
+    "max_rank": 5,
+    "tag": [],
+    "source": [
+      "Recognition Store",
+      "Teleios Ascendent"
+    ],
+    "icon_override": "Gear_Determination_Offense",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Enhancement"
+      ]
+    ]
+  },
+  {
+    "gear_id": 62,
+    "gear_set": "Determination",
+    "gear_slot": "Secondary",
+    "gear_type": "Offense",
+    "name": "Critical Belt of Determination",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Enhancement"
+    ],
+    "mod_slot_2": [],
+    "mod_slot_3": [],
+    "mod_slot_4": [],
+    "max_rank": 5,
+    "tag": [],
+    "source": [
+      "Recognition Store",
+      "Teleios Ascendent"
+    ],
+    "icon_override": "Gear_Determination_Offense",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Enhancement"
+      ]
+    ]
+  },
+  {
+    "gear_id": 63,
+    "gear_set": "Determination",
+    "gear_slot": "Secondary",
+    "gear_type": "Defense",
+    "name": "Agility Heart of Determination",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Enhancement"
+    ],
+    "mod_slot_2": [],
+    "mod_slot_3": [],
+    "mod_slot_4": [],
+    "max_rank": 5,
+    "tag": [],
+    "source": [
+      "Recognition Store",
+      "Teleios Ascendent"
+    ],
+    "icon_override": "Gear_Determination_Defense",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Enhancement"
+      ]
+    ]
+  },
+  {
+    "gear_id": 64,
+    "gear_set": "Determination",
+    "gear_slot": "Secondary",
+    "gear_type": "Defense",
+    "name": "Armored Heart of Determination",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Enhancement"
+    ],
+    "mod_slot_2": [],
+    "mod_slot_3": [],
+    "mod_slot_4": [],
+    "max_rank": 5,
+    "tag": [],
+    "source": [
+      "Recognition Store",
+      "Teleios Ascendent"
+    ],
+    "icon_override": "Gear_Determination_Defense",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Enhancement"
+      ]
+    ]
+  },
+  {
+    "gear_id": 65,
+    "gear_set": "Determination",
+    "gear_slot": "Secondary",
+    "gear_type": "Defense",
+    "name": "Bolstering Heart of Determination",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Enhancement"
+    ],
+    "mod_slot_2": [],
+    "mod_slot_3": [],
+    "mod_slot_4": [],
+    "max_rank": 5,
+    "tag": [],
+    "source": [
+      "Recognition Store",
+      "Teleios Ascendent"
+    ],
+    "icon_override": "Gear_Determination_Defense",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Enhancement"
+      ]
+    ]
+  },
+  {
+    "gear_id": 66,
+    "gear_set": "Determination",
+    "gear_slot": "Secondary",
+    "gear_type": "Utility",
+    "name": "Hastened Eyepiece of Determination",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Enhancement"
+    ],
+    "mod_slot_2": [],
+    "mod_slot_3": [],
+    "mod_slot_4": [],
+    "max_rank": 5,
+    "tag": [],
+    "source": [
+      "Recognition Store",
+      "Teleios Ascendent"
+    ],
+    "icon_override": "Gear_Determination_Utility",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Enhancement"
+      ]
+    ]
+  },
+  {
+    "gear_id": 67,
+    "gear_set": "Determination",
+    "gear_slot": "Secondary",
+    "gear_type": "Utility",
+    "name": "Efficient Eyepiece of Determination",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Enhancement"
+    ],
+    "mod_slot_2": [],
+    "mod_slot_3": [],
+    "mod_slot_4": [],
+    "max_rank": 5,
+    "tag": [],
+    "source": [
+      "Recognition Store",
+      "Teleios Ascendent"
+    ],
+    "icon_override": "Gear_Determination_Utility",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Enhancement"
+      ]
+    ]
+  },
+  {
+    "gear_id": 68,
+    "gear_set": "Determination",
+    "gear_slot": "Secondary",
+    "gear_type": "Utility",
+    "name": "Bolstering Eyepiece of Determination",
+    "gear_tooltip": null,
+    "gear_bonus": null,
+    "set_tooltip": null,
+    "set_bonus": null,
+    "mod_slot_1": [
+      "Enhancement"
+    ],
+    "mod_slot_2": [],
+    "mod_slot_3": [],
+    "mod_slot_4": [],
+    "max_rank": 5,
+    "tag": [],
+    "source": [
+      "Recognition Store",
+      "Teleios Ascendent"
+    ],
+    "icon_override": "Gear_Determination_Utility",
+    "is_disabled": false,
+    "bonuses": [],
+    "mod_slots": [
+      [
+        "Enhancement"
+      ]
+    ]
+  }
+]

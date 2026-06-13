@@ -31,6 +31,7 @@ type CharacterPanelProps = {
   onSelectTalentSlot: (slotIndex: number, anchor: DialogAnchor) => void;
   onSelectDeviceSlot: (slotNumber: number) => void;
   onSelectDeviceName: (slotNumber: number, anchor: DialogAnchor) => void;
+  onAutofillTalents: () => void;
   onToggleCollapse: () => void;
   highlightedDeviceTargetSlot: number | null;
 };
@@ -47,10 +48,12 @@ export function CharacterPanel({
   onSelectTalentSlot,
   onSelectDeviceSlot,
   onSelectDeviceName,
+  onAutofillTalents,
   onToggleCollapse,
   highlightedDeviceTargetSlot,
 }: CharacterPanelProps) {
   const selectedStatKeys = getSelectedStatKeys(superStats);
+  const canAutofillTalents = superStats.every((stat) => (stat?.id ?? 0) > 0);
   const innateTalentStats = innateTalent
     ? getInnateTalentStatEntries(innateTalent, selectedStatKeys)
     : [];
@@ -157,7 +160,26 @@ export function CharacterPanel({
         </section>
 
         <section className="panel-section">
-          <h3>Talents</h3>
+          <div className="panel-section__header">
+            <h3>Talents</h3>
+            <span
+              className="talent-autofill-button-wrapper"
+              title={
+                canAutofillTalents
+                  ? "Autofill talents"
+                  : "You must select all your superstats"
+              }
+            >
+              <button
+                className="header-action-button talent-autofill-button"
+                disabled={!canAutofillTalents}
+                type="button"
+                onClick={onAutofillTalents}
+              >
+                Autofill
+              </button>
+            </span>
+          </div>
           <div className="talent-slot-list">
             {talents.map((talent, index) => {
               const talentStats = talent

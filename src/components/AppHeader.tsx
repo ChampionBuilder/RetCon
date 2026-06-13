@@ -18,6 +18,8 @@ type AppHeaderProps = {
   onResetTravelPowers: () => void;
   onResetPowerVariants: () => void;
   onResetDevices: () => void;
+  onResetGear?: () => void;
+  onResetGearMods?: () => void;
   onResetAdvantages: () => void;
   onResetSpecializations: () => void;
   onRandomize: () => void;
@@ -40,6 +42,8 @@ export function AppHeader({
   onResetTravelPowers,
   onResetPowerVariants,
   onResetDevices,
+  onResetGear,
+  onResetGearMods,
   onResetAdvantages,
   onResetSpecializations,
   onRandomize,
@@ -139,7 +143,7 @@ export function AppHeader({
             <span>Build name</span>
             <input
               value={buildName}
-              placeholder="Type your build name here..."
+              placeholder="Type your name here..."
               onChange={(event) => onBuildNameChange(event.target.value)}
             />
           </label>
@@ -198,21 +202,6 @@ export function AppHeader({
               <span className="reset-menu__divider" aria-hidden="true" />
               <button
                 className="reset-menu__item"
-                disabled={resetSuperStatsDisabled}
-                type="button"
-                onClick={onResetSuperStats}
-              >
-                Super Stats
-              </button>
-              <button
-                className="reset-menu__item"
-                type="button"
-                onClick={onResetTalents}
-              >
-                Talents
-              </button>
-              <button
-                className="reset-menu__item"
                 type="button"
                 onClick={onResetPowers}
               >
@@ -221,9 +210,9 @@ export function AppHeader({
               <button
                 className="reset-menu__item"
                 type="button"
-                onClick={onResetTravelPowers}
+                onClick={onResetAdvantages}
               >
-                Travel Powers
+                Advantages
               </button>
               <button
                 className="reset-menu__item"
@@ -241,18 +230,51 @@ export function AppHeader({
               </button>
               <button
                 className="reset-menu__item"
+                disabled={resetSuperStatsDisabled}
+                type="button"
+                onClick={onResetSuperStats}
+              >
+                Super Stats
+              </button>
+              <button
+                className="reset-menu__item"
+                type="button"
+                onClick={onResetTalents}
+              >
+                Talents
+              </button>
+              <button
+                className="reset-menu__item"
+                type="button"
+                onClick={onResetTravelPowers}
+              >
+                Travel Powers
+              </button>
+              <button
+                className="reset-menu__item"
                 type="button"
                 onClick={onResetDevices}
               >
                 Devices
               </button>
-              <button
-                className="reset-menu__item"
-                type="button"
-                onClick={onResetAdvantages}
-              >
-                Advantages
-              </button>
+              {onResetGear ? (
+                <button
+                  className="reset-menu__item"
+                  type="button"
+                  onClick={onResetGear}
+                >
+                  Gear
+                </button>
+              ) : null}
+              {onResetGearMods ? (
+                <button
+                  className="reset-menu__item"
+                  type="button"
+                  onClick={onResetGearMods}
+                >
+                  Mods
+                </button>
+              ) : null}
             </div>
           </details>
         </div>

@@ -11,7 +11,6 @@ type TalentSelectionDialogProps = {
   slotIndex: number;
   talents: Talent[];
   onClose: () => void;
-  onAutofillTalents: () => void;
   onSelectTalent: (slotIndex: number, talentId: number) => void;
 };
 
@@ -22,7 +21,6 @@ export function TalentSelectionDialog({
   slotIndex,
   talents,
   onClose,
-  onAutofillTalents,
   onSelectTalent,
 }: TalentSelectionDialogProps) {
   const selectedStatKeys = useMemo(() => {
@@ -40,22 +38,13 @@ export function TalentSelectionDialog({
       className="talent-selection-dialog"
       closeAriaLabel="Close talent selection"
       menuChildren={
-        <>
-          <button
-            className="tab-button"
-            type="button"
-            onClick={() => onSelectTalent(slotIndex, 0)}
-          >
-            Clear
-          </button>
-          <button
-            className="tab-button"
-            type="button"
-            onClick={onAutofillTalents}
-          >
-            Autofill
-          </button>
-        </>
+        <button
+          className="tab-button"
+          type="button"
+          onClick={() => onSelectTalent(slotIndex, 0)}
+        >
+          Clear
+        </button>
       }
       onClose={onClose}
     >

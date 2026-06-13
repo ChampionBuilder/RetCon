@@ -7,14 +7,22 @@ import {
 } from "./tooltipText";
 import { getNormalizedPowerType, getPowerType } from "./powerTypes";
 import { getAdvantageDamageTypes } from "@/utils/powerDamageTypes";
+import {
+  getSearchTags,
+  getTooltipTagBadges,
+  type TooltipTagBadge,
+} from "@/utils/powerTags";
 
 export type AdvantageTooltipData = {
   id: number;
   name: string;
   pointsCost: number | null;
   tooltip: string | null;
-  tags: string[];
+  tags: TooltipTagBadge[];
+  applyTags: string[];
   damageTypes: string[];
+  refreshTags: string[];
+  synergyTags: string[];
 };
 
 export type PowerTooltipData = {
@@ -25,8 +33,9 @@ export type PowerTooltipData = {
   activationType: string | null;
   metrics: string[];
   rangeTags: string[];
-  tags: string[];
+  tags: TooltipTagBadge[];
   effects: string[];
+  damageMods: string[];
   parentPowers: string[];
   sources: string[];
   advantages: AdvantageTooltipData[];
@@ -129,10 +138,16 @@ function getAdvantageTooltipData(
       name: advantage.name,
       pointsCost: advantage.points_cost,
       tooltip: cleanMultilineTooltipText(advantage.tooltip),
-      tags: (advantage.tags ?? [])
-        .map((tag) => formatTooltipLabel(tag))
-        .filter((tag): tag is string => Boolean(tag)),
+      tags: getTooltipTagBadges(advantage)
+        .map((tag) => ({
+          ...tag,
+          label: formatTooltipLabel(tag.label) ?? "",
+        }))
+        .filter((tag) => Boolean(tag.label)),
+      applyTags: getSearchTags(advantage, ["apply"]),
       damageTypes: getAdvantageDamageTypes(advantage),
+      refreshTags: getSearchTags(advantage, ["refresh"]),
+      synergyTags: getSearchTags(advantage, ["synergy"]),
     }));
 }
 
@@ -190,10 +205,31 @@ function getParentPowerNames(
     .filter((name): name is string => Boolean(name));
 }
 
+function getDamageModNames(
+  power: Power,
+  powersById: ReadonlyMap<number, Power> | null | undefined,
+  damageModsByFramework: ReadonlyMap<string, string> | null | undefined,
+) {
+  if (!isPowerVariantDevice(power) || !powersById || !damageModsByFramework) {
+    return [];
+  }
+
+  return Array.from(
+    new Set(
+      (power.power_dependency ?? [])
+        .map((powerId) => powersById.get(powerId)?.framework_id)
+        .filter((frameworkId): frameworkId is string => Boolean(frameworkId))
+        .map((frameworkId) => damageModsByFramework.get(frameworkId))
+        .filter((name): name is string => Boolean(name)),
+    ),
+  );
+}
+
 export function getPowerTooltipData(
   power: Power | null | undefined,
   advantagesById?: ReadonlyMap<number, Advantage> | null,
   powersById?: ReadonlyMap<number, Power> | null,
+  damageModsByFramework?: ReadonlyMap<string, string> | null,
 ): PowerTooltipData | null {
   if (!power) {
     return null;
@@ -227,10 +263,18 @@ export function getPowerTooltipData(
   const rangeTags = (power.range_tags ?? [])
     .map((tag) => tag.trim())
     .filter(Boolean);
-  const tags = (power.tags ?? [])
-    .map((tag) => formatTooltipLabel(tag))
-    .filter((tag): tag is string => Boolean(tag));
+  const tags = getTooltipTagBadges(power)
+    .map((tag) => ({
+      ...tag,
+      label: formatTooltipLabel(tag.label) ?? "",
+    }))
+    .filter((tag) => Boolean(tag.label));
   const parentPowers = getParentPowerNames(power, powersById);
+  const damageMods = getDamageModNames(
+    power,
+    powersById,
+    damageModsByFramework,
+  );
   const sources = splitSourceValues(power.source);
 
   return {
@@ -243,6 +287,7 @@ export function getPowerTooltipData(
     rangeTags,
     tags,
     effects: splitEffects(remainingText),
+    damageMods,
     parentPowers,
     sources,
     advantages: getAdvantageTooltipData(power, advantagesById),
@@ -254,8 +299,14 @@ export function getPowerTooltipAttribute(
   power: Power | null | undefined,
   advantagesById?: ReadonlyMap<number, Advantage> | null,
   powersById?: ReadonlyMap<number, Power> | null,
+  damageModsByFramework?: ReadonlyMap<string, string> | null,
 ) {
-  const tooltip = getPowerTooltipData(power, advantagesById, powersById);
+  const tooltip = getPowerTooltipData(
+    power,
+    advantagesById,
+    powersById,
+    damageModsByFramework,
+  );
 
   return tooltip ? JSON.stringify(tooltip) : undefined;
 }

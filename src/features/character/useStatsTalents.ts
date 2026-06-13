@@ -235,6 +235,10 @@ export function useStatsTalents({
     }
 
     const selectedStatKeys = getSelectedStatKeys(selectedSuperStats);
+    if (selectedStatKeys.size < 3) {
+      return;
+    }
+
     const autofilledTalentIds = getSortedTalents(
       statsTalentsData.talents,
       selectedStatKeys,
