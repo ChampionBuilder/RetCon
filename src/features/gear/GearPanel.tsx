@@ -1,10 +1,21 @@
-import type { MouseEvent } from "react";
-import type { GearBuildSlot, GearItem } from "@/types/gear";
+import { useState, type MouseEvent } from "react";
+import type { SuperStat } from "@/types/character";
+import type { GearBonus, GearBuildSlot, GearItem } from "@/types/gear";
 import type { DialogAnchor } from "@/shared/ui/AnchoredDialog";
 import { SpriteIcon } from "@/shared/ui/SpriteIcon";
+import {
+  formatBonusType,
+  formatSignedBonusValue,
+  getGearBonusValue,
+  getRankedGearBonusValue,
+  getResolvedBonusTypes,
+  statBonusOrderIndex,
+} from "./gearBonusFormatting";
+import { formatGearModRankTooltipText } from "./gearModTooltips";
 
 type GearPanelProps = {
   gearSlots: GearBuildSlot[];
+  selectedSuperStats: (SuperStat | null)[];
   onToggleCollapse: () => void;
   onSelectGearMod: (
     slotId: string,
@@ -19,10 +30,123 @@ type GearPanelProps = {
   onSelectGearSlot: (slotId: string, anchor: DialogAnchor) => void;
 };
 
-function getGearIconName(gear: GearItem | null | undefined) {
+function getGearIconName(
+  gear: GearItem | null | undefined,
+  gearType: GearBuildSlot["gearType"],
+) {
   return gear?.icon_override
     ? `/gear-icons/${gear.icon_override}.png`
-    : "Icon_Bag";
+    : `/gear-icons/Gear_Empty_${gearType}.png`;
+}
+
+function addBonusToTotals(
+  totals: Map<string, number>,
+  type: string,
+  value: number | null,
+) {
+  if (value === null || !Number.isFinite(value)) {
+    return;
+  }
+
+  const normalizedType = formatBonusType(type);
+
+  totals.set(normalizedType, (totals.get(normalizedType) ?? 0) + value);
+}
+
+function addResolvedBonusToTotals(
+  totals: Map<string, number>,
+  bonus: GearBonus,
+  value: number | null,
+  selectedSuperStats: (SuperStat | null)[],
+) {
+  getResolvedBonusTypes(bonus.type, selectedSuperStats).forEach((type) => {
+    addBonusToTotals(totals, type, value);
+  });
+}
+
+function getSelectedGearBySet(gearSlots: GearBuildSlot[]) {
+  const gearBySet = new Map<string, GearItem[]>();
+
+  gearSlots.forEach((gearSlot) => {
+    const gear = gearSlot.gear;
+
+    if (!gear?.gear_set) {
+      return;
+    }
+
+    gearBySet.set(gear.gear_set, [
+      ...(gearBySet.get(gear.gear_set) ?? []),
+      gear,
+    ]);
+  });
+
+  return gearBySet;
+}
+
+function getGearTotals(
+  gearSlots: GearBuildSlot[],
+  selectedSuperStats: (SuperStat | null)[],
+) {
+  const totals = new Map<string, number>();
+
+  gearSlots.forEach((gearSlot) => {
+    gearSlot.gear?.bonuses.forEach((bonus) => {
+      addResolvedBonusToTotals(
+        totals,
+        bonus,
+        getGearBonusValue(bonus),
+        selectedSuperStats,
+      );
+    });
+
+    gearSlot.selectedMods.forEach((selectedMod) => {
+      if (!selectedMod?.rank) {
+        return;
+      }
+
+      const selectedRank = selectedMod.rank;
+
+      selectedMod.mod.bonuses.forEach((bonus) => {
+        addResolvedBonusToTotals(
+          totals,
+          bonus,
+          getRankedGearBonusValue(bonus, selectedRank),
+          selectedSuperStats,
+        );
+      });
+    });
+  });
+
+  getSelectedGearBySet(gearSlots).forEach((setGears) => {
+    const setGearCount = setGears.length;
+    const representativeGear = setGears[0];
+
+    representativeGear?.set_bonuses.forEach((setBonusTier) => {
+      if (setBonusTier.pieces > setGearCount) {
+        return;
+      }
+
+      setBonusTier.bonuses.forEach((bonus) => {
+        addResolvedBonusToTotals(
+          totals,
+          bonus,
+          getGearBonusValue(bonus),
+          selectedSuperStats,
+        );
+      });
+    });
+  });
+
+  return Array.from(totals.entries()).sort(([typeA], [typeB]) => {
+    const statIndexA = statBonusOrderIndex.get(typeA.toUpperCase());
+    const statIndexB = statBonusOrderIndex.get(typeB.toUpperCase());
+
+    if (statIndexA !== undefined || statIndexB !== undefined) {
+      return (statIndexA ?? 999) - (statIndexB ?? 999);
+    }
+
+    return formatBonusType(typeA).localeCompare(formatBonusType(typeB));
+  });
 }
 
 function getSelectedModIconName(
@@ -30,7 +154,7 @@ function getSelectedModIconName(
 ) {
   return selectedMod?.mod.icon_override
     ? `/gear-icons/${selectedMod.mod.icon_override}.png`
-    : "Any_Generic";
+    : "/gear-icons/Mod_Empty.png";
 }
 
 function GearName({ name }: { name: string }) {
@@ -118,16 +242,49 @@ function openGearSlot(
 
 export function GearPanel({
   gearSlots,
+  selectedSuperStats,
   onToggleCollapse,
   onSelectGearMod,
   onSelectGearModRank,
   onSelectGearSlot,
 }: GearPanelProps) {
+  const [closedSections, setClosedSections] = useState<string[]>([]);
   const sections = ["Primary", "Secondary"].map((section) => ({
     key: section.toLowerCase(),
     title: `${section} Gear`,
     slots: gearSlots.filter((slot) => slot.gearSlot === section),
   }));
+  const totals = getGearTotals(gearSlots, selectedSuperStats);
+
+  function toggleSection(sectionKey: string) {
+    setClosedSections((currentClosedSections) =>
+      currentClosedSections.includes(sectionKey)
+        ? currentClosedSections.filter((key) => key !== sectionKey)
+        : [...currentClosedSections, sectionKey],
+    );
+  }
+
+  function renderSectionToggle(sectionKey: string, label: string) {
+    const isClosed = closedSections.includes(sectionKey);
+
+    return (
+      <button
+        aria-expanded={!isClosed}
+        className="power-tier__toggle"
+        type="button"
+        onClick={() => toggleSection(sectionKey)}
+      >
+        <span>{label}</span>
+        <span
+          className={
+            isClosed
+              ? "tier-toggle-icon tier-toggle-icon--closed"
+              : "tier-toggle-icon"
+          }
+        />
+      </button>
+    );
+  }
 
   return (
     <aside className="panel gear-panel">
@@ -144,155 +301,186 @@ export function GearPanel({
       <div className="gear-panel__body">
         {sections.map((section) => (
           <section className="power-tier build-section gear-section" key={section.key}>
-            <div className="power-tier__toggle power-tier__toggle--static">
-              <span>{section.title}</span>
-            </div>
+            {renderSectionToggle(section.key, section.title)}
 
-            <div className="build-extra-section gear-build-list">
-              {section.slots.map((gearSlot) => {
-                return (
-                  <div
-                    className="build-entry gear-build-entry"
-                    key={gearSlot.id}
-                  >
+            {!closedSections.includes(section.key) ? (
+              <div className="build-extra-section gear-build-list">
+                {section.slots.map((gearSlot) => {
+                  return (
                     <div
-                      className={[
-                        "build-entry__summary",
-                        `gear-build-entry__summary--${gearSlot.gearType.toLowerCase()}`,
-                        gearSlot.gear ? "" : "build-entry__summary--empty",
-                      ]
-                        .filter(Boolean)
-                        .join(" ")}
-                      onClick={(event) =>
-                        openGearSlot(event, gearSlot, onSelectGearSlot)
-                      }
+                      className="build-entry gear-build-entry"
+                      key={gearSlot.id}
                     >
-                      <div className="build-entry__power-main">
-                        <SpriteIcon
-                          className="gear-build-entry__gear-icon"
-                          name={getGearIconName(gearSlot.gear)}
-                          size={44}
-                        />
-                        <div className="gear-build-entry__content">
-                        <button
-                          className="build-entry__name-button"
-                          type="button"
-                          onClick={(event) => {
-                            event.stopPropagation();
-                            openGearSlot(event, gearSlot, onSelectGearSlot);
-                          }}
-                        >
-                          <GearName
-                            name={
-                              gearSlot.gear?.name ??
-                              `Empty ${gearSlot.gearType.toLowerCase()} gear`
-                            }
-                          />
-                        </button>
-                        <div
-                          className={[
-                            "gear-mod-button-list",
-                            `gear-mod-button-list--${gearSlot.gearSlot.toLowerCase()}`,
-                          ].join(" ")}
-                        >
-                          {getDisplayModSlots(gearSlot).map(
-                            ({ slotTypes, modSlotIndex }) => {
-                              const selectedMod =
-                                gearSlot.selectedMods[modSlotIndex] ?? null;
-                              const selectedModLabel =
-                                formatSelectedModLabel(selectedMod);
-                              const modSlotLabel = formatModSlotLabel(
-                                selectedMod,
-                                slotTypes,
-                              );
+                      <div
+                        className={[
+                          "build-entry__summary",
+                          `gear-build-entry__summary--${gearSlot.gearType.toLowerCase()}`,
+                          gearSlot.gear ? "" : "build-entry__summary--empty",
+                        ]
+                          .filter(Boolean)
+                          .join(" ")}
+                        onClick={(event) =>
+                          openGearSlot(event, gearSlot, onSelectGearSlot)
+                        }
+                      >
+                        <div className="build-entry__power-main">
+                          <div className="gear-build-entry__gear-icon-slot">
+                            <SpriteIcon
+                              className="gear-build-entry__gear-icon"
+                              name={getGearIconName(
+                                gearSlot.gear,
+                                gearSlot.gearType,
+                              )}
+                              size={44}
+                            />
+                          </div>
+                          <div className="gear-build-entry__content">
+                            <button
+                              className="build-entry__name-button"
+                              type="button"
+                              onClick={(event) => {
+                                event.stopPropagation();
+                                openGearSlot(event, gearSlot, onSelectGearSlot);
+                              }}
+                            >
+                              <GearName
+                                name={
+                                  gearSlot.gear?.name ??
+                                  `Empty ${gearSlot.gearType.toLowerCase()} gear`
+                                }
+                              />
+                            </button>
+                            <div
+                              className={[
+                                "gear-mod-button-list",
+                                `gear-mod-button-list--${gearSlot.gearSlot.toLowerCase()}`,
+                              ].join(" ")}
+                            >
+                              {getDisplayModSlots(gearSlot).map(
+                                ({ slotTypes, modSlotIndex }) => {
+                                  const selectedMod =
+                                    gearSlot.selectedMods[modSlotIndex] ?? null;
+                                  const modSlotLabel = formatModSlotLabel(
+                                    selectedMod,
+                                    slotTypes,
+                                  );
+                                  const modSlotTooltip = selectedMod
+                                    ? formatGearModRankTooltipText(
+                                        selectedMod.mod,
+                                        selectedMod.rank,
+                                      )
+                                    : `${formatModSlotTitle(slotTypes)} mod slot`;
 
-                              return (
-                                <div
-                                  className={[
-                                    "gear-mod-cell",
-                                    selectedMod ? "gear-mod-button--filled" : "",
-                                    selectedMod ? "" : "gear-mod-button--empty",
-                                  ]
-                                    .filter(Boolean)
-                                    .join(" ")}
-                                  key={`${gearSlot.id}-${modSlotIndex}`}
-                                  onClick={(event) => event.stopPropagation()}
-                                >
-                                  <button
-                                    className="gear-mod-button"
-                                    title={
-                                      selectedModLabel ??
-                                      `${formatModSlotTitle(slotTypes)} mod slot`
-                                    }
-                                    type="button"
-                                    onClick={(event) => {
-                                      event.stopPropagation();
-                                      onSelectGearMod(
-                                        gearSlot.id,
-                                        modSlotIndex,
-                                        {
-                                          x: event.clientX,
-                                          y: event.clientY,
-                                        },
-                                      );
-                                    }}
-                                  >
-                                    <SpriteIcon
-                                      className="gear-mod-button__placeholder-icon"
-                                      name={getSelectedModIconName(selectedMod)}
-                                      width={28}
-                                      height={38}
-                                    />
-                                  </button>
-                                  {selectedMod ? (
-                                    <button
+                                  return (
+                                    <div
                                       className={[
-                                        "gear-mod-button__label",
-                                        "gear-mod-button__label-button",
-                                        selectedMod.rank === null
-                                          ? "gear-mod-button__label-button--pending-rank"
+                                        "gear-mod-cell",
+                                        selectedMod
+                                          ? "gear-mod-button--filled"
                                           : "",
+                                        selectedMod
+                                          ? ""
+                                          : "gear-mod-button--empty",
                                       ]
                                         .filter(Boolean)
                                         .join(" ")}
-                                      title={modSlotLabel ?? undefined}
-                                      type="button"
-                                      onClick={(event) => {
-                                        event.stopPropagation();
-                                        onSelectGearModRank(
-                                          gearSlot.id,
-                                          modSlotIndex,
-                                          {
-                                            x: event.clientX,
-                                            y: event.clientY,
-                                          },
-                                        );
-                                      }}
+                                      key={`${gearSlot.id}-${modSlotIndex}`}
+                                      onClick={(event) => event.stopPropagation()}
                                     >
-                                      {modSlotLabel}
-                                    </button>
-                                  ) : (
-                                    <span
-                                      className="gear-mod-button__label"
-                                      title={modSlotLabel ?? undefined}
-                                    >
-                                      {modSlotLabel}
-                                    </span>
-                                  )}
-                                </div>
-                              );
-                            },
-                          )}
-                        </div>
+                                      <button
+                                        className="gear-mod-button"
+                                        data-text-tooltip={modSlotTooltip}
+                                        type="button"
+                                        onClick={(event) => {
+                                          event.stopPropagation();
+                                          onSelectGearMod(
+                                            gearSlot.id,
+                                            modSlotIndex,
+                                            {
+                                              x: event.clientX,
+                                              y: event.clientY,
+                                            },
+                                          );
+                                        }}
+                                      >
+                                        <SpriteIcon
+                                          className="gear-mod-button__placeholder-icon"
+                                          name={getSelectedModIconName(
+                                            selectedMod,
+                                          )}
+                                          width={28}
+                                          height={38}
+                                        />
+                                      </button>
+                                      {selectedMod ? (
+                                        <button
+                                          className={[
+                                            "gear-mod-button__label",
+                                            "gear-mod-button__label-button",
+                                            selectedMod.rank === null
+                                              ? "gear-mod-button__label-button--pending-rank"
+                                              : "",
+                                          ]
+                                            .filter(Boolean)
+                                            .join(" ")}
+                                          data-text-tooltip={modSlotTooltip}
+                                          type="button"
+                                          onClick={(event) => {
+                                            event.stopPropagation();
+                                            onSelectGearModRank(
+                                              gearSlot.id,
+                                              modSlotIndex,
+                                              {
+                                                x: event.clientX,
+                                                y: event.clientY,
+                                              },
+                                            );
+                                          }}
+                                        >
+                                          {modSlotLabel}
+                                        </button>
+                                      ) : (
+                                        <span
+                                          className="gear-mod-button__label"
+                                          data-text-tooltip={modSlotTooltip}
+                                        >
+                                          {modSlotLabel}
+                                        </span>
+                                      )}
+                                    </div>
+                                  );
+                                },
+                              )}
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                );
-              })}
-            </div>
+                  );
+                })}
+              </div>
+            ) : null}
           </section>
         ))}
+
+        <section className="power-tier build-section gear-section gear-totals-section">
+          {renderSectionToggle("totals", "Totals")}
+
+          {!closedSections.includes("totals") ? (
+            totals.length > 0 ? (
+              <dl className="gear-totals-list">
+                {totals.map(([type, value]) => (
+                  <div className="gear-totals-list__row" key={type}>
+                    <dt>{formatBonusType(type)}</dt>
+                    <dd>{formatSignedBonusValue(value, type)}</dd>
+                  </div>
+                ))}
+              </dl>
+            ) : (
+              <p className="gear-totals-list__empty">No bonuses selected</p>
+            )
+          ) : null}
+        </section>
       </div>
     </aside>
   );

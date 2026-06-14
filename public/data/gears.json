@@ -6,9 +6,9 @@
     "gear_type": "Offense",
     "name": "Justice Gloves of Precision",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Defense=21;Critical_Strike=21;Critical_Severity=2.5",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=25|3=Offense=175",
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -30,7 +30,45 @@
     ],
     "icon_override": "Gear_Justice_Offense",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 21
+      },
+      {
+        "type": "Critical_Strike",
+        "value": 21
+      },
+      {
+        "type": "Critical_Severity",
+        "value": 2.5
+      }
+    ],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 25
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Offense",
+            "value": 175
+          }
+        ],
+        "text": []
+      }
+    ],
     "mod_slots": [
       [
         "Enhancement"
@@ -55,9 +93,9 @@
     "gear_type": "Offense",
     "name": "Justice Gloves of Healing",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Defense=21;Healing_Bonus=30",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=25|3=Offense=175",
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -79,7 +117,41 @@
     ],
     "icon_override": "Gear_Justice_Offense",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 21
+      },
+      {
+        "type": "Healing_Bonus",
+        "value": 30
+      }
+    ],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 25
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Offense",
+            "value": 175
+          }
+        ],
+        "text": []
+      }
+    ],
     "mod_slots": [
       [
         "Enhancement"
@@ -104,9 +176,9 @@
     "gear_type": "Offense",
     "name": "Justice Gloves of Growth",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Defense=21;Primary_Superstat=38",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=25|3=Offense=175",
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -128,7 +200,41 @@
     ],
     "icon_override": "Gear_Justice_Offense",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 21
+      },
+      {
+        "type": "Primary_Superstat",
+        "value": 38
+      }
+    ],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 25
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Offense",
+            "value": 175
+          }
+        ],
+        "text": []
+      }
+    ],
     "mod_slots": [
       [
         "Enhancement"
@@ -153,9 +259,9 @@
     "gear_type": "Defense",
     "name": "Justice Tights of Fitness",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Defense=42;Max_HP=553",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=25|3=Offense=175",
     "mod_slot_1": [
       "Armoring"
     ],
@@ -177,7 +283,41 @@
     ],
     "icon_override": "Gear_Justice_Defense",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 42
+      },
+      {
+        "type": "Max_HP",
+        "value": 553
+      }
+    ],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 25
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Offense",
+            "value": 175
+          }
+        ],
+        "text": []
+      }
+    ],
     "mod_slots": [
       [
         "Armoring"
@@ -202,9 +342,9 @@
     "gear_type": "Defense",
     "name": "Justice Tights of Elusiveness",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Defense=21;Dodge_Chance=152",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=25|3=Offense=175",
     "mod_slot_1": [
       "Armoring"
     ],
@@ -226,7 +366,41 @@
     ],
     "icon_override": "Gear_Justice_Defense",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 21
+      },
+      {
+        "type": "Dodge_Chance",
+        "value": 152
+      }
+    ],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 25
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Offense",
+            "value": 175
+          }
+        ],
+        "text": []
+      }
+    ],
     "mod_slots": [
       [
         "Armoring"
@@ -251,9 +425,9 @@
     "gear_type": "Defense",
     "name": "Justice Tights of Agility",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Defense=21;Dodge_Chance=76;Avoidance=76",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=25|3=Offense=175",
     "mod_slot_1": [
       "Armoring"
     ],
@@ -275,7 +449,45 @@
     ],
     "icon_override": "Gear_Justice_Defense",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 21
+      },
+      {
+        "type": "Dodge_Chance",
+        "value": 76
+      },
+      {
+        "type": "Avoidance",
+        "value": 76
+      }
+    ],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 25
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Offense",
+            "value": 175
+          }
+        ],
+        "text": []
+      }
+    ],
     "mod_slots": [
       [
         "Armoring"
@@ -300,9 +512,9 @@
     "gear_type": "Utility",
     "name": "Justice Mask of Speed",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Defense=21;Cooldown_Reduction=152;Cost_Discount=101",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=25|3=Offense=175",
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -324,7 +536,45 @@
     ],
     "icon_override": "Gear_Justice_Utility",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 21
+      },
+      {
+        "type": "Cooldown_Reduction",
+        "value": 152
+      },
+      {
+        "type": "Cost_Discount",
+        "value": 101
+      }
+    ],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 25
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Offense",
+            "value": 175
+          }
+        ],
+        "text": []
+      }
+    ],
     "mod_slots": [
       [
         "Enhancement"
@@ -349,9 +599,9 @@
     "gear_type": "Utility",
     "name": "Justice Mask of Efficiency",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Defense=21;Cooldown_Reduction=51;Cost_Discount=202",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=25|3=Offense=175",
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -373,7 +623,45 @@
     ],
     "icon_override": "Gear_Justice_Utility",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 21
+      },
+      {
+        "type": "Cooldown_Reduction",
+        "value": 51
+      },
+      {
+        "type": "Cost_Discount",
+        "value": 202
+      }
+    ],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 25
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Offense",
+            "value": 175
+          }
+        ],
+        "text": []
+      }
+    ],
     "mod_slots": [
       [
         "Enhancement"
@@ -398,9 +686,9 @@
     "gear_type": "Offense",
     "name": "Distinguished Gloves of Offense",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Defense=32;Offense=111",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=20;Non_Super_Stats=10|3=Defense=65;10% bonus to Energy Unlock. 20% in Tank Role.",
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -422,7 +710,47 @@
     ],
     "icon_override": "Gear_Dist_Offense",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 32
+      },
+      {
+        "type": "Offense",
+        "value": 111
+      }
+    ],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 20
+          },
+          {
+            "type": "Non_Super_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Defense",
+            "value": 65
+          }
+        ],
+        "text": [
+          "10% bonus to Energy Unlock. 20% in Tank Role."
+        ]
+      }
+    ],
     "mod_slots": [
       [
         "Enhancement"
@@ -447,9 +775,9 @@
     "gear_type": "Offense",
     "name": "Distinguished Gloves of Healing",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Increases the Critical Chance of healing powers by 5%;Defense=21;Healing_Bonus=15",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=20;Non_Super_Stats=10|3=Defense=65;10% bonus to Energy Unlock. 20% in Tank Role.",
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -471,7 +799,49 @@
     ],
     "icon_override": "Gear_Dist_Offense",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 21
+      },
+      {
+        "type": "Healing_Bonus",
+        "value": 15
+      }
+    ],
+    "bonus_text": [
+      "Increases the Critical Chance of healing powers by 5%"
+    ],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 20
+          },
+          {
+            "type": "Non_Super_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Defense",
+            "value": 65
+          }
+        ],
+        "text": [
+          "10% bonus to Energy Unlock. 20% in Tank Role."
+        ]
+      }
+    ],
     "mod_slots": [
       [
         "Enhancement"
@@ -496,9 +866,9 @@
     "gear_type": "Offense",
     "name": "Distinguished Gloves of Intimidation",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Defense=21;Offense=74;Threat=15",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=20;Non_Super_Stats=10|3=Defense=65;10% bonus to Energy Unlock. 20% in Tank Role.",
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -520,7 +890,51 @@
     ],
     "icon_override": "Gear_Dist_Offense",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 21
+      },
+      {
+        "type": "Offense",
+        "value": 74
+      },
+      {
+        "type": "Threat",
+        "value": 15
+      }
+    ],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 20
+          },
+          {
+            "type": "Non_Super_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Defense",
+            "value": 65
+          }
+        ],
+        "text": [
+          "10% bonus to Energy Unlock. 20% in Tank Role."
+        ]
+      }
+    ],
     "mod_slots": [
       [
         "Enhancement"
@@ -545,9 +959,9 @@
     "gear_type": "Defense",
     "name": "Distinguished Armor of Freedom",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Defense=32;Max_HP=369;KnockRepel_Resistance=70;CC_Resistance=38",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=20;Non_Super_Stats=10|3=Defense=65;10% bonus to Energy Unlock. 20% in Tank Role.",
     "mod_slot_1": [
       "Armoring"
     ],
@@ -569,7 +983,55 @@
     ],
     "icon_override": "Gear_Dist_Defense",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 32
+      },
+      {
+        "type": "Max_HP",
+        "value": 369
+      },
+      {
+        "type": "KnockRepel_Resistance",
+        "value": 70
+      },
+      {
+        "type": "CC_Resistance",
+        "value": 38
+      }
+    ],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 20
+          },
+          {
+            "type": "Non_Super_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Defense",
+            "value": 65
+          }
+        ],
+        "text": [
+          "10% bonus to Energy Unlock. 20% in Tank Role."
+        ]
+      }
+    ],
     "mod_slots": [
       [
         "Armoring"
@@ -594,9 +1056,9 @@
     "gear_type": "Defense",
     "name": "Distinguished Armor of Elusiveness",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Defense=21;Dodge_Chance=152;CC_Resistance=38",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=20;Non_Super_Stats=10|3=Defense=65;10% bonus to Energy Unlock. 20% in Tank Role.",
     "mod_slot_1": [
       "Armoring"
     ],
@@ -618,7 +1080,51 @@
     ],
     "icon_override": "Gear_Dist_Defense",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 21
+      },
+      {
+        "type": "Dodge_Chance",
+        "value": 152
+      },
+      {
+        "type": "CC_Resistance",
+        "value": 38
+      }
+    ],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 20
+          },
+          {
+            "type": "Non_Super_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Defense",
+            "value": 65
+          }
+        ],
+        "text": [
+          "10% bonus to Energy Unlock. 20% in Tank Role."
+        ]
+      }
+    ],
     "mod_slots": [
       [
         "Armoring"
@@ -643,9 +1149,9 @@
     "gear_type": "Defense",
     "name": "Distinguished Armor of Agility",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Defense=21;Dodge_Chance=76;Avoidance=76;CC_Resistance=38",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=20;Non_Super_Stats=10|3=Defense=65;10% bonus to Energy Unlock. 20% in Tank Role.",
     "mod_slot_1": [
       "Armoring"
     ],
@@ -667,7 +1173,55 @@
     ],
     "icon_override": "Gear_Dist_Defense",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 21
+      },
+      {
+        "type": "Dodge_Chance",
+        "value": 76
+      },
+      {
+        "type": "Avoidance",
+        "value": 76
+      },
+      {
+        "type": "CC_Resistance",
+        "value": 38
+      }
+    ],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 20
+          },
+          {
+            "type": "Non_Super_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Defense",
+            "value": 65
+          }
+        ],
+        "text": [
+          "10% bonus to Energy Unlock. 20% in Tank Role."
+        ]
+      }
+    ],
     "mod_slots": [
       [
         "Armoring"
@@ -692,9 +1246,9 @@
     "gear_type": "Utility",
     "name": "Distinguished Helmet of Speed",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Defense=21;Cooldown_Reduction=152;Cost_Discount=101",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=20;Non_Super_Stats=10|3=Defense=65;10% bonus to Energy Unlock. 20% in Tank Role.",
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -716,7 +1270,51 @@
     ],
     "icon_override": "Gear_Dist_Utility",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 21
+      },
+      {
+        "type": "Cooldown_Reduction",
+        "value": 152
+      },
+      {
+        "type": "Cost_Discount",
+        "value": 101
+      }
+    ],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 20
+          },
+          {
+            "type": "Non_Super_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Defense",
+            "value": 65
+          }
+        ],
+        "text": [
+          "10% bonus to Energy Unlock. 20% in Tank Role."
+        ]
+      }
+    ],
     "mod_slots": [
       [
         "Enhancement"
@@ -741,9 +1339,9 @@
     "gear_type": "Utility",
     "name": "Distinguished Helmet of  Efficiency",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Grants 8 Energy every 2 sec while in combat.;Defense=21;Cooldown_Reduction=51;Cost_Discount=152",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=20;Non_Super_Stats=10|3=Defense=65;10% bonus to Energy Unlock. 20% in Tank Role.",
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -765,7 +1363,53 @@
     ],
     "icon_override": "Gear_Dist_Utility",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 21
+      },
+      {
+        "type": "Cooldown_Reduction",
+        "value": 51
+      },
+      {
+        "type": "Cost_Discount",
+        "value": 152
+      }
+    ],
+    "bonus_text": [
+      "Grants 8 Energy every 2 sec while in combat."
+    ],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 20
+          },
+          {
+            "type": "Non_Super_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Defense",
+            "value": 65
+          }
+        ],
+        "text": [
+          "10% bonus to Energy Unlock. 20% in Tank Role."
+        ]
+      }
+    ],
     "mod_slots": [
       [
         "Enhancement"
@@ -790,9 +1434,9 @@
     "gear_type": "Offense",
     "name": "Virtuous Gauntlets of Precision",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Defense=21;Critical_Strike=21;Critical_Severity=2.5",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=15;Resistance=10|3=Healing_Bonus=40;10% bonus to Energy Unlock. 20% in Support Role.",
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -814,7 +1458,51 @@
     ],
     "icon_override": "Gear_Virt_Offense",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 21
+      },
+      {
+        "type": "Critical_Strike",
+        "value": 21
+      },
+      {
+        "type": "Critical_Severity",
+        "value": 2.5
+      }
+    ],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 15
+          },
+          {
+            "type": "Resistance",
+            "value": 10
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Healing_Bonus",
+            "value": 40
+          }
+        ],
+        "text": [
+          "10% bonus to Energy Unlock. 20% in Support Role."
+        ]
+      }
+    ],
     "mod_slots": [
       [
         "Enhancement"
@@ -839,9 +1527,9 @@
     "gear_type": "Offense",
     "name": "Virtuous Gauntlets of Healing",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Defense=21;Healing_Bonus=15;Primary_Superstat=13",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=15;Resistance=10|3=Healing_Bonus=40;10% bonus to Energy Unlock. 20% in Support Role.",
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -863,7 +1551,51 @@
     ],
     "icon_override": "Gear_Virt_Offense",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 21
+      },
+      {
+        "type": "Healing_Bonus",
+        "value": 15
+      },
+      {
+        "type": "Primary_Superstat",
+        "value": 13
+      }
+    ],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 15
+          },
+          {
+            "type": "Resistance",
+            "value": 10
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Healing_Bonus",
+            "value": 40
+          }
+        ],
+        "text": [
+          "10% bonus to Energy Unlock. 20% in Support Role."
+        ]
+      }
+    ],
     "mod_slots": [
       [
         "Enhancement"
@@ -888,9 +1620,9 @@
     "gear_type": "Offense",
     "name": "Virtuous Gauntlets of Placation",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Defense=21;Healing_Bonus=15;Threat=-15",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=15;Resistance=10|3=Healing_Bonus=40;10% bonus to Energy Unlock. 20% in Support Role.",
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -912,7 +1644,51 @@
     ],
     "icon_override": "Gear_Virt_Offense",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 21
+      },
+      {
+        "type": "Healing_Bonus",
+        "value": 15
+      },
+      {
+        "type": "Threat",
+        "value": -15
+      }
+    ],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 15
+          },
+          {
+            "type": "Resistance",
+            "value": 10
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Healing_Bonus",
+            "value": 40
+          }
+        ],
+        "text": [
+          "10% bonus to Energy Unlock. 20% in Support Role."
+        ]
+      }
+    ],
     "mod_slots": [
       [
         "Enhancement"
@@ -937,9 +1713,9 @@
     "gear_type": "Defense",
     "name": "Virtuous Armor of Fitness",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Defense=32;Max_HP=369;KnockRepel_Resistance=100",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=15;Resistance=10|3=Healing_Bonus=40;10% bonus to Energy Unlock. 20% in Support Role.",
     "mod_slot_1": [
       "Armoring"
     ],
@@ -961,7 +1737,51 @@
     ],
     "icon_override": "Gear_Virt_Defense",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 32
+      },
+      {
+        "type": "Max_HP",
+        "value": 369
+      },
+      {
+        "type": "KnockRepel_Resistance",
+        "value": 100
+      }
+    ],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 15
+          },
+          {
+            "type": "Resistance",
+            "value": 10
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Healing_Bonus",
+            "value": 40
+          }
+        ],
+        "text": [
+          "10% bonus to Energy Unlock. 20% in Support Role."
+        ]
+      }
+    ],
     "mod_slots": [
       [
         "Armoring"
@@ -986,9 +1806,9 @@
     "gear_type": "Defense",
     "name": "Virtuous Armor of Elusiveness",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Defense=21;Dodge_Chance=152",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=15;Resistance=10|3=Healing_Bonus=40;10% bonus to Energy Unlock. 20% in Support Role.",
     "mod_slot_1": [
       "Armoring"
     ],
@@ -1010,7 +1830,47 @@
     ],
     "icon_override": "Gear_Virt_Defense",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 21
+      },
+      {
+        "type": "Dodge_Chance",
+        "value": 152
+      }
+    ],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 15
+          },
+          {
+            "type": "Resistance",
+            "value": 10
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Healing_Bonus",
+            "value": 40
+          }
+        ],
+        "text": [
+          "10% bonus to Energy Unlock. 20% in Support Role."
+        ]
+      }
+    ],
     "mod_slots": [
       [
         "Armoring"
@@ -1033,11 +1893,11 @@
     "gear_set": "Virtuous",
     "gear_slot": "Primary",
     "gear_type": "Defense",
-    "name": "Virtuous  Armor of Agility",
+    "name": "Virtuous Armor of Agility",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Defense=21;Dodge_Chance=76;Avoidance=76",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=15;Resistance=10|3=Healing_Bonus=40;10% bonus to Energy Unlock. 20% in Support Role.",
     "mod_slot_1": [
       "Armoring"
     ],
@@ -1059,7 +1919,51 @@
     ],
     "icon_override": "Gear_Virt_Defense",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 21
+      },
+      {
+        "type": "Dodge_Chance",
+        "value": 76
+      },
+      {
+        "type": "Avoidance",
+        "value": 76
+      }
+    ],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 15
+          },
+          {
+            "type": "Resistance",
+            "value": 10
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Healing_Bonus",
+            "value": 40
+          }
+        ],
+        "text": [
+          "10% bonus to Energy Unlock. 20% in Support Role."
+        ]
+      }
+    ],
     "mod_slots": [
       [
         "Armoring"
@@ -1084,9 +1988,9 @@
     "gear_type": "Utility",
     "name": "Virtuous Helmet of Speed",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Defense=21;Cooldown_Reduction=152;Cost_Discount=101",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=15;Resistance=10|3=Healing_Bonus=40;10% bonus to Energy Unlock. 20% in Support Role.",
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -1108,7 +2012,51 @@
     ],
     "icon_override": "Gear_Virt_Utility",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 21
+      },
+      {
+        "type": "Cooldown_Reduction",
+        "value": 152
+      },
+      {
+        "type": "Cost_Discount",
+        "value": 101
+      }
+    ],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 15
+          },
+          {
+            "type": "Resistance",
+            "value": 10
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Healing_Bonus",
+            "value": 40
+          }
+        ],
+        "text": [
+          "10% bonus to Energy Unlock. 20% in Support Role."
+        ]
+      }
+    ],
     "mod_slots": [
       [
         "Enhancement"
@@ -1131,11 +2079,11 @@
     "gear_set": "Virtuous",
     "gear_slot": "Primary",
     "gear_type": "Utility",
-    "name": "Virtuous  Helmet of  Efficiency",
+    "name": "Virtuous Helmet of Efficiency",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Grants 8 Energy every 2 sec while in combat.;Defense=21;Cooldown_Reduction=51;Cost_Discount=152",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=15;Resistance=10|3=Healing_Bonus=40;10% bonus to Energy Unlock. 20% in Support Role.",
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -1157,7 +2105,53 @@
     ],
     "icon_override": "Gear_Virt_Utility",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 21
+      },
+      {
+        "type": "Cooldown_Reduction",
+        "value": 51
+      },
+      {
+        "type": "Cost_Discount",
+        "value": 152
+      }
+    ],
+    "bonus_text": [
+      "Grants 8 Energy every 2 sec while in combat."
+    ],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 15
+          },
+          {
+            "type": "Resistance",
+            "value": 10
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Healing_Bonus",
+            "value": 40
+          }
+        ],
+        "text": [
+          "10% bonus to Energy Unlock. 20% in Support Role."
+        ]
+      }
+    ],
     "mod_slots": [
       [
         "Enhancement"
@@ -1182,9 +2176,9 @@
     "gear_type": "Offense",
     "name": "Cosmic Strike",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Whenever you deal direct damage, applies Cosmic Strike, increasing your Offense by 20 for I0 sec. This effect can occur once every 2 sec. Stacks up to 10 times. + At 10 stacks, increases your chance to critically hit by 100% and sets your critical severity to 150% for 5 sec or until you directly damage a target. Once this effect is used, expires all stacks of Cosmic Strike.;Super_Stats=20",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=10|3=Offense=100;All_Stats=10;Threat=-10",
     "mod_slot_1": [
       "Offense"
     ],
@@ -1199,7 +2193,47 @@
     ],
     "icon_override": "Gear_Cosmic_Strike",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Super_Stats",
+        "value": 20
+      }
+    ],
+    "bonus_text": [
+      "Whenever you deal direct damage, applies Cosmic Strike, increasing your Offense by 20 for I0 sec. This effect can occur once every 2 sec. Stacks up to 10 times. + At 10 stacks, increases your chance to critically hit by 100% and sets your critical severity to 150% for 5 sec or until you directly damage a target. Once this effect is used, expires all stacks of Cosmic Strike."
+    ],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Offense",
+            "value": 100
+          },
+          {
+            "type": "All_Stats",
+            "value": 10
+          },
+          {
+            "type": "Threat",
+            "value": -10
+          }
+        ],
+        "text": []
+      }
+    ],
     "mod_slots": [
       [
         "Offense"
@@ -1213,9 +2247,9 @@
     "gear_type": "Offense",
     "name": "Cosmic Ambition",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "If you hold block for at least 2 sec, after releasing, increases your resistance to damage by 50% and increases your resistance to Knock effects by 100% for 10 sec. + While this effect is active, all effects and damage against you will act as if you are blocking. This does not provide any of the effect bonuses your block may grant you, but will change how damage and effects are applied to you from certain powers. + All effects expire when you take direct damage and cannot be triggered again for 10 sec. + When this effect expires, applies Cosmic Threat to you, increasing your resistance to Hold effects by 100%, and further increasing your Threat Generation by 10% for 10 sec.;Super_Stats=20",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=10|3=defense=30;All_Stats=10;Threat=10",
     "mod_slot_1": [
       "Offense"
     ],
@@ -1230,7 +2264,47 @@
     ],
     "icon_override": "Gear_Cosmic_Ambition",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Super_Stats",
+        "value": 20
+      }
+    ],
+    "bonus_text": [
+      "If you hold block for at least 2 sec, after releasing, increases your resistance to damage by 50% and increases your resistance to Knock effects by 100% for 10 sec. + While this effect is active, all effects and damage against you will act as if you are blocking. This does not provide any of the effect bonuses your block may grant you, but will change how damage and effects are applied to you from certain powers. + All effects expire when you take direct damage and cannot be triggered again for 10 sec. + When this effect expires, applies Cosmic Threat to you, increasing your resistance to Hold effects by 100%, and further increasing your Threat Generation by 10% for 10 sec."
+    ],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "defense",
+            "value": 30
+          },
+          {
+            "type": "All_Stats",
+            "value": 10
+          },
+          {
+            "type": "Threat",
+            "value": 10
+          }
+        ],
+        "text": []
+      }
+    ],
     "mod_slots": [
       [
         "Offense"
@@ -1244,9 +2318,9 @@
     "gear_type": "Offense",
     "name": "Cosmic Presence",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "If an ally is below 50% health, your direct heals heal for an additional 10% on that target. If an ally is below 10% health, your direct heals heal power is a Maintain, for an additional 100%. + If the instead causes one application of the power to heal for an additional 950%. No additional bonus healing from this effect can occur again for 10 sec.;Super_Stats=20",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=10|3=defense=30;All_Stats=10;Threat=-10",
     "mod_slot_1": [
       "Offense"
     ],
@@ -1261,7 +2335,47 @@
     ],
     "icon_override": "Gear_Cosmic_Presence",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Super_Stats",
+        "value": 20
+      }
+    ],
+    "bonus_text": [
+      "If an ally is below 50% health, your direct heals heal for an additional 10% on that target. If an ally is below 10% health, your direct heals heal power is a Maintain, for an additional 100%. + If the instead causes one application of the power to heal for an additional 950%. No additional bonus healing from this effect can occur again for 10 sec."
+    ],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "defense",
+            "value": 30
+          },
+          {
+            "type": "All_Stats",
+            "value": 10
+          },
+          {
+            "type": "Threat",
+            "value": -10
+          }
+        ],
+        "text": []
+      }
+    ],
     "mod_slots": [
       [
         "Offense"
@@ -1275,9 +2389,9 @@
     "gear_type": "Offense",
     "name": "Cosmic Wonder",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Reduces the cooldown on your Crowd Control and Summon powers by 1 sec every time you directly damage or heal a target. This effect can occur once every 2 sec. Does not affect Ultimate powers.;Super_Stats=20",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=10|3=defense=30;All_Stats=10;Threat=-10",
     "mod_slot_1": [
       "Offense"
     ],
@@ -1292,7 +2406,47 @@
     ],
     "icon_override": "Gear_Cosmic_Wonder",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Super_Stats",
+        "value": 20
+      }
+    ],
+    "bonus_text": [
+      "Reduces the cooldown on your Crowd Control and Summon powers by 1 sec every time you directly damage or heal a target. This effect can occur once every 2 sec. Does not affect Ultimate powers."
+    ],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "defense",
+            "value": 30
+          },
+          {
+            "type": "All_Stats",
+            "value": 10
+          },
+          {
+            "type": "Threat",
+            "value": -10
+          }
+        ],
+        "text": []
+      }
+    ],
     "mod_slots": [
       [
         "Offense"
@@ -1306,9 +2460,9 @@
     "gear_type": "Offense",
     "name": "Cosmic Fang of Wrath",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Defense=6.5;Offense=17;Primary_Superstat=46",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
     "mod_slot_1": [
       "Offense"
     ],
@@ -1323,7 +2477,45 @@
     ],
     "icon_override": "Gear_Cosmic_Fang",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 6.5
+      },
+      {
+        "type": "Offense",
+        "value": 17
+      },
+      {
+        "type": "Primary_Superstat",
+        "value": 46
+      }
+    ],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "All_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      }
+    ],
     "mod_slots": [
       [
         "Offense"
@@ -1337,9 +2529,9 @@
     "gear_type": "Offense",
     "name": "Cosmic Fang of Rage",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Defense=6.5;Offense=17;Secondary_Superstats=46",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
     "mod_slot_1": [
       "Offense"
     ],
@@ -1354,7 +2546,45 @@
     ],
     "icon_override": "Gear_Cosmic_Fang",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 6.5
+      },
+      {
+        "type": "Offense",
+        "value": 17
+      },
+      {
+        "type": "Secondary_Superstats",
+        "value": 46
+      }
+    ],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "All_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      }
+    ],
     "mod_slots": [
       [
         "Offense"
@@ -1368,9 +2598,9 @@
     "gear_type": "Defense",
     "name": "Cosmic Talons of Wrath",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Defense=9.7;Primary_Superstat=46",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
     "mod_slot_1": [
       "Defense"
     ],
@@ -1385,7 +2615,41 @@
     ],
     "icon_override": "Gear_Cosmic_Talon",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 9.7
+      },
+      {
+        "type": "Primary_Superstat",
+        "value": 46
+      }
+    ],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "All_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      }
+    ],
     "mod_slots": [
       [
         "Defense"
@@ -1399,9 +2663,9 @@
     "gear_type": "Defense",
     "name": "Cosmic Talons of Rage",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Defense=9.7;Secondary_Superstats=46",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
     "mod_slot_1": [
       "Defense"
     ],
@@ -1416,7 +2680,41 @@
     ],
     "icon_override": "Gear_Cosmic_Talon",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 9.7
+      },
+      {
+        "type": "Secondary_Superstats",
+        "value": 46
+      }
+    ],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "All_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      }
+    ],
     "mod_slots": [
       [
         "Defense"
@@ -1430,9 +2728,9 @@
     "gear_type": "Utility",
     "name": "Cosmic Vision of Wrath",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Defense=9.7;Cooldown_Reduction=46;Cost_Discount=46;Primary_Superstat=46",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
     "mod_slot_1": [
       "Utility"
     ],
@@ -1447,7 +2745,49 @@
     ],
     "icon_override": "Gear_Cosmic_Vision",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 9.7
+      },
+      {
+        "type": "Cooldown_Reduction",
+        "value": 46
+      },
+      {
+        "type": "Cost_Discount",
+        "value": 46
+      },
+      {
+        "type": "Primary_Superstat",
+        "value": 46
+      }
+    ],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "All_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      }
+    ],
     "mod_slots": [
       [
         "Utility"
@@ -1461,9 +2801,9 @@
     "gear_type": "Utility",
     "name": "Cosmic Vision of Rage",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Defense=9.7;Cooldown_Reduction=46;Cost_Discount=46;Secondary_Superstats=46",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
     "mod_slot_1": [
       "Utility"
     ],
@@ -1478,7 +2818,49 @@
     ],
     "icon_override": "Gear_Cosmic_Vision",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 9.7
+      },
+      {
+        "type": "Cooldown_Reduction",
+        "value": 46
+      },
+      {
+        "type": "Cost_Discount",
+        "value": 46
+      },
+      {
+        "type": "Secondary_Superstats",
+        "value": 46
+      }
+    ],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "All_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      }
+    ],
     "mod_slots": [
       [
         "Utility"
@@ -1492,9 +2874,9 @@
     "gear_type": "Offense",
     "name": "Grond's Onslaught",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Increases the base damage of your direct attacks by 5%. + Further increases your damage by 1% for 10 sec if you fully charge a direct damage power. Stacks up to 5 times.;Defense=7.1",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=10|3=Offense=200",
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -1508,7 +2890,39 @@
     ],
     "icon_override": "Gear_OV_Grond",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 7.1
+      }
+    ],
+    "bonus_text": [
+      "Increases the base damage of your direct attacks by 5%. + Further increases your damage by 1% for 10 sec if you fully charge a direct damage power. Stacks up to 5 times."
+    ],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Offense",
+            "value": 200
+          }
+        ],
+        "text": []
+      }
+    ],
     "mod_slots": [
       [
         "Enhancement"
@@ -1522,9 +2936,9 @@
     "gear_type": "Offense",
     "name": "Gravitar's Onslaught",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Increases the base damage of your direct attacks by 5%. + Further increases your damage by 1% for 10 sec if you fully maintain a direct damage power. Stacks up to 5 times.;Defense=7.1",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=10|3=Offense=200",
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -1538,7 +2952,39 @@
     ],
     "icon_override": "Gear_OV_Gravitar",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 7.1
+      }
+    ],
+    "bonus_text": [
+      "Increases the base damage of your direct attacks by 5%. + Further increases your damage by 1% for 10 sec if you fully maintain a direct damage power. Stacks up to 5 times."
+    ],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Offense",
+            "value": 200
+          }
+        ],
+        "text": []
+      }
+    ],
     "mod_slots": [
       [
         "Enhancement"
@@ -1552,9 +2998,9 @@
     "gear_type": "Offense",
     "name": "Medusa's Onslaught",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Increases the base damage of your Combo powerss by 5%. + Further increases your Combo damage by 5% for 10 sec if you complete a Combo. Stacks up to 9 times. + Your non-combo direct attack base damge is decreased by 50%. Does not affect Ultimate powers.;Defense=7.1",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=10|3=Offense=200",
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -1568,7 +3014,39 @@
     ],
     "icon_override": "Gear_OV_Medusa",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 7.1
+      }
+    ],
+    "bonus_text": [
+      "Increases the base damage of your Combo powerss by 5%. + Further increases your Combo damage by 5% for 10 sec if you complete a Combo. Stacks up to 9 times. + Your non-combo direct attack base damge is decreased by 50%. Does not affect Ultimate powers."
+    ],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Offense",
+            "value": 200
+          }
+        ],
+        "text": []
+      }
+    ],
     "mod_slots": [
       [
         "Enhancement"
@@ -1582,9 +3060,9 @@
     "gear_type": "Offense",
     "name": "Onslaught Gloves of the Slicer",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Direct melee damage increases your melee base damage by 5%. This amount is increased by 1% for 10 sec if your target is affected by your Damage Resistance Debuff. This can occur once every 1 sec and stacks up to 5 times.;Defense=7.1",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=10|3=Offense=200",
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -1598,7 +3076,39 @@
     ],
     "icon_override": "Gear_OV_Slicer",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 7.1
+      }
+    ],
+    "bonus_text": [
+      "Direct melee damage increases your melee base damage by 5%. This amount is increased by 1% for 10 sec if your target is affected by your Damage Resistance Debuff. This can occur once every 1 sec and stacks up to 5 times."
+    ],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Offense",
+            "value": 200
+          }
+        ],
+        "text": []
+      }
+    ],
     "mod_slots": [
       [
         "Enhancement"
@@ -1612,9 +3122,9 @@
     "gear_type": "Offense",
     "name": "Onslaught Gloves of the Sniper",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Direct ranged damage increases your range base damage by 5%. This amount is increased by 1% for 10 sec if you attack from more than 20ft away. This can occur once every 1 sec and stacks up to 5 times.;Defense=7.1",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=10|3=Offense=200",
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -1628,7 +3138,39 @@
     ],
     "icon_override": "Gear_OV_Sniper",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 7.1
+      }
+    ],
+    "bonus_text": [
+      "Direct ranged damage increases your range base damage by 5%. This amount is increased by 1% for 10 sec if you attack from more than 20ft away. This can occur once every 1 sec and stacks up to 5 times."
+    ],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Offense",
+            "value": 200
+          }
+        ],
+        "text": []
+      }
+    ],
     "mod_slots": [
       [
         "Enhancement"
@@ -1642,9 +3184,9 @@
     "gear_type": "Offense",
     "name": "Onslaught Gloves of the Savior",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "When you gain energy, up to 5 allies within 50ft gain 20% of that energy.;Threat=-20;Defense=7.1",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=10|3=Max_HP=1000",
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -1658,7 +3200,43 @@
     ],
     "icon_override": "Gear_OV_Savior",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Threat",
+        "value": -20
+      },
+      {
+        "type": "Defense",
+        "value": 7.1
+      }
+    ],
+    "bonus_text": [
+      "When you gain energy, up to 5 allies within 50ft gain 20% of that energy."
+    ],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Max_HP",
+            "value": 1000
+          }
+        ],
+        "text": []
+      }
+    ],
     "mod_slots": [
       [
         "Enhancement"
@@ -1672,9 +3250,9 @@
     "gear_type": "Offense",
     "name": "Onslaught Gloves of the Defender",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "3% of your direct damage pre-damage mitigation is applied to you as a Shield for 10 sec. Stacks up to 10 times.;Threat=30;Defense=7.1",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=10|3=Max_HP=1000",
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -1688,7 +3266,43 @@
     ],
     "icon_override": "Gear_OV_Defender",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Threat",
+        "value": 30
+      },
+      {
+        "type": "Defense",
+        "value": 7.1
+      }
+    ],
+    "bonus_text": [
+      "3% of your direct damage pre-damage mitigation is applied to you as a Shield for 10 sec. Stacks up to 10 times."
+    ],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Max_HP",
+            "value": 1000
+          }
+        ],
+        "text": []
+      }
+    ],
     "mod_slots": [
       [
         "Enhancement"
@@ -1702,9 +3316,9 @@
     "gear_type": "Defense",
     "name": "Onslaught Tights of Freedom",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Defense=7.1;CC_Resistance=51",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=10",
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -1718,7 +3332,31 @@
     ],
     "icon_override": "Gear_OV_Freedom",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 7.1
+      },
+      {
+        "type": "CC_Resistance",
+        "value": 51
+      }
+    ],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      }
+    ],
     "mod_slots": [
       [
         "Enhancement"
@@ -1732,9 +3370,9 @@
     "gear_type": "Defense",
     "name": "Onslaught Tights of Agility",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Defense=7.1;Dodge_Chance=76;Avoidance=76",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=10",
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -1748,7 +3386,35 @@
     ],
     "icon_override": "Gear_OV_Agility",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 7.1
+      },
+      {
+        "type": "Dodge_Chance",
+        "value": 76
+      },
+      {
+        "type": "Avoidance",
+        "value": 76
+      }
+    ],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      }
+    ],
     "mod_slots": [
       [
         "Enhancement"
@@ -1762,9 +3428,9 @@
     "gear_type": "Defense",
     "name": "Onslaught Tights of Fitness",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Defense=14;Max_HP=553",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=10",
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -1778,7 +3444,31 @@
     ],
     "icon_override": "Gear_OV_Fitness",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 14
+      },
+      {
+        "type": "Max_HP",
+        "value": 553
+      }
+    ],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      }
+    ],
     "mod_slots": [
       [
         "Enhancement"
@@ -1792,9 +3482,9 @@
     "gear_type": "Utility",
     "name": "Onslaught Mask of Speed",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Defense=7.1;Cooldown_Reduction=152;Cost_Discount=101",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=10",
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -1808,7 +3498,35 @@
     ],
     "icon_override": "Gear_OV_Speed",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 7.1
+      },
+      {
+        "type": "Cooldown_Reduction",
+        "value": 152
+      },
+      {
+        "type": "Cost_Discount",
+        "value": 101
+      }
+    ],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      }
+    ],
     "mod_slots": [
       [
         "Enhancement"
@@ -1822,9 +3540,9 @@
     "gear_type": "Utility",
     "name": "Onslaught Mask of Efficiency",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Defense=7.1;Cooldown_Reduction=51;Cost_Discount=202",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=10",
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -1838,7 +3556,35 @@
     ],
     "icon_override": "Gear_OV_Efficiency",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 7.1
+      },
+      {
+        "type": "Cooldown_Reduction",
+        "value": 51
+      },
+      {
+        "type": "Cost_Discount",
+        "value": 202
+      }
+    ],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      }
+    ],
     "mod_slots": [
       [
         "Enhancement"
@@ -1852,9 +3598,9 @@
     "gear_type": "Utility",
     "name": "Onslaught Mask of Energy",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Defense=7.1;Max_Energy=15;Cooldown_Reduction=51;Cost_Discount=51",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=10",
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -1868,7 +3614,39 @@
     ],
     "icon_override": "Gear_OV_Energy",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 7.1
+      },
+      {
+        "type": "Max_Energy",
+        "value": 15
+      },
+      {
+        "type": "Cooldown_Reduction",
+        "value": 51
+      },
+      {
+        "type": "Cost_Discount",
+        "value": 51
+      }
+    ],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      }
+    ],
     "mod_slots": [
       [
         "Enhancement"
@@ -1884,7 +3662,7 @@
     "gear_tooltip": null,
     "gear_bonus": null,
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "3=Max_HP=1000;Super_Stats=50;Reduces the cooldown on your Ultimate power by 2 sec when you fully Charge a power. Can be used once every 5 sec.",
     "mod_slot_1": [
       "Offense"
     ],
@@ -1899,6 +3677,27 @@
     "icon_override": "Gear_Rush",
     "is_disabled": false,
     "bonuses": [],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Max_HP",
+            "value": 1000
+          },
+          {
+            "type": "Super_Stats",
+            "value": 50
+          }
+        ],
+        "text": [
+          "Reduces the cooldown on your Ultimate power by 2 sec when you fully Charge a power. Can be used once every 5 sec."
+        ]
+      }
+    ],
     "mod_slots": [
       [
         "Offense"
@@ -1914,7 +3713,7 @@
     "gear_tooltip": null,
     "gear_bonus": null,
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "3=Max_HP=1000;Super_Stats=50;Reduces the cooldown on your Ultimate power by 2 sec when you fully Charge a power. Can be used once every 5 sec.",
     "mod_slot_1": [
       "Defense"
     ],
@@ -1929,6 +3728,27 @@
     "icon_override": "Gear_Miasma",
     "is_disabled": false,
     "bonuses": [],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Max_HP",
+            "value": 1000
+          },
+          {
+            "type": "Super_Stats",
+            "value": 50
+          }
+        ],
+        "text": [
+          "Reduces the cooldown on your Ultimate power by 2 sec when you fully Charge a power. Can be used once every 5 sec."
+        ]
+      }
+    ],
     "mod_slots": [
       [
         "Defense"
@@ -1944,7 +3764,7 @@
     "gear_tooltip": null,
     "gear_bonus": null,
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "3=Max_HP=1000;Super_Stats=50;Reduces the cooldown on your Ultimate power by 2 sec when you fully Charge a power. Can be used once every 5 sec.",
     "mod_slot_1": [
       "Utility"
     ],
@@ -1959,6 +3779,27 @@
     "icon_override": "Gear_Madness",
     "is_disabled": false,
     "bonuses": [],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Max_HP",
+            "value": 1000
+          },
+          {
+            "type": "Super_Stats",
+            "value": 50
+          }
+        ],
+        "text": [
+          "Reduces the cooldown on your Ultimate power by 2 sec when you fully Charge a power. Can be used once every 5 sec."
+        ]
+      }
+    ],
     "mod_slots": [
       [
         "Utility"
@@ -1974,7 +3815,7 @@
     "gear_tooltip": null,
     "gear_bonus": null,
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "3=Max_HP=1000;Super_Stats=50;Reduces the cooldown on your Ultimate power by 2 sec when you complete a Combo power. Can be used once every 5 sec.",
     "mod_slot_1": [
       "Offense"
     ],
@@ -1989,6 +3830,27 @@
     "icon_override": "Gear_Rush",
     "is_disabled": false,
     "bonuses": [],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Max_HP",
+            "value": 1000
+          },
+          {
+            "type": "Super_Stats",
+            "value": 50
+          }
+        ],
+        "text": [
+          "Reduces the cooldown on your Ultimate power by 2 sec when you complete a Combo power. Can be used once every 5 sec."
+        ]
+      }
+    ],
     "mod_slots": [
       [
         "Offense"
@@ -2004,7 +3866,7 @@
     "gear_tooltip": null,
     "gear_bonus": null,
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "3=Max_HP=1000;Super_Stats=50;Reduces the cooldown on your Ultimate power by 2 sec when you complete a Combo power. Can be used once every 5 sec.",
     "mod_slot_1": [
       "Defense"
     ],
@@ -2019,6 +3881,27 @@
     "icon_override": "Gear_Miasma",
     "is_disabled": false,
     "bonuses": [],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Max_HP",
+            "value": 1000
+          },
+          {
+            "type": "Super_Stats",
+            "value": 50
+          }
+        ],
+        "text": [
+          "Reduces the cooldown on your Ultimate power by 2 sec when you complete a Combo power. Can be used once every 5 sec."
+        ]
+      }
+    ],
     "mod_slots": [
       [
         "Defense"
@@ -2034,7 +3917,7 @@
     "gear_tooltip": null,
     "gear_bonus": null,
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "3=Max_HP=1000;Super_Stats=50;Reduces the cooldown on your Ultimate power by 2 sec when you complete a Combo power. Can be used once every 5 sec.",
     "mod_slot_1": [
       "Utility"
     ],
@@ -2049,6 +3932,27 @@
     "icon_override": "Gear_Madness",
     "is_disabled": false,
     "bonuses": [],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Max_HP",
+            "value": 1000
+          },
+          {
+            "type": "Super_Stats",
+            "value": 50
+          }
+        ],
+        "text": [
+          "Reduces the cooldown on your Ultimate power by 2 sec when you complete a Combo power. Can be used once every 5 sec."
+        ]
+      }
+    ],
     "mod_slots": [
       [
         "Utility"
@@ -2064,7 +3968,7 @@
     "gear_tooltip": null,
     "gear_bonus": null,
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "3=Max_HP=1000;Super_Stats=50;Reduces the cooldown on your Ultimate power by 2 sec when you fully Maintain a power. Can be used once every 5 sec.",
     "mod_slot_1": [
       "Offense"
     ],
@@ -2079,6 +3983,27 @@
     "icon_override": "Gear_Rush",
     "is_disabled": false,
     "bonuses": [],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Max_HP",
+            "value": 1000
+          },
+          {
+            "type": "Super_Stats",
+            "value": 50
+          }
+        ],
+        "text": [
+          "Reduces the cooldown on your Ultimate power by 2 sec when you fully Maintain a power. Can be used once every 5 sec."
+        ]
+      }
+    ],
     "mod_slots": [
       [
         "Offense"
@@ -2094,7 +4019,7 @@
     "gear_tooltip": null,
     "gear_bonus": null,
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "3=Max_HP=1000;Super_Stats=50;Reduces the cooldown on your Ultimate power by 2 sec when you fully Maintain a power. Can be used once every 5 sec.",
     "mod_slot_1": [
       "Defense"
     ],
@@ -2109,6 +4034,27 @@
     "icon_override": "Gear_Miasma",
     "is_disabled": false,
     "bonuses": [],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Max_HP",
+            "value": 1000
+          },
+          {
+            "type": "Super_Stats",
+            "value": 50
+          }
+        ],
+        "text": [
+          "Reduces the cooldown on your Ultimate power by 2 sec when you fully Maintain a power. Can be used once every 5 sec."
+        ]
+      }
+    ],
     "mod_slots": [
       [
         "Defense"
@@ -2124,7 +4070,7 @@
     "gear_tooltip": null,
     "gear_bonus": null,
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "3=Max_HP=1000;Super_Stats=50;Reduces the cooldown on your Ultimate power by 2 sec when you fully Maintain a power. Can be used once every 5 sec.",
     "mod_slot_1": [
       "Utility"
     ],
@@ -2139,6 +4085,27 @@
     "icon_override": "Gear_Madness",
     "is_disabled": false,
     "bonuses": [],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Max_HP",
+            "value": 1000
+          },
+          {
+            "type": "Super_Stats",
+            "value": 50
+          }
+        ],
+        "text": [
+          "Reduces the cooldown on your Ultimate power by 2 sec when you fully Maintain a power. Can be used once every 5 sec."
+        ]
+      }
+    ],
     "mod_slots": [
       [
         "Utility"
@@ -2152,9 +4119,9 @@
     "gear_type": "Offense",
     "name": "Agressive Belt of Determination",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Dealing direct damage increases your base damage by 1% for 10 sec. This effect can stack up to 5 times.;Threat=-10;Defense=6.5",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -2168,7 +4135,43 @@
     ],
     "icon_override": "Gear_Determination_Offense_Alt",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Threat",
+        "value": -10
+      },
+      {
+        "type": "Defense",
+        "value": 6.5
+      }
+    ],
+    "bonus_text": [
+      "Dealing direct damage increases your base damage by 1% for 10 sec. This effect can stack up to 5 times."
+    ],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "All_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      }
+    ],
     "mod_slots": [
       [
         "Enhancement"
@@ -2182,9 +4185,9 @@
     "gear_type": "Offense",
     "name": "Supportive Belt of Determination",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Whenever you use a direct healing ability, increases your Healing output and your resistance to all damage by 4% for IO sec. This effect can stack up to 5 times.;Threat=10;Defense=6.5",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -2198,7 +4201,43 @@
     ],
     "icon_override": "Gear_Determination_Offense_Alt",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Threat",
+        "value": 10
+      },
+      {
+        "type": "Defense",
+        "value": 6.5
+      }
+    ],
+    "bonus_text": [
+      "Whenever you use a direct healing ability, increases your Healing output and your resistance to all damage by 4% for IO sec. This effect can stack up to 5 times."
+    ],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "All_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      }
+    ],
     "mod_slots": [
       [
         "Enhancement"
@@ -2212,9 +4251,9 @@
     "gear_type": "Offense",
     "name": "Protective Belt of Determination",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "While blocking, you are healed for 250 Health every 2 sec.;Threat=10;Defense=6.5",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -2228,7 +4267,43 @@
     ],
     "icon_override": "Gear_Determination_Offense_Alt",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Threat",
+        "value": 10
+      },
+      {
+        "type": "Defense",
+        "value": 6.5
+      }
+    ],
+    "bonus_text": [
+      "While blocking, you are healed for 250 Health every 2 sec."
+    ],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "All_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      }
+    ],
     "mod_slots": [
       [
         "Enhancement"
@@ -2242,9 +4317,9 @@
     "gear_type": "Offense",
     "name": "Impacting Belt of Determination",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Defense=6.5;Offense=25",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -2259,7 +4334,41 @@
     ],
     "icon_override": "Gear_Determination_Offense",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 6.5
+      },
+      {
+        "type": "Offense",
+        "value": 25
+      }
+    ],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "All_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      }
+    ],
     "mod_slots": [
       [
         "Enhancement"
@@ -2273,9 +4382,9 @@
     "gear_type": "Offense",
     "name": "Rejuvinating Belt of Determination",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Defense=6.5;Offense=17;Healing_Bonus=14",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -2290,7 +4399,45 @@
     ],
     "icon_override": "Gear_Determination_Offense",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 6.5
+      },
+      {
+        "type": "Offense",
+        "value": 17
+      },
+      {
+        "type": "Healing_Bonus",
+        "value": 14
+      }
+    ],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "All_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      }
+    ],
     "mod_slots": [
       [
         "Enhancement"
@@ -2304,9 +4451,9 @@
     "gear_type": "Offense",
     "name": "Critical Belt of Determination",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Defense=6.5;Offense=17;Critical_Strike=47",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -2321,7 +4468,45 @@
     ],
     "icon_override": "Gear_Determination_Offense",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 6.5
+      },
+      {
+        "type": "Offense",
+        "value": 17
+      },
+      {
+        "type": "Critical_Strike",
+        "value": 47
+      }
+    ],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "All_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      }
+    ],
     "mod_slots": [
       [
         "Enhancement"
@@ -2335,9 +4520,9 @@
     "gear_type": "Defense",
     "name": "Agility Heart of Determination",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Defense=6.5;Dodge_Chance=35;Avoidance=35",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -2352,7 +4537,45 @@
     ],
     "icon_override": "Gear_Determination_Defense",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 6.5
+      },
+      {
+        "type": "Dodge_Chance",
+        "value": 35
+      },
+      {
+        "type": "Avoidance",
+        "value": 35
+      }
+    ],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "All_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      }
+    ],
     "mod_slots": [
       [
         "Enhancement"
@@ -2366,9 +4589,9 @@
     "gear_type": "Defense",
     "name": "Armored Heart of Determination",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Defense=16",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -2383,7 +4606,37 @@
     ],
     "icon_override": "Gear_Determination_Defense",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 16
+      }
+    ],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "All_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      }
+    ],
     "mod_slots": [
       [
         "Enhancement"
@@ -2397,9 +4650,9 @@
     "gear_type": "Defense",
     "name": "Bolstering Heart of Determination",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Defense=9.7;Max_HP=338",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -2414,7 +4667,41 @@
     ],
     "icon_override": "Gear_Determination_Defense",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 9.7
+      },
+      {
+        "type": "Max_HP",
+        "value": 338
+      }
+    ],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "All_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      }
+    ],
     "mod_slots": [
       [
         "Enhancement"
@@ -2428,9 +4715,9 @@
     "gear_type": "Utility",
     "name": "Hastened Eyepiece of Determination",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Defense=6.5;Cooldown_Reduction=93;Cost_Discount=46",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -2445,7 +4732,45 @@
     ],
     "icon_override": "Gear_Determination_Utility",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 6.5
+      },
+      {
+        "type": "Cooldown_Reduction",
+        "value": 93
+      },
+      {
+        "type": "Cost_Discount",
+        "value": 46
+      }
+    ],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "All_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      }
+    ],
     "mod_slots": [
       [
         "Enhancement"
@@ -2459,9 +4784,9 @@
     "gear_type": "Utility",
     "name": "Efficient Eyepiece of Determination",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Defense=6.5;Cooldown_Reduction=46;Cost_Discount=93",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -2476,7 +4801,45 @@
     ],
     "icon_override": "Gear_Determination_Utility",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 6.5
+      },
+      {
+        "type": "Cooldown_Reduction",
+        "value": 46
+      },
+      {
+        "type": "Cost_Discount",
+        "value": 93
+      }
+    ],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "All_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      }
+    ],
     "mod_slots": [
       [
         "Enhancement"
@@ -2490,9 +4853,9 @@
     "gear_type": "Utility",
     "name": "Bolstering Eyepiece of Determination",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Defense=6.5;Max_HP=338Cooldown_Reduction=46;Cost_Discount=46",
     "set_tooltip": null,
-    "set_bonus": null,
+    "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -2507,7 +4870,45 @@
     ],
     "icon_override": "Gear_Determination_Utility",
     "is_disabled": false,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 6.5
+      },
+      {
+        "type": "Max_HP",
+        "value": "338Cooldown_Reduction=46"
+      },
+      {
+        "type": "Cost_Discount",
+        "value": 46
+      }
+    ],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      },
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "All_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      }
+    ],
     "mod_slots": [
       [
         "Enhancement"

@@ -81,16 +81,56 @@ function TextTooltip({ text }: { text: string }) {
   const lines = text
     .replace(/<br\s*\/?>/giu, "\n")
     .split(/\r?\n/u);
+  const sectionHeadingPattern = /^(Set Bonus|Piece Bonus|Source):\s*(.*)$/iu;
+  const prefixedLinePattern = /^(\d+\s+pieces:)\s*(.*)$/iu;
 
   return (
-    <>
-      {lines.map((line, index) => (
-        <span key={`${line}-${index}`}>
-          {index > 0 ? <br /> : null}
-          {line}
-        </span>
-      ))}
-    </>
+    <div className="text-tooltip">
+      {lines.map((line, index) => {
+        const sectionHeadingMatch = line.match(sectionHeadingPattern);
+        const prefixedLineMatch = line.match(prefixedLinePattern);
+
+        if (sectionHeadingMatch) {
+          const sectionKey = sectionHeadingMatch[1]
+            .toLowerCase()
+            .replace(/\s+/gu, "-");
+
+          return (
+            <div
+              className={[
+                "text-tooltip__section-heading",
+                `text-tooltip__section-heading--${sectionKey}`,
+              ].join(" ")}
+              key={`${line}-${index}`}
+            >
+              <strong>{sectionHeadingMatch[1]}:</strong>
+              {sectionHeadingMatch[2] ? (
+                <span>{sectionHeadingMatch[2]}</span>
+              ) : null}
+            </div>
+          );
+        }
+
+        if (prefixedLineMatch) {
+          return (
+            <span className="text-tooltip__line" key={`${line}-${index}`}>
+              <strong className="text-tooltip__line-prefix">
+                {prefixedLineMatch[1]}
+              </strong>
+              {prefixedLineMatch[2] ? (
+                <span>{prefixedLineMatch[2]}</span>
+              ) : null}
+            </span>
+          );
+        }
+
+        return (
+          <span className="text-tooltip__line" key={`${line}-${index}`}>
+            {line}
+          </span>
+        );
+      })}
+    </div>
   );
 }
 

@@ -4,6 +4,12 @@ export type GearBonus = {
   values_by_rank?: Record<string, number | string>;
 };
 
+export type GearSetBonusTier = {
+  pieces: number;
+  bonuses: GearBonus[];
+  text: string[];
+};
+
 export type GearItem = {
   gear_id: number;
   gear_set: string | null;
@@ -25,6 +31,10 @@ export type GearItem = {
   icon_override: string | null;
   is_disabled: boolean;
   bonuses: GearBonus[];
+  bonus_text: string[];
+  set_piece_bonuses: GearBonus[];
+  set_piece_bonus_text: string[];
+  set_bonuses: GearSetBonusTier[];
 };
 
 export type GearMod = {

@@ -4,7 +4,6 @@
     "name": "Rank 2",
     "points_cost": 2,
     "tooltip": "Increases the strength of the power by 20% and its energy building strength by ~10%.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -17,7 +16,6 @@
     "name": "Rank 3",
     "points_cost": 2,
     "tooltip": "Increases the strength of the power by 20% and its energy building strength by ~10%.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -30,7 +28,6 @@
     "name": "Accelerated Metabolism",
     "points_cost": 1,
     "tooltip": "20% chance to restore 10% max energy. 15 sec shared cooldown.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -43,7 +40,6 @@
     "name": "Nailed to the Ground",
     "points_cost": 2,
     "tooltip": "Cancels and locks out Travel Powers for 5 seconds.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -56,7 +52,6 @@
     "name": "Challenge!",
     "points_cost": 1,
     "tooltip": "Applies threat over time to your main target for 4 sec, and reduced threat over time to secondary targets for 10 sec. Reduces targets damage for 10 sec.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -69,7 +64,6 @@
     "name": "Commanding Presence",
     "points_cost": 1,
     "tooltip": "Applies large threat over time to your targets for 10 sec. This effect stacks with Challenge.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -82,7 +76,6 @@
     "name": "Break Through",
     "points_cost": 3,
     "tooltip": "Applies Provoked if the target is blocking, lowering damage resistance, healing, and dodge for 10 sec. The target gains Unwavering for 10 sec afterward, preventing block disable.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -95,7 +88,6 @@
     "name": "Rank 2",
     "points_cost": 1,
     "tooltip": "Increases the speed of this travel power.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -108,7 +100,6 @@
     "name": "Rank 3",
     "points_cost": 1,
     "tooltip": "Further increases the speed of this travel power.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -121,9 +112,6 @@
     "name": "20/20 Fission",
     "points_cost": 2,
     "tooltip": "Maintaining for at least half of its duration applies Burn Through.",
-    "tags": [
-      "Burn Through"
-    ],
     "apply_tag": [
       "Burn Through"
     ],
@@ -138,9 +126,6 @@
     "name": "Absolutely Stunning",
     "points_cost": 2,
     "tooltip": "Has a 30% chance every 1 sec to Stun foes for 2 sec.",
-    "tags": [
-      "Stun"
-    ],
     "apply_tag": [
       "Stun"
     ],
@@ -155,9 +140,6 @@
     "name": "Absolve",
     "points_cost": 2,
     "tooltip": "The target has their threat wiped and gains stealth for 10 seconds.",
-    "tags": [
-      "Stealth"
-    ],
     "apply_tag": [
       "Stealth"
     ],
@@ -174,9 +156,6 @@
     "name": "Achilles' Heel",
     "points_cost": 2,
     "tooltip": "Roots the targets. The duration is increased by 0.83 sec every hit.",
-    "tags": [
-      "Root"
-    ],
     "apply_tag": [
       "Root"
     ],
@@ -191,9 +170,6 @@
     "name": "Admonish",
     "points_cost": 2,
     "tooltip": "When fully charged, Stuns foes within 10 feet of the primary target (the primary target is not Stunned). This effect is active for both healing and damage forms.",
-    "tags": [
-      "Stun"
-    ],
     "apply_tag": [
       "Stun"
     ],
@@ -208,7 +184,6 @@
     "name": "Advance!",
     "points_cost": 1,
     "tooltip": "For the next 10 seconds, whenever you damage a foe with a Heavy Weapons, Earth, or Might attack, its cooldown is reduced by 1 second.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -221,7 +196,6 @@
     "name": "Advanced Casting",
     "points_cost": 3,
     "tooltip": "Persists for up to 10 seconds while you are not standing in it.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -234,9 +208,6 @@
     "name": "Aftershock",
     "points_cost": 2,
     "tooltip": "Applies Superconductor to your target.",
-    "tags": [
-      "Superconductor"
-    ],
     "apply_tag": [
       "Superconductor"
     ],
@@ -251,9 +222,6 @@
     "name": "Aggression",
     "points_cost": 2,
     "tooltip": "On a full charge, applies Bleed to non-Bleeding targets. Applies on tap if used in melee range. Bleed deals Slashing damage every second for 16 sec, can stack up to 5 times.",
-    "tags": [
-      "Bleed"
-    ],
     "apply_tag": [
       "Bleed"
     ],
@@ -268,7 +236,6 @@
     "name": "Aggression Inhibitor",
     "points_cost": 2,
     "tooltip": "While maintaining, all damage you take is reduced by 20%.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -281,10 +248,6 @@
     "name": "Aggressive Gravitation",
     "points_cost": 2,
     "tooltip": "If fully charged and used against a Staggered target, your stacks of Stagger on the target are consumed and turned into stacks of Enrage on you.",
-    "tags": [
-      "Stagger",
-      "Enrage"
-    ],
     "apply_tag": [
       "Enrage"
     ],
@@ -301,7 +264,6 @@
     "name": "Alpha Strike",
     "points_cost": 2,
     "tooltip": "Damage is increased when attacking fewer targets.The maximum bonus is applied against 1 target, but attacking 5 targets offers no bonus at all.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -314,7 +276,6 @@
     "name": "Analyze Weakness",
     "points_cost": 3,
     "tooltip": "Absorbs damage, scaling up over time, as long as you remain within its area.",
-    "tags": [],
     "apply_tag": [
       "Shield"
     ],
@@ -329,9 +290,6 @@
     "name": "Anvil of Dawn",
     "points_cost": 2,
     "tooltip": "Continues firing after the initial blast, dealing Particle damage every 1 sec for 9 sec to foes. Has 40% chance every hit to apply Plasma Burn, causing PArticle Damage every 1 sec for 16 sec. Stacks up to 5 times.",
-    "tags": [
-      "Plasma Burn"
-    ],
     "apply_tag": [
       "Plasma Burn"
     ],
@@ -346,9 +304,6 @@
     "name": "Arcturus Cooling System",
     "points_cost": 1,
     "tooltip": "Halves the chance to Overheat, and decrease its duration.",
-    "tags": [
-      "Overheat"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -363,9 +318,6 @@
     "name": "Armor Piercing",
     "points_cost": 2,
     "tooltip": "Applies Armor Piercing to your primary target and has 20% chance to apply Armor Piercing to secondary targets.",
-    "tags": [
-      "Armor Piercing"
-    ],
     "apply_tag": [
       "Armor Piercing"
     ],
@@ -380,9 +332,6 @@
     "name": "Assault",
     "points_cost": 2,
     "tooltip": "Refreshes Armor Piercing.",
-    "tags": [
-      "Armor Piercing"
-    ],
     "apply_tag": [],
     "refresh_tag": [
       "Armor Piercing"
@@ -397,9 +346,6 @@
     "name": "Automated Assault",
     "points_cost": 1,
     "tooltip": "Changes to function as a hand slot. Does not generate Energy while other powers are in use.",
-    "tags": [
-      "Hand Slot"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -414,7 +360,6 @@
     "name": "Aversion",
     "points_cost": 2,
     "tooltip": "Grants you Dodge and Avoidance rating for 12 sec.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -427,9 +372,6 @@
     "name": "Back to the Darkness",
     "points_cost": 2,
     "tooltip": "Charging at least half way consumes any Shadow pet and heals you for each one consumed. This heal is considered a Life Drain effect.",
-    "tags": [
-      "Life Drain"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -444,9 +386,6 @@
     "name": "Backdraft",
     "points_cost": 2,
     "tooltip": "Refreshes Clinging Flames. Knocks Down all affected foes, this can occur once every 5 sec.",
-    "tags": [
-      "Knock Down"
-    ],
     "apply_tag": [
       "Knock Down"
     ],
@@ -463,7 +402,6 @@
     "name": "Bad Footing",
     "points_cost": 2,
     "tooltip": "Applies Disorient",
-    "tags": [],
     "apply_tag": [
       "Disorient"
     ],
@@ -478,9 +416,6 @@
     "name": "Bad Luck",
     "points_cost": 2,
     "tooltip": "Has a 25-100% chance to apply Jinxed",
-    "tags": [
-      "Jinxed"
-    ],
     "apply_tag": [
       "Jinxed"
     ],
@@ -495,10 +430,6 @@
     "name": "Bad Wiring",
     "points_cost": 2,
     "tooltip": "Has 20% chance to Stun. Chance is guaranteed against targets affected by Negative Ions.",
-    "tags": [
-      "Stun",
-      "Negative Ions"
-    ],
     "apply_tag": [
       "Stun"
     ],
@@ -515,7 +446,6 @@
     "name": "Balance",
     "points_cost": 2,
     "tooltip": "Improves the healing aura effect. While in combat and active, up to 5 enemy targets within 25 feet take a small amount of Damage over Time.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -530,7 +460,6 @@
     "name": "Ballista Bolt",
     "points_cost": 2,
     "tooltip": "Hits up to 3 targets in a 3 foot cylinder.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -543,10 +472,6 @@
     "name": "Barbed Chains",
     "points_cost": 2,
     "tooltip": "When an opponent breaks free from a Hold while affected, they take a moderate amount of Slashing damage and applies Bleed. Bleed deals Slashing damage every second for 16 sec, can stack up to 5 times.",
-    "tags": [
-      "Hold",
-      "Bleed"
-    ],
     "apply_tag": [
       "Bleed"
     ],
@@ -563,9 +488,6 @@
     "name": "Befuddling Rage",
     "points_cost": 2,
     "tooltip": "Confused enemies have their combat stats increased for the duration of the confuse effect.",
-    "tags": [
-      "Confuse"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -580,9 +502,6 @@
     "name": "Below the Belt",
     "points_cost": 2,
     "tooltip": "Knock Up your target. This can occur once every 3 sec.",
-    "tags": [
-      "Knock Up"
-    ],
     "apply_tag": [
       "Knock Up"
     ],
@@ -597,9 +516,6 @@
     "name": "Bend the Earth",
     "points_cost": 2,
     "tooltip": "Targets further than 10 feet from you are Knocked Towards you instead of up.",
-    "tags": [
-      "Knock To"
-    ],
     "apply_tag": [
       "Knock To"
     ],
@@ -614,9 +530,6 @@
     "name": "Bewilder",
     "points_cost": 2,
     "tooltip": "Applies Disorient on high ranking foes.",
-    "tags": [
-      "Disorient"
-    ],
     "apply_tag": [
       "Disorient"
     ],
@@ -631,9 +544,6 @@
     "name": "Bitter Cold",
     "points_cost": 2,
     "tooltip": "Increase base damage by 10% per Chill stacks on target.",
-    "tags": [
-      "Chill"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -648,7 +558,6 @@
     "name": "Blade Beyond the Veil",
     "points_cost": 2,
     "tooltip": "Deals Piercing damage to enemies attacking you in Melee range for the duration of the maintain. This can occur every 1 sec.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -663,7 +572,6 @@
     "name": "Blast Radius",
     "points_cost": 2,
     "tooltip": "Deals its damages in a 10 foot Sphere around your target.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -676,10 +584,6 @@
     "name": "Blazing Body",
     "points_cost": 2,
     "tooltip": "Deals periodic Fire damage to targets within 15 feet while active. Has a 20% chance to stun enemies affected by Clinging Flames.",
-    "tags": [
-      "Stun",
-      "Clinging Flames"
-    ],
     "apply_tag": [
       "Stun"
     ],
@@ -698,7 +602,6 @@
     "name": "Blazing Impact",
     "points_cost": 2,
     "tooltip": "While this travel power is active, you gain a damage bonus which scales with your current speed. This bonus persists for a short time upon losing speed or stopping.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -711,9 +614,6 @@
     "name": "Blender",
     "points_cost": 2,
     "tooltip": "Targets hit are Knocked To you. Targets within 20 feet of you have a 50% chance to be Knocked To you.",
-    "tags": [
-      "Knock To"
-    ],
     "apply_tag": [
       "Knock To"
     ],
@@ -728,11 +628,6 @@
     "name": "Blinding Light",
     "points_cost": 2,
     "tooltip": "Fully charging applies Illumination to you and nearby allies. It also applies Illuminated to the target.",
-    "tags": [
-      "Illumination",
-      "Illuminated",
-      "Passive Heal"
-    ],
     "apply_tag": [
       "Illumination",
       "Illuminated",
@@ -749,10 +644,6 @@
     "name": "Blinding Shot",
     "points_cost": 2,
     "tooltip": "When partially charged, has a scaling chance to Knock Down your target. When fully charged, Stuns your target.",
-    "tags": [
-      "Stun",
-      "Knock Down"
-    ],
     "apply_tag": [
       "Stun",
       "Knock Down"
@@ -768,7 +659,6 @@
     "name": "Blindside",
     "points_cost": 2,
     "tooltip": "Reduces your target's movement speed by 15% while maintained.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -781,10 +671,6 @@
     "name": "Blindside Blow",
     "points_cost": 2,
     "tooltip": "The final combo hit refreshes Demolish on the target by 12 sec and also applies Blindside to you. For each tack of Enrage on you, Blinside increases the base damage of your Brick damages by 1.9% and reduces all others but 3.8%.",
-    "tags": [
-      "Demolish",
-      "Blindside"
-    ],
     "apply_tag": [
       "Demolish",
       "Blindside"
@@ -800,10 +686,6 @@
     "name": "Blood in the Water",
     "points_cost": 2,
     "tooltip": "Removes 1 Bleed from your target and heals you for each stack removed.",
-    "tags": [
-      "Active Heal",
-      "Bleed"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -820,9 +702,6 @@
     "name": "Blood Roar",
     "points_cost": 2,
     "tooltip": "While active, all of your Supernatural attacks have 30% chance to inflict Bleed.",
-    "tags": [
-      "Bleed"
-    ],
     "apply_tag": [
       "Bleed"
     ],
@@ -837,7 +716,6 @@
     "name": "Blood Sacrifice",
     "points_cost": 2,
     "tooltip": "Activating with the Blood Sacrifice advantage increases the damage of all of your attacks, up to a specific amount of total damage (approximately equal to a Shadow Blast at your level).",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -850,9 +728,6 @@
     "name": "Bloody Mess",
     "points_cost": 2,
     "tooltip": "Deals 30% more base damage to Bleeding targets.",
-    "tags": [
-      "Bleed"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -867,9 +742,6 @@
     "name": "Blot",
     "points_cost": 2,
     "tooltip": "Stuns affected targets.",
-    "tags": [
-      "Stun"
-    ],
     "apply_tag": [
       "Stun"
     ],
@@ -884,9 +756,6 @@
     "name": "Blunt Force",
     "points_cost": 2,
     "tooltip": "Applies Disorient to the target.",
-    "tags": [
-      "Disorient"
-    ],
     "apply_tag": [
       "Disorient"
     ],
@@ -901,9 +770,6 @@
     "name": "Bold Entrance",
     "points_cost": 2,
     "tooltip": "Increases the effectiveness of Bastion, causing 50% of all pre-mitigation damage to be applied as shielding. Expires immediately if you deal damage with a non-Heavy Weapons ability.",
-    "tags": [
-      "Reckless"
-    ],
     "apply_tag": [
       "Reckless"
     ],
@@ -918,9 +784,6 @@
     "name": "Boogeyman",
     "points_cost": 1,
     "tooltip": "Increases base damage by 15% against Feared targets.",
-    "tags": [
-      "Fear"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -935,9 +798,6 @@
     "name": "Boot to the Head",
     "points_cost": 2,
     "tooltip": "Interrupts the target.",
-    "tags": [
-      "Interrupt"
-    ],
     "apply_tag": [
       "Interrupt"
     ],
@@ -952,11 +812,6 @@
     "name": "Breaching Round",
     "points_cost": 2,
     "tooltip": "Knock Back secondary targets if they are affected by Armor Piercing. Also refreshes all stacks of Furious on you.",
-    "tags": [
-      "Knock Back",
-      "Armor Piercing",
-      "Furious"
-    ],
     "apply_tag": [
       "Knock Back"
     ],
@@ -975,9 +830,6 @@
     "name": "Break Formation",
     "points_cost": 2,
     "tooltip": "Has 15% chance every hit to apply Disorient. Chance is guaranteed when fully maintained.",
-    "tags": [
-      "Disorient"
-    ],
     "apply_tag": [
       "Disorient"
     ],
@@ -992,7 +844,6 @@
     "name": "Breakout",
     "points_cost": 1,
     "tooltip": "If the target is under a Control effect, applies Break Free damage. This effect can occur only once ever 10 seconds.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -1007,9 +858,6 @@
     "name": "Brilliance",
     "points_cost": 2,
     "tooltip": "Enhances the Perception of the targeted allies.",
-    "tags": [
-      "Perception"
-    ],
     "apply_tag": [
       "Perception"
     ],
@@ -1024,9 +872,6 @@
     "name": "Brutal Strike",
     "points_cost": 2,
     "tooltip": "Refreshes Demolish for up to 10 seconds.",
-    "tags": [
-      "Demolish"
-    ],
     "apply_tag": [],
     "refresh_tag": [
       "Demolish"
@@ -1041,9 +886,6 @@
     "name": "Brute Force",
     "points_cost": 2,
     "tooltip": "Applies Demolish. Deals Crushing damage instead of slashing.",
-    "tags": [
-      "Demolish"
-    ],
     "apply_tag": [
       "Demolish"
     ],
@@ -1060,10 +902,6 @@
     "name": "Bull Rush",
     "points_cost": 2,
     "tooltip": "Knocks back secondary targets within 10 feet of your primary target. Also Snares targets for 16 sec, reducing their movement speed by 100%. This effect can only occur once every 10 sec.",
-    "tags": [
-      "Snare",
-      "Knock Back"
-    ],
     "apply_tag": [
       "Snare",
       "Knock Back"
@@ -1079,7 +917,6 @@
     "name": "Bunker Buster",
     "points_cost": 2,
     "tooltip": "Deals additional damage to targets using Block.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -1094,9 +931,6 @@
     "name": "Burn Bright",
     "points_cost": 2,
     "tooltip": "Refreshes the duration of all of your Plasma Burn stacks.",
-    "tags": [
-      "Plasma Burn"
-    ],
     "apply_tag": [],
     "refresh_tag": [
       "Plasma Burn"
@@ -1111,11 +945,6 @@
     "name": "Burn Up",
     "points_cost": 3,
     "tooltip": "Fully charging deals additional Fire damage for each of your Chill effects on affected targets, consuming the Chill effects in the process. Also shatters any nearby Ice Structures, dealing additional Cold damage to foes near them.",
-    "tags": [
-      "Chill",
-      "Shatter",
-      "Rupture"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -1137,9 +966,6 @@
     "name": "Burninator",
     "points_cost": 1,
     "tooltip": "Increases base damage by 10% against targets affected by Clinging Flames.",
-    "tags": [
-      "Clinging Flames"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -1154,9 +980,6 @@
     "name": "Burning Desire",
     "points_cost": 1,
     "tooltip": "35% chance to deal Fire Damage to an additional target.  This second shot does not generate Energy, but has 20% chance to apply Clinging Flames.",
-    "tags": [
-      "Clinging Flames"
-    ],
     "apply_tag": [
       "Clinging Flames"
     ],
@@ -1171,9 +994,6 @@
     "name": "Burning Rain",
     "points_cost": 2,
     "tooltip": "Summons a Pyre Patch when fully maintained.",
-    "tags": [
-      "Pyre Patch"
-    ],
     "apply_tag": [
       "Pyre Patch"
     ],
@@ -1188,10 +1008,6 @@
     "name": "Burning Sun",
     "points_cost": 3,
     "tooltip": "On a full charge, creates a Healing Rune at your location. Healing Rune heals nearby allies every second for 10 seconds. You cannot have more than one Rune out at a time.",
-    "tags": [
-      "Rune",
-      "Passive Heal"
-    ],
     "apply_tag": [
       "Rune"
     ],
@@ -1208,7 +1024,6 @@
     "name": "Butcher's Blades",
     "points_cost": 2,
     "tooltip": "Becomes a charge power instead of maintain: 2 sec charge time, 0.5 sec activation time.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -1221,9 +1036,6 @@
     "name": "Buzzsaw",
     "points_cost": 1,
     "tooltip": "Snares your targets, reducing their movement speed by 100% for 16 sec.",
-    "tags": [
-      "Snare"
-    ],
     "apply_tag": [
       "Snare"
     ],
@@ -1238,9 +1050,6 @@
     "name": "Can't Stop Me",
     "points_cost": 2,
     "tooltip": "Taking damage applies a stack of Charged Up. Charged Up increases your Running Speed by 15%, your Jump Height by 2%, and your Flying Speed by 2%. This effect stacks up to 5 times and lasts 10 seconds.",
-    "tags": [
-      "Charged Up"
-    ],
     "apply_tag": [
       "Charged Up"
     ],
@@ -1255,9 +1064,6 @@
     "name": "Chant",
     "points_cost": 2,
     "tooltip": "Refreshes Hexed.",
-    "tags": [
-      "Hexed"
-    ],
     "apply_tag": [],
     "refresh_tag": [
       "Hexed"
@@ -1272,9 +1078,6 @@
     "name": "Chaos Magic",
     "points_cost": 2,
     "tooltip": "Has 20% chance each tick to apply Bane to targets.",
-    "tags": [
-      "Bane"
-    ],
     "apply_tag": [
       "Bane"
     ],
@@ -1289,9 +1092,6 @@
     "name": "Chaos! Chaos!",
     "points_cost": 2,
     "tooltip": "Has a chance to apply Bane, instead of Fear.",
-    "tags": [
-      "Bane"
-    ],
     "apply_tag": [
       "Bane"
     ],
@@ -1306,7 +1106,6 @@
     "name": "Chaotic Movements",
     "points_cost": 2,
     "tooltip": "While maintained, increase your Dodge chance.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -1319,9 +1118,6 @@
     "name": "Char",
     "points_cost": 2,
     "tooltip": "Fully maintaining Paralyzes your primary target and briefly Stuns secondary targets.",
-    "tags": [
-      "Stun"
-    ],
     "apply_tag": [
       "Hold",
       "Stun"
@@ -1337,9 +1133,6 @@
     "name": "Charged Attack",
     "points_cost": 2,
     "tooltip": "Has 23-100% chance to apply Negative Ions to targets, based on charge time.",
-    "tags": [
-      "Negative Ions"
-    ],
     "apply_tag": [
       "Negative Ions"
     ],
@@ -1354,10 +1147,6 @@
     "name": "Charged Up",
     "points_cost": 2,
     "tooltip": "If the target is affected by Negative Ions, consumes Negative Ions to apply a stack of Charged Up, also refreshing existing stacks. Charged Up increases your Running Speed by 15%, your Jump Height by 2%, and your Flying Speed by 2%. This effect stacks up to 5 times and lasts 10 seconds.",
-    "tags": [
-      "Negative Ions",
-      "Charged Up"
-    ],
     "apply_tag": [
       "Charged Up"
     ],
@@ -1374,7 +1163,6 @@
     "name": "Chemical Burn",
     "points_cost": 2,
     "tooltip": "Applies No Quarter to your primary target.",
-    "tags": [],
     "apply_tag": [
       "No Quarter"
     ],
@@ -1389,7 +1177,6 @@
     "name": "Chemical Fire",
     "points_cost": 1,
     "tooltip": "Deals Particle damages instead of Fire",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -1404,9 +1191,6 @@
     "name": "Chi Flame",
     "points_cost": 2,
     "tooltip": "Applies Chi Flame to the target.",
-    "tags": [
-      "Chi Flame"
-    ],
     "apply_tag": [
       "Chi Flame"
     ],
@@ -1421,9 +1205,6 @@
     "name": "Chilled Air",
     "points_cost": 2,
     "tooltip": "Has a 10% chance every 1 sec to apply Chill.",
-    "tags": [
-      "Chill"
-    ],
     "apply_tag": [
       "Chill"
     ],
@@ -1438,10 +1219,6 @@
     "name": "Chilling Out",
     "points_cost": 2,
     "tooltip": "Applies Restoration to you, healing you every 2 sec for 6 sec. If your health in below 20%, give you additional heal, and the value is increased.",
-    "tags": [
-      "Restoration",
-      "Passive Heal"
-    ],
     "apply_tag": [
       "Restoration"
     ],
@@ -1458,7 +1235,6 @@
     "name": "Chilling Reminder",
     "points_cost": 1,
     "tooltip": "Applies a large threat over time effect to your target. This effect stacks with Challenge.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -1471,9 +1247,6 @@
     "name": "Chilling Touch",
     "points_cost": 2,
     "tooltip": "Applies Chill on foes that you consume Clinging Flames.",
-    "tags": [
-      "Chill"
-    ],
     "apply_tag": [
       "Chill"
     ],
@@ -1490,9 +1263,6 @@
     "name": "Chilly Barrier",
     "points_cost": 2,
     "tooltip": "Grants you a shield that increases in strength over time while you maintain this power.",
-    "tags": [
-      "Shield"
-    ],
     "apply_tag": [
       "Shield"
     ],
@@ -1507,11 +1277,6 @@
     "name": "Cleanse",
     "points_cost": 2,
     "tooltip": "Every strike made with this attack removes a stack of Deadly Poison or Bleeding from you. Heals you for a small amount every time one of these effects is removed in this manner.",
-    "tags": [
-      "Active Heal",
-      "Bleed",
-      "Deadly Poison"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -1529,9 +1294,6 @@
     "name": "Cleaving Strikes",
     "points_cost": 2,
     "tooltip": "Finishing the combo applies Shredded to your primary target.",
-    "tags": [
-      "Shredded"
-    ],
     "apply_tag": [
       "Shredded"
     ],
@@ -1546,7 +1308,6 @@
     "name": "Close the Gap",
     "points_cost": 2,
     "tooltip": "Deals increased base damage if you are closer to your target. This bonus caps out at 30% in melee range.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -1559,10 +1320,6 @@
     "name": "Cobra Strike",
     "points_cost": 2,
     "tooltip": "When completing combo, Infect targets, Stunning them for a short duration.",
-    "tags": [
-      "Stun",
-      "Infect"
-    ],
     "apply_tag": [
       "Stun",
       "Infect"
@@ -1578,10 +1335,6 @@
     "name": "Cold Drift",
     "points_cost": 2,
     "tooltip": "Has a 20% chance every 1 sec to trap up to 5 targets within 25ft in a Ice Cage, Rooting them in place for up to 10 sec. Additionally, if a target is affected by your Hard Frost, has a 20% chance to refresh the duration.",
-    "tags": [
-      "Hard Frost",
-      "Ice Cage"
-    ],
     "apply_tag": [
       "Root",
       "Ice Cage"
@@ -1599,10 +1352,6 @@
     "name": "Cold Embrace",
     "points_cost": 2,
     "tooltip": "Consumes any Chill stacks you have on your targets and heals you for each one consumed.",
-    "tags": [
-      "Chill",
-      "Active Heal"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -1619,9 +1368,6 @@
     "name": "Cold Front",
     "points_cost": 1,
     "tooltip": "Has 10-50% chance to apply Chill, based on charge time.",
-    "tags": [
-      "Chill"
-    ],
     "apply_tag": [
       "Chill"
     ],
@@ -1636,9 +1382,6 @@
     "name": "Cold To The Touch",
     "points_cost": 1,
     "tooltip": "Grants a small amount of damage resistance and applies the Cold Snap effect after blocking.",
-    "tags": [
-      "Cold Snap"
-    ],
     "apply_tag": [
       "Cold Snap"
     ],
@@ -1653,7 +1396,6 @@
     "name": "Collateral Damage",
     "points_cost": 2,
     "tooltip": "Increases range to 20 feet. Deals ranged Sonic damage foes beyond the initial 10 feet in place of Crushing damage.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -1668,10 +1410,6 @@
     "name": "Compound Fracture",
     "points_cost": 2,
     "tooltip": "If fully charged, targets will become Rooted instead of Knocked Up. When the Root expires, the target will be Knocked Up.",
-    "tags": [
-      "Root",
-      "Knock Up"
-    ],
     "apply_tag": [
       "Root",
       "Knock Up"
@@ -1687,7 +1425,6 @@
     "name": "Concentrated Shots",
     "points_cost": 2,
     "tooltip": "Increases the base damage by 25%, but you can no l no longer move while maintaining it.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -1700,9 +1437,6 @@
     "name": "Concussion",
     "points_cost": 2,
     "tooltip": "Applies Trauma. Trauma ends any healing over time effects on your target and causes them to receive only 50% benefit from any other incoming heals.",
-    "tags": [
-      "Trauma"
-    ],
     "apply_tag": [
       "Trauma"
     ],
@@ -1717,9 +1451,6 @@
     "name": "Concussive Blast",
     "points_cost": 2,
     "tooltip": "Gains a chance to Knock Down affected targets",
-    "tags": [
-      "Knock Down"
-    ],
     "apply_tag": [
       "Knock Down"
     ],
@@ -1734,9 +1465,6 @@
     "name": "Concussive Blow",
     "points_cost": 2,
     "tooltip": "Stuns targets for a short time. This can only occur once every 5 seconds.",
-    "tags": [
-      "Stun"
-    ],
     "apply_tag": [
       "Stun"
     ],
@@ -1751,9 +1479,6 @@
     "name": "Concussive Escape",
     "points_cost": 2,
     "tooltip": "Knocks Back any targets within 15 feet.",
-    "tags": [
-      "Knock Back"
-    ],
     "apply_tag": [
       "Knock Back"
     ],
@@ -1768,7 +1493,6 @@
     "name": "Concussive Force",
     "points_cost": 1,
     "tooltip": "Changes the Fire damage portion to Crushing damage.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -1783,9 +1507,6 @@
     "name": "Concussive Rocket",
     "points_cost": 2,
     "tooltip": "Knock back targets.",
-    "tags": [
-      "Knock Back"
-    ],
     "apply_tag": [
       "Knock Back"
     ],
@@ -1800,9 +1521,6 @@
     "name": "Conditioning",
     "points_cost": 2,
     "tooltip": "Allows Control powers to apply Trauma. Trauma ends any healing over time effects on your target and causes them to receive only 50% benefit from any other incoming heals.",
-    "tags": [
-      "Trauma"
-    ],
     "apply_tag": [
       "Trauma"
     ],
@@ -1819,7 +1537,6 @@
     "name": "Constricting Coils",
     "points_cost": 2,
     "tooltip": "Double the damage dealt.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -1832,9 +1549,6 @@
     "name": "Consume Fear",
     "points_cost": 2,
     "tooltip": "On a full charge, consumes all of your Fear effects on affected targets. Each stack consumed will deal additional Dimensional damage.",
-    "tags": [
-      "Rupture"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -1851,9 +1565,6 @@
     "name": "Consume Will",
     "points_cost": 2,
     "tooltip": "Causes the entites summoned to apply Stress to their targets, debuffing their resistance to Ego damage.",
-    "tags": [
-      "Stress"
-    ],
     "apply_tag": [
       "Stress"
     ],
@@ -1868,9 +1579,6 @@
     "name": "Consumption",
     "points_cost": 2,
     "tooltip": "Heals you and nearby allies for every enemy you hit. This heal is considered a Life Drain effect.",
-    "tags": [
-      "Life Drain"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -1885,9 +1593,6 @@
     "name": "Convergence",
     "points_cost": 2,
     "tooltip": "Gains a 20% chance to chain to a secondary target. The chain will have the opposite effect: An attack will chain a heal to a nearby friend; a heal will chain an attack to a nearby enemy.",
-    "tags": [
-      "Team Heal"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -1902,9 +1607,6 @@
     "name": "Corrosion",
     "points_cost": 2,
     "tooltip": "Increases the chance to apply Plasma Burn by 10%. Chance is guaranteed when fully maintained.",
-    "tags": [
-      "Plasma Burn"
-    ],
     "apply_tag": [
       "Plasma Burn"
     ],
@@ -1919,9 +1621,6 @@
     "name": "Corrupt",
     "points_cost": 2,
     "tooltip": "Fully charging refreshes your Poisons on the target.",
-    "tags": [
-      "Poisons"
-    ],
     "apply_tag": [],
     "refresh_tag": [
       "Poisons"
@@ -1936,9 +1635,6 @@
     "name": "Corrupting Force",
     "points_cost": 2,
     "tooltip": "On a full charge, applies Debilitating Poison to the target. Debilitating Poison deals Toxic damage over time and reduces the target's damage by 10%.",
-    "tags": [
-      "Debilitating Poison"
-    ],
     "apply_tag": [
       "Debilitating Poison"
     ],
@@ -1953,10 +1649,6 @@
     "name": "Covet",
     "points_cost": 2,
     "tooltip": "Applies Restoration to you, healing you every 2 sec for 6 sec. If your health in below 20%, give you additional heal, and the value is increased.",
-    "tags": [
-      "Restoration",
-      "Passive Heal"
-    ],
     "apply_tag": [
       "Restoration"
     ],
@@ -1973,7 +1665,6 @@
     "name": "Crashing Crescendo",
     "points_cost": 2,
     "tooltip": "Each hit gives you a +2.5% chance to Critically Hit. This bonus resets upon scoring a successful Critical Hit.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -1986,10 +1677,6 @@
     "name": "Crushed Ice",
     "points_cost": 2,
     "tooltip": "50% chance to not consume the Chilled state from targets.",
-    "tags": [
-      "Chill",
-      "Shatter"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -2006,7 +1693,6 @@
     "name": "Cry Havoc",
     "points_cost": 2,
     "tooltip": "Applies Fear to targets.",
-    "tags": [],
     "apply_tag": [
       "Fear"
     ],
@@ -2021,7 +1707,6 @@
     "name": "Cull the Weak",
     "points_cost": 2,
     "tooltip": "If used on targets below 20. If the target is Henchman or Villain rank, they are defeated outright.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -2034,7 +1719,6 @@
     "name": "Cursed",
     "points_cost": 2,
     "tooltip": "Applies Hexed to your primary target, reducing their resistance to Magic damage by 18% for 12 seconds. Hexed is a type of Curse",
-    "tags": [],
     "apply_tag": [
       "Hexed"
     ],
@@ -2049,9 +1733,6 @@
     "name": "Cut to Shreds",
     "points_cost": 2,
     "tooltip": "10% chance every hit to apply Shredded. 100% chance if fully maintained.",
-    "tags": [
-      "Shredded"
-    ],
     "apply_tag": [
       "Shredded"
     ],
@@ -2066,9 +1747,6 @@
     "name": "Cuts and Scrapes",
     "points_cost": 2,
     "tooltip": "Applies Armor Piercing to your primary target.",
-    "tags": [
-      "Armor Piercing"
-    ],
     "apply_tag": [
       "Armor Piercing"
     ],
@@ -2083,9 +1761,6 @@
     "name": "Dark Displacement",
     "points_cost": 2,
     "tooltip": "25% chance every tick to Knock Down your targets.",
-    "tags": [
-      "Knock Down"
-    ],
     "apply_tag": [
       "Knock Down"
     ],
@@ -2100,7 +1775,6 @@
     "name": "Dark Presence",
     "points_cost": 2,
     "tooltip": "10% chance every 1 sec to apply Fear.",
-    "tags": [],
     "apply_tag": [
       "Fear"
     ],
@@ -2115,10 +1789,6 @@
     "name": "Dark Rune",
     "points_cost": 2,
     "tooltip": "On a full charge, creates a Healing Rune at the primary target's location. Healing Rune heals nearby allies every second for 10 seconds. You cannot have more than one Rune out at a time.",
-    "tags": [
-      "Rune",
-      "Passive Heal"
-    ],
     "apply_tag": [
       "Rune"
     ],
@@ -2135,7 +1805,6 @@
     "name": "Darkness Feast",
     "points_cost": 1,
     "tooltip": "Double the effectiveness of Shadow Form's healing effect.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -2148,7 +1817,6 @@
     "name": "Data Conversion",
     "points_cost": 3,
     "tooltip": "While is slotted, you gain +33 Knock Resistance for 2 seconds every time you make a melee attack, however your melee attacks deal 10% less damage.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -2161,9 +1829,6 @@
     "name": "Data Leak",
     "points_cost": 2,
     "tooltip": "Spreads your Plasma Burn effect on your primary target to nearby foes, with a chance to spread additional stacks",
-    "tags": [
-      "Plasma Burn"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -2178,10 +1843,6 @@
     "name": "Daybreaker",
     "points_cost": 2,
     "tooltip": "Fully charging creates a Pyre Patch at your location. The Pyre Patch persists on the ground for 10 seconds. Every second, it deals Fire damage and has a 10% chance to apply Clinging Flames to enemies standing in it. You can only have one Pyre Patch active at a time.",
-    "tags": [
-      "Pyre Patch",
-      "Clinging Flames"
-    ],
     "apply_tag": [
       "Pyre Patch",
       "Clinging Flames"
@@ -2197,10 +1858,6 @@
     "name": "Dazzle",
     "points_cost": 2,
     "tooltip": "20% chance every hit to stun the target. If you are affected by Ego Leech, the chance to Stun each target becomes 20% chance per stack of Ego Leech.",
-    "tags": [
-      "Stun",
-      "Ego Leech"
-    ],
     "apply_tag": [
       "Stun"
     ],
@@ -2217,9 +1874,6 @@
     "name": "Deadly Dissonance",
     "points_cost": 2,
     "tooltip": "Applies Deafening to your primary target when partially charged, or to all targets when fully charged.",
-    "tags": [
-      "Deafening"
-    ],
     "apply_tag": [
       "Deafening"
     ],
@@ -2234,9 +1888,6 @@
     "name": "Deadly Fangs",
     "points_cost": 2,
     "tooltip": "Has a chance to apply Bleed when attacking.",
-    "tags": [
-      "Bleed"
-    ],
     "apply_tag": [
       "Bleed"
     ],
@@ -2251,9 +1902,6 @@
     "name": "Deafening",
     "points_cost": 2,
     "tooltip": "Fully maintaining applies Deafening to targets.",
-    "tags": [
-      "Deafening"
-    ],
     "apply_tag": [
       "Deafening"
     ],
@@ -2268,9 +1916,6 @@
     "name": "Deafening Dissolution",
     "points_cost": 2,
     "tooltip": "Reduces single target damage by 20%, but increases the damage against multiple targets by 80%",
-    "tags": [
-      "Deafening"
-    ],
     "apply_tag": [
       "Deafening"
     ],
@@ -2285,7 +1930,6 @@
     "name": "Deafening Voice",
     "points_cost": 1,
     "tooltip": "Deals Sonic damage instead of Crushing",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -2300,9 +1944,6 @@
     "name": "Death Arc",
     "points_cost": 2,
     "tooltip": "Any enemies killed by will unleash area effect damage to nearby targets.",
-    "tags": [
-      "Arc"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -2315,7 +1956,6 @@
     "name": "Death Ray",
     "points_cost": 1,
     "tooltip": "Doubles the chance to deal additional Particle damage when charged less than 1 sec. 1% chance to defeat target. High-ranking target receives additional Particle Damage instead.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -2330,9 +1970,6 @@
     "name": "Decay",
     "points_cost": 2,
     "tooltip": "Finishing the combo applies Debilitating Poison to the target. Debilitating Poison deals Toxic damage over time and reduces the target's damage by 10%.",
-    "tags": [
-      "Debilitating Poison"
-    ],
     "apply_tag": [
       "Debilitating Poison"
     ],
@@ -2347,9 +1984,6 @@
     "name": "Defensive Stance",
     "points_cost": 2,
     "tooltip": "If using the Defiance passive, each hit refreshes your Defiant stacks. Otherwise, finishing the combo applies Aegis to you, increasing your Resistance to all damage by +15% for 15 sec.",
-    "tags": [
-      "Aegis"
-    ],
     "apply_tag": [
       "Aegis"
     ],
@@ -2366,9 +2000,6 @@
     "name": "Delayed Attack",
     "points_cost": 2,
     "tooltip": "Applies Jinxed to your target.",
-    "tags": [
-      "Jinxed"
-    ],
     "apply_tag": [
       "Jinxed"
     ],
@@ -2383,7 +2014,6 @@
     "name": "Deliverance",
     "points_cost": 2,
     "tooltip": "Gives Break Free damage to Held, friendly targets.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -2396,10 +2026,6 @@
     "name": "Demolishing Blast",
     "points_cost": 2,
     "tooltip": "Applies Demolish to your target if they are Disoriented.",
-    "tags": [
-      "Disorient",
-      "Demolish"
-    ],
     "apply_tag": [
       "Disorient",
       "Demolish"
@@ -2415,9 +2041,6 @@
     "name": "Demolishing Strikes",
     "points_cost": 2,
     "tooltip": "When fully charged, applies Demolish to the primary target.",
-    "tags": [
-      "Demolish"
-    ],
     "apply_tag": [
       "Demolish"
     ],
@@ -2432,9 +2055,6 @@
     "name": "Demolition",
     "points_cost": 2,
     "tooltip": "The final combo hit applies Demolish to your primary target.",
-    "tags": [
-      "Demolish"
-    ],
     "apply_tag": [
       "Demolish"
     ],
@@ -2449,10 +2069,6 @@
     "name": "Deplete",
     "points_cost": 2,
     "tooltip": "The heal component of becomes an AoE (15 foot radius, max of 5 targets) centered on you that heals nearby friends for half as much as it heals you. When using on a target affected by Dependency, the AoE heals for as much as it heals you.",
-    "tags": [
-      "Team Heal",
-      "Dependency"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -2469,10 +2085,6 @@
     "name": "Despondency",
     "points_cost": 2,
     "tooltip": "Applies Despondency to your target, lowering their Dodge Chance. Each shot has 20% chance to apply Fear.",
-    "tags": [
-      "Despondency",
-      "Fear"
-    ],
     "apply_tag": [
       "Despondency",
       "Fear"
@@ -2488,9 +2100,6 @@
     "name": "Destructive Force",
     "points_cost": 2,
     "tooltip": "Your damaging attacks have a 25% chance to Stun targets while active.",
-    "tags": [
-      "Stun"
-    ],
     "apply_tag": [
       "Stun"
     ],
@@ -2505,9 +2114,6 @@
     "name": "Devoid",
     "points_cost": 2,
     "tooltip": "Fully charging applies Devoid. If your target is affected by Ebon Rift or Dimensional Collapse applies this effect around your target",
-    "tags": [
-      "Devoid"
-    ],
     "apply_tag": [
       "Devoid"
     ],
@@ -2522,7 +2128,6 @@
     "name": "Devour Soul",
     "points_cost": 3,
     "tooltip": "Above 50% health, increases the base damage by 30% and will no longer heal you. Increases base damage by 10% for 10 sec every full maintain. stacks 3 times. If you fall below 50% health, damage bonus is removed and healing effect is returned.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -2535,9 +2140,6 @@
     "name": "Devouring Darkness",
     "points_cost": 2,
     "tooltip": "Instead of applying Fear, this ability applies Bane to targets.",
-    "tags": [
-      "Bane"
-    ],
     "apply_tag": [
       "Bane"
     ],
@@ -2552,10 +2154,6 @@
     "name": "Didn't See That Coming",
     "points_cost": 2,
     "tooltip": "Applies Demolish to your target if they are Disoriented.",
-    "tags": [
-      "Disorient",
-      "Demolish"
-    ],
     "apply_tag": [
       "Demolish"
     ],
@@ -2572,9 +2170,6 @@
     "name": "Dilemma",
     "points_cost": 2,
     "tooltip": "Applies Jinxed to targets.",
-    "tags": [
-      "Jinxed"
-    ],
     "apply_tag": [
       "Jinxed"
     ],
@@ -2589,9 +2184,6 @@
     "name": "Direct Hit",
     "points_cost": 2,
     "tooltip": "Stuns all affected targets.",
-    "tags": [
-      "Stun"
-    ],
     "apply_tag": [
       "Stun"
     ],
@@ -2606,9 +2198,6 @@
     "name": "Disintegration Ray",
     "points_cost": 2,
     "tooltip": "When fully charged, applies Disintegrate.",
-    "tags": [
-      "Disintegrate"
-    ],
     "apply_tag": [
       "Disintegrate"
     ],
@@ -2623,10 +2212,6 @@
     "name": "Dispersal",
     "points_cost": 3,
     "tooltip": "Deals damage to targets withing 10 feet, and they are Knocked Up and Repelled away from your target.",
-    "tags": [
-      "Repel",
-      "Knock Up"
-    ],
     "apply_tag": [
       "Repel",
       "Knock Up"
@@ -2642,10 +2227,6 @@
     "name": "Disruption Module",
     "points_cost": 2,
     "tooltip": "Targets hit have a chance to be Stunned for a short time. Targets that are affected by your Disorient effect have a guaranteed chance to be Stunned.",
-    "tags": [
-      "Stun",
-      "Disorient"
-    ],
     "apply_tag": [
       "Stun"
     ],
@@ -2662,9 +2243,6 @@
     "name": "Dizzying Impact",
     "points_cost": 2,
     "tooltip": "Applies Disorient to the target(s).",
-    "tags": [
-      "Disorient"
-    ],
     "apply_tag": [
       "Disorient"
     ],
@@ -2679,10 +2257,6 @@
     "name": "Domineering Will",
     "points_cost": 2,
     "tooltip": "Snares the target, reducing their movement speed by 100%. On a full charge, Knocks Down your target.",
-    "tags": [
-      "Snare",
-      "Knock Down"
-    ],
     "apply_tag": [
       "Snare",
       "Knock Down"
@@ -2698,7 +2272,6 @@
     "name": "Double Vortex",
     "points_cost": 2,
     "tooltip": "Causes 2 random Debuffs on each target instead of 1.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -2711,9 +2284,6 @@
     "name": "Download",
     "points_cost": 2,
     "tooltip": "Applies Download to you, reducing the cost of Technology powers for 12 secs.",
-    "tags": [
-      "Download"
-    ],
     "apply_tag": [
       "Download"
     ],
@@ -2728,7 +2298,6 @@
     "name": "Downrange Disaster",
     "points_cost": 2,
     "tooltip": "Deals less damage when you are close to the target and more damage the further you are from the target.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -2741,9 +2310,6 @@
     "name": "Drag Back",
     "points_cost": 2,
     "tooltip": "Foes are Knock To instead of Knock Back.",
-    "tags": [
-      "Knock To"
-    ],
     "apply_tag": [
       "Knock To"
     ],
@@ -2758,10 +2324,6 @@
     "name": "Dragon Rush",
     "points_cost": 3,
     "tooltip": "When fully charged, applies Dragon Rush to you for 1 second per stack of Focus you have.",
-    "tags": [
-      "Focus",
-      "Dragon Rush"
-    ],
     "apply_tag": [
       "Dragon Rush"
     ],
@@ -2778,9 +2340,6 @@
     "name": "Draining Shadows",
     "points_cost": 2,
     "tooltip": "Heals you for a small amount for each target hit.",
-    "tags": [
-      "Life Drain"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -2795,9 +2354,6 @@
     "name": "Drop Kick",
     "points_cost": 2,
     "tooltip": "Applies Trauma. Trauma ends any healing over time effects on your target and causes them to receive only 50% benefit from any other incoming heals.",
-    "tags": [
-      "Trauma"
-    ],
     "apply_tag": [
       "Trauma"
     ],
@@ -2812,7 +2368,6 @@
     "name": "Drunken Master",
     "points_cost": 2,
     "tooltip": "When you score a critical hit, you gain Aversion for 12 seconds. Aversion increases your Dodge and Avoidance ratings. These bonuses scale with your Dexterity.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -2825,7 +2380,6 @@
     "name": "Dubious Custom Work",
     "points_cost": 2,
     "tooltip": "Increases base damage by 50%, but has 5% chance every hit to go on cooldown for 5 sec.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -2838,7 +2392,6 @@
     "name": "Earthen Embrace",
     "points_cost": 2,
     "tooltip": "While tunneling, you will gain a stack of Earthen Embrace every 3 seconds, up to 6 stacks. Earthen Embrace increases your resistance to all types of damage. These stacks will persist for a short time after you stop tunneling.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -2851,10 +2404,6 @@
     "name": "Egomaniacal",
     "points_cost": 2,
     "tooltip": "Also Knocks Down targets, then Roots them in place shortly after.",
-    "tags": [
-      "Knock Down",
-      "Root"
-    ],
     "apply_tag": [
       "Knock Down",
       "Root"
@@ -2870,9 +2419,6 @@
     "name": "Electric Field",
     "points_cost": 2,
     "tooltip": "On full charge, summons a Static Field for 10 sec. Standing in the Static Field grants up to 5 allies Energy every 1 sec and depletes the Energy of foes.",
-    "tags": [
-      "Static Field"
-    ],
     "apply_tag": [
       "Rune",
       "Static Field"
@@ -2888,11 +2434,6 @@
     "name": "Electric Jolt",
     "points_cost": 2,
     "tooltip": "Targets affected by your Negative Ions are Knocked Back instead of being Knocked Down.",
-    "tags": [
-      "Negative Ions",
-      "Knock Down",
-      "Knock Back"
-    ],
     "apply_tag": [
       "Knock Back"
     ],
@@ -2909,7 +2450,6 @@
     "name": "Electric Personality",
     "points_cost": 3,
     "tooltip": "Changes to a toggle. The toggle has a max duration equal to the maintain limit and retains the same Energy Costs.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -2924,7 +2464,6 @@
     "name": "Electric Vengeance",
     "points_cost": 3,
     "tooltip": "If your Energy is high enough, will automatically deals Electrical Damage back to any foes attacking you, that are within 100 feet. This can occur once every 1.2 sec. Each strike consumes Energy.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -2939,9 +2478,6 @@
     "name": "Electrify",
     "points_cost": 2,
     "tooltip": "20% chance every tick to apply Negative Ions to foes.",
-    "tags": [
-      "Negative Ions"
-    ],
     "apply_tag": [
       "Negative Ions"
     ],
@@ -2956,9 +2492,6 @@
     "name": "Emerging Nightmares",
     "points_cost": 2,
     "tooltip": "Applies Fear to your target and other foes within 10 feet.",
-    "tags": [
-      "Fear"
-    ],
     "apply_tag": [
       "Fear"
     ],
@@ -2973,7 +2506,6 @@
     "name": "Empathic Amplification",
     "points_cost": 2,
     "tooltip": "When you heal someone else, you transfer the pain to yourself. You can then redirect this pain through your own attacks for a short period of time. Failing to redirect the pain quickly enough will cause you to take damage.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -2986,9 +2518,6 @@
     "name": "Encryption",
     "points_cost": 2,
     "tooltip": "Fully charging Roots the target.",
-    "tags": [
-      "Root"
-    ],
     "apply_tag": [
       "Root"
     ],
@@ -3003,9 +2532,6 @@
     "name": "End of Line",
     "points_cost": 2,
     "tooltip": "Deals 30% more base damage if you are above 65% Energy. Deals 35% more base damage if you're instead above 90% Energy. Fully charging refreshes Download.",
-    "tags": [
-      "Download"
-    ],
     "apply_tag": [],
     "refresh_tag": [
       "Download"
@@ -3020,9 +2546,6 @@
     "name": "Endless Void",
     "points_cost": 2,
     "tooltip": "When summoned, allies near it will be healed. This heal is considered a Life Drain effect.",
-    "tags": [
-      "Life Drain"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -3037,7 +2560,6 @@
     "name": "Energy Rush",
     "points_cost": 2,
     "tooltip": "While out of combat, your base Energy Equilibrium is increased by 83% and your Energy Recovery is increased by 100%.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -3050,10 +2572,6 @@
     "name": "Engulfing Flames",
     "points_cost": 2,
     "tooltip": "Applies Engulfing Flames to your target if they are affected by Clinging Flames, reducing their resistance to your Fire damage. Removes all of your Clinging Flames on foes.",
-    "tags": [
-      "Engulfing Flames",
-      "Clinging Flames"
-    ],
     "apply_tag": [
       "Engulfing Flames"
     ],
@@ -3070,9 +2588,6 @@
     "name": "Enhanced Form",
     "points_cost": 2,
     "tooltip": "Grants you Aegis, increasing your Resistance to all damage by +15% for 15 sec.",
-    "tags": [
-      "Aegis"
-    ],
     "apply_tag": [
       "Aegis"
     ],
@@ -3087,9 +2602,6 @@
     "name": "Envelop in Darkness",
     "points_cost": 2,
     "tooltip": "Targets affected are Root for a short duration.",
-    "tags": [
-      "Root"
-    ],
     "apply_tag": [
       "Root"
     ],
@@ -3104,9 +2616,6 @@
     "name": "Envelop in Shadows",
     "points_cost": 2,
     "tooltip": "On full charge, applies Devoid to affected targets. Devoid reduces Dimensional damage resistance. ",
-    "tags": [
-      "Devoid"
-    ],
     "apply_tag": [
       "Devoid"
     ],
@@ -3121,7 +2630,6 @@
     "name": "Ephemeral Endowment",
     "points_cost": 2,
     "tooltip": "Grants your target 25% resistance to all damage, and +25 Run Speed for 10 seconds.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -3134,10 +2642,6 @@
     "name": "Escape Artist",
     "points_cost": 2,
     "tooltip": "Wipes all threat from all foes within 10 feet of your primary target. Also places you in Stealth briefly. Increases the cooldown to 45 seconds and sets all other Threat Wipe abilities on a 30 second cooldown.",
-    "tags": [
-      "Threat Wipe",
-      "Stealth"
-    ],
     "apply_tag": [
       "Stealth"
     ],
@@ -3154,9 +2658,6 @@
     "name": "Essence Assault",
     "points_cost": 2,
     "tooltip": "Stuns the target briefly if used from further than 20 feet away and they aren't already being controlled.",
-    "tags": [
-      "Stun"
-    ],
     "apply_tag": [
       "Stun"
     ],
@@ -3171,9 +2672,6 @@
     "name": "Event Horizon",
     "points_cost": 2,
     "tooltip": "10% chance every tick to apply Bane.",
-    "tags": [
-      "Bane"
-    ],
     "apply_tag": [
       "Bane"
     ],
@@ -3188,10 +2686,6 @@
     "name": "Excessive Force",
     "points_cost": 2,
     "tooltip": "When applying Stagger, it deals double damage and Knocks your foe down.",
-    "tags": [
-      "Stagger",
-      "Knock Down"
-    ],
     "apply_tag": [
       "Stagger",
       "Knock Down"
@@ -3207,10 +2701,6 @@
     "name": "Expanding Earth",
     "points_cost": 1,
     "tooltip": "Targets immune to Hold effects are Knocked up.",
-    "tags": [
-      "Hold",
-      "Knock Up"
-    ],
     "apply_tag": [
       "Knock Up"
     ],
@@ -3227,7 +2717,6 @@
     "name": "Expansive Intellect",
     "points_cost": 2,
     "tooltip": "Increases the radius AoE by 10 feet.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -3240,7 +2729,6 @@
     "name": "Expansive Terrain",
     "points_cost": 2,
     "tooltip": "Become a ranged power, increasing range to 50 feet.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -3253,9 +2741,6 @@
     "name": "Expel",
     "points_cost": 2,
     "tooltip": "Knocks back affected targets.",
-    "tags": [
-      "Knock Back"
-    ],
     "apply_tag": [
       "Knock Back"
     ],
@@ -3270,9 +2755,6 @@
     "name": "Explosive",
     "points_cost": 2,
     "tooltip": "When fully charge, refreshes your Engulfing Flames debuff. Increases the range of the area effect primary target based on the number of Engulfing Flames on your primary target.",
-    "tags": [
-      "Engulfing Flames"
-    ],
     "apply_tag": [],
     "refresh_tag": [
       "Engulfing Flames"
@@ -3289,7 +2771,6 @@
     "name": "Explosive Potential",
     "points_cost": 2,
     "tooltip": "Deals a lesser amount of damage to targets near your primary target.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -3302,9 +2783,6 @@
     "name": "Extra Radiated",
     "points_cost": 2,
     "tooltip": "Has 10% chance to apply a stack Plasma Burn. Chance is guaranteed against single target.",
-    "tags": [
-      "Plasma Burn"
-    ],
     "apply_tag": [
       "Plasma Burn"
     ],
@@ -3319,7 +2797,6 @@
     "name": "Eye of the Storm",
     "points_cost": 2,
     "tooltip": "Deals Cold Damage back to attacking foes. This effect can occur once ever 0.5 sec.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -3334,7 +2811,6 @@
     "name": "Eyes On Me",
     "points_cost": 2,
     "tooltip": "Increases your threat generation while active.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -3347,10 +2823,6 @@
     "name": "Fade Away",
     "points_cost": 2,
     "tooltip": "Wipes all threat from all foes within 10 feet of your primary target. Also places you in Stealth briefly. Increases the cooldown to 45 seconds and sets all other Threat Wipe abilities on a 30 second cooldown.",
-    "tags": [
-      "Threat Wipe",
-      "Stealth"
-    ],
     "apply_tag": [
       "Stealth"
     ],
@@ -3367,10 +2839,6 @@
     "name": "Fade Into Darkness",
     "points_cost": 2,
     "tooltip": "Wipes all threat from all foes within 10 feet of your primary target. Also places you in Stealth briefly. Increases the cooldown to 45 seconds and sets all other Threat Wipe abilities on a 30 second cooldown.",
-    "tags": [
-      "Threat Wipe",
-      "Stealth"
-    ],
     "apply_tag": [
       "Stealth"
     ],
@@ -3387,9 +2855,6 @@
     "name": "Falling Hammer",
     "points_cost": 2,
     "tooltip": "Fully charging applies Demolish to your primary target.",
-    "tags": [
-      "Demolish"
-    ],
     "apply_tag": [
       "Demolish"
     ],
@@ -3404,9 +2869,6 @@
     "name": "Faltering Strikes",
     "points_cost": 2,
     "tooltip": "All attacks now have a chance to Stagger your foe. Stagger reduces damage resistance by 2 and movement speed by 25 for 12 seconds, stacking up to 3 times.",
-    "tags": [
-      "Stagger"
-    ],
     "apply_tag": [
       "Stagger"
     ],
@@ -3421,9 +2883,6 @@
     "name": "Fan the Flames",
     "points_cost": 2,
     "tooltip": "Refreshes Engulfing Flames.",
-    "tags": [
-      "Engulfing Flames"
-    ],
     "apply_tag": [],
     "refresh_tag": [
       "Engulfing Flames"
@@ -3438,7 +2897,6 @@
     "name": "Fanfare",
     "points_cost": 0,
     "tooltip": "Adds fanfare music to the activation of the power.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -3451,9 +2909,6 @@
     "name": "Fang of the Dragon",
     "points_cost": 2,
     "tooltip": "Refreshes Shredded.",
-    "tags": [
-      "Shredded"
-    ],
     "apply_tag": [],
     "refresh_tag": [
       "Shredded"
@@ -3468,9 +2923,6 @@
     "name": "Fatal Allure",
     "points_cost": 1,
     "tooltip": "Feared targets have a 33% chance per tick to be Knocked To you.",
-    "tags": [
-      "Knock To"
-    ],
     "apply_tag": [
       "Knock To"
     ],
@@ -3487,9 +2939,6 @@
     "name": "Fear Machine",
     "points_cost": 2,
     "tooltip": "Has a 15% chance every tick chance to apply Fear.",
-    "tags": [
-      "Fear"
-    ],
     "apply_tag": [
       "Fear"
     ],
@@ -3504,9 +2953,6 @@
     "name": "Fear Sense",
     "points_cost": 2,
     "tooltip": "Gives every hit 25% chance to apply Furious. 100% chance on last hit.",
-    "tags": [
-      "Furious"
-    ],
     "apply_tag": [
       "Furious"
     ],
@@ -3521,7 +2967,6 @@
     "name": "Fearsome Howl",
     "points_cost": 2,
     "tooltip": "Deal Slashing Damage when used. Expires all effects of this ability.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -3536,9 +2981,6 @@
     "name": "Feed the Flames",
     "points_cost": 2,
     "tooltip": "Each tick, heals you for 3.5% Health Point and removes 3.5% Energy from your target.",
-    "tags": [
-      "Passive Heal"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -3553,9 +2995,6 @@
     "name": "Fester",
     "points_cost": 2,
     "tooltip": "Debuffs your target by -5% damage strength over 12 seconds for every one of your Poisons stacks.",
-    "tags": [
-      "Poisons"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -3570,9 +3009,6 @@
     "name": "Festering Bites",
     "points_cost": 2,
     "tooltip": "Has a 15% chance every tick to apply Deadly Poison.",
-    "tags": [
-      "Deadly Poison"
-    ],
     "apply_tag": [
       "Deadly Poison"
     ],
@@ -3587,9 +3023,6 @@
     "name": "Field Medic",
     "points_cost": 2,
     "tooltip": "Also heals nearby allies and yourself for a small amount.",
-    "tags": [
-      "Team Heal"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -3604,9 +3037,6 @@
     "name": "Fiery Blade",
     "points_cost": 2,
     "tooltip": "Instead of Bleeding, each hit has 30% a change to apply Clinging Flames instead. 100% chance on the last hit.",
-    "tags": [
-      "Clinging Flames"
-    ],
     "apply_tag": [
       "Clinging Flames"
     ],
@@ -3621,9 +3051,6 @@
     "name": "Fiery Chasm",
     "points_cost": 2,
     "tooltip": "Adds a scaling chance to apply Clinging Flames. Clinging Flames deals Fire damage every 2 seconds for 12 seconds, with a chance to leap to other nearby targets.",
-    "tags": [
-      "Clinging Flames"
-    ],
     "apply_tag": [
       "Clinging Flames"
     ],
@@ -3638,7 +3065,6 @@
     "name": "Fiery Path",
     "points_cost": 2,
     "tooltip": "Instead of moving toward your target, follows you.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -3651,7 +3077,6 @@
     "name": "Fiery Spirit",
     "points_cost": 3,
     "tooltip": "You gain 50% resistance to Knock effects for 4 seconds after you stop blocking. Deals Break Free damage every second for 4 seconds if you are affected by a Hold.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -3664,9 +3089,6 @@
     "name": "Fighting Spirit",
     "points_cost": 2,
     "tooltip": "56-100% chance (based on charge time) to apply Chi Flame.",
-    "tags": [
-      "Chi Flame"
-    ],
     "apply_tag": [
       "Chi Flame"
     ],
@@ -3681,9 +3103,6 @@
     "name": "Final Delivery",
     "points_cost": 2,
     "tooltip": "Deals Particle Damage and Knock Back target that get within 10 ft of you.",
-    "tags": [
-      "Knock Back"
-    ],
     "apply_tag": [
       "Knock Back"
     ],
@@ -3700,7 +3119,6 @@
     "name": "Finish Him",
     "points_cost": 2,
     "tooltip": "Last hit applies Finisher to you for 8 sec. Finisher increases damage of your archery powers by 15% against targets with less than 25% health.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -3713,7 +3131,6 @@
     "name": "Finite Improbability Engine",
     "points_cost": 2,
     "tooltip": "Increases Critical chance and Critical Severity, but they no longer increase over maintain. Increases base damage by 20%",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -3726,9 +3143,6 @@
     "name": "Fists of Righteous Flame",
     "points_cost": 2,
     "tooltip": "For 12 sec, 50% chance to appli Chi Flame with you melee attacks.",
-    "tags": [
-      "Chi Flame"
-    ],
     "apply_tag": [
       "Chi Flame"
     ],
@@ -3743,9 +3157,6 @@
     "name": "Flame Drop",
     "points_cost": 2,
     "tooltip": "Refreshes Chi Flame.",
-    "tags": [
-      "Chi Flame"
-    ],
     "apply_tag": [],
     "refresh_tag": [
       "Chi Flame"
@@ -3760,9 +3171,6 @@
     "name": "Flaming Chicken Wing",
     "points_cost": 2,
     "tooltip": "Applies Chi Flame.",
-    "tags": [
-      "Chi Flame"
-    ],
     "apply_tag": [
       "Chi Flame"
     ],
@@ -3777,9 +3185,6 @@
     "name": "Flaming Dragon Tail",
     "points_cost": 2,
     "tooltip": "22-50% chance (based on charge time) to apply Chi Flame.",
-    "tags": [
-      "Chi Flame"
-    ],
     "apply_tag": [
       "Chi Flame"
     ],
@@ -3794,9 +3199,6 @@
     "name": "Flaming Fists",
     "points_cost": 2,
     "tooltip": "Applies Clinging Flames instead of Chi Flame. Clinging Flames deals Fire damage every 2 seconds for 12 seconds, with a chance to leap to other nearby targets.",
-    "tags": [
-      "Clinging Flames"
-    ],
     "apply_tag": [
       "Clinging Flames"
     ],
@@ -3811,7 +3213,6 @@
     "name": "Flippin'",
     "points_cost": 2,
     "tooltip": "While active, you gain a bonus to your ability to dodge attacks.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -3824,7 +3225,6 @@
     "name": "Floating Butterfly",
     "points_cost": 2,
     "tooltip": "Grants +10 Avoidance Rating while maintaining.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -3837,9 +3237,6 @@
     "name": "Floating Lotus Blossom",
     "points_cost": 2,
     "tooltip": "After finishing the combo, for 10 sec, your next attacks applies Quick Maneuvering to you. Quick Maneuvering increases your Dodge chance by 5%, lasts for 12 seconds and stacks up to 10 times. All stacks are lost on a successful dodge.",
-    "tags": [
-      "Quick Maneuvering"
-    ],
     "apply_tag": [
       "Quick Maneuvering"
     ],
@@ -3854,7 +3251,6 @@
     "name": "Flowing like the River",
     "points_cost": 3,
     "tooltip": "If you maintain for at least 2 seconds, its bonuses will decay over 10 seconds after you stop maintaining it.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -3867,9 +3263,6 @@
     "name": "Flowing Strikes",
     "points_cost": 2,
     "tooltip": "Refreshes Demolish by up to 10 seconds.",
-    "tags": [
-      "Demolish"
-    ],
     "apply_tag": [],
     "refresh_tag": [
       "Demolish"
@@ -3884,7 +3277,6 @@
     "name": "Focused",
     "points_cost": 2,
     "tooltip": "Full charge reduces cooldown on Active Offense powers.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -3897,9 +3289,6 @@
     "name": "Focused Energy",
     "points_cost": 1,
     "tooltip": "Refreshes Chi Flame by up to 12 seconds.",
-    "tags": [
-      "Chi Flame"
-    ],
     "apply_tag": [],
     "refresh_tag": [
       "Chi Flame"
@@ -3914,7 +3303,6 @@
     "name": "Follow Through",
     "points_cost": 1,
     "tooltip": "Increase the Charge damage by 25%.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -3927,9 +3315,6 @@
     "name": "Footwork",
     "points_cost": 2,
     "tooltip": "Refreshes Demolish by up to 10 seconds.",
-    "tags": [
-      "Demolish"
-    ],
     "apply_tag": [],
     "refresh_tag": [
       "Demolish"
@@ -3944,9 +3329,6 @@
     "name": "Force Collapse",
     "points_cost": 2,
     "tooltip": "Fully charging applies Devoid to targets.",
-    "tags": [
-      "Devoid"
-    ],
     "apply_tag": [
       "Devoid"
     ],
@@ -3961,7 +3343,6 @@
     "name": "Forced March",
     "points_cost": 2,
     "tooltip": "Increases the duration your zombies are summoned for.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -3974,9 +3355,6 @@
     "name": "Frail Armor",
     "points_cost": 2,
     "tooltip": "Applies Frail Armor.",
-    "tags": [
-      "Frail Armor"
-    ],
     "apply_tag": [
       "Frail Armor"
     ],
@@ -3991,7 +3369,6 @@
     "name": "Free Your Mind!",
     "points_cost": 2,
     "tooltip": "Applies Break Free damage to friends within 15 ft.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -4004,9 +3381,6 @@
     "name": "Freeze Dry",
     "points_cost": 2,
     "tooltip": "When fully maintained, Paralyzes affected targets.",
-    "tags": [
-      "Hold"
-    ],
     "apply_tag": [
       "Hold"
     ],
@@ -4021,9 +3395,6 @@
     "name": "Freeze, Dirtbag",
     "points_cost": 2,
     "tooltip": "Paralyze the primary target, instead of Knocking them back.",
-    "tags": [
-      "Hold"
-    ],
     "apply_tag": [
       "Hold"
     ],
@@ -4038,9 +3409,6 @@
     "name": "Freezer Burn",
     "points_cost": 1,
     "tooltip": "20% chance to apply Clinging Flames.",
-    "tags": [
-      "Clinging Flames"
-    ],
     "apply_tag": [
       "Clinging Flames"
     ],
@@ -4055,7 +3423,6 @@
     "name": "Frenetic Blast",
     "points_cost": 2,
     "tooltip": "Reduces your target's movement speed by 15% while maintained.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -4068,9 +3435,6 @@
     "name": "Frigid Air",
     "points_cost": 2,
     "tooltip": "Increases the range to apply Chill to 50 feet.",
-    "tags": [
-      "Chill"
-    ],
     "apply_tag": [
       "Chill"
     ],
@@ -4085,9 +3449,6 @@
     "name": "Frost Bite",
     "points_cost": 2,
     "tooltip": "100% chance to add Chill",
-    "tags": [
-      "Chill"
-    ],
     "apply_tag": [
       "Chill"
     ],
@@ -4102,7 +3463,6 @@
     "name": "Frozen Footsteps",
     "points_cost": 2,
     "tooltip": "Causes Wall of Ice to form in your path as you move.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -4115,10 +3475,6 @@
     "name": "Frozen Wonderland",
     "points_cost": 2,
     "tooltip": "Creates a Healing Rune on your primary target for a short duration, which heals nearby allies. + You cannot have more than one Rune out at a time.",
-    "tags": [
-      "Rune",
-      "Passive Heal"
-    ],
     "apply_tag": [
       "Rune"
     ],
@@ -4135,9 +3491,6 @@
     "name": "Fuel My FIre",
     "points_cost": 1,
     "tooltip": "Gives every hit 25% chance to apply Clinging Flames. 100% chance on last hit.",
-    "tags": [
-      "Clinging Flames"
-    ],
     "apply_tag": [
       "Clinging Flames"
     ],
@@ -4152,9 +3505,6 @@
     "name": "Furious Rush",
     "points_cost": 2,
     "tooltip": "Refreshes and applies 1 stack of Furious.",
-    "tags": [
-      "Furious"
-    ],
     "apply_tag": [
       "Furious"
     ],
@@ -4171,13 +3521,6 @@
     "name": "Furor Venenum",
     "points_cost": 2,
     "tooltip": "20% chance to Infect your target, Stunning them briefly. Chance is guaranted if the target is Bleeding or Poisoned, and refreshes and applies 1 stack of Furious.",
-    "tags": [
-      "Infect",
-      "Stun",
-      "Bleed",
-      "Deadly Poison",
-      "Furious"
-    ],
     "apply_tag": [
       "Infect",
       "Stun",
@@ -4197,9 +3540,6 @@
     "name": "Garroting Grip",
     "points_cost": 2,
     "tooltip": "Applies Fear.",
-    "tags": [
-      "Fear"
-    ],
     "apply_tag": [
       "Fear"
     ],
@@ -4214,7 +3554,6 @@
     "name": "Gaseous Emitter",
     "points_cost": 2,
     "tooltip": "Reduces single target damage by 20%, but increases the damage against multiple targets by 80%",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -4227,9 +3566,6 @@
     "name": "Gather Up",
     "points_cost": 2,
     "tooltip": "Pulls additional targets toward you",
-    "tags": [
-      "Reversel Repel"
-    ],
     "apply_tag": [
       "Reversel Repel"
     ],
@@ -4244,7 +3580,6 @@
     "name": "Gathering Storm",
     "points_cost": 2,
     "tooltip": "Repels targets toward you. + Increases your chance to apply Chill.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -4257,10 +3592,6 @@
     "name": "Ghost Fire",
     "points_cost": 2,
     "tooltip": "Applies Clinging Flames and Fear to your primary target.",
-    "tags": [
-      "Clinging Flames",
-      "Fear"
-    ],
     "apply_tag": [
       "Clinging Flames",
       "Fear"
@@ -4276,7 +3607,6 @@
     "name": "Ghostly Strikes",
     "points_cost": 1,
     "tooltip": "A portion of this damage is dealt as Dimensional damage. This increases the overall damage slightly and counts as a Chi Power effect.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -4291,9 +3621,6 @@
     "name": "Giant Growth",
     "points_cost": 0,
     "tooltip": "Purchasing this advantage adds a growth effect to Enraged.",
-    "tags": [
-      "Enrage"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -4308,9 +3635,6 @@
     "name": "Gifts of the Storm",
     "points_cost": 3,
     "tooltip": "20% of any non-minor or over-time heal you receive to nearby allies while active, even if your health is full. This effect can only occur once every 2 seconds.",
-    "tags": [
-      "Team Heal"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -4325,9 +3649,6 @@
     "name": "Glimpse of the Abyss",
     "points_cost": 2,
     "tooltip": "Applies Fear. After initial hit, 20% chance every 1 sec to reapply Fear, for the duration on the power.",
-    "tags": [
-      "Fear"
-    ],
     "apply_tag": [
       "Fear"
     ],
@@ -4342,9 +3663,6 @@
     "name": "Glossolalia",
     "points_cost": 2,
     "tooltip": "Deals Sonic Damage every 1 sec for 14 sec to foes within 15 ft. 20% chance every 1 sec to spread the Paralyze effect.",
-    "tags": [
-      "Hold"
-    ],
     "apply_tag": [
       "Hold"
     ],
@@ -4361,7 +3679,6 @@
     "name": "Graceful Shots",
     "points_cost": 2,
     "tooltip": "Defeating a foe gives you +12% Dodge Chance for 12 sec.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -4374,9 +3691,6 @@
     "name": "Grasping Hand",
     "points_cost": 2,
     "tooltip": "Roots targets instead of knocking them back.",
-    "tags": [
-      "Root"
-    ],
     "apply_tag": [
       "Root"
     ],
@@ -4391,7 +3705,6 @@
     "name": "Grave Consequences",
     "points_cost": 2,
     "tooltip": "Summons three Zombies as you revive, lasting 30 sec.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -4404,9 +3717,6 @@
     "name": "Gravitational Collapse",
     "points_cost": 2,
     "tooltip": "Foes are Knocked Back instead of Knocked Down.",
-    "tags": [
-      "Knock Back"
-    ],
     "apply_tag": [
       "Knock Back"
     ],
@@ -4421,9 +3731,6 @@
     "name": "Grinning Ghost",
     "points_cost": 2,
     "tooltip": "10% chance every hit to apply a stack of Focus.",
-    "tags": [
-      "Focus"
-    ],
     "apply_tag": [
       "Focus"
     ],
@@ -4438,11 +3745,6 @@
     "name": "Guide",
     "points_cost": 2,
     "tooltip": "Applies Illumination to you and nearby allies as well as Illuminated to your targets.",
-    "tags": [
-      "Illumination",
-      "Illuminated",
-      "Passive Heal"
-    ],
     "apply_tag": [
       "Illumination",
       "Illuminated",
@@ -4459,7 +3761,6 @@
     "name": "Guitar Solo",
     "points_cost": 1,
     "tooltip": "Deals ranged damage instead and scales with your Concentration stacks.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -4474,7 +3775,6 @@
     "name": "Gut Strike",
     "points_cost": 2,
     "tooltip": "Applies Despondency to your target, lowering their Dodge Chance",
-    "tags": [],
     "apply_tag": [
       "Despondency"
     ],
@@ -4489,9 +3789,6 @@
     "name": "Hailstorm",
     "points_cost": 2,
     "tooltip": "Deals Cold Damage back to attacking foes, and has 20% chance to apply Chill. This effect can occur once ever 0.5 sec.",
-    "tags": [
-      "Chill"
-    ],
     "apply_tag": [
       "Chill"
     ],
@@ -4506,7 +3803,6 @@
     "name": "Hard Fall",
     "points_cost": 2,
     "tooltip": "Applies Disorient",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -4519,10 +3815,6 @@
     "name": "Hard Frost",
     "points_cost": 2,
     "tooltip": "Applies Hard Frost to Chilled targets.",
-    "tags": [
-      "Chill",
-      "Hard Frost"
-    ],
     "apply_tag": [
       "Hard Frost"
     ],
@@ -4539,9 +3831,6 @@
     "name": "Hardened Particle Matrix",
     "points_cost": 3,
     "tooltip": "Shields you for an amount of damage scaling with the number of targets hit. Shield last up to 20 sec.",
-    "tags": [
-      "Shield"
-    ],
     "apply_tag": [
       "Shield"
     ],
@@ -4556,9 +3845,6 @@
     "name": "Head Shot",
     "points_cost": 2,
     "tooltip": "Disorient your target if you lunge more than 20 feet.",
-    "tags": [
-      "Disorient"
-    ],
     "apply_tag": [
       "Disorient"
     ],
@@ -4573,9 +3859,6 @@
     "name": "Head Trauma",
     "points_cost": 2,
     "tooltip": "Applies Bewildered to your primary target. If your target charges up powers while affected by Bewildered, they will be stunned briefly.",
-    "tags": [
-      "Stun"
-    ],
     "apply_tag": [
       "Stun"
     ],
@@ -4590,7 +3873,6 @@
     "name": "Heavenly Mana",
     "points_cost": 2,
     "tooltip": "Gives Energy over time to friends and siphons Energy from foes. This effect scales with your Recovery.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -4603,9 +3885,6 @@
     "name": "Heavy Blade",
     "points_cost": 2,
     "tooltip": "On a full charge, all targets are Knocked Down.",
-    "tags": [
-      "Knock Down"
-    ],
     "apply_tag": [
       "Knock Down"
     ],
@@ -4620,9 +3899,6 @@
     "name": "Hellfire",
     "points_cost": 2,
     "tooltip": "Maintaining at least halfway create a Pyre Patch at the target location.",
-    "tags": [
-      "Pyre Patch"
-    ],
     "apply_tag": [
       "Pyre Patch"
     ],
@@ -4637,9 +3913,6 @@
     "name": "Here I Am",
     "points_cost": 2,
     "tooltip": "Stuns targets within 10 feet of your primary target if they aren't affected by a control effect. This effect can only occur once every 10 sec.",
-    "tags": [
-      "Stun"
-    ],
     "apply_tag": [
       "Stun"
     ],
@@ -4654,7 +3927,6 @@
     "name": "Hold The Line",
     "points_cost": 1,
     "tooltip": "Maintaining counts as using a Block for interaction purposes for the first 3 seconds. This amount increases by 2 seconds based on the rank of your Force Shield power.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -4667,9 +3939,6 @@
     "name": "Horrifying Shadows",
     "points_cost": 2,
     "tooltip": "When fully maintained, briefly Stuns all affected targets.",
-    "tags": [
-      "Stun"
-    ],
     "apply_tag": [
       "Stun"
     ],
@@ -4684,12 +3953,6 @@
     "name": "I Need a Nap",
     "points_cost": 2,
     "tooltip": "When expires, Wipes your threat from nearby targets and Placates them, preventing them from attacking you. Ends all Bleed effects on you. Places you in Stealth for 3 sec. Puts you to Sleep for 3 sec. This effect does not break when you take damage. Sets your other Threat Wipe abilities on a 30 sec cooldown.",
-    "tags": [
-      "Stealth",
-      "Bleed",
-      "Placate",
-      "Threat Wipe"
-    ],
     "apply_tag": [
       "Stealth",
       "Placate"
@@ -4709,9 +3972,6 @@
     "name": "I Pay It Gladly",
     "points_cost": 2,
     "tooltip": "If you kill a target, you gain 3 stacks of Furious.",
-    "tags": [
-      "Furious"
-    ],
     "apply_tag": [
       "Furious"
     ],
@@ -4726,7 +3986,6 @@
     "name": "Ice Impaler",
     "points_cost": 2,
     "tooltip": "Adds 15% Critical Chance for this power.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -4739,7 +3998,6 @@
     "name": "Id Blades",
     "points_cost": 0,
     "tooltip": "Causes your Ego Blade powers to manifest Dual Id Blades instead of a single Ego Blade.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -4752,11 +4010,6 @@
     "name": "Illuminate",
     "points_cost": 2,
     "tooltip": "Applies Illumination to you and nearby allies as well as Illuminated to your targets.",
-    "tags": [
-      "Illumination",
-      "Illuminated",
-      "Passive Heal"
-    ],
     "apply_tag": [
       "Illumination",
       "Illuminated",
@@ -4773,10 +4026,6 @@
     "name": "Illumination",
     "points_cost": 2,
     "tooltip": "Once expires, applies lluminated to affected targets, causing allies who attack them to heal.",
-    "tags": [
-      "Illuminated",
-      "Passive Heal"
-    ],
     "apply_tag": [
       "Illuminated",
       "Passive Heal"
@@ -4792,7 +4041,6 @@
     "name": "Illusive",
     "points_cost": 2,
     "tooltip": "You to generate less threat for 10 seconds.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -4805,10 +4053,6 @@
     "name": "Imbue with Power",
     "points_cost": 2,
     "tooltip": "Adds a different effect to your shield based on which Aura you have active. AoAC: returns more energy during a block, scaling with your Intelligence. AoPM: has a chance to strike your attacker with a bolt of lightning. AoED: has a chance to Fear your attackers. AoRP:  has a chance to place a Heal over Time on you.",
-    "tags": [
-      "Passive Heal",
-      "Fear"
-    ],
     "apply_tag": [
       "Fear"
     ],
@@ -4825,7 +4069,6 @@
     "name": "Immense Power",
     "points_cost": 2,
     "tooltip": "Knocks targets away.",
-    "tags": [],
     "apply_tag": [
       "Knock Back"
     ],
@@ -4840,7 +4083,6 @@
     "name": "Impact",
     "points_cost": 2,
     "tooltip": "While this travel power is active, you gain a damage bonus which scales with your current speed. This bonus persists for a short time upon losing speed or stopping.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -4853,9 +4095,6 @@
     "name": "Impaled",
     "points_cost": 2,
     "tooltip": "Adds 12 seconds to the duration of your Stress debuffs",
-    "tags": [
-      "Stress"
-    ],
     "apply_tag": [],
     "refresh_tag": [
       "Stress"
@@ -4870,9 +4109,6 @@
     "name": "Impaler",
     "points_cost": 2,
     "tooltip": "When fully charged, targets are Knocked Toward you.",
-    "tags": [
-      "Knock To"
-    ],
     "apply_tag": [
       "Knock To"
     ],
@@ -4887,7 +4123,6 @@
     "name": "Impart Freedom",
     "points_cost": 2,
     "tooltip": "On a full maintain, removes all Control effects.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -4900,9 +4135,6 @@
     "name": "Impose",
     "points_cost": 2,
     "tooltip": "All targets hit are Snared after 2 seconds, reducing their movement speed for a short time.",
-    "tags": [
-      "Snare"
-    ],
     "apply_tag": [
       "Snare"
     ],
@@ -4917,10 +4149,6 @@
     "name": "Impure Waters",
     "points_cost": 2,
     "tooltip": "Illuminated targets are affected by Deadly Poison instead of Disorient.",
-    "tags": [
-      "Deadly Poison",
-      "Illuminated"
-    ],
     "apply_tag": [
       "Deadly Poison"
     ],
@@ -4937,9 +4165,6 @@
     "name": "Incisive Wit",
     "points_cost": 2,
     "tooltip": "15% chance every hit to apply Id Surge to you, increasing your Ego damage strength by +15% and your Ego by +13 for 15 seconds.",
-    "tags": [
-      "Id Surge"
-    ],
     "apply_tag": [
       "Id Surge"
     ],
@@ -4954,7 +4179,6 @@
     "name": "Indomitable",
     "points_cost": 3,
     "tooltip": "Taking damage while maintaining this power gives you 5% resistance to all damage, resistance to Knock and resistance to Hold effects for 5 sec. This amount scales the lower your health gets up to 120%.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -4967,7 +4191,6 @@
     "name": "Infrared Guidance System",
     "points_cost": 1,
     "tooltip": "Increases the radius to 5ft.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -4980,10 +4203,6 @@
     "name": "Infectious Bile",
     "points_cost": 2,
     "tooltip": "50% chance to apply Deadly Poison against Bleeding targets.",
-    "tags": [
-      "Deadly Poison",
-      "Bleed"
-    ],
     "apply_tag": [
       "Deadly Poison"
     ],
@@ -5000,7 +4219,6 @@
     "name": "Infernal Bond",
     "points_cost": 2,
     "tooltip": "Deals Toxic damage to the target in addition to its normal effects.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -5015,7 +4233,6 @@
     "name": "Initiative",
     "points_cost": 1,
     "tooltip": "Increases the Tap and base damage by 15%.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -5028,10 +4245,6 @@
     "name": "Inner Peace",
     "points_cost": 2,
     "tooltip": "Applies Restoration to you, healing you every 2 sec for 6 sec. If your health in below 20%, give you additional heal, and the value is increased.",
-    "tags": [
-      "Restoration",
-      "Passive Heal"
-    ],
     "apply_tag": [
       "Restoration"
     ],
@@ -5048,9 +4261,6 @@
     "name": "Instep Crush",
     "points_cost": 2,
     "tooltip": "Root your primary target.",
-    "tags": [
-      "Root"
-    ],
     "apply_tag": [
       "Root"
     ],
@@ -5065,10 +4275,6 @@
     "name": "Instill Doubt",
     "points_cost": 2,
     "tooltip": "15% chance per hit to apply Dependencey to targets. Dependency causes the affected target to heal you or one of your nearby allies for a small amount over 20 seconds. Can stack up to 3 times.",
-    "tags": [
-      "Dependency",
-      "Passive Heal"
-    ],
     "apply_tag": [
       "Dependency"
     ],
@@ -5085,9 +4291,6 @@
     "name": "Intense Gravity",
     "points_cost": 2,
     "tooltip": "Stuns affected targets.",
-    "tags": [
-      "Stun"
-    ],
     "apply_tag": [
       "Stun"
     ],
@@ -5102,9 +4305,6 @@
     "name": "Intimidate",
     "points_cost": 2,
     "tooltip": "Applies Fear to the target.",
-    "tags": [
-      "Fear"
-    ],
     "apply_tag": [
       "Fear"
     ],
@@ -5119,9 +4319,6 @@
     "name": "Intimidating Force",
     "points_cost": 1,
     "tooltip": "Knocks Down targets.",
-    "tags": [
-      "Knock Down"
-    ],
     "apply_tag": [
       "Knock Down"
     ],
@@ -5136,9 +4333,6 @@
     "name": "Intimidation",
     "points_cost": 1,
     "tooltip": "Applies threat over time to targets you hit with a melee attack. The amount of threat scales with the number of Enrage stacks on you.",
-    "tags": [
-      "Enrage"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -5153,9 +4347,6 @@
     "name": "Inverse Polarization Field",
     "points_cost": 2,
     "tooltip": "Known Back affected targets on the last hit.",
-    "tags": [
-      "Knock Back"
-    ],
     "apply_tag": [
       "Knock Back"
     ],
@@ -5170,9 +4361,6 @@
     "name": "Invigorating Chill",
     "points_cost": 2,
     "tooltip": "When expires, applies Cold Snap to you.",
-    "tags": [
-      "Cold Snap"
-    ],
     "apply_tag": [
       "Cold Snap"
     ],
@@ -5187,9 +4375,6 @@
     "name": "Ionic Compression",
     "points_cost": 2,
     "tooltip": "Root affected targets.",
-    "tags": [
-      "Root"
-    ],
     "apply_tag": [
       "Root"
     ],
@@ -5204,10 +4389,6 @@
     "name": "Ionic Discharge",
     "points_cost": 1,
     "tooltip": "Hitting a target affected by Negative Ions has 10-50% chance (based on charge time) to Arc to a nearby target.",
-    "tags": [
-      "Negative Ions",
-      "Arc"
-    ],
     "apply_tag": [
       "Arc"
     ],
@@ -5224,9 +4405,6 @@
     "name": "Ionic Infusion",
     "points_cost": 2,
     "tooltip": "50% chance every hit to apply Negative Ions to your target.",
-    "tags": [
-      "Negative Ions"
-    ],
     "apply_tag": [
       "Negative Ions"
     ],
@@ -5241,9 +4419,6 @@
     "name": "Is It Not Just Mayhem?",
     "points_cost": 2,
     "tooltip": "Applies Fear to the target.",
-    "tags": [
-      "Fear"
-    ],
     "apply_tag": [
       "Fear"
     ],
@@ -5258,9 +4433,6 @@
     "name": "It Burns!",
     "points_cost": 2,
     "tooltip": "15% chance every hit to apply Plasma Burn to your target.",
-    "tags": [
-      "Plasma Burn"
-    ],
     "apply_tag": [
       "Plasma Burn"
     ],
@@ -5275,9 +4447,6 @@
     "name": "It's Raining Fire!",
     "points_cost": 1,
     "tooltip": "10% chance per tick to apply Fear to targets.",
-    "tags": [
-      "Fear"
-    ],
     "apply_tag": [
       "Fear"
     ],
@@ -5292,9 +4461,6 @@
     "name": "It's That Time",
     "points_cost": 2,
     "tooltip": "15% chance every hit to apply Disorient,  instead of just the initial attack.",
-    "tags": [
-      "Disorient"
-    ],
     "apply_tag": [
       "Disorient"
     ],
@@ -5309,10 +4475,6 @@
     "name": "Jinx",
     "points_cost": 2,
     "tooltip": "Applies Jinxed to your target, causing them to move slower and deal less damage. After a short amount of time, targets affected by Jinxed are Knocked down.",
-    "tags": [
-      "Knock Down",
-      "Jinxed"
-    ],
     "apply_tag": [
       "Knock Down",
       "Jinxed"
@@ -5328,12 +4490,6 @@
     "name": "Judgement",
     "points_cost": 2,
     "tooltip": "Consume all Illuminations and Illuminated within 100 feet. Respectively heals friends and deals Dimensional damage to foes.",
-    "tags": [
-      "Illumination",
-      "Illuminated",
-      "Team Heal",
-      "Rupture"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -5354,9 +4510,6 @@
     "name": "Just Blow It Up",
     "points_cost": 3,
     "tooltip": "Applies Overpower instead of Knock Down and Stun.",
-    "tags": [
-      "Overpower"
-    ],
     "apply_tag": [
       "Overpower"
     ],
@@ -5371,7 +4524,6 @@
     "name": "Justice",
     "points_cost": 2,
     "tooltip": "Can target up to 5 friends in a cone in front of you. Is less effective per target for each target hit beyond the first.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -5384,9 +4536,6 @@
     "name": "Kindling",
     "points_cost": 2,
     "tooltip": "Your Fiery Escalation Buff also increases the damage of your next Fire Power by 10% per stack, Fiery Escalation is consumed in the process unless you are affected by Immolation.",
-    "tags": [
-      "Fiery Escalation"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -5401,9 +4550,6 @@
     "name": "Laser Knight",
     "points_cost": 3,
     "tooltip": "When you use a melee attack it will activate the Laser Knight shield for 2 sec, increasing your resistance to damage by 33% and your resistance to Knock effects by 33%. Reduces your damage by 10%.",
-    "tags": [
-      "Shield"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -5416,9 +4562,6 @@
     "name": "Lashing Dragon Tail",
     "points_cost": 2,
     "tooltip": "On a full charge,, applies Nimble Movement to you.",
-    "tags": [
-      "Nimble Movement"
-    ],
     "apply_tag": [
       "Nimble Movement"
     ],
@@ -5433,7 +4576,6 @@
     "name": "Leave a Mark",
     "points_cost": 1,
     "tooltip": "Applies a large threat over time effect to your target. This effect stacks with Challenge.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -5446,9 +4588,6 @@
     "name": "Leeching Strikes",
     "points_cost": 2,
     "tooltip": "15% chance every hit to gain a stack of Ego Leech, instead of just the initial attack.",
-    "tags": [
-      "Ego Leech"
-    ],
     "apply_tag": [
       "Ego Leech"
     ],
@@ -5463,9 +4602,6 @@
     "name": "Legacy Code",
     "points_cost": 2,
     "tooltip": "Finishing combo Knocks Down your foes.",
-    "tags": [
-      "Knock Down"
-    ],
     "apply_tag": [
       "Knock Down"
     ],
@@ -5480,9 +4616,6 @@
     "name": "Let The Dust Settle",
     "points_cost": 2,
     "tooltip": "Creates a Dust Cloud that lowers the perception of foes.",
-    "tags": [
-      "Perception"
-    ],
     "apply_tag": [
       "Perception"
     ],
@@ -5497,9 +4630,6 @@
     "name": "Lethal Poison",
     "points_cost": 2,
     "tooltip": "Increases base damage by 30% if the target if affected by at least 5 Poisons.",
-    "tags": [
-      "Poison"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -5514,10 +4644,6 @@
     "name": "Light Everlasting",
     "points_cost": 2,
     "tooltip": "When fully charged, applies Light Everlasting to nearby allies.",
-    "tags": [
-      "Light Everlasting",
-      "Passive Heal"
-    ],
     "apply_tag": [
       "Light Everlasting"
     ],
@@ -5534,9 +4660,6 @@
     "name": "Light Mend",
     "points_cost": 2,
     "tooltip": "Adds 10 seconds to Disintegrate.",
-    "tags": [
-      "Disintegrate"
-    ],
     "apply_tag": [],
     "refresh_tag": [
       "Disintegrate"
@@ -5553,10 +4676,6 @@
     "name": "Light Up The Sky",
     "points_cost": 2,
     "tooltip": "On a full maintain, applies Illuminated to foes.",
-    "tags": [
-      "Illuminated",
-      "Passive Heal"
-    ],
     "apply_tag": [
       "Illuminated"
     ],
@@ -5573,10 +4692,6 @@
     "name": "Lightning Helix",
     "points_cost": 1,
     "tooltip": "Adds an additional, random arc. This arc may go to the same target that another arc goes to, hitting that target twice, or may go to another nearby target. The additional arc also benefits from additional chainging via consuming Negative Ions.",
-    "tags": [
-      "Negative Ions",
-      "Arc"
-    ],
     "apply_tag": [
       "Arc"
     ],
@@ -5595,9 +4710,6 @@
     "name": "Lightning Overload",
     "points_cost": 1,
     "tooltip": "20% chance to arc to a target.",
-    "tags": [
-      "Arc"
-    ],
     "apply_tag": [
       "Arc"
     ],
@@ -5612,11 +4724,6 @@
     "name": "Lightning Rod",
     "points_cost": 2,
     "tooltip": "Foes affected by Negative Ions are Knocked To you. Also grants you Aegis, increasing your Resistance to all damage by +15% for 15 sec.",
-    "tags": [
-      "Negative Ions",
-      "Knock To",
-      "Aegis"
-    ],
     "apply_tag": [
       "Knock To",
       "Aegis"
@@ -5634,9 +4741,6 @@
     "name": "Lingering Darkness",
     "points_cost": 2,
     "tooltip": "Refreshes your Devoid debuff by 12 seconds. After the initial hit, has a 20% chance every hit to refresh Devoid by an additional 2 seconds.",
-    "tags": [
-      "Devoid"
-    ],
     "apply_tag": [],
     "refresh_tag": [
       "Devoid"
@@ -5651,10 +4755,6 @@
     "name": "Listen to Reason",
     "points_cost": 2,
     "tooltip": "15% chance every hit to apply Fear. Refreshes all stacks of Furious.",
-    "tags": [
-      "Fear",
-      "Furious"
-    ],
     "apply_tag": [
       "Fear"
     ],
@@ -5671,7 +4771,6 @@
     "name": "Locust Breath",
     "points_cost": 0,
     "tooltip": "Becomes Locust Breath. (FX change)",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -5684,9 +4783,6 @@
     "name": "Lunar Force",
     "points_cost": 2,
     "tooltip": "Standing in the area of effect increases Knock resistance by 25% if affected by Furious.",
-    "tags": [
-      "Furious"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -5701,7 +4797,6 @@
     "name": "Madness?!",
     "points_cost": 2,
     "tooltip": "Refreshes the Defiant buff if you have the Defiance passive active.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [
       "Defiance"
@@ -5716,9 +4811,6 @@
     "name": "Magma Burst",
     "points_cost": 2,
     "tooltip": "Deals Fire Damage within 15ft. Applies Clinging Flames to your primary target, and has 30% change to apply it too to secondary targets.",
-    "tags": [
-      "Clinging Flames"
-    ],
     "apply_tag": [
       "Clinging Flames"
     ],
@@ -5735,10 +4827,6 @@
     "name": "Magnetic",
     "points_cost": 2,
     "tooltip": "Draws enemies toward you while maintained. Applies Negative Ions to targets within 5 feet.",
-    "tags": [
-      "Negative Ions",
-      "Reverse Repel"
-    ],
     "apply_tag": [
       "Negative Ions",
       "Reverse Repel"
@@ -5754,9 +4842,6 @@
     "name": "Magnitude",
     "points_cost": 2,
     "tooltip": "Knock Back targets.",
-    "tags": [
-      "Knock Back"
-    ],
     "apply_tag": [
       "Knock Back"
     ],
@@ -5771,9 +4856,6 @@
     "name": "Major Impact",
     "points_cost": 2,
     "tooltip": "Targets further than 20 ft are Knocked To you instead of Knocked Back.",
-    "tags": [
-      "Knock To"
-    ],
     "apply_tag": [
       "Knock To"
     ],
@@ -5788,10 +4870,6 @@
     "name": "Make them Tremble",
     "points_cost": 1,
     "tooltip": "Applies Snare and Root to affected targets.",
-    "tags": [
-      "Snare",
-      "Root"
-    ],
     "apply_tag": [
       "Snare",
       "Root"
@@ -5807,7 +4885,6 @@
     "name": "Malaise",
     "points_cost": 2,
     "tooltip": "Target suffers -15% to their power recharge speed for 10 seconds.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -5820,7 +4897,6 @@
     "name": "Malevolent Manifestation",
     "points_cost": 2,
     "tooltip": "Becomes a static summon instead of a maintain. Increases the cost by 20%, and cannot Criticaly Hit.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -5835,9 +4911,6 @@
     "name": "Mass Effect",
     "points_cost": 2,
     "tooltip": "Snare your main target and foes nearby.",
-    "tags": [
-      "Snare"
-    ],
     "apply_tag": [
       "Snare"
     ],
@@ -5852,7 +4925,6 @@
     "name": "Mass Resurrection",
     "points_cost": 2,
     "tooltip": "Revives up to 4 nearby allies within 50 feet. The healing received is divided among the number of allies revived at a time.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -5865,7 +4937,6 @@
     "name": "Massive Attack",
     "points_cost": 2,
     "tooltip": "Removes AoE component of the power, causing it to deal 60% more damage.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -5878,9 +4949,6 @@
     "name": "Matter - Energy Union",
     "points_cost": 2,
     "tooltip": "Grants a damage absorption shield when activate.",
-    "tags": [
-      "Shield"
-    ],
     "apply_tag": [
       "Shield"
     ],
@@ -5895,9 +4963,6 @@
     "name": "Maybe I'm Just Better",
     "points_cost": 2,
     "tooltip": "10% chance every hit to apply Furious.",
-    "tags": [
-      "Furious"
-    ],
     "apply_tag": [
       "Furious"
     ],
@@ -5912,9 +4977,6 @@
     "name": "Melta Cannon",
     "points_cost": 2,
     "tooltip": "10% chance every hit to apply Plasma Burn.",
-    "tags": [
-      "Plasma Burn"
-    ],
     "apply_tag": [
       "Plasma Burn"
     ],
@@ -5929,9 +4991,6 @@
     "name": "Menacing",
     "points_cost": 1,
     "tooltip": "Applies large threat over time debuff on your target. This amount scales with how many stacks of Ego Leech you have. This effect stacks with Challenge.",
-    "tags": [
-      "Ego Leech"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -5946,9 +5005,6 @@
     "name": "Mending Protocol",
     "points_cost": 2,
     "tooltip": "Gives a change to Heal you for the amount of damage dealt. That chance increases the lower is your Health.",
-    "tags": [
-      "Passive Heal"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -5963,9 +5019,6 @@
     "name": "Mental Acuity",
     "points_cost": 2,
     "tooltip": "Doubles the damage per Ego Leech consumed. Increases by 50% the damage from Ego Anniliation effect.",
-    "tags": [
-      "Ego Leech"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -5980,9 +5033,6 @@
     "name": "Mental Artillery",
     "points_cost": 2,
     "tooltip": "20% chance every hit to apply Stress.",
-    "tags": [
-      "Stress"
-    ],
     "apply_tag": [
       "Stress"
     ],
@@ -5997,9 +5047,6 @@
     "name": "Mental Block",
     "points_cost": 3,
     "tooltip": "Grants a damage absorption shield that scales up over time. Lasts as long as you maintain.",
-    "tags": [
-      "Shield"
-    ],
     "apply_tag": [
       "Shield"
     ],
@@ -6014,9 +5061,6 @@
     "name": "Mental Instability",
     "points_cost": 2,
     "tooltip": "Targets are Knocked To you instead of Knocked Back.",
-    "tags": [
-      "Knock To"
-    ],
     "apply_tag": [
       "Knock To"
     ],
@@ -6031,7 +5075,6 @@
     "name": "Mental Weakness",
     "points_cost": 2,
     "tooltip": "Target suffers -15% to their power recharge speed for 10 seconds.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -6044,9 +5087,6 @@
     "name": "Messy",
     "points_cost": 2,
     "tooltip": "Adds 10 seconds to Shredded.",
-    "tags": [
-      "Shredded"
-    ],
     "apply_tag": [],
     "refresh_tag": [
       "Shredded"
@@ -6061,7 +5101,6 @@
     "name": "Microelectronic Controllers",
     "points_cost": 2,
     "tooltip": "Deals increased damage for each subsequent target they hit.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -6074,10 +5113,6 @@
     "name": "Microfilament Wire",
     "points_cost": 2,
     "tooltip": "If used within Melee range of a target, the primary target will be Knocked Towards you and the secondary targets will be Knocked Down after you land.",
-    "tags": [
-      "Knock Down",
-      "Knock To"
-    ],
     "apply_tag": [
       "Knock Down",
       "Knock To"
@@ -6093,9 +5128,6 @@
     "name": "Midnight Frenzy",
     "points_cost": 1,
     "tooltip": "After using Howl, standing in Moonlight grants you a damabe absorbing shield that increases in strength over time.",
-    "tags": [
-      "Shield"
-    ],
     "apply_tag": [
       "Shield"
     ],
@@ -6110,7 +5142,6 @@
     "name": "Mind Opener",
     "points_cost": 2,
     "tooltip": "Increase base damage by 30% if you are affected by Telepathic Reverberation.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -6125,9 +5156,6 @@
     "name": "Mind the Uniform",
     "points_cost": 2,
     "tooltip": "Applies Fear to affected targets.",
-    "tags": [
-      "Fear"
-    ],
     "apply_tag": [
       "Fear"
     ],
@@ -6142,7 +5170,6 @@
     "name": "Molten Core",
     "points_cost": 1,
     "tooltip": "While active, remove the Crushing Damage portion of your Fissure power, and greatly increases its Fire Damage.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -6157,7 +5184,6 @@
     "name": "Moonlight",
     "points_cost": 2,
     "tooltip": "While standing in the area of effect, the damage resistance granted by Regeneration is increased by 5% and doesn't diminish as you lose health.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -6170,7 +5196,6 @@
     "name": "More Souls!",
     "points_cost": 2,
     "tooltip": "Revives up to 4 nearby allies within 50 feet. The healing received is divided among the number of allies revived at a time.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -6183,9 +5208,6 @@
     "name": "Mouth of Madness",
     "points_cost": 2,
     "tooltip": "Has a chance to not consume the Shredded effect.",
-    "tags": [
-      "Shredded"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -6200,7 +5222,6 @@
     "name": "Mow 'Em Down",
     "points_cost": 2,
     "tooltip": "Can hit up to 3 targets in a 2 foot cylinder. Now considered an AoE power.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -6213,9 +5234,6 @@
     "name": "Mystic Transference",
     "points_cost": 1,
     "tooltip": "Reduces the number of Sigils summoned to 2, but they can be used alongside your other Sigils. This also lowers the base charge time to 0.83, the energy cost, and the cooldown to 10 seconds.",
-    "tags": [
-      "Sigils"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -6230,9 +5248,6 @@
     "name": "Mystical",
     "points_cost": 2,
     "tooltip": "Applies Mystified to you. Mystified lasts 15 seconds and reduces the cost of your Sorcery, Celestial, Darkness, and Infernal powers by 3%, stacking up to 3 times.",
-    "tags": [
-      "Mystified"
-    ],
     "apply_tag": [
       "Mystified"
     ],
@@ -6247,9 +5262,6 @@
     "name": "Needles",
     "points_cost": 2,
     "tooltip": "Applies Bleed to your target if they aren't already Bleeding",
-    "tags": [
-      "Bleed"
-    ],
     "apply_tag": [
       "Bleed"
     ],
@@ -6264,9 +5276,6 @@
     "name": "Nerve Damage",
     "points_cost": 2,
     "tooltip": "Apply Snare to target(s)",
-    "tags": [
-      "Snare"
-    ],
     "apply_tag": [
       "Snare"
     ],
@@ -6281,9 +5290,6 @@
     "name": "Never Strikes Twice",
     "points_cost": 2,
     "tooltip": "Increases the damage against Held targets.",
-    "tags": [
-      "Hold"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -6298,9 +5304,6 @@
     "name": "Night Hunt",
     "points_cost": 2,
     "tooltip": "Applies Sudden Strike.",
-    "tags": [
-      "Sudden Strike"
-    ],
     "apply_tag": [
       "Sudden Strike"
     ],
@@ -6315,7 +5318,6 @@
     "name": "Night Terror",
     "points_cost": 2,
     "tooltip": "Nightmare entities have their life span increased. They will attack the target until it is defeated instead of disappearing partway through the fight.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -6328,9 +5330,6 @@
     "name": "Night Vision",
     "points_cost": 2,
     "tooltip": "While active, aApplies Detect to you, increasing your Stealth Sight by 22%, your Perception by 150%, and your Minimap Radius by 75.",
-    "tags": [
-      "Perception"
-    ],
     "apply_tag": [
       "Perception"
     ],
@@ -6345,9 +5344,6 @@
     "name": "Nightmare",
     "points_cost": 2,
     "tooltip": "Fully charging creates a Pyre Patch at your location.",
-    "tags": [
-      "Pyre Patch"
-    ],
     "apply_tag": [
       "Pyre Patch"
     ],
@@ -6362,9 +5358,6 @@
     "name": "Nimble Mind",
     "points_cost": 2,
     "tooltip": "Increases your critical strike chance by 2% for every stack of Ego Leech you have while active.",
-    "tags": [
-      "Ego Leech"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -6379,10 +5372,6 @@
     "name": "No Code Of Conduct",
     "points_cost": 2,
     "tooltip": "30% chance every hit to inflict additional Slashing Damage to foes within 10ft. This chance is guaranteed if your target is affected by your Shredded or if you are affected by 3 stacks of Furious.",
-    "tags": [
-      "Shredded",
-      "Furious"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -6400,9 +5389,6 @@
     "name": "No Mercy",
     "points_cost": 2,
     "tooltip": "Consumes Wounds instead of just Bleed. Deals Slashing damage initially, followed by 2 subsequent hits over 4 seconds for 50% of the original hit's damage.",
-    "tags": [
-      "Wounds"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -6417,9 +5403,6 @@
     "name": "No Quarter",
     "points_cost": 2,
     "tooltip": "Applies No Quarter to Disoriented targets.",
-    "tags": [
-      "Disorient"
-    ],
     "apply_tag": [
       "No Quarter"
     ],
@@ -6436,9 +5419,6 @@
     "name": "Not Without Incident",
     "points_cost": 2,
     "tooltip": "30% chance to deal additional Crushing damage to up to 5 targets within 10 ft. Chance is guaranteed if you are affected by Furious.",
-    "tags": [
-      "Furious"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -6453,10 +5433,6 @@
     "name": "Noxious Fumes",
     "points_cost": 2,
     "tooltip": "10% chance every 1 sec to Stun target standinf in the Gas Cloud. 25% chance of the target is Disoriented.",
-    "tags": [
-      "Stun",
-      "Disorient"
-    ],
     "apply_tag": [
       "Stun"
     ],
@@ -6473,9 +5449,6 @@
     "name": "Nuclear Fallout",
     "points_cost": 2,
     "tooltip": "Applies Disintegrate to targets.",
-    "tags": [
-      "Disintegrate"
-    ],
     "apply_tag": [
       "Disintegrate"
     ],
@@ -6490,10 +5463,6 @@
     "name": "Null Value",
     "points_cost": 2,
     "tooltip": "Stuns your main target and Knocks Down secondary targets.",
-    "tags": [
-      "Stun",
-      "Knock Down"
-    ],
     "apply_tag": [
       "Stun",
       "Knock Down"
@@ -6509,9 +5478,6 @@
     "name": "Nyctophobia",
     "points_cost": 2,
     "tooltip": "Increases base damage by 30% against Feared targets.",
-    "tags": [
-      "Fear"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -6526,10 +5492,6 @@
     "name": "Oasis",
     "points_cost": 2,
     "tooltip": "On a full charge, creates a Healing Rune beneath you.",
-    "tags": [
-      "Rune",
-      "Passive Heal"
-    ],
     "apply_tag": [
       "Rune"
     ],
@@ -6546,9 +5508,6 @@
     "name": "Off Your Feet",
     "points_cost": 2,
     "tooltip": "Knock Back targets.",
-    "tags": [
-      "Knock Back"
-    ],
     "apply_tag": [
       "Knock Back"
     ],
@@ -6563,10 +5522,6 @@
     "name": "Open Wound",
     "points_cost": 2,
     "tooltip": "Applies Open Wound to your primary target. Open Wound has a 25% chance to apply a stack of Bleed to the target every 2 seconds for 10 seconds. Chance is doubled on the last tick.",
-    "tags": [
-      "Bleed",
-      "Open Wound"
-    ],
     "apply_tag": [
       "Bleed",
       "Open Wound"
@@ -6582,10 +5537,6 @@
     "name": "Out of My Way!",
     "points_cost": 2,
     "tooltip": "For a short time after lunging, you deal Slashing Damage and Knock Back targets around you while moving. If a target is immune to Knock effects, chance to apply Disorient reducing their damage and movement speed.",
-    "tags": [
-      "Knock Back",
-      "Disorient"
-    ],
     "apply_tag": [
       "Knock Back",
       "Disorient"
@@ -6605,9 +5556,6 @@
     "name": "Outbreak",
     "points_cost": 2,
     "tooltip": "Reduces the maximum maintain time by one second. Increases the chance to apply Deadly Poison to 25% every hit.",
-    "tags": [
-      "Deadly Poison"
-    ],
     "apply_tag": [
       "Deadly Poison"
     ],
@@ -6622,7 +5570,6 @@
     "name": "Overloaded Circuits",
     "points_cost": 2,
     "tooltip": "Deals Electrical damage to anyone who triggers your shield. Damage dealt is based on incoming damage.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -6637,7 +5584,6 @@
     "name": "Oversized Pellet Bag",
     "points_cost": 2,
     "tooltip": "Has a chance to apply Deadly Poison.",
-    "tags": [],
     "apply_tag": [
       "Deadly Poison"
     ],
@@ -6652,10 +5598,6 @@
     "name": "Overwhelming Force",
     "points_cost": 2,
     "tooltip": "When fully charged, applies Armor Piercing to your primary target as well as any Disoriented secondary targets.",
-    "tags": [
-      "Disorient",
-      "Armor Piercing"
-    ],
     "apply_tag": [
       "Disorient",
       "Armor Piercing"
@@ -6671,7 +5613,6 @@
     "name": "Pact",
     "points_cost": 2,
     "tooltip": "Revives up to 4 nearby allies within 50 feet. The healing received is divided among the number of allies revived at a time.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -6684,7 +5625,6 @@
     "name": "Paint the Target",
     "points_cost": 2,
     "tooltip": "Increasins your Critical Chance by 3% every hit. This effect stacks up to 5 times, and is consumed when you perform a Critical Hit.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -6697,10 +5637,6 @@
     "name": "Panic",
     "points_cost": 2,
     "tooltip": "20% chance every hit to Stun your targets. 100% chance against targets is affected by Fear.",
-    "tags": [
-      "Stun",
-      "Fear"
-    ],
     "apply_tag": [
       "Stun"
     ],
@@ -6717,9 +5653,6 @@
     "name": "Panic and Run",
     "points_cost": 2,
     "tooltip": "15% chance every hit to apply Stagger to targets.",
-    "tags": [
-      "Stagger"
-    ],
     "apply_tag": [
       "Stagger"
     ],
@@ -6734,11 +5667,6 @@
     "name": "Paralytic Bile",
     "points_cost": 2,
     "tooltip": "Targets hit with Venemous Breath have a chance to suffer from an Infection that Stuns them for a short time. Targets that are Bleeding have a 100% chance to be Infected.",
-    "tags": [
-      "Infect",
-      "Stun",
-      "Bleed"
-    ],
     "apply_tag": [
       "Infect",
       "Stun"
@@ -6756,9 +5684,6 @@
     "name": "Paranormal Paranoia",
     "points_cost": 2,
     "tooltip": "30-100% chance to apply Fear",
-    "tags": [
-      "Fear"
-    ],
     "apply_tag": [
       "Fear"
     ],
@@ -6773,9 +5698,6 @@
     "name": "Particle Acceleration",
     "points_cost": 2,
     "tooltip": "Finishing combo applies Disintegrate.",
-    "tags": [
-      "Disintegrate"
-    ],
     "apply_tag": [
       "Disintegrate"
     ],
@@ -6790,7 +5712,6 @@
     "name": "Particle Blast",
     "points_cost": 2,
     "tooltip": "Reduces single target damage by 20%, but increases the damage against multiple targets by 80%",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -6803,9 +5724,6 @@
     "name": "Particle Burst",
     "points_cost": 2,
     "tooltip": "Applies Plasma Burn to targets close. Chance to apply to targets further away from the blast.",
-    "tags": [
-      "Plasma Burn"
-    ],
     "apply_tag": [
       "Plasma Burn"
     ],
@@ -6820,10 +5738,6 @@
     "name": "Particle Storm",
     "points_cost": 2,
     "tooltip": "25% chance every hit to apply Plasma Burn to targets. 50% chance if the target is affected by Negative Ions.",
-    "tags": [
-      "Negative Ions",
-      "Plasma Burn"
-    ],
     "apply_tag": [
       "Plasma Burn"
     ],
@@ -6840,9 +5754,6 @@
     "name": "Peerless Predation",
     "points_cost": 2,
     "tooltip": "15% chance every hit to apply Furious.",
-    "tags": [
-      "Furious"
-    ],
     "apply_tag": [
       "Furious"
     ],
@@ -6857,9 +5768,6 @@
     "name": "Penetrating Strikes",
     "points_cost": 2,
     "tooltip": "Applies Shredded to the primary target on last hit.",
-    "tags": [
-      "Shredded"
-    ],
     "apply_tag": [
       "Shredded"
     ],
@@ -6874,11 +5782,6 @@
     "name": "Perfect Storm",
     "points_cost": 3,
     "tooltip": "Deals additional Electrical Damage and has 15% chance to apply Chill and Negative Ions every hit.",
-    "tags": [
-      "Negative Ions",
-      "Chill",
-      "Ice Cage"
-    ],
     "apply_tag": [
       "Negative Ions",
       "Chill",
@@ -6897,7 +5800,6 @@
     "name": "Peripheral Vision",
     "points_cost": 1,
     "tooltip": "Increases the radius to 5 ft.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -6910,7 +5812,6 @@
     "name": "Phalanx Defense System",
     "points_cost": 3,
     "tooltip": "When you use a Power Armor Slot (Chest, Hand, or Shoulder) attack, it will activate the Laser Knight shield for 2 sec, increasing your resistance to damage by 10% and your resistance to Knock effects by 10%. Reduces your damage by 10%.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -6923,11 +5824,6 @@
     "name": "Phlebotomist",
     "points_cost": 2,
     "tooltip": "Roots your target. Increase healing by 150% against from Bleeding or Poisoned targets.",
-    "tags": [
-      "Root",
-      "Bleed",
-      "Deadly Poison"
-    ],
     "apply_tag": [
       "Root"
     ],
@@ -6945,9 +5841,6 @@
     "name": "Pin Down",
     "points_cost": 2,
     "tooltip": "Snares your target.",
-    "tags": [
-      "Snare"
-    ],
     "apply_tag": [
       "Snare"
     ],
@@ -6962,7 +5855,6 @@
     "name": "Plague",
     "points_cost": 2,
     "tooltip": "Increases the effectiveness of the Toxic resistance debuff from your Pestilence passive while maintaing.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -6975,9 +5867,6 @@
     "name": "Plague Bearer",
     "points_cost": 2,
     "tooltip": "Applies Noxious Poison to your target and neargy foes.",
-    "tags": [
-      "Noxious Poison"
-    ],
     "apply_tag": [
       "Noxious Poison"
     ],
@@ -6992,9 +5881,6 @@
     "name": "Plagued by Nightmares",
     "points_cost": 2,
     "tooltip": "Applies Fear to your targets when they wake up.",
-    "tags": [
-      "Fear"
-    ],
     "apply_tag": [
       "Fear"
     ],
@@ -7009,7 +5895,6 @@
     "name": "Point Blank Blast",
     "points_cost": 2,
     "tooltip": "Increases base damage up to 50% the closer you are to your target.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -7022,9 +5907,6 @@
     "name": "Poised To Strike",
     "points_cost": 1,
     "tooltip": "If you are affected by Sudden Strike, every attack of this combo reapplies the effect.",
-    "tags": [
-      "Sudden Strike"
-    ],
     "apply_tag": [
       "Sudden Strike"
     ],
@@ -7041,9 +5923,6 @@
     "name": "Poison Shuriken",
     "points_cost": 2,
     "tooltip": "50-100% chance to apply Deadly Poison.",
-    "tags": [
-      "Deadly Poison"
-    ],
     "apply_tag": [
       "Deadly Poison"
     ],
@@ -7058,10 +5937,6 @@
     "name": "Poison Tipped Claws",
     "points_cost": 2,
     "tooltip": "10% chance very hit to apply Deadly Poison. 25% chance on the last hit. Chance are doubled if you are affected by Enrage.",
-    "tags": [
-      "Deadly Poison",
-      "Enrage"
-    ],
     "apply_tag": [
       "Deadly Poison"
     ],
@@ -7078,10 +5953,6 @@
     "name": "Power Consumption",
     "points_cost": 2,
     "tooltip": "Heals you when attacking a target affected by your Negative Ions. This heal is considered a Life Drain effect.",
-    "tags": [
-      "Negative Ions",
-      "Life Drain"
-    ],
     "apply_tag": [],
     "refresh_tag": [
       "Negative Ions"
@@ -7098,9 +5969,6 @@
     "name": "Power Shift",
     "points_cost": 2,
     "tooltip": "10% chance every hit for targets to be Knocked To you. 100% chance if fully maintained.",
-    "tags": [
-      "Knock To"
-    ],
     "apply_tag": [
       "Knock To"
     ],
@@ -7115,9 +5983,6 @@
     "name": "Power Sweep",
     "points_cost": 2,
     "tooltip": "25% chance to apply Chi Flame",
-    "tags": [
-      "Chi Flame"
-    ],
     "apply_tag": [
       "Chi Flame"
     ],
@@ -7132,9 +5997,6 @@
     "name": "Precise Attack",
     "points_cost": 2,
     "tooltip": "When used against a single target, adds another stack of Deadly Poison. - When used against multiple targets, the additional stack has a lowered chance of applying.",
-    "tags": [
-      "Deadly Poison"
-    ],
     "apply_tag": [
       "Deadly Poison"
     ],
@@ -7149,10 +6011,6 @@
     "name": "Predictable",
     "points_cost": 2,
     "tooltip": "Wipes all threat from all foes within 10 feet of your primary target. Also places you in Stealth briefly. Increases the cooldown to 45 seconds and sets all other Threat Wipe abilities on a 30 second cooldown.",
-    "tags": [
-      "Stealth",
-      "Threat Wipe"
-    ],
     "apply_tag": [
       "Stealth"
     ],
@@ -7169,10 +6027,6 @@
     "name": "Psionic Amplification",
     "points_cost": 2,
     "tooltip": "Deals additional base damage when used against Held or Disoriented targets.",
-    "tags": [
-      "Hold",
-      "Disorient"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -7188,9 +6042,6 @@
     "name": "Psionic Emanation",
     "points_cost": 2,
     "tooltip": "25% chance to perform an AoE heal around the target.",
-    "tags": [
-      "Team Heal"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -7205,7 +6056,6 @@
     "name": "Psychic Reverberations",
     "points_cost": 2,
     "tooltip": "15% chance to increase your Ego damage by 10% damage strenght, for 6 sec.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -7218,9 +6068,6 @@
     "name": "Psychic Tides",
     "points_cost": 2,
     "tooltip": "Sets the Energy Equilibrium of targets to 1 for 16 seconds. Snares targets.",
-    "tags": [
-      "Snare"
-    ],
     "apply_tag": [
       "Snare"
     ],
@@ -7235,10 +6082,6 @@
     "name": "Psychotic Break",
     "points_cost": 2,
     "tooltip": "When fully charged, Stuns and Bleed targets affect by Fear. ",
-    "tags": [
-      "Stun",
-      "Bleed"
-    ],
     "apply_tag": [
       "Stun",
       "Bleed"
@@ -7256,9 +6099,6 @@
     "name": "Pummel",
     "points_cost": 2,
     "tooltip": "Applies Demolish on last hit.",
-    "tags": [
-      "Demolish"
-    ],
     "apply_tag": [
       "Demolish"
     ],
@@ -7273,9 +6113,6 @@
     "name": "Punitive Pummeling",
     "points_cost": 2,
     "tooltip": "When you take damage from a foe within 10ft of you, Knocks them Back. This can occur once every 10 sec.",
-    "tags": [
-      "Knock Back"
-    ],
     "apply_tag": [
       "Knock Back"
     ],
@@ -7290,9 +6127,6 @@
     "name": "Put Them Down",
     "points_cost": 1,
     "tooltip": "Deals an additional 15% damage to Disoriented targets.",
-    "tags": [
-      "Disorient"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -7307,10 +6141,6 @@
     "name": "Quills",
     "points_cost": 2,
     "tooltip": "10% to apply Deadly Poison or Bleed to nearby attacking targets while blocking.",
-    "tags": [
-      "Deadly Poison",
-      "Bleed"
-    ],
     "apply_tag": [
       "Deadly Poison",
       "Bleed"
@@ -7326,10 +6156,6 @@
     "name": "Rabies",
     "points_cost": 2,
     "tooltip": "20% chance to apply Deadly Poison on tap. Refreshes your Poisons. When charged at least half way, spreads any of your poison to up to 5 foe within 20 ft.",
-    "tags": [
-      "Deadly Poison",
-      "Poisons"
-    ],
     "apply_tag": [
       "Deadly Poison",
       "Poisons"
@@ -7345,7 +6171,6 @@
     "name": "Radiant Renewal",
     "points_cost": 2,
     "tooltip": "Revives up to 4 nearby allies within 50 feet. The healing received is divided among the number of allies revived at a time.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -7358,9 +6183,6 @@
     "name": "Radiate",
     "points_cost": 2,
     "tooltip": "Applies Radiate to the target. Radiate has a 25% chance to apply a stack of Plasma Burn to the target every 2 seconds for 10 seconds.",
-    "tags": [
-      "Plasma Burn"
-    ],
     "apply_tag": [
       "Plasma Burn"
     ],
@@ -7375,10 +6197,6 @@
     "name": "Radioactive Decay",
     "points_cost": 2,
     "tooltip": "When this power is fully charged, spreads any of your Plasma Burn and Disintegrate effects on your target to up to 3 foes within 20ft. Affected targets also take Particle Damage if you are within 15ft, and less Particle Damage if you are further away. Refreshes Plasma Burn and Disintegrate on targets that these effects were spread to.",
-    "tags": [
-      "Plasma Burn",
-      "Disintegrate"
-    ],
     "apply_tag": [],
     "refresh_tag": [
       "Plasma Burn",
@@ -7399,9 +6217,6 @@
     "name": "Rage of the Beast",
     "points_cost": 2,
     "tooltip": "If you are Held or Rooted when is activated, applies Break Free damage as well as 5 stacks of Charged Up to you. Each stack of Charged Up increases your Running Speed by 15%, your Jump Height by 2%, and your Flying Speed by 2%. This effect stacks up to 5 times and lasts 10 seconds.",
-    "tags": [
-      "Charged Up"
-    ],
     "apply_tag": [
       "Charged Up"
     ],
@@ -7419,9 +6234,6 @@
     "name": "Rampant",
     "points_cost": 2,
     "tooltip": "Applies a stack of Reckless to you if you aren't yet affected by it, or refreshes existing stacks.",
-    "tags": [
-      "Reckless"
-    ],
     "apply_tag": [
       "Reckless"
     ],
@@ -7438,9 +6250,6 @@
     "name": "Rattle",
     "points_cost": 2,
     "tooltip": "20% chance every hit to apply Disorient.",
-    "tags": [
-      "Disorient"
-    ],
     "apply_tag": [
       "Disorient"
     ],
@@ -7455,9 +6264,6 @@
     "name": "Reactor",
     "points_cost": 2,
     "tooltip": "Chance to apply Plasma Burn to affected targets.",
-    "tags": [
-      "Plasma Burn"
-    ],
     "apply_tag": [
       "Plasma Burn"
     ],
@@ -7472,9 +6278,6 @@
     "name": "Real Ultimate Power",
     "points_cost": 2,
     "tooltip": "50% chance every hit to apply Bleed.",
-    "tags": [
-      "Bleed"
-    ],
     "apply_tag": [
       "Bleed"
     ],
@@ -7489,7 +6292,6 @@
     "name": "Reanimator",
     "points_cost": 2,
     "tooltip": "Doest revive friends anymore. Instead, allow its use on enemies who will then fight by your side as a zombie for a time. The duration increases with each rank.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -7502,7 +6304,6 @@
     "name": "Rebounding Resilience",
     "points_cost": 2,
     "tooltip": "While active, holds are more difficult to land on you.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -7515,10 +6316,6 @@
     "name": "Recharge",
     "points_cost": 2,
     "tooltip": "Applies Restoration to you, healing you every 2 sec for 6 sec. If your health in below 20%, give you additional heal, and the value is increased.",
-    "tags": [
-      "Restoration",
-      "Passive Heal"
-    ],
     "apply_tag": [
       "Restoration"
     ],
@@ -7535,9 +6332,6 @@
     "name": "Reciprocating Gizmo",
     "points_cost": 2,
     "tooltip": "Applies 3 stacks of Charged Up, increasing your running speed by 15%, your jump height by 3 and your flying speed by 3 for 12 sec. Stacks up to 5 times.",
-    "tags": [
-      "Charged Up"
-    ],
     "apply_tag": [
       "Charged Up"
     ],
@@ -7552,9 +6346,6 @@
     "name": "Reckless Endangerment",
     "points_cost": 2,
     "tooltip": "Fully charging applies and refreshes Reckless on you.",
-    "tags": [
-      "Reckless"
-    ],
     "apply_tag": [
       "Reckless"
     ],
@@ -7571,9 +6362,6 @@
     "name": "Reckless Strike",
     "points_cost": 2,
     "tooltip": "Increase base damage by 30% when you are affected by Reckless.",
-    "tags": [
-      "Reckless"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -7588,10 +6376,6 @@
     "name": "Reconstruct",
     "points_cost": 2,
     "tooltip": "Drops a Healing Rune which heals nearby allies every 1 sec for 10 sec. You cannot have more than one Rune out at a time.  If you are blocking with Stone Shroud, this effect is doubled.",
-    "tags": [
-      "Rune",
-      "Passive Heal"
-    ],
     "apply_tag": [
       "Rune"
     ],
@@ -7608,9 +6392,6 @@
     "name": "Red Hot",
     "points_cost": 2,
     "tooltip": "Applies Clinging Flames to the target.",
-    "tags": [
-      "Clinging Flames"
-    ],
     "apply_tag": [
       "Clinging Flames"
     ],
@@ -7625,9 +6406,6 @@
     "name": "Red Hot Fury",
     "points_cost": 2,
     "tooltip": "Applies 3 stacks of Furious to you",
-    "tags": [
-      "Furious"
-    ],
     "apply_tag": [
       "Furious"
     ],
@@ -7642,7 +6420,6 @@
     "name": "Red-Eyed Dragon",
     "points_cost": 2,
     "tooltip": "Will always be a Critical Hit, however, after each use you will not be able to Critically Hit with any power for 5 seconds.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -7655,10 +6432,6 @@
     "name": "Redemption Denied",
     "points_cost": 2,
     "tooltip": "On a full charge, Paralyzes your primary target and Stuns any other affected targets.",
-    "tags": [
-      "Hold",
-      "Stun"
-    ],
     "apply_tag": [
       "Hold",
       "Stun"
@@ -7674,7 +6447,6 @@
     "name": "Redirect Energy",
     "points_cost": 2,
     "tooltip": "Reduces the cooldown on your Technology powers every time you take damage while blocking. Does not affect Ultimate or Active powers.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -7687,9 +6459,6 @@
     "name": "Redirect Power",
     "points_cost": 1,
     "tooltip": "The Static Field applies at your location.",
-    "tags": [
-      "Static Field"
-    ],
     "apply_tag": [
       "Static Field"
     ],
@@ -7704,7 +6473,6 @@
     "name": "Refraction of Sound",
     "points_cost": 2,
     "tooltip": "Changes to deal damage in a cone instead of only to a single target.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -7717,9 +6485,6 @@
     "name": "Rejuvenating Injectors",
     "points_cost": 2,
     "tooltip": "While active, heals you whenever one of your powers comes off of cooldown.",
-    "tags": [
-      "Passive Heal"
-    ],
     "apply_tag": [
       "Passive Heal"
     ],
@@ -7734,7 +6499,6 @@
     "name": "Rejuvenator",
     "points_cost": 2,
     "tooltip": "While maintaing, if one of your powers comes off of cooldown, boosts the amount of healing does by 50% for 6 seconds.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -7747,9 +6511,6 @@
     "name": "Relentless",
     "points_cost": 2,
     "tooltip": "Affected targets are Knocked Down.",
-    "tags": [
-      "Knock Down"
-    ],
     "apply_tag": [
       "Knock Down"
     ],
@@ -7764,9 +6525,6 @@
     "name": "Relentless Recurve",
     "points_cost": 2,
     "tooltip": "Knocks Back targets instead of Knock Down.",
-    "tags": [
-      "Knock Back"
-    ],
     "apply_tag": [
       "Knock Back"
     ],
@@ -7781,11 +6539,6 @@
     "name": "Remember Me",
     "points_cost": 2,
     "tooltip": "If you are affected by Furious, the chance to Root and Stun foes is guaranteed",
-    "tags": [
-      "Stun",
-      "Furious",
-      "Root"
-    ],
     "apply_tag": [
       "Stun",
       "Root"
@@ -7803,9 +6556,6 @@
     "name": "Rending Blades",
     "points_cost": 2,
     "tooltip": "Refreshes Shredded. When fully charged, applies Shredded to your target.",
-    "tags": [
-      "Shredded"
-    ],
     "apply_tag": [
       "Shredded"
     ],
@@ -7822,10 +6572,6 @@
     "name": "Repulsing Waves",
     "points_cost": 2,
     "tooltip": "Repels foes away from you instead of pulling them towards you. 20% chance every hit to apply Stagger.",
-    "tags": [
-      "Repel",
-      "Stagger"
-    ],
     "apply_tag": [
       "Repel",
       "Stagger"
@@ -7841,9 +6587,6 @@
     "name": "Restraining Order",
     "points_cost": 2,
     "tooltip": "When lunging from more than 20 feet away and the target isn't already controlled, Root them.",
-    "tags": [
-      "Root"
-    ],
     "apply_tag": [
       "Root"
     ],
@@ -7858,9 +6601,6 @@
     "name": "Resurgent Reiki",
     "points_cost": 2,
     "tooltip": "You gain additional ticks of healing whenever you Dodge an attack while active. This effect can only occur once every 0.5 seconds.",
-    "tags": [
-      "Passive Heal"
-    ],
     "apply_tag": [
       "Passive Heal"
     ],
@@ -7875,7 +6615,6 @@
     "name": "Retribution",
     "points_cost": 2,
     "tooltip": "Once you stop blocking, applies Break Free damage to any Holds, Roots, or Disables affecting you.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -7888,9 +6627,6 @@
     "name": "Reverence",
     "points_cost": 2,
     "tooltip": "Adds a small AoE (15 foot radius, max of 5 targets) heal component.",
-    "tags": [
-      "Team Heal"
-    ],
     "apply_tag": [
       "Team Heal"
     ],
@@ -7905,9 +6641,6 @@
     "name": "Reverse Polarity",
     "points_cost": 2,
     "tooltip": "Knocks targets Toward you instead of Knock Back",
-    "tags": [
-      "Knock To"
-    ],
     "apply_tag": [
       "Knock To"
     ],
@@ -7922,9 +6655,6 @@
     "name": "Revitalizing Boost",
     "points_cost": 2,
     "tooltip": "If the shield absorbs the full amount of damage, it restores Energy to you. This amount scales with your Presence.",
-    "tags": [
-      "Shield"
-    ],
     "apply_tag": [
       "Shield"
     ],
@@ -7939,9 +6669,6 @@
     "name": "Righteous Fury",
     "points_cost": 2,
     "tooltip": "Instead of applying Chi Flame on a full charge, deals Dimensional Damage to up to 5 targets within 20 feet and Knocks them Toward you.",
-    "tags": [
-      "Knock To"
-    ],
     "apply_tag": [
       "Knock To"
     ],
@@ -7958,10 +6685,6 @@
     "name": "Rip and Tear!",
     "points_cost": 2,
     "tooltip": "15% chance every hit to apply Bleed. 30% chance if you are affected by Enrage",
-    "tags": [
-      "Bleed",
-      "Enrage"
-    ],
     "apply_tag": [
       "Bleed"
     ],
@@ -7978,7 +6701,6 @@
     "name": "Ripsaw",
     "points_cost": 2,
     "tooltip": "Increases the base damage up to 35% the lower is the target's health.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -7991,7 +6713,6 @@
     "name": "Rock Concert",
     "points_cost": 2,
     "tooltip": "While maintaining this power, up to 5 allies within 50ft gain the Exhilarate buff which boosts the charge speed of abilities by 2% for 15 sec. Stacks up to 6 times.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -8004,11 +6725,6 @@
     "name": "Rock Solid",
     "points_cost": 2,
     "tooltip": "If used against a Staggered target, deals damage to foes within 10 feet of your target and all foes hit are Knocked Up. This consumes your stacks of Stagger on your target. Damage dealt and Knock severity are based on the number of stacks consumed.",
-    "tags": [
-      "Stagger",
-      "Knock Up",
-      "Rupture"
-    ],
     "apply_tag": [
       "Knock Up"
     ],
@@ -8027,7 +6743,6 @@
     "name": "Rubble Trouble",
     "points_cost": 2,
     "tooltip": "Deals Crushing Damage to foes within 10 feet of your primary target.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -8042,9 +6757,6 @@
     "name": "Rude Awakening",
     "points_cost": 1,
     "tooltip": "Increases base damage by 15% against Sleeping targets.",
-    "tags": [
-      "Sleep"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -8059,9 +6771,6 @@
     "name": "Run Away!",
     "points_cost": 2,
     "tooltip": "Grants you a temporary 60% bonus to run speed, +6 to Flight, and +6 to Jump height. These effects last 6 for seconds.",
-    "tags": [
-      "Flight"
-    ],
     "apply_tag": [
       "Flight"
     ],
@@ -8076,9 +6785,6 @@
     "name": "Rune of Dismay",
     "points_cost": 2,
     "tooltip": "Stuns targets briefly.",
-    "tags": [
-      "Stun"
-    ],
     "apply_tag": [
       "Stun"
     ],
@@ -8093,9 +6799,6 @@
     "name": "Rune of Lethargy",
     "points_cost": 2,
     "tooltip": "Roots affected targets.",
-    "tags": [
-      "Root"
-    ],
     "apply_tag": [
       "Root"
     ],
@@ -8110,9 +6813,6 @@
     "name": "Rune of Terror",
     "points_cost": 2,
     "tooltip": "Applies Fear to targets.",
-    "tags": [
-      "Fear"
-    ],
     "apply_tag": [
       "Fear"
     ],
@@ -8127,9 +6827,6 @@
     "name": "Rupture",
     "points_cost": 2,
     "tooltip": "If fully charged and your primary target is Staggered, applies a stack of Stagger to all targets hit.",
-    "tags": [
-      "Stagger"
-    ],
     "apply_tag": [
       "Stagger"
     ],
@@ -8146,7 +6843,6 @@
     "name": "Salvation",
     "points_cost": 2,
     "tooltip": "Revives up to 4 nearby allies within 50 feet. The healing received is divided among the number of allies revived at a time.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -8159,9 +6855,6 @@
     "name": "Sapped Strength",
     "points_cost": 2,
     "tooltip": "Roots affected targets.",
-    "tags": [
-      "Root"
-    ],
     "apply_tag": [
       "Root"
     ],
@@ -8176,9 +6869,6 @@
     "name": "Sapping Solution",
     "points_cost": 2,
     "tooltip": "5 seconds after being hit, Snare affected targets.",
-    "tags": [
-      "Snare"
-    ],
     "apply_tag": [
       "Snare"
     ],
@@ -8193,9 +6883,6 @@
     "name": "Scalding Water",
     "points_cost": 1,
     "tooltip": "Instead of Chill, applies Clinging Flames.",
-    "tags": [
-      "Clinging Flames"
-    ],
     "apply_tag": [
       "Clinging Flames"
     ],
@@ -8210,7 +6897,6 @@
     "name": "Scarab Embrace",
     "points_cost": 2,
     "tooltip": "While Tunneling you will gain a stack of Earthen Embrace every 3 seconds, up to 6 stacks. Earthen Embrace increases your resistance to all types of damage. These stacks will persist for a short time after you stop tunneling.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -8223,9 +6909,6 @@
     "name": "Scent of Blood",
     "points_cost": 2,
     "tooltip": "Charging at least half way against a Bleeding target spreads the effect to up to 5 foes within 20ft. Refreshes the duration of Bleed effects on affected targets.",
-    "tags": [
-      "Bleed"
-    ],
     "apply_tag": [
       "Bleed"
     ],
@@ -8240,9 +6923,6 @@
     "name": "Scorched Earth",
     "points_cost": 2,
     "tooltip": "Creates a Pyre Patch at the target's location.",
-    "tags": [
-      "Pyre Patch"
-    ],
     "apply_tag": [
       "Pyre Patch"
     ],
@@ -8257,9 +6937,6 @@
     "name": "Scorched Ground",
     "points_cost": 2,
     "tooltip": "Creates a Pyre Patch at the target's location.",
-    "tags": [
-      "Pyre Patch"
-    ],
     "apply_tag": [
       "Pyre Patch"
     ],
@@ -8274,9 +6951,6 @@
     "name": "Scorching Blade",
     "points_cost": 2,
     "tooltip": "Increases base damage by 30% against targets affected by Clinging Flames.",
-    "tags": [
-      "Clinging Flames"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -8291,7 +6965,6 @@
     "name": "Seeing Stars",
     "points_cost": 2,
     "tooltip": "Fully charging applies Despondency, lowering their Dodge Chance.",
-    "tags": [],
     "apply_tag": [
       "Despondency"
     ],
@@ -8306,7 +6979,6 @@
     "name": "Serenity",
     "points_cost": 2,
     "tooltip": "A portion of the energy you use to cast is returned if your target is affected by the heal component of Mend. The energy returned scales slightly with your Constitution.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -8319,9 +6991,6 @@
     "name": "Serrated Blade",
     "points_cost": 2,
     "tooltip": "Finishing the combo applies Shredded to your primary target.",
-    "tags": [
-      "Shredded"
-    ],
     "apply_tag": [
       "Shredded"
     ],
@@ -8336,9 +7005,6 @@
     "name": "Serrated Edges",
     "points_cost": 2,
     "tooltip": "10% chance every hit to apply Bleed to targets.",
-    "tags": [
-      "Bleed"
-    ],
     "apply_tag": [
       "Bleed"
     ],
@@ -8353,9 +7019,6 @@
     "name": "Serrated Shards",
     "points_cost": 2,
     "tooltip": "Increases damage by 50% against targets trapped in Ice Structures.",
-    "tags": [
-      "Ice Structures"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -8370,10 +7033,6 @@
     "name": "Setup",
     "points_cost": 2,
     "tooltip": "When fully charged, refreshes Demolish. Also applies Blindside to you. For each stack of Enrage on you, Blinside increases the base damage of your Brick damages by 1.9% but reduces all others but 3.8%.",
-    "tags": [
-      "Demolish",
-      "Blindside"
-    ],
     "apply_tag": [
       "Demolish",
       "Blindside"
@@ -8391,9 +7050,6 @@
     "name": "Sever",
     "points_cost": 2,
     "tooltip": "Finishing the combo applies Shredded to your primary target.",
-    "tags": [
-      "Shredded"
-    ],
     "apply_tag": [
       "Shredded"
     ],
@@ -8408,9 +7064,6 @@
     "name": "Shadow Attack",
     "points_cost": 2,
     "tooltip": "Deals its damage twice when used from Stealth.",
-    "tags": [
-      "Stealth"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -8425,9 +7078,6 @@
     "name": "Shard Burst",
     "points_cost": 2,
     "tooltip": "Increases the Crushing AoE damage dealt by 50% and staggers all targets on a full charge instead of just the selected target.",
-    "tags": [
-      "Stagger"
-    ],
     "apply_tag": [
       "Stagger"
     ],
@@ -8442,10 +7092,6 @@
     "name": "Sharp Edges",
     "points_cost": 2,
     "tooltip": "If your target is Snared, applies Shredded to your target.",
-    "tags": [
-      "Snare",
-      "Shredded"
-    ],
     "apply_tag": [
       "Shredded"
     ],
@@ -8462,7 +7108,6 @@
     "name": "Sharpened Blade",
     "points_cost": 1,
     "tooltip": "Deals Slashing damage instead of Crushing.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -8477,9 +7122,6 @@
     "name": "Shattering Strike",
     "points_cost": 2,
     "tooltip": "Increases the base damage up to 30% against targets affected by Demolish.",
-    "tags": [
-      "Demolish"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -8494,10 +7136,6 @@
     "name": "Sheer Force",
     "points_cost": 2,
     "tooltip": "Repels targets away from you and has a chance to Knock Down targets in close range.",
-    "tags": [
-      "Knock Down",
-      "Repel"
-    ],
     "apply_tag": [
       "Knock Down",
       "Repel"
@@ -8513,9 +7151,6 @@
     "name": "Shield Dispersal",
     "points_cost": 2,
     "tooltip": "Places up to 5 targets within 25 feet of your primary target in Power Shields.",
-    "tags": [
-      "Power Shield"
-    ],
     "apply_tag": [
       "Power Shield"
     ],
@@ -8530,9 +7165,6 @@
     "name": "Shocking Strike",
     "points_cost": 2,
     "tooltip": "When activating, targets within a short range are Stunned for a short time.",
-    "tags": [
-      "Stun"
-    ],
     "apply_tag": [
       "Stun"
     ],
@@ -8547,9 +7179,6 @@
     "name": "Shred To Pieces",
     "points_cost": 2,
     "tooltip": "If your primary target is affected by your Shredded, completing the combo will refresh the effect and apply Shredded to nearby foes.",
-    "tags": [
-      "Shredded"
-    ],
     "apply_tag": [
       "Shredded"
     ],
@@ -8566,10 +7195,6 @@
     "name": "Silent Predation",
     "points_cost": 2,
     "tooltip": "Briefly places you in Stealth. When used, places all Threat Wipe powers on cooldown.",
-    "tags": [
-      "Stealth",
-      "Threat Wipe"
-    ],
     "apply_tag": [
       "Stealth"
     ],
@@ -8586,7 +7211,6 @@
     "name": "Silent Running",
     "points_cost": 1,
     "tooltip": "Increases your movement speed while sneaking.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -8601,7 +7225,6 @@
     "name": "Single Minded",
     "points_cost": 2,
     "tooltip": "Increases its damage by 10% for 10 seconds each time is fully maintained. Stacks up to 3 times, and at 3 stacks, fully maintaining refreshes all existing stacks.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -8614,10 +7237,6 @@
     "name": "Sinkhole",
     "points_cost": 2,
     "tooltip": "When fully charged, applies Stagger up to 5 targets within 15ft of your primary target. If secondary are affected by 3 stacks of Stagger already, they are Rooted.",
-    "tags": [
-      "Stagger",
-      "Root"
-    ],
     "apply_tag": [
       "Stagger",
       "Root"
@@ -8635,9 +7254,6 @@
     "name": "Siphoning Strikes",
     "points_cost": 3,
     "tooltip": "Attacks no longer deal additional damage when you perform a critical strike with them. Instead, you heal yourself for the amount of additional damage you would have done when performing a critical strike.",
-    "tags": [
-      "Passive Heal"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -8652,9 +7268,6 @@
     "name": "Slave Mentality",
     "points_cost": 2,
     "tooltip": "Will return to you after damaging the enemy and heal you for a short time. This only occurs if the sprites dealt their full amount of damage. You can only have a maximum of 5 stacks of this heal at one time.",
-    "tags": [
-      "Passive Heal"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -8669,10 +7282,6 @@
     "name": "Sleight of Mind",
     "points_cost": 2,
     "tooltip": "Changes into a threat wipe, increasing the cooldown to 45 sec, wipes all threat from your Primary Target, and places you in stealth briefly. This effect can only occur once every 30 seconds.",
-    "tags": [
-      "Stealth",
-      "Threat Wipe"
-    ],
     "apply_tag": [
       "Stealth"
     ],
@@ -8689,9 +7298,6 @@
     "name": "Slice and Dice",
     "points_cost": 2,
     "tooltip": "When fully charged, refreshes Bleeds",
-    "tags": [
-      "Bleed"
-    ],
     "apply_tag": [],
     "refresh_tag": [
       "Bleed"
@@ -8706,9 +7312,6 @@
     "name": "Slicer",
     "points_cost": 2,
     "tooltip": "When fully charged, applies Shredded.",
-    "tags": [
-      "Shredded"
-    ],
     "apply_tag": [
       "Shredded"
     ],
@@ -8723,7 +7326,6 @@
     "name": "Sonic Bombardment",
     "points_cost": 2,
     "tooltip": "While maintained, the cooldown on your Gadgeteer powers will be reduced by 0.25 sec every hit. Does not affect Ultimate or Active powers.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -8736,9 +7338,6 @@
     "name": "Sonic Boost",
     "points_cost": 2,
     "tooltip": "Increases the base damage by 30% against targets affected by Disorient.",
-    "tags": [
-      "Disorient"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -8753,7 +7352,6 @@
     "name": "Sonic Reverberations",
     "points_cost": 2,
     "tooltip": "Increases range to 20ft. The damage within 10ft remains melee crushing damage. The damage on the outer 10ft is ranged sonic damage.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -8769,9 +7367,6 @@
     "name": "Sonic Suppression Enhancer",
     "points_cost": 2,
     "tooltip": "Double the chance to apply Disorient.",
-    "tags": [
-      "Disorient"
-    ],
     "apply_tag": [
       "Disorient"
     ],
@@ -8786,9 +7381,6 @@
     "name": "Sorceror's Whim",
     "points_cost": 2,
     "tooltip": "25-100% chance (based on charge time) to Root your target.",
-    "tags": [
-      "Root"
-    ],
     "apply_tag": [
       "Root"
     ],
@@ -8803,11 +7395,6 @@
     "name": "Soul Capturing Blade",
     "points_cost": 2,
     "tooltip": "56-100%  chance (based on charge time) to apply Dependency. If your target is affected by Shredded, adds 12 sec to your Dependency stacks.",
-    "tags": [
-      "Shredded",
-      "Dependency",
-      "Passive Heal"
-    ],
     "apply_tag": [
       "Dependency"
     ],
@@ -8826,10 +7413,6 @@
     "name": "Soul Drain",
     "points_cost": 2,
     "tooltip": "Applies and refreshes Dependency on affected foes after the vortex expires.",
-    "tags": [
-      "Dependency",
-      "Passive Heal"
-    ],
     "apply_tag": [
       "Dependency"
     ],
@@ -8848,9 +7431,6 @@
     "name": "Sparks",
     "points_cost": 1,
     "tooltip": "Chance to apply Negative Ions to affected targets.",
-    "tags": [
-      "Negative Ions"
-    ],
     "apply_tag": [
       "Negative Ions"
     ],
@@ -8865,10 +7445,6 @@
     "name": "Spatial Anomaly",
     "points_cost": 2,
     "tooltip": "When fully charged, creates a Healing Rune on your primary target. You cannot have more than one Rune out at a time.",
-    "tags": [
-      "Rune",
-      "Passive Heal"
-    ],
     "apply_tag": [
       "Rune"
     ],
@@ -8885,7 +7461,6 @@
     "name": "Spectral Dragon Tail",
     "points_cost": 1,
     "tooltip": "A portion of this damage is dealt as Dimensional damage. This increases the overall damage slightly and counts as a Chi Power effect.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -8900,9 +7475,6 @@
     "name": "Spikes",
     "points_cost": 2,
     "tooltip": "5% chance every tick to apply Bleed.",
-    "tags": [
-      "Bleed"
-    ],
     "apply_tag": [
       "Bleed"
     ],
@@ -8917,10 +7489,6 @@
     "name": "Spitfire",
     "points_cost": 2,
     "tooltip": "20% chance every hit to Clinging Flames. 100% chance if you are affected by Furious,",
-    "tags": [
-      "Furious",
-      "Clinging Flames"
-    ],
     "apply_tag": [
       "Clinging Flames"
     ],
@@ -8937,10 +7505,6 @@
     "name": "Splatter",
     "points_cost": 2,
     "tooltip": "25% chance to Knock Up targets affected by Fear, instead of Knocking them Down",
-    "tags": [
-      "Knock Up",
-      "Fear"
-    ],
     "apply_tag": [
       "Knock Up",
       "Fear"
@@ -8956,9 +7520,6 @@
     "name": "Split the Arrow",
     "points_cost": 2,
     "tooltip": "When fully charged, applies Armor Piercing.",
-    "tags": [
-      "Armor Piercing"
-    ],
     "apply_tag": [
       "Armor Piercing"
     ],
@@ -8973,7 +7534,6 @@
     "name": "Spreading Flames",
     "points_cost": 2,
     "tooltip": "Revives up to 4 nearby allies within 50 feet. The healing received is divided among the number of allies revived at a time.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -8986,11 +7546,6 @@
     "name": "Squall",
     "points_cost": 2,
     "tooltip": "After 1 second, Snares affected targets. When fully maintained, complete a Circuit and targets are Knock Up",
-    "tags": [
-      "Snare",
-      "Circuit",
-      "Knock Up"
-    ],
     "apply_tag": [
       "Snare",
       "Knock Up"
@@ -9008,7 +7563,6 @@
     "name": "Stand Your Ground",
     "points_cost": 2,
     "tooltip": "While maintaining, your Knock resistance is increased by 200%.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -9021,10 +7575,6 @@
     "name": "Stiff Breeze",
     "points_cost": 2,
     "tooltip": "Extends the chance to Disorient and Repel to every attack, instead of just the first.",
-    "tags": [
-      "Repel",
-      "Disorient"
-    ],
     "apply_tag": [
       "Repel",
       "Disorient"
@@ -9040,10 +7590,6 @@
     "name": "Stim Pack",
     "points_cost": 2,
     "tooltip": "Applies Restoration to you, healing you every 2 sec for 6 sec. If your health in below 20%, give you additional heal, and the value is increased.",
-    "tags": [
-      "Restoration",
-      "Passive Heal"
-    ],
     "apply_tag": [
       "Restoration"
     ],
@@ -9060,9 +7606,6 @@
     "name": "Stinging Bee",
     "points_cost": 2,
     "tooltip": "Applies Trauma to the target. Trauma ends any healing over time effects on your target and causes them to receive only 50% benefit from any other incoming heals.",
-    "tags": [
-      "Trauma"
-    ],
     "apply_tag": [
       "Trauma"
     ],
@@ -9077,9 +7620,6 @@
     "name": "Stolen Thunder",
     "points_cost": 2,
     "tooltip": "The initial strike Knocks Down all targets, and each additional strike has a 15% chance to cause them to be Knocked Down again.",
-    "tags": [
-      "Knock Down"
-    ],
     "apply_tag": [
       "Knock Down"
     ],
@@ -9094,9 +7634,6 @@
     "name": "Stop Right There!",
     "points_cost": 2,
     "tooltip": "No longer Stuns. Instead, Interrupts the target.",
-    "tags": [
-      "Interrupt"
-    ],
     "apply_tag": [
       "Interrupt"
     ],
@@ -9111,7 +7648,6 @@
     "name": "Storm's Eye Prana",
     "points_cost": 3,
     "tooltip": "Every time you complete this combo, the cooldowns of your healing powers are reduced by 2 seconds.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -9124,10 +7660,6 @@
     "name": "Stressed Out",
     "points_cost": 2,
     "tooltip": "Adds a chance (based on combo hit) to apply Stressed. The chance to apply Stressed is doubled if you are affected by Ego Infusion. ",
-    "tags": [
-      "Ego Infusion",
-      "Stress"
-    ],
     "apply_tag": [
       "Stress"
     ],
@@ -9144,9 +7676,6 @@
     "name": "Stressful",
     "points_cost": 2,
     "tooltip": "Adds 12 seconds to the duration of your Stress debuffs.",
-    "tags": [
-      "Stress"
-    ],
     "apply_tag": [],
     "refresh_tag": [
       "Stress"
@@ -9161,10 +7690,6 @@
     "name": "Strike Down",
     "points_cost": 2,
     "tooltip": "Your primary target is Knocked Down. Refreshes the duration of Superconductor.",
-    "tags": [
-      "Knock Down",
-      "Superconductor"
-    ],
     "apply_tag": [
       "Knock Down"
     ],
@@ -9181,9 +7706,6 @@
     "name": "Strong Winds",
     "points_cost": 2,
     "tooltip": "Foes are Repelled away from you.",
-    "tags": [
-      "Repel"
-    ],
     "apply_tag": [
       "Repel"
     ],
@@ -9198,9 +7720,6 @@
     "name": "Stun Grenade",
     "points_cost": 2,
     "tooltip": "Targets are Stunned instead of Knocked Back.",
-    "tags": [
-      "Stun"
-    ],
     "apply_tag": [
       "Stun"
     ],
@@ -9215,9 +7734,6 @@
     "name": "Sub-Zero Cellblock",
     "points_cost": 2,
     "tooltip": "Interrupts the target.",
-    "tags": [
-      "Interrupt"
-    ],
     "apply_tag": [
       "Interrupt"
     ],
@@ -9232,9 +7748,6 @@
     "name": "Subtlety of the Tides",
     "points_cost": 2,
     "tooltip": "After using this attack, for the next 10 sec, your melee attacks apply Ebb and Flow to you. Ebb and Flow gives you 15 Avoidance for 12 seconds, stacking up to 10 times. All stacks of Ebb and Flow are removed on a successful dodge.",
-    "tags": [
-      "Ebb and Flow"
-    ],
     "apply_tag": [
       "Ebb and Flow"
     ],
@@ -9249,9 +7762,6 @@
     "name": "Sudden Impact",
     "points_cost": 2,
     "tooltip": "Knocks Down targets.",
-    "tags": [
-      "Knock Down"
-    ],
     "apply_tag": [
       "Knock Down"
     ],
@@ -9266,9 +7776,6 @@
     "name": "Sudden Strike",
     "points_cost": 2,
     "tooltip": "Applies Sudden Strike.",
-    "tags": [
-      "Sudden Strike"
-    ],
     "apply_tag": [
       "Sudden Strike"
     ],
@@ -9283,9 +7790,6 @@
     "name": "Suffocating Earth",
     "points_cost": 2,
     "tooltip": "Deals damage over time. The damage does not reduce the durability of the Paralyze hold applied.",
-    "tags": [
-      "Hold"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -9300,9 +7804,6 @@
     "name": "Supercharged",
     "points_cost": 1,
     "tooltip": "The first and last hit refreshes the duration of your Superconductor debuff by 8 seconds.",
-    "tags": [
-      "Superconductor"
-    ],
     "apply_tag": [],
     "refresh_tag": [
       "Superconductor"
@@ -9317,10 +7818,6 @@
     "name": "Superconductor",
     "points_cost": 2,
     "tooltip": "Applies Superconductor to targets affected by Negative Ions.",
-    "tags": [
-      "Negative Ions",
-      "Superconductor"
-    ],
     "apply_tag": [
       "Superconductor"
     ],
@@ -9337,9 +7834,6 @@
     "name": "Supercooled",
     "points_cost": 2,
     "tooltip": "100% chance to apply Chill to foes attacking you.",
-    "tags": [
-      "Chill"
-    ],
     "apply_tag": [
       "Chill"
     ],
@@ -9354,9 +7848,6 @@
     "name": "Superiority Complex",
     "points_cost": 2,
     "tooltip": "Greatly increases your Knock resistance while maintaining, Knock Back targets that damage you.",
-    "tags": [
-      "Knock Back"
-    ],
     "apply_tag": [
       "Knock Back"
     ],
@@ -9371,7 +7862,6 @@
     "name": "Surge of Strength",
     "points_cost": 2,
     "tooltip": "Refreshes stacks of Defiant if you have the Defiance passive active.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [
       "Defiance"
@@ -9386,11 +7876,6 @@
     "name": "Svengali's Guile",
     "points_cost": 2,
     "tooltip": "Partially refreshes the duration of your Stress, Dependency, and Regret.",
-    "tags": [
-      "Regret",
-      "Dependency",
-      "Stress"
-    ],
     "apply_tag": [],
     "refresh_tag": [
       "Regret",
@@ -9407,9 +7892,6 @@
     "name": "Swallowtail Cut",
     "points_cost": 2,
     "tooltip": "50-100% chance (based on charge time) to apply Swallowtail Cut. 100% chance against Shredded targets. Swallowtail Cut deals 5% of the target's health every 2 sec for 16 sec. If the target is of Supervillain or higher, applies a normal Bleed instead.",
-    "tags": [
-      "Swallowtail Cut"
-    ],
     "apply_tag": [
       "Swallowtail Cut"
     ],
@@ -9424,7 +7906,6 @@
     "name": "Sweltering Heat",
     "points_cost": 2,
     "tooltip": "Enemies affected by the Pyre created by will have their movement speed reduced.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -9437,9 +7918,6 @@
     "name": "Take a Beating",
     "points_cost": 2,
     "tooltip": "Has a scaling chance to apply Disorient with every hit.",
-    "tags": [
-      "Disorient"
-    ],
     "apply_tag": [
       "Disorient"
     ],
@@ -9454,9 +7932,6 @@
     "name": "Taking Names",
     "points_cost": 2,
     "tooltip": "Refreshes existing stacks of Furious on you or applies 1 stack if not affected by Furious.",
-    "tags": [
-      "Furious"
-    ],
     "apply_tag": [
       "Furious"
     ],
@@ -9473,7 +7948,6 @@
     "name": "Telekinetic Reinforcement",
     "points_cost": 3,
     "tooltip": "After blocking, provides you 17% resistance to all damage for 8 sec.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -9486,9 +7960,6 @@
     "name": "Tenable Bonds",
     "points_cost": 2,
     "tooltip": "Each tick heals you for 2% Health point, and remove 5% energy from the target.",
-    "tags": [
-      "Passive Heal"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -9503,11 +7974,6 @@
     "name": "Terrifying Visage",
     "points_cost": 2,
     "tooltip": "Has a 50% chance every 1 sec to apply Fear to targets. Has a 10% chance every 1 sec to apply Psychotic Break. Psychotic Break causes the target to be Stunned for a short time and add a stack of Bleed.",
-    "tags": [
-      "Fear",
-      "Stun",
-      "Bleed"
-    ],
     "apply_tag": [
       "Fear",
       "Stun",
@@ -9524,7 +7990,6 @@
     "name": "Thaw",
     "points_cost": 1,
     "tooltip": "Applies Break Free damage to the primary target and reduced Break Free damage to secondary targets.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -9537,7 +8002,6 @@
     "name": "The Elusive Monk",
     "points_cost": 3,
     "tooltip": "Reduces you melee damage strenght by 10%. Whenever you make a melee attack, grants you +5.9% Dodge Chance Rating, +79 Avoidance Rating, and 33% Knock Resistance for 2 sec.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -9550,7 +8014,6 @@
     "name": "The Elusive Swordsman",
     "points_cost": 3,
     "tooltip": "Reduces you melee damage strenght by 10%. Whenever you make a melee attack, grants you +5.9% Dodge Chance Rating, +79 Avoidance Rating, and 33% Knock Resistance for 2 sec.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -9563,9 +8026,6 @@
     "name": "They Never Go Easy",
     "points_cost": 2,
     "tooltip": "Applies Trauma to the target. Trauma ends any healing over time effects on your target and causes them to receive only 50% benefit from any other incoming heals.",
-    "tags": [
-      "Trauma"
-    ],
     "apply_tag": [
       "Trauma"
     ],
@@ -9580,7 +8040,6 @@
     "name": "Thought Sever",
     "points_cost": 1,
     "tooltip": "Will reduce the Energy of the target with each hit in addition to dealing damage normally. Also causes deal an additional 20 Energy.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -9593,10 +8052,6 @@
     "name": "Three Edged Blade",
     "points_cost": 2,
     "tooltip": "Has a chance to apply Bleed to the target. This chance is doubled if you are affected by Focus.",
-    "tags": [
-      "Focus",
-      "Bleed"
-    ],
     "apply_tag": [
       "Bleed"
     ],
@@ -9613,9 +8068,6 @@
     "name": "Thrill of the Hunt",
     "points_cost": 2,
     "tooltip": "For 10 sec after Lunging, dealing direct damage applies a stack of Charged Up to you. Charged Up increases your Running Speed by 15%, your Jump Height by 2%, and your Flying Speed by 2%. This effect stacks up to 5 times and lasts 10 seconds.",
-    "tags": [
-      "Charged Up"
-    ],
     "apply_tag": [
       "Charged Up"
     ],
@@ -9630,10 +8082,6 @@
     "name": "Thunderbolt",
     "points_cost": 2,
     "tooltip": "Appplies Negative Ions to targets and Root them.",
-    "tags": [
-      "Negative Ions",
-      "Root"
-    ],
     "apply_tag": [
       "Negative Ions",
       "Root"
@@ -9649,9 +8097,6 @@
     "name": "Thundering Roar",
     "points_cost": 2,
     "tooltip": "21-50% chance (based on charge time) to apply Disorient.",
-    "tags": [
-      "Disorient"
-    ],
     "apply_tag": [
       "Disorient"
     ],
@@ -9666,7 +8111,6 @@
     "name": "Tiger's Courage",
     "points_cost": 2,
     "tooltip": "Increase base damage up to 30%, scaling with your Critical Rate.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -9679,7 +8123,6 @@
     "name": "Time Alteration",
     "points_cost": 2,
     "tooltip": "While maintained, the cooldown on your Gadgeteer powers will be reduced every hit by 0.25 sec. Does not affect Ultimate or Active powers.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -9692,10 +8135,6 @@
     "name": "To The Heavens",
     "points_cost": 1,
     "tooltip": "If your target is disoriented, they are Knocked Up instead of Knocked Back.",
-    "tags": [
-      "Disorient",
-      "Knock Up"
-    ],
     "apply_tag": [
       "Knock Up"
     ],
@@ -9712,9 +8151,6 @@
     "name": "Toppling Winds",
     "points_cost": 2,
     "tooltip": "45-100% chance (based on charge time) to stagger your target.",
-    "tags": [
-      "Stagger"
-    ],
     "apply_tag": [
       "Stagger"
     ],
@@ -9729,9 +8165,6 @@
     "name": "Toxicity",
     "points_cost": 2,
     "tooltip": "Applies Debilitating Poison.",
-    "tags": [
-      "Debilitating Poison"
-    ],
     "apply_tag": [
       "Debilitating Poison"
     ],
@@ -9746,9 +8179,6 @@
     "name": "Toxin Overload",
     "points_cost": 2,
     "tooltip": "15% chance every hit to apply Deadly Poison.",
-    "tags": [
-      "Deadly Poison"
-    ],
     "apply_tag": [
       "Deadly Poison"
     ],
@@ -9763,7 +8193,6 @@
     "name": "Trail Blazer",
     "points_cost": 2,
     "tooltip": "Increases the movement speed.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -9776,10 +8205,6 @@
     "name": "Tranced",
     "points_cost": 2,
     "tooltip": "20% chance every hit to Stun targets. 100% chance against Jinxed targets.",
-    "tags": [
-      "Stun",
-      "Jinxed"
-    ],
     "apply_tag": [
       "Stun"
     ],
@@ -9796,9 +8221,6 @@
     "name": "Trauma",
     "points_cost": 2,
     "tooltip": "Applies Trauma to the target. Trauma ends any healing over time effects on your target and causes them to receive only 50% benefit from any other incoming heals.",
-    "tags": [
-      "Trauma"
-    ],
     "apply_tag": [
       "Trauma"
     ],
@@ -9813,7 +8235,6 @@
     "name": "Tread Softly",
     "points_cost": 2,
     "tooltip": "A significant bonus to Dodge and Avoidance while maintained. This bonus is doubled if you are currently Concentrated.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -9826,10 +8247,6 @@
     "name": "Trick Shot",
     "points_cost": 2,
     "tooltip": "50% chance to hit additional target within 12ft. 100% if you are affected by Furious. Additional damages are doubled if target is affected by Fear.",
-    "tags": [
-      "Furious",
-      "Fear"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -9847,10 +8264,6 @@
     "name": "Triple Threat",
     "points_cost": 2,
     "tooltip": "Increases damages. They are splitted among Crushing, Electrical and Cold damages. Electrical and Cold damages are buffed by 30% if the targets are affected respectively by Negative Ions and Chill.",
-    "tags": [
-      "Negative Ions",
-      "Chill"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -9870,7 +8283,6 @@
     "name": "Triplicity",
     "points_cost": 2,
     "tooltip": "Summons three Ball Lightnings instead of one, but the periodic damage each one deals is reduced by 60%. All three deal AoE damage, but only the primary one will explode.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -9883,7 +8295,6 @@
     "name": "Tungsten Rounds",
     "points_cost": 2,
     "tooltip": "Allows shots to hit up to 3 targets in a 3 foot Cylinder. Now considered an AoE power.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -9896,7 +8307,6 @@
     "name": "Two Smoking Barrels",
     "points_cost": 2,
     "tooltip": "Whenever you hit with a Melee attack, the cooldown on is reduced by 2 seconds. However, no longer grants bonus damage to your Melee attacks.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -9909,9 +8319,6 @@
     "name": "U-238 Rounds",
     "points_cost": 2,
     "tooltip": "Maintaining for at least half of its duration applies Burn Through.",
-    "tags": [
-      "Burn Through"
-    ],
     "apply_tag": [
       "Burn Through"
     ],
@@ -9926,7 +8333,6 @@
     "name": "Unbound Ritual",
     "points_cost": 2,
     "tooltip": "Causes the pet summoned by this Ritual to no longer be bound to the circle. This allows the summon to follow you around wherever you may go, and your pet no longer goes away when another Ritual pet is summoned. This advantage also adds an energy cost to this summon power.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -9939,10 +8345,6 @@
     "name": "Unchained",
     "points_cost": 2,
     "tooltip": "Applies Break Free damage to any Holds, Roots, or Disables affecting you and adds one stack of Knock and Hold resistance.",
-    "tags": [
-      "Hold",
-      "Root"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -9955,9 +8357,6 @@
     "name": "Uncompromising",
     "points_cost": 2,
     "tooltip": "Increases base damage by 10% additional base damage for every stack of Furious on you.",
-    "tags": [
-      "Furious"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -9972,9 +8371,6 @@
     "name": "Unhinged",
     "points_cost": 1,
     "tooltip": "Increases base damage by 10% additional base damage for every stack of Reckless on you.",
-    "tags": [
-      "Reckless"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -9989,7 +8385,6 @@
     "name": "Unknown Threat",
     "points_cost": 2,
     "tooltip": "Activating will cause you to generate less threat for a short time.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -10002,10 +8397,6 @@
     "name": "Unlimited Power!",
     "points_cost": 3,
     "tooltip": "Each hit applies and then immediately consumes Negative Ions. This counts as completing a Circuit.",
-    "tags": [
-      "Negative Ions",
-      "Circuit"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -10022,9 +8413,6 @@
     "name": "Unnerving Rage",
     "points_cost": 2,
     "tooltip": "Roots targets.",
-    "tags": [
-      "Root"
-    ],
     "apply_tag": [
       "Root"
     ],
@@ -10039,9 +8427,6 @@
     "name": "Unpredictable Effects",
     "points_cost": 2,
     "tooltip": "When fully charged, applies Bane to your primary target, and 50% applies Bane to secondary targets.",
-    "tags": [
-      "Bane"
-    ],
     "apply_tag": [
       "Bane"
     ],
@@ -10056,9 +8441,6 @@
     "name": "Unrelenting",
     "points_cost": 2,
     "tooltip": "Refreshes the duration of your Bleed effects on the primary target.",
-    "tags": [
-      "Bleed"
-    ],
     "apply_tag": [],
     "refresh_tag": [
       "Bleed"
@@ -10073,10 +8455,6 @@
     "name": "Unstable Accelerant",
     "points_cost": 2,
     "tooltip": "Applies Unstable Accelerant to your targets for 12 seconds. Unstable Accelerant reduces resistance to your Burning effects by 50%. Clinging Flames, Leaping Flames, Fire Snake, and Pyre Patches are considered Burning effects.",
-    "tags": [
-      "Unstable Accelerant",
-      "Clinging Flames"
-    ],
     "apply_tag": [
       "Unstable Accelerant"
     ],
@@ -10091,10 +8469,6 @@
     "name": "Unstable Footing",
     "points_cost": 2,
     "tooltip": "15% chance to Knock Down and Stagger your targets.",
-    "tags": [
-      "Knock Down",
-      "Stagger"
-    ],
     "apply_tag": [
       "Knock Down",
       "Stagger"
@@ -10110,9 +8484,6 @@
     "name": "Until Morale Improves",
     "points_cost": 2,
     "tooltip": "15% chance every hit to Disorient the primary target.",
-    "tags": [
-      "Disorient"
-    ],
     "apply_tag": [
       "Disorient"
     ],
@@ -10127,7 +8498,6 @@
     "name": "Unyielding Agony",
     "points_cost": 2,
     "tooltip": "Deals Dimensional damage every 1 sec for 12 sec. This damage does not reduce the durability of the Hold applied.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -10142,9 +8512,6 @@
     "name": "USB Arrow",
     "points_cost": 1,
     "tooltip": "Applies Download to you, reducing the cost of Technology powers for 12 secs.",
-    "tags": [
-      "Download"
-    ],
     "apply_tag": [
       "Download"
     ],
@@ -10159,7 +8526,6 @@
     "name": "Vainglorious",
     "points_cost": 1,
     "tooltip": "The longer you maintain, the shorter its cooldown will be. Fully maintaining will reset the cooldown completely.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -10172,10 +8538,6 @@
     "name": "Vampiric Sympathy",
     "points_cost": 2,
     "tooltip": "The heal component of becomes an AoE (15 foot radius, max of 5 targets) centered on you that heals nearby friends for half as much as it heals you. When using on a Feared target, the AoE heals for as much as it heals you.",
-    "tags": [
-      "Team Heal",
-      "Fear"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -10192,9 +8554,6 @@
     "name": "Vengeful Shadows",
     "points_cost": 2,
     "tooltip": "Deals Dimensional Damage to targets within 10ft of the Rift, and Knock them Back. Targets immune to Knock effect instead takes Dimensional Damave every 0.5 sec.",
-    "tags": [
-      "Knock Back"
-    ],
     "apply_tag": [
       "Knock Back"
     ],
@@ -10213,9 +8572,6 @@
     "name": "Versatility",
     "points_cost": 2,
     "tooltip": "While this travel power is active, receiving damage gives you a stack of Charged Up.",
-    "tags": [
-      "Charged Up"
-    ],
     "apply_tag": [
       "Charged Up"
     ],
@@ -10230,7 +8586,6 @@
     "name": "Vicious",
     "points_cost": 3,
     "tooltip": "Above 50% health, increases the base damage by 30% and will no longer heal you. Increases base damage by 10% for 10 sec every full maintain. stacks 3 times. If you fall below 50% health, damage bonus is removed and healing effect is returned.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -10243,9 +8598,6 @@
     "name": "Viral",
     "points_cost": 2,
     "tooltip": "Applies Viral to the target for 10 seconds. Every 2 seconds, Viral has a 25% chance to apply Deadly Poison. Chance is doubled on the last tick.",
-    "tags": [
-      "Deadly Poison"
-    ],
     "apply_tag": [
       "Deadly Poison"
     ],
@@ -10260,7 +8612,6 @@
     "name": "Virulent Propagation",
     "points_cost": 2,
     "tooltip": "Fully charging on a target affected by Poisons will spread the affliction to a nearby foe. This can occur for each type of Poisons on the target. Refreshes the duration of all Poisons on all targets hit.",
-    "tags": [],
     "apply_tag": [
       "Poisons"
     ],
@@ -10279,9 +8630,6 @@
     "name": "Void",
     "points_cost": 2,
     "tooltip": "Applies Trauma to the target. Trauma ends any healing over time effects on your target and causes them to receive only 50% benefit from any other incoming heals.",
-    "tags": [
-      "Trauma"
-    ],
     "apply_tag": [
       "Trauma"
     ],
@@ -10296,9 +8644,6 @@
     "name": "Void Feast",
     "points_cost": 2,
     "tooltip": "Consumes all Fear effects on affected targets, healing you for each effect consumed. This heal counts as a Life Drain.",
-    "tags": [
-      "Life Drain"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -10315,9 +8660,6 @@
     "name": "Voodoo Curse",
     "points_cost": 2,
     "tooltip": "Incoming attacks also have a small chance to Stun nearby enemies.This effect can only occur once every 10 seconds.",
-    "tags": [
-      "Stun"
-    ],
     "apply_tag": [
       "Stun"
     ],
@@ -10332,7 +8674,6 @@
     "name": "Voracious Darkness",
     "points_cost": 3,
     "tooltip": "When you take damage while blocking, applies and refreshes Voracious Darkness which gives you 10% bonus resistance to all damage for 10 seconds. This effect stacks up to 5 times.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -10345,9 +8686,6 @@
     "name": "Vortex",
     "points_cost": 2,
     "tooltip": "Pull targets toward your primary target.",
-    "tags": [
-      "Reverse Repel"
-    ],
     "apply_tag": [
       "Reverse Repel"
     ],
@@ -10362,10 +8700,6 @@
     "name": "Vortex Technique",
     "points_cost": 2,
     "tooltip": "Foes are Knocked To you instead of Knocked Back .If fully maintained, also applies or refreshes Furious.",
-    "tags": [
-      "Knock To",
-      "Furious"
-    ],
     "apply_tag": [
       "Knock To",
       "Furious"
@@ -10383,9 +8717,6 @@
     "name": "Wall of Blades",
     "points_cost": 2,
     "tooltip": "After maintaining for 1 seconds, grants you Aegis, increasing your Resistance to all damage by +15% for 15 sec.",
-    "tags": [
-      "Aegis"
-    ],
     "apply_tag": [
       "Aegis"
     ],
@@ -10400,9 +8731,6 @@
     "name": "Wall of Bullets",
     "points_cost": 3,
     "tooltip": "Grants a damage absorption shield that scales up over time. Lasts as long as you maintain.",
-    "tags": [
-      "Shield"
-    ],
     "apply_tag": [
       "Shield"
     ],
@@ -10417,7 +8745,6 @@
     "name": "Wall of Fire",
     "points_cost": 2,
     "tooltip": "Creates two sets of mines, allowing them to cover a larger area, but each set does 40% less damage.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -10430,9 +8757,6 @@
     "name": "Warlock's Malice",
     "points_cost": 2,
     "tooltip": "20% chance every hit to Root the targets.",
-    "tags": [
-      "Root"
-    ],
     "apply_tag": [
       "Root"
     ],
@@ -10447,9 +8771,6 @@
     "name": "Weak Points",
     "points_cost": 2,
     "tooltip": "Refreshes your Bleed effects.",
-    "tags": [
-      "Bleed"
-    ],
     "apply_tag": [],
     "refresh_tag": [
       "Bleed"
@@ -10464,9 +8785,6 @@
     "name": "Weapon Cover",
     "points_cost": 3,
     "tooltip": "If you hold this power for at least 2 seconds, releasing it grants you an absorbing damage shield, and increases your Hold and Knock resistance by a small amount for 10 sec. All effects expire when the shield is removed.",
-    "tags": [
-      "Shield"
-    ],
     "apply_tag": [
       "Shield"
     ],
@@ -10481,7 +8799,6 @@
     "name": "Weather the Storm",
     "points_cost": 2,
     "tooltip": "Secondary Energy Effects, such as Clinging Flames, have a chance to not be consumed when you use.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -10499,9 +8816,6 @@
     "name": "What Do I have In My Utility Belt?",
     "points_cost": 2,
     "tooltip": "When fully charged, applies Bane to your primary target, and 50% applies Bane to secondary targets.",
-    "tags": [
-      "Bane"
-    ],
     "apply_tag": [
       "Bane"
     ],
@@ -10516,9 +8830,6 @@
     "name": "Where's the Kaboom?",
     "points_cost": 2,
     "tooltip": "Deals Piercing Damage to your primary target. After 3.5 sec, deals Fire Damage to all targets within 10ft, and Knock them Up",
-    "tags": [
-      "Knock Up"
-    ],
     "apply_tag": [
       "Knock Up"
     ],
@@ -10536,9 +8847,6 @@
     "name": "Wild Slashes",
     "points_cost": 2,
     "tooltip": "25% chance every hit to apply Furious. 100% chance on the last hit.",
-    "tags": [
-      "Furious"
-    ],
     "apply_tag": [
       "Furious"
     ],
@@ -10553,7 +8861,6 @@
     "name": "Wild Strikes",
     "points_cost": 2,
     "tooltip": "For a short time after using, whenever you directly damage a foe with a Supernatural attack, the cooldown on your Supernatural abilities is reduced. Energy builders will not trigger this effect. Does not affect Active or Ultimate powers.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -10566,10 +8873,6 @@
     "name": "Wildfire",
     "points_cost": 2,
     "tooltip": "Refreshes Clinging Flames on targets and they are Knocked Down. This can only occur once every 3 seconds.",
-    "tags": [
-      "Knock Down",
-      "Clinging Flames"
-    ],
     "apply_tag": [
       "Knock Down"
     ],
@@ -10586,9 +8889,6 @@
     "name": "Wizard's Discretion",
     "points_cost": 2,
     "tooltip": "20% chance every hit to Stun your target.",
-    "tags": [
-      "Stun"
-    ],
     "apply_tag": [
       "Stun"
     ],
@@ -10603,10 +8903,6 @@
     "name": "Work Up",
     "points_cost": 2,
     "tooltip": "Applies Restoration to you, healing you every 2 sec for 6 sec. If your health in below 20%, give you additional heal, and the value is increased.",
-    "tags": [
-      "Restoration",
-      "Passive Heal"
-    ],
     "apply_tag": [
       "Restoration"
     ],
@@ -10623,9 +8919,6 @@
     "name": "Wrecking Ball",
     "points_cost": 2,
     "tooltip": "When is fully maintained applies Demolish to your targets.",
-    "tags": [
-      "Demolish"
-    ],
     "apply_tag": [
       "Demolish"
     ],
@@ -10640,7 +8933,6 @@
     "name": "You Clean, We'll Sweep",
     "points_cost": 1,
     "tooltip": "Applies a large threat over time effect to your target. This effect stacks with Challenge.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -10653,9 +8945,6 @@
     "name": "Energy Refraction",
     "points_cost": 2,
     "tooltip": "15% chance every hit to grant you a small damage absorbing shield.",
-    "tags": [
-      "Shield"
-    ],
     "apply_tag": [
       "Shield"
     ],
@@ -10670,9 +8959,6 @@
     "name": "Entropy Blast",
     "points_cost": 2,
     "tooltip": "15% chance every hit to apply Power Shield to your target.",
-    "tags": [
-      "Power Shield"
-    ],
     "apply_tag": [
       "Power Shield"
     ],
@@ -10687,10 +8973,6 @@
     "name": "Gravitational Polarity",
     "points_cost": 2,
     "tooltip": "On full charge, summon an Energy Field for 10 seconds. Standing in the Energy Field grants Energy to up to 5 allies within 15ft while depleting Energy from foes. Count as a Rune. You cannot have more than one rune out at a time",
-    "tags": [
-      "Rune",
-      "Static Field"
-    ],
     "apply_tag": [
       "Rune",
       "Static Field"
@@ -10706,15 +8988,14 @@
     "name": "Field Expulsion",
     "points_cost": 3,
     "tooltip": "If you are affected by a direct Shield power, fully charging removes that effect and grants a damage absorbing shield to up to 5 allies within 30 feet for 20 seconds. This amount scales with the rank of your Protection Field power.",
-    "tags": [
-      "Shield"
-    ],
     "apply_tag": [
       "Shield"
     ],
     "refresh_tag": [],
     "synergy_tag": [],
-    "filter_tag": [],
+    "filter_tag": [
+      "Field Inversion"
+    ],
     "damage_type": [],
     "is_disabled": false
   },
@@ -10723,9 +9004,6 @@
     "name": "Inverse Polarity",
     "points_cost": 2,
     "tooltip": "Pulls targets toward you instead of away.",
-    "tags": [
-      "Reverse Repel"
-    ],
     "apply_tag": [
       "Reverse Repel"
     ],
@@ -10740,10 +9018,6 @@
     "name": "Center of Gravity",
     "points_cost": 2,
     "tooltip": "When maintained halfway, Creates a Shielding Rune at your position, shielding up to 5 allies within 15ft for up to 10 sec. If an ally is affected by a Direct Shield, restores a portion of it. You cannot have more than one Rune out at a time",
-    "tags": [
-      "Rune",
-      "Shield"
-    ],
     "apply_tag": [
       "Rune",
       "Shield"
@@ -10759,9 +9033,6 @@
     "name": "Entropic Collapse",
     "points_cost": 1,
     "tooltip": "Knocks Down up to 5 targets within 10 feet of your primary target.",
-    "tags": [
-      "Knock Down"
-    ],
     "apply_tag": [
       "Knock Down"
     ],
@@ -10776,11 +9047,6 @@
     "name": "Field Inversion",
     "points_cost": 2,
     "tooltip": "When fully charged, if your primary target affected by a Power Shield, deals additionnal Crushing Damage to nearby targets.",
-    "tags": [
-      "Shield",
-      "Power Shield",
-      "Field Inversion"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -10800,9 +9066,6 @@
     "name": "Demolishing Blast",
     "points_cost": 2,
     "tooltip": "When is fully charged, applies Demolish.",
-    "tags": [
-      "Demolish"
-    ],
     "apply_tag": [
       "Demolish"
     ],
@@ -10817,9 +9080,6 @@
     "name": "Shield Generator",
     "points_cost": 2,
     "tooltip": "Fully charging applies a Shield to you for 10 sec, absorbing damage. This amount scales with the rank of your Protection Field power.",
-    "tags": [
-      "Shield"
-    ],
     "apply_tag": [
       "Shield"
     ],
@@ -10834,9 +9094,6 @@
     "name": "Hard Landing",
     "points_cost": 2,
     "tooltip": "Snares the target.",
-    "tags": [
-      "Snare"
-    ],
     "apply_tag": [
       "Snare"
     ],
@@ -10851,10 +9108,6 @@
     "name": "Entropy Field",
     "points_cost": 2,
     "tooltip": "Places up to 5 targets within 15 feet of your primary target in a Power Shield.",
-    "tags": [
-      "Shield",
-      "Power Shield"
-    ],
     "apply_tag": [
       "Shield",
       "Power Shield"
@@ -10870,9 +9123,6 @@
     "name": "Bruiser",
     "points_cost": 2,
     "tooltip": "Refreshes Demolish.",
-    "tags": [
-      "Demolish"
-    ],
     "apply_tag": [],
     "refresh_tag": [
       "Demolish"
@@ -10887,9 +9137,6 @@
     "name": "Disruptive Force",
     "points_cost": 1,
     "tooltip": "20% chance per hit to Knock Down targets. 100% chance Knock Down when fully charged.",
-    "tags": [
-      "Knock Down"
-    ],
     "apply_tag": [
       "Knock Down"
     ],
@@ -10904,9 +9151,6 @@
     "name": "Barrier",
     "points_cost": 2,
     "tooltip": "Grants a damage absorption shield that scales up over time. Lasts as long as you maintain.",
-    "tags": [
-      "Shield"
-    ],
     "apply_tag": [
       "Shield"
     ],
@@ -10921,10 +9165,6 @@
     "name": "Overwhelming Force",
     "points_cost": 2,
     "tooltip": "On a full charge, instead of targets being Knocked, your primary target is Paralyzed and secondary targets are Stunned for a short time.",
-    "tags": [
-      "Hold",
-      "Stun"
-    ],
     "apply_tag": [
       "Hold",
       "Stun"
@@ -10940,9 +9180,6 @@
     "name": "Focus Point",
     "points_cost": 2,
     "tooltip": "Becomes a single target ranged power, reducing its cost and increasing its damages.",
-    "tags": [
-      "Focus"
-    ],
     "apply_tag": [
       "Focus"
     ],
@@ -10957,9 +9194,6 @@
     "name": "Gravitational Pull",
     "points_cost": 2,
     "tooltip": "Targets are now Knocked Up instead of being Knocked Back.",
-    "tags": [
-      "Knock Up"
-    ],
     "apply_tag": [
       "Knock Up"
     ],
@@ -10974,7 +9208,6 @@
     "name": "Expel Impurity",
     "points_cost": 1,
     "tooltip": "Removes 1 damage over time effect with the highest duration from your target.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -10987,7 +9220,6 @@
     "name": "Force Sheathe",
     "points_cost": 3,
     "tooltip": "When you take damage while blocking, grants the Force Sheathe buff for 8 sec, which gives you +10% resistance to all damage and returns energy whenever you take damage. The amount of energy you get scales with your RECOVERY and how much damage you took.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -11000,9 +9232,6 @@
     "name": "Chemical Fire",
     "points_cost": 2,
     "tooltip": "Instead of applying Clinging Flames, now has a chance to apply Plasma Burn.",
-    "tags": [
-      "Plasma Burn"
-    ],
     "apply_tag": [
       "Plasma Burn"
     ],
@@ -11017,9 +9246,6 @@
     "name": "Download",
     "points_cost": 1,
     "tooltip": "Applies Download to you, reducing the cost of Technology powers for 12 secs.",
-    "tags": [
-      "Download"
-    ],
     "apply_tag": [
       "Download"
     ],
@@ -11034,7 +9260,6 @@
     "name": "Breakout",
     "points_cost": 2,
     "tooltip": "If the target is under a Control effect, applies Breakfree damage. This effect can occur once every 2 sec.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -11049,10 +9274,6 @@
     "name": "Burning Sun",
     "points_cost": 2,
     "tooltip": "On a full charge, creates a Healing Rune beneath the user.",
-    "tags": [
-      "Rune",
-      "Passive Heal"
-    ],
     "apply_tag": [
       "Rune"
     ],
@@ -11069,10 +9290,6 @@
     "name": "Fan the Flames",
     "points_cost": 3,
     "tooltip": "Flashfire refreshes the duration of your Engulfing Flames and again when the Pyre Patch it creates lasts for half of its duration. Pyre Patch effects created by other abilities also refresh Engulfing Flames when they last for their full duration.",
-    "tags": [
-      "Pyre Patch",
-      "Engulfing Flames"
-    ],
     "apply_tag": [],
     "refresh_tag": [
       "Engulfing Flames"
@@ -11089,9 +9306,6 @@
     "name": "Intimidating Force",
     "points_cost": 2,
     "tooltip": "Knocks Down targets.",
-    "tags": [
-      "Knock Down"
-    ],
     "apply_tag": [
       "Knock Down"
     ],
@@ -11106,7 +9320,6 @@
     "name": "Fighting Spirit",
     "points_cost": 1,
     "tooltip": "When this effect expires, the healing penalty is reduced by 5 seconds.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -11119,9 +9332,6 @@
     "name": "Fiery Spirit",
     "points_cost": 2,
     "tooltip": "Each hit has an increasing chance to apply Clinging Flames to targets. 100% chance when on last hit to apply on your primary target.",
-    "tags": [
-      "Clinging Flames"
-    ],
     "apply_tag": [
       "Clinging Flames"
     ],
@@ -11136,9 +9346,6 @@
     "name": "Fiery Blade",
     "points_cost": 1,
     "tooltip": "Instead of Disorient, each hit has a change to apply Clinging Flames instead.",
-    "tags": [
-      "Clinging Flames"
-    ],
     "apply_tag": [
       "Clinging Flames"
     ],
@@ -11153,9 +9360,6 @@
     "name": "Aftershock",
     "points_cost": 2,
     "tooltip": "Fully charging creates a Pyre Patch.",
-    "tags": [
-      "Pyre Patch"
-    ],
     "apply_tag": [
       "Pyre Patch"
     ],
@@ -11170,9 +9374,6 @@
     "name": "Chi Flame",
     "points_cost": 2,
     "tooltip": "Fully charging applies Chi Flame to the target(s).",
-    "tags": [
-      "Chi Flame"
-    ],
     "apply_tag": [
       "Chi Flame"
     ],
@@ -11187,9 +9388,6 @@
     "name": "Corrosion",
     "points_cost": 2,
     "tooltip": "Refreshes all your Poisons.",
-    "tags": [
-      "Poison"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -11204,9 +9402,6 @@
     "name": "Demolishing Strikes",
     "points_cost": 2,
     "tooltip": "When this combo is completed, it applies Demolish to the target instead of Lithe.",
-    "tags": [
-      "Demolish"
-    ],
     "apply_tag": [
       "Demolish"
     ],
@@ -11221,9 +9416,6 @@
     "name": "Demolishing Strikes",
     "points_cost": 2,
     "tooltip": "When is fully maintained, applies Demolish to your primary target.",
-    "tags": [
-      "Demolish"
-    ],
     "apply_tag": [
       "Demolish"
     ],
@@ -11238,9 +9430,6 @@
     "name": "Devoid",
     "points_cost": 2,
     "tooltip": "On a full charge, applies Devoid to the target.",
-    "tags": [
-      "Devoid"
-    ],
     "apply_tag": [
       "Devoid"
     ],
@@ -11255,9 +9444,6 @@
     "name": "Disintegration Ray",
     "points_cost": 2,
     "tooltip": "When fully charged, applies Disintegrate.",
-    "tags": [
-      "Disintegrate"
-    ],
     "apply_tag": [
       "Disintegrate"
     ],
@@ -11272,9 +9458,6 @@
     "name": "Dizzying Impact",
     "points_cost": 2,
     "tooltip": "30-100% chance (based on charged time) to apply Disorient to target(s)",
-    "tags": [
-      "Disorient"
-    ],
     "apply_tag": [
       "Disorient"
     ],
@@ -11289,9 +9472,6 @@
     "name": "Dizzying Impact",
     "points_cost": 2,
     "tooltip": "When fully charged, applies Disorient to targets.",
-    "tags": [
-      "Disorient"
-    ],
     "apply_tag": [
       "Disorient"
     ],
@@ -11306,9 +9486,6 @@
     "name": "Engulfing Flames",
     "points_cost": 2,
     "tooltip": "Applies Engulfing Flames to your target, reducing their resistance to your Fire damage.",
-    "tags": [
-      "Engulfing Flames"
-    ],
     "apply_tag": [
       "Engulfing Flames"
     ],
@@ -11323,10 +9500,6 @@
     "name": "Engulfing Flames",
     "points_cost": 2,
     "tooltip": "50% chance to apply Engulfing Flame to your primary target. 25% on secondary target. Chances are doubled if your targets are affected by Clinging Flames",
-    "tags": [
-      "Engulfing Flames",
-      "Clinging Flames"
-    ],
     "apply_tag": [
       "Engulfing Flames"
     ],
@@ -11343,9 +9516,6 @@
     "name": "Entropy Field",
     "points_cost": 2,
     "tooltip": "20% chance every hit to apply Power Shield to targets. 100% chance if fully maintained.",
-    "tags": [
-      "Power Shield"
-    ],
     "apply_tag": [
       "Power Shield"
     ],
@@ -11360,7 +9530,6 @@
     "name": "Fester",
     "points_cost": 2,
     "tooltip": "Fully charging debuffs your target by -5% damage strength over 12 seconds for every one of your Poison stacks.",
-    "tags": [],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -11375,9 +9544,6 @@
     "name": "Floating Lotus Blossom",
     "points_cost": 2,
     "tooltip": "Finishing this combo causes your Archery powers to apply Quick Maneuvering to you for the next 10 seconds. Quick Maneuvering increases your Dodge chance by 5%, lasts for 12 seconds and stacks up to 10 times. All stacks of Quick Maneuvering are lost when you successfully dodge an attack.",
-    "tags": [
-      "Quick Maneuvering"
-    ],
     "apply_tag": [
       "Quick Maneuvering"
     ],
@@ -11392,10 +9558,6 @@
     "name": "Frail Armor",
     "points_cost": 2,
     "tooltip": "Refreshes Armor Piercing.",
-    "tags": [
-      "Armor Piercing",
-      "Frail Armor"
-    ],
     "apply_tag": [],
     "refresh_tag": [
       "Armor Piercing",
@@ -11411,9 +9573,6 @@
     "name": "Frost Bite",
     "points_cost": 2,
     "tooltip": "Refreshes Chill.",
-    "tags": [
-      "Chill"
-    ],
     "apply_tag": [],
     "refresh_tag": [
       "Chill"
@@ -11428,9 +9587,6 @@
     "name": "Head Trauma",
     "points_cost": 2,
     "tooltip": "Finishing the combo applies Bewildered to your primary target. If your target charges up powers while affected by Bewildered, they will be stunned briefly.",
-    "tags": [
-      "Stun"
-    ],
     "apply_tag": [
       "Stun"
     ],
@@ -11445,10 +9601,6 @@
     "name": "Illuminate",
     "points_cost": 2,
     "tooltip": "Applies Illuminated to the target.",
-    "tags": [
-      "Illuminated",
-      "Passive Heal"
-    ],
     "apply_tag": [
       "Illuminated"
     ],
@@ -11465,10 +9617,6 @@
     "name": "Light Everlasting",
     "points_cost": 2,
     "tooltip": "Applies Light Everlasting to allies near the primary target.",
-    "tags": [
-      "Light Everlasting",
-      "Passive Heal"
-    ],
     "apply_tag": [
       "Light Everlasting"
     ],
@@ -11485,10 +9633,6 @@
     "name": "Light Everlasting",
     "points_cost": 2,
     "tooltip": "When fully maintained, applies Light Everlasting to nearby allies.",
-    "tags": [
-      "Light Everlasting",
-      "Passive Heal"
-    ],
     "apply_tag": [
       "Light Everlasting"
     ],
@@ -11505,9 +9649,6 @@
     "name": "Mystical",
     "points_cost": 2,
     "tooltip": "20% chance to apply and refresh Mystified on you. Mystified lasts 15 seconds and reduces the cost of your Sorcery, Celestial, Darkness, and Infernal powers by 3%, stacking up to 3 times.",
-    "tags": [
-      "Mystified"
-    ],
     "apply_tag": [
       "Mystified"
     ],
@@ -11522,9 +9663,6 @@
     "name": "Mystical",
     "points_cost": 2,
     "tooltip": "On a full maintain, applies and refreshes Mystified on you.",
-    "tags": [
-      "Mystified"
-    ],
     "apply_tag": [
       "Mystified"
     ],
@@ -11539,9 +9677,6 @@
     "name": "No Quarter",
     "points_cost": 2,
     "tooltip": "Applies No Quarter to targets.",
-    "tags": [
-      "No Quarter"
-    ],
     "apply_tag": [
       "No Quarter"
     ],
@@ -11556,9 +9691,6 @@
     "name": "Power Shift",
     "points_cost": 2,
     "tooltip": "Instead of Knocking targets back, targets are Knocked toward you.",
-    "tags": [
-      "Knock To"
-    ],
     "apply_tag": [
       "Knock To"
     ],
@@ -11573,9 +9705,6 @@
     "name": "Reckless Endangerment",
     "points_cost": 2,
     "tooltip": "Has a 10% chance each hit to apply Reckless on you. If fully maintained and you have 3 stacks of Reckless, they are refreshed.",
-    "tags": [
-      "Reckless"
-    ],
     "apply_tag": [
       "Reckless"
     ],
@@ -11592,9 +9721,6 @@
     "name": "Reckless Endangerment",
     "points_cost": 2,
     "tooltip": "The final combo hit applies Reckless to you.",
-    "tags": [
-      "Reckless"
-    ],
     "apply_tag": [
       "Reckless"
     ],
@@ -11609,9 +9735,6 @@
     "name": "Reckless Endangerment",
     "points_cost": 2,
     "tooltip": "Applies Reckless to you.",
-    "tags": [
-      "Reckless"
-    ],
     "apply_tag": [
       "Reckless"
     ],
@@ -11626,9 +9749,6 @@
     "name": "Single Minded",
     "points_cost": 2,
     "tooltip": "Targets who are close to the Psychic Vortex have a chance to be Stunned.",
-    "tags": [
-      "Stun"
-    ],
     "apply_tag": [
       "Stun"
     ],
@@ -11643,9 +9763,6 @@
     "name": "Sudden Strike",
     "points_cost": 2,
     "tooltip": "If you lunge from more than 50 feet away your next single target Melee Critical has 15% more severity. Sudden Strike is a Chi Energy effect.",
-    "tags": [
-      "Sudden Strike"
-    ],
     "apply_tag": [
       "Sudden Strike"
     ],
@@ -11660,10 +9777,6 @@
     "name": "Charged Up",
     "points_cost": 2,
     "tooltip": "If consumes any Negative Ions, it applies Charged Up to you and affected allies. Charged Up increases your Running Speed by 15%, your Jump Height by 2%, and your Flying Speed by 2%. This effect stacks up to 5 times and lasts 10 seconds.",
-    "tags": [
-      "Negative Ions",
-      "Charged Up"
-    ],
     "apply_tag": [
       "Charged Up"
     ],
@@ -11682,9 +9795,6 @@
     "name": "Magma Burst",
     "points_cost": 2,
     "tooltip": "Deals an additional Fire damage to your primary target and secondary targets. Has a 45-100% chance to apply Clinging Flames to all targets.",
-    "tags": [
-      "Clinging Flames"
-    ],
     "apply_tag": [
       "Clinging Flames"
     ],
@@ -11701,9 +9811,6 @@
     "name": "Spitfire",
     "points_cost": 2,
     "tooltip": "20% chance every hit to apply Clinging Flames. 100% chance is fully maintained.",
-    "tags": [
-      "Clinging Flames"
-    ],
     "apply_tag": [
       "Clinging Flames"
     ],
@@ -11718,9 +9825,6 @@
     "name": "Superconductor",
     "points_cost": 2,
     "tooltip": "When fully charged, applies Superconductor to the target.",
-    "tags": [
-      "Superconductor"
-    ],
     "apply_tag": [
       "Superconductor"
     ],
@@ -11735,9 +9839,6 @@
     "name": "Sharp Edges",
     "points_cost": 2,
     "tooltip": "Apply Bleed instead of Chill.",
-    "tags": [
-      "Bleed"
-    ],
     "apply_tag": [
       "Bleed"
     ],
@@ -11752,10 +9853,6 @@
     "name": "Sweltering Heat",
     "points_cost": 2,
     "tooltip": "20% chance every hit to Snare targets. When fully maintained, Root them.",
-    "tags": [
-      "Snare",
-      "Root"
-    ],
     "apply_tag": [
       "Snare",
       "Root"
@@ -11771,9 +9868,6 @@
     "name": "Hard Frost",
     "points_cost": 2,
     "tooltip": "If fully maintained, Applies Hard Frost to targets.",
-    "tags": [
-      "Hard Frost"
-    ],
     "apply_tag": [
       "Hard Frost"
     ],
@@ -11788,12 +9882,6 @@
     "name": "Field Inversion",
     "points_cost": 2,
     "tooltip": "If you are affected by a direct Shield effect, consumes the shield and deals additional Crushing Damage around your primary target. If any affected targets are affected by a Power Shield effect, deals Crushing damage to nearby targets.",
-    "tags": [
-      "Shield",
-      "Power Shield",
-      "Field Inversion",
-      "Rupture"
-    ],
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -11814,9 +9902,6 @@
     "name": "Particle Acceleration",
     "points_cost": 2,
     "tooltip": "When fully maintained, applies Disintegrate.",
-    "tags": [
-      "Disintegrate"
-    ],
     "apply_tag": [
       "Disintegrate"
     ],
@@ -11831,9 +9916,6 @@
     "name": "Scent of Blood",
     "points_cost": 2,
     "tooltip": "Last hit against a Bleeding target spreads the effect to up to 5 foes within 20ft. Refreshes the duration of Bleed effects on affected targets.",
-    "tags": [
-      "Bleed"
-    ],
     "apply_tag": [
       "Bleed"
     ],
@@ -11850,9 +9932,6 @@
     "name": "Wildfire",
     "points_cost": 2,
     "tooltip": "Deals Fire Damage to foes within 15fr of your primary target. Refreshes Clinging Flames on your primary target.",
-    "tags": [
-      "Clinging Flames"
-    ],
     "apply_tag": [],
     "refresh_tag": [
       "Clinging Flames"

@@ -15,6 +15,7 @@ export const instantTooltipAttributeFilter = [
   "data-advantage-tooltip",
   "data-stat-tooltip",
   "data-framework-tooltip",
+  "data-text-tooltip",
   "title",
 ];
 
@@ -28,7 +29,7 @@ export function getTooltipElement(target: EventTarget | null) {
   }
 
   const element = target.closest<HTMLElement>(
-    "[title], [data-advantage-tooltip], [data-power-tooltip], [data-stat-tooltip], [data-framework-tooltip]",
+    "[title], [data-advantage-tooltip], [data-power-tooltip], [data-stat-tooltip], [data-framework-tooltip], [data-text-tooltip]",
   );
 
   if (!element) {
@@ -40,7 +41,8 @@ export function getTooltipElement(target: EventTarget | null) {
     !element.dataset.advantageTooltip &&
     !element.dataset.powerTooltip &&
     !element.dataset.statTooltip &&
-    !element.dataset.frameworkTooltip
+    !element.dataset.frameworkTooltip &&
+    !element.dataset.textTooltip
   ) {
     return null;
   }
@@ -158,7 +160,10 @@ export function getTooltipContent(element: HTMLElement): TooltipContent | null {
   }
 
   const text =
-    element.title.trim() || element.dataset.instantTooltipTitle?.trim() || "";
+    element.dataset.textTooltip?.trim() ||
+    element.title.trim() ||
+    element.dataset.instantTooltipTitle?.trim() ||
+    "";
 
   return text ? { kind: "text", text } : null;
 }

@@ -258,6 +258,64 @@
   color: #f2d77b;
 }
 
+.text-tooltip {
+  display: grid;
+  gap: 4px;
+  white-space: normal;
+}
+
+.text-tooltip__line {
+  display: inline-flex;
+  gap: 4px;
+  align-items: baseline;
+  white-space: pre-line;
+}
+
+.text-tooltip__line-prefix {
+  flex: 0 0 auto;
+  color: #dce5fa;
+  font-weight: 700;
+}
+
+.text-tooltip__section-heading {
+  display: flex;
+  gap: 4px;
+  align-items: baseline;
+  margin-top: 2px;
+  padding-top: 6px;
+  border-top: 1px solid rgba(150, 174, 224, 0.16);
+  color: #c8d1e4;
+  font-size: 12px;
+}
+
+.text-tooltip__section-heading strong {
+  flex: 0 0 auto;
+  color: #f2d77b;
+}
+
+.text-tooltip__section-heading--set-bonus,
+.text-tooltip__section-heading--piece-bonus {
+  color: #f2d77b;
+  font-weight: 700;
+}
+
+.text-tooltip__section-heading--set-bonus strong,
+.text-tooltip__section-heading--piece-bonus strong {
+  color: inherit;
+}
+
+.text-tooltip__section-heading--piece-bonus {
+  margin-top: 6px;
+  padding-top: 8px;
+  border-top-color: rgba(242, 215, 123, 0.28);
+}
+
+.text-tooltip__section-heading:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+
 .power-tooltip-advantages {
   display: grid;
   gap: 8px;

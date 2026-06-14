@@ -1864,6 +1864,7 @@ function App() {
           >
             <GearPanel
               gearSlots={gearSlots}
+              selectedSuperStats={selectedSuperStats}
               onToggleCollapse={() => toggleWorkspacePanel("gear")}
               onSelectGearMod={openCurrentGearModsDialog}
               onSelectGearModRank={openCurrentGearRankDialog}

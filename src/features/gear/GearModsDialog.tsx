@@ -1,12 +1,11 @@
 import type {
   GearBuildSlot,
-  GearBonus,
   GearMod,
   GearModRank,
 } from "@/types/gear";
 import { AnchoredSelectionDialog, type DialogAnchor } from "@/shared/ui";
 import { SpriteIcon } from "@/shared/ui/SpriteIcon";
-import { cleanMultilineTooltipText } from "@/shared/utils/tooltipText";
+import { formatGearModTooltipText } from "./gearModTooltips";
 
 type GearModsDialogProps = {
   anchor: DialogAnchor;
@@ -53,34 +52,6 @@ function isModCompatible(slotTypes: string[], mod: GearMod) {
   }
 
   return primarySlotTypes.every((slotType) => modTypes.has(slotType));
-}
-
-function formatRankValues(bonus: GearBonus | undefined) {
-  const valuesByRank = bonus?.values_by_rank;
-
-  if (!valuesByRank) {
-    return null;
-  }
-
-  return [valuesByRank["5"], valuesByRank["7"], valuesByRank["9"]]
-    .filter((value) => value !== undefined && value !== null)
-    .join(" / ");
-}
-
-function formatModBonus(mod: GearMod) {
-  const formattedBonuses = mod.bonuses
-    .map((bonus) => {
-      const rankValues = formatRankValues(bonus);
-
-      return rankValues ? `${bonus.type}: ${rankValues}` : bonus.type;
-    })
-    .filter(Boolean);
-
-  if (formattedBonuses.length === 0) {
-    return "No bonus data";
-  }
-
-  return formattedBonuses.join(" / ");
 }
 
 function getRankValue(mod: GearMod, rank: GearModRank) {
@@ -146,22 +117,6 @@ function hasCompatibleRankForSlot(mod: GearMod, gearSlot: GearBuildSlot) {
   const availableRanks = getAvailableRanks(mod);
 
   return availableRanks.length === 0 || getAllowedRanks(mod, gearSlot).length > 0;
-}
-
-function getModTooltipText(mod: GearMod) {
-  const lines = [
-    formatModBonus(mod),
-    cleanModTooltipText(mod.tooltip),
-    mod.source.length > 0 ? `Source: ${mod.source.join(", ")}` : null,
-  ].filter(Boolean);
-
-  return lines.join("\n");
-}
-
-function cleanModTooltipText(value: string | null | undefined) {
-  return cleanMultilineTooltipText(value)
-    ?.replace(/\s*\+\s*/gu, "\n")
-    .trim() ?? null;
 }
 
 export function GearModsDialog({
@@ -236,10 +191,10 @@ export function GearModsDialog({
                     .join(" ")}
                   disabled={isAlreadySelected}
                   key={mod.mod_id}
-                  title={
+                  data-text-tooltip={
                     isAlreadySelected
                       ? "This mod cannot be stacked"
-                      : getModTooltipText(mod)
+                      : formatGearModTooltipText(mod)
                   }
                   type="button"
                   onClick={() =>
@@ -254,7 +209,6 @@ export function GearModsDialog({
                   <SpriteIcon name={getModRankIconName(mod)} size={22} />
                   <span
                     className="power-selection-choice__label"
-                    title={getModTooltipText(mod)}
                   >
                     {mod.name}
                   </span>

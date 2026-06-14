@@ -242,8 +242,8 @@
   {
     "mod_id": 9,
     "mod_type": "Armoring",
-    "name": "STR/DEX",
-    "mod_bonus": "STR;DEX",
+    "name": "CON/END",
+    "mod_bonus": "CON;END",
     "rank_5": 29,
     "rank_7": 32,
     "rank_9": 36,
@@ -253,242 +253,14 @@
       "Dual Stats"
     ],
     "source": [],
-    "icon_override": null,
+    "icon_override": "Mod_Arm_CON_END",
     "is_disabled": false,
     "mod_types": [
       "Armoring"
     ],
     "bonuses": [
-      {
-        "type": "STR",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      },
-      {
-        "type": "DEX",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      }
-    ]
-  },
-  {
-    "mod_id": 10,
-    "mod_type": "Armoring",
-    "name": "STR/CON",
-    "mod_bonus": "STR;CON",
-    "rank_5": 29,
-    "rank_7": 32,
-    "rank_9": 36,
-    "tooltip": null,
-    "stackable": true,
-    "tag": [
-      "Dual Stats"
-    ],
-    "source": [],
-    "icon_override": null,
-    "is_disabled": false,
-    "mod_types": [
-      "Armoring"
-    ],
-    "bonuses": [
-      {
-        "type": "STR",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      },
       {
         "type": "CON",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      }
-    ]
-  },
-  {
-    "mod_id": 11,
-    "mod_type": "Armoring",
-    "name": "STR/INT",
-    "mod_bonus": "STR;INT",
-    "rank_5": 29,
-    "rank_7": 32,
-    "rank_9": 36,
-    "tooltip": null,
-    "stackable": true,
-    "tag": [
-      "Dual Stats"
-    ],
-    "source": [],
-    "icon_override": null,
-    "is_disabled": false,
-    "mod_types": [
-      "Armoring"
-    ],
-    "bonuses": [
-      {
-        "type": "STR",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      },
-      {
-        "type": "INT",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      }
-    ]
-  },
-  {
-    "mod_id": 12,
-    "mod_type": "Armoring",
-    "name": "STR/EGO",
-    "mod_bonus": "STR;EGO",
-    "rank_5": 29,
-    "rank_7": 32,
-    "rank_9": 36,
-    "tooltip": null,
-    "stackable": true,
-    "tag": [
-      "Dual Stats"
-    ],
-    "source": [],
-    "icon_override": null,
-    "is_disabled": false,
-    "mod_types": [
-      "Armoring"
-    ],
-    "bonuses": [
-      {
-        "type": "STR",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      },
-      {
-        "type": "EGO",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      }
-    ]
-  },
-  {
-    "mod_id": 14,
-    "mod_type": "Armoring",
-    "name": "STR/PRE",
-    "mod_bonus": "STR;PRE",
-    "rank_5": 29,
-    "rank_7": 32,
-    "rank_9": 36,
-    "tooltip": null,
-    "stackable": true,
-    "tag": [
-      "Dual Stats"
-    ],
-    "source": [],
-    "icon_override": null,
-    "is_disabled": false,
-    "mod_types": [
-      "Armoring"
-    ],
-    "bonuses": [
-      {
-        "type": "STR",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      },
-      {
-        "type": "PRE",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      }
-    ]
-  },
-  {
-    "mod_id": 15,
-    "mod_type": "Armoring",
-    "name": "STR/REC",
-    "mod_bonus": "STR;REC",
-    "rank_5": 29,
-    "rank_7": 32,
-    "rank_9": 36,
-    "tooltip": null,
-    "stackable": true,
-    "tag": [
-      "Dual Stats"
-    ],
-    "source": [],
-    "icon_override": null,
-    "is_disabled": false,
-    "mod_types": [
-      "Armoring"
-    ],
-    "bonuses": [
-      {
-        "type": "STR",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      },
-      {
-        "type": "REC",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      }
-    ]
-  },
-  {
-    "mod_id": 16,
-    "mod_type": "Armoring",
-    "name": "STR/END",
-    "mod_bonus": "STR;END",
-    "rank_5": 29,
-    "rank_7": 32,
-    "rank_9": 36,
-    "tooltip": null,
-    "stackable": true,
-    "tag": [
-      "Dual Stats"
-    ],
-    "source": [],
-    "icon_override": null,
-    "is_disabled": false,
-    "mod_types": [
-      "Armoring"
-    ],
-    "bonuses": [
-      {
-        "type": "STR",
         "values_by_rank": {
           "5": 29,
           "7": 32,
@@ -506,7 +278,121 @@
     ]
   },
   {
-    "mod_id": 17,
+    "mod_id": 10,
+    "mod_type": "Armoring",
+    "name": "CON/PRE",
+    "mod_bonus": "CON;PRE",
+    "rank_5": 29,
+    "rank_7": 32,
+    "rank_9": 36,
+    "tooltip": null,
+    "stackable": true,
+    "tag": [
+      "Dual Stats"
+    ],
+    "source": [],
+    "icon_override": "Mod_Arm_CON_PRE",
+    "is_disabled": false,
+    "mod_types": [
+      "Armoring"
+    ],
+    "bonuses": [
+      {
+        "type": "CON",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      },
+      {
+        "type": "PRE",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      }
+    ]
+  },
+  {
+    "mod_id": 11,
+    "mod_type": "Armoring",
+    "name": "CON/REC",
+    "mod_bonus": "CON;REC",
+    "rank_5": 29,
+    "rank_7": 32,
+    "rank_9": 36,
+    "tooltip": null,
+    "stackable": true,
+    "tag": [
+      "Dual Stats"
+    ],
+    "source": [],
+    "icon_override": "Mod_Arm_CON_REC",
+    "is_disabled": false,
+    "mod_types": [
+      "Armoring"
+    ],
+    "bonuses": [
+      {
+        "type": "CON",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      },
+      {
+        "type": "REC",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      }
+    ]
+  },
+  {
+    "mod_id": 12,
+    "mod_type": "Armoring",
+    "name": "CON/STR",
+    "mod_bonus": "CON;STR",
+    "rank_5": 29,
+    "rank_7": 32,
+    "rank_9": 36,
+    "tooltip": null,
+    "stackable": true,
+    "tag": [
+      "Dual Stats"
+    ],
+    "source": [],
+    "icon_override": "Mod_Arm_CON_STR",
+    "is_disabled": false,
+    "mod_types": [
+      "Armoring"
+    ],
+    "bonuses": [
+      {
+        "type": "CON",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      },
+      {
+        "type": "STR",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      }
+    ]
+  },
+  {
+    "mod_id": 13,
     "mod_type": "Armoring",
     "name": "DEX/CON",
     "mod_bonus": "DEX;CON",
@@ -519,7 +405,7 @@
       "Dual Stats"
     ],
     "source": [],
-    "icon_override": null,
+    "icon_override": "Mod_Arm_DEX_CON",
     "is_disabled": false,
     "mod_types": [
       "Armoring"
@@ -544,45 +430,7 @@
     ]
   },
   {
-    "mod_id": 18,
-    "mod_type": "Armoring",
-    "name": "DEX/INT",
-    "mod_bonus": "DEX;INT",
-    "rank_5": 29,
-    "rank_7": 32,
-    "rank_9": 36,
-    "tooltip": null,
-    "stackable": true,
-    "tag": [
-      "Dual Stats"
-    ],
-    "source": [],
-    "icon_override": null,
-    "is_disabled": false,
-    "mod_types": [
-      "Armoring"
-    ],
-    "bonuses": [
-      {
-        "type": "DEX",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      },
-      {
-        "type": "INT",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      }
-    ]
-  },
-  {
-    "mod_id": 19,
+    "mod_id": 14,
     "mod_type": "Armoring",
     "name": "DEX/EGO",
     "mod_bonus": "DEX;EGO",
@@ -595,7 +443,7 @@
       "Dual Stats"
     ],
     "source": [],
-    "icon_override": null,
+    "icon_override": "Mod_Arm_DEX_EGO",
     "is_disabled": false,
     "mod_types": [
       "Armoring"
@@ -620,10 +468,10 @@
     ]
   },
   {
-    "mod_id": 20,
+    "mod_id": 15,
     "mod_type": "Armoring",
-    "name": "DEX/PRE",
-    "mod_bonus": "DEX;PRE",
+    "name": "DEX/INT",
+    "mod_bonus": "DEX;INT",
     "rank_5": 29,
     "rank_7": 32,
     "rank_9": 36,
@@ -633,7 +481,7 @@
       "Dual Stats"
     ],
     "source": [],
-    "icon_override": null,
+    "icon_override": "Mod_Arm_DEX_INT",
     "is_disabled": false,
     "mod_types": [
       "Armoring"
@@ -641,6 +489,196 @@
     "bonuses": [
       {
         "type": "DEX",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      },
+      {
+        "type": "INT",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      }
+    ]
+  },
+  {
+    "mod_id": 16,
+    "mod_type": "Armoring",
+    "name": "EGO/CON",
+    "mod_bonus": "EGO;CON",
+    "rank_5": 29,
+    "rank_7": 32,
+    "rank_9": 36,
+    "tooltip": null,
+    "stackable": true,
+    "tag": [
+      "Dual Stats"
+    ],
+    "source": [],
+    "icon_override": "Mod_Arm_EGO_CON",
+    "is_disabled": false,
+    "mod_types": [
+      "Armoring"
+    ],
+    "bonuses": [
+      {
+        "type": "EGO",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      },
+      {
+        "type": "CON",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      }
+    ]
+  },
+  {
+    "mod_id": 17,
+    "mod_type": "Armoring",
+    "name": "EGO/END",
+    "mod_bonus": "EGO;END",
+    "rank_5": 29,
+    "rank_7": 32,
+    "rank_9": 36,
+    "tooltip": null,
+    "stackable": true,
+    "tag": [
+      "Dual Stats"
+    ],
+    "source": [],
+    "icon_override": "Mod_Arm_EGO_END",
+    "is_disabled": false,
+    "mod_types": [
+      "Armoring"
+    ],
+    "bonuses": [
+      {
+        "type": "EGO",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      },
+      {
+        "type": "END",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      }
+    ]
+  },
+  {
+    "mod_id": 18,
+    "mod_type": "Armoring",
+    "name": "EGO/PRE",
+    "mod_bonus": "EGO;PRE",
+    "rank_5": 29,
+    "rank_7": 32,
+    "rank_9": 36,
+    "tooltip": null,
+    "stackable": true,
+    "tag": [
+      "Dual Stats"
+    ],
+    "source": [],
+    "icon_override": "Mod_Arm_EGO_PRE",
+    "is_disabled": false,
+    "mod_types": [
+      "Armoring"
+    ],
+    "bonuses": [
+      {
+        "type": "EGO",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      },
+      {
+        "type": "PRE",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      }
+    ]
+  },
+  {
+    "mod_id": 19,
+    "mod_type": "Armoring",
+    "name": "END/DEX",
+    "mod_bonus": "END;DEX",
+    "rank_5": 29,
+    "rank_7": 32,
+    "rank_9": 36,
+    "tooltip": null,
+    "stackable": true,
+    "tag": [
+      "Dual Stats"
+    ],
+    "source": [],
+    "icon_override": "Mod_Arm_END_DEX",
+    "is_disabled": false,
+    "mod_types": [
+      "Armoring"
+    ],
+    "bonuses": [
+      {
+        "type": "END",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      },
+      {
+        "type": "DEX",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      }
+    ]
+  },
+  {
+    "mod_id": 20,
+    "mod_type": "Armoring",
+    "name": "END/PRE",
+    "mod_bonus": "END;PRE",
+    "rank_5": 29,
+    "rank_7": 32,
+    "rank_9": 36,
+    "tooltip": null,
+    "stackable": true,
+    "tag": [
+      "Dual Stats"
+    ],
+    "source": [],
+    "icon_override": "Mod_Arm_END_PRE",
+    "is_disabled": false,
+    "mod_types": [
+      "Armoring"
+    ],
+    "bonuses": [
+      {
+        "type": "END",
         "values_by_rank": {
           "5": 29,
           "7": 32,
@@ -660,8 +698,8 @@
   {
     "mod_id": 21,
     "mod_type": "Armoring",
-    "name": "DEX/REC",
-    "mod_bonus": "DEX;REC",
+    "name": "END/REC",
+    "mod_bonus": "END;REC",
     "rank_5": 29,
     "rank_7": 32,
     "rank_9": 36,
@@ -671,14 +709,14 @@
       "Dual Stats"
     ],
     "source": [],
-    "icon_override": null,
+    "icon_override": "Mod_Arm_END_REC",
     "is_disabled": false,
     "mod_types": [
       "Armoring"
     ],
     "bonuses": [
       {
-        "type": "DEX",
+        "type": "END",
         "values_by_rank": {
           "5": 29,
           "7": 32,
@@ -698,8 +736,8 @@
   {
     "mod_id": 22,
     "mod_type": "Armoring",
-    "name": "DEX/END",
-    "mod_bonus": "DEX;END",
+    "name": "END/STR",
+    "mod_bonus": "END;STR",
     "rank_5": 29,
     "rank_7": 32,
     "rank_9": 36,
@@ -709,14 +747,14 @@
       "Dual Stats"
     ],
     "source": [],
-    "icon_override": null,
+    "icon_override": "Mod_Arm_END_STR",
     "is_disabled": false,
     "mod_types": [
       "Armoring"
     ],
     "bonuses": [
       {
-        "type": "DEX",
+        "type": "END",
         "values_by_rank": {
           "5": 29,
           "7": 32,
@@ -724,7 +762,7 @@
         }
       },
       {
-        "type": "END",
+        "type": "STR",
         "values_by_rank": {
           "5": 29,
           "7": 32,
@@ -736,8 +774,8 @@
   {
     "mod_id": 23,
     "mod_type": "Armoring",
-    "name": "CON/INT",
-    "mod_bonus": "CON;INT",
+    "name": "INT/CON",
+    "mod_bonus": "INT;CON",
     "rank_5": 29,
     "rank_7": 32,
     "rank_9": 36,
@@ -747,14 +785,14 @@
       "Dual Stats"
     ],
     "source": [],
-    "icon_override": null,
+    "icon_override": "Mod_Arm_INT_CON",
     "is_disabled": false,
     "mod_types": [
       "Armoring"
     ],
     "bonuses": [
       {
-        "type": "CON",
+        "type": "INT",
         "values_by_rank": {
           "5": 29,
           "7": 32,
@@ -762,7 +800,7 @@
         }
       },
       {
-        "type": "INT",
+        "type": "CON",
         "values_by_rank": {
           "5": 29,
           "7": 32,
@@ -774,8 +812,8 @@
   {
     "mod_id": 24,
     "mod_type": "Armoring",
-    "name": "CON/EGO",
-    "mod_bonus": "CON;EGO",
+    "name": "INT/EGO",
+    "mod_bonus": "INT;EGO",
     "rank_5": 29,
     "rank_7": 32,
     "rank_9": 36,
@@ -785,14 +823,14 @@
       "Dual Stats"
     ],
     "source": [],
-    "icon_override": null,
+    "icon_override": "Mod_Arm_INT_EGO",
     "is_disabled": false,
     "mod_types": [
       "Armoring"
     ],
     "bonuses": [
       {
-        "type": "CON",
+        "type": "INT",
         "values_by_rank": {
           "5": 29,
           "7": 32,
@@ -812,234 +850,6 @@
   {
     "mod_id": 25,
     "mod_type": "Armoring",
-    "name": "CON/PRE",
-    "mod_bonus": "CON;PRE",
-    "rank_5": 29,
-    "rank_7": 32,
-    "rank_9": 36,
-    "tooltip": null,
-    "stackable": true,
-    "tag": [
-      "Dual Stats"
-    ],
-    "source": [],
-    "icon_override": null,
-    "is_disabled": false,
-    "mod_types": [
-      "Armoring"
-    ],
-    "bonuses": [
-      {
-        "type": "CON",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      },
-      {
-        "type": "PRE",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      }
-    ]
-  },
-  {
-    "mod_id": 26,
-    "mod_type": "Armoring",
-    "name": "CON/REC",
-    "mod_bonus": "CON;REC",
-    "rank_5": 29,
-    "rank_7": 32,
-    "rank_9": 36,
-    "tooltip": null,
-    "stackable": true,
-    "tag": [
-      "Dual Stats"
-    ],
-    "source": [],
-    "icon_override": null,
-    "is_disabled": false,
-    "mod_types": [
-      "Armoring"
-    ],
-    "bonuses": [
-      {
-        "type": "CON",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      },
-      {
-        "type": "REC",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      }
-    ]
-  },
-  {
-    "mod_id": 27,
-    "mod_type": "Armoring",
-    "name": "CON/END",
-    "mod_bonus": "CON;END",
-    "rank_5": 29,
-    "rank_7": 32,
-    "rank_9": 36,
-    "tooltip": null,
-    "stackable": true,
-    "tag": [
-      "Dual Stats"
-    ],
-    "source": [],
-    "icon_override": null,
-    "is_disabled": false,
-    "mod_types": [
-      "Armoring"
-    ],
-    "bonuses": [
-      {
-        "type": "CON",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      },
-      {
-        "type": "END",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      }
-    ]
-  },
-  {
-    "mod_id": 28,
-    "mod_type": "Armoring",
-    "name": "INT/EGO",
-    "mod_bonus": "INT;EGO",
-    "rank_5": 29,
-    "rank_7": 32,
-    "rank_9": 36,
-    "tooltip": null,
-    "stackable": true,
-    "tag": [
-      "Dual Stats"
-    ],
-    "source": [],
-    "icon_override": null,
-    "is_disabled": false,
-    "mod_types": [
-      "Armoring"
-    ],
-    "bonuses": [
-      {
-        "type": "INT",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      },
-      {
-        "type": "EGO",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      }
-    ]
-  },
-  {
-    "mod_id": 29,
-    "mod_type": "Armoring",
-    "name": "INT/PRE",
-    "mod_bonus": "INT;PRE",
-    "rank_5": 29,
-    "rank_7": 32,
-    "rank_9": 36,
-    "tooltip": null,
-    "stackable": true,
-    "tag": [
-      "Dual Stats"
-    ],
-    "source": [],
-    "icon_override": null,
-    "is_disabled": false,
-    "mod_types": [
-      "Armoring"
-    ],
-    "bonuses": [
-      {
-        "type": "INT",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      },
-      {
-        "type": "PRE",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      }
-    ]
-  },
-  {
-    "mod_id": 30,
-    "mod_type": "Armoring",
-    "name": "INT/REC",
-    "mod_bonus": "INT;REC",
-    "rank_5": 29,
-    "rank_7": 32,
-    "rank_9": 36,
-    "tooltip": null,
-    "stackable": true,
-    "tag": [
-      "Dual Stats"
-    ],
-    "source": [],
-    "icon_override": null,
-    "is_disabled": false,
-    "mod_types": [
-      "Armoring"
-    ],
-    "bonuses": [
-      {
-        "type": "INT",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      },
-      {
-        "type": "REC",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      }
-    ]
-  },
-  {
-    "mod_id": 31,
-    "mod_type": "Armoring",
     "name": "INT/END",
     "mod_bonus": "INT;END",
     "rank_5": 29,
@@ -1051,7 +861,7 @@
       "Dual Stats"
     ],
     "source": [],
-    "icon_override": null,
+    "icon_override": "Mod_Arm_INT_END",
     "is_disabled": false,
     "mod_types": [
       "Armoring"
@@ -1076,10 +886,10 @@
     ]
   },
   {
-    "mod_id": 32,
+    "mod_id": 26,
     "mod_type": "Armoring",
-    "name": "EGO/PRE",
-    "mod_bonus": "EGO;PRE",
+    "name": "PRE/DEX",
+    "mod_bonus": "PRE;DEX",
     "rank_5": 29,
     "rank_7": 32,
     "rank_9": 36,
@@ -1089,20 +899,12 @@
       "Dual Stats"
     ],
     "source": [],
-    "icon_override": null,
+    "icon_override": "Mod_Arm_PRE_DEX",
     "is_disabled": false,
     "mod_types": [
       "Armoring"
     ],
     "bonuses": [
-      {
-        "type": "EGO",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      },
       {
         "type": "PRE",
         "values_by_rank": {
@@ -1110,14 +912,22 @@
           "7": 32,
           "9": 36
         }
+      },
+      {
+        "type": "DEX",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
       }
     ]
   },
   {
-    "mod_id": 33,
+    "mod_id": 27,
     "mod_type": "Armoring",
-    "name": "EGO/REC",
-    "mod_bonus": "EGO;REC",
+    "name": "PRE/INT",
+    "mod_bonus": "PRE;INT",
     "rank_5": 29,
     "rank_7": 32,
     "rank_9": 36,
@@ -1127,14 +937,14 @@
       "Dual Stats"
     ],
     "source": [],
-    "icon_override": null,
+    "icon_override": "Mod_Arm_PRE_INT",
     "is_disabled": false,
     "mod_types": [
       "Armoring"
     ],
     "bonuses": [
       {
-        "type": "EGO",
+        "type": "PRE",
         "values_by_rank": {
           "5": 29,
           "7": 32,
@@ -1142,7 +952,7 @@
         }
       },
       {
-        "type": "REC",
+        "type": "INT",
         "values_by_rank": {
           "5": 29,
           "7": 32,
@@ -1152,45 +962,7 @@
     ]
   },
   {
-    "mod_id": 34,
-    "mod_type": "Armoring",
-    "name": "EGO/END",
-    "mod_bonus": "EGO;END",
-    "rank_5": 29,
-    "rank_7": 32,
-    "rank_9": 36,
-    "tooltip": null,
-    "stackable": true,
-    "tag": [
-      "Dual Stats"
-    ],
-    "source": [],
-    "icon_override": null,
-    "is_disabled": false,
-    "mod_types": [
-      "Armoring"
-    ],
-    "bonuses": [
-      {
-        "type": "EGO",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      },
-      {
-        "type": "END",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      }
-    ]
-  },
-  {
-    "mod_id": 35,
+    "mod_id": 28,
     "mod_type": "Armoring",
     "name": "PRE/REC",
     "mod_bonus": "PRE;REC",
@@ -1203,7 +975,7 @@
       "Dual Stats"
     ],
     "source": [],
-    "icon_override": null,
+    "icon_override": "Mod_Arm_PRE_REC",
     "is_disabled": false,
     "mod_types": [
       "Armoring"
@@ -1219,6 +991,272 @@
       },
       {
         "type": "REC",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      }
+    ]
+  },
+  {
+    "mod_id": 29,
+    "mod_type": "Armoring",
+    "name": "PRE/STR",
+    "mod_bonus": "PRE;STR",
+    "rank_5": 29,
+    "rank_7": 32,
+    "rank_9": 36,
+    "tooltip": null,
+    "stackable": true,
+    "tag": [
+      "Dual Stats"
+    ],
+    "source": [],
+    "icon_override": "Mod_Arm_PRE_STR",
+    "is_disabled": false,
+    "mod_types": [
+      "Armoring"
+    ],
+    "bonuses": [
+      {
+        "type": "PRE",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      },
+      {
+        "type": "STR",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      }
+    ]
+  },
+  {
+    "mod_id": 30,
+    "mod_type": "Armoring",
+    "name": "REC/DEX",
+    "mod_bonus": "REC;DEX",
+    "rank_5": 29,
+    "rank_7": 32,
+    "rank_9": 36,
+    "tooltip": null,
+    "stackable": true,
+    "tag": [
+      "Dual Stats"
+    ],
+    "source": [],
+    "icon_override": "Mod_Arm_REC_DEX",
+    "is_disabled": false,
+    "mod_types": [
+      "Armoring"
+    ],
+    "bonuses": [
+      {
+        "type": "REC",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      },
+      {
+        "type": "DEX",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      }
+    ]
+  },
+  {
+    "mod_id": 31,
+    "mod_type": "Armoring",
+    "name": "REC/EGO",
+    "mod_bonus": "REC;EGO",
+    "rank_5": 29,
+    "rank_7": 32,
+    "rank_9": 36,
+    "tooltip": null,
+    "stackable": true,
+    "tag": [
+      "Dual Stats"
+    ],
+    "source": [],
+    "icon_override": "Mod_Arm_REC_EGO",
+    "is_disabled": false,
+    "mod_types": [
+      "Armoring"
+    ],
+    "bonuses": [
+      {
+        "type": "REC",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      },
+      {
+        "type": "EGO",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      }
+    ]
+  },
+  {
+    "mod_id": 32,
+    "mod_type": "Armoring",
+    "name": "REC/INT",
+    "mod_bonus": "REC;INT",
+    "rank_5": 29,
+    "rank_7": 32,
+    "rank_9": 36,
+    "tooltip": null,
+    "stackable": true,
+    "tag": [
+      "Dual Stats"
+    ],
+    "source": [],
+    "icon_override": "Mod_Arm_REC_INT",
+    "is_disabled": false,
+    "mod_types": [
+      "Armoring"
+    ],
+    "bonuses": [
+      {
+        "type": "REC",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      },
+      {
+        "type": "INT",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      }
+    ]
+  },
+  {
+    "mod_id": 33,
+    "mod_type": "Armoring",
+    "name": "REC/STR",
+    "mod_bonus": "REC;STR",
+    "rank_5": 29,
+    "rank_7": 32,
+    "rank_9": 36,
+    "tooltip": null,
+    "stackable": true,
+    "tag": [
+      "Dual Stats"
+    ],
+    "source": [],
+    "icon_override": "Mod_Arm_REC_STR",
+    "is_disabled": false,
+    "mod_types": [
+      "Armoring"
+    ],
+    "bonuses": [
+      {
+        "type": "REC",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      },
+      {
+        "type": "STR",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      }
+    ]
+  },
+  {
+    "mod_id": 34,
+    "mod_type": "Armoring",
+    "name": "STR/DEX",
+    "mod_bonus": "STR;DEX",
+    "rank_5": 29,
+    "rank_7": 32,
+    "rank_9": 36,
+    "tooltip": null,
+    "stackable": true,
+    "tag": [
+      "Dual Stats"
+    ],
+    "source": [],
+    "icon_override": "Mod_Arm_STR_DEX",
+    "is_disabled": false,
+    "mod_types": [
+      "Armoring"
+    ],
+    "bonuses": [
+      {
+        "type": "STR",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      },
+      {
+        "type": "DEX",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      }
+    ]
+  },
+  {
+    "mod_id": 35,
+    "mod_type": "Armoring",
+    "name": "STR/EGO",
+    "mod_bonus": "STR;EGO",
+    "rank_5": 29,
+    "rank_7": 32,
+    "rank_9": 36,
+    "tooltip": null,
+    "stackable": true,
+    "tag": [
+      "Dual Stats"
+    ],
+    "source": [],
+    "icon_override": "Mod_Arm_STR_EGO",
+    "is_disabled": false,
+    "mod_types": [
+      "Armoring"
+    ],
+    "bonuses": [
+      {
+        "type": "STR",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      },
+      {
+        "type": "EGO",
         "values_by_rank": {
           "5": 29,
           "7": 32,
@@ -1230,8 +1268,8 @@
   {
     "mod_id": 36,
     "mod_type": "Armoring",
-    "name": "PRE/END",
-    "mod_bonus": "PRE;END",
+    "name": "STR/INT",
+    "mod_bonus": "STR;INT",
     "rank_5": 29,
     "rank_7": 32,
     "rank_9": 36,
@@ -1241,14 +1279,14 @@
       "Dual Stats"
     ],
     "source": [],
-    "icon_override": null,
+    "icon_override": "Mod_Arm_STR_INT",
     "is_disabled": false,
     "mod_types": [
       "Armoring"
     ],
     "bonuses": [
       {
-        "type": "PRE",
+        "type": "STR",
         "values_by_rank": {
           "5": 29,
           "7": 32,
@@ -1256,7 +1294,7 @@
         }
       },
       {
-        "type": "END",
+        "type": "INT",
         "values_by_rank": {
           "5": 29,
           "7": 32,
@@ -1267,44 +1305,6 @@
   },
   {
     "mod_id": 37,
-    "mod_type": "Armoring",
-    "name": "REC/END",
-    "mod_bonus": "REC;END",
-    "rank_5": 29,
-    "rank_7": 32,
-    "rank_9": 36,
-    "tooltip": null,
-    "stackable": true,
-    "tag": [
-      "Dual Stats"
-    ],
-    "source": [],
-    "icon_override": null,
-    "is_disabled": false,
-    "mod_types": [
-      "Armoring"
-    ],
-    "bonuses": [
-      {
-        "type": "REC",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      },
-      {
-        "type": "END",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      }
-    ]
-  },
-  {
-    "mod_id": 38,
     "mod_type": "Enhancement",
     "name": "STR",
     "mod_bonus": "STR",
@@ -1334,7 +1334,7 @@
     ]
   },
   {
-    "mod_id": 39,
+    "mod_id": 38,
     "mod_type": "Enhancement",
     "name": "CON",
     "mod_bonus": "CON",
@@ -1364,7 +1364,7 @@
     ]
   },
   {
-    "mod_id": 40,
+    "mod_id": 39,
     "mod_type": "Enhancement",
     "name": "EGO",
     "mod_bonus": "EGO",
@@ -1394,7 +1394,7 @@
     ]
   },
   {
-    "mod_id": 41,
+    "mod_id": 40,
     "mod_type": "Enhancement",
     "name": "REC",
     "mod_bonus": "REC",
@@ -1424,7 +1424,7 @@
     ]
   },
   {
-    "mod_id": 42,
+    "mod_id": 41,
     "mod_type": "Enhancement",
     "name": "DEX",
     "mod_bonus": "DEX",
@@ -1454,7 +1454,7 @@
     ]
   },
   {
-    "mod_id": 43,
+    "mod_id": 42,
     "mod_type": "Enhancement",
     "name": "INT",
     "mod_bonus": "INT",
@@ -1484,7 +1484,7 @@
     ]
   },
   {
-    "mod_id": 44,
+    "mod_id": 43,
     "mod_type": "Enhancement",
     "name": "PRE",
     "mod_bonus": "PRE",
@@ -1514,7 +1514,7 @@
     ]
   },
   {
-    "mod_id": 45,
+    "mod_id": 44,
     "mod_type": "Enhancement",
     "name": "END",
     "mod_bonus": "END",
@@ -1544,10 +1544,10 @@
     ]
   },
   {
-    "mod_id": 46,
+    "mod_id": 45,
     "mod_type": "Enhancement",
-    "name": "STR/DEX",
-    "mod_bonus": "STR;DEX",
+    "name": "CON/END",
+    "mod_bonus": "CON;END",
     "rank_5": 29,
     "rank_7": 32,
     "rank_9": 36,
@@ -1557,242 +1557,14 @@
       "Dual Stats"
     ],
     "source": [],
-    "icon_override": null,
+    "icon_override": "Arm_Enh_CON_END",
     "is_disabled": false,
     "mod_types": [
       "Enhancement"
     ],
     "bonuses": [
-      {
-        "type": "STR",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      },
-      {
-        "type": "DEX",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      }
-    ]
-  },
-  {
-    "mod_id": 47,
-    "mod_type": "Enhancement",
-    "name": "STR/CON",
-    "mod_bonus": "STR;CON",
-    "rank_5": 29,
-    "rank_7": 32,
-    "rank_9": 36,
-    "tooltip": null,
-    "stackable": true,
-    "tag": [
-      "Dual Stats"
-    ],
-    "source": [],
-    "icon_override": null,
-    "is_disabled": false,
-    "mod_types": [
-      "Enhancement"
-    ],
-    "bonuses": [
-      {
-        "type": "STR",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      },
       {
         "type": "CON",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      }
-    ]
-  },
-  {
-    "mod_id": 48,
-    "mod_type": "Enhancement",
-    "name": "STR/INT",
-    "mod_bonus": "STR;INT",
-    "rank_5": 29,
-    "rank_7": 32,
-    "rank_9": 36,
-    "tooltip": null,
-    "stackable": true,
-    "tag": [
-      "Dual Stats"
-    ],
-    "source": [],
-    "icon_override": null,
-    "is_disabled": false,
-    "mod_types": [
-      "Enhancement"
-    ],
-    "bonuses": [
-      {
-        "type": "STR",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      },
-      {
-        "type": "INT",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      }
-    ]
-  },
-  {
-    "mod_id": 49,
-    "mod_type": "Enhancement",
-    "name": "STR/EGO",
-    "mod_bonus": "STR;EGO",
-    "rank_5": 29,
-    "rank_7": 32,
-    "rank_9": 36,
-    "tooltip": null,
-    "stackable": true,
-    "tag": [
-      "Dual Stats"
-    ],
-    "source": [],
-    "icon_override": null,
-    "is_disabled": false,
-    "mod_types": [
-      "Enhancement"
-    ],
-    "bonuses": [
-      {
-        "type": "STR",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      },
-      {
-        "type": "EGO",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      }
-    ]
-  },
-  {
-    "mod_id": 50,
-    "mod_type": "Enhancement",
-    "name": "STR/PRE",
-    "mod_bonus": "STR;PRE",
-    "rank_5": 29,
-    "rank_7": 32,
-    "rank_9": 36,
-    "tooltip": null,
-    "stackable": true,
-    "tag": [
-      "Dual Stats"
-    ],
-    "source": [],
-    "icon_override": null,
-    "is_disabled": false,
-    "mod_types": [
-      "Enhancement"
-    ],
-    "bonuses": [
-      {
-        "type": "STR",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      },
-      {
-        "type": "PRE",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      }
-    ]
-  },
-  {
-    "mod_id": 51,
-    "mod_type": "Enhancement",
-    "name": "STR/REC",
-    "mod_bonus": "STR;REC",
-    "rank_5": 29,
-    "rank_7": 32,
-    "rank_9": 36,
-    "tooltip": null,
-    "stackable": true,
-    "tag": [
-      "Dual Stats"
-    ],
-    "source": [],
-    "icon_override": null,
-    "is_disabled": false,
-    "mod_types": [
-      "Enhancement"
-    ],
-    "bonuses": [
-      {
-        "type": "STR",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      },
-      {
-        "type": "REC",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      }
-    ]
-  },
-  {
-    "mod_id": 52,
-    "mod_type": "Enhancement",
-    "name": "STR/END",
-    "mod_bonus": "STR;END",
-    "rank_5": 29,
-    "rank_7": 32,
-    "rank_9": 36,
-    "tooltip": null,
-    "stackable": true,
-    "tag": [
-      "Dual Stats"
-    ],
-    "source": [],
-    "icon_override": null,
-    "is_disabled": false,
-    "mod_types": [
-      "Enhancement"
-    ],
-    "bonuses": [
-      {
-        "type": "STR",
         "values_by_rank": {
           "5": 29,
           "7": 32,
@@ -1810,7 +1582,121 @@
     ]
   },
   {
-    "mod_id": 53,
+    "mod_id": 46,
+    "mod_type": "Enhancement",
+    "name": "CON/PRE",
+    "mod_bonus": "CON;PRE",
+    "rank_5": 29,
+    "rank_7": 32,
+    "rank_9": 36,
+    "tooltip": null,
+    "stackable": true,
+    "tag": [
+      "Dual Stats"
+    ],
+    "source": [],
+    "icon_override": "Arm_Enh_CON_PRE",
+    "is_disabled": false,
+    "mod_types": [
+      "Enhancement"
+    ],
+    "bonuses": [
+      {
+        "type": "CON",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      },
+      {
+        "type": "PRE",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      }
+    ]
+  },
+  {
+    "mod_id": 47,
+    "mod_type": "Enhancement",
+    "name": "CON/REC",
+    "mod_bonus": "CON;REC",
+    "rank_5": 29,
+    "rank_7": 32,
+    "rank_9": 36,
+    "tooltip": null,
+    "stackable": true,
+    "tag": [
+      "Dual Stats"
+    ],
+    "source": [],
+    "icon_override": "Arm_Enh_CON_REC",
+    "is_disabled": false,
+    "mod_types": [
+      "Enhancement"
+    ],
+    "bonuses": [
+      {
+        "type": "CON",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      },
+      {
+        "type": "REC",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      }
+    ]
+  },
+  {
+    "mod_id": 48,
+    "mod_type": "Enhancement",
+    "name": "CON/STR",
+    "mod_bonus": "CON;STR",
+    "rank_5": 29,
+    "rank_7": 32,
+    "rank_9": 36,
+    "tooltip": null,
+    "stackable": true,
+    "tag": [
+      "Dual Stats"
+    ],
+    "source": [],
+    "icon_override": "Arm_Enh_CON_STR",
+    "is_disabled": false,
+    "mod_types": [
+      "Enhancement"
+    ],
+    "bonuses": [
+      {
+        "type": "CON",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      },
+      {
+        "type": "STR",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      }
+    ]
+  },
+  {
+    "mod_id": 49,
     "mod_type": "Enhancement",
     "name": "DEX/CON",
     "mod_bonus": "DEX;CON",
@@ -1823,7 +1709,7 @@
       "Dual Stats"
     ],
     "source": [],
-    "icon_override": null,
+    "icon_override": "Arm_Enh_DEX_CON",
     "is_disabled": false,
     "mod_types": [
       "Enhancement"
@@ -1848,45 +1734,7 @@
     ]
   },
   {
-    "mod_id": 54,
-    "mod_type": "Enhancement",
-    "name": "DEX/INT",
-    "mod_bonus": "DEX;INT",
-    "rank_5": 29,
-    "rank_7": 32,
-    "rank_9": 36,
-    "tooltip": null,
-    "stackable": true,
-    "tag": [
-      "Dual Stats"
-    ],
-    "source": [],
-    "icon_override": null,
-    "is_disabled": false,
-    "mod_types": [
-      "Enhancement"
-    ],
-    "bonuses": [
-      {
-        "type": "DEX",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      },
-      {
-        "type": "INT",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      }
-    ]
-  },
-  {
-    "mod_id": 55,
+    "mod_id": 50,
     "mod_type": "Enhancement",
     "name": "DEX/EGO",
     "mod_bonus": "DEX;EGO",
@@ -1899,7 +1747,7 @@
       "Dual Stats"
     ],
     "source": [],
-    "icon_override": null,
+    "icon_override": "Arm_Enh_DEX_EGO",
     "is_disabled": false,
     "mod_types": [
       "Enhancement"
@@ -1924,10 +1772,10 @@
     ]
   },
   {
-    "mod_id": 56,
+    "mod_id": 51,
     "mod_type": "Enhancement",
-    "name": "DEX/PRE",
-    "mod_bonus": "DEX;PRE",
+    "name": "DEX/INT",
+    "mod_bonus": "DEX;INT",
     "rank_5": 29,
     "rank_7": 32,
     "rank_9": 36,
@@ -1937,7 +1785,7 @@
       "Dual Stats"
     ],
     "source": [],
-    "icon_override": null,
+    "icon_override": "Arm_Enh_DEX_INT",
     "is_disabled": false,
     "mod_types": [
       "Enhancement"
@@ -1945,6 +1793,196 @@
     "bonuses": [
       {
         "type": "DEX",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      },
+      {
+        "type": "INT",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      }
+    ]
+  },
+  {
+    "mod_id": 52,
+    "mod_type": "Enhancement",
+    "name": "EGO/CON",
+    "mod_bonus": "EGO;CON",
+    "rank_5": 29,
+    "rank_7": 32,
+    "rank_9": 36,
+    "tooltip": null,
+    "stackable": true,
+    "tag": [
+      "Dual Stats"
+    ],
+    "source": [],
+    "icon_override": "Arm_Enh_EGO_CON",
+    "is_disabled": false,
+    "mod_types": [
+      "Enhancement"
+    ],
+    "bonuses": [
+      {
+        "type": "EGO",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      },
+      {
+        "type": "CON",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      }
+    ]
+  },
+  {
+    "mod_id": 53,
+    "mod_type": "Enhancement",
+    "name": "EGO/END",
+    "mod_bonus": "EGO;END",
+    "rank_5": 29,
+    "rank_7": 32,
+    "rank_9": 36,
+    "tooltip": null,
+    "stackable": true,
+    "tag": [
+      "Dual Stats"
+    ],
+    "source": [],
+    "icon_override": "Arm_Enh_EGO_END",
+    "is_disabled": false,
+    "mod_types": [
+      "Enhancement"
+    ],
+    "bonuses": [
+      {
+        "type": "EGO",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      },
+      {
+        "type": "END",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      }
+    ]
+  },
+  {
+    "mod_id": 54,
+    "mod_type": "Enhancement",
+    "name": "EGO/PRE",
+    "mod_bonus": "EGO;PRE",
+    "rank_5": 29,
+    "rank_7": 32,
+    "rank_9": 36,
+    "tooltip": null,
+    "stackable": true,
+    "tag": [
+      "Dual Stats"
+    ],
+    "source": [],
+    "icon_override": "Arm_Enh_EGO_PRE",
+    "is_disabled": false,
+    "mod_types": [
+      "Enhancement"
+    ],
+    "bonuses": [
+      {
+        "type": "EGO",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      },
+      {
+        "type": "PRE",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      }
+    ]
+  },
+  {
+    "mod_id": 55,
+    "mod_type": "Enhancement",
+    "name": "END/DEX",
+    "mod_bonus": "END;DEX",
+    "rank_5": 29,
+    "rank_7": 32,
+    "rank_9": 36,
+    "tooltip": null,
+    "stackable": true,
+    "tag": [
+      "Dual Stats"
+    ],
+    "source": [],
+    "icon_override": "Arm_Enh_END_DEX",
+    "is_disabled": false,
+    "mod_types": [
+      "Enhancement"
+    ],
+    "bonuses": [
+      {
+        "type": "END",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      },
+      {
+        "type": "DEX",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      }
+    ]
+  },
+  {
+    "mod_id": 56,
+    "mod_type": "Enhancement",
+    "name": "END/PRE",
+    "mod_bonus": "END;PRE",
+    "rank_5": 29,
+    "rank_7": 32,
+    "rank_9": 36,
+    "tooltip": null,
+    "stackable": true,
+    "tag": [
+      "Dual Stats"
+    ],
+    "source": [],
+    "icon_override": "Arm_Enh_END_PRE",
+    "is_disabled": false,
+    "mod_types": [
+      "Enhancement"
+    ],
+    "bonuses": [
+      {
+        "type": "END",
         "values_by_rank": {
           "5": 29,
           "7": 32,
@@ -1964,8 +2002,8 @@
   {
     "mod_id": 57,
     "mod_type": "Enhancement",
-    "name": "DEX/REC",
-    "mod_bonus": "DEX;REC",
+    "name": "END/REC",
+    "mod_bonus": "END;REC",
     "rank_5": 29,
     "rank_7": 32,
     "rank_9": 36,
@@ -1975,14 +2013,14 @@
       "Dual Stats"
     ],
     "source": [],
-    "icon_override": null,
+    "icon_override": "Arm_Enh_END_REC",
     "is_disabled": false,
     "mod_types": [
       "Enhancement"
     ],
     "bonuses": [
       {
-        "type": "DEX",
+        "type": "END",
         "values_by_rank": {
           "5": 29,
           "7": 32,
@@ -2002,8 +2040,8 @@
   {
     "mod_id": 58,
     "mod_type": "Enhancement",
-    "name": "DEX/END",
-    "mod_bonus": "DEX;END",
+    "name": "END/STR",
+    "mod_bonus": "END;STR",
     "rank_5": 29,
     "rank_7": 32,
     "rank_9": 36,
@@ -2013,14 +2051,14 @@
       "Dual Stats"
     ],
     "source": [],
-    "icon_override": null,
+    "icon_override": "Arm_Enh_END_STR",
     "is_disabled": false,
     "mod_types": [
       "Enhancement"
     ],
     "bonuses": [
       {
-        "type": "DEX",
+        "type": "END",
         "values_by_rank": {
           "5": 29,
           "7": 32,
@@ -2028,7 +2066,7 @@
         }
       },
       {
-        "type": "END",
+        "type": "STR",
         "values_by_rank": {
           "5": 29,
           "7": 32,
@@ -2040,8 +2078,8 @@
   {
     "mod_id": 59,
     "mod_type": "Enhancement",
-    "name": "CON/INT",
-    "mod_bonus": "CON;INT",
+    "name": "INT/CON",
+    "mod_bonus": "INT;CON",
     "rank_5": 29,
     "rank_7": 32,
     "rank_9": 36,
@@ -2051,14 +2089,14 @@
       "Dual Stats"
     ],
     "source": [],
-    "icon_override": null,
+    "icon_override": "Arm_Enh_INT_CON",
     "is_disabled": false,
     "mod_types": [
       "Enhancement"
     ],
     "bonuses": [
       {
-        "type": "CON",
+        "type": "INT",
         "values_by_rank": {
           "5": 29,
           "7": 32,
@@ -2066,7 +2104,7 @@
         }
       },
       {
-        "type": "INT",
+        "type": "CON",
         "values_by_rank": {
           "5": 29,
           "7": 32,
@@ -2078,8 +2116,8 @@
   {
     "mod_id": 60,
     "mod_type": "Enhancement",
-    "name": "CON/EGO",
-    "mod_bonus": "CON;EGO",
+    "name": "INT/EGO",
+    "mod_bonus": "INT;EGO",
     "rank_5": 29,
     "rank_7": 32,
     "rank_9": 36,
@@ -2089,14 +2127,14 @@
       "Dual Stats"
     ],
     "source": [],
-    "icon_override": null,
+    "icon_override": "Arm_Enh_INT_EGO",
     "is_disabled": false,
     "mod_types": [
       "Enhancement"
     ],
     "bonuses": [
       {
-        "type": "CON",
+        "type": "INT",
         "values_by_rank": {
           "5": 29,
           "7": 32,
@@ -2116,234 +2154,6 @@
   {
     "mod_id": 61,
     "mod_type": "Enhancement",
-    "name": "CON/PRE",
-    "mod_bonus": "CON;PRE",
-    "rank_5": 29,
-    "rank_7": 32,
-    "rank_9": 36,
-    "tooltip": null,
-    "stackable": true,
-    "tag": [
-      "Dual Stats"
-    ],
-    "source": [],
-    "icon_override": null,
-    "is_disabled": false,
-    "mod_types": [
-      "Enhancement"
-    ],
-    "bonuses": [
-      {
-        "type": "CON",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      },
-      {
-        "type": "PRE",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      }
-    ]
-  },
-  {
-    "mod_id": 62,
-    "mod_type": "Enhancement",
-    "name": "CON/REC",
-    "mod_bonus": "CON;REC",
-    "rank_5": 29,
-    "rank_7": 32,
-    "rank_9": 36,
-    "tooltip": null,
-    "stackable": true,
-    "tag": [
-      "Dual Stats"
-    ],
-    "source": [],
-    "icon_override": null,
-    "is_disabled": false,
-    "mod_types": [
-      "Enhancement"
-    ],
-    "bonuses": [
-      {
-        "type": "CON",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      },
-      {
-        "type": "REC",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      }
-    ]
-  },
-  {
-    "mod_id": 64,
-    "mod_type": "Enhancement",
-    "name": "CON/END",
-    "mod_bonus": "CON;END",
-    "rank_5": 29,
-    "rank_7": 32,
-    "rank_9": 36,
-    "tooltip": null,
-    "stackable": true,
-    "tag": [
-      "Dual Stats"
-    ],
-    "source": [],
-    "icon_override": null,
-    "is_disabled": false,
-    "mod_types": [
-      "Enhancement"
-    ],
-    "bonuses": [
-      {
-        "type": "CON",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      },
-      {
-        "type": "END",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      }
-    ]
-  },
-  {
-    "mod_id": 65,
-    "mod_type": "Enhancement",
-    "name": "INT/EGO",
-    "mod_bonus": "INT;EGO",
-    "rank_5": 29,
-    "rank_7": 32,
-    "rank_9": 36,
-    "tooltip": null,
-    "stackable": true,
-    "tag": [
-      "Dual Stats"
-    ],
-    "source": [],
-    "icon_override": null,
-    "is_disabled": false,
-    "mod_types": [
-      "Enhancement"
-    ],
-    "bonuses": [
-      {
-        "type": "INT",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      },
-      {
-        "type": "EGO",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      }
-    ]
-  },
-  {
-    "mod_id": 66,
-    "mod_type": "Enhancement",
-    "name": "INT/PRE",
-    "mod_bonus": "INT;PRE",
-    "rank_5": 29,
-    "rank_7": 32,
-    "rank_9": 36,
-    "tooltip": null,
-    "stackable": true,
-    "tag": [
-      "Dual Stats"
-    ],
-    "source": [],
-    "icon_override": null,
-    "is_disabled": false,
-    "mod_types": [
-      "Enhancement"
-    ],
-    "bonuses": [
-      {
-        "type": "INT",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      },
-      {
-        "type": "PRE",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      }
-    ]
-  },
-  {
-    "mod_id": 67,
-    "mod_type": "Enhancement",
-    "name": "INT/REC",
-    "mod_bonus": "INT;REC",
-    "rank_5": 29,
-    "rank_7": 32,
-    "rank_9": 36,
-    "tooltip": null,
-    "stackable": true,
-    "tag": [
-      "Dual Stats"
-    ],
-    "source": [],
-    "icon_override": null,
-    "is_disabled": false,
-    "mod_types": [
-      "Enhancement"
-    ],
-    "bonuses": [
-      {
-        "type": "INT",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      },
-      {
-        "type": "REC",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      }
-    ]
-  },
-  {
-    "mod_id": 68,
-    "mod_type": "Enhancement",
     "name": "INT/END",
     "mod_bonus": "INT;END",
     "rank_5": 29,
@@ -2355,7 +2165,7 @@
       "Dual Stats"
     ],
     "source": [],
-    "icon_override": null,
+    "icon_override": "Arm_Enh_INT_END",
     "is_disabled": false,
     "mod_types": [
       "Enhancement"
@@ -2380,10 +2190,10 @@
     ]
   },
   {
-    "mod_id": 69,
+    "mod_id": 62,
     "mod_type": "Enhancement",
-    "name": "EGO/PRE",
-    "mod_bonus": "EGO;PRE",
+    "name": "PRE/DEX",
+    "mod_bonus": "PRE;DEX",
     "rank_5": 29,
     "rank_7": 32,
     "rank_9": 36,
@@ -2393,20 +2203,12 @@
       "Dual Stats"
     ],
     "source": [],
-    "icon_override": null,
+    "icon_override": "Arm_Enh_PRE_DEX",
     "is_disabled": false,
     "mod_types": [
       "Enhancement"
     ],
     "bonuses": [
-      {
-        "type": "EGO",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      },
       {
         "type": "PRE",
         "values_by_rank": {
@@ -2414,14 +2216,22 @@
           "7": 32,
           "9": 36
         }
+      },
+      {
+        "type": "DEX",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
       }
     ]
   },
   {
-    "mod_id": 70,
+    "mod_id": 63,
     "mod_type": "Enhancement",
-    "name": "EGO/REC",
-    "mod_bonus": "EGO;REC",
+    "name": "PRE/INT",
+    "mod_bonus": "PRE;INT",
     "rank_5": 29,
     "rank_7": 32,
     "rank_9": 36,
@@ -2431,14 +2241,14 @@
       "Dual Stats"
     ],
     "source": [],
-    "icon_override": null,
+    "icon_override": "Arm_Enh_PRE_INT",
     "is_disabled": false,
     "mod_types": [
       "Enhancement"
     ],
     "bonuses": [
       {
-        "type": "EGO",
+        "type": "PRE",
         "values_by_rank": {
           "5": 29,
           "7": 32,
@@ -2446,7 +2256,7 @@
         }
       },
       {
-        "type": "REC",
+        "type": "INT",
         "values_by_rank": {
           "5": 29,
           "7": 32,
@@ -2456,45 +2266,7 @@
     ]
   },
   {
-    "mod_id": 71,
-    "mod_type": "Enhancement",
-    "name": "EGO/END",
-    "mod_bonus": "EGO;END",
-    "rank_5": 29,
-    "rank_7": 32,
-    "rank_9": 36,
-    "tooltip": null,
-    "stackable": true,
-    "tag": [
-      "Dual Stats"
-    ],
-    "source": [],
-    "icon_override": null,
-    "is_disabled": false,
-    "mod_types": [
-      "Enhancement"
-    ],
-    "bonuses": [
-      {
-        "type": "EGO",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      },
-      {
-        "type": "END",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      }
-    ]
-  },
-  {
-    "mod_id": 72,
+    "mod_id": 64,
     "mod_type": "Enhancement",
     "name": "PRE/REC",
     "mod_bonus": "PRE;REC",
@@ -2507,7 +2279,7 @@
       "Dual Stats"
     ],
     "source": [],
-    "icon_override": null,
+    "icon_override": "Arm_Enh_PRE_REC",
     "is_disabled": false,
     "mod_types": [
       "Enhancement"
@@ -2523,6 +2295,310 @@
       },
       {
         "type": "REC",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      }
+    ]
+  },
+  {
+    "mod_id": 65,
+    "mod_type": "Enhancement",
+    "name": "PRE/STR",
+    "mod_bonus": "PRE;STR",
+    "rank_5": 29,
+    "rank_7": 32,
+    "rank_9": 36,
+    "tooltip": null,
+    "stackable": true,
+    "tag": [
+      "Dual Stats"
+    ],
+    "source": [],
+    "icon_override": "Arm_Enh_PRE_STR",
+    "is_disabled": false,
+    "mod_types": [
+      "Enhancement"
+    ],
+    "bonuses": [
+      {
+        "type": "PRE",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      },
+      {
+        "type": "STR",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      }
+    ]
+  },
+  {
+    "mod_id": 66,
+    "mod_type": "Enhancement",
+    "name": "REC/DEX",
+    "mod_bonus": "REC;DEX",
+    "rank_5": 29,
+    "rank_7": 32,
+    "rank_9": 36,
+    "tooltip": null,
+    "stackable": true,
+    "tag": [
+      "Dual Stats"
+    ],
+    "source": [],
+    "icon_override": "Arm_Enh_REC_DEX",
+    "is_disabled": false,
+    "mod_types": [
+      "Enhancement"
+    ],
+    "bonuses": [
+      {
+        "type": "REC",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      },
+      {
+        "type": "DEX",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      }
+    ]
+  },
+  {
+    "mod_id": 67,
+    "mod_type": "Enhancement",
+    "name": "REC/EGO",
+    "mod_bonus": "REC;EGO",
+    "rank_5": 29,
+    "rank_7": 32,
+    "rank_9": 36,
+    "tooltip": null,
+    "stackable": true,
+    "tag": [
+      "Dual Stats"
+    ],
+    "source": [],
+    "icon_override": "Arm_Enh_REC_EGO",
+    "is_disabled": false,
+    "mod_types": [
+      "Enhancement"
+    ],
+    "bonuses": [
+      {
+        "type": "REC",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      },
+      {
+        "type": "EGO",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      }
+    ]
+  },
+  {
+    "mod_id": 68,
+    "mod_type": "Enhancement",
+    "name": "REC/INT",
+    "mod_bonus": "REC;INT",
+    "rank_5": 29,
+    "rank_7": 32,
+    "rank_9": 36,
+    "tooltip": null,
+    "stackable": true,
+    "tag": [
+      "Dual Stats"
+    ],
+    "source": [],
+    "icon_override": "Arm_Enh_REC_INT",
+    "is_disabled": false,
+    "mod_types": [
+      "Enhancement"
+    ],
+    "bonuses": [
+      {
+        "type": "REC",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      },
+      {
+        "type": "INT",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      }
+    ]
+  },
+  {
+    "mod_id": 69,
+    "mod_type": "Enhancement",
+    "name": "REC/STR",
+    "mod_bonus": "REC;STR",
+    "rank_5": 29,
+    "rank_7": 32,
+    "rank_9": 36,
+    "tooltip": null,
+    "stackable": true,
+    "tag": [
+      "Dual Stats"
+    ],
+    "source": [],
+    "icon_override": "Arm_Enh_REC_STR",
+    "is_disabled": false,
+    "mod_types": [
+      "Enhancement"
+    ],
+    "bonuses": [
+      {
+        "type": "REC",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      },
+      {
+        "type": "STR",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      }
+    ]
+  },
+  {
+    "mod_id": 70,
+    "mod_type": "Enhancement",
+    "name": "STR/DEX",
+    "mod_bonus": "STR;DEX",
+    "rank_5": 29,
+    "rank_7": 32,
+    "rank_9": 36,
+    "tooltip": null,
+    "stackable": true,
+    "tag": [
+      "Dual Stats"
+    ],
+    "source": [],
+    "icon_override": "Arm_Enh_STR_DEX",
+    "is_disabled": false,
+    "mod_types": [
+      "Enhancement"
+    ],
+    "bonuses": [
+      {
+        "type": "STR",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      },
+      {
+        "type": "DEX",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      }
+    ]
+  },
+  {
+    "mod_id": 71,
+    "mod_type": "Enhancement",
+    "name": "STR/EGO",
+    "mod_bonus": "STR;EGO",
+    "rank_5": 29,
+    "rank_7": 32,
+    "rank_9": 36,
+    "tooltip": null,
+    "stackable": true,
+    "tag": [
+      "Dual Stats"
+    ],
+    "source": [],
+    "icon_override": "Arm_Enh_STR_EGO",
+    "is_disabled": false,
+    "mod_types": [
+      "Enhancement"
+    ],
+    "bonuses": [
+      {
+        "type": "STR",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      },
+      {
+        "type": "EGO",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      }
+    ]
+  },
+  {
+    "mod_id": 72,
+    "mod_type": "Enhancement",
+    "name": "STR/INT",
+    "mod_bonus": "STR;INT",
+    "rank_5": 29,
+    "rank_7": 32,
+    "rank_9": 36,
+    "tooltip": null,
+    "stackable": true,
+    "tag": [
+      "Dual Stats"
+    ],
+    "source": [],
+    "icon_override": "Arm_Enh_STR_INT",
+    "is_disabled": false,
+    "mod_types": [
+      "Enhancement"
+    ],
+    "bonuses": [
+      {
+        "type": "STR",
+        "values_by_rank": {
+          "5": 29,
+          "7": 32,
+          "9": 36
+        }
+      },
+      {
+        "type": "INT",
         "values_by_rank": {
           "5": 29,
           "7": 32,
@@ -2533,82 +2609,6 @@
   },
   {
     "mod_id": 73,
-    "mod_type": "Enhancement",
-    "name": "PRE/END",
-    "mod_bonus": "PRE;END",
-    "rank_5": 29,
-    "rank_7": 32,
-    "rank_9": 36,
-    "tooltip": null,
-    "stackable": true,
-    "tag": [
-      "Dual Stats"
-    ],
-    "source": [],
-    "icon_override": null,
-    "is_disabled": false,
-    "mod_types": [
-      "Enhancement"
-    ],
-    "bonuses": [
-      {
-        "type": "PRE",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      },
-      {
-        "type": "END",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      }
-    ]
-  },
-  {
-    "mod_id": 74,
-    "mod_type": "Enhancement",
-    "name": "REC/END",
-    "mod_bonus": "REC;END",
-    "rank_5": 29,
-    "rank_7": 32,
-    "rank_9": 36,
-    "tooltip": null,
-    "stackable": true,
-    "tag": [
-      "Dual Stats"
-    ],
-    "source": [],
-    "icon_override": null,
-    "is_disabled": false,
-    "mod_types": [
-      "Enhancement"
-    ],
-    "bonuses": [
-      {
-        "type": "REC",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      },
-      {
-        "type": "END",
-        "values_by_rank": {
-          "5": 29,
-          "7": 32,
-          "9": 36
-        }
-      }
-    ]
-  },
-  {
-    "mod_id": 75,
     "mod_type": "Offense",
     "name": "Impact Prism",
     "mod_bonus": "Offense",
@@ -2638,7 +2638,7 @@
     ]
   },
   {
-    "mod_id": 76,
+    "mod_id": 74,
     "mod_type": "Defense",
     "name": "Impact Prism",
     "mod_bonus": "Defense",
@@ -2668,7 +2668,7 @@
     ]
   },
   {
-    "mod_id": 77,
+    "mod_id": 75,
     "mod_type": "Utility",
     "name": "Impact Prism",
     "mod_bonus": "Cooldown_Reduction",
@@ -2698,7 +2698,7 @@
     ]
   },
   {
-    "mod_id": 78,
+    "mod_id": 76,
     "mod_type": "Offense",
     "name": "Gambler's Lucky Gem",
     "mod_bonus": "Critical_Strike",
@@ -2728,7 +2728,7 @@
     ]
   },
   {
-    "mod_id": 80,
+    "mod_id": 77,
     "mod_type": "Defense",
     "name": "Gambler's Lucky Gem",
     "mod_bonus": "Dodge_Chance",
@@ -2758,7 +2758,7 @@
     ]
   },
   {
-    "mod_id": 81,
+    "mod_id": 78,
     "mod_type": "Utility",
     "name": "Gambler's Lucky Gem",
     "mod_bonus": "Cost_Discount",
@@ -2788,7 +2788,7 @@
     ]
   },
   {
-    "mod_id": 82,
+    "mod_id": 79,
     "mod_type": "Offense",
     "name": "Growth Amulet",
     "mod_bonus": "Primary_Superstat",
@@ -2818,7 +2818,7 @@
     ]
   },
   {
-    "mod_id": 83,
+    "mod_id": 80,
     "mod_type": "Defense",
     "name": "Growth Amulet",
     "mod_bonus": "Max_HP",
@@ -2848,7 +2848,7 @@
     ]
   },
   {
-    "mod_id": 84,
+    "mod_id": 81,
     "mod_type": "Utility",
     "name": "Growth Amulet",
     "mod_bonus": "Max_Energy",
@@ -2878,10 +2878,10 @@
     ]
   },
   {
-    "mod_id": 85,
+    "mod_id": 82,
     "mod_type": "Offense",
     "name": "Sentinel's Brooch",
-    "mod_bonus": "Bonus_Healing",
+    "mod_bonus": "Healing_Bonus",
     "rank_5": 25,
     "rank_7": 29,
     "rank_9": 31,
@@ -2898,7 +2898,7 @@
     ],
     "bonuses": [
       {
-        "type": "Bonus_Healing",
+        "type": "Healing_Bonus",
         "values_by_rank": {
           "5": 25,
           "7": 29,
@@ -2908,7 +2908,7 @@
     ]
   },
   {
-    "mod_id": 86,
+    "mod_id": 83,
     "mod_type": "Defense",
     "name": "Sentinel's Brooch",
     "mod_bonus": "CC_Resistance",
@@ -2938,7 +2938,7 @@
     ]
   },
   {
-    "mod_id": 87,
+    "mod_id": 84,
     "mod_type": "Utility",
     "name": "Sentinel's Brooch",
     "mod_bonus": "CC_Strength",
@@ -2968,7 +2968,7 @@
     ]
   },
   {
-    "mod_id": 88,
+    "mod_id": 85,
     "mod_type": "Offense",
     "name": "Veteran's Core of Might",
     "mod_bonus": "Secondary_Superstats",
@@ -2998,7 +2998,7 @@
     ]
   },
   {
-    "mod_id": 89,
+    "mod_id": 86,
     "mod_type": "Defense",
     "name": "Veteran's Core of Might",
     "mod_bonus": "Secondary_Superstats",
@@ -3028,7 +3028,7 @@
     ]
   },
   {
-    "mod_id": 90,
+    "mod_id": 87,
     "mod_type": "Utility",
     "name": "Veteran's Core of Might",
     "mod_bonus": "Secondary_Superstats",
@@ -3058,7 +3058,7 @@
     ]
   },
   {
-    "mod_id": 91,
+    "mod_id": 88,
     "mod_type": "Offense",
     "name": "Soviet's Guard Resolution",
     "mod_bonus": "Critical_Strike;Critical_Severity",
@@ -3098,10 +3098,10 @@
     ]
   },
   {
-    "mod_id": 92,
+    "mod_id": 89,
     "mod_type": "Offense",
     "name": "Corruscating Might",
-    "mod_bonus": "Offense",
+    "mod_bonus": "Bonus_Offense",
     "rank_5": 276,
     "rank_7": 414,
     "rank_9": 552,
@@ -3120,7 +3120,7 @@
     ],
     "bonuses": [
       {
-        "type": "Offense",
+        "type": "Bonus_Offense",
         "values_by_rank": {
           "5": 276,
           "7": 414,
@@ -3130,7 +3130,7 @@
     ]
   },
   {
-    "mod_id": 93,
+    "mod_id": 90,
     "mod_type": "Offense",
     "name": "Depleted Uranium Core",
     "mod_bonus": "Armor_Penetration",
@@ -3161,7 +3161,7 @@
     ]
   },
   {
-    "mod_id": 94,
+    "mod_id": 91,
     "mod_type": "Offense",
     "name": "Severity Core",
     "mod_bonus": "Critical_Severity",
@@ -3191,7 +3191,7 @@
     ]
   },
   {
-    "mod_id": 95,
+    "mod_id": 92,
     "mod_type": "Offense",
     "name": "Critical Core",
     "mod_bonus": "Critical_Strike",
@@ -3221,10 +3221,10 @@
     ]
   },
   {
-    "mod_id": 96,
+    "mod_id": 93,
     "mod_type": "Offense",
     "name": "Healing Core",
-    "mod_bonus": "Bonus_Healing",
+    "mod_bonus": "Healing_Bonus",
     "rank_5": 25,
     "rank_7": 29,
     "rank_9": 31,
@@ -3241,7 +3241,7 @@
     ],
     "bonuses": [
       {
-        "type": "Bonus_Healing",
+        "type": "Healing_Bonus",
         "values_by_rank": {
           "5": 25,
           "7": 29,
@@ -3251,7 +3251,7 @@
     ]
   },
   {
-    "mod_id": 97,
+    "mod_id": 94,
     "mod_type": "Offense",
     "name": "Offence Core",
     "mod_bonus": "Offense",
@@ -3281,7 +3281,7 @@
     ]
   },
   {
-    "mod_id": 98,
+    "mod_id": 95,
     "mod_type": "Offense",
     "name": "Superstat Core",
     "mod_bonus": "Primary_Superstat",
@@ -3311,7 +3311,7 @@
     ]
   },
   {
-    "mod_id": 99,
+    "mod_id": 96,
     "mod_type": "Offense",
     "name": "Confront",
     "mod_bonus": "Threat",
@@ -3341,7 +3341,7 @@
     ]
   },
   {
-    "mod_id": 100,
+    "mod_id": 97,
     "mod_type": "Offense",
     "name": "Icy Grasp",
     "mod_bonus": "Threat",
@@ -3371,7 +3371,7 @@
     ]
   },
   {
-    "mod_id": 101,
+    "mod_id": 98,
     "mod_type": "Offense",
     "name": "Hot Stuff",
     "mod_bonus": "Threat",
@@ -3401,7 +3401,7 @@
     ]
   },
   {
-    "mod_id": 102,
+    "mod_id": 99,
     "mod_type": "Offense",
     "name": "Infection",
     "mod_bonus": "Threat",
@@ -3431,7 +3431,7 @@
     ]
   },
   {
-    "mod_id": 103,
+    "mod_id": 100,
     "mod_type": "Offense",
     "name": "Brute Force",
     "mod_bonus": "Threat",
@@ -3461,7 +3461,7 @@
     ]
   },
   {
-    "mod_id": 105,
+    "mod_id": 101,
     "mod_type": "Offense",
     "name": "Hollow Point",
     "mod_bonus": "Threat",
@@ -3491,7 +3491,7 @@
     ]
   },
   {
-    "mod_id": 106,
+    "mod_id": 102,
     "mod_type": "Offense",
     "name": "Sharp Claws",
     "mod_bonus": "Threat",
@@ -3521,7 +3521,7 @@
     ]
   },
   {
-    "mod_id": 107,
+    "mod_id": 103,
     "mod_type": "Offense",
     "name": "Maniacal Laughter",
     "mod_bonus": "Threat",
@@ -3551,7 +3551,7 @@
     ]
   },
   {
-    "mod_id": 108,
+    "mod_id": 104,
     "mod_type": "Offense",
     "name": "Egomaniacal",
     "mod_bonus": "Threat",
@@ -3581,7 +3581,7 @@
     ]
   },
   {
-    "mod_id": 109,
+    "mod_id": 105,
     "mod_type": "Offense",
     "name": "Magnigicient Display",
     "mod_bonus": "Threat",
@@ -3611,7 +3611,7 @@
     ]
   },
   {
-    "mod_id": 110,
+    "mod_id": 106,
     "mod_type": "Offense",
     "name": "Overclocked",
     "mod_bonus": "Threat",
@@ -3641,7 +3641,7 @@
     ]
   },
   {
-    "mod_id": 111,
+    "mod_id": 107,
     "mod_type": "Offense",
     "name": "Superconductor",
     "mod_bonus": "Threat",
@@ -3671,7 +3671,7 @@
     ]
   },
   {
-    "mod_id": 112,
+    "mod_id": 108,
     "mod_type": "Offense",
     "name": "Amplifier",
     "mod_bonus": "Threat",
@@ -3701,7 +3701,7 @@
     ]
   },
   {
-    "mod_id": 113,
+    "mod_id": 109,
     "mod_type": "Defense",
     "name": "Avoidance Core",
     "mod_bonus": "Avoidance",
@@ -3731,7 +3731,7 @@
     ]
   },
   {
-    "mod_id": 114,
+    "mod_id": 110,
     "mod_type": "Defense",
     "name": "Dodge Core",
     "mod_bonus": "Dodge_Chance",
@@ -3761,7 +3761,7 @@
     ]
   },
   {
-    "mod_id": 115,
+    "mod_id": 111,
     "mod_type": "Defense",
     "name": "Regeneration Core",
     "mod_bonus": "Heath_Regeneration",
@@ -3791,7 +3791,7 @@
     ]
   },
   {
-    "mod_id": 116,
+    "mod_id": 112,
     "mod_type": "Defense",
     "name": "Health Core",
     "mod_bonus": "Max_HP",
@@ -3821,7 +3821,7 @@
     ]
   },
   {
-    "mod_id": 117,
+    "mod_id": 113,
     "mod_type": "Defense",
     "name": "Armoring Core",
     "mod_bonus": "Defense",
@@ -3851,7 +3851,7 @@
     ]
   },
   {
-    "mod_id": 118,
+    "mod_id": 114,
     "mod_type": "Defense",
     "name": "Brilliance",
     "mod_bonus": "Max_HP;Resistance",
@@ -3887,7 +3887,7 @@
     ]
   },
   {
-    "mod_id": 119,
+    "mod_id": 115,
     "mod_type": "Utility",
     "name": "Qliphotic Energies",
     "mod_bonus": "Max_Energy;Energy_Regeneration",
@@ -3921,7 +3921,7 @@
     ]
   },
   {
-    "mod_id": 120,
+    "mod_id": 116,
     "mod_type": "Utility",
     "name": "Control Core",
     "mod_bonus": "CC_Strength",
@@ -3951,7 +3951,7 @@
     ]
   },
   {
-    "mod_id": 121,
+    "mod_id": 117,
     "mod_type": "Utility",
     "name": "Cooldown Core",
     "mod_bonus": "Cooldown_Reduction",
@@ -3981,7 +3981,7 @@
     ]
   },
   {
-    "mod_id": 122,
+    "mod_id": 118,
     "mod_type": "Utility",
     "name": "Energy Efficiency Core",
     "mod_bonus": "Cost_Discount",
@@ -4011,7 +4011,7 @@
     ]
   },
   {
-    "mod_id": 123,
+    "mod_id": 119,
     "mod_type": "Utility",
     "name": "Energy Core",
     "mod_bonus": "Max_Energy",
@@ -4041,7 +4041,7 @@
     ]
   },
   {
-    "mod_id": 124,
+    "mod_id": 120,
     "mod_type": "Utility",
     "name": "Swift Wing",
     "mod_bonus": "Flight_Speed",
@@ -4071,7 +4071,47 @@
     ]
   },
   {
-    "mod_id": 125,
+    "mod_id": 121,
+    "mod_type": "Utility",
+    "name": "Vital Spirit",
+    "mod_bonus": "Cooldown_Reduction;Cost_Discount",
+    "rank_5": "51;51",
+    "rank_7": "57;57",
+    "rank_9": "63;63",
+    "tooltip": null,
+    "stackable": true,
+    "tag": [
+      "Utility"
+    ],
+    "source": [
+      "Patriot Event"
+    ],
+    "icon_override": "Mod_VitalSpirit",
+    "is_disabled": false,
+    "mod_types": [
+      "Utility"
+    ],
+    "bonuses": [
+      {
+        "type": "Cooldown_Reduction",
+        "values_by_rank": {
+          "5": 51,
+          "7": 57,
+          "9": 63
+        }
+      },
+      {
+        "type": "Cost_Discount",
+        "values_by_rank": {
+          "5": 51,
+          "7": 57,
+          "9": 63
+        }
+      }
+    ]
+  },
+  {
+    "mod_id": 122,
     "mod_type": "Utility",
     "name": "Teleio's Gadget",
     "mod_bonus": "Damage_Bonus",
@@ -4101,7 +4141,7 @@
     ]
   },
   {
-    "mod_id": 126,
+    "mod_id": 123,
     "mod_type": "Utility",
     "name": "Kigatilik's Wrath",
     "mod_bonus": "Damage_Bonus",
@@ -4131,7 +4171,7 @@
     ]
   },
   {
-    "mod_id": 127,
+    "mod_id": 124,
     "mod_type": "Utility",
     "name": "Qwyjibo's Fury",
     "mod_bonus": "Damage_Bonus",
@@ -4161,7 +4201,7 @@
     ]
   },
   {
-    "mod_id": 128,
+    "mod_id": 125,
     "mod_type": "Utility",
     "name": "Teleiosaurus Rage",
     "mod_bonus": "Damage_Bonus",
@@ -4191,7 +4231,7 @@
     ]
   },
   {
-    "mod_id": 129,
+    "mod_id": 126,
     "mod_type": "Utility",
     "name": "Venomous",
     "mod_bonus": "Damage_Bonus",
@@ -4221,7 +4261,7 @@
     ]
   },
   {
-    "mod_id": 130,
+    "mod_id": 127,
     "mod_type": "Utility",
     "name": "Shadow Destroyer's Comtempt",
     "mod_bonus": "Damage_Bonus",
@@ -4251,7 +4291,7 @@
     ]
   },
   {
-    "mod_id": 131,
+    "mod_id": 128,
     "mod_type": "Utility",
     "name": "Ripper's Rage",
     "mod_bonus": "Damage_Bonus",
@@ -4281,7 +4321,7 @@
     ]
   },
   {
-    "mod_id": 132,
+    "mod_id": 129,
     "mod_type": "Utility",
     "name": "Spell of Takofanes",
     "mod_bonus": "Damage_Bonus",
@@ -4311,7 +4351,7 @@
     ]
   },
   {
-    "mod_id": 133,
+    "mod_id": 130,
     "mod_type": "Utility",
     "name": "Clarence's Machinery",
     "mod_bonus": "Damage_Bonus",
@@ -4341,7 +4381,7 @@
     ]
   },
   {
-    "mod_id": 134,
+    "mod_id": 131,
     "mod_type": "Utility",
     "name": "Cybermind's Impression",
     "mod_bonus": "Damage_Bonus",
@@ -4371,7 +4411,7 @@
     ]
   },
   {
-    "mod_id": 135,
+    "mod_id": 132,
     "mod_type": "Utility",
     "name": "Medusa's Presence",
     "mod_bonus": "Damage_Bonus",
@@ -4401,7 +4441,7 @@
     ]
   },
   {
-    "mod_id": 136,
+    "mod_id": 133,
     "mod_type": "Utility",
     "name": "Left Eye of the Ruby Dragon",
     "mod_bonus": "Damage_Bonus",
@@ -4431,7 +4471,7 @@
     ]
   },
   {
-    "mod_id": 137,
+    "mod_id": 134,
     "mod_type": "Utility",
     "name": "Dragon's Fangs",
     "mod_bonus": "Damage_Bonus",
@@ -4461,7 +4501,7 @@
     ]
   },
   {
-    "mod_id": 138,
+    "mod_id": 135,
     "mod_type": "Utility",
     "name": "Nighthawk's Talons",
     "mod_bonus": "Damage_Bonus",
@@ -4491,7 +4531,7 @@
     ]
   },
   {
-    "mod_id": 139,
+    "mod_id": 136,
     "mod_type": "Utility",
     "name": "Jack Fool's Blade",
     "mod_bonus": "Damage_Bonus",
@@ -4521,7 +4561,7 @@
     ]
   },
   {
-    "mod_id": 140,
+    "mod_id": 137,
     "mod_type": "Utility",
     "name": "Storm Chaser",
     "mod_bonus": "Damage_Bonus",
@@ -4551,7 +4591,7 @@
     ]
   },
   {
-    "mod_id": 141,
+    "mod_id": 138,
     "mod_type": "Utility",
     "name": "Earth Power",
     "mod_bonus": "Damage_Bonus",
@@ -4581,7 +4621,7 @@
     ]
   },
   {
-    "mod_id": 142,
+    "mod_id": 139,
     "mod_type": "Utility",
     "name": "ASCII's Precision",
     "mod_bonus": "Damage_Bonus",
@@ -4611,7 +4651,7 @@
     ]
   },
   {
-    "mod_id": 143,
+    "mod_id": 140,
     "mod_type": "Utility",
     "name": "Pinpoint Accuracy",
     "mod_bonus": "Damage_Bonus",
@@ -4641,7 +4681,7 @@
     ]
   },
   {
-    "mod_id": 144,
+    "mod_id": 141,
     "mod_type": "Utility",
     "name": "Menton's Will",
     "mod_bonus": "Damage_Bonus",
@@ -4671,7 +4711,7 @@
     ]
   },
   {
-    "mod_id": 145,
+    "mod_id": 142,
     "mod_type": "Utility",
     "name": "Right Eye of the Ruby Dragon",
     "mod_bonus": "Damage_Bonus",
@@ -4701,7 +4741,7 @@
     ]
   },
   {
-    "mod_id": 146,
+    "mod_id": 143,
     "mod_type": "Utility",
     "name": "Gravitar's Influence",
     "mod_bonus": "Damage_Bonus",
@@ -4731,7 +4771,7 @@
     ]
   },
   {
-    "mod_id": 147,
+    "mod_id": 144,
     "mod_type": "Utility",
     "name": "Valerian Scarlet's Radiance",
     "mod_bonus": "Damage_Bonus",
@@ -4761,7 +4801,7 @@
     ]
   },
   {
-    "mod_id": 148,
+    "mod_id": 145,
     "mod_type": "Utility",
     "name": "Ironclad's Will",
     "mod_bonus": "Damage_Bonus",
