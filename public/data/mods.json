@@ -3764,7 +3764,7 @@
     "mod_id": 111,
     "mod_type": "Defense",
     "name": "Regeneration Core",
-    "mod_bonus": "Heath_Regeneration",
+    "mod_bonus": "Health_Regeneration",
     "rank_5": 126,
     "rank_7": 158,
     "rank_9": 190,
@@ -3781,7 +3781,7 @@
     ],
     "bonuses": [
       {
-        "type": "Heath_Regeneration",
+        "type": "Health_Regeneration",
         "values_by_rank": {
           "5": 126,
           "7": 158,
