@@ -509,7 +509,7 @@ h3 {
   overflow: hidden;
 }
 
-.app-shell--debug-gear .workspace-grid {
+.app-shell--gear-planner .workspace-grid {
   grid-template-columns:
     var(--character-panel-track, var(--character-column-width))
     var(--powers-panel-track, minmax(0, 1.28fr))

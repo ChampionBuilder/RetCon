@@ -158,6 +158,7 @@ function CollapsibleWorkspacePanel({
 function App() {
   const debugMode =
     new URLSearchParams(window.location.search).get("dbg") === "1";
+  const showGearPlanner = true;
   const showTooltipHitboxes = debugMode;
   const [buildName, setBuildName] = useState("");
   const [energyBuilderSelectionVersion, setEnergyBuilderSelectionVersion] =
@@ -332,7 +333,7 @@ function App() {
       powers: false,
       specializations: false,
     });
-  const { gears, mods } = useGearData(debugMode, true);
+  const { gears, mods } = useGearData(showGearPlanner, true);
   const damageModsByFramework = useMemo(
     () => buildDamageModsByFramework(mods, powers),
     [mods, powers],
@@ -1588,7 +1589,7 @@ function App() {
     <div
       className={[
         "app-shell",
-        debugMode ? "app-shell--debug-gear" : "",
+        showGearPlanner ? "app-shell--gear-planner" : "",
         showTooltipHitboxes ? "app-shell--debug-tooltip-hitboxes" : "",
       ]
         .filter(Boolean)
@@ -1623,8 +1624,8 @@ function App() {
         onResetTravelPowers={resetTravelPowers}
         onResetPowerVariants={resetPowerVariants}
         onResetDevices={resetDevices}
-        onResetGear={debugMode ? resetCurrentGear : undefined}
-        onResetGearMods={debugMode ? resetCurrentGearMods : undefined}
+        onResetGear={showGearPlanner ? resetCurrentGear : undefined}
+        onResetGearMods={showGearPlanner ? resetCurrentGearMods : undefined}
         onResetAdvantages={resetAdvantages}
         onResetSpecializations={resetSpecializations}
         onRandomize={randomizeFreeformBuild}
@@ -1855,7 +1856,7 @@ function App() {
           />
         </CollapsibleWorkspacePanel>
 
-        {debugMode ? (
+        {showGearPlanner ? (
           <CollapsibleWorkspacePanel
             collapsed={collapsedWorkspacePanels.gear}
             panelId="gear"
@@ -1960,7 +1961,7 @@ function App() {
         />
       ) : null}
 
-      {debugMode && activeGearSlot && gearDialogAnchor ? (
+      {showGearPlanner && activeGearSlot && gearDialogAnchor ? (
         <GearSelectionDialog
           anchor={gearDialogAnchor}
           gearSlot={activeGearSlot}
@@ -1971,7 +1972,7 @@ function App() {
         />
       ) : null}
 
-      {debugMode &&
+      {showGearPlanner &&
       activeGearModsSlot &&
       activeGearModsSlotIndex !== null &&
       gearModsDialogAnchor ? (
@@ -1988,7 +1989,7 @@ function App() {
         />
       ) : null}
 
-      {debugMode &&
+      {showGearPlanner &&
       activeGearRankSlot &&
       activeGearRankSlotIndex !== null &&
       gearRankDialogAnchor &&
