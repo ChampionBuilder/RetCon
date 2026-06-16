@@ -28,10 +28,13 @@ const statNameToCode = new Map<string, string>([
 ]);
 
 const percentageBonusTypes = new Set([
+  "avoidance",
   "bonus_damage",
   "bonus_heal",
   "bonus_healing",
+  "critical_strike",
   "damage_bonus",
+  "dodge_chance",
   "healing_bonus",
   "knock_and_repel",
   "knock_and_repel_resistance",
@@ -56,8 +59,25 @@ const bonusTypeLabels = new Map<string, string>([
   ["knock_repel_resistance", "Knock and Repel Resistance"],
   ["knockrepel", "Knock and Repel"],
   ["knockrepel_resistance", "Knock and Repel Resistance"],
+  ["max_energy", "Max Energy"],
   ["max_hp", "Max HP"],
 ]);
+
+function formatBonusTypePart(value: string) {
+  if (value.toLowerCase() === "celesial") {
+    return "Celestial";
+  }
+
+  return value
+    .split("_")
+    .filter((part) => part.length > 0)
+    .map((part) =>
+      part === part.toUpperCase() && part.length > 1
+        ? part
+        : part.charAt(0).toUpperCase() + part.slice(1).toLowerCase(),
+    )
+    .join(" ");
+}
 
 function normalizeBonusType(value: string) {
   return value.trim().toLowerCase().replace(/\s+/gu, "_");
@@ -141,15 +161,15 @@ export function formatBonusType(value: string) {
     return label;
   }
 
-  return normalizedValue
-    .split("_")
-    .filter((part) => part.length > 0)
-    .map((part) =>
-      part === part.toUpperCase() && part.length > 1
-        ? part
-        : part.charAt(0).toUpperCase() + part.slice(1).toLowerCase(),
-    )
-    .join(" ");
+  if (normalizedType.startsWith("damage_bonus_")) {
+    return `${formatBonusTypePart(normalizedValue.slice("Damage_Bonus_".length))} Damage Bonus`;
+  }
+
+  if (normalizedType.startsWith("threat_")) {
+    return `${formatBonusTypePart(normalizedValue.slice("Threat_".length))} Threat`;
+  }
+
+  return formatBonusTypePart(normalizedValue);
 }
 
 export function parseGearBonusValue(value: number | string | undefined) {
@@ -184,7 +204,18 @@ export function formatBonusValue(value: number) {
 }
 
 function isPercentageBonusType(type: string | undefined) {
-  return type ? percentageBonusTypes.has(normalizeBonusType(type)) : false;
+  if (!type) {
+    return false;
+  }
+
+  const normalizedType = normalizeBonusType(type);
+
+  return (
+    percentageBonusTypes.has(normalizedType) ||
+    normalizedType.startsWith("bonus_") && normalizedType.endsWith("_damage") ||
+    normalizedType.startsWith("damage_bonus_") ||
+    normalizedType.startsWith("threat_")
+  );
 }
 
 function appendPercentIfNeeded(value: string, type: string | undefined) {

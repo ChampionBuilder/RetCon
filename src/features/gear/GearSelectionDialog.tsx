@@ -6,6 +6,7 @@ import {
   formatBonusSegment,
   getGearBonusValue,
 } from "./gearBonusFormatting";
+import { getSetPieceBonusTiers } from "./gearSetBonuses";
 
 type GearSelectionDialogProps = {
   anchor: DialogAnchor;
@@ -52,35 +53,37 @@ function getTextLines(values: string[] | null | undefined) {
 }
 
 function getSetBonusText(gear: GearItem) {
-  if (gear.set_bonuses.length === 0) {
+  const setBonusTiers = [...gear.set_bonuses, ...getSetPieceBonusTiers(gear)];
+
+  if (setBonusTiers.length === 0) {
     return null;
   }
 
-  const lines = gear.set_bonuses.flatMap((setBonusTier) => {
+  const uniqueLines = new Set<string>();
+
+  setBonusTiers.forEach((setBonusTier) => {
     const bonusLines = setBonusTier.bonuses.flatMap((bonus) =>
       formatBonusSegment(bonus, getGearBonusValue(bonus)) ?? [],
     );
     const textLines = getTextLines(setBonusTier.text);
     const tierLines = [...bonusLines, ...textLines];
 
-    return tierLines.map(
-      (line) => `${setBonusTier.pieces} pieces: ${line}`,
+    tierLines.forEach((line) =>
+      uniqueLines.add(`${setBonusTier.pieces} pieces: ${line}`),
     );
   });
+
+  const lines = Array.from(uniqueLines);
 
   return lines.length > 0 ? ["Set Bonus:", ...lines].join("\n") : null;
 }
 
 function getPieceBonusText(gear: GearItem) {
-  const setPieceBonusLines = gear.set_piece_bonuses.flatMap((bonus) =>
-    formatBonusSegment(bonus, getGearBonusValue(bonus)) ?? [],
-  );
   const lines = [
     ...getGearBonusLines(gear),
     ...getTextLines(gear.bonus_text),
     cleanGearTooltipText(gear.gear_tooltip),
     cleanGearTooltipText(gear.set_tooltip),
-    ...setPieceBonusLines,
     ...getTextLines(gear.set_piece_bonus_text),
   ].filter((line): line is string => Boolean(line));
 

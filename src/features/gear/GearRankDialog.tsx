@@ -70,6 +70,7 @@ export function GearRankDialog({
       ariaLabel="Select mod rank"
       className="power-selection-dialog gear-rank-dialog"
       closeAriaLabel="Close mod rank selection"
+      placement="target-centered"
       menuChildren={
         <span className="power-selection-dialog__framework-title">
           {selectedMod.mod.name}
@@ -78,12 +79,6 @@ export function GearRankDialog({
       onClose={onClose}
     >
       <div className="gear-rank-dialog__body">
-        <span
-          className="gear-rank-dialog__mod-name"
-          data-text-tooltip={selectedMod.mod.name}
-        >
-          {selectedMod.mod.name}
-        </span>
         {allowedRanks.map((rank) => {
           const isCurrent = selectedMod.rank === rank;
 
@@ -97,6 +92,7 @@ export function GearRankDialog({
                 .filter(Boolean)
                 .join(" ")}
               key={rank}
+              data-dialog-anchor-target={rank === 7 ? "true" : undefined}
               data-text-tooltip={formatGearModRankTooltipText(
                 selectedMod.mod,
                 rank,

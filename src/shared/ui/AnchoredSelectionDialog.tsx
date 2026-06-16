@@ -1,5 +1,9 @@
 import type { ReactNode } from "react";
-import { AnchoredDialog, type DialogAnchor } from "./AnchoredDialog";
+import {
+  AnchoredDialog,
+  type DialogAnchor,
+  type DialogPlacement,
+} from "./AnchoredDialog";
 
 type AnchoredSelectionDialogProps = {
   anchor: DialogAnchor;
@@ -9,6 +13,7 @@ type AnchoredSelectionDialogProps = {
   closeAriaLabel: string;
   menuChildren?: ReactNode;
   onClose: () => void;
+  placement?: DialogPlacement;
 };
 
 export function AnchoredSelectionDialog({
@@ -19,6 +24,7 @@ export function AnchoredSelectionDialog({
   closeAriaLabel,
   menuChildren,
   onClose,
+  placement,
 }: AnchoredSelectionDialogProps) {
   return (
     <AnchoredDialog
@@ -26,6 +32,7 @@ export function AnchoredSelectionDialog({
       ariaLabel={ariaLabel}
       className={["selection-dialog", className].filter(Boolean).join(" ")}
       onClose={onClose}
+      placement={placement}
     >
       <div className="selection-dialog__menu">
         {menuChildren}

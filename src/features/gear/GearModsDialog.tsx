@@ -20,6 +20,7 @@ type GearModsDialogProps = {
     modSlotIndex: number,
     mod: GearMod,
     rank: GearModRank | null,
+    rankDialogAnchor?: DialogAnchor,
   ) => void;
 };
 
@@ -197,12 +198,18 @@ export function GearModsDialog({
                       : formatGearModTooltipText(mod)
                   }
                   type="button"
-                  onClick={() =>
+                  onClick={(event) =>
                     onSelectMod(
                       gearSlot.id,
                       modSlotIndex,
                       mod,
                       autoSelectedRank,
+                      allowedRanks.length > 1
+                        ? {
+                            x: event.clientX,
+                            y: event.clientY,
+                          }
+                        : undefined,
                     )
                   }
                 >

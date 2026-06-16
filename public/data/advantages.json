@@ -39,7 +39,7 @@
     "advantage_id": 4,
     "name": "Nailed to the Ground",
     "points_cost": 2,
-    "tooltip": "Cancels and locks out Travel Powers for 5 seconds.",
+    "tooltip": "Cancels and locks out Travel Powers for 5 sec.",
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -51,7 +51,7 @@
     "advantage_id": 5,
     "name": "Challenge!",
     "points_cost": 1,
-    "tooltip": "Applies threat over time to your main target for 4 sec, and reduced threat over time to secondary targets for 10 sec. Reduces targets damage for 10 sec.",
+    "tooltip": "Applies threat over time to your main target for 4 sec, and reduced threat over time to secary targets for 10 sec. Reduces targets damage for 10 sec.",
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -139,7 +139,7 @@
     "advantage_id": 12,
     "name": "Absolve",
     "points_cost": 2,
-    "tooltip": "The target has their threat wiped and gains stealth for 10 seconds.",
+    "tooltip": "The target has their threat wiped and gains stealth for 10 sec.",
     "apply_tag": [
       "Stealth"
     ],
@@ -183,7 +183,7 @@
     "advantage_id": 16,
     "name": "Advance!",
     "points_cost": 1,
-    "tooltip": "For the next 10 seconds, whenever you damage a foe with a Heavy Weapons, Earth, or Might attack, its cooldown is reduced by 1 second.",
+    "tooltip": "For the next 10 sec, whenever you damage a foe with a Heavy Weapons, Earth, or Might attack, its cooldown is reduced by 1 sec.",
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -195,7 +195,7 @@
     "advantage_id": 17,
     "name": "Advanced Casting",
     "points_cost": 3,
-    "tooltip": "Persists for up to 10 seconds while you are not standing in it.",
+    "tooltip": "Persists for up to 10 sec while you are not standing in it.",
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -221,7 +221,7 @@
     "advantage_id": 19,
     "name": "Aggression",
     "points_cost": 2,
-    "tooltip": "On a full charge, applies Bleed to non-Bleeding targets. Applies on tap if used in melee range. Bleed deals Slashing damage every second for 16 sec, can stack up to 5 times.",
+    "tooltip": "On a full charge, applies Bleed to non-Bleeding targets. Applies on tap if used in melee range. Bleed deals Slashing damage every sec for 16 sec, can stack up to 5 times.",
     "apply_tag": [
       "Bleed"
     ],
@@ -317,7 +317,7 @@
     "advantage_id": 26,
     "name": "Armor Piercing",
     "points_cost": 2,
-    "tooltip": "Applies Armor Piercing to your primary target and has 20% chance to apply Armor Piercing to secondary targets.",
+    "tooltip": "Applies Armor Piercing to your primary target and has 20% chance to apply Armor Piercing to secary targets.",
     "apply_tag": [
       "Armor Piercing"
     ],
@@ -471,7 +471,7 @@
     "advantage_id": 37,
     "name": "Barbed Chains",
     "points_cost": 2,
-    "tooltip": "When an opponent breaks free from a Hold while affected, they take a moderate amount of Slashing damage and applies Bleed. Bleed deals Slashing damage every second for 16 sec, can stack up to 5 times.",
+    "tooltip": "When an opponent breaks free from a Hold while affected, they take a moderate amount of Slashing damage and applies Bleed. Bleed deals Slashing damage every sec for 16 sec, can stack up to 5 times.",
     "apply_tag": [
       "Bleed"
     ],
@@ -811,7 +811,7 @@
     "advantage_id": 61,
     "name": "Breaching Round",
     "points_cost": 2,
-    "tooltip": "Knock Back secondary targets if they are affected by Armor Piercing. Also refreshes all stacks of Furious on you.",
+    "tooltip": "Knock Back secary targets if they are affected by Armor Piercing. Also refreshes all stacks of Furious on you.",
     "apply_tag": [
       "Knock Back"
     ],
@@ -843,7 +843,7 @@
     "advantage_id": 64,
     "name": "Breakout",
     "points_cost": 1,
-    "tooltip": "If the target is under a Control effect, applies Break Free damage. This effect can occur only once ever 10 seconds.",
+    "tooltip": "If the target is under a Control effect, applies Break Free damage. This effect can occur only once ever 10 sec.",
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -871,7 +871,7 @@
     "advantage_id": 66,
     "name": "Brutal Strike",
     "points_cost": 2,
-    "tooltip": "Refreshes Demolish for up to 10 seconds.",
+    "tooltip": "Refreshes Demolish for up to 10 sec.",
     "apply_tag": [],
     "refresh_tag": [
       "Demolish"
@@ -901,7 +901,7 @@
     "advantage_id": 68,
     "name": "Bull Rush",
     "points_cost": 2,
-    "tooltip": "Knocks back secondary targets within 10 feet of your primary target. Also Snares targets for 16 sec, reducing their movement speed by 100%. This effect can only occur once every 10 sec.",
+    "tooltip": "Knocks back secary targets within 10 feet of your primary target. Also Snares targets for 16 sec, reducing their movement speed by 100%. This effect can only occur once every 10 sec.",
     "apply_tag": [
       "Snare",
       "Knock Back"
@@ -979,7 +979,7 @@
     "advantage_id": 73,
     "name": "Burning Desire",
     "points_cost": 1,
-    "tooltip": "35% chance to deal Fire Damage to an additional target.  This second shot does not generate Energy, but has 20% chance to apply Clinging Flames.",
+    "tooltip": "35% chance to deal Fire Damage to an additional target.  This sec shot does not generate Energy, but has 20% chance to apply Clinging Flames.",
     "apply_tag": [
       "Clinging Flames"
     ],
@@ -1007,7 +1007,7 @@
     "advantage_id": 75,
     "name": "Burning Sun",
     "points_cost": 3,
-    "tooltip": "On a full charge, creates a Healing Rune at your location. Healing Rune heals nearby allies every second for 10 seconds. You cannot have more than one Rune out at a time.",
+    "tooltip": "On a full charge, creates a Healing Rune at your location. Healing Rune heals nearby allies every sec for 10 sec. You cannot have more than one Rune out at a time.",
     "apply_tag": [
       "Rune"
     ],
@@ -1049,7 +1049,7 @@
     "advantage_id": 78,
     "name": "Can't Stop Me",
     "points_cost": 2,
-    "tooltip": "Taking damage applies a stack of Charged Up. Charged Up increases your Running Speed by 15%, your Jump Height by 2%, and your Flying Speed by 2%. This effect stacks up to 5 times and lasts 10 seconds.",
+    "tooltip": "Taking damage applies a stack of Charged Up. Charged Up increases your Running Speed by 15%, your Jump Height by 2%, and your Flying Speed by 2%. This effect stacks up to 5 times and lasts 10 sec.",
     "apply_tag": [
       "Charged Up"
     ],
@@ -1117,7 +1117,7 @@
     "advantage_id": 84,
     "name": "Char",
     "points_cost": 2,
-    "tooltip": "Fully maintaining Paralyzes your primary target and briefly Stuns secondary targets.",
+    "tooltip": "Fully maintaining Paralyzes your primary target and briefly Stuns secary targets.",
     "apply_tag": [
       "Hold",
       "Stun"
@@ -1146,7 +1146,7 @@
     "advantage_id": 86,
     "name": "Charged Up",
     "points_cost": 2,
-    "tooltip": "If the target is affected by Negative Ions, consumes Negative Ions to apply a stack of Charged Up, also refreshing existing stacks. Charged Up increases your Running Speed by 15%, your Jump Height by 2%, and your Flying Speed by 2%. This effect stacks up to 5 times and lasts 10 seconds.",
+    "tooltip": "If the target is affected by Negative Ions, consumes Negative Ions to apply a stack of Charged Up, also refreshing existing stacks. Charged Up increases your Running Speed by 15%, your Jump Height by 2%, and your Flying Speed by 2%. This effect stacks up to 5 times and lasts 10 sec.",
     "apply_tag": [
       "Charged Up"
     ],
@@ -1464,7 +1464,7 @@
     "advantage_id": 109,
     "name": "Concussive Blow",
     "points_cost": 2,
-    "tooltip": "Stuns targets for a short time. This can only occur once every 5 seconds.",
+    "tooltip": "Stuns targets for a short time. This can only occur once every 5 sec.",
     "apply_tag": [
       "Stun"
     ],
@@ -1592,7 +1592,7 @@
     "advantage_id": 118,
     "name": "Convergence",
     "points_cost": 2,
-    "tooltip": "Gains a 20% chance to chain to a secondary target. The chain will have the opposite effect: An attack will chain a heal to a nearby friend; a heal will chain an attack to a nearby enemy.",
+    "tooltip": "Gains a 20% chance to chain to a secary target. The chain will have the opposite effect: An attack will chain a heal to a nearby friend; a heal will chain an attack to a nearby enemy.",
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -1718,7 +1718,7 @@
     "advantage_id": 127,
     "name": "Cursed",
     "points_cost": 2,
-    "tooltip": "Applies Hexed to your primary target, reducing their resistance to Magic damage by 18% for 12 seconds. Hexed is a type of Curse",
+    "tooltip": "Applies Hexed to your primary target, reducing their resistance to Magic damage by 18% for 12 sec. Hexed is a type of Curse",
     "apply_tag": [
       "Hexed"
     ],
@@ -1788,7 +1788,7 @@
     "advantage_id": 132,
     "name": "Dark Rune",
     "points_cost": 2,
-    "tooltip": "On a full charge, creates a Healing Rune at the primary target's location. Healing Rune heals nearby allies every second for 10 seconds. You cannot have more than one Rune out at a time.",
+    "tooltip": "On a full charge, creates a Healing Rune at the primary target's location. Healing Rune heals nearby allies every sec for 10 sec. You cannot have more than one Rune out at a time.",
     "apply_tag": [
       "Rune"
     ],
@@ -1816,7 +1816,7 @@
     "advantage_id": 134,
     "name": "Data Conversion",
     "points_cost": 3,
-    "tooltip": "While is slotted, you gain +33 Knock Resistance for 2 seconds every time you make a melee attack, however your melee attacks deal 10% less damage.",
+    "tooltip": "While is slotted, you gain +33 Knock Resistance for 2 sec every time you make a melee attack, however your melee attacks deal 10% less damage.",
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -1842,7 +1842,7 @@
     "advantage_id": 136,
     "name": "Daybreaker",
     "points_cost": 2,
-    "tooltip": "Fully charging creates a Pyre Patch at your location. The Pyre Patch persists on the ground for 10 seconds. Every second, it deals Fire damage and has a 10% chance to apply Clinging Flames to enemies standing in it. You can only have one Pyre Patch active at a time.",
+    "tooltip": "Fully charging creates a Pyre Patch at your location. The Pyre Patch persists on the ground for 10 sec. Every sec, it deals Fire damage and has a 10% chance to apply Clinging Flames to enemies standing in it. You can only have one Pyre Patch active at a time.",
     "apply_tag": [
       "Pyre Patch",
       "Clinging Flames"
@@ -2150,7 +2150,7 @@
     "is_disabled": false
   },
   {
-    "advantage_id": null,
+    "advantage_id": 158,
     "name": "Didn't See That Coming",
     "points_cost": 2,
     "tooltip": "Applies Demolish to your target if they are Disoriented.",
@@ -2323,7 +2323,7 @@
     "advantage_id": 170,
     "name": "Dragon Rush",
     "points_cost": 3,
-    "tooltip": "When fully charged, applies Dragon Rush to you for 1 second per stack of Focus you have.",
+    "tooltip": "When fully charged, applies Dragon Rush to you for 1 sec per stack of Focus you have.",
     "apply_tag": [
       "Dragon Rush"
     ],
@@ -2367,7 +2367,7 @@
     "advantage_id": 173,
     "name": "Drunken Master",
     "points_cost": 2,
-    "tooltip": "When you score a critical hit, you gain Aversion for 12 seconds. Aversion increases your Dodge and Avoidance ratings. These bonuses scale with your Dexterity.",
+    "tooltip": "When you score a critical hit, you gain Aversion for 12 sec. Aversion increases your Dodge and Avoidance ratings. These bonuses scale with your Dexterity.",
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -2391,7 +2391,7 @@
     "advantage_id": 175,
     "name": "Earthen Embrace",
     "points_cost": 2,
-    "tooltip": "While tunneling, you will gain a stack of Earthen Embrace every 3 seconds, up to 6 stacks. Earthen Embrace increases your resistance to all types of damage. These stacks will persist for a short time after you stop tunneling.",
+    "tooltip": "While tunneling, you will gain a stack of Earthen Embrace every 3 sec, up to 6 stacks. Earthen Embrace increases your resistance to all types of damage. These stacks will persist for a short time after you stop tunneling.",
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -2629,7 +2629,7 @@
     "advantage_id": 192,
     "name": "Ephemeral Endowment",
     "points_cost": 2,
-    "tooltip": "Grants your target 25% resistance to all damage, and +25 Run Speed for 10 seconds.",
+    "tooltip": "Grants your target 25% resistance to all damage, and +25 Run Speed for 10 sec.",
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -2641,7 +2641,7 @@
     "advantage_id": 193,
     "name": "Escape Artist",
     "points_cost": 2,
-    "tooltip": "Wipes all threat from all foes within 10 feet of your primary target. Also places you in Stealth briefly. Increases the cooldown to 45 seconds and sets all other Threat Wipe abilities on a 30 second cooldown.",
+    "tooltip": "Wipes all threat from all foes within 10 feet of your primary target. Also places you in Stealth briefly. Increases the cooldown to 45 sec and sets all other Threat Wipe abilities on a 30 sec cooldown.",
     "apply_tag": [
       "Stealth"
     ],
@@ -2822,7 +2822,7 @@
     "advantage_id": 206,
     "name": "Fade Away",
     "points_cost": 2,
-    "tooltip": "Wipes all threat from all foes within 10 feet of your primary target. Also places you in Stealth briefly. Increases the cooldown to 45 seconds and sets all other Threat Wipe abilities on a 30 second cooldown.",
+    "tooltip": "Wipes all threat from all foes within 10 feet of your primary target. Also places you in Stealth briefly. Increases the cooldown to 45 sec and sets all other Threat Wipe abilities on a 30 sec cooldown.",
     "apply_tag": [
       "Stealth"
     ],
@@ -2838,7 +2838,7 @@
     "advantage_id": 207,
     "name": "Fade Into Darkness",
     "points_cost": 2,
-    "tooltip": "Wipes all threat from all foes within 10 feet of your primary target. Also places you in Stealth briefly. Increases the cooldown to 45 seconds and sets all other Threat Wipe abilities on a 30 second cooldown.",
+    "tooltip": "Wipes all threat from all foes within 10 feet of your primary target. Also places you in Stealth briefly. Increases the cooldown to 45 sec and sets all other Threat Wipe abilities on a 30 sec cooldown.",
     "apply_tag": [
       "Stealth"
     ],
@@ -2868,7 +2868,7 @@
     "advantage_id": 209,
     "name": "Faltering Strikes",
     "points_cost": 2,
-    "tooltip": "All attacks now have a chance to Stagger your foe. Stagger reduces damage resistance by 2 and movement speed by 25 for 12 seconds, stacking up to 3 times.",
+    "tooltip": "All attacks now have a chance to Stagger your foe. Stagger reduces damage resistance by 2 and movement speed by 25 for 12 sec, stacking up to 3 times.",
     "apply_tag": [
       "Stagger"
     ],
@@ -2994,7 +2994,7 @@
     "advantage_id": 218,
     "name": "Fester",
     "points_cost": 2,
-    "tooltip": "Debuffs your target by -5% damage strength over 12 seconds for every one of your Poisons stacks.",
+    "tooltip": "Debuffs your target by -5% damage strength over 12 sec for every one of your Poisons stacks.",
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -3050,7 +3050,7 @@
     "advantage_id": 222,
     "name": "Fiery Chasm",
     "points_cost": 2,
-    "tooltip": "Adds a scaling chance to apply Clinging Flames. Clinging Flames deals Fire damage every 2 seconds for 12 seconds, with a chance to leap to other nearby targets.",
+    "tooltip": "Adds a scaling chance to apply Clinging Flames. Clinging Flames deals Fire damage every 2 sec for 12 sec, with a chance to leap to other nearby targets.",
     "apply_tag": [
       "Clinging Flames"
     ],
@@ -3076,7 +3076,7 @@
     "advantage_id": 224,
     "name": "Fiery Spirit",
     "points_cost": 3,
-    "tooltip": "You gain 50% resistance to Knock effects for 4 seconds after you stop blocking. Deals Break Free damage every second for 4 seconds if you are affected by a Hold.",
+    "tooltip": "You gain 50% resistance to Knock effects for 4 sec after you stop blocking. Deals Break Free damage every sec for 4 sec if you are affected by a Hold.",
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -3198,7 +3198,7 @@
     "advantage_id": 233,
     "name": "Flaming Fists",
     "points_cost": 2,
-    "tooltip": "Applies Clinging Flames instead of Chi Flame. Clinging Flames deals Fire damage every 2 seconds for 12 seconds, with a chance to leap to other nearby targets.",
+    "tooltip": "Applies Clinging Flames instead of Chi Flame. Clinging Flames deals Fire damage every 2 sec for 12 sec, with a chance to leap to other nearby targets.",
     "apply_tag": [
       "Clinging Flames"
     ],
@@ -3236,7 +3236,7 @@
     "advantage_id": 236,
     "name": "Floating Lotus Blossom",
     "points_cost": 2,
-    "tooltip": "After finishing the combo, for 10 sec, your next attacks applies Quick Maneuvering to you. Quick Maneuvering increases your Dodge chance by 5%, lasts for 12 seconds and stacks up to 10 times. All stacks are lost on a successful dodge.",
+    "tooltip": "After finishing the combo, for 10 sec, your next attacks applies Quick Maneuvering to you. Quick Maneuvering increases your Dodge chance by 5%, lasts for 12 sec and stacks up to 10 times. All stacks are lost on a successful dodge.",
     "apply_tag": [
       "Quick Maneuvering"
     ],
@@ -3250,7 +3250,7 @@
     "advantage_id": 237,
     "name": "Flowing like the River",
     "points_cost": 3,
-    "tooltip": "If you maintain for at least 2 seconds, its bonuses will decay over 10 seconds after you stop maintaining it.",
+    "tooltip": "If you maintain for at least 2 sec, its bonuses will decay over 10 sec after you stop maintaining it.",
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -3262,7 +3262,7 @@
     "advantage_id": 238,
     "name": "Flowing Strikes",
     "points_cost": 2,
-    "tooltip": "Refreshes Demolish by up to 10 seconds.",
+    "tooltip": "Refreshes Demolish by up to 10 sec.",
     "apply_tag": [],
     "refresh_tag": [
       "Demolish"
@@ -3288,7 +3288,7 @@
     "advantage_id": 240,
     "name": "Focused Energy",
     "points_cost": 1,
-    "tooltip": "Refreshes Chi Flame by up to 12 seconds.",
+    "tooltip": "Refreshes Chi Flame by up to 12 sec.",
     "apply_tag": [],
     "refresh_tag": [
       "Chi Flame"
@@ -3314,7 +3314,7 @@
     "advantage_id": 242,
     "name": "Footwork",
     "points_cost": 2,
-    "tooltip": "Refreshes Demolish by up to 10 seconds.",
+    "tooltip": "Refreshes Demolish by up to 10 sec.",
     "apply_tag": [],
     "refresh_tag": [
       "Demolish"
@@ -3634,7 +3634,7 @@
     "advantage_id": 265,
     "name": "Gifts of the Storm",
     "points_cost": 3,
-    "tooltip": "20% of any non-minor or over-time heal you receive to nearby allies while active, even if your health is full. This effect can only occur once every 2 seconds.",
+    "tooltip": "20% of any non-minor or over-time heal you receive to nearby allies while active, even if your health is full. This effect can only occur once every 2 sec.",
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -3926,7 +3926,7 @@
     "advantage_id": 286,
     "name": "Hold The Line",
     "points_cost": 1,
-    "tooltip": "Maintaining counts as using a Block for interaction purposes for the first 3 seconds. This amount increases by 2 seconds based on the rank of your Force Shield power.",
+    "tooltip": "Maintaining counts as using a Block for interaction purposes for the first 3 sec. This amount increases by 2 sec based on the rank of your Force Shield power.",
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -4040,7 +4040,7 @@
     "advantage_id": 294,
     "name": "Illusive",
     "points_cost": 2,
-    "tooltip": "You to generate less threat for 10 seconds.",
+    "tooltip": "You to generate less threat for 10 sec.",
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -4094,7 +4094,7 @@
     "advantage_id": 298,
     "name": "Impaled",
     "points_cost": 2,
-    "tooltip": "Adds 12 seconds to the duration of your Stress debuffs",
+    "tooltip": "Adds 12 sec to the duration of your Stress debuffs",
     "apply_tag": [],
     "refresh_tag": [
       "Stress"
@@ -4134,7 +4134,7 @@
     "advantage_id": 301,
     "name": "Impose",
     "points_cost": 2,
-    "tooltip": "All targets hit are Snared after 2 seconds, reducing their movement speed for a short time.",
+    "tooltip": "All targets hit are Snared after 2 sec, reducing their movement speed for a short time.",
     "apply_tag": [
       "Snare"
     ],
@@ -4164,7 +4164,7 @@
     "advantage_id": 303,
     "name": "Incisive Wit",
     "points_cost": 2,
-    "tooltip": "15% chance every hit to apply Id Surge to you, increasing your Ego damage strength by +15% and your Ego by +13 for 15 seconds.",
+    "tooltip": "15% chance every hit to apply Id Surge to you, increasing your Ego damage strength by +15% and your Ego by +13 for 15 sec.",
     "apply_tag": [
       "Id Surge"
     ],
@@ -4274,7 +4274,7 @@
     "advantage_id": 311,
     "name": "Instill Doubt",
     "points_cost": 2,
-    "tooltip": "15% chance per hit to apply Dependencey to targets. Dependency causes the affected target to heal you or one of your nearby allies for a small amount over 20 seconds. Can stack up to 3 times.",
+    "tooltip": "15% chance per hit to apply Dependencey to targets. Dependency causes the affected target to heal you or one of your nearby allies for a small amount over 20 sec. Can stack up to 3 times.",
     "apply_tag": [
       "Dependency"
     ],
@@ -4659,7 +4659,7 @@
     "advantage_id": 338,
     "name": "Light Mend",
     "points_cost": 2,
-    "tooltip": "Adds 10 seconds to Disintegrate.",
+    "tooltip": "Adds 10 sec to Disintegrate.",
     "apply_tag": [],
     "refresh_tag": [
       "Disintegrate"
@@ -4740,7 +4740,7 @@
     "advantage_id": 343,
     "name": "Lingering Darkness",
     "points_cost": 2,
-    "tooltip": "Refreshes your Devoid debuff by 12 seconds. After the initial hit, has a 20% chance every hit to refresh Devoid by an additional 2 seconds.",
+    "tooltip": "Refreshes your Devoid debuff by 12 sec. After the initial hit, has a 20% chance every hit to refresh Devoid by an additional 2 sec.",
     "apply_tag": [],
     "refresh_tag": [
       "Devoid"
@@ -4810,7 +4810,7 @@
     "advantage_id": 348,
     "name": "Magma Burst",
     "points_cost": 2,
-    "tooltip": "Deals Fire Damage within 15ft. Applies Clinging Flames to your primary target, and has 30% change to apply it too to secondary targets.",
+    "tooltip": "Deals Fire Damage within 15ft. Applies Clinging Flames to your primary target, and has 30% change to apply it too to secary targets.",
     "apply_tag": [
       "Clinging Flames"
     ],
@@ -4884,7 +4884,7 @@
     "advantage_id": 353,
     "name": "Malaise",
     "points_cost": 2,
-    "tooltip": "Target suffers -15% to their power recharge speed for 10 seconds.",
+    "tooltip": "Target suffers -15% to their power recharge speed for 10 sec.",
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -5074,7 +5074,7 @@
     "advantage_id": 367,
     "name": "Mental Weakness",
     "points_cost": 2,
-    "tooltip": "Target suffers -15% to their power recharge speed for 10 seconds.",
+    "tooltip": "Target suffers -15% to their power recharge speed for 10 sec.",
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -5086,7 +5086,7 @@
     "advantage_id": 368,
     "name": "Messy",
     "points_cost": 2,
-    "tooltip": "Adds 10 seconds to Shredded.",
+    "tooltip": "Adds 10 sec to Shredded.",
     "apply_tag": [],
     "refresh_tag": [
       "Shredded"
@@ -5112,7 +5112,7 @@
     "advantage_id": 370,
     "name": "Microfilament Wire",
     "points_cost": 2,
-    "tooltip": "If used within Melee range of a target, the primary target will be Knocked Towards you and the secondary targets will be Knocked Down after you land.",
+    "tooltip": "If used within Melee range of a target, the primary target will be Knocked Towards you and the secary targets will be Knocked Down after you land.",
     "apply_tag": [
       "Knock Down",
       "Knock To"
@@ -5233,7 +5233,7 @@
     "advantage_id": 379,
     "name": "Mystic Transference",
     "points_cost": 1,
-    "tooltip": "Reduces the number of Sigils summoned to 2, but they can be used alongside your other Sigils. This also lowers the base charge time to 0.83, the energy cost, and the cooldown to 10 seconds.",
+    "tooltip": "Reduces the number of Sigils summoned to 2, but they can be used alongside your other Sigils. This also lowers the base charge time to 0.83, the energy cost, and the cooldown to 10 sec.",
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -5247,7 +5247,7 @@
     "advantage_id": 380,
     "name": "Mystical",
     "points_cost": 2,
-    "tooltip": "Applies Mystified to you. Mystified lasts 15 seconds and reduces the cost of your Sorcery, Celestial, Darkness, and Infernal powers by 3%, stacking up to 3 times.",
+    "tooltip": "Applies Mystified to you. Mystified lasts 15 sec and reduces the cost of your Sorcery, Celestial, Darkness, and Infernal powers by 3%, stacking up to 3 times.",
     "apply_tag": [
       "Mystified"
     ],
@@ -5388,7 +5388,7 @@
     "advantage_id": 391,
     "name": "No Mercy",
     "points_cost": 2,
-    "tooltip": "Consumes Wounds instead of just Bleed. Deals Slashing damage initially, followed by 2 subsequent hits over 4 seconds for 50% of the original hit's damage.",
+    "tooltip": "Consumes Wounds instead of just Bleed. Deals Slashing damage initially, followed by 2 subsequent hits over 4 sec for 50% of the original hit's damage.",
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -5462,7 +5462,7 @@
     "advantage_id": 396,
     "name": "Null Value",
     "points_cost": 2,
-    "tooltip": "Stuns your main target and Knocks Down secondary targets.",
+    "tooltip": "Stuns your main target and Knocks Down secary targets.",
     "apply_tag": [
       "Stun",
       "Knock Down"
@@ -5521,7 +5521,7 @@
     "advantage_id": 400,
     "name": "Open Wound",
     "points_cost": 2,
-    "tooltip": "Applies Open Wound to your primary target. Open Wound has a 25% chance to apply a stack of Bleed to the target every 2 seconds for 10 seconds. Chance is doubled on the last tick.",
+    "tooltip": "Applies Open Wound to your primary target. Open Wound has a 25% chance to apply a stack of Bleed to the target every 2 sec for 10 sec. Chance is doubled on the last tick.",
     "apply_tag": [
       "Bleed",
       "Open Wound"
@@ -5555,7 +5555,7 @@
     "advantage_id": 402,
     "name": "Outbreak",
     "points_cost": 2,
-    "tooltip": "Reduces the maximum maintain time by one second. Increases the chance to apply Deadly Poison to 25% every hit.",
+    "tooltip": "Reduces the maximum maintain time by one sec. Increases the chance to apply Deadly Poison to 25% every hit.",
     "apply_tag": [
       "Deadly Poison"
     ],
@@ -5597,7 +5597,7 @@
     "advantage_id": 405,
     "name": "Overwhelming Force",
     "points_cost": 2,
-    "tooltip": "When fully charged, applies Armor Piercing to your primary target as well as any Disoriented secondary targets.",
+    "tooltip": "When fully charged, applies Armor Piercing to your primary target as well as any Disoriented secary targets.",
     "apply_tag": [
       "Disorient",
       "Armor Piercing"
@@ -6010,7 +6010,7 @@
     "advantage_id": 434,
     "name": "Predictable",
     "points_cost": 2,
-    "tooltip": "Wipes all threat from all foes within 10 feet of your primary target. Also places you in Stealth briefly. Increases the cooldown to 45 seconds and sets all other Threat Wipe abilities on a 30 second cooldown.",
+    "tooltip": "Wipes all threat from all foes within 10 feet of your primary target. Also places you in Stealth briefly. Increases the cooldown to 45 sec and sets all other Threat Wipe abilities on a 30 sec cooldown.",
     "apply_tag": [
       "Stealth"
     ],
@@ -6067,7 +6067,7 @@
     "advantage_id": 438,
     "name": "Psychic Tides",
     "points_cost": 2,
-    "tooltip": "Sets the Energy Equilibrium of targets to 1 for 16 seconds. Snares targets.",
+    "tooltip": "Sets the Energy Equilibrium of targets to 1 for 16 sec. Snares targets.",
     "apply_tag": [
       "Snare"
     ],
@@ -6182,7 +6182,7 @@
     "advantage_id": 446,
     "name": "Radiate",
     "points_cost": 2,
-    "tooltip": "Applies Radiate to the target. Radiate has a 25% chance to apply a stack of Plasma Burn to the target every 2 seconds for 10 seconds.",
+    "tooltip": "Applies Radiate to the target. Radiate has a 25% chance to apply a stack of Plasma Burn to the target every 2 sec for 10 sec.",
     "apply_tag": [
       "Plasma Burn"
     ],
@@ -6216,7 +6216,7 @@
     "advantage_id": 448,
     "name": "Rage of the Beast",
     "points_cost": 2,
-    "tooltip": "If you are Held or Rooted when is activated, applies Break Free damage as well as 5 stacks of Charged Up to you. Each stack of Charged Up increases your Running Speed by 15%, your Jump Height by 2%, and your Flying Speed by 2%. This effect stacks up to 5 times and lasts 10 seconds.",
+    "tooltip": "If you are Held or Rooted when is activated, applies Break Free damage as well as 5 stacks of Charged Up to you. Each stack of Charged Up increases your Running Speed by 15%, your Jump Height by 2%, and your Flying Speed by 2%. This effect stacks up to 5 times and lasts 10 sec.",
     "apply_tag": [
       "Charged Up"
     ],
@@ -6419,7 +6419,7 @@
     "advantage_id": 462,
     "name": "Red-Eyed Dragon",
     "points_cost": 2,
-    "tooltip": "Will always be a Critical Hit, however, after each use you will not be able to Critically Hit with any power for 5 seconds.",
+    "tooltip": "Will always be a Critical Hit, however, after each use you will not be able to Critically Hit with any power for 5 sec.",
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -6498,7 +6498,7 @@
     "advantage_id": 468,
     "name": "Rejuvenator",
     "points_cost": 2,
-    "tooltip": "While maintaing, if one of your powers comes off of cooldown, boosts the amount of healing does by 50% for 6 seconds.",
+    "tooltip": "While maintaing, if one of your powers comes off of cooldown, boosts the amount of healing does by 50% for 6 sec.",
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -6600,7 +6600,7 @@
     "advantage_id": 475,
     "name": "Resurgent Reiki",
     "points_cost": 2,
-    "tooltip": "You gain additional ticks of healing whenever you Dodge an attack while active. This effect can only occur once every 0.5 seconds.",
+    "tooltip": "You gain additional ticks of healing whenever you Dodge an attack while active. This effect can only occur once every 0.5 sec.",
     "apply_tag": [
       "Passive Heal"
     ],
@@ -6770,7 +6770,7 @@
     "advantage_id": 487,
     "name": "Run Away!",
     "points_cost": 2,
-    "tooltip": "Grants you a temporary 60% bonus to run speed, +6 to Flight, and +6 to Jump height. These effects last 6 for seconds.",
+    "tooltip": "Grants you a temporary 60% bonus to run speed, +6 to Flight, and +6 to Jump height. These effects last 6 for sec.",
     "apply_tag": [
       "Flight"
     ],
@@ -6868,7 +6868,7 @@
     "advantage_id": 494,
     "name": "Sapping Solution",
     "points_cost": 2,
-    "tooltip": "5 seconds after being hit, Snare affected targets.",
+    "tooltip": "5 sec after being hit, Snare affected targets.",
     "apply_tag": [
       "Snare"
     ],
@@ -6896,7 +6896,7 @@
     "advantage_id": 496,
     "name": "Scarab Embrace",
     "points_cost": 2,
-    "tooltip": "While Tunneling you will gain a stack of Earthen Embrace every 3 seconds, up to 6 stacks. Earthen Embrace increases your resistance to all types of damage. These stacks will persist for a short time after you stop tunneling.",
+    "tooltip": "While Tunneling you will gain a stack of Earthen Embrace every 3 sec, up to 6 stacks. Earthen Embrace increases your resistance to all types of damage. These stacks will persist for a short time after you stop tunneling.",
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -7224,7 +7224,7 @@
     "advantage_id": 519,
     "name": "Single Minded",
     "points_cost": 2,
-    "tooltip": "Increases its damage by 10% for 10 seconds each time is fully maintained. Stacks up to 3 times, and at 3 stacks, fully maintaining refreshes all existing stacks.",
+    "tooltip": "Increases its damage by 10% for 10 sec each time is fully maintained. Stacks up to 3 times, and at 3 stacks, fully maintaining refreshes all existing stacks.",
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -7236,7 +7236,7 @@
     "advantage_id": 520,
     "name": "Sinkhole",
     "points_cost": 2,
-    "tooltip": "When fully charged, applies Stagger up to 5 targets within 15ft of your primary target. If secondary are affected by 3 stacks of Stagger already, they are Rooted.",
+    "tooltip": "When fully charged, applies Stagger up to 5 targets within 15ft of your primary target. If secary are affected by 3 stacks of Stagger already, they are Rooted.",
     "apply_tag": [
       "Stagger",
       "Root"
@@ -7281,7 +7281,7 @@
     "advantage_id": 523,
     "name": "Sleight of Mind",
     "points_cost": 2,
-    "tooltip": "Changes into a threat wipe, increasing the cooldown to 45 sec, wipes all threat from your Primary Target, and places you in stealth briefly. This effect can only occur once every 30 seconds.",
+    "tooltip": "Changes into a threat wipe, increasing the cooldown to 45 sec, wipes all threat from your Primary Target, and places you in stealth briefly. This effect can only occur once every 30 sec.",
     "apply_tag": [
       "Stealth"
     ],
@@ -7545,7 +7545,7 @@
     "advantage_id": 541,
     "name": "Squall",
     "points_cost": 2,
-    "tooltip": "After 1 second, Snares affected targets. When fully maintained, complete a Circuit and targets are Knock Up",
+    "tooltip": "After 1 sec, Snares affected targets. When fully maintained, complete a Circuit and targets are Knock Up",
     "apply_tag": [
       "Snare",
       "Knock Up"
@@ -7647,7 +7647,7 @@
     "advantage_id": 548,
     "name": "Storm's Eye Prana",
     "points_cost": 3,
-    "tooltip": "Every time you complete this combo, the cooldowns of your healing powers are reduced by 2 seconds.",
+    "tooltip": "Every time you complete this combo, the cooldowns of your healing powers are reduced by 2 sec.",
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -7675,7 +7675,7 @@
     "advantage_id": 550,
     "name": "Stressful",
     "points_cost": 2,
-    "tooltip": "Adds 12 seconds to the duration of your Stress debuffs.",
+    "tooltip": "Adds 12 sec to the duration of your Stress debuffs.",
     "apply_tag": [],
     "refresh_tag": [
       "Stress"
@@ -7747,7 +7747,7 @@
     "advantage_id": 555,
     "name": "Subtlety of the Tides",
     "points_cost": 2,
-    "tooltip": "After using this attack, for the next 10 sec, your melee attacks apply Ebb and Flow to you. Ebb and Flow gives you 15 Avoidance for 12 seconds, stacking up to 10 times. All stacks of Ebb and Flow are removed on a successful dodge.",
+    "tooltip": "After using this attack, for the next 10 sec, your melee attacks apply Ebb and Flow to you. Ebb and Flow gives you 15 Avoidance for 12 sec, stacking up to 10 times. All stacks of Ebb and Flow are removed on a successful dodge.",
     "apply_tag": [
       "Ebb and Flow"
     ],
@@ -7803,7 +7803,7 @@
     "advantage_id": 559,
     "name": "Supercharged",
     "points_cost": 1,
-    "tooltip": "The first and last hit refreshes the duration of your Superconductor debuff by 8 seconds.",
+    "tooltip": "The first and last hit refreshes the duration of your Superconductor debuff by 8 sec.",
     "apply_tag": [],
     "refresh_tag": [
       "Superconductor"
@@ -7861,12 +7861,16 @@
     "advantage_id": 563,
     "name": "Surge of Strength",
     "points_cost": 2,
-    "tooltip": "Refreshes stacks of Defiant if you have the Defiance passive active.",
-    "apply_tag": [],
+    "tooltip": "Last hit grants you Aegis, increasing your Resistance to all damage by +15% for 15 sec. Refreshes stacks of Defiant if you have the Defiance passive active.",
+    "apply_tag": [
+      "Aegis"
+    ],
     "refresh_tag": [
       "Defiance"
     ],
-    "synergy_tag": [],
+    "synergy_tag": [
+      "Defiance"
+    ],
     "filter_tag": [],
     "damage_type": [],
     "is_disabled": false
@@ -7989,7 +7993,7 @@
     "advantage_id": 572,
     "name": "Thaw",
     "points_cost": 1,
-    "tooltip": "Applies Break Free damage to the primary target and reduced Break Free damage to secondary targets.",
+    "tooltip": "Applies Break Free damage to the primary target and reduced Break Free damage to secary targets.",
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -8067,7 +8071,7 @@
     "advantage_id": 578,
     "name": "Thrill of the Hunt",
     "points_cost": 2,
-    "tooltip": "For 10 sec after Lunging, dealing direct damage applies a stack of Charged Up to you. Charged Up increases your Running Speed by 15%, your Jump Height by 2%, and your Flying Speed by 2%. This effect stacks up to 5 times and lasts 10 seconds.",
+    "tooltip": "For 10 sec after Lunging, dealing direct damage applies a stack of Charged Up to you. Charged Up increases your Running Speed by 15%, your Jump Height by 2%, and your Flying Speed by 2%. This effect stacks up to 5 times and lasts 10 sec.",
     "apply_tag": [
       "Charged Up"
     ],
@@ -8306,7 +8310,7 @@
     "advantage_id": 595,
     "name": "Two Smoking Barrels",
     "points_cost": 2,
-    "tooltip": "Whenever you hit with a Melee attack, the cooldown on is reduced by 2 seconds. However, no longer grants bonus damage to your Melee attacks.",
+    "tooltip": "Whenever you hit with a Melee attack, the cooldown on is reduced by 2 sec. However, no longer grants bonus damage to your Melee attacks.",
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -8426,7 +8430,7 @@
     "advantage_id": 604,
     "name": "Unpredictable Effects",
     "points_cost": 2,
-    "tooltip": "When fully charged, applies Bane to your primary target, and 50% applies Bane to secondary targets.",
+    "tooltip": "When fully charged, applies Bane to your primary target, and 50% applies Bane to secary targets.",
     "apply_tag": [
       "Bane"
     ],
@@ -8454,7 +8458,7 @@
     "advantage_id": 606,
     "name": "Unstable Accelerant",
     "points_cost": 2,
-    "tooltip": "Applies Unstable Accelerant to your targets for 12 seconds. Unstable Accelerant reduces resistance to your Burning effects by 50%. Clinging Flames, Leaping Flames, Fire Snake, and Pyre Patches are considered Burning effects.",
+    "tooltip": "Applies Unstable Accelerant to your targets for 12 sec. Unstable Accelerant reduces resistance to your Burning effects by 50%. Clinging Flames, Leaping Flames, Fire Snake, and Pyre Patches are considered Burning effects.",
     "apply_tag": [
       "Unstable Accelerant"
     ],
@@ -8597,7 +8601,7 @@
     "advantage_id": 616,
     "name": "Viral",
     "points_cost": 2,
-    "tooltip": "Applies Viral to the target for 10 seconds. Every 2 seconds, Viral has a 25% chance to apply Deadly Poison. Chance is doubled on the last tick.",
+    "tooltip": "Applies Viral to the target for 10 sec. Every 2 sec, Viral has a 25% chance to apply Deadly Poison. Chance is doubled on the last tick.",
     "apply_tag": [
       "Deadly Poison"
     ],
@@ -8659,7 +8663,7 @@
     "advantage_id": 620,
     "name": "Voodoo Curse",
     "points_cost": 2,
-    "tooltip": "Incoming attacks also have a small chance to Stun nearby enemies.This effect can only occur once every 10 seconds.",
+    "tooltip": "Incoming attacks also have a small chance to Stun nearby enemies.This effect can only occur once every 10 sec.",
     "apply_tag": [
       "Stun"
     ],
@@ -8673,7 +8677,7 @@
     "advantage_id": 621,
     "name": "Voracious Darkness",
     "points_cost": 3,
-    "tooltip": "When you take damage while blocking, applies and refreshes Voracious Darkness which gives you 10% bonus resistance to all damage for 10 seconds. This effect stacks up to 5 times.",
+    "tooltip": "When you take damage while blocking, applies and refreshes Voracious Darkness which gives you 10% bonus resistance to all damage for 10 sec. This effect stacks up to 5 times.",
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -8716,7 +8720,7 @@
     "advantage_id": 624,
     "name": "Wall of Blades",
     "points_cost": 2,
-    "tooltip": "After maintaining for 1 seconds, grants you Aegis, increasing your Resistance to all damage by +15% for 15 sec.",
+    "tooltip": "After maintaining for 1 sec, grants you Aegis, increasing your Resistance to all damage by +15% for 15 sec.",
     "apply_tag": [
       "Aegis"
     ],
@@ -8784,7 +8788,7 @@
     "advantage_id": 629,
     "name": "Weapon Cover",
     "points_cost": 3,
-    "tooltip": "If you hold this power for at least 2 seconds, releasing it grants you an absorbing damage shield, and increases your Hold and Knock resistance by a small amount for 10 sec. All effects expire when the shield is removed.",
+    "tooltip": "If you hold this power for at least 2 sec, releasing it grants you an absorbing damage shield, and increases your Hold and Knock resistance by a small amount for 10 sec. All effects expire when the shield is removed.",
     "apply_tag": [
       "Shield"
     ],
@@ -8798,7 +8802,7 @@
     "advantage_id": 630,
     "name": "Weather the Storm",
     "points_cost": 2,
-    "tooltip": "Secondary Energy Effects, such as Clinging Flames, have a chance to not be consumed when you use.",
+    "tooltip": "secary Energy Effects, such as Clinging Flames, have a chance to not be consumed when you use.",
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -8815,7 +8819,7 @@
     "advantage_id": 631,
     "name": "What Do I have In My Utility Belt?",
     "points_cost": 2,
-    "tooltip": "When fully charged, applies Bane to your primary target, and 50% applies Bane to secondary targets.",
+    "tooltip": "When fully charged, applies Bane to your primary target, and 50% applies Bane to secary targets.",
     "apply_tag": [
       "Bane"
     ],
@@ -8872,7 +8876,7 @@
     "advantage_id": 635,
     "name": "Wildfire",
     "points_cost": 2,
-    "tooltip": "Refreshes Clinging Flames on targets and they are Knocked Down. This can only occur once every 3 seconds.",
+    "tooltip": "Refreshes Clinging Flames on targets and they are Knocked Down. This can only occur once every 3 sec.",
     "apply_tag": [
       "Knock Down"
     ],
@@ -8972,7 +8976,7 @@
     "advantage_id": 642,
     "name": "Gravitational Polarity",
     "points_cost": 2,
-    "tooltip": "On full charge, summon an Energy Field for 10 seconds. Standing in the Energy Field grants Energy to up to 5 allies within 15ft while depleting Energy from foes. Count as a Rune. You cannot have more than one rune out at a time",
+    "tooltip": "On full charge, summon an Energy Field for 10 sec. Standing in the Energy Field grants Energy to up to 5 allies within 15ft while depleting Energy from foes. Count as a Rune. You cannot have more than one rune out at a time",
     "apply_tag": [
       "Rune",
       "Static Field"
@@ -8987,7 +8991,7 @@
     "advantage_id": 643,
     "name": "Field Expulsion",
     "points_cost": 3,
-    "tooltip": "If you are affected by a direct Shield power, fully charging removes that effect and grants a damage absorbing shield to up to 5 allies within 30 feet for 20 seconds. This amount scales with the rank of your Protection Field power.",
+    "tooltip": "If you are affected by a direct Shield power, fully charging removes that effect and grants a damage absorbing shield to up to 5 allies within 30 feet for 20 sec. This amount scales with the rank of your Protection Field power.",
     "apply_tag": [
       "Shield"
     ],
@@ -9164,7 +9168,7 @@
     "advantage_id": 655,
     "name": "Overwhelming Force",
     "points_cost": 2,
-    "tooltip": "On a full charge, instead of targets being Knocked, your primary target is Paralyzed and secondary targets are Stunned for a short time.",
+    "tooltip": "On a full charge, instead of targets being Knocked, your primary target is Paralyzed and secary targets are Stunned for a short time.",
     "apply_tag": [
       "Hold",
       "Stun"
@@ -9319,7 +9323,7 @@
     "advantage_id": 666,
     "name": "Fighting Spirit",
     "points_cost": 1,
-    "tooltip": "When this effect expires, the healing penalty is reduced by 5 seconds.",
+    "tooltip": "When this effect expires, the healing penalty is reduced by 5 sec.",
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -9499,7 +9503,7 @@
     "advantage_id": 679,
     "name": "Engulfing Flames",
     "points_cost": 2,
-    "tooltip": "50% chance to apply Engulfing Flame to your primary target. 25% on secondary target. Chances are doubled if your targets are affected by Clinging Flames",
+    "tooltip": "50% chance to apply Engulfing Flame to your primary target. 25% on secary target. Chances are doubled if your targets are affected by Clinging Flames",
     "apply_tag": [
       "Engulfing Flames"
     ],
@@ -9529,7 +9533,7 @@
     "advantage_id": 681,
     "name": "Fester",
     "points_cost": 2,
-    "tooltip": "Fully charging debuffs your target by -5% damage strength over 12 seconds for every one of your Poison stacks.",
+    "tooltip": "Fully charging debuffs your target by -5% damage strength over 12 sec for every one of your Poison stacks.",
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -9543,7 +9547,7 @@
     "advantage_id": 682,
     "name": "Floating Lotus Blossom",
     "points_cost": 2,
-    "tooltip": "Finishing this combo causes your Archery powers to apply Quick Maneuvering to you for the next 10 seconds. Quick Maneuvering increases your Dodge chance by 5%, lasts for 12 seconds and stacks up to 10 times. All stacks of Quick Maneuvering are lost when you successfully dodge an attack.",
+    "tooltip": "Finishing this combo causes your Archery powers to apply Quick Maneuvering to you for the next 10 sec. Quick Maneuvering increases your Dodge chance by 5%, lasts for 12 sec and stacks up to 10 times. All stacks of Quick Maneuvering are lost when you successfully dodge an attack.",
     "apply_tag": [
       "Quick Maneuvering"
     ],
@@ -9648,7 +9652,7 @@
     "advantage_id": 689,
     "name": "Mystical",
     "points_cost": 2,
-    "tooltip": "20% chance to apply and refresh Mystified on you. Mystified lasts 15 seconds and reduces the cost of your Sorcery, Celestial, Darkness, and Infernal powers by 3%, stacking up to 3 times.",
+    "tooltip": "20% chance to apply and refresh Mystified on you. Mystified lasts 15 sec and reduces the cost of your Sorcery, Celestial, Darkness, and Infernal powers by 3%, stacking up to 3 times.",
     "apply_tag": [
       "Mystified"
     ],
@@ -9776,7 +9780,7 @@
     "advantage_id": 698,
     "name": "Charged Up",
     "points_cost": 2,
-    "tooltip": "If consumes any Negative Ions, it applies Charged Up to you and affected allies. Charged Up increases your Running Speed by 15%, your Jump Height by 2%, and your Flying Speed by 2%. This effect stacks up to 5 times and lasts 10 seconds.",
+    "tooltip": "If consumes any Negative Ions, it applies Charged Up to you and affected allies. Charged Up increases your Running Speed by 15%, your Jump Height by 2%, and your Flying Speed by 2%. This effect stacks up to 5 times and lasts 10 sec.",
     "apply_tag": [
       "Charged Up"
     ],
@@ -9794,7 +9798,7 @@
     "advantage_id": 699,
     "name": "Magma Burst",
     "points_cost": 2,
-    "tooltip": "Deals an additional Fire damage to your primary target and secondary targets. Has a 45-100% chance to apply Clinging Flames to all targets.",
+    "tooltip": "Deals an additional Fire damage to your primary target and secary targets. Has a 45-100% chance to apply Clinging Flames to all targets.",
     "apply_tag": [
       "Clinging Flames"
     ],

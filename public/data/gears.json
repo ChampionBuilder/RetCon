@@ -9,6 +9,7 @@
     "gear_bonus": "Defense=21;Critical_Strike=21;Critical_Severity=2.5",
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=25|3=Offense=175",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -96,6 +97,7 @@
     "gear_bonus": "Defense=21;Healing_Bonus=30",
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=25|3=Offense=175",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -179,6 +181,7 @@
     "gear_bonus": "Defense=21;Primary_Superstat=38",
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=25|3=Offense=175",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -262,6 +265,7 @@
     "gear_bonus": "Defense=42;Max_HP=553",
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=25|3=Offense=175",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Armoring"
     ],
@@ -345,6 +349,7 @@
     "gear_bonus": "Defense=21;Dodge_Chance=152",
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=25|3=Offense=175",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Armoring"
     ],
@@ -428,6 +433,7 @@
     "gear_bonus": "Defense=21;Dodge_Chance=76;Avoidance=76",
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=25|3=Offense=175",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Armoring"
     ],
@@ -515,6 +521,7 @@
     "gear_bonus": "Defense=21;Cooldown_Reduction=152;Cost_Discount=101",
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=25|3=Offense=175",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -602,6 +609,7 @@
     "gear_bonus": "Defense=21;Cooldown_Reduction=51;Cost_Discount=202",
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=25|3=Offense=175",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -689,6 +697,7 @@
     "gear_bonus": "Defense=32;Offense=111",
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=20;Non_Super_Stats=10|3=Defense=65;10% bonus to Energy Unlock. 20% in Tank Role.",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -778,6 +787,7 @@
     "gear_bonus": "Increases the Critical Chance of healing powers by 5%;Defense=21;Healing_Bonus=15",
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=20;Non_Super_Stats=10|3=Defense=65;10% bonus to Energy Unlock. 20% in Tank Role.",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -869,6 +879,7 @@
     "gear_bonus": "Defense=21;Offense=74;Threat=15",
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=20;Non_Super_Stats=10|3=Defense=65;10% bonus to Energy Unlock. 20% in Tank Role.",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -962,6 +973,7 @@
     "gear_bonus": "Defense=32;Max_HP=369;KnockRepel_Resistance=70;CC_Resistance=38",
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=20;Non_Super_Stats=10|3=Defense=65;10% bonus to Energy Unlock. 20% in Tank Role.",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Armoring"
     ],
@@ -1059,6 +1071,7 @@
     "gear_bonus": "Defense=21;Dodge_Chance=152;CC_Resistance=38",
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=20;Non_Super_Stats=10|3=Defense=65;10% bonus to Energy Unlock. 20% in Tank Role.",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Armoring"
     ],
@@ -1152,6 +1165,7 @@
     "gear_bonus": "Defense=21;Dodge_Chance=76;Avoidance=76;CC_Resistance=38",
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=20;Non_Super_Stats=10|3=Defense=65;10% bonus to Energy Unlock. 20% in Tank Role.",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Armoring"
     ],
@@ -1249,6 +1263,7 @@
     "gear_bonus": "Defense=21;Cooldown_Reduction=152;Cost_Discount=101",
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=20;Non_Super_Stats=10|3=Defense=65;10% bonus to Energy Unlock. 20% in Tank Role.",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -1342,6 +1357,7 @@
     "gear_bonus": "Grants 8 Energy every 2 sec while in combat.;Defense=21;Cooldown_Reduction=51;Cost_Discount=152",
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=20;Non_Super_Stats=10|3=Defense=65;10% bonus to Energy Unlock. 20% in Tank Role.",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -1437,6 +1453,7 @@
     "gear_bonus": "Defense=21;Critical_Strike=21;Critical_Severity=2.5",
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=15;Resistance=10|3=Healing_Bonus=40;10% bonus to Energy Unlock. 20% in Support Role.",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -1530,6 +1547,7 @@
     "gear_bonus": "Defense=21;Healing_Bonus=15;Primary_Superstat=13",
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=15;Resistance=10|3=Healing_Bonus=40;10% bonus to Energy Unlock. 20% in Support Role.",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -1623,6 +1641,7 @@
     "gear_bonus": "Defense=21;Healing_Bonus=15;Threat=-15",
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=15;Resistance=10|3=Healing_Bonus=40;10% bonus to Energy Unlock. 20% in Support Role.",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -1716,6 +1735,7 @@
     "gear_bonus": "Defense=32;Max_HP=369;KnockRepel_Resistance=100",
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=15;Resistance=10|3=Healing_Bonus=40;10% bonus to Energy Unlock. 20% in Support Role.",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Armoring"
     ],
@@ -1809,6 +1829,7 @@
     "gear_bonus": "Defense=21;Dodge_Chance=152",
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=15;Resistance=10|3=Healing_Bonus=40;10% bonus to Energy Unlock. 20% in Support Role.",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Armoring"
     ],
@@ -1898,6 +1919,7 @@
     "gear_bonus": "Defense=21;Dodge_Chance=76;Avoidance=76",
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=15;Resistance=10|3=Healing_Bonus=40;10% bonus to Energy Unlock. 20% in Support Role.",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Armoring"
     ],
@@ -1991,6 +2013,7 @@
     "gear_bonus": "Defense=21;Cooldown_Reduction=152;Cost_Discount=101",
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=15;Resistance=10|3=Healing_Bonus=40;10% bonus to Energy Unlock. 20% in Support Role.",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -2084,6 +2107,7 @@
     "gear_bonus": "Grants 8 Energy every 2 sec while in combat.;Defense=21;Cooldown_Reduction=51;Cost_Discount=152",
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=15;Resistance=10|3=Healing_Bonus=40;10% bonus to Energy Unlock. 20% in Support Role.",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -2176,9 +2200,10 @@
     "gear_type": "Offense",
     "name": "Cosmic Strike",
     "gear_tooltip": null,
-    "gear_bonus": "Whenever you deal direct damage, applies Cosmic Strike, increasing your Offense by 20 for I0 sec. This effect can occur once every 2 sec. Stacks up to 10 times. + At 10 stacks, increases your chance to critically hit by 100% and sets your critical severity to 150% for 5 sec or until you directly damage a target. Once this effect is used, expires all stacks of Cosmic Strike.;Super_Stats=20",
+    "gear_bonus": "Whenever you deal direct damage, applies Cosmic Strike, increasing your Offense by 20 for 10 sec. This effect can occur once every 2 sec. Stacks up to 10 times. + At 10 stacks, increases your chance to critically hit by 100% and sets your critical severity to 150% for 5 sec or until you directly damage a target. Once this effect is used, expires all stacks of Cosmic Strike.;Super_Stats=20",
     "set_tooltip": null,
-    "set_bonus": "2=Super_Stats=10|3=Offense=100;All_Stats=10;Threat=-10",
+    "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
+    "set_piece_bonus": "3=Offense=100;Threat=-10",
     "mod_slot_1": [
       "Offense"
     ],
@@ -2200,9 +2225,18 @@
       }
     ],
     "bonus_text": [
-      "Whenever you deal direct damage, applies Cosmic Strike, increasing your Offense by 20 for I0 sec. This effect can occur once every 2 sec. Stacks up to 10 times. + At 10 stacks, increases your chance to critically hit by 100% and sets your critical severity to 150% for 5 sec or until you directly damage a target. Once this effect is used, expires all stacks of Cosmic Strike."
+      "Whenever you deal direct damage, applies Cosmic Strike, increasing your Offense by 20 for 10 sec. This effect can occur once every 2 sec. Stacks up to 10 times. + At 10 stacks, increases your chance to critically hit by 100% and sets your critical severity to 150% for 5 sec or until you directly damage a target. Once this effect is used, expires all stacks of Cosmic Strike."
     ],
-    "set_piece_bonuses": [],
+    "set_piece_bonuses": [
+      {
+        "type": "3",
+        "value": "Offense=100"
+      },
+      {
+        "type": "Threat",
+        "value": -10
+      }
+    ],
     "set_piece_bonus_text": [],
     "set_bonuses": [
       {
@@ -2219,16 +2253,8 @@
         "pieces": 3,
         "bonuses": [
           {
-            "type": "Offense",
-            "value": 100
-          },
-          {
             "type": "All_Stats",
             "value": 10
-          },
-          {
-            "type": "Threat",
-            "value": -10
           }
         ],
         "text": []
@@ -2249,7 +2275,8 @@
     "gear_tooltip": null,
     "gear_bonus": "If you hold block for at least 2 sec, after releasing, increases your resistance to damage by 50% and increases your resistance to Knock effects by 100% for 10 sec. + While this effect is active, all effects and damage against you will act as if you are blocking. This does not provide any of the effect bonuses your block may grant you, but will change how damage and effects are applied to you from certain powers. + All effects expire when you take direct damage and cannot be triggered again for 10 sec. + When this effect expires, applies Cosmic Threat to you, increasing your resistance to Hold effects by 100%, and further increasing your Threat Generation by 10% for 10 sec.;Super_Stats=20",
     "set_tooltip": null,
-    "set_bonus": "2=Super_Stats=10|3=defense=30;All_Stats=10;Threat=10",
+    "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
+    "set_piece_bonus": "3=Defense=30;Threat=10",
     "mod_slot_1": [
       "Offense"
     ],
@@ -2273,7 +2300,16 @@
     "bonus_text": [
       "If you hold block for at least 2 sec, after releasing, increases your resistance to damage by 50% and increases your resistance to Knock effects by 100% for 10 sec. + While this effect is active, all effects and damage against you will act as if you are blocking. This does not provide any of the effect bonuses your block may grant you, but will change how damage and effects are applied to you from certain powers. + All effects expire when you take direct damage and cannot be triggered again for 10 sec. + When this effect expires, applies Cosmic Threat to you, increasing your resistance to Hold effects by 100%, and further increasing your Threat Generation by 10% for 10 sec."
     ],
-    "set_piece_bonuses": [],
+    "set_piece_bonuses": [
+      {
+        "type": "3",
+        "value": "Defense=30"
+      },
+      {
+        "type": "Threat",
+        "value": 10
+      }
+    ],
     "set_piece_bonus_text": [],
     "set_bonuses": [
       {
@@ -2290,15 +2326,7 @@
         "pieces": 3,
         "bonuses": [
           {
-            "type": "defense",
-            "value": 30
-          },
-          {
             "type": "All_Stats",
-            "value": 10
-          },
-          {
-            "type": "Threat",
             "value": 10
           }
         ],
@@ -2320,7 +2348,8 @@
     "gear_tooltip": null,
     "gear_bonus": "If an ally is below 50% health, your direct heals heal for an additional 10% on that target. If an ally is below 10% health, your direct heals heal power is a Maintain, for an additional 100%. + If the instead causes one application of the power to heal for an additional 950%. No additional bonus healing from this effect can occur again for 10 sec.;Super_Stats=20",
     "set_tooltip": null,
-    "set_bonus": "2=Super_Stats=10|3=defense=30;All_Stats=10;Threat=-10",
+    "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
+    "set_piece_bonus": "3=Defense=30;Threat=-10",
     "mod_slot_1": [
       "Offense"
     ],
@@ -2344,7 +2373,16 @@
     "bonus_text": [
       "If an ally is below 50% health, your direct heals heal for an additional 10% on that target. If an ally is below 10% health, your direct heals heal power is a Maintain, for an additional 100%. + If the instead causes one application of the power to heal for an additional 950%. No additional bonus healing from this effect can occur again for 10 sec."
     ],
-    "set_piece_bonuses": [],
+    "set_piece_bonuses": [
+      {
+        "type": "3",
+        "value": "Defense=30"
+      },
+      {
+        "type": "Threat",
+        "value": -10
+      }
+    ],
     "set_piece_bonus_text": [],
     "set_bonuses": [
       {
@@ -2361,16 +2399,8 @@
         "pieces": 3,
         "bonuses": [
           {
-            "type": "defense",
-            "value": 30
-          },
-          {
             "type": "All_Stats",
             "value": 10
-          },
-          {
-            "type": "Threat",
-            "value": -10
           }
         ],
         "text": []
@@ -2391,7 +2421,8 @@
     "gear_tooltip": null,
     "gear_bonus": "Reduces the cooldown on your Crowd Control and Summon powers by 1 sec every time you directly damage or heal a target. This effect can occur once every 2 sec. Does not affect Ultimate powers.;Super_Stats=20",
     "set_tooltip": null,
-    "set_bonus": "2=Super_Stats=10|3=defense=30;All_Stats=10;Threat=-10",
+    "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
+    "set_piece_bonus": "3=Defense=30;Threat=-10",
     "mod_slot_1": [
       "Offense"
     ],
@@ -2415,7 +2446,16 @@
     "bonus_text": [
       "Reduces the cooldown on your Crowd Control and Summon powers by 1 sec every time you directly damage or heal a target. This effect can occur once every 2 sec. Does not affect Ultimate powers."
     ],
-    "set_piece_bonuses": [],
+    "set_piece_bonuses": [
+      {
+        "type": "3",
+        "value": "Defense=30"
+      },
+      {
+        "type": "Threat",
+        "value": -10
+      }
+    ],
     "set_piece_bonus_text": [],
     "set_bonuses": [
       {
@@ -2432,16 +2472,8 @@
         "pieces": 3,
         "bonuses": [
           {
-            "type": "defense",
-            "value": 30
-          },
-          {
             "type": "All_Stats",
             "value": 10
-          },
-          {
-            "type": "Threat",
-            "value": -10
           }
         ],
         "text": []
@@ -2463,6 +2495,7 @@
     "gear_bonus": "Defense=6.5;Offense=17;Primary_Superstat=46",
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Offense"
     ],
@@ -2532,6 +2565,7 @@
     "gear_bonus": "Defense=6.5;Offense=17;Secondary_Superstats=46",
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Offense"
     ],
@@ -2601,6 +2635,7 @@
     "gear_bonus": "Defense=9.7;Primary_Superstat=46",
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Defense"
     ],
@@ -2666,6 +2701,7 @@
     "gear_bonus": "Defense=9.7;Secondary_Superstats=46",
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Defense"
     ],
@@ -2731,6 +2767,7 @@
     "gear_bonus": "Defense=9.7;Cooldown_Reduction=46;Cost_Discount=46;Primary_Superstat=46",
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Utility"
     ],
@@ -2804,6 +2841,7 @@
     "gear_bonus": "Defense=9.7;Cooldown_Reduction=46;Cost_Discount=46;Secondary_Superstats=46",
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Utility"
     ],
@@ -2874,9 +2912,10 @@
     "gear_type": "Offense",
     "name": "Grond's Onslaught",
     "gear_tooltip": null,
-    "gear_bonus": "Increases the base damage of your direct attacks by 5%. + Further increases your damage by 1% for 10 sec if you fully charge a direct damage power. Stacks up to 5 times.;Defense=7.1",
+    "gear_bonus": "Bonus_Damage=5;Increases your damage by 1% for 10 sec if you fully charge a direct damage power. Stacks up to 5 times.;Defense=7.1",
     "set_tooltip": null,
-    "set_bonus": "2=Super_Stats=10|3=Offense=200",
+    "set_bonus": "2=Super_Stats=10",
+    "set_piece_bonus": "3=Offense=200",
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -2892,14 +2931,23 @@
     "is_disabled": false,
     "bonuses": [
       {
+        "type": "Bonus_Damage",
+        "value": 5
+      },
+      {
         "type": "Defense",
         "value": 7.1
       }
     ],
     "bonus_text": [
-      "Increases the base damage of your direct attacks by 5%. + Further increases your damage by 1% for 10 sec if you fully charge a direct damage power. Stacks up to 5 times."
+      "Increases your damage by 1% for 10 sec if you fully charge a direct damage power. Stacks up to 5 times."
     ],
-    "set_piece_bonuses": [],
+    "set_piece_bonuses": [
+      {
+        "type": "3",
+        "value": "Offense=200"
+      }
+    ],
     "set_piece_bonus_text": [],
     "set_bonuses": [
       {
@@ -2908,16 +2956,6 @@
           {
             "type": "Super_Stats",
             "value": 10
-          }
-        ],
-        "text": []
-      },
-      {
-        "pieces": 3,
-        "bonuses": [
-          {
-            "type": "Offense",
-            "value": 200
           }
         ],
         "text": []
@@ -2936,9 +2974,10 @@
     "gear_type": "Offense",
     "name": "Gravitar's Onslaught",
     "gear_tooltip": null,
-    "gear_bonus": "Increases the base damage of your direct attacks by 5%. + Further increases your damage by 1% for 10 sec if you fully maintain a direct damage power. Stacks up to 5 times.;Defense=7.1",
+    "gear_bonus": "Bonus_Damage=5;Increases your damage by 1% for 10 sec if you fully maintain a direct damage power. Stacks up to 5 times.;Defense=7.1",
     "set_tooltip": null,
-    "set_bonus": "2=Super_Stats=10|3=Offense=200",
+    "set_bonus": "2=Super_Stats=10",
+    "set_piece_bonus": "3=Offense=200",
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -2954,14 +2993,23 @@
     "is_disabled": false,
     "bonuses": [
       {
+        "type": "Bonus_Damage",
+        "value": 5
+      },
+      {
         "type": "Defense",
         "value": 7.1
       }
     ],
     "bonus_text": [
-      "Increases the base damage of your direct attacks by 5%. + Further increases your damage by 1% for 10 sec if you fully maintain a direct damage power. Stacks up to 5 times."
+      "Increases your damage by 1% for 10 sec if you fully maintain a direct damage power. Stacks up to 5 times."
     ],
-    "set_piece_bonuses": [],
+    "set_piece_bonuses": [
+      {
+        "type": "3",
+        "value": "Offense=200"
+      }
+    ],
     "set_piece_bonus_text": [],
     "set_bonuses": [
       {
@@ -2970,16 +3018,6 @@
           {
             "type": "Super_Stats",
             "value": 10
-          }
-        ],
-        "text": []
-      },
-      {
-        "pieces": 3,
-        "bonuses": [
-          {
-            "type": "Offense",
-            "value": 200
           }
         ],
         "text": []
@@ -2998,9 +3036,10 @@
     "gear_type": "Offense",
     "name": "Medusa's Onslaught",
     "gear_tooltip": null,
-    "gear_bonus": "Increases the base damage of your Combo powerss by 5%. + Further increases your Combo damage by 5% for 10 sec if you complete a Combo. Stacks up to 9 times. + Your non-combo direct attack base damge is decreased by 50%. Does not affect Ultimate powers.;Defense=7.1",
+    "gear_bonus": "Bonus_Combo_Damage=5;Increases your Combo damage by 5% for 10 sec if you complete a Combo. Stacks up to 9 times. + Your non-combo direct attack base damage is decreased by 50%. Does not affect Ultimate powers.;Defense=7.1",
     "set_tooltip": null,
-    "set_bonus": "2=Super_Stats=10|3=Offense=200",
+    "set_bonus": "2=Super_Stats=10",
+    "set_piece_bonus": "3=Offense=200",
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -3016,14 +3055,23 @@
     "is_disabled": false,
     "bonuses": [
       {
+        "type": "Bonus_Combo_Damage",
+        "value": 5
+      },
+      {
         "type": "Defense",
         "value": 7.1
       }
     ],
     "bonus_text": [
-      "Increases the base damage of your Combo powerss by 5%. + Further increases your Combo damage by 5% for 10 sec if you complete a Combo. Stacks up to 9 times. + Your non-combo direct attack base damge is decreased by 50%. Does not affect Ultimate powers."
+      "Increases your Combo damage by 5% for 10 sec if you complete a Combo. Stacks up to 9 times. + Your non-combo direct attack base damage is decreased by 50%. Does not affect Ultimate powers."
     ],
-    "set_piece_bonuses": [],
+    "set_piece_bonuses": [
+      {
+        "type": "3",
+        "value": "Offense=200"
+      }
+    ],
     "set_piece_bonus_text": [],
     "set_bonuses": [
       {
@@ -3032,16 +3080,6 @@
           {
             "type": "Super_Stats",
             "value": 10
-          }
-        ],
-        "text": []
-      },
-      {
-        "pieces": 3,
-        "bonuses": [
-          {
-            "type": "Offense",
-            "value": 200
           }
         ],
         "text": []
@@ -3060,9 +3098,10 @@
     "gear_type": "Offense",
     "name": "Onslaught Gloves of the Slicer",
     "gear_tooltip": null,
-    "gear_bonus": "Direct melee damage increases your melee base damage by 5%. This amount is increased by 1% for 10 sec if your target is affected by your Damage Resistance Debuff. This can occur once every 1 sec and stacks up to 5 times.;Defense=7.1",
+    "gear_bonus": "Bonus_Melee_Damage=5;Increases your Melee Damage for 1% for 10 sec if your target is affected by your Damage Resistance Debuff. This can occur once every 1 sec and stacks up to 5 times.;Defense=7.1",
     "set_tooltip": null,
-    "set_bonus": "2=Super_Stats=10|3=Offense=200",
+    "set_bonus": "2=Super_Stats=10",
+    "set_piece_bonus": "3=Offense=200",
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -3078,14 +3117,23 @@
     "is_disabled": false,
     "bonuses": [
       {
+        "type": "Bonus_Melee_Damage",
+        "value": 5
+      },
+      {
         "type": "Defense",
         "value": 7.1
       }
     ],
     "bonus_text": [
-      "Direct melee damage increases your melee base damage by 5%. This amount is increased by 1% for 10 sec if your target is affected by your Damage Resistance Debuff. This can occur once every 1 sec and stacks up to 5 times."
+      "Increases your Melee Damage for 1% for 10 sec if your target is affected by your Damage Resistance Debuff. This can occur once every 1 sec and stacks up to 5 times."
     ],
-    "set_piece_bonuses": [],
+    "set_piece_bonuses": [
+      {
+        "type": "3",
+        "value": "Offense=200"
+      }
+    ],
     "set_piece_bonus_text": [],
     "set_bonuses": [
       {
@@ -3094,16 +3142,6 @@
           {
             "type": "Super_Stats",
             "value": 10
-          }
-        ],
-        "text": []
-      },
-      {
-        "pieces": 3,
-        "bonuses": [
-          {
-            "type": "Offense",
-            "value": 200
           }
         ],
         "text": []
@@ -3122,9 +3160,10 @@
     "gear_type": "Offense",
     "name": "Onslaught Gloves of the Sniper",
     "gear_tooltip": null,
-    "gear_bonus": "Direct ranged damage increases your range base damage by 5%. This amount is increased by 1% for 10 sec if you attack from more than 20ft away. This can occur once every 1 sec and stacks up to 5 times.;Defense=7.1",
+    "gear_bonus": "Bonus_Ranged_Damage=5;Increases your Ranged Damage by 1% for 10 sec if you attack from more than 20ft away. This can occur once every 1 sec and stacks up to 5 times.;Defense=7.1",
     "set_tooltip": null,
-    "set_bonus": "2=Super_Stats=10|3=Offense=200",
+    "set_bonus": "2=Super_Stats=10",
+    "set_piece_bonus": "3=Offense=200",
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -3140,14 +3179,23 @@
     "is_disabled": false,
     "bonuses": [
       {
+        "type": "Bonus_Ranged_Damage",
+        "value": 5
+      },
+      {
         "type": "Defense",
         "value": 7.1
       }
     ],
     "bonus_text": [
-      "Direct ranged damage increases your range base damage by 5%. This amount is increased by 1% for 10 sec if you attack from more than 20ft away. This can occur once every 1 sec and stacks up to 5 times."
+      "Increases your Ranged Damage by 1% for 10 sec if you attack from more than 20ft away. This can occur once every 1 sec and stacks up to 5 times."
     ],
-    "set_piece_bonuses": [],
+    "set_piece_bonuses": [
+      {
+        "type": "3",
+        "value": "Offense=200"
+      }
+    ],
     "set_piece_bonus_text": [],
     "set_bonuses": [
       {
@@ -3156,16 +3204,6 @@
           {
             "type": "Super_Stats",
             "value": 10
-          }
-        ],
-        "text": []
-      },
-      {
-        "pieces": 3,
-        "bonuses": [
-          {
-            "type": "Offense",
-            "value": 200
           }
         ],
         "text": []
@@ -3186,7 +3224,8 @@
     "gear_tooltip": null,
     "gear_bonus": "When you gain energy, up to 5 allies within 50ft gain 20% of that energy.;Threat=-20;Defense=7.1",
     "set_tooltip": null,
-    "set_bonus": "2=Super_Stats=10|3=Max_HP=1000",
+    "set_bonus": "2=Super_Stats=10",
+    "set_piece_bonus": "3=Max_HP=1000",
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -3213,7 +3252,12 @@
     "bonus_text": [
       "When you gain energy, up to 5 allies within 50ft gain 20% of that energy."
     ],
-    "set_piece_bonuses": [],
+    "set_piece_bonuses": [
+      {
+        "type": "3",
+        "value": "Max_HP=1000"
+      }
+    ],
     "set_piece_bonus_text": [],
     "set_bonuses": [
       {
@@ -3222,16 +3266,6 @@
           {
             "type": "Super_Stats",
             "value": 10
-          }
-        ],
-        "text": []
-      },
-      {
-        "pieces": 3,
-        "bonuses": [
-          {
-            "type": "Max_HP",
-            "value": 1000
           }
         ],
         "text": []
@@ -3252,7 +3286,8 @@
     "gear_tooltip": null,
     "gear_bonus": "3% of your direct damage pre-damage mitigation is applied to you as a Shield for 10 sec. Stacks up to 10 times.;Threat=30;Defense=7.1",
     "set_tooltip": null,
-    "set_bonus": "2=Super_Stats=10|3=Max_HP=1000",
+    "set_bonus": "2=Super_Stats=10",
+    "set_piece_bonus": "3=Max_HP=1000",
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -3279,7 +3314,12 @@
     "bonus_text": [
       "3% of your direct damage pre-damage mitigation is applied to you as a Shield for 10 sec. Stacks up to 10 times."
     ],
-    "set_piece_bonuses": [],
+    "set_piece_bonuses": [
+      {
+        "type": "3",
+        "value": "Max_HP=1000"
+      }
+    ],
     "set_piece_bonus_text": [],
     "set_bonuses": [
       {
@@ -3288,16 +3328,6 @@
           {
             "type": "Super_Stats",
             "value": 10
-          }
-        ],
-        "text": []
-      },
-      {
-        "pieces": 3,
-        "bonuses": [
-          {
-            "type": "Max_HP",
-            "value": 1000
           }
         ],
         "text": []
@@ -3319,6 +3349,7 @@
     "gear_bonus": "Defense=7.1;CC_Resistance=51",
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -3373,6 +3404,7 @@
     "gear_bonus": "Defense=7.1;Dodge_Chance=76;Avoidance=76",
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -3431,6 +3463,7 @@
     "gear_bonus": "Defense=14;Max_HP=553",
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -3485,6 +3518,7 @@
     "gear_bonus": "Defense=7.1;Cooldown_Reduction=152;Cost_Discount=101",
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -3543,6 +3577,7 @@
     "gear_bonus": "Defense=7.1;Cooldown_Reduction=51;Cost_Discount=202",
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -3601,6 +3636,7 @@
     "gear_bonus": "Defense=7.1;Max_Energy=15;Cooldown_Reduction=51;Cost_Discount=51",
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -3663,6 +3699,7 @@
     "gear_bonus": null,
     "set_tooltip": null,
     "set_bonus": "3=Max_HP=1000;Super_Stats=50;Reduces the cooldown on your Ultimate power by 2 sec when you fully Charge a power. Can be used once every 5 sec.",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Offense"
     ],
@@ -3714,6 +3751,7 @@
     "gear_bonus": null,
     "set_tooltip": null,
     "set_bonus": "3=Max_HP=1000;Super_Stats=50;Reduces the cooldown on your Ultimate power by 2 sec when you fully Charge a power. Can be used once every 5 sec.",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Defense"
     ],
@@ -3765,6 +3803,7 @@
     "gear_bonus": null,
     "set_tooltip": null,
     "set_bonus": "3=Max_HP=1000;Super_Stats=50;Reduces the cooldown on your Ultimate power by 2 sec when you fully Charge a power. Can be used once every 5 sec.",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Utility"
     ],
@@ -3816,6 +3855,7 @@
     "gear_bonus": null,
     "set_tooltip": null,
     "set_bonus": "3=Max_HP=1000;Super_Stats=50;Reduces the cooldown on your Ultimate power by 2 sec when you complete a Combo power. Can be used once every 5 sec.",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Offense"
     ],
@@ -3867,6 +3907,7 @@
     "gear_bonus": null,
     "set_tooltip": null,
     "set_bonus": "3=Max_HP=1000;Super_Stats=50;Reduces the cooldown on your Ultimate power by 2 sec when you complete a Combo power. Can be used once every 5 sec.",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Defense"
     ],
@@ -3918,6 +3959,7 @@
     "gear_bonus": null,
     "set_tooltip": null,
     "set_bonus": "3=Max_HP=1000;Super_Stats=50;Reduces the cooldown on your Ultimate power by 2 sec when you complete a Combo power. Can be used once every 5 sec.",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Utility"
     ],
@@ -3969,6 +4011,7 @@
     "gear_bonus": null,
     "set_tooltip": null,
     "set_bonus": "3=Max_HP=1000;Super_Stats=50;Reduces the cooldown on your Ultimate power by 2 sec when you fully Maintain a power. Can be used once every 5 sec.",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Offense"
     ],
@@ -4020,6 +4063,7 @@
     "gear_bonus": null,
     "set_tooltip": null,
     "set_bonus": "3=Max_HP=1000;Super_Stats=50;Reduces the cooldown on your Ultimate power by 2 sec when you fully Maintain a power. Can be used once every 5 sec.",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Defense"
     ],
@@ -4071,6 +4115,7 @@
     "gear_bonus": null,
     "set_tooltip": null,
     "set_bonus": "3=Max_HP=1000;Super_Stats=50;Reduces the cooldown on your Ultimate power by 2 sec when you fully Maintain a power. Can be used once every 5 sec.",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Utility"
     ],
@@ -4122,6 +4167,7 @@
     "gear_bonus": "Dealing direct damage increases your base damage by 1% for 10 sec. This effect can stack up to 5 times.;Threat=-10;Defense=6.5",
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -4185,9 +4231,10 @@
     "gear_type": "Offense",
     "name": "Supportive Belt of Determination",
     "gear_tooltip": null,
-    "gear_bonus": "Whenever you use a direct healing ability, increases your Healing output and your resistance to all damage by 4% for IO sec. This effect can stack up to 5 times.;Threat=10;Defense=6.5",
+    "gear_bonus": "Whenever you use a direct healing ability, increases your Healing output and your resistance to all damage by 4% for 10 sec. This effect can stack up to 5 times.;Threat=-10;Defense=6.5",
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -4204,7 +4251,7 @@
     "bonuses": [
       {
         "type": "Threat",
-        "value": 10
+        "value": -10
       },
       {
         "type": "Defense",
@@ -4212,7 +4259,7 @@
       }
     ],
     "bonus_text": [
-      "Whenever you use a direct healing ability, increases your Healing output and your resistance to all damage by 4% for IO sec. This effect can stack up to 5 times."
+      "Whenever you use a direct healing ability, increases your Healing output and your resistance to all damage by 4% for 10 sec. This effect can stack up to 5 times."
     ],
     "set_piece_bonuses": [],
     "set_piece_bonus_text": [],
@@ -4254,6 +4301,7 @@
     "gear_bonus": "While blocking, you are healed for 250 Health every 2 sec.;Threat=10;Defense=6.5",
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -4320,6 +4368,7 @@
     "gear_bonus": "Defense=6.5;Offense=25",
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -4385,6 +4434,7 @@
     "gear_bonus": "Defense=6.5;Offense=17;Healing_Bonus=14",
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -4454,6 +4504,7 @@
     "gear_bonus": "Defense=6.5;Offense=17;Critical_Strike=47",
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -4523,6 +4574,7 @@
     "gear_bonus": "Defense=6.5;Dodge_Chance=35;Avoidance=35",
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -4592,6 +4644,7 @@
     "gear_bonus": "Defense=16",
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -4653,6 +4706,7 @@
     "gear_bonus": "Defense=9.7;Max_HP=338",
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -4718,6 +4772,7 @@
     "gear_bonus": "Defense=6.5;Cooldown_Reduction=93;Cost_Discount=46",
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -4787,6 +4842,7 @@
     "gear_bonus": "Defense=6.5;Cooldown_Reduction=46;Cost_Discount=93",
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -4853,9 +4909,10 @@
     "gear_type": "Utility",
     "name": "Bolstering Eyepiece of Determination",
     "gear_tooltip": null,
-    "gear_bonus": "Defense=6.5;Max_HP=338Cooldown_Reduction=46;Cost_Discount=46",
+    "gear_bonus": "Defense=6.5;Max_HP=338;Cooldown_Reduction=46;Cost_Discount=46",
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
+    "set_piece_bonus": null,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -4877,7 +4934,11 @@
       },
       {
         "type": "Max_HP",
-        "value": "338Cooldown_Reduction=46"
+        "value": 338
+      },
+      {
+        "type": "Cooldown_Reduction",
+        "value": 46
       },
       {
         "type": "Cost_Discount",

@@ -643,6 +643,12 @@ h3 {
   flex-direction: column;
 }
 
+.powers-panel {
+  --power-grid-columns: 3;
+  --power-grid-column-gap: 8px;
+  --power-grid-min-column-width: 200px;
+}
+
 .powers-panel h3 {
   font-size: 13px;
 }
@@ -2240,14 +2246,8 @@ h3 {
 
 .power-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 4px 8px;
-}
-
-@media (max-width: 1500px) {
-  .power-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
+  grid-template-columns: repeat(var(--power-grid-columns), minmax(0, 1fr));
+  gap: 4px var(--power-grid-column-gap);
 }
 
 .power-choice {
@@ -2774,7 +2774,8 @@ h3 {
   height: 40px;
   grid-template-columns: 30px minmax(0, 1fr);
   align-items: center;
-  justify-content: center;
+  justify-content: stretch;
+  justify-items: stretch;
   gap: 3px;
   padding: 0;
   border: 0;
@@ -2805,10 +2806,13 @@ h3 {
 }
 
 .gear-mod-button__label {
+  box-sizing: border-box;
   display: -webkit-box;
+  width: 100%;
+  max-width: 100%;
   overflow: hidden;
   min-width: 0;
-  padding-right: 2px;
+  padding: 0 2px 0 0;
   color: #cbd7f0;
   font-size: 10.5px;
   font-weight: 700;
@@ -2821,6 +2825,10 @@ h3 {
 
 .gear-mod-button__label-button {
   width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  justify-self: stretch;
+  padding: 0 2px 0 0;
   border: 1px solid transparent;
   border-radius: 3px;
   background: transparent;
@@ -2855,6 +2863,10 @@ h3 {
   padding: 6px 2px 0;
 }
 
+.gear-totals-list--derived {
+  padding-top: 4px;
+}
+
 .gear-totals-list__row {
   display: grid;
   min-height: 20px;
@@ -2879,6 +2891,22 @@ h3 {
   font-weight: 700;
 }
 
+.gear-derived-totals {
+  display: grid;
+  gap: 2px;
+  margin-top: 7px;
+  padding: 7px 2px 0;
+  border-top: 1px solid rgba(150, 174, 224, 0.16);
+}
+
+.gear-derived-totals > strong {
+  color: #9ebaff;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
 .gear-totals-list__empty {
   padding: 7px 2px 0;
   color: #778095;
@@ -2897,6 +2925,14 @@ h3 {
   grid-template-columns: minmax(0, 1fr);
 }
 
+.gear-selection-dialog .power-selection-choice__label {
+  width: 100%;
+  min-width: 0;
+  margin-inline: 0;
+  padding-right: 4px;
+  padding-left: 0;
+}
+
 .gear-selection-dialog {
   width: min(330px, calc(100vw - 44px));
 }
@@ -2911,22 +2947,14 @@ h3 {
 
 .gear-rank-dialog__body {
   display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 5px;
-  padding: 4px;
-}
-
-.gear-rank-dialog__mod-name {
-  overflow: hidden;
-  color: #eef3ff;
-  font-size: 12px;
-  font-weight: 800;
-  text-align: center;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  padding: 8px 8px 8px;
 }
 
 .gear-rank-dialog__rank-button {
   min-height: 28px;
+  padding: 0 9px;
   border: 1px solid #31446f;
   border-radius: 3px;
   color: #cbd7f0;
@@ -2964,9 +2992,9 @@ h3 {
 }
 
 .gear-rank-dialog__rank-button--active {
-  border-color: #d6a742;
-  color: #fff5cf;
-  background: linear-gradient(180deg, #513f18, #191306);
+  border-width: 2px;
+  border-color: #e9f0ff;
+  color: #ffffff;
 }
 
 .gear-mods-dialog .power-selection-grid {
@@ -2974,7 +3002,11 @@ h3 {
 }
 
 .gear-mods-dialog .power-selection-choice__label {
+  width: 100%;
   min-width: 0;
+  margin-inline: 0;
+  padding-right: 4px;
+  padding-left: 0;
 }
 
 .gear-mods-dialog .power-selection-choice:disabled {

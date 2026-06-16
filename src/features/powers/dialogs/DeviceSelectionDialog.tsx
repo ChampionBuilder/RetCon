@@ -2,7 +2,10 @@ import { useMemo, useState } from "react";
 import type { BuildSlot } from "@/types/builds";
 import type { Power } from "@/types/powers";
 import { arrangeItemsByColumns } from "@/shared/utils/gridLayout";
-import { getPowerIconName } from "@/shared/utils/icons";
+import {
+  getDeviceFrameworkIconName,
+  getPowerIconName,
+} from "@/shared/utils/icons";
 import { getPowerTooltipText } from "@/shared/utils/powerText";
 import { getPowerTooltipAttribute } from "@/shared/utils/powerTooltip";
 import { formatFrameworkName, isStandardDevice } from "@/utils/powerFrameworks";
@@ -86,7 +89,7 @@ export function DeviceSelectionDialog({
               onClick={() => setSelectedFramework(frameworkId)}
               title={formatFrameworkName(frameworkId) || "Unknown"}
             >
-              <SpriteIcon name="Any_Generic" size={24} />
+              <SpriteIcon name={getDeviceFrameworkIconName(frameworkId)} size={24} />
             </button>
           ))}
         </div>

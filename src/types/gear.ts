@@ -20,6 +20,7 @@ export type GearItem = {
   gear_bonus: string | null;
   set_tooltip: string | null;
   set_bonus: string | null;
+  set_piece_bonus: string | null;
   mod_slot_1: string[];
   mod_slot_2: string[];
   mod_slot_3: string[];

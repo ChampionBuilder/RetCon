@@ -91,6 +91,7 @@ type FrameworkStripCell = {
 
 const tierOrder = [-1, 0, 1, 2, 3, 4, null] as const;
 const maxFrameworkStripColumns = 14;
+const maxPowerGridColumns = 3;
 const keptTogetherFrameworkGroupIds = new Set(["martial-arts"]);
 const powerVariantsUnlockTooltip =
   "Power Variant Devices have lower values and go on cooldown for 90 sec if you don't own the parent power. Ultimate Power Variants can't be used without the parent power.";
@@ -428,6 +429,8 @@ export function PowersPanel({
     setReopenedEnergyBuilderSelectionVersion,
   ] = useState(0);
   const [frameworkStripColumns, setFrameworkStripColumns] = useState(1);
+  const [powerGridColumns, setPowerGridColumns] = useState(maxPowerGridColumns);
+  const powersPanelRef = useRef<HTMLElement | null>(null);
   const frameworkStripRef = useRef<HTMLDivElement | null>(null);
   const parsedSearchClauses = useMemo(
     () => parsePowerSearchClauses(search),
@@ -1029,6 +1032,45 @@ export function PowersPanel({
   }, []);
 
   useEffect(() => {
+    const powersPanelElement = powersPanelRef.current;
+
+    if (!powersPanelElement) {
+      return;
+    }
+
+    const powersPanel = powersPanelElement;
+
+    function updatePowerGridColumns() {
+      const width = powersPanel.clientWidth;
+      const styles = window.getComputedStyle(powersPanel);
+      const minColumnWidth =
+        Number.parseFloat(styles.getPropertyValue("--power-grid-min-column-width")) ||
+        170;
+      const columnGap =
+        Number.parseFloat(styles.getPropertyValue("--power-grid-column-gap")) || 8;
+      const nextColumns = Math.min(
+        maxPowerGridColumns,
+        Math.max(
+          1,
+          Math.floor((width + columnGap) / (minColumnWidth + columnGap)),
+        ),
+      );
+
+      setPowerGridColumns((currentColumns) =>
+        currentColumns === nextColumns ? currentColumns : nextColumns,
+      );
+    }
+
+    updatePowerGridColumns();
+
+    const resizeObserver = new ResizeObserver(updatePowerGridColumns);
+
+    resizeObserver.observe(powersPanel);
+
+    return () => resizeObserver.disconnect();
+  }, []);
+
+  useEffect(() => {
     if (hasEnergyBuilder && !hadEnergyBuilderRef.current) {
       setClosedSections((currentClosedSections) =>
         currentClosedSections.includes("-1")
@@ -1347,7 +1389,15 @@ export function PowersPanel({
   }
 
   return (
-    <section className="panel powers-panel">
+    <section
+      className="panel powers-panel"
+      ref={powersPanelRef}
+      style={
+        {
+          "--power-grid-columns": powerGridColumns,
+        } as CSSProperties
+      }
+    >
       <h2>
         <button
           className="panel-title-button"
@@ -1391,7 +1441,10 @@ export function PowersPanel({
             </button>
           ) : null}
         </div>
-        <label className="search-scope-checkbox">
+        <label
+          className="search-scope-checkbox"
+          data-text-tooltip="Search within powers: name, tooltip, tags, damage, range, type, and metadata."
+        >
           <input
             checked={searchInPowers}
             type="checkbox"
@@ -1399,7 +1452,10 @@ export function PowersPanel({
           />
           <span>Powers</span>
         </label>
-        <label className="search-scope-checkbox">
+        <label
+          className="search-scope-checkbox"
+          data-text-tooltip="Search within advantages: name, tooltip, tags, and damage type. Also shows detailed power tooltips."
+        >
           <input
             checked={searchInAdvantages}
             type="checkbox"

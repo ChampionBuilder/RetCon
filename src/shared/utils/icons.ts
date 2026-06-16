@@ -66,6 +66,21 @@ export function getFrameworkIconName(frameworkId: string | null) {
     : "Any_Generic";
 }
 
+export function getDeviceFrameworkIconName(frameworkId: string | null) {
+  const aliases: Record<string, string> = {
+    Bloodmoon: "Icon_Bloodmoon",
+    Drifter: "Icon_Drifter",
+    Healing_Devices: "Icon_Heal",
+    Passive: "Icon_Passive",
+    Questionite_Store: "Icon_QStore",
+    Recognition_Vendor: "Icon_Recognition",
+    Sidekick: "Icon_Sidekick",
+    Travel_Power: "Icon_TravelPower",
+  };
+
+  return frameworkId ? aliases[frameworkId] ?? "Icon_Bag" : "Icon_Bag";
+}
+
 export function getPowerIconName(power: Power | null | undefined) {
   if (!power) {
     return "Any_Generic";

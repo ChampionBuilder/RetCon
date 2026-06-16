@@ -955,9 +955,18 @@ function App() {
     modSlotIndex: number,
     mod: GearMod,
     rank: GearModRank | null,
+    rankDialogAnchor?: DialogAnchor,
   ) {
     placeGearMod(slotId, modSlotIndex, mod, rank);
     closeGearModsDialog();
+
+    if (rankDialogAnchor) {
+      setActiveGearRankSlotId(slotId);
+      setActiveGearRankSlotIndex(modSlotIndex);
+      setGearRankDialogAnchor(rankDialogAnchor);
+      return;
+    }
+
     closeGearRankDialog();
   }
 

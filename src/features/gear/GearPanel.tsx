@@ -127,6 +127,38 @@ function openGearSlot(
   });
 }
 
+function getDerivedGearTotals(totals: Array<[string, number]>) {
+  const totalsByType = new Map(totals);
+  const constitution = totalsByType.get("CON") ?? 0;
+  const endurance = totalsByType.get("END") ?? 0;
+  const maxHpBonus = totalsByType.get("Max_HP") ?? totalsByType.get("Max HP") ?? 0;
+  const maxEnergyBonus =
+    totalsByType.get("Max_Energy") ?? totalsByType.get("Max Energy") ?? 0;
+  const maxHpFromCon = constitution * 15;
+  const maxEnergyFromEnd = endurance;
+  const totalMaxHp = maxHpFromCon + maxHpBonus;
+  const totalMaxEnergy = maxEnergyFromEnd + maxEnergyBonus;
+  const derivedTotals: Array<[string, number]> = [];
+
+  if (constitution > 0) {
+    derivedTotals.push(["Max HP from CON", maxHpFromCon]);
+  }
+
+  if (endurance > 0) {
+    derivedTotals.push(["Max Energy from END", maxEnergyFromEnd]);
+  }
+
+  if (totalMaxHp > 0) {
+    derivedTotals.push(["Total Max HP", totalMaxHp]);
+  }
+
+  if (totalMaxEnergy > 0) {
+    derivedTotals.push(["Total Max Energy", totalMaxEnergy]);
+  }
+
+  return derivedTotals;
+}
+
 export function GearPanel({
   gearSlots,
   selectedSuperStats,
@@ -142,6 +174,7 @@ export function GearPanel({
     slots: gearSlots.filter((slot) => slot.gearSlot === section),
   }));
   const totals = getGearTotals(gearSlots, selectedSuperStats);
+  const derivedTotals = getDerivedGearTotals(totals);
 
   function toggleSection(sectionKey: string) {
     setClosedSections((currentClosedSections) =>
@@ -355,14 +388,30 @@ export function GearPanel({
 
           {!closedSections.includes("totals") ? (
             totals.length > 0 ? (
-              <dl className="gear-totals-list">
-                {totals.map(([type, value]) => (
-                  <div className="gear-totals-list__row" key={type}>
-                    <dt>{formatBonusType(type)}</dt>
-                    <dd>{formatSignedBonusValue(value, type)}</dd>
+              <>
+                <dl className="gear-totals-list">
+                  {totals.map(([type, value]) => (
+                    <div className="gear-totals-list__row" key={type}>
+                      <dt>{formatBonusType(type)}</dt>
+                      <dd>{formatSignedBonusValue(value, type)}</dd>
+                    </div>
+                  ))}
+                </dl>
+
+                {derivedTotals.length > 0 ? (
+                  <div className="gear-derived-totals">
+                    <strong>Derived from gear</strong>
+                    <dl className="gear-totals-list gear-totals-list--derived">
+                      {derivedTotals.map(([type, value]) => (
+                        <div className="gear-totals-list__row" key={type}>
+                          <dt>{type}</dt>
+                          <dd>{formatSignedBonusValue(value, type)}</dd>
+                        </div>
+                      ))}
+                    </dl>
                   </div>
-                ))}
-              </dl>
+                ) : null}
+              </>
             ) : (
               <p className="gear-totals-list__empty">No bonuses selected</p>
             )

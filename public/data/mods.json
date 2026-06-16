@@ -3100,12 +3100,12 @@
   {
     "mod_id": 89,
     "mod_type": "Offense",
-    "name": "Corruscating Might",
+    "name": "Coruscating Might",
     "mod_bonus": "Bonus_Offense",
     "rank_5": 276,
     "rank_7": 414,
     "rank_9": 552,
-    "tooltip": "Dealing damage with a Melee or a Ranged ability has a chance to increase your Offence by +%rank_value% for 10 sec. This effect cannot be stacked. + The base chance to trigger tis effect is 5%, but is modifier by your power's charge and activation time. + The effect of this mod cannot stack.",
+    "tooltip": "Dealing damage with a Melee or a Ranged ability has a chance to increase your Offense by +%rank_value% for 10 sec. This effect cannot be stacked. + The base chance to trigger this effect is 5%, but is modified by your power's charge and activation time. + The effect of this mod cannot stack.",
     "stackable": false,
     "tag": [
       "Offense"
@@ -3253,7 +3253,7 @@
   {
     "mod_id": 94,
     "mod_type": "Offense",
-    "name": "Offence Core",
+    "name": "Offense Core",
     "mod_bonus": "Offense",
     "rank_5": 62,
     "rank_7": 69,
@@ -3344,7 +3344,7 @@
     "mod_id": 97,
     "mod_type": "Offense",
     "name": "Icy Grasp",
-    "mod_bonus": "Threat",
+    "mod_bonus": "Threat_Cold",
     "rank_5": 18,
     "rank_7": 29,
     "rank_9": 42,
@@ -3361,7 +3361,7 @@
     ],
     "bonuses": [
       {
-        "type": "Threat",
+        "type": "Threat_Cold",
         "values_by_rank": {
           "5": 18,
           "7": 29,
@@ -3374,7 +3374,7 @@
     "mod_id": 98,
     "mod_type": "Offense",
     "name": "Hot Stuff",
-    "mod_bonus": "Threat",
+    "mod_bonus": "Threat_Fire",
     "rank_5": 18,
     "rank_7": 29,
     "rank_9": 42,
@@ -3391,7 +3391,7 @@
     ],
     "bonuses": [
       {
-        "type": "Threat",
+        "type": "Threat_Fire",
         "values_by_rank": {
           "5": 18,
           "7": 29,
@@ -3404,7 +3404,7 @@
     "mod_id": 99,
     "mod_type": "Offense",
     "name": "Infection",
-    "mod_bonus": "Threat",
+    "mod_bonus": "Threat_Toxic",
     "rank_5": 18,
     "rank_7": 29,
     "rank_9": 42,
@@ -3421,7 +3421,7 @@
     ],
     "bonuses": [
       {
-        "type": "Threat",
+        "type": "Threat_Toxic",
         "values_by_rank": {
           "5": 18,
           "7": 29,
@@ -3434,7 +3434,7 @@
     "mod_id": 100,
     "mod_type": "Offense",
     "name": "Brute Force",
-    "mod_bonus": "Threat",
+    "mod_bonus": "Threat_Crushing",
     "rank_5": 18,
     "rank_7": 29,
     "rank_9": 42,
@@ -3451,7 +3451,7 @@
     ],
     "bonuses": [
       {
-        "type": "Threat",
+        "type": "Threat_Crushing",
         "values_by_rank": {
           "5": 18,
           "7": 29,
@@ -3464,7 +3464,7 @@
     "mod_id": 101,
     "mod_type": "Offense",
     "name": "Hollow Point",
-    "mod_bonus": "Threat",
+    "mod_bonus": "Threat_Piercing",
     "rank_5": 18,
     "rank_7": 29,
     "rank_9": 42,
@@ -3481,7 +3481,7 @@
     ],
     "bonuses": [
       {
-        "type": "Threat",
+        "type": "Threat_Piercing",
         "values_by_rank": {
           "5": 18,
           "7": 29,
@@ -3494,7 +3494,7 @@
     "mod_id": 102,
     "mod_type": "Offense",
     "name": "Sharp Claws",
-    "mod_bonus": "Threat",
+    "mod_bonus": "Threat_Slashing",
     "rank_5": 18,
     "rank_7": 29,
     "rank_9": 42,
@@ -3511,7 +3511,7 @@
     ],
     "bonuses": [
       {
-        "type": "Threat",
+        "type": "Threat_Slashing",
         "values_by_rank": {
           "5": 18,
           "7": 29,
@@ -3524,7 +3524,7 @@
     "mod_id": 103,
     "mod_type": "Offense",
     "name": "Maniacal Laughter",
-    "mod_bonus": "Threat",
+    "mod_bonus": "Threat_Dimensional",
     "rank_5": 18,
     "rank_7": 29,
     "rank_9": 42,
@@ -3541,7 +3541,7 @@
     ],
     "bonuses": [
       {
-        "type": "Threat",
+        "type": "Threat_Dimensional",
         "values_by_rank": {
           "5": 18,
           "7": 29,
@@ -3554,7 +3554,7 @@
     "mod_id": 104,
     "mod_type": "Offense",
     "name": "Egomaniacal",
-    "mod_bonus": "Threat",
+    "mod_bonus": "Threat_Ego",
     "rank_5": 18,
     "rank_7": 29,
     "rank_9": 42,
@@ -3571,7 +3571,7 @@
     ],
     "bonuses": [
       {
-        "type": "Threat",
+        "type": "Threat_Ego",
         "values_by_rank": {
           "5": 18,
           "7": 29,
@@ -3583,8 +3583,8 @@
   {
     "mod_id": 105,
     "mod_type": "Offense",
-    "name": "Magnigicient Display",
-    "mod_bonus": "Threat",
+    "name": "Magnigicent Display",
+    "mod_bonus": "Threat_Magic",
     "rank_5": 18,
     "rank_7": 29,
     "rank_9": 42,
@@ -3601,7 +3601,7 @@
     ],
     "bonuses": [
       {
-        "type": "Threat",
+        "type": "Threat_Magic",
         "values_by_rank": {
           "5": 18,
           "7": 29,
@@ -3614,7 +3614,7 @@
     "mod_id": 106,
     "mod_type": "Offense",
     "name": "Overclocked",
-    "mod_bonus": "Threat",
+    "mod_bonus": "Threat_Particle",
     "rank_5": 18,
     "rank_7": 29,
     "rank_9": 42,
@@ -3631,7 +3631,7 @@
     ],
     "bonuses": [
       {
-        "type": "Threat",
+        "type": "Threat_Particle",
         "values_by_rank": {
           "5": 18,
           "7": 29,
@@ -3644,7 +3644,7 @@
     "mod_id": 107,
     "mod_type": "Offense",
     "name": "Superconductor",
-    "mod_bonus": "Threat",
+    "mod_bonus": "Threat_Electrical",
     "rank_5": 18,
     "rank_7": 29,
     "rank_9": 42,
@@ -3661,7 +3661,7 @@
     ],
     "bonuses": [
       {
-        "type": "Threat",
+        "type": "Threat_Electrical",
         "values_by_rank": {
           "5": 18,
           "7": 29,
@@ -3674,7 +3674,7 @@
     "mod_id": 108,
     "mod_type": "Offense",
     "name": "Amplifier",
-    "mod_bonus": "Threat",
+    "mod_bonus": "Threat_Sonic",
     "rank_5": 18,
     "rank_7": 29,
     "rank_9": 42,
@@ -3691,7 +3691,7 @@
     ],
     "bonuses": [
       {
-        "type": "Threat",
+        "type": "Threat_Sonic",
         "values_by_rank": {
           "5": 18,
           "7": 29,
@@ -3768,7 +3768,7 @@
     "rank_5": 126,
     "rank_7": 158,
     "rank_9": 190,
-    "tooltip": "While in Combat, heals your for +%rank_value% every 3 secs. + This can be stacked.",
+    "tooltip": "While in Combat, heals you for +%rank_value% every 3 secs. + This can be stacked.",
     "stackable": true,
     "tag": [
       "Defense"
@@ -3853,6 +3853,38 @@
   {
     "mod_id": 114,
     "mod_type": "Defense",
+    "name": "Devious Shield",
+    "mod_bonus": "Flat_Damage_Reduction",
+    "rank_5": 22,
+    "rank_7": 30,
+    "rank_9": 50,
+    "tooltip": "Reduces incoming damage by a flat %rank_value% damage. A small amount of damage will always go through this effect.",
+    "stackable": true,
+    "tag": [
+      "Defense"
+    ],
+    "source": [
+      "Therakiel's Temple"
+    ],
+    "icon_override": "Mod_DeviousShield",
+    "is_disabled": false,
+    "mod_types": [
+      "Defense"
+    ],
+    "bonuses": [
+      {
+        "type": "Flat_Damage_Reduction",
+        "values_by_rank": {
+          "5": 22,
+          "7": 30,
+          "9": 50
+        }
+      }
+    ]
+  },
+  {
+    "mod_id": 115,
+    "mod_type": "Defense",
     "name": "Brilliance",
     "mod_bonus": "Max_HP;Resistance",
     "rank_5": null,
@@ -3887,7 +3919,7 @@
     ]
   },
   {
-    "mod_id": 115,
+    "mod_id": 116,
     "mod_type": "Utility",
     "name": "Qliphotic Energies",
     "mod_bonus": "Max_Energy;Energy_Regeneration",
@@ -3921,7 +3953,7 @@
     ]
   },
   {
-    "mod_id": 116,
+    "mod_id": 117,
     "mod_type": "Utility",
     "name": "Control Core",
     "mod_bonus": "CC_Strength",
@@ -3951,7 +3983,7 @@
     ]
   },
   {
-    "mod_id": 117,
+    "mod_id": 118,
     "mod_type": "Utility",
     "name": "Cooldown Core",
     "mod_bonus": "Cooldown_Reduction",
@@ -3981,7 +4013,7 @@
     ]
   },
   {
-    "mod_id": 118,
+    "mod_id": 119,
     "mod_type": "Utility",
     "name": "Energy Efficiency Core",
     "mod_bonus": "Cost_Discount",
@@ -4011,7 +4043,7 @@
     ]
   },
   {
-    "mod_id": 119,
+    "mod_id": 120,
     "mod_type": "Utility",
     "name": "Energy Core",
     "mod_bonus": "Max_Energy",
@@ -4041,7 +4073,7 @@
     ]
   },
   {
-    "mod_id": 120,
+    "mod_id": 121,
     "mod_type": "Utility",
     "name": "Swift Wing",
     "mod_bonus": "Flight_Speed",
@@ -4071,7 +4103,7 @@
     ]
   },
   {
-    "mod_id": 121,
+    "mod_id": 122,
     "mod_type": "Utility",
     "name": "Vital Spirit",
     "mod_bonus": "Cooldown_Reduction;Cost_Discount",
@@ -4111,10 +4143,10 @@
     ]
   },
   {
-    "mod_id": 122,
+    "mod_id": 123,
     "mod_type": "Utility",
     "name": "Teleio's Gadget",
-    "mod_bonus": "Damage_Bonus",
+    "mod_bonus": "Damage_Bonus_Gadgeteering",
     "rank_5": 6,
     "rank_7": 8,
     "rank_9": 10,
@@ -4131,7 +4163,7 @@
     ],
     "bonuses": [
       {
-        "type": "Damage_Bonus",
+        "type": "Damage_Bonus_Gadgeteering",
         "values_by_rank": {
           "5": 6,
           "7": 8,
@@ -4141,10 +4173,10 @@
     ]
   },
   {
-    "mod_id": 123,
+    "mod_id": 124,
     "mod_type": "Utility",
     "name": "Kigatilik's Wrath",
-    "mod_bonus": "Damage_Bonus",
+    "mod_bonus": "Damage_Bonus_Ice",
     "rank_5": 6,
     "rank_7": 8,
     "rank_9": 10,
@@ -4161,7 +4193,7 @@
     ],
     "bonuses": [
       {
-        "type": "Damage_Bonus",
+        "type": "Damage_Bonus_Ice",
         "values_by_rank": {
           "5": 6,
           "7": 8,
@@ -4171,10 +4203,10 @@
     ]
   },
   {
-    "mod_id": 124,
+    "mod_id": 125,
     "mod_type": "Utility",
     "name": "Qwyjibo's Fury",
-    "mod_bonus": "Damage_Bonus",
+    "mod_bonus": "Damage_Bonus_Fire",
     "rank_5": 6,
     "rank_7": 8,
     "rank_9": 10,
@@ -4191,7 +4223,7 @@
     ],
     "bonuses": [
       {
-        "type": "Damage_Bonus",
+        "type": "Damage_Bonus_Fire",
         "values_by_rank": {
           "5": 6,
           "7": 8,
@@ -4201,10 +4233,10 @@
     ]
   },
   {
-    "mod_id": 125,
+    "mod_id": 126,
     "mod_type": "Utility",
     "name": "Teleiosaurus Rage",
-    "mod_bonus": "Damage_Bonus",
+    "mod_bonus": "Damage_Bonus_Bestial",
     "rank_5": 6,
     "rank_7": 8,
     "rank_9": 10,
@@ -4221,7 +4253,7 @@
     ],
     "bonuses": [
       {
-        "type": "Damage_Bonus",
+        "type": "Damage_Bonus_Bestial",
         "values_by_rank": {
           "5": 6,
           "7": 8,
@@ -4231,10 +4263,10 @@
     ]
   },
   {
-    "mod_id": 126,
+    "mod_id": 127,
     "mod_type": "Utility",
     "name": "Venomous",
-    "mod_bonus": "Damage_Bonus",
+    "mod_bonus": "Damage_Bonus_Infernal",
     "rank_5": 6,
     "rank_7": 8,
     "rank_9": 10,
@@ -4251,7 +4283,7 @@
     ],
     "bonuses": [
       {
-        "type": "Damage_Bonus",
+        "type": "Damage_Bonus_Infernal",
         "values_by_rank": {
           "5": 6,
           "7": 8,
@@ -4261,10 +4293,10 @@
     ]
   },
   {
-    "mod_id": 127,
+    "mod_id": 128,
     "mod_type": "Utility",
-    "name": "Shadow Destroyer's Comtempt",
-    "mod_bonus": "Damage_Bonus",
+    "name": "Shadow Destroyer's Contempt",
+    "mod_bonus": "Damage_Bonus_Darkness",
     "rank_5": 6,
     "rank_7": 8,
     "rank_9": 10,
@@ -4281,7 +4313,7 @@
     ],
     "bonuses": [
       {
-        "type": "Damage_Bonus",
+        "type": "Damage_Bonus_Darkness",
         "values_by_rank": {
           "5": 6,
           "7": 8,
@@ -4291,10 +4323,10 @@
     ]
   },
   {
-    "mod_id": 128,
+    "mod_id": 129,
     "mod_type": "Utility",
     "name": "Ripper's Rage",
-    "mod_bonus": "Damage_Bonus",
+    "mod_bonus": "Damage_Bonus_Might",
     "rank_5": 6,
     "rank_7": 8,
     "rank_9": 10,
@@ -4311,7 +4343,7 @@
     ],
     "bonuses": [
       {
-        "type": "Damage_Bonus",
+        "type": "Damage_Bonus_Might",
         "values_by_rank": {
           "5": 6,
           "7": 8,
@@ -4321,10 +4353,10 @@
     ]
   },
   {
-    "mod_id": 129,
+    "mod_id": 130,
     "mod_type": "Utility",
     "name": "Spell of Takofanes",
-    "mod_bonus": "Damage_Bonus",
+    "mod_bonus": "Damage_Bonus_Sorcery",
     "rank_5": 6,
     "rank_7": 8,
     "rank_9": 10,
@@ -4341,7 +4373,7 @@
     ],
     "bonuses": [
       {
-        "type": "Damage_Bonus",
+        "type": "Damage_Bonus_Sorcery",
         "values_by_rank": {
           "5": 6,
           "7": 8,
@@ -4351,10 +4383,10 @@
     ]
   },
   {
-    "mod_id": 130,
+    "mod_id": 131,
     "mod_type": "Utility",
     "name": "Clarence's Machinery",
-    "mod_bonus": "Damage_Bonus",
+    "mod_bonus": "Damage_Bonus_Power_Armor",
     "rank_5": 6,
     "rank_7": 8,
     "rank_9": 10,
@@ -4371,7 +4403,7 @@
     ],
     "bonuses": [
       {
-        "type": "Damage_Bonus",
+        "type": "Damage_Bonus_Power_Armor",
         "values_by_rank": {
           "5": 6,
           "7": 8,
@@ -4381,10 +4413,10 @@
     ]
   },
   {
-    "mod_id": 131,
+    "mod_id": 132,
     "mod_type": "Utility",
     "name": "Cybermind's Impression",
-    "mod_bonus": "Damage_Bonus",
+    "mod_bonus": "Damage_Bonus_Laser_Sword",
     "rank_5": 6,
     "rank_7": 8,
     "rank_9": 10,
@@ -4401,7 +4433,7 @@
     ],
     "bonuses": [
       {
-        "type": "Damage_Bonus",
+        "type": "Damage_Bonus_Laser_Sword",
         "values_by_rank": {
           "5": 6,
           "7": 8,
@@ -4411,10 +4443,10 @@
     ]
   },
   {
-    "mod_id": 132,
+    "mod_id": 133,
     "mod_type": "Utility",
     "name": "Medusa's Presence",
-    "mod_bonus": "Damage_Bonus",
+    "mod_bonus": "Damage_Bonus_Telekinesis",
     "rank_5": 6,
     "rank_7": 8,
     "rank_9": 10,
@@ -4431,7 +4463,7 @@
     ],
     "bonuses": [
       {
-        "type": "Damage_Bonus",
+        "type": "Damage_Bonus_Telekinesis",
         "values_by_rank": {
           "5": 6,
           "7": 8,
@@ -4441,10 +4473,10 @@
     ]
   },
   {
-    "mod_id": 133,
+    "mod_id": 134,
     "mod_type": "Utility",
     "name": "Left Eye of the Ruby Dragon",
-    "mod_bonus": "Damage_Bonus",
+    "mod_bonus": "Damage_Bonus_Unarmed",
     "rank_5": 6,
     "rank_7": 8,
     "rank_9": 10,
@@ -4461,7 +4493,7 @@
     ],
     "bonuses": [
       {
-        "type": "Damage_Bonus",
+        "type": "Damage_Bonus_Unarmed",
         "values_by_rank": {
           "5": 6,
           "7": 8,
@@ -4471,10 +4503,10 @@
     ]
   },
   {
-    "mod_id": 134,
+    "mod_id": 135,
     "mod_type": "Utility",
     "name": "Dragon's Fangs",
-    "mod_bonus": "Damage_Bonus",
+    "mod_bonus": "Damage_Bonus_Dual_Blades",
     "rank_5": 6,
     "rank_7": 8,
     "rank_9": 10,
@@ -4491,7 +4523,7 @@
     ],
     "bonuses": [
       {
-        "type": "Damage_Bonus",
+        "type": "Damage_Bonus_Dual_Blades",
         "values_by_rank": {
           "5": 6,
           "7": 8,
@@ -4501,10 +4533,10 @@
     ]
   },
   {
-    "mod_id": 135,
+    "mod_id": 136,
     "mod_type": "Utility",
     "name": "Nighthawk's Talons",
-    "mod_bonus": "Damage_Bonus",
+    "mod_bonus": "Damage_Bonus_Fighting_Claws",
     "rank_5": 6,
     "rank_7": 8,
     "rank_9": 10,
@@ -4521,7 +4553,7 @@
     ],
     "bonuses": [
       {
-        "type": "Damage_Bonus",
+        "type": "Damage_Bonus_Fighting_Claws",
         "values_by_rank": {
           "5": 6,
           "7": 8,
@@ -4531,10 +4563,10 @@
     ]
   },
   {
-    "mod_id": 136,
+    "mod_id": 137,
     "mod_type": "Utility",
     "name": "Jack Fool's Blade",
-    "mod_bonus": "Damage_Bonus",
+    "mod_bonus": "Damage_Bonus_Single_Blade",
     "rank_5": 6,
     "rank_7": 8,
     "rank_9": 10,
@@ -4551,7 +4583,7 @@
     ],
     "bonuses": [
       {
-        "type": "Damage_Bonus",
+        "type": "Damage_Bonus_Single_Blade",
         "values_by_rank": {
           "5": 6,
           "7": 8,
@@ -4561,10 +4593,10 @@
     ]
   },
   {
-    "mod_id": 137,
+    "mod_id": 138,
     "mod_type": "Utility",
     "name": "Storm Chaser",
-    "mod_bonus": "Damage_Bonus",
+    "mod_bonus": "Damage_Bonus_Wind",
     "rank_5": 6,
     "rank_7": 8,
     "rank_9": 10,
@@ -4581,7 +4613,7 @@
     ],
     "bonuses": [
       {
-        "type": "Damage_Bonus",
+        "type": "Damage_Bonus_Wind",
         "values_by_rank": {
           "5": 6,
           "7": 8,
@@ -4591,10 +4623,10 @@
     ]
   },
   {
-    "mod_id": 138,
+    "mod_id": 139,
     "mod_type": "Utility",
     "name": "Earth Power",
-    "mod_bonus": "Damage_Bonus",
+    "mod_bonus": "Damage_Bonus_Earth",
     "rank_5": 6,
     "rank_7": 8,
     "rank_9": 10,
@@ -4611,7 +4643,7 @@
     ],
     "bonuses": [
       {
-        "type": "Damage_Bonus",
+        "type": "Damage_Bonus_Earth",
         "values_by_rank": {
           "5": 6,
           "7": 8,
@@ -4621,10 +4653,10 @@
     ]
   },
   {
-    "mod_id": 139,
+    "mod_id": 140,
     "mod_type": "Utility",
     "name": "ASCII's Precision",
-    "mod_bonus": "Damage_Bonus",
+    "mod_bonus": "Damage_Bonus_Munitions",
     "rank_5": 6,
     "rank_7": 8,
     "rank_9": 10,
@@ -4641,7 +4673,7 @@
     ],
     "bonuses": [
       {
-        "type": "Damage_Bonus",
+        "type": "Damage_Bonus_Munitions",
         "values_by_rank": {
           "5": 6,
           "7": 8,
@@ -4651,10 +4683,10 @@
     ]
   },
   {
-    "mod_id": 140,
+    "mod_id": 141,
     "mod_type": "Utility",
     "name": "Pinpoint Accuracy",
-    "mod_bonus": "Damage_Bonus",
+    "mod_bonus": "Damage_Bonus_Archery",
     "rank_5": 6,
     "rank_7": 8,
     "rank_9": 10,
@@ -4671,7 +4703,7 @@
     ],
     "bonuses": [
       {
-        "type": "Damage_Bonus",
+        "type": "Damage_Bonus_Archery",
         "values_by_rank": {
           "5": 6,
           "7": 8,
@@ -4681,10 +4713,10 @@
     ]
   },
   {
-    "mod_id": 141,
+    "mod_id": 142,
     "mod_type": "Utility",
     "name": "Menton's Will",
-    "mod_bonus": "Damage_Bonus",
+    "mod_bonus": "Damage_Bonus_Telepathy",
     "rank_5": 6,
     "rank_7": 8,
     "rank_9": 10,
@@ -4701,7 +4733,7 @@
     ],
     "bonuses": [
       {
-        "type": "Damage_Bonus",
+        "type": "Damage_Bonus_Telepathy",
         "values_by_rank": {
           "5": 6,
           "7": 8,
@@ -4711,10 +4743,10 @@
     ]
   },
   {
-    "mod_id": 142,
+    "mod_id": 143,
     "mod_type": "Utility",
     "name": "Right Eye of the Ruby Dragon",
-    "mod_bonus": "Damage_Bonus",
+    "mod_bonus": "Damage_Bonus_Electricity",
     "rank_5": 6,
     "rank_7": 8,
     "rank_9": 10,
@@ -4731,7 +4763,7 @@
     ],
     "bonuses": [
       {
-        "type": "Damage_Bonus",
+        "type": "Damage_Bonus_Electricity",
         "values_by_rank": {
           "5": 6,
           "7": 8,
@@ -4741,10 +4773,10 @@
     ]
   },
   {
-    "mod_id": 143,
+    "mod_id": 144,
     "mod_type": "Utility",
     "name": "Gravitar's Influence",
-    "mod_bonus": "Damage_Bonus",
+    "mod_bonus": "Damage_Bonus_Force",
     "rank_5": 6,
     "rank_7": 8,
     "rank_9": 10,
@@ -4761,7 +4793,7 @@
     ],
     "bonuses": [
       {
-        "type": "Damage_Bonus",
+        "type": "Damage_Bonus_Force",
         "values_by_rank": {
           "5": 6,
           "7": 8,
@@ -4771,10 +4803,10 @@
     ]
   },
   {
-    "mod_id": 144,
+    "mod_id": 145,
     "mod_type": "Utility",
     "name": "Valerian Scarlet's Radiance",
-    "mod_bonus": "Damage_Bonus",
+    "mod_bonus": "Damage_Bonus_Celestial",
     "rank_5": 6,
     "rank_7": 8,
     "rank_9": 10,
@@ -4791,7 +4823,7 @@
     ],
     "bonuses": [
       {
-        "type": "Damage_Bonus",
+        "type": "Damage_Bonus_Celestial",
         "values_by_rank": {
           "5": 6,
           "7": 8,
@@ -4801,10 +4833,10 @@
     ]
   },
   {
-    "mod_id": 145,
+    "mod_id": 146,
     "mod_type": "Utility",
     "name": "Ironclad's Will",
-    "mod_bonus": "Damage_Bonus",
+    "mod_bonus": "Damage_Bonus_Heavy_Weapons",
     "rank_5": 6,
     "rank_7": 8,
     "rank_9": 10,
@@ -4821,7 +4853,7 @@
     ],
     "bonuses": [
       {
-        "type": "Damage_Bonus",
+        "type": "Damage_Bonus_Heavy_Weapons",
         "values_by_rank": {
           "5": 6,
           "7": 8,

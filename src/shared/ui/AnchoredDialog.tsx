@@ -10,12 +10,15 @@ export type DialogAnchor = {
   y: number;
 };
 
+export type DialogPlacement = "default" | "below-centered" | "target-centered";
+
 type AnchoredDialogProps = {
   anchor: DialogAnchor;
   ariaLabel: string;
   children: ReactNode;
   className: string;
   onClose: () => void;
+  placement?: DialogPlacement;
 };
 
 export function AnchoredDialog({
@@ -24,6 +27,7 @@ export function AnchoredDialog({
   children,
   className,
   onClose,
+  placement = "default",
 }: AnchoredDialogProps) {
   const dialogRef = useRef<HTMLElement | null>(null);
   const dialogPositionRef = useRef({
@@ -56,18 +60,39 @@ export function AnchoredDialog({
       const maxLeft = Math.max(margin, window.innerWidth - rect.width - margin);
       const maxTop = Math.max(margin, window.innerHeight - rect.height - margin);
 
-      let left = anchor.x + gap;
-      let top = anchor.y - rect.height / 2;
+      const anchorTarget = dialog.querySelector<HTMLElement>(
+        "[data-dialog-anchor-target='true']",
+      );
+      const anchorTargetRect = anchorTarget?.getBoundingClientRect();
+      const anchorTargetCenter = anchorTargetRect
+        ? {
+            x: anchorTargetRect.left - rect.left + anchorTargetRect.width / 2,
+            y: anchorTargetRect.top - rect.top + anchorTargetRect.height / 2,
+          }
+        : null;
 
-      if (left > maxLeft) {
+      let left =
+        placement === "target-centered" && anchorTargetCenter
+          ? anchor.x - anchorTargetCenter.x
+          : placement === "below-centered"
+            ? anchor.x - rect.width / 2
+            : anchor.x + gap;
+      let top =
+        placement === "target-centered" && anchorTargetCenter
+          ? anchor.y - anchorTargetCenter.y - 8
+          : placement === "below-centered"
+            ? anchor.y - 14
+            : anchor.y - rect.height / 2;
+
+      if (placement === "default" && left > maxLeft) {
         left = anchor.x - rect.width - gap;
       }
 
-      if (top < margin) {
+      if (placement === "default" && top < margin) {
         top = anchor.y + gap;
       }
 
-      if (top > maxTop) {
+      if (placement === "default" && top > maxTop) {
         top = anchor.y - rect.height - gap;
       }
 
@@ -112,7 +137,7 @@ export function AnchoredDialog({
       resizeObserver?.disconnect();
       window.removeEventListener("resize", updatePositionFromAnchor);
     };
-  }, [anchor.x, anchor.y]);
+  }, [anchor.x, anchor.y, placement]);
 
   useLayoutEffect(() => {
     function handleKeyDown(event: KeyboardEvent) {
