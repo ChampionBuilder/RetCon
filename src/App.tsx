@@ -344,6 +344,7 @@ function App() {
       specializations: false,
     });
   const { gears, mods } = useGearData(showGearPlanner, true);
+  const gearDataReady = !showGearPlanner || (gears.length > 0 && mods.length > 0);
   const damageModsByFramework = useMemo(
     () => buildDamageModsByFramework(mods, powers),
     [mods, powers],
@@ -354,6 +355,7 @@ function App() {
     gearSlots,
     placeGear,
     placeGearMod,
+    replaceGearSlots,
     resetAllGearMods,
     resetAllGearSlots,
   } = useGearSlots();
@@ -535,6 +537,12 @@ function App() {
   const powersById = useMemo(() => {
     return new Map(powers.map((power) => [power.power_id, power]));
   }, [powers]);
+  const gearsById = useMemo(() => {
+    return new Map(gears.map((gear) => [gear.gear_id, gear]));
+  }, [gears]);
+  const modsById = useMemo(() => {
+    return new Map(mods.map((mod) => [mod.mod_id, mod]));
+  }, [mods]);
   const serializedBuild = useMemo(
     () =>
       serializeBuild({
@@ -553,6 +561,7 @@ function App() {
         selectedMasterySlot,
         camsLevel,
         camsIconName,
+        gearSlots,
       }),
     [
       buildName,
@@ -570,6 +579,7 @@ function App() {
       travelPowerSlots,
       powerVariantSlots,
       deviceSlots,
+      gearSlots,
     ],
   );
   const shareUrl = useMemo(
@@ -1338,7 +1348,12 @@ function App() {
       return false;
     }
 
-    const hydratedBuild = hydrateSerializedBuild(payload, powersById);
+    const hydratedBuild = hydrateSerializedBuild(
+      payload,
+      powersById,
+      gearsById,
+      modsById,
+    );
 
     setBuildName(hydratedBuild.buildName);
     hydrateArchetypeRole(
@@ -1365,6 +1380,7 @@ function App() {
     });
     setCamsLevel(hydratedBuild.camsLevel);
     setCamsIconName(hydratedBuild.camsIconName);
+    replaceGearSlots(hydratedBuild.gearSlots);
     setSelectedFrameworks(null);
     clearPowerPanelTargets();
     closePowerDialogs();
@@ -1381,7 +1397,10 @@ function App() {
     hydrateAuxiliaryPowerSlots,
     hydrateSpecializations,
     hydrateStatsTalents,
+    gearsById,
+    modsById,
     powersById,
+    replaceGearSlots,
     replaceBuildSlots,
     setSelectedFrameworks,
     syncEnergyBuilderPanelForBuildSlots,
@@ -1449,7 +1468,10 @@ function App() {
       specializationTreesData,
       statsTalentsData,
     });
-    const importedBuildData = serializeBuild(importResult.build);
+    const importedBuildData = serializeBuild({
+      ...importResult.build,
+      gearSlots: [],
+    });
 
     if (!applyHydratedBuild(importedBuildData)) {
       throw new Error("Unsupported or invalid build data.");
@@ -1622,7 +1644,7 @@ function App() {
 
   useShareUrlSync({
     applyHydratedBuild,
-    dataReady,
+    dataReady: dataReady && gearDataReady,
     shareUrl,
   });
 

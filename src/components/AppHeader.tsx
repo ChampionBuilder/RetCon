@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { maxBuildNameLength, trimBuildNameForUrl } from "@/constants/buildName";
 import { publicAssetUrl } from "@/shared/utils/publicAssetUrl";
 
 type AppHeaderProps = {
@@ -143,8 +144,11 @@ export function AppHeader({
             <span>Build name</span>
             <input
               value={buildName}
+              maxLength={maxBuildNameLength}
               placeholder="Type your name here..."
-              onChange={(event) => onBuildNameChange(event.target.value)}
+              onChange={(event) =>
+                onBuildNameChange(trimBuildNameForUrl(event.target.value))
+              }
             />
           </label>
 

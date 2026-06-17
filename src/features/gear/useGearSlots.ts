@@ -6,7 +6,7 @@ import type {
   GearModRank,
 } from "@/types/gear";
 
-const initialGearSlots: GearBuildSlot[] = [
+export const initialGearSlots: GearBuildSlot[] = [
   {
     id: "primary-offense",
     gearSlot: "Primary",
@@ -64,6 +64,10 @@ export function useGearSlots() {
 
   function resetAllGearSlots() {
     setGearSlots(initialGearSlots);
+  }
+
+  function replaceGearSlots(slots: GearBuildSlot[]) {
+    setGearSlots(slots);
   }
 
   function resetAllGearMods() {
@@ -157,6 +161,7 @@ export function useGearSlots() {
     gearSlots,
     placeGear,
     placeGearMod,
+    replaceGearSlots,
     resetAllGearMods,
     resetAllGearSlots,
   };

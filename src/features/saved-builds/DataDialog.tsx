@@ -14,6 +14,19 @@ type DataDialogProps = {
   onSaveCurrentBuild: () => void;
 };
 
+function formatSavedBuildDate(value: string) {
+  const date = new Date(value);
+
+  if (Number.isNaN(date.getTime())) {
+    return "Unknown date";
+  }
+
+  return new Intl.DateTimeFormat(undefined, {
+    dateStyle: "short",
+    timeStyle: "short",
+  }).format(date);
+}
+
 export function DataDialog({
   currentBuildName,
   savedBuilds,
@@ -92,6 +105,9 @@ export function DataDialog({
               <article className="data-dialog__item" key={savedBuild.id}>
                 <div className="data-dialog__summary">
                   <strong>{savedBuild.name || "Unnamed build"}</strong>
+                  <span className="data-dialog__saved-date">
+                    {formatSavedBuildDate(savedBuild.updatedAt)}
+                  </span>
                 </div>
                 <div className="data-dialog__actions">
                   <button

@@ -799,11 +799,11 @@ h3 {
 }
 
 .data-dialog {
-  left: 35%;
+  left: 16px;
   top: 50%;
   width: min(680px, calc(100vw - 44px));
   height: min(560px, calc(100vh - 44px));
-  transform: translate(-50%, -50%);
+  transform: translateY(-50%);
 }
 
 .about-dialog {
@@ -1154,6 +1154,8 @@ h3 {
 .data-dialog__summary {
   display: flex;
   min-width: 0;
+  align-items: baseline;
+  gap: 9px;
 }
 
 .data-dialog__summary strong {
@@ -1162,6 +1164,13 @@ h3 {
   font-size: 14px;
   font-weight: 500;
   text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.data-dialog__saved-date {
+  flex: 0 0 auto;
+  color: #8f9cb7;
+  font-size: 12px;
   white-space: nowrap;
 }
 
@@ -4230,6 +4239,7 @@ h3 {
 @media (max-width: 760px) {
   .data-dialog {
     left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .archetype-selection-layout {
