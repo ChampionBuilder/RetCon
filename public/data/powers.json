@@ -3773,12 +3773,13 @@
     "tooltip": "Creates an Ice Cage on the target for up to 10 sec, Rooting them in place while the Structure is active. + Targets affected by your Ice Cage also suffer Cold Damage every 1 sec. + Once the Ice Cage expires, deals Cold Damage to up to 5 targets within 10ft.",
     "apply_tag": [
       "Root",
-      "DoT",
       "Ice Cage"
     ],
     "refresh_tag": [],
     "synergy_tag": [],
-    "filter_tag": [],
+    "filter_tag": [
+      "DoT"
+    ],
     "damage_type": [
       "Cold"
     ],
@@ -12290,7 +12291,7 @@
       212,
       309,
       400,
-      628,
+      709,
       4,
       3,
       5
@@ -14667,7 +14668,9 @@
     "synergy_tag": [
       "Sleep"
     ],
-    "filter_tag": [],
+    "filter_tag": [
+      "DoT"
+    ],
     "damage_type": [
       "Ego"
     ],
@@ -19268,8 +19271,7 @@
     ],
     "tooltip": "Deals Dimensional Damage every 1 sec for 16 sec to your targets. + Targets are Knocked down.",
     "apply_tag": [
-      "Knock Down",
-      "DoT"
+      "Knock Down"
     ],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -19393,13 +19395,13 @@
     "tooltip": "Creates a Soul Vortex at your targets location for 10 sec. + Foes within 15ft take Dimensional Damage every 1 sec. + Foes within 20ft are pulled toward the Soul Vortex. + After this power expires, creates a Healing Rune. Heals up to 5 allies within 15ft every 1 sec for 10 sec. + You cannot have more than one Rune out at a time. + This power cannot critically hit",
     "apply_tag": [
       "Reverse Repel",
-      "Rune",
-      "Passive Heal",
-      "DoT"
+      "Rune"
     ],
     "refresh_tag": [],
     "synergy_tag": [],
-    "filter_tag": [],
+    "filter_tag": [
+      "Passive Heal"
+    ],
     "damage_type": [
       "Dimensional"
     ],
@@ -20998,7 +21000,9 @@
     ],
     "refresh_tag": [],
     "synergy_tag": [],
-    "filter_tag": [],
+    "filter_tag": [
+      "DoT"
+    ],
     "damage_type": [
       "Magic"
     ],
@@ -33302,7 +33306,7 @@
     "activation_time": 1,
     "max_duration": 1,
     "tick_rate": null,
-    "cooldown": 10,
+    "cooldown": 15,
     "range_tags": [
       "Targets foe (5 max)",
       "100 feet",
@@ -33382,7 +33386,9 @@
     ],
     "refresh_tag": [],
     "synergy_tag": [],
-    "filter_tag": [],
+    "filter_tag": [
+      "DoT"
+    ],
     "damage_type": [
       "Dimensional"
     ],
@@ -33530,6 +33536,363 @@
       "The Drifter"
     ],
     "icon_override": "Device_VoidPossession",
+    "is_disabled": false
+  },
+  {
+    "power_id": 922,
+    "powerset_id": "Device",
+    "framework_id": "Healing_Devices",
+    "name": "Chimeral Potion  of the Vulture",
+    "tier": null,
+    "power_type": "SELF_HEAL",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": null,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": 90,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Heals you for 3,680 HP. + Increases your resistance to all damage by 50% for 30 sec. + While active, if you are above ground, grants Flight. + Additionally, all of your damaging attacks have a 20% chance based on activation time to apply Disorient, reducing damage by 10% and movement speed by 50% for 12 sec.",
+    "apply_tag": [
+      "Disorient"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [
+      "Active Heal"
+    ],
+    "damage_type": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Chimera OM"
+    ],
+    "icon_override": "Device_VulturePotion",
+    "is_disabled": false
+  },
+  {
+    "power_id": 941,
+    "powerset_id": "Device",
+    "framework_id": "Healing_Devices",
+    "name": "Chimeral Potion of the Rat",
+    "tier": null,
+    "power_type": "SELF_HEAL",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": null,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": null,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Heals you for 3,680 HP. + Reduces the amount of threat your powers generate by for 30 sec. + While this power is active, places you in Sneak, granting you +30 Aggression Stealth and +400 Perception Stealth. This effect is deactivated for 8 sec upon healing a target, taking damage, dealing damage, or interacting with an object.",
+    "apply_tag": [],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [
+      "Active Heal"
+    ],
+    "damage_type": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Rhinoplasty Lair"
+    ],
+    "icon_override": "Device_RatPotion",
+    "is_disabled": false
+  },
+  {
+    "power_id": 942,
+    "powerset_id": "Device",
+    "framework_id": "Healing_Devices",
+    "name": "Chimeral Potion of the Rhinoceros",
+    "tier": null,
+    "power_type": "SELF_HEAL",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": null,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": null,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Heals you for 3,680 HP. + Increases your Hit Points by 1,000 and resistance to Knock effects by 200% for 30 sec. +  While active, all of your damaging melee attacks have a 20% chance based on activation time to Knock Down targets.",
+    "apply_tag": [
+      "Knock Down"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [
+      "Active Heal"
+    ],
+    "damage_type": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Rhinoplasty Lair"
+    ],
+    "icon_override": "Device_RhinoPotion",
+    "is_disabled": false
+  },
+  {
+    "power_id": 954,
+    "powerset_id": "Device",
+    "framework_id": "Healing_Devices",
+    "name": "Cozy Fire",
+    "tier": null,
+    "power_type": "BUFF_TARGETS",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 0.83,
+    "max_duration": 10,
+    "tick_rate": null,
+    "cooldown": 60,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Creates a Cozy Fire at your targeted location, healing up to 5 allies within 15ft every 1 sec for 10 sec. This effect counts as a Rune. + When created, removes all Chilled and Snared effects on affected allies. After that, has a 20% chance every 1 sec to remove those effects.",
+    "apply_tag": [
+      "Rune"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [
+      "Passive Heal"
+    ],
+    "damage_type": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Winter Event"
+    ],
+    "icon_override": "Device_CozyFire",
+    "is_disabled": false
+  },
+  {
+    "power_id": 955,
+    "powerset_id": "Device",
+    "framework_id": "Healing_Devices",
+    "name": "Healing Consumable",
+    "tier": null,
+    "power_type": "SELF_HEAL",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": null,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": 90,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Covers many readily available or event only healing consumables (sec Wind, Rejuvenating Formula, Mysticla Ward, Hotdog, Sweet, etc.) + All have bonus special effect on their own. + Once used, they all go in shared cooldown.",
+    "apply_tag": [],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [
+      "Active Heal"
+    ],
+    "damage_type": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [],
+    "icon_override": "Device_HealingConsumable",
+    "is_disabled": false
+  },
+  {
+    "power_id": 828,
+    "powerset_id": "Device",
+    "framework_id": "Healing_Devices",
+    "name": "Heroic Endurance",
+    "tier": null,
+    "power_type": "BUFF_SELF",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": null,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": null,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Restores 100% Energy over 10 sec.",
+    "apply_tag": [],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "LTS Store"
+    ],
+    "icon_override": "Device_EN",
+    "is_disabled": false
+  },
+  {
+    "power_id": 826,
+    "powerset_id": "Device",
+    "framework_id": "Healing_Devices",
+    "name": "Heroic Jolt",
+    "tier": null,
+    "power_type": "BUFF_SELF",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": null,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": null,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Restores 100% Energy.",
+    "apply_tag": [],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "LTS Store"
+    ],
+    "icon_override": "Device_EN",
+    "is_disabled": false
+  },
+  {
+    "power_id": 829,
+    "powerset_id": "Device",
+    "framework_id": "Healing_Devices",
+    "name": "Heroic Persistence",
+    "tier": null,
+    "power_type": "SELF_HEAL_OVER_TIME",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": null,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": null,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Restores 100% Health over 10 sec.",
+    "apply_tag": [],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [
+      "Passive Heal"
+    ],
+    "damage_type": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "LTS Store"
+    ],
+    "icon_override": "Device_HP",
+    "is_disabled": false
+  },
+  {
+    "power_id": 830,
+    "powerset_id": "Device",
+    "framework_id": "Healing_Devices",
+    "name": "Heroic Resonance",
+    "tier": null,
+    "power_type": "SELF_HEAL",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": null,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": null,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Restores 100% Health and Energy.",
+    "apply_tag": [],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [
+      "Active Heal"
+    ],
+    "damage_type": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "LTS Store"
+    ],
+    "icon_override": "Device_HPEN",
+    "is_disabled": false
+  },
+  {
+    "power_id": 827,
+    "powerset_id": "Device",
+    "framework_id": "Healing_Devices",
+    "name": "Heroic Vitality",
+    "tier": null,
+    "power_type": "SELF_HEAL",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": null,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": null,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Restores 100% Health.",
+    "apply_tag": [],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [
+      "Active Heal"
+    ],
+    "damage_type": [],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "LTS Store"
+    ],
+    "icon_override": "Device_HP",
+    "is_disabled": false
+  },
+  {
+    "power_id": 1028,
+    "powerset_id": "Device",
+    "framework_id": "Other",
+    "name": "Attack Rock",
+    "tier": null,
+    "power_type": "UNCONTROLED_PET",
+    "advantages": [],
+    "activation_type": "TOGGLE",
+    "activation_time": 1,
+    "max_duration": 300,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Summons a Rock that will randomly attack your foes. This Rock will last up to 300 sec. + Detoggling this device will cause the rock to vanish and the device to go on cooldown. This device will also go on cooldown if the Rock is defeated. + The Rock can use the following attacks: + Smash: Deals Crushing Damage to targets within 15 ft and Knocks Back all affected foes. 30 seconds recharge. + Lunge: Deals Crushing Damage. + 10% chance to Knock Down targets. + 5% chance to Knock targets into the stratosphere. + 10% chance to Disorient targets.",
+    "apply_tag": [
+      "Knock Back",
+      "Knock Down",
+      "Knock",
+      "Disorient"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Crushing"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Rock Exchange"
+    ],
+    "icon_override": "Device_AttackRock",
     "is_disabled": false
   },
   {
@@ -33926,36 +34289,6 @@
       "Resistance Adventure Pack"
     ],
     "icon_override": "Device_DeamonicAvatar",
-    "is_disabled": false
-  },
-  {
-    "power_id": 833,
-    "powerset_id": "Device",
-    "framework_id": "Passive",
-    "name": "Dark Shard Robe",
-    "tier": null,
-    "power_type": "DEVICE",
-    "advantages": [],
-    "activation_type": "PASSIVE",
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [],
-    "tooltip": "15% of the damage you take is dealt back to the attacker as Magic damage. + This damage has a limit of 1000.",
-    "apply_tag": [],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Magic"
-    ],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Talisman"
-    ],
-    "icon_override": "Device_DarkShardRobe",
     "is_disabled": false
   },
   {
@@ -34843,6 +35176,39 @@
     "is_disabled": false
   },
   {
+    "power_id": 1027,
+    "powerset_id": "Device",
+    "framework_id": "Other",
+    "name": "Throw Rock",
+    "tier": null,
+    "power_type": "RANGED_DAMAGE",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 0.67,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": 15,
+    "range_tags": [
+      "Targets foe",
+      "50 feet"
+    ],
+    "tooltip": "Deals Crushing Damage",
+    "apply_tag": [],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Crushing"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Rock Exchange"
+    ],
+    "icon_override": "Device_ThrowRock",
+    "is_disabled": false
+  },
+  {
     "power_id": 937,
     "powerset_id": "Device",
     "framework_id": "Other",
@@ -34955,326 +35321,6 @@
     "is_disabled": false
   },
   {
-    "power_id": 922,
-    "powerset_id": "Device",
-    "framework_id": "Healing_Devices",
-    "name": "Chimeral Potion  of the Vulture",
-    "tier": null,
-    "power_type": "SELF_HEAL",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
-    "cooldown": 90,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Heals you for 3,680 HP. + Increases your resistance to all damage by 50% for 30 sec. + While active, if you are above ground, grants Flight. + Additionally, all of your damaging attacks have a 20% chance based on activation time to apply Disorient, reducing damage by 10% and movement speed by 50% for 12 sec.",
-    "apply_tag": [
-      "Disorient"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [
-      "Active Heal"
-    ],
-    "damage_type": [],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Chimera OM"
-    ],
-    "icon_override": "Device_VulturePotion",
-    "is_disabled": false
-  },
-  {
-    "power_id": 941,
-    "powerset_id": "Device",
-    "framework_id": "Healing_Devices",
-    "name": "Chimeral Potion of the Rat",
-    "tier": null,
-    "power_type": "SELF_HEAL",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Heals you for 3,680 HP. + Reduces the amount of threat your powers generate by for 30 sec. + While this power is active, places you in Sneak, granting you +30 Aggression Stealth and +400 Perception Stealth. This effect is deactivated for 8 sec upon healing a target, taking damage, dealing damage, or interacting with an object.",
-    "apply_tag": [],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [
-      "Active Heal"
-    ],
-    "damage_type": [],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Rhinoplasty Lair"
-    ],
-    "icon_override": "Device_RatPotion",
-    "is_disabled": false
-  },
-  {
-    "power_id": 942,
-    "powerset_id": "Device",
-    "framework_id": "Healing_Devices",
-    "name": "Chimeral Potion of the Rhinoceros",
-    "tier": null,
-    "power_type": "SELF_HEAL",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Heals you for 3,680 HP. + Increases your Hit Points by 1,000 and resistance to Knock effects by 200% for 30 sec. +  While active, all of your damaging melee attacks have a 20% chance based on activation time to Knock Down targets.",
-    "apply_tag": [
-      "Knock Down"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [
-      "Active Heal"
-    ],
-    "damage_type": [],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Rhinoplasty Lair"
-    ],
-    "icon_override": "Device_RhinoPotion",
-    "is_disabled": false
-  },
-  {
-    "power_id": 954,
-    "powerset_id": "Device",
-    "framework_id": "Healing_Devices",
-    "name": "Cozy Fire",
-    "tier": null,
-    "power_type": "BUFF_TARGETS",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": 0.83,
-    "max_duration": 10,
-    "tick_rate": null,
-    "cooldown": 60,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Creates a Cozy Fire at your targeted location, healing up to 5 allies within 15ft every 1 sec for 10 sec. This effect counts as a Rune. + When created, removes all Chilled and Snared effects on affected allies. After that, has a 20% chance every 1 sec to remove those effects.",
-    "apply_tag": [
-      "Rune"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [
-      "Passive Heal"
-    ],
-    "damage_type": [],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Winter Event"
-    ],
-    "icon_override": "Device_CozyFire",
-    "is_disabled": false
-  },
-  {
-    "power_id": 955,
-    "powerset_id": "Device",
-    "framework_id": "Healing_Devices",
-    "name": "Healing Consumable",
-    "tier": null,
-    "power_type": "SELF_HEAL",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
-    "cooldown": 90,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Covers many readily available or event only healing consumables (sec Wind, Rejuvenating Formula, Mysticla Ward, Hotdog, Sweet, etc.) + All have bonus special effect on their own. + Once used, they all go in shared cooldown.",
-    "apply_tag": [],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [
-      "Active Heal"
-    ],
-    "damage_type": [],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [],
-    "icon_override": "Device_HealingConsumable",
-    "is_disabled": false
-  },
-  {
-    "power_id": 828,
-    "powerset_id": "Device",
-    "framework_id": "Healing_Devices",
-    "name": "Heroic Endurance",
-    "tier": null,
-    "power_type": "BUFF_SELF",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Restores 100% Energy over 10 sec.",
-    "apply_tag": [],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "LTS Store"
-    ],
-    "icon_override": "Device_EN",
-    "is_disabled": false
-  },
-  {
-    "power_id": 826,
-    "powerset_id": "Device",
-    "framework_id": "Healing_Devices",
-    "name": "Heroic Jolt",
-    "tier": null,
-    "power_type": "BUFF_SELF",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Restores 100% Energy.",
-    "apply_tag": [],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "LTS Store"
-    ],
-    "icon_override": "Device_EN",
-    "is_disabled": false
-  },
-  {
-    "power_id": 829,
-    "powerset_id": "Device",
-    "framework_id": "Healing_Devices",
-    "name": "Heroic Persistence",
-    "tier": null,
-    "power_type": "SELF_HEAL_OVER_TIME",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Restores 100% Health over 10 sec.",
-    "apply_tag": [],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [
-      "Passive Heal"
-    ],
-    "damage_type": [],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "LTS Store"
-    ],
-    "icon_override": "Device_HP",
-    "is_disabled": false
-  },
-  {
-    "power_id": 830,
-    "powerset_id": "Device",
-    "framework_id": "Healing_Devices",
-    "name": "Heroic Resonance",
-    "tier": null,
-    "power_type": "SELF_HEAL",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Restores 100% Health and Energy.",
-    "apply_tag": [],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [
-      "Active Heal"
-    ],
-    "damage_type": [],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "LTS Store"
-    ],
-    "icon_override": "Device_HPEN",
-    "is_disabled": false
-  },
-  {
-    "power_id": 827,
-    "powerset_id": "Device",
-    "framework_id": "Healing_Devices",
-    "name": "Heroic Vitality",
-    "tier": null,
-    "power_type": "SELF_HEAL",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Restores 100% Health.",
-    "apply_tag": [],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [
-      "Active Heal"
-    ],
-    "damage_type": [],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "LTS Store"
-    ],
-    "icon_override": "Device_HP",
-    "is_disabled": false
-  },
-  {
     "power_id": 880,
     "powerset_id": "Device",
     "framework_id": "Passive",
@@ -35332,6 +35378,36 @@
       "Trade Paperback Store"
     ],
     "icon_override": "Device_BenignSymbiote",
+    "is_disabled": false
+  },
+  {
+    "power_id": 833,
+    "powerset_id": "Device",
+    "framework_id": "Passive",
+    "name": "Dark Shard Robe",
+    "tier": null,
+    "power_type": "DEVICE",
+    "advantages": [],
+    "activation_type": "PASSIVE",
+    "activation_time": null,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": null,
+    "range_tags": [],
+    "tooltip": "15% of the damage you take is dealt back to the attacker as Magic damage. + This damage has a limit of 1000.",
+    "apply_tag": [],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Magic"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Talisman"
+    ],
+    "icon_override": "Device_DarkShardRobe",
     "is_disabled": false
   },
   {
@@ -35579,6 +35655,505 @@
     "is_disabled": false
   },
   {
+    "power_id": 1016,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "Agate",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: DPS/Support + Damage type: Cold + Special effects: Chilled, Fear, Self-Heal + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
+    "apply_tag": [
+      "Chilled",
+      "Fear"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Cold"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Z Store"
+    ],
+    "icon_override": "Sidekick_Agate",
+    "is_disabled": false
+  },
+  {
+    "power_id": 1023,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "Anapa",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: DPS + Damage type: Piercing + Special effects: Stun, Snare + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
+    "apply_tag": [
+      "Illumination",
+      "Jinxed"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [
+      "Passive Heal"
+    ],
+    "damage_type": [
+      "Magic"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Collectors Store"
+    ],
+    "icon_override": "Sidekick_Anapa",
+    "is_disabled": false
+  },
+  {
+    "power_id": 987,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "Blaise",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: DPS/Support + Damage type: Fire + Special effects: Clinging Flames + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
+    "apply_tag": [
+      "Clinging Flames"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Fire"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Lockbox: Blazing, Collectors Store"
+    ],
+    "icon_override": "Sidekick_Blaise",
+    "is_disabled": false
+  },
+  {
+    "power_id": 991,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "Blizzard Fox",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: DPS + Damage type: Piercing, Crushing + Special effects: Stagger + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
+    "apply_tag": [
+      "Stagger"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Piercing",
+      "Crushing"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Lockbox: Spy, Collectors Store"
+    ],
+    "icon_override": "Sidekick_BlizzardFox",
+    "is_disabled": false
+  },
+  {
+    "power_id": 989,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "Bouldero",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: Tank + Damage type: Crushing + Special effects: Knock, Stagger + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
+    "apply_tag": [
+      "Knock",
+      "Stagger"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Crushing"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Lockbox: Brutal, Collectors Store"
+    ],
+    "icon_override": "Sidekick_Bouldero",
+    "is_disabled": false
+  },
+  {
+    "power_id": 980,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "Chaos Imp",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: Melee DPS + Damage type: Dimensional + Special effects: Knock, Fear, Self Heal + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
+    "apply_tag": [
+      "Knock",
+      "Fear"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Dimensional"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Nightmare Invasion Event"
+    ],
+    "icon_override": "Sidekick_Chaos_Imp",
+    "is_disabled": false
+  },
+  {
+    "power_id": 981,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "Chaos Swarm",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: Melee DPS + Damage type: Dimensional + Special effects: Snare, Fear, Self Heal + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
+    "apply_tag": [
+      "Snare",
+      "Fear"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Dimensional"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Nightmare Invasion Event"
+    ],
+    "icon_override": "Sidekick_Chaos_Swarm",
+    "is_disabled": false
+  },
+  {
+    "power_id": 1012,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "Commander Zillargon",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: Melee DPS + Damage type: Electrical + Special effects: Stun, Negative Ions, Superconductor, Knockdown + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
+    "apply_tag": [
+      "Stun",
+      "Negative Ions",
+      "Superconductor",
+      "Knockdown"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Electrical"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Lockbox: Kaiju, Collectors Store"
+    ],
+    "icon_override": "Sidekick_Zillargon",
+    "is_disabled": false
+  },
+  {
+    "power_id": 985,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "Cultros",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: DPS/Support + Damage type: Ego + Special effects: Dependency, Snare + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
+    "apply_tag": [
+      "Dependency",
+      "Snare"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Ego"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Lockbox: Aliens Invader, Collectors Store"
+    ],
+    "icon_override": "Sidekick_Cultros",
+    "is_disabled": false
+  },
+  {
+    "power_id": 1002,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "D.E.T.E.R.",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: Ranged DPS + Damage type: Piercing, Particle, Crushing + Special effects: Stun, Plasma Burn, Armor Piercing, Disorient, Self-Heal + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
+    "apply_tag": [
+      "Stun",
+      "Plasma Burn",
+      "Armor Piercing",
+      "Disorient"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Piercing",
+      "Particle",
+      "Crushing"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Lockbox: Mecha, Collectors Store"
+    ],
+    "icon_override": "Sidekick_DETER",
+    "is_disabled": false
+  },
+  {
+    "power_id": 982,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "Emily Lovett",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: DPS + Damage type: Dimensional + Special effects: Knock, Fear, Devoid + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
+    "apply_tag": [
+      "Knock",
+      "Fear",
+      "Devoid"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Dimensional"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Nightmare Invasion Event"
+    ],
+    "icon_override": "Sidekick_EmilyLovett",
+    "is_disabled": false
+  },
+  {
+    "power_id": 984,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "Errorlevel",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: DPS + Damage type: Particle + Special effects: Plasma Burn + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
+    "apply_tag": [
+      "Plasma Burn"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Particle"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Lockbox: Cybernetic, Collectors Store"
+    ],
+    "icon_override": "Sidekick_Errorlevel",
+    "is_disabled": false
+  },
+  {
+    "power_id": 979,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "Evil Eye",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: Ranged DPS + Damage type: Magic + Special effects: Knock, Clinging Flames, Hexed + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
+    "apply_tag": [
+      "Knock",
+      "Clinging Flames",
+      "Hexed"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Magic"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Bloodmoon Event"
+    ],
+    "icon_override": "Sidekick_EvilEye",
+    "is_disabled": false
+  },
+  {
+    "power_id": 1008,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "Fire",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: Melee DPS + Damage type: Fire + Special effects: Stun, Clinging Flames, Engulfing Flames + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
+    "apply_tag": [
+      "Stun",
+      "Clinging Flames",
+      "Engulfing Flames"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Fire"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Lockbox: Forces of Nature, Collectors Store"
+    ],
+    "icon_override": "Sidekick_Fire",
+    "is_disabled": false
+  },
+  {
     "power_id": 974,
     "powerset_id": "Device",
     "framework_id": "Sidekick",
@@ -35618,6 +36193,1023 @@
     "is_disabled": false
   },
   {
+    "power_id": 999,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "Golden Hero",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: Tank + Damage type: Dimensional, Crushing + Special effects: Knock, Disorient + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
+    "apply_tag": [
+      "Knock",
+      "Disorient"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Crushing",
+      "Dimensional"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Lockbox: Legendary Sentai, Collectors Store"
+    ],
+    "icon_override": "Sidekick_GoldenHero",
+    "is_disabled": false
+  },
+  {
+    "power_id": 1001,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "Golden Sun",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: Melee Tank + Damage type: Crushing, Dimensional + Special effects: Knock, Disorient, Illumination, Self-Heal, Icreased Threat Generation + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
+    "apply_tag": [
+      "Knock",
+      "Disorient",
+      "Illumination"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [
+      "Passive Heal"
+    ],
+    "damage_type": [
+      "Crushing",
+      "Dimensional"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Lockbox: Heraldry, Collectors Store"
+    ],
+    "icon_override": "Sidekick_GoldenSun",
+    "is_disabled": false
+  },
+  {
+    "power_id": 1017,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "Harajuku Twins",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: DPS + Damage type: Piercing, Slashing + Special effects: Hold, Bleeding, Stagger + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
+    "apply_tag": [
+      "Hold",
+      "Bleeding",
+      "Stagger"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Piercing",
+      "Slashing"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Z Store"
+    ],
+    "icon_override": "Sidekick_HarakujuTwins",
+    "is_disabled": false
+  },
+  {
+    "power_id": 1005,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "Karen Morphontraxs",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: Melee DPS + Damage type: Electrical + Special effects: Knock, Paralyze, Negative Ions, Superconductor, Ally Energy Recovery, Self-Heal + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
+    "apply_tag": [
+      "Knock",
+      "Paralyze",
+      "Negative Ions",
+      "Superconductor"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Electrical"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Lockbox: Gladiator, Collectors Store"
+    ],
+    "icon_override": "Sidekick_Karen",
+    "is_disabled": false
+  },
+  {
+    "power_id": 993,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "Knaal",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: Offensive Support + Damage type: Dimensional + Special effects: Stun, Snare, Knock + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
+    "apply_tag": [
+      "Stun",
+      "Snare",
+      "Knock"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Dimensional"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Lockbox: Cosmos, Collectors Store"
+    ],
+    "icon_override": "Sidekick_Knaal",
+    "is_disabled": false
+  },
+  {
+    "power_id": 977,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "L1L-DOGG13",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: DPS + Damage type: Electrical + Special effects: Charged Up, Negative Ions, Fear, Self Heal + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
+    "apply_tag": [
+      "Charged Up",
+      "Negative Ions",
+      "Fear"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Electrical"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "High Noon Event"
+    ],
+    "icon_override": "Sidekick_L1LDogg13",
+    "is_disabled": false
+  },
+  {
+    "power_id": 997,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "L4W-1",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: DPS + Damage type: Particle, Piercing + Special effects: Plasma Burn, Disorient, Armor Piecing, Knock + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
+    "apply_tag": [
+      "Plasma Burn",
+      "Disorient",
+      "Armor Piercing",
+      "Knock"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Particle",
+      "Piercing"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Lockbox: Space Western, Collectors Store"
+    ],
+    "icon_override": "Sidekick_L4W",
+    "is_disabled": false
+  },
+  {
+    "power_id": 992,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "Maelstrom",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: DPS + Damage type: Toxic + Special effects: Poisons + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
+    "apply_tag": [
+      "Poisons"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Toxic"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Lockbox: Goth & Glam, Collectors Store"
+    ],
+    "icon_override": "Sidekick_Maeltrom",
+    "is_disabled": false
+  },
+  {
+    "power_id": 978,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "Override",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: DPS + Damage type: Electrical + Special effects: Charged Up, Negative Ions, Fear, Self Heal + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
+    "apply_tag": [
+      "Charged Up",
+      "Negative Ions",
+      "Fear"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Slashing"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "High Noon Event"
+    ],
+    "icon_override": "Sidekick_Override",
+    "is_disabled": false
+  },
+  {
+    "power_id": 995,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "P.A.N.T.H.E.R.",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: DPS + Damage type: Particle + Special effects: Knock, Plasma Burn, Disintegrate + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
+    "apply_tag": [
+      "Knock",
+      "Plasma Burn",
+      "Disintegrate"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Particle"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Lockbox: Undying Warrior, Collectors Store"
+    ],
+    "icon_override": "Sidekick_Panther",
+    "is_disabled": false
+  },
+  {
+    "power_id": 990,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "Phantom Archer",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: DPS + Damage type: Piercing + Special effects: Knock, Snare + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
+    "apply_tag": [
+      "Knock",
+      "Snare"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Piercing"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Lockbox: Phantom, Collectors Store"
+    ],
+    "icon_override": "Sidekick_PhantomArcher",
+    "is_disabled": false
+  },
+  {
+    "power_id": 998,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "Prophetess",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: DPS + Damage type: Crushing + Special effects: Knock, Repel, Perception + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
+    "apply_tag": [
+      "Knock",
+      "Repel",
+      "Perception"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Crushing"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Lockbox: Sandstorm, Collectors Store"
+    ],
+    "icon_override": "Sidekick_Prophetess",
+    "is_disabled": false
+  },
+  {
+    "power_id": 1029,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "Quetzalcoatl",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: Tank + Damage type: Crushing + Special effects: Knock, Reckless, Deadly Poison, Disorient, Stagger. + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
+    "apply_tag": [
+      "Knock",
+      "Reckless",
+      "Deadly Poison",
+      "Disorient",
+      "Stagger"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Crushing"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Lockbox: Breath of Quetzal"
+    ],
+    "icon_override": "Sidekick_Quetzalcoatl",
+    "is_disabled": false
+  },
+  {
+    "power_id": 1009,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "Rain",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: Ranged DPS + Damage type: Cold + Special effects: Knock, Chill, Hard Frost + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
+    "apply_tag": [
+      "Knock",
+      "Chill",
+      "Hard Frost"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Cold"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Lockbox: Forces of Nature, Collectors Store"
+    ],
+    "icon_override": "Sidekick_Rain",
+    "is_disabled": false
+  },
+  {
+    "power_id": 1018,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "Ray-Zar",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: DPS + Damage type: Slashing+ Special effects: Bleed, Fear, Self-Heal + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
+    "apply_tag": [
+      "Bleed",
+      "Fear"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Slashing"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Z Store"
+    ],
+    "icon_override": "Sidekick_RayZar",
+    "is_disabled": false
+  },
+  {
+    "power_id": 1019,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "Reprogrammed Spider Unit",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: DPS + Damage type: Electrical + Special effects: Negative Ions + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
+    "apply_tag": [
+      "Negative Ions"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Electrical"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Z Store"
+    ],
+    "icon_override": "Sidekick_SpiderUnit",
+    "is_disabled": false
+  },
+  {
+    "power_id": 1020,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "Rex",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role:  DPS + Damage type: Fire + Special effects: Clinging Flames + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
+    "apply_tag": [
+      "Clinging Flames"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Fire"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Z Store"
+    ],
+    "icon_override": "Sidekick_Rex",
+    "is_disabled": false
+  },
+  {
+    "power_id": 1010,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "Scarlet Scarab",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: Ranged DPS + Damage type: Particle + Special effects: Stun, Plasma Burn, Disintegrate, Knockback + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
+    "apply_tag": [
+      "Stun",
+      "Plasma Burn",
+      "Disintegrate",
+      "Knockback"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Particle"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Lockbox: Scarlet Scarab, Collectors Store"
+    ],
+    "icon_override": "Sidekick_ScarletScarab",
+    "is_disabled": false
+  },
+  {
+    "power_id": 1015,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "Shen",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: Melee DPS + Damage type: Dimensional + Special effects: Knock, Chi Flame + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
+    "apply_tag": [
+      "Knock",
+      "Chi Flame"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Dimensional"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Lockbox: Dragon Spirit"
+    ],
+    "icon_override": "Sidekick_Shen",
+    "is_disabled": false
+  },
+  {
+    "power_id": 988,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "Shoki",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: Tank/Support + Damage type: Toxic + Special effects: Deadly Poison + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
+    "apply_tag": [
+      "Deadly Poison"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Toxic"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Lockbox: Shaolin, Collectors Store"
+    ],
+    "icon_override": "Sidekick_Shoki",
+    "is_disabled": false
+  },
+  {
+    "power_id": 1007,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "Sir Mittenhands",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Sir Mittenhands will use different attacks depending on what Role you are-in. + Melee/BaIanced: Uses melee sword attacks that deal Slashing damage and can cause Bleeding and Shredded. + Ranged: Uses ranged bow attacks that deal Piercing damage and can cause Snare and Frail Armor. + Tank: Uses melee sword attacks that deal Crushing damage and can cause Disorient and Demolish. + Support: Uses ranged sorcery attacks that deal Magic damage and can cause Illuminated and Light Everlasting. + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
+    "apply_tag": [
+      "Bleeding",
+      "Shredded",
+      "Snare",
+      "Frail Armor",
+      "Disorient",
+      "Demolish"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Slashing",
+      "Piercing",
+      "Crushing",
+      "Magic"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Lockbox: Traveler, Collectors Store"
+    ],
+    "icon_override": "Sidekick_Mittenhand",
+    "is_disabled": false
+  },
+  {
+    "power_id": 1013,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "Sparky",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: Ranged DPS + Damage type: Crushing + Special effects: Knock, Demolish, Disorient, Power Shield + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
+    "apply_tag": [
+      "Knock",
+      "Demolish",
+      "Disorient"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Crushing"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Lockbox: Valorous, Collectors Store"
+    ],
+    "icon_override": "Sidekick_Sparky",
+    "is_disabled": false
+  },
+  {
+    "power_id": 1004,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "Sssssssssssseth",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: Melee DPS + Damage type: Toxic, Piercing + Special effects: Stun, Snare, Paralyze, Poisoned, Debilitating Poison, Self-Heal + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
+    "apply_tag": [
+      "Stun",
+      "Snare",
+      "Paralyze",
+      "Poisons",
+      "Debiliating Poison"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Toxic",
+      "Piercing"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Lockbox: Untamed, Collectors Store"
+    ],
+    "icon_override": "Sidekick_Seth",
+    "is_disabled": false
+  },
+  {
+    "power_id": 1000,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "Starhawk",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: DPS + Damage type: Crushing, Fire + Special effects: Knock, Clinging Flames + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
+    "apply_tag": [
+      "Knock",
+      "Clinging Flames"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Crushing",
+      "Fire"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Lockbox: Starhawk, Collectors Store"
+    ],
+    "icon_override": "Sidekick_Starhawk",
+    "is_disabled": false
+  },
+  {
+    "power_id": 986,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "The Amp",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: DPS/Support + Damage type: Electrical + Special effects: Negative Ions + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
+    "apply_tag": [
+      "Negative Ions"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Electrical"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Lockbox: Rave, Collectors Store"
+    ],
+    "icon_override": "Sidekick_TheAmp",
+    "is_disabled": false
+  },
+  {
+    "power_id": 1011,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "The Longshadows",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: Ranged DPS + Damage type: Sonic + Special effects: Stun, Disorient, Deafening, Knockdown + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
+    "apply_tag": [
+      "Stun",
+      "Disorient",
+      "Deafening",
+      "Knockdown"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Sonic"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Lockbox: Electro Swing, Collectors Store"
+    ],
+    "icon_override": "Sidekick_Longshadows",
+    "is_disabled": false
+  },
+  {
+    "power_id": 994,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "The Muuraay",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: DPS + Damage type: Slashing + Special effects: Bleeding, Snare, Shredded + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
+    "apply_tag": [
+      "Bleeding",
+      "Snare",
+      "Shredded"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Slashing"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Lockbox: Undying Warrior, Collectors Store"
+    ],
+    "icon_override": "Sidekick_Muuraay",
+    "is_disabled": false
+  },
+  {
+    "power_id": 1006,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "Thunder Dragon",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: Melee DPS + Damage type: Fire, Toxic + Special effects: Knock, Stun, Clinging Flames, Engulfing Flames, Self-Heal + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
+    "apply_tag": [
+      "Knock",
+      "Stun",
+      "Clinging Flames",
+      "Engulfing Flames"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Fire",
+      "Toxic"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Lockbox: Steel Dragon, Collectors Store"
+    ],
+    "icon_override": "Sidekick_Thunderdragon",
+    "is_disabled": false
+  },
+  {
     "power_id": 975,
     "powerset_id": "Device",
     "framework_id": "Sidekick",
@@ -35653,6 +37245,335 @@
       "Z Store"
     ],
     "icon_override": "Sidekick_TohKah",
+    "is_disabled": false
+  },
+  {
+    "power_id": 1003,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "Tommy",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: Tank + Damage type: Slashing, Crushing + Special effects: Knock To, Knock Up, Stagger, Snare, Self-Heal, Increased Threat + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
+    "apply_tag": [
+      "Knock To",
+      "Knock Up",
+      "Stagger",
+      "Snare"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Slashing",
+      "Crushing"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Lockbox: Untamed, Collectors Store"
+    ],
+    "icon_override": "Sidekick_Tommy",
+    "is_disabled": false
+  },
+  {
+    "power_id": 1014,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "Toorgseed",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: Support + Damage type: Crushing + Special effects: Stun, Paralyze, Stagger, Knock, Ally Heal + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
+    "apply_tag": [
+      "Stun",
+      "Paralyze",
+      "Stagger",
+      "Knock"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [
+      "Passive Heal"
+    ],
+    "damage_type": [
+      "Crushing"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Lockbox: Forest Guardian"
+    ],
+    "icon_override": "Sidekick_Torgseed",
+    "is_disabled": false
+  },
+  {
+    "power_id": 1022,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "Twillight Bolt",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: DPS + Damage type: Piercing + Special effects: Stun, Snare, Regeneration + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
+    "apply_tag": [
+      "Stun",
+      "Snare"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Piercing"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Lockbox: Vigilante, Collectors Store"
+    ],
+    "icon_override": "Sidekick_TwilightBolt",
+    "is_disabled": false
+  },
+  {
+    "power_id": 1024,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "Valiant",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: DPS + Damage type: Crushing + Special effects: Disorient + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
+    "apply_tag": [
+      "Disorient"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Crushing"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Collectors Store"
+    ],
+    "icon_override": "Sidekick_Valiant",
+    "is_disabled": false
+  },
+  {
+    "power_id": 1025,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "Watt Earp",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: DPS + Damage type: Piercing, Fire + Special effects: Bleed, Clinging Flames + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
+    "apply_tag": [
+      "Bleed",
+      "Clinging Flames"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Piercing",
+      "Fire"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Collectors Store"
+    ],
+    "icon_override": "Sidekick_WattEarp",
+    "is_disabled": false
+  },
+  {
+    "power_id": 1026,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "Wibbles",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: Tank + Damage type: Crushing, Dimensional + Special effects: Disorient, Illuminated, Knock, Reverse Repel + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
+    "apply_tag": [
+      "Disorient",
+      "Illuminated",
+      "Knock",
+      "Reverse Repel"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Crushing",
+      "Dimensional"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Rock Exchange"
+    ],
+    "icon_override": "Sidekick_Wibble",
+    "is_disabled": false
+  },
+  {
+    "power_id": 983,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "Windchill",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: DPS + Damage type: Cold + Special effects: Chill + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
+    "apply_tag": [
+      "Chill"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Cold"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Lockbox: Frozen, Collectors Store"
+    ],
+    "icon_override": "Sidekick_Windchill",
+    "is_disabled": false
+  },
+  {
+    "power_id": 996,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "Zettabyte",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: Support/DPS + Damage type: Particle + Special effects: Plasma Burn, Snare, Root, Knock + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
+    "apply_tag": [
+      "Plasma Burn",
+      "Snare",
+      "Root",
+      "Knock"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Particle"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Lockbox: Power Gamer, Collectors Store"
+    ],
+    "icon_override": "Sidekick_Zettabite",
+    "is_disabled": false
+  },
+  {
+    "power_id": 1021,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "Zhuyin",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: DPS/Support + Damage type: Dimensional, Fire + Special effects: Clinging Flame, Illumination + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
+    "apply_tag": [
+      "Clinging Flames",
+      "Illumination"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [
+      "Passive Heal"
+    ],
+    "damage_type": [
+      "Fire",
+      "Dimensional"
+    ],
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Z Store"
+    ],
+    "icon_override": "Sidekick_Zhuyin",
     "is_disabled": false
   },
   {
@@ -36403,1775 +38324,6 @@
       "The Drifter"
     ],
     "icon_override": "Device_Vesperine",
-    "is_disabled": false
-  },
-  {
-    "power_id": 977,
-    "powerset_id": "Device",
-    "framework_id": "Sidekick",
-    "name": "L1L-DOGG13",
-    "tier": null,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": 1,
-    "max_duration": 900,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Role: DPS + Damage type: Electrical + Special effects: Charged Up, Negative Ions, Fear, Self Heal + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
-    "apply_tag": [
-      "Charged Up",
-      "Negative Ions",
-      "Fear"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Electrical"
-    ],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "High Noon Event"
-    ],
-    "icon_override": null,
-    "is_disabled": false
-  },
-  {
-    "power_id": 978,
-    "powerset_id": "Device",
-    "framework_id": "Sidekick",
-    "name": "Override",
-    "tier": null,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": 1,
-    "max_duration": 900,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Role: DPS + Damage type: Electrical + Special effects: Charged Up, Negative Ions, Fear, Self Heal + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
-    "apply_tag": [
-      "Charged Up",
-      "Negative Ions",
-      "Fear"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Slashing"
-    ],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "High Noon Event"
-    ],
-    "icon_override": null,
-    "is_disabled": false
-  },
-  {
-    "power_id": 979,
-    "powerset_id": "Device",
-    "framework_id": "Sidekick",
-    "name": "Evil Eye",
-    "tier": null,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": 1,
-    "max_duration": 900,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Role: Ranged DPS + Damage type: Magic + Special effects: Knock, Clinging Flames, Hexed + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
-    "apply_tag": [
-      "Knock",
-      "Clinging Flames",
-      "Hexed"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Magic"
-    ],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Bloodmoon Event"
-    ],
-    "icon_override": "Sidekick_EvilEye",
-    "is_disabled": false
-  },
-  {
-    "power_id": 980,
-    "powerset_id": "Device",
-    "framework_id": "Sidekick",
-    "name": "Chaos Imp",
-    "tier": null,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": 1,
-    "max_duration": 900,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Role: Melee DPS + Damage type: Dimensional + Special effects: Knock, Fear, Self Heal + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
-    "apply_tag": [
-      "Knock",
-      "Fear"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Dimensional"
-    ],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Nightmare Invasion Event"
-    ],
-    "icon_override": "Sidekick_Chaos_Imp",
-    "is_disabled": false
-  },
-  {
-    "power_id": 981,
-    "powerset_id": "Device",
-    "framework_id": "Sidekick",
-    "name": "Chaos Swarm",
-    "tier": null,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": 1,
-    "max_duration": 900,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Role: Melee DPS + Damage type: Dimensional + Special effects: Snare, Fear, Self Heal + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
-    "apply_tag": [
-      "Snare",
-      "Fear"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Dimensional"
-    ],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Nightmare Invasion Event"
-    ],
-    "icon_override": "Sidekick_Chaos_Swarm",
-    "is_disabled": false
-  },
-  {
-    "power_id": 982,
-    "powerset_id": "Device",
-    "framework_id": "Sidekick",
-    "name": "Emily Lovett",
-    "tier": null,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": 1,
-    "max_duration": 900,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Role: DPS + Damage type: Dimensional + Special effects: Knock, Fear, Devoid + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
-    "apply_tag": [
-      "Knock",
-      "Fear",
-      "Devoid"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Dimensional"
-    ],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Nightmare Invasion Event"
-    ],
-    "icon_override": "Sidekick_EmilyLovett",
-    "is_disabled": false
-  },
-  {
-    "power_id": 983,
-    "powerset_id": "Device",
-    "framework_id": "Sidekick",
-    "name": "Windchill",
-    "tier": null,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": 1,
-    "max_duration": 900,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Role: DPS + Damage type: Cold + Special effects: Chill + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
-    "apply_tag": [
-      "Chill"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Cold"
-    ],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Lockbox: Frozen, Collectors Store"
-    ],
-    "icon_override": "Sidekick_Windchill",
-    "is_disabled": false
-  },
-  {
-    "power_id": 984,
-    "powerset_id": "Device",
-    "framework_id": "Sidekick",
-    "name": "Errorlevel",
-    "tier": null,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": 1,
-    "max_duration": 900,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Role: DPS + Damage type: Particle + Special effects: Plasma Burn + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
-    "apply_tag": [
-      "Plasma Burn"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Particle"
-    ],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Lockbox: Cybernetic, Collectors Store"
-    ],
-    "icon_override": "Sidekick_Errorlevel",
-    "is_disabled": false
-  },
-  {
-    "power_id": 985,
-    "powerset_id": "Device",
-    "framework_id": "Sidekick",
-    "name": "Cultros",
-    "tier": null,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": 1,
-    "max_duration": 900,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Role: DPS/Support + Damage type: Ego + Special effects: Dependency, Snare + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
-    "apply_tag": [
-      "Dependency",
-      "Snare"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Ego"
-    ],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Lockbox: Aliens Invader, Collectors Store"
-    ],
-    "icon_override": "Sidekick_Cultros",
-    "is_disabled": false
-  },
-  {
-    "power_id": 986,
-    "powerset_id": "Device",
-    "framework_id": "Sidekick",
-    "name": "The Amp",
-    "tier": null,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": 1,
-    "max_duration": 900,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Role: DPS/Support + Damage type: Electrical + Special effects: Negative Ions + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
-    "apply_tag": [
-      "Negative Ions"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Electrical"
-    ],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Lockbox: Rave, Collectors Store"
-    ],
-    "icon_override": "Sidekick_TheAmp",
-    "is_disabled": false
-  },
-  {
-    "power_id": 987,
-    "powerset_id": "Device",
-    "framework_id": "Sidekick",
-    "name": "Blaise",
-    "tier": null,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": 1,
-    "max_duration": 900,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Role: DPS/Support + Damage type: Fire + Special effects: Clinging Flames + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
-    "apply_tag": [
-      "Clinging Flames"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Fire"
-    ],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Lockbox: Blazing, Collectors Store"
-    ],
-    "icon_override": "Sidekick_Blaise",
-    "is_disabled": false
-  },
-  {
-    "power_id": 988,
-    "powerset_id": "Device",
-    "framework_id": "Sidekick",
-    "name": "Shoki",
-    "tier": null,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": 1,
-    "max_duration": 900,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Role: Tank/Support + Damage type: Toxic + Special effects: Deadly Poison + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
-    "apply_tag": [
-      "Deadly Poison"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Toxic"
-    ],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Lockbox: Shaolin, Collectors Store"
-    ],
-    "icon_override": "Sidekick_Shoki",
-    "is_disabled": false
-  },
-  {
-    "power_id": 989,
-    "powerset_id": "Device",
-    "framework_id": "Sidekick",
-    "name": "Bouldero",
-    "tier": null,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": 1,
-    "max_duration": 900,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Role: Tank + Damage type: Crushing + Special effects: Knock, Stagger + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
-    "apply_tag": [
-      "Knock",
-      "Stagger"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Crushing"
-    ],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Lockbox: Brutal, Collectors Store"
-    ],
-    "icon_override": "Sidekick_Bouldero",
-    "is_disabled": false
-  },
-  {
-    "power_id": 990,
-    "powerset_id": "Device",
-    "framework_id": "Sidekick",
-    "name": "Phantom Archer",
-    "tier": null,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": 1,
-    "max_duration": 900,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Role: DPS + Damage type: Piercing + Special effects: Knock, Snare + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
-    "apply_tag": [
-      "Knock",
-      "Snare"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Piercing"
-    ],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Lockbox: Phantom, Collectors Store"
-    ],
-    "icon_override": "Sidekick_PhantomArcher",
-    "is_disabled": false
-  },
-  {
-    "power_id": 991,
-    "powerset_id": "Device",
-    "framework_id": "Sidekick",
-    "name": "Blizzard Fox",
-    "tier": null,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": 1,
-    "max_duration": 900,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Role: DPS + Damage type: Piercing, Crushing + Special effects: Stagger + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
-    "apply_tag": [
-      "Stagger"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Piercing",
-      "Crushing"
-    ],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Lockbox: Spy, Collectors Store"
-    ],
-    "icon_override": "Sidekick_BlizzardFox",
-    "is_disabled": false
-  },
-  {
-    "power_id": 992,
-    "powerset_id": "Device",
-    "framework_id": "Sidekick",
-    "name": "Maelstrom",
-    "tier": null,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": 1,
-    "max_duration": 900,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Role: DPS + Damage type: Toxic + Special effects: Poisons + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
-    "apply_tag": [
-      "Poisons"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Toxic"
-    ],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Lockbox: Goth & Glam, Collectors Store"
-    ],
-    "icon_override": "Sidekick_Maeltrom",
-    "is_disabled": false
-  },
-  {
-    "power_id": 993,
-    "powerset_id": "Device",
-    "framework_id": "Sidekick",
-    "name": "Knaal",
-    "tier": null,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": 1,
-    "max_duration": 900,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Role: Offensive Support + Damage type: Dimensional + Special effects: Stun, Snare, Knock + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
-    "apply_tag": [
-      "Stun",
-      "Snare",
-      "Knock"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Dimensional"
-    ],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Lockbox: Cosmos, Collectors Store"
-    ],
-    "icon_override": "Sidekick_Knaal",
-    "is_disabled": false
-  },
-  {
-    "power_id": 994,
-    "powerset_id": "Device",
-    "framework_id": "Sidekick",
-    "name": "The Muuraay",
-    "tier": null,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": 1,
-    "max_duration": 900,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Role: DPS + Damage type: Slashing + Special effects: Bleeding, Snare, Shredded + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
-    "apply_tag": [
-      "Bleeding",
-      "Snare",
-      "Shredded"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Slashing"
-    ],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Lockbox: Undying Warrior, Collectors Store"
-    ],
-    "icon_override": "Sidekick_Muuraay",
-    "is_disabled": false
-  },
-  {
-    "power_id": 995,
-    "powerset_id": "Device",
-    "framework_id": "Sidekick",
-    "name": "P.A.N.T.H.E.R.",
-    "tier": null,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": 1,
-    "max_duration": 900,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Role: DPS + Damage type: Particle + Special effects: Knock, Plasma Burn, Disintegrate + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
-    "apply_tag": [
-      "Knock",
-      "Plasma Burn",
-      "Disintegrate"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Particle"
-    ],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Lockbox: Undying Warrior, Collectors Store"
-    ],
-    "icon_override": "Sidekick_Panther",
-    "is_disabled": false
-  },
-  {
-    "power_id": 996,
-    "powerset_id": "Device",
-    "framework_id": "Sidekick",
-    "name": "Zettabyte",
-    "tier": null,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": 1,
-    "max_duration": 900,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Role: Support/DPS + Damage type: Particle + Special effects: Plasma Burn, Snare, Root, Knock + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
-    "apply_tag": [
-      "Plasma Burn",
-      "Snare",
-      "Root",
-      "Knock"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Particle"
-    ],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Lockbox: Power Gamer, Collectors Store"
-    ],
-    "icon_override": "Sidekick_Zettabite",
-    "is_disabled": false
-  },
-  {
-    "power_id": 997,
-    "powerset_id": "Device",
-    "framework_id": "Sidekick",
-    "name": "L4W-1",
-    "tier": null,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": 1,
-    "max_duration": 900,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Role: DPS + Damage type: Particle, Piercing + Special effects: Plasma Burn, Disorient, Armor Piecing, Knock + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
-    "apply_tag": [
-      "Plasma Burn",
-      "Disorient",
-      "Armor Piercing",
-      "Knock"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Particle",
-      "Piercing"
-    ],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Lockbox: Space Western, Collectors Store"
-    ],
-    "icon_override": "Sidekick_L4W",
-    "is_disabled": false
-  },
-  {
-    "power_id": 998,
-    "powerset_id": "Device",
-    "framework_id": "Sidekick",
-    "name": "Prophetess",
-    "tier": null,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": 1,
-    "max_duration": 900,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Role: DPS + Damage type: Crushing + Special effects: Knock, Repel, Perception + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
-    "apply_tag": [
-      "Knock",
-      "Repel",
-      "Perception"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Crushing"
-    ],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Lockbox: Sandstorm, Collectors Store"
-    ],
-    "icon_override": "Sidekick_Prophetess",
-    "is_disabled": false
-  },
-  {
-    "power_id": 999,
-    "powerset_id": "Device",
-    "framework_id": "Sidekick",
-    "name": "Golden Hero",
-    "tier": null,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": 1,
-    "max_duration": 900,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Role: Tank + Damage type: Dimensional, Crushing + Special effects: Knock, Disorient + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
-    "apply_tag": [
-      "Knock",
-      "Disorient"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Crushing",
-      "Dimensional"
-    ],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Lockbox: Legendary Sentai, Collectors Store"
-    ],
-    "icon_override": "Sidekick_GoldenHero",
-    "is_disabled": false
-  },
-  {
-    "power_id": 1000,
-    "powerset_id": "Device",
-    "framework_id": "Sidekick",
-    "name": "Starhawk",
-    "tier": null,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": 1,
-    "max_duration": 900,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Role: DPS + Damage type: Crushing, Fire + Special effects: Knock, Clinging Flames + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
-    "apply_tag": [
-      "Knock",
-      "Clinging Flames"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Crushing",
-      "Fire"
-    ],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Lockbox: Starhawk, Collectors Store"
-    ],
-    "icon_override": "Sidekick_Starhawk",
-    "is_disabled": false
-  },
-  {
-    "power_id": 1001,
-    "powerset_id": "Device",
-    "framework_id": "Sidekick",
-    "name": "Golden Sun",
-    "tier": null,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": 1,
-    "max_duration": 900,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Role: Melee Tank + Damage type: Crushing, Dimensional + Special effects: Knock, Disorient, Illumination, Self-Heal, Icreased Threat Generation + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
-    "apply_tag": [
-      "Knock",
-      "Disorient",
-      "Illumination"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [
-      "Passive Heal"
-    ],
-    "damage_type": [
-      "Crushing",
-      "Dimensional"
-    ],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Lockbox: Heraldry, Collectors Store"
-    ],
-    "icon_override": "Sidekick_GoldenSun",
-    "is_disabled": false
-  },
-  {
-    "power_id": 1002,
-    "powerset_id": "Device",
-    "framework_id": "Sidekick",
-    "name": "D.E.T.E.R.",
-    "tier": null,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": 1,
-    "max_duration": 900,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Role: Ranged DPS + Damage type: Piercing, Particle, Crushing + Special effects: Stun, Plasma Burn, Armor Piercing, Disorient, Self-Heal + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
-    "apply_tag": [
-      "Stun",
-      "Plasma Burn",
-      "Armor Piercing",
-      "Disorient"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Piercing",
-      "Particle",
-      "Crushing"
-    ],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Lockbox: Mecha, Collectors Store"
-    ],
-    "icon_override": "Sidekick_DETER",
-    "is_disabled": false
-  },
-  {
-    "power_id": 1003,
-    "powerset_id": "Device",
-    "framework_id": "Sidekick",
-    "name": "Tommy",
-    "tier": null,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": 1,
-    "max_duration": 900,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Role: Tank + Damage type: Slashing, Crushing + Special effects: Knock To, Knock Up, Stagger, Snare, Self-Heal, Increased Threat + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
-    "apply_tag": [
-      "Knock To",
-      "Knock Up",
-      "Stagger",
-      "Snare"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Slashing",
-      "Crushing"
-    ],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Lockbox: Untamed, Collectors Store"
-    ],
-    "icon_override": "Sidekick_Tommy",
-    "is_disabled": false
-  },
-  {
-    "power_id": 1004,
-    "powerset_id": "Device",
-    "framework_id": "Sidekick",
-    "name": "Sssssssssssseth",
-    "tier": null,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": 1,
-    "max_duration": 900,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Role: Melee DPS + Damage type: Toxic, Piercing + Special effects: Stun, Snare, Paralyze, Poisoned, Debilitating Poison, Self-Heal + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
-    "apply_tag": [
-      "Stun",
-      "Snare",
-      "Paralyze",
-      "Poisons",
-      "Debiliating Poison"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Toxic",
-      "Piercing"
-    ],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Lockbox: Untamed, Collectors Store"
-    ],
-    "icon_override": "Sidekick_Seth",
-    "is_disabled": false
-  },
-  {
-    "power_id": 1005,
-    "powerset_id": "Device",
-    "framework_id": "Sidekick",
-    "name": "Karen Morphontraxs",
-    "tier": null,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": 1,
-    "max_duration": 900,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Role: Melee DPS + Damage type: Electrical + Special effects: Knock, Paralyze, Negative Ions, Superconductor, Ally Energy Recovery, Self-Heal + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
-    "apply_tag": [
-      "Knock",
-      "Paralyze",
-      "Negative Ions",
-      "Superconductor"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Electrical"
-    ],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Lockbox: Gladiator, Collectors Store"
-    ],
-    "icon_override": "Sidekick_Karen",
-    "is_disabled": false
-  },
-  {
-    "power_id": 1006,
-    "powerset_id": "Device",
-    "framework_id": "Sidekick",
-    "name": "Thunder Dragon",
-    "tier": null,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": 1,
-    "max_duration": 900,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Role: Melee DPS + Damage type: Fire, Toxic + Special effects: Knock, Stun, Clinging Flames, Engulfing Flames, Self-Heal + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
-    "apply_tag": [
-      "Knock",
-      "Stun",
-      "Clinging Flames",
-      "Engulfing Flames"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Fire",
-      "Toxic"
-    ],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Lockbox: Steel Dragon, Collectors Store"
-    ],
-    "icon_override": "Sidekick_Thunderdragon",
-    "is_disabled": false
-  },
-  {
-    "power_id": 1007,
-    "powerset_id": "Device",
-    "framework_id": "Sidekick",
-    "name": "Sir Mittenhands",
-    "tier": null,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": 1,
-    "max_duration": 900,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Sir Mittenhands will use different attacks depending on what Role you are-in. + Melee/BaIanced: Uses melee sword attacks that deal Slashing damage and can cause Bleeding and Shredded. + Ranged: Uses ranged bow attacks that deal Piercing damage and can cause Snare and Frail Armor. + Tank: Uses melee sword attacks that deal Crushing damage and can cause Disorient and Demolish. + Support: Uses ranged sorcery attacks that deal Magic damage and can cause Illuminated and Light Everlasting. + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
-    "apply_tag": [
-      "Bleeding",
-      "Shredded",
-      "Snare",
-      "Frail Armor",
-      "Disorient",
-      "Demolish"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Slashing",
-      "Piercing",
-      "Crushing",
-      "Magic"
-    ],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Lockbox: Traveler, Collectors Store"
-    ],
-    "icon_override": "Sidekick_Mittenhand",
-    "is_disabled": false
-  },
-  {
-    "power_id": 1008,
-    "powerset_id": "Device",
-    "framework_id": "Sidekick",
-    "name": "Fire",
-    "tier": null,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": 1,
-    "max_duration": 900,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Role: Melee DPS + Damage type: Fire + Special effects: Stun, Clinging Flames, Engulfing Flames + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
-    "apply_tag": [
-      "Stun",
-      "Clinging Flames",
-      "Engulfing Flames"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Fire"
-    ],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Lockbox: Forces of Nature, Collectors Store"
-    ],
-    "icon_override": "Sidekick_Fire",
-    "is_disabled": false
-  },
-  {
-    "power_id": 1009,
-    "powerset_id": "Device",
-    "framework_id": "Sidekick",
-    "name": "Rain",
-    "tier": null,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": 1,
-    "max_duration": 900,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Role: Ranged DPS + Damage type: Cold + Special effects: Knock, Chill, Hard Frost + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
-    "apply_tag": [
-      "Knock",
-      "Chill",
-      "Hard Frost"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Cold"
-    ],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Lockbox: Forces of Nature, Collectors Store"
-    ],
-    "icon_override": "Sidekick_Rain",
-    "is_disabled": false
-  },
-  {
-    "power_id": 1010,
-    "powerset_id": "Device",
-    "framework_id": "Sidekick",
-    "name": "Scarlet Scarab",
-    "tier": null,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": 1,
-    "max_duration": 900,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Role: Ranged DPS + Damage type: Particle + Special effects: Stun, Plasma Burn, Disintegrate, Knockback + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
-    "apply_tag": [
-      "Stun",
-      "Plasma Burn",
-      "Disintegrate",
-      "Knockback"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Particle"
-    ],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Lockbox: Scarlet Scarab, Collectors Store"
-    ],
-    "icon_override": "Sidekick_ScarletScarab",
-    "is_disabled": false
-  },
-  {
-    "power_id": 1011,
-    "powerset_id": "Device",
-    "framework_id": "Sidekick",
-    "name": "The Longshadows",
-    "tier": null,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": 1,
-    "max_duration": 900,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Role: Ranged DPS + Damage type: Sonic + Special effects: Stun, Disorient, Deafening, Knockdown + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
-    "apply_tag": [
-      "Stun",
-      "Disorient",
-      "Deafening",
-      "Knockdown"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Sonic"
-    ],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Lockbox: Electro Swing, Collectors Store"
-    ],
-    "icon_override": "Sidekick_Longshadows",
-    "is_disabled": false
-  },
-  {
-    "power_id": 1012,
-    "powerset_id": "Device",
-    "framework_id": "Sidekick",
-    "name": "Commander Zillargon",
-    "tier": null,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": 1,
-    "max_duration": 900,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Role: Melee DPS + Damage type: Electrical + Special effects: Stun, Negative Ions, Superconductor, Knockdown + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
-    "apply_tag": [
-      "Stun",
-      "Negative Ions",
-      "Superconductor",
-      "Knockdown"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Electrical"
-    ],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Lockbox: Kaiju, Collectors Store"
-    ],
-    "icon_override": "Sidekick_Zillargon",
-    "is_disabled": false
-  },
-  {
-    "power_id": 1013,
-    "powerset_id": "Device",
-    "framework_id": "Sidekick",
-    "name": "Sparky",
-    "tier": null,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": 1,
-    "max_duration": 900,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Role: Ranged DPS + Damage type: Crushing + Special effects: Knock, Demolish, Disorient, Power Shield + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
-    "apply_tag": [
-      "Knock",
-      "Demolish",
-      "Disorient"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Crushing"
-    ],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Lockbox: Valorous, Collectors Store"
-    ],
-    "icon_override": "Sidekick_Sparky",
-    "is_disabled": false
-  },
-  {
-    "power_id": 1014,
-    "powerset_id": "Device",
-    "framework_id": "Sidekick",
-    "name": "Toorgseed",
-    "tier": null,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": 1,
-    "max_duration": 900,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Role: Support + Damage type: Crushing + Special effects: Stun, Paralyze, Stagger, Knock, Ally Heal + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
-    "apply_tag": [
-      "Stun",
-      "Paralyze",
-      "Stagger",
-      "Knock"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [
-      "Passive Heal"
-    ],
-    "damage_type": [
-      "Crushing"
-    ],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Lockbox: Forest Guardian"
-    ],
-    "icon_override": "Sidekick_Torgseed",
-    "is_disabled": false
-  },
-  {
-    "power_id": 1015,
-    "powerset_id": "Device",
-    "framework_id": "Sidekick",
-    "name": "Shen",
-    "tier": null,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": 1,
-    "max_duration": 900,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Role: Melee DPS + Damage type: Dimensional + Special effects: Knock, Chi Flame + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
-    "apply_tag": [
-      "Knock",
-      "Chi Flame"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Dimensional"
-    ],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Lockbox: Dragon Spirit"
-    ],
-    "icon_override": null,
-    "is_disabled": false
-  },
-  {
-    "power_id": 1016,
-    "powerset_id": "Device",
-    "framework_id": "Sidekick",
-    "name": "Agate",
-    "tier": null,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": 1,
-    "max_duration": 900,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Role: DPS/Support + Damage type: Cold + Special effects: Chilled, Fear, Self-Heal + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
-    "apply_tag": [
-      "Chilled",
-      "Fear"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Cold"
-    ],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Z Store"
-    ],
-    "icon_override": null,
-    "is_disabled": false
-  },
-  {
-    "power_id": 1017,
-    "powerset_id": "Device",
-    "framework_id": "Sidekick",
-    "name": "Harajuku Twins",
-    "tier": null,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": 1,
-    "max_duration": 900,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Role: DPS + Damage type: Piercing, Slashing + Special effects: Hold, Bleeding, Stagger + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
-    "apply_tag": [
-      "Hold",
-      "Bleeding",
-      "Stagger"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Piercing",
-      "Slashing"
-    ],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Z Store"
-    ],
-    "icon_override": null,
-    "is_disabled": false
-  },
-  {
-    "power_id": 1018,
-    "powerset_id": "Device",
-    "framework_id": "Sidekick",
-    "name": "Ray-Zar",
-    "tier": null,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": 1,
-    "max_duration": 900,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Role: DPS + Damage type: Slashing+ Special effects: Bleed, Fear, Self-Heal + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
-    "apply_tag": [
-      "Bleed",
-      "Fear"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Slashing"
-    ],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Z Store"
-    ],
-    "icon_override": null,
-    "is_disabled": false
-  },
-  {
-    "power_id": 1019,
-    "powerset_id": "Device",
-    "framework_id": "Sidekick",
-    "name": "Reprogrammed Spider Unit",
-    "tier": null,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": 1,
-    "max_duration": 900,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Role: DPS + Damage type: Electrical + Special effects: Negative Ions + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
-    "apply_tag": [
-      "Negative Ions"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Electrical"
-    ],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Z Store"
-    ],
-    "icon_override": null,
-    "is_disabled": false
-  },
-  {
-    "power_id": 1020,
-    "powerset_id": "Device",
-    "framework_id": "Sidekick",
-    "name": "Rex",
-    "tier": null,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": 1,
-    "max_duration": 900,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Role:  DPS + Damage type: Fire + Special effects: Clinging Flames + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
-    "apply_tag": [
-      "Clinging Flames"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Fire"
-    ],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Z Store"
-    ],
-    "icon_override": null,
-    "is_disabled": false
-  },
-  {
-    "power_id": 1021,
-    "powerset_id": "Device",
-    "framework_id": "Sidekick",
-    "name": "Zhuyin",
-    "tier": null,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": 1,
-    "max_duration": 900,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Role: DPS/Support + Damage type: Dimensional, Fire + Special effects: Clinging Flame, Illumination + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
-    "apply_tag": [
-      "Clinging Flames",
-      "Illumination"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [
-      "Passive Heal"
-    ],
-    "damage_type": [
-      "Fire",
-      "Dimensional"
-    ],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Z Store"
-    ],
-    "icon_override": "Sidekick_Zhuyin",
-    "is_disabled": false
-  },
-  {
-    "power_id": 1022,
-    "powerset_id": "Device",
-    "framework_id": "Sidekick",
-    "name": "Twillight Bolt",
-    "tier": null,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": 1,
-    "max_duration": 900,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Role: DPS + Damage type: Piercing + Special effects: Stun, Snare, Regeneration + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
-    "apply_tag": [
-      "Stun",
-      "Snare"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Piercing"
-    ],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Lockbox: Vigilante, Collectors Store"
-    ],
-    "icon_override": "Sidekick_TwilightBolt",
-    "is_disabled": false
-  },
-  {
-    "power_id": 1023,
-    "powerset_id": "Device",
-    "framework_id": "Sidekick",
-    "name": "Anapa",
-    "tier": null,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": 1,
-    "max_duration": 900,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Role: DPS + Damage type: Piercing + Special effects: Stun, Snare + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
-    "apply_tag": [
-      "Illumination",
-      "Jinxed"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [
-      "Passive Heal"
-    ],
-    "damage_type": [
-      "Magic"
-    ],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Collectors Store"
-    ],
-    "icon_override": null,
-    "is_disabled": false
-  },
-  {
-    "power_id": 1024,
-    "powerset_id": "Device",
-    "framework_id": "Sidekick",
-    "name": "Valiant",
-    "tier": null,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": 1,
-    "max_duration": 900,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Role: DPS + Damage type: Crushing + Special effects: Disorient + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
-    "apply_tag": [
-      "Disorient"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Crushing"
-    ],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Collectors Store"
-    ],
-    "icon_override": null,
-    "is_disabled": false
-  },
-  {
-    "power_id": 1025,
-    "powerset_id": "Device",
-    "framework_id": "Sidekick",
-    "name": "Watt Earp",
-    "tier": null,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "activation_time": 1,
-    "max_duration": 900,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Role: DPS + Damage type: Piercing, Fire + Special effects: Bleed, Clinging Flames + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction",
-    "apply_tag": [
-      "Bleed",
-      "Clinging Flames"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Piercing",
-      "Fire"
-    ],
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Collectors Store"
-    ],
-    "icon_override": null,
     "is_disabled": false
   }
 ]

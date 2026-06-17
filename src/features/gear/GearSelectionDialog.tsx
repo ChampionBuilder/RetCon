@@ -1,12 +1,7 @@
 import type { GearBuildSlot, GearItem } from "@/types/gear";
 import { AnchoredSelectionDialog, type DialogAnchor } from "@/shared/ui";
 import { SpriteIcon } from "@/shared/ui/SpriteIcon";
-import { cleanMultilineTooltipText } from "@/shared/utils/tooltipText";
-import {
-  formatBonusSegment,
-  getGearBonusValue,
-} from "./gearBonusFormatting";
-import { getSetPieceBonusTiers } from "./gearSetBonuses";
+import { getGearTooltipText } from "./gearTooltips";
 
 type GearSelectionDialogProps = {
   anchor: DialogAnchor;
@@ -30,74 +25,6 @@ function GearName({ name }: { name: string }) {
       {index + 1 < parts.length ? <br /> : null}
     </span>
   ));
-}
-
-function cleanGearTooltipText(value: string | null | undefined) {
-  return cleanMultilineTooltipText(value)
-    ?.replace(/\s+\+\s+/gu, "\n")
-    .trim() ?? null;
-}
-
-function getGearBonusLines(gear: GearItem) {
-  const segments = gear.bonuses.flatMap((bonus) =>
-    formatBonusSegment(bonus, getGearBonusValue(bonus)) ?? [],
-  );
-
-  return segments;
-}
-
-function getTextLines(values: string[] | null | undefined) {
-  return (values ?? [])
-    .map((value) => cleanGearTooltipText(value))
-    .filter((value): value is string => Boolean(value));
-}
-
-function getSetBonusText(gear: GearItem) {
-  const setBonusTiers = [...gear.set_bonuses, ...getSetPieceBonusTiers(gear)];
-
-  if (setBonusTiers.length === 0) {
-    return null;
-  }
-
-  const uniqueLines = new Set<string>();
-
-  setBonusTiers.forEach((setBonusTier) => {
-    const bonusLines = setBonusTier.bonuses.flatMap((bonus) =>
-      formatBonusSegment(bonus, getGearBonusValue(bonus)) ?? [],
-    );
-    const textLines = getTextLines(setBonusTier.text);
-    const tierLines = [...bonusLines, ...textLines];
-
-    tierLines.forEach((line) =>
-      uniqueLines.add(`${setBonusTier.pieces} pieces: ${line}`),
-    );
-  });
-
-  const lines = Array.from(uniqueLines);
-
-  return lines.length > 0 ? ["Set Bonus:", ...lines].join("\n") : null;
-}
-
-function getPieceBonusText(gear: GearItem) {
-  const lines = [
-    ...getGearBonusLines(gear),
-    ...getTextLines(gear.bonus_text),
-    cleanGearTooltipText(gear.gear_tooltip),
-    cleanGearTooltipText(gear.set_tooltip),
-    ...getTextLines(gear.set_piece_bonus_text),
-  ].filter((line): line is string => Boolean(line));
-
-  return lines.length > 0 ? ["Piece Bonus:", ...lines].join("\n") : null;
-}
-
-function getGearTooltipText(gear: GearItem) {
-  const lines = [
-    getSetBonusText(gear),
-    getPieceBonusText(gear),
-    gear.source.length > 0 ? `Source: ${gear.source.join(", ")}` : null,
-  ].filter(Boolean);
-
-  return lines.join("\n");
 }
 
 function groupGearsBySet(gears: GearItem[]) {

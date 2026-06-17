@@ -103,7 +103,7 @@ type WorkspacePanelId =
 type CollapsedWorkspacePanels = Record<WorkspacePanelId, boolean>;
 
 const collapsedPanelTrackWidth = "var(--collapsed-panel-track-width, 48px)";
-const ultraCompactViewportQuery = "(max-width: 1209px)";
+const ultraCompactViewportQuery = "(max-width: 1400px)";
 const openPanelTracks = {
   build: "minmax(330px, 1fr)",
   character: "var(--character-column-width)",
@@ -119,16 +119,29 @@ function isUltraCompactViewport() {
 function CollapsibleWorkspacePanel({
   children,
   collapsed,
+  keepMounted = false,
   panelId,
   title,
   onToggle,
 }: {
   children: ReactNode;
   collapsed: boolean;
+  keepMounted?: boolean;
   panelId: WorkspacePanelId;
   title: string;
   onToggle: () => void;
 }) {
+  const rail = (
+    <button
+      className="workspace-panel-rail"
+      type="button"
+      aria-label={`Open ${title} panel`}
+      onClick={onToggle}
+    >
+      <span className="workspace-panel-rail__label">{title}</span>
+    </button>
+  );
+
   return (
     <div
       className={[
@@ -139,17 +152,14 @@ function CollapsibleWorkspacePanel({
         .filter(Boolean)
         .join(" ")}
     >
-      {collapsed ? (
-        <button
-          className="workspace-panel-rail"
-          type="button"
-          aria-label={`Open ${title} panel`}
-          onClick={onToggle}
+      {collapsed ? rail : null}
+      {collapsed && !keepMounted ? null : (
+        <div
+          aria-hidden={collapsed ? "true" : undefined}
+          className="workspace-panel-content"
         >
-          <span className="workspace-panel-rail__label">{title}</span>
-        </button>
-      ) : (
-        children
+          {children}
+        </div>
       )}
     </div>
   );
@@ -389,44 +399,65 @@ function App() {
         return nextCollapsedPanels;
       }
 
-      const powersOpen = !nextCollapsedPanels.powers;
-      const buildOpen = !nextCollapsedPanels.build;
+      const keepAllowedPanelsOpen = (
+        collapsedPanels: CollapsedWorkspacePanels,
+      ) => {
+        const openPanels = (
+          Object.keys(collapsedPanels) as WorkspacePanelId[]
+        ).filter((workspacePanelId) => !collapsedPanels[workspacePanelId]);
+        const powersOpen = openPanels.includes("powers");
+        const maxOpenPanels = powersOpen ? 2 : 3;
+        const panelPriority: WorkspacePanelId[] = powersOpen
+          ? [
+              "build",
+              panelId,
+              "character",
+              "specializations",
+              "gear",
+              "powers",
+            ]
+          : [
+              "build",
+              panelId,
+              "character",
+              "specializations",
+              "gear",
+            ];
 
-      if (!powersOpen) {
-        return nextCollapsedPanels;
-      }
+        if (openPanels.length <= maxOpenPanels) {
+          return collapsedPanels;
+        }
 
-      if (panelId === "build") {
-        return {
+        const keptPanels = new Set<WorkspacePanelId>();
+
+        panelPriority.forEach((workspacePanelId) => {
+          if (
+            openPanels.includes(workspacePanelId) &&
+            keptPanels.size < maxOpenPanels
+          ) {
+            keptPanels.add(workspacePanelId);
+          }
+        });
+
+        return (
+          Object.keys(collapsedPanels) as WorkspacePanelId[]
+        ).reduce(
+          (collapsedPanels, workspacePanelId) => ({
+            ...collapsedPanels,
+            [workspacePanelId]: !keptPanels.has(workspacePanelId),
+          }),
+          collapsedPanels,
+        );
+      };
+
+      if (panelId === "powers") {
+        return keepAllowedPanelsOpen({
           ...nextCollapsedPanels,
-          character: true,
-          specializations: true,
-        };
+          build: false,
+        });
       }
 
-      if (
-        (panelId === "character" || panelId === "specializations") &&
-        buildOpen
-      ) {
-        return {
-          ...nextCollapsedPanels,
-          build: true,
-        };
-      }
-
-      if (
-        panelId === "powers" &&
-        buildOpen &&
-        (!nextCollapsedPanels.character || !nextCollapsedPanels.specializations)
-      ) {
-        return {
-          ...nextCollapsedPanels,
-          character: true,
-          specializations: true,
-        };
-      }
-
-      return nextCollapsedPanels;
+      return keepAllowedPanelsOpen(nextCollapsedPanels);
     });
   }, []);
 
@@ -459,31 +490,32 @@ function App() {
   useEffect(() => {
     const ultraCompactViewport = window.matchMedia(ultraCompactViewportQuery);
 
-    function collapsePowersPanelInUltraCompactMode() {
+    function collapseWidePanelsInUltraCompactMode() {
       if (!ultraCompactViewport.matches) {
         return;
       }
 
       setCollapsedWorkspacePanels((currentCollapsedPanels) =>
-        currentCollapsedPanels.powers
+        currentCollapsedPanels.powers && currentCollapsedPanels.gear
           ? currentCollapsedPanels
           : {
               ...currentCollapsedPanels,
+              gear: true,
               powers: true,
             },
       );
     }
 
-    collapsePowersPanelInUltraCompactMode();
+    collapseWidePanelsInUltraCompactMode();
     ultraCompactViewport.addEventListener(
       "change",
-      collapsePowersPanelInUltraCompactMode,
+      collapseWidePanelsInUltraCompactMode,
     );
 
     return () => {
       ultraCompactViewport.removeEventListener(
         "change",
-        collapsePowersPanelInUltraCompactMode,
+        collapseWidePanelsInUltraCompactMode,
       );
     };
   }, []);
@@ -1706,6 +1738,7 @@ function App() {
 
         <CollapsibleWorkspacePanel
           collapsed={collapsedWorkspacePanels.powers}
+          keepMounted
           panelId="powers"
           title="Powers"
           onToggle={() => toggleWorkspacePanel("powers")}

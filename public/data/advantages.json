@@ -8703,7 +8703,7 @@
     "advantage_id": 623,
     "name": "Vortex Technique",
     "points_cost": 2,
-    "tooltip": "Foes are Knocked To you instead of Knocked Back .If fully maintained, also applies or refreshes Furious.",
+    "tooltip": "Foes are Knocked To you instead of Knocked Back. If fully maintained, also applies or refreshes Furious.",
     "apply_tag": [
       "Knock To",
       "Furious"
@@ -8774,7 +8774,7 @@
     "advantage_id": 628,
     "name": "Weak Points",
     "points_cost": 2,
-    "tooltip": "Refreshes your Bleed effects.",
+    "tooltip": "Refreshes your Bleed stacks.",
     "apply_tag": [],
     "refresh_tag": [
       "Bleed"
@@ -9939,6 +9939,20 @@
     "apply_tag": [],
     "refresh_tag": [
       "Clinging Flames"
+    ],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [],
+    "is_disabled": false
+  },
+  {
+    "advantage_id": 709,
+    "name": "Weak Points",
+    "points_cost": 2,
+    "tooltip": "On full charge, Refreshes your Bleed stacks.",
+    "apply_tag": [],
+    "refresh_tag": [
+      "Bleed"
     ],
     "synergy_tag": [],
     "filter_tag": [],

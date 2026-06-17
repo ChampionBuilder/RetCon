@@ -10,13 +10,17 @@ import {
 import type { Advantage } from "@/types/advantages";
 import type { BuildSlot } from "@/types/builds";
 import type { Power } from "@/types/powers";
+import {
+  registerLazyTooltipProvider,
+  unregisterLazyTooltipProvider,
+} from "@/shared/ui/instantTooltipDom";
 import { getFrameworkIconName, getPowerIconName } from "@/shared/utils/icons";
 import {
   getNormalizedPowerType,
   getPowerType,
 } from "@/shared/utils/powerTypes";
 import { getPowerTooltipText } from "@/shared/utils/powerText";
-import { getPowerTooltipAttribute } from "@/shared/utils/powerTooltip";
+import { getPowerTooltipData } from "@/shared/utils/powerTooltip";
 import { getEffectGroupTags } from "@/utils/effectGroups";
 import { getFrameworkGlossaryTooltipAttribute } from "@/utils/frameworkGlossary";
 import {
@@ -118,6 +122,10 @@ const scalingStatFilterOptions = [
   "REC",
   "END",
 ];
+
+function getPowerPanelTooltipId(powerId: number) {
+  return `powers-panel:${powerId}`;
+}
 
 function tierKey(tier: Power["tier"]) {
   return tier === null ? "travel" : String(tier);
@@ -485,6 +493,31 @@ export function PowersPanel({
   const powersById = useMemo(() => {
     return new Map(powers.map((power) => [power.power_id, power]));
   }, [powers]);
+
+  useEffect(() => {
+    powers.forEach((power) => {
+      registerLazyTooltipProvider(
+        getPowerPanelTooltipId(power.power_id),
+        () => {
+          const tooltipData = getPowerTooltipData(
+            power,
+            advantagesById,
+            powersById,
+            damageModsByFramework,
+          );
+
+          return tooltipData ? { kind: "power", data: tooltipData } : null;
+        },
+      );
+    });
+
+    return () => {
+      powers.forEach((power) =>
+        unregisterLazyTooltipProvider(getPowerPanelTooltipId(power.power_id)),
+      );
+    };
+  }, [advantagesById, damageModsByFramework, powers, powersById]);
+
   const powerRoleFilterOptions = useMemo(
     () => getPowerRoleOptions(powers, advantagesById),
     [advantagesById, powers],
@@ -1723,11 +1756,8 @@ export function PowersPanel({
                         <SpriteIcon name={getPowerIconName(power)} size={34} />
                         <span
                           className="power-choice__label"
-                          data-power-tooltip={getPowerTooltipAttribute(
-                            power,
-                            advantagesById,
-                            powersById,
-                            damageModsByFramework,
+                          data-power-tooltip-lazy={getPowerPanelTooltipId(
+                            power.power_id,
                           )}
                           data-power-tooltip-advanced={
                             forceAdvancedPowerTooltip ? "true" : undefined

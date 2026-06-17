@@ -8,6 +8,7 @@ import {
   formatSignedBonusValue,
 } from "./gearBonusFormatting";
 import { formatGearModRankTooltipText } from "./gearModTooltips";
+import { getGearTooltipText } from "./gearTooltips";
 import { getGearTotals } from "./gearTotals";
 
 type GearPanelProps = {
@@ -56,8 +57,42 @@ function GearName({ name }: { name: string }) {
 function formatModSlotTitle(slotTypes: string[]) {
   return slotTypes
     .filter((slotType) => slotType !== "Multicore")
-    .map((slotType) => (slotType === "Enhancement" ? "Enhenc." : slotType))
+    .map((slotType) => getModSlotLabel(slotType, "full"))
     .join(" / ");
+}
+
+function formatCompactModSlotTitle(slotTypes: string[]) {
+  return slotTypes
+    .filter((slotType) => slotType !== "Multicore")
+    .map((slotType) => getModSlotLabel(slotType, "compact"))
+    .join(" / ");
+}
+
+function getModSlotLabel(slotType: string, mode: "compact" | "full") {
+  const labels: Record<string, { compact: string; full: string }> = {
+    Armoring: {
+      compact: "Arm.",
+      full: "Armoring",
+    },
+    Defense: {
+      compact: "Def.",
+      full: "Defense",
+    },
+    Enhancement: {
+      compact: "Enh.",
+      full: "Enhenc.",
+    },
+    Offense: {
+      compact: "Off.",
+      full: "Offense",
+    },
+    Utility: {
+      compact: "Util.",
+      full: "Utility",
+    },
+  };
+
+  return labels[slotType]?.[mode] ?? slotType;
 }
 
 function formatSelectedModLabel(
@@ -81,6 +116,19 @@ function formatModSlotLabel(
   return selectedMod
     ? formatSelectedModLabel(selectedMod)
     : formatModSlotTitle(slotTypes);
+}
+
+function ModSlotEmptyLabel({ slotTypes }: { slotTypes: string[] }) {
+  return (
+    <>
+      <span className="gear-mod-button__label-full">
+        {formatModSlotTitle(slotTypes)}
+      </span>
+      <span className="gear-mod-button__label-compact">
+        {formatCompactModSlotTitle(slotTypes)}
+      </span>
+    </>
+  );
 }
 
 function isStatModSlot(slotTypes: string[]) {
@@ -257,6 +305,9 @@ export function GearPanel({
                           <div className="gear-build-entry__content">
                             <button
                               className="build-entry__name-button"
+                              data-text-tooltip={getGearTooltipText(
+                                gearSlot.gear,
+                              )}
                               type="button"
                               onClick={(event) => {
                                 event.stopPropagation();
@@ -364,7 +415,9 @@ export function GearPanel({
                                           className="gear-mod-button__label"
                                           data-text-tooltip={modSlotTooltip}
                                         >
-                                          {modSlotLabel}
+                                          <ModSlotEmptyLabel
+                                            slotTypes={slotTypes}
+                                          />
                                         </span>
                                       )}
                                     </div>

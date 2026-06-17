@@ -23,6 +23,10 @@ function isTouchGeneratedMouseEvent(event: MouseEvent) {
   return sourceCapabilities?.firesTouchEvents === true;
 }
 
+function isCoarsePointerDevice() {
+  return window.matchMedia("(hover: none), (pointer: coarse)").matches;
+}
+
 export function InstantTooltip() {
   const activeElementRef = useRef<HTMLElement | null>(null);
   const mutationObserverRef = useRef<MutationObserver | null>(null);
@@ -310,6 +314,33 @@ export function InstantTooltip() {
       }
     }
 
+    function handleContextMenu(event: MouseEvent) {
+      if (!isCoarsePointerDevice()) {
+        return;
+      }
+
+      const activeElement = activeElementRef.current;
+      const tooltipElement = getTooltipElement(event.target);
+      const contextMenuTargetsTooltip =
+        Boolean(tooltipElement) ||
+        Boolean(
+          activeElement &&
+            event.target instanceof Node &&
+            activeElement.contains(event.target),
+        );
+
+      if (!contextMenuTargetsTooltip) {
+        return;
+      }
+
+      event.preventDefault();
+      event.stopPropagation();
+
+      if (tooltipElement) {
+        showTooltip(tooltipElement, event.clientX, event.clientY);
+      }
+    }
+
     function handleKeyDown(event: KeyboardEvent) {
       if (event.key === "Shift") {
         setShowAdvancedPowerTooltip(true);
@@ -335,6 +366,7 @@ export function InstantTooltip() {
     document.addEventListener("pointercancel", handlePointerCancel);
     document.addEventListener("pointermove", handlePointerMove);
     document.addEventListener("pointerup", handlePointerUp);
+    document.addEventListener("contextmenu", handleContextMenu, true);
     document.addEventListener("keydown", handleKeyDown);
     document.addEventListener("keyup", handleKeyUp);
     window.addEventListener("blur", handleWindowBlur);
@@ -349,6 +381,7 @@ export function InstantTooltip() {
       document.removeEventListener("pointercancel", handlePointerCancel);
       document.removeEventListener("pointermove", handlePointerMove);
       document.removeEventListener("pointerup", handlePointerUp);
+      document.removeEventListener("contextmenu", handleContextMenu, true);
       document.removeEventListener("keydown", handleKeyDown);
       document.removeEventListener("keyup", handleKeyUp);
       window.removeEventListener("blur", handleWindowBlur);

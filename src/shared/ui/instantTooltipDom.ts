@@ -9,6 +9,7 @@ import type { TagSearchColumn } from "@/utils/powerTags";
 
 export const instantTooltipAttributeFilter = [
   "data-power-tooltip",
+  "data-power-tooltip-lazy",
   "data-power-tooltip-advantage-queries",
   "data-power-tooltip-advantage-tag-columns",
   "data-power-tooltip-advanced",
@@ -18,6 +19,21 @@ export const instantTooltipAttributeFilter = [
   "data-text-tooltip",
   "title",
 ];
+
+type LazyTooltipProvider = () => TooltipContent | null;
+
+const lazyTooltipProviders = new Map<string, LazyTooltipProvider>();
+
+export function registerLazyTooltipProvider(
+  id: string,
+  provider: LazyTooltipProvider,
+) {
+  lazyTooltipProviders.set(id, provider);
+}
+
+export function unregisterLazyTooltipProvider(id: string) {
+  lazyTooltipProviders.delete(id);
+}
 
 export function getTooltipElement(target: EventTarget | null) {
   if (!(target instanceof Element)) {
@@ -29,7 +45,7 @@ export function getTooltipElement(target: EventTarget | null) {
   }
 
   const element = target.closest<HTMLElement>(
-    "[title], [data-advantage-tooltip], [data-power-tooltip], [data-stat-tooltip], [data-framework-tooltip], [data-text-tooltip]",
+    "[title], [data-advantage-tooltip], [data-power-tooltip], [data-power-tooltip-lazy], [data-stat-tooltip], [data-framework-tooltip], [data-text-tooltip]",
   );
 
   if (!element) {
@@ -40,6 +56,7 @@ export function getTooltipElement(target: EventTarget | null) {
     !element.title.trim() &&
     !element.dataset.advantageTooltip &&
     !element.dataset.powerTooltip &&
+    !element.dataset.powerTooltipLazy &&
     !element.dataset.statTooltip &&
     !element.dataset.frameworkTooltip &&
     !element.dataset.textTooltip
@@ -132,6 +149,16 @@ export function getTooltipContent(element: HTMLElement): TooltipContent | null {
       };
     } catch {
       // Fall back to the plain title when a malformed dataset slips through.
+    }
+  }
+
+  if (element.dataset.powerTooltipLazy) {
+    const lazyTooltip = lazyTooltipProviders.get(
+      element.dataset.powerTooltipLazy,
+    )?.();
+
+    if (lazyTooltip) {
+      return lazyTooltip;
     }
   }
 

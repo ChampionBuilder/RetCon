@@ -28,13 +28,10 @@ const statNameToCode = new Map<string, string>([
 ]);
 
 const percentageBonusTypes = new Set([
-  "avoidance",
   "bonus_damage",
   "bonus_heal",
   "bonus_healing",
-  "critical_strike",
   "damage_bonus",
-  "dodge_chance",
   "healing_bonus",
   "knock_and_repel",
   "knock_and_repel_resistance",
