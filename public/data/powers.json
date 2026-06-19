@@ -572,7 +572,7 @@
       "50 feet",
       "15 foot Sphere"
     ],
-    "tooltip": "Paralyzes targets. + Applies Negative Ions to your primary target. + Has a 25% chance to apply Negative Ions to secary targets. + The electricity will Arc to foes within 25 feet, dealing Electrical Damage to them. + Must be fully charged,",
+    "tooltip": "Paralyzes targets. + Applies Negative Ions to your primary target. + Has a 25% chance to apply Negative Ions to secondary targets. + The electricity will Arc to foes within 25 feet, dealing Electrical Damage to them. + Must be fully charged,",
     "apply_tag": [
       "Hold",
       "Negative Ions",
@@ -745,7 +745,7 @@
       "100 feet",
       "10 foot Sphere"
     ],
-    "tooltip": "Deals Electrical Damage to your primary target and Electrical Damage to secary targets. + When hitting a target affected by Negative Ions, consumes Negative Ions and Arcs to a target within 25 feet, dealing Electrical Damage to that target. + After 2 sec applies Negative Ions to the main target, and has a 33-100% chance based on charge time to apply it to additional targets.",
+    "tooltip": "Deals Electrical Damage to your primary target and Electrical Damage to secondary targets. + When hitting a target affected by Negative Ions, consumes Negative Ions and Arcs to a target within 25 feet, dealing Electrical Damage to that target. + After 2 sec applies Negative Ions to the main target, and has a 33-100% chance based on charge time to apply it to additional targets.",
     "apply_tag": [
       "Negative Ions",
       "Arc",
@@ -7805,7 +7805,7 @@
       "40 foot lunge",
       "60 degree Cone"
     ],
-    "tooltip": "You jump away from your target, dealing Piercing Damage to targets in front of you when you land. + Knocks Down your primary target. + Has a 25% chance to Knocks Down your secary targets.",
+    "tooltip": "You jump away from your target, dealing Piercing Damage to targets in front of you when you land. + Knocks Down your primary target. + Has a 25% chance to Knocks Down your secondary targets.",
     "apply_tag": [
       "Knock Down",
       "Reverse Lunge"
@@ -8058,7 +8058,7 @@
       "50 feet",
       "15 foot Sphere"
     ],
-    "tooltip": "Deals Fire Damage to all targets. + Applies Clinging Flames to your primary target, which causes Fire Damage every 2 sec for 12 sec. Clinging Flames may leap to other foes near the target. + Has a 25% chance to apply Clinging Flames to your secary targets.",
+    "tooltip": "Deals Fire Damage to all targets. + Applies Clinging Flames to your primary target, which causes Fire Damage every 2 sec for 12 sec. Clinging Flames may leap to other foes near the target. + Has a 25% chance to apply Clinging Flames to your secondary targets.",
     "apply_tag": [
       "Clinging Flames"
     ],
@@ -16399,7 +16399,7 @@
       "50 feet",
       "15 foot Sphere"
     ],
-    "tooltip": "Deals Crushing Damage to all targets. + The main target is Knocked Up and other nearby targets are Knocked Back away from the main target. + If fully charged, secary targets are instead Knocked Up.",
+    "tooltip": "Deals Crushing Damage to all targets. + The main target is Knocked Up and other nearby targets are Knocked Back away from the main target. + If fully charged, secondary targets are instead Knocked Up.",
     "apply_tag": [
       "Knock Up",
       "Knock Back"
@@ -22970,7 +22970,7 @@
       "100 feet",
       "10 foot Sphere"
     ],
-    "tooltip": "Deals Toxic Damage. + Applies Debilitating Poison to your primary target, suffering -18% resistance to Toxic Damage for 15 sec. + Applies Deadly Poison to your secary targets, dealing Toxic Damage every 1 sec for 16 sec.",
+    "tooltip": "Deals Toxic Damage. + Applies Debilitating Poison to your primary target, suffering -18% resistance to Toxic Damage for 15 sec. + Applies Deadly Poison to your secondary targets, dealing Toxic Damage every 1 sec for 16 sec.",
     "apply_tag": [
       "Deadly Poison",
       "Debilitating Poison"
@@ -27718,7 +27718,7 @@
       "100 feet",
       "25 foot Sphere"
     ],
-    "tooltip": "Deals Electrical Damage to your primary target and a lesser amount of Electrical Damage to secary targets. + Applies Negative Ions and Knocks Down affected targets. + Creates an Ionic Field on the main target for 12 sec, causing affected targets within 25ft to be more vulnerable Electrical damage. This effect is considered to be a Ultimate Rune. + Places your Thunderstrike power on cooldown when used. + Activates a shared cooldown of 60 sec on all Ultimate powers.",
+    "tooltip": "Deals Electrical Damage to your primary target and a lesser amount of Electrical Damage to secondary targets. + Applies Negative Ions and Knocks Down affected targets. + Creates an Ionic Field on the main target for 12 sec, causing affected targets within 25ft to be more vulnerable Electrical damage. This effect is considered to be a Ultimate Rune. + Places your Thunderstrike power on cooldown when used. + Activates a shared cooldown of 60 sec on all Ultimate powers.",
     "apply_tag": [
       "Negative Ions",
       "Knock Down",
@@ -29585,7 +29585,7 @@
       "50 feet",
       "3 foot Cylinder"
     ],
-    "tooltip": "Deals Cold Damage to targets. + Has a 45-100% chance to apply Chilll to your primary target, and 22-50% chance against secary targets, reducing their movement speed by 60% for 16 sect and occasionally trapping them in an Ice Cage. Stacks up to 3 times. + When fully charged, has a 50% chance to apply Hard Frost to your primary target, reducing their resistance to Cold damage by 18% for; 15 sec. This chance is doubled if you are affected by cold Snap.",
+    "tooltip": "Deals Cold Damage to targets. + Has a 45-100% chance to apply Chilll to your primary target, and 22-50% chance against secondary targets, reducing their movement speed by 60% for 16 sect and occasionally trapping them in an Ice Cage. Stacks up to 3 times. + When fully charged, has a 50% chance to apply Hard Frost to your primary target, reducing their resistance to Cold damage by 18% for; 15 sec. This chance is doubled if you are affected by cold Snap.",
     "apply_tag": [
       "Chill",
       "Ice Cage",
@@ -29664,7 +29664,7 @@
       "Targets foe",
       "10 feet"
     ],
-    "tooltip": "Deals Sonic Damage to target. Increases this power's base damage by 30% against targets affected by your Deafening. + 30% chance to Stun your target. Chance is guaranteed if the target is affected by Disorient + When fully charged: + Deals Sonic Damage to up to 5 targets within 15ft. + Paralyzes your primary target and Stuns secary targets. + Applies Bastion, causing 30% of your direct damage pre-damage mitigation to be applied to you as a Shield for 10 sec. Stacks up to 10 times. + Goes on cooldown for 12 sec.",
+    "tooltip": "Deals Sonic Damage to target. Increases this power's base damage by 30% against targets affected by your Deafening. + 30% chance to Stun your target. Chance is guaranteed if the target is affected by Disorient + When fully charged: + Deals Sonic Damage to up to 5 targets within 15ft. + Paralyzes your primary target and Stuns secondary targets. + Applies Bastion, causing 30% of your direct damage pre-damage mitigation to be applied to you as a Shield for 10 sec. Stacks up to 10 times. + Goes on cooldown for 12 sec.",
     "apply_tag": [
       "Deafening",
       "Stun",
@@ -30127,7 +30127,7 @@
       "50 feet",
       "15 foot Sphere"
     ],
-    "tooltip": "Deals Particle Damage to affected targets. + Applies Disintegrate to your primary target, causing -18% resistance to Particle Damage for 15 sec. + Applies Plasma Burn to secary targets, causing Particle Damage every 1 sec for 16 sec.",
+    "tooltip": "Deals Particle Damage to affected targets. + Applies Disintegrate to your primary target, causing -18% resistance to Particle Damage for 15 sec. + Applies Plasma Burn to secondary targets, causing Particle Damage every 1 sec for 16 sec.",
     "apply_tag": [
       "Plasma Burn",
       "Disintegrate"
@@ -30164,7 +30164,7 @@
       "50 feet",
       "20 foot Sphere"
     ],
-    "tooltip": "Deals Toxic damage to targets. The primary target is briefly Stunned and secary targets are Paralyzed for 12 sec.",
+    "tooltip": "Deals Toxic damage to targets. The primary target is briefly Stunned and secondary targets are Paralyzed for 12 sec.",
     "apply_tag": [
       "Stun",
       "Hold"
@@ -30566,7 +30566,7 @@
       "10 feet",
       "10 foot Sphere"
     ],
-    "tooltip": "Deals Crushing Damage. +  Knocks Up your primary target and Knocks Down secary targets. + Fully charging this power applies Demolish to your primary target, reducing their resistance to Crushing damage by 18% for 15 sec.",
+    "tooltip": "Deals Crushing Damage. +  Knocks Up your primary target and Knocks Down secondary targets. + Fully charging this power applies Demolish to your primary target, reducing their resistance to Crushing damage by 18% for 15 sec.",
     "apply_tag": [
       "Knock Up",
       "Knock Down",
@@ -33244,7 +33244,7 @@
       "80 feet",
       "15 foot Sphere"
     ],
-    "tooltip": "Deals Electrical damage to targets. + Stuns your primary target + Snares your secary targets.",
+    "tooltip": "Deals Electrical damage to targets. + Stuns your primary target + Snares your secondary targets.",
     "apply_tag": [
       "Stun",
       "Snare"

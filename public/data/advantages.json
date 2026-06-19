@@ -51,7 +51,7 @@
     "advantage_id": 5,
     "name": "Challenge!",
     "points_cost": 1,
-    "tooltip": "Applies threat over time to your main target for 4 sec, and reduced threat over time to secary targets for 10 sec. Reduces targets damage for 10 sec.",
+    "tooltip": "Applies threat over time to your main target for 4 sec, and reduced threat over time to secondary targets for 10 sec. Reduces targets damage for 10 sec.",
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -317,7 +317,7 @@
     "advantage_id": 26,
     "name": "Armor Piercing",
     "points_cost": 2,
-    "tooltip": "Applies Armor Piercing to your primary target and has 20% chance to apply Armor Piercing to secary targets.",
+    "tooltip": "Applies Armor Piercing to your primary target and has 20% chance to apply Armor Piercing to secondary targets.",
     "apply_tag": [
       "Armor Piercing"
     ],
@@ -811,7 +811,7 @@
     "advantage_id": 61,
     "name": "Breaching Round",
     "points_cost": 2,
-    "tooltip": "Knock Back secary targets if they are affected by Armor Piercing. Also refreshes all stacks of Furious on you.",
+    "tooltip": "Knock Back secondary targets if they are affected by Armor Piercing. Also refreshes all stacks of Furious on you.",
     "apply_tag": [
       "Knock Back"
     ],
@@ -901,7 +901,7 @@
     "advantage_id": 68,
     "name": "Bull Rush",
     "points_cost": 2,
-    "tooltip": "Knocks back secary targets within 10 feet of your primary target. Also Snares targets for 16 sec, reducing their movement speed by 100%. This effect can only occur once every 10 sec.",
+    "tooltip": "Knocks back secondary targets within 10 feet of your primary target. Also Snares targets for 16 sec, reducing their movement speed by 100%. This effect can only occur once every 10 sec.",
     "apply_tag": [
       "Snare",
       "Knock Back"
@@ -1117,7 +1117,7 @@
     "advantage_id": 84,
     "name": "Char",
     "points_cost": 2,
-    "tooltip": "Fully maintaining Paralyzes your primary target and briefly Stuns secary targets.",
+    "tooltip": "Fully maintaining Paralyzes your primary target and briefly Stuns secondary targets.",
     "apply_tag": [
       "Hold",
       "Stun"
@@ -1592,7 +1592,7 @@
     "advantage_id": 118,
     "name": "Convergence",
     "points_cost": 2,
-    "tooltip": "Gains a 20% chance to chain to a secary target. The chain will have the opposite effect: An attack will chain a heal to a nearby friend; a heal will chain an attack to a nearby enemy.",
+    "tooltip": "Gains a 20% chance to chain to a secondary target. The chain will have the opposite effect: An attack will chain a heal to a nearby friend; a heal will chain an attack to a nearby enemy.",
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -4810,7 +4810,7 @@
     "advantage_id": 348,
     "name": "Magma Burst",
     "points_cost": 2,
-    "tooltip": "Deals Fire Damage within 15ft. Applies Clinging Flames to your primary target, and has 30% change to apply it too to secary targets.",
+    "tooltip": "Deals Fire Damage within 15ft. Applies Clinging Flames to your primary target, and has 30% change to apply it too to secondary targets.",
     "apply_tag": [
       "Clinging Flames"
     ],
@@ -5112,7 +5112,7 @@
     "advantage_id": 370,
     "name": "Microfilament Wire",
     "points_cost": 2,
-    "tooltip": "If used within Melee range of a target, the primary target will be Knocked Towards you and the secary targets will be Knocked Down after you land.",
+    "tooltip": "If used within Melee range of a target, the primary target will be Knocked Towards you and the secondary targets will be Knocked Down after you land.",
     "apply_tag": [
       "Knock Down",
       "Knock To"
@@ -5464,7 +5464,7 @@
     "advantage_id": 396,
     "name": "Null Value",
     "points_cost": 2,
-    "tooltip": "Stuns your main target and Knocks Down secary targets.",
+    "tooltip": "Stuns your main target and Knocks Down secondary targets.",
     "apply_tag": [
       "Stun",
       "Knock Down"
@@ -5599,7 +5599,7 @@
     "advantage_id": 405,
     "name": "Overwhelming Force",
     "points_cost": 2,
-    "tooltip": "When fully charged, applies Armor Piercing to your primary target as well as any Disoriented secary targets.",
+    "tooltip": "When fully charged, applies Armor Piercing to your primary target as well as any Disoriented secondary targets.",
     "apply_tag": [
       "Disorient",
       "Armor Piercing"
@@ -7238,7 +7238,7 @@
     "advantage_id": 520,
     "name": "Sinkhole",
     "points_cost": 2,
-    "tooltip": "When fully charged, applies Stagger up to 5 targets within 15ft of your primary target. If secary are affected by 3 stacks of Stagger already, they are Rooted.",
+    "tooltip": "When fully charged, applies Stagger up to 5 targets within 15ft of your primary target. If secondary are affected by 3 stacks of Stagger already, they are Rooted.",
     "apply_tag": [
       "Stagger",
       "Root"
@@ -7995,7 +7995,7 @@
     "advantage_id": 572,
     "name": "Thaw",
     "points_cost": 1,
-    "tooltip": "Applies Break Free damage to the primary target and reduced Break Free damage to secary targets.",
+    "tooltip": "Applies Break Free damage to the primary target and reduced Break Free damage to secondary targets.",
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -8432,7 +8432,7 @@
     "advantage_id": 604,
     "name": "Unpredictable Effects",
     "points_cost": 2,
-    "tooltip": "When fully charged, applies Bane to your primary target, and 50% applies Bane to secary targets.",
+    "tooltip": "When fully charged, applies Bane to your primary target, and 50% applies Bane to secondary targets.",
     "apply_tag": [
       "Bane"
     ],
@@ -8804,7 +8804,7 @@
     "advantage_id": 630,
     "name": "Weather the Storm",
     "points_cost": 2,
-    "tooltip": "secary Energy Effects, such as Clinging Flames, have a chance to not be consumed when you use.",
+    "tooltip": "secondary Energy Effects, such as Clinging Flames, have a chance to not be consumed when you use.",
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -8821,7 +8821,7 @@
     "advantage_id": 631,
     "name": "What Do I have In My Utility Belt?",
     "points_cost": 2,
-    "tooltip": "When fully charged, applies Bane to your primary target, and 50% applies Bane to secary targets.",
+    "tooltip": "When fully charged, applies Bane to your primary target, and 50% applies Bane to secondary targets.",
     "apply_tag": [
       "Bane"
     ],
@@ -9170,7 +9170,7 @@
     "advantage_id": 655,
     "name": "Overwhelming Force",
     "points_cost": 2,
-    "tooltip": "On a full charge, instead of targets being Knocked, your primary target is Paralyzed and secary targets are Stunned for a short time.",
+    "tooltip": "On a full charge, instead of targets being Knocked, your primary target is Paralyzed and secondary targets are Stunned for a short time.",
     "apply_tag": [
       "Hold",
       "Stun"
@@ -9505,7 +9505,7 @@
     "advantage_id": 679,
     "name": "Engulfing Flames",
     "points_cost": 2,
-    "tooltip": "50% chance to apply Engulfing Flame to your primary target. 25% on secary target. Chances are doubled if your targets are affected by Clinging Flames",
+    "tooltip": "50% chance to apply Engulfing Flame to your primary target. 25% on secondary target. Chances are doubled if your targets are affected by Clinging Flames",
     "apply_tag": [
       "Engulfing Flames"
     ],
@@ -9800,7 +9800,7 @@
     "advantage_id": 699,
     "name": "Magma Burst",
     "points_cost": 2,
-    "tooltip": "Deals an additional Fire damage to your primary target and secary targets. Has a 45-100% chance to apply Clinging Flames to all targets.",
+    "tooltip": "Deals an additional Fire damage to your primary target and secondary targets. Has a 45-100% chance to apply Clinging Flames to all targets.",
     "apply_tag": [
       "Clinging Flames"
     ],
