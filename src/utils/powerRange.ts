@@ -1,22 +1,6 @@
 import type { Power } from "@/types/powers";
 
-export const powerRangeSteps = [
-  null,
-  10,
-  15,
-  20,
-  25,
-  30,
-  40,
-  50,
-  60,
-  75,
-  80,
-  100,
-  "100+",
-] as const;
-
-export type PowerRangeFilter = (typeof powerRangeSteps)[number];
+export type PowerRangeFilter = number | "100+" | null;
 
 const volumePattern = /\b(?:cone|cylinder|cuminder|sphere|degree)\b/i;
 const targetPattern =
@@ -68,6 +52,32 @@ export function getPowerRangeFeet(power: Power) {
     rangeTags.length === 1 && /\btargets?\s+self\b/i.test(rangeTags[0] ?? "");
 
   return targetsSelfOnly ? 0 : null;
+}
+
+export function getPowerRangeFilterSteps(powers: Power[]) {
+  const rangeValues = new Set<number>();
+  let hasLongRange = false;
+
+  powers.forEach((power) => {
+    const range = getPowerRangeFeet(power);
+
+    if (range === null || range === 0) {
+      return;
+    }
+
+    if (range > 100) {
+      hasLongRange = true;
+      return;
+    }
+
+    rangeValues.add(range);
+  });
+
+  return [
+    null,
+    ...Array.from(rangeValues).sort((a, b) => a - b),
+    ...(hasLongRange ? ["100+" as const] : []),
+  ];
 }
 
 export function formatPowerRangeFilterLabel(range: PowerRangeFilter) {

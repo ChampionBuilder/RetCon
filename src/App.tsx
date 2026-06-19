@@ -92,6 +92,7 @@ import { useArchetypePowerState } from "@/hooks/useArchetypePowerState";
 import { useAdvantageActions } from "@/hooks/useAdvantageActions";
 import { getMatchingRequirementPowerIds } from "@/utils/buildValidation";
 import { buildDamageModsByFramework } from "@/utils/powerDamageMods";
+import { trimBuildNameForUrl } from "@/constants/buildName";
 
 type WorkspacePanelId =
   | "build"
@@ -107,7 +108,7 @@ const ultraCompactViewportQuery = "(max-width: 1400px)";
 const openPanelTracks = {
   build: "minmax(330px, 1fr)",
   character: "var(--character-column-width)",
-  gear: "minmax(300px, 0.82fr)",
+  gear: "var(--gear-column-width)",
   powers: "minmax(410px, 1.28fr)",
   specializations: "var(--specializations-column-width)",
 } satisfies Record<WorkspacePanelId, string>;
@@ -583,8 +584,8 @@ function App() {
     ],
   );
   const shareUrl = useMemo(
-    () => createShareUrl(serializedBuild),
-    [serializedBuild],
+    () => createShareUrl(serializedBuild, buildName),
+    [buildName, serializedBuild],
   );
 
   function closeAllPopupsExceptCams() {
@@ -1341,7 +1342,7 @@ function App() {
     resetDevices();
   }
 
-  const applyHydratedBuild = useCallback((serializedData: string) => {
+  const applyHydratedBuild = useCallback((serializedData: string, buildNameOverride?: string | null) => {
     const payload = parseSerializedBuild(serializedData);
 
     if (!payload) {
@@ -1355,7 +1356,9 @@ function App() {
       modsById,
     );
 
-    setBuildName(hydratedBuild.buildName);
+    setBuildName(
+      trimBuildNameForUrl(buildNameOverride ?? hydratedBuild.buildName),
+    );
     hydrateArchetypeRole(
       hydratedBuild.selectedArchetypeId,
       hydratedBuild.selectedRoleId,
@@ -1407,9 +1410,10 @@ function App() {
   ]);
 
   function loadSavedBuild(buildId: string) {
-    const savedBuildData = getSavedBuildData(buildId);
+    const savedBuild = savedBuilds.find((build) => build.id === buildId);
+    const savedBuildData = savedBuild?.data ?? getSavedBuildData(buildId);
 
-    if (!savedBuildData || !applyHydratedBuild(savedBuildData)) {
+    if (!savedBuildData || !applyHydratedBuild(savedBuildData, savedBuild?.name)) {
       return;
     }
 
@@ -1473,7 +1477,7 @@ function App() {
       gearSlots: [],
     });
 
-    if (!applyHydratedBuild(importedBuildData)) {
+    if (!applyHydratedBuild(importedBuildData, importResult.build.buildName)) {
       throw new Error("Unsupported or invalid build data.");
     }
 

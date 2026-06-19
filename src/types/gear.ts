@@ -21,6 +21,7 @@ export type GearItem = {
   set_tooltip: string | null;
   set_bonus: string | null;
   set_piece_bonus: string | null;
+  override_set_bonus: boolean | string | null;
   mod_slot_1: string[];
   mod_slot_2: string[];
   mod_slot_3: string[];
@@ -33,7 +34,7 @@ export type GearItem = {
   is_disabled: boolean;
   bonuses: GearBonus[];
   bonus_text: string[];
-  set_piece_bonuses: GearBonus[];
+  set_piece_bonuses: GearSetBonusTier[];
   set_piece_bonus_text: string[];
   set_bonuses: GearSetBonusTier[];
 };

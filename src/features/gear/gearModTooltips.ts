@@ -1,6 +1,10 @@
 import type { GearBonus, GearMod, GearModRank } from "@/types/gear";
 import { cleanMultilineTooltipText } from "@/shared/utils/tooltipText";
-import { formatBonusSegment } from "./gearBonusFormatting";
+import {
+  formatBonusSegment,
+  formatSignedBonusValue,
+  statBonusOrderIndex,
+} from "./gearBonusFormatting";
 
 const modRanks = [5, 7, 9] satisfies GearModRank[];
 
@@ -23,9 +27,62 @@ function formatRankBonusSegments(
   mod: GearMod,
   rank: GearModRank,
 ) {
+  const statLine = formatStatModRankLine(mod, rank);
+
+  if (statLine) {
+    return [statLine];
+  }
+
   return mod.bonuses.flatMap((bonus) =>
     formatBonusSegments(bonus, rank),
   );
+}
+
+function getRankValueForBonus(bonus: GearBonus, rank: GearModRank) {
+  const value = bonus.values_by_rank?.[String(rank)];
+
+  return value === undefined || value === null || value === "" ? null : value;
+}
+
+function getStatBonusCode(bonus: GearBonus) {
+  const code = bonus.type.trim().toUpperCase();
+
+  return statBonusOrderIndex.has(code) ? code : null;
+}
+
+function formatStatModRankLine(
+  mod: GearMod,
+  rank: GearModRank,
+) {
+  if (mod.bonuses.length < 2) {
+    return null;
+  }
+
+  const statBonuses = mod.bonuses.map((bonus) => ({
+    code: getStatBonusCode(bonus),
+    value: getRankValueForBonus(bonus, rank),
+  }));
+
+  if (
+    statBonuses.some(
+      (bonus) => bonus.code === null || bonus.value === null,
+    )
+  ) {
+    return null;
+  }
+
+  const [firstBonus] = statBonuses;
+  const hasSharedValue = statBonuses.every(
+    (bonus) => String(bonus.value) === String(firstBonus.value),
+  );
+
+  if (!hasSharedValue || firstBonus.value === null) {
+    return null;
+  }
+
+  return `${formatSignedBonusValue(firstBonus.value)} ${statBonuses
+    .map((bonus) => bonus.code)
+    .join("/")}`;
 }
 
 function formatModRankLine(

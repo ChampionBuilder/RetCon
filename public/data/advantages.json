@@ -5132,7 +5132,9 @@
       "Shield"
     ],
     "refresh_tag": [],
-    "synergy_tag": [],
+    "synergy_tag": [
+      "Moonlight Howl"
+    ],
     "filter_tag": [],
     "damage_type": [],
     "is_disabled": false

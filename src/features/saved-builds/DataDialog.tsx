@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import type { ImportSavedBuildsResult } from "@/features/saved-builds/useSavedBuilds";
 import { ModalDialog } from "@/shared/ui";
 import type { SavedBuild } from "@/types/share";
+import { createShareUrl } from "@/utils/buildSerialization";
 
 type DataDialogProps = {
   currentBuildName: string;
@@ -41,12 +42,7 @@ export function DataDialog({
   const [dataMessage, setDataMessage] = useState<string | null>(null);
 
   function getSavedBuildUrl(savedBuild: SavedBuild) {
-    const url = new URL(window.location.href);
-
-    url.searchParams.delete("build");
-    url.searchParams.set("b", savedBuild.data);
-
-    return url.toString();
+    return createShareUrl(savedBuild.data, savedBuild.name);
   }
 
   function saveDataFile() {

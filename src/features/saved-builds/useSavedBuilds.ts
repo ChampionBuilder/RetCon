@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import type { SavedBuild } from "@/types/share";
 import { parseSerializedBuild } from "@/utils/buildSerialization";
 import { loadSavedBuilds, storeSavedBuilds } from "@/features/saved-builds/savedBuilds";
+import { trimBuildNameForUrl } from "@/constants/buildName";
 
 type UseSavedBuildsOptions = {
   buildName: string;
@@ -13,7 +14,12 @@ export type ImportSavedBuildsResult = {
   skipped: number;
 };
 
-function getSerializedBuildFromLine(line: string) {
+type ImportedBuildUrlData = {
+  buildName: string | null;
+  serializedBuild: string;
+};
+
+function getSerializedBuildFromLine(line: string): ImportedBuildUrlData | null {
   const trimmedLine = line.trim();
 
   if (!trimmedLine || trimmedLine.startsWith("#")) {
@@ -22,14 +28,31 @@ function getSerializedBuildFromLine(line: string) {
 
   try {
     const url = new URL(trimmedLine);
+    const serializedBuild = url.searchParams.get("b");
 
-    return url.searchParams.get("b");
+    return serializedBuild
+      ? {
+          buildName: url.searchParams.get("n"),
+          serializedBuild,
+        }
+      : null;
   } catch {
     if (trimmedLine.startsWith("?") || trimmedLine.includes("b=")) {
-      return new URLSearchParams(trimmedLine.replace(/^[^?]*\?/u, "")).get("b");
+      const params = new URLSearchParams(trimmedLine.replace(/^[^?]*\?/u, ""));
+      const serializedBuild = params.get("b");
+
+      return serializedBuild
+        ? {
+            buildName: params.get("n"),
+            serializedBuild,
+          }
+        : null;
     }
 
-    return trimmedLine;
+    return {
+      buildName: null,
+      serializedBuild: trimmedLine,
+    };
   }
 }
 
@@ -90,7 +113,8 @@ export function useSavedBuilds({
     let skipped = 0;
 
     text.split(/\r?\n/u).forEach((line) => {
-      const serializedImportedBuild = getSerializedBuildFromLine(line);
+      const importedBuildUrlData = getSerializedBuildFromLine(line);
+      const serializedImportedBuild = importedBuildUrlData?.serializedBuild;
 
       if (!serializedImportedBuild || existingBuildData.has(serializedImportedBuild)) {
         if (line.trim()) {
@@ -110,7 +134,10 @@ export function useSavedBuilds({
       existingBuildData.add(serializedImportedBuild);
       importedBuilds.push({
         id: crypto.randomUUID(),
-        name: parsedBuild.buildName || "Imported build",
+        name:
+          trimBuildNameForUrl(
+            importedBuildUrlData.buildName ?? parsedBuild.buildName,
+          ) || "Imported build",
         data: serializedImportedBuild,
         updatedAt: new Date().toISOString(),
       });

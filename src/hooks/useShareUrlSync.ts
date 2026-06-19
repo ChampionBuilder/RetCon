@@ -1,7 +1,10 @@
 import { useEffect, useRef } from "react";
 
 type UseShareUrlSyncOptions = {
-  applyHydratedBuild: (serializedData: string) => boolean;
+  applyHydratedBuild: (
+    serializedData: string,
+    buildNameOverride?: string | null,
+  ) => boolean;
   dataReady: boolean;
   shareUrl: string;
 };
@@ -20,11 +23,13 @@ export function useShareUrlSync({
     }
 
     hasAttemptedUrlHydrationRef.current = true;
-    const serializedData = new URLSearchParams(window.location.search).get("b");
+    const urlSearchParams = new URLSearchParams(window.location.search);
+    const serializedData = urlSearchParams.get("b");
+    const buildName = urlSearchParams.get("n");
 
     if (serializedData) {
       window.setTimeout(() => {
-        applyHydratedBuild(serializedData);
+        applyHydratedBuild(serializedData, buildName);
         hasCompletedUrlHydrationRef.current = true;
       }, 0);
       return;

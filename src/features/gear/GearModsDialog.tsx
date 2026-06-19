@@ -5,7 +5,10 @@ import type {
 } from "@/types/gear";
 import { AnchoredSelectionDialog, type DialogAnchor } from "@/shared/ui";
 import { SpriteIcon } from "@/shared/ui/SpriteIcon";
-import { formatGearModTooltipText } from "./gearModTooltips";
+import {
+  formatGearModRankTooltipText,
+  formatGearModTooltipText,
+} from "./gearModTooltips";
 
 type GearModsDialogProps = {
   anchor: DialogAnchor;
@@ -174,6 +177,10 @@ export function GearModsDialog({
               const allowedRanks = getAllowedRanks(mod, gearSlot);
               const autoSelectedRank =
                 allowedRanks.length === 1 ? allowedRanks[0] : null;
+              const modTooltip =
+                allowedRanks.length === 1
+                  ? formatGearModRankTooltipText(mod, allowedRanks[0])
+                  : formatGearModTooltipText(mod);
               const isAlreadySelected = isNonStackableModAlreadySelected(
                 mod,
                 gearSlots,
@@ -195,7 +202,7 @@ export function GearModsDialog({
                   data-text-tooltip={
                     isAlreadySelected
                       ? "This mod cannot be stacked"
-                      : formatGearModTooltipText(mod)
+                      : modTooltip
                   }
                   type="button"
                   onClick={(event) =>

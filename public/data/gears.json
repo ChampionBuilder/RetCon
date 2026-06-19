@@ -10,6 +10,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=25|3=Offense=175",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -98,6 +99,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=25|3=Offense=175",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -182,6 +184,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=25|3=Offense=175",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -266,6 +269,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=25|3=Offense=175",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Armoring"
     ],
@@ -350,6 +354,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=25|3=Offense=175",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Armoring"
     ],
@@ -434,6 +439,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=25|3=Offense=175",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Armoring"
     ],
@@ -522,6 +528,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=25|3=Offense=175",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -610,6 +617,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=25|3=Offense=175",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -698,6 +706,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=20;Non_Super_Stats=10|3=Defense=65;10% bonus to Energy Unlock. 20% in Tank Role.",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -788,6 +797,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=20;Non_Super_Stats=10|3=Defense=65;10% bonus to Energy Unlock. 20% in Tank Role.",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -880,6 +890,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=20;Non_Super_Stats=10|3=Defense=65;10% bonus to Energy Unlock. 20% in Tank Role.",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -974,6 +985,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=20;Non_Super_Stats=10|3=Defense=65;10% bonus to Energy Unlock. 20% in Tank Role.",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Armoring"
     ],
@@ -1072,6 +1084,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=20;Non_Super_Stats=10|3=Defense=65;10% bonus to Energy Unlock. 20% in Tank Role.",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Armoring"
     ],
@@ -1166,6 +1179,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=20;Non_Super_Stats=10|3=Defense=65;10% bonus to Energy Unlock. 20% in Tank Role.",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Armoring"
     ],
@@ -1264,6 +1278,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=20;Non_Super_Stats=10|3=Defense=65;10% bonus to Energy Unlock. 20% in Tank Role.",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -1352,12 +1367,13 @@
     "gear_set": "Distinguished",
     "gear_slot": "Primary",
     "gear_type": "Utility",
-    "name": "Distinguished Helmet of  Efficiency",
+    "name": "Distinguished Helmet of Efficiency",
     "gear_tooltip": null,
     "gear_bonus": "Grants 8 Energy every 2 sec while in combat.;Defense=21;Cooldown_Reduction=51;Cost_Discount=152",
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=20;Non_Super_Stats=10|3=Defense=65;10% bonus to Energy Unlock. 20% in Tank Role.",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -1454,6 +1470,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=15;Resistance=10|3=Healing_Bonus=40;10% bonus to Energy Unlock. 20% in Support Role.",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -1548,6 +1565,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=15;Resistance=10|3=Healing_Bonus=40;10% bonus to Energy Unlock. 20% in Support Role.",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -1642,6 +1660,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=15;Resistance=10|3=Healing_Bonus=40;10% bonus to Energy Unlock. 20% in Support Role.",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -1736,6 +1755,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=15;Resistance=10|3=Healing_Bonus=40;10% bonus to Energy Unlock. 20% in Support Role.",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Armoring"
     ],
@@ -1830,6 +1850,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=15;Resistance=10|3=Healing_Bonus=40;10% bonus to Energy Unlock. 20% in Support Role.",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Armoring"
     ],
@@ -1920,6 +1941,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=15;Resistance=10|3=Healing_Bonus=40;10% bonus to Energy Unlock. 20% in Support Role.",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Armoring"
     ],
@@ -2014,6 +2036,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=15;Resistance=10|3=Healing_Bonus=40;10% bonus to Energy Unlock. 20% in Support Role.",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -2108,6 +2131,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=15;Resistance=10|3=Healing_Bonus=40;10% bonus to Energy Unlock. 20% in Support Role.",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -2204,6 +2228,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
     "set_piece_bonus": "3=Offense=100;Threat=-10",
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Offense"
     ],
@@ -2229,12 +2254,18 @@
     ],
     "set_piece_bonuses": [
       {
-        "type": "3",
-        "value": "Offense=100"
-      },
-      {
-        "type": "Threat",
-        "value": -10
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Offense",
+            "value": 100
+          },
+          {
+            "type": "Threat",
+            "value": -10
+          }
+        ],
+        "text": []
       }
     ],
     "set_piece_bonus_text": [],
@@ -2277,6 +2308,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
     "set_piece_bonus": "3=Defense=30;Threat=10",
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Offense"
     ],
@@ -2302,12 +2334,18 @@
     ],
     "set_piece_bonuses": [
       {
-        "type": "3",
-        "value": "Defense=30"
-      },
-      {
-        "type": "Threat",
-        "value": 10
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Defense",
+            "value": 30
+          },
+          {
+            "type": "Threat",
+            "value": 10
+          }
+        ],
+        "text": []
       }
     ],
     "set_piece_bonus_text": [],
@@ -2350,6 +2388,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
     "set_piece_bonus": "3=Defense=30;Threat=-10",
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Offense"
     ],
@@ -2375,12 +2414,18 @@
     ],
     "set_piece_bonuses": [
       {
-        "type": "3",
-        "value": "Defense=30"
-      },
-      {
-        "type": "Threat",
-        "value": -10
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Defense",
+            "value": 30
+          },
+          {
+            "type": "Threat",
+            "value": -10
+          }
+        ],
+        "text": []
       }
     ],
     "set_piece_bonus_text": [],
@@ -2423,6 +2468,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
     "set_piece_bonus": "3=Defense=30;Threat=-10",
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Offense"
     ],
@@ -2448,12 +2494,18 @@
     ],
     "set_piece_bonuses": [
       {
-        "type": "3",
-        "value": "Defense=30"
-      },
-      {
-        "type": "Threat",
-        "value": -10
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Defense",
+            "value": 30
+          },
+          {
+            "type": "Threat",
+            "value": -10
+          }
+        ],
+        "text": []
       }
     ],
     "set_piece_bonus_text": [],
@@ -2496,6 +2548,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Offense"
     ],
@@ -2566,6 +2619,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Offense"
     ],
@@ -2636,6 +2690,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Defense"
     ],
@@ -2702,6 +2757,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Defense"
     ],
@@ -2768,6 +2824,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Utility"
     ],
@@ -2842,6 +2899,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Utility"
     ],
@@ -2916,6 +2974,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10",
     "set_piece_bonus": "3=Offense=200",
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -2944,8 +3003,14 @@
     ],
     "set_piece_bonuses": [
       {
-        "type": "3",
-        "value": "Offense=200"
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Offense",
+            "value": 200
+          }
+        ],
+        "text": []
       }
     ],
     "set_piece_bonus_text": [],
@@ -2978,6 +3043,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10",
     "set_piece_bonus": "3=Offense=200",
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -3006,8 +3072,14 @@
     ],
     "set_piece_bonuses": [
       {
-        "type": "3",
-        "value": "Offense=200"
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Offense",
+            "value": 200
+          }
+        ],
+        "text": []
       }
     ],
     "set_piece_bonus_text": [],
@@ -3040,6 +3112,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10",
     "set_piece_bonus": "3=Offense=200",
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -3068,8 +3141,14 @@
     ],
     "set_piece_bonuses": [
       {
-        "type": "3",
-        "value": "Offense=200"
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Offense",
+            "value": 200
+          }
+        ],
+        "text": []
       }
     ],
     "set_piece_bonus_text": [],
@@ -3102,6 +3181,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10",
     "set_piece_bonus": "3=Offense=200",
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -3130,8 +3210,14 @@
     ],
     "set_piece_bonuses": [
       {
-        "type": "3",
-        "value": "Offense=200"
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Offense",
+            "value": 200
+          }
+        ],
+        "text": []
       }
     ],
     "set_piece_bonus_text": [],
@@ -3164,6 +3250,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10",
     "set_piece_bonus": "3=Offense=200",
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -3192,8 +3279,14 @@
     ],
     "set_piece_bonuses": [
       {
-        "type": "3",
-        "value": "Offense=200"
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Offense",
+            "value": 200
+          }
+        ],
+        "text": []
       }
     ],
     "set_piece_bonus_text": [],
@@ -3226,6 +3319,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10",
     "set_piece_bonus": "3=Max_HP=1000",
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -3254,8 +3348,14 @@
     ],
     "set_piece_bonuses": [
       {
-        "type": "3",
-        "value": "Max_HP=1000"
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Max_HP",
+            "value": 1000
+          }
+        ],
+        "text": []
       }
     ],
     "set_piece_bonus_text": [],
@@ -3288,6 +3388,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10",
     "set_piece_bonus": "3=Max_HP=1000",
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -3316,8 +3417,14 @@
     ],
     "set_piece_bonuses": [
       {
-        "type": "3",
-        "value": "Max_HP=1000"
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Max_HP",
+            "value": 1000
+          }
+        ],
+        "text": []
       }
     ],
     "set_piece_bonus_text": [],
@@ -3350,6 +3457,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -3405,6 +3513,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -3464,6 +3573,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -3519,6 +3629,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -3578,6 +3689,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -3637,6 +3749,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -3700,6 +3813,7 @@
     "set_tooltip": null,
     "set_bonus": "3=Max_HP=1000;Super_Stats=50;Reduces the cooldown on your Ultimate power by 2 sec when you fully Charge a power. Can be used once every 5 sec.",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Offense"
     ],
@@ -3752,6 +3866,7 @@
     "set_tooltip": null,
     "set_bonus": "3=Max_HP=1000;Super_Stats=50;Reduces the cooldown on your Ultimate power by 2 sec when you fully Charge a power. Can be used once every 5 sec.",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Defense"
     ],
@@ -3804,6 +3919,7 @@
     "set_tooltip": null,
     "set_bonus": "3=Max_HP=1000;Super_Stats=50;Reduces the cooldown on your Ultimate power by 2 sec when you fully Charge a power. Can be used once every 5 sec.",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Utility"
     ],
@@ -3856,6 +3972,7 @@
     "set_tooltip": null,
     "set_bonus": "3=Max_HP=1000;Super_Stats=50;Reduces the cooldown on your Ultimate power by 2 sec when you complete a Combo power. Can be used once every 5 sec.",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Offense"
     ],
@@ -3908,6 +4025,7 @@
     "set_tooltip": null,
     "set_bonus": "3=Max_HP=1000;Super_Stats=50;Reduces the cooldown on your Ultimate power by 2 sec when you complete a Combo power. Can be used once every 5 sec.",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Defense"
     ],
@@ -3960,6 +4078,7 @@
     "set_tooltip": null,
     "set_bonus": "3=Max_HP=1000;Super_Stats=50;Reduces the cooldown on your Ultimate power by 2 sec when you complete a Combo power. Can be used once every 5 sec.",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Utility"
     ],
@@ -4012,6 +4131,7 @@
     "set_tooltip": null,
     "set_bonus": "3=Max_HP=1000;Super_Stats=50;Reduces the cooldown on your Ultimate power by 2 sec when you fully Maintain a power. Can be used once every 5 sec.",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Offense"
     ],
@@ -4064,6 +4184,7 @@
     "set_tooltip": null,
     "set_bonus": "3=Max_HP=1000;Super_Stats=50;Reduces the cooldown on your Ultimate power by 2 sec when you fully Maintain a power. Can be used once every 5 sec.",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Defense"
     ],
@@ -4116,6 +4237,7 @@
     "set_tooltip": null,
     "set_bonus": "3=Max_HP=1000;Super_Stats=50;Reduces the cooldown on your Ultimate power by 2 sec when you fully Maintain a power. Can be used once every 5 sec.",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Utility"
     ],
@@ -4166,8 +4288,9 @@
     "gear_tooltip": null,
     "gear_bonus": "Dealing direct damage increases your base damage by 1% for 10 sec. This effect can stack up to 5 times.;Threat=-10;Defense=6.5",
     "set_tooltip": null,
-    "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
-    "set_piece_bonus": null,
+    "set_bonus": "2=Super_Stats=10",
+    "set_piece_bonus": "3=Offense=150",
+    "override_set_bonus": true,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -4194,7 +4317,18 @@
     "bonus_text": [
       "Dealing direct damage increases your base damage by 1% for 10 sec. This effect can stack up to 5 times."
     ],
-    "set_piece_bonuses": [],
+    "set_piece_bonuses": [
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Offense",
+            "value": 150
+          }
+        ],
+        "text": []
+      }
+    ],
     "set_piece_bonus_text": [],
     "set_bonuses": [
       {
@@ -4202,16 +4336,6 @@
         "bonuses": [
           {
             "type": "Super_Stats",
-            "value": 10
-          }
-        ],
-        "text": []
-      },
-      {
-        "pieces": 3,
-        "bonuses": [
-          {
-            "type": "All_Stats",
             "value": 10
           }
         ],
@@ -4233,8 +4357,9 @@
     "gear_tooltip": null,
     "gear_bonus": "Whenever you use a direct healing ability, increases your Healing output and your resistance to all damage by 4% for 10 sec. This effect can stack up to 5 times.;Threat=-10;Defense=6.5",
     "set_tooltip": null,
-    "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
-    "set_piece_bonus": null,
+    "set_bonus": "2=Super_Stats=10",
+    "set_piece_bonus": "3=Max_HP=750",
+    "override_set_bonus": true,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -4261,7 +4386,18 @@
     "bonus_text": [
       "Whenever you use a direct healing ability, increases your Healing output and your resistance to all damage by 4% for 10 sec. This effect can stack up to 5 times."
     ],
-    "set_piece_bonuses": [],
+    "set_piece_bonuses": [
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Max_HP",
+            "value": 750
+          }
+        ],
+        "text": []
+      }
+    ],
     "set_piece_bonus_text": [],
     "set_bonuses": [
       {
@@ -4269,16 +4405,6 @@
         "bonuses": [
           {
             "type": "Super_Stats",
-            "value": 10
-          }
-        ],
-        "text": []
-      },
-      {
-        "pieces": 3,
-        "bonuses": [
-          {
-            "type": "All_Stats",
             "value": 10
           }
         ],
@@ -4300,8 +4426,9 @@
     "gear_tooltip": null,
     "gear_bonus": "While blocking, you are healed for 250 Health every 2 sec.;Threat=10;Defense=6.5",
     "set_tooltip": null,
-    "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
-    "set_piece_bonus": null,
+    "set_bonus": "2=Super_Stats=10",
+    "set_piece_bonus": "3=Max_HP=750",
+    "override_set_bonus": true,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -4328,7 +4455,18 @@
     "bonus_text": [
       "While blocking, you are healed for 250 Health every 2 sec."
     ],
-    "set_piece_bonuses": [],
+    "set_piece_bonuses": [
+      {
+        "pieces": 3,
+        "bonuses": [
+          {
+            "type": "Max_HP",
+            "value": 750
+          }
+        ],
+        "text": []
+      }
+    ],
     "set_piece_bonus_text": [],
     "set_bonuses": [
       {
@@ -4336,16 +4474,6 @@
         "bonuses": [
           {
             "type": "Super_Stats",
-            "value": 10
-          }
-        ],
-        "text": []
-      },
-      {
-        "pieces": 3,
-        "bonuses": [
-          {
-            "type": "All_Stats",
             "value": 10
           }
         ],
@@ -4369,6 +4497,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -4429,12 +4558,13 @@
     "gear_set": "Determination",
     "gear_slot": "Secondary",
     "gear_type": "Offense",
-    "name": "Rejuvinating Belt of Determination",
+    "name": "Rejuvenating Belt of Determination",
     "gear_tooltip": null,
     "gear_bonus": "Defense=6.5;Offense=17;Healing_Bonus=14",
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -4505,6 +4635,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -4575,6 +4706,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -4645,6 +4777,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -4707,6 +4840,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -4773,6 +4907,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -4843,6 +4978,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Enhancement"
     ],
@@ -4913,6 +5049,7 @@
     "set_tooltip": null,
     "set_bonus": "2=Super_Stats=10|3=All_Stats=10",
     "set_piece_bonus": null,
+    "override_set_bonus": false,
     "mod_slot_1": [
       "Enhancement"
     ],

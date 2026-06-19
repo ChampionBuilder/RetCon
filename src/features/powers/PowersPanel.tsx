@@ -34,9 +34,14 @@ import {
   getPowerDamageTypes,
 } from "@/utils/powerDamageTypes";
 import {
+  formatPowerCooldownFilterLabel,
+  getPowerCooldownFilterSteps,
+  powerMatchesCooldown,
+} from "@/utils/powerCooldown";
+import {
   formatPowerRangeFilterLabel,
+  getPowerRangeFilterSteps,
   powerMatchesExactRange,
-  powerRangeSteps,
 } from "@/utils/powerRange";
 import {
   getPowerRoleAdvantageHighlightQueries,
@@ -420,6 +425,7 @@ export function PowersPanel({
     TagSearchColumn[]
   >([]);
   const [selectedRangeStepIndex, setSelectedRangeStepIndex] = useState(0);
+  const [selectedCooldownStepIndex, setSelectedCooldownStepIndex] = useState(0);
   const [selectedTargetingFilter, setSelectedTargetingFilter] = useState<
     PowerTargetingFilter | ""
   >("");
@@ -533,13 +539,30 @@ export function PowersPanel({
         : powerTargetingOptions.filter((option) => option !== "Special"),
     [],
   );
-  const selectedMinimumRange = powerRangeSteps[selectedRangeStepIndex] ?? null;
+  const powerRangeSteps = useMemo(
+    () => getPowerRangeFilterSteps(powers),
+    [powers],
+  );
+  const powerCooldownSteps = useMemo(
+    () => getPowerCooldownFilterSteps(powers),
+    [powers],
+  );
+  const clampedRangeStepIndex =
+    selectedRangeStepIndex < powerRangeSteps.length ? selectedRangeStepIndex : 0;
+  const clampedCooldownStepIndex =
+    selectedCooldownStepIndex < powerCooldownSteps.length
+      ? selectedCooldownStepIndex
+      : 0;
+  const selectedMinimumRange = powerRangeSteps[clampedRangeStepIndex] ?? null;
+  const selectedCooldown = powerCooldownSteps[clampedCooldownStepIndex] ?? null;
+
   const hasActivePowerSearchOrFilter =
     hasParsedPowerSearch(parsedSearch) ||
     Boolean(selectedPowerRoleFilter) ||
     selectedScalingStats.length > 0 ||
     selectedDamageTypes.length > 0 ||
     selectedMinimumRange !== null ||
+    selectedCooldown !== null ||
     Boolean(selectedTargetingFilter) ||
     Boolean(selectedActivationTypeFilter);
   const includeAllFrameworkPowerVariants =
@@ -866,6 +889,13 @@ export function PowersPanel({
         return false;
       }
 
+      if (
+        selectedCooldown !== null &&
+        !powerMatchesCooldown(power, selectedCooldown)
+      ) {
+        return false;
+      }
+
       if (!powerMatchesTargetingFilter(power, selectedTargetingFilter)) {
         return false;
       }
@@ -897,6 +927,7 @@ export function PowersPanel({
     selectedScalingStats,
     selectedTagSearchColumns,
     selectedMinimumRange,
+    selectedCooldown,
     selectedTargetingFilter,
     selectedActivationTypeFilter,
     selectedPowerRoleFilter,
@@ -1234,12 +1265,17 @@ export function PowersPanel({
     return formatPowerRangeFilterLabel(selectedMinimumRange);
   }
 
+  function selectedCooldownLabel() {
+    return formatPowerCooldownFilterLabel(selectedCooldown);
+  }
+
   function resetAdvancedFilters() {
     setSelectedPowerRoleFilter("");
     setSelectedScalingStats([]);
     setSelectedDamageTypes([]);
     setSelectedTagSearchColumns([]);
     setSelectedRangeStepIndex(0);
+    setSelectedCooldownStepIndex(0);
     setSelectedTargetingFilter("");
     setSelectedActivationTypeFilter("");
     setIsScalingStatMenuOpen(false);
@@ -1606,9 +1642,27 @@ export function PowersPanel({
                 max={powerRangeSteps.length - 1}
                 min={0}
                 type="range"
-                value={selectedRangeStepIndex}
+                value={clampedRangeStepIndex}
                 onChange={(event) =>
                   setSelectedRangeStepIndex(Number(event.target.value))
+                }
+              />
+            </div>
+          </label>
+
+          <label className="search-filter-panel__field search-filter-panel__field--cooldown">
+            <span className="search-filter-panel__label">Cooldown</span>
+            <div className="search-filter-range">
+              <span className="search-filter-range__value">
+                {selectedCooldownLabel()}
+              </span>
+              <input
+                max={powerCooldownSteps.length - 1}
+                min={0}
+                type="range"
+                value={clampedCooldownStepIndex}
+                onChange={(event) =>
+                  setSelectedCooldownStepIndex(Number(event.target.value))
                 }
               />
             </div>

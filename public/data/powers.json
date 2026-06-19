@@ -15491,6 +15491,7 @@
     "cooldown": null,
     "range_tags": [
       "Targets foe (5 max)",
+      "10 feet",
       "3 foot Cylinder"
     ],
     "tooltip": "Deals Crushing damage and generates energy. + The first hit has a 15% chance to apply Disorient. Disoriented targets have their damage reduced by 10% and their movement speed reduced by 50%.",
@@ -22128,7 +22129,7 @@
     "range_tags": [
       "Targets self"
     ],
-    "tooltip": "Grants a 42/50/60% increase to all damage. + Increases your Strenght and Recovery by 35/42/50 points. + Increases the amount of Energy your Recovery gives. + Applies Break Free damage to any Holds, Roots, or Disables affecting you. + Can be used while Held or Confused. + Activates a shared cooldown of 90 sec on all Active Offenses.",
+    "tooltip": "Grants a 42/50/60% increase to all damage. + Increases your Strenght and Recovery by 35/42/50 points. + Increases the amount of Energy your Recovery gives. + Applies Break Free damage to any Holds, Roots, or Disables affecting you. + Applies Moonlight Howl to you for 15 sec. + Can be used while Held or Confused. + Activates a shared cooldown of 90 sec on all Active Offenses.",
     "apply_tag": [
       "Moonlight Howl"
     ],
@@ -28033,7 +28034,7 @@
     "power_id": 764,
     "powerset_id": "PVD",
     "framework_id": "Archery",
-    "name": "Deals Electrical Damage to your target. + The Critical Severity on this power is increased by 100%. When fired at an enemy afflicted with the Negative Ions debuff, it consumes the Negative Ions debuff to complete a Circuit, apply the Superconductor debuff and deal addition Electrical Damage. + When Stormpiercer hits an enemy effected by the Negative Ions debuff it Arcs to a target within 25 feet, dealing Electrical Damage to that target. + Additionally, Stormpiercer will Stun the target for 2 sec if the Player has the Download buff.",
+    "name": "Stormpiercer",
     "tier": null,
     "power_type": "RANGED_DAMAGE",
     "advantages": [],
@@ -33542,7 +33543,7 @@
     "power_id": 922,
     "powerset_id": "Device",
     "framework_id": "Healing_Devices",
-    "name": "Chimeral Potion  of the Vulture",
+    "name": "Chimeral Potion of the Vulture",
     "tier": null,
     "power_type": "SELF_HEAL",
     "advantages": [],
@@ -37704,11 +37705,11 @@
     "tier": null,
     "power_type": "TRAVEL_POWER",
     "advantages": [],
-    "activation_type": "CHARGE",
-    "activation_time": 1,
+    "activation_type": "TOGGLE",
+    "activation_time": 1.5,
     "max_duration": null,
     "tick_rate": null,
-    "cooldown": 1.5,
+    "cooldown": 1,
     "range_tags": [
       "Targets self"
     ],
@@ -37764,7 +37765,7 @@
     "tier": null,
     "power_type": "TRAVEL_POWER",
     "advantages": [],
-    "activation_type": "CLICK",
+    "activation_type": "TOGGLE",
     "activation_time": 1.5,
     "max_duration": null,
     "tick_rate": null,
@@ -37825,10 +37826,10 @@
     "power_type": "TRAVEL_POWER",
     "advantages": [],
     "activation_type": "TOGGLE",
-    "activation_time": null,
-    "max_duration": 1.5,
+    "activation_time": 1.5,
+    "max_duration": null,
     "tick_rate": null,
-    "cooldown": null,
+    "cooldown": 1,
     "range_tags": [
       "Targets self"
     ],
@@ -37944,11 +37945,11 @@
     "tier": null,
     "power_type": "TRAVEL_POWER",
     "advantages": [],
-    "activation_type": "TOGGLE",
+    "activation_type": "CLICK",
     "activation_time": null,
-    "max_duration": 5,
+    "max_duration": 3,
     "tick_rate": null,
-    "cooldown": 0.5,
+    "cooldown": 15,
     "range_tags": [
       "Targets self"
     ],
@@ -38094,7 +38095,7 @@
     "tier": null,
     "power_type": "TRAVEL_POWER",
     "advantages": [],
-    "activation_type": "CLICK",
+    "activation_type": "TOGGLE",
     "activation_time": 1.5,
     "max_duration": null,
     "tick_rate": null,
@@ -38274,11 +38275,11 @@
     "tier": null,
     "power_type": "TRAVEL_POWER",
     "advantages": [],
-    "activation_type": "TOGGLE",
+    "activation_type": "CLICK",
     "activation_time": null,
-    "max_duration": 5,
+    "max_duration": 3,
     "tick_rate": null,
-    "cooldown": 0.5,
+    "cooldown": 15,
     "range_tags": [
       "Targets self"
     ],
@@ -38305,7 +38306,7 @@
     "power_type": "TRAVEL_POWER",
     "advantages": [],
     "activation_type": "TOGGLE",
-    "activation_time": 1.5,
+    "activation_time": null,
     "max_duration": null,
     "tick_rate": null,
     "cooldown": 1,

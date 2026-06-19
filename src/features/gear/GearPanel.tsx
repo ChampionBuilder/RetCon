@@ -411,14 +411,30 @@ export function GearPanel({
                                           {modSlotLabel}
                                         </button>
                                       ) : (
-                                        <span
-                                          className="gear-mod-button__label"
+                                        <button
+                                          className={[
+                                            "gear-mod-button__label",
+                                            "gear-mod-button__label-button",
+                                            "gear-mod-button__label-button--pending-rank",
+                                          ].join(" ")}
                                           data-text-tooltip={modSlotTooltip}
+                                          type="button"
+                                          onClick={(event) => {
+                                            event.stopPropagation();
+                                            onSelectGearMod(
+                                              gearSlot.id,
+                                              modSlotIndex,
+                                              {
+                                                x: event.clientX,
+                                                y: event.clientY,
+                                              },
+                                            );
+                                          }}
                                         >
                                           <ModSlotEmptyLabel
                                             slotTypes={slotTypes}
                                           />
-                                        </span>
+                                        </button>
                                       )}
                                     </div>
                                   );

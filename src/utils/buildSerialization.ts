@@ -980,7 +980,7 @@ export function serializeBuild(input: BuildSerializationInput) {
   const bytes: number[] = [];
 
   bytes.push(serializationVersion);
-  writeString(bytes, trimBuildNameForUrl(input.buildName));
+  writeString(bytes, "");
   writeCharacterBasics(bytes, input);
   writeCombatSlots(bytes, input.buildSlots);
   writeUtilitySlots(
@@ -1160,10 +1160,17 @@ export function hydrateSerializedBuild(
   };
 }
 
-export function createShareUrl(serializedBuild: string) {
+export function createShareUrl(serializedBuild: string, buildName = "") {
   const url = new URL(import.meta.env.BASE_URL, window.location.origin);
+  const shareBuildName = trimBuildNameForUrl(buildName);
 
   url.searchParams.set("b", serializedBuild);
+
+  if (shareBuildName) {
+    url.searchParams.set("n", shareBuildName);
+  } else {
+    url.searchParams.delete("n");
+  }
 
   return url.toString();
 }

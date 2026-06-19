@@ -7,7 +7,11 @@ import {
   getResolvedBonusTypes,
   statBonusOrderIndex,
 } from "./gearBonusFormatting";
-import { getBonusSignature, getSetPieceBonusTiers } from "./gearSetBonuses";
+import {
+  getBonusSignature,
+  getOverriddenSetBonusPieces,
+  getSetPieceBonusTiers,
+} from "./gearSetBonuses";
 
 function addBonusToTotals(
   totals: Map<string, number>,
@@ -224,11 +228,15 @@ function addCommonSetBonusesToTotals(
   selectedSuperStats: (SuperStat | null)[],
 ) {
   const setGearCount = setGears.length;
+  const overriddenSetBonusPieces = getOverriddenSetBonusPieces(setGears);
   const bonusHits = new Map<string, { bonus: GearBonus; gearIds: Set<number> }>();
 
   setGears.forEach((gear) => {
     gear.set_bonuses.forEach((setBonusTier) => {
-      if (setBonusTier.pieces > setGearCount) {
+      if (
+        setBonusTier.pieces > setGearCount ||
+        overriddenSetBonusPieces.has(setBonusTier.pieces)
+      ) {
         return;
       }
 

@@ -1,6 +1,7 @@
 .app-shell {
   --character-column-width: clamp(210px, 13.37vw, 250px);
   --specializations-column-width: clamp(230px, 16.667vw, 330px);
+  --gear-column-width: minmax(300px, 400px);
   --workspace-column-gap: 6px;
   --choice-border: #263653;
   --choice-background: rgba(12, 15, 22, 0.84);
@@ -515,7 +516,7 @@ h3 {
     var(--powers-panel-track, minmax(0, 1.28fr))
     var(--build-panel-track, minmax(0, 0.87fr))
     var(--specializations-panel-track, var(--specializations-column-width))
-    var(--gear-panel-track, minmax(180px, 0.65fr));
+    var(--gear-panel-track, var(--gear-column-width));
 }
 
 .workspace-panel-shell {
@@ -779,7 +780,7 @@ h3 {
   position: fixed;
   z-index: 10;
   inset: 0;
-  background: rgba(0, 0, 0, 0.52);
+  background: rgba(0, 0, 0, 0.75);
 }
 
 .selection-dialog {
@@ -1969,7 +1970,8 @@ h3 {
   accent-color: #557ed1;
 }
 
-.search-filter-panel__field--range {
+.search-filter-panel__field--range,
+.search-filter-panel__field--cooldown {
   grid-column: 1 / -1;
 }
 
@@ -2074,7 +2076,8 @@ h3 {
   height: 11px;
 }
 
-.search-filter-panel__field--range {
+.search-filter-panel__field--range,
+.search-filter-panel__field--cooldown {
   grid-column: 1 / -1;
 }
 

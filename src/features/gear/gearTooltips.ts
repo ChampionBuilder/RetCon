@@ -4,7 +4,7 @@ import {
   formatBonusSegment,
   getGearBonusValue,
 } from "./gearBonusFormatting";
-import { getSetPieceBonusTiers } from "./gearSetBonuses";
+import { getDisplayedSetBonusTiers } from "./gearSetBonuses";
 
 function cleanGearTooltipText(value: string | null | undefined) {
   return (
@@ -27,7 +27,7 @@ function getTextLines(values: string[] | null | undefined) {
 }
 
 function getSetBonusText(gear: GearItem) {
-  const setBonusTiers = [...gear.set_bonuses, ...getSetPieceBonusTiers(gear)];
+  const setBonusTiers = getDisplayedSetBonusTiers(gear);
 
   if (setBonusTiers.length === 0) {
     return null;

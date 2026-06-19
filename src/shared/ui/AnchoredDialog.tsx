@@ -71,30 +71,18 @@ export function AnchoredDialog({
           }
         : null;
 
-      let left =
+      const left =
         placement === "target-centered" && anchorTargetCenter
           ? anchor.x - anchorTargetCenter.x
           : placement === "below-centered"
             ? anchor.x - rect.width / 2
             : anchor.x + gap;
-      let top =
+      const top =
         placement === "target-centered" && anchorTargetCenter
           ? anchor.y - anchorTargetCenter.y - 8
           : placement === "below-centered"
             ? anchor.y - 14
             : anchor.y - rect.height / 2;
-
-      if (placement === "default" && left > maxLeft) {
-        left = anchor.x - rect.width - gap;
-      }
-
-      if (placement === "default" && top < margin) {
-        top = anchor.y + gap;
-      }
-
-      if (placement === "default" && top > maxTop) {
-        top = anchor.y - rect.height - gap;
-      }
 
       setTrackedDialogPosition({
         left: Math.min(Math.max(left, margin), maxLeft),

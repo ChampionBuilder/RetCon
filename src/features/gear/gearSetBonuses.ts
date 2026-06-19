@@ -68,6 +68,51 @@ export function getSetPieceBonusTiers(gear: GearItem) {
   return parseTieredGearBonuses(gear.set_piece_bonus);
 }
 
+export function doesGearOverrideSetBonus(gear: GearItem) {
+  return (
+    gear.override_set_bonus === true ||
+    String(gear.override_set_bonus).trim().toLowerCase() === "true"
+  );
+}
+
+export function getOverriddenSetBonusPieces(setGears: GearItem[]) {
+  const setGearCount = setGears.length;
+  const overriddenPieces = new Set<number>();
+
+  setGears.forEach((gear) => {
+    if (!doesGearOverrideSetBonus(gear)) {
+      return;
+    }
+
+    getSetPieceBonusTiers(gear).forEach((setPieceBonusTier) => {
+      if (setPieceBonusTier.pieces <= setGearCount) {
+        overriddenPieces.add(setPieceBonusTier.pieces);
+      }
+    });
+  });
+
+  return overriddenPieces;
+}
+
+export function getDisplayedSetBonusTiers(gear: GearItem) {
+  const setPieceBonusTiers = getSetPieceBonusTiers(gear);
+
+  if (!doesGearOverrideSetBonus(gear)) {
+    return [...gear.set_bonuses, ...setPieceBonusTiers];
+  }
+
+  const overriddenPieces = new Set(
+    setPieceBonusTiers.map((setPieceBonusTier) => setPieceBonusTier.pieces),
+  );
+
+  return [
+    ...gear.set_bonuses.filter(
+      (setBonusTier) => !overriddenPieces.has(setBonusTier.pieces),
+    ),
+    ...setPieceBonusTiers,
+  ];
+}
+
 export function getBonusSignature(bonus: GearBonus) {
   return `${bonus.type.trim().toLowerCase()}=${String(bonus.value ?? "")
     .trim()
