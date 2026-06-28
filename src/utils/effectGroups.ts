@@ -100,6 +100,10 @@ const effectGroupAliases: Record<string, string[]> = {
     "Magic",
     "Dimensional",
   ],
+  "paralyze": ["Hold"],
+  "paralyzed": ["Hold"],
+  "paralyzing": ["Hold"],
+  "paralysis": ["Hold"],
   "physical damage": [
     "Slashing",
     "Piercing",

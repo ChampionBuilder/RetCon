@@ -433,6 +433,7 @@ export function PowersPanel({
     useState<PowerActivationTypeFilter | "">("");
   const [searchInPowers, setSearchInPowers] = useState(true);
   const [searchInAdvantages, setSearchInAdvantages] = useState(false);
+  const [showAcquiredPowersOnly, setShowAcquiredPowersOnly] = useState(false);
   const [closedSections, setClosedSections] = useState<string[]>([]);
   const [
     handledEnergyBuilderPanelRequestVersion,
@@ -488,10 +489,14 @@ export function PowersPanel({
     selectedFrameworks,
     devicesFilterId,
   );
-  const selectedPowerIds = new Set(
-    buildSlots
-      .map((slot) => slot.power?.power_id)
-      .filter((powerId) => powerId !== undefined),
+  const selectedPowerIds = useMemo(
+    () =>
+      new Set(
+        buildSlots
+          .map((slot) => slot.power?.power_id)
+          .filter((powerId) => powerId !== undefined),
+      ),
+    [buildSlots],
   );
   const advantagesById = useMemo(() => {
     return new Map(advantages.map((advantage) => [advantage.advantage_id, advantage]));
@@ -564,9 +569,11 @@ export function PowersPanel({
     selectedMinimumRange !== null ||
     selectedCooldown !== null ||
     Boolean(selectedTargetingFilter) ||
-    Boolean(selectedActivationTypeFilter);
+    Boolean(selectedActivationTypeFilter) ||
+    showAcquiredPowersOnly;
   const includeAllFrameworkPowerVariants =
-    selectedFrameworks === null && searchInPowers && hasActivePowerSearchOrFilter;
+    selectedFrameworks === null &&
+    ((searchInPowers && hasActivePowerSearchOrFilter) || showAcquiredPowersOnly);
 
   const visiblePowers = useMemo(() => {
     function matchesEffectGroupSearch(values: string[] | undefined, query: string) {
@@ -823,6 +830,10 @@ export function PowersPanel({
     }
 
     return powers.filter((power) => {
+      if (showAcquiredPowersOnly && !selectedPowerIds.has(power.power_id)) {
+        return false;
+      }
+
       if (
         restrictedPowerIds !== null &&
         !restrictedPowerIds.has(power.power_id)
@@ -923,6 +934,7 @@ export function PowersPanel({
     restrictedPowerIds,
     searchInAdvantages,
     searchInPowers,
+    selectedPowerIds,
     selectedDamageTypes,
     selectedScalingStats,
     selectedTagSearchColumns,
@@ -936,6 +948,7 @@ export function PowersPanel({
     isPowerVariantsMode,
     isDevicesMode,
     isTravelMode,
+    showAcquiredPowersOnly,
   ]);
 
   const powerSections = useMemo(() => {
@@ -1577,6 +1590,19 @@ export function PowersPanel({
                 <span>{option.label}</span>
               </label>
             ))}
+            <label
+              className="search-filter-panel__checkbox search-filter-panel__checkbox--tag-column"
+              data-text-tooltip="Only show powers currently acquired in this build."
+            >
+              <input
+                checked={showAcquiredPowersOnly}
+                type="checkbox"
+                onChange={(event) =>
+                  setShowAcquiredPowersOnly(event.target.checked)
+                }
+              />
+              <span>Acquired</span>
+            </label>
           </div>
 
           <label className="search-filter-panel__field search-filter-panel__field--type">

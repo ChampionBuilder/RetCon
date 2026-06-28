@@ -71,3 +71,19 @@ export type GearBuildSlot = {
   gear: GearItem | null;
   selectedMods: Array<SelectedGearMod | null>;
 };
+
+export type SavedGearPresetSlot = {
+  slotId: string;
+  gearId: number | null;
+  mods: Array<{
+    modId: number | null;
+    rank: GearModRank | null;
+  }>;
+};
+
+export type SavedGearPreset = {
+  id: string;
+  name: string;
+  slots: SavedGearPresetSlot[];
+  updatedAt: string;
+};

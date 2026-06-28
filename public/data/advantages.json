@@ -4274,7 +4274,7 @@
     "advantage_id": 311,
     "name": "Instill Doubt",
     "points_cost": 2,
-    "tooltip": "15% chance per hit to apply Dependencey to targets. Dependency causes the affected target to heal you or one of your nearby allies for a small amount over 20 sec. Can stack up to 3 times.",
+    "tooltip": "15% chance per hit to apply Dependency to targets. Dependency causes the affected target to heal you or one of your nearby allies for a small amount over 20 sec. Can stack up to 3 times.",
     "apply_tag": [
       "Dependency"
     ],
@@ -5331,7 +5331,7 @@
     "advantage_id": 387,
     "name": "Night Vision",
     "points_cost": 2,
-    "tooltip": "While active, aApplies Detect to you, increasing your Stealth Sight by 22%, your Perception by 150%, and your Minimap Radius by 75.",
+    "tooltip": "While active, applies Detect to you, increasing your Stealth Sight by 22%, your Perception by 150%, and your Minimap Radius by 75.",
     "apply_tag": [
       "Perception"
     ],
@@ -9115,7 +9115,6 @@
     "points_cost": 2,
     "tooltip": "Places up to 5 targets within 15 feet of your primary target in a Power Shield.",
     "apply_tag": [
-      "Shield",
       "Power Shield"
     ],
     "refresh_tag": [],
@@ -9956,6 +9955,20 @@
     "refresh_tag": [
       "Bleed"
     ],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [],
+    "is_disabled": false
+  },
+  {
+    "advantage_id": 710,
+    "name": "Entropy Field",
+    "points_cost": 2,
+    "tooltip": "Applies Power Shield to target.",
+    "apply_tag": [
+      "Power Shield"
+    ],
+    "refresh_tag": [],
     "synergy_tag": [],
     "filter_tag": [],
     "damage_type": [],

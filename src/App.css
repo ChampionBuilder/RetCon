@@ -1,7 +1,8 @@
 .app-shell {
   --character-column-width: clamp(210px, 13.37vw, 250px);
   --specializations-column-width: clamp(230px, 16.667vw, 330px);
-  --gear-column-width: minmax(300px, 400px);
+  --gear-column-width: minmax(240px, clamp(250px, 15vw, 400px));
+  --powers-column-min-width: 560px;
   --workspace-column-gap: 6px;
   --choice-border: #263653;
   --choice-background: rgba(12, 15, 22, 0.84);
@@ -159,6 +160,15 @@ h3 {
   width: 260px;
   padding: 2px 8px;
   font-size: 14px;
+}
+
+.name-field input::placeholder,
+.data-dialog__name-input::placeholder,
+.gear-library-dialog__name-input::placeholder {
+  color: #7c859c;
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 1;
 }
 
 .tab-button,
@@ -354,6 +364,10 @@ h3 {
 }
 
 @media (max-width: 1800px) {
+  .app-shell {
+    --powers-column-min-width: 410px;
+  }
+
   .app-header {
     height: 44px;
     padding-top: 5px;
@@ -411,6 +425,7 @@ h3 {
 @media (max-width: 1400px) {
   .app-shell {
     --collapsed-panel-track-width: 32px;
+    --powers-column-min-width: 410px;
     --workspace-column-gap: 4px;
     padding: var(--workspace-column-gap);
   }
@@ -500,7 +515,10 @@ h3 {
   flex: 1 1 0;
   grid-template-columns:
     var(--character-panel-track, var(--character-column-width))
-    var(--powers-panel-track, minmax(0, 1.28fr))
+    var(
+      --powers-panel-track,
+      minmax(var(--powers-column-min-width), 1.28fr)
+    )
     var(--build-panel-track, minmax(0, 0.87fr))
     var(--specializations-panel-track, var(--specializations-column-width));
   grid-template-rows: minmax(0, 1fr);
@@ -513,7 +531,10 @@ h3 {
 .app-shell--gear-planner .workspace-grid {
   grid-template-columns:
     var(--character-panel-track, var(--character-column-width))
-    var(--powers-panel-track, minmax(0, 1.28fr))
+    var(
+      --powers-panel-track,
+      minmax(var(--powers-column-min-width), 1.28fr)
+    )
     var(--build-panel-track, minmax(0, 0.87fr))
     var(--specializations-panel-track, var(--specializations-column-width))
     var(--gear-panel-track, var(--gear-column-width));
@@ -807,6 +828,31 @@ h3 {
   transform: translateY(-50%);
 }
 
+.gear-library-dialog {
+  right: 16px;
+  left: auto;
+  width: min(560px, calc(100vw - 44px));
+}
+
+.gear-library-dialog__name-input {
+  min-width: 0;
+  max-width: 170px;
+  border: 1px solid #343943;
+  border-radius: 3px;
+  padding: 5px 7px;
+  color: #dfe8ff;
+  background:
+    linear-gradient(180deg, rgba(18, 21, 29, 0.96), rgba(9, 11, 17, 0.96)),
+    #090b11;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.gear-library-dialog__name-input:focus-visible {
+  outline: 1px solid #5b84d7;
+  outline-offset: 0;
+}
+
 .about-dialog {
   left: 50%;
   top: 50%;
@@ -1048,6 +1094,25 @@ h3 {
   font-size: 13px;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.data-dialog__name-input {
+  min-width: 0;
+  width: 220px;
+  border: 1px solid #343943;
+  border-radius: 3px;
+  padding: 5px 7px;
+  color: #dfe8ff;
+  background:
+    linear-gradient(180deg, rgba(18, 21, 29, 0.96), rgba(9, 11, 17, 0.96)),
+    #090b11;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.data-dialog__name-input:focus-visible {
+  outline: 1px solid #5b84d7;
+  outline-offset: 0;
 }
 
 .about-dialog__content {
@@ -2540,6 +2605,28 @@ h3 {
   line-height: 32px;
 }
 
+.gear-panel__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+.gear-panel__title-actions {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.gear-panel__library-button {
+  min-width: 72px;
+  min-height: 25px;
+  padding: 3px 10px;
+  font-size: 12px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
 .gear-panel__body {
   display: flex;
   min-height: 0;
@@ -2998,6 +3085,10 @@ h3 {
 
 .gear-mods-dialog {
   width: min(560px, calc(100vw - 44px));
+}
+
+.gear-fill-mods-dialog {
+  width: min(260px, calc(100vw - 44px));
 }
 
 .gear-rank-dialog {
@@ -4243,6 +4334,10 @@ h3 {
   .data-dialog {
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  .gear-library-dialog {
+    right: auto;
   }
 
   .archetype-selection-layout {

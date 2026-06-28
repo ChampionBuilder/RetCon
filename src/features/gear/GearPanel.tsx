@@ -26,6 +26,8 @@ type GearPanelProps = {
     anchor: DialogAnchor,
   ) => void;
   onSelectGearSlot: (slotId: string, anchor: DialogAnchor) => void;
+  onOpenFillMods: (anchor: DialogAnchor) => void;
+  onOpenGearLibrary: () => void;
 };
 
 function getGearIconName(
@@ -214,6 +216,8 @@ export function GearPanel({
   onSelectGearMod,
   onSelectGearModRank,
   onSelectGearSlot,
+  onOpenFillMods,
+  onOpenGearLibrary,
 }: GearPanelProps) {
   const [closedSections, setClosedSections] = useState<string[]>([]);
   const sections = ["Primary", "Secondary"].map((section) => ({
@@ -256,7 +260,7 @@ export function GearPanel({
 
   return (
     <aside className="panel gear-panel">
-      <h2>
+      <h2 className="gear-panel__title">
         <button
           className="panel-title-button"
           type="button"
@@ -264,6 +268,28 @@ export function GearPanel({
         >
           Gear
         </button>
+        <span className="gear-panel__title-actions">
+          <button
+            className="utility-button gear-panel__library-button"
+            data-text-tooltip="Fill all your mod slots with chosen R7/R5 stat mods"
+            type="button"
+            onClick={(event) =>
+              onOpenFillMods({
+                x: event.clientX,
+                y: event.clientY,
+              })
+            }
+          >
+            Fill mods
+          </button>
+          <button
+            className="utility-button gear-panel__library-button"
+            type="button"
+            onClick={onOpenGearLibrary}
+          >
+            Library
+          </button>
+        </span>
       </h2>
 
       <div className="gear-panel__body">

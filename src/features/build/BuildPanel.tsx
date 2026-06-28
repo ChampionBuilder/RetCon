@@ -424,9 +424,7 @@ export function BuildPanel({
                         >
                           ({selectedAdvantageText(slot, slotAdvantages)})
                         </button>
-                      ) : (
-                        <span className="build-entry__advantages">(advantages)</span>
-                      )}
+                      ) : null}
                     </div>
                   </div>
                 );

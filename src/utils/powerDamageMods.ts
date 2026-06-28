@@ -2,31 +2,31 @@ import type { GearMod } from "@/types/gear";
 import type { Power } from "@/types/powers";
 import { formatFrameworkName } from "./powerFrameworks";
 
-const DAMAGE_MOD_ICON_KEYS_BY_FRAMEWORK: Record<string, string> = {
-  Archery: "Archery",
-  Bestial_Supernatural: "Bestial",
-  Celestial: "Celestial",
-  Darkness: "Darkness",
-  Dual_Blades: "DualBlades",
-  Earth: "Earth",
-  Electricity: "Electricity",
-  Fighting_Claws: "Claws",
-  Fire: "Fire",
-  Force: "Force",
-  Gadgeteering: "Gadget",
-  Heavy_Weapon: "HeavyWeapons",
-  Ice: "Ice",
-  Infernal_Supernatural: "Supernatural",
-  Laser_Sword: "LaserSword",
-  Might: "Might",
-  Munitions: "Munitions",
-  Power_Armor: "PowerArmor",
-  Single_Blade: "SingleBlade",
-  Sorcery: "Sorcery",
-  Telekinesis: "Telekinesis",
-  Telepathy: "Telepathy",
-  Unarmed: "Unarmed",
-  Wind: "Wind",
+const DAMAGE_MOD_NAMES_BY_FRAMEWORK: Record<string, string> = {
+  Archery: "Pinpoint Accuracy",
+  Bestial_Supernatural: "Teleiosaurus Rage",
+  Celestial: "Valerian Scarlet's Radiance",
+  Darkness: "Shadow Destroyer's Comtempt",
+  Dual_Blades: "Dragon's Fangs",
+  Earth: "Earth Power",
+  Electricity: "Right Eye of the Ruby Dragon",
+  Fighting_Claws: "Nighthawk's Talons",
+  Fire: "Qwyjibo's Fury",
+  Force: "Gravitar's Influence",
+  Gadgeteering: "Teleio's Gadget",
+  Heavy_Weapon: "Ironclad's Will",
+  Ice: "Kigatilik's Wrath",
+  Infernal_Supernatural: "Venomous",
+  Laser_Sword: "Cybermind's Impression",
+  Might: "Ripper's Rage",
+  Munitions: "ASCII's Precision",
+  Power_Armor: "Clarence's Machinery",
+  Single_Blade: "Jack Fool's Blade",
+  Sorcery: "Spell of Takofanes",
+  Telekinesis: "Medusa's Presence",
+  Telepathy: "Menton's Will",
+  Unarmed: "Left Eye of the Ruby Dragon",
+  Wind: "Storm Chaser",
 };
 
 function normalizeText(value: string | null | undefined) {
@@ -69,28 +69,13 @@ function modTooltipMentionsFramework(mod: GearMod, frameworkId: string) {
   );
 }
 
-function getDamageModIconKey(mod: GearMod) {
-  const iconName = mod.icon_override?.trim();
-
-  if (!iconName?.startsWith("Mod_Damage_")) {
-    return null;
-  }
-
-  return iconName.replace(/^Mod_Damage_/u, "");
-}
-
 export function buildDamageModsByFramework(
   mods: GearMod[],
   powers: Power[],
 ) {
   const damageMods = mods.filter(isDamageMod);
-  const damageModsByIconKey = new Map(
-    damageMods
-      .map((mod) => [getDamageModIconKey(mod), mod.name] as const)
-      .filter((entry): entry is readonly [string, string] =>
-        Boolean(entry[0] && entry[1]),
-      )
-      .map(([iconKey, name]) => [normalizeText(iconKey), name]),
+  const damageModsByName = new Map(
+    damageMods.map((mod) => [normalizeText(mod.name), mod.name]),
   );
   const frameworkIds = Array.from(
     new Set(
@@ -102,9 +87,9 @@ export function buildDamageModsByFramework(
   const damageModsByFramework = new Map<string, string>();
 
   frameworkIds.forEach((frameworkId) => {
-    const configuredIconKey = DAMAGE_MOD_ICON_KEYS_BY_FRAMEWORK[frameworkId];
-    const matchingModName = configuredIconKey
-      ? damageModsByIconKey.get(normalizeText(configuredIconKey))
+    const configuredModName = DAMAGE_MOD_NAMES_BY_FRAMEWORK[frameworkId];
+    const matchingModName = configuredModName
+      ? damageModsByName.get(normalizeText(configuredModName))
       : null;
 
     if (matchingModName) {

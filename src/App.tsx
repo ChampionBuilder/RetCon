@@ -45,11 +45,15 @@ import {
 import { ImportBuildDialog } from "@/features/import-build";
 import { DataDialog, useSavedBuilds } from "@/features/saved-builds";
 import {
+  type BasicGearStatCode,
+  GearFillModsDialog,
+  GearLibraryDialog,
   GearModsDialog,
   GearPanel,
   GearRankDialog,
   GearSelectionDialog,
   useGearData,
+  useSavedGearPresets,
   useGearSlots,
 } from "@/features/gear";
 import { InstantTooltip, type DialogAnchor } from "@/shared/ui";
@@ -109,7 +113,7 @@ const openPanelTracks = {
   build: "minmax(330px, 1fr)",
   character: "var(--character-column-width)",
   gear: "var(--gear-column-width)",
-  powers: "minmax(410px, 1.28fr)",
+  powers: "minmax(var(--powers-column-min-width), 1.28fr)",
   specializations: "var(--specializations-column-width)",
 } satisfies Record<WorkspacePanelId, string>;
 
@@ -334,6 +338,7 @@ function App() {
   const [camsIconName, setCamsIconName] = useState("CAMS_Generic");
   const [camsMenuOpen, setCamsMenuOpen] = useState(false);
   const [dataDialogOpen, setDataDialogOpen] = useState(false);
+  const [gearLibraryDialogOpen, setGearLibraryDialogOpen] = useState(false);
   const [aboutDialogOpen, setAboutDialogOpen] = useState(false);
   const [importBuildDialogOpen, setImportBuildDialogOpen] = useState(false);
   const [collapsedWorkspacePanels, setCollapsedWorkspacePanels] =
@@ -353,6 +358,7 @@ function App() {
   const {
     clearGearMod,
     clearGearSlot,
+    fillGearStatMods,
     gearSlots,
     placeGear,
     placeGearMod,
@@ -376,6 +382,8 @@ function App() {
   const [activeGearRankSlotIndex, setActiveGearRankSlotIndex] =
     useState<number | null>(null);
   const [gearRankDialogAnchor, setGearRankDialogAnchor] =
+    useState<DialogAnchor | null>(null);
+  const [gearFillModsDialogAnchor, setGearFillModsDialogAnchor] =
     useState<DialogAnchor | null>(null);
   const activeGearSlot = useMemo(
     () => gearSlots.find((slot) => slot.id === activeGearSlotId) ?? null,
@@ -544,6 +552,18 @@ function App() {
   const modsById = useMemo(() => {
     return new Map(mods.map((mod) => [mod.mod_id, mod]));
   }, [mods]);
+  const {
+    currentGearPresetName,
+    deleteGearPreset,
+    getHydratedGearPreset,
+    overwriteGearPreset,
+    savedGearPresets,
+    saveCurrentGearPreset,
+  } = useSavedGearPresets({
+    gearSlots,
+    gearsById,
+    modsById,
+  });
   const serializedBuild = useMemo(
     () =>
       serializeBuild({
@@ -597,11 +617,13 @@ function App() {
     closeMasteryDialog();
     setBuildCheckDialogOpen(false);
     setDataDialogOpen(false);
+    setGearLibraryDialogOpen(false);
     setAboutDialogOpen(false);
     setImportBuildDialogOpen(false);
     closeGearDialog();
     closeGearModsDialog();
     closeGearRankDialog();
+    closeGearFillModsDialog();
   }
 
   function closeGearDialog() {
@@ -619,6 +641,10 @@ function App() {
     setActiveGearRankSlotId(null);
     setActiveGearRankSlotIndex(null);
     setGearRankDialogAnchor(null);
+  }
+
+  function closeGearFillModsDialog() {
+    setGearFillModsDialogAnchor(null);
   }
 
   function closeCamsMenu() {
@@ -1420,6 +1446,20 @@ function App() {
     setDataDialogOpen(false);
   }
 
+  function loadSavedGearPreset(presetId: string) {
+    const hydratedGearSlots = getHydratedGearPreset(presetId);
+
+    if (!hydratedGearSlots) {
+      return;
+    }
+
+    replaceGearSlots(hydratedGearSlots);
+    closeGearDialog();
+    closeGearModsDialog();
+    closeGearRankDialog();
+    setGearLibraryDialogOpen(false);
+  }
+
   function randomizeFreeformBuild() {
     if (!isFreeform || !statsTalentsData) {
       return;
@@ -1563,8 +1603,27 @@ function App() {
     closeCamsMenu();
     closeGearModsDialog();
     closeGearRankDialog();
+    closeGearFillModsDialog();
+    setGearLibraryDialogOpen(false);
     setActiveGearSlotId(slotId);
     setGearDialogAnchor(anchor);
+  }
+
+  function openGearLibraryDialog() {
+    closeAllPopupsExceptCams();
+    closeCamsMenu();
+    setGearLibraryDialogOpen(true);
+  }
+
+  function openGearFillModsDialog(anchor: DialogAnchor) {
+    closeAllPopupsExceptCams();
+    closeCamsMenu();
+    setGearFillModsDialogAnchor(anchor);
+  }
+
+  function fillGearModsWithStat(statCode: BasicGearStatCode) {
+    fillGearStatMods(statCode, mods);
+    closeGearFillModsDialog();
   }
 
   function openCurrentGearModsDialog(
@@ -1575,6 +1634,8 @@ function App() {
     closeCamsMenu();
     closeGearDialog();
     closeGearRankDialog();
+    closeGearFillModsDialog();
+    setGearLibraryDialogOpen(false);
     setActiveGearModsSlotId(slotId);
     setActiveGearModsSlotIndex(modSlotIndex);
     setGearModsDialogAnchor(anchor);
@@ -1588,6 +1649,8 @@ function App() {
     closeCamsMenu();
     closeGearDialog();
     closeGearModsDialog();
+    closeGearFillModsDialog();
+    setGearLibraryDialogOpen(false);
     setActiveGearRankSlotId(slotId);
     setActiveGearRankSlotIndex(modSlotIndex);
     setGearRankDialogAnchor(anchor);
@@ -1668,18 +1731,22 @@ function App() {
         resetSuperStatsDisabled={!isFreeform}
         onBuildNameChange={setBuildName}
         onOpenAbout={() => {
+          closeAllPopupsExceptCams();
           closeCamsMenu();
           setAboutDialogOpen(true);
         }}
         onOpenBuildCheck={() => {
+          closeAllPopupsExceptCams();
           closeCamsMenu();
           setBuildCheckDialogOpen(true);
         }}
         onOpenData={() => {
+          closeAllPopupsExceptCams();
           closeCamsMenu();
           setDataDialogOpen(true);
         }}
         onImportBuild={() => {
+          closeAllPopupsExceptCams();
           closeCamsMenu();
           setImportBuildDialogOpen(true);
         }}
@@ -1702,12 +1769,34 @@ function App() {
         <DataDialog
           currentBuildName={buildName}
           savedBuilds={savedBuilds}
+          onBuildNameChange={setBuildName}
           onClose={() => setDataDialogOpen(false)}
           onDeleteBuild={deleteSavedBuild}
           onImportBuildsFromText={importSavedBuildsFromText}
           onLoadBuild={loadSavedBuild}
           onOverwriteBuild={overwriteSavedBuild}
           onSaveCurrentBuild={saveCurrentBuild}
+        />
+      ) : null}
+
+      {gearLibraryDialogOpen ? (
+        <GearLibraryDialog
+          currentPresetName={currentGearPresetName}
+          savedGearPresets={savedGearPresets}
+          onClose={() => setGearLibraryDialogOpen(false)}
+          onDeletePreset={deleteGearPreset}
+          onLoadPreset={loadSavedGearPreset}
+          onOverwritePreset={overwriteGearPreset}
+          onSaveCurrentPreset={saveCurrentGearPreset}
+        />
+      ) : null}
+
+      {showGearPlanner && gearFillModsDialogAnchor ? (
+        <GearFillModsDialog
+          anchor={gearFillModsDialogAnchor}
+          mods={mods}
+          onClose={closeGearFillModsDialog}
+          onSelectStat={fillGearModsWithStat}
         />
       ) : null}
 
@@ -1934,6 +2023,8 @@ function App() {
             <GearPanel
               gearSlots={gearSlots}
               selectedSuperStats={selectedSuperStats}
+              onOpenFillMods={openGearFillModsDialog}
+              onOpenGearLibrary={openGearLibraryDialog}
               onToggleCollapse={() => toggleWorkspacePanel("gear")}
               onSelectGearMod={openCurrentGearModsDialog}
               onSelectGearModRank={openCurrentGearRankDialog}

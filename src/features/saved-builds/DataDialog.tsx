@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import type { ImportSavedBuildsResult } from "@/features/saved-builds/useSavedBuilds";
+import { maxBuildNameLength, trimBuildNameForUrl } from "@/constants/buildName";
 import { ModalDialog } from "@/shared/ui";
 import type { SavedBuild } from "@/types/share";
 import { createShareUrl } from "@/utils/buildSerialization";
@@ -7,6 +8,7 @@ import { createShareUrl } from "@/utils/buildSerialization";
 type DataDialogProps = {
   currentBuildName: string;
   savedBuilds: SavedBuild[];
+  onBuildNameChange: (buildName: string) => void;
   onClose: () => void;
   onDeleteBuild: (buildId: string) => void;
   onLoadBuild: (buildId: string) => void;
@@ -31,6 +33,7 @@ function formatSavedBuildDate(value: string) {
 export function DataDialog({
   currentBuildName,
   savedBuilds,
+  onBuildNameChange,
   onClose,
   onDeleteBuild,
   onLoadBuild,
@@ -90,7 +93,17 @@ export function DataDialog({
           <button className="primary-button" type="button" onClick={onSaveCurrentBuild}>
             Save Current Build
           </button>
-          <span>{currentBuildName || "Unnamed build"}</span>
+          <input
+            aria-label="Build name"
+            className="data-dialog__name-input"
+            maxLength={maxBuildNameLength}
+            placeholder="Unnamed build"
+            type="text"
+            value={currentBuildName}
+            onChange={(event) =>
+              onBuildNameChange(trimBuildNameForUrl(event.target.value))
+            }
+          />
         </div>
 
         <div className="data-dialog__list">

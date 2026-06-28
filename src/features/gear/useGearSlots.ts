@@ -6,6 +6,63 @@ import type {
   GearModRank,
 } from "@/types/gear";
 
+export type BasicGearStatCode =
+  | "STR"
+  | "DEX"
+  | "CON"
+  | "INT"
+  | "EGO"
+  | "PRE"
+  | "REC"
+  | "END";
+
+function getModRankValue(mod: GearMod, rank: GearModRank) {
+  return mod.bonuses
+    .map((bonus) => bonus.values_by_rank?.[String(rank)] ?? null)
+    .find((value) => value !== null && value !== undefined && value !== "");
+}
+
+function getGearMaxRank(slot: GearBuildSlot) {
+  const maxRank = Number(slot.gear?.max_rank);
+
+  return Number.isFinite(maxRank) ? maxRank : null;
+}
+
+function getFillRank(slot: GearBuildSlot, mod: GearMod): GearModRank | null {
+  const maxRank = getGearMaxRank(slot);
+
+  if ((maxRank === null || maxRank >= 7) && getModRankValue(mod, 7)) {
+    return 7;
+  }
+
+  return getModRankValue(mod, 5) ? 5 : null;
+}
+
+function getBasicStatMod(
+  mods: GearMod[],
+  statCode: BasicGearStatCode,
+  slotType: "Armoring" | "Enhancement",
+) {
+  return mods.find(
+    (mod) =>
+      !mod.is_disabled &&
+      mod.name === statCode &&
+      mod.mod_types.includes(slotType),
+  ) ?? null;
+}
+
+function getStatSlotType(slotTypes: string[]) {
+  if (slotTypes.includes("Armoring")) {
+    return "Armoring";
+  }
+
+  if (slotTypes.includes("Enhancement")) {
+    return "Enhancement";
+  }
+
+  return null;
+}
+
 export const initialGearSlots: GearBuildSlot[] = [
   {
     id: "primary-offense",
@@ -154,10 +211,46 @@ export function useGearSlots() {
     );
   }
 
+  function fillGearStatMods(statCode: BasicGearStatCode, mods: GearMod[]) {
+    setGearSlots((currentSlots) =>
+      currentSlots.map((slot) => {
+        if (!slot.gear) {
+          return slot;
+        }
+
+        const nextSelectedMods = slot.gear.mod_slots.map(
+          (slotTypes, modSlotIndex) => {
+            const statSlotType = getStatSlotType(slotTypes);
+
+            if (!statSlotType) {
+              return slot.selectedMods[modSlotIndex] ?? null;
+            }
+
+            const mod = getBasicStatMod(mods, statCode, statSlotType);
+            const rank = mod ? getFillRank(slot, mod) : null;
+
+            return mod && rank
+              ? {
+                  mod,
+                  rank,
+                }
+              : slot.selectedMods[modSlotIndex] ?? null;
+          },
+        );
+
+        return {
+          ...slot,
+          selectedMods: nextSelectedMods,
+        };
+      }),
+    );
+  }
+
   return {
     clearGearMod,
     clearGearMods,
     clearGearSlot,
+    fillGearStatMods,
     gearSlots,
     placeGear,
     placeGearMod,
