@@ -2,6 +2,7 @@ import { useState, type MouseEvent } from "react";
 import type { SuperStat } from "@/types/character";
 import type { GearBuildSlot, GearItem } from "@/types/gear";
 import type { DialogAnchor } from "@/shared/ui/AnchoredDialog";
+import { isQuickUnslotClick } from "@/shared/utils/mouseShortcuts";
 import { SpriteIcon } from "@/shared/ui/SpriteIcon";
 import {
   formatBonusType,
@@ -21,6 +22,8 @@ type GearPanelProps = {
     anchor: DialogAnchor,
   ) => void;
   onSelectGearSlot: (slotId: string, anchor: DialogAnchor) => void;
+  onClearGearMod: (slotId: string, modSlotIndex: number) => void;
+  onClearGearSlot: (slotId: string) => void;
   onOpenFillMods: (anchor: DialogAnchor) => void;
   onOpenGearLibrary: () => void;
 };
@@ -225,6 +228,8 @@ export function GearPanel({
   onToggleCollapse,
   onSelectGearMod,
   onSelectGearSlot,
+  onClearGearMod,
+  onClearGearSlot,
   onOpenFillMods,
   onOpenGearLibrary,
 }: GearPanelProps) {
@@ -331,9 +336,15 @@ export function GearPanel({
                         ]
                           .filter(Boolean)
                           .join(" ")}
-                        onClick={(event) =>
-                          openGearSlot(event, gearSlot, onSelectGearSlot)
-                        }
+                        onClick={(event) => {
+                          if (gearSlot.gear && isQuickUnslotClick(event)) {
+                            event.preventDefault();
+                            onClearGearSlot(gearSlot.id);
+                            return;
+                          }
+
+                          openGearSlot(event, gearSlot, onSelectGearSlot);
+                        }}
                       >
                         <div className="build-entry__power-main">
                           <div className="gear-build-entry__gear-icon-slot">
@@ -356,6 +367,15 @@ export function GearPanel({
                                 type="button"
                                 onClick={(event) => {
                                   event.stopPropagation();
+                                  if (
+                                    gearSlot.gear &&
+                                    isQuickUnslotClick(event)
+                                  ) {
+                                    event.preventDefault();
+                                    onClearGearSlot(gearSlot.id);
+                                    return;
+                                  }
+
                                   openGearSlot(
                                     event,
                                     gearSlot,
@@ -414,6 +434,18 @@ export function GearPanel({
                                         type="button"
                                         onClick={(event) => {
                                           event.stopPropagation();
+                                          if (
+                                            selectedMod &&
+                                            isQuickUnslotClick(event)
+                                          ) {
+                                            event.preventDefault();
+                                            onClearGearMod(
+                                              gearSlot.id,
+                                              modSlotIndex,
+                                            );
+                                            return;
+                                          }
+
                                           onSelectGearMod(
                                             gearSlot.id,
                                             modSlotIndex,
@@ -448,6 +480,15 @@ export function GearPanel({
                                           type="button"
                                           onClick={(event) => {
                                             event.stopPropagation();
+                                            if (isQuickUnslotClick(event)) {
+                                              event.preventDefault();
+                                              onClearGearMod(
+                                                gearSlot.id,
+                                                modSlotIndex,
+                                              );
+                                              return;
+                                            }
+
                                             onSelectGearMod(
                                               gearSlot.id,
                                               modSlotIndex,
@@ -471,6 +512,15 @@ export function GearPanel({
                                           type="button"
                                           onClick={(event) => {
                                             event.stopPropagation();
+                                            if (isQuickUnslotClick(event)) {
+                                              event.preventDefault();
+                                              onClearGearMod(
+                                                gearSlot.id,
+                                                modSlotIndex,
+                                              );
+                                              return;
+                                            }
+
                                             onSelectGearMod(
                                               gearSlot.id,
                                               modSlotIndex,

@@ -5,6 +5,7 @@ import { arrangeItemsByColumns } from "@/shared/utils/gridLayout";
 import { getFrameworkIconName, getPowerIconName } from "@/shared/utils/icons";
 import { getPowerTooltipText } from "@/shared/utils/powerText";
 import { getPowerTooltipAttribute } from "@/shared/utils/powerTooltip";
+import { isForceSlotClick } from "@/shared/utils/mouseShortcuts";
 import {
   getPowerDisplayFrameworkId,
   getPowerFrameworkSortIndex,
@@ -237,8 +238,7 @@ export function PowerSelectionDialog({
                       key={power.power_id}
                       type="button"
                       onClick={(event: MouseEvent<HTMLButtonElement>) => {
-                        const bypassSlotRules =
-                          event.ctrlKey && event.shiftKey;
+                        const bypassSlotRules = isForceSlotClick(event);
 
                         if (!canSelect && !bypassSlotRules) {
                           event.preventDefault();

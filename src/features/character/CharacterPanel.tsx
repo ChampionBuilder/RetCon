@@ -9,6 +9,7 @@ import type { BuildSlot } from "@/types/builds";
 import { getPowerIconName, getStatIconName } from "@/shared/utils/icons";
 import { getPowerTooltipText } from "@/shared/utils/powerText";
 import { getPowerTooltipAttribute } from "@/shared/utils/powerTooltip";
+import { isQuickUnslotClick } from "@/shared/utils/mouseShortcuts";
 import {
   getInnateTalentStatEntries,
   getSelectedStatKeys,
@@ -32,6 +33,10 @@ type CharacterPanelProps = {
   onSelectTalentSlot: (slotIndex: number, anchor: DialogAnchor) => void;
   onSelectDeviceSlot: (slotNumber: number) => void;
   onSelectDeviceName: (slotNumber: number, anchor: DialogAnchor) => void;
+  onClearDeviceSlot: (slotNumber: number) => void;
+  onClearInnateTalent: () => void;
+  onClearSuperStatSlot: (slotIndex: number) => void;
+  onClearTalentSlot: (slotIndex: number) => void;
   onAutofillTalents: () => void;
   onToggleCollapse: () => void;
   highlightedDeviceTargetSlot: number | null;
@@ -52,6 +57,10 @@ export function CharacterPanel({
   onSelectTalentSlot,
   onSelectDeviceSlot,
   onSelectDeviceName,
+  onClearDeviceSlot,
+  onClearInnateTalent,
+  onClearSuperStatSlot,
+  onClearTalentSlot,
   onAutofillTalents,
   onToggleCollapse,
   highlightedDeviceTargetSlot,
@@ -110,12 +119,18 @@ export function CharacterPanel({
                     }
                     disabled={superStatsLocked}
                     type="button"
-                    onClick={(event: MouseEvent<HTMLButtonElement>) =>
+                    onClick={(event: MouseEvent<HTMLButtonElement>) => {
+                      if (selectedStat && isQuickUnslotClick(event)) {
+                        event.preventDefault();
+                        onClearSuperStatSlot(index);
+                        return;
+                      }
+
                       onSelectSuperStatSlot(index, {
                         x: event.clientX,
                         y: event.clientY,
-                      })
-                    }
+                      });
+                    }}
                   >
                     <span className="level-label stat-token__level">
                       {superStatAcquisitionLevels[index] ?? "-"}
@@ -150,12 +165,18 @@ export function CharacterPanel({
             disabled={innateTalentLocked}
             title="Unlock at level 1"
             type="button"
-            onClick={(event: MouseEvent<HTMLButtonElement>) =>
+            onClick={(event: MouseEvent<HTMLButtonElement>) => {
+              if (innateTalent && isQuickUnslotClick(event)) {
+                event.preventDefault();
+                onClearInnateTalent();
+                return;
+              }
+
               onSelectInnateTalent({
                 x: event.clientX,
                 y: event.clientY,
-              })
-            }
+              });
+            }}
           >
             <span className="level-label innate-talent-level-label">1</span>
             <span className="inline-choice-button__content">
@@ -228,12 +249,18 @@ export function CharacterPanel({
                   key={`${index}-${talent?.id ?? "empty"}`}
                   title={`Unlock at level ${unlockLevel}`}
                   type="button"
-                  onClick={(event: MouseEvent<HTMLButtonElement>) =>
+                  onClick={(event: MouseEvent<HTMLButtonElement>) => {
+                    if (talent && isQuickUnslotClick(event)) {
+                      event.preventDefault();
+                      onClearTalentSlot(index);
+                      return;
+                    }
+
                     onSelectTalentSlot(index, {
                       x: event.clientX,
                       y: event.clientY,
-                    })
-                  }
+                    });
+                  }}
                 >
                   <span className="level-label talent-level-label">
                     {talentAcquisitionLevels[index] ?? "-"}
@@ -287,7 +314,15 @@ export function CharacterPanel({
                   .filter(Boolean)
                   .join(" ")}
                 key={slot.slot}
-                onClick={() => onSelectDeviceSlot(slot.slot)}
+                onClick={(event: MouseEvent<HTMLDivElement>) => {
+                  if (slot.power && isQuickUnslotClick(event)) {
+                    event.preventDefault();
+                    onClearDeviceSlot(slot.slot);
+                    return;
+                  }
+
+                  onSelectDeviceSlot(slot.slot);
+                }}
               >
                 <SpriteIcon
                   name={slot.power ? getPowerIconName(slot.power) : "Icon_Bag"}
@@ -300,6 +335,12 @@ export function CharacterPanel({
                   type="button"
                   onClick={(event: MouseEvent<HTMLButtonElement>) => {
                     event.stopPropagation();
+                    if (slot.power && isQuickUnslotClick(event)) {
+                      event.preventDefault();
+                      onClearDeviceSlot(slot.slot);
+                      return;
+                    }
+
                     onSelectDeviceName(slot.slot, {
                       x: event.clientX,
                       y: event.clientY,

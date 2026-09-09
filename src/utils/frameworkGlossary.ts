@@ -93,6 +93,10 @@ const frameworkGlossaries: Record<string, FrameworkGlossaryTooltip> = {
         label: "Controls",
         tags: ["Stun", "Paralyze", "Incapacitate", "Sleep", "Root", "Confuse"],
       },
+      {
+        label: "Hold",
+        tags: ["Stun", "Paralyze", "Incapacitate", "Sleep"],
+      },
     ],
   },
   Single_Blade: {

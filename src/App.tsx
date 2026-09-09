@@ -1780,8 +1780,20 @@ function App() {
     selectSuperStat(slotIndex, statId, isFreeform);
   }
 
+  function clearCurrentSuperStatSlot(slotIndex: number) {
+    selectSuperStat(slotIndex, 0, isFreeform);
+  }
+
   function selectCurrentInnateTalent(talentId: number) {
     selectInnateTalent(talentId, isFreeform);
+  }
+
+  function clearCurrentInnateTalent() {
+    selectInnateTalent(0, isFreeform);
+  }
+
+  function clearCurrentTalentSlot(slotIndex: number) {
+    selectTalent(slotIndex, 0);
   }
 
   function clearCurrentSpecializationSlot(slotIndex: 0 | 1 | 2) {
@@ -1929,6 +1941,10 @@ function App() {
             onSelectTalentSlot={openCurrentTalentDialog}
             onSelectDeviceSlot={selectDeviceSlotAsTarget}
             onSelectDeviceName={openCurrentDeviceDialog}
+            onClearDeviceSlot={clearDeviceSlot}
+            onClearInnateTalent={clearCurrentInnateTalent}
+            onClearSuperStatSlot={clearCurrentSuperStatSlot}
+            onClearTalentSlot={clearCurrentTalentSlot}
             onAutofillTalents={autofillTalents}
             onToggleCollapse={() => toggleWorkspacePanel("character")}
           />
@@ -2065,6 +2081,7 @@ function App() {
             onClearPowerSlot={clearPowerSlot}
             onClearTravelPowerSlot={clearTravelPowerSlot}
             onClearPowerVariantSlot={clearPowerVariantSlot}
+            onClearSlotAdvantages={clearSlotAdvantages}
             onToggleCollapse={() => toggleWorkspacePanel("build")}
             highlightedPowerTargetSlot={
               selectedPowerTargetBuildSlot?.slot ?? null
@@ -2115,6 +2132,8 @@ function App() {
               onOpenFillMods={openGearFillModsDialog}
               onOpenGearLibrary={openGearLibraryDialog}
               onToggleCollapse={() => toggleWorkspacePanel("gear")}
+              onClearGearMod={clearCurrentGearMod}
+              onClearGearSlot={clearCurrentGearSlot}
               onSelectGearMod={openCurrentGearModsDialog}
               onSelectGearSlot={openCurrentGearDialog}
             />

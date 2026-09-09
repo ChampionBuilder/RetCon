@@ -29,6 +29,10 @@ import {
   getPowerTooltipData,
   type PowerTooltipData,
 } from "@/shared/utils/powerTooltip";
+import {
+  isForceSlotClick,
+  isPinTooltipClick,
+} from "@/shared/utils/mouseShortcuts";
 import { getEffectGroupTags } from "@/utils/effectGroups";
 import { getFrameworkGlossaryTooltipAttribute } from "@/utils/frameworkGlossary";
 import {
@@ -2496,11 +2500,7 @@ export function PowersPanel({
       damageModsByFramework,
     );
 
-    return Boolean(
-      tooltipData &&
-        (tooltipData.advantages.length > 0 ||
-          tooltipData.hasHiddenRankAdvantages),
-    );
+    return Boolean(tooltipData);
   }
 
   function suppressCurrentPowerTooltipUntilPointerLeave(
@@ -2584,7 +2584,7 @@ export function PowersPanel({
     canAdd: boolean,
     selected: boolean,
   ) {
-    const bypassSlotRules = event.ctrlKey && event.shiftKey;
+    const bypassSlotRules = isForceSlotClick(event);
 
     if (bypassSlotRules) {
       event.preventDefault();
@@ -2592,7 +2592,7 @@ export function PowersPanel({
       return;
     }
 
-    if (event.ctrlKey || event.metaKey) {
+    if (isPinTooltipClick(event)) {
       if (canPinPowerTooltip(power)) {
         pinPowerTooltip(power, event);
       }

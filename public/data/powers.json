@@ -4439,6 +4439,44 @@
     "is_disabled": false
   },
   {
+    "power_id": 110,
+    "powerset_id": "Energy_Projector",
+    "framework_id": "Ice",
+    "name": "Cold Shoulder",
+    "tier": 2,
+    "power_type": "THREAT_WIPE",
+    "advantages": [
+      1,
+      2
+    ],
+    "activation_type": "CLICK",
+    "cost": 17,
+    "activation_time": 1,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": 45,
+    "range_tags": [
+      "Targets non-object foe",
+      "100 feet"
+    ],
+    "tooltip": "Wipes your threat from the target and places you in Stealth for 4/5/6 sec + Shares a 30 sec cooldown with other Threat Wipe abilities.",
+    "apply_tag": [
+      "Stealth"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [],
+    "damage_values": null,
+    "healing_values": null,
+    "control_values": null,
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [],
+    "icon_override": "Ice_ColdShoulder",
+    "is_disabled": false
+  },
+  {
     "power_id": 103,
     "powerset_id": "Energy_Projector",
     "framework_id": "Ice",
@@ -4751,44 +4789,6 @@
     "power_dependency": [],
     "source": [],
     "icon_override": "Ice_Avalanche",
-    "is_disabled": false
-  },
-  {
-    "power_id": 110,
-    "powerset_id": "Energy_Projector",
-    "framework_id": "Ice",
-    "name": "Cold Shoulder",
-    "tier": 2,
-    "power_type": "THREAT_WIPE",
-    "advantages": [
-      1,
-      2
-    ],
-    "activation_type": "CLICK",
-    "cost": 17,
-    "activation_time": 1,
-    "max_duration": null,
-    "tick_rate": null,
-    "cooldown": 45,
-    "range_tags": [
-      "Targets non-object foe",
-      "100 feet"
-    ],
-    "tooltip": "Wipes your threat from the target and places you in Stealth for 4/5/6 sec + Shares a 30 sec cooldown with other Threat Wipe abilities.",
-    "apply_tag": [
-      "Stealth"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [],
-    "damage_values": null,
-    "healing_values": null,
-    "control_values": null,
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [],
-    "icon_override": "Ice_ColdShoulder",
     "is_disabled": false
   },
   {
@@ -8046,6 +8046,85 @@
     "is_disabled": false
   },
   {
+    "power_id": 1068,
+    "powerset_id": "Technology",
+    "framework_id": "Munitions",
+    "name": "Rolling Fire",
+    "tier": -1,
+    "power_type": "ENERGY_BUILDER",
+    "advantages": [
+      1,
+      2,
+      722,
+      3
+    ],
+    "activation_type": "TOGGLE",
+    "cost": null,
+    "activation_time": 0.5,
+    "max_duration": 4,
+    "tick_rate": 0.5,
+    "cooldown": null,
+    "range_tags": [
+      "Targets foe",
+      "50 feet"
+    ],
+    "tooltip": "Deals 75 Piercing Damage on initial hit, then 53 on each subsequent hit to the target, and generates energy.",
+    "apply_tag": [],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Piercing"
+    ],
+    "damage_values": "75",
+    "healing_values": null,
+    "control_values": null,
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [],
+    "icon_override": "Munitions_RollingFire",
+    "is_disabled": false
+  },
+  {
+    "power_id": 1057,
+    "powerset_id": "Technology",
+    "framework_id": "Munitions",
+    "name": "Steady Fire",
+    "tier": -1,
+    "power_type": "RANGED_DAMAGE",
+    "advantages": [
+      1,
+      2,
+      711
+    ],
+    "activation_type": "TOGGLE",
+    "cost": null,
+    "activation_time": 0.5,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": null,
+    "range_tags": [
+      "Targets foe",
+      "50 feet"
+    ],
+    "tooltip": "Deals 75 Piercing Damage and generates Energy with the initial hit. + Deals 53 Piercing Damage and generates less Energy with each subsequent hit.",
+    "apply_tag": [],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Piercing"
+    ],
+    "damage_values": "75",
+    "healing_values": null,
+    "control_values": null,
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [],
+    "icon_override": "Munitions_SteadyFire",
+    "is_disabled": false
+  },
+  {
     "power_id": 186,
     "powerset_id": "Technology",
     "framework_id": "Munitions",
@@ -8129,6 +8208,97 @@
     "power_dependency": [],
     "source": [],
     "icon_override": "Munitions_BurstShot",
+    "is_disabled": false
+  },
+  {
+    "power_id": 1069,
+    "powerset_id": "Technology",
+    "framework_id": "Munitions",
+    "name": "Heavy Burst",
+    "tier": 0,
+    "power_type": "RANGED_DAMAGE",
+    "advantages": [
+      1,
+      2,
+      720,
+      721,
+      3,
+      7,
+      5
+    ],
+    "activation_type": "BLAST",
+    "cost": "29-51",
+    "activation_time": 0.67,
+    "max_duration": 1.33,
+    "tick_rate": null,
+    "cooldown": null,
+    "range_tags": [
+      "Targets foe",
+      "100 feet"
+    ],
+    "tooltip": "Deals 292-752 Piercing Damage based on charge time, and has a 45-100% chance to apply a stack of Furious to you. + Furious gives you +1.5% Critical Chance for 15 sec. This effect stacks up to 3 times. + When taking damage Furious grants you Willpower which gives you +300 Health Points over 3 sec. ",
+    "apply_tag": [
+      "Furious"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Piercing"
+    ],
+    "damage_values": "752",
+    "healing_values": null,
+    "control_values": null,
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [],
+    "icon_override": "Munitions_HeavyBurst",
+    "is_disabled": false
+  },
+  {
+    "power_id": 1060,
+    "powerset_id": "Technology",
+    "framework_id": "Munitions",
+    "name": "Backhand Strike",
+    "tier": 1,
+    "power_type": "MELEE_DAMAGE",
+    "advantages": [
+      1,
+      2,
+      281,
+      547,
+      3,
+      5
+    ],
+    "activation_type": "CLICK",
+    "cost": 18,
+    "activation_time": 0.5,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": null,
+    "range_tags": [
+      "Targets foe",
+      "10 feet"
+    ],
+    "tooltip": "Deals 193 Crushing Damage. + Stuns your target for 1.7 sec.",
+    "apply_tag": [
+      "Stun"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [
+      "Crowd Control"
+    ],
+    "damage_type": [
+      "Crushing"
+    ],
+    "damage_values": "193",
+    "healing_values": null,
+    "control_values": "Stun=1.7",
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [],
+    "icon_override": "Munitions_BackhandStrike",
     "is_disabled": false
   },
   {
@@ -8260,6 +8430,54 @@
     "is_disabled": false
   },
   {
+    "power_id": 1053,
+    "powerset_id": "Technology",
+    "framework_id": "Munitions",
+    "name": "Heavy Fire",
+    "tier": 1,
+    "power_type": "RANGED_DAMAGE",
+    "advantages": [
+      1,
+      2,
+      712,
+      27,
+      713,
+      3,
+      7,
+      5
+    ],
+    "activation_type": "MAINTAIN",
+    "cost": "20+13",
+    "activation_time": 0.5,
+    "max_duration": 6,
+    "tick_rate": 0.5,
+    "cooldown": null,
+    "range_tags": [
+      "Targets foe (5 max)",
+      "100 feet",
+      "60 degree Cone"
+    ],
+    "tooltip": "Deals 144 Piercing Damage every 0.5 sec to all targets. + Repels targets within 20ft of you every hit. Foes further away have a 10% chance to be Snared for 13 sec, reducing their movement speed by 100%.",
+    "apply_tag": [
+      "Repel",
+      "Snare"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Piercing"
+    ],
+    "damage_values": "144",
+    "healing_values": null,
+    "control_values": null,
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [],
+    "icon_override": "Munitions_HeavyFire",
+    "is_disabled": false
+  },
+  {
     "power_id": 191,
     "powerset_id": "Technology",
     "framework_id": "Munitions",
@@ -8381,6 +8599,48 @@
     "power_dependency": [],
     "source": [],
     "icon_override": "Munitions_PistolWhip",
+    "is_disabled": false
+  },
+  {
+    "power_id": 1064,
+    "powerset_id": "Technology",
+    "framework_id": "Munitions",
+    "name": "Return fire",
+    "tier": 1,
+    "power_type": "BLOCK",
+    "advantages": [
+      1,
+      2,
+      716
+    ],
+    "activation_type": "BLOCK",
+    "cost": null,
+    "activation_time": 1,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": null,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "While blocking, grants 250/300/360% resistance to all damage. + Increases your resistance to Holds and Knocks, and reduces your movement speed. + Gives you energy when struck by an attack while blocking. This amount scales with your Recovery and the amount of damage you take. + For up to 4 sec after you begin blocking, if you are attacked from more than 10ft away, you will return a portion of one incoming attack to the attacker as Piercing damage. If you are attacked within 10ft, you will return a smaller portion of one incoming attack to up to 5 targets within 10ft and Knock them Back. + This effect has a cooldown of 5 sec and cannot be triggered again until you release and reapply this block.",
+    "apply_tag": [
+      "Knock Back"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Piercing"
+    ],
+    "damage_values": null,
+    "healing_values": null,
+    "control_values": null,
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Z Store : Renegade AT"
+    ],
+    "icon_override": "Munitions_ReturnFire",
     "is_disabled": false
   },
   {
@@ -8567,6 +8827,56 @@
     "is_disabled": false
   },
   {
+    "power_id": 1054,
+    "powerset_id": "Technology",
+    "framework_id": "Munitions",
+    "name": "Suppression Fire",
+    "tier": 1,
+    "power_type": "RANGED_AOE_DAMAGE",
+    "advantages": [
+      1,
+      2,
+      625,
+      713,
+      344,
+      3,
+      7,
+      5
+    ],
+    "activation_type": "MAINTAIN",
+    "cost": "21+15",
+    "activation_time": 0.5,
+    "max_duration": 5,
+    "tick_rate": 0.5,
+    "cooldown": null,
+    "range_tags": [
+      "Targets foe (5 max)",
+      "100 feet",
+      "60 degree Cone"
+    ],
+    "tooltip": "Deals 144 Piercing Damage every 0.5 sec to all targets. + Repels targets within 20ft of you every hit. Foes further away have a 10% chance to be Snared for 13 sec, reducing their movement speed by 100%.",
+    "apply_tag": [
+      "Repel",
+      "Snare"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Piercing"
+    ],
+    "damage_values": "144",
+    "healing_values": null,
+    "control_values": null,
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Z Store : Renegade AT"
+    ],
+    "icon_override": "Munitions_SuppressionFire",
+    "is_disabled": false
+  },
+  {
     "power_id": 198,
     "powerset_id": "Technology",
     "framework_id": "Munitions",
@@ -8609,6 +8919,54 @@
     "power_dependency": [],
     "source": [],
     "icon_override": "Munitions_TripWire",
+    "is_disabled": false
+  },
+  {
+    "power_id": 1056,
+    "powerset_id": "Technology",
+    "framework_id": "Munitions",
+    "name": "Wrist Blaster",
+    "tier": 1,
+    "power_type": "RANGED_DAMAGE",
+    "advantages": [
+      1,
+      2,
+      714,
+      715,
+      3,
+      7,
+      5
+    ],
+    "activation_type": "BLAST",
+    "cost": "25-49",
+    "activation_time": 0.67,
+    "max_duration": 1.33,
+    "tick_rate": null,
+    "cooldown": null,
+    "range_tags": [
+      "Targets foe",
+      "100 feet"
+    ],
+    "tooltip": "Deals 292-696 Piercing Damage based on charge time. + Has 56-100% chance to Knocks Back targets within 20ft of you. Foes further away have 56-100% chance to be Knocked Down.",
+    "apply_tag": [
+      "Knock Back",
+      "Knock Down"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Piercing"
+    ],
+    "damage_values": "696",
+    "healing_values": null,
+    "control_values": null,
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Z Store : Renegade AT"
+    ],
+    "icon_override": "Munitions_WristBlaster",
     "is_disabled": false
   },
   {
@@ -8710,6 +9068,45 @@
     "is_disabled": false
   },
   {
+    "power_id": 1066,
+    "powerset_id": "Technology",
+    "framework_id": "Munitions",
+    "name": "Combat Drones",
+    "tier": 2,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [
+      1,
+      2
+    ],
+    "activation_type": "FULL_CHARGE",
+    "cost": 35,
+    "activation_time": 0.87,
+    "max_duration": 2,
+    "tick_rate": null,
+    "cooldown": null,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Summons 2 Combat Drones. The Support Drones have 2 modes, Support Mode and Offense Mode. + In their default Support Mode, they will use a Healing Beam on friendly targets, healing them for 22 Health Points every 0.5 sec. + In Offense Mode, they use Gatling Gun to attack your foes, dealing 17 Piercing Damage every 0.5 sec. + New skills are acquired upon ranking this power on pets.",
+    "apply_tag": [],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [
+      "Passive Heal"
+    ],
+    "damage_type": [
+      "Piercing"
+    ],
+    "damage_values": "17",
+    "healing_values": "22",
+    "control_values": null,
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [],
+    "icon_override": "Munitions_CombatDrones",
+    "is_disabled": false
+  },
+  {
     "power_id": 201,
     "powerset_id": "Technology",
     "framework_id": "Munitions",
@@ -8754,6 +9151,56 @@
     "power_dependency": [],
     "source": [],
     "icon_override": "Munitions_ConcussionGrenade",
+    "is_disabled": false
+  },
+  {
+    "power_id": 1065,
+    "powerset_id": "Technology",
+    "framework_id": "Munitions",
+    "name": "Detonation Round",
+    "tier": 2,
+    "power_type": "RANGED_AOE_DAMAGE",
+    "advantages": [
+      1,
+      2,
+      717,
+      400,
+      3,
+      5
+    ],
+    "activation_type": "CHARGE",
+    "cost": "78-96",
+    "activation_time": 0.67,
+    "max_duration": 1.5,
+    "tick_rate": null,
+    "cooldown": 15,
+    "range_tags": [
+      "Targets foe (5 max)",
+      "100 feet",
+      "15 feet Sphere"
+    ],
+    "tooltip": "Deals 193-411 Piercing Damage and deals an additional 42 Piercing Damage every 1 sec for 16 sec to all targets. + When partially charged, Interrupts your primary target and has a 50% chance to affect other affected targets. + When fully charged, instead Knocks Up affected targets.",
+    "apply_tag": [
+      "Interrupt",
+      "Knock Up"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [
+      "DoT"
+    ],
+    "damage_type": [
+      "Piercing"
+    ],
+    "damage_values": "411",
+    "healing_values": null,
+    "control_values": null,
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Z Store : Renegade AT"
+    ],
+    "icon_override": "Munitions_DetonationRound",
     "is_disabled": false
   },
   {
@@ -9193,6 +9640,51 @@
     "is_disabled": false
   },
   {
+    "power_id": 1055,
+    "powerset_id": "Technology",
+    "framework_id": "Munitions",
+    "name": "Gatling Arms",
+    "tier": 3,
+    "power_type": "RANGED_DAMAGE",
+    "advantages": [
+      1,
+      2,
+      718,
+      3,
+      5
+    ],
+    "activation_type": "MAINTAIN",
+    "cost": "26+19",
+    "activation_time": 0.5,
+    "max_duration": 4,
+    "tick_rate": 0.5,
+    "cooldown": null,
+    "range_tags": [
+      "Targets foe",
+      "100 feet"
+    ],
+    "tooltip": "Deals 240 Piercing Damage every 0.5 sec. + Has 10% chance every hit to apply Furious. Furious gives you +1.5% Critical Chance for 15 sec. This effect stacks up to 3 times. + When taking damage Furious grants you Willpower which gives you +300 Health Points over 3 sec.",
+    "apply_tag": [
+      "Furious"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Piercing"
+    ],
+    "damage_values": "240",
+    "healing_values": null,
+    "control_values": null,
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Z Store : Renegade AT"
+    ],
+    "icon_override": "Munitions_GatlingArms",
+    "is_disabled": false
+  },
+  {
     "power_id": 212,
     "powerset_id": "Technology",
     "framework_id": "Munitions",
@@ -9273,6 +9765,50 @@
     "power_dependency": [],
     "source": [],
     "icon_override": "Munitions_SniperRifle",
+    "is_disabled": false
+  },
+  {
+    "power_id": 1070,
+    "powerset_id": "Technology",
+    "framework_id": "Munitions",
+    "name": "Tactical Strike",
+    "tier": 3,
+    "power_type": "RANGED_DAMAGE",
+    "advantages": [
+      1,
+      2,
+      723,
+      544,
+      3
+    ],
+    "activation_type": "FULL_CHARGE",
+    "cost": 79,
+    "activation_time": 0.67,
+    "max_duration": 0.83,
+    "tick_rate": null,
+    "cooldown": 15,
+    "range_tags": [
+      "Targets foe",
+      "100 feet"
+    ],
+    "tooltip": "After 2.5 sec, deals 1643 Crushing Damage to foes within 15ft. Knocks affected targets toward the center of effect, and applies Disorient. Disorient reduces the target's damage by 10% and movement speed by 50% for 12 sec.",
+    "apply_tag": [
+      "Knock To",
+      "Disorient"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Crushing"
+    ],
+    "damage_values": "1643",
+    "healing_values": null,
+    "control_values": null,
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [],
+    "icon_override": "Munitions_TacticalStrike",
     "is_disabled": false
   },
   {
@@ -16388,7 +16924,7 @@
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
-    "tooltip": "Whenever you Hold a target, or attack a Held, Confused or Disoriented target with a Telepathy power, you gain 16 energy every 3 sec for 6 sec. + The energy gained scales with your Presence, and to a lesser degree, your Recovery. + This effect does not stack, but can be refreshed.",
+    "tooltip": "Whenever you Hold a target with a Mentalist power, or attack a Held, Confused or Disoriented target with a Telepathy power, you gain 16 energy every 3 sec for 6 sec. + The energy gained scales with your Presence, and to a lesser degree, your Recovery. + This effect does not stack, but can be refreshed.",
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -17056,7 +17592,7 @@
     "range_tags": [
       "Targets foe (10 max)",
       "100 feet",
-      "20 feet Sphere"
+      "25 feet Sphere"
     ],
     "tooltip": "Deals 1286 Ego Damage to foes. + Knocks Down affected targets. + Applies Overpower. Overpower reduces resistance to all damage by 20% for 15 sec. + Gives you a stack of Ego Leech for every target you hit. Ego Leech decreases the cost of your Mentalist abilities by 5% for 15 sec. Stacks up to 5 times.",
     "apply_tag": [
@@ -26897,6 +27433,43 @@
     "is_disabled": false
   },
   {
+    "power_id": 1063,
+    "powerset_id": "Travel_Power",
+    "framework_id": "Flight",
+    "name": "Radiant Fire Flight",
+    "tier": null,
+    "power_type": "TRAVEL_POWER",
+    "advantages": [
+      8,
+      9
+    ],
+    "activation_type": "TOGGLE",
+    "cost": null,
+    "activation_time": 1.5,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": 1,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Grants +20 Flight Speed while active. Outside of combat, you build up speed over time. After 4 sec, you gain +17 Flight Speed. After 10 sec, you gain an additional +17 Flight Speed. While active, you suffer a -12% penalty to Power Cost Discount and your Energy Building strength is reduced by 15%.",
+    "apply_tag": [],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [],
+    "damage_values": null,
+    "healing_values": null,
+    "control_values": null,
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Z Store"
+    ],
+    "icon_override": "TravelPower_RadiantFireFlight",
+    "is_disabled": false
+  },
+  {
     "power_id": 641,
     "powerset_id": "Travel_Power",
     "framework_id": "Flight",
@@ -27151,6 +27724,43 @@
       "Questionite Store"
     ],
     "icon_override": "TravelPower_ScarabFlight",
+    "is_disabled": false
+  },
+  {
+    "power_id": 1062,
+    "powerset_id": "Travel_Power",
+    "framework_id": "Flight",
+    "name": "Shadow Fire Flight",
+    "tier": null,
+    "power_type": "TRAVEL_POWER",
+    "advantages": [
+      8,
+      9
+    ],
+    "activation_type": "TOGGLE",
+    "cost": null,
+    "activation_time": 1.5,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": 1,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Grants +20 Flight Speed while active. Outside of combat, you build up speed over time. After 4 sec, you gain +17 Flight Speed. After 10 sec, you gain an additional +17 Flight Speed. While active, you suffer a -12% penalty to Power Cost Discount and your Energy Building strength is reduced by 15%.",
+    "apply_tag": [],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [],
+    "damage_values": null,
+    "healing_values": null,
+    "control_values": null,
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Z Store"
+    ],
+    "icon_override": "TravelPower_ShadowFireFlight",
     "is_disabled": false
   },
   {
@@ -36431,43 +37041,6 @@
     "is_disabled": false
   },
   {
-    "power_id": 850,
-    "powerset_id": "Device",
-    "framework_id": "Other",
-    "name": "Cowboy Robot Prospector",
-    "tier": null,
-    "power_type": "UNCONTROLED_PET",
-    "advantages": [],
-    "activation_type": "TOGGLE",
-    "cost": null,
-    "activation_time": 1,
-    "max_duration": 300,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Creates a Reprogrammed Prospector. This summon will stick around for up to 300 sec. + Detoggling this device will cause this summon to vanish and the device to go on cooldown. This device will also go on cooldown if the Reprogrammed Prospector is defeated.",
-    "apply_tag": [],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Sonic",
-      "Piercing"
-    ],
-    "damage_values": null,
-    "healing_values": null,
-    "control_values": null,
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "High Noon Event: ASCII Alert"
-    ],
-    "icon_override": "Device_ReprogrammedRobot",
-    "is_disabled": false
-  },
-  {
     "power_id": 852,
     "powerset_id": "Device",
     "framework_id": "Questionite_Store",
@@ -38119,6 +38692,79 @@
     "is_disabled": false
   },
   {
+    "power_id": 850,
+    "powerset_id": "Device",
+    "framework_id": "Other",
+    "name": "Cowboy Robot Prospector",
+    "tier": null,
+    "power_type": "UNCONTROLED_PET",
+    "advantages": [],
+    "activation_type": "TOGGLE",
+    "cost": null,
+    "activation_time": 1,
+    "max_duration": 300,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Creates a Reprogrammed Prospector. This summon will stick around for up to 300 sec. + Detoggling this device will cause this summon to vanish and the device to go on cooldown. This device will also go on cooldown if the Reprogrammed Prospector is defeated.",
+    "apply_tag": [],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Sonic",
+      "Piercing"
+    ],
+    "damage_values": null,
+    "healing_values": null,
+    "control_values": null,
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "High Noon Event: ASCII Alert"
+    ],
+    "icon_override": "Device_ReprogrammedRobot",
+    "is_disabled": false
+  },
+  {
+    "power_id": 1050,
+    "powerset_id": "Device",
+    "framework_id": "Other",
+    "name": "Cowboy Robot Sassy Saloon Lassy",
+    "tier": null,
+    "power_type": "UNCONTROLED_PET",
+    "advantages": [],
+    "activation_type": "TOGGLE",
+    "cost": null,
+    "activation_time": 1,
+    "max_duration": 300,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Creates a Reprogrammed Sassy Saloon Lassy. This summon will stick around for up to 300 sec. + Detoggling this device will cause this summon to vanish and the device to go on cooldown. This device will also go on cooldown if the Cowboy Robot Sassy Saloon Lassy is defeated.",
+    "apply_tag": [],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Piercing"
+    ],
+    "damage_values": null,
+    "healing_values": null,
+    "control_values": null,
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "High Noon Event: ASCII Alert"
+    ],
+    "icon_override": "Device_Robot_Lassy",
+    "is_disabled": false
+  },
+  {
     "power_id": 958,
     "powerset_id": "Device",
     "framework_id": "Other",
@@ -38871,6 +39517,46 @@
     "is_disabled": false
   },
   {
+    "power_id": 1052,
+    "powerset_id": "Device",
+    "framework_id": "Other",
+    "name": "Scattershot Salvo",
+    "tier": null,
+    "power_type": "RANGED_AOE_DAMAGE",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "cost": null,
+    "activation_time": 1,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": 90,
+    "range_tags": [
+      "Affects non-destructible foe (5 max)",
+      "25 feet Sphere"
+    ],
+    "tooltip": "Can be used while Held or Confused. + Deals 831 Piercing Damage and Knock Down affected targets. + Heals you for 157 Health Points for every target hit. This heal counts as a Life Drain effect. + Applies 2,679 Break Free damage to any Holds, Roots, or Disables affecting you. + Applies 3 stacks of Furious to you for 12 sec. Furious gives you +1.5% Critical Chance for 15 sec. This effect stacks up to 3 times. + When taking damage Furious grants you Willpower which gives you +300 Health Points over 3 sec. + Places all Escape devices on a 90 sec cooldown.",
+    "apply_tag": [
+      "Knock Down",
+      "Furious"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Piercing"
+    ],
+    "damage_values": "831",
+    "healing_values": "157",
+    "control_values": null,
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "High Noon Event: ASCII Alert"
+    ],
+    "icon_override": "Munitions_LeadTempest",
+    "is_disabled": false
+  },
+  {
     "power_id": 824,
     "powerset_id": "Device",
     "framework_id": "Other",
@@ -38989,6 +39675,41 @@
       "Aftershock Adventure Pack"
     ],
     "icon_override": "Device_SoulVortex",
+    "is_disabled": false
+  },
+  {
+    "power_id": 1048,
+    "powerset_id": "Device",
+    "framework_id": "Other",
+    "name": "Sparkle Fireworks",
+    "tier": null,
+    "power_type": "BUFF_TARGETS",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "cost": null,
+    "activation_time": null,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": 10,
+    "range_tags": [
+      "Affects friends (5 max)",
+      "25 feet Sphere"
+    ],
+    "tooltip": "Applies Energize which grants nearby allies +5% Maximum Energy for 30 sec. + This effect cannot be stacked.",
+    "apply_tag": [],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [],
+    "damage_values": null,
+    "healing_values": null,
+    "control_values": null,
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Patriot Event: Store"
+    ],
+    "icon_override": "Device_Sparkle_Fireworks",
     "is_disabled": false
   },
   {
@@ -39132,6 +39853,45 @@
       "Jail Break OM"
     ],
     "icon_override": "PVD_Taser",
+    "is_disabled": false
+  },
+  {
+    "power_id": 1067,
+    "powerset_id": "Device",
+    "framework_id": "Other",
+    "name": "Teleiosaurus Pheromones Compound",
+    "tier": null,
+    "power_type": "UNCONTROLED_PET",
+    "advantages": [],
+    "activation_type": "TOGGLE",
+    "cost": null,
+    "activation_time": null,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": 30,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "25% chance every 10 sec to summon a Hatchling, twice, lasting 30 sec. + 25% chance every 10 sec to summon a Reeker, lasting 60 sec. + Hatchling powers: + Bite: 448 Slashing Damage + Spit: 332 Toxic Damage + Lunge: 560 Slashing Damage + Radiation Breath: 1600 Particle Damage (30 sec recharge) + Reeker powers: + Bite: 448 Slashing Damage + Spit: 332 Toxic Damage + Blast: 1600 Toxic Damage (30 sec recharge) + Radiation Breath: 1600 Particle Damage (30 sec recharge) + Foot Stomp: 1600 Crushing Damage in a 15ft sphere (30 sec recharge) + Radiation Storm: 400 Particle Damage every 0.5 sec in a 15ft sphere (30 sec recharge)",
+    "apply_tag": [],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Crushing",
+      "Toxic",
+      "Slashing",
+      "Particle"
+    ],
+    "damage_values": "1600",
+    "healing_values": null,
+    "control_values": null,
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Teleiosaurus Rampage"
+    ],
+    "icon_override": "Device_TeleiosaurusPheromone",
     "is_disabled": false
   },
   {
@@ -40728,6 +41488,46 @@
     "is_disabled": false
   },
   {
+    "power_id": 1049,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "Gunslinger",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "cost": null,
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: Ranged DPS + Damage type: Piercing + Special effects: Fear, Armor Piercing, Snare + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction.",
+    "apply_tag": [
+      "Fear",
+      "Armor Piercing",
+      "Snare"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Piercing"
+    ],
+    "damage_values": null,
+    "healing_values": null,
+    "control_values": null,
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "High Noon Event: Reward"
+    ],
+    "icon_override": "Sidekick_Gunslinger",
+    "is_disabled": false
+  },
+  {
     "power_id": 1017,
     "powerset_id": "Device",
     "framework_id": "Sidekick",
@@ -41332,6 +42132,47 @@
       "Anniversary Event: Reward"
     ],
     "icon_override": "Sidekick_Qularr_Drone",
+    "is_disabled": false
+  },
+  {
+    "power_id": 1051,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "R.O.D.",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "cost": null,
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: RDPS + Damage type: Particle + Special effects: Plasma Burn, Snare, Stun, Disintegrate + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction.",
+    "apply_tag": [
+      "Plasma Burn",
+      "Snare",
+      "Stun",
+      "Disintegrate"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Particle"
+    ],
+    "damage_values": null,
+    "healing_values": null,
+    "control_values": null,
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "High Noon Event: Reward"
+    ],
+    "icon_override": "Sidekick_ROD",
     "is_disabled": false
   },
   {
@@ -42799,6 +43640,74 @@
     "is_disabled": false
   },
   {
+    "power_id": 1058,
+    "powerset_id": "Device",
+    "framework_id": "Travel_Power",
+    "name": "Hover Disk",
+    "tier": null,
+    "power_type": "TRAVEL_POWER",
+    "advantages": [],
+    "activation_type": "TOGGLE",
+    "cost": null,
+    "activation_time": 1.5,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": 1,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Grants +30 Flight Speed while active. Outside of combat, you build up speed over time. After 4 sec, you gain +26 Flight Speed. After 10 sec, you gain an additional +26 Flight Speed. While active, you suffer a -12% penalty to Power Cost Discount and your Energy Building strength is reduced by 15%.",
+    "apply_tag": [],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [],
+    "damage_values": null,
+    "healing_values": null,
+    "control_values": null,
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Sky Command Rampage"
+    ],
+    "icon_override": "TravelPower_HoverDisk",
+    "is_disabled": false
+  },
+  {
+    "power_id": 1059,
+    "powerset_id": "Device",
+    "framework_id": "Travel_Power",
+    "name": "Ice Slide",
+    "tier": null,
+    "power_type": "TRAVEL_POWER",
+    "advantages": [],
+    "activation_type": "TOGGLE",
+    "cost": null,
+    "activation_time": 1.5,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": 1,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Grants +30 Flight Speed while active. Outside of combat, you build up speed over time. After 4 sec, you gain +26 Flight Speed. After 10 sec, you gain an additional +26 Flight Speed. While active, you suffer a -12% penalty to Power Cost Discount and your Energy Building strength is reduced by 15%.",
+    "apply_tag": [],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [],
+    "damage_values": null,
+    "healing_values": null,
+    "control_values": null,
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Fire & Ice Rampage"
+    ],
+    "icon_override": "TravelPower_IceSlide",
+    "is_disabled": false
+  },
+  {
     "power_id": 898,
     "powerset_id": "Device",
     "framework_id": "Travel_Power",
@@ -43071,6 +43980,40 @@
     "is_disabled": false
   },
   {
+    "power_id": 1061,
+    "powerset_id": "Device",
+    "framework_id": "Travel_Power",
+    "name": "Rocket Jump",
+    "tier": null,
+    "power_type": "TRAVEL_POWER",
+    "advantages": [],
+    "activation_type": "TOGGLE",
+    "cost": null,
+    "activation_time": 1.5,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": 1,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Grants +45 Jump Speed and +90 Jump Height while active. Outside of combat, you build up speed and height over time. After 4 sec you gain +34 Jump Speed and +51 Jump Height and after another 10 sec you gain an additional +34 Jump Speed and +51 Jump Height. While active, you receive a -6.2% Power Cost Discount and your Energy Building strength is reduced by 15%.",
+    "apply_tag": [],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [],
+    "damage_values": null,
+    "healing_values": null,
+    "control_values": null,
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Destroid Rise Again OM"
+    ],
+    "icon_override": "TravelPower_RocketJump",
+    "is_disabled": false
+  },
+  {
     "power_id": 897,
     "powerset_id": "Device",
     "framework_id": "Travel_Power",
@@ -43306,949 +44249,6 @@
       "Drifter Store"
     ],
     "icon_override": "Device_Vesperine",
-    "is_disabled": false
-  },
-  {
-    "power_id": 1048,
-    "powerset_id": "Device",
-    "framework_id": "Other",
-    "name": "Sparkle Fireworks",
-    "tier": null,
-    "power_type": "BUFF_TARGETS",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "cost": null,
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
-    "cooldown": 10,
-    "range_tags": [
-      "Affects friends (5 max)",
-      "25 feet Sphere"
-    ],
-    "tooltip": "Applies Energize which grants nearby allies +5% Maximum Energy for 30 sec. + This effect cannot be stacked.",
-    "apply_tag": [],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [],
-    "damage_values": null,
-    "healing_values": null,
-    "control_values": null,
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Patriot Event: Store"
-    ],
-    "icon_override": "Device_Sparkle_Fireworks",
-    "is_disabled": false
-  },
-  {
-    "power_id": 1049,
-    "powerset_id": "Device",
-    "framework_id": "Sidekick",
-    "name": "Gunslinger",
-    "tier": null,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "cost": null,
-    "activation_time": 1,
-    "max_duration": 900,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Role: Ranged DPS + Damage type: Piercing + Special effects: Fear, Armor Piercing, Snare + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction.",
-    "apply_tag": [
-      "Fear",
-      "Armor Piercing",
-      "Snare"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Piercing"
-    ],
-    "damage_values": null,
-    "healing_values": null,
-    "control_values": null,
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "High Noon Event: Reward"
-    ],
-    "icon_override": "Sidekick_Gunslinger",
-    "is_disabled": false
-  },
-  {
-    "power_id": 1050,
-    "powerset_id": "Device",
-    "framework_id": "Other",
-    "name": "Cowboy Robot Sassy Saloon Lassy",
-    "tier": null,
-    "power_type": "UNCONTROLED_PET",
-    "advantages": [],
-    "activation_type": "TOGGLE",
-    "cost": null,
-    "activation_time": 1,
-    "max_duration": 300,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Creates a Reprogrammed Sassy Saloon Lassy. This summon will stick around for up to 300 sec. + Detoggling this device will cause this summon to vanish and the device to go on cooldown. This device will also go on cooldown if the Cowboy Robot Sassy Saloon Lassy is defeated.",
-    "apply_tag": [],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Piercing"
-    ],
-    "damage_values": null,
-    "healing_values": null,
-    "control_values": null,
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "High Noon Event: ASCII Alert"
-    ],
-    "icon_override": "Device_Robot_Lassy",
-    "is_disabled": false
-  },
-  {
-    "power_id": 1051,
-    "powerset_id": "Device",
-    "framework_id": "Sidekick",
-    "name": "R.O.D.",
-    "tier": null,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "cost": null,
-    "activation_time": 1,
-    "max_duration": 900,
-    "tick_rate": null,
-    "cooldown": 300,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Role: RDPS + Damage type: Particle + Special effects: Plasma Burn, Snare, Stun, Disintegrate + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction.",
-    "apply_tag": [
-      "Plasma Burn",
-      "Snare",
-      "Stun",
-      "Disintegrate"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Particle"
-    ],
-    "damage_values": null,
-    "healing_values": null,
-    "control_values": null,
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "High Noon Event: Reward"
-    ],
-    "icon_override": "Sidekick_ROD",
-    "is_disabled": false
-  },
-  {
-    "power_id": 1052,
-    "powerset_id": "Device",
-    "framework_id": "Other",
-    "name": "Scattershot Salvo",
-    "tier": null,
-    "power_type": "RANGED_AOE_DAMAGE",
-    "advantages": [],
-    "activation_type": "CLICK",
-    "cost": null,
-    "activation_time": 1,
-    "max_duration": null,
-    "tick_rate": null,
-    "cooldown": 90,
-    "range_tags": [
-      "Affects non-destructible foe (5 max)",
-      "25 feet Sphere"
-    ],
-    "tooltip": "Can be used while Held or Confused. + Deals 831 Piercing Damage and Knock Down affected targets. + Heals you for 157 Health Points for every target hit. This heal counts as a Life Drain effect. + Applies 2,679 Break Free damage to any Holds, Roots, or Disables affecting you. + Applies 3 stacks of Furious to you for 12 sec. Furious gives you +1.5% Critical Chance for 15 sec. This effect stacks up to 3 times. + When taking damage Furious grants you Willpower which gives you +300 Health Points over 3 sec. + Places all Escape devices on a 90 sec cooldown.",
-    "apply_tag": [
-      "Knock Down",
-      "Furious"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Piercing"
-    ],
-    "damage_values": "831",
-    "healing_values": "157",
-    "control_values": null,
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "High Noon Event: ASCII Alert"
-    ],
-    "icon_override": "Munitions_LeadTempest",
-    "is_disabled": false
-  },
-  {
-    "power_id": 1053,
-    "powerset_id": "Technology",
-    "framework_id": "Munitions",
-    "name": "Heavy Fire",
-    "tier": 1,
-    "power_type": "RANGED_DAMAGE",
-    "advantages": [
-      1,
-      2,
-      712,
-      27,
-      713,
-      3,
-      7,
-      5
-    ],
-    "activation_type": "MAINTAIN",
-    "cost": "20+13",
-    "activation_time": 0.5,
-    "max_duration": 6,
-    "tick_rate": 0.5,
-    "cooldown": null,
-    "range_tags": [
-      "Targets foe (5 max)",
-      "100 feet",
-      "60 degree Cone"
-    ],
-    "tooltip": "Deals 144 Piercing Damage every 0.5 sec to all targets. + Repels targets within 20ft of you every hit. Foes further away have a 10% chance to be Snared for 13 sec, reducing their movement speed by 100%.",
-    "apply_tag": [
-      "Repel",
-      "Snare"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Piercing"
-    ],
-    "damage_values": "144",
-    "healing_values": null,
-    "control_values": null,
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [],
-    "icon_override": "Munitions_HeavyFire",
-    "is_disabled": false
-  },
-  {
-    "power_id": 1054,
-    "powerset_id": "Technology",
-    "framework_id": "Munitions",
-    "name": "Suppression Fire",
-    "tier": 1,
-    "power_type": "RANGED_AOE_DAMAGE",
-    "advantages": [
-      1,
-      2,
-      625,
-      713,
-      344,
-      3,
-      7,
-      5
-    ],
-    "activation_type": "MAINTAIN",
-    "cost": "21+15",
-    "activation_time": 0.5,
-    "max_duration": 5,
-    "tick_rate": 0.5,
-    "cooldown": null,
-    "range_tags": [
-      "Targets foe (5 max)",
-      "100 feet",
-      "60 degree Cone"
-    ],
-    "tooltip": "Deals 144 Piercing Damage every 0.5 sec to all targets. + Repels targets within 20ft of you every hit. Foes further away have a 10% chance to be Snared for 13 sec, reducing their movement speed by 100%.",
-    "apply_tag": [
-      "Repel",
-      "Snare"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Piercing"
-    ],
-    "damage_values": "144",
-    "healing_values": null,
-    "control_values": null,
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Z Store : Renegade AT"
-    ],
-    "icon_override": "Munitions_SuppressionFire",
-    "is_disabled": false
-  },
-  {
-    "power_id": 1055,
-    "powerset_id": "Technology",
-    "framework_id": "Munitions",
-    "name": "Gatling Arms",
-    "tier": 3,
-    "power_type": "RANGED_DAMAGE",
-    "advantages": [
-      1,
-      2,
-      718,
-      3,
-      5
-    ],
-    "activation_type": "MAINTAIN",
-    "cost": "26+19",
-    "activation_time": 0.5,
-    "max_duration": 4,
-    "tick_rate": 0.5,
-    "cooldown": null,
-    "range_tags": [
-      "Targets foe",
-      "100 feet"
-    ],
-    "tooltip": "Deals 240 Piercing Damage every 0.5 sec. + Has 10% chance every hit to apply Furious. Furious gives you +1.5% Critical Chance for 15 sec. This effect stacks up to 3 times. + When taking damage Furious grants you Willpower which gives you +300 Health Points over 3 sec.",
-    "apply_tag": [
-      "Furious"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Piercing"
-    ],
-    "damage_values": "240",
-    "healing_values": null,
-    "control_values": null,
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Z Store : Renegade AT"
-    ],
-    "icon_override": "Munitions_GatlingArms",
-    "is_disabled": false
-  },
-  {
-    "power_id": 1056,
-    "powerset_id": "Technology",
-    "framework_id": "Munitions",
-    "name": "Wrist Blaster",
-    "tier": 1,
-    "power_type": "RANGED_DAMAGE",
-    "advantages": [
-      1,
-      2,
-      714,
-      715,
-      3,
-      7,
-      5
-    ],
-    "activation_type": "BLAST",
-    "cost": "25-49",
-    "activation_time": 0.67,
-    "max_duration": 1.33,
-    "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [
-      "Targets foe",
-      "100 feet"
-    ],
-    "tooltip": "Deals 292-696 Piercing Damage based on charge time. + Has 56-100% chance to Knocks Back targets within 20ft of you. Foes further away have 56-100% chance to be Knocked Down.",
-    "apply_tag": [
-      "Knock Back",
-      "Knock Down"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Piercing"
-    ],
-    "damage_values": "696",
-    "healing_values": null,
-    "control_values": null,
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Z Store : Renegade AT"
-    ],
-    "icon_override": "Munitions_WristBlaster",
-    "is_disabled": false
-  },
-  {
-    "power_id": 1057,
-    "powerset_id": "Technology",
-    "framework_id": "Munitions",
-    "name": "Steady Fire",
-    "tier": -1,
-    "power_type": "RANGED_DAMAGE",
-    "advantages": [
-      1,
-      2,
-      711
-    ],
-    "activation_type": "TOGGLE",
-    "cost": null,
-    "activation_time": 0.5,
-    "max_duration": null,
-    "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [
-      "Targets foe",
-      "50 feet"
-    ],
-    "tooltip": "Deals 75 Piercing Damage and generates Energy with the initial hit. + Deals 53 Piercing Damage and generates less Energy with each subsequent hit.",
-    "apply_tag": [],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Piercing"
-    ],
-    "damage_values": "75",
-    "healing_values": null,
-    "control_values": null,
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [],
-    "icon_override": "Munitions_SteadyFire",
-    "is_disabled": false
-  },
-  {
-    "power_id": 1058,
-    "powerset_id": "Device",
-    "framework_id": "Travel_Power",
-    "name": "Hover Disk",
-    "tier": null,
-    "power_type": "TRAVEL_POWER",
-    "advantages": [],
-    "activation_type": "TOGGLE",
-    "cost": null,
-    "activation_time": 1.5,
-    "max_duration": null,
-    "tick_rate": null,
-    "cooldown": 1,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Grants +30 Flight Speed while active. Outside of combat, you build up speed over time. After 4 sec, you gain +26 Flight Speed. After 10 sec, you gain an additional +26 Flight Speed. While active, you suffer a -12% penalty to Power Cost Discount and your Energy Building strength is reduced by 15%.",
-    "apply_tag": [],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [],
-    "damage_values": null,
-    "healing_values": null,
-    "control_values": null,
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Sky Command Rampage"
-    ],
-    "icon_override": "TravelPower_HoverDisk",
-    "is_disabled": false
-  },
-  {
-    "power_id": 1059,
-    "powerset_id": "Device",
-    "framework_id": "Travel_Power",
-    "name": "Ice Slide",
-    "tier": null,
-    "power_type": "TRAVEL_POWER",
-    "advantages": [],
-    "activation_type": "TOGGLE",
-    "cost": null,
-    "activation_time": 1.5,
-    "max_duration": null,
-    "tick_rate": null,
-    "cooldown": 1,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Grants +30 Flight Speed while active. Outside of combat, you build up speed over time. After 4 sec, you gain +26 Flight Speed. After 10 sec, you gain an additional +26 Flight Speed. While active, you suffer a -12% penalty to Power Cost Discount and your Energy Building strength is reduced by 15%.",
-    "apply_tag": [],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [],
-    "damage_values": null,
-    "healing_values": null,
-    "control_values": null,
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Fire & Ice Rampage"
-    ],
-    "icon_override": "TravelPower_IceSlide",
-    "is_disabled": false
-  },
-  {
-    "power_id": 1060,
-    "powerset_id": "Technology",
-    "framework_id": "Munitions",
-    "name": "Backhand Strike",
-    "tier": 1,
-    "power_type": "MELEE_DAMAGE",
-    "advantages": [
-      1,
-      2,
-      281,
-      547,
-      3,
-      5
-    ],
-    "activation_type": "CLICK",
-    "cost": 18,
-    "activation_time": 0.5,
-    "max_duration": null,
-    "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [
-      "Targets foe",
-      "10 feet"
-    ],
-    "tooltip": "Deals 193 Crushing Damage. + Stuns your target for 1.7 sec.",
-    "apply_tag": [
-      "Stun"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [
-      "Crowd Control"
-    ],
-    "damage_type": [
-      "Crushing"
-    ],
-    "damage_values": "193",
-    "healing_values": null,
-    "control_values": "Stun=1.7",
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [],
-    "icon_override": "Munitions_BackhandStrike",
-    "is_disabled": false
-  },
-  {
-    "power_id": 1061,
-    "powerset_id": "Device",
-    "framework_id": "Travel_Power",
-    "name": "Rocket Jump",
-    "tier": null,
-    "power_type": "TRAVEL_POWER",
-    "advantages": [],
-    "activation_type": "TOGGLE",
-    "cost": null,
-    "activation_time": 1.5,
-    "max_duration": null,
-    "tick_rate": null,
-    "cooldown": 1,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Grants +45 Jump Speed and +90 Jump Height while active. Outside of combat, you build up speed and height over time. After 4 sec you gain +34 Jump Speed and +51 Jump Height and after another 10 sec you gain an additional +34 Jump Speed and +51 Jump Height. While active, you receive a -6.2% Power Cost Discount and your Energy Building strength is reduced by 15%.",
-    "apply_tag": [],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [],
-    "damage_values": null,
-    "healing_values": null,
-    "control_values": null,
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Destroid Rise Again OM"
-    ],
-    "icon_override": "TravelPower_RocketJump",
-    "is_disabled": false
-  },
-  {
-    "power_id": 1062,
-    "powerset_id": "Travel_Power",
-    "framework_id": "Flight",
-    "name": "Shadow Fire Flight",
-    "tier": null,
-    "power_type": "TRAVEL_POWER",
-    "advantages": [
-      8,
-      9
-    ],
-    "activation_type": "TOGGLE",
-    "cost": null,
-    "activation_time": 1.5,
-    "max_duration": null,
-    "tick_rate": null,
-    "cooldown": 1,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Grants +20 Flight Speed while active. Outside of combat, you build up speed over time. After 4 sec, you gain +17 Flight Speed. After 10 sec, you gain an additional +17 Flight Speed. While active, you suffer a -12% penalty to Power Cost Discount and your Energy Building strength is reduced by 15%.",
-    "apply_tag": [],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [],
-    "damage_values": null,
-    "healing_values": null,
-    "control_values": null,
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Z Store"
-    ],
-    "icon_override": "TravelPower_ShadowFireFlight",
-    "is_disabled": false
-  },
-  {
-    "power_id": 1063,
-    "powerset_id": "Travel_Power",
-    "framework_id": "Flight",
-    "name": "Radiant Fire Flight",
-    "tier": null,
-    "power_type": "TRAVEL_POWER",
-    "advantages": [
-      8,
-      9
-    ],
-    "activation_type": "TOGGLE",
-    "cost": null,
-    "activation_time": 1.5,
-    "max_duration": null,
-    "tick_rate": null,
-    "cooldown": 1,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Grants +20 Flight Speed while active. Outside of combat, you build up speed over time. After 4 sec, you gain +17 Flight Speed. After 10 sec, you gain an additional +17 Flight Speed. While active, you suffer a -12% penalty to Power Cost Discount and your Energy Building strength is reduced by 15%.",
-    "apply_tag": [],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [],
-    "damage_values": null,
-    "healing_values": null,
-    "control_values": null,
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Z Store"
-    ],
-    "icon_override": "TravelPower_RadiantFireFlight",
-    "is_disabled": false
-  },
-  {
-    "power_id": 1064,
-    "powerset_id": "Technology",
-    "framework_id": "Munitions",
-    "name": "Return fire",
-    "tier": 1,
-    "power_type": "BLOCK",
-    "advantages": [
-      1,
-      2,
-      716
-    ],
-    "activation_type": "BLOCK",
-    "cost": null,
-    "activation_time": 1,
-    "max_duration": null,
-    "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "While blocking, grants 250/300/360% resistance to all damage. + Increases your resistance to Holds and Knocks, and reduces your movement speed. + Gives you energy when struck by an attack while blocking. This amount scales with your Recovery and the amount of damage you take. + For up to 4 sec after you begin blocking, if you are attacked from more than 10ft away, you will return a portion of one incoming attack to the attacker as Piercing damage. If you are attacked within 10ft, you will return a smaller portion of one incoming attack to up to 5 targets within 10ft and Knock them Back. + This effect has a cooldown of 5 sec and cannot be triggered again until you release and reapply this block.",
-    "apply_tag": [
-      "Knock Back"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Piercing"
-    ],
-    "damage_values": null,
-    "healing_values": null,
-    "control_values": null,
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Z Store : Renegade AT"
-    ],
-    "icon_override": "Munitions_ReturnFire",
-    "is_disabled": false
-  },
-  {
-    "power_id": 1065,
-    "powerset_id": "Technology",
-    "framework_id": "Munitions",
-    "name": "Detonation Round",
-    "tier": 2,
-    "power_type": "RANGED_AOE_DAMAGE",
-    "advantages": [
-      1,
-      2,
-      717,
-      400,
-      3,
-      5
-    ],
-    "activation_type": "CHARGE",
-    "cost": "78-96",
-    "activation_time": 0.67,
-    "max_duration": 1.5,
-    "tick_rate": null,
-    "cooldown": 15,
-    "range_tags": [
-      "Targets foe (5 max)",
-      "100 feet",
-      "15 feet Sphere"
-    ],
-    "tooltip": "Deals 193-411 Piercing Damage and deals an additional 42 Piercing Damage every 1 sec for 16 sec to all targets. + When partially charged, Interrupts your primary target and has a 50% chance to affect other affected targets. + When fully charged, instead Knocks Up affected targets.",
-    "apply_tag": [
-      "Interrupt",
-      "Knock Up"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [
-      "DoT"
-    ],
-    "damage_type": [
-      "Piercing"
-    ],
-    "damage_values": "411",
-    "healing_values": null,
-    "control_values": null,
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Z Store : Renegade AT"
-    ],
-    "icon_override": "Munitions_DetonationRound",
-    "is_disabled": false
-  },
-  {
-    "power_id": 1066,
-    "powerset_id": "Technology",
-    "framework_id": "Munitions",
-    "name": "Combat Drones",
-    "tier": 2,
-    "power_type": "CONTROLLABLE_PET",
-    "advantages": [
-      1,
-      2
-    ],
-    "activation_type": "FULL_CHARGE",
-    "cost": 35,
-    "activation_time": 0.87,
-    "max_duration": 2,
-    "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "Summons 2 Combat Drones. The Support Drones have 2 modes, Support Mode and Offense Mode. + In their default Support Mode, they will use a Healing Beam on friendly targets, healing them for 22 Health Points every 0.5 sec. + In Offense Mode, they use Gatling Gun to attack your foes, dealing 17 Piercing Damage every 0.5 sec. + New skills are acquired upon ranking this power on pets.",
-    "apply_tag": [],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [
-      "Passive Heal"
-    ],
-    "damage_type": [
-      "Piercing"
-    ],
-    "damage_values": "17",
-    "healing_values": "22",
-    "control_values": null,
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [],
-    "icon_override": "Munitions_CombatDrones",
-    "is_disabled": false
-  },
-  {
-    "power_id": 1067,
-    "powerset_id": "Device",
-    "framework_id": "Other",
-    "name": "Teleiosaurus Pheromones Compound",
-    "tier": null,
-    "power_type": "UNCONTROLED_PET",
-    "advantages": [],
-    "activation_type": "TOGGLE",
-    "cost": null,
-    "activation_time": null,
-    "max_duration": null,
-    "tick_rate": null,
-    "cooldown": 30,
-    "range_tags": [
-      "Targets self"
-    ],
-    "tooltip": "25% chance every 10 sec to summon a Hatchling, twice, lasting 30 sec. + 25% chance every 10 sec to summon a Reeker, lasting 60 sec. + Hatchling powers: + Bite: 448 Slashing Damage + Spit: 332 Toxic Damage + Lunge: 560 Slashing Damage + Radiation Breath: 1600 Particle Damage (30 sec recharge) + Reeker powers: + Bite: 448 Slashing Damage + Spit: 332 Toxic Damage + Blast: 1600 Toxic Damage (30 sec recharge) + Radiation Breath: 1600 Particle Damage (30 sec recharge) + Foot Stomp: 1600 Crushing Damage in a 15ft sphere (30 sec recharge) + Radiation Storm: 400 Particle Damage every 0.5 sec in a 15ft sphere (30 sec recharge)",
-    "apply_tag": [],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Crushing",
-      "Toxic",
-      "Slashing",
-      "Particle"
-    ],
-    "damage_values": "1600",
-    "healing_values": null,
-    "control_values": null,
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [
-      "Teleiosaurus Rampage"
-    ],
-    "icon_override": "Device_TeleiosaurusPheromone",
-    "is_disabled": false
-  },
-  {
-    "power_id": 1068,
-    "powerset_id": "Technology",
-    "framework_id": "Munitions",
-    "name": "Rolling Fire",
-    "tier": -1,
-    "power_type": "ENERGY_BUILDER",
-    "advantages": [
-      1,
-      2,
-      722,
-      3
-    ],
-    "activation_type": "TOGGLE",
-    "cost": null,
-    "activation_time": 0.5,
-    "max_duration": 4,
-    "tick_rate": 0.5,
-    "cooldown": null,
-    "range_tags": [
-      "Targets foe",
-      "50 feet"
-    ],
-    "tooltip": "Deals 75 Piercing Damage on initial hit, then 53 on each subsequent hit to the target, and generates energy.",
-    "apply_tag": [],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Piercing"
-    ],
-    "damage_values": "75",
-    "healing_values": null,
-    "control_values": null,
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [],
-    "icon_override": "Munitions_RollingFire",
-    "is_disabled": false
-  },
-  {
-    "power_id": 1069,
-    "powerset_id": "Technology",
-    "framework_id": "Munitions",
-    "name": "Heavy Burst",
-    "tier": 0,
-    "power_type": "RANGED_DAMAGE",
-    "advantages": [
-      1,
-      2,
-      720,
-      721,
-      3,
-      7,
-      5
-    ],
-    "activation_type": "BLAST",
-    "cost": "29-51",
-    "activation_time": 0.67,
-    "max_duration": 1.33,
-    "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [
-      "Targets foe",
-      "100 feet"
-    ],
-    "tooltip": "Deals 292-752 Piercing Damage based on charge time, and has a 45-100% chance to apply a stack of Furious to you. + Furious gives you +1.5% Critical Chance for 15 sec. This effect stacks up to 3 times. + When taking damage Furious grants you Willpower which gives you +300 Health Points over 3 sec. ",
-    "apply_tag": [
-      "Furious"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Piercing"
-    ],
-    "damage_values": "752",
-    "healing_values": null,
-    "control_values": null,
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [],
-    "icon_override": "Munitions_HeavyBurst",
-    "is_disabled": false
-  },
-  {
-    "power_id": 1070,
-    "powerset_id": "Technology",
-    "framework_id": "Munitions",
-    "name": "Tactical Strike",
-    "tier": 3,
-    "power_type": "RANGED_DAMAGE",
-    "advantages": [
-      1,
-      2,
-      723,
-      544,
-      3
-    ],
-    "activation_type": "FULL_CHARGE",
-    "cost": 79,
-    "activation_time": 0.67,
-    "max_duration": 0.83,
-    "tick_rate": null,
-    "cooldown": 15,
-    "range_tags": [
-      "Targets foe",
-      "100 feet"
-    ],
-    "tooltip": "After 2.5 sec, deals 1643 Crushing Damage to foes within 15ft. Knocks affected targets toward the center of effect, and applies Disorient. Disorient reduces the target's damage by 10% and movement speed by 50% for 12 sec.",
-    "apply_tag": [
-      "Knock To",
-      "Disorient"
-    ],
-    "refresh_tag": [],
-    "synergy_tag": [],
-    "filter_tag": [],
-    "damage_type": [
-      "Crushing"
-    ],
-    "damage_values": "1643",
-    "healing_values": null,
-    "control_values": null,
-    "scaling_stats": [],
-    "power_dependency": [],
-    "source": [],
-    "icon_override": "Munitions_TacticalStrike",
     "is_disabled": false
   }
 ]
