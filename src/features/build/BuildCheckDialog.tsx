@@ -1,3 +1,5 @@
+import { useMemo } from "react";
+import type { Advantage } from "@/types/advantages";
 import type { BuildSlot } from "@/types/builds";
 import type { SuperStat } from "@/types/character";
 import type { Power } from "@/types/powers";
@@ -15,6 +17,7 @@ import { getPowerTooltipAttribute } from "@/shared/utils/powerTooltip";
 import { SpriteIcon } from "@/shared/ui/SpriteIcon";
 
 type BuildCheckDialogProps = {
+  advantages: Advantage[];
   buildSlots: BuildSlot[];
   powers: Power[];
   powerVariantSlots: BuildSlot[];
@@ -24,6 +27,7 @@ type BuildCheckDialogProps = {
 };
 
 export function BuildCheckDialog({
+  advantages,
   buildSlots,
   powers,
   powerVariantSlots,
@@ -31,9 +35,18 @@ export function BuildCheckDialog({
   onClose,
   onSelectMissingRequirement,
 }: BuildCheckDialogProps) {
+  const advantagesById = useMemo(() => {
+    return new Map(
+      advantages.map((advantage) => [advantage.advantage_id, advantage]),
+    );
+  }, [advantages]);
   const coreRequirementResults = getCoreBuildRequirementResults(buildSlots);
   const optionalRequirementResults =
-    getOptionalBuildRequirementResults(buildSlots, powerVariantSlots);
+    getOptionalBuildRequirementResults(
+      buildSlots,
+      powerVariantSlots,
+      advantagesById,
+    );
 
   return (
     <ModalDialog
@@ -46,6 +59,7 @@ export function BuildCheckDialog({
       <div className="build-check-dialog__content">
           <BuildCheckSection
             label="Core"
+            advantagesById={advantagesById}
             powers={powers}
             requirements={coreRequirementResults}
             selectedSuperStats={selectedSuperStats}
@@ -53,6 +67,7 @@ export function BuildCheckDialog({
           />
           <BuildCheckSection
             label="Optional"
+            advantagesById={advantagesById}
             powers={powers}
             requirements={optionalRequirementResults}
             selectedSuperStats={selectedSuperStats}
@@ -64,6 +79,7 @@ export function BuildCheckDialog({
 }
 
 type BuildCheckSectionProps = {
+  advantagesById: ReadonlyMap<number, Advantage>;
   label: string;
   powers: Power[];
   requirements: BuildRequirementResult[];
@@ -72,6 +88,7 @@ type BuildCheckSectionProps = {
 };
 
 function BuildCheckSection({
+  advantagesById,
   label,
   powers,
   requirements,
@@ -85,7 +102,11 @@ function BuildCheckSection({
         {requirements.map((requirement) => {
           const isPresent = requirement.power !== null;
           const hasMatchingPowers =
-            getMatchingRequirementPowerIds(requirement, powers).size > 0;
+            getMatchingRequirementPowerIds(
+              requirement,
+              powers,
+              advantagesById,
+            ).size > 0;
           const missingScalingStats = getMissingScalingStats(
             requirement.power,
             selectedSuperStats,

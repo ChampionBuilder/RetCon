@@ -837,7 +837,9 @@
     "refresh_tag": [
       "Demolish"
     ],
-    "synergy_tag": [],
+    "synergy_tag": [
+      "Enrage"
+    ],
     "filter_tag": [],
     "damage_type": [],
     "damage_values": null,

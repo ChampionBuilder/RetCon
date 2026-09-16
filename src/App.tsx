@@ -604,6 +604,11 @@ function App() {
   const powersById = useMemo(() => {
     return new Map(powers.map((power) => [power.power_id, power]));
   }, [powers]);
+  const advantagesById = useMemo(() => {
+    return new Map(
+      advantages.map((advantage) => [advantage.advantage_id, advantage]),
+    );
+  }, [advantages]);
   const gearsById = useMemo(() => {
     return new Map(gears.map((gear) => [gear.gear_id, gear]));
   }, [gears]);
@@ -939,7 +944,11 @@ function App() {
     requirement: BuildRequirementResult,
   ) {
     setBuildCheckPowerFilter({
-      ids: getMatchingRequirementPowerIds(requirement, selectablePowers),
+      ids: getMatchingRequirementPowerIds(
+        requirement,
+        selectablePowers,
+        advantagesById,
+      ),
       label: requirement.label,
     });
     clearPowerPanelTargets();
@@ -1908,6 +1917,7 @@ function App() {
 
       {buildCheckDialogOpen ? (
         <BuildCheckDialog
+          advantages={advantages}
           buildSlots={buildSlots}
           powers={selectablePowers}
           powerVariantSlots={powerVariantSlots}

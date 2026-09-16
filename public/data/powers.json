@@ -7755,10 +7755,11 @@
       2,
       24,
       395,
-      3
+      3,
+      5
     ],
     "activation_type": "FULL_CHARGE",
-    "cost": 94,
+    "cost": 93,
     "activation_time": 0.67,
     "max_duration": 2.33,
     "tick_rate": null,
@@ -7767,7 +7768,7 @@
       "Targets foe",
       "100 feet"
     ],
-    "tooltip": "When the power is activated, the ground lights up with the Cannon's target marker. After 4.5 sec the Orbital Cannon deals 1649 Particle Damage to foes within 10ft. + Knocks Down and applies Plasma Burn to affected targets. + Plasma Burn deals 36 Particle Damage every 1 sec for 16 sec and stacks up to 5 times.",
+    "tooltip": "When the power is activated, the ground lights up with the Cannon's target marker. After 4.5 sec the Orbital Cannon deals 1735 Particle Damage to foes within 10ft. + Knocks Down and applies Plasma Burn to affected targets. + Plasma Burn deals 36 Particle Damage every 1 sec for 16 sec and stacks up to 5 times.",
     "apply_tag": [
       "Plasma Burn",
       "Knock Down"
@@ -7778,7 +7779,7 @@
     "damage_type": [
       "Particle"
     ],
-    "damage_values": "1649",
+    "damage_values": "1735",
     "healing_values": null,
     "control_values": null,
     "scaling_stats": [],
@@ -7972,10 +7973,11 @@
       2,
       88,
       719,
-      3
+      3,
+      5
     ],
     "activation_type": "CLICK",
-    "cost": 138,
+    "cost": 121,
     "activation_time": 1.67,
     "max_duration": null,
     "tick_rate": 20,
@@ -8091,7 +8093,7 @@
     "framework_id": "Munitions",
     "name": "Steady Fire",
     "tier": -1,
-    "power_type": "RANGED_DAMAGE",
+    "power_type": "ENERGY_BUILDER",
     "advantages": [
       1,
       2,
@@ -9779,7 +9781,8 @@
       2,
       723,
       544,
-      3
+      3,
+      5
     ],
     "activation_type": "FULL_CHARGE",
     "cost": 79,
@@ -9791,7 +9794,7 @@
       "Targets foe",
       "100 feet"
     ],
-    "tooltip": "After 2.5 sec, deals 1643 Crushing Damage to foes within 15ft. Knocks affected targets toward the center of effect, and applies Disorient. Disorient reduces the target's damage by 10% and movement speed by 50% for 12 sec.",
+    "tooltip": "After 2.5 sec, deals 913 Crushing Damage to foes within 15ft. Knocks affected targets toward the center of effect, and applies Disorient. Disorient reduces the target's damage by 10% and movement speed by 50% for 12 sec.",
     "apply_tag": [
       "Knock To",
       "Disorient"
@@ -9802,7 +9805,7 @@
     "damage_type": [
       "Crushing"
     ],
-    "damage_values": "1643",
+    "damage_values": "913",
     "healing_values": null,
     "control_values": null,
     "scaling_stats": [],
@@ -12982,7 +12985,7 @@
       "10 feet",
       "240-240-360 degree Cone"
     ],
-    "tooltip": "Deals 130-292 Slashing Damage to targets. + 15/25/50% chance to cause your target to start Bleeding. This chance is doubled if you are affected by Focus. + Bleed deals 36 Slashing Damage every 1 sec for 16 sec and stacks up to 5 times.",
+    "tooltip": "Deals 130-584 Slashing Damage to targets. + 15/25/50% chance to cause your target to start Bleeding. This chance is doubled if you are affected by Focus. + Bleed deals 36 Slashing Damage every 1 sec for 16 sec and stacks up to 5 times.",
     "apply_tag": [
       "Bleed"
     ],
@@ -12994,7 +12997,7 @@
     "damage_type": [
       "Slashing"
     ],
-    "damage_values": "590",
+    "damage_values": "584",
     "healing_values": null,
     "control_values": null,
     "scaling_stats": [],
@@ -22022,7 +22025,7 @@
     "activation_time": 0.67,
     "max_duration": null,
     "tick_rate": null,
-    "cooldown": 90,
+    "cooldown": 15,
     "range_tags": [
       "Targets self"
     ],
@@ -31860,7 +31863,7 @@
     "power_type": "RANGED_AOE_DAMAGE",
     "advantages": [],
     "activation_type": "FULL_CHARGE",
-    "cost": 206,
+    "cost": 192,
     "activation_time": 0.67,
     "max_duration": 2.33,
     "tick_rate": null,
@@ -31869,7 +31872,7 @@
       "Targets foe",
       "100 feet"
     ],
-    "tooltip": "After 4.5 sec the Orbital Cannon deals 1004 Particle Damage and Knocks Down foes within 20ft. + After 4.5 sec, creates a Ultimate Anvil of Dawn at your primary target for 10 sec, causing 53 Particle Damage every 1 sec for 10 sec to foes within 15ft. + Applies Plasma Burn to affected targets on each hit. Plasma Burn deals 36 Particle Damage every 1 sec for 16 sec and stacks up to 5 times. + After 4.5 sec, creates a Radiation Field at your primary target for 12 sec. Every 1 sec, foes within 20ft have a 20% chance for every stack of Plasma Burn on them to be Stunned for 0.48 sec. + Additionally, foes caught in the field have a 20% chance for every stack of Plasma Burn on them to be affected by Trauma, causing their healing to be less effective for 6 sec. + Places your Orbital Cannon power on cooldown when used. + Activates a shared cooldown of 60 sec on all Ultimate powers.",
+    "tooltip": "After 4.5 sec the Orbital Cannon deals 2191 Particle Damage and Knocks Down foes within 20ft. + After 4.5 sec, creates a Ultimate Anvil of Dawn at your primary target for 10 sec, causing 110 Particle Damage every 1 sec for 10 sec to foes within 15ft. + Applies Plasma Burn to affected targets on each hit. Plasma Burn deals 36 Particle Damage every 1 sec for 16 sec and stacks up to 5 times. + After 4.5 sec, creates a Radiation Field at your primary target for 12 sec. Every 1 sec, foes within 20ft have a 20% chance for every stack of Plasma Burn on them to be Stunned for 0.48 sec. + Additionally, foes caught in the field have a 20% chance for every stack of Plasma Burn on them to be affected by Trauma, causing their healing to be less effective for 6 sec. + Places your Orbital Cannon power on cooldown when used. + Activates a shared cooldown of 60 sec on all Ultimate powers.",
     "apply_tag": [
       "Knock Down",
       "Plasma Burn",
@@ -31884,7 +31887,7 @@
     "damage_type": [
       "Particle"
     ],
-    "damage_values": "1004",
+    "damage_values": "2191",
     "healing_values": null,
     "control_values": "Stun=0.48",
     "scaling_stats": [],
@@ -32240,7 +32243,7 @@
       204
     ],
     "source": [
-      "Anniversary Event: Qularrr Simulation Alert"
+      "Anniversary Event: Qularr Invasion Alert"
     ],
     "icon_override": "PVD_QularToxicBarrage",
     "is_disabled": false
@@ -32283,7 +32286,7 @@
       211
     ],
     "source": [
-      "Anniversary Event: Qularrr Simulation Alert"
+      "Anniversary Event: Qularr Invasion Alert"
     ],
     "icon_override": "PVD_QularToxicRifle",
     "is_disabled": false
@@ -32306,7 +32309,7 @@
       "Targets foe",
       "100 feet"
     ],
-    "tooltip": "Deals 89-607 Particle Damage. + If a target within 10ft is affected by your Plasma Burn, deals an additional 21-36 (based on number of targets) to that target for each stack. + 10/10/25% chance to apply Plasma Burn,  dealing 36 Particle Damage every 1 sec for 16 sec and stacks up to 5 times. + Third hit adds 9 sec to your Plasma Burn stacks. + 25% chance on last hit to Kock Down affected targets.",
+    "tooltip": "Deals 107-729 Particle Damage. + If a target within 10ft is affected by your Plasma Burn, deals an additional 26-43 (based on number of targets) to that target for each stack. + 15/15/50% chance to apply Plasma Burn,  dealing 36 Particle Damage every 1 sec for 16 sec and stacks up to 5 times. + Third hit adds 11 sec to your Plasma Burn stacks. + 50% chance on last hit to Kock Down affected targets.",
     "apply_tag": [
       "Plasma Burn",
       "Knock Down"
@@ -32414,7 +32417,7 @@
       196
     ],
     "source": [
-      "Anniversary Event: Qularrr Simulation Alert"
+      "Anniversary Event: Qularr Invasion Alert"
     ],
     "icon_override": "PVD_VirulentShot",
     "is_disabled": false
@@ -38815,7 +38818,7 @@
     "tier": null,
     "power_type": "UNCONTROLED_PET",
     "advantages": [],
-    "activation_type": "MAINTAIN",
+    "activation_type": "TOGGLE",
     "cost": null,
     "activation_time": 0.5,
     "max_duration": 9,
@@ -38990,7 +38993,7 @@
     "scaling_stats": [],
     "power_dependency": [],
     "source": [
-      "Anniversary Event: Qularrr Simulation Alert"
+      "Anniversary Event: Qularr Invasion Alert"
     ],
     "icon_override": "Device_QularMutagen",
     "is_disabled": false
@@ -44249,6 +44252,134 @@
       "Drifter Store"
     ],
     "icon_override": "Device_Vesperine",
+    "is_disabled": false
+  },
+  {
+    "power_id": 1071,
+    "powerset_id": "PVD",
+    "framework_id": "Munitions",
+    "name": "Qularr Toxic Assault",
+    "tier": null,
+    "power_type": "RANGED_DAMAGE",
+    "advantages": [],
+    "activation_type": "MAINTAIN",
+    "cost": "14+10",
+    "activation_time": 0.5,
+    "max_duration": 6,
+    "tick_rate": 0.5,
+    "cooldown": 90,
+    "range_tags": [
+      "Targets foe (5 max)",
+      "100 feet",
+      "60 degree Cone"
+    ],
+    "tooltip": "Deals 122 Toxic Damage every 0.5 sec to all targets. + Has 10% chance every 0.5 sec to apply Deadly Poison to affected targets. + Deadly Poison deals 31 Toxic Damage every 1 sec for 16 sec and stacks up to 5 times. + When fully maintained, and if the target is affected by 3 or more of your Deadly Poison, has 60% chance to apply Noxious Poison to affected targets. + Noxious Poison deals 55 Toxic Damage every 1 sec for 16 sec to foes within 10ft.",
+    "apply_tag": [
+      "Deadly Poison",
+      "Noxious Poison"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [
+      "Deadly Poison"
+    ],
+    "filter_tag": [],
+    "damage_type": [
+      "Toxic"
+    ],
+    "damage_values": "122",
+    "healing_values": null,
+    "control_values": null,
+    "scaling_stats": [],
+    "power_dependency": [
+      1053
+    ],
+    "source": [
+      "Anniversary Event: Qularr Invasion Alert"
+    ],
+    "icon_override": "PVD_QularrHeavyFire",
+    "is_disabled": false
+  },
+  {
+    "power_id": 1072,
+    "powerset_id": "PVD",
+    "framework_id": "Munitions",
+    "name": "Qularr Toxic Burst",
+    "tier": null,
+    "power_type": "RANGED_DAMAGE",
+    "advantages": [],
+    "activation_type": "BLAST",
+    "cost": "26-42",
+    "activation_time": 0.67,
+    "max_duration": 1.33,
+    "tick_rate": null,
+    "cooldown": 90,
+    "range_tags": [
+      "Targets foe",
+      "100 feet"
+    ],
+    "tooltip": "Deals 197-560 Toxic Damage and has 21-62% chance to apply Deadly Poison. + Deadly Poison deals 31 Toxic Damage every 1 sec for 16 sec and stacks up to 5 times. + Additionally, has 21-62% chance to apply Debilitating Poison to your target. + Debilitating Poison reduces resistance to Toxic Damage by 18% for 15 sec.",
+    "apply_tag": [
+      "Deadly Poison",
+      "Debilitating Poison"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Toxic"
+    ],
+    "damage_values": "560",
+    "healing_values": null,
+    "control_values": null,
+    "scaling_stats": [],
+    "power_dependency": [
+      1069
+    ],
+    "source": [
+      "Anniversary Event: Qularr Invasion Alert"
+    ],
+    "icon_override": "PVD_QularrHeavyBurst",
+    "is_disabled": false
+  },
+  {
+    "power_id": 1073,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "The Vanguard",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "cost": null,
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: Tank + Damage type: Crushing, Piercing + Special effects: Armor Piercing, Bleed, Knock + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction.",
+    "apply_tag": [
+      "Armor Piercing",
+      "Bleed",
+      "Knock"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Crushing",
+      "Piercing"
+    ],
+    "damage_values": null,
+    "healing_values": null,
+    "control_values": null,
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Anniversary Event: Reward"
+    ],
+    "icon_override": "Sidekick_TheVanguard",
     "is_disabled": false
   }
 ]

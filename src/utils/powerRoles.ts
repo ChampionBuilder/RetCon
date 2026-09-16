@@ -50,6 +50,7 @@ const buffDebuffTags = new Set(["static field"]);
 const activeHealShieldTags = new Set(["active heal", "life drain", "team heal"]);
 const passiveHealShieldTags = new Set(["passive heal"]);
 const shieldApplyTags = new Set(["direct shield", "shield", "shield special"]);
+const threatWipeTags = new Set(["threat wipe"]);
 const powerRoleOrder = [
   "Ranged Damage",
   "Melee Damage",
@@ -75,6 +76,7 @@ const powerRoleAdvantageHighlightQueries: Record<string, string[]> = {
   "Crowd Control": ["Crowd Control"],
   "Passive Heal": [...passiveHealShieldTags],
   Shield: ["Direct Shield", "Shield", "Shield (special)"],
+  "Threat Wipe": ["Threat Wipe"],
 };
 
 type PowerRoleContext = {
@@ -230,6 +232,13 @@ export function getPowerRoles(power: Power, context: PowerRoleContext = {}) {
     hasAnyNormalizedValue(advantageApplyTags, shieldApplyTags)
   ) {
     roles.add("Shield");
+  }
+
+  if (
+    includeAdvantageTags &&
+    hasAnyNormalizedValue(advantageTags, threatWipeTags)
+  ) {
+    roles.add("Threat Wipe");
   }
 
   if (includePowerMetadata && hasLungeRangeTag(power)) {

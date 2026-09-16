@@ -1,4 +1,5 @@
 import type { BuildSlot } from "@/types/builds";
+import type { Advantage } from "@/types/advantages";
 import type { SuperStat } from "@/types/character";
 import type { Power } from "@/types/powers";
 import { getNormalizedPowerType } from "@/shared/utils/powerTypes";
@@ -109,6 +110,7 @@ const checkedScalingStatPowerTypes = new Set([
   "SLOTTED_SUPPORT_PASSIVE",
   "TOGGLE_FORM",
 ]);
+const threatWipeFilterTags = new Set(["threat wipe"]);
 
 export function getMissingScalingStats(
   power: Power | null,
@@ -139,6 +141,7 @@ export function getMissingScalingStats(
 export function getMatchingRequirementPowerIds(
   requirement: BuildRequirement,
   powers: Power[],
+  advantagesById?: ReadonlyMap<number, Advantage> | null,
 ) {
   return new Set(
     powers
@@ -146,9 +149,61 @@ export function getMatchingRequirementPowerIds(
         isPowerEnabled(power) &&
         (requirement.key === "ultimate"
           ? isCombatPower(power) && isUltimatePower(power)
-          : requirement.powerTypes.includes(getNormalizedPowerType(power))),
+          : requirement.key === "threat-wipe"
+            ? requirement.powerTypes.includes(getNormalizedPowerType(power)) ||
+              hasThreatWipeAdvantage(power, advantagesById)
+            : requirement.powerTypes.includes(getNormalizedPowerType(power))),
       )
       .map((power) => power.power_id),
+  );
+}
+
+function normalizeRequirementText(value: string | null | undefined) {
+  return value?.replace(/[^a-z0-9]+/giu, " ").trim().toLowerCase() ?? "";
+}
+
+function getTagValues(value: string[] | string | null | undefined) {
+  if (!value) {
+    return [];
+  }
+
+  const values = Array.isArray(value) ? value : [value];
+
+  return values
+    .flatMap((tag) => String(tag).split(";"))
+    .map((tag) => tag.trim())
+    .filter(Boolean);
+}
+
+function advantageHasThreatWipeFilterTag(advantage: Advantage | null | undefined) {
+  return getTagValues(advantage?.filter_tag).some((tag) =>
+    threatWipeFilterTags.has(normalizeRequirementText(tag)),
+  );
+}
+
+function hasThreatWipeAdvantage(
+  power: Power | null,
+  advantagesById: ReadonlyMap<number, Advantage> | null | undefined,
+) {
+  return Boolean(
+    power &&
+      advantagesById &&
+      power.advantages.some((advantageId) =>
+        advantageHasThreatWipeFilterTag(advantagesById.get(advantageId)),
+      ),
+  );
+}
+
+function hasSelectedThreatWipeAdvantage(
+  slot: BuildSlot,
+  advantagesById: ReadonlyMap<number, Advantage> | null | undefined,
+) {
+  return Boolean(
+    slot.power &&
+      advantagesById &&
+      slot.selectedAdvantages.some((advantageId) =>
+        advantageHasThreatWipeFilterTag(advantagesById.get(advantageId)),
+      ),
   );
 }
 
@@ -156,6 +211,7 @@ function getRequirementResults(
   buildSlots: BuildSlot[],
   requirements: BuildRequirement[],
   powerVariantSlots: BuildSlot[] = [],
+  advantagesById?: ReadonlyMap<number, Advantage> | null,
 ) {
   return requirements.map((requirement) => ({
     ...requirement,
@@ -168,6 +224,11 @@ function getRequirementResults(
             isUltimatePower(slot.power),
           )?.power ??
           null
+        : requirement.key === "threat-wipe"
+          ? buildSlots.find((slot) =>
+              requirement.powerTypes.includes(getNormalizedPowerType(slot.power)) ||
+              hasSelectedThreatWipeAdvantage(slot, advantagesById),
+            )?.power ?? null
         : buildSlots.find((slot) =>
             requirement.powerTypes.includes(getNormalizedPowerType(slot.power)),
           )?.power ?? null,
@@ -181,10 +242,12 @@ export function getCoreBuildRequirementResults(buildSlots: BuildSlot[]) {
 export function getOptionalBuildRequirementResults(
   buildSlots: BuildSlot[],
   powerVariantSlots: BuildSlot[],
+  advantagesById?: ReadonlyMap<number, Advantage> | null,
 ) {
   return getRequirementResults(
     buildSlots,
     optionalBuildRequirements,
     powerVariantSlots,
+    advantagesById,
   );
 }
