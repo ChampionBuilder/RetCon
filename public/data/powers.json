@@ -31499,7 +31499,7 @@
       "Targets foe",
       "100 feet"
     ],
-    "tooltip": "Deals 197 Electrical Damage every 0.5 sec to the target. + When fully maintained, deals an additional 590 Electrical Damage if your target is affected by your Negative Ions. + 20% chance on each hit to Stun your target for 1 sec.",
+    "tooltip": "Deals 236 Electrical Damage every 0.5 sec to the target. + When fully maintained, deals an additional 708 Electrical Damage if your target is affected by your Negative Ions. + 13% chance on each hit to Stun your target for 1 sec.",
     "apply_tag": [
       "Stun"
     ],
@@ -31511,7 +31511,7 @@
     "damage_type": [
       "Electrical"
     ],
-    "damage_values": "197",
+    "damage_values": "236",
     "healing_values": null,
     "control_values": "Stun=1",
     "scaling_stats": [],
@@ -31586,7 +31586,7 @@
       "Targets foe",
       "50 feet"
     ],
-    "tooltip": "Creates a Cauldron Fire on the target for 16 sec dealing 55 Magic Damage every 1 sec to foes within 15ft. + Foes standing in the Cauldron Fire have 20% chance every 1 sec to be afflicted by Deadly Poison. Deadly Poison deals 31 Toxic Damage every 1 sec for 16 sec and stacks up to 5 times. + Snares affected targets, reducing their movement speed by 100%. + Hitting a foe standing in the Cauldron Fire with your Magic Damage attacks has a 50% chance to apply Bane, which can cause one of the following effects: Bleeding, Chilled, Clinging Flames, Deadly Poison, Debilitating Poison, Demolish, Dependency, Disintegrate, Disorient, Fear, Frail Armor, Hexed, Plasma Burn, Stagger, Stress. Can occur once every 1 sec. + Cauldron Fire cannot be stacked with Pyre Patch. Places your Flashfire power on cooldown when used.",
+    "tooltip": "Creates a Cauldron Fire on the target for 16 sec dealing 64 Magic Damage every 1 sec to foes within 15ft. + Foes standing in the Cauldron Fire have 10% chance every 1 sec to be afflicted by Deadly Poison. Deadly Poison deals 31 Toxic Damage every 1 sec for 16 sec and stacks up to 5 times. + Snares affected targets, reducing their movement speed by 100%. + Hitting a foe standing in the Cauldron Fire with your Magic Damage attacks has 30% chance to apply Bane, which can cause one of the following effects: Bleeding, Chilled, Clinging Flames, Deadly Poison, Debilitating Poison, Demolish, Dependency, Disintegrate, Disorient, Fear, Frail Armor, Hexed, Plasma Burn, Stagger, Stress. Can occur once every 1 sec. + Cauldron Fire cannot be stacked with Pyre Patch. Places your Flashfire power on cooldown when used.",
     "apply_tag": [
       "Deadly Poison",
       "Snare",
@@ -31601,7 +31601,7 @@
     "damage_type": [
       "Magic"
     ],
-    "damage_values": "55",
+    "damage_values": "64",
     "healing_values": null,
     "control_values": null,
     "scaling_stats": [],
@@ -31633,7 +31633,7 @@
       "50 feet",
       "0-20 feet Sphere"
     ],
-    "tooltip": "Deals 178-507 Toxic Damage to foes. Deals an additional 89-254 Toxic Damage target is affected by your Fear effect. + 100% chance to apply Fear on affected targets. Fear reduces target's damage by 10% for 12 sec. + When fully charged creates a Pyre Patch on the main target for 10 sec, dealing 72 Fire Damage every 1 sec to foes within 15ft. This effect will only occur if you own the Fireball power. You can only have one Pyre Patch active at a time. + Foes standing in the Pyre Patch have a 10% chance to be affected by Clinging Flames. Clinging Flames deals 140 Fire Damage every 2 sec for 12 sec and may leap to nearby foes.",
+    "tooltip": "Deals 214-609 Toxic Damage to foes. Deals an additional 107-304 Toxic Damage target is affected by your Fear effect. + 50% chance to apply Fear on affected targets. Fear reduces target's damage by 10% for 12 sec. + When fully charged creates a Pyre Patch on the main target for 10 sec, dealing 72 Fire Damage every 1 sec to foes within 15ft. This effect will only occur if you own the Fireball power. You can only have one Pyre Patch active at a time. + Foes standing in the Pyre Patch have a 10% chance to be affected by Clinging Flames. Clinging Flames deals 140 Fire Damage every 2 sec for 12 sec and may leap to nearby foes.",
     "apply_tag": [
       "Fear",
       "Pyre Patch"
@@ -31649,7 +31649,7 @@
       "Toxic",
       "Fire"
     ],
-    "damage_values": "507",
+    "damage_values": "609",
     "healing_values": null,
     "control_values": null,
     "scaling_stats": [],
@@ -31681,7 +31681,7 @@
       "100 feet",
       "10 feet Cylinder"
     ],
-    "tooltip": "Deals 1004 Crushing Damage and Knocks Back affected targets 67ft. The base damage is increased by 20% if an affected target is immune to Knock effects. + If you are affected by a direct Shield effect, consumes the shield and deals an additional 352 Crushing Damage to up to 10 targets within 25ft of your primary target. + If a target is affected by a Shield effect, deals an additional 301 Crushing Damage to up to 10 targets within 25ft of the shielded target. + Making use of of the above effects is considered to be a Field Inversion effect. + Activates a shared cooldown of 60 sec on all Ultimate powers.",
+    "tooltip": "Deals 1735 Crushing Damage and Knocks Back affected targets 67ft. The base damage is increased by 20% if an affected target is immune to Knock effects. + If you are affected by a direct Shield effect, consumes the shield and deals an additional 608 Crushing Damage to up to 10 targets within 25ft of your primary target. + If a target is affected by a Shield effect, deals an additional 520 Crushing Damage to up to 10 targets within 25ft of the shielded target. + Making use of of the above effects is considered to be a Field Inversion effect. + Activates a shared cooldown of 60 sec on all Ultimate powers.",
     "apply_tag": [
       "Knock Back"
     ],
@@ -31696,7 +31696,7 @@
     "damage_type": [
       "Crushing"
     ],
-    "damage_values": "1004",
+    "damage_values": "1735",
     "healing_values": null,
     "control_values": null,
     "scaling_stats": [],
@@ -31728,7 +31728,7 @@
       "100 feet",
       "5 feet Cylinder"
     ],
-    "tooltip": "Deals 1522 Particle Damage to all targets. + If you are affected by the Download buff, this power's base damage is increased by 20% and the Download buff is consumed. + Has a chance to Interrupt affected targets. If your target cannot be interrupted, applies Download to you instead.  Download reduces the cost of your Technology powers by 20% and increases the effectiveness of your energy gain powers by 2.5% for 12 sec. This effect will only occur if you own the Force Cascade power. + Applies Depleted to your primary target: Ends all active energy gain effects. Reduces all energy gain effectiveness by 100% for 8 sec. This amount scales with your Recovery. Removes -10 power, this amount scales with your Endurange. + When this power is successfully activated, consumes all of your energy and ends all of your active energy gain effects. For the next 8 sec, reduces all energy gain effectiveness on you by 200% If you are affected by a Self Energy Gain power, consumes that effect instead and places the power on cooldown. + If used without a Self Energy Gain effect active, this power goes on 8 sec cooldown. + Goes on a 120 sec cooldown if you do not own the Force Cascade power.",
+    "tooltip": "Deals 1826 Particle Damage to all targets. + If you are affected by the Download buff, this power's base damage is increased by 20% and the Download buff is consumed. + Has 33% chance to Interrupt affected targets. If your target cannot be interrupted, applies Download to you instead.  Download reduces the cost of your Technology powers by 20% and increases the effectiveness of your energy gain powers by 2.5% for 12 sec. This effect will only occur if you own the Force Cascade power. + Applies Depleted to your primary target: Ends all active energy gain effects. Reduces all energy gain effectiveness by 52% for 8 sec. This amount scales with your Recovery. Removes -5 power, this amount scales with your Endurange. + When this power is successfully activated, consumes all of your energy and ends all of your active energy gain effects. For the next 8 sec, reduces all energy gain effectiveness on you by 200% If you are affected by a Self Energy Gain power, consumes that effect instead and places the power on cooldown. + If used without a Self Energy Gain effect active, this power goes on 8 sec cooldown.",
     "apply_tag": [
       "Download",
       "Interrupt"
@@ -31741,7 +31741,7 @@
     "damage_type": [
       "Particle"
     ],
-    "damage_values": "1522",
+    "damage_values": "1826",
     "healing_values": null,
     "control_values": null,
     "scaling_stats": [
@@ -31776,7 +31776,7 @@
       "50 feet",
       "15 feet Sphere"
     ],
-    "tooltip": "Deals 160 Cold Damage every 0.3 sec to foes. + Deals different type of damage depending on your Energy builder. Ice Shards = Cold Damage. Electric Bolt = Electrical Damage. Throw Fire = Fire Damage. Force Bolts and Wind Lash = Deals Crushing Damage. + While maintained, the power has a 50% chance of applying Chill, Clinging Flames, Negative Ions, Power Shield, Stagger per tick based on your Energy Builder. + Additionally when fully maintained, Knocks Up (Wind) affected targets or Knocks Down (Force) enemies based on your Energy Builder. + When fully maintained, creates a 25ft zone for 15 sec. Up to 10 enemies within the zone receive the Cryoclysm debuff, increasing all damage they take by 10/12/15% depending on the rank of the Avalanche power. This effect will only occur if you own the Avalanche power. + Goes on a 90 sec cooldown if you do not own the Avalanche power.",
+    "tooltip": "Deals 192 Cold Damage every 0.3 sec to foes. + Deals different type of damage depending on your Energy builder. Ice Shards = Cold Damage. Electric Bolt = Electrical Damage. Throw Fire = Fire Damage. Force Bolts and Wind Lash = Deals Crushing Damage. + While maintained, the power has 50% chance of applying Chill, Clinging Flames, Negative Ions, Power Shield, Stagger per tick based on your Energy Builder. + Additionally when fully maintained, Knocks Up (Wind) affected targets or Knocks Down (Force) enemies based on your Energy Builder. + When fully maintained, creates a 25ft zone for 15 sec. Up to 10 enemies within the zone receive the Cryoclysm debuff, increasing all damage they take by 10/12/15% depending on the rank of the Avalanche power. This effect will only occur if you own the Avalanche power.",
     "apply_tag": [
       "Chill",
       "Clinging Flames",
@@ -31794,7 +31794,7 @@
       "Electrical",
       "Crushing"
     ],
-    "damage_values": "160",
+    "damage_values": "192",
     "healing_values": null,
     "control_values": null,
     "scaling_stats": [],
@@ -31825,7 +31825,7 @@
       "Targets foe",
       "100 feet"
     ],
-    "tooltip": "Deals 635 Electrical Damage to your target. + The Critical Severity on this power is increased by 100%. + When fired at an enemy afflicted with the Negative Ions debuff, it consumes the Negative Ions debuff to complete a Circuit, applies Superconductor and deal 1144 Electrical Damage. Superconductor reduces resistance to Electrical Damage by 18% for 15 sec. + When Stormpiercer hits an enemy effected by the Negative Ions debuff it Arcs to a target within 25ft, dealing 88 Electrical Damage to that target. + Additionally, Stormpiercer will Stun the target for 2.4 sec if the Player has the Download buff. + Goes on a 90 sec cooldown if you do not own the Desperate Shot power.",
+    "tooltip": "Deals 762 Electrical Damage to your target. + The Critical Severity on this power is increased by 100%. + When fired at an enemy afflicted with the Negative Ions debuff, it consumes the Negative Ions debuff to complete a Circuit, applies Superconductor and deals 1372 Electrical Damage. Superconductor reduces resistance to Electrical Damage by 18% for 15 sec. + When Stormpiercer hits an enemy effected by the Negative Ions debuff it Arcs to a target within 25ft, dealing 88 Electrical Damage to that target. + Additionally, Stormpiercer will Stun the target for 2.4 sec if the Player has the Download buff.",
     "apply_tag": [
       "Arc",
       "Circuit",
@@ -31841,7 +31841,7 @@
     "damage_type": [
       "Electrical"
     ],
-    "damage_values": "1144",
+    "damage_values": "762",
     "healing_values": null,
     "control_values": "Stun=2.4",
     "scaling_stats": [],
@@ -31872,7 +31872,7 @@
       "Targets foe",
       "100 feet"
     ],
-    "tooltip": "After 4.5 sec the Orbital Cannon deals 2191 Particle Damage and Knocks Down foes within 20ft. + After 4.5 sec, creates a Ultimate Anvil of Dawn at your primary target for 10 sec, causing 110 Particle Damage every 1 sec for 10 sec to foes within 15ft. + Applies Plasma Burn to affected targets on each hit. Plasma Burn deals 36 Particle Damage every 1 sec for 16 sec and stacks up to 5 times. + After 4.5 sec, creates a Radiation Field at your primary target for 12 sec. Every 1 sec, foes within 20ft have a 20% chance for every stack of Plasma Burn on them to be Stunned for 0.48 sec. + Additionally, foes caught in the field have a 20% chance for every stack of Plasma Burn on them to be affected by Trauma, causing their healing to be less effective for 6 sec. + Places your Orbital Cannon power on cooldown when used. + Activates a shared cooldown of 60 sec on all Ultimate powers.",
+    "tooltip": "After 4.5 sec the Orbital Cannon deals 1826 Particle Damage and Knocks Down foes within 20ft. + After 4.5 sec, creates a Ultimate Anvil of Dawn at your primary target for 10 sec, causing 91 Particle Damage every 1 sec for 10 sec to foes within 15ft. + Applies Plasma Burn to affected targets on each hit. Plasma Burn deals 36 Particle Damage every 1 sec for 16 sec and stacks up to 5 times. + After 4.5 sec, creates a Radiation Field at your primary target for 12 sec. Every 1 sec, foes within 20ft have a 20% chance for every stack of Plasma Burn on them to be Stunned for 0.83 sec. + Additionally, foes caught in the field have a 20% chance for every stack of Plasma Burn on them to be affected by Trauma, causing their healing to be 36% less effective for 6 sec. + Places your Orbital Cannon power on cooldown when used. + Activates a shared cooldown of 60 sec on all Ultimate powers.",
     "apply_tag": [
       "Knock Down",
       "Plasma Burn",
@@ -31887,9 +31887,9 @@
     "damage_type": [
       "Particle"
     ],
-    "damage_values": "2191",
+    "damage_values": "1826",
     "healing_values": null,
-    "control_values": "Stun=0.48",
+    "control_values": "Stun=0.83",
     "scaling_stats": [],
     "power_dependency": [
       180
@@ -31919,7 +31919,7 @@
       "100 feet",
       "25 feet Sphere"
     ],
-    "tooltip": "Deals 687 Sonic Damage and Stuns targets for 0.96 sec. + Applies Deafening to affected targets. Deafening reduces resistance to Sonic Damage by 18% for 15 sec. + Creates a Sonic Distortion on the main target for 12 sec, causing affected targets within 25ft to be -4% more vulnerable to Sonic damage powers and Gadgeteering damaging powers. This effect is considered to be an Ultimate Rune. + Activates a shared cooldown of 60 sec on all Ultimate powers.",
+    "tooltip": "Deals 1187 Sonic Damage and Stuns targets for 1,7 sec. + Applies Deafening to affected targets. Deafening reduces resistance to Sonic Damage by 18% for 15 sec. + Creates a Sonic Distortion on the main target for 12 sec, causing affected targets within 25ft to be -6,9% more vulnerable to Sonic damage powers and Gadgeteering damaging powers. This effect is considered to be an Ultimate Rune. + Activates a shared cooldown of 60 sec on all Ultimate powers.",
     "apply_tag": [
       "Stun",
       "Deafening",
@@ -31931,9 +31931,9 @@
     "damage_type": [
       "Sonic"
     ],
-    "damage_values": "687",
+    "damage_values": "1187",
     "healing_values": null,
-    "control_values": "Stun=0.96",
+    "control_values": "Stun=1.7",
     "scaling_stats": [],
     "power_dependency": [
       174
@@ -31963,7 +31963,7 @@
       "50 feet",
       "3 feet Cylinder"
     ],
-    "tooltip": "Deals 40-85 Piercing Damage to all targets. + Deals 74-158 Piercing Damage if only 1 target is affected. Hits 5 times. + 13-30% chance to Snare affected targets, reducing their movement speed by 100% for 5.6 sec.",
+    "tooltip": "Deals 48-102 Piercing Damage to all targets. + Deals 89-190 Piercing Damage if only 1 target is affected. Hits 5 times. + 24-53% chance to Snare affected targets, reducing their movement speed by 100% for 6.7 sec.",
     "apply_tag": [
       "Snare"
     ],
@@ -31973,7 +31973,7 @@
     "damage_type": [
       "Piercing"
     ],
-    "damage_values": "158",
+    "damage_values": "190",
     "healing_values": null,
     "control_values": null,
     "scaling_stats": [],
@@ -32004,7 +32004,7 @@
       "Targets foe",
       "50 feet"
     ],
-    "tooltip": "After 3 sec, deals 523 Piercing Damage to up to 5 targets within 15ft. + Stuns your primary target for 1.4 sec and has a 25% chance to apply Frail Armor to affected targets. Frail Armor reduces resistance to Piercing Damage by 18% for 15 sec. + This effect cannot be stacked on the same target.",
+    "tooltip": "After 3 sec, deals 581 Piercing Damage to up to 5 targets within 15ft. + Stuns your primary target for 1.7 sec and has 50% chance to apply Frail Armor to affected targets. Frail Armor reduces resistance to Piercing Damage by 18% for 15 sec. + This effect cannot be stacked on the same target.",
     "apply_tag": [
       "Stun",
       "Frail Armor"
@@ -32015,9 +32015,9 @@
     "damage_type": [
       "Piercing"
     ],
-    "damage_values": "523",
+    "damage_values": "581",
     "healing_values": null,
-    "control_values": "Stun=1.4",
+    "control_values": "Stun=1.7",
     "scaling_stats": [],
     "power_dependency": [
       161
@@ -32046,7 +32046,7 @@
       "Targets foe",
       "100 feet"
     ],
-    "tooltip": "On tap, deals 272 Cold Damage. + While maintained, deals 165 Cold Damage every 0.5 sec. + Increases this power's damage by 10% for every stack of your Chill effect on the target. + When maintaining, has a 50% chance to apply Chill. Chill reduces the target's movement speed by 42% for 16 sec and occasionally traps targets in an Ice Cage. Stacks up to 3 times. This chance is doubled if you are affected by Cold Snap. + When fully maintained, has a 100% chance to Shatter your Ice Structures, dealing 126-546 Cold Damage, based on the rank and type of the Structure, to up to 5 foes within 15ft.",
+    "tooltip": "On tap, deals 326 Cold Damage. + While maintained, deals 198 Cold Damage every 0.5 sec. + Increases this power's damage by 3.5% for every stack of your Chill effect on the target. + When maintaining, has 8.3% chance to apply Chill. Chill reduces the target's movement speed by 42% for 16 sec and occasionally traps targets in an Ice Cage. Stacks up to 3 times. This chance is doubled if you are affected by Cold Snap. + When fully maintained, has a 50% chance to Shatter your Ice Structures, dealing 126-546 Cold Damage, based on the rank and type of the Structure, to up to 5 foes within 15ft.",
     "apply_tag": [
       "Chill",
       "Ice Cage",
@@ -32064,7 +32064,7 @@
     "damage_type": [
       "Cold"
     ],
-    "damage_values": "546",
+    "damage_values": "198",
     "healing_values": null,
     "control_values": null,
     "scaling_stats": [],
@@ -32096,7 +32096,7 @@
       "50 feet",
       "30-90 degree Cone"
     ],
-    "tooltip": "Deals 161-571 Particle Damage to all targets. + Tapping this power applies Plasma Sheer for 2 sec, increasing this power's damage by 10% per stack. + 27-100% chance to apply Plasma Burn to affected targets. + Plasma Burn deals 36 Particle Damage every 1 sec for 16 sec and stacks up to 5 times.",
+    "tooltip": "Deals 193-685 Particle Damage to all targets. + Tapping this power applies Plasma Sheer for 2 sec, increasing this power's damage by 10% per stack. Stacks up to 5 times. + 13-50% chance to apply Plasma Burn to affected targets. + Plasma Burn deals 36 Particle Damage every 1 sec for 16 sec and stacks up to 5 times.",
     "apply_tag": [
       "Plasma Burn"
     ],
@@ -32106,7 +32106,7 @@
     "damage_type": [
       "Particle"
     ],
-    "damage_values": "571",
+    "damage_values": "685",
     "healing_values": null,
     "control_values": null,
     "scaling_stats": [],
@@ -32137,7 +32137,7 @@
       "Targets foe",
       "100 feet"
     ],
-    "tooltip": "Deals 181 Particle Damage every 0.5 sec. + Increases this power's damage by 15% if you are affected by Molecular Self Assembly or Unified Theory. + When maintaining has a 20% chance on each hit to apply Plasma Burn to your target. + Plasma Burn deals 36 Particle Damage every 1 sec for 16 sec and stacks up to 5 times.",
+    "tooltip": "Deals 217 Particle Damage every 0.5 sec. + Increases this power's damage by 5/10/15% if you are affected by Molecular Self Assembly or Unified Theory. + When maintaining has a 10/15/20% chance on each hit to apply Plasma Burn to your target. + Plasma Burn deals 36 Particle Damage every 1 sec for 16 sec and stacks up to 5 times.",
     "apply_tag": [
       "Plasma Burn"
     ],
@@ -32147,7 +32147,7 @@
     "damage_type": [
       "Particle"
     ],
-    "damage_values": "181",
+    "damage_values": "217",
     "healing_values": null,
     "control_values": null,
     "scaling_stats": [],
@@ -32155,7 +32155,7 @@
       214
     ],
     "source": [
-      "Destroids Rise Again OM, Recognition Store"
+      "Destroids Rise Again OM"
     ],
     "icon_override": "PVD_PulpFictionRayGun",
     "is_disabled": false
@@ -32178,7 +32178,7 @@
       "Targets foe",
       "90/120 feet"
     ],
-    "tooltip": "PULP FICTION ASSAULT MAINTAIN: On tap, deals 272 Particle Damage. While maintained, deals 171 Particle Damage. Increases this power's damage by 10% if you are affected by Molecular Self Assembly or Unified Theory. + 5% chance on each hit to apply Plasma Burn to your target. + PULP FICTION LANCE: This power is activated when you are greater than 90ft from your target. + Deals 1157 Particle Damage. Expires all of your Plasma Burn stacks and deals 302 Particle Damage for each one to up to 5 targets within 10ft of your main target. + Taking damage while charging this power will interrupt it. + Plasma Burn deals 36 Particle Damage every 1 sec for 16 sec and stacks up to 5 times.",
+    "tooltip": "PULP FICTION ASSAULT MAINTAIN: On tap, deals 326 Particle Damage. While maintained, deals 205 Particle Damage. Increases this power's damage by 10% if you are affected by Molecular Self Assembly or Unified Theory. + 10% chance on each hit to apply Plasma Burn to your target. + PULP FICTION LANCE: This power is activated when you are greater than 90ft from your target. + Deals 1388 Particle Damage. Expires all of your Plasma Burn stacks and deals 362 Particle Damage for each one to up to 5 targets within 10ft of your main target. + Taking damage while charging this power will interrupt it. + Plasma Burn deals 36 Particle Damage every 1 sec for 16 sec and stacks up to 5 times.",
     "apply_tag": [
       "Plasma Burn"
     ],
@@ -32190,7 +32190,7 @@
     "damage_type": [
       "Particle"
     ],
-    "damage_values": "1157",
+    "damage_values": "1388",
     "healing_values": null,
     "control_values": null,
     "scaling_stats": [],
@@ -32199,7 +32199,7 @@
       213
     ],
     "source": [
-      "Destroids Rise Again OM, Recognition Store"
+      "Destroids Rise Again OM"
     ],
     "icon_override": "PVD_PulpFictionRifle",
     "is_disabled": false
@@ -32223,7 +32223,7 @@
       "100 feet",
       "3 feet Cylinder"
     ],
-    "tooltip": "Deals 79 Toxic Damage 2 times every 0.5 sec. + 5% chance every 0.5 sec to apply Deadly Poison to affected targets. Deadly Poison deals 31 Toxic Damage every 1 sec for 16 sec and stacks up to 5 times. + When fully maintained, spreads any of your Poisons on your primary target to up to 3 foes within 5ft. + Refreshes the duration of your Poisons on targets that these effects were spread to.",
+    "tooltip": "Deals 95 Toxic Damage 2 times every 0.5 sec. + 10% chance every 0.5 sec to apply Deadly Poison to affected targets. Deadly Poison deals 31 Toxic Damage every 1 sec for 16 sec and stacks up to 5 times. + When fully maintained, spreads any of your Poisons on your primary target to up to 3 foes within 5ft. + Refreshes the duration of your Poisons on targets that these effects were spread to.",
     "apply_tag": [
       "Deadly Poison"
     ],
@@ -32235,7 +32235,7 @@
     "damage_type": [
       "Toxic"
     ],
-    "damage_values": "158",
+    "damage_values": "190",
     "healing_values": null,
     "control_values": null,
     "scaling_stats": [],
@@ -32266,7 +32266,7 @@
       "Targets foe",
       "100 feet"
     ],
-    "tooltip": "On tap, deals 272 Toxic Damage. + While maintained, deals 165 Toxic Damage every 0.5 sec. Increases this power's damage by 6% for every stack of your Deadly Poison on the target. + When maintaining, has a 10% chance on each hit to apply Deadly Poison to your target. + Deadly Poison deals 31 Toxic Damage every 1 sec for 16 sec and stacks up to 5 times.",
+    "tooltip": "On tap, deals 326 Toxic Damage. + While maintained, deals 198 Toxic Damage every 0.5 sec. Increases this power's damage by 2/4/6% for every stack of your Deadly Poison on the target. + When maintaining, has 15% chance on each hit to apply Deadly Poison to your target. + Deadly Poison deals 31 Toxic Damage every 1 sec for 16 sec and stacks up to 5 times.",
     "apply_tag": [
       "Deadly Poison"
     ],
@@ -32278,7 +32278,7 @@
     "damage_type": [
       "Toxic"
     ],
-    "damage_values": "272",
+    "damage_values": "198",
     "healing_values": null,
     "control_values": null,
     "scaling_stats": [],
@@ -32354,7 +32354,7 @@
       "50 feet",
       "15 feet Sphere"
     ],
-    "tooltip": "Deals 178 Ego Damage every 0.5 sec to foes within 5ft of the main target. Deals 62 Ego Damage to foes beyond 5ft. + Deals additional 62 Ego Damage to foes if they are Undead. + Foes within 20ft are pulled towards the main target. This effect only applies if you own the Submachinegun Burst power.",
+    "tooltip": "Deals 312 Ego Damage every 0.5 sec to foes within 5ft of the main target. Deals 107 Ego Damage to foes beyond 5ft. + Deals additional 75 Ego Damage to foes if they are Undead. + Foes within 20ft are pulled towards the main target. This effect only applies if you own the Submachinegun Burst power.",
     "apply_tag": [
       "Reverse Repel"
     ],
@@ -32364,7 +32364,7 @@
     "damage_type": [
       "Ego"
     ],
-    "damage_values": "178",
+    "damage_values": "213",
     "healing_values": null,
     "control_values": null,
     "scaling_stats": [],
@@ -32396,7 +32396,7 @@
       "50 feet",
       "30 degree Cone"
     ],
-    "tooltip": "Deals 178-380 Toxic Damage to all targets. + 27-60% chance to apply Deadly Poison to your targets. Deadly Poison deals 31 Toxic Damage every 1 sec for 16 sec and stacks up to 5 times. + On a full charge, and if the target is affected by 3 or more of your Deadly Poison, has a 100% chance to apply Noxious Poison to affected targets. Noxious Poison deals 55 Toxic Damage every 1 sec over 16 sec.",
+    "tooltip": "Deals 214-457 Toxic Damage to all targets. + 13-30% chance to apply Deadly Poison to your targets. Deadly Poison deals 31 Toxic Damage every 1 sec for 16 sec and stacks up to 5 times. + On a full charge, and if the target is affected by 3 or more of your Deadly Poison, has 60% chance to apply Noxious Poison to affected targets. Noxious Poison deals 55 Toxic Damage every 1 sec over 16 sec.",
     "apply_tag": [
       "Deadly Poison",
       "Noxious Poison"
@@ -32409,7 +32409,7 @@
     "damage_type": [
       "Toxic"
     ],
-    "damage_values": "380",
+    "damage_values": "457",
     "healing_values": null,
     "control_values": null,
     "scaling_stats": [],
@@ -32441,7 +32441,7 @@
       "50 feet",
       "10 feet Cylinder"
     ],
-    "tooltip": "Deals 1110 Particle Damage and Knocks Back affected targets. Base damage is increased by 20% if an affected target is immune to Knock effects. + Damage is further increased up to 20% based on how close a target is to you. + Affected targets have Burn Through applied to them. Burn Through reduces resistance to your Crushing Damage and Particle Damage by 15% for 15 sec. + If you only hit 1 target, applies Overpower in place of Burn Through. Overpower reduces resistance to all damage by 20% for 15 sec. + Activates a shared cooldown of 60 sec on all Ultimate powers.",
+    "tooltip": "Deals 1598 Particle Damage and Knocks Back affected targets. Base damage is increased by 20% if an affected target is immune to Knock effects. + Damage is further increased up to 20% based on how close a target is to you. + Affected targets have Burn Through applied to them. Burn Through reduces resistance to your Crushing Damage and Particle Damage by 15% for 15 sec. + If you only hit 1 target, applies Overpower in place of Burn Through. Overpower reduces resistance to all damage by 20% for 15 sec. + Activates a shared cooldown of 60 sec on all Ultimate powers.",
     "apply_tag": [
       "Knock Back",
       "Burn Through",
@@ -32455,7 +32455,7 @@
     "damage_type": [
       "Particle"
     ],
-    "damage_values": "1110",
+    "damage_values": "1598",
     "healing_values": null,
     "control_values": null,
     "scaling_stats": [],
@@ -32486,7 +32486,7 @@
       "Targets foe",
       "25 feet"
     ],
-    "tooltip": "Deals 220 Particle Damage. + If your target is affected by your Plasma Burn, consumes all stacks and applies Disintegrate and Particle Bomb to targets within 25ft. Disintegrate reduces resistance to Particle Damage by 18% for 15 sec. + Particle Bomb deals 78-25 Particle Damage (based on number of targets hit), to up to 10 targets within 15ft of the affected target for each Plasma Burn stack consumed. + Places your Particle Smash power on cooldown when used. + Activates a shared cooldown of 60 sec on all Ultimate powers.",
+    "tooltip": "Deals 457 Particle Damage. + If your target is affected by your Plasma Burn, consumes all stacks and applies Disintegrate and Particle Bomb to targets within 25ft. Disintegrate reduces resistance to Particle Damage by 18% for 15 sec. + Particle Bomb deals 161-51 Particle Damage (based on number of targets hit), to up to 10 targets within 15ft of the affected target for each Plasma Burn stack consumed. + Places your Particle Smash power on cooldown when used. + Activates a shared cooldown of 60 sec on all Ultimate powers.",
     "apply_tag": [
       "Disintegrate"
     ],
@@ -32498,7 +32498,7 @@
     "damage_type": [
       "Particle"
     ],
-    "damage_values": "220",
+    "damage_values": "457",
     "healing_values": null,
     "control_values": null,
     "scaling_stats": [],
@@ -32529,7 +32529,7 @@
       "Affects foe (10 max)",
       "20 feet Sphere"
     ],
-    "tooltip": "Deals 178-254 Slashing Damage (based on number of targets) every 0.5 sec. + Targets within 30ft are Knocked To you. + While maintaining this power, increases your chance to Dodge by 20%, and increases your Avoidance by 50%.",
+    "tooltip": "Deals 369-527 Slashing Damage (based on number of targets) every 0.5 sec. + Targets within 30ft are Knocked To you. + While maintaining this power, increases your chance to Dodge by 20%, and increases your Avoidance by 50%.",
     "apply_tag": [
       "Knock To"
     ],
@@ -32539,7 +32539,7 @@
     "damage_type": [
       "Slashing"
     ],
-    "damage_values": "254",
+    "damage_values": "369",
     "healing_values": null,
     "control_values": null,
     "scaling_stats": [],
@@ -32571,7 +32571,7 @@
       "15 feet",
       "200 degree Cone"
     ],
-    "tooltip": "Deals 128-289 Fire Damage and has a 20/20100% chance to apply Clinging Flames. + 20/20/100% chance to apply Engulfing Flames. Engulfing Flames reduces resistance to Fire Damage by 8% for 15 sec. Stacks up to 3 times. + Clinging Flames deals 140 Fire Damage every 2 sec for 12 sec and may leap to nearby foes.",
+    "tooltip": "Deals 153-347 Fire Damage and has a 10/10/50% chance to apply Clinging Flames. + 10/10/50% chance to apply Engulfing Flames. Engulfing Flames reduces resistance to Fire Damage by 8% for 15 sec. Stacks up to 3 times. + Clinging Flames deals 140 Fire Damage every 2 sec for 12 sec and may leap to nearby foes.",
     "apply_tag": [
       "Clinging Flames",
       "Engulfing Flames"
@@ -32582,7 +32582,7 @@
     "damage_type": [
       "Fire"
     ],
-    "damage_values": "289",
+    "damage_values": "347",
     "healing_values": null,
     "control_values": null,
     "scaling_stats": [],
@@ -32590,7 +32590,7 @@
       267
     ],
     "source": [
-      "Forum Malvanum Alert, Recognition Store"
+      "Forum Malvanum Alert"
     ],
     "icon_override": "PVD_BurningBlades",
     "is_disabled": false
@@ -32613,7 +32613,7 @@
       "Affects foe (5 max)",
       "10 feet Sphere"
     ],
-    "tooltip": "Deals 160 Dimensional Damage every 0.5 sec and has a 25% chance on each hit to apply Fear to affected targets. Fear reduces target's damage by 10% for 12 sec. + Heals you for 47 Health Points for every target hit that is affected by Fear. This counts as a Life Drain effect.",
+    "tooltip": "Deals 192 Dimensional Damage every 0.5 sec and has a 15/20/25% chance on each hit to apply Fear to affected targets. Fear reduces target's damage by 10% for 12 sec. + Heals you for 56 Health Points for every target hit that is affected by Fear. This counts as a Life Drain effect.",
     "apply_tag": [
       "Fear"
     ],
@@ -32625,8 +32625,8 @@
     "damage_type": [
       "Dimensional"
     ],
-    "damage_values": "160",
-    "healing_values": "47",
+    "damage_values": "192",
+    "healing_values": "56",
     "control_values": null,
     "scaling_stats": [],
     "power_dependency": [
@@ -32656,7 +32656,7 @@
       "Affects foe (5 max)",
       "10 feet Sphere"
     ],
-    "tooltip": "Deals 186 Fire Damage every 0.5 sec and has a 25% chance on each hit to apply Clinging Flames. + Clinging Flames deals 140 Fire Damage every 2 sec for 12 sec and may leap to nearby foes.",
+    "tooltip": "Deals 223 Fire Damage every 0.5 sec and has a 25% chance on each hit to apply Clinging Flames. + Clinging Flames deals 140 Fire Damage every 2 sec for 12 sec and may leap to nearby foes.",
     "apply_tag": [
       "Clinging Flames"
     ],
@@ -32666,7 +32666,7 @@
     "damage_type": [
       "Fire"
     ],
-    "damage_values": "186",
+    "damage_values": "223",
     "healing_values": null,
     "control_values": null,
     "scaling_stats": [],
@@ -32674,7 +32674,7 @@
       273
     ],
     "source": [
-      "Forum Malvanum Alert, Recognition Store"
+      "Forum Malvanum Alert"
     ],
     "icon_override": "PVD_HeatVortex",
     "is_disabled": false
@@ -32697,7 +32697,7 @@
       "Targets foe",
       "10 feet"
     ],
-    "tooltip": "Deals 367-783 Electrical Damage and has a 75-100% chance to Stun your target for 1.4 sec. + When fully charged against a target affected by your Negative Ions, deals an additional 392 Electrical Damage and Arcs to up to 5 targets within 15ft that are affected by your Negative Ions, dealing 392 Electrical Damage to them. Completes the circuit.",
+    "tooltip": "Deals 441-940 Electrical Damage and has a 55-100% chance to Stun your target for 1.7 sec. + When fully charged against a target affected by your Negative Ions, deals an additional 470 Electrical Damage and Arcs to up to 5 targets within 15ft that are affected by your Negative Ions, dealing 470 Electrical Damage to them. Completes the circuit.",
     "apply_tag": [
       "Stun",
       "Arc",
@@ -32711,9 +32711,9 @@
     "damage_type": [
       "Electrical"
     ],
-    "damage_values": "783",
+    "damage_values": "940",
     "healing_values": null,
-    "control_values": "Stun=1.4",
+    "control_values": "Stun=1.7",
     "scaling_stats": [],
     "power_dependency": [
       285
@@ -32743,7 +32743,7 @@
       "10 feet",
       "220 degree Cone"
     ],
-    "tooltip": "Deals 99-235 Electrical Damage and has 25/25/100% chance to apply Negative Ions to affected targets for 20 sec. + 25/25/100% chance to Arc to a target within 15ft, dealing 99-235 Electrical Damage. If this power or an Arc from this power hits a target affected by Negative Ions, the Arc can chain to 1 additional target. + On last hit, 100% chance to apply Superconductor to your primary target. Superconductor reduces resistance to Electrical Damage by 18% for 15 sec.",
+    "tooltip": "Deals 119-282 Electrical Damage and has 15/15/50% chance to apply Negative Ions to affected targets for 20 sec. + 15/15/50% chance to Arc to a target within 15ft, dealing 119-282 Electrical Damage. If this power or an Arc from this power hits a target affected by Negative Ions, the Arc can chain to 1 additional target. + On last hit, 50% chance to apply Superconductor to your primary target. Superconductor reduces resistance to Electrical Damage by 18% for 15 sec.",
     "apply_tag": [
       "Negative Ions",
       "Arc",
@@ -32757,7 +32757,7 @@
     "damage_type": [
       "Electrical"
     ],
-    "damage_values": "235",
+    "damage_values": "282",
     "healing_values": null,
     "control_values": null,
     "scaling_stats": [],
@@ -32831,7 +32831,7 @@
       "Targets foe",
       "10 feet"
     ],
-    "tooltip": "Deals 362-648 Electrical Damage to target. + When fully charged, deals 295 Electrical Damage to up to 5 targets within 15ft. Deals an additional 295 Electrical Damage to all targets if affected by Negative Ions. Completes the Circuit. + If your primary target is not affected by Negative Ions, applies Electrical Body to you for 10 sec, which causes your direct damage attacks to have a 20% chance to apply Negative Ions for 20 sec. This chance is increased to 30% if you own the Ionic Reverberation power.",
+    "tooltip": "Deals 434-778 Electrical Damage to target. + When fully charged, deals 354 Electrical Damage to up to 5 targets within 15ft. Deals an additional 354 Electrical Damage to all targets if affected by Negative Ions. Completes the Circuit. + If your primary target is not affected by Negative Ions, applies Electrical Body to you for 10 sec, which causes your direct damage attacks to have a 20% chance to apply Negative Ions for 20 sec. This chance is increased to 30% if you own the Ionic Reverberation power.",
     "apply_tag": [
       "Negative Ions",
       "Circuit"
@@ -32844,7 +32844,7 @@
     "damage_type": [
       "Electrical"
     ],
-    "damage_values": "648",
+    "damage_values": "778",
     "healing_values": null,
     "control_values": null,
     "scaling_stats": [],
@@ -32875,7 +32875,7 @@
       "Targets foe",
       "25 feet lunge"
     ],
-    "tooltip": "Lunges at the target and deals 275 Particle Damage every 0.5 sec. This power will continue to deal damage if the target stays within 10ft range. + While maintaining this power, Snares the target for 3.9 sec, reducing their movement speed by 100%. This effect will only occur if you own the Relentless Pursuit power. + Increases this power's base damage by 10% if you are affected by Download.",
+    "tooltip": "Lunges at the target and deals 330 Particle Damage every 0.5 sec. This power will continue to deal damage if the target stays within 10ft range. + While maintaining this power, Snares the target for 4.7 sec, reducing their movement speed by 100%. This effect will only occur if you own the Relentless Pursuit power. + Increases this power's base damage by 10% if you are affected by Download.",
     "apply_tag": [
       "Snare"
     ],
@@ -32887,7 +32887,7 @@
     "damage_type": [
       "Particle"
     ],
-    "damage_values": "275",
+    "damage_values": "330",
     "healing_values": null,
     "control_values": null,
     "scaling_stats": [],
@@ -32965,7 +32965,7 @@
       "Targets foe",
       "10-100 feet"
     ],
-    "tooltip": "This power is either Melee or Ranged, depending on how far you are from your target, and if you own the parent power. + Melee: deals 520-1241 Toxic Damage and expires all Deadly Poison on the target, dealing an additional 351 Toxic Damage for each stacks consumed. + Ranged: deals 309-739 Toxic Damage and expires all Deadly Poison on the target, dealing an additional 228 Toxic Damage for each stacks consumed. + If this power is fully charged and your target is affected by Debilitating Poison, after 2 sec applies Viral to the target. Viral has 25% chance to apply Deadly Poison every 2 sec for 10 sec. Chance is doubled on the last tick.+ Deadly Poison deals 31 Toxic Damage every 1 sec for 16 sec and stacks up to 5 times.",
+    "tooltip": "This power is either Melee or Ranged, depending on how far you are from your target, and if you own the parent power. + Melee: deals 520-1241 Toxic Damage and expires all Deadly Poison on the target, dealing an additional 351 Toxic Damage for each stacks consumed. + Ranged: deals 371-886 Toxic Damage and expires all Deadly Poison on the target, dealing an additional 251 Toxic Damage for each stacks consumed. + If this power is fully charged and your target is affected by Debilitating Poison, after 2 sec applies Viral to the target. Viral has 25% chance to apply Deadly Poison every 2 sec for 10 sec. Chance is doubled on the last tick.+ Deadly Poison deals 31 Toxic Damage every 1 sec for 16 sec and stacks up to 5 times.",
     "apply_tag": [
       "Deadly Poison",
       "Viral"
@@ -33014,7 +33014,7 @@
       "10 feet",
       "180 degree Cone/10 feet Sphere"
     ],
-    "tooltip": "Deals 118-189 Toxic Damage and has a 30/55/85% chance to apply Deadly Poison on your targets. + Deadly Poison deals 31 Toxic Damage every 1 sec for 16 sec and stacks up to 5 times. + Last hit refreshes your stacks of Deadly Poison.",
+    "tooltip": "Deals 142-454 Toxic Damage and has a 25/45/70% chance to apply Deadly Poison on your targets. + Deadly Poison deals 31 Toxic Damage every 1 sec for 16 sec and stacks up to 5 times. + Last hit refreshes your stacks of Deadly Poison.",
     "apply_tag": [
       "Deadly Poison"
     ],
@@ -33026,7 +33026,7 @@
     "damage_type": [
       "Toxic"
     ],
-    "damage_values": "378",
+    "damage_values": "454",
     "healing_values": null,
     "control_values": null,
     "scaling_stats": [],
@@ -33057,7 +33057,7 @@
       "Targets foe",
       "10 feet"
     ],
-    "tooltip": "Deals 300-645 Toxic Damage. + On full charge applies Debilitating Poison. Debilitating Poison reduces resistance to Toxic Damage by 18% for 15 sec. + When partially charged, increases the duration of your Debilitating Poison by 3.8 sec.",
+    "tooltip": "Deals 360-773 Toxic Damage. + On full charge applies Debilitating Poison. Debilitating Poison reduces resistance to Toxic Damage by 18% for 15 sec. + When partially charged, increases the duration of your Debilitating Poison by 7.5 sec.",
     "apply_tag": [
       "Debilitating Poison"
     ],
@@ -33067,7 +33067,7 @@
     "damage_type": [
       "Toxic"
     ],
-    "damage_values": "645",
+    "damage_values": "773",
     "healing_values": null,
     "control_values": null,
     "scaling_stats": [],
@@ -33098,7 +33098,7 @@
       "Affects foe (10 max)",
       "25 feet Sphere"
     ],
-    "tooltip": "Deals 258 Crushing Damage and 258 Fire Damage. Affected targets are Knocked Up. Base damage is increased by 30% if a target is immune to Knock effects. + Applies Aegis for 15 sec, granting +100% resistance to all damage to you and 72% resistance to up to 10 allies. This amount is doubled on targets affected by Reckless. + Applies Negative Ions to affected targets and creates a Pyre Patch for 16 sec, dealing 98 Fire Damage every 1 sec to foes within 25ft.  You can only have one Pyre Patch active at a time. Foes standing in the Pyre Patch have a 10% chance to be affected by Clinging Flames. Clinging Flames deals 140 Fire Damage every 2 sec for 12 sec and may leap to nearby foes. + Foes standing in the Pyre Patch have a 85% chance to be Disoriented. Disorient reduces the target's damage by 10% and movement speed by 50% for 12 sec. + Foes standing in the Pyre Patch have a 35% chance to be Stunned for 0.67 sec. This chance is guaranteed if the target is affected by Clinging Flames. + Places your Brimstone power on cooldown when used.",
+    "tooltip": "Deals 643 Crushing Damage and 643 Fire Damage. Affected targets are Knocked Up. Base damage is increased by 30% if a target is immune to Knock effects. + Applies Aegis for 15 sec, granting +35% resistance to all damage to you and 24% resistance to up to 10 allies. This amount is doubled on targets affected by Reckless. + Applies Negative Ions to affected targets and creates a Pyre Patch for 16 sec, dealing 62 Fire Damage every 1 sec to foes within 25ft.  You can only have one Pyre Patch active at a time. Foes standing in the Pyre Patch have a 10% chance to be affected by Clinging Flames. Clinging Flames deals 140 Fire Damage every 2 sec for 12 sec and may leap to nearby foes. + Foes standing in the Pyre Patch have a 50% chance to be Disoriented. Disorient reduces the target's damage by 10% and movement speed by 50% for 12 sec. + Foes standing in the Pyre Patch have a 15% chance to be Stunned for 1.7 sec. This chance is guaranteed if the target is affected by Clinging Flames. + Places your Brimstone power on cooldown when used.",
     "apply_tag": [
       "Knock Up",
       "Aegis",
@@ -33121,9 +33121,9 @@
       "Crushing",
       "Fire"
     ],
-    "damage_values": "516",
+    "damage_values": "1283",
     "healing_values": null,
-    "control_values": "Stun=0.67",
+    "control_values": "Stun=1.7",
     "scaling_stats": [],
     "power_dependency": [
       411
@@ -33151,7 +33151,7 @@
     "range_tags": [
       "Affects foe (5 max)"
     ],
-    "tooltip": "Deals 169 Cold Damage every 0.5 sec. + If you have maintained this power for at least 1 sec, deals additional 169 Cold Damage once you stop maintaining. + 20% chance to apply Chill. Chill reduces the target's movement speed by 42% for 16 sec and occasionally traps targets in an Ice Cage. Stacks up to 3 times. This chance is increased if you are affected by Cold Snap. + Targets affected by Chill will be trapped in an Ice Cage for up to 10 sec, Rooting them in place while the Structure is active. Additionally, targets affected by your Ice Cage also take 73 Cold Damage every 1 sec. + When an Ice Cage expires, deals 182 Cold Damage to up to 5 targets within 10ft. + When fully maintained, has a 25% chance to apply Cold Snap on you for 10 sec.",
+    "tooltip": "Deals 202 Cold Damage every 0.5 sec. + If you have maintained this power for at least 1 sec, deals additional 202 Cold Damage once you stop maintaining. + 25% chance to apply Chill. Chill reduces the target's movement speed by 42% for 16 sec and occasionally traps targets in an Ice Cage. Stacks up to 3 times. This chance is increased if you are affected by Cold Snap. + Targets affected by Chill will be trapped in an Ice Cage for up to 10 sec, Rooting them in place while the Structure is active. Additionally, targets affected by your Ice Cage also take 73 Cold Damage every 1 sec. + When an Ice Cage expires, deals 212 Cold Damage to up to 5 targets within 10ft. + When fully maintained, has a 50% chance to apply Cold Snap on you for 10 sec.",
     "apply_tag": [
       "Chill",
       "Ice Cage",
@@ -33168,7 +33168,7 @@
     "damage_type": [
       "Cold"
     ],
-    "damage_values": "182",
+    "damage_values": "202",
     "healing_values": null,
     "control_values": "Root=10",
     "scaling_stats": [],
@@ -33200,7 +33200,7 @@
       "15 feet",
       "60-360 degree Cone"
     ],
-    "tooltip": "Deals 226-683 Dimensional Damage to targets and heals you for 153-343 Health Points. + Heals up to 5 allies within 15ft for 77-172 Health Points. If your primary target is Illuminated, heals for 154-343 Health Points instead. + On last hit, if you are affected by Illumination, increases the chance for this power to critically hit by 17% for 5 sec.",
+    "tooltip": "Deals 271-820 Dimensional Damage to targets and heals you for 153-343 Health Points. + Heals up to 5 allies within 15ft for 92-206 Health Points. If your primary target is Illuminated, heals for 183-412 Health Points instead. + On last hit, if you are affected by Illumination, increases the chance for this power to critically hit by 14% for 5 sec.",
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -33213,8 +33213,8 @@
     "damage_type": [
       "Dimensional"
     ],
-    "damage_values": "683",
-    "healing_values": "343",
+    "damage_values": "820",
+    "healing_values": "206",
     "control_values": null,
     "scaling_stats": [],
     "power_dependency": [
@@ -33245,7 +33245,7 @@
       "15 feet",
       "50-360 degree Cone"
     ],
-    "tooltip": "Deals 265-431 Cold Damage and has a 25/25/100% chance to apply Chill to affected targets. Chill reduces the target's movement speed by 42% for 16 sec and occasionally traps targets in an Ice Cage. Stacks up to 3 times. + Last hit increases the duration of your Chill effects by 16 sec. This cannot exceed the original duration. + Last hit applies Hard Frost to your primary target. Hard Frost reduces resistance to Cold Damage by 18% for 15 sec.",
+    "tooltip": "Deals 318-518 Cold Damage and has a 15/15/50% chance to apply Chill to affected targets. Chill reduces the target's movement speed by 42% for 16 sec and occasionally traps targets in an Ice Cage. Stacks up to 3 times. + Last hit increases the duration of your Chill effects by 11 sec. This cannot exceed the original duration. + Last hit applies Hard Frost to your primary target. Hard Frost reduces resistance to Cold Damage by 18% for 15 sec.",
     "apply_tag": [
       "Chill",
       "Ice Cage",
@@ -33259,7 +33259,7 @@
     "damage_type": [
       "Cold"
     ],
-    "damage_values": "431",
+    "damage_values": "518",
     "healing_values": null,
     "control_values": null,
     "scaling_stats": [],
@@ -33290,7 +33290,7 @@
       "Targets foe",
       "15 feet"
     ],
-    "tooltip": "Deals 387-826 Cold Damage and for every Chilled effect on a target, this power's base damage is increased by 10%. + If you are affected by Cold Snap, deals an 116-248 additional Cold Damage to up to 5 targets within 5ft of your primary target. + 45-100% chance to apply Chill affected targets.  Chill reduces the target's movement speed by 42% for 16 sec and occasionally traps targets in an Ice Cage. Stacks up to 3 times.",
+    "tooltip": "Deals 465-991 Cold Damage and for every Chilled effect on a target, this power's base damage is increased by 10%. + If you are affected by Cold Snap, deals an 139-297 additional Cold Damage to up to 5 targets within 5ft of your primary target. + 24-53% chance to apply Chill affected targets. Chill reduces the target's movement speed by 42% for 16 sec and occasionally traps targets in an Ice Cage. Stacks up to 3 times.",
     "apply_tag": [
       "Chill",
       "Ice Cage"
@@ -33303,7 +33303,7 @@
     "damage_type": [
       "Cold"
     ],
-    "damage_values": "826",
+    "damage_values": "991",
     "healing_values": null,
     "control_values": null,
     "scaling_stats": [],
@@ -33335,7 +33335,7 @@
       "15 feet",
       "320 degree Cone"
     ],
-    "tooltip": "Deals 354 Cold Damage and Stuns affected targets for 1.4 sec. + Creates an Ice Column at your primary target. After 10 sec, the Ice Column explodes, dealing 547 Cold Damage to up to 5 targets within 10ft. + 20% chance every 1 sec to apply Chill to targets within 20ft. Chill reduces the target's movement speed by 42% for 16 sec and occasionally traps targets in an Ice Cage. Stacks up to 3 times. + Additionally, if a target is affected by your Hard Frost, has a 20% chance to refresh the duration. + Places Eruption and Ice Burst on cooldown.",
+    "tooltip": "Deals 424 Cold Damage and Stuns affected targets for 1.7 sec. + Creates an Ice Column at your primary target. After 10 sec, the Ice Column explodes, dealing 637 Cold Damage to up to 5 targets within 10ft. + 10% chance every 1 sec to apply Chill to targets within 20ft. Chill reduces the target's movement speed by 42% for 16 sec and occasionally traps targets in an Ice Cage. Stacks up to 3 times. + Additionally, if a target is affected by your Hard Frost, has a 10% chance to refresh the duration. + Places Eruption and Ice Burst on cooldown.",
     "apply_tag": [
       "Stun",
       "Chill",
@@ -33352,9 +33352,9 @@
     "damage_type": [
       "Cold"
     ],
-    "damage_values": "547",
+    "damage_values": "424",
     "healing_values": null,
-    "control_values": "Stun=1.4",
+    "control_values": "Stun=1.7",
     "scaling_stats": [],
     "power_dependency": [
       401
@@ -33384,7 +33384,7 @@
       "15 feet",
       "320 degree Cone"
     ],
-    "tooltip": "Deals 321-628 Fire Damage and 321-628 Crushing Damage. Deals an additional 30% damage if your target is immune to Knock effects. + Knocks Back affected targets. + 25% chance to apply Clinging Flames to affected targets. Clinging Flames deals 140 Fire Damage every 2 sec for 12 sec and may leap to nearby foes. + This chance is increased to 50% chance if the power is fully Charged.",
+    "tooltip": "Deals 321-690 Fire Damage and 321-690 Crushing Damage. Deals an additional 30% damage if your target is immune to Knock effects. + Knocks Back affected targets. + 25% chance to apply Clinging Flames to affected targets. Clinging Flames deals 140 Fire Damage every 2 sec for 12 sec and may leap to nearby foes. + This chance is increased to 50% chance if the power is fully Charged.",
     "apply_tag": [
       "Knock Back",
       "Clinging Flames"
@@ -33398,7 +33398,7 @@
       "Crushing",
       "Fire"
     ],
-    "damage_values": "1256",
+    "damage_values": "1380",
     "healing_values": null,
     "control_values": null,
     "scaling_stats": [],
@@ -33430,7 +33430,7 @@
       "15 feet",
       "10 feet Sphere"
     ],
-    "tooltip": "Deals 200-426 Cold Damage and Knocks Down affected targets. + Deals additional 190 Cold Damage for each of your Chill stacks on a target, and an additional 30% total damage if you are affected by Cold Snap. Consumes any of your Chill stacks on affected targets. + When fully charged, Shatters any of your Ice Structures, dealing 126-547 Cold Damage, based on the rank and type of the Structure, to up to 5 foes within 15ft.",
+    "tooltip": "Deals 240-511 Cold Damage and Knocks Down affected targets. + Deals additional 228 Cold Damage for each of your Chill stacks on a target, and an additional 30% total damage if you are affected by Cold Snap. Consumes any of your Chill stacks on affected targets. + When fully charged, Shatters any of your Ice Structures, dealing 126-637 Cold Damage, based on the rank and type of the Structure, to up to 5 foes within 15ft.",
     "apply_tag": [
       "Knock Down",
       "Shatter"
@@ -33447,7 +33447,7 @@
     "damage_type": [
       "Cold"
     ],
-    "damage_values": "547",
+    "damage_values": "511",
     "healing_values": null,
     "control_values": null,
     "scaling_stats": [],
@@ -33479,7 +33479,7 @@
       "50 feet",
       "25 feet Sphere"
     ],
-    "tooltip": "Deals 888 Crushing Damage to your primary target and 592 Crushing Damage to nearby foes. If affected target is immune to Hold effects, deals an additional 30% base damage. + Applies 3 stacks of Stagger to affected targets.  Stagger reduces resistance to all damage by 2% and movement speed by 25% for 15 sec. Stacks up to 3 times. + Paralyzes affected targets for 6.8 sec. If the target is immune to Holds, instead Knocks them Down.",
+    "tooltip": "Deals 1534 Crushing Damage to your primary target and 1023 Crushing Damage to nearby foes. If affected target is immune to Hold effects, deals an additional 30% base damage. + Applies 3 stacks of Stagger to affected targets.  Stagger reduces resistance to all damage by 2% and movement speed by 25% for 15 sec. Stacks up to 3 times. + Paralyzes affected targets for 12 sec. If the target is immune to Holds, instead Knocks them Down.",
     "apply_tag": [
       "Stagger",
       "Paralyze",
@@ -33493,9 +33493,9 @@
     "damage_type": [
       "Crushing"
     ],
-    "damage_values": "888",
+    "damage_values": "1534",
     "healing_values": null,
-    "control_values": "Paralyze=6.8",
+    "control_values": "Paralyze=12",
     "scaling_stats": [],
     "power_dependency": [
       422
@@ -33525,7 +33525,7 @@
       "50 feet",
       "3 feet Cylinder"
     ],
-    "tooltip": "Deals 196-418 Cold Damage to targets. + 45-100% chance to apply Chill to your primary target, and 22-50% chance against secondary targets. Chill reduces target movement speed by 60% for 16 sec and occasionally trapping them in an Ice Cage. Stacks up to 3 times. + When fully charged, has a 50% chance to apply Hard Frost to your primary target. Hard Frost reduces resistance to Cold Damage by 18% for 15 sec. This chance is doubled if you are affected by Cold Snap.",
+    "tooltip": "Deals 236-502 Cold Damage to targets. + 24-53% chance to apply Chill to your primary target, and 12-27% chance against secondary targets. Chill reduces target movement speed by 60% for 16 sec and occasionally trapping them in an Ice Cage. Stacks up to 3 times. + When fully charged, has a 23% chance to apply Hard Frost to your primary target. Hard Frost reduces resistance to Cold Damage by 18% for 15 sec. This chance is doubled if you are affected by Cold Snap.",
     "apply_tag": [
       "Chill",
       "Ice Cage",
@@ -33539,7 +33539,7 @@
     "damage_type": [
       "Cold"
     ],
-    "damage_values": "418",
+    "damage_values": "502",
     "healing_values": null,
     "control_values": null,
     "scaling_stats": [],
@@ -33571,7 +33571,7 @@
       "200 feet lunge",
       "25 feet Sphere"
     ],
-    "tooltip": "Deals 704 Crushing Damage and Knocks Up affected targets. Base Damage is increased by 30% if an affected target is immune to Knock effects. + Creates a Stomping Grounds at your location for 12 sec, causing affected targets within 15ft to be 3.3% more vulnerable to damage from abilities in the Brick Framework. This effect is considered to be an Ultimate Rune. + If used from 25ft or more above the ground, the following effects apply instead: + Lunge directly down from wherever you are. Deals 951 Crushing Damage and affected targets are Knocked Up.",
+    "tooltip": "Deals 1461 Crushing Damage and Knocks Up affected targets. Base Damage is increased by 30% if an affected target is immune to Knock effects. + Creates a Stomping Grounds at your location for 12 sec, causing affected targets within 15ft to be 6.9% more vulnerable to damage from abilities in the Brick Framework. This effect is considered to be an Ultimate Rune. + If used from 25ft or more above the ground, the following effects apply instead: + Lunge directly down from wherever you are. Deals 1972 Crushing Damage and affected targets are Knocked Up.",
     "apply_tag": [
       "Knock Up",
       "Rune"
@@ -33584,7 +33584,7 @@
     "damage_type": [
       "Crushing"
     ],
-    "damage_values": "951",
+    "damage_values": "1972",
     "healing_values": null,
     "control_values": null,
     "scaling_stats": [],
@@ -33615,7 +33615,7 @@
       "Targets foe",
       "10 feet"
     ],
-    "tooltip": "Deals 375-1332 Sonic Damage to target. Increases this power's base damage by 30% against targets affected by your Deafening. + 30% chance to Stun your target for 1.4 sec. Chance is guaranteed if the target is affected by Disorient + When fully charged: + Deals 190 Sonic Damage to up to 5 targets within 15ft. + Paralyzes your primary target for 9.7 sec and Stuns secondary targets for 1.4 sec. + Applies Bastion, causing 30% of your direct damage pre-damage mitigation to be applied to you as a Shield for 10 sec. Stacks up to 10 times. + Goes on cooldown for 12 sec.",
+    "tooltip": "Deals 450-1598 Sonic Damage to target. Increases this power's base damage by 30% against targets affected by your Deafening. + 30% chance to Stun your target for 1.7 sec. Chance is guaranteed if the target is affected by Disorient + When fully charged: + Deals 228 Sonic Damage to up to 5 targets within 15ft. + Paralyzes your primary target for 12 sec and Stuns secondary targets for 1.7 sec. + Applies Bastion, causing 21% of your direct damage pre-damage mitigation to be applied to you as a Shield for 10 sec. Stacks up to 10 times. + Goes on cooldown for 12 sec.",
     "apply_tag": [
       "Stun",
       "Paralyze",
@@ -33634,7 +33634,7 @@
     ],
     "damage_values": "1332",
     "healing_values": null,
-    "control_values": "Stun=1.4;Paralyze=9.7",
+    "control_values": "Stun=1.7;Paralyze=12",
     "scaling_stats": [],
     "power_dependency": [
       448
@@ -33664,7 +33664,7 @@
       "50 feet",
       "45 degree Cone"
     ],
-    "tooltip": "Deals 178 Magic Damage every 0.5 sec to foes. + All targets have 20% chance on each hit to be affected by Regret. Regret causes -8% all damage strength for 20 sec to affected targets. Stacks up to 3 times. + All targets have 15% chance on each hit to be affected by Dependency. Dependency heals an ally near the foe for 52 Health Points every 0.5 sec for 20 sec. Stacks up to 3 times.  This effect only applies if you own the Shadow Embrace power.",
+    "tooltip": "Deals 213 Magic Damage every 0.5 sec to foes. + All targets have 10% chance on each hit to be affected by Regret. Regret causes -8% all damage strength for 20 sec to affected targets. Stacks up to 3 times. + All targets have 5% chance on each hit to be affected by Dependency. Dependency heals an ally near the foe for 52 Health Points every 0.5 sec for 20 sec. Stacks up to 3 times.  This effect only applies if you own the Shadow Embrace power.",
     "apply_tag": [
       "Dependency",
       "Regret"
@@ -33677,7 +33677,7 @@
     "damage_type": [
       "Magic"
     ],
-    "damage_values": "178",
+    "damage_values": "213",
     "healing_values": "52",
     "control_values": null,
     "scaling_stats": [],
@@ -33709,7 +33709,7 @@
       "50 feet",
       "25 feet Sphere"
     ],
-    "tooltip": "Deals 408 Magic Damage and Knocks Down affected targets. + Creates an Enchanted Rune on the main target for 12 sec, causing affected targets within 25ft to be 10% more vulnerable to Magic Damage. This effect is considered to be an Ultimate Rune. + If you own multiple Circle powers, creates one at your location based on your current role. The circle summoned will inherit any advantages and ranks you have purchased, as well as having an extended 10 sec duration when initially summoned. + Circle of Arcane Power if you are in Hybrid Role. + Circle of Ebon Wrath if you are Ranged or Melee Role. + Circle of Primal Dominion if you are in Tank Role. + Circle of Radiant Glory if you are Support Role. + If you only own one Circle power, creates it at your location regardless of your role. + Places your Pillar of Poz power on cooldown when used.",
+    "tooltip": "Deals 1014 Magic Damage and Knocks Down affected targets. + Creates an Enchanted Rune on the main target for 12 sec, causing affected targets within 25ft to be 6.9% more vulnerable to Magic Damage. This effect is considered to be an Ultimate Rune. + If you own multiple Circle powers, creates one at your location based on your current role. The circle summoned will inherit any advantages and ranks you have purchased, as well as having an extended 10 sec duration when initially summoned. + Circle of Arcane Power if you are in Hybrid Role. + Circle of Ebon Wrath if you are Ranged or Melee Role. + Circle of Primal Dominion if you are in Tank Role. + Circle of Radiant Glory if you are Support Role. + If you only own one Circle power, creates it at your location regardless of your role. + Places your Pillar of Poz power on cooldown when used.",
     "apply_tag": [
       "Knock Down",
       "Rune"
@@ -33720,7 +33720,7 @@
     "damage_type": [
       "Magic"
     ],
-    "damage_values": "408",
+    "damage_values": "1014",
     "healing_values": null,
     "control_values": null,
     "scaling_stats": [],
@@ -33751,7 +33751,7 @@
       "Affects foe (5 max)",
       "15 feet Sphere"
     ],
-    "tooltip": "Deals 295 Fire Damage and applies Unstable Accelerant to affected targets for 12 sec. + Unstable Accelerant reduces resistance to your Burning effects by 50%. Clinging Flames, Leaping Flames, Fire Snake, and Pyre Patches are considered Burning effects. + Creates a Pyre Patch at your location for 10 sec, dealing 98 Fire Damage every 2 sec to foes within 15ft.  You can only have one Pyre Patch active at a time. + Foes standing in the Pyre Patch have a 10% chance to be affected by Clinging Flames. Clinging Flames deals 140 Fire Damage every 2 sec for 12 sec and may leap to nearby foes.",
+    "tooltip": "Deals 354 Fire Damage and applies Unstable Accelerant to affected targets for 12 sec. + Unstable Accelerant reduces resistance to your Burning effects by 50%. Clinging Flames, Leaping Flames, Fire Snake, and Pyre Patches are considered Burning effects. + Creates a Pyre Patch at your location for 10 sec, dealing 62 Fire Damage every 2 sec to foes within 15ft.  You can only have one Pyre Patch active at a time. + Foes standing in the Pyre Patch have a 10% chance to be affected by Clinging Flames. Clinging Flames deals 140 Fire Damage every 2 sec for 12 sec and may leap to nearby foes.",
     "apply_tag": [
       "Unstable Accelerant",
       "Pyre Patch"
@@ -33764,7 +33764,7 @@
     "damage_type": [
       "Fire"
     ],
-    "damage_values": "140",
+    "damage_values": "354",
     "healing_values": null,
     "control_values": null,
     "scaling_stats": [],
@@ -33795,7 +33795,7 @@
       "Targets foe",
       "10 feet"
     ],
-    "tooltip": "Deals 178 Fire Damage every 0.5 sec and heals you for 47 Health Points for each stack of Fiery Escalation on you. This is considered to be a Life Drain effect. + When fully maintained, applies a stack of Fiery Escalation on you for 12 sec and refreshes any existing stacks. Stacks up to 4 times. + 5% chance on each hit to apply Clinging Flames. Clinging Flames deals 140 Fire Damage every 2 sec for 12 sec and may leap to nearby foes.",
+    "tooltip": "Deals 213 Fire Damage every 0.5 sec and heals you for 56 Health Points for each stack of Fiery Escalation on you. This is considered to be a Life Drain effect. + When fully maintained, applies a stack of Fiery Escalation on you for 12 sec and refreshes any existing stacks. Stacks up to 4 times. + 10% chance on each hit to apply Clinging Flames. Clinging Flames deals 140 Fire Damage every 2 sec for 12 sec and may leap to nearby foes.",
     "apply_tag": [
       "Fiery Escalation",
       "Clinging Flames"
@@ -33810,8 +33810,8 @@
     "damage_type": [
       "Fire"
     ],
-    "damage_values": "178",
-    "healing_values": "47",
+    "damage_values": "213",
+    "healing_values": "56",
     "control_values": null,
     "scaling_stats": [],
     "power_dependency": [
@@ -33841,7 +33841,7 @@
       "Affects foe (5 max)",
       "10 feet Sphere"
     ],
-    "tooltip": "Deals 160-216 Fire Damage and has a 25/25/100% chance to apply Clinging Flames. + Clinging Flames deals 140 Fire Damage every 2 sec for 12 sec and may leap to nearby foes. + If a target is affected by Clinging Flames, expires that effect and heals you for 194 Health Points. If you are affected by Thermal Reverberation, no effect will be expired.",
+    "tooltip": "Deals 192-259 Fire Damage and has a 15/15/50% chance to apply Clinging Flames. + Clinging Flames deals 140 Fire Damage every 2 sec for 12 sec and may leap to nearby foes. + If a target is affected by Clinging Flames, expires that effect and heals you for 194 Health Points. If you are affected by Thermal Reverberation, no effect will be expired.",
     "apply_tag": [
       "Clinging Flames"
     ],
@@ -33855,7 +33855,7 @@
     "damage_type": [
       "Fire"
     ],
-    "damage_values": "216",
+    "damage_values": "259",
     "healing_values": "194",
     "control_values": null,
     "scaling_stats": [],
@@ -33887,7 +33887,7 @@
       "15 feet",
       "30-240 degree Cone"
     ],
-    "tooltip": "Deals 160-289 Fire Damage and has a 25/25/100% chance to apply Clinging Flames. Clinging Flames deals 140 Fire Damage every 2 sec for 12 sec and may leap to nearby foes. + 25/25/100% chance to apply Engulfing Flames. Engulfing Flames reduces resistance to Fire Damage by 8% for 15 sec. Stacks up to 3 times.",
+    "tooltip": "Deals 192-347 Fire Damage and has a 15/15/50% chance to apply Clinging Flames. Clinging Flames deals 140 Fire Damage every 2 sec for 12 sec and may leap to nearby foes. + 15/15/50% chance to apply Engulfing Flames. Engulfing Flames reduces resistance to Fire Damage by 8% for 15 sec. Stacks up to 3 times.",
     "apply_tag": [
       "Clinging Flames",
       "Engulfing Flames"
@@ -33898,7 +33898,7 @@
     "damage_type": [
       "Fire"
     ],
-    "damage_values": "289",
+    "damage_values": "347",
     "healing_values": null,
     "control_values": null,
     "scaling_stats": [],
@@ -33929,7 +33929,7 @@
       "Targets foe",
       "10 feet"
     ],
-    "tooltip": "Deals 400-852 Fire Damage. This power's base damage is increased by 10% for every stack of your Engulfing Flames on the target. + 12% chance to apply Clinging Flames. 100% chance when fully charged. Clinging Flames deals 140 Fire Damage every 2 sec for 12 sec and may leap to nearby foes.",
+    "tooltip": "Deals 480-1023 Fire Damage. This power's base damage is increased by 10% for every stack of your Engulfing Flames on the target. + 7.5% chance to apply Clinging Flames. 100% chance when fully charged. Clinging Flames deals 140 Fire Damage every 2 sec for 12 sec and may leap to nearby foes.",
     "apply_tag": [
       "Clinging Flames"
     ],
@@ -33941,7 +33941,7 @@
     "damage_type": [
       "Fire"
     ],
-    "damage_values": "852",
+    "damage_values": "1023",
     "healing_values": null,
     "control_values": null,
     "scaling_stats": [],
@@ -33973,7 +33973,7 @@
       "100 feet",
       "15 feet Sphere"
     ],
-    "tooltip": "Deals 146-575 Toxic Damage and applies Deadly Poison to all targets. Deadly Poison deals 31 Toxic Damage every 1 sec for 16 sec and stacks up to 5 times. + Deals Particle Damage instead if you have any of the following Energy Builders: Wrist Bolter/Power Bolts/Energy Blaster/Laser Edge. + Applies Debilitating Poison to all targets if you own Infernal Blast power. Debilitating Poison reduces resistance to Toxic Damage by 18% for 15 sec. + This power costs 30% of your Max Health to use. This cost is reduced to 26/23/20% depending on the rank of Infernal Blast. + WARNING : This can kill you. + When fully charged, the primary target is affected by Noxious Poison. Noxious Poison deals 55 Toxic Damage every 1 sec over 16 sec. + When fully charged creates a Healing Mist at the main target location for 10 sec, healing all allies within 25ft for 59 Health Points every 1 sec. This effect will only occur if you own the Infernal Blast power. + Healing Mist will Disorient targets in its area if you own the Infernal Blast power at Rank 3. Disorient reduces the target's damage by 10% and movement speed by 50% for 12 sec.",
+    "tooltip": "Deals 176-690 Toxic Damage and applies Deadly Poison to all targets. Deadly Poison deals 31 Toxic Damage every 1 sec for 16 sec and stacks up to 5 times. + Deals Particle Damage instead if you have any of the following Energy Builders: Wrist Bolter/Power Bolts/Energy Blaster/Laser Edge. + Applies Debilitating Poison to all targets if you own Infernal Blast power. Debilitating Poison reduces resistance to Toxic Damage by 18% for 15 sec. + This power costs 30% of your Max Health to use. This cost is reduced to 26/23/20% depending on the rank of Infernal Blast. + WARNING : This can kill you. + When fully charged, the primary target is affected by Noxious Poison. Noxious Poison deals 55 Toxic Damage every 1 sec over 16 sec. + When fully charged creates a Healing Mist at the main target location for 10 sec, healing all allies within 25ft for 59 Health Points every 1 sec. This effect will only occur if you own the Infernal Blast power. + Healing Mist will Disorient targets in its area if you own the Infernal Blast power at Rank 3. Disorient reduces the target's damage by 10% and movement speed by 50% for 12 sec.",
     "apply_tag": [
       "Deadly Poison",
       "Debilitating Poison",
@@ -33990,8 +33990,8 @@
       "Toxic",
       "Particle"
     ],
-    "damage_values": "575",
-    "healing_values": null,
+    "damage_values": "690",
+    "healing_values": "56",
     "control_values": null,
     "scaling_stats": [],
     "power_dependency": [
@@ -38941,7 +38941,8 @@
     "apply_tag": [
       "Negative Ions",
       "Arc",
-      "Circuit"
+      "Circuit",
+      "Superconductor"
     ],
     "refresh_tag": [],
     "synergy_tag": [
@@ -39414,9 +39415,10 @@
       "100 feet",
       "20 feet Sphere"
     ],
-    "tooltip": "Deals 614 Crushing Damage and Knocks Up affected targets.",
+    "tooltip": "After 4 sec deals 789 Crushing Damage to up to 5 foes within 25ft and Knocks Up affected targets 20ft. + Disorients affected targets for 12 sec, reducing their damage by 10% and their movement speed by 50%.",
     "apply_tag": [
-      "Knock Up"
+      "Knock Up",
+      "Disorient"
     ],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -39424,7 +39426,7 @@
     "damage_type": [
       "Crushing"
     ],
-    "damage_values": "614",
+    "damage_values": "789",
     "healing_values": null,
     "control_values": null,
     "scaling_stats": [],

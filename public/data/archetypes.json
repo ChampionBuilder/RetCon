@@ -104,6 +104,10 @@
     {
       "id": 13,
       "info": "Z Store"
+    },
+    {
+      "id": 14,
+      "info": "Anniversary Event (week 4)"
     }
   ],
   "archetypes": [
@@ -717,7 +721,8 @@
       "unlockType": [
         2,
         13,
-        8
+        8,
+        14
       ],
       "group": 4,
       "superStatList": [
@@ -2165,7 +2170,9 @@
       "name": "The Wrecker",
       "unlockType": [
         2,
-        13
+        13,
+        8,
+        14
       ],
       "group": 4,
       "superStatList": [
