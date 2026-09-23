@@ -32223,7 +32223,7 @@
       "100 feet",
       "3 feet Cylinder"
     ],
-    "tooltip": "Deals 95 Toxic Damage 2 times every 0.5 sec. + 10% chance every 0.5 sec to apply Deadly Poison to affected targets. Deadly Poison deals 31 Toxic Damage every 1 sec for 16 sec and stacks up to 5 times. + When fully maintained, spreads any of your Poisons on your primary target to up to 3 foes within 5ft. + Refreshes the duration of your Poisons on targets that these effects were spread to.",
+    "tooltip": "Deals 190 Toxic Damage every 0.5 sec. + 10% chance every 0.5 sec to apply Deadly Poison to affected targets. Deadly Poison deals 31 Toxic Damage every 1 sec for 16 sec and stacks up to 5 times. + When fully maintained, spreads any of your Poisons on your primary target to up to 3 foes within 5ft. + Refreshes the duration of your Poisons on targets that these effects were spread to.",
     "apply_tag": [
       "Deadly Poison"
     ],
@@ -44382,6 +44382,157 @@
       "Anniversary Event: Reward"
     ],
     "icon_override": "Sidekick_TheVanguard",
+    "is_disabled": false
+  },
+  {
+    "power_id": 1074,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "Riptide",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "cost": null,
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: Ranged DPS + Damage type: Crushing, Fire + Special effects: Chi Flame, Disorient, Demolish + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction.",
+    "apply_tag": [
+      "Chi Flame",
+      "Disorient",
+      "Demolish"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Crushing"
+    ],
+    "damage_values": null,
+    "healing_values": null,
+    "control_values": null,
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Alert Week Event: Store"
+    ],
+    "icon_override": "Sidekick_Riptide",
+    "is_disabled": false
+  },
+  {
+    "power_id": 1075,
+    "powerset_id": "Travel_Power",
+    "framework_id": "Flight",
+    "name": "Shadow Power Flight",
+    "tier": null,
+    "power_type": "TRAVEL_POWER",
+    "advantages": [
+      8,
+      9
+    ],
+    "activation_type": "TOGGLE",
+    "cost": null,
+    "activation_time": 1.5,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": 1,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Grants +20 Flight Speed while active. Outside of combat, you build up speed over time. After 4 sec, you gain +17 Flight Speed. After 10 sec, you gain an additional +17 Flight Speed. While active, you suffer a -12% penalty to Power Cost Discount and your Energy Building strength is reduced by 15%.",
+    "apply_tag": [],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [],
+    "damage_values": null,
+    "healing_values": null,
+    "control_values": null,
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Z Store (Limited)"
+    ],
+    "icon_override": "TravelPower_PowerFlight",
+    "is_disabled": false
+  },
+  {
+    "power_id": 1076,
+    "powerset_id": "Travel_Power",
+    "framework_id": "Flight",
+    "name": "Radiant Power Flight",
+    "tier": null,
+    "power_type": "TRAVEL_POWER",
+    "advantages": [
+      8,
+      9
+    ],
+    "activation_type": "TOGGLE",
+    "cost": null,
+    "activation_time": 1.5,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": 1,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Grants +20 Flight Speed while active. Outside of combat, you build up speed over time. After 4 sec, you gain +17 Flight Speed. After 10 sec, you gain an additional +17 Flight Speed. While active, you suffer a -12% penalty to Power Cost Discount and your Energy Building strength is reduced by 15%.",
+    "apply_tag": [],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [],
+    "damage_values": null,
+    "healing_values": null,
+    "control_values": null,
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Z Store (Limited)"
+    ],
+    "icon_override": "TravelPower_PowerFlight",
+    "is_disabled": false
+  },
+  {
+    "power_id": 1077,
+    "powerset_id": "Travel_Power",
+    "framework_id": "Flight",
+    "name": "Prismatic Power Flight",
+    "tier": null,
+    "power_type": "TRAVEL_POWER",
+    "advantages": [
+      8,
+      9
+    ],
+    "activation_type": "TOGGLE",
+    "cost": null,
+    "activation_time": 1.5,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": 1,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Grants +20 Flight Speed while active. Outside of combat, you build up speed over time. After 4 sec, you gain +17 Flight Speed. After 10 sec, you gain an additional +17 Flight Speed. While active, you suffer a -12% penalty to Power Cost Discount and your Energy Building strength is reduced by 15%.",
+    "apply_tag": [],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [],
+    "damage_values": null,
+    "healing_values": null,
+    "control_values": null,
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Z Store (Limited)"
+    ],
+    "icon_override": "TravelPower_PowerFlight",
     "is_disabled": false
   }
 ]

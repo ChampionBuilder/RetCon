@@ -151,7 +151,7 @@
           "maxPoints": 2,
           "name": "Expose Weakness",
           "icon": "/spec-icons/superstat/dexterity/Specialization_ExposeWeakness.png",
-          "tip": "Whenever you Critically Strike a foe, you reduce their Resistance to your attacks by 1/2% for 10 seconds. This effect stacks up to 5 times."
+          "tip": "Whenever you Critically Strike a foe, you reduce their resistance to your attacks by 2% for 10 sec. This effect stacks up to 5 times.\n\nWhen used against Cosmic ranked targets, this effect can no longer stack more than once on the target, but whenever you Critically Strike a foe, you gain a stack of Analysing Weakness, which reduces their resistance to your attacks by 2%. This effect stacks up to 5 times."
         },
         {
           "id": 7,
@@ -1204,7 +1204,7 @@
           "maxPoints": 3,
           "name": "Find the Mark",
           "icon": "/spec-icons/role/guardian/Specialization_FindTheMark.png",
-          "tip": "Your Ranged attacks have a 10/20/30% chance to Expose your target. Expose increases your chance to Critically Strike that target with Ranged attacks by 3% for 10s and stacks up to 3 times."
+          "tip": "Your Ranged attacks have a 10% chance to Expose your target, increasing your chance to Critically Strike that target with Ranged attacks by 3% for 10 sec. Stacks up to 3 times.\n\nWhen used against a Cosmic ranked target, your Ranged attacks instead have a 10% chance to apply Find the Mark on you, increasing your chance to Critically Strike a Cosmic ranked target with Ranged attacks by 3% for 10 sec. Stacks up to 3 times."
         },
         {
           "id": 7,
