@@ -38890,7 +38890,7 @@
     "framework_id": "Other",
     "name": "Draysha Supercharge",
     "tier": null,
-    "power_type": "DEVICE",
+    "power_type": "BUFF_SELF",
     "advantages": [],
     "activation_type": "TOGGLE",
     "cost": null,
@@ -39791,7 +39791,7 @@
     "framework_id": "Other",
     "name": "Target Locked",
     "tier": null,
-    "power_type": "DEVICE",
+    "power_type": "BUFF_SELF",
     "advantages": [],
     "activation_type": "CLICK",
     "cost": null,
@@ -44533,6 +44533,135 @@
       "Z Store (Limited)"
     ],
     "icon_override": "TravelPower_PowerFlight",
+    "is_disabled": false
+  },
+  {
+    "power_id": 1078,
+    "powerset_id": "Device",
+    "framework_id": "Other",
+    "name": "Light Unbound",
+    "tier": null,
+    "power_type": "RANGED_AOE_DAMAGE",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "cost": null,
+    "activation_time": 1,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": 90,
+    "range_tags": [
+      "Affects non-destructible foe (5 max)",
+      "25 feet Sphere"
+    ],
+    "tooltip": "Can be used while Held or Confused. + Deals 657 Magic Damage and Stuns affected targets for 1.7 sec. + Applies 2,679 Break Free damage to any Holds, Roots, or Disables affecting you. + Applies Illumination to you, increasing the direct healing you receive by 3% for 20 sec. + Applies Illuminated on affected targets for 20 sec. Anyone attacking a target affected by Illuminated has a 20% chance to be affected by Mend, healing them for +105 Health Points every 2 sec for 8 sec. + Places all Escape devices on a 90 sec cooldown.",
+    "apply_tag": [
+      "Illuminated",
+      "Illumination"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [
+      "Passive Heal"
+    ],
+    "damage_type": [
+      "Magic"
+    ],
+    "damage_values": "657",
+    "healing_values": "105",
+    "control_values": "Stun=1.7",
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Therakiel Event: Valerian Scarlet Alert"
+    ],
+    "icon_override": "Device_LightUnbound",
+    "is_disabled": false
+  },
+  {
+    "power_id": 1079,
+    "powerset_id": "PVD",
+    "framework_id": "Heavy_Weapon",
+    "name": "Arc of Light",
+    "tier": null,
+    "power_type": "MELEE_AOE_DAMAGE",
+    "advantages": [],
+    "activation_type": "CHARGE",
+    "cost": "65-99",
+    "activation_time": 0.83,
+    "max_duration": 1.17,
+    "tick_rate": null,
+    "cooldown": 90,
+    "range_tags": [
+      "Affects foe (5 max)",
+      "15 feet Sphere"
+    ],
+    "tooltip": "Deals 334-798 Dimensional Damage to targets and has a 25-60% chance to apply llluminated on affected targets for 20 sec. + Anyone attacking a target affected by Illuminated has a 20% chance to be affected by Mend, healing them for +105 Health Points every 2 sec for 8 sec. + Attacking a target affected by Devoid will grant you the Illumination buff, increasing the direct healing you receive by 3% for 20 sec.",
+    "apply_tag": [
+      "Illuminated",
+      "Illumination"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [
+      "Devoid"
+    ],
+    "filter_tag": [
+      "Passive Heal"
+    ],
+    "damage_type": [
+      "Dimensional"
+    ],
+    "damage_values": "798",
+    "healing_values": "105",
+    "control_values": null,
+    "scaling_stats": [],
+    "power_dependency": [
+      406
+    ],
+    "source": [
+      "Therakiel Event: Valerian Scarlet Alert"
+    ],
+    "icon_override": "PVD_ArcOfLight",
+    "is_disabled": false
+  },
+  {
+    "power_id": 1080,
+    "powerset_id": "Device",
+    "framework_id": "Other",
+    "name": "Mega-Foxbattlebot Stomp",
+    "tier": null,
+    "power_type": "RANGED_AOE_DAMAGE",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "cost": null,
+    "activation_time": 1,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": 60,
+    "range_tags": [
+      "Targets foe (5 max)",
+      "100 feet",
+      "20 feet Sphere"
+    ],
+    "tooltip": "After 4 sec deals 789 Crushing Damage to up to 5 foes within 25ft and Knocks Up affected targets 20ft. + Disorients affected targets for 12 sec, reducing their damage by 10% and their movement speed by 50%.",
+    "apply_tag": [
+      "Knock Up",
+      "Disorient"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Crushing"
+    ],
+    "damage_values": "789",
+    "healing_values": null,
+    "control_values": null,
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Anniversary Event, week 4 - Perk: Have Foxbat help you during a desperate Defend Champions HQ! OM"
+    ],
+    "icon_override": "Device_MegaDestroid_Stomp",
     "is_disabled": false
   }
 ]
