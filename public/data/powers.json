@@ -13726,7 +13726,7 @@
       7,
       5
     ],
-    "activation_type": "CHARGE",
+    "activation_type": "FULL_CHARGE",
     "cost": 64,
     "activation_time": 0.67,
     "max_duration": 0.83,
@@ -25506,7 +25506,7 @@
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
-    "tooltip": "Whenever you apply or refresh a Poisons, you gain 16 Energy every 3 sec for 6 sec. + Poisons includes: Deadly Poison, Debilitating Poison, Noxious Poison + The energy gained scales with your Intelligence, and to a lesser degree, your Recovery. + This effect does not stack, but can be refreshed.",
+    "tooltip": "Whenever you apply or refresh a Poisons, you gain 16 Energy every 3 sec for 6 sec. + Poisons includes: Deadly Poison, Debilitating Poison, Noxious Poison + The energy gained scales with your Endurance, and to a lesser degree, your Recovery. + This effect does not stack, but can be refreshed.",
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -39432,7 +39432,7 @@
     "scaling_stats": [],
     "power_dependency": [],
     "source": [
-      "Resistance Adventure Pack - Perk: Kill 50 Mega Destroids"
+      "Resistance Adventure Pack - Perk: Kill 20 Mega Destroids"
     ],
     "icon_override": "Device_MegaDestroid_Stomp",
     "is_disabled": false
@@ -42820,7 +42820,7 @@
     "scaling_stats": [],
     "power_dependency": [],
     "source": [
-      "Z Store"
+      "Anniversary Event - Perk: Rescue 100 cats from trees!"
     ],
     "icon_override": "Sidekick_TohKah",
     "is_disabled": false
@@ -44421,7 +44421,7 @@
     "source": [
       "Alert Week Event: Store"
     ],
-    "icon_override": "Sidekick_Riptide",
+    "icon_override": "Sidekick_Coollizard",
     "is_disabled": false
   },
   {
@@ -44661,7 +44661,7 @@
     "source": [
       "Anniversary Event, week 4 - Perk: Have Foxbat help you during a desperate Defend Champions HQ! OM"
     ],
-    "icon_override": "Device_MegaDestroid_Stomp",
+    "icon_override": "Device_MegaFoxbattlebot_Stomp",
     "is_disabled": false
   }
 ]

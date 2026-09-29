@@ -12167,7 +12167,7 @@
     "advantage_id": 710,
     "name": "Entropy Field",
     "points_cost": 2,
-    "tooltip": "Applies Power Shield to target. + Power shield does not absorb any damage, but striking it restores 2.5% energy. Can occur once every 3 sec.",
+    "tooltip": "Places up to 5 targets within 15ft of your primary target in a Power Shield. + Power Shield does not absorb any damage, but striking it restores 2.5% energy. Can occur once every 3 sec.",
     "apply_tag": [
       "Power Shield"
     ],
