@@ -133,6 +133,80 @@ type FrameworkStripCell = {
   isEmpty: boolean;
 };
 
+function ResponsiveFrameworkStrip({
+  children,
+}: {
+  children: (columns: number) => ReactNode;
+}) {
+  const [columns, setColumns] = useState(1);
+  const stripRef = useRef<HTMLDivElement | null>(null);
+  const columnsRef = useRef(1);
+
+  useEffect(() => {
+    const strip = stripRef.current;
+
+    if (!strip) {
+      return;
+    }
+
+    const observedStrip = strip;
+    let animationFrameId: number | null = null;
+
+    function updateColumns() {
+      animationFrameId = null;
+      const styles = window.getComputedStyle(observedStrip);
+      const buttonWidth =
+        Number.parseFloat(styles.getPropertyValue("--framework-button-width")) ||
+        34;
+      const gap =
+        Number.parseFloat(
+          styles.getPropertyValue("--framework-layout-gap") ||
+            styles.getPropertyValue("--framework-strip-gap"),
+        ) || 5;
+      const nextColumns = Math.min(
+        maxFrameworkStripColumns,
+        Math.max(
+          1,
+          Math.floor((observedStrip.clientWidth + gap) / (buttonWidth + gap)),
+        ),
+      );
+
+      if (columnsRef.current !== nextColumns) {
+        columnsRef.current = nextColumns;
+        setColumns(nextColumns);
+      }
+    }
+
+    function scheduleUpdate() {
+      if (animationFrameId === null) {
+        animationFrameId = window.requestAnimationFrame(updateColumns);
+      }
+    }
+
+    scheduleUpdate();
+    const resizeObserver = new ResizeObserver(scheduleUpdate);
+    resizeObserver.observe(observedStrip);
+
+    return () => {
+      resizeObserver.disconnect();
+      if (animationFrameId !== null) {
+        window.cancelAnimationFrame(animationFrameId);
+      }
+    };
+  }, []);
+
+  return (
+    <div
+      className="framework-strip"
+      aria-label="Power frameworks"
+      ref={stripRef}
+      style={{ "--framework-strip-columns": columns } as CSSProperties}
+    >
+      {children(columns)}
+    </div>
+  );
+}
+
 const tierOrder = [-1, 0, 1, 2, 3, 4, null] as const;
 const maxFrameworkStripColumns = 14;
 const maxPowerGridColumns = 3;
@@ -1137,10 +1211,7 @@ export function PowersPanel({
     reopenedEnergyBuilderSelectionVersion,
     setReopenedEnergyBuilderSelectionVersion,
   ] = useState(0);
-  const [frameworkStripColumns, setFrameworkStripColumns] = useState(1);
-  const [powerGridColumns, setPowerGridColumns] = useState(maxPowerGridColumns);
   const powersPanelRef = useRef<HTMLElement | null>(null);
-  const frameworkStripRef = useRef<HTMLDivElement | null>(null);
   const damageTypeMenuRef = useRef<HTMLDivElement | null>(null);
   const scalingStatMenuRef = useRef<HTMLDivElement | null>(null);
   const pinnedPowerTooltipZIndexRef = useRef(60);
@@ -2209,48 +2280,6 @@ export function PowersPanel({
   ]);
 
   useEffect(() => {
-    const frameworkStripElement = frameworkStripRef.current;
-
-    if (!frameworkStripElement) {
-      return;
-    }
-
-    const frameworkStrip = frameworkStripElement;
-
-    function updateFrameworkStripColumns() {
-      const width = frameworkStrip.clientWidth;
-      const styles = window.getComputedStyle(frameworkStrip);
-      const frameworkButtonWidth = Number.parseFloat(
-        styles.getPropertyValue("--framework-button-width"),
-      ) || 34;
-      const frameworkStripGap = Number.parseFloat(
-        styles.getPropertyValue("--framework-layout-gap") ||
-          styles.getPropertyValue("--framework-strip-gap"),
-      ) || 5;
-      const nextColumns = Math.min(
-        maxFrameworkStripColumns,
-        Math.max(
-          1,
-          Math.floor(
-            (width + frameworkStripGap) /
-              (frameworkButtonWidth + frameworkStripGap),
-          ),
-        ),
-      );
-
-      setFrameworkStripColumns(nextColumns);
-    }
-
-    updateFrameworkStripColumns();
-
-    const resizeObserver = new ResizeObserver(updateFrameworkStripColumns);
-
-    resizeObserver.observe(frameworkStrip);
-
-    return () => resizeObserver.disconnect();
-  }, []);
-
-  useEffect(() => {
     const powersPanelElement = powersPanelRef.current;
 
     if (!powersPanelElement) {
@@ -2259,7 +2288,11 @@ export function PowersPanel({
 
     const powersPanel = powersPanelElement;
 
+    let animationFrameId: number | null = null;
+    let currentColumns = maxPowerGridColumns;
+
     function updatePowerGridColumns() {
+      animationFrameId = null;
       const width = powersPanel.clientWidth;
       const styles = window.getComputedStyle(powersPanel);
       const minColumnWidth =
@@ -2275,18 +2308,33 @@ export function PowersPanel({
         ),
       );
 
-      setPowerGridColumns((currentColumns) =>
-        currentColumns === nextColumns ? currentColumns : nextColumns,
-      );
+      if (currentColumns !== nextColumns) {
+        currentColumns = nextColumns;
+        powersPanel.style.setProperty(
+          "--power-grid-columns",
+          String(nextColumns),
+        );
+      }
     }
 
-    updatePowerGridColumns();
+    function schedulePowerGridUpdate() {
+      if (animationFrameId === null) {
+        animationFrameId = window.requestAnimationFrame(updatePowerGridColumns);
+      }
+    }
 
-    const resizeObserver = new ResizeObserver(updatePowerGridColumns);
+    schedulePowerGridUpdate();
+
+    const resizeObserver = new ResizeObserver(schedulePowerGridUpdate);
 
     resizeObserver.observe(powersPanel);
 
-    return () => resizeObserver.disconnect();
+    return () => {
+      resizeObserver.disconnect();
+      if (animationFrameId !== null) {
+        window.cancelAnimationFrame(animationFrameId);
+      }
+    };
   }, []);
 
   useEffect(() => {
@@ -2628,7 +2676,7 @@ export function PowersPanel({
     setIsDamageTypeMenuOpen(false);
   }
 
-  function renderFrameworkStripItems() {
+  function renderFrameworkStripItems(frameworkStripColumns: number) {
     const frameworkStripRows = 2;
     const firstFrameworkColumn = () => 0;
     const utilityGroup = frameworkGroups.find(
@@ -2852,11 +2900,7 @@ export function PowersPanel({
       <section
         className="panel powers-panel"
         ref={powersPanelRef}
-        style={
-          {
-            "--power-grid-columns": powerGridColumns,
-          } as CSSProperties
-        }
+        style={{ "--power-grid-columns": maxPowerGridColumns } as CSSProperties}
       >
       <h2>
         <button
@@ -2868,18 +2912,9 @@ export function PowersPanel({
         </button>
       </h2>
 
-      <div
-        className="framework-strip"
-        aria-label="Power frameworks"
-        ref={frameworkStripRef}
-        style={
-          {
-            "--framework-strip-columns": frameworkStripColumns,
-          } as CSSProperties
-        }
-      >
-        {renderFrameworkStripItems()}
-      </div>
+      <ResponsiveFrameworkStrip>
+        {renderFrameworkStripItems}
+      </ResponsiveFrameworkStrip>
 
       <div className="search-row">
         <div className="search-field">

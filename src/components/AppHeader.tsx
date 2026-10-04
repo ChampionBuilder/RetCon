@@ -4,10 +4,12 @@ import { publicAssetUrl } from "@/shared/utils/publicAssetUrl";
 
 type AppHeaderProps = {
   buildName: string;
+  buildResourcesHighlighted: boolean;
   shareUrl: string;
   resetSuperStatsDisabled: boolean;
   onBuildNameChange: (name: string) => void;
   onOpenAbout: () => void;
+  onOpenBuildResources: () => void;
   onOpenBuildCheck: () => void;
   onOpenData: () => void;
   onImportBuild: () => void;
@@ -28,10 +30,12 @@ type AppHeaderProps = {
 
 export function AppHeader({
   buildName,
+  buildResourcesHighlighted,
   shareUrl,
   resetSuperStatsDisabled,
   onBuildNameChange,
   onOpenAbout,
+  onOpenBuildResources,
   onOpenBuildCheck,
   onOpenData,
   onImportBuild,
@@ -133,11 +137,13 @@ export function AppHeader({
         <div className="app-header__controls">
           <button
             className="header-action-button"
+            aria-label="My Builds"
             title="Open your saved builds and manage your collection."
             type="button"
             onClick={onOpenData}
           >
-            My Builds
+            <span className="header-label-optional">My </span>
+            Builds
           </button>
 
           <label className="name-field">
@@ -154,6 +160,7 @@ export function AppHeader({
 
           <button
             className="header-action-button"
+            aria-label="Copy Link"
             title={
               copyFeedbackVisible
                 ? "Link copied!"
@@ -162,7 +169,7 @@ export function AppHeader({
             type="button"
             onClick={copyLink}
           >
-            Copy Link
+            Copy<span className="header-label-optional"> Link</span>
           </button>
           <button
             className="header-action-button"
@@ -176,21 +183,23 @@ export function AppHeader({
           </button>
           <button
             className="utility-button"
+            aria-label="Check Build"
             title="Check whether this build includes the core power types."
             type="button"
             onClick={onOpenBuildCheck}
           >
-            Check Build
+            Check<span className="header-label-optional"> Build</span>
           </button>
 
           <button
             className="utility-button"
+            aria-label="Import Build"
             title="Recover your Aesica and BalakKnightfang builds.
             Most builds should import, but results are not guaranteed."
             type="button"
             onClick={onImportBuild}
           >
-            Import Build
+            Import<span className="header-label-optional"> Build</span>
           </button>
 
           <button className="utility-button" type="button" onClick={onRandomize}>
@@ -284,6 +293,24 @@ export function AppHeader({
         </div>
 
         <nav className="top-tabs" aria-label="Main sections">
+          <button
+            className={[
+              "header-action-button",
+              "build-resources-button",
+              buildResourcesHighlighted
+                ? "build-resources-button--highlighted"
+                : "",
+            ]
+              .filter(Boolean)
+              .join(" ")}
+            aria-label="Build Resources"
+            title="Find help and explore community builds and guides."
+            type="button"
+            onClick={onOpenBuildResources}
+          >
+            <span className="header-label-optional">Build </span>
+            Resources
+          </button>
           <button
             className="header-action-button"
             title="View project credits, sources, and acknowledgements."

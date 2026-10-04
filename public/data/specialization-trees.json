@@ -240,7 +240,7 @@
           "maxPoints": 2,
           "name": "Armored",
           "icon": "/spec-icons/superstat/constitution/Specialization_Armored.png",
-          "tip": "Increases the amount of Defense you receive from items by 10/20/30%."
+          "tip": "Increases the amount of Defense you receive from items by 10/20%."
         },
         {
           "id": 8,
@@ -1010,7 +1010,7 @@
           "maxPoints": 2,
           "name": "Create an Opening",
           "icon": "/spec-icons/role/commander/Specialization_CreateAnOpening.png",
-          "tip": "Whenever you Critically Strike, your pegs Critical Chance is increased by 10/20% for 5 sec."
+          "tip": "Whenever you Critically Strike, your pets Critical Chance is increased by 10/20% for 5 sec."
         },
         {
           "id": 3,

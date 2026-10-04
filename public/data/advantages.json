@@ -3291,7 +3291,7 @@
     "advantage_id": 196,
     "name": "Excessive Force",
     "points_cost": 2,
-    "tooltip": "When applying Stagger, it deals double damage and Knocks your foe down.",
+    "tooltip": "25% chance every hit to Knock Down targets. 100% chance on last hit against your primary target.",
     "apply_tag": [
       "Knock Down"
     ],

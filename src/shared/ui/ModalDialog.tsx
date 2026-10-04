@@ -4,6 +4,7 @@ type ModalDialogProps = {
   ariaLabel: string;
   children: ReactNode;
   className: string;
+  closeOnBackdrop?: boolean;
   description?: ReactNode;
   title: ReactNode;
   onClose: () => void;
@@ -13,6 +14,7 @@ export function ModalDialog({
   ariaLabel,
   children,
   className,
+  closeOnBackdrop = true,
   description,
   title,
   onClose,
@@ -30,7 +32,11 @@ export function ModalDialog({
   }, [onClose]);
 
   return (
-    <div className="dialog-backdrop" role="presentation" onMouseDown={onClose}>
+    <div
+      className="dialog-backdrop"
+      role="presentation"
+      onMouseDown={closeOnBackdrop ? onClose : undefined}
+    >
       <section
         aria-label={ariaLabel}
         aria-modal="true"

@@ -10,6 +10,8 @@ import "./App.css";
 import "./styles/tooltips.css";
 import { AboutDialog } from "@/components/AboutDialog";
 import { AppHeader } from "@/components/AppHeader";
+import { BuildResourcesDialog } from "@/components/BuildResourcesDialog";
+import { CommunityReminderDialog } from "@/components/CommunityReminderDialog";
 import { ArchetypePowerSelectionDialog } from "@/components/ArchetypePowerSelectionDialog";
 import { ArchetypeSelectionDialog } from "@/components/ArchetypeSelectionDialog";
 import { RoleSelectionDialog } from "@/components/RoleSelectionDialog";
@@ -110,6 +112,7 @@ type CollapsedWorkspacePanels = Record<WorkspacePanelId, boolean>;
 const collapsedPanelTrackWidth = "var(--collapsed-panel-track-width, 48px)";
 const ultraCompactViewportQuery = "(max-width: 1400px)";
 const collapsedWorkspacePanelsStorageKey = "retcon.workspacePanels.v1";
+const communityReminderStorageKey = "retcon.communityReminder.lastShown.v1";
 const openPanelTracks = {
   build: "minmax(330px, 1fr)",
   character: "var(--character-column-width)",
@@ -172,6 +175,40 @@ function writeCollapsedWorkspacePanels(
     );
   } catch {
     // Ignore storage failures. The layout still works without persistence.
+  }
+}
+
+function shouldShowCommunityReminder() {
+  try {
+    const storedValue = window.localStorage.getItem(communityReminderStorageKey);
+
+    if (!storedValue) {
+      return true;
+    }
+
+    const lastShown = new Date(storedValue);
+
+    if (Number.isNaN(lastShown.getTime())) {
+      return true;
+    }
+
+    const nextDisplay = new Date(lastShown);
+    nextDisplay.setMonth(nextDisplay.getMonth() + 3);
+
+    return new Date() >= nextDisplay;
+  } catch {
+    return true;
+  }
+}
+
+function markCommunityReminderAsShown() {
+  try {
+    window.localStorage.setItem(
+      communityReminderStorageKey,
+      new Date().toISOString(),
+    );
+  } catch {
+    // Ignore storage failures. The reminder can still be dismissed normally.
   }
 }
 
@@ -394,9 +431,18 @@ function App() {
   const [dataDialogOpen, setDataDialogOpen] = useState(false);
   const [gearLibraryDialogOpen, setGearLibraryDialogOpen] = useState(false);
   const [aboutDialogOpen, setAboutDialogOpen] = useState(false);
+  const [buildResourcesDialogOpen, setBuildResourcesDialogOpen] = useState(false);
+  const [communityReminderDialogOpen, setCommunityReminderDialogOpen] =
+    useState(() => debugMode || shouldShowCommunityReminder());
   const [importBuildDialogOpen, setImportBuildDialogOpen] = useState(false);
   const [collapsedWorkspacePanels, setCollapsedWorkspacePanels] =
     useState<CollapsedWorkspacePanels>(readCollapsedWorkspacePanels);
+
+  useEffect(() => {
+    if (communityReminderDialogOpen && !debugMode) {
+      markCommunityReminderAsShown();
+    }
+  }, [communityReminderDialogOpen, debugMode]);
   const { gears, mods } = useGearData(showGearPlanner, true);
   const gearDataReady = !showGearPlanner || (gears.length > 0 && mods.length > 0);
   const damageModsByFramework = useMemo(
@@ -682,6 +728,8 @@ function App() {
     setDataDialogOpen(false);
     setGearLibraryDialogOpen(false);
     setAboutDialogOpen(false);
+    setBuildResourcesDialogOpen(false);
+    setCommunityReminderDialogOpen(false);
     setImportBuildDialogOpen(false);
     closeGearDialog();
     closeGearModsDialog();
@@ -1831,6 +1879,7 @@ function App() {
     >
       <AppHeader
         buildName={buildName}
+        buildResourcesHighlighted={communityReminderDialogOpen}
         shareUrl={shareUrl}
         resetSuperStatsDisabled={!isFreeform}
         onBuildNameChange={setBuildName}
@@ -1838,6 +1887,11 @@ function App() {
           closeAllPopupsExceptCams();
           closeCamsMenu();
           setAboutDialogOpen(true);
+        }}
+        onOpenBuildResources={() => {
+          closeAllPopupsExceptCams();
+          closeCamsMenu();
+          setBuildResourcesDialogOpen(true);
         }}
         onOpenBuildCheck={() => {
           closeAllPopupsExceptCams();
@@ -1906,6 +1960,18 @@ function App() {
 
       {aboutDialogOpen ? (
         <AboutDialog onClose={() => setAboutDialogOpen(false)} />
+      ) : null}
+
+      {buildResourcesDialogOpen ? (
+        <BuildResourcesDialog
+          onClose={() => setBuildResourcesDialogOpen(false)}
+        />
+      ) : null}
+
+      {communityReminderDialogOpen ? (
+        <CommunityReminderDialog
+          onClose={() => setCommunityReminderDialogOpen(false)}
+        />
       ) : null}
 
       {importBuildDialogOpen ? (
