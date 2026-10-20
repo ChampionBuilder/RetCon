@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useId, useState } from "react";
 import type {
   Archetype,
   ArchetypeGroup,
@@ -49,6 +49,8 @@ export function ArchetypeSelectionDialog({
   onClose,
   onSelectArchetype,
 }: ArchetypeSelectionDialogProps) {
+  const roleSectionId = useId();
+  const [closedRoleIds, setClosedRoleIds] = useState<Set<number>>(new Set());
   const selectableArchetypes = archetypes
     .filter((archetype) => archetype.id > 0)
     .sort((a, b) => {
@@ -62,6 +64,20 @@ export function ArchetypeSelectionDialog({
 
       return groupOrderDifference || (a.name ?? "").localeCompare(b.name ?? "");
     });
+  const freeformArchetype = selectableArchetypes.find(
+    (archetype) => archetype.id === 1,
+  );
+  const archetypesByRole = new Map<number, Archetype[]>();
+
+  selectableArchetypes.forEach((archetype) => {
+    if (archetype.id === 1) {
+      return;
+    }
+
+    const roleArchetypes = archetypesByRole.get(archetype.group) ?? [];
+    roleArchetypes.push(archetype);
+    archetypesByRole.set(archetype.group, roleArchetypes);
+  });
   const [focusedArchetypeId, setFocusedArchetypeId] = useState(
     selectedArchetypeId,
   );
@@ -81,6 +97,36 @@ export function ArchetypeSelectionDialog({
     ? getUnlockText(focusedArchetype, unlocks)
     : null;
 
+  function renderArchetypeChoice(archetype: Archetype) {
+    const group = groups.find(
+      (candidateGroup) => candidateGroup.id === archetype.group,
+    );
+    const unlockText = getUnlockText(archetype, unlocks);
+    const isCurrent = archetype.id === selectedArchetypeId;
+    const isFocused = archetype.id === focusedArchetype?.id;
+
+    return (
+      <button
+        className={[
+          "archetype-selection-choice",
+          isCurrent ? "archetype-selection-choice--current" : "",
+          isFocused ? "archetype-selection-choice--focused" : "",
+        ]
+          .filter(Boolean)
+          .join(" ")}
+        key={archetype.id}
+        title={[group?.name, unlockText].filter(Boolean).join(" / ")}
+        type="button"
+        onFocus={() => setFocusedArchetypeId(archetype.id)}
+        onMouseEnter={() => setFocusedArchetypeId(archetype.id)}
+        onClick={() => onSelectArchetype(archetype.id)}
+      >
+        <SpriteIcon name={archetype.icon} size={28} />
+        <span>{archetype.name}</span>
+      </button>
+    );
+  }
+
   return (
     <AnchoredSelectionDialog
       anchor={anchor}
@@ -92,34 +138,57 @@ export function ArchetypeSelectionDialog({
     >
       <div className="archetype-selection-layout">
         <div className="archetype-selection-list">
-          {selectableArchetypes.map((archetype) => {
+          {freeformArchetype ? (
+            <div className="archetype-selection-grid">
+              {renderArchetypeChoice(freeformArchetype)}
+            </div>
+          ) : null}
+          {Array.from(archetypesByRole, ([roleId, roleArchetypes]) => {
             const group = groups.find(
-              (candidateGroup) => candidateGroup.id === archetype.group,
+              (candidateGroup) => candidateGroup.id === roleId,
             );
-            const unlockText = getUnlockText(archetype, unlocks);
-            const isCurrent = archetype.id === selectedArchetypeId;
-            const isFocused = archetype.id === focusedArchetype?.id;
+            const isClosed = closedRoleIds.has(roleId);
+            const contentId = `${roleSectionId}-${roleId}`;
 
             return (
-              <button
-                className={[
-                  "archetype-selection-choice",
-                  isCurrent ? "archetype-selection-choice--current" : "",
-                  isFocused ? "archetype-selection-choice--focused" : "",
-                ]
-                  .filter(Boolean)
-                  .join(" ")}
-                key={archetype.id}
-                title={[group?.name, unlockText].filter(Boolean).join(" / ")}
-                type="button"
-                onFocus={() => setFocusedArchetypeId(archetype.id)}
-                onMouseEnter={() => setFocusedArchetypeId(archetype.id)}
-                onClick={() => onSelectArchetype(archetype.id)}
-              >
-                <SpriteIcon name={archetype.icon} size={28} />
-                <span>{archetype.name}</span>
-                <small>{group?.name ?? ""}</small>
-              </button>
+              <section className="archetype-selection-group" key={roleId}>
+                <button
+                  className="archetype-selection-group__toggle"
+                  aria-controls={contentId}
+                  aria-expanded={!isClosed}
+                  type="button"
+                  onClick={() => {
+                    setClosedRoleIds((previous) => {
+                      const next = new Set(previous);
+
+                      if (next.has(roleId)) {
+                        next.delete(roleId);
+                      } else {
+                        next.add(roleId);
+                      }
+
+                      return next;
+                    });
+                  }}
+                >
+                  <span>{group?.name ?? "Other"}</span>
+                  <span
+                    aria-hidden="true"
+                    className={
+                      isClosed
+                        ? "tier-toggle-icon tier-toggle-icon--closed"
+                        : "tier-toggle-icon"
+                    }
+                  />
+                </button>
+                <div
+                  className="archetype-selection-grid"
+                  hidden={isClosed}
+                  id={contentId}
+                >
+                  {roleArchetypes.map(renderArchetypeChoice)}
+                </div>
+              </section>
             );
           })}
         </div>

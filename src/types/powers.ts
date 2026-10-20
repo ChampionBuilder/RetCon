@@ -28,6 +28,7 @@ export type Power = {
   scaling_stats?: string[];
   advantages: number[];
   icon_override?: string | null;
+  display_override?: string | null;
   power_dependency?: number[];
   is_disabled?: boolean;
   is_legacy?: boolean;

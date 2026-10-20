@@ -2001,6 +2001,7 @@ function App() {
           onToggle={() => toggleWorkspacePanel("character")}
         >
           <CharacterPanel
+            isFreeform={isFreeform}
             innateTalent={selectedInnateTalent}
             innateTalentLocked={!isFreeform}
             superStats={selectedSuperStats}

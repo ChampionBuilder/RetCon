@@ -23,7 +23,7 @@ const buildResources = [
   },
   {
     description: "A collection of ready-to-use builds.",
-    href: "https://docs.google.com/spreadsheets/d/10HtRf6Sw3Wsm6vFhlViWwwYOI-mma4gd81hR_nxEjEI/edit?gid=0#gid=0",
+    href: "https://steamcommunity.com/sharedfiles/filedetails/?id=3820585429",
     name: "Lancelot's Builds",
   },
   {

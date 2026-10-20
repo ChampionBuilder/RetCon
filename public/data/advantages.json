@@ -12,7 +12,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 2,
@@ -27,7 +28,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 3,
@@ -42,7 +44,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 4,
@@ -57,7 +60,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 5,
@@ -72,7 +76,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 6,
@@ -87,7 +92,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 7,
@@ -102,7 +108,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 8,
@@ -117,7 +124,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 9,
@@ -132,7 +140,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 10,
@@ -149,7 +158,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 11,
@@ -168,7 +178,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Stun=2",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 12,
@@ -187,7 +198,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 14,
@@ -206,7 +218,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Root=13",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 15,
@@ -223,7 +236,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Stun=2",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 16,
@@ -238,7 +252,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 17,
@@ -253,7 +268,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 18,
@@ -270,7 +286,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 19,
@@ -287,7 +304,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 20,
@@ -302,7 +320,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 21,
@@ -321,7 +340,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 22,
@@ -336,7 +356,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 23,
@@ -353,7 +374,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 24,
@@ -372,7 +394,8 @@
     "damage_values": "95",
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 25,
@@ -389,7 +412,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 26,
@@ -406,7 +430,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 27,
@@ -423,7 +448,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 28,
@@ -440,7 +466,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 29,
@@ -457,7 +484,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 30,
@@ -474,7 +502,8 @@
     "damage_values": null,
     "healing_values": "403",
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 31,
@@ -493,7 +522,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 32,
@@ -510,7 +540,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 33,
@@ -527,13 +558,14 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 34,
     "name": "Bad Wiring",
     "points_cost": 2,
-    "tooltip": "20% chance to Stun targets for 2 sec. Chance is guaranteed against targets affected by Negative Ions.",
+    "tooltip": "20% chance to Stun targets for 2 sec. 100% chance against targets affected by Negative Ions.",
     "apply_tag": [
       "Stun"
     ],
@@ -548,7 +580,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Stun=2",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 35,
@@ -565,7 +598,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 36,
@@ -580,7 +614,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 37,
@@ -601,7 +636,8 @@
     "damage_values": "362",
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 38,
@@ -618,7 +654,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 39,
@@ -635,7 +672,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 40,
@@ -652,7 +690,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 41,
@@ -669,7 +708,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 42,
@@ -686,7 +726,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 43,
@@ -703,7 +744,8 @@
     "damage_values": "420",
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 44,
@@ -718,7 +760,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 45,
@@ -739,7 +782,8 @@
     "damage_values": "72",
     "healing_values": null,
     "control_values": "Stun=1.7",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 46,
@@ -754,7 +798,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 47,
@@ -771,7 +816,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 48,
@@ -791,7 +837,8 @@
     "damage_values": null,
     "healing_values": "105",
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 49,
@@ -809,7 +856,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Stun=1.7",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 50,
@@ -824,7 +872,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 51,
@@ -845,7 +894,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 52,
@@ -864,7 +914,8 @@
     "damage_values": null,
     "healing_values": "194",
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 53,
@@ -881,7 +932,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 54,
@@ -896,7 +948,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 55,
@@ -913,7 +966,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 56,
@@ -930,7 +984,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Stun=2",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 57,
@@ -947,7 +1002,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 58,
@@ -964,7 +1020,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 59,
@@ -981,7 +1038,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 60,
@@ -998,7 +1056,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 61,
@@ -1019,7 +1078,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 62,
@@ -1036,7 +1096,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 64,
@@ -1053,7 +1114,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 65,
@@ -1070,7 +1132,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 66,
@@ -1087,7 +1150,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 67,
@@ -1106,7 +1170,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 68,
@@ -1124,7 +1189,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 69,
@@ -1141,7 +1207,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 70,
@@ -1158,7 +1225,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 71,
@@ -1183,7 +1251,8 @@
     "damage_values": "202",
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 72,
@@ -1200,7 +1269,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 73,
@@ -1219,7 +1289,8 @@
     "damage_values": "21",
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 74,
@@ -1238,7 +1309,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 75,
@@ -1257,7 +1329,8 @@
     "damage_values": null,
     "healing_values": "79",
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 76,
@@ -1272,7 +1345,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 77,
@@ -1289,7 +1363,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 78,
@@ -1306,7 +1381,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 80,
@@ -1323,7 +1399,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 81,
@@ -1340,7 +1417,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 82,
@@ -1357,7 +1435,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 83,
@@ -1372,7 +1451,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 84,
@@ -1392,7 +1472,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Stun=1.7;Paralyze=12",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 85,
@@ -1409,7 +1490,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 86,
@@ -1428,7 +1510,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 87,
@@ -1445,7 +1528,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 88,
@@ -1462,7 +1546,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 89,
@@ -1479,7 +1564,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 90,
@@ -1496,7 +1582,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 91,
@@ -1515,7 +1602,8 @@
     "damage_values": null,
     "healing_values": "258",
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 92,
@@ -1530,7 +1618,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 93,
@@ -1549,7 +1638,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 94,
@@ -1566,7 +1656,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 95,
@@ -1586,7 +1677,8 @@
     "damage_values": null,
     "healing_values": "194",
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 96,
@@ -1603,7 +1695,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 97,
@@ -1618,7 +1711,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 98,
@@ -1636,7 +1730,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Stun=2",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 99,
@@ -1656,7 +1751,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Root=10",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 100,
@@ -1675,7 +1771,8 @@
     "damage_values": null,
     "healing_values": "161",
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 101,
@@ -1692,7 +1789,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 102,
@@ -1709,7 +1807,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 103,
@@ -1726,7 +1825,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 105,
@@ -1746,7 +1846,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Root=16",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 106,
@@ -1761,7 +1862,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 107,
@@ -1778,7 +1880,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 108,
@@ -1795,7 +1898,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 109,
@@ -1812,7 +1916,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Stun=2",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 110,
@@ -1829,7 +1934,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 111,
@@ -1846,7 +1952,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 112,
@@ -1863,7 +1970,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 113,
@@ -1882,7 +1990,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 114,
@@ -1897,7 +2006,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 115,
@@ -1918,7 +2028,8 @@
     "damage_values": "304",
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 116,
@@ -1935,7 +2046,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 117,
@@ -1952,7 +2064,8 @@
     "damage_values": null,
     "healing_values": "232",
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 118,
@@ -1969,7 +2082,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 119,
@@ -1986,7 +2100,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 120,
@@ -2003,7 +2118,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 121,
@@ -2020,7 +2136,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 122,
@@ -2039,7 +2156,8 @@
     "damage_values": null,
     "healing_values": "258",
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 123,
@@ -2054,7 +2172,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 124,
@@ -2071,7 +2190,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 125,
@@ -2088,7 +2208,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 126,
@@ -2103,7 +2224,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 127,
@@ -2120,7 +2242,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 128,
@@ -2137,7 +2260,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 129,
@@ -2154,7 +2278,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 130,
@@ -2171,7 +2296,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 131,
@@ -2188,7 +2314,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 132,
@@ -2207,7 +2334,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 133,
@@ -2222,7 +2350,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 134,
@@ -2237,7 +2366,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 135,
@@ -2254,7 +2384,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 136,
@@ -2273,7 +2404,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 137,
@@ -2294,7 +2426,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Stun=2",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 138,
@@ -2311,7 +2444,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 139,
@@ -2328,7 +2462,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 140,
@@ -2345,7 +2480,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 141,
@@ -2360,7 +2496,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 142,
@@ -2377,7 +2514,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 143,
@@ -2392,7 +2530,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 144,
@@ -2409,7 +2548,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 145,
@@ -2426,7 +2566,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 146,
@@ -2445,7 +2586,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 147,
@@ -2462,7 +2604,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 148,
@@ -2477,7 +2620,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 149,
@@ -2496,7 +2640,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 150,
@@ -2513,7 +2658,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 151,
@@ -2530,7 +2676,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 152,
@@ -2549,7 +2696,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 153,
@@ -2567,7 +2715,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 154,
@@ -2584,7 +2733,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Stun=2",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 155,
@@ -2601,7 +2751,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 156,
@@ -2616,7 +2767,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 157,
@@ -2633,7 +2785,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 158,
@@ -2652,7 +2805,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 159,
@@ -2669,7 +2823,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 160,
@@ -2686,7 +2841,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 161,
@@ -2703,7 +2859,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 162,
@@ -2721,13 +2878,14 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 163,
     "name": "Disruption Module",
     "points_cost": 2,
-    "tooltip": "Adds a 17-50% chance to Stun the target for 2 sec. Targets that are affected by your Disorient effect have a guaranteed chance to be Stunned.",
+    "tooltip": "Adds a 17-50% chance to Stun the target for 2 sec. 100% Chance against targets affected by your Disorient effect.",
     "apply_tag": [
       "Stun"
     ],
@@ -2740,7 +2898,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Stun=2",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 164,
@@ -2757,7 +2916,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 165,
@@ -2775,7 +2935,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 166,
@@ -2790,7 +2951,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 167,
@@ -2807,7 +2969,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 168,
@@ -2822,7 +2985,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 169,
@@ -2839,7 +3003,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 170,
@@ -2858,7 +3023,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 171,
@@ -2875,7 +3041,8 @@
     "damage_values": null,
     "healing_values": "48",
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 172,
@@ -2892,7 +3059,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 173,
@@ -2909,7 +3077,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 174,
@@ -2924,7 +3093,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 175,
@@ -2939,7 +3109,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 176,
@@ -2957,7 +3128,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 177,
@@ -2975,7 +3147,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 178,
@@ -2994,7 +3167,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 179,
@@ -3011,7 +3185,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 180,
@@ -3028,7 +3203,8 @@
     "damage_values": "183",
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 181,
@@ -3045,7 +3221,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 182,
@@ -3062,7 +3239,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 183,
@@ -3077,7 +3255,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 184,
@@ -3096,7 +3275,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Root=13",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 185,
@@ -3113,7 +3293,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 186,
@@ -3130,7 +3311,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 187,
@@ -3145,7 +3327,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 188,
@@ -3164,7 +3347,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 189,
@@ -3181,7 +3365,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 190,
@@ -3200,7 +3385,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Root=16",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 191,
@@ -3217,7 +3403,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 192,
@@ -3232,7 +3419,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 193,
@@ -3251,7 +3439,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 194,
@@ -3268,7 +3457,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Stun=2",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 195,
@@ -3285,7 +3475,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 196,
@@ -3302,7 +3493,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 197,
@@ -3321,7 +3513,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 198,
@@ -3336,7 +3529,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 199,
@@ -3351,7 +3545,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 200,
@@ -3368,7 +3563,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 201,
@@ -3387,7 +3583,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 202,
@@ -3402,7 +3599,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 203,
@@ -3419,7 +3617,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 204,
@@ -3436,7 +3635,8 @@
     "damage_values": "274",
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 205,
@@ -3451,7 +3651,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 206,
@@ -3470,7 +3671,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 207,
@@ -3489,7 +3691,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 208,
@@ -3506,7 +3709,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 209,
@@ -3523,7 +3727,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 210,
@@ -3540,7 +3745,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 211,
@@ -3555,7 +3761,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 212,
@@ -3572,7 +3779,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 213,
@@ -3591,7 +3799,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 214,
@@ -3608,7 +3817,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 215,
@@ -3625,7 +3835,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 216,
@@ -3642,7 +3853,8 @@
     "damage_values": "1273",
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 217,
@@ -3659,7 +3871,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 218,
@@ -3676,7 +3889,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 219,
@@ -3693,7 +3907,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 220,
@@ -3710,7 +3925,8 @@
     "damage_values": null,
     "healing_values": "87",
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 221,
@@ -3727,7 +3943,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 222,
@@ -3744,7 +3961,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 223,
@@ -3759,7 +3977,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 224,
@@ -3774,7 +3993,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 225,
@@ -3791,7 +4011,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 226,
@@ -3810,7 +4031,8 @@
     "damage_values": "247",
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 227,
@@ -3825,7 +4047,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 228,
@@ -3840,7 +4063,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 229,
@@ -3857,7 +4081,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 230,
@@ -3874,7 +4099,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 231,
@@ -3891,7 +4117,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 232,
@@ -3908,7 +4135,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 233,
@@ -3925,7 +4153,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 234,
@@ -3940,7 +4169,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 235,
@@ -3955,7 +4185,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 236,
@@ -3972,7 +4203,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 237,
@@ -3987,7 +4219,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 238,
@@ -4004,7 +4237,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 239,
@@ -4019,7 +4253,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 240,
@@ -4036,7 +4271,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 241,
@@ -4051,7 +4287,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 242,
@@ -4068,7 +4305,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 243,
@@ -4085,7 +4323,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 244,
@@ -4100,7 +4339,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 245,
@@ -4117,7 +4357,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 246,
@@ -4132,7 +4373,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 247,
@@ -4151,7 +4393,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Paralyze=7",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 248,
@@ -4170,7 +4413,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Stun=1.7;Paralyze=12",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 249,
@@ -4187,7 +4431,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 250,
@@ -4202,7 +4447,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 251,
@@ -4219,7 +4465,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 252,
@@ -4236,7 +4483,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 253,
@@ -4251,7 +4499,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 254,
@@ -4270,7 +4519,8 @@
     "damage_values": null,
     "healing_values": "71",
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 255,
@@ -4287,7 +4537,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 256,
@@ -4306,13 +4557,14 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 257,
     "name": "Furor Venenum",
     "points_cost": 2,
-    "tooltip": "20% chance to Infect your target, Stunning them for 2 sec. Chance is guaranteed if the target is Bleeding or Poisoned. Applies 1 stack of Furious to you, and refreshes existing stacks. + Furious gives you +1.5% Critical Chance for 15 sec. This effect stacks up to 3 times. + When taking damage Furious grants you Willpower which gives you +300 Health Points over 3 sec.",
+    "tooltip": "20% chance to Infect your target, Stunning them for 2 sec. 100% chance against target Bleeding or Poisoned. Applies 1 stack of Furious to you, and refreshes existing stacks. + Furious gives you +1.5% Critical Chance for 15 sec. This effect stacks up to 3 times. + When taking damage Furious grants you Willpower which gives you +300 Health Points over 3 sec.",
     "apply_tag": [
       "Infect",
       "Stun",
@@ -4328,7 +4580,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Stun=2",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 258,
@@ -4345,7 +4598,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 259,
@@ -4360,7 +4614,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 260,
@@ -4377,7 +4632,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 261,
@@ -4392,7 +4648,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 262,
@@ -4410,7 +4667,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 263,
@@ -4427,7 +4685,8 @@
     "damage_values": "212",
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 264,
@@ -4444,7 +4703,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 265,
@@ -4461,7 +4721,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 266,
@@ -4478,7 +4739,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 267,
@@ -4497,7 +4759,8 @@
     "damage_values": "30",
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 268,
@@ -4512,7 +4775,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 269,
@@ -4531,7 +4795,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Root=16",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 270,
@@ -4546,7 +4811,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 271,
@@ -4563,7 +4829,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 272,
@@ -4580,7 +4847,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 273,
@@ -4599,7 +4867,8 @@
     "damage_values": null,
     "healing_values": "105",
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 274,
@@ -4616,7 +4885,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 275,
@@ -4633,7 +4903,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 276,
@@ -4650,7 +4921,8 @@
     "damage_values": "164",
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 277,
@@ -4665,7 +4937,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 278,
@@ -4684,7 +4957,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 279,
@@ -4701,7 +4975,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 280,
@@ -4718,7 +4993,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 281,
@@ -4735,7 +5011,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Stun=2",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 282,
@@ -4750,7 +5027,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 283,
@@ -4767,7 +5045,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 284,
@@ -4786,7 +5065,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 285,
@@ -4803,7 +5083,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Stun=1",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 286,
@@ -4818,7 +5099,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 287,
@@ -4835,7 +5117,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Stun=2",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 288,
@@ -4857,7 +5140,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 289,
@@ -4874,7 +5158,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 290,
@@ -4889,7 +5174,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 291,
@@ -4904,7 +5190,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 292,
@@ -4923,7 +5210,8 @@
     "damage_values": null,
     "healing_values": "105",
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 293,
@@ -4941,7 +5229,8 @@
     "damage_values": null,
     "healing_values": "105",
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 294,
@@ -4956,7 +5245,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 295,
@@ -4975,7 +5265,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 296,
@@ -4992,7 +5283,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 297,
@@ -5007,7 +5299,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 298,
@@ -5024,7 +5317,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 299,
@@ -5041,7 +5335,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 300,
@@ -5056,7 +5351,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 301,
@@ -5073,7 +5369,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 302,
@@ -5092,7 +5389,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 303,
@@ -5109,7 +5407,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 304,
@@ -5124,7 +5423,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 305,
@@ -5139,7 +5439,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 306,
@@ -5158,7 +5459,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 307,
@@ -5175,7 +5477,8 @@
     "damage_values": "137",
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 308,
@@ -5190,7 +5493,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 309,
@@ -5209,7 +5513,8 @@
     "damage_values": null,
     "healing_values": "258",
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 310,
@@ -5228,7 +5533,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Root=16",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 311,
@@ -5247,7 +5553,8 @@
     "damage_values": null,
     "healing_values": "52",
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 312,
@@ -5266,7 +5573,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Stun=1.7",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 313,
@@ -5283,7 +5591,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 314,
@@ -5300,7 +5609,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 315,
@@ -5317,7 +5627,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 316,
@@ -5334,7 +5645,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 317,
@@ -5351,7 +5663,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 318,
@@ -5370,7 +5683,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Root=16",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 319,
@@ -5389,7 +5703,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 320,
@@ -5406,7 +5721,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 321,
@@ -5423,7 +5739,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 322,
@@ -5440,7 +5757,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 323,
@@ -5457,7 +5775,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 324,
@@ -5474,7 +5793,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 325,
@@ -5491,7 +5811,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 326,
@@ -5514,7 +5835,8 @@
     "damage_values": "521",
     "healing_values": "1548",
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 327,
@@ -5531,7 +5853,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 328,
@@ -5546,7 +5869,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 329,
@@ -5563,7 +5887,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 330,
@@ -5578,7 +5903,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 331,
@@ -5595,7 +5921,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 332,
@@ -5610,7 +5937,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 333,
@@ -5627,7 +5955,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 334,
@@ -5644,7 +5973,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 335,
@@ -5661,7 +5991,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 336,
@@ -5678,7 +6009,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 337,
@@ -5697,7 +6029,8 @@
     "damage_values": null,
     "healing_values": "56",
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 338,
@@ -5714,7 +6047,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 339,
@@ -5733,7 +6067,8 @@
     "damage_values": null,
     "healing_values": "105",
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 340,
@@ -5754,7 +6089,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 341,
@@ -5771,7 +6107,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 342,
@@ -5791,7 +6128,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 343,
@@ -5808,7 +6146,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 344,
@@ -5827,7 +6166,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 345,
@@ -5842,7 +6182,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 346,
@@ -5859,7 +6200,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 347,
@@ -5876,7 +6218,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 348,
@@ -5895,7 +6238,8 @@
     "damage_values": "127",
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 349,
@@ -5913,7 +6257,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 350,
@@ -5930,7 +6275,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 351,
@@ -5947,7 +6293,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 352,
@@ -5967,7 +6314,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Root=10",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 353,
@@ -5982,7 +6330,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 354,
@@ -5999,7 +6348,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 355,
@@ -6016,7 +6366,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 356,
@@ -6031,7 +6382,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 357,
@@ -6046,7 +6398,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 358,
@@ -6061,7 +6414,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 359,
@@ -6078,7 +6432,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 360,
@@ -6095,7 +6450,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 361,
@@ -6112,7 +6468,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 362,
@@ -6129,7 +6486,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 363,
@@ -6146,7 +6504,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 364,
@@ -6163,7 +6522,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 365,
@@ -6180,7 +6540,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 366,
@@ -6197,7 +6558,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 367,
@@ -6212,7 +6574,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 368,
@@ -6229,7 +6592,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 369,
@@ -6244,7 +6608,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 370,
@@ -6262,7 +6627,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 371,
@@ -6281,7 +6647,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 372,
@@ -6298,7 +6665,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 373,
@@ -6315,7 +6683,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 374,
@@ -6332,7 +6701,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 375,
@@ -6347,7 +6717,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 376,
@@ -6362,7 +6733,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 377,
@@ -6379,7 +6751,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Stun=2",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 378,
@@ -6394,7 +6767,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 379,
@@ -6411,7 +6785,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 380,
@@ -6428,7 +6803,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 382,
@@ -6445,7 +6821,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 383,
@@ -6462,7 +6839,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 384,
@@ -6479,7 +6857,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 385,
@@ -6496,7 +6875,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 386,
@@ -6511,7 +6891,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 387,
@@ -6528,7 +6909,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 388,
@@ -6547,7 +6929,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 389,
@@ -6564,7 +6947,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 390,
@@ -6584,7 +6968,8 @@
     "damage_values": "256",
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 391,
@@ -6601,7 +6986,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 392,
@@ -6620,7 +7006,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 393,
@@ -6637,7 +7024,8 @@
     "damage_values": "320",
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 394,
@@ -6656,7 +7044,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Stun=2",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 395,
@@ -6673,7 +7062,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 396,
@@ -6691,7 +7081,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Stun=1.7",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 397,
@@ -6708,7 +7099,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 398,
@@ -6727,7 +7119,8 @@
     "damage_values": null,
     "healing_values": "71",
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 399,
@@ -6744,7 +7137,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 400,
@@ -6762,7 +7156,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 401,
@@ -6784,7 +7179,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 402,
@@ -6801,7 +7197,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 403,
@@ -6818,7 +7215,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 404,
@@ -6835,7 +7233,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 405,
@@ -6854,7 +7253,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 406,
@@ -6869,7 +7269,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 407,
@@ -6884,7 +7285,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 408,
@@ -6903,7 +7305,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Stun=2",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 409,
@@ -6920,13 +7323,14 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 410,
     "name": "Paralytic Bile",
     "points_cost": 2,
-    "tooltip": "Targets hit with Venemous Breath have a chance to suffer from an Infection that Stuns them for 2 sec. Targets that are Bleeding have a 100% chance to be Infected.",
+    "tooltip": "20% chance to Infect your targets, Stunning them for 2 sec. 100% chance against Bleeding targets.",
     "apply_tag": [
       "Infect",
       "Stun"
@@ -6940,7 +7344,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Stun=2",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 411,
@@ -6957,7 +7362,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 412,
@@ -6974,7 +7380,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 413,
@@ -6989,7 +7396,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 414,
@@ -7006,7 +7414,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 415,
@@ -7025,7 +7434,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 416,
@@ -7042,7 +7452,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 417,
@@ -7059,7 +7470,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 418,
@@ -7080,7 +7492,8 @@
     "damage_values": "22",
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 419,
@@ -7095,7 +7508,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 420,
@@ -7110,7 +7524,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 421,
@@ -7132,7 +7547,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Root=16",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 422,
@@ -7149,7 +7565,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 423,
@@ -7164,7 +7581,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 424,
@@ -7181,7 +7599,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 425,
@@ -7198,7 +7617,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 426,
@@ -7213,7 +7633,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 427,
@@ -7232,7 +7653,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 428,
@@ -7249,7 +7671,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 429,
@@ -7268,7 +7691,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 430,
@@ -7287,7 +7711,8 @@
     "damage_values": null,
     "healing_values": "76",
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 431,
@@ -7304,7 +7729,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 432,
@@ -7321,7 +7747,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 433,
@@ -7338,7 +7765,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 434,
@@ -7357,7 +7785,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 435,
@@ -7375,7 +7804,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 436,
@@ -7392,7 +7822,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 437,
@@ -7407,7 +7838,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 438,
@@ -7424,7 +7856,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 439,
@@ -7444,7 +7877,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Stun=1.7",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 440,
@@ -7461,7 +7895,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 441,
@@ -7478,7 +7913,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 442,
@@ -7495,7 +7931,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 443,
@@ -7513,7 +7950,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 444,
@@ -7532,7 +7970,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 445,
@@ -7547,7 +7986,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 446,
@@ -7565,7 +8005,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 447,
@@ -7588,7 +8029,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 448,
@@ -7608,7 +8050,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 449,
@@ -7627,7 +8070,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 450,
@@ -7644,7 +8088,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 451,
@@ -7661,7 +8106,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 452,
@@ -7678,7 +8124,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 453,
@@ -7693,7 +8140,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 454,
@@ -7708,7 +8156,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 455,
@@ -7727,7 +8176,8 @@
     "damage_values": null,
     "healing_values": "258",
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 456,
@@ -7744,7 +8194,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 457,
@@ -7763,7 +8214,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 458,
@@ -7780,7 +8232,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 459,
@@ -7799,7 +8252,8 @@
     "damage_values": null,
     "healing_values": "71",
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 460,
@@ -7816,7 +8270,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 461,
@@ -7833,7 +8288,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 462,
@@ -7848,7 +8304,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 463,
@@ -7868,7 +8325,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Stun=1.7;Paralyze=12",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 464,
@@ -7883,7 +8341,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 465,
@@ -7900,7 +8359,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 466,
@@ -7915,7 +8375,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 467,
@@ -7932,7 +8393,8 @@
     "damage_values": null,
     "healing_values": "581",
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 468,
@@ -7947,7 +8409,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 469,
@@ -7964,7 +8427,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 470,
@@ -7981,7 +8445,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 471,
@@ -8001,7 +8466,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 472,
@@ -8020,7 +8486,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 473,
@@ -8038,7 +8505,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 474,
@@ -8057,7 +8525,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Root=16",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 475,
@@ -8074,7 +8543,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 476,
@@ -8089,7 +8559,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 477,
@@ -8106,7 +8577,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 478,
@@ -8123,7 +8595,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 479,
@@ -8140,7 +8613,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 480,
@@ -8159,7 +8633,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 481,
@@ -8178,7 +8653,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 482,
@@ -8193,7 +8669,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 483,
@@ -8208,7 +8685,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 484,
@@ -8229,7 +8707,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 485,
@@ -8246,7 +8725,8 @@
     "damage_values": "219",
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 486,
@@ -8263,7 +8743,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 487,
@@ -8280,7 +8761,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 488,
@@ -8299,7 +8781,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Stun=2",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 489,
@@ -8318,7 +8801,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Root=8",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 490,
@@ -8335,7 +8819,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 491,
@@ -8354,7 +8839,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 492,
@@ -8369,7 +8855,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 493,
@@ -8388,7 +8875,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Root=16",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 494,
@@ -8405,7 +8893,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 495,
@@ -8422,7 +8911,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 496,
@@ -8437,7 +8927,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 497,
@@ -8456,7 +8947,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 498,
@@ -8475,7 +8967,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 499,
@@ -8494,7 +8987,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 500,
@@ -8511,7 +9005,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 501,
@@ -8528,7 +9023,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 502,
@@ -8543,7 +9039,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 503,
@@ -8560,7 +9057,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 504,
@@ -8577,7 +9075,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 505,
@@ -8594,7 +9093,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 506,
@@ -8615,7 +9115,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 507,
@@ -8632,7 +9133,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 508,
@@ -8649,7 +9151,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 509,
@@ -8666,7 +9169,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 510,
@@ -8685,7 +9189,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 511,
@@ -8702,7 +9207,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 512,
@@ -8719,7 +9225,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 513,
@@ -8737,7 +9244,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 514,
@@ -8754,7 +9262,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 515,
@@ -8771,7 +9280,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Stun=2",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 516,
@@ -8790,7 +9300,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 517,
@@ -8809,7 +9320,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 518,
@@ -8826,7 +9338,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 519,
@@ -8841,7 +9354,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 520,
@@ -8863,7 +9377,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Root=16",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 521,
@@ -8880,7 +9395,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 522,
@@ -8897,7 +9413,8 @@
     "damage_values": null,
     "healing_values": "17",
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 523,
@@ -8916,7 +9433,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 524,
@@ -8933,7 +9451,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 525,
@@ -8950,7 +9469,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 526,
@@ -8965,7 +9485,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 527,
@@ -8982,7 +9503,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 528,
@@ -9000,7 +9522,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 529,
@@ -9018,7 +9541,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 530,
@@ -9037,7 +9561,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Root=16",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 531,
@@ -9058,7 +9583,8 @@
     "damage_values": null,
     "healing_values": "52",
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 532,
@@ -9079,7 +9605,8 @@
     "damage_values": null,
     "healing_values": "52",
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 533,
@@ -9096,7 +9623,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 534,
@@ -9115,7 +9643,8 @@
     "damage_values": null,
     "healing_values": "71",
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 535,
@@ -9132,7 +9661,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 536,
@@ -9149,7 +9679,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 537,
@@ -9168,7 +9699,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 538,
@@ -9187,7 +9719,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 539,
@@ -9204,7 +9737,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 540,
@@ -9219,7 +9753,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 541,
@@ -9239,7 +9774,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 542,
@@ -9254,7 +9790,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 543,
@@ -9272,7 +9809,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 544,
@@ -9291,7 +9829,8 @@
     "damage_values": null,
     "healing_values": "258",
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 545,
@@ -9308,7 +9847,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 546,
@@ -9325,7 +9865,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 547,
@@ -9342,7 +9883,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 548,
@@ -9357,7 +9899,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 549,
@@ -9376,7 +9919,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 550,
@@ -9393,7 +9937,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 551,
@@ -9412,7 +9957,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 552,
@@ -9429,7 +9975,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 553,
@@ -9446,7 +9993,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Stun=1.7",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 554,
@@ -9463,7 +10011,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 555,
@@ -9480,7 +10029,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 556,
@@ -9497,7 +10047,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 557,
@@ -9514,7 +10065,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 558,
@@ -9531,7 +10083,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 559,
@@ -9548,7 +10101,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 560,
@@ -9567,7 +10121,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 561,
@@ -9584,7 +10139,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 562,
@@ -9601,7 +10157,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 563,
@@ -9622,7 +10179,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 564,
@@ -9641,7 +10199,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 565,
@@ -9658,7 +10217,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 566,
@@ -9673,7 +10233,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 567,
@@ -9690,7 +10251,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 568,
@@ -9709,7 +10271,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 569,
@@ -9724,7 +10287,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 570,
@@ -9741,7 +10305,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 571,
@@ -9760,7 +10325,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Stun=1.7",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 572,
@@ -9775,7 +10341,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 573,
@@ -9790,7 +10357,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 574,
@@ -9805,7 +10373,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 575,
@@ -9822,7 +10391,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 576,
@@ -9837,7 +10407,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 577,
@@ -9856,7 +10427,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 578,
@@ -9873,7 +10445,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 579,
@@ -9891,24 +10464,30 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Root=8",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 580,
     "name": "Thundering Roar",
     "points_cost": 2,
-    "tooltip": "21-50% chance (based on charge time) to apply Disorient. Disorient reduces the target's damage by 10% and movement speed by 50% for 12 sec.",
+    "tooltip": "21-50% chance (based on charge time) to Stun all targets for 2 sec. This chance is guaranteed if the target is affected by Clinging Flames. + Removes all of your Clinging Flames on targets and replaces them with Negative Ions. + Apply Disorient to affected targets. Disorient reduces the target's damage by 10% and movement speed by 50% for 12 sec.",
     "apply_tag": [
-      "Disorient"
+      "Negative Ions",
+      "Disorient",
+      "Stun"
     ],
     "refresh_tag": [],
-    "synergy_tag": [],
+    "synergy_tag": [
+      "Clinging Flames"
+    ],
     "filter_tag": [],
     "damage_type": [],
     "damage_values": null,
     "healing_values": null,
-    "control_values": null,
-    "is_disabled": false
+    "control_values": "Stun=2",
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 581,
@@ -9923,7 +10502,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 582,
@@ -9938,7 +10518,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 583,
@@ -9957,7 +10538,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 584,
@@ -9974,7 +10556,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 585,
@@ -9991,7 +10574,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 586,
@@ -10008,7 +10592,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 587,
@@ -10023,7 +10608,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 588,
@@ -10044,7 +10630,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Stun=2",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 589,
@@ -10061,7 +10648,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 590,
@@ -10076,7 +10664,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 591,
@@ -10096,7 +10685,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 592,
@@ -10118,7 +10708,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 593,
@@ -10133,7 +10724,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 594,
@@ -10148,7 +10740,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 595,
@@ -10163,7 +10756,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 596,
@@ -10180,7 +10774,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 597,
@@ -10195,7 +10790,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 598,
@@ -10210,7 +10806,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 599,
@@ -10227,7 +10824,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 600,
@@ -10244,7 +10842,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 601,
@@ -10259,7 +10858,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 602,
@@ -10278,7 +10878,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 603,
@@ -10297,7 +10898,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Root=16",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 604,
@@ -10314,7 +10916,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 605,
@@ -10331,7 +10934,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 606,
@@ -10348,7 +10952,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 607,
@@ -10366,7 +10971,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 608,
@@ -10383,7 +10989,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 609,
@@ -10400,7 +11007,8 @@
     "damage_values": "72",
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 610,
@@ -10417,7 +11025,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 611,
@@ -10432,7 +11041,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 612,
@@ -10451,7 +11061,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 613,
@@ -10472,7 +11083,8 @@
     "damage_values": "1415",
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 614,
@@ -10489,7 +11101,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 615,
@@ -10504,7 +11117,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 616,
@@ -10522,7 +11136,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 617,
@@ -10541,7 +11156,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 618,
@@ -10558,7 +11174,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 619,
@@ -10577,7 +11194,8 @@
     "damage_values": null,
     "healing_values": "143",
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 620,
@@ -10594,7 +11212,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Stun=2",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 621,
@@ -10609,7 +11228,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 622,
@@ -10626,7 +11246,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 623,
@@ -10646,7 +11267,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 624,
@@ -10663,7 +11285,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 625,
@@ -10680,7 +11303,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 626,
@@ -10695,7 +11319,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 627,
@@ -10714,7 +11339,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Root=16",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 628,
@@ -10731,7 +11357,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 629,
@@ -10748,7 +11375,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 630,
@@ -10768,7 +11396,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 631,
@@ -10785,7 +11414,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 632,
@@ -10805,7 +11435,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 633,
@@ -10822,7 +11453,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 634,
@@ -10837,7 +11469,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 635,
@@ -10856,7 +11489,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 636,
@@ -10873,7 +11507,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Stun=2",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 637,
@@ -10892,7 +11527,8 @@
     "damage_values": null,
     "healing_values": "258",
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 638,
@@ -10909,7 +11545,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 639,
@@ -10924,7 +11561,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 640,
@@ -10941,7 +11579,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 641,
@@ -10958,7 +11597,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 642,
@@ -10976,7 +11616,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 643,
@@ -10998,7 +11639,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 644,
@@ -11015,7 +11657,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 645,
@@ -11035,7 +11678,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 646,
@@ -11052,7 +11696,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 647,
@@ -11073,7 +11718,8 @@
     "damage_values": "270",
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 648,
@@ -11090,7 +11736,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 649,
@@ -11109,7 +11756,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 650,
@@ -11126,7 +11774,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 651,
@@ -11143,7 +11792,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 652,
@@ -11160,7 +11810,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 653,
@@ -11177,7 +11828,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 654,
@@ -11194,7 +11846,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 655,
@@ -11214,7 +11867,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Stun=1.7;Paralyze=12",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 656,
@@ -11229,7 +11883,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 657,
@@ -11246,7 +11901,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 658,
@@ -11261,7 +11917,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 659,
@@ -11276,7 +11933,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 660,
@@ -11293,7 +11951,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 661,
@@ -11310,7 +11969,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 662,
@@ -11327,7 +11987,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 663,
@@ -11346,7 +12007,8 @@
     "damage_values": null,
     "healing_values": "71",
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 664,
@@ -11365,7 +12027,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 665,
@@ -11382,7 +12045,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 666,
@@ -11397,7 +12061,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 667,
@@ -11414,7 +12079,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 668,
@@ -11431,7 +12097,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 669,
@@ -11450,7 +12117,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 670,
@@ -11467,7 +12135,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 671,
@@ -11484,7 +12153,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 672,
@@ -11501,7 +12171,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 673,
@@ -11518,7 +12189,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 674,
@@ -11535,7 +12207,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 675,
@@ -11552,7 +12225,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 676,
@@ -11569,7 +12243,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 677,
@@ -11586,7 +12261,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 678,
@@ -11603,7 +12279,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 679,
@@ -11622,7 +12299,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 680,
@@ -11639,7 +12317,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 681,
@@ -11656,7 +12335,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 682,
@@ -11673,7 +12353,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 683,
@@ -11690,7 +12371,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 684,
@@ -11707,7 +12389,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 685,
@@ -11724,7 +12407,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Stun=2",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 686,
@@ -11743,7 +12427,8 @@
     "damage_values": null,
     "healing_values": "105",
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 687,
@@ -11762,7 +12447,8 @@
     "damage_values": null,
     "healing_values": "56",
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 688,
@@ -11781,7 +12467,8 @@
     "damage_values": null,
     "healing_values": "56",
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 689,
@@ -11800,7 +12487,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 690,
@@ -11819,7 +12507,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 691,
@@ -11836,7 +12525,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 692,
@@ -11853,7 +12543,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 693,
@@ -11872,7 +12563,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 694,
@@ -11889,7 +12581,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 695,
@@ -11906,7 +12599,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 696,
@@ -11923,7 +12617,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 697,
@@ -11940,7 +12635,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 698,
@@ -11961,7 +12657,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 699,
@@ -11980,7 +12677,8 @@
     "damage_values": "97-206",
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 700,
@@ -11997,7 +12695,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 701,
@@ -12014,7 +12713,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 702,
@@ -12031,7 +12731,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 703,
@@ -12051,7 +12752,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": "Root=16",
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 704,
@@ -12068,7 +12770,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 705,
@@ -12091,7 +12794,8 @@
     "damage_values": "576",
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 706,
@@ -12108,7 +12812,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 707,
@@ -12127,7 +12832,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 708,
@@ -12144,7 +12850,8 @@
     "damage_values": "141",
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 709,
@@ -12161,7 +12868,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 710,
@@ -12178,7 +12886,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 711,
@@ -12193,7 +12902,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 712,
@@ -12208,7 +12918,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 713,
@@ -12225,7 +12936,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 714,
@@ -12242,7 +12954,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 715,
@@ -12259,7 +12972,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 716,
@@ -12274,7 +12988,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 717,
@@ -12295,7 +13010,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 718,
@@ -12312,7 +13028,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 719,
@@ -12329,7 +13046,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 720,
@@ -12346,7 +13064,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 721,
@@ -12363,7 +13082,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 722,
@@ -12378,7 +13098,8 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   },
   {
     "advantage_id": 723,
@@ -12395,6 +13116,7 @@
     "damage_values": null,
     "healing_values": null,
     "control_values": null,
-    "is_disabled": false
+    "is_disabled": false,
+    "display_override": null
   }
 ]

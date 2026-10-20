@@ -2713,9 +2713,11 @@ export function PowersPanel({
         showMultiSelectHint && !isPowerVariantsButton
           ? "Hold Shift to select multiple framework."
           : null;
-      const frameworkTooltip = isPowerVariantsButton
-        ? undefined
-        : getFrameworkGlossaryTooltipAttribute(key, title, hint);
+      const frameworkTooltip = getFrameworkGlossaryTooltipAttribute(
+        key,
+        title,
+        isPowerVariantsButton ? powerVariantsUnlockTooltip : hint,
+      );
 
       return (
         <button
@@ -2727,7 +2729,7 @@ export function PowersPanel({
           disabled={isDisabled}
           key={key}
           onClick={onClick}
-          title={isPowerVariantsButton ? powerVariantsUnlockTooltip : title}
+          title={title}
           data-framework-tooltip={frameworkTooltip}
         >
           <SpriteIcon

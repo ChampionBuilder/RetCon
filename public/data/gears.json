@@ -32,6 +32,7 @@
     ],
     "icon_override": "Gear_Justice_Offense",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Defense",
@@ -121,6 +122,7 @@
     ],
     "icon_override": "Gear_Justice_Offense",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Defense",
@@ -206,6 +208,7 @@
     ],
     "icon_override": "Gear_Justice_Offense",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Defense",
@@ -291,6 +294,7 @@
     ],
     "icon_override": "Gear_Justice_Defense",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Defense",
@@ -376,6 +380,7 @@
     ],
     "icon_override": "Gear_Justice_Defense",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Defense",
@@ -461,6 +466,7 @@
     ],
     "icon_override": "Gear_Justice_Defense",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Defense",
@@ -550,6 +556,7 @@
     ],
     "icon_override": "Gear_Justice_Utility",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Defense",
@@ -639,6 +646,7 @@
     ],
     "icon_override": "Gear_Justice_Utility",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Defense",
@@ -728,6 +736,7 @@
     ],
     "icon_override": "Gear_Dist_Offense",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Defense",
@@ -819,6 +828,7 @@
     ],
     "icon_override": "Gear_Dist_Offense",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Defense",
@@ -912,6 +922,7 @@
     ],
     "icon_override": "Gear_Dist_Offense",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Defense",
@@ -1007,6 +1018,7 @@
     ],
     "icon_override": "Gear_Dist_Defense",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Defense",
@@ -1106,6 +1118,7 @@
     ],
     "icon_override": "Gear_Dist_Defense",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Defense",
@@ -1201,6 +1214,7 @@
     ],
     "icon_override": "Gear_Dist_Defense",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Defense",
@@ -1300,6 +1314,7 @@
     ],
     "icon_override": "Gear_Dist_Utility",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Defense",
@@ -1395,6 +1410,7 @@
     ],
     "icon_override": "Gear_Dist_Utility",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Defense",
@@ -1492,6 +1508,7 @@
     ],
     "icon_override": "Gear_Virt_Offense",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Defense",
@@ -1587,6 +1604,7 @@
     ],
     "icon_override": "Gear_Virt_Offense",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Defense",
@@ -1682,6 +1700,7 @@
     ],
     "icon_override": "Gear_Virt_Offense",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Defense",
@@ -1777,6 +1796,7 @@
     ],
     "icon_override": "Gear_Virt_Defense",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Defense",
@@ -1872,6 +1892,7 @@
     ],
     "icon_override": "Gear_Virt_Defense",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Defense",
@@ -1963,6 +1984,7 @@
     ],
     "icon_override": "Gear_Virt_Defense",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Defense",
@@ -2058,6 +2080,7 @@
     ],
     "icon_override": "Gear_Virt_Utility",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Defense",
@@ -2153,6 +2176,7 @@
     ],
     "icon_override": "Gear_Virt_Utility",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Defense",
@@ -2242,6 +2266,7 @@
     ],
     "icon_override": "Gear_Cosmic_Strike",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Super_Stats",
@@ -2321,6 +2346,7 @@
     ],
     "icon_override": "Gear_Cosmic_Ambition",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Super_Stats",
@@ -2400,6 +2426,7 @@
     ],
     "icon_override": "Gear_Cosmic_Presence",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Super_Stats",
@@ -2479,6 +2506,7 @@
     ],
     "icon_override": "Gear_Cosmic_Wonder",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Super_Stats",
@@ -2558,6 +2586,7 @@
     ],
     "icon_override": "Gear_Cosmic_Fang",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Defense",
@@ -2628,6 +2657,7 @@
     ],
     "icon_override": "Gear_Cosmic_Fang",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Defense",
@@ -2698,6 +2728,7 @@
     ],
     "icon_override": "Gear_Cosmic_Talon",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Defense",
@@ -2764,6 +2795,7 @@
     ],
     "icon_override": "Gear_Cosmic_Talon",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Defense",
@@ -2830,6 +2862,7 @@
     ],
     "icon_override": "Gear_Cosmic_Vision",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Defense",
@@ -2904,6 +2937,7 @@
     ],
     "icon_override": "Gear_Cosmic_Vision",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Defense",
@@ -2978,6 +3012,7 @@
     ],
     "icon_override": "Gear_OV_Grond",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Bonus_Damage",
@@ -3047,6 +3082,7 @@
     ],
     "icon_override": "Gear_OV_Gravitar",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Bonus_Damage",
@@ -3116,6 +3152,7 @@
     ],
     "icon_override": "Gear_OV_Medusa",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Bonus_Combo_Damage",
@@ -3185,6 +3222,7 @@
     ],
     "icon_override": "Gear_OV_Slicer",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Bonus_Melee_Damage",
@@ -3254,6 +3292,7 @@
     ],
     "icon_override": "Gear_OV_Sniper",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Bonus_Ranged_Damage",
@@ -3323,6 +3362,7 @@
     ],
     "icon_override": "Gear_OV_Savior",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Threat",
@@ -3392,6 +3432,7 @@
     ],
     "icon_override": "Gear_OV_Defender",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Threat",
@@ -3461,6 +3502,7 @@
     ],
     "icon_override": "Gear_OV_Freedom",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Defense",
@@ -3517,6 +3559,7 @@
     ],
     "icon_override": "Gear_OV_Agility",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Defense",
@@ -3577,6 +3620,7 @@
     ],
     "icon_override": "Gear_OV_Fitness",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Defense",
@@ -3633,6 +3677,7 @@
     ],
     "icon_override": "Gear_OV_Speed",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Defense",
@@ -3693,6 +3738,7 @@
     ],
     "icon_override": "Gear_OV_Efficiency",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Defense",
@@ -3753,6 +3799,7 @@
     ],
     "icon_override": "Gear_OV_Energy",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Defense",
@@ -3817,6 +3864,7 @@
     ],
     "icon_override": "Gear_Rush",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [],
     "bonus_text": [],
     "set_piece_bonuses": [],
@@ -3870,6 +3918,7 @@
     ],
     "icon_override": "Gear_Miasma",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [],
     "bonus_text": [],
     "set_piece_bonuses": [],
@@ -3923,6 +3972,7 @@
     ],
     "icon_override": "Gear_Madness",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [],
     "bonus_text": [],
     "set_piece_bonuses": [],
@@ -3976,6 +4026,7 @@
     ],
     "icon_override": "Gear_Rush",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [],
     "bonus_text": [],
     "set_piece_bonuses": [],
@@ -4029,6 +4080,7 @@
     ],
     "icon_override": "Gear_Miasma",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [],
     "bonus_text": [],
     "set_piece_bonuses": [],
@@ -4082,6 +4134,7 @@
     ],
     "icon_override": "Gear_Madness",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [],
     "bonus_text": [],
     "set_piece_bonuses": [],
@@ -4135,6 +4188,7 @@
     ],
     "icon_override": "Gear_Rush",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [],
     "bonus_text": [],
     "set_piece_bonuses": [],
@@ -4188,6 +4242,7 @@
     ],
     "icon_override": "Gear_Miasma",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [],
     "bonus_text": [],
     "set_piece_bonuses": [],
@@ -4241,6 +4296,7 @@
     ],
     "icon_override": "Gear_Madness",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [],
     "bonus_text": [],
     "set_piece_bonuses": [],
@@ -4294,6 +4350,7 @@
     ],
     "icon_override": "Gear_Determination_Offense_Alt",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Threat",
@@ -4363,6 +4420,7 @@
     ],
     "icon_override": "Gear_Determination_Offense_Alt",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Threat",
@@ -4432,6 +4490,7 @@
     ],
     "icon_override": "Gear_Determination_Offense_Alt",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Threat",
@@ -4501,6 +4560,7 @@
     ],
     "icon_override": "Gear_Determination_Offense",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Defense",
@@ -4567,6 +4627,7 @@
     ],
     "icon_override": "Gear_Determination_Offense",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Defense",
@@ -4637,6 +4698,7 @@
     ],
     "icon_override": "Gear_Determination_Offense",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Defense",
@@ -4707,6 +4769,7 @@
     ],
     "icon_override": "Gear_Determination_Defense",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Defense",
@@ -4777,6 +4840,7 @@
     ],
     "icon_override": "Gear_Determination_Defense",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Defense",
@@ -4839,6 +4903,7 @@
     ],
     "icon_override": "Gear_Determination_Defense",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Defense",
@@ -4905,6 +4970,7 @@
     ],
     "icon_override": "Gear_Determination_Utility",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Defense",
@@ -4975,6 +5041,7 @@
     ],
     "icon_override": "Gear_Determination_Utility",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Defense",
@@ -5045,6 +5112,7 @@
     ],
     "icon_override": "Gear_Determination_Utility",
     "is_disabled": false,
+    "display_override": null,
     "bonuses": [
       {
         "type": "Defense",

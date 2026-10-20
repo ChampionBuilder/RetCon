@@ -19,6 +19,7 @@ import { SpriteIcon } from "@/shared/ui/SpriteIcon";
 import { getStatTooltipAttribute } from "./statTooltips";
 
 type CharacterPanelProps = {
+  isFreeform: boolean;
   superStats: (SuperStat | null)[];
   innateTalent: InnateTalent | null;
   talents: (Talent | null)[];
@@ -42,10 +43,12 @@ type CharacterPanelProps = {
   highlightedDeviceTargetSlot: number | null;
 };
 
-const talentAcquisitionLevels = [6, 9, 12, 15, 18, 21];
+const freeformTalentAcquisitionLevels = [6, 9, 12, 15, 18, 21];
+const archetypeTalentAcquisitionLevels = [7, 12, 15, 20, 25, 30];
 const superStatAcquisitionLevels = [6, 10, 15];
 
 export function CharacterPanel({
+  isFreeform,
   superStats,
   innateTalent,
   talents,
@@ -65,6 +68,9 @@ export function CharacterPanel({
   onToggleCollapse,
   highlightedDeviceTargetSlot,
 }: CharacterPanelProps) {
+  const talentAcquisitionLevels = isFreeform
+    ? freeformTalentAcquisitionLevels
+    : archetypeTalentAcquisitionLevels;
   const selectedStatKeys = getSelectedStatKeys(superStats);
   const canAutofillTalents = superStats.every((stat) => (stat?.id ?? 0) > 0);
   const innateTalentStats = innateTalent

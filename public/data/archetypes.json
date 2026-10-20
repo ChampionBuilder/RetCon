@@ -87,7 +87,7 @@
     },
     {
       "id": 9,
-      "info": "Blood Moon"
+      "info": "Bloodmoon Event"
     },
     {
       "id": 10,
@@ -286,7 +286,8 @@
       "name": "The Scourge",
       "unlockType": [
         2,
-        13
+        13,
+        9
       ],
       "group": 5,
       "superStatList": [

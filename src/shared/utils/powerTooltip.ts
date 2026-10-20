@@ -238,7 +238,22 @@ function getDamageModNames(
   powersById: ReadonlyMap<number, Power> | null | undefined,
   damageModsByFramework: ReadonlyMap<string, string> | null | undefined,
 ) {
-  if (!isPowerVariantDevice(power) || !powersById || !damageModsByFramework) {
+  if (!isPowerVariantDevice(power)) {
+    return [];
+  }
+
+  const damageModOverride = power.display_override
+    ?.split(";")
+    .map((entry) => entry.trim())
+    .find((entry) => /^pvd_damage_mod\s*=/iu.test(entry))
+    ?.replace(/^pvd_damage_mod\s*=\s*/iu, "")
+    .trim();
+
+  if (damageModOverride) {
+    return [damageModOverride];
+  }
+
+  if (!powersById || !damageModsByFramework) {
     return [];
   }
 

@@ -54,7 +54,15 @@ function FrameworkTooltip({ data }: { data: FrameworkGlossaryTooltip }) {
       ))}
 
       {data.hint ? (
-        <div className="framework-tooltip__hint">{data.hint}</div>
+        <div
+          className={
+            data.framework === "Power Variants"
+              ? "framework-tooltip__hint framework-tooltip__hint--important"
+              : "framework-tooltip__hint"
+          }
+        >
+          {data.hint}
+        </div>
       ) : null}
     </div>
   );
