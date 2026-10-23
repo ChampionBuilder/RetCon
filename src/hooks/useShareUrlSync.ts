@@ -1,48 +1,68 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import {
+  loadLastBuild,
+  storeLastBuild,
+} from "@/features/saved-builds/lastBuild";
 
 type UseShareUrlSyncOptions = {
   applyHydratedBuild: (
     serializedData: string,
     buildNameOverride?: string | null,
   ) => boolean;
+  buildName: string;
   dataReady: boolean;
+  serializedBuild: string;
   shareUrl: string;
 };
 
 export function useShareUrlSync({
   applyHydratedBuild,
+  buildName,
   dataReady,
+  serializedBuild,
   shareUrl,
 }: UseShareUrlSyncOptions) {
-  const hasAttemptedUrlHydrationRef = useRef(false);
-  const hasCompletedUrlHydrationRef = useRef(false);
+  const hasAttemptedInitialHydrationRef = useRef(false);
+  const [initialHydrationComplete, setInitialHydrationComplete] =
+    useState(false);
 
   useEffect(() => {
-    if (!dataReady || hasAttemptedUrlHydrationRef.current) {
+    if (!dataReady || hasAttemptedInitialHydrationRef.current) {
       return;
     }
 
-    hasAttemptedUrlHydrationRef.current = true;
+    hasAttemptedInitialHydrationRef.current = true;
     const urlSearchParams = new URLSearchParams(window.location.search);
-    const serializedData = urlSearchParams.get("b");
-    const buildName = urlSearchParams.get("n");
+    const urlSerializedData = urlSearchParams.get("b");
+    const urlBuildName = urlSearchParams.get("n");
+    const storedBuild = urlSerializedData ? null : loadLastBuild();
+    const initialSerializedData = urlSerializedData ?? storedBuild?.data;
+    const initialBuildName = urlSerializedData
+      ? urlBuildName
+      : storedBuild?.name;
 
-    if (serializedData) {
-      window.setTimeout(() => {
-        applyHydratedBuild(serializedData, buildName);
-        hasCompletedUrlHydrationRef.current = true;
-      }, 0);
-      return;
-    }
+    window.setTimeout(() => {
+      if (initialSerializedData) {
+        applyHydratedBuild(initialSerializedData, initialBuildName);
+      }
 
-    hasCompletedUrlHydrationRef.current = true;
+      setInitialHydrationComplete(true);
+    }, 0);
   }, [applyHydratedBuild, dataReady]);
 
   useEffect(() => {
-    if (!hasCompletedUrlHydrationRef.current) {
+    if (!initialHydrationComplete) {
       return;
     }
 
     window.history.replaceState(null, "", shareUrl);
-  }, [shareUrl]);
+  }, [initialHydrationComplete, shareUrl]);
+
+  useEffect(() => {
+    if (!initialHydrationComplete) {
+      return;
+    }
+
+    storeLastBuild(serializedBuild, buildName);
+  }, [buildName, initialHydrationComplete, serializedBuild]);
 }

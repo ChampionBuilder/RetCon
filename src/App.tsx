@@ -1863,7 +1863,9 @@ function App() {
 
   useShareUrlSync({
     applyHydratedBuild,
+    buildName,
     dataReady: dataReady && gearDataReady,
+    serializedBuild,
     shareUrl,
   });
 

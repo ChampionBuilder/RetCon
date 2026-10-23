@@ -1752,7 +1752,8 @@
       "name": "The Witch",
       "unlockType": [
         2,
-        13
+        13,
+        9
       ],
       "group": 6,
       "superStatList": [
