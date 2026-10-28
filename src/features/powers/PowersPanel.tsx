@@ -30,6 +30,7 @@ import {
   type PowerTooltipData,
 } from "@/shared/utils/powerTooltip";
 import {
+  isAltActionClick,
   isForceSlotClick,
   isPinTooltipClick,
 } from "@/shared/utils/mouseShortcuts";
@@ -2349,7 +2350,20 @@ export function PowersPanel({
     hadEnergyBuilderRef.current = hasEnergyBuilder;
   }, [hasEnergyBuilder]);
 
-  function toggleSection(key: string) {
+  function toggleSection(key: string, event?: MouseEvent<HTMLButtonElement>) {
+    if (event && isAltActionClick(event)) {
+      const shouldOpenAll = isSectionClosed(key);
+
+      setHandledEnergyBuilderPanelRequestVersion(
+        energyBuilderPanelRequestVersion,
+      );
+      setReopenedEnergyBuilderSelectionVersion(energyBuilderSelectionVersion);
+      setClosedSections(
+        shouldOpenAll ? [] : powerSections.map((section) => section.key),
+      );
+      return;
+    }
+
     if (key === "-1") {
       if (isSectionClosed(key)) {
         setClosedSections((currentClosedSections) =>
@@ -3332,7 +3346,7 @@ export function PowersPanel({
               <button
                 className="power-tier__toggle"
                 aria-expanded={!isClosed}
-                onClick={() => toggleSection(section.key)}
+                onClick={(event) => toggleSection(section.key, event)}
                 title={unlockTooltip}
               >
                 <span>{section.label}</span>

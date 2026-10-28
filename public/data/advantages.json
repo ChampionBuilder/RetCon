@@ -547,7 +547,7 @@
     "advantage_id": 33,
     "name": "Bad Luck",
     "points_cost": 2,
-    "tooltip": "25-100% chance to apply Jinxed. Jinxed causes -10% all damage strength and -35% Run Speed for 8 sec to affected targets. When Jinxed expires targets are Knocked down.",
+    "tooltip": "25-100% chance to apply Jinxed. Jinxed causes -10% all damage strength and -35% Run Speed for 8 sec to affected targets. When Jinxed expires, targets take 579 Magic Damage and are Knocked Down.",
     "apply_tag": [
       "Jinxed"
     ],
@@ -2593,7 +2593,7 @@
     "advantage_id": 147,
     "name": "Delayed Attack",
     "points_cost": 2,
-    "tooltip": "Applies Jinxed to your target. Jinxed causes -10% all damage strength and -35% Run Speed for 8 sec to affected targets. When Jinxed expires targets are Knocked down.",
+    "tooltip": "Applies Jinxed to your target. Jinxed causes -10% all damage strength and -35% Run Speed for 8 sec to affected targets. When Jinxed expires, targets take 579 Magic Damage and are Knocked Down.",
     "apply_tag": [
       "Jinxed"
     ],
@@ -2812,7 +2812,7 @@
     "advantage_id": 159,
     "name": "Dilemma",
     "points_cost": 2,
-    "tooltip": "Applies Jinxed to targets. Jinxed causes -10% all damage strength and -35% Run Speed for 8 sec to affected targets. When Jinxed expires targets are Knocked down.",
+    "tooltip": "Applies Jinxed to targets. Jinxed causes -10% all damage strength and -35% Run Speed for 8 sec to affected targets. When Jinxed expires, targets take 579 Magic Damage and are Knocked Down.",
     "apply_tag": [
       "Jinxed"
     ],
@@ -5800,7 +5800,7 @@
     "advantage_id": 325,
     "name": "Jinx",
     "points_cost": 2,
-    "tooltip": "Applies Jinxed to your target. Jinxed causes -10% all damage strength and -35% Run Speed for 8 sec to affected targets. When Jinxed expires targets are Knocked down.",
+    "tooltip": "Applies Jinxed to your target. Jinxed causes -10% all damage strength and -35% Run Speed for 8 sec to affected targets. When Jinxed expires, targets take 579 Magic Damage and are Knocked Down.",
     "apply_tag": [
       "Jinxed"
     ],
@@ -6792,7 +6792,7 @@
     "advantage_id": 380,
     "name": "Mystical",
     "points_cost": 2,
-    "tooltip": "Applies Mystified to you. Mystified reduces the cost of your Sorcery, Celestial, Darkness and Infernal powers by 3% for 15 sec. Stacks up to 3 times.",
+    "tooltip": "Applies Mystified to you. Mystified reduces the cost of your Sorcery, Celestial, Darkness and Infernal powers by 3% for 15 sec. Stacks up to 3 times. + Additionally, when you directly damage a target affected by a Curse, heals you for 100 Health Points. This effect can occur once every 1 sec.",
     "apply_tag": [
       "Mystified"
     ],
@@ -12474,7 +12474,7 @@
     "advantage_id": 689,
     "name": "Mystical",
     "points_cost": 2,
-    "tooltip": "20% chance to apply and refresh Mystified on you.  Mystified reduces the cost of your Sorcery, Celestial, Darkness and Infernal powers by 3% for 15 sec. Stack up to 3 times.",
+    "tooltip": "20% chance to apply and refresh Mystified on you.  Mystified reduces the cost of your Sorcery, Celestial, Darkness and Infernal powers by 3% for 15 sec. Stack up to 3 times. + Additionally, when you directly damage a target affected by a Curse, heals you for 100 Health Points. This effect can occur once every 1 sec.",
     "apply_tag": [
       "Mystified"
     ],
@@ -12494,7 +12494,7 @@
     "advantage_id": 690,
     "name": "Mystical",
     "points_cost": 2,
-    "tooltip": "On a full maintain, applies and refreshes Mystified on you.  Mystified reduces the cost of your Sorcery, Celestial, Darkness and Infernal powers by 3% for 15 sec. Stacks up to 3 times.",
+    "tooltip": "On a full maintain, applies and refreshes Mystified on you.  Mystified reduces the cost of your Sorcery, Celestial, Darkness and Infernal powers by 3% for 15 sec. Stacks up to 3 times. + Additionally, when you directly damage a target affected by a Curse, heals you for 100 Health Points. This effect can occur once every 1 sec.",
     "apply_tag": [
       "Mystified"
     ],
@@ -13108,6 +13108,60 @@
     "tooltip": "Knock Back affected targets.",
     "apply_tag": [
       "Knock Back"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [],
+    "damage_values": null,
+    "healing_values": null,
+    "control_values": null,
+    "is_disabled": false,
+    "display_override": null
+  },
+  {
+    "advantage_id": 724,
+    "name": "Demolishing Strikes",
+    "points_cost": 2,
+    "tooltip": "When this combo is completed, it applies Demolish to your primary target. Demolish reduces resistance to Crushing Damage by 18% for 15 sec.",
+    "apply_tag": [
+      "Demolish"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [],
+    "damage_values": null,
+    "healing_values": null,
+    "control_values": null,
+    "is_disabled": false,
+    "display_override": null
+  },
+  {
+    "advantage_id": 725,
+    "name": "Harness Energy",
+    "points_cost": 2,
+    "tooltip": "When this combo is completed, applies a stack of Harness Energy to you. Harness Energy increases your chance to Critically Hit by 5% for 20 sec. All effects expire once you critically hit with an attack.",
+    "apply_tag": [
+      "Harness Energy"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [],
+    "damage_values": null,
+    "healing_values": null,
+    "control_values": null,
+    "is_disabled": false,
+    "display_override": null
+  },
+  {
+    "advantage_id": 726,
+    "name": "Power Strike",
+    "points_cost": 1,
+    "tooltip": "When this combo is completed, Knocks Down your primary target",
+    "apply_tag": [
+      "Knock Down"
     ],
     "refresh_tag": [],
     "synergy_tag": [],

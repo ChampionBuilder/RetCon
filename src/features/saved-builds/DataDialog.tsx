@@ -4,8 +4,10 @@ import { maxBuildNameLength, trimBuildNameForUrl } from "@/constants/buildName";
 import { ModalDialog } from "@/shared/ui";
 import type { SavedBuild } from "@/types/share";
 import { createShareUrl } from "@/utils/buildSerialization";
+import { isAutosaveBuild } from "@/features/saved-builds/savedBuilds";
 
 type DataDialogProps = {
+  autosaveHasContent: boolean;
   currentBuildName: string;
   savedBuilds: SavedBuild[];
   onBuildNameChange: (buildName: string) => void;
@@ -31,6 +33,7 @@ function formatSavedBuildDate(value: string) {
 }
 
 export function DataDialog({
+  autosaveHasContent,
   currentBuildName,
   savedBuilds,
   onBuildNameChange,
@@ -49,7 +52,10 @@ export function DataDialog({
   }
 
   function saveDataFile() {
-    const content = savedBuilds.map(getSavedBuildUrl).join("\n");
+    const exportableBuilds = savedBuilds.filter(
+      (savedBuild) => !isAutosaveBuild(savedBuild),
+    );
+    const content = exportableBuilds.map(getSavedBuildUrl).join("\n");
     const blob = new Blob([`${content}\n`], { type: "text/plain;charset=utf-8" });
     const link = document.createElement("a");
 
@@ -58,8 +64,8 @@ export function DataDialog({
     link.click();
     URL.revokeObjectURL(link.href);
     setDataMessage(
-      `${savedBuilds.length} build URL${
-        savedBuilds.length === 1 ? "" : "s"
+      `${exportableBuilds.length} build URL${
+        exportableBuilds.length === 1 ? "" : "s"
       } saved. Your download should start soon.`,
     );
   }
@@ -113,33 +119,53 @@ export function DataDialog({
             savedBuilds.map((savedBuild) => (
               <article className="data-dialog__item" key={savedBuild.id}>
                 <div className="data-dialog__summary">
-                  <strong>{savedBuild.name || "Unnamed build"}</strong>
+                  <strong>
+                    {isAutosaveBuild(savedBuild)
+                      ? `Autosave${savedBuild.name ? ` — ${savedBuild.name}` : ""}`
+                      : savedBuild.name || "Unnamed build"}
+                  </strong>
                   <span className="data-dialog__saved-date">
                     {formatSavedBuildDate(savedBuild.updatedAt)}
                   </span>
                 </div>
                 <div className="data-dialog__actions">
-                  <button
-                    className="utility-button"
-                    type="button"
-                    onClick={() => onLoadBuild(savedBuild.id)}
+                  <span
+                    className="data-dialog__action-wrapper"
+                    data-text-tooltip={
+                      isAutosaveBuild(savedBuild) && !autosaveHasContent
+                        ? "No autosaved build yet."
+                        : undefined
+                    }
                   >
-                    Load
-                  </button>
-                  <button
-                    className="utility-button"
-                    type="button"
-                    onClick={() => onOverwriteBuild(savedBuild.id)}
-                  >
-                    Overwrite
-                  </button>
-                  <button
-                    className="utility-button data-dialog__delete"
-                    type="button"
-                    onClick={() => onDeleteBuild(savedBuild.id)}
-                  >
-                    Delete
-                  </button>
+                    <button
+                      className="utility-button"
+                      disabled={
+                        isAutosaveBuild(savedBuild) && !autosaveHasContent
+                      }
+                      type="button"
+                      onClick={() => onLoadBuild(savedBuild.id)}
+                    >
+                      Load
+                    </button>
+                  </span>
+                  {!isAutosaveBuild(savedBuild) ? (
+                    <>
+                      <button
+                        className="utility-button"
+                        type="button"
+                        onClick={() => onOverwriteBuild(savedBuild.id)}
+                      >
+                        Overwrite
+                      </button>
+                      <button
+                        className="utility-button data-dialog__delete"
+                        type="button"
+                        onClick={() => onDeleteBuild(savedBuild.id)}
+                      >
+                        Delete
+                      </button>
+                    </>
+                  ) : null}
                 </div>
               </article>
             ))
@@ -150,7 +176,7 @@ export function DataDialog({
           <div className="data-dialog__data-actions">
             <button
               className="utility-button"
-              disabled={savedBuilds.length === 0}
+              disabled={savedBuilds.every(isAutosaveBuild)}
               type="button"
               onClick={saveDataFile}
             >

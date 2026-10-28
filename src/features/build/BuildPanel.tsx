@@ -7,7 +7,10 @@ import type { DialogAnchor } from "@/shared/ui/AnchoredDialog";
 import { getPowerIconName } from "@/shared/utils/icons";
 import { getPowerTooltipText } from "@/shared/utils/powerText";
 import { getPowerTooltipAttribute } from "@/shared/utils/powerTooltip";
-import { isQuickUnslotClick } from "@/shared/utils/mouseShortcuts";
+import {
+  isAltActionClick,
+  isQuickUnslotClick,
+} from "@/shared/utils/mouseShortcuts";
 import {
   getPowerVariantDisplayAdvantages,
   hasPowerVariantParent,
@@ -149,7 +152,19 @@ export function BuildPanel({
   const bodyRef = useRef<HTMLDivElement | null>(null);
   const slotElementsRef = useRef(new Map<number, HTMLDivElement>());
 
-  function toggleSection(sectionKey: string) {
+  function toggleSection(
+    sectionKey: string,
+    event?: MouseEvent<HTMLButtonElement>,
+  ) {
+    if (event && isAltActionClick(event)) {
+      setClosedSections(
+        closedSections.includes(sectionKey)
+          ? []
+          : ["powers", "travel-powers", "power-variants"],
+      );
+      return;
+    }
+
     setClosedSections((currentClosedSections) =>
       currentClosedSections.includes(sectionKey)
         ? currentClosedSections.filter((key) => key !== sectionKey)
@@ -165,7 +180,7 @@ export function BuildPanel({
         aria-expanded={!isClosed}
         className="power-tier__toggle"
         type="button"
-        onClick={() => toggleSection(sectionKey)}
+        onClick={(event) => toggleSection(sectionKey, event)}
       >
         <span>{label}</span>
         <span

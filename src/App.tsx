@@ -112,7 +112,7 @@ type CollapsedWorkspacePanels = Record<WorkspacePanelId, boolean>;
 const collapsedPanelTrackWidth = "var(--collapsed-panel-track-width, 48px)";
 const ultraCompactViewportQuery = "(max-width: 1400px)";
 const collapsedWorkspacePanelsStorageKey = "retcon.workspacePanels.v1";
-const communityReminderStorageKey = "retcon.communityReminder.lastShown.v1";
+const communityReminderStorageKey = "retcon.communityReminder.lastShown.v2";
 const openPanelTracks = {
   build: "minmax(330px, 1fr)",
   character: "var(--character-column-width)",
@@ -798,17 +798,6 @@ function App() {
     };
   }, [camsMenuOpen]);
 
-  const {
-    deleteSavedBuild,
-    getSavedBuildData,
-    importSavedBuildsFromText,
-    overwriteSavedBuild,
-    savedBuilds,
-    saveCurrentBuild,
-  } = useSavedBuilds({
-    buildName,
-    serializedBuild,
-  });
   const {
     archetypeAlternativePowerIdsBySlot,
     archetypeAlternativePowerSlotNumbers,
@@ -1861,12 +1850,23 @@ function App() {
     selectSpecializationTree(slotIndex, treeId, isFreeform);
   }
 
-  useShareUrlSync({
+  const initialBuildHydrationComplete = useShareUrlSync({
     applyHydratedBuild,
-    buildName,
     dataReady: dataReady && gearDataReady,
-    serializedBuild,
     shareUrl,
+  });
+  const {
+    autosaveHasContent,
+    deleteSavedBuild,
+    getSavedBuildData,
+    importSavedBuildsFromText,
+    overwriteSavedBuild,
+    savedBuilds,
+    saveCurrentBuild,
+  } = useSavedBuilds({
+    autosaveEnabled: initialBuildHydrationComplete,
+    buildName,
+    serializedBuild,
   });
 
   return (
@@ -1881,7 +1881,7 @@ function App() {
     >
       <AppHeader
         buildName={buildName}
-        buildResourcesHighlighted={communityReminderDialogOpen}
+        myBuildsHighlighted={communityReminderDialogOpen}
         shareUrl={shareUrl}
         resetSuperStatsDisabled={!isFreeform}
         onBuildNameChange={setBuildName}
@@ -1927,6 +1927,7 @@ function App() {
 
       {dataDialogOpen ? (
         <DataDialog
+          autosaveHasContent={autosaveHasContent}
           currentBuildName={buildName}
           savedBuilds={savedBuilds}
           onBuildNameChange={setBuildName}

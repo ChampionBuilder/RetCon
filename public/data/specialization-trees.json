@@ -1123,7 +1123,7 @@
           "maxPoints": 3,
           "name": "Upper Hand",
           "icon": "/spec-icons/role/warden/Specialization_UpperHand.png",
-          "tip": "Increases Melee damage you deal to targets affected by Demolish, Shredded, Disintegrate, No Quarter, Stress and Stagger by 2/4/6%."
+          "tip": "Increases Melee damage you deal to targets affected by your Resistance Debuffs by 2/4/6%."
         },
         {
           "id": 7,

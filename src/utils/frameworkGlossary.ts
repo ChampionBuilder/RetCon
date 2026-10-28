@@ -60,6 +60,7 @@ const frameworkGlossaries: Record<string, FrameworkGlossaryTooltip> = {
           "Sudden Strike",
           "Dragon Rush",
           "Bountiful Chi Resurgence",
+          "Harness Energy",
         ],
       },
     ],

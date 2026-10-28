@@ -2,7 +2,10 @@ import { useState, type MouseEvent } from "react";
 import type { SuperStat } from "@/types/character";
 import type { GearBuildSlot, GearItem } from "@/types/gear";
 import type { DialogAnchor } from "@/shared/ui/AnchoredDialog";
-import { isQuickUnslotClick } from "@/shared/utils/mouseShortcuts";
+import {
+  isAltActionClick,
+  isQuickUnslotClick,
+} from "@/shared/utils/mouseShortcuts";
 import { SpriteIcon } from "@/shared/ui/SpriteIcon";
 import {
   formatBonusType,
@@ -242,7 +245,19 @@ export function GearPanel({
   const totals = getGearTotals(gearSlots, selectedSuperStats);
   const derivedTotals = getDerivedGearTotals(totals);
 
-  function toggleSection(sectionKey: string) {
+  function toggleSection(
+    sectionKey: string,
+    event?: MouseEvent<HTMLButtonElement>,
+  ) {
+    if (event && isAltActionClick(event)) {
+      setClosedSections(
+        closedSections.includes(sectionKey)
+          ? []
+          : ["primary", "secondary", "totals"],
+      );
+      return;
+    }
+
     setClosedSections((currentClosedSections) =>
       currentClosedSections.includes(sectionKey)
         ? currentClosedSections.filter((key) => key !== sectionKey)
@@ -263,7 +278,7 @@ export function GearPanel({
         className="power-tier__toggle"
         data-text-tooltip={tooltip}
         type="button"
-        onClick={() => toggleSection(sectionKey)}
+        onClick={(event) => toggleSection(sectionKey, event)}
       >
         <span>{label}</span>
         <span

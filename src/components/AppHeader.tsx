@@ -4,7 +4,7 @@ import { publicAssetUrl } from "@/shared/utils/publicAssetUrl";
 
 type AppHeaderProps = {
   buildName: string;
-  buildResourcesHighlighted: boolean;
+  myBuildsHighlighted: boolean;
   shareUrl: string;
   resetSuperStatsDisabled: boolean;
   onBuildNameChange: (name: string) => void;
@@ -30,7 +30,7 @@ type AppHeaderProps = {
 
 export function AppHeader({
   buildName,
-  buildResourcesHighlighted,
+  myBuildsHighlighted,
   shareUrl,
   resetSuperStatsDisabled,
   onBuildNameChange,
@@ -136,7 +136,14 @@ export function AppHeader({
       <div className="app-header__content">
         <div className="app-header__controls">
           <button
-            className="header-action-button"
+            className={[
+              "header-action-button",
+              myBuildsHighlighted
+                ? "header-action-button--reminder-highlighted"
+                : "",
+            ]
+              .filter(Boolean)
+              .join(" ")}
             aria-label="My Builds"
             title="Open your saved builds and manage your collection."
             type="button"
@@ -297,9 +304,6 @@ export function AppHeader({
             className={[
               "header-action-button",
               "build-resources-button",
-              buildResourcesHighlighted
-                ? "build-resources-button--highlighted"
-                : "",
             ]
               .filter(Boolean)
               .join(" ")}

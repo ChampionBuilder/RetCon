@@ -11690,28 +11690,25 @@
   },
   {
     "power_id": 252,
-    "powerset_id": "Technology",
-    "framework_id": "Laser_Sword",
-    "name": "Lightwave",
-    "tier": 2,
-    "power_type": null,
-    "advantages": [
-      1,
-      2,
-      32,
-      292,
-      3,
-      5
-    ],
-    "activation_type": null,
+    "powerset_id": "Device",
+    "framework_id": "Other",
+    "name": "Developer Emergency Kit",
+    "tier": null,
+    "power_type": "BUFF_SELF",
+    "advantages": [],
+    "activation_type": "CLICK",
     "cost": null,
     "activation_time": null,
     "max_duration": null,
     "tick_rate": null,
-    "cooldown": null,
-    "range_tags": [],
-    "tooltip": null,
-    "apply_tag": [],
+    "cooldown": 604800,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "A collection of tools designed to keep an aging system operational. Contains duct tape, coffee, and several unresolved support tickets. + Development Points −3 + Player Satisfaction +0 + Developer Satisfaction +20 + Warning: Does not restore Development Points.",
+    "apply_tag": [
+      "Stress"
+    ],
     "refresh_tag": [],
     "synergy_tag": [],
     "filter_tag": [],
@@ -11721,9 +11718,11 @@
     "control_values": null,
     "scaling_stats": [],
     "power_dependency": [],
-    "source": [],
-    "icon_override": "LaserSword_LightwaveSlash",
-    "is_disabled": true,
+    "source": [
+      "RetCon"
+    ],
+    "icon_override": "Device_StillOnline",
+    "is_disabled": false,
     "display_override": null
   },
   {
@@ -13954,7 +13953,7 @@
     "tick_rate": null,
     "cooldown": null,
     "range_tags": [],
-    "tooltip": "Whenever you apply a Chi Energy effect, you gain 16 Energy every 3 sec for 6 sec. + Chi Energy effects include: Chi Flame, Lithe, Quick Maneuvering, Ebb and Flow, Nimble Movements, Sudden Strike, Dragon Rush and Bountiful Chi Resurgence. + The energy gained scales with your Recovery, and to a lesser degree, your Endurance. + This effect does not stack, but can be refreshed.",
+    "tooltip": "Whenever you apply a Chi Energy effect, you gain 16 Energy every 3 sec for 6 sec. + Chi Energy effects include: Chi Flame, Lithe, Quick Maneuvering, Ebb and Flow, Nimble Movements, Sudden Strike, Dragon Rush, Harness Energy and Bountiful Chi Resurgence. + The energy gained scales with your Recovery, and to a lesser degree, your Endurance. + This effect does not stack, but can be refreshed.",
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [
@@ -14092,7 +14091,7 @@
     "range_tags": [
       "Targets self"
     ],
-    "tooltip": "Gives you a stacking buff that increases your melee damage, as well as your ranged damage to a lesser degree. + You gain a stack each time you apply a Chi Energy effect. + Chi Energy effects include: Chi Flame, Lithe, Quick Maneuvering, Ebb and Flow, Nimble Movements, Sudden Strike, Dragon Rush and Bountiful Chi Resurgence. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 sec, and can only gain 1 stack every 4 sec. - Increases energy costs by 10%.",
+    "tooltip": "Gives you a stacking buff that increases your melee damage, as well as your ranged damage to a lesser degree. + You gain a stack each time you apply a Chi Energy effect. + Chi Energy effects include: Chi Flame, Lithe, Quick Maneuvering, Ebb and Flow, Nimble Movements, Sudden Strike, Dragon Rush, Harness Energy and Bountiful Chi Resurgence. + Each time you gain a stack, existing stacks are refreshed and you gain energy. + Stacks up to 8 times, lasts 20 sec, and can only gain 1 stack every 4 sec. - Increases energy costs by 10%.",
     "apply_tag": [
       "Focus"
     ],
@@ -14152,7 +14151,7 @@
     "damage_type": [
       "Crushing"
     ],
-    "damage_values": "101",
+    "damage_values": "202",
     "healing_values": null,
     "control_values": null,
     "scaling_stats": [],
@@ -22940,7 +22939,7 @@
       "Targets foe",
       "100 feet"
     ],
-    "tooltip": "Deals 196-771 Magic Damage. + 12-50% chance to apply Mystified to you for 15 sec.  Mystified reduces the cost of your Sorcery, Celestial, Darkness and Infernal powers by 3% for 15 sec. Stacks up to 3 times.",
+    "tooltip": "Deals 196-771 Magic Damage. + 12-50% chance to apply Mystified to you for 15 sec.  Mystified reduces the cost of your Sorcery, Celestial, Darkness and Infernal powers by 3% for 15 sec. Stacks up to 3 times. + Additionally, when you directly damage a target affected by a Curse, heals you for 100 Health Points. This effect can occur once every 1 sec.",
     "apply_tag": [
       "Mystified"
     ],
@@ -23886,7 +23885,7 @@
       "Affects foe (5 max)",
       "25 feet Sphere"
     ],
-    "tooltip": "Deals 245 Magic Damage every 1 sec. + If fully maintained, foes within 25ft of you are struck by a magical blast that deals an additional 458 Magic Damage to them and deals 230 Magic Damage to other foes within 10ft of them. + If fully maintained applies Jinxed to foes. Jinxed causes -10% all damage strength and -35% Run Speed for 8 sec to affected targets. When Jinxed expires targets are Knocked down.",
+    "tooltip": "Deals 245 Magic Damage every 1 sec. + If fully maintained, foes within 25ft of you are struck by a magical blast that deals an additional 458 Magic Damage to them and deals 230 Magic Damage to other foes within 10ft of them. + If fully maintained applies Jinxed to foes. Jinxed causes -10% all damage strength and -35% Run Speed for 8 sec to affected targets. When Jinxed expires, targets take 579 Magic Damage and are Knocked Down.",
     "apply_tag": [
       "Jinxed",
       "Knock Down"
@@ -24560,7 +24559,7 @@
       "50 feet",
       "25 feet Sphere"
     ],
-    "tooltip": "Deals 1286 Magic Damage. + Applies Overpower. Overpower reduces resistance to all damage by 20% for 15 sec. + Applies Jinxed to foes. Jinxed causes -10% all damage strength and -35% Run Speed for 8 sec to affected targets. When Jinxed expires targets are Knocked down.",
+    "tooltip": "Deals 1286 Magic Damage. + Applies Overpower. Overpower reduces resistance to all damage by 20% for 15 sec. + Applies Jinxed to foes. Jinxed causes -10% all damage strength and -35% Run Speed for 8 sec to affected targets. When Jinxed expires, targets take 579 Magic Damage and are Knocked Down.",
     "apply_tag": [
       "Overpower",
       "Jinxed",
@@ -36219,7 +36218,7 @@
       "Targets foe",
       "100 feet"
     ],
-    "tooltip": "Deals 365 Crushing Damage to target. + 25% chance to apply Jinxed to foes. Jinxed causes -10% all damage strength and -35% Run Speed for 8 sec to affected targets. When Jinxed expires targets are Knocked down.",
+    "tooltip": "Deals 365 Crushing Damage to target. + 25% chance to apply Jinxed to foes. Jinxed causes -10% all damage strength and -35% Run Speed for 8 sec to affected targets. When Jinxed expires, targets take 579 Magic Damage and are Knocked Down.",
     "apply_tag": [
       "Jinxed",
       "Knock Down"
@@ -45902,6 +45901,348 @@
       "Bloodmoon Event: Vanguard"
     ],
     "icon_override": "Earth_LandSlide",
+    "is_disabled": false,
+    "display_override": null
+  },
+  {
+    "power_id": 1085,
+    "powerset_id": "Martial Arts",
+    "framework_id": "Unarmed",
+    "name": "Rapid Strikes",
+    "tier": 0,
+    "power_type": "MELEE_AOE_DAMAGE",
+    "advantages": [
+      1,
+      2,
+      724,
+      725,
+      427,
+      3,
+      7,
+      5
+    ],
+    "activation_type": "COMBO",
+    "cost": "15-19",
+    "activation_time": "0.3-0.5",
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": null,
+    "range_tags": [
+      "Targets foe (5 max)",
+      "10 feet",
+      "30-90 degree Cone"
+    ],
+    "tooltip": "Deals 154-302 Crushing Damage to the targets. + Last hit applies Sudden Strike for up to 10 sec, increasing the Critical Severity of your next critical hit by 10%. Expires once you get a critical hit.",
+    "apply_tag": [
+      "Sudden Strike"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Crushing"
+    ],
+    "damage_values": "302",
+    "healing_values": null,
+    "control_values": null,
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [],
+    "icon_override": "Unarmed_RapidStrikes",
+    "is_disabled": false,
+    "display_override": null
+  },
+  {
+    "power_id": 1086,
+    "powerset_id": "PVD",
+    "framework_id": "Unarmed",
+    "name": "Enhanced Strikes",
+    "tier": null,
+    "power_type": "MELEE_AOE_DAMAGE",
+    "advantages": [],
+    "activation_type": "COMBO",
+    "cost": "15-19",
+    "activation_time": "0.3-0.5",
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": null,
+    "range_tags": [
+      "Targets foe (5 max)",
+      "10 feet",
+      "30-90 degree Cone"
+    ],
+    "tooltip": "Deals 213 Magic Damage to the targets. + Has 30/30/60% chance to apply Jinxed to affecte targets. + Jinxed causes -10% all damage strength and -35% Run Speed for 8 sec to affected targets. When Jinxed expires, targets take 829 Magic Damage and are Knocked Down. + On last hit, if you own multiple Circle powers, creates one at your location based on your current role. The circle summoned will inherit any advantages and ranks you have purchased. If this effect is used, the cost of this power is increased. + Circle of Arcane Power if you are in Hybrid Role. Role. Circle of Radiant Glory if you are in Support Role. + If you only own one Circle power, creates it at your location regardless of your role.",
+    "apply_tag": [
+      "Jinxed",
+      "Circles"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Magic"
+    ],
+    "damage_values": "302",
+    "healing_values": null,
+    "control_values": null,
+    "scaling_stats": [],
+    "power_dependency": [
+      1085
+    ],
+    "source": [
+      "Bloodmoon Event: Takofanes"
+    ],
+    "icon_override": "PVD_EnhancedStrikes",
+    "is_disabled": false,
+    "display_override": null
+  },
+  {
+    "power_id": 1087,
+    "powerset_id": "PVD",
+    "framework_id": "Unarmed",
+    "name": "Thousand Spells",
+    "tier": null,
+    "power_type": "MELEE_AOE_DAMAGE",
+    "advantages": [],
+    "activation_type": "MAINTAIN",
+    "cost": "20+16",
+    "activation_time": 0.5,
+    "max_duration": 2.5,
+    "tick_rate": 0.5,
+    "cooldown": null,
+    "range_tags": [
+      "Targets foe (5 max)",
+      "10 feet",
+      "120 degree Cone"
+    ],
+    "tooltip": "Deals 117-202 Magic Damage (based on number of targets), every 0.5 sec to targets in front of you. + 10% chance to apply Bane to targets. + Bane can cause the following effects: Bleeding, Chilled, Clinging Flames, Confuse, Deadly Poison, Debilitating Poison, Demolish, Dependency, Disintegrate, Disorient, Fear, Hexed, Plasma Burn, Stagger, Stress.",
+    "apply_tag": [
+      "Bane"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Magic"
+    ],
+    "damage_values": "202",
+    "healing_values": null,
+    "control_values": null,
+    "scaling_stats": [],
+    "power_dependency": [
+      306
+    ],
+    "source": [
+      "Bloodmoon Event: Takofanes"
+    ],
+    "icon_override": "PVD_ThousandSpells",
+    "is_disabled": false,
+    "display_override": null
+  },
+  {
+    "power_id": 1088,
+    "powerset_id": "PVD",
+    "framework_id": "Unarmed",
+    "name": "Arcane Palm Strike",
+    "tier": null,
+    "power_type": "MELEE_AOE_DAMAGE",
+    "advantages": [],
+    "activation_type": "CHARGE",
+    "cost": "34-69",
+    "activation_time": 0.5,
+    "max_duration": 1.5,
+    "tick_rate": null,
+    "cooldown": null,
+    "range_tags": [
+      "Targets foe (5 max)",
+      "25 feet",
+      "4 feet Cylinder"
+    ],
+    "tooltip": "Deals 228-895 Magic Damage. + Has 15-60% chance to Stun your target for 1.7 sec + If you are affected by an Enchantment, fully charging this power applies Hexed to your primary target, reducing their resistance to Magic damage by 18% for 15 sec. Has 30% chance to apply to secondary targets. + If your target is affected by your Hexed, refreshes its duration.",
+    "apply_tag": [
+      "Stun",
+      "Hexed"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [
+      "Enchantment"
+    ],
+    "filter_tag": [],
+    "damage_type": [
+      "Magic"
+    ],
+    "damage_values": "924",
+    "healing_values": null,
+    "control_values": "Stun=1.7",
+    "scaling_stats": [],
+    "power_dependency": [
+      311
+    ],
+    "source": [
+      "Bloodmoon Event: Takofanes"
+    ],
+    "icon_override": "PVD_ArcanePalmStrike",
+    "is_disabled": false,
+    "display_override": null
+  },
+  {
+    "power_id": 1089,
+    "powerset_id": "PVD",
+    "framework_id": "Unarmed",
+    "name": "Sorcerer's Fist",
+    "tier": null,
+    "power_type": "MELEE_DAMAGE",
+    "advantages": [],
+    "activation_type": "CHARGE",
+    "cost": "51-77",
+    "activation_time": 0.67,
+    "max_duration": 0.83,
+    "tick_rate": null,
+    "cooldown": null,
+    "range_tags": [
+      "Targets foe",
+      "10 feet"
+    ],
+    "tooltip": "Deals 450-959 Magic Damage and has 24-53% chance to apply Mystified to you for 15 sec. Mystified reduces the cost of your Mystic powers by 3%. Stacks up to 3 times. + Additionally, when you directly damage a target affected by a Curse while affected by Mystified, heals you for 100 Health. This effect can occur once every 1 sec. +  When you have at least 1 stack of Mystified, and your target is affected by Hexed, this power's base damage is increased by 30%. + When you have at least 2 stacks of Mystified, and if you have Warlock's Blades summoned, fully charging this power increases their duration by 5 sec. This cannot exceed the max duration of the power. + When you are at 3 stacks of Mystified, and if you are affected by a Circle, applies Arcane Knowledge on you for I0 sec, which prevents any debuffs that a circle power may apply to you.",
+    "apply_tag": [
+      "Mystified"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [
+      "Mystified",
+      "Curse",
+      "Hexed",
+      "Circles"
+    ],
+    "filter_tag": [],
+    "damage_type": [
+      "Magic"
+    ],
+    "damage_values": "1046",
+    "healing_values": null,
+    "control_values": null,
+    "scaling_stats": [],
+    "power_dependency": [
+      309
+    ],
+    "source": [
+      "Bloodmoon Event: Takofanes"
+    ],
+    "icon_override": "PVD_SorcererFist",
+    "is_disabled": false,
+    "display_override": null
+  },
+  {
+    "power_id": 1090,
+    "powerset_id": "Travel_Power",
+    "framework_id": "Superspeed",
+    "name": "Shadow Fireball Roll",
+    "tier": null,
+    "power_type": "TRAVEL_POWER",
+    "advantages": [
+      8,
+      9
+    ],
+    "activation_type": "TOGGLE",
+    "cost": null,
+    "activation_time": 1.5,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": 1,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Grants 100% Run Speed while active. Outside of Combat, you build up speed over time. After 4 sec, you gain +85% Run Speed. After 10 sec, you gain an additional +85% Run Speed. While moving quickly, your jump speed is slightly increases and foes are less likely to notice you. While active, you suffer a -9.4% penalty to Power Cost Discount and your Energy Building strength is reduced by 15%.",
+    "apply_tag": [],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [],
+    "damage_values": null,
+    "healing_values": null,
+    "control_values": null,
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Questionite Store (limited)"
+    ],
+    "icon_override": "TravelPower_HyperBall",
+    "is_disabled": false,
+    "display_override": null
+  },
+  {
+    "power_id": 1091,
+    "powerset_id": "Travel_Power",
+    "framework_id": "Superspeed",
+    "name": "Radiant Fireball Roll",
+    "tier": null,
+    "power_type": "TRAVEL_POWER",
+    "advantages": [
+      8,
+      9
+    ],
+    "activation_type": "TOGGLE",
+    "cost": null,
+    "activation_time": 1.5,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": 1,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Grants 100% Run Speed while active. Outside of Combat, you build up speed over time. After 4 sec, you gain +85% Run Speed. After 10 sec, you gain an additional +85% Run Speed. While moving quickly, your jump speed is slightly increases and foes are less likely to notice you. While active, you suffer a -9.4% penalty to Power Cost Discount and your Energy Building strength is reduced by 15%.",
+    "apply_tag": [],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [],
+    "damage_values": null,
+    "healing_values": null,
+    "control_values": null,
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Questionite Store (limited)"
+    ],
+    "icon_override": "TravelPower_HyperBall",
+    "is_disabled": false,
+    "display_override": null
+  },
+  {
+    "power_id": 1092,
+    "powerset_id": "Travel_Power",
+    "framework_id": "Superspeed",
+    "name": "Prismatic Fireball Roll",
+    "tier": null,
+    "power_type": "TRAVEL_POWER",
+    "advantages": [
+      8,
+      9
+    ],
+    "activation_type": "TOGGLE",
+    "cost": null,
+    "activation_time": 1.5,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": 1,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Grants 100% Run Speed while active. Outside of Combat, you build up speed over time. After 4 sec, you gain +85% Run Speed. After 10 sec, you gain an additional +85% Run Speed. While moving quickly, your jump speed is slightly increases and foes are less likely to notice you. While active, you suffer a -9.4% penalty to Power Cost Discount and your Energy Building strength is reduced by 15%.",
+    "apply_tag": [],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [],
+    "damage_values": null,
+    "healing_values": null,
+    "control_values": null,
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Questionite Store (limited)"
+    ],
+    "icon_override": "TravelPower_HyperBall",
     "is_disabled": false,
     "display_override": null
   }

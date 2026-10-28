@@ -21,6 +21,7 @@ const effectGroupAliases: Record<string, string[]> = {
     "Sudden Strike",
     "Dragon Rush",
     "Bountiful Chi Resurgence",
+    "Harness Energy",
   ],
   "curses": [
     "Jinxed",

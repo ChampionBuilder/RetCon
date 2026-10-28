@@ -5249,5 +5249,37 @@
         }
       }
     ]
+  },
+  {
+    "mod_id": 151,
+    "mod_type": "Offense",
+    "name": "Arcane Influence",
+    "mod_bonus": "Armor_Penetration_Sorcery",
+    "rank_5": null,
+    "rank_7": 5,
+    "rank_9": 15,
+    "tooltip": "Armor Reduction Modifcation. This core causes your direct damage Sorcery powers to ignore a portion of an enemy's defenses. The effect of this mod cannot be stacked. + Your direct damage Sorcery  powers ignore up to %rank_value% % of your target's resistance. This effect cannot reduce a target's resistance below 0%.",
+    "stackable": false,
+    "tag": [
+      "Offense"
+    ],
+    "source": [
+      "Bloodmoon Event: Takofanes"
+    ],
+    "icon_override": "Mod_Arcane_Influence",
+    "is_disabled": false,
+    "display_override": null,
+    "mod_types": [
+      "Offense"
+    ],
+    "bonuses": [
+      {
+        "type": "Armor_Penetration_Sorcery",
+        "values_by_rank": {
+          "7": 5,
+          "9": 15
+        }
+      }
+    ]
   }
 ]

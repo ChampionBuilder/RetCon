@@ -22,15 +22,11 @@ export function CommunityReminderDialog({
         <section>
           <h4>NEW FEATURE</h4>
           <p>
-            <strong>
-              Looking for build advice or want to improve your build-making
-              skills?
-            </strong>
+            <strong>Your current build is now automatically saved.</strong>
           </p>
           <p>
-            Explore community guides, ready-to-use builds, and other helpful
-            resources created by experienced players using the highlighted{` `}
-            <strong>Build Resources</strong> button.
+            Your latest work is kept in an Autosave entry, available
+            from the highlighted <strong>My Builds</strong> menu.
           </p>
         </section>
         <section>

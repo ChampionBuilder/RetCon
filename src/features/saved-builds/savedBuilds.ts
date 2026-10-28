@@ -1,6 +1,9 @@
 import type { SavedBuild } from "@/types/share";
 
 const savedBuildsStorageKey = "retcon.savedBuilds.v1";
+const legacyLastBuildStorageKey = "retcon.lastBuild.v1";
+
+export const autosaveBuildId = "autosave";
 
 function isSavedBuild(value: unknown): value is SavedBuild {
   if (!value || typeof value !== "object") {
@@ -33,6 +36,42 @@ export function loadSavedBuilds() {
   } catch {
     return [];
   }
+}
+
+export function loadLegacyLastBuild() {
+  try {
+    const rawValue = window.localStorage.getItem(legacyLastBuildStorageKey);
+
+    if (!rawValue) {
+      return null;
+    }
+
+    const parsedValue = JSON.parse(rawValue) as unknown;
+
+    if (!parsedValue || typeof parsedValue !== "object") {
+      return null;
+    }
+
+    const build = parsedValue as Record<string, unknown>;
+
+    return typeof build.data === "string" && typeof build.name === "string"
+      ? { data: build.data, name: build.name }
+      : null;
+  } catch {
+    return null;
+  }
+}
+
+export function clearLegacyLastBuild() {
+  try {
+    window.localStorage.removeItem(legacyLastBuildStorageKey);
+  } catch {
+    // Ignore browsers that block localStorage access.
+  }
+}
+
+export function isAutosaveBuild(savedBuild: SavedBuild) {
+  return savedBuild.id === autosaveBuildId;
 }
 
 export function storeSavedBuilds(savedBuilds: SavedBuild[]) {

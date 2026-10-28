@@ -1,10 +1,11 @@
-import { useId, useState } from "react";
+import { useId, useState, type MouseEvent } from "react";
 import type {
   Archetype,
   ArchetypeGroup,
   ArchetypeUnlock,
 } from "@/types/character";
 import { AnchoredSelectionDialog, type DialogAnchor } from "@/shared/ui";
+import { isAltActionClick } from "@/shared/utils/mouseShortcuts";
 import { SpriteIcon } from "@/shared/ui/SpriteIcon";
 
 type ArchetypeSelectionDialogProps = {
@@ -97,6 +98,32 @@ export function ArchetypeSelectionDialog({
     ? getUnlockText(focusedArchetype, unlocks)
     : null;
 
+  function toggleRoleSection(
+    roleId: number,
+    event: MouseEvent<HTMLButtonElement>,
+  ) {
+    if (isAltActionClick(event)) {
+      setClosedRoleIds(
+        closedRoleIds.has(roleId)
+          ? new Set()
+          : new Set(archetypesByRole.keys()),
+      );
+      return;
+    }
+
+    setClosedRoleIds((previous) => {
+      const next = new Set(previous);
+
+      if (next.has(roleId)) {
+        next.delete(roleId);
+      } else {
+        next.add(roleId);
+      }
+
+      return next;
+    });
+  }
+
   function renderArchetypeChoice(archetype: Archetype) {
     const group = groups.find(
       (candidateGroup) => candidateGroup.id === archetype.group,
@@ -157,19 +184,7 @@ export function ArchetypeSelectionDialog({
                   aria-controls={contentId}
                   aria-expanded={!isClosed}
                   type="button"
-                  onClick={() => {
-                    setClosedRoleIds((previous) => {
-                      const next = new Set(previous);
-
-                      if (next.has(roleId)) {
-                        next.delete(roleId);
-                      } else {
-                        next.add(roleId);
-                      }
-
-                      return next;
-                    });
-                  }}
+                  onClick={(event) => toggleRoleSection(roleId, event)}
                 >
                   <span>{group?.name ?? "Other"}</span>
                   <span

@@ -6,7 +6,7 @@ type MouseShortcutEvent = {
   getModifierState: (key: "AltGraph") => boolean;
 };
 
-export function isQuickUnslotClick(event: MouseShortcutEvent) {
+export function isAltActionClick(event: MouseShortcutEvent) {
   const isAltGraphClick =
     event.getModifierState("AltGraph") || (event.altKey && event.ctrlKey);
 
@@ -16,6 +16,10 @@ export function isQuickUnslotClick(event: MouseShortcutEvent) {
     !event.shiftKey &&
     (isAltGraphClick || !event.ctrlKey)
   );
+}
+
+export function isQuickUnslotClick(event: MouseShortcutEvent) {
+  return isAltActionClick(event);
 }
 
 export function isForceSlotClick(event: MouseShortcutEvent) {
