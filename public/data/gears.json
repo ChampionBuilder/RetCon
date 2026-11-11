@@ -3846,7 +3846,7 @@
     "gear_type": "Offense",
     "name": "Eternal Rush",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Defense=4.7",
     "set_tooltip": null,
     "set_bonus": "3=Max_HP=1000;Super_Stats=50;Reduces the cooldown on your Ultimate power by 2 sec when you fully Charge a power. Can be used once every 5 sec.",
     "set_piece_bonus": null,
@@ -3865,7 +3865,12 @@
     "icon_override": "Gear_Rush",
     "is_disabled": false,
     "display_override": null,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 4.7
+      }
+    ],
     "bonus_text": [],
     "set_piece_bonuses": [],
     "set_piece_bonus_text": [],
@@ -3900,7 +3905,7 @@
     "gear_type": "Defense",
     "name": "Eternal Miasma",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Defense=4.7",
     "set_tooltip": null,
     "set_bonus": "3=Max_HP=1000;Super_Stats=50;Reduces the cooldown on your Ultimate power by 2 sec when you fully Charge a power. Can be used once every 5 sec.",
     "set_piece_bonus": null,
@@ -3919,7 +3924,12 @@
     "icon_override": "Gear_Miasma",
     "is_disabled": false,
     "display_override": null,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 4.7
+      }
+    ],
     "bonus_text": [],
     "set_piece_bonuses": [],
     "set_piece_bonus_text": [],
@@ -3954,7 +3964,7 @@
     "gear_type": "Utility",
     "name": "Eternal Madness",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Defense=4.7",
     "set_tooltip": null,
     "set_bonus": "3=Max_HP=1000;Super_Stats=50;Reduces the cooldown on your Ultimate power by 2 sec when you fully Charge a power. Can be used once every 5 sec.",
     "set_piece_bonus": null,
@@ -3973,7 +3983,12 @@
     "icon_override": "Gear_Madness",
     "is_disabled": false,
     "display_override": null,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 4.7
+      }
+    ],
     "bonus_text": [],
     "set_piece_bonuses": [],
     "set_piece_bonus_text": [],
@@ -4008,7 +4023,7 @@
     "gear_type": "Offense",
     "name": "Endless Rush",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Defense=4.7",
     "set_tooltip": null,
     "set_bonus": "3=Max_HP=1000;Super_Stats=50;Reduces the cooldown on your Ultimate power by 2 sec when you complete a Combo power. Can be used once every 5 sec.",
     "set_piece_bonus": null,
@@ -4027,7 +4042,12 @@
     "icon_override": "Gear_Rush",
     "is_disabled": false,
     "display_override": null,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 4.7
+      }
+    ],
     "bonus_text": [],
     "set_piece_bonuses": [],
     "set_piece_bonus_text": [],
@@ -4062,7 +4082,7 @@
     "gear_type": "Defense",
     "name": "Endless Miasma",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Defense=4.7",
     "set_tooltip": null,
     "set_bonus": "3=Max_HP=1000;Super_Stats=50;Reduces the cooldown on your Ultimate power by 2 sec when you complete a Combo power. Can be used once every 5 sec.",
     "set_piece_bonus": null,
@@ -4081,7 +4101,12 @@
     "icon_override": "Gear_Miasma",
     "is_disabled": false,
     "display_override": null,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 4.7
+      }
+    ],
     "bonus_text": [],
     "set_piece_bonuses": [],
     "set_piece_bonus_text": [],
@@ -4116,7 +4141,7 @@
     "gear_type": "Utility",
     "name": "Endless Madness",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Defense=4.7",
     "set_tooltip": null,
     "set_bonus": "3=Max_HP=1000;Super_Stats=50;Reduces the cooldown on your Ultimate power by 2 sec when you complete a Combo power. Can be used once every 5 sec.",
     "set_piece_bonus": null,
@@ -4135,7 +4160,12 @@
     "icon_override": "Gear_Madness",
     "is_disabled": false,
     "display_override": null,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 4.7
+      }
+    ],
     "bonus_text": [],
     "set_piece_bonuses": [],
     "set_piece_bonus_text": [],
@@ -4170,7 +4200,7 @@
     "gear_type": "Offense",
     "name": "Nightmare Rush",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Defense=4.7",
     "set_tooltip": null,
     "set_bonus": "3=Max_HP=1000;Super_Stats=50;Reduces the cooldown on your Ultimate power by 2 sec when you fully Maintain a power. Can be used once every 5 sec.",
     "set_piece_bonus": null,
@@ -4189,7 +4219,12 @@
     "icon_override": "Gear_Rush",
     "is_disabled": false,
     "display_override": null,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 4.7
+      }
+    ],
     "bonus_text": [],
     "set_piece_bonuses": [],
     "set_piece_bonus_text": [],
@@ -4224,7 +4259,7 @@
     "gear_type": "Defense",
     "name": "Nightmare Miasma",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Defense=4.7",
     "set_tooltip": null,
     "set_bonus": "3=Max_HP=1000;Super_Stats=50;Reduces the cooldown on your Ultimate power by 2 sec when you fully Maintain a power. Can be used once every 5 sec.",
     "set_piece_bonus": null,
@@ -4243,7 +4278,12 @@
     "icon_override": "Gear_Miasma",
     "is_disabled": false,
     "display_override": null,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 4.7
+      }
+    ],
     "bonus_text": [],
     "set_piece_bonuses": [],
     "set_piece_bonus_text": [],
@@ -4278,7 +4318,7 @@
     "gear_type": "Utility",
     "name": "Nightmare Madness",
     "gear_tooltip": null,
-    "gear_bonus": null,
+    "gear_bonus": "Defense=4.7",
     "set_tooltip": null,
     "set_bonus": "3=Max_HP=1000;Super_Stats=50;Reduces the cooldown on your Ultimate power by 2 sec when you fully Maintain a power. Can be used once every 5 sec.",
     "set_piece_bonus": null,
@@ -4297,7 +4337,12 @@
     "icon_override": "Gear_Madness",
     "is_disabled": false,
     "display_override": null,
-    "bonuses": [],
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 4.7
+      }
+    ],
     "bonus_text": [],
     "set_piece_bonuses": [],
     "set_piece_bonus_text": [],
@@ -5150,6 +5195,112 @@
         "bonuses": [
           {
             "type": "All_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      }
+    ],
+    "mod_slots": [
+      [
+        "Enhancement"
+      ]
+    ]
+  },
+  {
+    "gear_id": 69,
+    "gear_set": "Onslaught",
+    "gear_slot": "Secondary",
+    "gear_type": "Defense",
+    "name": "Onslaught Tights of Ingenuity",
+    "gear_tooltip": null,
+    "gear_bonus": "Defense=14",
+    "set_tooltip": null,
+    "set_bonus": "2=Super_Stats=10",
+    "set_piece_bonus": null,
+    "override_set_bonus": false,
+    "mod_slot_1": [
+      "Armoring"
+    ],
+    "mod_slot_2": [],
+    "mod_slot_3": [],
+    "mod_slot_4": [],
+    "max_rank": 9,
+    "tag": [],
+    "source": [
+      "OV Store"
+    ],
+    "icon_override": "Gear_OV_Ingenuity_Tight",
+    "is_disabled": false,
+    "display_override": null,
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 14
+      }
+    ],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
+            "value": 10
+          }
+        ],
+        "text": []
+      }
+    ],
+    "mod_slots": [
+      [
+        "Armoring"
+      ]
+    ]
+  },
+  {
+    "gear_id": 70,
+    "gear_set": "Onslaught",
+    "gear_slot": "Secondary",
+    "gear_type": "Utility",
+    "name": "Onslaught Mask of Ingenuity",
+    "gear_tooltip": null,
+    "gear_bonus": "Defense=14",
+    "set_tooltip": null,
+    "set_bonus": "2=Super_Stats=10",
+    "set_piece_bonus": null,
+    "override_set_bonus": false,
+    "mod_slot_1": [
+      "Enhancement"
+    ],
+    "mod_slot_2": [],
+    "mod_slot_3": [],
+    "mod_slot_4": [],
+    "max_rank": 9,
+    "tag": [],
+    "source": [
+      "OV Store"
+    ],
+    "icon_override": "Gear_OV_Ingenuity_Mask",
+    "is_disabled": false,
+    "display_override": null,
+    "bonuses": [
+      {
+        "type": "Defense",
+        "value": 14
+      }
+    ],
+    "bonus_text": [],
+    "set_piece_bonuses": [],
+    "set_piece_bonus_text": [],
+    "set_bonuses": [
+      {
+        "pieces": 2,
+        "bonuses": [
+          {
+            "type": "Super_Stats",
             "value": 10
           }
         ],

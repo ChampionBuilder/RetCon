@@ -9867,7 +9867,7 @@
     "power_id": 1055,
     "powerset_id": "Technology",
     "framework_id": "Munitions",
-    "name": "Gatling Arms",
+    "name": "Gatling Arm",
     "tier": 3,
     "power_type": "RANGED_DAMAGE",
     "advantages": [
@@ -14133,7 +14133,7 @@
     "activation_type": "MAINTAIN",
     "cost": "14+15",
     "activation_time": 0.5,
-    "max_duration": 2.5,
+    "max_duration": 3,
     "tick_rate": 0.5,
     "cooldown": null,
     "range_tags": [
@@ -14757,7 +14757,7 @@
     "range_tags": [
       "Targets self"
     ],
-    "tooltip": "While blocking, grants 250/300/360% resistance to all damage. + Increases your resistance to Holds and Knocks, and reduces your movement speed. + Gives you energy when struck by an attack while blocking. This amount scales with your Recovery and the amount of damage you take. + For up to 4 sec after you begin blocking, if you are attacked from more than loft away, you will return a portion of one incoming attack to the attacker. If you are attacked within 10ft, you will return a portion of one incoming attack to up to 5 targets within 10ft. This effect can only be activated once every 5 sec.",
+    "tooltip": "While blocking, grants 250/300/360% resistance to all damage. + Increases your resistance to Holds and Knocks, and reduces your movement speed. + Gives you energy when struck by an attack while blocking. This amount scales with your Recovery and the amount of damage you take. + For up to 4 sec after you begin blocking, if you are attacked from more than 10ft away, you will return a portion of one incoming attack to the attacker. If you are attacked within 10ft, you will return a portion of one incoming attack to up to 5 targets within 10ft. This effect can only be activated once every 5 sec.",
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -19484,7 +19484,7 @@
       "10 feet",
       "180 degree Cone"
     ],
-    "tooltip": "Deals 234-424 Crushing Damage to all targets. + Each hit grants you a shield, absorbing up to 375-525 damage for 3 sec. The shields can stack together. + The last hit Knocks Down all targets, or if the primary target is affected by a Hold effect or Hold resistance, the primary target is Knocked Up instead.",
+    "tooltip": "Deals 234-424 Crushing Damage to all targets. + The last hit Knocks Down all targets. If the primary target is affected by a Hold effect or Hold resistance, the primary target is Knocked Up instead.",
     "apply_tag": [
       "Knock Down",
       "Knock Up",
@@ -22939,7 +22939,7 @@
       "Targets foe",
       "100 feet"
     ],
-    "tooltip": "Deals 196-771 Magic Damage. + 12-50% chance to apply Mystified to you for 15 sec.  Mystified reduces the cost of your Sorcery, Celestial, Darkness and Infernal powers by 3% for 15 sec. Stacks up to 3 times. + Additionally, when you directly damage a target affected by a Curse, heals you for 100 Health Points. This effect can occur once every 1 sec.",
+    "tooltip": "Deals 196-771 Magic Damage. + 25-100% chance to apply Mystified to you for 15 sec.  Mystified reduces the cost of your Sorcery, Celestial, Darkness and Infernal powers by 3% for 15 sec. Stacks up to 3 times. + Additionally, when you directly damage a target affected by a Curse, heals you for 100 Health Points. This effect can occur once every 1 sec.",
     "apply_tag": [
       "Mystified"
     ],
@@ -23686,7 +23686,7 @@
     "range_tags": [
       "Targets self"
     ],
-    "tooltip": "Summons a Circle of Arcane Power at your location. + While standing in the Circle of Arcane Power you gain Energy every 1 sec and you have reduced Energy Decay. + Energy Unlocks will not give you any energy while standing in the Circle of Arcane Power. + This Circle will persist for up to 2 sec while you are not standing in it. + Only one Circle can be active at a time.",
+    "tooltip": "Summons a Circle of Arcane Power at your location. + While standing in the Circle of Arcane Power you gain +12 Energy every 1 sec and you have -100% Energy Decay. + Energy Unlocks will not give you any energy while standing in the Circle of Arcane Power. + This Circle will persist for up to 2 sec while you are not standing in it. + Only one Circle can be active at a time.",
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -23723,7 +23723,7 @@
     "range_tags": [
       "Targets self"
     ],
-    "tooltip": "Summons a Circle of Ebon Wrath at your location. + While standing in the Circle of Ebon Wrath you gain damage strength, have reduced Threat Generation and Perception buff. + Healing effects on you are reduced by 100%. Any foes that attack you or comes near the Circle of Ebon Wrath will be Feared causing them deal 10% less damage for 12 sec. + This Circle will persist for up to 2 sec while you are not standing in it. + Only one Circle can be active at a time.",
+    "tooltip": "Summons a Circle of Ebon Wrath at your location. + While standing in the Circle of Ebon Wrath you gain 20% all damage strength an +83% Perception buff. + You also gain -8,3% Threat Generation. If you're in Tank role, you instead gain +8,3% Threat generation, + Healing effects on you are reduced by 100%. Any foes that attack you or comes near the Circle of Ebon Wrath will be Feared causing them deal 10% less damage for 12 sec. + This Circle will persist for up to 2 sec while you are not standing in it. + Only one Circle can be active at a time.",
     "apply_tag": [
       "Perception"
     ],
@@ -23762,7 +23762,7 @@
     "range_tags": [
       "Targets self"
     ],
-    "tooltip": "Summons a Circle of Primal Dominion at your location. + You gain resistance to Knock effects, increased resistance to all damage and heal you for 67 Health Points every 1 sec. + You have reduced Threat Generation. + If you are in the Tank role, you instead have increased Threat Generation. + Your power costs are increased by 10% and the recharge time on your powers are increased by 20%. + This Circle will persist for up to 2 sec while you are not standing in it. + Only one Circle can be active at a time.",
+    "tooltip": "Summons a Circle of Primal Dominion at your location. + You gain resistance to Knock effects, increased resistance to all damage and heal you for 67 Health Points every 1 sec. + You also gain -8,3% Threat Generation. If you're in Tank role, you instead gain +8,3% Threat generation + Your power costs are increased by 10% and the recharge time on your powers are increased by 20%. + This Circle will persist for up to 2 sec while you are not standing in it. + Only one Circle can be active at a time.",
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -25832,11 +25832,15 @@
       "Targets foe",
       "100 feet"
     ],
-    "tooltip": "Deals 176-690 Toxic Damage. + 25-100% chance to apply Deadly Poison to your target. + Deadly Poison deals 31 Toxic Damage every 1 sec for 16 sec and stacks up to 5 times.",
+    "tooltip": "Deals 176-690 Toxic Damage. + 25-100% chance to apply Deadly Poison to your target. + Deadly Poison deals 31 Toxic Damage every 1 sec for 16 sec and stacks up to 5 times. + Refreshes the duration of all your Poisons effects.",
     "apply_tag": [
       "Deadly Poison"
     ],
-    "refresh_tag": [],
+    "refresh_tag": [
+      "Deadly Poison",
+      "Debilitating Poison",
+      "Noxious Poison"
+    ],
     "synergy_tag": [],
     "filter_tag": [],
     "damage_type": [
@@ -45637,7 +45641,8 @@
     "refresh_tag": [],
     "synergy_tag": [],
     "filter_tag": [
-      "Passive Heal"
+      "Passive Heal",
+      "Crowd Control"
     ],
     "damage_type": [
       "Magic"
@@ -46007,7 +46012,7 @@
     "activation_type": "MAINTAIN",
     "cost": "20+16",
     "activation_time": 0.5,
-    "max_duration": 2.5,
+    "max_duration": 3,
     "tick_rate": 0.5,
     "cooldown": null,
     "range_tags": [
@@ -46015,7 +46020,7 @@
       "10 feet",
       "120 degree Cone"
     ],
-    "tooltip": "Deals 117-202 Magic Damage (based on number of targets), every 0.5 sec to targets in front of you. + 10% chance to apply Bane to targets. + Bane can cause the following effects: Bleeding, Chilled, Clinging Flames, Confuse, Deadly Poison, Debilitating Poison, Demolish, Dependency, Disintegrate, Disorient, Fear, Hexed, Plasma Burn, Stagger, Stress.",
+    "tooltip": "Deals 117-202 Magic Damage (based on number of targets), every 0.5 sec to targets in front of you. + 10% chance each hit to apply Bane to targets.  If you fully maintain this power, 60% chance to apply the effect. + Bane can cause the following effects: Bleeding, Chilled, Clinging Flames, Confuse, Deadly Poison, Debilitating Poison, Demolish, Dependency, Disintegrate, Disorient, Fear, Hexed, Plasma Burn, Stagger, Stress.",
     "apply_tag": [
       "Bane"
     ],
@@ -46103,7 +46108,7 @@
       "Targets foe",
       "10 feet"
     ],
-    "tooltip": "Deals 450-959 Magic Damage and has 24-53% chance to apply Mystified to you for 15 sec. Mystified reduces the cost of your Mystic powers by 3%. Stacks up to 3 times. + Additionally, when you directly damage a target affected by a Curse while affected by Mystified, heals you for 100 Health. This effect can occur once every 1 sec. +  When you have at least 1 stack of Mystified, and your target is affected by Hexed, this power's base damage is increased by 30%. + When you have at least 2 stacks of Mystified, and if you have Warlock's Blades summoned, fully charging this power increases their duration by 5 sec. This cannot exceed the max duration of the power. + When you are at 3 stacks of Mystified, and if you are affected by a Circle, applies Arcane Knowledge on you for I0 sec, which prevents any debuffs that a circle power may apply to you.",
+    "tooltip": "Deals 450-959 Magic Damage and has 24-53% chance to apply Mystified to you for 15 sec. Mystified reduces the cost of your Mystic powers by 3%. Stacks up to 3 times. + Additionally, when you directly damage a target affected by a Curse while affected by Mystified, heals you for 100 Health. This effect can occur once every 1 sec. +  When you have at least 1 stack of Mystified, and your target is affected by Hexed, this power's base damage is increased by 30%. + When you have at least 2 stacks of Mystified, and if you have Warlock's Blades summoned, fully charging this power increases their duration by 10 sec. This cannot exceed the max duration of the power. + When you are at 3 stacks of Mystified, and if you are affected by a Circle, applies Arcane Knowledge on you for 15 sec, which prevents any debuffs that a circle power may apply to you.",
     "apply_tag": [
       "Mystified"
     ],
@@ -46164,7 +46169,7 @@
     "scaling_stats": [],
     "power_dependency": [],
     "source": [
-      "Questionite Store (limited)"
+      "Z Store (Limited)"
     ],
     "icon_override": "TravelPower_HyperBall",
     "is_disabled": false,
@@ -46202,7 +46207,7 @@
     "scaling_stats": [],
     "power_dependency": [],
     "source": [
-      "Questionite Store (limited)"
+      "Z Store (Limited)"
     ],
     "icon_override": "TravelPower_HyperBall",
     "is_disabled": false,
@@ -46240,9 +46245,159 @@
     "scaling_stats": [],
     "power_dependency": [],
     "source": [
-      "Questionite Store (limited)"
+      "Z Store (Limited)"
     ],
     "icon_override": "TravelPower_HyperBall",
+    "is_disabled": false,
+    "display_override": null
+  },
+  {
+    "power_id": 1093,
+    "powerset_id": "Device",
+    "framework_id": "Passive",
+    "name": "Energy Recursion",
+    "tier": null,
+    "power_type": "DEVICE",
+    "advantages": [],
+    "activation_type": "PASSIVE",
+    "cost": null,
+    "activation_time": null,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": null,
+    "range_tags": [],
+    "tooltip": "15% of the damage you take is dealt back to the attacker as Particle Damage. + This damage has a limit of 1000.",
+    "apply_tag": [],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Particle"
+    ],
+    "damage_values": null,
+    "healing_values": null,
+    "control_values": null,
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Teleios Ascendant"
+    ],
+    "icon_override": "Device_EnergyRecursion",
+    "is_disabled": false,
+    "display_override": null
+  },
+  {
+    "power_id": 1094,
+    "powerset_id": "Device",
+    "framework_id": "Healing_Devices",
+    "name": "Perfection of Body",
+    "tier": null,
+    "power_type": "BUFF_SELF",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "cost": null,
+    "activation_time": null,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": 90,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Increases your resistance to all damage by 60%, your resistance to Knock effects by 200%, an your Melee Knock Strenght by 100% for 30 sec.",
+    "apply_tag": [],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [],
+    "damage_values": null,
+    "healing_values": null,
+    "control_values": null,
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Teleios Ascendant"
+    ],
+    "icon_override": "Device_PerfectionBody",
+    "is_disabled": false,
+    "display_override": null
+  },
+  {
+    "power_id": 1095,
+    "powerset_id": "Device",
+    "framework_id": "Other",
+    "name": "Perfection of Mind",
+    "tier": null,
+    "power_type": "RANGED_AOE_DAMAGE",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "cost": null,
+    "activation_time": 1,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": 90,
+    "range_tags": [
+      "Affects non-destructible foe (5 max)",
+      "25 feet Sphere"
+    ],
+    "tooltip": "Can be used while Held or Confused. + Deals 724 Ego Damage and Sleep affected targets for 3.5 sec. + For each target hit, increases the duration of your Holds by 7%, and increases your resistance to Holds by 20 for 10 sec. + Applies 2,679 Break Free damage to any Holds, Roots, or Disables affecting you. + Places all Escape devices on a 90 sec cooldown.",
+    "apply_tag": [
+      "Sleep"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [
+      "Crowd Control"
+    ],
+    "damage_type": [
+      "Ego"
+    ],
+    "damage_values": "724",
+    "healing_values": null,
+    "control_values": "Sleep=2.5",
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Teleios Ascendant"
+    ],
+    "icon_override": "Device_PerfectionMind",
+    "is_disabled": false,
+    "display_override": null
+  },
+  {
+    "power_id": 1096,
+    "powerset_id": "Device",
+    "framework_id": "Healing_Devices",
+    "name": "Rejuvenating Nanobots",
+    "tier": null,
+    "power_type": "HEAL",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "cost": null,
+    "activation_time": 1,
+    "max_duration": null,
+    "tick_rate": null,
+    "cooldown": 60,
+    "range_tags": [
+      "Affects friends (5 max)",
+      "50 feet Sphere"
+    ],
+    "tooltip": "This device can be toggled on alongside other abilities. + Heals you, up to 10 of your Pets, and up to 5 Heroes within 50ft for 150 Health Points every 1 sec. This amount scales based on the number of Technology Framework Pets you have active (max 10). This effect cannot critically hit.",
+    "apply_tag": [],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [
+      "Passive Heal"
+    ],
+    "damage_type": [],
+    "damage_values": null,
+    "healing_values": "150",
+    "control_values": null,
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Teleios Ascendant"
+    ],
+    "icon_override": "Device_RejuvenatingNanobots",
     "is_disabled": false,
     "display_override": null
   }

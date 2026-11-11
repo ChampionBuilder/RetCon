@@ -8,6 +8,7 @@ import {
   formatSignedBonusValue,
   statBonusOrderIndex,
 } from "./gearBonusFormatting";
+import { getGearModDisplayRank } from "./gearModRanks";
 
 const modRanks = [5, 7, 9] satisfies GearModRank[];
 
@@ -99,10 +100,10 @@ function formatModRankLine(
   }
 
   if (segments.length === 1) {
-    return `R${rank}: ${segments[0]}`;
+    return `R${getGearModDisplayRank(mod, rank)}: ${segments[0]}`;
   }
 
-  return [`R${rank}:`, ...segments].join("\n");
+  return [`R${getGearModDisplayRank(mod, rank)}:`, ...segments].join("\n");
 }
 
 function getPrimaryRankValue(mod: GearMod, rank: GearModRank) {
@@ -118,7 +119,7 @@ function formatRankValueTokenFallback(mod: GearMod, suffix = "") {
 
       return value === undefined || value === null || value === ""
         ? null
-        : `R${rank}: ${value}${suffix}`;
+        : `R${getGearModDisplayRank(mod, rank)}: ${value}${suffix}`;
     })
     .filter((line): line is string => Boolean(line))
     .join(" / ");

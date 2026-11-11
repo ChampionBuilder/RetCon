@@ -12,6 +12,7 @@ import {
   formatSignedBonusValue,
 } from "./gearBonusFormatting";
 import { formatGearModRankTooltipText } from "./gearModTooltips";
+import { getGearModDisplayRank } from "./gearModRanks";
 import { getGearTooltipText } from "./gearTooltips";
 import { getGearTotals } from "./gearTotals";
 
@@ -124,7 +125,10 @@ function formatSelectedModLabel(
     return "Select rank";
   }
 
-  return `${selectedMod.mod.name} R${selectedMod.rank}`;
+  return `${selectedMod.mod.name} R${getGearModDisplayRank(
+    selectedMod.mod,
+    selectedMod.rank,
+  )}`;
 }
 
 function formatModSlotLabel(

@@ -5159,8 +5159,8 @@
     "mod_type": "Offense",
     "name": "Armor Piercing Round",
     "mod_bonus": "Armor_Penetration_Munition",
-    "rank_5": null,
-    "rank_7": 5,
+    "rank_5": 5,
+    "rank_7": 10,
     "rank_9": 15,
     "tooltip": "Armor Reduction Modifcation. This core causes your direct damage Munitions powers to ignore a portion of an enemy's defenses. The effect of this mod cannot be stacked. + Your direct damage Munitions powers ignore up to %rank_value% % of your target's resistance. This effect cannot reduce a target's resistance below 0%.",
     "stackable": false,
@@ -5180,7 +5180,8 @@
       {
         "type": "Armor_Penetration_Munition",
         "values_by_rank": {
-          "7": 5,
+          "5": 5,
+          "7": 10,
           "9": 15
         }
       }
@@ -5191,8 +5192,8 @@
     "mod_type": "Offense",
     "name": "Overwhelming Pressure",
     "mod_bonus": "Armor_Penetration_Force",
-    "rank_5": null,
-    "rank_7": 5,
+    "rank_5": 5,
+    "rank_7": 10,
     "rank_9": 15,
     "tooltip": "Armor Reduction Modifcation. This core causes your direct damage Force powers to ignore a portion of an enemy's defenses. The effect of this mod cannot be stacked. + Your direct damage Force powers ignore up to %rank_value% % of your target's resistance. This effect cannot reduce a target's resistance below 0%.",
     "stackable": false,
@@ -5212,7 +5213,8 @@
       {
         "type": "Armor_Penetration_Force",
         "values_by_rank": {
-          "7": 5,
+          "5": 5,
+          "7": 10,
           "9": 15
         }
       }
@@ -5223,8 +5225,8 @@
     "mod_type": "Offense",
     "name": "Sharpened Claws",
     "mod_bonus": "Armor_Penetration_Force",
-    "rank_5": null,
-    "rank_7": 5,
+    "rank_5": 5,
+    "rank_7": 10,
     "rank_9": 15,
     "tooltip": "Armor Reduction Modifcation. This core causes your direct damage Supernatural Bestial powers to ignore a portion of an enemy's defenses. The effect of this mod cannot be stacked. + Your direct damage Supernatural Bestial  powers ignore up to %rank_value% % of your target's resistance. This effect cannot reduce a target's resistance below 0%.",
     "stackable": false,
@@ -5244,7 +5246,8 @@
       {
         "type": "Armor_Penetration_Force",
         "values_by_rank": {
-          "7": 5,
+          "5": 5,
+          "7": 10,
           "9": 15
         }
       }
@@ -5255,10 +5258,10 @@
     "mod_type": "Offense",
     "name": "Arcane Influence",
     "mod_bonus": "Armor_Penetration_Sorcery",
-    "rank_5": null,
-    "rank_7": 5,
+    "rank_5": 5,
+    "rank_7": 10,
     "rank_9": 15,
-    "tooltip": "Armor Reduction Modifcation. This core causes your direct damage Sorcery powers to ignore a portion of an enemy's defenses. The effect of this mod cannot be stacked. + Your direct damage Sorcery  powers ignore up to %rank_value% % of your target's resistance. This effect cannot reduce a target's resistance below 0%.",
+    "tooltip": "Armor Reduction Modifcation. This core causes your direct damage Sorcery powers to ignore a portion of an enemy's defenses. The effect of this mod cannot be stacked. + Your direct damage Sorcery powers ignore up to %rank_value% % of your target's resistance. This effect cannot reduce a target's resistance below 0%.",
     "stackable": false,
     "tag": [
       "Offense"
@@ -5276,7 +5279,41 @@
       {
         "type": "Armor_Penetration_Sorcery",
         "values_by_rank": {
-          "7": 5,
+          "5": 5,
+          "7": 10,
+          "9": 15
+        }
+      }
+    ]
+  },
+  {
+    "mod_id": 152,
+    "mod_type": "Offense",
+    "name": "Weakness Assessment",
+    "mod_bonus": "Armor_Penetration_Gadgeteering",
+    "rank_5": 5,
+    "rank_7": 10,
+    "rank_9": 15,
+    "tooltip": "Armor Reduction Modifcation. This core causes your direct damage Gadgeteering powers to ignore a portion of an enemy's defenses. The effect of this mod cannot be stacked. + Your direct damage Gadgeteering powers ignore up to %rank_value% % of your target's resistance. This effect cannot reduce a target's resistance below 0%.",
+    "stackable": false,
+    "tag": [
+      "Offense"
+    ],
+    "source": [
+      "Teleios Ascendant"
+    ],
+    "icon_override": "Mod_Weakness_Assessment",
+    "is_disabled": false,
+    "display_override": null,
+    "mod_types": [
+      "Offense"
+    ],
+    "bonuses": [
+      {
+        "type": "Armor_Penetration_Gadgeteering",
+        "values_by_rank": {
+          "5": 5,
+          "7": 10,
           "9": 15
         }
       }

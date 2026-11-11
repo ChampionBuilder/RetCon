@@ -6,6 +6,7 @@ import type {
 } from "@/types/gear";
 import { AnchoredSelectionDialog, type DialogAnchor } from "@/shared/ui";
 import { formatGearModRankTooltipText } from "./gearModTooltips";
+import { getGearModDisplayRank } from "./gearModRanks";
 
 type GearRankDialogProps = {
   anchor: DialogAnchor;
@@ -100,7 +101,7 @@ export function GearRankDialog({
               type="button"
               onClick={() => onSelectRank(gearSlot.id, modSlotIndex, rank)}
             >
-              R{rank}
+              R{getGearModDisplayRank(selectedMod.mod, rank)}
             </button>
           );
         })}
