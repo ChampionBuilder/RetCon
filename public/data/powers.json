@@ -6870,7 +6870,7 @@
     "power_id": 154,
     "powerset_id": "Technology",
     "framework_id": "Gadgeteering",
-    "name": "Nanobot Swarm",
+    "name": "Grants a 42/50/60% increase to all damage. + When activated, all powers that are currently recharging have their recharge time reduced by -12/-15/-18 sec. This does not affect Ultimate or Active powers. + Can be used while Held or Confused. + Applies Break Free damage to any Holds, Roots, or Disables affecting you. + Activates a shared cooldown of 90 sec on all Active Offenses.",
     "tier": 1,
     "power_type": "ACTIVE_OFFENSE",
     "advantages": [
@@ -8125,7 +8125,7 @@
       "Targets foe",
       "100 feet"
     ],
-    "tooltip": "Deals 230 Sonic Damage every 0.5 sec. + 15% chance on each hit to Disorient each target. Disorient reduces the target's damage by 10% and movement speed by 50% for 12 sec.",
+    "tooltip": "Deals 230 Sonic Damage every 0.5 sec. + 15% chance on each hit to Disorient your target. Disorient reduces the target's damage by 10% and movement speed by 50% for 12 sec.",
     "apply_tag": [
       "Disorient"
     ],
@@ -10152,7 +10152,7 @@
       "Targets foe",
       "50 feet"
     ],
-    "tooltip": "Deals 14-35 Particle Damage and generates Energy.",
+    "tooltip": "Hand Slot. + Deals 14-35 Particle Damage and generates Energy.",
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -10194,7 +10194,7 @@
       "Targets foe",
       "100 feet"
     ],
-    "tooltip": "Deals 152 Particle Damage every 0.5 sec. + Repels your target.",
+    "tooltip": "Hand Slot. + Deals 152 Particle Damage every 0.5 sec. + Repels your target.",
     "apply_tag": [
       "Repel"
     ],
@@ -10240,7 +10240,7 @@
       "Targets foe",
       "100 feet"
     ],
-    "tooltip": "Deals 152 Crushing Damage every 0.5 sec. + Repels your target.",
+    "tooltip": "Hand Slot. + Deals 152 Crushing Damage every 0.5 sec. + Repels your target.",
     "apply_tag": [
       "Repel"
     ],
@@ -10459,7 +10459,7 @@
       "100 feet",
       "2 feet Cylinder"
     ],
-    "tooltip": "Deals 152 Particle Damage every 0.5 sec.",
+    "tooltip": "Shoulder slot. + Deals 152 Particle Damage every 0.5 sec.",
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -10539,7 +10539,7 @@
       "100 feet",
       "2 feet Cylinder"
     ],
-    "tooltip": "Deals 152 Crushing Damage every 0.5 sec.",
+    "tooltip": "Shoulder slot. + Deals 152 Crushing Damage every 0.5 sec.",
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -10790,7 +10790,7 @@
       "100 feet",
       "2 feet Cylinder"
     ],
-    "tooltip": "Deals 152 Particle Damage every 0.5 sec.",
+    "tooltip": "Chest slot. + Deals 152 Particle Damage every 0.5 sec.",
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -10835,7 +10835,7 @@
       "100 feet",
       "2 feet Cylinder"
     ],
-    "tooltip": "Deals 152 Crushing Damage every 0.5 sec.",
+    "tooltip": "Chest slot. + Deals 152 Crushing Damage every 0.5 sec.",
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -10880,7 +10880,7 @@
       "100 feet",
       "15 feet Sphere"
     ],
-    "tooltip": "Deals 304 Crushing Damage every 1 sec.",
+    "tooltip": "Chest slot. + Deals 304 Crushing Damage every 1 sec.",
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -10925,7 +10925,7 @@
       "100 feet",
       "2 feet Cylinder"
     ],
-    "tooltip": "Deals 152 Particle Damage every 0.5 sec.",
+    "tooltip": "Hand slot. + Deals 152 Particle Damage every 0.5 sec.",
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -11054,7 +11054,7 @@
       "100 feet",
       "2 feet Cylinder"
     ],
-    "tooltip": "After 4 sec deals 1283 Particle Damage to the primary target, and 641 Particle Damage to foes near the target. + In addition, each target has a 50% chance to be Knocked Back.",
+    "tooltip": "Hand slot. + After 4 sec deals 1283 Particle Damage to the primary target, and 641 Particle Damage to foes near the target. + In addition, each target has a 50% chance to be Knocked Back.",
     "apply_tag": [
       "Knock Back"
     ],
@@ -11096,7 +11096,7 @@
     "range_tags": [
       "Targets self"
     ],
-    "tooltip": "Heals you for 243 Health Points every 1 sec. + This power cannot critically heal.",
+    "tooltip": "Chest slot. + Heals you for 243 Health Points every 1 sec. + This power cannot critically heal.",
     "apply_tag": [],
     "refresh_tag": [],
     "synergy_tag": [],
@@ -11140,7 +11140,7 @@
       "100 feet",
       "2 feet Cylinder"
     ],
-    "tooltip": "After 4 sec deals 639 Crushing Damage and 639 Particle Damage to the primary target, and 320 Crushing Damage and 320 Particle Damage to foes near the target. + In addition, each target has a 50% chance to be Knocked Back.",
+    "tooltip": "Shoulder slot. + After 4 sec deals 639 Crushing Damage and 639 Particle Damage to the primary target, and 320 Crushing Damage and 320 Particle Damage to foes near the target. + In addition, each target has a 50% chance to be Knocked Back.",
     "apply_tag": [
       "Knock Back"
     ],
@@ -35792,7 +35792,7 @@
     "scaling_stats": [],
     "power_dependency": [],
     "source": [
-      "Bloodmoon Event: Takofanes, Store"
+      "Bloodmoon Event: Takofanes"
     ],
     "icon_override": "Device_PortalOfDarkness",
     "is_disabled": false,
@@ -46378,8 +46378,7 @@
     "tick_rate": null,
     "cooldown": 60,
     "range_tags": [
-      "Affects friends (5 max)",
-      "50 feet Sphere"
+      "Targets self"
     ],
     "tooltip": "This device can be toggled on alongside other abilities. + Heals you, up to 10 of your Pets, and up to 5 Heroes within 50ft for 150 Health Points every 1 sec. This amount scales based on the number of Technology Framework Pets you have active (max 10). This effect cannot critically hit.",
     "apply_tag": [],
