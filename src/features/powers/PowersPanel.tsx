@@ -137,11 +137,11 @@ type FrameworkStripCell = {
 function ResponsiveFrameworkStrip({
   children,
 }: {
-  children: (columns: number) => ReactNode;
+  children: (columns: number, rows: number) => ReactNode;
 }) {
-  const [columns, setColumns] = useState(1);
+  const [layout, setLayout] = useState({ columns: 1, rows: 2 });
   const stripRef = useRef<HTMLDivElement | null>(null);
-  const columnsRef = useRef(1);
+  const layoutRef = useRef(layout);
 
   useEffect(() => {
     const strip = stripRef.current;
@@ -164,6 +164,9 @@ function ResponsiveFrameworkStrip({
           styles.getPropertyValue("--framework-layout-gap") ||
             styles.getPropertyValue("--framework-strip-gap"),
         ) || 5;
+      const nextRows =
+        Number.parseInt(styles.getPropertyValue("--framework-strip-rows"), 10) ||
+        2;
       const nextColumns = Math.min(
         maxFrameworkStripColumns,
         Math.max(
@@ -172,9 +175,14 @@ function ResponsiveFrameworkStrip({
         ),
       );
 
-      if (columnsRef.current !== nextColumns) {
-        columnsRef.current = nextColumns;
-        setColumns(nextColumns);
+      if (
+        layoutRef.current.columns !== nextColumns ||
+        layoutRef.current.rows !== nextRows
+      ) {
+        const nextLayout = { columns: nextColumns, rows: nextRows };
+
+        layoutRef.current = nextLayout;
+        setLayout(nextLayout);
       }
     }
 
@@ -201,9 +209,9 @@ function ResponsiveFrameworkStrip({
       className="framework-strip"
       aria-label="Power frameworks"
       ref={stripRef}
-      style={{ "--framework-strip-columns": columns } as CSSProperties}
+      style={{ "--framework-strip-columns": layout.columns } as CSSProperties}
     >
-      {children(columns)}
+      {children(layout.columns, layout.rows)}
     </div>
   );
 }
@@ -2690,8 +2698,10 @@ export function PowersPanel({
     setIsDamageTypeMenuOpen(false);
   }
 
-  function renderFrameworkStripItems(frameworkStripColumns: number) {
-    const frameworkStripRows = 2;
+  function renderFrameworkStripItems(
+    frameworkStripColumns: number,
+    frameworkStripRows: number,
+  ) {
     const firstFrameworkColumn = () => 0;
     const utilityGroup = frameworkGroups.find(
       (frameworkGroup) => frameworkGroup.id === "utility",
@@ -2757,10 +2767,12 @@ export function PowersPanel({
 
     let row = 0;
     let column = firstFrameworkColumn();
+    const keepAllFrameworkGroupsTogether = frameworkStripRows > 2;
 
     standardFrameworkGroups.forEach((frameworkGroup) => {
       if (
-        keptTogetherFrameworkGroupIds.has(frameworkGroup.id) &&
+        (keepAllFrameworkGroupsTogether ||
+          keptTogetherFrameworkGroupIds.has(frameworkGroup.id)) &&
         column + frameworkGroup.filters.length > frameworkStripColumns
       ) {
         row += 1;

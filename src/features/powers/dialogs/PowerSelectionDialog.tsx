@@ -15,6 +15,7 @@ import {
 import { getFrameworkGlossaryTooltipAttribute } from "@/utils/frameworkGlossary";
 import { AnchoredSelectionDialog, type DialogAnchor } from "@/shared/ui";
 import { SpriteIcon } from "@/shared/ui/SpriteIcon";
+import { useVerticalLayout } from "@/hooks/useVerticalLayout";
 
 type PowerSelectionDialogProps = {
   anchor: DialogAnchor;
@@ -123,6 +124,7 @@ export function PowerSelectionDialog({
   const [selectedFramework, setSelectedFramework] = useState<string | null>(
     resolveInitialFrameworkId(frameworkGroups, preferredFrameworkId),
   );
+  const isVerticalLayout = useVerticalLayout();
   const selectedFrameworkTitle = getFrameworkTitle(
     frameworkGroups,
     selectedFramework,
@@ -138,7 +140,7 @@ export function PowerSelectionDialog({
     <AnchoredSelectionDialog
       anchor={anchor}
       ariaLabel="Select power"
-      className="power-selection-dialog"
+      className="power-selection-dialog build-power-selection-dialog"
       closeAriaLabel="Close power selection"
       menuChildren={
         <>
@@ -216,7 +218,10 @@ export function PowerSelectionDialog({
           return (
             <section className="power-selection-group" key={frameworkGroup.id}>
               <div className="power-selection-grid">
-                {arrangeItemsByColumns(groupPowers, 2).map((power) => {
+                {arrangeItemsByColumns(
+                  groupPowers,
+                  isVerticalLayout ? 1 : 2,
+                ).map((power) => {
                   const isCurrent =
                     buildSlot.power?.power_id === power.power_id;
                   const isTaken = selectedPowerIds.has(power.power_id);

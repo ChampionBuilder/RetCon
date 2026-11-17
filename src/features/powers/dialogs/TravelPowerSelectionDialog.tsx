@@ -9,6 +9,7 @@ import { formatFrameworkName, isTravelPower } from "@/utils/powerFrameworks";
 import { getFrameworkGlossaryTooltipAttribute } from "@/utils/frameworkGlossary";
 import { AnchoredSelectionDialog, type DialogAnchor } from "@/shared/ui";
 import { SpriteIcon } from "@/shared/ui/SpriteIcon";
+import { useVerticalLayout } from "@/hooks/useVerticalLayout";
 
 type TravelPowerSelectionDialogProps = {
   anchor: DialogAnchor;
@@ -27,6 +28,7 @@ export function TravelPowerSelectionDialog({
   onClose,
   onSelectTravelPower,
 }: TravelPowerSelectionDialogProps) {
+  const isVerticalLayout = useVerticalLayout();
   const powersById = useMemo(() => {
     return new Map(powers.map((power) => [power.power_id, power]));
   }, [powers]);
@@ -113,7 +115,10 @@ export function TravelPowerSelectionDialog({
           return (
             <section className="power-selection-group" key={frameworkId ?? "unknown"}>
               <div className="power-selection-grid">
-                {arrangeItemsByColumns(frameworkTravelPowers, 2).map((power) => {
+                {arrangeItemsByColumns(
+                  frameworkTravelPowers,
+                  isVerticalLayout ? 1 : 2,
+                ).map((power) => {
                   const isCurrent =
                     buildSlot.power?.power_id === power.power_id;
 

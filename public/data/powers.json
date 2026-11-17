@@ -46400,5 +46400,87 @@
     "icon_override": "Device_RejuvenatingNanobots",
     "is_disabled": false,
     "display_override": null
+  },
+  {
+    "power_id": 1097,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "Lemurian Golem",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "cost": null,
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: Tank + Damage type: Crushing + Special effects: Demolish, Knock Up, Disorient + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction.",
+    "apply_tag": [
+      "Demolish",
+      "Knock Up",
+      "Disorient"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Crushing"
+    ],
+    "damage_values": null,
+    "healing_values": null,
+    "control_values": null,
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Lemurian Invasion Event: Store"
+    ],
+    "icon_override": "Sidekick_Lemurian_Golem",
+    "is_disabled": false,
+    "display_override": null
+  },
+  {
+    "power_id": 1098,
+    "powerset_id": "Device",
+    "framework_id": "Sidekick",
+    "name": "Ionic Sorcerer",
+    "tier": null,
+    "power_type": "CONTROLLABLE_PET",
+    "advantages": [],
+    "activation_type": "CLICK",
+    "cost": null,
+    "activation_time": 1,
+    "max_duration": 900,
+    "tick_rate": null,
+    "cooldown": 300,
+    "range_tags": [
+      "Targets self"
+    ],
+    "tooltip": "Role: Ranged DPS + Damage type: Electrical + Special effects: Superconductor, Negative Ions, Hold + You may only have one Sidekick active at one time. + This item cannot be used in PVP. + This item is not affected by cooldown reduction.",
+    "apply_tag": [
+      "Superconductor",
+      "Negative Ions",
+      "Hold"
+    ],
+    "refresh_tag": [],
+    "synergy_tag": [],
+    "filter_tag": [],
+    "damage_type": [
+      "Electrical"
+    ],
+    "damage_values": null,
+    "healing_values": null,
+    "control_values": null,
+    "scaling_stats": [],
+    "power_dependency": [],
+    "source": [
+      "Lemurian Invasion Event: Store"
+    ],
+    "icon_override": "Sidekick_Ionic_Sorcerer",
+    "is_disabled": false,
+    "display_override": null
   }
 ]

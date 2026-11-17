@@ -111,8 +111,15 @@ type CollapsedWorkspacePanels = Record<WorkspacePanelId, boolean>;
 
 const collapsedPanelTrackWidth = "var(--collapsed-panel-track-width, 48px)";
 const ultraCompactViewportQuery = "(max-width: 1400px)";
+const verticalWorkspaceQuery = "(max-width: 1100px) and (orientation: portrait)";
 const collapsedWorkspacePanelsStorageKey = "retcon.workspacePanels.v1";
-const communityReminderStorageKey = "retcon.communityReminder.lastShown.v2";
+const communityReminderStorageKey = "retcon.communityReminder";
+const communityReminderAnnouncementId = "vertical-layout-beta";
+const legacyCommunityReminderStorageKeys = [
+  "retcon.communityReminder.lastShown.v1",
+  "retcon.communityReminder.lastShown.v2",
+  "retcon.communityReminder.lastShown.v3",
+];
 const openPanelTracks = {
   build: "minmax(330px, 1fr)",
   character: "var(--character-column-width)",
@@ -133,6 +140,10 @@ const workspacePanelIds = Object.keys(
 
 function isUltraCompactViewport() {
   return window.matchMedia(ultraCompactViewportQuery).matches;
+}
+
+function isVerticalWorkspace() {
+  return window.matchMedia(verticalWorkspaceQuery).matches;
 }
 
 function isCollapsedWorkspacePanels(value: unknown): value is CollapsedWorkspacePanels {
@@ -186,7 +197,20 @@ function shouldShowCommunityReminder() {
       return true;
     }
 
-    const lastShown = new Date(storedValue);
+    const parsedValue: unknown = JSON.parse(storedValue);
+
+    if (
+      !parsedValue ||
+      typeof parsedValue !== "object" ||
+      !("announcementId" in parsedValue) ||
+      !("shownAt" in parsedValue) ||
+      parsedValue.announcementId !== communityReminderAnnouncementId ||
+      typeof parsedValue.shownAt !== "string"
+    ) {
+      return true;
+    }
+
+    const lastShown = new Date(parsedValue.shownAt);
 
     if (Number.isNaN(lastShown.getTime())) {
       return true;
@@ -205,7 +229,13 @@ function markCommunityReminderAsShown() {
   try {
     window.localStorage.setItem(
       communityReminderStorageKey,
-      new Date().toISOString(),
+      JSON.stringify({
+        announcementId: communityReminderAnnouncementId,
+        shownAt: new Date().toISOString(),
+      }),
+    );
+    legacyCommunityReminderStorageKeys.forEach((storageKey) =>
+      window.localStorage.removeItem(storageKey),
     );
   } catch {
     // Ignore storage failures. The reminder can still be dismissed normally.
@@ -501,7 +531,11 @@ function App() {
       };
       let finalCollapsedPanels: CollapsedWorkspacePanels;
 
-      if (!wasCollapsed || !isUltraCompactViewport()) {
+      if (
+        !wasCollapsed ||
+        !isUltraCompactViewport() ||
+        isVerticalWorkspace()
+      ) {
         finalCollapsedPanels = nextCollapsedPanels;
         writeCollapsedWorkspacePanels(finalCollapsedPanels);
 
@@ -604,9 +638,10 @@ function App() {
 
   useEffect(() => {
     const ultraCompactViewport = window.matchMedia(ultraCompactViewportQuery);
+    const verticalWorkspace = window.matchMedia(verticalWorkspaceQuery);
 
     function collapseWidePanelsInUltraCompactMode() {
-      if (!ultraCompactViewport.matches) {
+      if (!ultraCompactViewport.matches || verticalWorkspace.matches) {
         return;
       }
 
@@ -626,9 +661,17 @@ function App() {
       "change",
       collapseWidePanelsInUltraCompactMode,
     );
+    verticalWorkspace.addEventListener(
+      "change",
+      collapseWidePanelsInUltraCompactMode,
+    );
 
     return () => {
       ultraCompactViewport.removeEventListener(
+        "change",
+        collapseWidePanelsInUltraCompactMode,
+      );
+      verticalWorkspace.removeEventListener(
         "change",
         collapseWidePanelsInUltraCompactMode,
       );
@@ -1881,7 +1924,7 @@ function App() {
     >
       <AppHeader
         buildName={buildName}
-        myBuildsHighlighted={communityReminderDialogOpen}
+        myBuildsHighlighted={false}
         shareUrl={shareUrl}
         resetSuperStatsDisabled={!isFreeform}
         onBuildNameChange={setBuildName}

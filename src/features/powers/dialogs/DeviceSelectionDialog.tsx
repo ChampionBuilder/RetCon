@@ -11,6 +11,7 @@ import { getPowerTooltipAttribute } from "@/shared/utils/powerTooltip";
 import { formatFrameworkName, isStandardDevice } from "@/utils/powerFrameworks";
 import { AnchoredSelectionDialog, type DialogAnchor } from "@/shared/ui";
 import { SpriteIcon } from "@/shared/ui/SpriteIcon";
+import { useVerticalLayout } from "@/hooks/useVerticalLayout";
 
 type DeviceSelectionDialogProps = {
   anchor: DialogAnchor;
@@ -29,6 +30,7 @@ export function DeviceSelectionDialog({
   onClose,
   onSelectDevice,
 }: DeviceSelectionDialogProps) {
+  const isVerticalLayout = useVerticalLayout();
   const powersById = useMemo(() => {
     return new Map(powers.map((power) => [power.power_id, power]));
   }, [powers]);
@@ -104,7 +106,10 @@ export function DeviceSelectionDialog({
           return (
             <section className="power-selection-group" key={frameworkId ?? "unknown"}>
               <div className="power-selection-grid">
-                {arrangeItemsByColumns(frameworkDevices, 2).map((device) => {
+                {arrangeItemsByColumns(
+                  frameworkDevices,
+                  isVerticalLayout ? 1 : 2,
+                ).map((device) => {
                   const isCurrent =
                     buildSlot.power?.power_id === device.power_id;
 

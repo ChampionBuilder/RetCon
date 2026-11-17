@@ -58,6 +58,16 @@ function GearName({ name }: { name: string }) {
   ));
 }
 
+function formatEmptyGearSlotLabel(gearSlot: GearBuildSlot) {
+  const gearTypeLabels: Record<GearBuildSlot["gearType"], string> = {
+    Offense: "Offence",
+    Defense: "Defence",
+    Utility: "Utility",
+  };
+
+  return `${gearSlot.gearSlot} ${gearTypeLabels[gearSlot.gearType]} Gear`;
+}
+
 function formatModSlotTitle(slotTypes: string[]) {
   return slotTypes
     .filter((slotType) => slotType !== "Multicore")
@@ -407,7 +417,7 @@ export function GearPanel({
                             ) : (
                               <span className="build-entry__name-button gear-build-entry__empty-label">
                                 <GearName
-                                  name={`Empty ${gearSlot.gearType.toLowerCase()} gear`}
+                                  name={formatEmptyGearSlotLabel(gearSlot)}
                                 />
                               </span>
                             )}

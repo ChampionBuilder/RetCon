@@ -134,10 +134,11 @@ export function AppHeader({
       />
 
       <div className="app-header__content">
-        <div className="app-header__controls">
+        <div className="app-header__primary-row">
           <button
             className={[
               "header-action-button",
+              "header-control--builds",
               myBuildsHighlighted
                 ? "header-action-button--reminder-highlighted"
                 : "",
@@ -153,7 +154,7 @@ export function AppHeader({
             Builds
           </button>
 
-          <label className="name-field">
+          <label className="name-field header-control--name">
             <span>Build name</span>
             <input
               value={buildName}
@@ -165,8 +166,37 @@ export function AppHeader({
             />
           </label>
 
+          <nav className="top-tabs" aria-label="Main sections">
+            <button
+              className={[
+                "header-action-button",
+                "build-resources-button",
+              ]
+                .filter(Boolean)
+                .join(" ")}
+              aria-label="Build Resources"
+              title="Find help and explore community builds and guides."
+              type="button"
+              onClick={onOpenBuildResources}
+            >
+              <span className="header-label-optional">Build </span>
+              Resources
+            </button>
+            <button
+              className="header-action-button"
+              title="View project credits, sources, and acknowledgements."
+              type="button"
+              onClick={onOpenAbout}
+            >
+              About
+            </button>
+          </nav>
+        </div>
+
+        <div className="app-header__secondary-row">
+
           <button
-            className="header-action-button"
+            className="header-action-button header-control--copy"
             aria-label="Copy Link"
             title={
               copyFeedbackVisible
@@ -179,7 +209,7 @@ export function AppHeader({
             Copy<span className="header-label-optional"> Link</span>
           </button>
           <button
-            className="header-action-button"
+            className="header-action-button header-control--save"
             title={
               saveFeedbackVisible ? "Saved!" : "Save this build to My Builds."
             }
@@ -189,7 +219,7 @@ export function AppHeader({
             Save
           </button>
           <button
-            className="utility-button"
+            className="utility-button header-control--check"
             aria-label="Check Build"
             title="Check whether this build includes the core power types."
             type="button"
@@ -199,7 +229,7 @@ export function AppHeader({
           </button>
 
           <button
-            className="utility-button"
+            className="utility-button header-control--import"
             aria-label="Import Build"
             title="Recover your Aesica and BalakKnightfang builds.
             Most builds should import, but results are not guaranteed."
@@ -209,11 +239,18 @@ export function AppHeader({
             Import<span className="header-label-optional"> Build</span>
           </button>
 
-          <button className="utility-button" type="button" onClick={onRandomize}>
+          <button
+            className="utility-button header-control--randomize"
+            type="button"
+            onClick={onRandomize}
+          >
             Randomize
           </button>
 
-          <details ref={resetMenuRef} className="reset-menu">
+          <details
+            ref={resetMenuRef}
+            className="reset-menu header-control--reset"
+          >
             <summary className="reset-menu__trigger utility-button">Reset</summary>
             <div className="reset-menu__panel" aria-label="Reset build sections">
               <button className="reset-menu__item" type="button" onClick={onResetAll}>
@@ -298,32 +335,6 @@ export function AppHeader({
             </div>
           </details>
         </div>
-
-        <nav className="top-tabs" aria-label="Main sections">
-          <button
-            className={[
-              "header-action-button",
-              "build-resources-button",
-            ]
-              .filter(Boolean)
-              .join(" ")}
-            aria-label="Build Resources"
-            title="Find help and explore community builds and guides."
-            type="button"
-            onClick={onOpenBuildResources}
-          >
-            <span className="header-label-optional">Build </span>
-            Resources
-          </button>
-          <button
-            className="header-action-button"
-            title="View project credits, sources, and acknowledgements."
-            type="button"
-            onClick={onOpenAbout}
-          >
-            About
-          </button>
-        </nav>
       </div>
     </header>
   );

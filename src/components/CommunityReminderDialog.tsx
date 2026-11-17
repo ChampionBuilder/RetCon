@@ -20,18 +20,24 @@ export function CommunityReminderDialog({
     >
       <div className="community-reminder-dialog__content">
         <section>
-          <h4>NEW FEATURE</h4>
+          <h4>VERTICAL LAYOUT BETA</h4>
           <p>
-            <strong>Your current build is now automatically saved.</strong>
+            <strong>
+              A new vertical layout is now available for portrait-oriented
+              screens.
+            </strong>
           </p>
           <p>
-            Your latest work is kept in an Autosave entry, available
-            from the highlighted <strong>My Builds</strong> menu.
+            This layout is still in beta and needs real-world testing. It will
+            continue to evolve based on your feedback.
           </p>
         </section>
         <section>
           <h4>FEEDBACK</h4>
-          <p>Found a bug? Have feedback or an idea for improvement?</p>
+          <p>
+            Found a bug, an awkward interaction, or something that could work
+            better in the vertical layout?
+          </p>
           <p>
             Share it on the{` `}
             <a href={feedbackThreadUrl} rel="noreferrer" target="_blank">
