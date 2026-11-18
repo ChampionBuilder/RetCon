@@ -204,6 +204,14 @@ export function InstantTooltip() {
       }
     }
 
+    function targetsAdvantagePanel(target: EventTarget | null) {
+      const advantagesPanel = tooltipRef.current?.querySelector<HTMLElement>(
+        ".power-tooltip-advantages",
+      );
+
+      return target instanceof Node && Boolean(advantagesPanel?.contains(target));
+    }
+
     function handleMouseOver(event: MouseEvent) {
       if (isTouchGeneratedMouseEvent(event)) {
         return;
@@ -290,6 +298,10 @@ export function InstantTooltip() {
 
       clearLongPressTimeout();
 
+      if (targetsAdvantagePanel(event.target)) {
+        return;
+      }
+
       const element = getTooltipElement(event.target);
 
       if (!element) {
@@ -309,6 +321,13 @@ export function InstantTooltip() {
 
     function handlePointerUp(event: PointerEvent) {
       clearLongPressTimeout();
+
+      if (
+        event.pointerType !== "mouse" &&
+        targetsAdvantagePanel(event.target)
+      ) {
+        return;
+      }
 
       if (
         event.pointerType !== "mouse" &&

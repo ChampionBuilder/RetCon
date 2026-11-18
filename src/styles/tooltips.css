@@ -539,6 +539,10 @@
     max-width: min(430px, calc(100vw - 34px));
   }
 
+  .instant-tooltip--with-advantages {
+    pointer-events: auto;
+  }
+
   .power-tooltip-shell {
     flex-direction: column;
   }
@@ -547,6 +551,9 @@
     box-sizing: border-box;
     width: 100%;
     max-height: min(280px, 40vh);
+    overscroll-behavior: contain;
+    touch-action: pan-y;
+    -webkit-overflow-scrolling: touch;
   }
 }
 
